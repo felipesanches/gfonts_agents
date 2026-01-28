@@ -29,6 +29,43 @@
           "timestamp": "2026-01-28T00:00:20Z"
         }
       ]
+    },
+    {
+      "id": "alexei-vanyashin",
+      "name": "Alexei Vanyashin",
+      "role": "designer",
+      "contact": "cyrealtype (Lora maintainer)",
+      "questions": [
+        {
+          "id": "q3",
+          "font": "Lora",
+          "question": "Should Lora be updated to v3.021? Are there breaking changes or regressions between v3.11 and v3.021 that need review?",
+          "context": "METADATA.pb references commit c44a1dde (v3.11, Nov 2024) but upstream has v3.021 (Oct 2025). The metadata may not match the actually deployed fonts (v3.008 from PR #7103).",
+          "timestamp": "2026-01-28T00:00:25Z"
+        }
+      ]
+    },
+    {
+      "id": "google-fonts-team",
+      "name": "Google Fonts team",
+      "role": "font_engineer",
+      "contact": "github.com/google/fonts",
+      "questions": [
+        {
+          "id": "q4",
+          "font": "Fira Sans",
+          "question": "Should METADATA.pb be updated to include commit hash 8d9d02bf70c2339aa9e214acebf9ad592273ed81?",
+          "context": "Fira Sans METADATA.pb has repository_url but no commit hash. The FiraGFVersion repo has been dormant since Dec 2016.",
+          "timestamp": "2026-01-28T00:00:25Z"
+        },
+        {
+          "id": "q5",
+          "font": "Fira Sans",
+          "question": "Is FiraGFVersion the canonical upstream or was the font originally from Mozilla's Fira?",
+          "context": "FiraGFVersion appears to be a Google Fonts-specific fork. The original Fira was created by Mozilla.",
+          "timestamp": "2026-01-28T00:00:25Z"
+        }
+      ]
     }
   ]
 }
