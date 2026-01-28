@@ -22,6 +22,14 @@ Any additional work done in upstream repos after the recorded commit will need t
 2. Verify that `repository_url` fields point to valid repositories
 3. Verify that commit hashes in METADATA.pb match the commits originally used for onboarding (not newer commits)
 
+### Validation Strategies
+
+To identify the original onboarding commits, we can use the following approaches:
+
+1. **Check binary file history**: Look at the commit history of the .ttf files in google/fonts to identify the last commit that modified them
+2. **Analyze commit messages**: Check if the commit message contains useful information (upstream repo URL, commit hash, PR reference)
+3. **Trace linked PRs**: If the commit is linked to a pull request, read the full PR history for additional context and references to upstream sources
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.

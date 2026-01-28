@@ -62,5 +62,9 @@
   {
     "timestamp": "2026-01-28T00:00:16Z",
     "message": "Quando as fontes passarem a ser compiladas a partir de seus repos upstream, existe o risco de que os typedesigners tenham feito alterações adicionais nas fontes depois da última vez que elas foram adicionadas ou atualizadas no acervo do Google Fonts. Portanto, outra meta é nos certificar que estamos referenciando os hashes que foram de fato usados originalmente. Qualquer trabalho adicional que tenha sido feito nos repos upstream precisará passar por uma etapa adicional de revisão e controle de qualidade no futuro."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:17Z",
+    "message": "Existem algumas estratégias que podemos usar para fazer essa validação. Por exemplo, podemos verificar o histórico de commits dos arquivos binários no repo google/fonts e identifical qual foi o último commit que os modificou. Em seguida, descobrir se a mensagem de log desse commit nos dá alguma informação útil para nossos objetivos. Se esse commit estiver vinculado a um pull request, devemos ler todo o seu histórico."
   }
 ]
