@@ -154,6 +154,28 @@ main {
     border-bottom: none;
 }
 
+.message-entry.assistant {
+    background: #f0f7ff;
+}
+
+.message-role {
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.message-entry.user .message-role {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.message-entry.assistant .message-role {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
 .message-translation {
     margin-top: 0.5rem;
     padding: 0.5rem;

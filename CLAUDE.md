@@ -67,7 +67,11 @@ Make commits frequently, whenever any small progress is achieved. Keep commits g
 
 ## Message Logging
 
-All user messages must be logged to `data/message_log.json` with timestamp and verbatim content. Append new messages to the array as they are received.
+All conversation messages must be logged to `data/message_log.json` with timestamp and content. This includes:
+- User messages (role: "user")
+- Assistant responses (role: "assistant") - summarized, not verbatim
+
+For Portuguese messages, include an English translation. Append new messages as they are received.
 
 ## Development
 

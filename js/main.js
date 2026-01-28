@@ -250,7 +250,8 @@ async function loadMessageLog() {
                     <div class="day-summary">${escapeHtml(summary)}</div>
                     <div class="day-messages collapsed">
                         ${dayMessages.map(entry => `
-                            <div class="message-entry">
+                            <div class="message-entry ${entry.role || 'user'}">
+                                <span class="message-role">${entry.role === 'assistant' ? 'Claude' : 'User'}</span>
                                 <span class="timestamp">${formatTimestamp(entry.timestamp)}</span>
                                 <p class="message-text">${escapeHtml(entry.message)}</p>
                                 ${entry.translation ? `<p class="message-translation">${escapeHtml(entry.translation)}</p>` : ''}
