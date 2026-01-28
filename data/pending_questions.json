@@ -1,3 +1,34 @@
 {
-  "questions_by_person": []
+  "questions_by_person": [
+    {
+      "id": "fontc-crater-maintainers",
+      "name": "fontc_crater maintainers",
+      "role": "font_engineer",
+      "contact": "github.com/googlefonts/fontc_crater",
+      "questions": [
+        {
+          "id": "q1",
+          "font": "Markazi Text",
+          "question": "PR #9285 added commit hash a876c4f to markazitext METADATA.pb, but the font file in google/fonts predates this commit by 3+ years. Was this intentional to track the 'desired' upstream state, or should the commit hash reference the actual version used to build the deployed fonts?",
+          "context": "The METADATA.pb references upstream commit a876c4f (Oct 27, 2024) but the actual font file was last updated on Aug 10, 2021 (PR #3644).",
+          "timestamp": "2026-01-28T00:00:20Z"
+        }
+      ]
+    },
+    {
+      "id": "borna-izadpanah",
+      "name": "Borna Izadpanah",
+      "role": "designer",
+      "contact": "Font designer of Markazi Text",
+      "questions": [
+        {
+          "id": "q2",
+          "font": "Markazi Text",
+          "question": "The Oct 2024 Arabic diacritics fix (commit a876c4f) is not yet deployed to Google Fonts. Would you like us to initiate a font update PR to bring the latest fixes to users?",
+          "context": "Commit a876c4f contains 'Arabic diacritics fix - Shadda with other marks did not work properly' but this fix is not in the currently deployed Google Fonts version.",
+          "timestamp": "2026-01-28T00:00:20Z"
+        }
+      ]
+    }
+  ]
 }

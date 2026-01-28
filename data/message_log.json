@@ -78,5 +78,9 @@
   {
     "timestamp": "2026-01-28T00:00:20Z",
     "message": "For each family, provide a dedicated page with a detailed report of what we've discovered so far."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:21Z",
+    "message": "please place repository audity, message log and pending questions each in one tab. On the pending questions tab let us filter the questions by person."
   }
 ]

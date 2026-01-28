@@ -1,9 +1,30 @@
 // Google Fonts Dashboard - Main Script
 
+let questionsData = null;
+
 document.addEventListener('DOMContentLoaded', () => {
+    initTabs();
     loadFontsAudit();
+    loadPendingQuestions();
     loadMessageLog();
 });
+
+function initTabs() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.dataset.tab;
+
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            btn.classList.add('active');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        });
+    });
+}
 
 async function loadFontsAudit() {
     const container = document.getElementById('fonts-table');
@@ -39,7 +60,7 @@ async function loadFontsAudit() {
                             </a>
                         </td>
                         <td class="status">
-                            <span class="status-badge ${font.status}">${escapeHtml(font.status)}</span>
+                            <span class="status-badge ${font.status}">${escapeHtml(font.status.replace('_', ' '))}</span>
                         </td>
                     </tr>
                 `).join('')}
@@ -49,6 +70,78 @@ async function loadFontsAudit() {
     } catch (error) {
         container.innerHTML = '<p class="error">Failed to load fonts data.</p>';
     }
+}
+
+async function loadPendingQuestions() {
+    const container = document.getElementById('questions-list');
+    const filterSelect = document.getElementById('person-filter');
+
+    try {
+        const response = await fetch('data/pending_questions.json');
+        questionsData = await response.json();
+
+        // Populate filter dropdown
+        questionsData.questions_by_person.forEach(person => {
+            const option = document.createElement('option');
+            option.value = person.id;
+            option.textContent = `${person.name} (${person.questions.length})`;
+            filterSelect.appendChild(option);
+        });
+
+        // Add filter event listener
+        filterSelect.addEventListener('change', () => {
+            filterQuestions(filterSelect.value);
+        });
+
+        // Render questions
+        renderQuestions(container, questionsData);
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load pending questions.</p>';
+    }
+}
+
+function renderQuestions(container, data) {
+    if (data.questions_by_person.length === 0) {
+        container.innerHTML = '<p class="no-questions">No pending questions at this time.</p>';
+        return;
+    }
+
+    let html = '';
+    data.questions_by_person.forEach(person => {
+        person.questions.forEach(q => {
+            html += `
+                <div class="question-card" data-person="${person.id}">
+                    <div class="question-header">
+                        <div>
+                            <div class="question-person">${escapeHtml(person.name)}</div>
+                            <div class="question-role">${escapeHtml(person.role.replace('_', ' '))}</div>
+                        </div>
+                        <span class="question-font">${escapeHtml(q.font)}</span>
+                    </div>
+                    <div class="question-text">${escapeHtml(q.question)}</div>
+                    ${q.context ? `
+                        <div class="question-context">
+                            <div class="question-context-label">Context:</div>
+                            ${escapeHtml(q.context)}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        });
+    });
+
+    container.innerHTML = html;
+}
+
+function filterQuestions(personId) {
+    const cards = document.querySelectorAll('.question-card');
+    cards.forEach(card => {
+        if (personId === 'all' || card.dataset.person === personId) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
 }
 
 async function loadMessageLog() {
@@ -75,6 +168,7 @@ function formatTimestamp(isoString) {
 }
 
 function escapeHtml(text) {
+    if (!text) return '';
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;

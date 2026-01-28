@@ -13,15 +13,39 @@
     </header>
 
     <main id="app">
-        <section id="fonts-audit" class="panel">
-            <h2>Repository Audit</h2>
-            <p class="panel-description">Verifying METADATA.pb repository_url and commit hash</p>
-            <div id="fonts-table"></div>
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="audit">Repository Audit</button>
+            <button class="tab-btn" data-tab="questions">Pending Questions</button>
+            <button class="tab-btn" data-tab="messages">Message Log</button>
+        </nav>
+
+        <section id="tab-audit" class="tab-content active">
+            <div class="panel">
+                <h2>Repository Audit</h2>
+                <p class="panel-description">Verifying METADATA.pb repository_url and commit hash</p>
+                <div id="fonts-table"></div>
+            </div>
         </section>
 
-        <section id="message-log" class="panel">
-            <h2>Message Log</h2>
-            <div id="messages"></div>
+        <section id="tab-questions" class="tab-content">
+            <div class="panel">
+                <h2>Pending Questions</h2>
+                <p class="panel-description">Questions that need answers from designers or font engineers</p>
+                <div class="filter-bar">
+                    <label for="person-filter">Filter by person:</label>
+                    <select id="person-filter">
+                        <option value="all">All people</option>
+                    </select>
+                </div>
+                <div id="questions-list"></div>
+            </div>
+        </section>
+
+        <section id="tab-messages" class="tab-content">
+            <div class="panel">
+                <h2>Message Log</h2>
+                <div id="messages"></div>
+            </div>
         </section>
     </main>
 
