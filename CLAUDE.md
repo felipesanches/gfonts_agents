@@ -51,6 +51,8 @@ To identify the original onboarding commits, we can use the following approaches
 
 When there is uncertainty about what actually happened during onboarding, and we need to ask questions to the people involved, save the question to `data/pending_questions.json`. Questions should be grouped by the person (designer or font engineer) best positioned to provide a good answer.
 
+**Important**: Always try to identify a specific person by investigating PR history, commit authors, and repository contributors. Only use generic categories like "Google Fonts team" as a last resort when a specific person truly cannot be identified.
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.

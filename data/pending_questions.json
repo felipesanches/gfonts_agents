@@ -46,10 +46,10 @@
       ]
     },
     {
-      "id": "google-fonts-team",
-      "name": "Google Fonts team",
+      "id": "marc-foley",
+      "name": "Marc Foley",
       "role": "font_engineer",
-      "contact": "github.com/google/fonts",
+      "contact": "github.com/m4rc1e",
       "questions": [
         {
           "id": "q4",

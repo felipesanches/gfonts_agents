@@ -275,5 +275,15 @@
     "timestamp": "2026-01-28T00:00:28.1Z",
     "role": "assistant",
     "message": "Added role field to message log entries and updated display to show User vs Claude messages with different styling."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:29Z",
+    "role": "user",
+    "message": "You should always only categorize as \"Google Fonts team\" if you really can't figure out a specific person name."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:29.1Z",
+    "role": "assistant",
+    "message": "Reassigned Fira Sans questions from 'Google Fonts team' to Marc Foley (m4rc1e), who is the primary contributor to FiraGFVersion. Updated CLAUDE.md to document this policy."
   }
 ]
