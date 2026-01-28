@@ -5,6 +5,7 @@ let questionsData = null;
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     loadFontsAudit();
+    loadPendingPRs();
     loadPendingQuestions();
     loadMessageLog();
 });
@@ -70,6 +71,72 @@ async function loadFontsAudit() {
     } catch (error) {
         container.innerHTML = '<p class="error">Failed to load fonts data.</p>';
     }
+}
+
+async function loadPendingPRs() {
+    const container = document.getElementById('prs-list');
+
+    try {
+        const response = await fetch('data/pending_prs.json');
+        const prs = await response.json();
+
+        if (prs.length === 0) {
+            container.innerHTML = '<p class="no-prs">No pending PRs at this time.</p>';
+            return;
+        }
+
+        container.innerHTML = prs.map(pr => `
+            <div class="pr-card priority-${pr.priority}">
+                <div class="pr-header">
+                    <div class="pr-title">${escapeHtml(pr.title)}</div>
+                    <div class="pr-badges">
+                        <span class="pr-type">${escapeHtml(pr.type.replace('_', ' '))}</span>
+                        <span class="pr-priority priority-${pr.priority}">${escapeHtml(pr.priority)}</span>
+                        <span class="pr-status status-${pr.status}">${escapeHtml(pr.status.replace('_', ' '))}</span>
+                    </div>
+                </div>
+                <div class="pr-font">Font: ${escapeHtml(pr.font)}</div>
+                <div class="pr-description">${escapeHtml(pr.description)}</div>
+                <div class="pr-files">
+                    <strong>Files to modify:</strong>
+                    <ul>
+                        ${pr.files_to_modify.map(f => `<li><code>${escapeHtml(f)}</code></li>`).join('')}
+                    </ul>
+                </div>
+                ${pr.changes.add_commit ? `
+                    <div class="pr-changes">
+                        <strong>Add commit:</strong> <code>${escapeHtml(pr.changes.add_commit)}</code>
+                    </div>
+                ` : ''}
+                ${pr.changes.options ? `
+                    <div class="pr-changes">
+                        <strong>Options:</strong>
+                        <ul>
+                            ${pr.changes.options.map(o => `<li>${escapeHtml(o)}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+                <div class="pr-actions">
+                    <button class="btn-create-pr" onclick="openCreatePR('${escapeHtml(pr.id)}', '${escapeHtml(pr.font)}', '${escapeHtml(pr.title)}')">
+                        Create PR on GitHub
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load pending PRs.</p>';
+    }
+}
+
+function openCreatePR(prId, font, title) {
+    const fontSlug = font.toLowerCase().replace(/\s+/g, '');
+    const branch = `fix-metadata-${fontSlug}`;
+    const body = encodeURIComponent(`## Summary\n\nThis PR fixes metadata issues for ${font}.\n\n## Changes\n\n- See pending PR: ${prId}\n\n---\n\n🤖 Generated with Google Fonts Dashboard`);
+    const prTitle = encodeURIComponent(title);
+
+    // Open GitHub's PR creation page
+    const url = `https://github.com/google/fonts/compare/main...main?expand=1&title=${prTitle}&body=${body}`;
+    window.open(url, '_blank');
 }
 
 async function loadPendingQuestions() {

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pr-fira-sans-commit",
+    "font": "Fira Sans",
+    "title": "Add missing commit hash to Fira Sans METADATA.pb",
+    "description": "The source block in METADATA.pb is missing a commit hash reference.",
+    "type": "metadata_fix",
+    "priority": "medium",
+    "files_to_modify": [
+      "ofl/firasans/METADATA.pb"
+    ],
+    "changes": {
+      "add_commit": "8d9d02bf70c2339aa9e214acebf9ad592273ed81"
+    },
+    "status": "draft",
+    "created": "2026-01-28T00:00:25Z"
+  },
+  {
+    "id": "pr-markazi-text-review",
+    "font": "Markazi Text",
+    "title": "Review Markazi Text commit hash mismatch",
+    "description": "METADATA.pb references commit a876c4f (Oct 2024) but deployed fonts are from Aug 2021. Need to either update fonts or correct the commit hash.",
+    "type": "review_needed",
+    "priority": "high",
+    "files_to_modify": [
+      "ofl/markazitext/METADATA.pb",
+      "ofl/markazitext/*.ttf (if updating fonts)"
+    ],
+    "changes": {
+      "options": [
+        "Update fonts to match commit a876c4f",
+        "Correct commit hash to match deployed fonts"
+      ]
+    },
+    "status": "needs_decision",
+    "created": "2026-01-28T00:00:25Z"
+  }
+]

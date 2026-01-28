@@ -115,5 +115,9 @@
   {
     "timestamp": "2026-01-28T00:00:25Z",
     "message": "We'll also need to make sure that upstream repos have a config.yaml file containing gftools-builder configuration. The location of config.yaml (relative to the root of the upstream repo) must be properly set in `METADATA.pb` on the `config_yaml` field inside `source { ... }`. Alternatively, an overriding config.yaml can be provided directly at the family directory in the google/fonts repo."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:26Z",
+    "message": "When a config.yaml file is missing, we should try to decide what would be the correct settings, according to all other criteria we already discussed here. And then we must prepare a pull request to google/fonts that fixes the data. Fixing upstream is not trivial, because we have no guarantee how quickly upstream projects would respond to queries (if at all). That's one of the reasons for having the choice of maintaining override config.yaml files on google/fonts repo. Please add a \"gfonts PRs\" tab with a list of PRs. For each PR, provide a button that a user can click to actually open the PR via the web interface."
   }
 ]

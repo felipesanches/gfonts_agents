@@ -29,6 +29,16 @@ Upstream repositories must have a `config.yaml` file containing gftools-builder 
 
 Alternatively, an overriding `config.yaml` can be provided directly in the family directory within the google/fonts repository.
 
+### Fixing Missing or Incorrect Data
+
+When data is missing or incorrect (e.g., missing config.yaml, missing commit hash, wrong repository_url), we should:
+
+1. **Determine correct settings**: Based on investigation of upstream repos, PR history, and font structure
+2. **Prepare a PR to google/fonts**: Fix the data directly in google/fonts repository
+3. **Use override files when needed**: Since upstream repos may not respond quickly (or at all), we can maintain override `config.yaml` files in google/fonts
+
+PRs to be created are tracked in `data/pending_prs.json` and displayed in the dashboard.
+
 ### Validation Strategies
 
 To identify the original onboarding commits, we can use the following approaches:

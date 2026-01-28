@@ -15,6 +15,7 @@
     <main id="app">
         <nav class="tabs">
             <button class="tab-btn active" data-tab="audit">Repository Audit</button>
+            <button class="tab-btn" data-tab="prs">gfonts PRs</button>
             <button class="tab-btn" data-tab="questions">Pending Questions</button>
             <button class="tab-btn" data-tab="messages">Message Log</button>
         </nav>
@@ -24,6 +25,14 @@
                 <h2>Repository Audit</h2>
                 <p class="panel-description">Verifying METADATA.pb repository_url and commit hash</p>
                 <div id="fonts-table"></div>
+            </div>
+        </section>
+
+        <section id="tab-prs" class="tab-content">
+            <div class="panel">
+                <h2>Pending Pull Requests</h2>
+                <p class="panel-description">PRs to be created in google/fonts repository</p>
+                <div id="prs-list"></div>
             </div>
         </section>
 

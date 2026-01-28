@@ -359,10 +359,161 @@ th {
     margin-bottom: 0.25rem;
 }
 
-.no-questions {
+.no-questions, .no-prs {
     text-align: center;
     color: #666;
     padding: 2rem;
+}
+
+/* Pending PRs */
+.pr-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #4285f4;
+}
+
+.pr-card.priority-high {
+    border-left-color: #c62828;
+}
+
+.pr-card.priority-medium {
+    border-left-color: #ef6c00;
+}
+
+.pr-card.priority-low {
+    border-left-color: #2e7d32;
+}
+
+.pr-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.pr-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.pr-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.pr-type, .pr-priority, .pr-status {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.pr-type {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.pr-priority.priority-high {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.pr-priority.priority-medium {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.pr-priority.priority-low {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.pr-status {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.pr-status.status-draft {
+    background: #e0e0e0;
+    color: #424242;
+}
+
+.pr-status.status-needs_decision {
+    background: #fff8e1;
+    color: #f9a825;
+}
+
+.pr-font {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.pr-description {
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.pr-files {
+    margin-bottom: 1rem;
+}
+
+.pr-files ul {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.pr-files li {
+    margin-bottom: 0.25rem;
+}
+
+.pr-files code, .pr-changes code {
+    background: #e8e8e8;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+.pr-changes {
+    margin-bottom: 1rem;
+}
+
+.pr-changes ul {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.pr-actions {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-create-pr {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+}
+
+.btn-create-pr:hover {
+    background: #1b5e20;
 }
 
 footer {
