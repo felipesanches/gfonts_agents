@@ -21,7 +21,7 @@
     "repository_url": "https://github.com/AlessioLaiso/aleo",
     "commit": "ce875e48d9983031648e87f38b7a269f4fbf5eb5",
     "metadata_path": "ofl/aleo/METADATA.pb",
-    "status": "pending"
+    "status": "needs_review"
   },
   {
     "name": "Roboto Flex",
@@ -46,5 +46,29 @@
     "commit": "bd7e37632246368c60fdcbd374dbf9bad11969b6",
     "metadata_path": "ofl/opensans/METADATA.pb",
     "status": "verified"
+  },
+  {
+    "name": "Lora",
+    "slug": "lora",
+    "repository_url": "https://github.com/cyrealtype/Lora-Cyrillic",
+    "commit": "c44a1dde19a3fcff5bf549677e08a64510837e9d",
+    "metadata_path": "ofl/lora/METADATA.pb",
+    "status": "needs_review"
+  },
+  {
+    "name": "Nunito",
+    "slug": "nunito",
+    "repository_url": "https://github.com/googlefonts/nunito",
+    "commit": "8c6a9bb9732545b9ed53f29ec5e1ab0ff53c4e6f",
+    "metadata_path": "ofl/nunito/METADATA.pb",
+    "status": "verified"
+  },
+  {
+    "name": "Fira Sans",
+    "slug": "fira-sans",
+    "repository_url": "https://github.com/googlefonts/FiraGFVersion",
+    "commit": null,
+    "metadata_path": "ofl/firasans/METADATA.pb",
+    "status": "missing_commit_hash"
   }
 ]

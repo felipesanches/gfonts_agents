@@ -1,0 +1,17 @@
+{
+  "font": "Nunito",
+  "upstream_repo": "https://github.com/googlefonts/nunito",
+  "metadata_commit": "8c6a9bb9732545b9ed53f29ec5e1ab0ff53c4e6f",
+  "commit_exists": true,
+  "commit_date": "2025-02-26",
+  "commit_author": "Felipe Corrêa da Silva Sanches (@felipesanches)",
+  "commit_message": "rename the gftools builder file to what fontc_crater & google-fonts-sources expect",
+  "has_newer_commits": false,
+  "google_fonts_pr": 9286,
+  "pr_url": "https://github.com/google/fonts/pull/9286",
+  "pr_merged_date": "2025-04-01",
+  "pr_references_upstream": true,
+  "status": "verified",
+  "notes": "The commit 8c6a9bb is the most recent commit on the upstream Nunito repository's main branch. PR #9286 explicitly updated the METADATA.pb to this commit. The font's metadata is fully synchronized with the upstream repository.",
+  "pending_questions": []
+}

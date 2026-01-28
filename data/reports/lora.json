@@ -1,0 +1,34 @@
+{
+  "font": "Lora",
+  "upstream_repo": "https://github.com/cyrealtype/Lora-Cyrillic",
+  "metadata_commit": "c44a1dde19a3fcff5bf549677e08a64510837e9d",
+  "commit_exists": true,
+  "commit_date": "2024-11-06",
+  "commit_author": "Alexei Vanyashin (@alexeiva)",
+  "commit_message": "built fonts v3.11",
+  "has_newer_commits": true,
+  "newer_commits": [
+    {
+      "hash": "2b04938b7cc72e55d724b554c9fbc39278306be1",
+      "date": "2025-10-24",
+      "message": "removed git workflow"
+    },
+    {
+      "hash": "990d096770ec849579270d3031e1b84ea32e1272",
+      "date": "2025-10-22",
+      "message": "generated fonts v.3.021"
+    }
+  ],
+  "google_fonts_pr": 9285,
+  "pr_url": "https://github.com/google/fonts/pull/9285",
+  "pr_merged_date": "2025-03-31",
+  "pr_references_upstream": false,
+  "status": "needs_review",
+  "notes": "The commit c44a1dde (v3.11, Nov 2024) was added via batch metadata update PR #9285. However, the upstream has since released v3.021 in Oct 2025. The original font update PR #7103 (Jan 2024) used commit 403b1a6 (v3.008). There may be a mismatch between deployed fonts and metadata commit.",
+  "pending_questions": [
+    {
+      "for": "Alexei Vanyashin (cyrealtype)",
+      "question": "Should Lora be updated to v3.021? Are there breaking changes between v3.11 and v3.021?"
+    }
+  ]
+}

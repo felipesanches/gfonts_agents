@@ -2,12 +2,24 @@
   "font": "Aleo",
   "upstream_repo": "https://github.com/AlessioLaiso/aleo",
   "metadata_commit": "ce875e48d9983031648e87f38b7a269f4fbf5eb5",
-  "commit_exists": null,
-  "commit_date": null,
-  "has_newer_commits": null,
-  "google_fonts_pr": null,
-  "pr_references_upstream": null,
-  "status": "pending",
-  "notes": "Investigation incomplete - subagent encountered an error. Needs re-investigation.",
+  "commit_exists": true,
+  "commit_date": "2023-06-03",
+  "commit_author": "AlessioLaiso",
+  "commit_message": "Merge pull request #4 from emmamarichal/master - Aleo update",
+  "has_newer_commits": true,
+  "newer_commits": [
+    {
+      "hash": "acd8d56d42be24d285708cf463652b194bdcddd2",
+      "date": "2025-08-08",
+      "message": "Updates uni028B and copyright",
+      "author": "AlessioLaiso"
+    }
+  ],
+  "google_fonts_pr": 6345,
+  "pr_url": "https://github.com/google/fonts/pull/6345",
+  "pr_merged_date": "2023-06-08",
+  "pr_references_upstream": true,
+  "status": "needs_review",
+  "notes": "The commit ce875e48d9983031648e87f38b7a269f4fbf5eb5 exists and was correctly referenced in PR #6345 when the font was updated to version 2.001 on June 8, 2023. However, there is a newer commit in the upstream repository (acd8d56d from August 8, 2025) that updates uni028B glyph and copyright information.",
   "pending_questions": []
 }

@@ -21,6 +21,13 @@ Any additional work done in upstream repos after the recorded commit will need t
 1. **Primary goal**: Collect 100% of upstream repository URLs and document them in the corresponding `METADATA.pb` files
 2. Verify that `repository_url` fields point to valid repositories
 3. Verify that commit hashes in METADATA.pb match the commits originally used for onboarding (not newer commits)
+4. Verify that upstream repos have a `config.yaml` file with gftools-builder configuration
+
+### Build Configuration (config.yaml)
+
+Upstream repositories must have a `config.yaml` file containing gftools-builder configuration. The location of this file (relative to the repo root) must be set in the `config_yaml` field inside the `source { ... }` block of `METADATA.pb`.
+
+Alternatively, an overriding `config.yaml` can be provided directly in the family directory within the google/fonts repository.
 
 ### Validation Strategies
 

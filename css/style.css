@@ -206,6 +206,11 @@ th {
     color: #ad1457;
 }
 
+.status-badge.missing_commit_hash {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
 /* Filter Bar */
 .filter-bar {
     display: flex;

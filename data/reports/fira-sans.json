@@ -1,0 +1,26 @@
+{
+  "font": "Fira Sans",
+  "upstream_repo": "https://github.com/googlefonts/FiraGFVersion",
+  "metadata_commit": null,
+  "commit_exists": null,
+  "commit_date": null,
+  "commit_author": null,
+  "commit_message": null,
+  "has_newer_commits": null,
+  "google_fonts_pr": 483,
+  "pr_url": "https://github.com/google/fonts/pull/483",
+  "pr_merged_date": "2016-12-02",
+  "pr_references_upstream": false,
+  "status": "missing_commit_hash",
+  "notes": "Missing commit hash in METADATA.pb - the source block only contains repository_url without a commit reference. The upstream repo (FiraGFVersion) has been dormant since December 2016, with the latest commit being 8d9d02bf70c2339aa9e214acebf9ad592273ed81. Recommended commit to reference: 8d9d02bf70c2339aa9e214acebf9ad592273ed81.",
+  "pending_questions": [
+    {
+      "for": "Google Fonts team",
+      "question": "Should METADATA.pb be updated to include commit hash 8d9d02bf70c2339aa9e214acebf9ad592273ed81?"
+    },
+    {
+      "for": "Google Fonts team",
+      "question": "Is FiraGFVersion the canonical upstream or was the font originally from Mozilla's Fira?"
+    }
+  ]
+}
