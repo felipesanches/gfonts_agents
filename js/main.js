@@ -56,9 +56,11 @@ async function loadFontsAudit() {
                             </a>
                         </td>
                         <td class="commit-hash">
-                            <a href="${escapeHtml(font.repository_url)}/commit/${escapeHtml(font.commit)}" target="_blank">
-                                ${escapeHtml(font.commit.substring(0, 7))}
-                            </a>
+                            ${font.commit ? `
+                                <a href="${escapeHtml(font.repository_url)}/commit/${escapeHtml(font.commit)}" target="_blank">
+                                    ${escapeHtml(font.commit.substring(0, 7))}
+                                </a>
+                            ` : '<span class="missing">missing</span>'}
                         </td>
                         <td class="status">
                             <span class="status-badge ${font.status}">${escapeHtml(font.status.replace('_', ' '))}</span>

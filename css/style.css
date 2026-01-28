@@ -230,6 +230,11 @@ th {
     font-size: 0.9rem;
 }
 
+.commit-hash .missing {
+    color: #c62828;
+    font-style: italic;
+}
+
 .repo-url a:hover, .commit-hash a:hover {
     text-decoration: underline;
 }
