@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Danfo",
+    "repository_url": "https://github.com/Afrotype/danfo",
+    "commit": "a66fc9ded8f42ad2d39b91c9cd8a1960737ad02a",
+    "metadata_path": "ofl/danfo/METADATA.pb",
+    "status": "verified"
+  },
+  {
+    "name": "Alegreya",
+    "repository_url": "https://github.com/huertatipografica/Alegreya",
+    "commit": "1dd6b28b57c50e3168db1cbbb8086e7978abcfbf",
+    "metadata_path": "ofl/alegreya/METADATA.pb",
+    "status": "pending"
+  },
+  {
+    "name": "Aleo",
+    "repository_url": "https://github.com/AlessioLaiso/aleo",
+    "commit": "ce875e48d9983031648e87f38b7a269f4fbf5eb5",
+    "metadata_path": "ofl/aleo/METADATA.pb",
+    "status": "pending"
+  },
+  {
+    "name": "Roboto Flex",
+    "repository_url": "https://github.com/googlefonts/Roboto-Flex",
+    "commit": "739e06dc46ebb14cddd88b9768a6c1504d4677f6",
+    "metadata_path": "ofl/robotoflex/METADATA.pb",
+    "status": "pending"
+  },
+  {
+    "name": "Markazi Text",
+    "repository_url": "https://github.com/BornaIz/markazitext",
+    "commit": "a876c4f0111b96f407741a877e79f207e9117338",
+    "metadata_path": "ofl/markazitext/METADATA.pb",
+    "status": "pending"
+  },
+  {
+    "name": "Open Sans",
+    "repository_url": "https://github.com/googlefonts/opensans",
+    "commit": "bd7e37632246368c60fdcbd374dbf9bad11969b6",
+    "metadata_path": "ofl/opensans/METADATA.pb",
+    "status": "pending"
+  }
+]
