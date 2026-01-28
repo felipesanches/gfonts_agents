@@ -70,5 +70,13 @@
   {
     "timestamp": "2026-01-28T00:00:18Z",
     "message": "Quando houver incerteza sobre o que de fato aconteceu, e julgarmos ser necessário fazer perguntas para os atores envolvidos, salve a pergunta em um painel de \"Pending questions\". Classifique as entradas desse painel agrupando as perguntas para cada um dos designers ou font engineers que você considerem estarem em melhor condição de nos dar uma boa resposta."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:19Z",
+    "message": "vamos agora começar investigando todas as 6 fontes iniciais em paralelo usando subagents."
+  },
+  {
+    "timestamp": "2026-01-28T00:00:20Z",
+    "message": "For each family, provide a dedicated page with a detailed report of what we've discovered so far."
   }
 ]

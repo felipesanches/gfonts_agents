@@ -1,0 +1,13 @@
+{
+  "font": "Alegreya",
+  "upstream_repo": "https://github.com/huertatipografica/Alegreya",
+  "metadata_commit": "1dd6b28b57c50e3168db1cbbb8086e7978abcfbf",
+  "commit_exists": null,
+  "commit_date": null,
+  "has_newer_commits": null,
+  "google_fonts_pr": null,
+  "pr_references_upstream": null,
+  "status": "pending",
+  "notes": "Investigation incomplete - subagent was interrupted. Needs re-investigation.",
+  "pending_questions": []
+}

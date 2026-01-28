@@ -112,6 +112,16 @@ th {
     font-weight: 500;
 }
 
+.font-name a {
+    color: #333;
+    text-decoration: none;
+}
+
+.font-name a:hover {
+    color: #4285f4;
+    text-decoration: underline;
+}
+
 .repo-url a, .commit-hash a {
     color: #4285f4;
     text-decoration: none;
@@ -140,6 +150,11 @@ th {
 .status-badge.pending {
     background-color: #fff3e0;
     color: #ef6c00;
+}
+
+.status-badge.needs_review {
+    background-color: #fff8e1;
+    color: #f9a825;
 }
 
 .status-badge.error {

@@ -25,7 +25,9 @@ async function loadFontsAudit() {
             <tbody>
                 ${fonts.map(font => `
                     <tr class="status-${font.status}">
-                        <td class="font-name">${escapeHtml(font.name)}</td>
+                        <td class="font-name">
+                            <a href="font-report.html?font=${encodeURIComponent(font.slug || font.name.toLowerCase().replace(/\s+/g, '-'))}">${escapeHtml(font.name)}</a>
+                        </td>
                         <td class="repo-url">
                             <a href="${escapeHtml(font.repository_url)}" target="_blank">
                                 ${escapeHtml(font.repository_url.replace('https://github.com/', ''))}

@@ -1,0 +1,17 @@
+{
+  "font": "Roboto Flex",
+  "upstream_repo": "https://github.com/googlefonts/Roboto-Flex",
+  "metadata_commit": "739e06dc46ebb14cddd88b9768a6c1504d4677f6",
+  "commit_exists": true,
+  "commit_date": "2023-06-30",
+  "commit_author": "Marc Foley (@m4rc1e)",
+  "commit_message": "update proof cmd",
+  "has_newer_commits": false,
+  "google_fonts_pr": 6484,
+  "pr_url": "https://github.com/google/fonts/pull/6484",
+  "pr_merged_date": "2023-07-20",
+  "pr_references_upstream": true,
+  "status": "verified",
+  "notes": "The commit 739e06dc46ebb14cddd88b9768a6c1504d4677f6 is the most recent commit on the main branch of the upstream repo (as of June 30, 2023). This commit corresponds to the v3.200 release tag. The PR description mentions the upstream repo and the commit hash was added to METADATA.pb via an automated batch migration in April 2024.",
+  "pending_questions": []
+}

@@ -1,0 +1,26 @@
+{
+  "font": "Markazi Text",
+  "upstream_repo": "https://github.com/BornaIz/markazitext",
+  "metadata_commit": "a876c4f0111b96f407741a877e79f207e9117338",
+  "commit_exists": true,
+  "commit_date": "2024-10-27",
+  "commit_author": "Borna Izadpanah",
+  "commit_message": "Arabic diacritics fix - Shadda with other marks did not work properly",
+  "has_newer_commits": false,
+  "google_fonts_pr": 9285,
+  "pr_url": "https://github.com/google/fonts/pull/9285",
+  "pr_merged_date": "2025-03-31",
+  "pr_references_upstream": false,
+  "status": "error",
+  "notes": "CRITICAL MISMATCH: The METADATA.pb references upstream commit a876c4f (Oct 27, 2024) but the actual font file (MarkaziText[wght].ttf) in google/fonts was last updated on Aug 10, 2021 (PR #3644) using a different upstream source (github.com/aaronbell/markazitext). The commit hash a876c4f was added to METADATA.pb on Mar 31, 2025 (PR #9285) as part of a batch metadata update from fontc_crater's targets.json, but no corresponding font file update was made.",
+  "pending_questions": [
+    {
+      "for": "fontc_crater maintainers",
+      "question": "PR #9285 added commit hash a876c4f to markazitext METADATA.pb, but the font file in google/fonts predates this commit by 3+ years. Was this intentional to track the 'desired' upstream state, or should the commit hash reference the actual version used to build the deployed fonts?"
+    },
+    {
+      "for": "Borna Izadpanah (font designer)",
+      "question": "The Oct 2024 Arabic diacritics fix (commit a876c4f) is not yet deployed to Google Fonts. Would you like us to initiate a font update PR to bring the latest fixes to users?"
+    }
+  ]
+}

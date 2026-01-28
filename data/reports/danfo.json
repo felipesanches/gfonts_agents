@@ -1,0 +1,30 @@
+{
+  "font": "Danfo",
+  "upstream_repo": "https://github.com/Afrotype/danfo",
+  "metadata_commit": "a66fc9ded8f42ad2d39b91c9cd8a1960737ad02a",
+  "commit_exists": true,
+  "commit_date": "2024-03-06",
+  "commit_author": "Mirko Velimirovic (@bghryct)",
+  "commit_message": "language fixes",
+  "has_newer_commits": true,
+  "newer_commits": [
+    {
+      "hash": "f4a0c2dd9c65c42707208ec788371cec30b71b7f",
+      "date": "2024-03-15",
+      "message": "Personalize for this repo"
+    },
+    {
+      "hash": "c26cd3522a718f48014b0d003134a5d3420850e1",
+      "date": "2024-03-15",
+      "message": "updated AUTHORS.txt"
+    }
+  ],
+  "google_fonts_pr": 7389,
+  "pr_url": "https://github.com/google/fonts/pull/7389",
+  "pr_merged_date": "2024-03-20",
+  "pr_author": "Emma Marichal (@emmamarichal)",
+  "pr_references_upstream": true,
+  "status": "needs_review",
+  "notes": "The commit a66fc9ded8f42ad2d39b91c9cd8a1960737ad02a exists and was explicitly referenced in PR #7389 that added the font. However, there are 2 newer commits in the upstream repo from March 15, 2024 (updating AUTHORS.txt and personalizing the repo), which are 9 days newer than the tracked commit.",
+  "pending_questions": []
+}

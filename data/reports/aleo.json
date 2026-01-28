@@ -1,0 +1,13 @@
+{
+  "font": "Aleo",
+  "upstream_repo": "https://github.com/AlessioLaiso/aleo",
+  "metadata_commit": "ce875e48d9983031648e87f38b7a269f4fbf5eb5",
+  "commit_exists": null,
+  "commit_date": null,
+  "has_newer_commits": null,
+  "google_fonts_pr": null,
+  "pr_references_upstream": null,
+  "status": "pending",
+  "notes": "Investigation incomplete - subagent encountered an error. Needs re-investigation.",
+  "pending_questions": []
+}

@@ -1,0 +1,17 @@
+{
+  "font": "Open Sans",
+  "upstream_repo": "https://github.com/googlefonts/opensans",
+  "metadata_commit": "bd7e37632246368c60fdcbd374dbf9bad11969b6",
+  "commit_exists": true,
+  "commit_date": "2023-11-16",
+  "commit_author": "Marc Foley (@m4rc1e)",
+  "commit_message": "Fix version number to v3.003",
+  "has_newer_commits": false,
+  "google_fonts_pr": 6969,
+  "pr_url": "https://github.com/google/fonts/pull/6969",
+  "pr_merged_date": "2023-11-16",
+  "pr_references_upstream": true,
+  "status": "verified",
+  "notes": "The commit bd7e37632246368c60fdcbd374dbf9bad11969b6 is the HEAD of the main branch in the upstream repository. PR #6969 explicitly references this commit and confirms the font was 'taken from the upstream repo' at this exact commit. A follow-up PR #6974 fixed a missing header in the OFL.txt license file.",
+  "pending_questions": []
+}
