@@ -30,6 +30,10 @@ To identify the original onboarding commits, we can use the following approaches
 2. **Analyze commit messages**: Check if the commit message contains useful information (upstream repo URL, commit hash, PR reference)
 3. **Trace linked PRs**: If the commit is linked to a pull request, read the full PR history for additional context and references to upstream sources
 
+### Pending Questions
+
+When there is uncertainty about what actually happened during onboarding, and we need to ask questions to the people involved, save the question to `data/pending_questions.json`. Questions should be grouped by the person (designer or font engineer) best positioned to provide a good answer.
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.
