@@ -93,6 +93,58 @@ main {
 }
 
 /* Message Log Styles */
+.day-group {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    cursor: pointer;
+    user-select: none;
+}
+
+.day-header:hover {
+    background: #e8f0fe;
+}
+
+.day-date {
+    font-weight: 600;
+    color: #333;
+}
+
+.day-count {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.day-toggle {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.day-summary {
+    padding: 0.75rem 1rem;
+    background: #fafafa;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+}
+
+.day-messages {
+    border-top: 1px solid #eee;
+}
+
+.day-messages.collapsed {
+    display: none;
+}
+
 .message-entry {
     padding: 1rem;
     border-bottom: 1px solid #eee;
@@ -100,6 +152,16 @@ main {
 
 .message-entry:last-child {
     border-bottom: none;
+}
+
+.message-translation {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: #e3f2fd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #1565c0;
+    font-style: italic;
 }
 
 .timestamp {

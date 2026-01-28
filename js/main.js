@@ -151,14 +151,77 @@ async function loadMessageLog() {
         const response = await fetch('data/message_log.json');
         const messages = await response.json();
 
-        container.innerHTML = messages.map(entry => `
-            <div class="message-entry">
-                <span class="timestamp">${formatTimestamp(entry.timestamp)}</span>
-                <p class="message-text">${escapeHtml(entry.message)}</p>
-            </div>
-        `).join('');
+        // Group messages by day
+        const messagesByDay = {};
+        messages.forEach(entry => {
+            const date = new Date(entry.timestamp);
+            const dayKey = date.toISOString().split('T')[0];
+            if (!messagesByDay[dayKey]) {
+                messagesByDay[dayKey] = [];
+            }
+            messagesByDay[dayKey].push(entry);
+        });
+
+        // Generate HTML for each day
+        const days = Object.keys(messagesByDay).sort().reverse();
+        container.innerHTML = days.map(day => {
+            const dayMessages = messagesByDay[day];
+            const summary = generateDaySummary(dayMessages);
+            const formattedDate = new Date(day + 'T00:00:00').toLocaleDateString('en-US', {
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+            });
+
+            return `
+                <div class="day-group">
+                    <div class="day-header" onclick="toggleDay(this)">
+                        <span class="day-date">${formattedDate}</span>
+                        <span class="day-count">${dayMessages.length} messages</span>
+                        <span class="day-toggle">▼</span>
+                    </div>
+                    <div class="day-summary">${escapeHtml(summary)}</div>
+                    <div class="day-messages collapsed">
+                        ${dayMessages.map(entry => `
+                            <div class="message-entry">
+                                <span class="timestamp">${formatTimestamp(entry.timestamp)}</span>
+                                <p class="message-text">${escapeHtml(entry.message)}</p>
+                                ${entry.translation ? `<p class="message-translation">${escapeHtml(entry.translation)}</p>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }).join('');
     } catch (error) {
         container.innerHTML = '<p class="error">Failed to load message log.</p>';
+    }
+}
+
+function generateDaySummary(messages) {
+    const topics = [];
+    messages.forEach(msg => {
+        const text = msg.message.toLowerCase();
+        if (text.includes('repository') || text.includes('repo')) topics.push('repository setup');
+        if (text.includes('investigate') || text.includes('audit')) topics.push('font investigation');
+        if (text.includes('dashboard') || text.includes('panel')) topics.push('dashboard development');
+        if (text.includes('commit') || text.includes('metadata')) topics.push('metadata validation');
+        if (text.includes('config.yaml') || text.includes('gftools')) topics.push('build configuration');
+    });
+    const uniqueTopics = [...new Set(topics)];
+    if (uniqueTopics.length === 0) return 'General discussion and setup';
+    return 'Topics: ' + uniqueTopics.slice(0, 3).join(', ');
+}
+
+function toggleDay(header) {
+    const dayGroup = header.parentElement;
+    const messages = dayGroup.querySelector('.day-messages');
+    const toggle = header.querySelector('.day-toggle');
+
+    if (messages.classList.contains('collapsed')) {
+        messages.classList.remove('collapsed');
+        toggle.textContent = '▲';
+    } else {
+        messages.classList.add('collapsed');
+        toggle.textContent = '▼';
     }
 }
 
