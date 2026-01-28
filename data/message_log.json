@@ -58,5 +58,9 @@
   {
     "timestamp": "2026-01-28T00:00:15Z",
     "message": "O projeto Google Fonts armazena arquivos binários de fontes (arquivos .ttf) no repositório google/fonts (é este o nome que usarei para me referir a https://github.com/google/fonts). Cada um desses arquivos foi em algum momento no passado gerado por um engenheiro de fontes a partir de um processo de compilação das fontes, partindo de arquivos de projeto (me referirei a eles como repos upstream). Os arquivos METADATA.pb no repo google/fonts servem para diversos fins, incluindo a documentação de onde estão os repos upstream de cada fonte. Uma meta inicial é coletar 100% das URLs de repos upstream e documentá-las nos arquivos `METADATA.pb`. Armazene essas ponderações no CLAUDE.md"
+  },
+  {
+    "timestamp": "2026-01-28T00:00:16Z",
+    "message": "Quando as fontes passarem a ser compiladas a partir de seus repos upstream, existe o risco de que os typedesigners tenham feito alterações adicionais nas fontes depois da última vez que elas foram adicionadas ou atualizadas no acervo do Google Fonts. Portanto, outra meta é nos certificar que estamos referenciando os hashes que foram de fato usados originalmente. Qualquer trabalho adicional que tenha sido feito nos repos upstream precisará passar por uma etapa adicional de revisão e controle de qualidade no futuro."
   }
 ]

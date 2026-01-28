@@ -10,11 +10,17 @@ The Google Fonts project stores binary font files (.ttf) in the `google/fonts` r
 - **upstream repos**: Source repositories containing font project files (`.glyphs`, `.ufo`, `.designspace`, etc.) from which the binary fonts are compiled
 - **METADATA.pb**: Protocol buffer files in google/fonts that document font metadata, including the `repository_url` field pointing to upstream repos
 
+### Why Commit Hashes Matter
+
+When fonts are compiled from upstream repos, there is a risk that type designers may have made additional changes after the last time fonts were added or updated in the Google Fonts catalog. Therefore, it is critical to reference the exact commit hashes that were originally used for onboarding.
+
+Any additional work done in upstream repos after the recorded commit will need to go through a separate review and quality assurance process before being incorporated into Google Fonts.
+
 ### Goals
 
 1. **Primary goal**: Collect 100% of upstream repository URLs and document them in the corresponding `METADATA.pb` files
 2. Verify that `repository_url` fields point to valid repositories
-3. Verify that commit hashes in METADATA.pb exist in the upstream repos
+3. Verify that commit hashes in METADATA.pb match the commits originally used for onboarding (not newer commits)
 
 ## Language
 
