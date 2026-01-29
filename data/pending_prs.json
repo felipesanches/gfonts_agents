@@ -348,8 +348,10 @@
       }
     },
     "designers_count": 29,
-    "status": "ready_to_submit",
+    "status": "submitted",
     "created": "2026-01-29T18:08:36Z",
-    "notes": "All bios marked as needs_verification - should be reviewed before PR submission"
+    "notes": "All bios marked as needs_verification - should be reviewed before PR submission",
+    "github_pr": "https://github.com/google/fonts/pull/10164",
+    "submitted_date": "2026-01-29T15:51:46Z"
   }
 ]
