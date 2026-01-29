@@ -316,12 +316,127 @@ th {
     color: #555;
 }
 
-.filter-bar select {
+.filter-bar select,
+.filter-bar input[type="text"] {
     padding: 0.5rem 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
     min-width: 200px;
+}
+
+.filter-bar input[type="text"] {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Designers Grid */
+.designers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.designer-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.designer-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.designer-card.hidden {
+    display: none;
+}
+
+.designer-avatar {
+    flex-shrink: 0;
+}
+
+.designer-avatar img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e0e0e0;
+}
+
+.avatar-placeholder {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #4285f4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.designer-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.designer-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.designer-bio {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.designer-bio.no-bio {
+    color: #999;
+    font-style: italic;
+}
+
+.designer-bio p {
+    margin: 0 0 0.5rem;
+}
+
+.designer-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.designer-bio a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.designer-bio a:hover {
+    text-decoration: underline;
+}
+
+.designer-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4285f4;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.designer-link:hover {
+    text-decoration: underline;
+}
+
+#designer-count {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* Questions List */

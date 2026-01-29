@@ -5,6 +5,7 @@ let questionsData = null;
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     loadFontsAudit();
+    loadDesigners();
     loadPendingPRs();
     loadPendingQuestions();
     loadMessageLog();
@@ -73,6 +74,72 @@ async function loadFontsAudit() {
     } catch (error) {
         container.innerHTML = '<p class="error">Failed to load fonts data.</p>';
     }
+}
+
+let designersData = null;
+
+async function loadDesigners() {
+    const container = document.getElementById('designers-grid');
+    const searchInput = document.getElementById('designer-search');
+    const countSpan = document.getElementById('designer-count');
+
+    try {
+        const response = await fetch('data/designers.json');
+        designersData = await response.json();
+
+        countSpan.textContent = `${designersData.length} designers`;
+
+        // Add search event listener
+        searchInput.addEventListener('input', () => {
+            filterDesigners(searchInput.value);
+        });
+
+        renderDesigners(container, designersData);
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load designers data.</p>';
+    }
+}
+
+function renderDesigners(container, designers) {
+    container.innerHTML = designers.map(designer => `
+        <div class="designer-card" data-name="${escapeHtml(designer.name.toLowerCase())}">
+            <div class="designer-avatar">
+                ${designer.avatar_url
+                    ? `<img src="${escapeHtml(designer.avatar_url)}" alt="${escapeHtml(designer.name)}" loading="lazy" />`
+                    : `<div class="avatar-placeholder">${escapeHtml(designer.name.charAt(0))}</div>`
+                }
+            </div>
+            <div class="designer-info">
+                <h3 class="designer-name">${escapeHtml(designer.name)}</h3>
+                ${designer.bio
+                    ? `<div class="designer-bio">${designer.bio}</div>`
+                    : '<div class="designer-bio no-bio">No bio available</div>'
+                }
+                ${designer.link
+                    ? `<a class="designer-link" href="${escapeHtml(designer.link)}" target="_blank">Website</a>`
+                    : ''
+                }
+            </div>
+        </div>
+    `).join('');
+}
+
+function filterDesigners(searchTerm) {
+    const cards = document.querySelectorAll('.designer-card');
+    const term = searchTerm.toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+        if (card.dataset.name.includes(term)) {
+            card.classList.remove('hidden');
+            visibleCount++;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+
+    document.getElementById('designer-count').textContent =
+        `${visibleCount} of ${designersData.length} designers`;
 }
 
 async function loadPendingPRs() {
