@@ -164,13 +164,18 @@ async function loadPendingPRs() {
                         <span class="pr-status status-${pr.status}">${escapeHtml(pr.status.replace('_', ' '))}</span>
                     </div>
                 </div>
-                <div class="pr-font">Font: ${escapeHtml(pr.font)}</div>
+                ${pr.font ? `<div class="pr-font">Font: ${escapeHtml(pr.font)}</div>` : ''}
+                ${pr.designers_count ? `<div class="pr-font">Designers: ${pr.designers_count}</div>` : ''}
                 <div class="pr-description">${escapeHtml(pr.description)}</div>
                 <div class="pr-files">
-                    <strong>Files to modify:</strong>
-                    <ul>
-                        ${pr.files_to_modify.map(f => `<li><code>${escapeHtml(f)}</code></li>`).join('')}
-                    </ul>
+                    <strong>Files to modify:</strong> ${pr.files_to_modify.length} files
+                    <details>
+                        <summary>Show files</summary>
+                        <ul>
+                            ${pr.files_to_modify.slice(0, 20).map(f => `<li><code>${escapeHtml(f)}</code></li>`).join('')}
+                            ${pr.files_to_modify.length > 20 ? `<li><em>... and ${pr.files_to_modify.length - 20} more</em></li>` : ''}
+                        </ul>
+                    </details>
                 </div>
                 ${pr.changes.add_commit ? `
                     <div class="pr-changes">
@@ -185,8 +190,9 @@ async function loadPendingPRs() {
                         </ul>
                     </div>
                 ` : ''}
+                ${pr.type === 'designer_metadata' ? renderDesignerChanges(pr.changes) : ''}
                 <div class="pr-actions">
-                    <button class="btn-create-pr" onclick="openCreatePR('${escapeHtml(pr.id)}', '${escapeHtml(pr.font)}', '${escapeHtml(pr.title)}')">
+                    <button class="btn-create-pr" onclick="openCreatePR('${escapeHtml(pr.id)}', '${escapeHtml(pr.type)}', '${escapeHtml(pr.title)}')">
                         Create PR on GitHub
                     </button>
                 </div>
@@ -197,13 +203,91 @@ async function loadPendingPRs() {
     }
 }
 
-function openCreatePR(prId, font, title) {
-    const fontSlug = font.toLowerCase().replace(/\s+/g, '');
-    const branch = `fix-metadata-${fontSlug}`;
-    const body = encodeURIComponent(`## Summary\n\nThis PR fixes metadata issues for ${font}.\n\n## Changes\n\n- See pending PR: ${prId}\n\n---\n\n🤖 Generated with Google Fonts Dashboard`);
+function renderDesignerChanges(changes) {
+    // changes is an object with designer IDs as keys
+    const designers = Object.entries(changes);
+    if (designers.length === 0) return '';
+
+    const designerList = designers.slice(0, 10).map(([id, data]) => {
+        const fonts = data.notable_fonts && data.notable_fonts.length > 0
+            ? ` - ${data.notable_fonts.slice(0, 3).join(', ')}`
+            : '';
+        return `<li><strong>${escapeHtml(data.name)}</strong>${fonts}</li>`;
+    }).join('');
+
+    const moreCount = designers.length > 10 ? designers.length - 10 : 0;
+
+    return `
+        <div class="pr-changes">
+            <strong>Designer bios to add:</strong>
+            <details>
+                <summary>Show ${designers.length} designers</summary>
+                <ul>
+                    ${designerList}
+                    ${moreCount > 0 ? `<li><em>... and ${moreCount} more</em></li>` : ''}
+                </ul>
+            </details>
+        </div>
+    `;
+}
+
+function openCreatePR(prId, prType, title) {
+    let body, branch;
+
+    if (prType === 'designer_metadata') {
+        branch = 'add-designer-bios';
+        body = encodeURIComponent(`## Summary
+
+This PR adds biographical information for designers who currently have no bio in the Google Fonts catalog.
+
+## Changes
+
+- Adds \`bio.html\` files for designers missing biographical information
+- Bios researched from GitHub profiles, foundry websites, and verified sources
+- All bios include professional links where available
+
+## Test Plan
+
+- [ ] Verify bio.html files are valid HTML
+- [ ] Check links are working
+- [ ] Review biographical accuracy
+
+---
+
+🤖 Generated with [Google Fonts Dashboard](https://github.com/user/gfonts_agents)
+PR ID: ${prId}`);
+    } else {
+        const fontSlug = prType.toLowerCase().replace(/\s+/g, '');
+        branch = `fix-metadata-${fontSlug}`;
+        body = encodeURIComponent(`## Summary
+
+This PR fixes metadata issues.
+
+## Changes
+
+- See pending PR: ${prId}
+
+---
+
+🤖 Generated with Google Fonts Dashboard`);
+    }
+
     const prTitle = encodeURIComponent(title);
 
-    // Open GitHub's PR creation page
+    // Open GitHub's new issue page with instructions (since we can't create branches directly)
+    // Users need to fork, create branch, make changes, then PR
+    const instructions = encodeURIComponent(`To create this PR:
+
+1. Fork google/fonts if you haven't already
+2. Create a branch named: ${branch}
+3. Make the changes listed in the dashboard
+4. Submit a PR with the title and body provided
+
+Title: ${title}
+
+Body:
+${decodeURIComponent(body)}`);
+
     const url = `https://github.com/google/fonts/compare/main...main?expand=1&title=${prTitle}&body=${body}`;
     window.open(url, '_blank');
 }
