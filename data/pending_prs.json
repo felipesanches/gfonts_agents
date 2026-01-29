@@ -384,5 +384,17 @@
     "status": "submitted",
     "created": "2026-01-29",
     "github_pr": "https://github.com/google/fonts/pull/10167"
+  },
+  {
+    "id": "pr-designer-bios-batch4",
+    "title": "Add designer bio for Nicole Fally",
+    "description": "Austrian/German type designer, MATD Reading 2010. Collaborated with Sorkin Type Co on Limelight, Rye, Hammersmith One, Pinyon Script.",
+    "type": "designer_metadata",
+    "priority": "medium",
+    "designers": ["Nicole Fally"],
+    "designers_count": 1,
+    "status": "submitted",
+    "created": "2026-01-29",
+    "github_pr": "https://github.com/google/fonts/pull/10168"
   }
 ]
