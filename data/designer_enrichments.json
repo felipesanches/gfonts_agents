@@ -819,6 +819,69 @@
       "source": "google_fonts_catalog",
       "status": "needs_verification",
       "added": "2026-01-29"
+    },
+    {
+      "id": "onuryazcgil",
+      "name": "Onur Yazıcıgil",
+      "bio_html": "<p>Onur Yazıcıgil is a Turkish typographer and type designer based in Istanbul. He holds a PhD in Graphic Design with a specialization in Ottoman Typography History from Mimar Sinan Fine Arts University, an MFA in Visual Communication Design from Purdue University (USA), and a BFA in Graphic Design from Bilkent University in Ankara.</p><p>He serves as Assistant Professor of Visual Communication Design at Sabanci University in Istanbul. His academic research focuses on Ottoman typography history. He designed Duru Sans, a low-contrast humanist sans-serif typeface available on Google Fonts since 2011.</p>",
+      "links": [
+        "http://www.onuryazicigil.com"
+      ],
+      "notable_fonts": [
+        "Duru Sans"
+      ],
+      "source": "personal_website_and_google_fonts",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "pablougerman",
+      "name": "Pablo Ugerman",
+      "bio_html": "<p>Pablo Ugerman is an Argentine type designer who has contributed multiple typefaces to the Google Fonts library. His work spans various styles and includes both Latin and multi-script designs.</p><p>He is known for collaborating on typeface projects with other designers, including work on Thai-Latin font families. His fonts demonstrate a commitment to expanding typographic resources for global audiences.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Trirong",
+        "Asul"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "martinsommaruga",
+      "name": "Martin Sommaruga",
+      "bio_html": "<p>Martin Sommaruga is a type designer who runs Estudio Trama, a design studio based in South America. He has contributed open-source typefaces to Google Fonts since 2012.</p><p>His typeface Rambla is a humanist sans-serif designed for medium-long texts, featuring a slightly condensed design with a generous x-height and economical proportions. Rufina, his serif typeface, combines features of several typographic styles with Bodoni forms found in the calligraphy of flexible tip pens, featuring high contrast that works well in both text and headlines.</p>",
+      "links": [
+        "http://www.estudiotrama.com"
+      ],
+      "notable_fonts": [
+        "Rambla",
+        "Rufina"
+      ],
+      "source": "google_fonts_fontlog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "michalsahar",
+      "name": "Michal Sahar",
+      "bio_html": "<p>Michal Sahar (born 1970) is an Israeli type designer, graphic designer, and typographer based in Tel Aviv. She runs her own design studio and is a senior lecturer and head of the Graphic-Typographic track in the Visual Communication Department at Bezalel Academy of Arts and Design, Jerusalem. She is a graduate of Bezalel and co-founder of Hagilda, a cooperative font foundry established in 2002 with Danny Mirav (Hatayas).</p><p>Sahar has designed branding and visual identities for major institutions including Bezalel Academy, Tel Aviv Museum of Art, Petach Tikva Museum, and Jaffa Port. She has received numerous awards including the Israeli Ministry of Culture Design Award (2004), ADC Bronze Cube (2012), Granshan 2nd prize for Fedra Hebrew (2015), and TDC Certificate of Typographic Excellence (2017).</p>",
+      "links": [
+        "https://hagilda.com",
+        "https://hagilda.com/member/michal",
+        "https://github.com/MichalSahar",
+        "https://instagram.com/michalsaharstudio"
+      ],
+      "notable_fonts": [
+        "Miriam Libre",
+        "Secular One",
+        "Suez One",
+        "Fedra Hebrew",
+        "Greta Text Hebrew"
+      ],
+      "source": "hagilda_website_and_github",
+      "status": "needs_verification",
+      "added": "2026-01-29"
     }
   ]
 }
