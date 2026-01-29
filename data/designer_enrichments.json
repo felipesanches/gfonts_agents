@@ -1007,6 +1007,47 @@
       "source": "github_repos_and_fontsource",
       "status": "needs_verification",
       "added": "2026-01-29"
+    },
+    {
+      "id": "cadsondemak",
+      "name": "Cadson Demak",
+      "bio_html": "<p>Cadson Demak is a type foundry based in Thailand specializing in Thai and multilingual typeface design. The foundry has been a major contributor to Google Fonts, creating numerous high-quality Thai typefaces that work harmoniously with Latin scripts. Their work focuses on both traditional looped Thai designs and modern loopless Thai styles.</p><p>The foundry is known for their meticulous approach to Thai typography, paying special attention to the legibility of similar-looking Thai characters and the careful positioning of vowels and tone marks. Their fonts are used widely in both digital and print media, with some typefaces like Sarabun being adopted by the Thai government for official documentation.</p>",
+      "links": [
+        "https://www.cadsondemak.com",
+        "https://github.com/cadsondemak"
+      ],
+      "notable_fonts": [
+        "Kanit",
+        "Sarabun",
+        "Prompt",
+        "Anuphan",
+        "Sriracha",
+        "Itim",
+        "Athiti",
+        "Pridi"
+      ],
+      "source": "github_organization",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "nicolefally",
+      "name": "Nicole Fally",
+      "bio_html": "<p>Nicole Fally is a type designer from Austria/Germany. She graduated from the prestigious MA Typeface Design (MATD) program at the University of Reading in 2010, where she designed \"Miss Informed\" as her thesis typeface.</p><p>She has collaborated extensively with Sorkin Type Co (Eben Sorkin) to create display typefaces for Google Fonts. Her work spans a variety of styles including Western-inspired display faces (Rye), Art Deco geometric sans serifs (Limelight), and elegant scripts (Pinyon Script).</p>",
+      "links": [
+        "https://www.t-g-d.at"
+      ],
+      "notable_fonts": [
+        "Hammersmith One",
+        "Limelight",
+        "Ovo",
+        "Pinyon Script",
+        "Rye",
+        "Vast Shadow"
+      ],
+      "source": "google_fonts_fontlog_and_matd",
+      "status": "needs_verification",
+      "added": "2026-01-29"
     }
   ]
 }
