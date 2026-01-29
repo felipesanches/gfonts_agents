@@ -403,21 +403,18 @@ async function loadFridayStatus() {
     const plannedList = document.getElementById('status-planned');
     const questionsList = document.getElementById('status-questions');
 
-    // Get current week's Friday
-    const today = new Date();
-    const friday = getNextFriday(today);
+    // Get the status week window (Friday 2pm GMT-3 to following Friday 1pm GMT-3)
+    const { windowStart, windowEnd, friday } = getStatusWeekWindow();
     weekSpan.textContent = `Week of ${friday.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
 
     try {
         const response = await fetch('data/message_log.json');
         const messages = await response.json();
 
-        // Get messages from this week (since last Friday)
-        const lastFriday = new Date(friday);
-        lastFriday.setDate(lastFriday.getDate() - 7);
+        // Get messages within the status week window
         const weekMessages = messages.filter(m => {
             const msgDate = new Date(m.timestamp);
-            return msgDate >= lastFriday && msgDate <= friday;
+            return msgDate >= windowStart && msgDate <= windowEnd;
         });
 
         // Extract status items from messages
@@ -439,12 +436,40 @@ async function loadFridayStatus() {
     }
 }
 
-function getNextFriday(date) {
-    const d = new Date(date);
-    const day = d.getDay();
-    const diff = (5 - day + 7) % 7;
-    d.setDate(d.getDate() + (diff === 0 ? 0 : diff));
-    return d;
+function getStatusWeekWindow() {
+    // Status week: Friday 2pm GMT-3 to following Friday 1pm GMT-3
+    // GMT-3 offset in minutes: -180 (or +180 to convert to UTC)
+    const GMT_MINUS_3_OFFSET = 180; // minutes to add to get UTC
+
+    const now = new Date();
+
+    // Find the upcoming Friday (or today if it's Friday before 1pm GMT-3)
+    const friday = new Date(now);
+    const day = friday.getDay();
+
+    // Calculate days until Friday (0 = Sunday, 5 = Friday)
+    let daysUntilFriday = (5 - day + 7) % 7;
+    if (daysUntilFriday === 0) {
+        // It's Friday - check if we're past 1pm GMT-3
+        const nowInGMT3 = new Date(now.getTime() + (now.getTimezoneOffset() - GMT_MINUS_3_OFFSET) * 60000);
+        if (nowInGMT3.getHours() >= 13) {
+            // Past 1pm GMT-3 on Friday, move to next Friday
+            daysUntilFriday = 7;
+        }
+    }
+    friday.setDate(friday.getDate() + daysUntilFriday);
+    friday.setHours(0, 0, 0, 0);
+
+    // Window end: This Friday at 1pm GMT-3 (16:00 UTC)
+    const windowEnd = new Date(friday);
+    windowEnd.setUTCHours(16, 0, 0, 0); // 1pm GMT-3 = 16:00 UTC
+
+    // Window start: Previous Friday at 2pm GMT-3 (17:00 UTC)
+    const windowStart = new Date(friday);
+    windowStart.setDate(windowStart.getDate() - 7);
+    windowStart.setUTCHours(17, 0, 0, 0); // 2pm GMT-3 = 17:00 UTC
+
+    return { windowStart, windowEnd, friday };
 }
 
 function extractStatusFromMessages(messages) {

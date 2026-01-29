@@ -75,6 +75,19 @@ All conversation messages must be logged to `data/message_log.json` with timesta
 
 For Portuguese messages, include an English translation. Append new messages as they are received.
 
+## Friday Status Update
+
+The Friday Status tab provides a weekly status report for the Google Fonts team call. This must be kept always up-to-date with the following criteria:
+
+- **Time window**: Friday 2:00 PM (GMT-3) to the following Friday 1:00 PM (GMT-3)
+- **Content**: All significant work accomplished during that week
+- **Sections**:
+  - What was done this week
+  - Planned for next week
+  - Questions for the team
+
+The status is automatically extracted from `data/message_log.json` entries within the time window. Ensure all significant accomplishments (PRs created, features implemented, investigations completed) are logged to the message log so they appear in the Friday Status.
+
 ## Development
 
 Run locally with `./run.sh` (uses Python's http.server).
