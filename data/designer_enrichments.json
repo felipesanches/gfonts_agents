@@ -882,6 +882,131 @@
       "source": "hagilda_website_and_github",
       "status": "needs_verification",
       "added": "2026-01-29"
+    },
+    {
+      "id": "riccardodefranceschi",
+      "name": "Riccardo De Franceschi",
+      "bio_html": "<p>Riccardo De Franceschi is an Italian type designer known for creating distinctive display typefaces. He runs RDF Type (rdftype.it) and has collaborated with Sorkin Type Co on several projects for Google Fonts.</p><p>His typefaces are characterized by bold, expressive forms well-suited for headlines and display use. Many of his designs feature playful personality and strong visual impact, ranging from the ultra-bold slab serif Gravitas One to the decorative Goblin One and Vampiro One.</p>",
+      "links": [
+        "http://www.rdftype.it/"
+      ],
+      "notable_fonts": [
+        "Gravitas One",
+        "Asset",
+        "Goblin One",
+        "Vampiro One",
+        "Contrail One",
+        "Sonsie One"
+      ],
+      "source": "google_fonts_fontlog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "nataliaraices",
+      "name": "Natalia Raices",
+      "bio_html": "<p>Natalia Raices is a type designer who has contributed handwriting-style typefaces to Google Fonts since 2011. Her work focuses on creating friendly, approachable display fonts with a handwritten character.</p><p>She designed the Delius family, including Delius, Delius Unicase, and Delius Swash Caps. These typefaces feature a casual, hand-lettered aesthetic suitable for informal design applications.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Delius",
+        "Delius Unicase",
+        "Delius Swash Caps"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "linusromer",
+      "name": "Linus Romer",
+      "bio_html": "<p>Linus Romer is a type designer and font developer specializing in font technology and open-source tools for the type design community. He has developed several widely-used utilities for font engineering, including tools for curve manipulation, METAFONT conversion, and font interpolation.</p><p>His work focuses on technical aspects of type design, creating plugins for FontForge and developing software that bridges traditional METAFONT technology with modern outline font formats. He is recognized as a contributor to the Arctic Code Vault and has an active presence in the open-source typography community.</p>",
+      "links": [
+        "https://github.com/linusromer"
+      ],
+      "notable_fonts": [],
+      "source": "github_profile",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "josbuivenga",
+      "name": "Jos Buivenga",
+      "bio_html": "<p>Jos Buivenga is a Dutch type designer and founder of exljbris Font Foundry, based in the Netherlands. He began designing typefaces in 2005 and has since become known for creating high-quality fonts, many of which he has released as free fonts.</p><p>His work is characterized by elegant, versatile typefaces suitable for both display and text use. Buivenga's fonts have been downloaded millions of times and are widely used in both print and digital design projects worldwide.</p>",
+      "links": [
+        "https://www.exljbris.com/"
+      ],
+      "notable_fonts": [
+        "Museo",
+        "Museo Sans",
+        "Museo Slab",
+        "Calluna",
+        "Calluna Sans",
+        "Fontin",
+        "Fontin Sans"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "typetogether",
+      "name": "TypeTogether",
+      "bio_html": "<p>TypeTogether is an indie type foundry established in 2006 by Veronika Burian and José Scaglione. The foundry focuses on creating high-quality typefaces for extended reading and editorial use, with particular attention to multi-script and multi-language support.</p><p>Based between Czech Republic and Argentina, TypeTogether has earned recognition for their meticulous approach to type design, winning numerous awards including multiple TDC (Type Directors Club) awards. Their fonts are widely used in editorial design, corporate identity, and digital publishing.</p>",
+      "links": [
+        "https://www.type-together.com"
+      ],
+      "notable_fonts": [
+        "Adelle",
+        "Adelle Sans",
+        "Bree",
+        "Bree Serif",
+        "Athelas",
+        "Karmina"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "ebensorkin",
+      "name": "Eben Sorkin",
+      "bio_html": "<p>Eben Sorkin is an American type designer based in Shelburne Falls, Massachusetts, and the founder of Sorkin Type Co. His work focuses on creating typefaces optimized for screen readability and extended language support, with particular attention to Latin and Cyrillic scripts.</p><p>Sorkin Type Co. maintains over 60 open-source font families, many of which are available through Google Fonts. The foundry has been developing typefaces for over 12 years, with Merriweather being one of the most widely used serif fonts on the web.</p>",
+      "links": [
+        "https://sorkintype.com",
+        "https://github.com/EbenSorkin",
+        "https://github.com/SorkinType"
+      ],
+      "notable_fonts": [
+        "Merriweather",
+        "Merriweather Sans",
+        "Gelasio",
+        "Calistoga",
+        "Martel",
+        "Pacifico",
+        "Great Vibes"
+      ],
+      "source": "github_profile_and_repos",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "sorasagano",
+      "name": "Sora Sagano",
+      "bio_html": "<p>Sora Sagano is a Japanese type designer and the founder of dotcolon, an independent type foundry based in Japan. The foundry specializes in creating high-quality open-source typefaces released under permissive licenses such as CC0 1.0 Universal and SIL Open Font License.</p><p>Sora Sagano's typefaces are known for their clean, modern aesthetic and include both sans-serif and serif designs. The foundry's work has been widely adopted in open-source projects, with Vegur serving as the official font for LibreOffice branding.</p>",
+      "links": [
+        "https://dotcolon.net"
+      ],
+      "notable_fonts": [
+        "Aileron",
+        "Nacelle",
+        "Vegur",
+        "Route 159",
+        "Medio",
+        "Tenderness"
+      ],
+      "source": "github_repos_and_fontsource",
+      "status": "needs_verification",
+      "added": "2026-01-29"
     }
   ]
 }
