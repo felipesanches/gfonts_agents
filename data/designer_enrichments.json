@@ -495,6 +495,107 @@
       "source": "google_fonts_metadata",
       "status": "needs_verification",
       "added": "2026-01-29"
+    },
+    {
+      "id": "brianzick",
+      "name": "Brian Zick",
+      "bio_html": "<p>Brian Zick is a type designer who has contributed fonts to Google Fonts. He is known for designing decorative and display typefaces.</p><p>His work includes Sevillana, a decorative calligraphic script typeface inspired by Spanish and Latin American lettering traditions.</p>",
+      "links": [
+        "https://github.com/brianazick"
+      ],
+      "notable_fonts": [
+        "Sevillana"
+      ],
+      "source": "training_data_partial",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "brownfox",
+      "name": "Brownfox",
+      "bio_html": "<p>Brownfox is a type design studio based in Bangkok, Thailand, specializing in creating typefaces with Thai and Latin script support. The foundry focuses on developing high-quality fonts that serve the needs of both Thai and international typography.</p><p>Their work is characterized by modern, geometric designs that maintain excellent readability across both Thai and Latin characters. Multiple Brownfox typefaces are available on Google Fonts, making Thai typography more accessible to designers and developers worldwide.</p>",
+      "links": [
+        "https://www.f0nt.com/release/brownfox/"
+      ],
+      "notable_fonts": [
+        "Kanit",
+        "Itim",
+        "K2D",
+        "KoHo",
+        "Kodchasan",
+        "Krub",
+        "Mali",
+        "Sarabun"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "clauseggerssrensen",
+      "name": "Claus Eggers Sørensen",
+      "bio_html": "<p>Claus Eggers Sørensen received his BDes from The Gerrit Rietveld Academie in Amsterdam, The Netherlands, and a Master of Arts in Typeface Design at The Department of Typography & Graphic Communication, The University of Reading.</p><p>He has a background in graphic design and commercial art direction. Though of Danish nationality, he is currently living and working in Amsterdam.</p>",
+      "links": [
+        "https://www.forthehearts.net"
+      ],
+      "notable_fonts": [
+        "Lora"
+      ],
+      "source": "google_fonts_catalog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "gesinetodt",
+      "name": "Gesine Todt",
+      "bio_html": "<p>Gesine Todt is a type designer who has contributed to font development projects. She is credited as a contributor to the Nunito typeface family, working alongside Vernon Adams (original designer) and Jacques Le Bailly.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Nunito"
+      ],
+      "source": "training_data_partial",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "haleyfiege",
+      "name": "Haley Fiege",
+      "bio_html": "<p>Haley Fiege is a Canadian type designer and illustrator based in Montreal. She creates playful, expressive typefaces that often blend illustration with typography, bringing a unique artistic sensibility to font design.</p><p>Fiege is best known for her collaboration with artist Shantell Martin on Shantell Sans, a handwriting-inspired variable font released on Google Fonts in 2023. The typeface captures Martin's distinctive drawing style in a functional font family with multiple weights and an italic axis.</p>",
+      "links": [
+        "https://haleyfiege.fun/",
+        "https://www.instagram.com/haleyfiege/"
+      ],
+      "notable_fonts": [
+        "Shantell Sans"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "fernandodiaz",
+      "name": "Fernando Díaz",
+      "bio_html": "<p>Fernando Díaz is a type designer known for creating the Fenix typeface, a serif font added to Google Fonts in September 2012.</p><p>Fenix is a serif typeface designed for display and text use, featuring Latin and Latin Extended character support.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Fenix"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "constanzaartigas",
+      "name": "Constanza Artigas",
+      "bio_html": "<p>Constanza Artigas Preller is a typeface and graphic designer from South America. Her work is characterized by cultural and historical inspirations from Latin American heritage.</p><p>She designed Inika in 2011, a serif typeface inspired by Easter Island's Rapa Nui language and culture. The name means \"ink\" in Rapa Nui. She also co-designed Homenaje with Agustina Mingote, a narrow grotesque sans-serif inspired by bronze cemetery lettering found in Buenos Aires, Argentina.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Inika",
+        "Homenaje"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
     }
   ]
 }
