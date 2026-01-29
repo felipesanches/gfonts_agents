@@ -596,6 +596,229 @@
       "source": "google_fonts_metadata",
       "status": "needs_verification",
       "added": "2026-01-29"
+    },
+    {
+      "id": "gustavodipre",
+      "name": "Gustavo Dipre",
+      "bio_html": "<p>Gustavo Dipre is a type designer who has contributed to the Google Fonts library. He co-designed Gorditas with Brenda Gallo, a fun and funky display slab serif typeface family featuring heart details.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Gorditas"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "sudtipos",
+      "name": "Sudtipos",
+      "bio_html": "<p>Sudtipos is a renowned type foundry based in Buenos Aires, Argentina, founded in 2002. The foundry has become internationally recognized for its distinctive approach to type design, particularly excelling in script, display, and decorative typefaces that often draw inspiration from Latin American lettering traditions, vintage signage, and mid-century design aesthetics.</p><p>The foundry was co-founded by Alejandro Paul (Ale Paul), who serves as its principal designer and creative force. Working alongside collaborators including Joluvian, Diego Giaccone, and others, Sudtipos has built an impressive catalog of award-winning typefaces.</p>",
+      "links": [
+        "https://www.sudtipos.com",
+        "https://www.instagram.com/sudtipos"
+      ],
+      "notable_fonts": [
+        "Burgues Script",
+        "Affair",
+        "Adios Script",
+        "Hipster Script",
+        "Ministry Script",
+        "Thirsty Script",
+        "Candy Script"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "frankgriehammer",
+      "name": "Frank Grießhammer",
+      "bio_html": "<p>Frank Grießhammer is a German type designer who worked at Adobe as a senior type designer. He is known for his work on the Source Han Sans and Source Han Serif pan-CJK typeface families, massive collaborative projects supporting Chinese, Japanese, and Korean scripts.</p><p>Beyond his type design work, Grießhammer has contributed significantly to font tooling and the open-source font development ecosystem. He has been involved in developing tools for font production and has shared his expertise through talks and workshops at typography conferences.</p>",
+      "links": [
+        "https://github.com/frankrolf"
+      ],
+      "notable_fonts": [
+        "Source Han Sans",
+        "Source Han Serif"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "vladimiryefimov",
+      "name": "Vladimir Yefimov",
+      "bio_html": "<p>Vladimir Yefimov (1949-2012) was a prominent Russian type designer and one of the founders of ParaType, the leading Russian digital type foundry. He was instrumental in developing high-quality Cyrillic typefaces and adapting Western designs for Russian typography.</p><p>Yefimov designed numerous original typefaces and supervised the development of many more at ParaType. His work helped establish modern standards for Cyrillic type design and made professional typography accessible to Russian-speaking designers and publishers.</p>",
+      "links": [
+        "https://www.paratype.com"
+      ],
+      "notable_fonts": [
+        "PT Sans",
+        "PT Serif",
+        "Yefimov Serif",
+        "Octava"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "monokrom",
+      "name": "Monokrom",
+      "bio_html": "<p>Monokrom is an independent type foundry based in Oslo, Norway, founded by Frode Helland and Sindre Bremnes. The foundry specializes in creating high-quality retail and custom typefaces with a distinctive Scandinavian design sensibility.</p><p>Monokrom's typefaces are known for their careful attention to detail, extensive language support, and thoughtful design that balances functionality with character. The foundry has contributed fonts to Google Fonts and works with international clients on custom typography projects.</p>",
+      "links": [
+        "https://monokrom.no"
+      ],
+      "notable_fonts": [
+        "Satyr",
+        "Faunus",
+        "Emigre",
+        "Siri"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "sindrebremnes",
+      "name": "Sindre Bremnes",
+      "bio_html": "<p>Sindre Bremnes is a Norwegian type designer and co-founder of Monokrom, an independent type foundry based in Oslo, Norway. He studied at the Type and Media program at the Royal Academy of Art (KABK) in The Hague, Netherlands.</p><p>Together with Frode Helland, Bremnes has helped establish Monokrom as a respected foundry known for carefully crafted typefaces with strong Scandinavian design influences.</p>",
+      "links": [
+        "https://monokrom.no"
+      ],
+      "notable_fonts": [
+        "Satyr",
+        "Faunus"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "sandoll",
+      "name": "Sandoll",
+      "bio_html": "<p>Sandoll is a pioneering Korean type foundry founded in 1984, making it one of the oldest and most influential digital type companies in South Korea. The foundry specializes in Korean Hangul typefaces as well as multilingual font families.</p><p>Sandoll has played a crucial role in the development of Korean digital typography, creating numerous typefaces used across print, web, and mobile platforms. The foundry continues to innovate in Korean type design while expanding its offerings to support global typography needs.</p>",
+      "links": [
+        "https://www.sandoll.co.kr"
+      ],
+      "notable_fonts": [
+        "Sandoll Gothic",
+        "Sandoll Myungjo",
+        "Sandoll Jebi"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "motaitalic",
+      "name": "Mota Italic",
+      "bio_html": "<p>Mota Italic is a type foundry run by Rob Keller, focusing on creating distinctive text and display typefaces. The foundry is known for producing carefully crafted fonts with strong personalities and excellent technical quality.</p><p>Keller's approach to type design emphasizes both aesthetic appeal and functional performance, resulting in typefaces that work well across various applications from editorial design to branding.</p>",
+      "links": [
+        "https://www.motaitalic.com"
+      ],
+      "notable_fonts": [
+        "Balto",
+        "Magda"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "madtype",
+      "name": "MADType",
+      "bio_html": "<p>MADType is a type foundry founded by Matthew Desmond. The foundry has contributed several open-source typefaces to Google Fonts, including display and text faces spanning both serif and sans-serif categories.</p><p>Matthew Desmond's fonts, such as Abel (a modern condensed sans-serif) and Quantico (a techno-futuristic design), have been available on Google Fonts since 2011-2012, demonstrating early participation in the open-source web font movement.</p>",
+      "links": [
+        "http://www.madtype.com"
+      ],
+      "notable_fonts": [
+        "Abel",
+        "Aldrich",
+        "Cagliostro",
+        "Lustria",
+        "Quantico"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "jasperdewaard",
+      "name": "Jasper de Waard",
+      "bio_html": "<p>Jasper de Waard is a self-taught type designer from Rotterdam, the Netherlands, who runs Bureau Roffa, a boutique type foundry. His fascination with typography began early - he published his first typeface on MyFonts at the age of twelve. After an internship at Dalton Maag, he founded Bureau Roffa.</p><p>Beyond type design, Jasper pursues a parallel career in cognitive science. He is currently a PhD student at Vrije Universiteit Amsterdam in the Department of Cognitive Psychology, conducting experimental research on visual attention.</p>",
+      "links": [
+        "http://bureauroffa.com",
+        "https://github.com/jasperdewaard"
+      ],
+      "notable_fonts": [
+        "Proza",
+        "Proza Display",
+        "Proza Libre"
+      ],
+      "source": "bureauroffa_website",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "jonashecksher",
+      "name": "Jonas Hecksher",
+      "bio_html": "<p>Jonas Hecksher is a Danish type designer and co-founder of Playtype, a type foundry based in Copenhagen, Denmark. He co-founded Playtype together with Rikke Friis in 2005.</p><p>The foundry has become known for both their retail typefaces and custom type design work, with a distinctive Scandinavian aesthetic that combines clean modernism with expressive character.</p>",
+      "links": [
+        "https://playtype.com"
+      ],
+      "notable_fonts": [
+        "Cera",
+        "Nordic",
+        "Archive"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "szymoncelej",
+      "name": "Szymon Celej",
+      "bio_html": "<p>Szymon Celej is a Polish type designer who runs Hypnotype, a type design studio. He specializes in creating contemporary typefaces with strong visual character and has collaborated with established type foundries and designers.</p><p>His typeface Doppio One, available on Google Fonts since 2012, is a robust low-contrast sans-serif with a boxy, contemporary feel designed for both screen use and display sizes. The font was mastered in collaboration with Eben Sorkin of Sorkin Type Co.</p>",
+      "links": [
+        "https://www.hypnotype.com"
+      ],
+      "notable_fonts": [
+        "Doppio One"
+      ],
+      "source": "google_fonts_fontlog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "olgaumpeleva",
+      "name": "Olga Umpeleva",
+      "bio_html": "<p>Olga Umpeleva is a type designer who has worked with Brownfox, a type design studio. Her typefaces are known for their playful, decorative character with distinctive personalities.</p><p>She designed Sevillana, a headline typeface inspired by the handmade ceramic commemorative plates found on house walls in Andalusia, Spain. She also created Henny Penny, an offbeat display font named after the fairy-tale chicken character, featuring a friendly and playful structure.</p>",
+      "links": [
+        "https://www.brownfox.org"
+      ],
+      "notable_fonts": [
+        "Sevillana",
+        "Henny Penny"
+      ],
+      "source": "google_fonts_fontlog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "spyroszevelakis",
+      "name": "Spyros Zevelakis",
+      "bio_html": "<p>Spyros Zevelakis is a Greek type designer known for creating geometric sans serif typefaces. His work draws inspiration from early 20th century poster lettering and epigraphic Greek monoline letters.</p><p>His typefaces Alata and Alatsi, published by Sorkin Type in collaboration with Eben Sorkin, are available on Google Fonts. Both designs feature geometric forms with distinctive contemporary touches.</p>",
+      "links": [
+        "https://www.2xux.com/"
+      ],
+      "notable_fonts": [
+        "Alata",
+        "Alatsi"
+      ],
+      "source": "google_fonts_catalog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
     }
   ]
 }
