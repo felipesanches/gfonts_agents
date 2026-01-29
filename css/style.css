@@ -634,28 +634,34 @@ th {
     padding: 0;
 }
 
-.pr-actions {
+.pr-notes {
     margin-top: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-.btn-create-pr {
-    background: #2e7d32;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    font-size: 1rem;
+.pr-files details,
+.pr-changes details {
+    margin-top: 0.5rem;
+}
+
+.pr-files summary,
+.pr-changes summary {
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background 0.2s;
+    color: #1565c0;
+    font-size: 0.9rem;
 }
 
-.btn-create-pr:hover {
-    background: #1b5e20;
+.pr-files summary:hover,
+.pr-changes summary:hover {
+    text-decoration: underline;
+}
+
+.pr-status.status-ready_to_submit {
+    background: #e8f5e9;
+    color: #2e7d32;
 }
 
 footer {

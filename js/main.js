@@ -191,11 +191,7 @@ async function loadPendingPRs() {
                     </div>
                 ` : ''}
                 ${pr.type === 'designer_metadata' ? renderDesignerChanges(pr.changes) : ''}
-                <div class="pr-actions">
-                    <button class="btn-create-pr" onclick="openCreatePR('${escapeHtml(pr.id)}', '${escapeHtml(pr.type)}', '${escapeHtml(pr.title)}')">
-                        Create PR on GitHub
-                    </button>
-                </div>
+                ${pr.notes ? `<div class="pr-notes"><em>Note: ${escapeHtml(pr.notes)}</em></div>` : ''}
             </div>
         `).join('');
     } catch (error) {
@@ -231,66 +227,6 @@ function renderDesignerChanges(changes) {
     `;
 }
 
-function openCreatePR(prId, prType, title) {
-    let body, branch;
-
-    if (prType === 'designer_metadata') {
-        branch = 'add-designer-bios';
-        body = encodeURIComponent(`## Summary
-
-This PR adds biographical information for designers who currently have no bio in the Google Fonts catalog.
-
-## Changes
-
-- Adds \`bio.html\` files for designers missing biographical information
-- Bios researched from GitHub profiles, foundry websites, and verified sources
-- All bios include professional links where available
-
-## Test Plan
-
-- [ ] Verify bio.html files are valid HTML
-- [ ] Check links are working
-- [ ] Review biographical accuracy
-
----
-
-🤖 Generated with [Google Fonts Dashboard](https://github.com/user/gfonts_agents)
-PR ID: ${prId}`);
-    } else {
-        const fontSlug = prType.toLowerCase().replace(/\s+/g, '');
-        branch = `fix-metadata-${fontSlug}`;
-        body = encodeURIComponent(`## Summary
-
-This PR fixes metadata issues.
-
-## Changes
-
-- See pending PR: ${prId}
-
----
-
-🤖 Generated with Google Fonts Dashboard`);
-    }
-
-    const prTitle = encodeURIComponent(title);
-
-    // Open GitHub's new issue page with instructions (since we can't create branches directly)
-    // Users need to fork, create branch, make changes, then PR
-    const instructions = encodeURIComponent(`To create this PR:
-
-1. Fork google/fonts if you haven't already
-2. Create a branch named: ${branch}
-3. Make the changes listed in the dashboard
-4. Submit a PR with the title and body provided
-
-Title: ${title}
-
-Body:
-${decodeURIComponent(body)}`);
-
-    const url = `https://github.com/google/fonts/compare/main...main?expand=1&title=${prTitle}&body=${body}`;
-    window.open(url, '_blank');
-}
 
 async function loadPendingQuestions() {
     const container = document.getElementById('questions-list');
