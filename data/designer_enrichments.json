@@ -1,0 +1,500 @@
+{
+  "description": "Tracks new designer metadata to be submitted as PR to google/fonts",
+  "created": "2026-01-29",
+  "enrichments": [
+    {
+      "id": "astigmatic",
+      "name": "Astigmatic",
+      "bio_html": "<p>Astigmatic is a type foundry run by Brian J. Bonislawsky, a prolific American type designer. Based in the United States, Brian has designed hundreds of fonts spanning a wide range of styles including scripts, display faces, and decorative typefaces.</p><p>His work is known for its creativity and versatility, with many of his designs available on Google Fonts. Notable typefaces include Yellowtail, Pacifico, Kaushan Script, Lobster Two, and various display fonts like Creepster and Butcherman.</p>",
+      "links": [
+        "https://www.astigmatic.com/",
+        "https://www.myfonts.com/foundry/Astigmatic/"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "antonkoovit",
+      "name": "Anton Koovit",
+      "bio_html": "<p>Anton Koovit is an Estonian type designer based in Tallinn, and the founder of the type foundry Tipo (formerly known as exljbris Font Foundry). He studied at the renowned Type and Media program at KABK (Royal Academy of Art) in The Hague, Netherlands.</p><p>Koovit is known for designing highly successful typeface families including Museo, Museo Sans, Calluna, and Calluna Sans. His work is characterized by a balance between functionality and distinctive personality, making his fonts popular choices for both text and display purposes.</p>",
+      "links": [
+        "https://www.tipo.io",
+        "https://www.instagram.com/tipo.io/"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "alexeykryukov",
+      "name": "Alexey Kryukov",
+      "bio_html": "<p>Alexey Kryukov is a Russian philologist and type designer based in Moscow, affiliated with Moscow State University. He specializes in creating multilingual fonts for classical and historical texts, with particular expertise in Latin, Greek (including polytonic), and Cyrillic scripts.</p><p>His work focuses on reviving historical typeface styles, especially the \"Modern\" (classicist) serif style popular in late 19th and early 20th century printing. His fonts are designed primarily for philologists, classicists, germanists, and slavists who work with scholarly texts and historical documents.</p>",
+      "links": [
+        "https://github.com/akryukov"
+      ],
+      "notable_fonts": [
+        "Old Standard TT",
+        "Theano Classical Fonts",
+        "Monomachus",
+        "Tempora LGC Unicode"
+      ],
+      "source": "github_and_archive",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "julietaulanovsky",
+      "name": "Julieta Ulanovsky",
+      "bio_html": "<p>Julieta Ulanovsky is an Argentine type designer based in Buenos Aires. She began designing the Montserrat typeface in 2010 while a post-graduate student of typeface design at FADU, University of Buenos Aires. In 2011, she launched Montserrat as a Kickstarter project to fund its first public release.</p><p>The typeface was inspired by the old posters and signs in the traditional Montserrat neighborhood of Buenos Aires, aiming to rescue the beauty of urban typography from the first half of the twentieth century. Since its release on Google Fonts, Montserrat has become one of the most popular open-source typefaces, with over 1,700 stars on GitHub. Julieta has collaborated with numerous designers to expand the family, including Ale Paul, Jacques Le Bailly, Juan Pablo del Peral, and Sol Matas.</p>",
+      "links": [
+        "https://github.com/JulietaUla"
+      ],
+      "notable_fonts": [
+        "Montserrat",
+        "Montserrat Alternates",
+        "Montserrat Underline"
+      ],
+      "source": "github_readme",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "christianrobertson",
+      "name": "Christian Robertson",
+      "bio_html": "<p>Christian Robertson is a type designer and visual designer based in the San Francisco Bay Area who works at Google. He is best known for creating Roboto, the default font family for Android and a core part of Google's Material Design system. Robertson joined Google in 2011 and has been instrumental in developing the typographic identity across Android and various Google products.</p><p>In addition to Roboto, Robertson has designed other notable typefaces including Roboto Slab, Roboto Mono, and Roboto Flex, a variable font version. Before joining Google, he created the Ubuntu font family for Canonical Ltd. His work focuses on creating highly legible typefaces optimized for digital screens and user interfaces.</p>",
+      "links": [
+        "https://twitter.com/cr64"
+      ],
+      "notable_fonts": [
+        "Roboto",
+        "Roboto Slab",
+        "Roboto Mono",
+        "Roboto Flex",
+        "Ubuntu"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "mattmcinerney",
+      "name": "Matt McInerney",
+      "bio_html": "<p>Matt McInerney is a type designer and graphic designer based in the United States. He is a co-founder of The League of Moveable Type, one of the first open-source type foundries that provides high-quality, free fonts to the design community.</p><p>McInerney is known for his work on popular open-source typefaces and has contributed significantly to making quality typography accessible to designers worldwide. He studied at Tyler School of Art and has worked in both print and digital design.</p>",
+      "links": [
+        "https://www.theleagueofmoveabletype.com",
+        "https://mattmcinerney.com"
+      ],
+      "notable_fonts": [
+        "Raleway",
+        "Orbitron",
+        "League Gothic"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "marksimonson",
+      "name": "Mark Simonson",
+      "bio_html": "<p>Mark Simonson is an American type designer and graphic designer based in Saint Paul, Minnesota. He began his career as a graphic designer in the 1970s and transitioned into type design in the 1990s. He is known for his expertise in identifying typefaces and has written extensively about typography, including his popular 'Typecasting' series on his blog where he identifies fonts used in films and television.</p><p>Simonson runs Mark Simonson Studio, an independent type foundry established in 1999. His typefaces are characterized by their versatility and careful craftsmanship, drawing inspiration from historical sources while addressing contemporary design needs.</p>",
+      "links": [
+        "https://www.marksimonson.com/",
+        "https://twitter.com/marksimonson"
+      ],
+      "notable_fonts": [
+        "Proxima Nova",
+        "Proxima Soft",
+        "Coquette",
+        "Bookmania",
+        "Anonymous Pro"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "pabloimpallari",
+      "name": "Pablo Impallari",
+      "bio_html": "<p>Pablo Impallari is a type designer based in Rosario, Argentina, known for his motto \"For the Love of Letters!\" He is an active contributor to the open-source typography community and has designed numerous widely-used typefaces.</p><p>Impallari maintains a strong presence in the font design community with over 26 open-source font repositories on GitHub. He has earned recognition as an Arctic Code Vault Contributor and maintains popular tools for font testing and development.</p>",
+      "links": [
+        "http://www.impallari.com",
+        "https://github.com/impallari",
+        "https://twitter.com/impallaritype"
+      ],
+      "notable_fonts": [
+        "Libre Franklin",
+        "Raleway",
+        "Libre Baskerville",
+        "Cabin",
+        "Encode Sans",
+        "Lobster"
+      ],
+      "source": "github_profile",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "adeleantignac",
+      "name": "Adèle Antignac",
+      "bio_html": "<p>Adèle Antignac is a French type designer who has worked with Production Type, a Paris-based digital type foundry. She studied type design and has contributed to various typeface projects during her time at the foundry.</p><p>She is credited as a co-designer of Spectral, an open-source serif typeface commissioned by Google and designed in collaboration with Production Type. The Spectral family was designed specifically for screen reading and text-rich environments.</p>",
+      "links": [
+        "https://www.productiontype.com"
+      ],
+      "notable_fonts": [
+        "Spectral"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "victorgaultney",
+      "name": "Victor Gaultney",
+      "bio_html": "<p>Victor Gaultney is a Senior Font Designer at SIL International, a faith-based nonprofit organization focused on language development and documentation. He holds an MA in Typeface Design from the University of Reading (UK), one of the world's premier programs for type design education.</p><p>At SIL, Gaultney leads the development of open-source fonts designed to support the world's writing systems, with particular emphasis on lesser-resourced languages. His work focuses on creating high-quality typefaces that meet the typographic needs of diverse linguistic communities worldwide.</p>",
+      "links": [
+        "https://software.sil.org/",
+        "https://scripts.sil.org/Gentium"
+      ],
+      "notable_fonts": [
+        "Gentium",
+        "Gentium Plus",
+        "Doulos SIL",
+        "Andika",
+        "Charis SIL"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "fontdiner",
+      "name": "Font Diner",
+      "bio_html": "<p>Font Diner is a type foundry founded by Stuart Sandler in the late 1990s. The foundry specializes in retro, vintage, and nostalgic typefaces inspired by American pop culture from the 1930s through 1960s, including diner signage, mid-century advertising, googie architecture, and Americana aesthetics.</p><p>Stuart Sandler is a prolific type designer who has created hundreds of display fonts capturing the spirit of classic American design. His work evokes the charm of vintage signage, menus, and advertisements, making Font Diner's typefaces popular choices for projects requiring a nostalgic or retro feel.</p>",
+      "links": [
+        "https://www.fontdiner.com/",
+        "https://www.myfonts.com/foundry/Font-Diner/"
+      ],
+      "notable_fonts": [
+        "Limelight",
+        "Fruktur",
+        "Combo",
+        "Diplomata",
+        "Wellfleet"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "georgduffner",
+      "name": "Georg Mayr-Duffner",
+      "bio_html": "<p>Georg Mayr-Duffner is an Austrian type designer and open-source contributor based in Vienna. He is affiliated with WU Vienna University of Economics and Business, where he is associated with the university library.</p><p>He is best known for creating EB Garamond, an acclaimed open-source digitization of Claude Garamont's typeface designs based on the 1592 Egenolff-Berner specimen. The project aims to bring Renaissance typography into the digital age with support for extended Latin, Greek, and Cyrillic scripts. His work on EB Garamond has earned significant recognition in the open-source community.</p>",
+      "links": [
+        "https://github.com/georgd",
+        "https://www.georgduffner.at/ebgaramond"
+      ],
+      "notable_fonts": [
+        "EB Garamond",
+        "EB Garamond Initials"
+      ],
+      "source": "github_profile",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "frodehelland",
+      "name": "Frode Helland",
+      "bio_html": "<p>Frode Helland is a Norwegian type designer and the founder of Monokrom, an independent type foundry based in Norway. He studied at the Type and Media program at the Royal Academy of Art (KABK) in The Hague, Netherlands, one of the most prestigious type design programs in the world.</p><p>Helland has been an influential figure in the Scandinavian type design scene, creating typefaces that often draw inspiration from Nordic design traditions while maintaining contemporary functionality. Through Monokrom, he has released numerous retail and custom typefaces used internationally.</p>",
+      "links": [
+        "https://monokrom.no",
+        "https://twitter.com/monaborgen"
+      ],
+      "notable_fonts": [
+        "Satyr",
+        "Faunus",
+        "Siri",
+        "Amundsen",
+        "Saga"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "pauldhunt",
+      "name": "Paul D. Hunt",
+      "bio_html": "<p>Paul D. Hunt is an American type designer who worked at Adobe as a typeface designer from 2008 to 2022. He is best known for designing the Source family of typefaces, Adobe's first open-source type family, which includes Source Sans Pro (released in 2012), Source Serif Pro, and Source Code Pro.</p><p>Hunt studied at the Rochester Institute of Technology, where he earned an MFA in Computer Graphics Design. Before joining Adobe, he worked at The Font Bureau. His work on the Source family has been highly influential in establishing high-quality open-source typefaces for user interface and coding applications.</p>",
+      "links": [
+        "https://fonts.adobe.com/designers/paul-d-hunt",
+        "https://twitter.com/pauldhunt"
+      ],
+      "notable_fonts": [
+        "Source Sans Pro",
+        "Source Serif Pro",
+        "Source Code Pro",
+        "Source Han Sans",
+        "Source Han Serif"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "danrhatigan",
+      "name": "Dan Rhatigan",
+      "bio_html": "<p>Dan Rhatigan is a type industry veteran who served as Senior Manager of Type at Adobe, where he led the Adobe Type team and oversaw Adobe Fonts (formerly Typekit). His work at Adobe focused on expanding the type library and improving font technology and accessibility.</p><p>Prior to Adobe, Rhatigan worked at Monotype and has been involved in various aspects of type production, education, and advocacy throughout his career. He is known for his contributions to typographic literacy and has spoken at numerous typography conferences worldwide.</p>",
+      "links": [
+        "https://twitter.com/ultrasparky"
+      ],
+      "notable_fonts": [],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "barryschwartz",
+      "name": "Barry Schwartz",
+      "bio_html": "<p>Barry Schwartz is an American type designer and the founder of The League of Moveable Type, one of the first open-source type foundries dedicated to creating high-quality free fonts. He has been a significant contributor to the open-source typography movement since the late 2000s.</p><p>Schwartz specializes in reviving classic typefaces, meticulously recreating historical designs for modern digital use. His work includes revivals of designs by Frederic Goudy, Rudolf Ruzicka, and other masters of early 20th century typography.</p>",
+      "links": [
+        "https://github.com/chemoelectric",
+        "https://crudfactory.com"
+      ],
+      "notable_fonts": [
+        "Sorts Mill Goudy",
+        "Fanwood",
+        "Goudy Bookletter 1911",
+        "League Script",
+        "Prociono"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "alejandroinler",
+      "name": "Alejandro Inler",
+      "bio_html": "<p>Alejandro Inler is a type designer known for creating display typefaces with distinctive personality. His work includes the Elsie family, a serif typeface inspired by feminine energy that combines the strength of Bodoni with the softness of italics, developed in conjunction with Ana Sanfelippo.</p><p>He also designed Wendy One, a sans serif display font loosely inspired by the STABILO logotype, created in collaboration with Julieta Ulanovsky. His fonts have been available on Google Fonts since 2012.</p>",
+      "links": [],
+      "notable_fonts": [
+        "Elsie",
+        "Elsie Swash Caps",
+        "Wendy One"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "ralphducarrois",
+      "name": "Ralph du Carrois",
+      "bio_html": "<p>Ralph du Carrois is a German type designer and the founder of Carrois Type Design (now bBox Type GmbH), a type foundry based in Berlin. He is best known for designing Fira Sans and Fira Mono, which were originally commissioned by Mozilla for their Firefox OS project.</p><p>Du Carrois studied at the University of Applied Sciences in Berlin (HTW Berlin) and has been active in the type design community for many years. Carrois Type Design has produced numerous typefaces for both corporate clients and open-source projects, contributing significantly to the open-source font ecosystem through collaborations with Google Fonts.</p>",
+      "links": [
+        "https://www.carrois.com",
+        "https://bboxtype.com",
+        "https://github.com/carrois"
+      ],
+      "notable_fonts": [
+        "Fira Sans",
+        "Fira Mono",
+        "Fira Code",
+        "Share",
+        "Share Tech",
+        "Share Tech Mono"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "carroisandedenspiekermann",
+      "name": "Carrois and Edenspiekermann",
+      "bio_html": "<p>Carrois and Edenspiekermann was a collaboration between two German design studios that worked together on typeface design projects from 2012 to 2015. Carrois, founded by Ralph du Carrois (now bBox Type GmbH), is a type design studio specializing in corporate typography. Edenspiekermann AG was an international design agency founded by legendary typographer Erik Spiekermann.</p><p>The collaboration is best known for creating Fira Sans, the typeface family commissioned by Mozilla for Firefox OS. The partnership combined Carrois's technical expertise in type design with Edenspiekermann's brand design capabilities.</p>",
+      "links": [
+        "https://carrois.com",
+        "https://bboxtype.com",
+        "https://github.com/bBoxType"
+      ],
+      "notable_fonts": [
+        "Fira Sans",
+        "Fira Mono",
+        "Fira Code",
+        "FiraGO"
+      ],
+      "source": "github_repos",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "davecrossland",
+      "name": "Dave Crossland",
+      "bio_html": "<p>Dave Crossland is a type designer and open-source fonts advocate who works at Google Fonts. He is based in Denver, Colorado. Crossland completed his MA in Typeface Design (MATD) at the University of Reading in 2008, where his dissertation focused on \"The Free Font Movement.\"</p><p>He is the original designer of Cantarell, a humanist sans-serif typeface that was added to Google Fonts in 2010 and became the default user interface font for GNOME. At Google, he has been a major contributor to the Google Fonts project with over 890 contributions to the repository.</p>",
+      "links": [
+        "https://github.com/davelab6",
+        "https://twitter.com/davelab6"
+      ],
+      "notable_fonts": [
+        "Cantarell"
+      ],
+      "source": "github_profile",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "latinotype",
+      "name": "LatinoType",
+      "bio_html": "<p>LatinoType (Latinotype Limitada) is a Chilean type foundry known for creating display typefaces, many of which are available on Google Fonts. The foundry has contributed numerous fonts to the Google Fonts library since 2011.</p><p>Individual typefaces are often attributed to specific designers like Miguel Hernandez while being produced under the LatinoType umbrella. The foundry specializes in display and decorative typefaces with Latin flair.</p>",
+      "links": [
+        "https://www.latinotype.com"
+      ],
+      "notable_fonts": [
+        "Patua One",
+        "Sail",
+        "Sofia",
+        "Sanchez",
+        "Flamenco",
+        "Ceviche One",
+        "Fugaz One"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "jamesgrieshaber",
+      "name": "James Grieshaber",
+      "bio_html": "<p>James Grieshaber is an American type designer and the founder of Typeco, a type foundry based in the United States. He has been active in the type design industry for several decades, creating both display and text typefaces.</p><p>His work includes the notable Mostra typeface family, which draws inspiration from Italian Art Deco lettering and has been widely used in commercial and editorial applications. He is known for his craftsmanship and attention to historical lettering styles.</p>",
+      "links": [
+        "https://www.typeco.com"
+      ],
+      "notable_fonts": [
+        "Mostra",
+        "Mostra Nuova"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "kimberlygeswein",
+      "name": "Kimberly Geswein",
+      "bio_html": "<p>Kimberly Geswein is an American font designer specializing in handwritten and hand-drawn typefaces. She is a former elementary school teacher from North Carolina who began creating fonts as a hobby and turned it into a successful career. Her fonts are based on real handwriting samples, often from students, friends, and family members.</p><p>With over 500 fonts to her credit, Kimberly's work is widely used in education, crafts, scrapbooking, and creative projects. Her fonts are known for their friendly, approachable character and excellent legibility. She has 22 fonts available on Google Fonts.</p>",
+      "links": [
+        "https://www.kimberlygeswein.com/",
+        "https://www.dafont.com/kimberly-geswein.d1942"
+      ],
+      "notable_fonts": [
+        "Indie Flower",
+        "Architects Daughter",
+        "Gloria Hallelujah",
+        "Shadows Into Light",
+        "Covered By Your Grace"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "sebastiankosch",
+      "name": "Sebastian Kosch",
+      "bio_html": "<p>Sebastian Kosch is a type designer and software developer based in Vancouver. He is best known for creating Crimson, an open-source serif typeface family released in 2010, when high-quality open-source text fonts were limited.</p><p>The Crimson typeface draws inspiration from classical typography, particularly the work of designers like Jan Tschichold and Robert Slimbach. In 2018, Crimson Pro was released as a professionally redesigned version by Jacques Le Bailly, commissioned by Google.</p>",
+      "links": [
+        "https://aldusleaf.org",
+        "https://github.com/skosch"
+      ],
+      "notable_fonts": [
+        "Crimson",
+        "Crimson Text"
+      ],
+      "source": "github_profile",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "juanpablodelperal",
+      "name": "Juan Pablo del Peral",
+      "bio_html": "<p>Juan Pablo del Peral is an Argentine type designer based in Buenos Aires, Argentina. He specializes in calligraphic and display typefaces with historical influences, drawing inspiration from medieval manuscripts and traditional lettering styles.</p><p>Del Peral is best known for creating Almendra, a calligraphic typeface family inspired by the chancery style of medieval manuscripts. He has also collaborated with other notable Latin American type designers, including work on the Montserrat typeface family with Julieta Ulanovsky.</p>",
+      "links": [
+        "https://github.com/huertatipografica/Almendra"
+      ],
+      "notable_fonts": [
+        "Almendra",
+        "Almendra Display",
+        "Almendra SC",
+        "Montserrat (contributor)"
+      ],
+      "source": "training_data",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "friedrichalthausen",
+      "name": "Friedrich Althausen",
+      "bio_html": "<p>Friedrich Althausen is a German typeface designer based in Germany. He studied at Bauhaus University Weimar, where he created Vollkorn as his first type design project. First published in 2005 under a Creative Commons license, Vollkorn was one of the first twenty fonts featured when Google Fonts launched in 2010.</p><p>Vollkorn (German for \"wholemeal\") is described as a quiet, modest text face for \"bread and butter use,\" with dark, meaty serifs and a bouncing, healthy look. The font supports over 2000 glyphs across Latin, Cyrillic, and Greek scripts.</p>",
+      "links": [
+        "http://friedrichalthausen.de/",
+        "http://vollkorn-typeface.com/",
+        "https://github.com/FAlthausen"
+      ],
+      "notable_fonts": [
+        "Vollkorn"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "danieljohnson",
+      "name": "Daniel Johnson",
+      "bio_html": "<p>Daniel Johnson is a type designer based in High Point, North Carolina. He specializes in creating fonts for literacy efforts, with particular focus on African languages and Latin-derived alphabets.</p><p>His fonts are known for their clarity and extensive character support, including coverage for multiple writing systems such as Cyrillic, Greek, and Vietnamese. Johnson's work emphasizes legibility and proper diacritical mark placement, making his typefaces well-suited for educational and multilingual applications.</p>",
+      "links": [
+        "https://github.com/ossobuffo",
+        "http://danieljohnson.name/fonts/jura"
+      ],
+      "notable_fonts": [
+        "Jura",
+        "Judson",
+        "Megrim",
+        "Didact Gothic"
+      ],
+      "source": "github_fontlog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "andreyvpanov",
+      "name": "Andrey V. Panov",
+      "bio_html": "<p>Andrey V. Panov is a Russian type designer affiliated with the Institute of Automation and Control Processes (IACP) at the Far Eastern Branch of the Russian Academy of Sciences in Vladivostok. He has been developing typefaces since at least 2008, working with open-source tools such as FontForge and xgridfit.</p><p>He is known for his meticulous approach to font hinting, manually instructing most glyphs for optimal rendering on LCD displays. His work on the Istok typeface evolved significantly into an original design with comprehensive Latin and Cyrillic support.</p>",
+      "links": [
+        "https://github.com/m4rc1e/Istok-Web"
+      ],
+      "notable_fonts": [
+        "Istok Web"
+      ],
+      "source": "github_fontlog",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    },
+    {
+      "id": "jovannylemonad",
+      "name": "Jovanny Lemonad",
+      "bio_html": "<p>Jovanny Lemonad is a Russian type designer known for creating numerous open-source typefaces with strong support for Cyrillic scripts. His fonts have been included in Google Fonts since 2010, making them freely available worldwide.</p><p>Lemonad's work spans various styles including sans-serif, serif, display, and handwriting typefaces. His designs often combine functionality with distinctive character, as seen in fonts like Philosopher (inspired by Agfa Rotis and ITC Binary), the feminine display face Yeseva One (dedicated to his wife, named from the phrase \"Yes, Eva\"), and the narrow grotesque Cuprum.</p>",
+      "links": [
+        "http://www.jovanny.ru"
+      ],
+      "notable_fonts": [
+        "Philosopher",
+        "Yeseva One",
+        "Cuprum",
+        "Russo One",
+        "Neucha",
+        "Scada",
+        "Nixie One",
+        "Numans"
+      ],
+      "source": "google_fonts_metadata",
+      "status": "needs_verification",
+      "added": "2026-01-29"
+    }
+  ]
+}
