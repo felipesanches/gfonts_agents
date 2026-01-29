@@ -476,46 +476,60 @@ function extractStatusFromMessages(messages) {
     const done = [];
     const planned = [];
     const questions = [];
+    const seenPRs = new Set();
 
     // Analyze assistant messages for accomplishments
     messages.forEach(msg => {
         if (msg.role === 'assistant') {
             const text = msg.message.toLowerCase();
 
-            // Detect completed work
+            // Detect completed work - PRs
             if (text.includes('created pr') || text.includes('submitted pr')) {
                 const prMatch = msg.message.match(/PR #(\d+)/i);
-                if (prMatch) {
-                    done.push(`Created PR #${prMatch[1]} for google/fonts`);
+                if (prMatch && !seenPRs.has(prMatch[1])) {
+                    seenPRs.add(prMatch[1]);
+                    done.push({
+                        text: `Created PR #${prMatch[1]} for google/fonts`,
+                        links: [{
+                            text: `PR #${prMatch[1]}`,
+                            url: `https://github.com/google/fonts/pull/${prMatch[1]}`
+                        }]
+                    });
                 }
             }
             if (text.includes('added') && text.includes('designer')) {
                 const countMatch = msg.message.match(/(\d+)\s+designer/i);
-                if (countMatch) {
-                    done.push(`Researched and added ${countMatch[1]} designer biographies`);
+                if (countMatch && !done.some(d => d.text && d.text.includes('designer biographies'))) {
+                    done.push({ text: `Researched and added ${countMatch[1]} designer biographies` });
                 }
             }
             if (text.includes('enrichment') || text.includes('bio.html')) {
-                if (!done.some(d => d.includes('designer bio'))) {
-                    done.push('Enriched designer metadata catalog');
+                if (!done.some(d => (d.text || d).includes('designer'))) {
+                    done.push({ text: 'Enriched designer metadata catalog' });
                 }
             }
             if (text.includes('implemented') || text.includes('added') && text.includes('tab')) {
                 const feature = msg.message.match(/added\s+(?:the\s+)?["']?([^"'\n]+)["']?\s+tab/i);
                 if (feature) {
-                    done.push(`Implemented ${feature[1]} feature`);
+                    done.push({ text: `Implemented ${feature[1]} feature` });
                 }
             }
         }
     });
 
-    // Remove duplicates
-    const uniqueDone = [...new Set(done)];
+    // Remove duplicates based on text
+    const seenTexts = new Set();
+    const uniqueDone = done.filter(item => {
+        const text = item.text || item;
+        if (seenTexts.has(text)) return false;
+        seenTexts.add(text);
+        return true;
+    });
 
     // Default planned items if nothing specific found
     if (planned.length === 0) {
-        planned.push('Continue designer catalog enrichment');
-        planned.push('Repository audit and validation');
+        planned.push({ text: 'Continue designer catalog enrichment' });
+        planned.push({ text: 'Repository audit and validation' });
     }
 
     return {
@@ -529,7 +543,20 @@ function renderStatusList(ul, items, emptyMessage) {
     if (items.length === 0) {
         ul.innerHTML = `<li class="empty-list">${emptyMessage}</li>`;
     } else {
-        ul.innerHTML = items.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+        ul.innerHTML = items.map(item => {
+            const text = item.text || item;
+            let html = escapeHtml(text);
+            // Replace link placeholders with actual hyperlinks
+            if (item.links) {
+                item.links.forEach(link => {
+                    html = html.replace(
+                        escapeHtml(link.text),
+                        `<a href="${escapeHtml(link.url)}" target="_blank" class="status-link">${escapeHtml(link.text)}</a>`
+                    );
+                });
+            }
+            return `<li>${html}</li>`;
+        }).join('');
     }
 }
 
@@ -555,15 +582,15 @@ function downloadODP(statusData, friday) {
 function generateODPContent(statusData, dateStr) {
     // Generate Flat ODP (FODP) which is a single XML file
     const doneItems = statusData.done.length > 0
-        ? statusData.done.map(item => `<text:list-item><text:p text:style-name="P2">${escapeXml(item)}</text:p></text:list-item>`).join('\n')
+        ? statusData.done.map(item => `<text:list-item><text:p text:style-name="P2">${formatODPItemWithLinks(item)}</text:p></text:list-item>`).join('\n')
         : '<text:list-item><text:p text:style-name="P2">(No items recorded)</text:p></text:list-item>';
 
     const plannedItems = statusData.planned.length > 0
-        ? statusData.planned.map(item => `<text:list-item><text:p text:style-name="P2">${escapeXml(item)}</text:p></text:list-item>`).join('\n')
+        ? statusData.planned.map(item => `<text:list-item><text:p text:style-name="P2">${formatODPItemWithLinks(item)}</text:p></text:list-item>`).join('\n')
         : '<text:list-item><text:p text:style-name="P2">(No items planned)</text:p></text:list-item>';
 
     const questionItems = statusData.questions.length > 0
-        ? statusData.questions.map(item => `<text:list-item><text:p text:style-name="P2">${escapeXml(item)}</text:p></text:list-item>`).join('\n')
+        ? statusData.questions.map(item => `<text:list-item><text:p text:style-name="P2">${formatODPItemWithLinks(item)}</text:p></text:list-item>`).join('\n')
         : '<text:list-item><text:p text:style-name="P2">(No questions pending)</text:p></text:list-item>';
 
     return `<?xml version="1.0" encoding="UTF-8"?>
@@ -574,6 +601,7 @@ function generateODPContent(statusData, dateStr) {
     xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
     xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
     xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.presentation">
   <office:styles>
     <style:style style:name="dp1" style:family="drawing-page">
@@ -584,6 +612,9 @@ function generateODPContent(statusData, dateStr) {
     <style:style style:name="P1" style:family="paragraph">
       <style:paragraph-properties fo:text-align="center"/>
       <style:text-properties fo:font-size="32pt" fo:font-weight="bold" fo:color="#ffffff"/>
+    </style:style>
+    <style:style style:name="Link" style:family="text">
+      <style:text-properties fo:color="#90caf9" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color"/>
     </style:style>
     <style:style style:name="P2" style:family="paragraph">
       <style:text-properties fo:font-size="18pt" fo:color="#ffffff"/>
@@ -642,4 +673,29 @@ function escapeXml(text) {
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&apos;');
+}
+
+function formatODPItemWithLinks(item) {
+    const text = item.text || item;
+    if (!item.links || item.links.length === 0) {
+        return escapeXml(text);
+    }
+
+    // Replace link text with ODP hyperlink elements
+    let result = text;
+    item.links.forEach(link => {
+        result = result.replace(
+            link.text,
+            `{{LINK:${link.url}:${link.text}}}`
+        );
+    });
+
+    // Now escape and convert placeholders to actual ODP links
+    result = escapeXml(result);
+    result = result.replace(
+        /\{\{LINK:([^:]+):([^}]+)\}\}/g,
+        '<text:a xlink:type="simple" xlink:href="$1"><text:span text:style-name="Link">$2</text:span></text:a>'
+    );
+
+    return result;
 }

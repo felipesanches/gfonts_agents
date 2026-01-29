@@ -750,6 +750,15 @@ th {
     list-style: none;
 }
 
+.slide-section a.status-link {
+    color: #90caf9;
+    text-decoration: underline;
+}
+
+.slide-section a.status-link:hover {
+    color: #bbdefb;
+}
+
 footer {
     background-color: #333;
     color: white;
