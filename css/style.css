@@ -664,6 +664,92 @@ th {
     color: #2e7d32;
 }
 
+/* Friday Status Slide */
+.status-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-download {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-download:hover {
+    background: #3367d6;
+}
+
+.status-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.status-slide {
+    background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+    border-radius: 8px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    aspect-ratio: 16 / 9;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.75rem;
+}
+
+.slide-section {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.slide-section:last-child {
+    margin-bottom: 0;
+}
+
+.slide-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.slide-section ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.slide-section li {
+    margin-bottom: 0.25rem;
+}
+
+.slide-section .empty-list {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    padding-left: 0;
+    list-style: none;
+}
+
 footer {
     background-color: #333;
     color: white;

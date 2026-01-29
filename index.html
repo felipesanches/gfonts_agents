@@ -19,6 +19,7 @@
             <button class="tab-btn" data-tab="prs">gfonts PRs</button>
             <button class="tab-btn" data-tab="questions">Pending Questions</button>
             <button class="tab-btn" data-tab="messages">Message Log</button>
+            <button class="tab-btn" data-tab="status">Friday Status</button>
         </nav>
 
         <section id="tab-audit" class="tab-content active">
@@ -67,6 +68,34 @@
             <div class="panel">
                 <h2>Message Log</h2>
                 <div id="messages"></div>
+            </div>
+        </section>
+
+        <section id="tab-status" class="tab-content">
+            <div class="panel">
+                <h2>Friday Status Update</h2>
+                <p class="panel-description">Weekly status report for Google Fonts team call</p>
+                <div class="status-actions">
+                    <button id="download-odp" class="btn-download">Download as ODP</button>
+                    <span class="status-date" id="status-week"></span>
+                </div>
+                <div id="status-slide" class="status-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Felipe Sanches - Weekly Status</h3>
+                        <div class="slide-section">
+                            <h4>What was done this week</h4>
+                            <ul id="status-done"></ul>
+                        </div>
+                        <div class="slide-section">
+                            <h4>Planned for next week</h4>
+                            <ul id="status-planned"></ul>
+                        </div>
+                        <div class="slide-section">
+                            <h4>Questions for the team</h4>
+                            <ul id="status-questions"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
