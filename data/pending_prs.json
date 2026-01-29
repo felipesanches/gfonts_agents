@@ -353,5 +353,36 @@
     "notes": "All bios marked as needs_verification - should be reviewed before PR submission",
     "github_pr": "https://github.com/google/fonts/pull/10164",
     "submitted_date": "2026-01-29T15:51:46Z"
+  },
+  {
+    "id": "pr-designer-bios-batch2",
+    "title": "Add biographies for 21 designers missing metadata (batch 2)",
+    "description": "Second batch of designer bios including international designers and foundries.",
+    "type": "designer_metadata",
+    "priority": "medium",
+    "designers_count": 21,
+    "status": "submitted",
+    "created": "2026-01-29",
+    "github_pr": "https://github.com/google/fonts/pull/10166"
+  },
+  {
+    "id": "pr-designer-bios-batch3",
+    "title": "Add biographies for 7 designers (batch 3)",
+    "description": "Third batch of designer bios including Michal Sahar (Hagilda), Riccardo De Franceschi (RDF Type), Martin Sommaruga (Estudio Trama), and others.",
+    "type": "designer_metadata",
+    "priority": "medium",
+    "designers": [
+      "Linus Romer",
+      "Martin Sommaruga",
+      "Michal Sahar",
+      "Natalia Raices",
+      "Onur Yazıcıgil",
+      "Pablo Ugerman",
+      "Riccardo De Franceschi"
+    ],
+    "designers_count": 7,
+    "status": "submitted",
+    "created": "2026-01-29",
+    "github_pr": "https://github.com/google/fonts/pull/10167"
   }
 ]
