@@ -285,5 +285,10 @@
     "timestamp": "2026-01-28T00:00:29.1Z",
     "role": "assistant",
     "message": "Reassigned Fira Sans questions from 'Google Fonts team' to Marc Foley (m4rc1e), who is the primary contributor to FiraGFVersion. Updated CLAUDE.md to document this policy."
+  },
+  {
+    "timestamp": "2026-01-29T18:10:09Z",
+    "role": "assistant",
+    "message": "Completed designer bio enrichment batch: researched and added biographies for 29 designers to designer_enrichments.json. Created pending PR (pr-designer-bios-batch1) to add bio.html files to google/fonts catalog. Designers include Matt McInerney (Raleway), Mark Simonson (Proxima Nova), Pablo Impallari (Libre Franklin), Victor Gaultney (Gentium), Dave Crossland (Cantarell), Kimberly Geswein (Indie Flower), and 23 others. All marked as needs_verification."
   }
 ]
