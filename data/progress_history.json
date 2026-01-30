@@ -1,5 +1,30 @@
 {
+  "claude_code_start_date": "2026-01-30",
   "entries": [
+    {
+      "timestamp": "2026-01-09T12:00:00.000000",
+      "summary": {
+        "total": 2009,
+        "complete": 439,
+        "missing_config": 400,
+        "missing_commit": 203,
+        "incomplete_source": 0,
+        "no_source": 967
+      },
+      "source": "manual_spreadsheet"
+    },
+    {
+      "timestamp": "2026-01-30T09:00:00.000000",
+      "summary": {
+        "total": 1986,
+        "complete": 299,
+        "missing_config": 873,
+        "missing_commit": 213,
+        "incomplete_source": 3,
+        "no_source": 598
+      },
+      "source": "claude_code_start"
+    },
     {
       "timestamp": "2026-01-30T12:13:11.765450",
       "summary": {
@@ -9,7 +34,8 @@
         "missing_commit": 729,
         "incomplete_source": 3,
         "no_source": 82
-      }
+      },
+      "source": "claude_code"
     }
   ]
 }

@@ -138,13 +138,13 @@ async function loadProgressHistory() {
     try {
         const response = await fetch('data/progress_history.json');
         const history = await response.json();
-        renderProgressChart(history.entries);
+        renderProgressChart(history.entries, history.claude_code_start_date);
     } catch (error) {
         console.error('Failed to load progress history:', error);
     }
 }
 
-function renderProgressChart(entries) {
+function renderProgressChart(entries, claudeCodeStartDate) {
     const canvas = document.getElementById('progress-chart');
     if (!canvas || entries.length === 0) return;
 
@@ -238,6 +238,41 @@ function renderProgressChart(entries) {
         const lastDate = new Date(entries[entries.length - 1].timestamp);
         ctx.fillText(firstDate.toLocaleDateString(), padding.left, height - 10);
         ctx.fillText(lastDate.toLocaleDateString(), width - padding.right, height - 10);
+
+        // Draw Claude Code start marker
+        if (claudeCodeStartDate) {
+            const startDate = new Date(claudeCodeStartDate);
+            // Find the index where Claude Code started
+            let markerIndex = -1;
+            for (let i = 0; i < entries.length; i++) {
+                const entryDate = new Date(entries[i].timestamp).toDateString();
+                if (entryDate === startDate.toDateString() ||
+                    (entries[i].source && entries[i].source.includes('claude'))) {
+                    markerIndex = i;
+                    break;
+                }
+            }
+
+            if (markerIndex >= 0) {
+                const markerX = padding.left + markerIndex * xStep;
+
+                // Draw vertical dashed line
+                ctx.strokeStyle = '#9c27b0';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                ctx.moveTo(markerX, padding.top);
+                ctx.lineTo(markerX, height - padding.bottom);
+                ctx.stroke();
+                ctx.setLineDash([]);
+
+                // Draw label
+                ctx.fillStyle = '#9c27b0';
+                ctx.font = '11px system-ui, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('Claude Code', markerX, padding.top - 5);
+            }
+        }
     }
 }
 
