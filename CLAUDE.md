@@ -195,13 +195,15 @@ Make commits frequently, whenever any small progress is achieved. Keep commits g
 - No build tools or frameworks
 - Must be compatible with GitHub Pages
 
-## Message Logging
+## Message Logging (STRICT POLICY)
 
 All conversation messages must be logged to `data/message_log.json` with timestamp and content. This includes:
-- User messages (role: "user")
+- **User messages (role: "user") - MUST be logged verbatim, exactly as written**
 - Assistant responses (role: "assistant") - summarized, not verbatim
 
-For Portuguese messages, include an English translation. Append new messages as they are received.
+**Important**: User messages must be preserved word-for-word without any modification or summarization. This is critical for maintaining an accurate record of instructions and decisions.
+
+For Portuguese messages, include an English translation in addition to the verbatim original. Append new messages as they are received.
 
 ## Friday Status Update
 
