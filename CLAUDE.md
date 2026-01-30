@@ -174,7 +174,7 @@ Due to limited disk space, monitor usage carefully:
 
 4. **Space-saving measures when needed**:
    - Use shallow clones (`--depth 1`) for new repos when full history is not required
-   - Consider removing large binary files from repos if they exist
+   - **NEVER modify upstream repos** - they are the source of truth; do not make commits to them
 
 ## Language
 
