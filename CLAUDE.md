@@ -199,9 +199,12 @@ Make commits frequently, whenever any small progress is achieved. Keep commits g
 
 All conversation messages must be logged to `data/message_log.json` with timestamp and content. This includes:
 - **User messages (role: "user") - MUST be logged verbatim, exactly as written**
-- Assistant responses (role: "assistant") - summarized, not verbatim
+- **Assistant messages (role: "assistant") - MUST be logged (summarized is OK, but never omitted)**
 
-**Important**: User messages must be preserved word-for-word without any modification or summarization. This is critical for maintaining an accurate record of instructions and decisions.
+**Important**:
+- User messages must be preserved word-for-word without any modification or summarization
+- Assistant messages must always be logged so the conversation is coherent and readable - summarization is acceptable but complete omission is not
+- The log should allow anyone reading it to understand the full context of the conversation
 
 For Portuguese messages, include an English translation in addition to the verbatim original. Append new messages as they are received.
 

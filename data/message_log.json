@@ -370,5 +370,15 @@
     "timestamp": "2026-01-30T18:07:26.541706",
     "role": "user",
     "message": "Make sure to document as strict criteria that all my messages should be saved (in verbatim) in the log."
+  },
+  {
+    "timestamp": "2026-01-30T18:09:37.943573",
+    "role": "user",
+    "message": "Strict policy: When I answer to you, your message or question must be shown on the log as well so that whoever reads the log can understand the conversation. It is OK to summarize your messages, it is just not OK to completely omit them from the log."
+  },
+  {
+    "timestamp": "2026-01-30T18:09:37.943596",
+    "role": "assistant",
+    "message": "Updated CLAUDE.md message logging policy: assistant messages must always be logged (summarized OK, but never omitted) so the conversation remains coherent and readable."
   }
 ]
