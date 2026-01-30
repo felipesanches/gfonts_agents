@@ -135,7 +135,7 @@ git -C /mnt/shared/gfonts fetch origin && git -C /mnt/shared/gfonts pull --ff-on
 
 ### Primary Tracking File
 
-All progress on the documentation effort must be tracked in `/mnt/shared/gfonts_library_sources.json`.
+All progress on the documentation effort must be tracked in `data/gfonts_library_sources.json`.
 
 This JSON file contains the status of each font family in the Google Fonts library:
 - `family_name`: Name of the font family
@@ -152,7 +152,7 @@ This JSON file contains the status of each font family in the Google Fonts libra
 A reference spreadsheet with prior manual progress is available at:
 https://docs.google.com/spreadsheets/d/1ao3k56FwQy6W0Ll5QbU_wpuKEvNPYcn8YyEU9_L8O4Q/edit?gid=0#gid=0
 
-**Important**: The spreadsheet is for reference only and may not be 100% accurate. All information must be validated before being added to the tracking JSON file. Progress must be tracked via `/mnt/shared/gfonts_library_sources.json`, not the spreadsheet.
+**Important**: The spreadsheet is for reference only and may not be 100% accurate. All information must be validated before being added to the tracking JSON file. Progress must be tracked via `data/gfonts_library_sources.json`, not the spreadsheet.
 
 ## Disk Space Monitoring (STRICT POLICY)
 
