@@ -1,14 +1,14 @@
 {
   "entries": [
     {
-      "timestamp": "2026-01-30T12:11:30.739522",
+      "timestamp": "2026-01-30T12:13:11.765450",
       "summary": {
         "total": 1986,
         "complete": 299,
         "missing_config": 873,
-        "missing_commit": 724,
+        "missing_commit": 729,
         "incomplete_source": 3,
-        "no_source": 87
+        "no_source": 82
       }
     }
   ]
