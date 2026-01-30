@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPendingQuestions();
     loadMessageLog();
     loadFridayStatus();
+    loadDiskUsage();
 });
 
 function initTabs() {
@@ -698,4 +699,51 @@ function formatODPItemWithLinks(item) {
     );
 
     return result;
+}
+
+// Disk Usage functionality
+async function loadDiskUsage() {
+    try {
+        const response = await fetch('data/disk_usage.json');
+        const data = await response.json();
+
+        // Update stats
+        document.getElementById('disk-total').textContent = data.filesystem.total;
+        document.getElementById('disk-used').textContent = data.filesystem.used;
+        document.getElementById('disk-available').textContent = data.filesystem.available;
+
+        const percent = data.filesystem.percent;
+        const percentElement = document.getElementById('disk-percent');
+        percentElement.textContent = percent + '%';
+
+        // Color-code based on usage
+        if (percent >= 98) {
+            percentElement.classList.add('critical');
+        } else if (percent >= 95) {
+            percentElement.classList.add('warning');
+        }
+
+        // Update bar
+        const bar = document.getElementById('disk-bar');
+        bar.style.width = percent + '%';
+        if (percent >= 98) {
+            bar.classList.add('critical');
+        } else if (percent >= 95) {
+            bar.classList.add('warning');
+        }
+
+        // Update breakdown table
+        const tbody = document.querySelector('#disk-breakdown-table tbody');
+        tbody.innerHTML = data.breakdown.map(item => `
+            <tr>
+                <td><code>${escapeHtml(item.description || item.path)}</code></td>
+                <td>${escapeHtml(item.size)}</td>
+            </tr>
+        `).join('');
+
+        // Update timestamp
+        document.getElementById('disk-timestamp').textContent = new Date(data.timestamp).toLocaleString();
+    } catch (error) {
+        document.getElementById('disk-usage').innerHTML = '<p class="error">Failed to load disk usage data.</p>';
+    }
 }

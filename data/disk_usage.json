@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-30T12:00:00",
+  "filesystem": {
+    "mount": "/mnt/shared",
+    "total": "1.8T",
+    "used": "1.7T",
+    "available": "32G",
+    "percent": 99
+  },
+  "breakdown": [
+    {"path": "/mnt/shared/upstream_repos/fontc_crater_cache", "description": "Upstream repos cache", "size": "estimating..."},
+    {"path": "/mnt/shared/gfonts", "description": "google/fonts clone", "size": "4.0G"}
+  ]
+}

@@ -170,9 +170,14 @@ Due to limited disk space, monitor usage carefully:
 
 3. **Alert thresholds**:
    - Warning at 95% usage
-   - Critical at 98% usage (current level)
+   - Critical at 98% usage
 
-4. **Space-saving measures when needed**:
+4. **Minimum free space requirement (STRICT)**:
+   - **Refuse to resume work when free disk space is less than 15 GB**
+   - Before starting any significant work session, check `df -h /mnt/shared`
+   - If available space is below 15 GB, stop and notify the user
+
+5. **Space-saving measures when needed**:
    - Use shallow clones (`--depth 1`) for new repos when full history is not required
    - **NEVER modify upstream repos** - they are the source of truth; do not make commits to them
 

@@ -20,6 +20,7 @@
             <button class="tab-btn" data-tab="questions">Pending Questions</button>
             <button class="tab-btn" data-tab="messages">Message Log</button>
             <button class="tab-btn" data-tab="status">Friday Status</button>
+            <button class="tab-btn" data-tab="disk">Disk Usage</button>
         </nav>
 
         <section id="tab-audit" class="tab-content active">
@@ -95,6 +96,49 @@
                             <ul id="status-questions"></ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-disk" class="tab-content">
+            <div class="panel">
+                <h2>Disk Usage</h2>
+                <p class="panel-description">Storage monitoring for /mnt/shared</p>
+                <div id="disk-usage" class="disk-usage">
+                    <div class="disk-stats">
+                        <div class="disk-stat">
+                            <span class="stat-label">Total Size</span>
+                            <span id="disk-total" class="stat-value">--</span>
+                        </div>
+                        <div class="disk-stat">
+                            <span class="stat-label">Used</span>
+                            <span id="disk-used" class="stat-value">--</span>
+                        </div>
+                        <div class="disk-stat">
+                            <span class="stat-label">Available</span>
+                            <span id="disk-available" class="stat-value">--</span>
+                        </div>
+                        <div class="disk-stat">
+                            <span class="stat-label">Usage %</span>
+                            <span id="disk-percent" class="stat-value">--</span>
+                        </div>
+                    </div>
+                    <div class="disk-bar-container">
+                        <div id="disk-bar" class="disk-bar" style="width: 0%"></div>
+                    </div>
+                    <div class="disk-breakdown">
+                        <h3>Storage Breakdown</h3>
+                        <table id="disk-breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Directory</th>
+                                    <th>Size</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <p class="disk-updated">Last updated: <span id="disk-timestamp">--</span></p>
                 </div>
             </div>
         </section>
