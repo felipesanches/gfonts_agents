@@ -390,5 +390,15 @@
     "timestamp": "2026-01-30T18:35:00.000000",
     "role": "assistant",
     "message": "Analyzed all 14 remaining METADATA.pb files (not 17, user misremembered count). Investigated copyright fields, GitHub searches for foundries (AsiaSoft Inc, TypoDesign Lab, FONTRIX, JIKJI SOFT, HanYang I&C Co, TAE System, DXKorea Inc, JIKJISOFT, TipTopTyp, Michal Sahar, Christopher J. Fynn, Danh Hong). Found no public repositories - these are primarily Korean foundries without GitHub presence. Added question to pending_questions.json for Google Fonts team asking if sources exist privately. The 14 fonts without discoverable upstream repos are: Black And White Picture, Cute Font, Dokdo, Gaegu, Gothic A1, Gugi, Ranga, Single Day, Song Myung, Stylish, Suez One, Sunflower, Uchen, Yinmar."
+  },
+  {
+    "timestamp": "2026-01-30T18:17:19.194079",
+    "role": "user",
+    "message": "Also show on the website the number of upstream repos not cloned yet on our cache."
+  },
+  {
+    "timestamp": "2026-01-30T18:17:19.194125",
+    "role": "assistant",
+    "message": "Added upstream repository cache stats to dashboard. Now displays 939 of 1531 unique repos cloned (61.3%), with 592 still pending. Features: summary with total/cloned/not-cloned counts, progress bar showing cache completion, and expandable list of repos not yet cloned."
   }
 ]
