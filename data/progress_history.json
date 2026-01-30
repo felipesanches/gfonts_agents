@@ -26,14 +26,14 @@
       "source": "claude_code_start"
     },
     {
-      "timestamp": "2026-01-30T17:55:26.206859",
+      "timestamp": "2026-01-30T17:57:49.516716",
       "summary": {
         "total": 1986,
         "complete": 299,
         "missing_config": 873,
-        "missing_commit": 782,
+        "missing_commit": 790,
         "incomplete_source": 3,
-        "no_source": 29
+        "no_source": 21
       },
       "source": "claude_code"
     }

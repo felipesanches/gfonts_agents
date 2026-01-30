@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-01-30T17:56:25.838142",
+  "generated_at": "2026-01-30T17:57:27.835089",
   "summary": {
     "total": 1986,
     "complete": 299,
     "missing_config": 873,
-    "missing_commit": 787,
+    "missing_commit": 790,
     "incomplete_source": 3,
-    "no_source": 24
+    "no_source": 21
   },
   "families": [
     {
@@ -1592,12 +1592,13 @@
       "family_name": "Atma",
       "designer": "Black Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/BlackFoundryCom/Atma",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - BlackFoundryCom"
     },
     {
       "path": "ofl/atomicage/METADATA.pb",
@@ -6024,12 +6025,13 @@
       "family_name": "Farsan",
       "designer": "Pooja Saxena",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/anexasajoop/farsan",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - anexasajoop"
     },
     {
       "path": "ofl/fascinate/METADATA.pb",
@@ -6700,12 +6702,13 @@
       "family_name": "Galada",
       "designer": "Black Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/BlackFoundryCom/Galada",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - BlackFoundryCom"
     },
     {
       "path": "ofl/galdeano/METADATA.pb",
