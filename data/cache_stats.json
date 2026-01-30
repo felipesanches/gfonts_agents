@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-01-30T19:00:07.585821",
+  "timestamp": "2026-01-30T19:06:33.515885",
   "total_unique_repos": 1531,
-  "cloned": 1493,
-  "not_cloned": 38,
+  "cloned": 1498,
+  "not_cloned": 33,
   "not_cloned_list": [
     "https://github.com/JapanYoshi/Orelega",
     "https://github.com/Neelakash/sitara",
@@ -36,11 +36,6 @@
     "https://github.com/nicholasjohnson/suravaram",
     "https://github.com/nicholasjohnson/yoonfont-Gamjaflower",
     "https://github.com/sharanda/manrope",
-    "https://gitlab.com/nicholasjohnson-monde/fonderie/syne-typeface",
-    "https://www.github.com/googlefonts/teko",
-    "https://www.github.com/m4rc1e/mavenproFont",
-    "https://www.github.com/notofonts/math",
-    "https://www.github.com/notofonts/noto-cjk",
-    "https://www.github.com/rsms/inter"
+    "https://gitlab.com/nicholasjohnson-monde/fonderie/syne-typeface"
   ]
 }

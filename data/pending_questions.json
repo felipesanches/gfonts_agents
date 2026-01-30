@@ -79,6 +79,13 @@
           "question": "Do these 14 fonts have private upstream repositories or were they contributed as binaries only? If sources exist, can we get repository URLs?",
           "context": "These fonts have no discoverable public source repositories: (Korean foundries) Black And White Picture (AsiaSoft Inc.), Cute Font (TypoDesign Lab. Inc), Dokdo (FONTRIX), Gaegu (JIKJI SOFT), Gothic A1 (HanYang I&C Co), Gugi (TAE System), Single Day (DXKorea Inc), Song Myung (JIKJI), Stylish (AsiaSoft Inc), Sunflower (JIKJISOFT); (Other) Ranga (TipTopTyp), Suez One (Michal Sahar), Uchen (Christopher J. Fynn), Yinmar (Danh Hong). Most Korean fonts appear to be from foundries that don't maintain public GitHub repos.",
           "timestamp": "2026-01-30T18:30:00Z"
+        },
+        {
+          "id": "q7",
+          "font": "28 fonts with broken repository_url in METADATA.pb",
+          "question": "The following METADATA.pb files have repository_url fields pointing to deleted/moved GitHub repos. Can these be corrected or removed?",
+          "context": "Verified 404 URLs on 2026-01-30: (1) nicholasjohnson/* repos (23 fonts) - all deleted: Dohyeon, Hanna, KirangHaerang, Mukta, Palanquin, Proza-Libre, Yantramanav, Yeonsung, Yoonfont-HiMelody, Yoonfont-KoreaDokdo, Yoonfont-Poorstory, fonts, makingbiorhyme, meera-tamil, nats, ntr, ramabhadra, sawarabi-gothic, shrikhand, sulphur-point, suranna, suravaram, yoonfont-Gamjaflower; (2) bghryct/* (3 fonts) - moved to RedHatOfficial/RedHatFont: RedHatDisplay, RedHatMono, RedHatText; (3) googlefonts/* (3 fonts): elsiefont, longcang, zhimangxing - all 404; (4) Other: JapanYoshi/Orelega (404), Neelakash/sitara (404), sharanda/manrope (404, fork at davelab6/manrope), gitlab.com/nicholasjohnson-monde/fonderie/syne-typeface (404). Alternative repos found: jonpinhorn/shrikhand, noponies/sulphur-point, EkType/Mukta, RedHatOfficial/RedHatFont.",
+          "timestamp": "2026-01-30T20:00:00Z"
         }
       ]
     }

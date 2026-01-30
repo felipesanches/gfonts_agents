@@ -410,5 +410,15 @@
     "timestamp": "2026-01-30T19:00:39.484572",
     "role": "assistant",
     "message": "Cloned 554 new repos (from 939 to 1493). Cache now at 97.5% complete (1493 of 1531 unique repos). Remaining 38 repos are mostly 404 errors - nicholasjohnson repos appear deleted, bghryct/RedHat repos moved to RedHatOfficial/RedHatFont. Also cloned noto-cjk in background (8GB repo). Found alternative locations for some: Red Hat fonts at RedHatOfficial/RedHatFont, Mukta at EkType/Mukta, manrope at davelab6/manrope."
+  },
+  {
+    "timestamp": "2026-01-30T19:07:29.779222",
+    "role": "user",
+    "message": "Document these apparently broken URLs as a \"Pending Question\" and double-check if they are really broken."
+  },
+  {
+    "timestamp": "2026-01-30T19:07:29.779248",
+    "role": "assistant",
+    "message": "Verified all 38 potentially broken URLs. Confirmed 33 are truly 404: 23 nicholasjohnson/* repos (all deleted), 3 bghryct/RedHat* (moved to RedHatOfficial), 3 googlefonts/* (elsiefont, longcang, zhimangxing), and 4 others (JapanYoshi/Orelega, Neelakash/sitara, sharanda/manrope, gitlab syne-typeface). Found and cloned alternative repos: jonpinhorn/shrikhand, noponies/sulphur-point, EkType/Mukta, RedHatOfficial/RedHatFont. Fixed www.github.com URL handling - 5 repos were already cloned but counted wrong. Updated cache to 97.8% (1498/1531). Added question q7 to pending_questions.json documenting the 28 fonts with broken URLs."
   }
 ]
