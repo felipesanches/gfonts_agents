@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-01-30T12:17:03.263252",
+  "generated_at": "2026-01-30T17:53:49.906224",
   "summary": {
     "total": 1986,
     "complete": 299,
     "missing_config": 873,
-    "missing_commit": 745,
+    "missing_commit": 769,
     "incomplete_source": 3,
-    "no_source": 66
+    "no_source": 42
   },
   "families": [
     {
@@ -7609,12 +7609,13 @@
       "family_name": "Halant",
       "designer": "Indian Type Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/itfoundry/halant",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - itfoundry org"
     },
     {
       "path": "ofl/hammersmithone/METADATA.pb",
@@ -8956,12 +8957,13 @@
       "family_name": "Jomhuria",
       "designer": "KB Studio",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Tarobish/Jomhuria",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - Tarobish"
     },
     {
       "path": "ofl/jomolhari/METADATA.pb",
@@ -9360,12 +9362,13 @@
       "family_name": "Katibeh",
       "designer": "KB Studio",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Tarobish/Katibeh",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - Tarobish"
     },
     {
       "path": "ofl/kaushanscript/METADATA.pb",
@@ -9385,12 +9388,13 @@
       "family_name": "Kavivanar",
       "designer": "Tharique Azeez",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/enathu/kavivanar",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - enathu"
     },
     {
       "path": "ofl/kavoon/METADATA.pb",
@@ -9765,24 +9769,26 @@
       "family_name": "Kumar One",
       "designer": "Indian Type Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/itfoundry/kumar",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - itfoundry org"
     },
     {
       "path": "ofl/kumaroneoutline/METADATA.pb",
       "family_name": "Kumar One Outline",
       "designer": "Indian Type Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/itfoundry/kumar",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - itfoundry org"
     },
     {
       "path": "ofl/kumbhsans/METADATA.pb",
@@ -11625,12 +11631,13 @@
       "family_name": "Mirza",
       "designer": "KB Studio",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Tarobish/Mirza",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - Tarobish"
     },
     {
       "path": "ofl/missfajardose/METADATA.pb",
@@ -11650,12 +11657,13 @@
       "family_name": "Mitr",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/mitr",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/mochiypopone/METADATA.pb",
@@ -11724,12 +11732,13 @@
       "family_name": "Mogra",
       "designer": "Lipi Raval",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/lipiraval/mogra",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - lipiraval"
     },
     {
       "path": "ofl/mohave/METADATA.pb",
@@ -16191,12 +16200,13 @@
       "family_name": "Palanquin Dark",
       "designer": "Pria Ravichandran",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/nicholasjohnson/Palanquin",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - VanillaandCream"
     },
     {
       "path": "ofl/palettemosaic/METADATA.pb",
@@ -16364,12 +16374,13 @@
       "family_name": "Pattaya",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/pattaya",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/patuaone/METADATA.pb",
@@ -16389,12 +16400,13 @@
       "family_name": "Pavanam",
       "designer": "Tharique Azeez",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/enathu/pavanam",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - enathu"
     },
     {
       "path": "ofl/paytoneone/METADATA.pb",
@@ -18192,12 +18204,13 @@
       "family_name": "Pragati Narrow",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/PragatiNarrow",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - Omnibus-Type"
     },
     {
       "path": "ofl/praise/METADATA.pb",
@@ -18254,12 +18267,13 @@
       "family_name": "Pridi",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/pridi",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/princesssofia/METADATA.pb",
@@ -18292,12 +18306,13 @@
       "family_name": "Prompt",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/prompt",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/prostoone/METADATA.pb",
@@ -19997,12 +20012,13 @@
       "family_name": "Sansita",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Sansita",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - Omnibus-Type"
     },
     {
       "path": "ofl/sansitaone/METADATA.pb",
@@ -20071,12 +20087,13 @@
       "family_name": "Sarpanch",
       "designer": "Indian Type Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/itfoundry/sarpanch",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - itfoundry org"
     },
     {
       "path": "ofl/sassyfrass/METADATA.pb",
@@ -20526,12 +20543,13 @@
       "family_name": "Shrikhand",
       "designer": "Jonny Pinhorn",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/nicholasjohnson/shrikhand",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - jonpinhorn"
     },
     {
       "path": "ofl/siemreap/METADATA.pb",
@@ -20600,12 +20618,13 @@
       "family_name": "Signika Negative SC",
       "designer": "Anna Giedry\u015b",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/Signika",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - googlefonts/Signika"
     },
     {
       "path": "ofl/signikasc/METADATA.pb",
@@ -21305,12 +21324,13 @@
       "family_name": "Sriracha",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/sriracha",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/srisakdi/METADATA.pb",
@@ -21883,12 +21903,13 @@
       "family_name": "Taviraj",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/taviraj",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/teachers/METADATA.pb",
@@ -22069,12 +22090,13 @@
       "family_name": "Tillana",
       "designer": "Indian Type Foundry",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/itfoundry/tillana",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - itfoundry org"
     },
     {
       "path": "ofl/tiltneon/METADATA.pb",
@@ -22336,12 +22358,13 @@
       "family_name": "Trirong",
       "designer": "Cadson Demak",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cadsondemak/trirong",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cadsondemak org"
     },
     {
       "path": "ofl/trispace/METADATA.pb",
@@ -23260,12 +23283,13 @@
       "family_name": "Yatra One",
       "designer": "Catherine Leigh Schmidt",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cathschmidt/yatra-one",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub search - cathschmidt"
     },
     {
       "path": "ofl/yeonsung/METADATA.pb",
