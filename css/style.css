@@ -976,6 +976,29 @@ footer {
     background: #e0e0e0;
 }
 
+.sources-chart,
+.progress-history {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #1e1e1e;
+    border-radius: 8px;
+}
+
+.sources-chart h3,
+.progress-history h3 {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.sources-chart canvas,
+.progress-history canvas {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
 .sources-filter {
     display: flex;
     gap: 1rem;

@@ -79,6 +79,166 @@ function updateSourcesSummary(summary) {
 
     document.getElementById('progress-complete').style.width = completePercent + '%';
     document.getElementById('progress-partial').style.width = partialPercent + '%';
+
+    // Render status breakdown chart
+    renderStatusChart(summary);
+
+    // Load and render progress history
+    loadProgressHistory();
+}
+
+function renderStatusChart(summary) {
+    const canvas = document.getElementById('status-chart');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    // Clear canvas
+    ctx.clearRect(0, 0, width, height);
+
+    const data = [
+        { label: 'Complete', value: summary.complete, color: '#4caf50' },
+        { label: 'Missing Config', value: summary.missing_config, color: '#ff9800' },
+        { label: 'Missing Commit', value: summary.missing_commit, color: '#2196f3' },
+        { label: 'No Source', value: summary.no_source, color: '#f44336' }
+    ];
+
+    const total = data.reduce((sum, d) => sum + d.value, 0);
+    const barHeight = 40;
+    const barGap = 20;
+    const labelWidth = 120;
+    const valueWidth = 60;
+    const startX = labelWidth;
+    const maxBarWidth = width - labelWidth - valueWidth - 20;
+
+    data.forEach((d, i) => {
+        const y = 30 + i * (barHeight + barGap);
+        const barWidth = (d.value / total) * maxBarWidth;
+
+        // Label
+        ctx.fillStyle = '#e0e0e0';
+        ctx.font = '14px system-ui, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.fillText(d.label, labelWidth - 10, y + barHeight / 2 + 5);
+
+        // Bar
+        ctx.fillStyle = d.color;
+        ctx.fillRect(startX, y, barWidth, barHeight);
+
+        // Value
+        ctx.fillStyle = '#e0e0e0';
+        ctx.textAlign = 'left';
+        ctx.fillText(`${d.value} (${((d.value / total) * 100).toFixed(1)}%)`, startX + barWidth + 10, y + barHeight / 2 + 5);
+    });
+}
+
+async function loadProgressHistory() {
+    try {
+        const response = await fetch('data/progress_history.json');
+        const history = await response.json();
+        renderProgressChart(history.entries);
+    } catch (error) {
+        console.error('Failed to load progress history:', error);
+    }
+}
+
+function renderProgressChart(entries) {
+    const canvas = document.getElementById('progress-chart');
+    if (!canvas || entries.length === 0) return;
+
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    // Clear canvas
+    ctx.clearRect(0, 0, width, height);
+
+    const padding = { top: 20, right: 20, bottom: 40, left: 60 };
+    const chartWidth = width - padding.left - padding.right;
+    const chartHeight = height - padding.top - padding.bottom;
+
+    // Find max value for scaling
+    const maxValue = Math.max(...entries.map(e => e.summary.total));
+
+    // Draw axes
+    ctx.strokeStyle = '#555';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(padding.left, padding.top);
+    ctx.lineTo(padding.left, height - padding.bottom);
+    ctx.lineTo(width - padding.right, height - padding.bottom);
+    ctx.stroke();
+
+    // Y-axis labels
+    ctx.fillStyle = '#888';
+    ctx.font = '12px system-ui, sans-serif';
+    ctx.textAlign = 'right';
+    for (let i = 0; i <= 4; i++) {
+        const y = padding.top + (chartHeight * i / 4);
+        const value = Math.round(maxValue * (1 - i / 4));
+        ctx.fillText(value.toString(), padding.left - 10, y + 4);
+    }
+
+    if (entries.length === 1) {
+        // Single point - show stacked bar
+        const e = entries[0];
+        const barWidth = 100;
+        const x = padding.left + chartWidth / 2 - barWidth / 2;
+
+        const segments = [
+            { value: e.summary.complete, color: '#4caf50' },
+            { value: e.summary.missing_config, color: '#ff9800' },
+            { value: e.summary.missing_commit, color: '#2196f3' },
+            { value: e.summary.no_source, color: '#f44336' }
+        ];
+
+        let currentY = height - padding.bottom;
+        segments.forEach(seg => {
+            const segHeight = (seg.value / maxValue) * chartHeight;
+            ctx.fillStyle = seg.color;
+            ctx.fillRect(x, currentY - segHeight, barWidth, segHeight);
+            currentY -= segHeight;
+        });
+
+        // Date label
+        ctx.fillStyle = '#888';
+        ctx.textAlign = 'center';
+        const date = new Date(e.timestamp);
+        ctx.fillText(date.toLocaleDateString(), x + barWidth / 2, height - 10);
+    } else {
+        // Multiple points - draw lines
+        const xStep = chartWidth / (entries.length - 1);
+
+        const series = [
+            { key: 'complete', color: '#4caf50' },
+            { key: 'missing_config', color: '#ff9800' },
+            { key: 'missing_commit', color: '#2196f3' },
+            { key: 'no_source', color: '#f44336' }
+        ];
+
+        series.forEach(s => {
+            ctx.strokeStyle = s.color;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            entries.forEach((e, i) => {
+                const x = padding.left + i * xStep;
+                const y = height - padding.bottom - (e.summary[s.key] / maxValue) * chartHeight;
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+        });
+
+        // X-axis date labels (first and last)
+        ctx.fillStyle = '#888';
+        ctx.textAlign = 'center';
+        const firstDate = new Date(entries[0].timestamp);
+        const lastDate = new Date(entries[entries.length - 1].timestamp);
+        ctx.fillText(firstDate.toLocaleDateString(), padding.left, height - 10);
+        ctx.fillText(lastDate.toLocaleDateString(), width - padding.right, height - 10);
+    }
 }
 
 function filterSources() {
