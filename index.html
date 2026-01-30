@@ -14,7 +14,8 @@
 
     <main id="app">
         <nav class="tabs">
-            <button class="tab-btn active" data-tab="audit">Repository Audit</button>
+            <button class="tab-btn active" data-tab="sources">Library Sources</button>
+            <button class="tab-btn" data-tab="audit">Repository Audit</button>
             <button class="tab-btn" data-tab="designers">Designers</button>
             <button class="tab-btn" data-tab="prs">gfonts PRs</button>
             <button class="tab-btn" data-tab="questions">Pending Questions</button>
@@ -23,7 +24,70 @@
             <button class="tab-btn" data-tab="disk">Disk Usage</button>
         </nav>
 
-        <section id="tab-audit" class="tab-content active">
+        <section id="tab-sources" class="tab-content active">
+            <div class="panel">
+                <h2>Library Sources Tracking</h2>
+                <p class="panel-description">Progress tracking for upstream repository documentation</p>
+
+                <div class="sources-summary" id="sources-summary">
+                    <div class="summary-card total">
+                        <span class="summary-value" id="summary-total">--</span>
+                        <span class="summary-label">Total Families</span>
+                    </div>
+                    <div class="summary-card complete">
+                        <span class="summary-value" id="summary-complete">--</span>
+                        <span class="summary-label">Complete</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="summary-missing-config">--</span>
+                        <span class="summary-label">Missing Config</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="summary-missing-commit">--</span>
+                        <span class="summary-label">Missing Commit</span>
+                    </div>
+                    <div class="summary-card error">
+                        <span class="summary-value" id="summary-no-source">--</span>
+                        <span class="summary-label">No Source</span>
+                    </div>
+                </div>
+
+                <div class="sources-progress">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar complete" id="progress-complete" style="width: 0%"></div>
+                        <div class="progress-bar partial" id="progress-partial" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-legend">
+                        <span class="legend-item"><span class="legend-color complete"></span> Complete</span>
+                        <span class="legend-item"><span class="legend-color partial"></span> Partial (URL found)</span>
+                        <span class="legend-item"><span class="legend-color missing"></span> No source</span>
+                    </div>
+                </div>
+
+                <div class="filter-bar sources-filter">
+                    <input type="text" id="sources-search" placeholder="Search by family name..." />
+                    <select id="sources-status-filter">
+                        <option value="all">All statuses</option>
+                        <option value="complete">Complete</option>
+                        <option value="missing_config">Missing config.yaml</option>
+                        <option value="missing_commit">Missing commit</option>
+                        <option value="no_source">No source block</option>
+                    </select>
+                    <select id="sources-license-filter">
+                        <option value="all">All licenses</option>
+                        <option value="OFL">OFL</option>
+                        <option value="Apache">Apache</option>
+                        <option value="UFL">UFL</option>
+                    </select>
+                    <span id="sources-count"></span>
+                </div>
+
+                <div id="sources-table-container"></div>
+                <p class="sources-updated">Data generated: <span id="sources-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-audit" class="tab-content">
             <div class="panel">
                 <h2>Repository Audit</h2>
                 <p class="panel-description">Verifying METADATA.pb repository_url and commit hash</p>

@@ -4,6 +4,7 @@ let questionsData = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
+    loadLibrarySources();
     loadFontsAudit();
     loadDesigners();
     loadPendingPRs();
@@ -28,6 +29,154 @@ function initTabs() {
             document.getElementById(`tab-${tabId}`).classList.add('active');
         });
     });
+}
+
+// Library Sources tracking
+let sourcesData = null;
+
+async function loadLibrarySources() {
+    const container = document.getElementById('sources-table-container');
+    const searchInput = document.getElementById('sources-search');
+    const statusFilter = document.getElementById('sources-status-filter');
+    const licenseFilter = document.getElementById('sources-license-filter');
+    const countSpan = document.getElementById('sources-count');
+
+    try {
+        const response = await fetch('data/gfonts_library_sources.json');
+        sourcesData = await response.json();
+
+        // Update summary
+        updateSourcesSummary(sourcesData.summary);
+
+        // Update timestamp
+        document.getElementById('sources-timestamp').textContent =
+            new Date(sourcesData.generated_at).toLocaleString();
+
+        // Set up filters
+        searchInput.addEventListener('input', () => filterSources());
+        statusFilter.addEventListener('change', () => filterSources());
+        licenseFilter.addEventListener('change', () => filterSources());
+
+        // Initial render
+        renderSourcesTable(container, sourcesData.families);
+        countSpan.textContent = `${sourcesData.families.length} families`;
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load library sources data. Make sure the file exists at /mnt/shared/gfonts_library_sources.json</p>';
+        console.error('Error loading sources:', error);
+    }
+}
+
+function updateSourcesSummary(summary) {
+    document.getElementById('summary-total').textContent = summary.total;
+    document.getElementById('summary-complete').textContent = summary.complete;
+    document.getElementById('summary-missing-config').textContent = summary.missing_config;
+    document.getElementById('summary-missing-commit').textContent = summary.missing_commit;
+    document.getElementById('summary-no-source').textContent = summary.no_source;
+
+    // Update progress bar
+    const completePercent = (summary.complete / summary.total * 100).toFixed(1);
+    const partialPercent = ((summary.missing_config + summary.missing_commit) / summary.total * 100).toFixed(1);
+
+    document.getElementById('progress-complete').style.width = completePercent + '%';
+    document.getElementById('progress-partial').style.width = partialPercent + '%';
+}
+
+function filterSources() {
+    const searchTerm = document.getElementById('sources-search').value.toLowerCase();
+    const statusValue = document.getElementById('sources-status-filter').value;
+    const licenseValue = document.getElementById('sources-license-filter').value;
+
+    const filtered = sourcesData.families.filter(family => {
+        const matchesSearch = !searchTerm ||
+            (family.family_name && family.family_name.toLowerCase().includes(searchTerm)) ||
+            (family.designer && family.designer.toLowerCase().includes(searchTerm));
+        const matchesStatus = statusValue === 'all' || family.status === statusValue;
+        const matchesLicense = licenseValue === 'all' || family.license === licenseValue;
+        return matchesSearch && matchesStatus && matchesLicense;
+    });
+
+    const container = document.getElementById('sources-table-container');
+    renderSourcesTable(container, filtered);
+    document.getElementById('sources-count').textContent =
+        `${filtered.length} of ${sourcesData.families.length} families`;
+}
+
+function renderSourcesTable(container, families) {
+    if (families.length === 0) {
+        container.innerHTML = '<p class="no-results">No families match the current filters.</p>';
+        return;
+    }
+
+    // Limit to first 200 for performance, with a message
+    const displayFamilies = families.slice(0, 200);
+    const hasMore = families.length > 200;
+
+    const table = document.createElement('table');
+    table.className = 'sources-table';
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Family</th>
+                <th>Designer</th>
+                <th>Repository</th>
+                <th>Commit</th>
+                <th>Config</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${displayFamilies.map(family => `
+                <tr class="status-row-${family.status}">
+                    <td class="family-name">${escapeHtml(family.family_name || 'Unknown')}</td>
+                    <td class="designer-name">${escapeHtml(family.designer || '-')}</td>
+                    <td class="repo-cell">
+                        ${family.repository_url
+                            ? `<a href="${escapeHtml(family.repository_url)}" target="_blank" title="${escapeHtml(family.repository_url)}">
+                                ${escapeHtml(family.repository_url.replace('https://github.com/', '').substring(0, 30))}${family.repository_url.length > 50 ? '...' : ''}
+                               </a>`
+                            : '<span class="missing">—</span>'
+                        }
+                    </td>
+                    <td class="commit-cell">
+                        ${family.commit
+                            ? `<code title="${escapeHtml(family.commit)}">${escapeHtml(family.commit.substring(0, 7))}</code>`
+                            : '<span class="missing">—</span>'
+                        }
+                    </td>
+                    <td class="config-cell">
+                        ${family.config_yaml
+                            ? `<code title="${escapeHtml(family.config_yaml)}">${escapeHtml(family.config_yaml.split('/').pop())}</code>`
+                            : '<span class="missing">—</span>'
+                        }
+                    </td>
+                    <td class="status-cell">
+                        <span class="status-badge status-${family.status}">${formatStatus(family.status)}</span>
+                    </td>
+                </tr>
+            `).join('')}
+        </tbody>
+    `;
+
+    container.innerHTML = '';
+    container.appendChild(table);
+
+    if (hasMore) {
+        const moreMsg = document.createElement('p');
+        moreMsg.className = 'more-results';
+        moreMsg.textContent = `Showing first 200 of ${families.length} results. Use filters to narrow down.`;
+        container.appendChild(moreMsg);
+    }
+}
+
+function formatStatus(status) {
+    const statusLabels = {
+        'complete': 'Complete',
+        'missing_config': 'Missing Config',
+        'missing_commit': 'Missing Commit',
+        'incomplete_source': 'Incomplete',
+        'no_source': 'No Source'
+    };
+    return statusLabels[status] || status;
 }
 
 async function loadFontsAudit() {

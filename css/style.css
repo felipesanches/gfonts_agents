@@ -872,3 +872,252 @@ footer {
     font-size: 0.85rem;
     text-align: right;
 }
+
+/* Library Sources Tab */
+.sources-summary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.summary-card.total {
+    border-left: 4px solid #4285f4;
+}
+
+.summary-card.complete {
+    border-left: 4px solid #34a853;
+}
+
+.summary-card.warning {
+    border-left: 4px solid #fbbc04;
+}
+
+.summary-card.error {
+    border-left: 4px solid #ea4335;
+}
+
+.summary-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.summary-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.sources-progress {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar-container {
+    display: flex;
+    background: #e0e0e0;
+    border-radius: 4px;
+    height: 24px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.progress-bar.complete {
+    background: #34a853;
+}
+
+.progress-bar.partial {
+    background: #fbbc04;
+}
+
+.progress-legend {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.legend-color.complete {
+    background: #34a853;
+}
+
+.legend-color.partial {
+    background: #fbbc04;
+}
+
+.legend-color.missing {
+    background: #e0e0e0;
+}
+
+.sources-filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.sources-filter input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.sources-filter select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    background: white;
+}
+
+#sources-count {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.sources-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.sources-table th,
+.sources-table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sources-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+.sources-table .family-name {
+    font-weight: 500;
+}
+
+.sources-table .designer-name {
+    color: #666;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sources-table .repo-cell a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.sources-table .repo-cell a:hover {
+    text-decoration: underline;
+}
+
+.sources-table code {
+    background: #f5f5f5;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+.sources-table .missing {
+    color: #999;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.status-badge.status-complete {
+    background: #e6f4ea;
+    color: #1e7e34;
+}
+
+.status-badge.status-missing_config,
+.status-badge.status-missing_commit {
+    background: #fef7e0;
+    color: #b06d00;
+}
+
+.status-badge.status-no_source,
+.status-badge.status-incomplete_source {
+    background: #fce8e6;
+    color: #c5221f;
+}
+
+.status-row-complete {
+    background: #f8fff9;
+}
+
+.status-row-no_source {
+    background: #fff8f7;
+}
+
+.no-results {
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+}
+
+.more-results {
+    padding: 1rem;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.sources-updated {
+    color: #666;
+    font-size: 0.85rem;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+#sources-table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
