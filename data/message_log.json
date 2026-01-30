@@ -380,5 +380,15 @@
     "timestamp": "2026-01-30T18:09:37.943596",
     "role": "assistant",
     "message": "Updated CLAUDE.md message logging policy: assistant messages must always be logged (summarized OK, but never omitted) so the conversation remains coherent and readable."
+  },
+  {
+    "timestamp": "2026-01-30T18:10:00.000000",
+    "role": "user",
+    "message": "Have you checked the METADATA.pb of all the 17 families that we still have upstram URLs for?"
+  },
+  {
+    "timestamp": "2026-01-30T18:35:00.000000",
+    "role": "assistant",
+    "message": "Analyzed all 14 remaining METADATA.pb files (not 17, user misremembered count). Investigated copyright fields, GitHub searches for foundries (AsiaSoft Inc, TypoDesign Lab, FONTRIX, JIKJI SOFT, HanYang I&C Co, TAE System, DXKorea Inc, JIKJISOFT, TipTopTyp, Michal Sahar, Christopher J. Fynn, Danh Hong). Found no public repositories - these are primarily Korean foundries without GitHub presence. Added question to pending_questions.json for Google Fonts team asking if sources exist privately. The 14 fonts without discoverable upstream repos are: Black And White Picture, Cute Font, Dokdo, Gaegu, Gothic A1, Gugi, Ranga, Single Day, Song Myung, Stylish, Suez One, Sunflower, Uchen, Yinmar."
   }
 ]

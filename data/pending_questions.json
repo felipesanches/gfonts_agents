@@ -66,6 +66,21 @@
           "timestamp": "2026-01-28T00:00:25Z"
         }
       ]
+    },
+    {
+      "id": "google-fonts-team",
+      "name": "Google Fonts Team",
+      "role": "team",
+      "contact": "github.com/google/fonts",
+      "questions": [
+        {
+          "id": "q6",
+          "font": "14 fonts without public source repos",
+          "question": "Do these 14 fonts have private upstream repositories or were they contributed as binaries only? If sources exist, can we get repository URLs?",
+          "context": "These fonts have no discoverable public source repositories: (Korean foundries) Black And White Picture (AsiaSoft Inc.), Cute Font (TypoDesign Lab. Inc), Dokdo (FONTRIX), Gaegu (JIKJI SOFT), Gothic A1 (HanYang I&C Co), Gugi (TAE System), Single Day (DXKorea Inc), Song Myung (JIKJI), Stylish (AsiaSoft Inc), Sunflower (JIKJISOFT); (Other) Ranga (TipTopTyp), Suez One (Michal Sahar), Uchen (Christopher J. Fynn), Yinmar (Danh Hong). Most Korean fonts appear to be from foundries that don't maintain public GitHub repos.",
+          "timestamp": "2026-01-30T18:30:00Z"
+        }
+      ]
     }
   ]
 }
