@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-01-30T17:57:27.835089",
+  "generated_at": "2026-01-30T18:03:54.788868",
   "summary": {
     "total": 1986,
     "complete": 299,
     "missing_config": 873,
-    "missing_commit": 790,
+    "missing_commit": 797,
     "incomplete_source": 3,
-    "no_source": 21
+    "no_source": 14
   },
   "families": [
     {
@@ -1840,12 +1840,13 @@
       "family_name": "Bahianita",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Bahiana",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/baijamjuree/METADATA.pb",
@@ -2081,12 +2082,13 @@
       "family_name": "Barriecito",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Barrio",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/barrio/METADATA.pb",
@@ -10635,12 +10637,13 @@
       "family_name": "Long Cang",
       "designer": "Chen Xiaomin",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/longcang",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/lora/METADATA.pb",
@@ -20732,12 +20735,13 @@
       "family_name": "Sitara",
       "designer": "Neelakash Kshetrimayum",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Neelakash/sitara",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/sixcaps/METADATA.pb",
@@ -21775,24 +21779,26 @@
       "family_name": "Syne Mono",
       "designer": "Bonjour Monde, Lucas Descroix",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://gitlab.com/nicholasjohnson-monde/fonderie/syne-typeface",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/synetactile/METADATA.pb",
       "family_name": "Syne Tactile",
       "designer": "Bonjour Monde, Lucas Descroix",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://gitlab.com/nicholasjohnson-monde/fonderie/syne-typeface",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/tacone/METADATA.pb",
@@ -23741,12 +23747,13 @@
       "family_name": "Zhi Mang Xing",
       "designer": "Wei Zhimang",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/zhimangxing",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found in METADATA.pb copyright field"
     },
     {
       "path": "ofl/zillaslab/METADATA.pb",
