@@ -396,5 +396,53 @@
     "status": "submitted",
     "created": "2026-01-29",
     "github_pr": "https://github.com/google/fonts/pull/10168"
+  },
+  {
+    "id": "pr-amaranth-commit",
+    "font": "Amaranth",
+    "title": "Add missing commit hash to Amaranth METADATA.pb",
+    "description": "The source block in METADATA.pb is missing a commit hash. Commit 0481450 is the last commit that modified all four TTF files (changed ttfautohint x-height rounding). The Regular font has an exact MD5 match with this commit.",
+    "type": "metadata_fix",
+    "priority": "medium",
+    "files_to_modify": [
+      "ofl/amaranth/METADATA.pb"
+    ],
+    "changes": {
+      "add_commit": "0481450c4a1c354ec34672a6195d8bf15b657ea4"
+    },
+    "status": "draft",
+    "created": "2026-01-30"
+  },
+  {
+    "id": "pr-archivoblack-commit",
+    "font": "Archivo Black",
+    "title": "Add missing commit hash to Archivo Black METADATA.pb",
+    "description": "The source block in METADATA.pb is missing a commit hash. Commit 39fc146 is the merge commit that integrated the v1.100 mastering work for Google Fonts, including vertical metrics inherited from GF version.",
+    "type": "metadata_fix",
+    "priority": "medium",
+    "files_to_modify": [
+      "ofl/archivoblack/METADATA.pb"
+    ],
+    "changes": {
+      "add_commit": "39fc14632edc46bffeddc944cedacf8f440c077f"
+    },
+    "status": "draft",
+    "created": "2026-01-30"
+  },
+  {
+    "id": "pr-amiko-commit",
+    "font": "Amiko",
+    "title": "Add missing commit hash to Amiko METADATA.pb",
+    "description": "The source block in METADATA.pb is missing a commit hash. Commit 4a6a810 is the official 'Amiko v1.0' release tag from Pablo Impallari (Aug 11, 2015) when all three TTF files were added.",
+    "type": "metadata_fix",
+    "priority": "medium",
+    "files_to_modify": [
+      "ofl/amiko/METADATA.pb"
+    ],
+    "changes": {
+      "add_commit": "4a6a810e5f06fe6049898abc0b94fa79f9dc0710"
+    },
+    "status": "draft",
+    "created": "2026-01-30"
   }
 ]

@@ -420,5 +420,25 @@
     "timestamp": "2026-01-30T19:07:29.779248",
     "role": "assistant",
     "message": "Verified all 38 potentially broken URLs. Confirmed 33 are truly 404: 23 nicholasjohnson/* repos (all deleted), 3 bghryct/RedHat* (moved to RedHatOfficial), 3 googlefonts/* (elsiefont, longcang, zhimangxing), and 4 others (JapanYoshi/Orelega, Neelakash/sitara, sharanda/manrope, gitlab syne-typeface). Found and cloned alternative repos: jonpinhorn/shrikhand, noponies/sulphur-point, EkType/Mukta, RedHatOfficial/RedHatFont. Fixed www.github.com URL handling - 5 repos were already cloned but counted wrong. Updated cache to 97.8% (1498/1531). Added question q7 to pending_questions.json documenting the 28 fonts with broken URLs."
+  },
+  {
+    "timestamp": "2026-01-30T20:15:00Z",
+    "role": "user",
+    "message": "I'm seeing: \"Failed to load pending PRs.\""
+  },
+  {
+    "timestamp": "2026-01-30T20:15:01Z",
+    "role": "assistant",
+    "message": "Fixed JavaScript bug in main.js. The renderDesignerChanges function and PR card rendering were failing when pr.files_to_modify or pr.changes were undefined (as in the newer designer bio PRs). Added null checks for these fields."
+  },
+  {
+    "timestamp": "2026-01-30T20:20:00Z",
+    "role": "user",
+    "message": "find the correct commit value for a few METADATA.pb files that currently lack it"
+  },
+  {
+    "timestamp": "2026-01-30T20:25:00Z",
+    "role": "assistant",
+    "message": "Investigated 3 fonts missing commit hashes: (1) Amaranth - commit 0481450 (last TTF modification, MD5 match for Regular); (2) Archivo Black - commit 39fc146 (merge of v1.100 mastering for GF); (3) Amiko - commit 4a6a810 (tagged 'Amiko v1.0' release). Added all three to pending_prs.json as draft PRs."
   }
 ]

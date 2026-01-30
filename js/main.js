@@ -514,6 +514,7 @@ async function loadPendingPRs() {
                 ${pr.font ? `<div class="pr-font">Font: ${escapeHtml(pr.font)}</div>` : ''}
                 ${pr.designers_count ? `<div class="pr-font">Designers: ${pr.designers_count}</div>` : ''}
                 <div class="pr-description">${escapeHtml(pr.description)}</div>
+                ${pr.files_to_modify ? `
                 <div class="pr-files">
                     <strong>Files to modify:</strong> ${pr.files_to_modify.length} files
                     <details>
@@ -524,12 +525,13 @@ async function loadPendingPRs() {
                         </ul>
                     </details>
                 </div>
-                ${pr.changes.add_commit ? `
+                ` : ''}
+                ${pr.changes && pr.changes.add_commit ? `
                     <div class="pr-changes">
                         <strong>Add commit:</strong> <code>${escapeHtml(pr.changes.add_commit)}</code>
                     </div>
                 ` : ''}
-                ${pr.changes.options ? `
+                ${pr.changes && pr.changes.options ? `
                     <div class="pr-changes">
                         <strong>Options:</strong>
                         <ul>
@@ -548,6 +550,7 @@ async function loadPendingPRs() {
 
 function renderDesignerChanges(changes) {
     // changes is an object with designer IDs as keys
+    if (!changes) return '';
     const designers = Object.entries(changes);
     if (designers.length === 0) return '';
 
