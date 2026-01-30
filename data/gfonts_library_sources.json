@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-01-30T17:54:39.135426",
+  "generated_at": "2026-01-30T17:56:25.838142",
   "summary": {
     "total": 1986,
     "complete": 299,
     "missing_config": 873,
-    "missing_commit": 782,
+    "missing_commit": 787,
     "incomplete_source": 3,
-    "no_source": 29
+    "no_source": 24
   },
   "families": [
     {
@@ -19869,12 +19869,13 @@
       "family_name": "Sahitya",
       "designer": "Juan Pablo del Peral",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/huertatipografica/sahitya",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - huertatipografica"
     },
     {
       "path": "ofl/sail/METADATA.pb",
@@ -20070,12 +20071,13 @@
       "family_name": "Sarala",
       "designer": "Andres Torresi",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/huertatipografica/sarala",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - huertatipografica"
     },
     {
       "path": "ofl/sarina/METADATA.pb",
@@ -20206,12 +20208,13 @@
       "family_name": "Scope One",
       "designer": "Dalton Maag",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/daltonmaag/scope-one",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - daltonmaag"
     },
     {
       "path": "ofl/seaweedscript/METADATA.pb",
@@ -21631,12 +21634,13 @@
       "family_name": "Sumana",
       "designer": "Cyreal",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/cyrealtype/Sumana",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - cyrealtype"
     },
     {
       "path": "ofl/sunflower/METADATA.pb",
@@ -21668,12 +21672,13 @@
       "family_name": "Sura",
       "designer": "Carolina Giovagnoli",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/huertatipografica/sura",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "missing_commit",
+      "notes": "Found via GitHub - huertatipografica"
     },
     {
       "path": "ofl/suranna/METADATA.pb",
