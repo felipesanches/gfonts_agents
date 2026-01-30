@@ -74,6 +74,34 @@
                     <canvas id="progress-chart" width="600" height="200"></canvas>
                 </div>
 
+                <div class="cache-stats" id="cache-stats">
+                    <h3>Upstream Repository Cache</h3>
+                    <div class="cache-summary">
+                        <div class="cache-stat">
+                            <span class="cache-value" id="cache-total">--</span>
+                            <span class="cache-label">Unique Repos</span>
+                        </div>
+                        <div class="cache-stat cloned">
+                            <span class="cache-value" id="cache-cloned">--</span>
+                            <span class="cache-label">Cloned</span>
+                        </div>
+                        <div class="cache-stat not-cloned">
+                            <span class="cache-value" id="cache-not-cloned">--</span>
+                            <span class="cache-label">Not Cloned</span>
+                        </div>
+                    </div>
+                    <div class="cache-progress">
+                        <div class="cache-bar-container">
+                            <div class="cache-bar" id="cache-bar" style="width: 0%"></div>
+                        </div>
+                        <span class="cache-percent" id="cache-percent">0%</span>
+                    </div>
+                    <details class="not-cloned-list">
+                        <summary>Show repos not yet cloned (<span id="not-cloned-count">0</span>)</summary>
+                        <ul id="not-cloned-repos"></ul>
+                    </details>
+                </div>
+
                 <div class="filter-bar sources-filter">
                     <input type="text" id="sources-search" placeholder="Search by family name..." />
                     <select id="sources-status-filter">

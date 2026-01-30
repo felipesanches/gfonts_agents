@@ -5,6 +5,7 @@ let questionsData = null;
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     loadLibrarySources();
+    loadCacheStats();
     loadFontsAudit();
     loadDesigners();
     loadPendingPRs();
@@ -1043,6 +1044,44 @@ function formatODPItemWithLinks(item) {
     );
 
     return result;
+}
+
+// Cache Stats functionality
+async function loadCacheStats() {
+    try {
+        const response = await fetch('data/cache_stats.json');
+        const data = await response.json();
+
+        // Update stats
+        document.getElementById('cache-total').textContent = data.total_unique_repos;
+        document.getElementById('cache-cloned').textContent = data.cloned;
+        document.getElementById('cache-not-cloned').textContent = data.not_cloned;
+
+        // Calculate and display percentage
+        const percent = ((data.cloned / data.total_unique_repos) * 100).toFixed(1);
+        document.getElementById('cache-percent').textContent = percent + '% cloned';
+        document.getElementById('cache-bar').style.width = percent + '%';
+
+        // Update not-cloned count
+        document.getElementById('not-cloned-count').textContent = data.not_cloned;
+
+        // Populate not-cloned list
+        const ul = document.getElementById('not-cloned-repos');
+        if (data.not_cloned_list && data.not_cloned_list.length > 0) {
+            ul.innerHTML = data.not_cloned_list.map(url => {
+                const shortUrl = url.replace('https://github.com/', '').replace('https://gitlab.com/', 'gitlab:');
+                return `<li><a href="${escapeHtml(url)}" target="_blank">${escapeHtml(shortUrl)}</a></li>`;
+            }).join('');
+            if (data.not_cloned > data.not_cloned_list.length) {
+                ul.innerHTML += `<li><em>... and ${data.not_cloned - data.not_cloned_list.length} more</em></li>`;
+            }
+        } else {
+            ul.innerHTML = '<li>All repositories are cloned!</li>';
+        }
+    } catch (error) {
+        console.error('Failed to load cache stats:', error);
+        document.getElementById('cache-stats').innerHTML = '<p class="error">Failed to load cache stats.</p>';
+    }
 }
 
 // Disk Usage functionality

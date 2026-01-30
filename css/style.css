@@ -999,6 +999,111 @@ footer {
     margin: 0 auto;
 }
 
+/* Cache Stats */
+.cache-stats {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #1e1e1e;
+    border-radius: 8px;
+}
+
+.cache-stats h3 {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.cache-summary {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cache-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cache-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.cache-stat.cloned .cache-value {
+    color: #4caf50;
+}
+
+.cache-stat.not-cloned .cache-value {
+    color: #ff9800;
+}
+
+.cache-label {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.cache-progress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cache-bar-container {
+    flex: 1;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cache-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    transition: width 0.3s ease;
+}
+
+.cache-percent {
+    color: #888;
+    font-size: 0.9rem;
+    min-width: 80px;
+    text-align: right;
+}
+
+.not-cloned-list {
+    margin-top: 1rem;
+}
+
+.not-cloned-list summary {
+    color: #ff9800;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.not-cloned-list ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.not-cloned-list li {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.not-cloned-list a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.not-cloned-list a:hover {
+    text-decoration: underline;
+}
+
 .sources-filter {
     display: flex;
     gap: 1rem;
