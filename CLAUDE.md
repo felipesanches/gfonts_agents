@@ -117,6 +117,65 @@ The directories `upstream_repos_cache` and `consumed_complementary_cache` were l
 
 **Do not use the legacy directories** - they should be empty after migration.
 
+## Google Fonts Repository (STRICT POLICY)
+
+Keep an always up-to-date clone of the `google/fonts` repository at `/mnt/shared/gfonts`.
+
+This repository is used for:
+- Reading METADATA.pb files to extract metadata information
+- Preparing pull requests to enrich metadata (add repository_url, commit hash, config_yaml)
+- Investigating font file history and commit messages
+
+Before any operation that depends on METADATA.pb data, ensure the clone is up-to-date:
+```bash
+git -C /mnt/shared/gfonts fetch origin && git -C /mnt/shared/gfonts pull --ff-only
+```
+
+## Progress Tracking (STRICT POLICY)
+
+### Primary Tracking File
+
+All progress on the documentation effort must be tracked in `/mnt/shared/gfonts_library_sources.json`.
+
+This JSON file contains the status of each font family in the Google Fonts library:
+- `family_name`: Name of the font family
+- `repository_url`: Upstream repository URL (if known)
+- `commit_hash`: Original onboarding commit (if known)
+- `config_yaml`: Path to config.yaml (if known)
+- `status`: Current status (e.g., "complete", "missing_url", "missing_commit", "needs_investigation")
+- `notes`: Any relevant notes or pending questions
+
+**This file is the source of truth** for tracking progress. Keep it always up-to-date.
+
+### Reference Spreadsheet
+
+A reference spreadsheet with prior manual progress is available at:
+https://docs.google.com/spreadsheets/d/1ao3k56FwQy6W0Ll5QbU_wpuKEvNPYcn8YyEU9_L8O4Q/edit?gid=0#gid=0
+
+**Important**: The spreadsheet is for reference only and may not be 100% accurate. All information must be validated before being added to the tracking JSON file. Progress must be tracked via `/mnt/shared/gfonts_library_sources.json`, not the spreadsheet.
+
+## Disk Space Monitoring (STRICT POLICY)
+
+Due to limited disk space, monitor usage carefully:
+
+1. **Run `df -h /mnt/shared`** whenever:
+   - A new repository is cloned
+   - A repository is updated (git pull)
+   - Any significant disk operation is performed
+
+2. **Track usage** in the dashboard:
+   - Display available disk space
+   - Show total upstream repos disk usage
+   - Provide a dedicated "Disk Usage" tab on the website
+
+3. **Alert thresholds**:
+   - Warning at 95% usage
+   - Critical at 98% usage (current level)
+
+4. **Space-saving measures when needed**:
+   - Use shallow clones (`--depth 1`) for new repos when full history is not required
+   - Consider removing large binary files from repos if they exist
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.
