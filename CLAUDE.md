@@ -89,6 +89,34 @@ A major ongoing task is to identify upstream repositories that are not yet clone
 - PR history and commit messages in google/fonts
 - Designer portfolio links and GitHub profiles
 
+### Repository Cleanliness (STRICT POLICY)
+
+All repositories in the cache must be:
+
+1. **Clean**: No local uncommitted changes. If a repo has local modifications, they must be reviewed and either:
+   - Discarded if they were experimental/temporary
+   - Committed and pushed upstream if valuable
+   - Reported to the user for manual resolution
+
+2. **Synced**: Up-to-date with their remote origin. Before using a cached repo:
+   - Run `git fetch origin` to get latest refs
+   - Run `git status` to verify no local changes
+   - If behind, run `git pull --ff-only` (fast-forward only to avoid merge commits)
+
+3. **Verified remote**: The git remote URL must be valid and accessible
+
+### Migration from Legacy Directories
+
+The directories `upstream_repos_cache` and `consumed_complementary_cache` were legacy locations used before this policy was established. All repos from these directories have been (or should be) migrated to `fontc_crater_cache` following these steps:
+
+1. Extract `{owner}/{repo-name}` from the git remote URL
+2. Verify the repo is clean (no local modifications)
+3. Sync with remote (`git fetch && git pull --ff-only`)
+4. Move to `/mnt/shared/upstream_repos/fontc_crater_cache/{owner}/{repo-name}`
+5. Remove the legacy directory after migration is complete
+
+**Do not use the legacy directories** - they should be empty after migration.
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.
