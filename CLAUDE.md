@@ -53,6 +53,42 @@ When there is uncertainty about what actually happened during onboarding, and we
 
 **Important**: Always try to identify a specific person by investigating PR history, commit authors, and repository contributors. Only use generic categories like "Google Fonts team" as a last resort when a specific person truly cannot be identified.
 
+## Upstream Repository Cache (STRICT POLICY)
+
+All upstream repositories must be cloned to `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+
+### Directory Structure
+
+Repositories are organized using the pattern: `{owner}/{repo-name}`
+
+Examples:
+- `googlefonts/abeezee`
+- `42dot/42dot-Sans`
+- `aaronbell/signika`
+
+### Cloning New Repositories
+
+When a new upstream repository URL is discovered (e.g., `https://github.com/owner/repo-name`):
+
+1. **Extract owner and repo name** from the URL
+2. **Clone to the correct path**: `/mnt/shared/upstream_repos/fontc_crater_cache/{owner}/{repo-name}`
+3. **Do not clone elsewhere** - all upstream repos must be in this centralized location
+
+### Goal
+
+The goal is to have a complete local cache of ALL upstream repositories for fonts in the Google Fonts library. This cache:
+
+- Enables offline analysis and verification
+- Speeds up investigations of commit history and build configurations
+- Provides a reference for identifying correct onboarding commits
+
+### Finding Missing Repositories
+
+A major ongoing task is to identify upstream repositories that are not yet cloned here. Sources for discovering missing repos include:
+- `repository_url` fields in METADATA.pb files in google/fonts
+- PR history and commit messages in google/fonts
+- Designer portfolio links and GitHub profiles
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.
