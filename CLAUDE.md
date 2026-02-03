@@ -181,6 +181,10 @@ Due to limited disk space, monitor usage carefully:
    - Use shallow clones (`--depth 1`) for new repos when full history is not required
    - **NEVER modify upstream repos** - they are the source of truth; do not make commits to them
 
+## Designer Profiles (STRICT POLICY)
+
+When creating or updating designer profile pages, **NEVER mention the "Arctic Code Vault"**. This is a GitHub badge/recognition that is not relevant to font designers' professional profiles and should be omitted entirely.
+
 ## Language
 
 All code, comments, documentation, and commit messages must be in English.
