@@ -116,7 +116,7 @@
     {
       "id": "pabloimpallari",
       "name": "Pablo Impallari",
-      "bio_html": "<p>Pablo Impallari is a type designer based in Rosario, Argentina, known for his motto \"For the Love of Letters!\" He is an active contributor to the open-source typography community and has designed numerous widely-used typefaces.</p><p>Impallari maintains a strong presence in the font design community with over 26 open-source font repositories on GitHub. He has earned recognition as an Arctic Code Vault Contributor and maintains popular tools for font testing and development.</p>",
+      "bio_html": "<p>Pablo Impallari is a type designer based in Rosario, Argentina, known for his motto \"For the Love of Letters!\" He is an active contributor to the open-source typography community and has designed numerous widely-used typefaces.</p><p>Impallari maintains a strong presence in the font design community with over 26 open-source font repositories on GitHub. He maintains popular tools for font testing and development.</p>",
       "links": [
         "http://www.impallari.com",
         "https://github.com/impallari",
@@ -919,7 +919,7 @@
     {
       "id": "linusromer",
       "name": "Linus Romer",
-      "bio_html": "<p>Linus Romer is a type designer and font developer specializing in font technology and open-source tools for the type design community. He has developed several widely-used utilities for font engineering, including tools for curve manipulation, METAFONT conversion, and font interpolation.</p><p>His work focuses on technical aspects of type design, creating plugins for FontForge and developing software that bridges traditional METAFONT technology with modern outline font formats. He is recognized as a contributor to the Arctic Code Vault and has an active presence in the open-source typography community.</p>",
+      "bio_html": "<p>Linus Romer is a type designer and font developer specializing in font technology and open-source tools for the type design community. He has developed several widely-used utilities for font engineering, including tools for curve manipulation, METAFONT conversion, and font interpolation.</p><p>His work focuses on technical aspects of type design, creating plugins for FontForge and developing software that bridges traditional METAFONT technology with modern outline font formats. He has an active presence in the open-source typography community.</p>",
       "links": [
         "https://github.com/linusromer"
       ],
