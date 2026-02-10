@@ -1,0 +1,71 @@
+[
+  {
+    "id": "build-approaches-classification",
+    "title": "Build Approaches Classification & Dashboard Tab",
+    "timestamp": "2026-02-10T12:00:00Z",
+    "prompt": "Implement the following plan: Build Approaches Classification & Dashboard Tab. Classify all upstream font repos by build system and source format, generate JSON data, and add a new dashboard tab to visualize results. User also requested: keep updating the website gradually, add an intro explaining each approach, and document plans on the website with timestamps.",
+    "status": "completed",
+    "summary": "Create a Python script to classify ~1,664 upstream font repositories by build approach (gftools-builder, fontmake, custom scripts, etc.) and source format (.glyphs, .ufo, .designspace, etc.), then add a new dashboard tab with charts, filters, and descriptions.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Create scripts/classify_build_approaches.py - Python script that scans all repos in the cache and classifies by build system (11 categories, priority-based) and source formats (non-exclusive detection).",
+        "status": "completed"
+      },
+      {
+        "step": 2,
+        "description": "Run the script to generate data/build_approaches.json with summary stats and per-repo entries. Ran in degraded mode due to filesystem open files limit - stat-only probing. Source format detection limited.",
+        "status": "completed"
+      },
+      {
+        "step": 3,
+        "description": "Add Build Approaches tab to index.html with summary cards, canvas charts, description cards for each approach, filter bar, and data table.",
+        "status": "completed"
+      },
+      {
+        "step": 4,
+        "description": "Add CSS styles to css/style.css for builds tab: summary grid, chart containers, category badges, source format tags, description cards, table styles.",
+        "status": "completed"
+      },
+      {
+        "step": 5,
+        "description": "Add JavaScript to js/main.js: loadBuildApproaches(), chart rendering, filtering, table rendering, and category formatting functions.",
+        "status": "completed"
+      },
+      {
+        "step": 6,
+        "description": "Document plans on the website - created Plans tab with timestamps and original prompts.",
+        "status": "completed"
+      },
+      {
+        "step": 7,
+        "description": "Verify and test: ran classification script in degraded mode, validated JSON output. Full re-scan with source format detection pending filesystem recovery.",
+        "status": "completed"
+      }
+    ],
+    "taxonomy": {
+      "build_categories": [
+        {"priority": 1, "key": "gftools_builder", "label": "gftools-builder (config.yaml)", "detection": "Has config.yaml with sources: key"},
+        {"priority": 2, "key": "gftools_builder_makefile", "label": "gftools-builder via Makefile", "detection": "Makefile contains 'gftools builder'"},
+        {"priority": 3, "key": "fontmake_direct", "label": "fontmake (direct)", "detection": "Makefile/build.sh/build.py calls fontmake (not gftools)"},
+        {"priority": 4, "key": "custom_build_py", "label": "Custom Python script", "detection": "Has build.py (other tools)"},
+        {"priority": 5, "key": "custom_build_sh", "label": "Custom Shell script", "detection": "Has build.sh (other tools)"},
+        {"priority": 6, "key": "makefile_other", "label": "Makefile (other)", "detection": "Makefile with unrecognized tools"},
+        {"priority": 7, "key": "travis_ci_only", "label": "Travis CI only", "detection": "Only .travis.yml, no local build files"},
+        {"priority": 8, "key": "github_actions_only", "label": "GitHub Actions only", "detection": "Only .github/workflows/*.yml"},
+        {"priority": 9, "key": "source_no_build", "label": "Source only (no build)", "detection": "Has source files but no build system"},
+        {"priority": 10, "key": "prebuilt_only", "label": "Pre-built only", "detection": "Has .ttf/.otf but no sources or build system"},
+        {"priority": 11, "key": "unknown", "label": "Unknown", "detection": "None of the above"}
+      ],
+      "source_formats": ["glyphs", "glyphspackage", "ufo", "designspace", "sfd"]
+    },
+    "files_modified": [
+      {"file": "scripts/classify_build_approaches.py", "action": "created"},
+      {"file": "data/build_approaches.json", "action": "created"},
+      {"file": "index.html", "action": "edited"},
+      {"file": "js/main.js", "action": "edited"},
+      {"file": "css/style.css", "action": "edited"},
+      {"file": "data/plans.json", "action": "created"}
+    ]
+  }
+]

@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPendingQuestions();
     loadMessageLog();
     loadFridayStatus();
+    loadBuildApproaches();
+    loadPlans();
     loadDiskUsage();
 });
 
@@ -1084,6 +1086,390 @@ async function loadCacheStats() {
     } catch (error) {
         console.error('Failed to load cache stats:', error);
         document.getElementById('cache-stats').innerHTML = '<p class="error">Failed to load cache stats.</p>';
+    }
+}
+
+// Build Approaches functionality
+let buildsData = null;
+
+const CATEGORY_COLORS = {
+    gftools_builder: '#34a853',
+    gftools_builder_makefile: '#4caf50',
+    fontmake_direct: '#2196f3',
+    custom_build_py: '#9c27b0',
+    custom_build_sh: '#7b1fa2',
+    makefile_other: '#ff9800',
+    travis_ci_only: '#795548',
+    github_actions_only: '#607d8b',
+    source_no_build: '#f44336',
+    prebuilt_only: '#e91e63',
+    unknown: '#9e9e9e'
+};
+
+async function loadBuildApproaches() {
+    const container = document.getElementById('builds-table-container');
+    const searchInput = document.getElementById('builds-search');
+    const categoryFilter = document.getElementById('builds-category-filter');
+    const sourceFilter = document.getElementById('builds-source-filter');
+    const countSpan = document.getElementById('builds-count');
+
+    try {
+        const response = await fetch('data/build_approaches.json');
+        buildsData = await response.json();
+
+        // Check if scan is pending
+        if (buildsData.status === 'pending_scan' || buildsData.total_repos === 0) {
+            container.innerHTML = '<p class="builds-pending-notice">Build classification scan has not been run yet. Run <code>python3 scripts/classify_build_approaches.py</code> to populate this data.</p>';
+            document.getElementById('builds-total').textContent = '0';
+            document.getElementById('builds-gftools').textContent = '0';
+            document.getElementById('builds-fontmake').textContent = '0';
+            document.getElementById('builds-custom').textContent = '0';
+            document.getElementById('builds-nobuild').textContent = '0';
+            renderBuildsDescriptions(buildsData.summary.by_category);
+            return;
+        }
+
+        // Show degraded mode notice
+        if (buildsData.degraded_mode) {
+            const intro = document.getElementById('builds-intro');
+            intro.innerHTML += '<p style="margin-top:0.5rem;color:#b06d00;"><strong>Note:</strong> ' +
+                escapeHtml(buildsData.notes || 'Running in degraded mode.') + '</p>';
+        }
+
+        // Update summary
+        updateBuildsSummary(buildsData);
+
+        // Populate category filter
+        buildsData.summary.by_category.forEach(cat => {
+            if (cat.count > 0) {
+                const opt = document.createElement('option');
+                opt.value = cat.key;
+                opt.textContent = `${cat.label} (${cat.count})`;
+                categoryFilter.appendChild(opt);
+            }
+        });
+
+        // Update timestamp
+        if (buildsData.generated_at) {
+            document.getElementById('builds-timestamp').textContent =
+                new Date(buildsData.generated_at).toLocaleString();
+        }
+
+        // Render descriptions
+        renderBuildsDescriptions(buildsData.summary.by_category);
+
+        // Set up filters
+        searchInput.addEventListener('input', () => filterBuilds());
+        categoryFilter.addEventListener('change', () => filterBuilds());
+        sourceFilter.addEventListener('change', () => filterBuilds());
+
+        // Initial render
+        renderBuildsTable(container, buildsData.repos);
+        countSpan.textContent = `${buildsData.repos.length} repos`;
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load build approaches data.</p>';
+        console.error('Error loading build approaches:', error);
+    }
+}
+
+function updateBuildsSummary(data) {
+    const cats = {};
+    data.summary.by_category.forEach(c => { cats[c.key] = c.count; });
+
+    document.getElementById('builds-total').textContent = data.total_repos;
+    document.getElementById('builds-gftools').textContent =
+        (cats.gftools_builder || 0) + (cats.gftools_builder_makefile || 0);
+    document.getElementById('builds-fontmake').textContent =
+        cats.fontmake_direct || 0;
+    document.getElementById('builds-custom').textContent =
+        (cats.custom_build_py || 0) + (cats.custom_build_sh || 0) +
+        (cats.makefile_other || 0);
+    document.getElementById('builds-nobuild').textContent =
+        (cats.source_no_build || 0) + (cats.prebuilt_only || 0) +
+        (cats.unknown || 0);
+
+    // Render charts
+    renderBuildsCategoryChart(data.summary.by_category);
+    renderBuildsSourceChart(data.summary.by_source_format);
+}
+
+function renderBuildsCategoryChart(categories) {
+    const canvas = document.getElementById('builds-category-chart');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    ctx.clearRect(0, 0, width, height);
+
+    const data = categories.filter(c => c.count > 0);
+    if (data.length === 0) return;
+
+    const total = data.reduce((sum, d) => sum + d.count, 0);
+    const barHeight = 32;
+    const barGap = 12;
+    const labelWidth = 200;
+    const valueWidth = 100;
+    const startX = labelWidth;
+    const maxBarWidth = width - labelWidth - valueWidth - 20;
+
+    data.forEach((d, i) => {
+        const y = 20 + i * (barHeight + barGap);
+        const barWidth = Math.max(2, (d.count / total) * maxBarWidth);
+
+        // Label
+        ctx.fillStyle = '#e0e0e0';
+        ctx.font = '13px system-ui, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.fillText(d.label, labelWidth - 10, y + barHeight / 2 + 4);
+
+        // Bar
+        ctx.fillStyle = CATEGORY_COLORS[d.key] || '#9e9e9e';
+        ctx.fillStyle = CATEGORY_COLORS[d.key] || '#9e9e9e';
+        ctx.fillRect(startX, y, barWidth, barHeight);
+
+        // Value
+        ctx.fillStyle = '#e0e0e0';
+        ctx.textAlign = 'left';
+        ctx.fillText(
+            `${d.count} (${((d.count / total) * 100).toFixed(1)}%)`,
+            startX + barWidth + 8,
+            y + barHeight / 2 + 4
+        );
+    });
+}
+
+function renderBuildsSourceChart(formats) {
+    const canvas = document.getElementById('builds-source-chart');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    ctx.clearRect(0, 0, width, height);
+
+    const data = (formats || []).filter(f => f.count > 0);
+    if (data.length === 0) return;
+
+    const maxCount = Math.max(...data.map(d => d.count));
+    const barHeight = 32;
+    const barGap = 12;
+    const labelWidth = 200;
+    const valueWidth = 80;
+    const startX = labelWidth;
+    const maxBarWidth = width - labelWidth - valueWidth - 20;
+
+    const formatColors = {
+        glyphs: '#ff9800',
+        glyphspackage: '#ff5722',
+        ufo: '#2196f3',
+        designspace: '#4caf50',
+        sfd: '#9c27b0',
+        none: '#9e9e9e'
+    };
+
+    data.forEach((d, i) => {
+        const y = 20 + i * (barHeight + barGap);
+        const barWidth = Math.max(2, (d.count / maxCount) * maxBarWidth);
+
+        // Label
+        ctx.fillStyle = '#e0e0e0';
+        ctx.font = '13px system-ui, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.fillText(d.label, labelWidth - 10, y + barHeight / 2 + 4);
+
+        // Bar
+        ctx.fillStyle = formatColors[d.key] || '#9e9e9e';
+        ctx.fillRect(startX, y, barWidth, barHeight);
+
+        // Value
+        ctx.fillStyle = '#e0e0e0';
+        ctx.textAlign = 'left';
+        ctx.fillText(d.count.toString(), startX + barWidth + 8, y + barHeight / 2 + 4);
+    });
+}
+
+function renderBuildsDescriptions(categories) {
+    const container = document.getElementById('builds-descriptions');
+    if (!container || !categories) return;
+
+    let html = '<h3>Build Approach Descriptions</h3>';
+    categories.forEach(cat => {
+        html += `
+            <div class="build-desc-card cat-${cat.key}">
+                <span class="desc-label">${escapeHtml(cat.label)}</span>
+                <span class="desc-count">${cat.count}</span>
+                <span class="desc-text">${escapeHtml(cat.description)}</span>
+            </div>
+        `;
+    });
+    container.innerHTML = html;
+}
+
+function filterBuilds() {
+    const searchTerm = document.getElementById('builds-search').value.toLowerCase();
+    const categoryValue = document.getElementById('builds-category-filter').value;
+    const sourceValue = document.getElementById('builds-source-filter').value;
+
+    const filtered = buildsData.repos.filter(repo => {
+        const matchesSearch = !searchTerm ||
+            repo.repo.toLowerCase().includes(searchTerm) ||
+            (repo.families && repo.families.some(f => f.toLowerCase().includes(searchTerm)));
+        const matchesCategory = categoryValue === 'all' || repo.category === categoryValue;
+        const matchesSource = sourceValue === 'all' ||
+            (sourceValue === 'none' && repo.source_formats.length === 0) ||
+            repo.source_formats.includes(sourceValue);
+        return matchesSearch && matchesCategory && matchesSource;
+    });
+
+    const container = document.getElementById('builds-table-container');
+    renderBuildsTable(container, filtered);
+    document.getElementById('builds-count').textContent =
+        `${filtered.length} of ${buildsData.repos.length} repos`;
+}
+
+function formatBuildCategory(key) {
+    const labels = {
+        gftools_builder: 'gftools-builder',
+        gftools_builder_makefile: 'gftools via Make',
+        fontmake_direct: 'fontmake',
+        custom_build_py: 'Custom Python',
+        custom_build_sh: 'Custom Shell',
+        makefile_other: 'Makefile (other)',
+        travis_ci_only: 'Travis CI',
+        github_actions_only: 'GitHub Actions',
+        source_no_build: 'No build',
+        prebuilt_only: 'Pre-built only',
+        unknown: 'Unknown'
+    };
+    return labels[key] || key;
+}
+
+function renderBuildsTable(container, repos) {
+    if (!repos || repos.length === 0) {
+        container.innerHTML = '<p class="no-results">No repos match the current filters.</p>';
+        return;
+    }
+
+    const displayRepos = repos.slice(0, 200);
+    const hasMore = repos.length > 200;
+
+    const table = document.createElement('table');
+    table.className = 'builds-table';
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Category</th>
+                <th>Source Formats</th>
+                <th>Config</th>
+                <th>Families</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${displayRepos.map(repo => `
+                <tr>
+                    <td class="repo-name">
+                        ${repo.url
+                            ? `<a href="${escapeHtml(repo.url)}" target="_blank">${escapeHtml(repo.repo)}</a>`
+                            : escapeHtml(repo.repo)
+                        }
+                    </td>
+                    <td>
+                        <span class="category-badge cat-${repo.category}">${formatBuildCategory(repo.category)}</span>
+                    </td>
+                    <td>
+                        ${repo.source_formats.length > 0
+                            ? repo.source_formats.map(f => `<span class="source-tag fmt-${f}">${escapeHtml(f)}</span>`).join('')
+                            : '<span class="missing">\u2014</span>'
+                        }
+                    </td>
+                    <td class="config-cell">
+                        ${repo.config_path
+                            ? `<code title="${escapeHtml(repo.config_path)}">${escapeHtml(repo.config_path.split('/').pop())}</code>`
+                            : '<span class="missing">\u2014</span>'
+                        }
+                    </td>
+                    <td class="families-cell" title="${escapeHtml((repo.families || []).join(', '))}">
+                        ${repo.families && repo.families.length > 0
+                            ? escapeHtml(repo.families.slice(0, 2).join(', ')) + (repo.families.length > 2 ? ` +${repo.families.length - 2}` : '')
+                            : '<span class="missing">\u2014</span>'
+                        }
+                    </td>
+                </tr>
+            `).join('')}
+        </tbody>
+    `;
+
+    container.innerHTML = '';
+    container.appendChild(table);
+
+    if (hasMore) {
+        const moreMsg = document.createElement('p');
+        moreMsg.className = 'more-results';
+        moreMsg.textContent = `Showing first 200 of ${repos.length} results. Use filters to narrow down.`;
+        container.appendChild(moreMsg);
+    }
+}
+
+// Plans functionality
+async function loadPlans() {
+    const container = document.getElementById('plans-list');
+
+    try {
+        const response = await fetch('data/plans.json');
+        const plans = await response.json();
+
+        if (plans.length === 0) {
+            container.innerHTML = '<p class="no-results">No plans documented yet.</p>';
+            return;
+        }
+
+        container.innerHTML = plans.map(plan => {
+            const date = plan.timestamp ? new Date(plan.timestamp).toLocaleString() : 'Unknown';
+            const statusClass = plan.status === 'completed' ? 'complete' :
+                                plan.status === 'in_progress' ? 'warning' : 'error';
+
+            return `
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-title">${escapeHtml(plan.title)}</div>
+                        <div class="plan-badges">
+                            <span class="plan-date">${escapeHtml(date)}</span>
+                            <span class="status-badge status-${plan.status === 'in_progress' ? 'missing_config' : plan.status === 'completed' ? 'complete' : 'no_source'}">${escapeHtml(plan.status.replace('_', ' '))}</span>
+                        </div>
+                    </div>
+                    <div class="plan-prompt">
+                        <strong>Original prompt:</strong> ${escapeHtml(plan.prompt)}
+                    </div>
+                    <div class="plan-summary">${escapeHtml(plan.summary)}</div>
+                    <div class="plan-steps">
+                        <strong>Steps:</strong>
+                        <ol>
+                            ${plan.steps.map(step => `
+                                <li class="plan-step step-${step.status}">
+                                    <span class="step-status">${step.status === 'completed' ? '\u2705' : step.status === 'in_progress' ? '\u23f3' : step.status === 'blocked' ? '\u26d4' : '\u2b1c'}</span>
+                                    ${escapeHtml(step.description)}
+                                </li>
+                            `).join('')}
+                        </ol>
+                    </div>
+                    ${plan.files_modified ? `
+                        <details class="plan-files">
+                            <summary>Files modified (${plan.files_modified.length})</summary>
+                            <ul>
+                                ${plan.files_modified.map(f => `<li><code>${escapeHtml(f.file)}</code> <em>(${escapeHtml(f.action)})</em></li>`).join('')}
+                            </ul>
+                        </details>
+                    ` : ''}
+                </div>
+            `;
+        }).join('');
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load plans data.</p>';
+        console.error('Error loading plans:', error);
     }
 }
 

@@ -440,5 +440,15 @@
     "timestamp": "2026-01-30T20:25:00Z",
     "role": "assistant",
     "message": "Investigated 3 fonts missing commit hashes: (1) Amaranth - commit 0481450 (last TTF modification, MD5 match for Regular); (2) Archivo Black - commit 39fc146 (merge of v1.100 mastering for GF); (3) Amiko - commit 4a6a810 (tagged 'Amiko v1.0' release). Added all three to pending_prs.json as draft PRs."
+  },
+  {
+    "timestamp": "2026-02-10T19:29:07.548688+00:00",
+    "role": "user",
+    "message": "Implement the following plan: Build Approaches Classification & Dashboard Tab. If possible, keep updating the website gradually, as you find more info. I would also like to have an intro on the website explaining each different approach identified. Strict policy: Whenever you create a plan, you must also fully document it in the website (alongside a timestamp and the original prompt that led you to come up with a plan), so that we can have an easy way to review it."
+  },
+  {
+    "timestamp": "2026-02-10T19:29:07.548688+00:00",
+    "role": "assistant",
+    "message": "Implemented Build Approaches Classification & Dashboard Tab. Created scripts/classify_build_approaches.py to classify 1488 upstream repos by build system. Results: 324 gftools-builder (21.8%), 200 Makefile (13.4%), 482 Travis CI (32.4%), 61 custom Python (4.1%), 19 custom shell (1.3%), 402 unknown (27.0%). Added new Build Approaches tab with summary cards, bar charts, approach descriptions, filters, and data table. Also added Plans tab to document all implementation plans with timestamps and original prompts. Note: ran in degraded mode due to filesystem open files limit; source format detection limited."
   }
 ]

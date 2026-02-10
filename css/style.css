@@ -1249,3 +1249,322 @@ footer {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
 }
+
+/* Build Approaches Tab */
+.builds-intro {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #e8f0fe;
+    border-radius: 8px;
+    color: #333;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.builds-summary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.builds-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.builds-chart {
+    padding: 1rem;
+    background: #1e1e1e;
+    border-radius: 8px;
+}
+
+.builds-chart h3 {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.builds-chart canvas {
+    width: 100%;
+    display: block;
+}
+
+.builds-descriptions {
+    margin-bottom: 1.5rem;
+}
+
+.builds-descriptions h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.build-desc-card {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #ccc;
+    background: #f8f9fa;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.build-desc-card .desc-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.build-desc-card .desc-count {
+    font-size: 0.8rem;
+    color: #666;
+    min-width: 50px;
+    flex-shrink: 0;
+}
+
+.build-desc-card .desc-text {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.build-desc-card.cat-gftools_builder { border-left-color: #34a853; }
+.build-desc-card.cat-gftools_builder_makefile { border-left-color: #4caf50; }
+.build-desc-card.cat-fontmake_direct { border-left-color: #2196f3; }
+.build-desc-card.cat-custom_build_py { border-left-color: #9c27b0; }
+.build-desc-card.cat-custom_build_sh { border-left-color: #7b1fa2; }
+.build-desc-card.cat-makefile_other { border-left-color: #ff9800; }
+.build-desc-card.cat-travis_ci_only { border-left-color: #795548; }
+.build-desc-card.cat-github_actions_only { border-left-color: #607d8b; }
+.build-desc-card.cat-source_no_build { border-left-color: #f44336; }
+.build-desc-card.cat-prebuilt_only { border-left-color: #e91e63; }
+.build-desc-card.cat-unknown { border-left-color: #9e9e9e; }
+
+.category-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.category-badge.cat-gftools_builder { background: #e6f4ea; color: #1e7e34; }
+.category-badge.cat-gftools_builder_makefile { background: #e8f5e9; color: #2e7d32; }
+.category-badge.cat-fontmake_direct { background: #e3f2fd; color: #1565c0; }
+.category-badge.cat-custom_build_py { background: #f3e5f5; color: #7b1fa2; }
+.category-badge.cat-custom_build_sh { background: #ede7f6; color: #4527a0; }
+.category-badge.cat-makefile_other { background: #fff3e0; color: #e65100; }
+.category-badge.cat-travis_ci_only { background: #efebe9; color: #4e342e; }
+.category-badge.cat-github_actions_only { background: #eceff1; color: #37474f; }
+.category-badge.cat-source_no_build { background: #fce8e6; color: #c5221f; }
+.category-badge.cat-prebuilt_only { background: #fce4ec; color: #ad1457; }
+.category-badge.cat-unknown { background: #f5f5f5; color: #616161; }
+
+.source-tag {
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #e8eaf6;
+    color: #283593;
+    margin-right: 0.25rem;
+    margin-bottom: 0.15rem;
+}
+
+.source-tag.fmt-glyphs { background: #fff3e0; color: #e65100; }
+.source-tag.fmt-glyphspackage { background: #fbe9e7; color: #bf360c; }
+.source-tag.fmt-ufo { background: #e3f2fd; color: #1565c0; }
+.source-tag.fmt-designspace { background: #e8f5e9; color: #2e7d32; }
+.source-tag.fmt-sfd { background: #f3e5f5; color: #7b1fa2; }
+
+.builds-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.builds-table th,
+.builds-table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.builds-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+.builds-table .repo-name {
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.builds-table .repo-name a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.builds-table .repo-name a:hover {
+    text-decoration: underline;
+}
+
+.builds-table .families-cell {
+    color: #666;
+    font-size: 0.85rem;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.builds-table code {
+    background: #f5f5f5;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+#builds-table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.builds-pending-notice {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+    .builds-charts {
+        grid-template-columns: 1fr;
+    }
+    .builds-summary {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Plans Tab */
+.plan-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #4285f4;
+}
+
+.plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.plan-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.plan-badges {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.plan-date {
+    font-size: 0.85rem;
+    color: #666;
+    font-family: monospace;
+}
+
+.plan-prompt {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.plan-summary {
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.plan-steps {
+    margin-bottom: 1rem;
+}
+
+.plan-steps ol {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.plan-step {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.plan-step.step-completed {
+    color: #2e7d32;
+}
+
+.plan-step.step-blocked {
+    color: #c62828;
+}
+
+.plan-step.step-pending {
+    color: #666;
+}
+
+.step-status {
+    margin-right: 0.25rem;
+}
+
+.plan-files {
+    margin-top: 0.5rem;
+}
+
+.plan-files summary {
+    cursor: pointer;
+    color: #1565c0;
+    font-size: 0.9rem;
+}
+
+.plan-files ul {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.plan-files li {
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.plan-files code {
+    background: #e8e8e8;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}

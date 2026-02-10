@@ -21,6 +21,8 @@
             <button class="tab-btn" data-tab="questions">Pending Questions</button>
             <button class="tab-btn" data-tab="messages">Message Log</button>
             <button class="tab-btn" data-tab="status">Friday Status</button>
+            <button class="tab-btn" data-tab="builds">Build Approaches</button>
+            <button class="tab-btn" data-tab="plans">Plans</button>
             <button class="tab-btn" data-tab="disk">Disk Usage</button>
         </nav>
 
@@ -199,6 +201,83 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="tab-builds" class="tab-content">
+            <div class="panel">
+                <h2>Build Approaches</h2>
+                <p class="panel-description">Classification of upstream font repositories by build system and source format</p>
+
+                <div class="builds-intro" id="builds-intro">
+                    <p>Each upstream font repository uses a different combination of build tools and source formats to compile binary font files. Understanding these patterns helps with onboarding, quality assurance, and migration planning.</p>
+                </div>
+
+                <div class="builds-summary" id="builds-summary">
+                    <div class="summary-card total">
+                        <span class="summary-value" id="builds-total">--</span>
+                        <span class="summary-label">Total Repos</span>
+                    </div>
+                    <div class="summary-card complete">
+                        <span class="summary-value" id="builds-gftools">--</span>
+                        <span class="summary-label">gftools-builder</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="builds-fontmake">--</span>
+                        <span class="summary-label">fontmake</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="builds-custom">--</span>
+                        <span class="summary-label">Custom Build</span>
+                    </div>
+                    <div class="summary-card error">
+                        <span class="summary-value" id="builds-nobuild">--</span>
+                        <span class="summary-label">No Build System</span>
+                    </div>
+                </div>
+
+                <div class="builds-charts">
+                    <div class="builds-chart">
+                        <h3>Build System Distribution</h3>
+                        <canvas id="builds-category-chart" width="700" height="500"></canvas>
+                    </div>
+                    <div class="builds-chart">
+                        <h3>Source Format Distribution</h3>
+                        <canvas id="builds-source-chart" width="700" height="250"></canvas>
+                    </div>
+                </div>
+
+                <div class="builds-descriptions" id="builds-descriptions">
+                    <h3>Build Approach Descriptions</h3>
+                </div>
+
+                <div class="filter-bar builds-filter">
+                    <input type="text" id="builds-search" placeholder="Search by repo name or family..." />
+                    <select id="builds-category-filter">
+                        <option value="all">All categories</option>
+                    </select>
+                    <select id="builds-source-filter">
+                        <option value="all">All source formats</option>
+                        <option value="glyphs">.glyphs</option>
+                        <option value="glyphspackage">.glyphspackage</option>
+                        <option value="ufo">.ufo</option>
+                        <option value="designspace">.designspace</option>
+                        <option value="sfd">.sfd</option>
+                        <option value="none">No sources</option>
+                    </select>
+                    <span id="builds-count"></span>
+                </div>
+
+                <div id="builds-table-container"></div>
+                <p class="sources-updated">Data generated: <span id="builds-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-plans" class="tab-content">
+            <div class="panel">
+                <h2>Implementation Plans</h2>
+                <p class="panel-description">Documented plans with timestamps and original prompts</p>
+                <div id="plans-list"></div>
             </div>
         </section>
 
