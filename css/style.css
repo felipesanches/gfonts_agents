@@ -1574,14 +1574,18 @@ footer {
 .guide-toc {
     background: #e8f0fe;
     border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #d2e3fc;
 }
 
 .guide-toc h3 {
     margin-bottom: 0.75rem;
     color: #1a73e8;
-    font-size: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
 .guide-toc ol {
@@ -1592,8 +1596,9 @@ footer {
 }
 
 .guide-toc li {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
     font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .guide-toc a {
@@ -1606,67 +1611,83 @@ footer {
 }
 
 .guide-section {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0;
+    padding: 2rem 0;
+    border-bottom: 2px solid #e0e0e0;
 }
 
-.guide-section:last-child {
+.guide-section:first-of-type {
+    padding-top: 0;
+}
+
+.guide-section:last-of-type {
     border-bottom: none;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .guide-section h3 {
     color: #1a73e8;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8f0fe;
 }
 
 .guide-section h4 {
     color: #333;
-    margin: 1.5rem 0 0.75rem;
-    font-size: 1rem;
+    margin: 2rem 0 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 600;
 }
 
-.guide-section p {
-    margin-bottom: 0.75rem;
-    line-height: 1.7;
-    color: #333;
+.guide-section h4:first-of-type {
+    margin-top: 1rem;
+}
+
+.guide-section > p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #444;
+    font-size: 0.95rem;
 }
 
 .guide-section ol,
-.guide-section ul {
-    margin: 0.5rem 0 1rem 1.5rem;
-    line-height: 1.7;
+.guide-section > ul {
+    margin: 0.75rem 0 1.25rem 1.5rem;
+    line-height: 1.8;
 }
 
-.guide-section li {
-    margin-bottom: 0.35rem;
+.guide-section > li,
+.guide-section > ol > li,
+.guide-section > ul > li {
+    margin-bottom: 0.4rem;
 }
 
 .guide-section code {
-    background: #f0f0f0;
-    padding: 0.15rem 0.4rem;
+    background: #eef2f7;
+    padding: 0.2rem 0.45rem;
     border-radius: 3px;
     font-size: 0.85rem;
-    color: #c7254e;
+    color: #1a5276;
 }
 
 .guide-structure-diagram {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin: 1rem 0;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
 }
 
 .structure-block {
     display: flex;
     align-items: baseline;
-    gap: 1rem;
-    padding: 0.75rem 1rem;
+    gap: 1.25rem;
+    padding: 1rem 1.25rem;
     background: #f8f9fa;
     border-left: 4px solid #1a73e8;
     border-radius: 0 6px 6px 0;
+    border: 1px solid #e8ecf0;
+    border-left: 4px solid #1a73e8;
 }
 
 .structure-label {
@@ -1696,14 +1717,14 @@ footer {
 .guide-rules {
     display: flex;
     gap: 1.5rem;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
     flex-wrap: wrap;
 }
 
 .guide-rule {
     flex: 1;
     min-width: 280px;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.5rem;
     border-radius: 8px;
 }
 
@@ -1746,81 +1767,86 @@ footer {
 }
 
 .guide-template {
-    background: #1e1e1e;
-    color: #e0e0e0;
-    padding: 1rem 1.25rem;
+    background: #263238;
+    color: #cfd8dc;
+    padding: 1.25rem 1.5rem;
     border-radius: 8px;
-    margin: 1rem 0;
-    font-family: monospace;
+    margin: 1.25rem 0;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
     font-size: 0.85rem;
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: auto;
+    border: 1px solid #37474f;
 }
 
 .guide-template pre {
     margin: 0.5rem 0 0;
     white-space: pre-wrap;
     word-break: break-word;
+    font-family: inherit;
 }
 
 .guide-template strong {
-    color: #90caf9;
+    color: #80cbc4;
+    font-weight: 600;
 }
 
 .guide-template code {
     background: none;
-    color: #e0e0e0;
+    color: #cfd8dc;
     padding: 0;
     font-size: inherit;
 }
 
 .guide-example-block {
-    margin: 1rem 0;
+    margin: 1.25rem 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .example-good,
 .example-bad {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
+    line-height: 1.7;
 }
 
 .example-good {
-    background: #f8fff9;
-    border-left: 3px solid #34a853;
+    background: #f0f9f1;
+    border-left: 4px solid #34a853;
 }
 
 .example-bad {
-    background: #fff8f7;
-    border-left: 3px solid #ea4335;
+    background: #fef5f4;
+    border-left: 4px solid #ea4335;
 }
 
 .example-label {
     display: inline-block;
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 700;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    padding: 0.1rem 0.4rem;
+    letter-spacing: 0.5px;
+    padding: 0.15rem 0.5rem;
     border-radius: 3px;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
 }
 
 .example-good .example-label {
-    background: #e6f4ea;
-    color: #1e7e34;
+    background: #c8e6c9;
+    color: #1b5e20;
 }
 
 .example-bad .example-label {
-    background: #fce8e6;
-    color: #c5221f;
+    background: #ffcdd2;
+    color: #b71c1c;
 }
 
 .example-good p,
 .example-bad p {
-    margin: 0.25rem 0 0;
+    margin: 0.35rem 0 0;
     font-style: italic;
     color: #444;
 }
@@ -1834,9 +1860,11 @@ footer {
 
 .length-card {
     text-align: center;
-    padding: 1.25rem;
+    padding: 1.5rem 1.25rem;
     background: #f8f9fa;
     border-radius: 8px;
+    border-top: 3px solid #1a73e8;
+    border: 1px solid #e8ecf0;
     border-top: 3px solid #1a73e8;
 }
 
@@ -1867,22 +1895,35 @@ footer {
 .guide-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
     font-size: 0.9rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .guide-table th,
 .guide-table td {
-    padding: 0.6rem 0.8rem;
+    padding: 0.75rem 1rem;
     text-align: left;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e8ecf0;
+}
+
+.guide-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.guide-table tbody tr:hover {
+    background: #f8fafe;
 }
 
 .guide-table th {
-    background: #f5f5f5;
+    background: #f0f4f8;
     font-weight: 600;
     color: #333;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 .priority-tag {
@@ -1910,23 +1951,35 @@ footer {
 }
 
 .guide-bio-example {
-    margin: 0.75rem 0 1.5rem;
-    border: 1px solid #e0e0e0;
+    margin: 0.75rem 0 2rem;
+    border: 1px solid #d0d7de;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .bio-preview {
-    padding: 1rem 1.25rem;
-    background: #f8f9fa;
-    border-bottom: 1px solid #e0e0e0;
+    padding: 1.25rem 1.5rem;
+    background: white;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.bio-preview::before {
+    content: 'Preview';
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-bottom: 0.75rem;
 }
 
 .bio-preview p {
     margin: 0 0 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .bio-preview p:last-child {
@@ -1939,46 +1992,67 @@ footer {
 }
 
 .bio-source {
-    padding: 0.75rem 1.25rem;
-    background: #1e1e1e;
+    padding: 1rem 1.5rem;
+    background: #263238;
+}
+
+.bio-source::before {
+    content: 'HTML Source';
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #78909c;
+    margin-bottom: 0.5rem;
 }
 
 .bio-source pre {
     margin: 0;
     color: #b0bec5;
-    font-size: 0.8rem;
-    line-height: 1.5;
+    font-size: 0.82rem;
+    line-height: 1.6;
     white-space: pre-wrap;
     word-break: break-word;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .guide-checklist {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
     margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e8ecf0;
 }
 
 .guide-checklist label {
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    background: #f8f9fa;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    background: white;
     border-radius: 6px;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
     cursor: pointer;
     transition: background 0.15s;
+    border: 1px solid transparent;
 }
 
 .guide-checklist label:hover {
     background: #e8f0fe;
+    border-color: #d2e3fc;
 }
 
 .guide-checklist input[type="checkbox"] {
-    margin-top: 0.25rem;
+    margin-top: 0.3rem;
     flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    accent-color: #1a73e8;
 }
 
 @media (max-width: 768px) {
