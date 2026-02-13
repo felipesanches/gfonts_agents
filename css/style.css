@@ -41,6 +41,7 @@ main {
 /* Tabs */
 .tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #e0e0e0;
@@ -1567,4 +1568,434 @@ footer {
     padding: 0.15rem 0.4rem;
     border-radius: 3px;
     font-size: 0.85rem;
+}
+
+/* Bio Guide Tab */
+.guide-toc {
+    background: #e8f0fe;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.guide-toc h3 {
+    margin-bottom: 0.75rem;
+    color: #1a73e8;
+    font-size: 1rem;
+}
+
+.guide-toc ol {
+    columns: 2;
+    column-gap: 2rem;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.guide-toc li {
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+}
+
+.guide-toc a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.guide-toc a:hover {
+    text-decoration: underline;
+}
+
+.guide-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.guide-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.guide-section h3 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.guide-section h4 {
+    color: #333;
+    margin: 1.5rem 0 0.75rem;
+    font-size: 1rem;
+}
+
+.guide-section p {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.guide-section ol,
+.guide-section ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    line-height: 1.7;
+}
+
+.guide-section li {
+    margin-bottom: 0.35rem;
+}
+
+.guide-section code {
+    background: #f0f0f0;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    color: #c7254e;
+}
+
+.guide-structure-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.structure-block {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    border-left: 4px solid #1a73e8;
+    border-radius: 0 6px 6px 0;
+}
+
+.structure-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1a73e8;
+    min-width: 140px;
+    flex-shrink: 0;
+}
+
+.structure-desc {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.optional-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background: #fff3e0;
+    color: #e65100;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.guide-rules {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.guide-rule {
+    flex: 1;
+    min-width: 280px;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+}
+
+.guide-rule.do {
+    background: #e6f4ea;
+    border-left: 4px solid #34a853;
+}
+
+.guide-rule.dont {
+    background: #fce8e6;
+    border-left: 4px solid #ea4335;
+}
+
+.rule-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.guide-rule.do .rule-label {
+    color: #1e7e34;
+}
+
+.guide-rule.dont .rule-label {
+    color: #c5221f;
+}
+
+.guide-rule ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.guide-rule li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.35rem;
+}
+
+.guide-template {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+.guide-template pre {
+    margin: 0.5rem 0 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.guide-template strong {
+    color: #90caf9;
+}
+
+.guide-template code {
+    background: none;
+    color: #e0e0e0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.guide-example-block {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.example-good,
+.example-bad {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.example-good {
+    background: #f8fff9;
+    border-left: 3px solid #34a853;
+}
+
+.example-bad {
+    background: #fff8f7;
+    border-left: 3px solid #ea4335;
+}
+
+.example-label {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin-bottom: 0.25rem;
+}
+
+.example-good .example-label {
+    background: #e6f4ea;
+    color: #1e7e34;
+}
+
+.example-bad .example-label {
+    background: #fce8e6;
+    color: #c5221f;
+}
+
+.example-good p,
+.example-bad p {
+    margin: 0.25rem 0 0;
+    font-style: italic;
+    color: #444;
+}
+
+.guide-lengths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.length-card {
+    text-align: center;
+    padding: 1.25rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-top: 3px solid #1a73e8;
+}
+
+.length-label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.length-value {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a73e8;
+    margin-bottom: 0.5rem;
+}
+
+.length-desc {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.guide-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.guide-table th,
+.guide-table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.guide-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.85rem;
+}
+
+.priority-tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.priority-tag.required {
+    background: #fce8e6;
+    color: #c5221f;
+}
+
+.priority-tag.recommended {
+    background: #fef7e0;
+    color: #b06d00;
+}
+
+.priority-tag.optional {
+    background: #e8f0fe;
+    color: #1a73e8;
+}
+
+.guide-bio-example {
+    margin: 0.75rem 0 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bio-preview {
+    padding: 1rem 1.25rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.bio-preview p {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.bio-preview p:last-child {
+    margin-bottom: 0;
+}
+
+.bio-preview a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.bio-source {
+    padding: 0.75rem 1.25rem;
+    background: #1e1e1e;
+}
+
+.bio-source pre {
+    margin: 0;
+    color: #b0bec5;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.guide-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.guide-checklist label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.guide-checklist label:hover {
+    background: #e8f0fe;
+}
+
+.guide-checklist input[type="checkbox"] {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .guide-toc ol {
+        columns: 1;
+    }
+    .guide-rules {
+        flex-direction: column;
+    }
+    .guide-lengths {
+        grid-template-columns: 1fr;
+    }
+    .structure-block {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .structure-label {
+        min-width: auto;
+    }
 }

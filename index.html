@@ -24,6 +24,7 @@
             <button class="tab-btn" data-tab="builds">Build Approaches</button>
             <button class="tab-btn" data-tab="plans">Plans</button>
             <button class="tab-btn" data-tab="disk">Disk Usage</button>
+            <button class="tab-btn" data-tab="bio-guide">Bio Guide</button>
         </nav>
 
         <section id="tab-sources" class="tab-content active">
@@ -323,6 +324,368 @@
                 </div>
             </div>
         </section>
+        <section id="tab-bio-guide" class="tab-content">
+            <div class="panel">
+                <h2>Designer Bio Editorial Guide</h2>
+                <p class="panel-description">Standards and conventions for writing mini biographies in the Google Fonts designers catalog</p>
+
+                <div class="guide-toc">
+                    <h3>Contents</h3>
+                    <ol>
+                        <li><a href="#guide-overview">Overview</a></li>
+                        <li><a href="#guide-structure">Bio Structure</a></li>
+                        <li><a href="#guide-voice">Voice and Perspective</a></li>
+                        <li><a href="#guide-individuals">Writing for Individual Designers</a></li>
+                        <li><a href="#guide-orgs">Writing for Studios and Foundries</a></li>
+                        <li><a href="#guide-length">Length Guidelines</a></li>
+                        <li><a href="#guide-content">What to Include</a></li>
+                        <li><a href="#guide-avoid">What to Avoid</a></li>
+                        <li><a href="#guide-links">Link Formatting</a></li>
+                        <li><a href="#guide-html">HTML Format Reference</a></li>
+                        <li><a href="#guide-examples">Examples</a></li>
+                        <li><a href="#guide-checklist">Pre-Submission Checklist</a></li>
+                    </ol>
+                </div>
+
+                <div class="guide-section" id="guide-overview">
+                    <h3>1. Overview</h3>
+                    <p>Each designer in the Google Fonts catalog has a profile page with a short biography. These bios serve as the public-facing introduction to the people and organizations behind the typefaces in the library. They should be concise, accurate, and professional.</p>
+                    <p>Bios are stored as HTML in the <code>bio.html</code> file within each designer's directory in the <code>google/fonts</code> repository at <code>catalog/designers/{designer_id}/bio.html</code>.</p>
+                </div>
+
+                <div class="guide-section" id="guide-structure">
+                    <h3>2. Bio Structure</h3>
+                    <p>Every bio follows a consistent structure:</p>
+                    <div class="guide-structure-diagram">
+                        <div class="structure-block">
+                            <span class="structure-label">Paragraph 1</span>
+                            <span class="structure-desc">Identity and core description &mdash; who they are, where they are based, what they do</span>
+                        </div>
+                        <div class="structure-block">
+                            <span class="structure-label">Paragraph 2 <span class="optional-tag">optional</span></span>
+                            <span class="structure-desc">Additional context &mdash; notable work, career highlights, education, or specializations</span>
+                        </div>
+                        <div class="structure-block">
+                            <span class="structure-label">Final Paragraph</span>
+                            <span class="structure-desc">Links &mdash; website, social media, and portfolio links separated by pipes ( | )</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-section" id="guide-voice">
+                    <h3>3. Voice and Perspective</h3>
+                    <div class="guide-rules">
+                        <div class="guide-rule do">
+                            <span class="rule-label">Do</span>
+                            <ul>
+                                <li>Write in <strong>third person</strong> ("Alice Savoie is a type designer...")</li>
+                                <li>Use <strong>present tense</strong> for current roles and activities</li>
+                                <li>Use <strong>past tense</strong> for completed education, past positions, and historical events</li>
+                                <li>Maintain a <strong>neutral, encyclopedic tone</strong> &mdash; factual and respectful</li>
+                            </ul>
+                        </div>
+                        <div class="guide-rule dont">
+                            <span class="rule-label">Don't</span>
+                            <ul>
+                                <li>Use first person ("I am a designer...")</li>
+                                <li>Use second person ("You'll love their fonts...")</li>
+                                <li>Use promotional or marketing language ("award-winning genius")</li>
+                                <li>Editorialize or offer personal opinions about the designer's work</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-section" id="guide-individuals">
+                    <h3>4. Writing for Individual Designers</h3>
+                    <p>For individual type designers, the opening sentence should follow this pattern:</p>
+                    <div class="guide-template">
+                        <code>&lt;p&gt;<strong>{Full Name}</strong> is a <strong>{role/title}</strong> based in <strong>{City, Country}</strong>.&lt;/p&gt;</code>
+                    </div>
+                    <p>If the location is unknown, omit the "based in" clause. If the designer has multiple roles, list the most relevant ones:</p>
+                    <div class="guide-example-block">
+                        <div class="example-good">
+                            <span class="example-label">Good</span>
+                            <p>"Alexei Vanyashin is a type designer and Cyrillic specialist dedicated to thoughtful, collaborative work."</p>
+                        </div>
+                        <div class="example-good">
+                            <span class="example-label">Good</span>
+                            <p>"Adam Jagosz is a Polish type designer and frontend developer based in Bielsko-Bia&lstrok;a."</p>
+                        </div>
+                        <div class="example-bad">
+                            <span class="example-label">Avoid</span>
+                            <p>"Adam is a cool designer who makes awesome fonts." (too casual, first name only, subjective)</p>
+                        </div>
+                    </div>
+                    <p>After the opening, provide 1&ndash;3 sentences of context. Prioritize in this order:</p>
+                    <ol>
+                        <li>Notable typefaces in the Google Fonts library</li>
+                        <li>Professional background relevant to type design</li>
+                        <li>Education in type design or related fields</li>
+                        <li>Foundry affiliation or studio</li>
+                        <li>Awards and recognitions (stated factually, not promotionally)</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section" id="guide-orgs">
+                    <h3>5. Writing for Studios and Foundries</h3>
+                    <p>For organizations, the opening should identify what the entity is, where it is located, and who founded it:</p>
+                    <div class="guide-template">
+                        <code>&lt;p&gt;Based in <strong>{City}</strong>, <strong>{Studio Name}</strong> is a <strong>{type of organization}</strong> founded by <strong>{Founder Name}</strong>.&lt;/p&gt;</code>
+                    </div>
+                    <div class="guide-example-block">
+                        <div class="example-good">
+                            <span class="example-label">Good</span>
+                            <p>"Based in Tel Aviv, AlefAlefAlef is a leading Hebrew type foundry and design collective founded by Avraham Cornfeld."</p>
+                        </div>
+                        <div class="example-good">
+                            <span class="example-label">Good</span>
+                            <p>"Based in Lagos, Nigeria, Afrotype, founded by Seyi Olusanya, intends to subvert cliches around African graphic design and identity by creating typefaces that are grounded in African history and culture."</p>
+                        </div>
+                    </div>
+                    <p>For companies with a broader mission statement (beyond type), keep it brief and focused on their type-related work.</p>
+                </div>
+
+                <div class="guide-section" id="guide-length">
+                    <h3>6. Length Guidelines</h3>
+                    <div class="guide-lengths">
+                        <div class="length-card">
+                            <span class="length-label">Minimum</span>
+                            <span class="length-value">1 sentence</span>
+                            <span class="length-desc">Name, role, and location. Acceptable when no further information is available.</span>
+                        </div>
+                        <div class="length-card">
+                            <span class="length-label">Ideal</span>
+                            <span class="length-value">2&ndash;4 sentences</span>
+                            <span class="length-desc">Identity + notable work or background. Covers the essentials without being exhaustive.</span>
+                        </div>
+                        <div class="length-card">
+                            <span class="length-label">Maximum</span>
+                            <span class="length-value">~150 words</span>
+                            <span class="length-desc">For designers with extensive, notable careers. Should still be concise and skimmable.</span>
+                        </div>
+                    </div>
+                    <p>The links paragraph at the end does not count toward the word limit.</p>
+                </div>
+
+                <div class="guide-section" id="guide-content">
+                    <h3>7. What to Include</h3>
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Priority</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Full name</td>
+                                <td><span class="priority-tag required">Required</span></td>
+                                <td>As it appears in the designer directory. Use proper diacritics.</td>
+                            </tr>
+                            <tr>
+                                <td>Professional role</td>
+                                <td><span class="priority-tag required">Required</span></td>
+                                <td>"type designer", "graphic designer", "type foundry", etc.</td>
+                            </tr>
+                            <tr>
+                                <td>Location (city, country)</td>
+                                <td><span class="priority-tag recommended">Recommended</span></td>
+                                <td>Where they are currently based. Omit if unknown.</td>
+                            </tr>
+                            <tr>
+                                <td>Notable typefaces</td>
+                                <td><span class="priority-tag recommended">Recommended</span></td>
+                                <td>Especially those available on Google Fonts.</td>
+                            </tr>
+                            <tr>
+                                <td>Foundry or studio</td>
+                                <td><span class="priority-tag recommended">Recommended</span></td>
+                                <td>If they founded or are affiliated with one.</td>
+                            </tr>
+                            <tr>
+                                <td>Education</td>
+                                <td><span class="priority-tag optional">Optional</span></td>
+                                <td>Relevant type design or design programs only.</td>
+                            </tr>
+                            <tr>
+                                <td>Awards</td>
+                                <td><span class="priority-tag optional">Optional</span></td>
+                                <td>State factually: "recipient of the Prix Charles Peignot (2013)".</td>
+                            </tr>
+                            <tr>
+                                <td>Script specialization</td>
+                                <td><span class="priority-tag optional">Optional</span></td>
+                                <td>Cyrillic, Arabic, Devanagari, etc. Highly relevant for multi-script designers.</td>
+                            </tr>
+                            <tr>
+                                <td>Website / portfolio link</td>
+                                <td><span class="priority-tag required">Required</span></td>
+                                <td>At least one link when available. Placed in the final paragraph.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="guide-section" id="guide-avoid">
+                    <h3>8. What to Avoid</h3>
+                    <div class="guide-rules">
+                        <div class="guide-rule dont">
+                            <span class="rule-label">Never include</span>
+                            <ul>
+                                <li><strong>Arctic Code Vault</strong> or any GitHub badge/recognition &mdash; not relevant to professional profiles</li>
+                                <li>Personal contact information (email addresses, phone numbers)</li>
+                                <li>Subjective superlatives ("the best", "world-renowned", "legendary")</li>
+                                <li>Pricing or commercial information about font sales</li>
+                                <li>Unverified claims or information that cannot be corroborated</li>
+                                <li>Lengthy project descriptions &mdash; keep to typeface names, not full project narratives</li>
+                                <li>Broken or placeholder URLs (e.g., <code>https://This</code>, <code>https://one:</code>)</li>
+                                <li>Content copied verbatim from external sources without verification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-section" id="guide-links">
+                    <h3>9. Link Formatting</h3>
+                    <p>Links go in the <strong>final paragraph</strong> of the bio, separated by pipes with spaces:</p>
+                    <div class="guide-template">
+                        <code>&lt;p&gt;&lt;a href="https://example.com"&gt;example.com&lt;/a&gt; | &lt;a href="https://instagram.com/user"&gt;Instagram&lt;/a&gt;&lt;/p&gt;</code>
+                    </div>
+                    <div class="guide-rules">
+                        <div class="guide-rule do">
+                            <span class="rule-label">Conventions</span>
+                            <ul>
+                                <li>Use the <strong>platform name</strong> as link text for social media: "Instagram", "LinkedIn", "Behance"</li>
+                                <li>Use the <strong>domain name</strong> as link text for personal websites: "example.com", "foundryname.co"</li>
+                                <li>All links must use <strong>HTTPS</strong> where available</li>
+                                <li>Add <code>target="_blank"</code> attribute for external links</li>
+                                <li>Verify all links are working before submission</li>
+                                <li>Prefer <strong>permanent, canonical URLs</strong> (not shortened or tracking links)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><strong>Preferred link order:</strong> Personal website, then social profiles alphabetically (Behance, GitHub, Instagram, LinkedIn, X/Twitter).</p>
+                </div>
+
+                <div class="guide-section" id="guide-html">
+                    <h3>10. HTML Format Reference</h3>
+                    <p>Bios are stored as HTML fragments (not full documents). The only tags used are:</p>
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;p&gt;</code></td>
+                                <td>Wraps each paragraph. Every bio must use <code>&lt;p&gt;</code> tags.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;a href="..."&gt;</code></td>
+                                <td>Hyperlinks. Used in the final paragraph for website/social links.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Do <strong>not</strong> use <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, or any other HTML tags. Keep the markup minimal.</p>
+                    <div class="guide-template">
+                        <strong>Template:</strong>
+                        <pre>&lt;p&gt;{Full Name} is a {role} based in {City, Country}. {Additional context}.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://website.com" target="_blank"&gt;website.com&lt;/a&gt; | &lt;a href="https://instagram.com/handle" target="_blank"&gt;Instagram&lt;/a&gt;&lt;/p&gt;</pre>
+                    </div>
+                </div>
+
+                <div class="guide-section" id="guide-examples">
+                    <h3>11. Examples</h3>
+
+                    <h4>Minimal bio (1 sentence + links)</h4>
+                    <div class="guide-bio-example">
+                        <div class="bio-preview">
+                            <p>Alexander &Ouml;rn is a type designer based in Malm&ouml;, Sweden and co-founder of Kanon Foundry.</p>
+                        </div>
+                        <div class="bio-source">
+<pre>&lt;p&gt;Alexander &Ouml;rn is a type designer based in Malm&ouml;, Sweden
+and co-founder of Kanon Foundry.&lt;/p&gt;</pre>
+                        </div>
+                    </div>
+
+                    <h4>Standard bio (2&ndash;3 sentences + links)</h4>
+                    <div class="guide-bio-example">
+                        <div class="bio-preview">
+                            <p>Abdullah Aref is an Egyptian art teacher, calligrapher, and Arabic type designer.</p>
+                            <p><a href="https://www.behance.net/abdoullah_aref">Behance</a> | <a href="https://www.facebook.com/areffonts">Facebook</a></p>
+                        </div>
+                        <div class="bio-source">
+<pre>&lt;p&gt;Abdullah Aref is an Egyptian art teacher, calligrapher,
+and Arabic type designer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.behance.net/abdoullah_aref"
+target="_blank"&gt;Behance&lt;/a&gt; | &lt;a
+href="https://www.facebook.com/areffonts"
+target="_blank"&gt;Facebook&lt;/a&gt;&lt;/p&gt;</pre>
+                        </div>
+                    </div>
+
+                    <h4>Detailed bio (multiple paragraphs + links)</h4>
+                    <div class="guide-bio-example">
+                        <div class="bio-preview">
+                            <p>Alexei Vanyashin is a type designer and Cyrillic specialist dedicated to thoughtful, collaborative work. After graduating from BHSAD Moscow in 2010, he founded Cyreal, the foundry behind popular open-source fonts such as Lora, Prata, and Alice. He worked with Swiss Typefaces, Optimo, Dalton Maag, Newlyn, and Google Fonts, with notable projects like the YouTube Sans redesign (2021). From 2016 to 2024, he served as Cyrillic Script Chair at the Granshan Foundation. Currently based in Almaty, Kazakhstan, he teaches typography at ACDS.</p>
+                            <p><a href="https://alexeiva.cyreal.org">alexeiva.cyreal.org</a> | <a href="https://instagram.com/avanyashin">Instagram</a></p>
+                        </div>
+                        <div class="bio-source">
+<pre>&lt;p&gt;Alexei Vanyashin is a type designer and Cyrillic
+specialist dedicated to thoughtful, collaborative work.
+After graduating from BHSAD Moscow in 2010, he founded
+Cyreal, the foundry behind popular open-source fonts such
+as Lora, Prata, and Alice. ...&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://alexeiva.cyreal.org"&gt;alexeiva.cyreal.org
+&lt;/a&gt; | &lt;a href="https://instagram.com/avanyashin"&gt;Instagram
+&lt;/a&gt;&lt;/p&gt;</pre>
+                        </div>
+                    </div>
+
+                    <h4>Studio/foundry bio</h4>
+                    <div class="guide-bio-example">
+                        <div class="bio-preview">
+                            <p>Based in Lagos, Nigeria, Afrotype, founded by Seyi Olusanya, intends to subvert cliches around African graphic design and identity by creating typefaces that are grounded in African history and culture.</p>
+                            <p><a href="https://twitter.com/useafrotype">Twitter</a> | <a href="https://www.afrotype.com">afrotype.com</a></p>
+                        </div>
+                        <div class="bio-source">
+<pre>&lt;p&gt;Based in Lagos, Nigeria, Afrotype, founded by Seyi
+Olusanya, intends to subvert cliches around African graphic
+design and identity by creating typefaces that are grounded
+in African history and culture.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/useafrotype"&gt;Twitter&lt;/a&gt;
+| &lt;a href="https://www.afrotype.com"&gt;afrotype.com
+&lt;/a&gt;&lt;/p&gt;</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-section" id="guide-checklist">
+                    <h3>12. Pre-Submission Checklist</h3>
+                    <div class="guide-checklist">
+                        <label><input type="checkbox"> Bio is written in third person, present tense</label>
+                        <label><input type="checkbox"> Full name matches the designer directory entry</label>
+                        <label><input type="checkbox"> Proper diacritics are used in names (e.g., &Ouml;rn, not Orn)</label>
+                        <label><input type="checkbox"> All text is wrapped in <code>&lt;p&gt;</code> tags</label>
+                        <label><input type="checkbox"> Links use <code>&lt;a href="..." target="_blank"&gt;</code></label>
+                        <label><input type="checkbox"> Links are in the final paragraph, separated by " | "</label>
+                        <label><input type="checkbox"> All URLs are valid and reachable</label>
+                        <label><input type="checkbox"> All URLs use HTTPS</label>
+                        <label><input type="checkbox"> No Arctic Code Vault or GitHub badge mentions</label>
+                        <label><input type="checkbox"> No email addresses or personal contact details</label>
+                        <label><input type="checkbox"> No promotional superlatives or marketing language</label>
+                        <label><input type="checkbox"> Bio length is under ~150 words (excluding links paragraph)</label>
+                        <label><input type="checkbox"> Facts have been verified against public sources</label>
+                        <label><input type="checkbox"> No other HTML tags besides <code>&lt;p&gt;</code> and <code>&lt;a&gt;</code></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
