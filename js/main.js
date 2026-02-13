@@ -21,16 +21,38 @@ function initTabs() {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
+    function activateTab(tabId) {
+        const btn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+        const content = document.getElementById(`tab-${tabId}`);
+        if (!btn || !content) return;
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        content.classList.add('active');
+    }
+
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const tabId = btn.dataset.tab;
-
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
-
-            btn.classList.add('active');
-            document.getElementById(`tab-${tabId}`).classList.add('active');
+            history.replaceState(null, '', `#${tabId}`);
+            activateTab(tabId);
         });
+    });
+
+    // Activate tab from URL fragment on load
+    const hash = location.hash.slice(1);
+    if (hash) {
+        activateTab(hash);
+    }
+
+    // Handle back/forward navigation
+    window.addEventListener('hashchange', () => {
+        const tabId = location.hash.slice(1);
+        if (tabId) {
+            activateTab(tabId);
+        }
     });
 }
 
