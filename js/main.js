@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBuildApproaches();
     loadPlans();
     loadDiskUsage();
+    loadBioAudit();
 });
 
 function initTabs() {
@@ -1539,5 +1540,201 @@ async function loadDiskUsage() {
         document.getElementById('disk-timestamp').textContent = new Date(data.timestamp).toLocaleString();
     } catch (error) {
         document.getElementById('disk-usage').innerHTML = '<p class="error">Failed to load disk usage data.</p>';
+    }
+}
+
+// Bio Audit functionality
+let bioAuditData = null;
+
+async function loadBioAudit() {
+    const container = document.getElementById('bio-audit-content');
+    if (!container) return;
+
+    try {
+        const response = await fetch('data/bio_audit.json');
+        bioAuditData = await response.json();
+        renderBioAudit(container, bioAuditData);
+    } catch (error) {
+        container.innerHTML = '<p class="error">Failed to load bio audit data. Run <code>python3 scripts/audit_bios.py</code> to generate it.</p>';
+        console.error('Error loading bio audit:', error);
+    }
+}
+
+function renderBioAudit(container, data) {
+    const s = data.summary;
+    const total = s.total_bios;
+    const pct = (n) => total > 0 ? ((n / total) * 100).toFixed(1) : '0';
+
+    // Issue type labels
+    const issueLabels = {
+        missing_target_blank: 'Missing target="_blank"',
+        http_not_https: 'HTTP instead of HTTPS',
+        first_name_only: 'First-name-only opening',
+        promotional_language: 'Promotional language',
+        first_person: 'First-person voice',
+        vague_filler: 'Vague filler phrases',
+        forbidden_html_tags: 'Forbidden HTML tags',
+        html_errors: 'HTML errors (broken markup)',
+        arctic_code_vault: 'Arctic Code Vault mention',
+        email_address: 'Email address in bio',
+        over_word_limit: 'Over ~150 word limit',
+        link_text_format: 'Link text format issues',
+        links_in_body: 'Links in body paragraph',
+        missing_pipe_separator: 'Missing pipe separator',
+        other: 'Other issues',
+    };
+
+    // Sort issue types by count
+    const issueTypes = Object.entries(s.bios_with_issue_type)
+        .sort((a, b) => b[1] - a[1]);
+
+    // Build the summary section
+    let html = `
+        <div class="guide-section">
+            <h3>Summary Statistics</h3>
+            <table class="guide-table">
+                <thead>
+                    <tr><th>Metric</th><th>Count</th><th>Percentage</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Total bios inspected</td><td><strong>${total}</strong></td><td>100%</td></tr>
+                    <tr><td>Fully compliant</td><td><strong>${s.passing}</strong></td><td>${pct(s.passing)}%</td></tr>
+                    <tr><td>Minor issues only (1&ndash;2 items)</td><td><strong>${s.minor_issues}</strong></td><td>${pct(s.minor_issues)}%</td></tr>
+                    <tr><td>Major issues (3+ items)</td><td><strong>${s.major_issues}</strong></td><td>${pct(s.major_issues)}%</td></tr>
+                </tbody>
+            </table>
+
+            <h4>Issues by Type (bios affected)</h4>
+            <table class="guide-table">
+                <thead>
+                    <tr><th>Issue Type</th><th>Bios Affected</th><th>% of Catalog</th></tr>
+                </thead>
+                <tbody>
+                    ${issueTypes.map(([key, count]) => `
+                        <tr>
+                            <td>${escapeHtml(issueLabels[key] || key)}</td>
+                            <td>${count}</td>
+                            <td>${pct(count)}%</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="guide-section">
+            <h3>Quality Assessment</h3>
+            <p>Out of ${total} bios in the catalog, only <strong>${s.passing}</strong> (${pct(s.passing)}%) fully pass the Editorial Guide checklist. ${s.minor_issues} bios (${pct(s.minor_issues)}%) have minor issues (1&ndash;2 items, often just a missing <code>target="_blank"</code>), while <strong>${s.major_issues}</strong> (${pct(s.major_issues)}%) have substantive problems requiring editorial attention.</p>
+            <p>The most pervasive issue &mdash; missing <code>target="_blank"</code> on links &mdash; affects ${s.bios_with_issue_type.missing_target_blank || 0} bios (${pct(s.bios_with_issue_type.missing_target_blank || 0)}%). This is a mechanical fix that could be automated. Promotional language (${s.bios_with_issue_type.promotional_language || 0} bios) and first-name-only openings (${s.bios_with_issue_type.first_name_only || 0} bios) require more careful editorial work.</p>
+        </div>
+    `;
+
+    // Severity filter controls
+    html += `
+        <div class="guide-section">
+            <h3>All Bios</h3>
+            <div style="margin-bottom: 1em; display: flex; gap: 1em; align-items: center; flex-wrap: wrap;">
+                <label>Filter:
+                    <select id="bio-audit-severity-filter" style="padding: 0.3em; background: #1e1e1e; color: #e0e0e0; border: 1px solid #555; border-radius: 4px;">
+                        <option value="all">All (${total})</option>
+                        <option value="major">Major issues (${s.major_issues})</option>
+                        <option value="minor">Minor issues (${s.minor_issues})</option>
+                        <option value="pass">Passing (${s.passing})</option>
+                    </select>
+                </label>
+                <label>Search:
+                    <input type="text" id="bio-audit-search" placeholder="Designer name..." style="padding: 0.3em; background: #1e1e1e; color: #e0e0e0; border: 1px solid #555; border-radius: 4px; width: 200px;">
+                </label>
+                <span id="bio-audit-count" style="color: #888;">${total} bios</span>
+            </div>
+            <div id="bio-audit-table-container"></div>
+        </div>
+    `;
+
+    container.innerHTML = html;
+
+    // Render the table
+    renderBioAuditTable(data.results, 'all', '');
+
+    // Set up filter event listeners
+    document.getElementById('bio-audit-severity-filter').addEventListener('change', () => filterBioAudit());
+    document.getElementById('bio-audit-search').addEventListener('input', () => filterBioAudit());
+}
+
+function filterBioAudit() {
+    const severity = document.getElementById('bio-audit-severity-filter').value;
+    const search = document.getElementById('bio-audit-search').value.toLowerCase();
+    renderBioAuditTable(bioAuditData.results, severity, search);
+}
+
+function renderBioAuditTable(results, severityFilter, searchFilter) {
+    const filtered = results.filter(r => {
+        const matchesSeverity = severityFilter === 'all' || r.severity === severityFilter;
+        const matchesSearch = !searchFilter ||
+            (r.designer_name && r.designer_name.toLowerCase().includes(searchFilter)) ||
+            (r.designer_id && r.designer_id.toLowerCase().includes(searchFilter));
+        return matchesSeverity && matchesSearch;
+    });
+
+    const tableContainer = document.getElementById('bio-audit-table-container');
+    const countSpan = document.getElementById('bio-audit-count');
+    countSpan.textContent = `${filtered.length} of ${results.length} bios`;
+
+    if (filtered.length === 0) {
+        tableContainer.innerHTML = '<p class="no-results">No bios match the current filters.</p>';
+        return;
+    }
+
+    // Sort: major first, then minor, then pass
+    const severityOrder = { major: 0, minor: 1, pass: 2 };
+    const sorted = [...filtered].sort((a, b) => {
+        const oa = severityOrder[a.severity] ?? 3;
+        const ob = severityOrder[b.severity] ?? 3;
+        if (oa !== ob) return oa - ob;
+        return b.issue_count - a.issue_count;
+    });
+
+    const display = sorted.slice(0, 200);
+    const hasMore = sorted.length > 200;
+
+    const severityColors = {
+        pass: '#4caf50',
+        minor: '#ff9800',
+        major: '#f44336',
+    };
+
+    const table = document.createElement('table');
+    table.className = 'guide-table';
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Designer</th>
+                <th>Severity</th>
+                <th>Issues</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${display.map(r => `
+                <tr>
+                    <td><strong>${escapeHtml(r.designer_name)}</strong><br><small style="color:#888">${escapeHtml(r.designer_id)}</small></td>
+                    <td><span style="color: ${severityColors[r.severity] || '#888'}; font-weight: bold;">${r.severity === 'pass' ? 'PASS' : r.severity.toUpperCase()}</span></td>
+                    <td>${r.issue_count}</td>
+                    <td>${r.issues.length > 0
+                        ? `<details><summary>${r.issue_count} issue${r.issue_count !== 1 ? 's' : ''}</summary><ul style="margin: 0.5em 0; padding-left: 1.2em;">${r.issues.map(i => `<li style="margin-bottom:0.3em;">${escapeHtml(i)}</li>`).join('')}</ul></details>`
+                        : '<span style="color:#4caf50;">No issues</span>'
+                    }</td>
+                </tr>
+            `).join('')}
+        </tbody>
+    `;
+
+    tableContainer.innerHTML = '';
+    tableContainer.appendChild(table);
+
+    if (hasMore) {
+        const msg = document.createElement('p');
+        msg.className = 'more-results';
+        msg.textContent = `Showing first 200 of ${sorted.length} results. Use filters to narrow down.`;
+        tableContainer.appendChild(msg);
     }
 }

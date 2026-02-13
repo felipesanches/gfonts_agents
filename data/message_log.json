@@ -500,5 +500,15 @@
     "timestamp": "2026-02-13T16:30:00Z",
     "role": "assistant",
     "message": "Audited 30 randomly sampled pre-existing bio.html files against the Editorial Guide. Results: Only 1 bio (Artur Schmal) was fully compliant; 6 had minor issues only; 23 had substantive issues (77%). Most common problems: missing target=\"_blank\" (73%), first-name-only openings (33%), promotional/marketing language (33%), incorrect link text format (27%), HTTP instead of HTTPS (13%), broken HTML (10%). Wrote detailed reports for 8 representative non-compliant bios (NORD ID, Vernon Adams, IBM BX&D, Carolina Short, Hana Tanimura, Facundo Santana, Satsuyako, Ross Mills) plus brief notes on 15 more. Added a 'Bio Audit' tab to the dashboard with full report, statistics, and recommendations."
+  },
+  {
+    "timestamp": "2026-02-13T17:00:00Z",
+    "role": "user",
+    "message": "now perform the same procedure with the entire set of existing bios"
+  },
+  {
+    "timestamp": "2026-02-13T17:30:00Z",
+    "role": "assistant",
+    "message": "Wrote a Python audit script (scripts/audit_bios.py) that programmatically checks all bio.html files against the Editorial Guide's 14-point checklist. Ran it on all 364 bios. Results: 55 (15%) fully compliant, 220 (60%) minor issues, 89 (24%) major issues. Most common: missing target=\"_blank\" (221 bios, 60%), promotional language (83, 22%), HTTP not HTTPS (56, 15%), link text format (52, 14%), first-name-only (42, 11%), vague filler (24, 6%), links in body (19, 5%), HTML errors (15, 4%), missing pipe separator (8, 2%), over word limit (6, 1%), first person (5, 1%), forbidden tags (4, 1%), email (1). Replaced the sample-based Bio Audit tab with a dynamic one that loads from data/bio_audit.json, with filtering by severity and search by designer name."
   }
 ]
