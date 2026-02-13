@@ -510,5 +510,55 @@
     "timestamp": "2026-02-13T17:30:00Z",
     "role": "assistant",
     "message": "Wrote a Python audit script (scripts/audit_bios.py) that programmatically checks all bio.html files against the Editorial Guide's 14-point checklist. Ran it on all 364 bios. Results: 55 (15%) fully compliant, 220 (60%) minor issues, 89 (24%) major issues. Most common: missing target=\"_blank\" (221 bios, 60%), promotional language (83, 22%), HTTP not HTTPS (56, 15%), link text format (52, 14%), first-name-only (42, 11%), vague filler (24, 6%), links in body (19, 5%), HTML errors (15, 4%), missing pipe separator (8, 2%), over word limit (6, 1%), first person (5, 1%), forbidden tags (4, 1%), email (1). Replaced the sample-based Bio Audit tab with a dynamic one that loads from data/bio_audit.json, with filtering by severity and search by designer name."
+  },
+  {
+    "timestamp": "2026-02-13T18:00:00Z",
+    "role": "user",
+    "message": "Open a PR fixing all of the _blank issues"
+  },
+  {
+    "timestamp": "2026-02-13T18:15:00Z",
+    "role": "assistant",
+    "message": "Created PR #10226 (fix-bio-target-blank) adding target=\"_blank\" to all <a> tags missing it in designer bios. Fixed 221 files. Verified no duplicate target=\"_blank\" attributes were introduced."
+  },
+  {
+    "timestamp": "2026-02-13T18:30:00Z",
+    "role": "user",
+    "message": "Open a PR fixing all First-name-only issues"
+  },
+  {
+    "timestamp": "2026-02-13T18:45:00Z",
+    "role": "assistant",
+    "message": "Created PR #10227 (fix-bio-first-name-only) replacing first-name-only openings with full names in 34 designer bios. Analyzed all 42 flagged bios, identified 8 false positives (names already correct in bio text, company legal suffixes, ambiguous name variants). Documented skip reasons in PR description."
+  },
+  {
+    "timestamp": "2026-02-13T19:00:00Z",
+    "role": "user",
+    "message": "Open a PR fixing all 'Links in body paragraph' issues"
+  },
+  {
+    "timestamp": "2026-02-13T19:15:00Z",
+    "role": "assistant",
+    "message": "Created PR #10228 (fix-bio-links-in-body). Initial attempt just unwrapped <a> tags."
+  },
+  {
+    "timestamp": "2026-02-13T19:30:00Z",
+    "role": "user",
+    "message": "When you remove a link from the body paragraph, be sure to move it to the final paragraph, following the policy of link formatting."
+  },
+  {
+    "timestamp": "2026-02-13T19:45:00Z",
+    "role": "user",
+    "message": "if you really think you need to completely remove a URL, you must do it on a PR dedicated to URL removals, not this one. And if you do so, you must provide a reasoning for each removal. If possible, though, keep the URLs if they're useful."
+  },
+  {
+    "timestamp": "2026-02-13T20:00:00Z",
+    "role": "user",
+    "message": "Saying 'on Google Fonts' is a bit redundant for a bio hosted on Google Fonts. Please add a policy to avoid that."
+  },
+  {
+    "timestamp": "2026-02-13T20:30:00Z",
+    "role": "assistant",
+    "message": "Updated PR #10228 (fix-bio-links-in-body) after multiple rounds of feedback. Final version: (1) Moves inline links from body to final pipe-separated links paragraph in 17 bios. (2) All URLs preserved — zero removals. (3) Link text follows editorial guide: domain name for websites, platform name for social media, typeface name for typeface-specific pages, descriptive text for unique resources. (4) HTTP upgraded to HTTPS. (5) Fixed duplicate/confusing link text (e.g., multiple 'djr.com' → 'Manicotti', 'Turnip'; multiple 'GitHub' → 'Atithi', 'Shrikhand'). (6) Fixed misplaced link paragraph in huertatipografica bio. Added policy to Editorial Guide: avoid redundant 'on Google Fonts' in link text; use just typeface name for specimen links."
   }
 ]
