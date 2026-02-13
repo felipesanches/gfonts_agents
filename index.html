@@ -25,6 +25,7 @@
             <button class="tab-btn" data-tab="plans">Plans</button>
             <button class="tab-btn" data-tab="disk">Disk Usage</button>
             <button class="tab-btn" data-tab="bio-guide">Bio Guide</button>
+            <button class="tab-btn" data-tab="bio-audit">Bio Audit</button>
         </nav>
 
         <section id="tab-sources" class="tab-content active">
@@ -683,6 +684,366 @@ in African history and culture.&lt;/p&gt;
                         <label><input type="checkbox"> Facts have been verified against public sources</label>
                         <label><input type="checkbox"> No other HTML tags besides <code>&lt;p&gt;</code> and <code>&lt;a&gt;</code></label>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-bio-audit" class="tab-content">
+            <div class="panel">
+                <h2>Pre-Existing Bio Audit Report</h2>
+                <p class="panel-description">Compliance review of 30 randomly sampled designer biographies against the Editorial Guide (February 2026)</p>
+
+                <div class="guide-section">
+                    <h3>Summary Statistics</h3>
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Count</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total bios inspected</td>
+                                <td><strong>30</strong></td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>Fully compliant</td>
+                                <td><strong>1</strong></td>
+                                <td>3%</td>
+                            </tr>
+                            <tr>
+                                <td>Minor issues only (1&ndash;2 items)</td>
+                                <td><strong>6</strong></td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>Substantive issues (3+ items)</td>
+                                <td><strong>23</strong></td>
+                                <td>77%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Most Common Issues</h4>
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Issue</th>
+                                <th>Occurrences</th>
+                                <th>% of sample</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Missing <code>target="_blank"</code> on links</td>
+                                <td>22</td>
+                                <td>73%</td>
+                            </tr>
+                            <tr>
+                                <td>First name only (not full name) in opening</td>
+                                <td>10</td>
+                                <td>33%</td>
+                            </tr>
+                            <tr>
+                                <td>Promotional or marketing language</td>
+                                <td>10</td>
+                                <td>33%</td>
+                            </tr>
+                            <tr>
+                                <td>Link text format (should be domain name or platform name)</td>
+                                <td>8</td>
+                                <td>27%</td>
+                            </tr>
+                            <tr>
+                                <td>HTTP instead of HTTPS</td>
+                                <td>4</td>
+                                <td>13%</td>
+                            </tr>
+                            <tr>
+                                <td>Broken or malformed HTML</td>
+                                <td>3</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>First-person voice</td>
+                                <td>2</td>
+                                <td>7%</td>
+                            </tr>
+                            <tr>
+                                <td>Generic filler / vague statements</td>
+                                <td>6</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Quality Assessment</h3>
+                    <p>Based on this random sample of 30 out of 364 existing bios (8.2%), the pre-existing catalog is in <strong>poor compliance</strong> with the Editorial Guide. Only 1 bio (Artur Schmal) fully passes the checklist. The most pervasive issue &mdash; missing <code>target="_blank"</code> on links &mdash; affects nearly three-quarters of all bios. Beyond this mechanical issue, a third of bios use first names only in their opening sentences, and another third contain promotional or marketing language that conflicts with the guide's neutral, encyclopedic tone.</p>
+                    <p>The HTML quality is generally acceptable, but there are cases of malformed markup (unclosed <code>&lt;p&gt;</code> tags, missing attribute quotes). Several bios include links using HTTP instead of HTTPS even though the destinations support HTTPS.</p>
+                    <p>Structurally, many bios were clearly written before any editorial standard existed: they use casual tone, first-person voice, vague filler phrases, or read more like marketing copy than encyclopedia entries. This suggests that <strong>a systematic cleanup of existing bios would be a worthwhile project</strong>, starting with the most clearly fixable issues (target="_blank", HTTPS, broken HTML) and then progressing to tone and content rewrites.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Detailed Non-Compliance Reports</h3>
+                    <p>Below are detailed reports for 8 representative non-compliant bios, chosen to illustrate the diversity of issues found.</p>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>1. NORD ID (nordid)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;Based in Stockholm &amp; Copenhagen, NORD ID is a leading strategy &amp; design agency creating coherent, distinct and differentiating brand identities. Uniquely combining insightful conceptual design with unparalleled craft, more often developing custom type design to be a key brand building component to create instant recognition across any and all touchpoints: From custom typefaces for large companies such as Vattenfall, Klarna and Skanska, down to more experimental type design for campaigns such as Chillboards for Coors.&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>Promotional language</strong>: &ldquo;leading&rdquo;, &ldquo;Uniquely combining insightful conceptual design with unparalleled craft&rdquo; &mdash; violates the &ldquo;no subjective superlatives or marketing language&rdquo; rule</li>
+                            <li><strong>Link text</strong>: Says &ldquo;website&rdquo; instead of the domain name &ldquo;nordid.se&rdquo;</li>
+                            <li><strong>Missing <code>target="_blank"</code></strong> on the link</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Rewrite to remove promotional language. Open with &ldquo;Based in Stockholm and Copenhagen, NORD ID is a strategy and design agency.&rdquo; Focus on factual output (custom typefaces for named clients). Fix link text to &ldquo;nordid.se&rdquo; and add <code>target="_blank"</code>.</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>2. Vernon Adams (vernonadams)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;Vernon practiced typeface design professionally from 2007 to 2014. A lifelong artist, during this period he eagerly explored designing type for the mobile/cloud era of computing. His work spans all genres, from lively script faces to workhorse text families and operating system UI. Vernon graduated with an MA in Typeface Design from the University of Reading (UK) in 2006, and passed away in California in 2014. Almost all his typefaces live on as open source Google Fonts, and his favorite projects were Oxygen Mono, Monda, and Bowlby One. Follow his story at sansoxygen.com&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>First name only</strong>: Opens with &ldquo;Vernon practiced&rdquo; instead of &ldquo;Vernon Adams&rdquo;</li>
+                            <li><strong>Link embedded in body</strong>: The link to sansoxygen.com is inside the main paragraph, not in a separate final links paragraph</li>
+                            <li><strong>HTTP link</strong>: Uses <code>http://sansoxygen.com</code> instead of HTTPS</li>
+                            <li><strong>Missing <code>target="_blank"</code></strong></li>
+                            <li><strong>Editorializing</strong>: &ldquo;A lifelong artist&rdquo;, &ldquo;eagerly explored&rdquo;, &ldquo;lively script faces&rdquo;</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Open with &ldquo;Vernon Adams was a type designer&rdquo; (past tense appropriate since he passed away). Move link to a separate final paragraph with HTTPS and proper formatting. Remove editorial language; state his work factually. Name his Google Fonts contributions explicitly.</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>3. IBM BX&amp;D (ibmbxd)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;IBM Brand Experience &amp; Design (BX&amp;D) oversees the expression and strategic evolution of every IBM brand and sub-brand worldwide. Our work crosses research and strategy, communications and content development, symbology and systems, digital and physical experiences, tools and training. Ultimately, BX&amp;D is here to make sure the role of the IBM brand is well understood and well represented&mdash;across the globe and across every experience.&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>First-person voice</strong>: &ldquo;Our work crosses...&rdquo; and &ldquo;BX&amp;D is here to make sure&rdquo; &mdash; violates the third-person requirement</li>
+                            <li><strong>Link text</strong>: Says &ldquo;Homepage&rdquo; instead of domain &ldquo;ibm.com/design&rdquo;</li>
+                            <li><strong>No mention of typefaces</strong>: IBM Plex (their major Google Fonts contribution) is not mentioned</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Rewrite entirely in third person following the foundry/studio template. Mention IBM Plex as their contribution to Google Fonts. Example opening: &ldquo;IBM Brand Experience &amp; Design (BX&amp;D) is the design division of IBM responsible for the company&rsquo;s brand identity worldwide.&rdquo;</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>4. Carolina Short (carolinashort)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;Carolina is a designer from Buenos Aires. After 30 years of working in the industry, and part-time teaching experience in Argentina, Germany and New Zealand, took a full-time academic position at the University of Waikato. Her education was in traditional graphic design, with a strong emphasis on typography, which became her deep interest. In 1994 she created the experimental typeface Miyuscules, one of the first Argentine digital fonts. In 1996 became a digital nomad, founded Bigital with Tom&aacute;s Garc&iacute;a Ferrari, and started developing projects for clients in different countries...&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>First name only</strong>: &ldquo;Carolina is a designer&rdquo; instead of &ldquo;Carolina Short&rdquo;</li>
+                            <li><strong>Broken HTML</strong>: Missing <code>&lt;/p&gt;</code> closing tag (only one <code>&lt;p&gt;</code> opened for the body, never closed before the links paragraph)</li>
+                            <li><strong>Grammar errors</strong>: &ldquo;took a full-time academic position&rdquo; and &ldquo;In 1996 became a digital nomad&rdquo; &mdash; both missing the subject &ldquo;she&rdquo;</li>
+                            <li><strong>HTTP link</strong>: <code>http://bigital.com/</code> (redirects to HTTPS)</li>
+                            <li><strong>Vague filler</strong>: &ldquo;keeps thinking about new typography projects, currently with other fonts under development&rdquo;</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Open with &ldquo;Carolina Short is a designer and educator from Buenos Aires, Argentina.&rdquo; Fix grammar (add missing subjects). Close the <code>&lt;p&gt;</code> tag. Use HTTPS for links. Remove the vague ending and focus on Mansalva (her Google Fonts contribution).</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>5. Hana Tanimura (hanatanimura)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;Hana is an award-winning designer and art director at Google Creative Lab in New York (previously in London). She likes making good things with good people, for good causes. And sometimes just for fun.&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>First name only</strong>: &ldquo;Hana is&rdquo; instead of &ldquo;Hana Tanimura is&rdquo;</li>
+                            <li><strong>Promotional superlative</strong>: &ldquo;award-winning&rdquo; is a subjective superlative per the guide. If specific awards exist, they should be named factually.</li>
+                            <li><strong>Casual / editorial tone</strong>: &ldquo;She likes making good things with good people, for good causes. And sometimes just for fun.&rdquo; &mdash; this reads like a personal tagline, not an encyclopedic bio</li>
+                            <li><strong>Link text</strong>: &ldquo;Homepage&rdquo; instead of domain &ldquo;hanatanimura.com&rdquo;</li>
+                            <li><strong>No mention of typefaces</strong>: No reference to specific Google Fonts contributions</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Open with &ldquo;Hana Tanimura is a designer and art director at Google Creative Lab in New York.&rdquo; Replace the tagline with factual information about her type design work. Fix link text to domain name. Name any specific typefaces she contributed to Google Fonts.</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>6. Facundo Santana (facundosantana)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;Facundo Santana, from Mar del Plata, Argentina, is the Co-founder &amp; Managing Partner of basement.studio, where he leads growth, operations, and strategy. With a background in design and a sharp business acumen, Facundo bridges creativity and strategy to drive the company&rsquo;s vision forward. In addition, he is a member of SoDA, an exclusive network of digital agency leaders, and the Entrepreneurs&rsquo; Organization (EO), an LP at Newtopia, and actively supports innovative startups as both an investor and advisor through basement ventures.&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>Pervasive promotional language</strong>: &ldquo;sharp business acumen&rdquo;, &ldquo;bridges creativity and strategy to drive the company&rsquo;s vision forward&rdquo;, &ldquo;exclusive network&rdquo;, &ldquo;actively supports innovative startups&rdquo;</li>
+                            <li><strong>Not type-design focused</strong>: The entire bio is about business and startup activities; no typefaces or type design work is mentioned at all</li>
+                            <li><strong>Missing <code>target="_blank"</code></strong> on link</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Rewrite to focus on type design. Open with &ldquo;Facundo Santana is a designer based in Mar del Plata, Argentina, and co-founder of basement.studio.&rdquo; Remove all promotional language and business-focused content. Add mention of specific typefaces contributed to Google Fonts.</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>7. Satsuyako (satsuyako)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;A freelance designer based in Saitama, Japan. Started designing Japanese fonts in 2012, including Yomogi, Cherry Bomb One, and more. They have also worked on Latin fonts since 2019.&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>No full name</strong>: Opens with &ldquo;A freelance designer&rdquo; without any name. The guide requires the full name in the opening sentence.</li>
+                            <li><strong>Links in body paragraph</strong>: Font names (Yomogi, Cherry Bomb One) are hyperlinked to Google Fonts specimen pages inside the body paragraph, which mixes content links with the bio structure</li>
+                            <li><strong>Link text issues</strong>: Final paragraph uses &ldquo;website&rdquo; (lowercase) and &ldquo;twitter&rdquo; (lowercase) instead of domain name and proper platform name &ldquo;Twitter&rdquo;</li>
+                            <li><strong>Missing sentence subjects</strong>: &ldquo;Started designing&rdquo; lacks a subject</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Open with &ldquo;Satsuyako is a type designer based in Saitama, Japan.&rdquo; Remove hyperlinks from font names in the body. Add proper subjects to sentences. Fix link text to &ldquo;satsuyako.com&rdquo; and &ldquo;Twitter&rdquo; (or &ldquo;X&rdquo;) with proper capitalization.</p>
+                    </div>
+
+                    <div class="guide-section" style="border-left: 3px solid #dc3545; padding-left: 1em; margin-top: 1.5em;">
+                        <h4>8. Ross Mills (rossmills)</h4>
+                        <blockquote style="background: #f8f9fa; padding: 0.8em; border-radius: 4px; font-size: 0.9em;">
+                            &ldquo;Ross Mills is a Canadian type designer and font maker, and co-founder of Tiro Typeworks (1994).&rdquo;
+                        </blockquote>
+                        <p><strong>Issues found:</strong></p>
+                        <ul>
+                            <li><strong>Broken HTML</strong>: The closing tag is <code>&lt;p&gt;</code> instead of <code>&lt;/p&gt;</code>, resulting in malformed markup</li>
+                            <li><strong>No links paragraph</strong>: No website or social media links provided despite Tiro Typeworks having a well-known website (tiro.com)</li>
+                        </ul>
+                        <p><strong>Suggested fix</strong>: Fix the closing tag to <code>&lt;/p&gt;</code>. Add a links paragraph with the Tiro Typeworks website. Consider adding mention of notable Tiro typefaces on Google Fonts.</p>
+                    </div>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Additional Non-Compliant Bios (brief notes)</h3>
+                    <p>Beyond the 8 detailed reports above, the following bios also had notable issues:</p>
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Designer</th>
+                                <th>Key Issues</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mariya Lish</td>
+                                <td>First name only (&ldquo;Mariya is a designer&rdquo;); generic filler (&ldquo;over a decade of experience&rdquo;, &ldquo;large catalogue of work&rdquo;, &ldquo;extensive background&rdquo;); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Ilya Ruderman</td>
+                                <td>First name only (&ldquo;Ilya is a type and graphic designer&rdquo;); &ldquo;has been sought out as an expert consultant&rdquo; (promotional); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Carolina Giovagnoli</td>
+                                <td>HTTP links; malformed HTML (missing quotes on <code>href</code> attributes); vague statements (&ldquo;combines her passion&rdquo;); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Borna Izadpanah</td>
+                                <td>&ldquo;numerous prestigious awards&rdquo; (promotional superlative); HTTP link for GitHub</td>
+                            </tr>
+                            <tr>
+                                <td>Henrik Kongsvoll</td>
+                                <td>Uses nickname &ldquo;Henke&rdquo; instead of full name; vague description (&ldquo;He makes and produces fonts&rdquo;); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Viktoriya Grabowska</td>
+                                <td>First name only (&ldquo;Viktoriya specializes&rdquo;); grammar (&ldquo;Since 2017 she is a member&rdquo; should be &ldquo;has been&rdquo;); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Sergej Lebedev</td>
+                                <td>Promotional: &ldquo;His goal is to create high-quality fonts which will serve as an excellent base for any design projects&rdquo;; no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Stephen Hutchings</td>
+                                <td>&ldquo;specialist digital designer with deep expertise and broad interests&rdquo; (promotional); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Suonmay Sophanith</td>
+                                <td>First name only (&ldquo;Sophanith is&rdquo;); awkward phrasing (&ldquo;provides custom font design tasks&rdquo;); &ldquo;significant contribution&rdquo; (vague); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Grilli Type</td>
+                                <td>&ldquo;high quality products with a contemporary aesthetic in the Swiss tradition&rdquo; (promotional); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Tai</td>
+                                <td>Mismatched link text (&ldquo;sophiatai.com&rdquo;) vs actual URL (cargocollective.com/sophiatai); vague temporal reference (&ldquo;In the same year&rdquo;); no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Steve Matteson</td>
+                                <td>Irrelevant personal hobbies (&ldquo;avid cyclist, musician&rdquo;); link text says &ldquo;Homepage&rdquo; instead of domain name</td>
+                            </tr>
+                            <tr>
+                                <td>Agustina Mingote</td>
+                                <td>Awkward phrasing (&ldquo;who currently lives in&rdquo;, &ldquo;currently works giving workshops&rdquo;); redundant &ldquo;currently&rdquo;; no <code>target="_blank"</code></td>
+                            </tr>
+                            <tr>
+                                <td>Jordan Egstad</td>
+                                <td>&ldquo;expressive and enduring&rdquo; (promotional); no <code>target="_blank"</code>; no mention of typefaces</td>
+                            </tr>
+                            <tr>
+                                <td>Dmitry Ivanov</td>
+                                <td>Grammar (&ldquo;is open source&rdquo; missing article); &ldquo;Github&rdquo; should be &ldquo;GitHub&rdquo;; no <code>target="_blank"</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Compliant or Near-Compliant Bios</h3>
+                    <p>The following bios had no issues or only very minor ones:</p>
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Designer</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Artur Schmal</td>
+                                <td>Fully compliant. Third person, present tense, proper link formatting with <code>target="_blank"</code> and pipe separator.</td>
+                            </tr>
+                            <tr>
+                                <td>Felipe Casaprima</td>
+                                <td>Good structure and tone. No links paragraph, but may not have a known public website.</td>
+                            </tr>
+                            <tr>
+                                <td>AlefAlefAlef</td>
+                                <td>Near-compliant. Only issue: &ldquo;leading&rdquo; is a mild superlative; missing <code>target="_blank"</code>.</td>
+                            </tr>
+                            <tr>
+                                <td>David Sargent</td>
+                                <td>Near-compliant. Uses Indigenous land acknowledgment instead of standard &ldquo;based in {City}&rdquo; format; missing <code>target="_blank"</code>.</td>
+                            </tr>
+                            <tr>
+                                <td>SIL International</td>
+                                <td>Near-compliant. Link text says &ldquo;Webpage&rdquo; instead of domain name.</td>
+                            </tr>
+                            <tr>
+                                <td>Bustanul Arifin</td>
+                                <td>Near-compliant. Missing <code>target="_blank"</code>; otherwise good.</td>
+                            </tr>
+                            <tr>
+                                <td>Tanukizamurai</td>
+                                <td>Near-compliant. Link text says &ldquo;Website&rdquo; instead of domain; mild editorial (&ldquo;aims to provide an enjoyable environment&rdquo;).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Recommendations</h3>
+                    <ol>
+                        <li><strong>Quick mechanical fixes</strong>: A script could add <code>target="_blank"</code> to all links missing it, and upgrade HTTP to HTTPS. This would fix issues in 73% and 13% of bios respectively, with no editorial judgment required.</li>
+                        <li><strong>Fix broken HTML</strong>: At least 3 bios have malformed HTML (unclosed tags, missing attribute quotes). These should be fixed as a priority since they may affect rendering.</li>
+                        <li><strong>Full-name standardization</strong>: 10 bios (33%) use first names only. These should be updated to use the full name from the designer directory.</li>
+                        <li><strong>Tone cleanup</strong>: Bios with promotional language, first-person voice, or casual tone need editorial rewriting. This is the most labor-intensive category and likely needs human review.</li>
+                        <li><strong>Link text standardization</strong>: Update link text to use domain names for websites and platform names for social media, per the guide.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Methodology</h3>
+                    <p>30 bios were selected at random (using system random source) from the 364 existing <code>bio.html</code> files in the <code>google/fonts</code> catalog, excluding the 8 bios written by Claude in PR #10224. Each bio was checked against all 14 items in the Editorial Guide&rsquo;s Pre-Submission Checklist. The sample represents 8.2% of the catalog.</p>
+                    <p><em>Audit performed: February 13, 2026</em></p>
                 </div>
             </div>
         </section>
