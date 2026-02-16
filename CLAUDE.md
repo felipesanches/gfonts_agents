@@ -29,6 +29,8 @@ Upstream repositories must have a `config.yaml` file containing gftools-builder 
 
 Alternatively, an overriding `config.yaml` can be provided directly in the family directory within the google/fonts repository.
 
+**Important**: When an override `config.yaml` exists in the google/fonts family directory, the `config_yaml` field can be omitted from the METADATA.pb `source { }` block. The google-fonts-sources tool (used to generate fontc_crater targets) will automatically detect the local override. Only set `config_yaml` in METADATA.pb when pointing to a config file in the upstream repository.
+
 ### Fixing Missing or Incorrect Data
 
 When data is missing or incorrect (e.g., missing config.yaml, missing commit hash, wrong repository_url), we should:

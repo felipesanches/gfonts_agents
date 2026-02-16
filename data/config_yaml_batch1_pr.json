@@ -1,0 +1,77 @@
+[
+  {
+    "family_name": "Amarna",
+    "path": "ofl/amarna/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Big Shoulders",
+    "path": "ofl/bigshoulders/METADATA.pb",
+    "config_yaml": "Big-Shoulders/sources/config.yml"
+  },
+  {
+    "family_name": "Big Shoulders Inline",
+    "path": "ofl/bigshouldersinline/METADATA.pb",
+    "config_yaml": "Big-Shoulders-Inline/sources/config.yml"
+  },
+  {
+    "family_name": "Big Shoulders Stencil",
+    "path": "ofl/bigshouldersstencil/METADATA.pb",
+    "config_yaml": "Big-Shoulders-Stencil/sources/config.yml"
+  },
+  {
+    "family_name": "Cossette Texte",
+    "path": "ofl/cossettetexte/METADATA.pb",
+    "config_yaml": "sources/config-texte.yaml"
+  },
+  {
+    "family_name": "Geom",
+    "path": "ofl/geom/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Gveret Levin",
+    "path": "ofl/gveretlevin/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Momo Signature",
+    "path": "ofl/momosignature/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Momo Trust Display",
+    "path": "ofl/momotrustdisplay/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Momo Trust Sans",
+    "path": "ofl/momotrustsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Sekuya",
+    "path": "ofl/sekuya/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "SN Pro",
+    "path": "ofl/snpro/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "TASA Orbiter",
+    "path": "ofl/tasaorbiter/METADATA.pb",
+    "config_yaml": "sources/config-TASAOrbiter.yaml"
+  },
+  {
+    "family_name": "Tiny5",
+    "path": "ofl/tiny5/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  },
+  {
+    "family_name": "Varela Round",
+    "path": "ofl/varelaround/METADATA.pb",
+    "config_yaml": "sources/config.yaml"
+  }
+]
