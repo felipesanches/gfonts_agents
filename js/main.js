@@ -1569,7 +1569,6 @@ function renderBioAudit(container, data) {
     const issueLabels = {
         missing_target_blank: 'Missing target="_blank"',
         http_not_https: 'HTTP instead of HTTPS',
-        first_name_only: 'First-name-only opening',
         promotional_language: 'Promotional language',
         first_person: 'First-person voice',
         vague_filler: 'Vague filler phrases',
@@ -1624,7 +1623,7 @@ function renderBioAudit(container, data) {
         <div class="guide-section">
             <h3>Quality Assessment</h3>
             <p>Out of ${total} bios in the catalog, only <strong>${s.passing}</strong> (${pct(s.passing)}%) fully pass the Editorial Guide checklist. ${s.minor_issues} bios (${pct(s.minor_issues)}%) have minor issues (1&ndash;2 items, often just a missing <code>target="_blank"</code>), while <strong>${s.major_issues}</strong> (${pct(s.major_issues)}%) have substantive problems requiring editorial attention.</p>
-            <p>The most pervasive issue &mdash; missing <code>target="_blank"</code> on links &mdash; affects ${s.bios_with_issue_type.missing_target_blank || 0} bios (${pct(s.bios_with_issue_type.missing_target_blank || 0)}%). This is a mechanical fix that could be automated. Promotional language (${s.bios_with_issue_type.promotional_language || 0} bios) and first-name-only openings (${s.bios_with_issue_type.first_name_only || 0} bios) require more careful editorial work.</p>
+            <p>The most pervasive issue &mdash; missing <code>target="_blank"</code> on links &mdash; affects ${s.bios_with_issue_type.missing_target_blank || 0} bios (${pct(s.bios_with_issue_type.missing_target_blank || 0)}%). This is a mechanical fix that could be automated. Promotional language (${s.bios_with_issue_type.promotional_language || 0} bios) requires more careful editorial work.</p>
         </div>
     `;
 

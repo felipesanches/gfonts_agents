@@ -1,39 +1,37 @@
 {
   "summary": {
     "total_bios": 364,
-    "passing": 55,
-    "minor_issues": 220,
-    "major_issues": 89,
+    "passing": 66,
+    "minor_issues": 234,
+    "major_issues": 64,
     "parse_errors": 0,
     "issue_type_counts": {
-      "missing_target_blank": 303,
-      "link_text_format": 55,
+      "missing_target_blank": 289,
+      "link_text_format": 51,
       "email_address": 1,
       "promotional_language": 112,
-      "first_name_only": 42,
-      "http_not_https": 85,
+      "http_not_https": 54,
       "vague_filler": 26,
-      "html_errors": 15,
-      "links_in_body": 19,
+      "html_errors": 14,
       "forbidden_html_tags": 4,
       "first_person": 6,
       "over_word_limit": 6,
-      "missing_pipe_separator": 8
+      "links_in_body": 2,
+      "missing_pipe_separator": 4
     },
     "bios_with_issue_type": {
-      "missing_target_blank": 221,
-      "link_text_format": 52,
+      "link_text_format": 49,
+      "missing_target_blank": 216,
       "email_address": 1,
       "promotional_language": 83,
-      "first_name_only": 42,
-      "http_not_https": 56,
+      "http_not_https": 48,
       "vague_filler": 24,
-      "html_errors": 15,
-      "links_in_body": 19,
+      "html_errors": 14,
       "forbidden_html_tags": 4,
       "first_person": 5,
-      "missing_pipe_separator": 8,
-      "over_word_limit": 6
+      "over_word_limit": 6,
+      "links_in_body": 2,
+      "missing_pipe_separator": 4
     }
   },
   "results": [
@@ -215,14 +213,13 @@
       "designer_name": "Aleme Tadesse",
       "issues": [
         "Link missing target=\"_blank\": https://dcwatercolor.com",
-        "Link missing target=\"_blank\": https://beteseb.org/",
-        "First-name-only opening: starts with \"Aleme\" instead of \"Aleme Tadesse\""
+        "Link missing target=\"_blank\": https://beteseb.org/"
       ],
       "info": [
         "Word count: 87"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 87,
       "has_links": true,
       "link_count": 2
@@ -383,14 +380,13 @@
       "designer_id": "amaasantewadiaka",
       "designer_name": "Ama Diaka",
       "issues": [
-        "Link missing target=\"_blank\": https://www.instagram.com/asantewawith1a/",
-        "First-name-only opening: starts with \"Ama\" instead of \"Ama Diaka\""
+        "Link missing target=\"_blank\": https://www.instagram.com/asantewawith1a/"
       ],
       "info": [
         "Word count: 72"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 72,
       "has_links": true,
       "link_count": 1
@@ -446,14 +442,13 @@
       "designer_id": "andreasrasmussen",
       "designer_name": "Andreas Rasmussen",
       "issues": [
-        "Link missing target=\"_blank\": https://a-foundry.com/",
-        "First-name-only opening: starts with \"Andreas\" instead of \"Andreas Rasmussen\""
+        "Link missing target=\"_blank\": https://a-foundry.com/"
       ],
       "info": [
         "Word count: 11"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 11,
       "has_links": true,
       "link_count": 1
@@ -511,14 +506,13 @@
       "designer_name": "Anna Giedry\u015b",
       "issues": [
         "HTTP instead of HTTPS: http://twitter.com/Ancymonic",
-        "HTTP instead of HTTPS: http://ancymonic.com/",
-        "First-name-only opening: starts with \"Anna\" instead of \"Anna Giedry\u015b\""
+        "HTTP instead of HTTPS: http://ancymonic.com/"
       ],
       "info": [
         "Word count: 82"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 82,
       "has_links": true,
       "link_count": 2
@@ -572,14 +566,13 @@
       "designer_id": "aoifemooney",
       "designer_name": "Aoife Mooney",
       "issues": [
-        "HTTP instead of HTTPS: http://www.aoifemooney.org/",
-        "First-name-only opening: starts with \"Aoife\" instead of \"Aoife Mooney\""
+        "HTTP instead of HTTPS: http://www.aoifemooney.org/"
       ],
       "info": [
         "Word count: 91"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 91,
       "has_links": true,
       "link_count": 3
@@ -591,14 +584,13 @@
         "HTTP instead of HTTPS: http://appajiambarisha.com",
         "Promotional language: \"innovative\"",
         "Promotional language: \"exceptional\"",
-        "Vague filler: vague experience claim",
-        "First-name-only opening: starts with \"Appaji\" instead of \"Appaji Ambarisha Darbha\""
+        "Vague filler: vague experience claim"
       ],
       "info": [
         "Word count: 65"
       ],
       "severity": "major",
-      "issue_count": 5,
+      "issue_count": 4,
       "word_count": 65,
       "has_links": true,
       "link_count": 2
@@ -623,16 +615,14 @@
       "designer_id": "arrowtype",
       "designer_name": "Arrow Type",
       "issues": [
-        "Link missing target=\"_blank\": https://fonts.google.com/specimen/Recursive",
         "Promotional language: \"unique/uniquely\"",
-        "Promotional language: \"master/masterful\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "Promotional language: \"master/masterful\""
       ],
       "info": [
         "Word count: 93"
       ],
-      "severity": "major",
-      "issue_count": 4,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 93,
       "has_links": true,
       "link_count": 5
@@ -700,14 +690,13 @@
       "designer_id": "azzaalameddine",
       "designer_name": "Azza Alameddine",
       "issues": [
-        "Link missing target=\"_blank\": https://www.azalam.com",
-        "First-name-only opening: starts with \"Azza\" instead of \"Azza Alameddine\""
+        "Link missing target=\"_blank\": https://www.azalam.com"
       ],
       "info": [
         "Word count: 98"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 98,
       "has_links": true,
       "link_count": 1
@@ -951,15 +940,13 @@
       "designer_id": "cadsondemak",
       "designer_name": "Cadson Demak",
       "issues": [
-        "HTTP instead of HTTPS: http://font.cadsondemak.com/foundry/",
-        "Link text \"Github\" should be \"GitHub\" (capitalization)",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "HTTP instead of HTTPS: http://font.cadsondemak.com/foundry/"
       ],
       "info": [
         "Word count: 77"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 1,
       "word_count": 77,
       "has_links": true,
       "link_count": 3
@@ -969,14 +956,13 @@
       "designer_name": "Cal.com Inc.",
       "issues": [
         "Link missing target=\"_blank\": https://cal.com",
-        "Promotional language: \"the best\"",
-        "First-name-only opening: starts with \"Cal.com\" instead of \"Cal.com Inc.\""
+        "Promotional language: \"the best\""
       ],
       "info": [
         "Word count: 14"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 14,
       "has_links": true,
       "link_count": 1
@@ -1026,14 +1012,13 @@
         "Link missing target=\"_blank\": http://bigital.com/",
         "Link missing target=\"_blank\": https://www.instagram.com/carolinashort/",
         "HTTP instead of HTTPS: http://bigital.com/",
-        "Vague filler: \"keeps thinking about\"",
-        "First-name-only opening: starts with \"Carolina\" instead of \"Carolina Short\""
+        "Vague filler: \"keeps thinking about\""
       ],
       "info": [
         "Word count: 113"
       ],
       "severity": "major",
-      "issue_count": 5,
+      "issue_count": 4,
       "word_count": 113,
       "has_links": true,
       "link_count": 2
@@ -1384,14 +1369,13 @@
       "designer_name": "Dan Reynolds",
       "issues": [
         "HTTP instead of HTTPS: http://www.typeoff.de/",
-        "HTTP instead of HTTPS: http://github.com/typeoff/%5D%20%5B@typeoff",
-        "First-name-only opening: starts with \"Dan\" instead of \"Dan Reynolds\""
+        "HTTP instead of HTTPS: http://github.com/typeoff/%5D%20%5B@typeoff"
       ],
       "info": [
         "Word count: 67"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 67,
       "has_links": true,
       "link_count": 3
@@ -1474,22 +1458,13 @@
       "designer_id": "davidjonathanross",
       "designer_name": "David Jonathan Ross",
       "issues": [
-        "HTTP instead of HTTPS: http://www.fontbureau.com/",
-        "HTTP instead of HTTPS: http://www.djr.com/typefaces/manicotti",
-        "HTTP instead of HTTPS: http://www.djr.com/typefaces/turnip",
-        "HTTP instead of HTTPS: http://input.fontbureau.com/",
-        "HTTP instead of HTTPS: http://retroscriptla.com/",
-        "HTTP instead of HTTPS: http://www.djr.com/",
-        "HTTP instead of HTTPS: http://www.github.com/djrrb",
-        "HTTP instead of HTTPS: http://www.twitter.com/djrrb",
-        "First-name-only opening: starts with \"David\" instead of \"David Jonathan Ross\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "HTTP instead of HTTPS: http://input.fontbureau.com/"
       ],
       "info": [
         "Word count: 65"
       ],
-      "severity": "major",
-      "issue_count": 10,
+      "severity": "minor",
+      "issue_count": 1,
       "word_count": 65,
       "has_links": true,
       "link_count": 8
@@ -1785,14 +1760,13 @@
       "issues": [
         "Link missing target=\"_blank\": http://erikdkennedy.com/",
         "Link missing target=\"_blank\": https://learnui.design",
-        "HTTP instead of HTTPS: http://erikdkennedy.com/",
-        "First-name-only opening: starts with \"Erik\" instead of \"Erik Kennedy\""
+        "HTTP instead of HTTPS: http://erikdkennedy.com/"
       ],
       "info": [
         "Word count: 53"
       ],
       "severity": "major",
-      "issue_count": 4,
+      "issue_count": 3,
       "word_count": 53,
       "has_links": true,
       "link_count": 2
@@ -1927,14 +1901,13 @@
       "designer_id": "familjensthlmab",
       "designer_name": "Familjen STHLM AB",
       "issues": [
-        "Link missing target=\"_blank\": https://www.familjen.se",
-        "First-name-only opening: starts with \"Familjen\" instead of \"Familjen STHLM AB\""
+        "Link missing target=\"_blank\": https://www.familjen.se"
       ],
       "info": [
         "Word count: 10"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 10,
       "has_links": true,
       "link_count": 1
@@ -2063,14 +2036,13 @@
       "designer_id": "fontworksinc",
       "designer_name": "Fontworks Inc.",
       "issues": [
-        "Generic link text \"website\" instead of domain name or platform name",
-        "First-name-only opening: starts with \"Fontworks\" instead of \"Fontworks Inc.\""
+        "Generic link text \"website\" instead of domain name or platform name"
       ],
       "info": [
         "Word count: 34"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 34,
       "has_links": true,
       "link_count": 1
@@ -2218,21 +2190,16 @@
       "designer_id": "gunnlaugurbriem",
       "designer_name": "Gunnlaugur SE Briem",
       "issues": [
-        "Link missing target=\"_blank\": https://sites.google.com/view/briem",
-        "Link missing target=\"_blank\": https://sites.google.com/view/briem/free-books",
-        "Link missing target=\"_blank\": https://sites.google.com/view/briem",
-        "Over word limit: 182 words (max ~150)",
-        "Links embedded in body paragraph (should be in separate final paragraph)",
-        "Multiple links not separated by pipe ( | )"
+        "Over word limit: 182 words (max ~150)"
       ],
       "info": [
         "Word count: 182"
       ],
-      "severity": "major",
-      "issue_count": 6,
+      "severity": "minor",
+      "issue_count": 1,
       "word_count": 182,
       "has_links": true,
-      "link_count": 3
+      "link_count": 2
     },
     {
       "designer_id": "gustavoibarra",
@@ -2273,14 +2240,13 @@
         "Link missing target=\"_blank\": https://www.hanatanimura.com/",
         "Link missing target=\"_blank\": https://www.instagram.com/hanatanimura/",
         "Generic link text \"Homepage\" instead of domain name or platform name",
-        "Promotional language: \"award-winning\"",
-        "First-name-only opening: starts with \"Hana\" instead of \"Hana Tanimura\""
+        "Promotional language: \"award-winning\""
       ],
       "info": [
         "Word count: 34"
       ],
       "severity": "major",
-      "issue_count": 5,
+      "issue_count": 4,
       "word_count": 34,
       "has_links": true,
       "link_count": 2
@@ -2293,14 +2259,13 @@
         "Link missing target=\"_blank\": https://www.instagram.com/hani.design.nook/",
         "Promotional language: \"award-winning\"",
         "Promotional language: \"passion/passionate\"",
-        "Promotional language: \"master/masterful\"",
-        "First-name-only opening: starts with \"Hani\" instead of \"Hani Alasadi\""
+        "Promotional language: \"master/masterful\""
       ],
       "info": [
         "Word count: 92"
       ],
       "severity": "major",
-      "issue_count": 6,
+      "issue_count": 5,
       "word_count": 92,
       "has_links": true,
       "link_count": 2
@@ -2420,20 +2385,16 @@
       "designer_id": "huertatipografica",
       "designer_name": "Huerta Tipogr\u00e1fica",
       "issues": [
-        "Mismatched <p> tags: 4 opening vs 2 closing",
-        "HTTP instead of HTTPS: http://huertatipografica.com/",
         "Promotional language: \"innovative\"",
         "Promotional language: \"award-winning\"",
-        "Promotional language: \"exclusive\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)",
-        "Multiple links not separated by pipe ( | )"
+        "Promotional language: \"exclusive\""
       ],
       "info": [
-        "Word count: 1"
+        "Word count: 77"
       ],
       "severity": "major",
-      "issue_count": 7,
-      "word_count": 1,
+      "issue_count": 3,
+      "word_count": 77,
       "has_links": true,
       "link_count": 3
     },
@@ -2492,14 +2453,13 @@
         "Link missing target=\"_blank\": https://type.today/en/designer/ilya-ruderman",
         "Promotional language: \"expert\"",
         "Vague filler: \"a number of\"",
-        "First-name-only opening: starts with \"Ilya\" instead of \"Ilya Ruderman\"",
         "Over word limit: 166 words (max ~150)"
       ],
       "info": [
         "Word count: 166"
       ],
       "severity": "major",
-      "issue_count": 5,
+      "issue_count": 4,
       "word_count": 166,
       "has_links": true,
       "link_count": 1
@@ -2520,17 +2480,12 @@
     {
       "designer_id": "indiantypefoundry",
       "designer_name": "Indian Type Foundry",
-      "issues": [
-        "HTTP instead of HTTPS: http://www.indiantypefoundry.com/",
-        "HTTP instead of HTTPS: http://github.com/itfoundry",
-        "Link text \"Github\" should be \"GitHub\" (capitalization)",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
-      ],
+      "issues": [],
       "info": [
         "Word count: 51"
       ],
-      "severity": "major",
-      "issue_count": 4,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 51,
       "has_links": true,
       "link_count": 3
@@ -2663,17 +2618,12 @@
     {
       "designer_id": "jamespuckett",
       "designer_name": "James Puckett",
-      "issues": [
-        "HTTP instead of HTTPS: http://dunwichtype.com/",
-        "HTTP instead of HTTPS: http://github.com/DunwichType",
-        "First-name-only opening: starts with \"James\" instead of \"James Puckett\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
-      ],
+      "issues": [],
       "info": [
         "Word count: 46"
       ],
-      "severity": "major",
-      "issue_count": 4,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 46,
       "has_links": true,
       "link_count": 3
@@ -2773,14 +2723,13 @@
       "designer_id": "joanacorreia",
       "designer_name": "Joana Correia",
       "issues": [
-        "HTTP instead of HTTPS: http://www.joanacorreiatype.com/",
-        "First-name-only opening: starts with \"Joana\" instead of \"Joana Correia\""
+        "HTTP instead of HTTPS: http://www.joanacorreiatype.com/"
       ],
       "info": [
         "Word count: 76"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 76,
       "has_links": true,
       "link_count": 2
@@ -2803,14 +2752,13 @@
       "designer_id": "jonnypinhorn",
       "designer_name": "Jonny Pinhorn",
       "issues": [
-        "HTTP instead of HTTPS: http://jonnypinhorn.co.uk/",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "HTTP instead of HTTPS: http://jonnypinhorn.co.uk/"
       ],
       "info": [
         "Word count: 67"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 67,
       "has_links": true,
       "link_count": 5
@@ -2882,15 +2830,14 @@
       "designer_id": "josescaglione",
       "designer_name": "Jos\u00e9 Scaglione",
       "issues": [
-        "Promotional language: \"award-winning\"",
-        "First-name-only opening: starts with \"Jos\u00e9\" instead of \"Jos\u00e9 Scaglione\""
+        "Promotional language: \"award-winning\""
       ],
       "info": [
         "Word count: 28",
         "No links paragraph"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 28,
       "has_links": false,
       "link_count": 0
@@ -3188,15 +3135,13 @@
     {
       "designer_id": "laurameseguer",
       "designer_name": "Laura Meseguer",
-      "issues": [
-        "First-name-only opening: starts with \"Laura\" instead of \"Laura Meseguer\""
-      ],
+      "issues": [],
       "info": [
         "Word count: 30",
         "No links paragraph"
       ],
-      "severity": "minor",
-      "issue_count": 1,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 30,
       "has_links": false,
       "link_count": 0
@@ -3221,14 +3166,13 @@
       "designer_id": "lettersfromsweden",
       "designer_name": "Letters From Sweden",
       "issues": [
-        "First-person voice: \"Our mission\"",
-        "First-name-only opening: starts with \"Letters\" instead of \"Letters From Sweden\""
+        "First-person voice: \"Our mission\""
       ],
       "info": [
         "Word count: 60"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 60,
       "has_links": true,
       "link_count": 1
@@ -3344,14 +3288,13 @@
       "issues": [
         "Link missing target=\"_blank\": https://mariyalish.com",
         "Vague filler: \"large catalogue\"",
-        "Vague filler: \"extensive background\"",
-        "First-name-only opening: starts with \"Mariya\" instead of \"Mariya Lish\""
+        "Vague filler: \"extensive background\""
       ],
       "info": [
         "Word count: 71"
       ],
       "severity": "major",
-      "issue_count": 4,
+      "issue_count": 3,
       "word_count": 71,
       "has_links": true,
       "link_count": 1
@@ -3360,20 +3303,16 @@
       "designer_id": "markdavis",
       "designer_name": "Mark Davis",
       "issues": [
-        "Link missing target=\"_blank\": https://designermarkdavis.com",
-        "Link missing target=\"_blank\": https://designermarkdavis.com",
-        "Link missing target=\"_blank\": https://x.com/MarkFonts",
-        "Promotional language: \"legendary\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "Promotional language: \"legendary\""
       ],
       "info": [
         "Word count: 101"
       ],
-      "severity": "major",
-      "issue_count": 5,
+      "severity": "minor",
+      "issue_count": 1,
       "word_count": 101,
       "has_links": true,
-      "link_count": 3
+      "link_count": 2
     },
     {
       "designer_id": "martinvacha",
@@ -3477,14 +3416,13 @@
       "designer_id": "mckl",
       "designer_name": "MCKL",
       "issues": [
-        "Promotional language: \"leading\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "Promotional language: \"leading\""
       ],
       "info": [
         "Word count: 55"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 55,
       "has_links": true,
       "link_count": 3
@@ -3507,19 +3445,12 @@
     {
       "designer_id": "meirsadan",
       "designer_name": "Meir Sadan",
-      "issues": [
-        "HTTP instead of HTTPS: http://feelter.net/",
-        "HTTP instead of HTTPS: http://meirsadan.com/",
-        "HTTP instead of HTTPS: http://github.com/meirsadan/",
-        "HTTP instead of HTTPS: http://twitter.com/meirsadan/",
-        "First-name-only opening: starts with \"Meir\" instead of \"Meir Sadan\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
-      ],
+      "issues": [],
       "info": [
         "Word count: 36"
       ],
-      "severity": "major",
-      "issue_count": 6,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 36,
       "has_links": true,
       "link_count": 4
@@ -3545,14 +3476,13 @@
       "designer_name": "Miguel Hernandez",
       "issues": [
         "HTTP instead of HTTPS: http://www.alphabets.cl/",
-        "Vague filler: \"many...\"",
-        "First-name-only opening: starts with \"Miguel\" instead of \"Miguel Hernandez\""
+        "Vague filler: \"many...\""
       ],
       "info": [
         "Word count: 36"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 36,
       "has_links": true,
       "link_count": 1
@@ -3561,14 +3491,13 @@
       "designer_id": "mikeabbink",
       "designer_name": "Mike Abbink",
       "issues": [
-        "Generic link text \"Homepage\" instead of domain name or platform name",
-        "First-name-only opening: starts with \"Mike\" instead of \"Mike Abbink\""
+        "Generic link text \"Homepage\" instead of domain name or platform name"
       ],
       "info": [
         "Word count: 68"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 68,
       "has_links": true,
       "link_count": 2
@@ -4048,19 +3977,12 @@
     {
       "designer_id": "paratype",
       "designer_name": "ParaType",
-      "issues": [
-        "HTTP instead of HTTPS: http://www.paratype.com/",
-        "HTTP instead of HTTPS: http://www.paratype.com/pstore/default.asp?fcode=PT_PRG&lett",
-        "HTTP instead of HTTPS: http://www.paratype.com/public/",
-        "HTTP instead of HTTPS: http://www.paratype.com/pstore/default.asp?fcode=PT_CRC&lett",
-        "Links embedded in body paragraph (should be in separate final paragraph)",
-        "Multiple links not separated by pipe ( | )"
-      ],
+      "issues": [],
       "info": [
         "Word count: 59"
       ],
-      "severity": "major",
-      "issue_count": 6,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 59,
       "has_links": true,
       "link_count": 5
@@ -4097,22 +4019,16 @@
       "designer_name": "Petr van Blokland",
       "issues": [
         "Forbidden HTML tags: em",
-        "Link missing target=\"_blank\": https://web.archive.org/web/20110221070544/http://www.webtyp",
-        "Link missing target=\"_blank\": https://typenetwork.com",
-        "Link missing target=\"_blank\": https://typetr.com",
-        "Link missing target=\"_blank\": https://typetr.com",
-        "Link missing target=\"_blank\": https://instagram.com/petrvanblokland",
-        "Over word limit: 254 words (max ~150)",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "Over word limit: 254 words (max ~150)"
       ],
       "info": [
         "Word count: 254"
       ],
-      "severity": "major",
-      "issue_count": 8,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 254,
       "has_links": true,
-      "link_count": 5
+      "link_count": 4
     },
     {
       "designer_id": "phaedracharles",
@@ -4363,17 +4279,13 @@
       "designer_id": "rosetta",
       "designer_name": "Rosetta",
       "issues": [
-        "HTTP instead of HTTPS: http://rosettatype.com/",
-        "HTTP instead of HTTPS: http://github.rosettatype.com/",
-        "HTTP instead of HTTPS: http://twitter.com/rosettatype",
-        "Vague filler: \"numerous...\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "Vague filler: \"numerous...\""
       ],
       "info": [
         "Word count: 73"
       ],
-      "severity": "major",
-      "issue_count": 5,
+      "severity": "minor",
+      "issue_count": 1,
       "word_count": 73,
       "has_links": true,
       "link_count": 3
@@ -4472,18 +4384,12 @@
     {
       "designer_id": "satsuyako",
       "designer_name": "Satsuyako",
-      "issues": [
-        "Link missing target=\"_blank\": https://fonts.google.com/specimen/Yomogi",
-        "Link missing target=\"_blank\": https://fonts.google.com/specimen/Cherry+Bomb+One",
-        "Generic link text \"website\" instead of domain name or platform name",
-        "Link text \"twitter\" should be \"Twitter\" (capitalization)",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
-      ],
+      "issues": [],
       "info": [
         "Word count: 29"
       ],
-      "severity": "major",
-      "issue_count": 5,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 29,
       "has_links": true,
       "link_count": 4
@@ -4508,14 +4414,13 @@
       "designer_name": "Sebastian Carewe",
       "issues": [
         "Link missing target=\"_blank\": https://www.sebastiancarewe.com",
-        "Promotional language: \"passion/passionate\"",
-        "First-name-only opening: starts with \"Sebastian\" instead of \"Sebastian Carewe\""
+        "Promotional language: \"passion/passionate\""
       ],
       "info": [
         "Word count: 19"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 19,
       "has_links": true,
       "link_count": 1
@@ -4554,14 +4459,13 @@
       "issues": [
         "Link missing target=\"_blank\": https://twitter.com/ogbeniseyi",
         "Link missing target=\"_blank\": https://ogbeniseyi.com",
-        "Promotional language: \"passion/passionate\"",
-        "First-name-only opening: starts with \"Seyi\" instead of \"Seyi Olusanya\""
+        "Promotional language: \"passion/passionate\""
       ],
       "info": [
         "Word count: 37"
       ],
       "severity": "major",
-      "issue_count": 4,
+      "issue_count": 3,
       "word_count": 37,
       "has_links": true,
       "link_count": 2
@@ -4615,14 +4519,13 @@
       "designer_id": "siringunkloy",
       "designer_name": "Sirin Gunkloy",
       "issues": [
-        "Link missing target=\"_blank\": https://sirin-kwan.co/",
-        "First-name-only opening: starts with \"Sirin\" instead of \"Sirin Gunkloy\""
+        "Link missing target=\"_blank\": https://sirin-kwan.co/"
       ],
       "info": [
         "Word count: 25"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 25,
       "has_links": true,
       "link_count": 1
@@ -4631,14 +4534,13 @@
       "designer_id": "smartsheetinc",
       "designer_name": "Smartsheet Inc",
       "issues": [
-        "Link missing target=\"_blank\": https://www.smartsheet.com",
-        "First-name-only opening: starts with \"Smartsheet\" instead of \"Smartsheet Inc\""
+        "Link missing target=\"_blank\": https://www.smartsheet.com"
       ],
       "info": [
         "Word count: 23"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 23,
       "has_links": true,
       "link_count": 1
@@ -4661,14 +4563,13 @@
       "designer_name": "Sol Matas",
       "issues": [
         "Link missing target=\"_blank\": http://www.solmatas.com",
-        "HTTP instead of HTTPS: http://www.solmatas.com",
-        "First-name-only opening: starts with \"Sol\" instead of \"Sol Matas\""
+        "HTTP instead of HTTPS: http://www.solmatas.com"
       ],
       "info": [
         "Word count: 103"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 103,
       "has_links": true,
       "link_count": 1
@@ -5077,14 +4978,13 @@
       "designer_id": "tobiasbjerromeahlin",
       "designer_name": "Tobias Bjerrome Ahlin",
       "issues": [
-        "Link missing target=\"_blank\": https://tobiasahlin.com",
-        "First-name-only opening: starts with \"Tobias\" instead of \"Tobias Bjerrome Ahlin\""
+        "Link missing target=\"_blank\": https://tobiasahlin.com"
       ],
       "info": [
         "Word count: 35"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 35,
       "has_links": true,
       "link_count": 1
@@ -5159,14 +5059,13 @@
       "designer_name": "Toshi Omagari",
       "issues": [
         "Link missing target=\"_blank\": https://tosche.net",
-        "Vague filler: \"a number of\"",
-        "First-name-only opening: starts with \"Toshi\" instead of \"Toshi Omagari\""
+        "Vague filler: \"a number of\""
       ],
       "info": [
         "Word count: 137"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 137,
       "has_links": true,
       "link_count": 1
@@ -5270,21 +5169,12 @@
     {
       "designer_id": "typetogether",
       "designer_name": "TypeTogether",
-      "issues": [
-        "HTTP instead of HTTPS: http://www.type-together.com",
-        "HTTP instead of HTTPS: http://www.type-together.com/Adelle",
-        "HTTP instead of HTTPS: http://www.type-together.com/Bree",
-        "HTTP instead of HTTPS: http://www.type-together.com/index.php?action=portal/viewCon",
-        "HTTP instead of HTTPS: http://www.type-together.com/index.php?action=portal/viewCon",
-        "HTTP instead of HTTPS: http://www.type-together.com/index.php?action=portal/viewCon",
-        "Links embedded in body paragraph (should be in separate final paragraph)",
-        "Multiple links not separated by pipe ( | )"
-      ],
+      "issues": [],
       "info": [
         "Word count: 45"
       ],
-      "severity": "major",
-      "issue_count": 8,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 45,
       "has_links": true,
       "link_count": 7
@@ -5337,15 +5227,13 @@
     {
       "designer_id": "ukaszdziedzic",
       "designer_name": "\u0141ukasz Dziedzic",
-      "issues": [
-        "First-name-only opening: starts with \"\u0141ukasz\" instead of \"\u0141ukasz Dziedzic\""
-      ],
+      "issues": [],
       "info": [
         "Word count: 70",
         "No links paragraph"
       ],
-      "severity": "minor",
-      "issue_count": 1,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 70,
       "has_links": false,
       "link_count": 0
@@ -5434,15 +5322,13 @@
     {
       "designer_id": "vaishnavimurthy",
       "designer_name": "Vaishnavi Murthy",
-      "issues": [
-        "First-name-only opening: starts with \"Vaishnavi\" instead of \"Vaishnavi Murthy\""
-      ],
+      "issues": [],
       "info": [
         "Word count: 49",
         "No links paragraph"
       ],
-      "severity": "minor",
-      "issue_count": 1,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 49,
       "has_links": false,
       "link_count": 0
@@ -5467,14 +5353,13 @@
       "designer_name": "Vectro Type Foundry",
       "issues": [
         "Link missing target=\"_blank\": https://www.vectrotype.com",
-        "Promotional language: \"innovative\"",
-        "First-name-only opening: starts with \"Vectro\" instead of \"Vectro Type Foundry\""
+        "Promotional language: \"innovative\""
       ],
       "info": [
         "Word count: 88"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 88,
       "has_links": true,
       "link_count": 1
@@ -5500,14 +5385,13 @@
       "designer_name": "Vernon Adams",
       "issues": [
         "Link missing target=\"_blank\": http://sansoxygen.com",
-        "HTTP instead of HTTPS: http://sansoxygen.com",
-        "First-name-only opening: starts with \"Vernon\" instead of \"Vernon Adams\""
+        "HTTP instead of HTTPS: http://sansoxygen.com"
       ],
       "info": [
         "Word count: 93"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 93,
       "has_links": true,
       "link_count": 1
@@ -5515,15 +5399,13 @@
     {
       "designer_id": "veronikaburian",
       "designer_name": "Veronika Burian",
-      "issues": [
-        "First-name-only opening: starts with \"Veronika\" instead of \"Veronika Burian\""
-      ],
+      "issues": [],
       "info": [
         "Word count: 31",
         "No links paragraph"
       ],
-      "severity": "minor",
-      "issue_count": 1,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 31,
       "has_links": false,
       "link_count": 0
@@ -5548,14 +5430,13 @@
       "designer_name": "Viktoriya Grabowska",
       "issues": [
         "Link missing target=\"_blank\": https://www.instagram.com/viktoriya_grabowska/?hl=en",
-        "Vague filler: \"a number of\"",
-        "First-name-only opening: starts with \"Viktoriya\" instead of \"Viktoriya Grabowska\""
+        "Vague filler: \"a number of\""
       ],
       "info": [
         "Word count: 88"
       ],
-      "severity": "major",
-      "issue_count": 3,
+      "severity": "minor",
+      "issue_count": 2,
       "word_count": 88,
       "has_links": true,
       "link_count": 1
@@ -5622,15 +5503,13 @@
     {
       "designer_id": "weihuang",
       "designer_name": "Wei Huang",
-      "issues": [
-        "First-name-only opening: starts with \"Wei\" instead of \"Wei Huang\""
-      ],
+      "issues": [],
       "info": [
         "Word count: 31",
         "No links paragraph"
       ],
-      "severity": "minor",
-      "issue_count": 1,
+      "severity": "pass",
+      "issue_count": 0,
       "word_count": 31,
       "has_links": false,
       "link_count": 0
@@ -5639,14 +5518,13 @@
       "designer_id": "weizhongzhang",
       "designer_name": "Weizhong Zhang",
       "issues": [
-        "Link missing target=\"_blank\": https://www.instagram.com/a_a.zwz/",
-        "First-name-only opening: starts with \"Weizhong\" instead of \"Weizhong Zhang\""
+        "Link missing target=\"_blank\": https://www.instagram.com/a_a.zwz/"
       ],
       "info": [
         "Word count: 40"
       ],
       "severity": "minor",
-      "issue_count": 2,
+      "issue_count": 1,
       "word_count": 40,
       "has_links": true,
       "link_count": 1
@@ -5655,17 +5533,13 @@
       "designer_id": "yanekiontef",
       "designer_name": "Yanek Iontef",
       "issues": [
-        "HTTP instead of HTTPS: http://www.fontef.com/photolog",
-        "HTTP instead of HTTPS: http://github.com/fontef",
-        "Promotional language: \"award-winning\"",
-        "First-name-only opening: starts with \"Yanek\" instead of \"Yanek Iontef\"",
-        "Links embedded in body paragraph (should be in separate final paragraph)"
+        "Promotional language: \"award-winning\""
       ],
       "info": [
         "Word count: 94"
       ],
-      "severity": "major",
-      "issue_count": 5,
+      "severity": "minor",
+      "issue_count": 1,
       "word_count": 94,
       "has_links": true,
       "link_count": 4

@@ -293,17 +293,7 @@ def audit_bio(designer_id, bio_path):
     if EMAIL_PATTERN.search(text):
         issues.append('Contains email address')
 
-    # 11. Check for first-name-only opening
-    if full_name and parser.paragraphs:
-        first_para = parser.paragraphs[0]
-        name_parts = full_name.split()
-        if len(name_parts) >= 2:
-            first_name = name_parts[0]
-            # Check if first paragraph starts with first name only (not full name)
-            if first_para.startswith(first_name) and not first_para.startswith(full_name):
-                issues.append(f'First-name-only opening: starts with "{first_name}" instead of "{full_name}"')
-
-    # 12. Check word count (body text only, excluding links paragraph)
+    # 11. Check word count (body text only, excluding links paragraph)
     body_paragraphs = parser.paragraphs[:-1] if len(parser.paragraphs) > 1 else parser.paragraphs
     body_text = ' '.join(body_paragraphs)
     word_count = count_words(body_text)
@@ -311,12 +301,12 @@ def audit_bio(designer_id, bio_path):
         issues.append(f'Over word limit: {word_count} words (max ~150)')
     info_items.append(f'Word count: {word_count}')
 
-    # 13. Check if links paragraph exists
+    # 12. Check if links paragraph exists
     has_links = len(parser.links) > 0
     if not has_links:
         info_items.append('No links paragraph')
 
-    # 14. Check for links inside body paragraphs (not final paragraph)
+    # 13. Check for links inside body paragraphs (not final paragraph)
     # Look for <a> tags in raw HTML of body paragraphs
     # Simple heuristic: check if there are links before the last <p> block
     p_blocks = re.split(r'</?p[^>]*>', raw_html)
@@ -327,7 +317,7 @@ def audit_bio(designer_id, bio_path):
                 issues.append('Links embedded in body paragraph (should be in separate final paragraph)')
                 break
 
-    # 15. Check link paragraph uses pipe separators
+    # 14. Check link paragraph uses pipe separators
     if has_links and len(parser.links) > 1:
         # Check the last paragraph of raw HTML for pipe separators
         last_p_match = re.findall(r'<p[^>]*>(.*?)</p>', raw_html, re.DOTALL)
@@ -385,8 +375,6 @@ def main():
                 cat = 'missing_target_blank'
             elif 'HTTP instead of HTTPS' in issue:
                 cat = 'http_not_https'
-            elif 'First-name-only' in issue:
-                cat = 'first_name_only'
             elif 'Promotional language' in issue:
                 cat = 'promotional_language'
             elif 'First-person voice' in issue:
@@ -422,8 +410,6 @@ def main():
                 cat = 'missing_target_blank'
             elif 'HTTP instead of HTTPS' in issue:
                 cat = 'http_not_https'
-            elif 'First-name-only' in issue:
-                cat = 'first_name_only'
             elif 'Promotional language' in issue:
                 cat = 'promotional_language'
             elif 'First-person voice' in issue:
