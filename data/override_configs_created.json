@@ -1,0 +1,506 @@
+[
+  {
+    "family_name": "Abyssinica SIL",
+    "path": "ofl/abyssinicasil/METADATA.pb",
+    "family_dir": "ofl/abyssinicasil",
+    "sources": [
+      "source/AbyssinicaSIL.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Akatab",
+    "path": "ofl/akatab/METADATA.pb",
+    "family_dir": "ofl/akatab",
+    "sources": [
+      "source/akatab.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Harmattan",
+    "path": "ofl/harmattan/METADATA.pb",
+    "family_dir": "ofl/harmattan",
+    "sources": [
+      "source/Harmattan.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Lateef",
+    "path": "ofl/lateef/METADATA.pb",
+    "family_dir": "ofl/lateef",
+    "sources": [
+      "source/lateef-edit.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Scheherazade New",
+    "path": "ofl/scheherazadenew/METADATA.pb",
+    "family_dir": "ofl/scheherazadenew",
+    "sources": [
+      "source/ScheherazadeNew.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Tirra",
+    "path": "ofl/tirra/METADATA.pb",
+    "family_dir": "ofl/tirra",
+    "sources": [
+      "source/tirra.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Amiri",
+    "path": "ofl/amiri/METADATA.pb",
+    "family_dir": "ofl/amiri",
+    "sources": [
+      "sources/Amiri.glyphspackage"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Amiri Quran",
+    "path": "ofl/amiriquran/METADATA.pb",
+    "family_dir": "ofl/amiriquran",
+    "sources": [
+      "sources/Amiri.glyphspackage"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bitcount Grid Double",
+    "path": "ofl/bitcountgriddouble/METADATA.pb",
+    "family_dir": "ofl/bitcountgriddouble",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Grid Double Ink",
+    "path": "ofl/bitcountgriddoubleink/METADATA.pb",
+    "family_dir": "ofl/bitcountgriddoubleink",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Grid Single",
+    "path": "ofl/bitcountgridsingle/METADATA.pb",
+    "family_dir": "ofl/bitcountgridsingle",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Grid Single Ink",
+    "path": "ofl/bitcountgridsingleink/METADATA.pb",
+    "family_dir": "ofl/bitcountgridsingleink",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Ink",
+    "path": "ofl/bitcountink/METADATA.pb",
+    "family_dir": "ofl/bitcountink",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Prop Double",
+    "path": "ofl/bitcountpropdouble/METADATA.pb",
+    "family_dir": "ofl/bitcountpropdouble",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Prop Double Ink",
+    "path": "ofl/bitcountpropdoubleink/METADATA.pb",
+    "family_dir": "ofl/bitcountpropdoubleink",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Prop Single",
+    "path": "ofl/bitcountpropsingle/METADATA.pb",
+    "family_dir": "ofl/bitcountpropsingle",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bitcount Single",
+    "path": "ofl/bitcountsingle/METADATA.pb",
+    "family_dir": "ofl/bitcountsingle",
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "BIZ UDGothic",
+    "path": "ofl/bizudgothic/METADATA.pb",
+    "family_dir": "ofl/bizudgothic",
+    "sources": [
+      "sources/extensions/BIZ-UDGothicExt.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "BIZ UDMincho",
+    "path": "ofl/bizudmincho/METADATA.pb",
+    "family_dir": "ofl/bizudmincho",
+    "sources": [
+      "sources/extensions/BIZ-UDMinchoExt.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "BIZ UDPGothic",
+    "path": "ofl/bizudpgothic/METADATA.pb",
+    "family_dir": "ofl/bizudpgothic",
+    "sources": [
+      "sources/extensions/BIZ-UDPGothicExt.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "BIZ UDPMincho",
+    "path": "ofl/bizudpmincho/METADATA.pb",
+    "family_dir": "ofl/bizudpmincho",
+    "sources": [
+      "sources/extensions/BIZ-UDPMinchoExt.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Black Ops One",
+    "path": "ofl/blackopsone/METADATA.pb",
+    "family_dir": "ofl/blackopsone",
+    "sources": [
+      "sources/BlackOpsOne.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Cormorant Upright",
+    "path": "ofl/cormorantupright/METADATA.pb",
+    "family_dir": "ofl/cormorantupright",
+    "sources": [
+      "4. Glyphs Source Files/CormorantUpright.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Trocchi",
+    "path": "ofl/trocchi/METADATA.pb",
+    "family_dir": "ofl/trocchi",
+    "sources": [
+      "sources/Trocchi.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Sigmar",
+    "path": "ofl/sigmar/METADATA.pb",
+    "family_dir": "ofl/sigmar",
+    "sources": [
+      "archive/Sigmar.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "IBM Plex Mono",
+    "path": "ofl/ibmplexmono/METADATA.pb",
+    "family_dir": "ofl/ibmplexmono",
+    "sources": [
+      "IBM-Plex-Mono/sources/masters/IBM Plex Mono Roman.designspace",
+      "IBM-Plex-Mono/sources/masters/IBM Plex Mono Italic.designspace"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "IBM Plex Sans JP",
+    "path": "ofl/ibmplexsansjp/METADATA.pb",
+    "family_dir": "ofl/ibmplexsansjp",
+    "sources": [
+      "IBM-Plex-Sans-JP/sources/masters/IBM Plex Sans JP.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Open Sans",
+    "path": "ofl/opensans/METADATA.pb",
+    "family_dir": "ofl/opensans",
+    "sources": [
+      "sources/OpenSans-Roman.designspace",
+      "sources/OpenSans-Italic.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Public Sans",
+    "path": "ofl/publicsans/METADATA.pb",
+    "family_dir": "ofl/publicsans",
+    "sources": [
+      "sources/PublicSans.glyphs",
+      "sources/PublicSans-Italic.glyphs"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Recursive",
+    "path": "ofl/recursive/METADATA.pb",
+    "family_dir": "ofl/recursive",
+    "sources": [
+      "src/ufo/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Reem Kufi",
+    "path": "ofl/reemkufi/METADATA.pb",
+    "family_dir": "ofl/reemkufi",
+    "sources": [
+      "sources/ReemKufi.glyphspackage"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Reem Kufi Fun",
+    "path": "ofl/reemkufifun/METADATA.pb",
+    "family_dir": "ofl/reemkufifun",
+    "sources": [
+      "sources/ReemKufi.glyphspackage"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Reem Kufi Ink",
+    "path": "ofl/reemkufiink/METADATA.pb",
+    "family_dir": "ofl/reemkufiink",
+    "sources": [
+      "sources/ReemKufi.glyphspackage"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Roboto",
+    "path": "ofl/roboto/METADATA.pb",
+    "family_dir": "ofl/roboto",
+    "sources": [
+      "sources/Roboto.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Sen",
+    "path": "ofl/sen/METADATA.pb",
+    "family_dir": "ofl/sen",
+    "sources": [
+      "sources/sen.glyphs"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Shantell Sans",
+    "path": "ofl/shantellsans/METADATA.pb",
+    "family_dir": "ofl/shantellsans",
+    "sources": [
+      "sources/shantell_sans-ital_wght_BNCE_INFM_SPAC-simplified.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Tilt Neon",
+    "path": "ofl/tiltneon/METADATA.pb",
+    "family_dir": "ofl/tiltneon",
+    "sources": [
+      "sources/Tilt Neon/Rotated/TiltNeon[XROT,YROT].designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Tilt Prism",
+    "path": "ofl/tiltprism/METADATA.pb",
+    "family_dir": "ofl/tiltprism",
+    "sources": [
+      "sources/Tilt Prism/Rotated 01 Inline/Tilt-Prism.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Tilt Warp",
+    "path": "ofl/tiltwarp/METADATA.pb",
+    "family_dir": "ofl/tiltwarp",
+    "sources": [
+      "sources/Tilt Warp/Rotated/TiltWarp[XROT,YROT].designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Vazirmatn",
+    "path": "ofl/vazirmatn/METADATA.pb",
+    "family_dir": "ofl/vazirmatn",
+    "sources": [
+      "scripts/Vazirmatn.designspace"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Yaldevi Colombo",
+    "path": "ofl/yaldevicolombo/METADATA.pb",
+    "family_dir": "ofl/yaldevicolombo",
+    "sources": [
+      "sources/glyphs/final/AyannaNarrow-all.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Zain",
+    "path": "ofl/zain/METADATA.pb",
+    "family_dir": "ofl/zain",
+    "sources": [
+      "Source/1-Drawings/Zain-Regular.glyphs"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Inter",
+    "path": "ofl/inter/METADATA.pb",
+    "family_dir": "ofl/inter",
+    "sources": [
+      "src/Inter-Roman.glyphspackage",
+      "src/Inter-Italic.glyphspackage"
+    ],
+    "buildVariable": true,
+    "buildStatic": false
+  },
+  {
+    "family_name": "Bungee",
+    "path": "ofl/bungee/METADATA.pb",
+    "family_dir": "ofl/bungee",
+    "sources": [
+      "sources/1-drawing/Bungee-Regular.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bungee Hairline",
+    "path": "ofl/bungeehairline/METADATA.pb",
+    "family_dir": "ofl/bungeehairline",
+    "sources": [
+      "sources/2-build/Bungee_Basic/Bungee-Hairline.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bungee Inline",
+    "path": "ofl/bungeeinline/METADATA.pb",
+    "family_dir": "ofl/bungeeinline",
+    "sources": [
+      "sources/2-build/Bungee_Basic/Bungee-Inline.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bungee Outline",
+    "path": "ofl/bungeeoutline/METADATA.pb",
+    "family_dir": "ofl/bungeeoutline",
+    "sources": [
+      "sources/2-build/Bungee_Basic/Bungee-Outline.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bungee Shade",
+    "path": "ofl/bungeeshade/METADATA.pb",
+    "family_dir": "ofl/bungeeshade",
+    "sources": [
+      "sources/2-build/Bungee_Basic/Bungee-Shade.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bungee Color",
+    "path": "ofl/bungeecolor/METADATA.pb",
+    "family_dir": "ofl/bungeecolor",
+    "sources": [
+      "sources/2-build/Bungee_Color/Bungee_Color-Regular.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  },
+  {
+    "family_name": "Bungee Spice",
+    "path": "ofl/bungeespice/METADATA.pb",
+    "family_dir": "ofl/bungeespice",
+    "sources": [
+      "sources/2-build/Bungee_Color/Bungee_Color-Regular.ufo"
+    ],
+    "buildVariable": false,
+    "buildStatic": true
+  }
+]

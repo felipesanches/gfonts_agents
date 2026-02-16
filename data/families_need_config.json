@@ -1,0 +1,4403 @@
+[
+  {
+    "family_name": "Aboreto",
+    "path": "ofl/aboreto/METADATA.pb",
+    "dir_name": "aboreto",
+    "license": "ofl",
+    "repository_url": "https://github.com/domija/Aboreto",
+    "commit": "6e64ee7e7ff1c53220d96b88a8d4bf2db9f76735",
+    "has_override": true
+  },
+  {
+    "family_name": "Abyssinica SIL",
+    "path": "ofl/abyssinicasil/METADATA.pb",
+    "dir_name": "abyssinicasil",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-abyssinica",
+    "commit": "1f7e65b0e7367681198c980647b3049559ebefa0",
+    "has_override": false
+  },
+  {
+    "family_name": "Adamina",
+    "path": "ofl/adamina/METADATA.pb",
+    "dir_name": "adamina",
+    "license": "ofl",
+    "repository_url": "github.com/cyrealtype/Adamina",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Akatab",
+    "path": "ofl/akatab/METADATA.pb",
+    "dir_name": "akatab",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-akatab",
+    "commit": "54e989b80bf4c99a2b16dc40710083b2b80ebaef",
+    "has_override": false
+  },
+  {
+    "family_name": "Akaya Kanadaka",
+    "path": "ofl/akayakanadaka/METADATA.pb",
+    "dir_name": "akayakanadaka",
+    "license": "ofl",
+    "repository_url": "https://github.com/vaishnavimurthy/Akaya-Kanadaka",
+    "commit": "24f25461789ee8642e184b43dd6d5d04ea7f49d1",
+    "has_override": true
+  },
+  {
+    "family_name": "Akaya Telivigala",
+    "path": "ofl/akayatelivigala/METADATA.pb",
+    "dir_name": "akayatelivigala",
+    "license": "ofl",
+    "repository_url": "https://github.com/vaishnavimurthy/Akaya-Telivigala",
+    "commit": "93b31e45b69178ecfdb48981a5aa8a8b33bb0340",
+    "has_override": true
+  },
+  {
+    "family_name": "Alan Sans",
+    "path": "ofl/alansans/METADATA.pb",
+    "dir_name": "alansans",
+    "license": "ofl",
+    "repository_url": "https://github.com/alan-eu/Alan-Sans",
+    "commit": "425d3a0674a49f0ad6bc6ceef5ca0c557b520838",
+    "has_override": false
+  },
+  {
+    "family_name": "Alegreya",
+    "path": "ofl/alegreya/METADATA.pb",
+    "dir_name": "alegreya",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/Alegreya",
+    "commit": "1dd6b28b57c50e3168db1cbbb8086e7978abcfbf",
+    "has_override": true
+  },
+  {
+    "family_name": "Alegreya Sans",
+    "path": "ofl/alegreyasans/METADATA.pb",
+    "dir_name": "alegreyasans",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/Alegreya-Sans",
+    "commit": "030b9ac01fd9bcaccac0ebc8010283175f9ced4e",
+    "has_override": true
+  },
+  {
+    "family_name": "Alegreya Sans SC",
+    "path": "ofl/alegreyasanssc/METADATA.pb",
+    "dir_name": "alegreyasanssc",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/Alegreya-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Alegreya SC",
+    "path": "ofl/alegreyasc/METADATA.pb",
+    "dir_name": "alegreyasc",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/Alegreya",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Alkalami",
+    "path": "ofl/alkalami/METADATA.pb",
+    "dir_name": "alkalami",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-alkalami",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Allkin",
+    "path": "ofl/allkin/METADATA.pb",
+    "dir_name": "allkin",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/allkin",
+    "commit": "fffaa4201dfbd887a78e3d0c79654a7ad0d155f3",
+    "has_override": false
+  },
+  {
+    "family_name": "Almarai",
+    "path": "ofl/almarai/METADATA.pb",
+    "dir_name": "almarai",
+    "license": "ofl",
+    "repository_url": "https://github.com/JuergenWillrodt/Almarai",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Alyamama",
+    "path": "ofl/alyamama/METADATA.pb",
+    "dir_name": "alyamama",
+    "license": "ofl",
+    "repository_url": "https://github.com/Mestaratype/AlYamama",
+    "commit": "aecc9e395072c0e1d4cdd9dc296c0da5744f3360",
+    "has_override": false
+  },
+  {
+    "family_name": "Amaranth",
+    "path": "ofl/amaranth/METADATA.pb",
+    "dir_name": "amaranth",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/amaranth",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Amarna",
+    "path": "ofl/amarna/METADATA.pb",
+    "dir_name": "amarna",
+    "license": "ofl",
+    "repository_url": "https://github.com/ijvanl/Amarna",
+    "commit": "22819bafba78c7f3e4644b6f68683773180a5965",
+    "has_override": false
+  },
+  {
+    "family_name": "Amethysta",
+    "path": "ofl/amethysta/METADATA.pb",
+    "dir_name": "amethysta",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Amethysta",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Amiko",
+    "path": "ofl/amiko/METADATA.pb",
+    "dir_name": "amiko",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Amiko-Devanagari",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Amiri",
+    "path": "ofl/amiri/METADATA.pb",
+    "dir_name": "amiri",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/amiri.git",
+    "commit": "04d40ee68cc6b8cb6870eca81a8a7451165aa95a",
+    "has_override": false
+  },
+  {
+    "family_name": "Amiri Quran",
+    "path": "ofl/amiriquran/METADATA.pb",
+    "dir_name": "amiriquran",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/amiri",
+    "commit": "480bb746e99ea700bb0d6b4dbf96302d58192103",
+    "has_override": false
+  },
+  {
+    "family_name": "Andika",
+    "path": "ofl/andika/METADATA.pb",
+    "dir_name": "andika",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-andika",
+    "commit": "ca568520c61193de89a795ca676b6978fb435759",
+    "has_override": true
+  },
+  {
+    "family_name": "Annapurna SIL",
+    "path": "ofl/annapurnasil/METADATA.pb",
+    "dir_name": "annapurnasil",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-annapurna",
+    "commit": "5bd915dff1934cf36041d7766784347713c812a3",
+    "has_override": true
+  },
+  {
+    "family_name": "Aoboshi One",
+    "path": "ofl/aoboshione/METADATA.pb",
+    "dir_name": "aoboshione",
+    "license": "ofl",
+    "repository_url": "https://github.com/matsuba723/Aoboshi",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Arapey",
+    "path": "ofl/arapey/METADATA.pb",
+    "dir_name": "arapey",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/arapey",
+    "commit": "9c06862616bd689aec606d630cf5ad11ec5ea6f2",
+    "has_override": true
+  },
+  {
+    "family_name": "Archivo Black",
+    "path": "ofl/archivoblack/METADATA.pb",
+    "dir_name": "archivoblack",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/ArchivoBlack",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Aref Ruqaa",
+    "path": "ofl/arefruqaa/METADATA.pb",
+    "dir_name": "arefruqaa",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/aref-ruqaa",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Aref Ruqaa Ink",
+    "path": "ofl/arefruqaaink/METADATA.pb",
+    "dir_name": "arefruqaaink",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/aref-ruqaa",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Arsenal",
+    "path": "ofl/arsenal/METADATA.pb",
+    "dir_name": "arsenal",
+    "license": "ofl",
+    "repository_url": "https://github.com/alexeiva/Arsenal",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Arsenal SC",
+    "path": "ofl/arsenalsc/METADATA.pb",
+    "dir_name": "arsenalsc",
+    "license": "ofl",
+    "repository_url": "https://github.com/alexeiva/Arsenal",
+    "commit": "e34db566b2f5de986eea9b36986d602015d80615",
+    "has_override": true
+  },
+  {
+    "family_name": "Arya",
+    "path": "ofl/arya/METADATA.pb",
+    "dir_name": "arya",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/Arya",
+    "commit": "103dc785f25067abe0e63de7b8e839e1863877a9",
+    "has_override": true
+  },
+  {
+    "family_name": "Assistant",
+    "path": "ofl/assistant/METADATA.pb",
+    "dir_name": "assistant",
+    "license": "ofl",
+    "repository_url": "https://github.com/TypeNetwork/Assistant",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Athiti",
+    "path": "ofl/athiti/METADATA.pb",
+    "dir_name": "athiti",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/athiti",
+    "commit": "541c0b5034964f8db50ef52921fede1422194abe",
+    "has_override": true
+  },
+  {
+    "family_name": "Atomic Age",
+    "path": "ofl/atomicage/METADATA.pb",
+    "dir_name": "atomicage",
+    "license": "ofl",
+    "repository_url": "https://github.com/EbenSorkin/Atomic-Age",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Average",
+    "path": "ofl/average/METADATA.pb",
+    "dir_name": "average",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/average",
+    "commit": "6583341221fb0625ba1b9c3ee2a7490d57df951f",
+    "has_override": true
+  },
+  {
+    "family_name": "B612",
+    "path": "ofl/b612/METADATA.pb",
+    "dir_name": "b612",
+    "license": "ofl",
+    "repository_url": "https://github.com/polarsys/b612",
+    "commit": "48ac6ba67ecab8123e8e36d6aa05367db0c7b638",
+    "has_override": true
+  },
+  {
+    "family_name": "B612 Mono",
+    "path": "ofl/b612mono/METADATA.pb",
+    "dir_name": "b612mono",
+    "license": "ofl",
+    "repository_url": "https://github.com/polarsys/b612",
+    "commit": "48ac6ba67ecab8123e8e36d6aa05367db0c7b638",
+    "has_override": true
+  },
+  {
+    "family_name": "Bahiana",
+    "path": "ofl/bahiana/METADATA.pb",
+    "dir_name": "bahiana",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/Bahiana",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bai Jamjuree",
+    "path": "ofl/baijamjuree/METADATA.pb",
+    "dir_name": "baijamjuree",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Bai-Jamjuree",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Ballet",
+    "path": "ofl/ballet/METADATA.pb",
+    "dir_name": "ballet",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/Ballet",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Barlow",
+    "path": "ofl/barlow/METADATA.pb",
+    "dir_name": "barlow",
+    "license": "ofl",
+    "repository_url": "https://github.com/jpt/barlow",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Barlow Condensed",
+    "path": "ofl/barlowcondensed/METADATA.pb",
+    "dir_name": "barlowcondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/jpt/barlow",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Barlow Semi Condensed",
+    "path": "ofl/barlowsemicondensed/METADATA.pb",
+    "dir_name": "barlowsemicondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/jpt/barlow",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Barrio",
+    "path": "ofl/barrio/METADATA.pb",
+    "dir_name": "barrio",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/Barrio",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Basic",
+    "path": "ofl/basic/METADATA.pb",
+    "dir_name": "basic",
+    "license": "ofl",
+    "repository_url": "https://github.com/EbenSorkin/Basic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Batang",
+    "path": "ofl/batang/METADATA.pb",
+    "dir_name": "batang",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/batang",
+    "commit": "6c1e09f93204c963881afbb4e25699095565f2e5",
+    "has_override": false
+  },
+  {
+    "family_name": "BatangChe",
+    "path": "ofl/batangche/METADATA.pb",
+    "dir_name": "batangche",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/batang",
+    "commit": "6c1e09f93204c963881afbb4e25699095565f2e5",
+    "has_override": false
+  },
+  {
+    "family_name": "BBH Bartle",
+    "path": "ofl/bbhbartle/METADATA.pb",
+    "dir_name": "bbhbartle",
+    "license": "ofl",
+    "repository_url": "https://github.com/Studio-DRAMA/BBH",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "BBH Bogle",
+    "path": "ofl/bbhbogle/METADATA.pb",
+    "dir_name": "bbhbogle",
+    "license": "ofl",
+    "repository_url": "https://github.com/Studio-DRAMA/BBH",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "BBH Hegarty",
+    "path": "ofl/bbhhegarty/METADATA.pb",
+    "dir_name": "bbhhegarty",
+    "license": "ofl",
+    "repository_url": "https://github.com/Studio-DRAMA/BBH",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bebas Neue",
+    "path": "ofl/bebasneue/METADATA.pb",
+    "dir_name": "bebasneue",
+    "license": "ofl",
+    "repository_url": "https://github.com/dharmatype/Bebas-Neue",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Beiruti",
+    "path": "ofl/beiruti/METADATA.pb",
+    "dir_name": "beiruti",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/beiruti",
+    "commit": "bd45772aeff26f3ed83faa1efbb52a30b39608f2",
+    "has_override": true
+  },
+  {
+    "family_name": "Bellefair",
+    "path": "ofl/bellefair/METADATA.pb",
+    "dir_name": "bellefair",
+    "license": "ofl",
+    "repository_url": "https://github.com/shinntype/bellefair",
+    "commit": "879a39cbf0b78b01a14f7f750927a075da4055f8",
+    "has_override": true
+  },
+  {
+    "family_name": "Belleza",
+    "path": "ofl/belleza/METADATA.pb",
+    "dir_name": "belleza",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/belleza",
+    "commit": "af3974fe84e2cfd236455a14d2c708264b692167",
+    "has_override": true
+  },
+  {
+    "family_name": "Bellota",
+    "path": "ofl/bellota/METADATA.pb",
+    "dir_name": "bellota",
+    "license": "ofl",
+    "repository_url": "https://github.com/kemie/Bellota-Font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bellota Text",
+    "path": "ofl/bellotatext/METADATA.pb",
+    "dir_name": "bellotatext",
+    "license": "ofl",
+    "repository_url": "https://github.com/kemie/Bellota-Font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Betania Patmos",
+    "path": "ofl/betaniapatmos/METADATA.pb",
+    "dir_name": "betaniapatmos",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/betania-patmos",
+    "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
+    "has_override": false
+  },
+  {
+    "family_name": "Betania Patmos GDL",
+    "path": "ofl/betaniapatmosgdl/METADATA.pb",
+    "dir_name": "betaniapatmosgdl",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/betania-patmos",
+    "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
+    "has_override": false
+  },
+  {
+    "family_name": "Betania Patmos Guide Line",
+    "path": "ofl/betaniapatmosguideline/METADATA.pb",
+    "dir_name": "betaniapatmosguideline",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/betania-patmos",
+    "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
+    "has_override": false
+  },
+  {
+    "family_name": "Betania Patmos In",
+    "path": "ofl/betaniapatmosin/METADATA.pb",
+    "dir_name": "betaniapatmosin",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/betania-patmos",
+    "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
+    "has_override": false
+  },
+  {
+    "family_name": "Betania Patmos In GDL",
+    "path": "ofl/betaniapatmosingdl/METADATA.pb",
+    "dir_name": "betaniapatmosingdl",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/betania-patmos",
+    "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
+    "has_override": false
+  },
+  {
+    "family_name": "Beth Ellen",
+    "path": "ofl/bethellen/METADATA.pb",
+    "dir_name": "bethellen",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/BethEllen",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bhavuka",
+    "path": "ofl/bhavuka/METADATA.pb",
+    "dir_name": "bhavuka",
+    "license": "ofl",
+    "repository_url": "https://github.com/10four/Bhavuka",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Big Shoulders",
+    "path": "ofl/bigshoulders/METADATA.pb",
+    "dir_name": "bigshoulders",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "8ba99c9e347396d828b263b8b818269cb99eb27c",
+    "has_override": false
+  },
+  {
+    "family_name": "Big Shoulders Display",
+    "path": "ofl/bigshouldersdisplay/METADATA.pb",
+    "dir_name": "bigshouldersdisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Display SC",
+    "path": "ofl/bigshouldersdisplaysc/METADATA.pb",
+    "dir_name": "bigshouldersdisplaysc",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "0b3d09a86862b19efae28eae0cd868f17c476b20",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Inline",
+    "path": "ofl/bigshouldersinline/METADATA.pb",
+    "dir_name": "bigshouldersinline",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "8ba99c9e347396d828b263b8b818269cb99eb27c",
+    "has_override": false
+  },
+  {
+    "family_name": "Big Shoulders Inline Display",
+    "path": "ofl/bigshouldersinlinedisplay/METADATA.pb",
+    "dir_name": "bigshouldersinlinedisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Inline Display SC",
+    "path": "ofl/bigshouldersinlinedisplaysc/METADATA.pb",
+    "dir_name": "bigshouldersinlinedisplaysc",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "0b3d09a86862b19efae28eae0cd868f17c476b20",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Inline Text",
+    "path": "ofl/bigshouldersinlinetext/METADATA.pb",
+    "dir_name": "bigshouldersinlinetext",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Inline Text SC",
+    "path": "ofl/bigshouldersinlinetextsc/METADATA.pb",
+    "dir_name": "bigshouldersinlinetextsc",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "0b3d09a86862b19efae28eae0cd868f17c476b20",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Stencil",
+    "path": "ofl/bigshouldersstencil/METADATA.pb",
+    "dir_name": "bigshouldersstencil",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "8ba99c9e347396d828b263b8b818269cb99eb27c",
+    "has_override": false
+  },
+  {
+    "family_name": "Big Shoulders Stencil Display",
+    "path": "ofl/bigshouldersstencildisplay/METADATA.pb",
+    "dir_name": "bigshouldersstencildisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Stencil Display SC",
+    "path": "ofl/bigshouldersstencildisplaysc/METADATA.pb",
+    "dir_name": "bigshouldersstencildisplaysc",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "0b3d09a86862b19efae28eae0cd868f17c476b20",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Stencil Text",
+    "path": "ofl/bigshouldersstenciltext/METADATA.pb",
+    "dir_name": "bigshouldersstenciltext",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Stencil Text SC",
+    "path": "ofl/bigshouldersstenciltextsc/METADATA.pb",
+    "dir_name": "bigshouldersstenciltextsc",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "0b3d09a86862b19efae28eae0cd868f17c476b20",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Text",
+    "path": "ofl/bigshoulderstext/METADATA.pb",
+    "dir_name": "bigshoulderstext",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "",
+    "has_override": true
+  },
+  {
+    "family_name": "Big Shoulders Text SC",
+    "path": "ofl/bigshoulderstextsc/METADATA.pb",
+    "dir_name": "bigshoulderstextsc",
+    "license": "ofl",
+    "repository_url": "https://github.com/xotypeco/big_shoulders",
+    "commit": "0b3d09a86862b19efae28eae0cd868f17c476b20",
+    "has_override": true
+  },
+  {
+    "family_name": "Biryani",
+    "path": "ofl/biryani/METADATA.pb",
+    "dir_name": "biryani",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeoff/biryani",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Grid Double",
+    "path": "ofl/bitcountgriddouble/METADATA.pb",
+    "dir_name": "bitcountgriddouble",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "af0818eaeb3b0839806ea19134fc18f317cdcf5a",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Grid Double Ink",
+    "path": "ofl/bitcountgriddoubleink/METADATA.pb",
+    "dir_name": "bitcountgriddoubleink",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "89e7994f73b7f5ced80e7cf493d40be9e66ff82f",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Grid Single",
+    "path": "ofl/bitcountgridsingle/METADATA.pb",
+    "dir_name": "bitcountgridsingle",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "af0818eaeb3b0839806ea19134fc18f317cdcf5a",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Grid Single Ink",
+    "path": "ofl/bitcountgridsingleink/METADATA.pb",
+    "dir_name": "bitcountgridsingleink",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "89e7994f73b7f5ced80e7cf493d40be9e66ff82f",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Ink",
+    "path": "ofl/bitcountink/METADATA.pb",
+    "dir_name": "bitcountink",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "89e7994f73b7f5ced80e7cf493d40be9e66ff82f",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Prop Double",
+    "path": "ofl/bitcountpropdouble/METADATA.pb",
+    "dir_name": "bitcountpropdouble",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "af0818eaeb3b0839806ea19134fc18f317cdcf5a",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Prop Double Ink",
+    "path": "ofl/bitcountpropdoubleink/METADATA.pb",
+    "dir_name": "bitcountpropdoubleink",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "89e7994f73b7f5ced80e7cf493d40be9e66ff82f",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Prop Single",
+    "path": "ofl/bitcountpropsingle/METADATA.pb",
+    "dir_name": "bitcountpropsingle",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "af0818eaeb3b0839806ea19134fc18f317cdcf5a",
+    "has_override": false
+  },
+  {
+    "family_name": "Bitcount Single",
+    "path": "ofl/bitcountsingle/METADATA.pb",
+    "dir_name": "bitcountsingle",
+    "license": "ofl",
+    "repository_url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
+    "commit": "af0818eaeb3b0839806ea19134fc18f317cdcf5a",
+    "has_override": false
+  },
+  {
+    "family_name": "BIZ UDGothic",
+    "path": "ofl/bizudgothic/METADATA.pb",
+    "dir_name": "bizudgothic",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/morisawa-biz-ud-gothic",
+    "commit": "38953aa0afd6937b9caa899e18f4550db7298d69",
+    "has_override": false
+  },
+  {
+    "family_name": "BIZ UDMincho",
+    "path": "ofl/bizudmincho/METADATA.pb",
+    "dir_name": "bizudmincho",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/morisawa-biz-ud-mincho",
+    "commit": "c30a6221b1f3d09afae9137ffe73c7cbec649947",
+    "has_override": false
+  },
+  {
+    "family_name": "BIZ UDPGothic",
+    "path": "ofl/bizudpgothic/METADATA.pb",
+    "dir_name": "bizudpgothic",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/morisawa-biz-ud-gothic",
+    "commit": "18934af56b9c003ca58c54bffbf226848cb11032",
+    "has_override": false
+  },
+  {
+    "family_name": "BIZ UDPMincho",
+    "path": "ofl/bizudpmincho/METADATA.pb",
+    "dir_name": "bizudpmincho",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/morisawa-biz-ud-mincho",
+    "commit": "c30a6221b1f3d09afae9137ffe73c7cbec649947",
+    "has_override": false
+  },
+  {
+    "family_name": "Black Han Sans",
+    "path": "ofl/blackhansans/METADATA.pb",
+    "dir_name": "blackhansans",
+    "license": "ofl",
+    "repository_url": "https://github.com/zesstype/Black-Han-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Black Ops One",
+    "path": "ofl/blackopsone/METADATA.pb",
+    "dir_name": "blackopsone",
+    "license": "ofl",
+    "repository_url": "https://github.com/SorkinType/Black-Ops",
+    "commit": "c955bed3517ad3d8606a8b0105d27538309fb70d",
+    "has_override": false
+  },
+  {
+    "family_name": "Blinker",
+    "path": "ofl/blinker/METADATA.pb",
+    "dir_name": "blinker",
+    "license": "ofl",
+    "repository_url": "https://github.com/supertype-de/Blinker",
+    "commit": "35cee57f389012c6a213acab504efb82f81c3b8f",
+    "has_override": true
+  },
+  {
+    "family_name": "Bonbon",
+    "path": "ofl/bonbon/METADATA.pb",
+    "dir_name": "bonbon",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Bonbon",
+    "commit": "ffac6513dd512d2a76e620c933e6d9a6f0953348",
+    "has_override": true
+  },
+  {
+    "family_name": "Bpmf Huninn",
+    "path": "ofl/bpmfhuninn/METADATA.pb",
+    "dir_name": "bpmfhuninn",
+    "license": "ofl",
+    "repository_url": "https://github.com/ButTaiwan/bpmfvs",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bpmf Iansui",
+    "path": "ofl/bpmfiansui/METADATA.pb",
+    "dir_name": "bpmfiansui",
+    "license": "ofl",
+    "repository_url": "https://github.com/ButTaiwan/bpmfvs",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Bpmf Zihi Kai Std",
+    "path": "ofl/bpmfzihikaistd/METADATA.pb",
+    "dir_name": "bpmfzihikaistd",
+    "license": "ofl",
+    "repository_url": "https://github.com/ButTaiwan/bpmfvs",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Braah One",
+    "path": "ofl/braahone/METADATA.pb",
+    "dir_name": "braahone",
+    "license": "ofl",
+    "repository_url": "https://github.com/artandtype/Braah",
+    "commit": "2b7ba2ea006af5a55313158531b6f0b71eca5ff8",
+    "has_override": true
+  },
+  {
+    "family_name": "Bungee",
+    "path": "ofl/bungee/METADATA.pb",
+    "dir_name": "bungee",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "eb03cf69adab5094f6b84e95357789cdf3bfeb99",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Color",
+    "path": "ofl/bungeecolor/METADATA.pb",
+    "dir_name": "bungeecolor",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "bb29250eb071b59c4e48f44cf146943e2aafae61",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Hairline",
+    "path": "ofl/bungeehairline/METADATA.pb",
+    "dir_name": "bungeehairline",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "eb03cf69adab5094f6b84e95357789cdf3bfeb99",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Inline",
+    "path": "ofl/bungeeinline/METADATA.pb",
+    "dir_name": "bungeeinline",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "eb03cf69adab5094f6b84e95357789cdf3bfeb99",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Outline",
+    "path": "ofl/bungeeoutline/METADATA.pb",
+    "dir_name": "bungeeoutline",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "eb03cf69adab5094f6b84e95357789cdf3bfeb99",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Shade",
+    "path": "ofl/bungeeshade/METADATA.pb",
+    "dir_name": "bungeeshade",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "eb03cf69adab5094f6b84e95357789cdf3bfeb99",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Spice",
+    "path": "ofl/bungeespice/METADATA.pb",
+    "dir_name": "bungeespice",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "eb03cf69adab5094f6b84e95357789cdf3bfeb99",
+    "has_override": false
+  },
+  {
+    "family_name": "Bungee Tint",
+    "path": "ofl/bungeetint/METADATA.pb",
+    "dir_name": "bungeetint",
+    "license": "ofl",
+    "repository_url": "https://github.com/djrrb/Bungee",
+    "commit": "0ab742e49fc7725cd86089834d6460c489b9b2a6",
+    "has_override": false
+  },
+  {
+    "family_name": "Cabin",
+    "path": "ofl/cabin/METADATA.pb",
+    "dir_name": "cabin",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Cabin",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cabin Condensed",
+    "path": "ofl/cabincondensed/METADATA.pb",
+    "dir_name": "cabincondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Cabin",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cabin Sketch",
+    "path": "ofl/cabinsketch/METADATA.pb",
+    "dir_name": "cabinsketch",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/CabinSketch",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Caladea",
+    "path": "ofl/caladea/METADATA.pb",
+    "dir_name": "caladea",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/caladea",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cambay",
+    "path": "ofl/cambay/METADATA.pb",
+    "dir_name": "cambay",
+    "license": "ofl",
+    "repository_url": "https://github.com/anexasajoop/cambay",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cantarell",
+    "path": "ofl/cantarell/METADATA.pb",
+    "dir_name": "cantarell",
+    "license": "ofl",
+    "repository_url": "https://github.com/davelab6/cantarell",
+    "commit": "52d3363878871c868eaeb64c75a701c1193750af",
+    "has_override": true
+  },
+  {
+    "family_name": "Cardo",
+    "path": "ofl/cardo/METADATA.pb",
+    "dir_name": "cardo",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/CardoFont",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Carlito",
+    "path": "ofl/carlito/METADATA.pb",
+    "dir_name": "carlito",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/carlito",
+    "commit": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+    "has_override": false
+  },
+  {
+    "family_name": "Carme",
+    "path": "ofl/carme/METADATA.pb",
+    "dir_name": "carme",
+    "license": "ofl",
+    "repository_url": "https://github.com/librefonts/carme",
+    "commit": "823391960931cedd0b9cb7caf0fcae71c4bd59ba",
+    "has_override": true
+  },
+  {
+    "family_name": "Cascadia Code",
+    "path": "ofl/cascadiacode/METADATA.pb",
+    "dir_name": "cascadiacode",
+    "license": "ofl",
+    "repository_url": "https://github.com/microsoft/cascadia-code",
+    "commit": "56bcca3f2c1e4cb19458954f0e2bb4635960df91",
+    "has_override": true
+  },
+  {
+    "family_name": "Cascadia Mono",
+    "path": "ofl/cascadiamono/METADATA.pb",
+    "dir_name": "cascadiamono",
+    "license": "ofl",
+    "repository_url": "https://github.com/microsoft/cascadia-code",
+    "commit": "56bcca3f2c1e4cb19458954f0e2bb4635960df91",
+    "has_override": true
+  },
+  {
+    "family_name": "Castoro",
+    "path": "ofl/castoro/METADATA.pb",
+    "dir_name": "castoro",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Castoro",
+    "commit": "58a386a96e522b6d47c566175c7ee799d4c8d14f",
+    "has_override": false
+  },
+  {
+    "family_name": "Castoro Titling",
+    "path": "ofl/castorotitling/METADATA.pb",
+    "dir_name": "castorotitling",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Castoro",
+    "commit": "58a386a96e522b6d47c566175c7ee799d4c8d14f",
+    "has_override": false
+  },
+  {
+    "family_name": "Catamaran",
+    "path": "ofl/catamaran/METADATA.pb",
+    "dir_name": "catamaran",
+    "license": "ofl",
+    "repository_url": "https://github.com/VanillaandCream/Catamaran-Tamil",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cause",
+    "path": "ofl/cause/METADATA.pb",
+    "dir_name": "cause",
+    "license": "ofl",
+    "repository_url": "https://github.com/xconsau/Cause",
+    "commit": "d7259fb3079c4d310c89a731c647829fba251495",
+    "has_override": false
+  },
+  {
+    "family_name": "Caveat",
+    "path": "ofl/caveat/METADATA.pb",
+    "dir_name": "caveat",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/caveat",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Caveat Brush",
+    "path": "ofl/caveatbrush/METADATA.pb",
+    "dir_name": "caveatbrush",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/caveat",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Chakra Petch",
+    "path": "ofl/chakrapetch/METADATA.pb",
+    "dir_name": "chakrapetch",
+    "license": "ofl",
+    "repository_url": "https://github.com/m4rc1e/Chakra-Petch",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Changa One",
+    "path": "ofl/changaone/METADATA.pb",
+    "dir_name": "changaone",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/changa-one",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Charis SIL",
+    "path": "ofl/charissil/METADATA.pb",
+    "dir_name": "charissil",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-charis",
+    "commit": "258e532625d5e6c5fca8448782e710db78a6ca8a",
+    "has_override": true
+  },
+  {
+    "family_name": "Charm",
+    "path": "ofl/charm/METADATA.pb",
+    "dir_name": "charm",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Charm",
+    "commit": "873c5516023ae978e5a9de9e67b654d9ed92fc30",
+    "has_override": true
+  },
+  {
+    "family_name": "Charmonman",
+    "path": "ofl/charmonman/METADATA.pb",
+    "dir_name": "charmonman",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Charmonman",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cherry Bomb One",
+    "path": "ofl/cherrybombone/METADATA.pb",
+    "dir_name": "cherrybombone",
+    "license": "ofl",
+    "repository_url": "https://github.com/satsuyako/CherryBomb",
+    "commit": "9171b63b087c39b1d769287287f38582a57911eb",
+    "has_override": true
+  },
+  {
+    "family_name": "Chilanka",
+    "path": "ofl/chilanka/METADATA.pb",
+    "dir_name": "chilanka",
+    "license": "ofl",
+    "repository_url": "https://github.com/smc/Chilanka",
+    "commit": "4688e5c6fcfb5ccf8fc9f28dedaa15b2eacbe8e9",
+    "has_override": true
+  },
+  {
+    "family_name": "Chiron GoRound TC",
+    "path": "ofl/chirongoroundtc/METADATA.pb",
+    "dir_name": "chirongoroundtc",
+    "license": "ofl",
+    "repository_url": "https://github.com/chiron-fonts/chiron-go-round-tc",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Chokokutai",
+    "path": "ofl/chokokutai/METADATA.pb",
+    "dir_name": "chokokutai",
+    "license": "ofl",
+    "repository_url": "https://github.com/go108go/Chokokutai",
+    "commit": "55016eef4cfaf7d9001eeaa64ad5a0a0f20a67c7",
+    "has_override": true
+  },
+  {
+    "family_name": "Chonburi",
+    "path": "ofl/chonburi/METADATA.pb",
+    "dir_name": "chonburi",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/chonburi",
+    "commit": "1c6599a6ae44a2d30ff3ee44d015ffab2c0cb014",
+    "has_override": true
+  },
+  {
+    "family_name": "Cinzel",
+    "path": "ofl/cinzel/METADATA.pb",
+    "dir_name": "cinzel",
+    "license": "ofl",
+    "repository_url": "https://github.com/NDISCOVER/Cinzel",
+    "commit": "8271e162a7c6064ff1e539ba86011b16b6a6184f",
+    "has_override": true
+  },
+  {
+    "family_name": "Cinzel Decorative",
+    "path": "ofl/cinzeldecorative/METADATA.pb",
+    "dir_name": "cinzeldecorative",
+    "license": "ofl",
+    "repository_url": "https://github.com/NDISCOVER/Cinzel",
+    "commit": "1c62abfb8d5e27ea0a09169d621b32d24fdb8691",
+    "has_override": true
+  },
+  {
+    "family_name": "Coda",
+    "path": "ofl/coda/METADATA.pb",
+    "dir_name": "coda",
+    "license": "ofl",
+    "repository_url": "https://github.com/vernnobile/CodaFont",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Codystar",
+    "path": "ofl/codystar/METADATA.pb",
+    "dir_name": "codystar",
+    "license": "ofl",
+    "repository_url": "https://github.com/librefonts/codystar",
+    "commit": "e32d050fbb01232b6a85423b121da89f21bba8b3",
+    "has_override": true
+  },
+  {
+    "family_name": "Coiny",
+    "path": "ofl/coiny/METADATA.pb",
+    "dir_name": "coiny",
+    "license": "ofl",
+    "repository_url": "https://github.com/marcelommp/Coiny",
+    "commit": "0341b95f0c79f0e0b33ab7b5404cf9265be88516",
+    "has_override": true
+  },
+  {
+    "family_name": "Comfortaa",
+    "path": "ofl/comfortaa/METADATA.pb",
+    "dir_name": "comfortaa",
+    "license": "ofl",
+    "repository_url": "https://github.com/alexeiva/comfortaa",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Comic Neue",
+    "path": "ofl/comicneue/METADATA.pb",
+    "dir_name": "comicneue",
+    "license": "ofl",
+    "repository_url": "https://github.com/crozynski/comicneue",
+    "commit": "c5ee07b5eebc4cc6347badfad56cb0c705a2e41e",
+    "has_override": true
+  },
+  {
+    "family_name": "Cormorant Upright",
+    "path": "ofl/cormorantupright/METADATA.pb",
+    "dir_name": "cormorantupright",
+    "license": "ofl",
+    "repository_url": "https://github.com/CatharsisFonts/Cormorant",
+    "commit": "b1a0a7781e3a59d3c2a96f953650463469a2e841",
+    "has_override": false
+  },
+  {
+    "family_name": "Cossette Texte",
+    "path": "ofl/cossettetexte/METADATA.pb",
+    "dir_name": "cossettetexte",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/cossette-fonts",
+    "commit": "ee99cea3c23039e31865c3c37bd7d716278e546b",
+    "has_override": false
+  },
+  {
+    "family_name": "Courier Prime",
+    "path": "ofl/courierprime/METADATA.pb",
+    "dir_name": "courierprime",
+    "license": "ofl",
+    "repository_url": "https://github.com/quoteunquoteapps/CourierPrime",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Coustard",
+    "path": "ofl/coustard/METADATA.pb",
+    "dir_name": "coustard",
+    "license": "ofl",
+    "repository_url": "https://github.com/vernnobile/coustardFont",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Cuprum",
+    "path": "ofl/cuprum/METADATA.pb",
+    "dir_name": "cuprum",
+    "license": "ofl",
+    "repository_url": "https://github.com/alexeiva/cuprum",
+    "commit": "98adc59dc00ca00dbde9eb42a23ace5f924b4f90",
+    "has_override": true
+  },
+  {
+    "family_name": "Dai Banna SIL",
+    "path": "ofl/daibannasil/METADATA.pb",
+    "dir_name": "daibannasil",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-daibannasil",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Darumadrop One",
+    "path": "ofl/darumadropone/METADATA.pb",
+    "dir_name": "darumadropone",
+    "license": "ofl",
+    "repository_url": "https://github.com/ManiackersDesign/darumadrop",
+    "commit": "ddbe82834bdab1ecc24adad09cc122d6e8678a81",
+    "has_override": true
+  },
+  {
+    "family_name": "Dela Gothic One",
+    "path": "ofl/delagothicone/METADATA.pb",
+    "dir_name": "delagothicone",
+    "license": "ofl",
+    "repository_url": "https://github.com/syakuzen/DelaGothic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Dhurjati",
+    "path": "ofl/dhurjati/METADATA.pb",
+    "dir_name": "dhurjati",
+    "license": "ofl",
+    "repository_url": "https://github.com/appajid/dhurjati",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Dhyana",
+    "path": "ofl/dhyana/METADATA.pb",
+    "dir_name": "dhyana",
+    "license": "ofl",
+    "repository_url": "https://github.com/vernnobile/DhyanaFont",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Didact Gothic",
+    "path": "ofl/didactgothic/METADATA.pb",
+    "dir_name": "didactgothic",
+    "license": "ofl",
+    "repository_url": "https://github.com/ossobuffo/didact-gothic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Digital Numbers",
+    "path": "ofl/digitalnumbers/METADATA.pb",
+    "dir_name": "digitalnumbers",
+    "license": "ofl",
+    "repository_url": "https://github.com/s-a/digital-numbers-font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "DM Mono",
+    "path": "ofl/dmmono/METADATA.pb",
+    "dir_name": "dmmono",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/dm-mono",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "DM Serif Display",
+    "path": "ofl/dmserifdisplay/METADATA.pb",
+    "dir_name": "dmserifdisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/dm-fonts",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "DM Serif Text",
+    "path": "ofl/dmseriftext/METADATA.pb",
+    "dir_name": "dmseriftext",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/dm-fonts",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Dongle",
+    "path": "ofl/dongle/METADATA.pb",
+    "dir_name": "dongle",
+    "license": "ofl",
+    "repository_url": "https://github.com/yangheeryu/Dongle",
+    "commit": "f7127c4d2450e1cad20254ec692591347e2fc260",
+    "has_override": true
+  },
+  {
+    "family_name": "DotGothic16",
+    "path": "ofl/dotgothic16/METADATA.pb",
+    "dir_name": "dotgothic16",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/DotGothic16",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Dotum",
+    "path": "ofl/dotum/METADATA.pb",
+    "dir_name": "dotum",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/gulim",
+    "commit": "012723a8d5b6a6dc920330f26d165422c3014fd6",
+    "has_override": false
+  },
+  {
+    "family_name": "DotumChe",
+    "path": "ofl/dotumche/METADATA.pb",
+    "dir_name": "dotumche",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/gulim",
+    "commit": "012723a8d5b6a6dc920330f26d165422c3014fd6",
+    "has_override": false
+  },
+  {
+    "family_name": "Ek Mukta",
+    "path": "ofl/ekmukta/METADATA.pb",
+    "dir_name": "ekmukta",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/MuktaGFVersion",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Elsie",
+    "path": "ofl/elsie/METADATA.pb",
+    "dir_name": "elsie",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/elsiefont (404)",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Encode Sans",
+    "path": "ofl/encodesans/METADATA.pb",
+    "dir_name": "encodesans",
+    "license": "ofl",
+    "repository_url": "https://github.com/thundernixon/Encode-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Encode Sans Condensed",
+    "path": "ofl/encodesanscondensed/METADATA.pb",
+    "dir_name": "encodesanscondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Encode Sans Expanded",
+    "path": "ofl/encodesansexpanded/METADATA.pb",
+    "dir_name": "encodesansexpanded",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Encode Sans SC",
+    "path": "ofl/encodesanssc/METADATA.pb",
+    "dir_name": "encodesanssc",
+    "license": "ofl",
+    "repository_url": "https://github.com/thundernixon/Encode-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Encode Sans Semi Condensed",
+    "path": "ofl/encodesanssemicondensed/METADATA.pb",
+    "dir_name": "encodesanssemicondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Encode Sans Semi Expanded",
+    "path": "ofl/encodesanssemiexpanded/METADATA.pb",
+    "dir_name": "encodesanssemiexpanded",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Englebert",
+    "path": "ofl/englebert/METADATA.pb",
+    "dir_name": "englebert",
+    "license": "ofl",
+    "repository_url": "https://github.com/librefonts/englebert",
+    "commit": "0b03ab09eab75a39c93f8fb0432459a7dca74176",
+    "has_override": true
+  },
+  {
+    "family_name": "Enriqueta",
+    "path": "ofl/enriqueta/METADATA.pb",
+    "dir_name": "enriqueta",
+    "license": "ofl",
+    "repository_url": "https://github.com/vv-monsalve/Enriqueta_2019",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fahkwang",
+    "path": "ofl/fahkwang/METADATA.pb",
+    "dir_name": "fahkwang",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Fah-Kwang",
+    "commit": "7b16186dadf959e79ded967a7620bfb05600fcaf",
+    "has_override": true
+  },
+  {
+    "family_name": "Fanwood Text",
+    "path": "ofl/fanwoodtext/METADATA.pb",
+    "dir_name": "fanwoodtext",
+    "license": "ofl",
+    "repository_url": "https://github.com/theleagueof/fanwood",
+    "commit": "cbaaed9704e7d37d3dcdbdf0b472e9efd0e39432",
+    "has_override": true
+  },
+  {
+    "family_name": "Farro",
+    "path": "ofl/farro/METADATA.pb",
+    "dir_name": "farro",
+    "license": "ofl",
+    "repository_url": "https://github.com/grayscaleltd/farro",
+    "commit": "fa80aadd0c61b6e76d95870579d0650f9d91df76",
+    "has_override": true
+  },
+  {
+    "family_name": "Faster One",
+    "path": "ofl/fasterone/METADATA.pb",
+    "dir_name": "fasterone",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/faster",
+    "commit": "c1eb445af08bcc5ce66380f65e56d9d3135cca3c",
+    "has_override": true
+  },
+  {
+    "family_name": "Fauna One",
+    "path": "ofl/faunaone/METADATA.pb",
+    "dir_name": "faunaone",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/fauna-one",
+    "commit": "ed89976413a322f9d84aae5d97c17cfe5cf0d95d",
+    "has_override": true
+  },
+  {
+    "family_name": "Federant",
+    "path": "ofl/federant/METADATA.pb",
+    "dir_name": "federant",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Federant",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Federo",
+    "path": "ofl/federo/METADATA.pb",
+    "dir_name": "federo",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Federo",
+    "commit": "79d2ed54e783fb0b116aabdb6c9b0318393cd3c8",
+    "has_override": true
+  },
+  {
+    "family_name": "Fira Code",
+    "path": "ofl/firacode/METADATA.pb",
+    "dir_name": "firacode",
+    "license": "ofl",
+    "repository_url": "https://github.com/tonsky/FiraCode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fira Mono",
+    "path": "ofl/firamono/METADATA.pb",
+    "dir_name": "firamono",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/FiraGFVersion",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fira Sans",
+    "path": "ofl/firasans/METADATA.pb",
+    "dir_name": "firasans",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/FiraGFVersion",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fira Sans Condensed",
+    "path": "ofl/firasanscondensed/METADATA.pb",
+    "dir_name": "firasanscondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/FiraGFVersion",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fira Sans Extra Condensed",
+    "path": "ofl/firasansextracondensed/METADATA.pb",
+    "dir_name": "firasansextracondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/FiraGFVersion",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fjalla One",
+    "path": "ofl/fjallaone/METADATA.pb",
+    "dir_name": "fjallaone",
+    "license": "ofl",
+    "repository_url": "https://github.com/SorkinType/FjallaOne",
+    "commit": "e5fcc44bb44b8a84debd0cc070bad1360cc91761",
+    "has_override": true
+  },
+  {
+    "family_name": "Flow Circular",
+    "path": "ofl/flowcircular/METADATA.pb",
+    "dir_name": "flowcircular",
+    "license": "ofl",
+    "repository_url": "https://github.com/HYPD/flow-typeface",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Flow Rounded",
+    "path": "ofl/flowrounded/METADATA.pb",
+    "dir_name": "flowrounded",
+    "license": "ofl",
+    "repository_url": "https://github.com/HYPD/flow-typeface",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Fraunces",
+    "path": "ofl/fraunces/METADATA.pb",
+    "dir_name": "fraunces",
+    "license": "ofl",
+    "repository_url": "https://github.com/undercasetype/Fraunces",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Gentium Book Plus",
+    "path": "ofl/gentiumbookplus/METADATA.pb",
+    "dir_name": "gentiumbookplus",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-gentium",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Gentium Plus",
+    "path": "ofl/gentiumplus/METADATA.pb",
+    "dir_name": "gentiumplus",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-gentium",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Geom",
+    "path": "ofl/geom/METADATA.pb",
+    "dir_name": "geom",
+    "license": "ofl",
+    "repository_url": "https://github.com/ThanosPoulakidas/Geom",
+    "commit": "c20a14c68c717e28fdb6e1cc7cc6b453fef5fef7",
+    "has_override": false
+  },
+  {
+    "family_name": "Gilda Display",
+    "path": "ofl/gildadisplay/METADATA.pb",
+    "dir_name": "gildadisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/gilda-display",
+    "commit": "640bdfd3d2ee3b533d1f88687a9e4541136254e0",
+    "has_override": true
+  },
+  {
+    "family_name": "Girassol",
+    "path": "ofl/girassol/METADATA.pb",
+    "dir_name": "girassol",
+    "license": "ofl",
+    "repository_url": "https://github.com/liamspradlin/Girassol-Display",
+    "commit": "cc8fa1b5a1afc28520fdc0ccc36256db243d9dfa",
+    "has_override": true
+  },
+  {
+    "family_name": "Glegoo",
+    "path": "ofl/glegoo/METADATA.pb",
+    "dir_name": "glegoo",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/glegoo",
+    "commit": "a6b0a10abfaf1b88feb4a9f9eb731beefbb4bbb8",
+    "has_override": true
+  },
+  {
+    "family_name": "Goldman",
+    "path": "ofl/goldman/METADATA.pb",
+    "dir_name": "goldman",
+    "license": "ofl",
+    "repository_url": "https://github.com/magictype/goldman",
+    "commit": "3fdf428a931f7a39b3f2f1681c16bfa664ca89dd",
+    "has_override": true
+  },
+  {
+    "family_name": "Google Sans Code",
+    "path": "ofl/googlesanscode/METADATA.pb",
+    "dir_name": "googlesanscode",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/googlesans-code",
+    "commit": "edcd56e39fb7e98d6f1b697e187c144cef2fd994",
+    "has_override": false
+  },
+  {
+    "family_name": "Goudy Bookletter 1911",
+    "path": "ofl/goudybookletter1911/METADATA.pb",
+    "dir_name": "goudybookletter1911",
+    "license": "ofl",
+    "repository_url": "https://github.com/theleagueof/goudy-bookletter-1911",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Gowun Batang",
+    "path": "ofl/gowunbatang/METADATA.pb",
+    "dir_name": "gowunbatang",
+    "license": "ofl",
+    "repository_url": "https://github.com/yangheeryu/Gowun-Batang",
+    "commit": "4e73f5a9a004927220354f4b68a4c720da538147",
+    "has_override": true
+  },
+  {
+    "family_name": "Gowun Dodum",
+    "path": "ofl/gowundodum/METADATA.pb",
+    "dir_name": "gowundodum",
+    "license": "ofl",
+    "repository_url": "https://github.com/yangheeryu/Gowun-Dodum",
+    "commit": "6d9ef10fc745cf3b0a4aba02dad1c740f94d029b",
+    "has_override": true
+  },
+  {
+    "family_name": "Gruppo",
+    "path": "ofl/gruppo/METADATA.pb",
+    "dir_name": "gruppo",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/GruppoFont",
+    "commit": "20e1bc8c76ee1d692c5645b8aaf971cc58ca2e51",
+    "has_override": true
+  },
+  {
+    "family_name": "Gulim",
+    "path": "ofl/gulim/METADATA.pb",
+    "dir_name": "gulim",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/gulim",
+    "commit": "012723a8d5b6a6dc920330f26d165422c3014fd6",
+    "has_override": false
+  },
+  {
+    "family_name": "GulimChe",
+    "path": "ofl/gulimche/METADATA.pb",
+    "dir_name": "gulimche",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/gulim",
+    "commit": "012723a8d5b6a6dc920330f26d165422c3014fd6",
+    "has_override": false
+  },
+  {
+    "family_name": "Gulzar",
+    "path": "ofl/gulzar/METADATA.pb",
+    "dir_name": "gulzar",
+    "license": "ofl",
+    "repository_url": "https://github.com/simoncozens/Gulzar",
+    "commit": "42b27958a84d56d8341ad1e2dc26b19dba03b15f",
+    "has_override": true
+  },
+  {
+    "family_name": "Gungsuh",
+    "path": "ofl/gungsuh/METADATA.pb",
+    "dir_name": "gungsuh",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/batang",
+    "commit": "6c1e09f93204c963881afbb4e25699095565f2e5",
+    "has_override": false
+  },
+  {
+    "family_name": "GungsuhChe",
+    "path": "ofl/gungsuhche/METADATA.pb",
+    "dir_name": "gungsuhche",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/batang",
+    "commit": "6c1e09f93204c963881afbb4e25699095565f2e5",
+    "has_override": false
+  },
+  {
+    "family_name": "Gupter",
+    "path": "ofl/gupter/METADATA.pb",
+    "dir_name": "gupter",
+    "license": "ofl",
+    "repository_url": "https://github.com/octaviopardo/GUPTER",
+    "commit": "959e1580e02c8213898597aa076c33eafd0d6db6",
+    "has_override": true
+  },
+  {
+    "family_name": "Gurajada",
+    "path": "ofl/gurajada/METADATA.pb",
+    "dir_name": "gurajada",
+    "license": "ofl",
+    "repository_url": "https://github.com/appajid/gurajada",
+    "commit": "47d49279bffcb4cebab2dca10f8d7b20ff5230a2",
+    "has_override": true
+  },
+  {
+    "family_name": "Gveret Levin",
+    "path": "ofl/gveretlevin/METADATA.pb",
+    "dir_name": "gveretlevin",
+    "license": "ofl",
+    "repository_url": "https://github.com/AlefAlefAlef/gveret-levin",
+    "commit": "b383a9c00863837b1b88b4d0365f43a304007dae",
+    "has_override": false
+  },
+  {
+    "family_name": "Hachi Maru Pop",
+    "path": "ofl/hachimarupop/METADATA.pb",
+    "dir_name": "hachimarupop",
+    "license": "ofl",
+    "repository_url": "https://github.com/noriokanisawa/HachiMaruPop",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Handjet",
+    "path": "ofl/handjet/METADATA.pb",
+    "dir_name": "handjet",
+    "license": "ofl",
+    "repository_url": "https://github.com/rosettatype/handjet",
+    "commit": "3918b7798e06c81da6bc558e88dfddd5a6b49807",
+    "has_override": true
+  },
+  {
+    "family_name": "Harmattan",
+    "path": "ofl/harmattan/METADATA.pb",
+    "dir_name": "harmattan",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-harmattan",
+    "commit": "b8d089bdb2cf97351cff63beaa9d68a6273dcc42",
+    "has_override": false
+  },
+  {
+    "family_name": "Hepta Slab",
+    "path": "ofl/heptaslab/METADATA.pb",
+    "dir_name": "heptaslab",
+    "license": "ofl",
+    "repository_url": "https://github.com/mjlagattuta/Hepta-Slab",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hina Mincho",
+    "path": "ofl/hinamincho/METADATA.pb",
+    "dir_name": "hinamincho",
+    "license": "ofl",
+    "repository_url": "https://github.com/satsuyako/Hina-Mincho",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind",
+    "path": "ofl/hind/METADATA.pb",
+    "dir_name": "hind",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Colombo",
+    "path": "ofl/hindcolombo/METADATA.pb",
+    "dir_name": "hindcolombo",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-colombo",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Guntur",
+    "path": "ofl/hindguntur/METADATA.pb",
+    "dir_name": "hindguntur",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-guntur",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Jalandhar",
+    "path": "ofl/hindjalandhar/METADATA.pb",
+    "dir_name": "hindjalandhar",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-jalandhar",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Kochi",
+    "path": "ofl/hindkochi/METADATA.pb",
+    "dir_name": "hindkochi",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-kochi",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Madurai",
+    "path": "ofl/hindmadurai/METADATA.pb",
+    "dir_name": "hindmadurai",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-madurai",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Mysuru",
+    "path": "ofl/hindmysuru/METADATA.pb",
+    "dir_name": "hindmysuru",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-mysuru",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Siliguri",
+    "path": "ofl/hindsiliguri/METADATA.pb",
+    "dir_name": "hindsiliguri",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-siliguri",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Hind Vadodara",
+    "path": "ofl/hindvadodara/METADATA.pb",
+    "dir_name": "hindvadodara",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/hind-vadodara",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Ibarra Real Nova",
+    "path": "ofl/ibarrarealnova/METADATA.pb",
+    "dir_name": "ibarrarealnova",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/ibarrareal",
+    "commit": "7ae92a27f13f8e187db49312e7111041d1fa2a17",
+    "has_override": true
+  },
+  {
+    "family_name": "IBM Plex Mono",
+    "path": "ofl/ibmplexmono/METADATA.pb",
+    "dir_name": "ibmplexmono",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "9ab3b5b3b96325fb20f365ee0804adca92024cbf",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans",
+    "path": "ofl/ibmplexsans/METADATA.pb",
+    "dir_name": "ibmplexsans",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "3e312890b3b9e47378b30dedfe4196a42151243c",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans Arabic",
+    "path": "ofl/ibmplexsansarabic/METADATA.pb",
+    "dir_name": "ibmplexsansarabic",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "e80bf9282a630e70d6c1459f4125c9ec0e75316b",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans Condensed",
+    "path": "ofl/ibmplexsanscondensed/METADATA.pb",
+    "dir_name": "ibmplexsanscondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans Devanagari",
+    "path": "ofl/ibmplexsansdevanagari/METADATA.pb",
+    "dir_name": "ibmplexsansdevanagari",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans Hebrew",
+    "path": "ofl/ibmplexsanshebrew/METADATA.pb",
+    "dir_name": "ibmplexsanshebrew",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans JP",
+    "path": "ofl/ibmplexsansjp/METADATA.pb",
+    "dir_name": "ibmplexsansjp",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "80fcb676509354caa75c6bfc7f9db598545d466f",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans KR",
+    "path": "ofl/ibmplexsanskr/METADATA.pb",
+    "dir_name": "ibmplexsanskr",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans Thai",
+    "path": "ofl/ibmplexsansthai/METADATA.pb",
+    "dir_name": "ibmplexsansthai",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Sans Thai Looped",
+    "path": "ofl/ibmplexsansthailooped/METADATA.pb",
+    "dir_name": "ibmplexsansthailooped",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "IBM Plex Serif",
+    "path": "ofl/ibmplexserif/METADATA.pb",
+    "dir_name": "ibmplexserif",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/plex",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Iceberg",
+    "path": "ofl/iceberg/METADATA.pb",
+    "dir_name": "iceberg",
+    "license": "ofl",
+    "repository_url": "https://github.com/librefonts/iceberg",
+    "commit": "db1c024077a00f9999b5f6437a70c19ced5c1fc5",
+    "has_override": true
+  },
+  {
+    "family_name": "Iceland",
+    "path": "ofl/iceland/METADATA.pb",
+    "dir_name": "iceland",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Iceland",
+    "commit": "bb43144b50825221060747ddba7b23bc05e7c960",
+    "has_override": true
+  },
+  {
+    "family_name": "Idiqlat",
+    "path": "ofl/idiqlat/METADATA.pb",
+    "dir_name": "idiqlat",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-idiqlat",
+    "commit": "37a6c68fa053f4b4b4c9f6d67c569f66621b6daa",
+    "has_override": false
+  },
+  {
+    "family_name": "Imbue",
+    "path": "ofl/imbue/METADATA.pb",
+    "dir_name": "imbue",
+    "license": "ofl",
+    "repository_url": "https://github.com/Etcetera-Type-Co/Imbue",
+    "commit": "41b16f3fd61d33cacad0e579c35ef9566817184b",
+    "has_override": true
+  },
+  {
+    "family_name": "Imprima",
+    "path": "ofl/imprima/METADATA.pb",
+    "dir_name": "imprima",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/imprima",
+    "commit": "efec6ee25d2ba461487c391b62ae26817614741a",
+    "has_override": true
+  },
+  {
+    "family_name": "Inknut Antiqua",
+    "path": "ofl/inknutantiqua/METADATA.pb",
+    "dir_name": "inknutantiqua",
+    "license": "ofl",
+    "repository_url": "https://github.com/clauseggers/Inknut-Antiqua",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Inria Sans",
+    "path": "ofl/inriasans/METADATA.pb",
+    "dir_name": "inriasans",
+    "license": "ofl",
+    "repository_url": "https://github.com/BlackFoundryCom/InriaFonts",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Inria Serif",
+    "path": "ofl/inriaserif/METADATA.pb",
+    "dir_name": "inriaserif",
+    "license": "ofl",
+    "repository_url": "https://github.com/BlackFoundryCom/InriaFonts",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Inspiration",
+    "path": "ofl/inspiration/METADATA.pb",
+    "dir_name": "inspiration",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/inspiration",
+    "commit": "629ca27262fbcc6cfe745bd95d2e7b72a8e3b047",
+    "has_override": true
+  },
+  {
+    "family_name": "Intel One Mono",
+    "path": "ofl/intelonemono/METADATA.pb",
+    "dir_name": "intelonemono",
+    "license": "ofl",
+    "repository_url": "https://github.com/intel/intel-one-mono",
+    "commit": "cec102c3890991d35e3766424923fa4afc099a1d",
+    "has_override": false
+  },
+  {
+    "family_name": "Inter",
+    "path": "ofl/inter/METADATA.pb",
+    "dir_name": "inter",
+    "license": "ofl",
+    "repository_url": "https://www.github.com/rsms/inter",
+    "commit": "66647c0bbbe41a850d79d9c76fb13add3378940f",
+    "has_override": false
+  },
+  {
+    "family_name": "Itim",
+    "path": "ofl/itim/METADATA.pb",
+    "dir_name": "itim",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/itim",
+    "commit": "eb5e37a5412ea61cbc048f57dad5a97285d470e1",
+    "has_override": true
+  },
+  {
+    "family_name": "Jacques Francois",
+    "path": "ofl/jacquesfrancois/METADATA.pb",
+    "dir_name": "jacquesfrancois",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Jacques-Francois",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Jacques Francois Shadow",
+    "path": "ofl/jacquesfrancoisshadow/METADATA.pb",
+    "dir_name": "jacquesfrancoisshadow",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Jacques-Francois-Shadow",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Josefin Sans",
+    "path": "ofl/josefinsans/METADATA.pb",
+    "dir_name": "josefinsans",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/josefinsans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Jost",
+    "path": "ofl/jost/METADATA.pb",
+    "dir_name": "jost",
+    "license": "ofl",
+    "repository_url": "https://github.com/indestructible-type/Jost",
+    "commit": "35f141c970538f1ed0f235789c19156b3ce2a762",
+    "has_override": true
+  },
+  {
+    "family_name": "Joti One",
+    "path": "ofl/jotione/METADATA.pb",
+    "dir_name": "jotione",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/joti",
+    "commit": "7feedf8bad69029e82ae281c7a100fb639d946e1",
+    "has_override": true
+  },
+  {
+    "family_name": "Julee",
+    "path": "ofl/julee/METADATA.pb",
+    "dir_name": "julee",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/julee",
+    "commit": "9a2efe6783e9ea590cee62c8aec51670a3dec51d",
+    "has_override": true
+  },
+  {
+    "family_name": "K2D",
+    "path": "ofl/k2d/METADATA.pb",
+    "dir_name": "k2d",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/K2D",
+    "commit": "5df785dc3b0d17e7b57eedb2f4139436dbeb6440",
+    "has_override": true
+  },
+  {
+    "family_name": "Kadwa",
+    "path": "ofl/kadwa/METADATA.pb",
+    "dir_name": "kadwa",
+    "license": "ofl",
+    "repository_url": "https://github.com/solmatas/Kadwa",
+    "commit": "ec58500fc2026ed3125a609b8c617b4b0c4bce20",
+    "has_override": true
+  },
+  {
+    "family_name": "Kaisei Decol",
+    "path": "ofl/kaiseidecol/METADATA.pb",
+    "dir_name": "kaiseidecol",
+    "license": "ofl",
+    "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
+    "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
+    "has_override": true
+  },
+  {
+    "family_name": "Kaisei HarunoUmi",
+    "path": "ofl/kaiseiharunoumi/METADATA.pb",
+    "dir_name": "kaiseiharunoumi",
+    "license": "ofl",
+    "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
+    "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
+    "has_override": true
+  },
+  {
+    "family_name": "Kaisei Opti",
+    "path": "ofl/kaiseiopti/METADATA.pb",
+    "dir_name": "kaiseiopti",
+    "license": "ofl",
+    "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
+    "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
+    "has_override": true
+  },
+  {
+    "family_name": "Kaisei Tokumin",
+    "path": "ofl/kaiseitokumin/METADATA.pb",
+    "dir_name": "kaiseitokumin",
+    "license": "ofl",
+    "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
+    "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
+    "has_override": true
+  },
+  {
+    "family_name": "Kalam",
+    "path": "ofl/kalam/METADATA.pb",
+    "dir_name": "kalam",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/kalam",
+    "commit": "03a4d8a33849b1ad9afdee95006bc66d2d4aed94",
+    "has_override": true
+  },
+  {
+    "family_name": "Kanchenjunga",
+    "path": "ofl/kanchenjunga/METADATA.pb",
+    "dir_name": "kanchenjunga",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-kanchenjunga/",
+    "commit": "19a3efac0c2ca42a1b28a53c74ca8f3eb6c12ca7",
+    "has_override": false
+  },
+  {
+    "family_name": "Kanit",
+    "path": "ofl/kanit/METADATA.pb",
+    "dir_name": "kanit",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/kanit",
+    "commit": "467dfe842185681d8042cd608b8291199dd37cda",
+    "has_override": true
+  },
+  {
+    "family_name": "Kapakana",
+    "path": "ofl/kapakana/METADATA.pb",
+    "dir_name": "kapakana",
+    "license": "ofl",
+    "repository_url": "https://github.com/nagamaki008/kapakana",
+    "commit": "0074870cd85239e8c5cf8949da54e0b111333a87",
+    "has_override": true
+  },
+  {
+    "family_name": "Karma",
+    "path": "ofl/karma/METADATA.pb",
+    "dir_name": "karma",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/karma",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Kavoon",
+    "path": "ofl/kavoon/METADATA.pb",
+    "dir_name": "kavoon",
+    "license": "ofl",
+    "repository_url": "https://github.com/EbenSorkin/Kavoon",
+    "commit": "0b985571f93c97f70ce9065bfc1a883a21b9deac",
+    "has_override": true
+  },
+  {
+    "family_name": "Kay Pho Du",
+    "path": "ofl/kayphodu/METADATA.pb",
+    "dir_name": "kayphodu",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-kayphodu",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Kedebideri",
+    "path": "ofl/kedebideri/METADATA.pb",
+    "dir_name": "kedebideri",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-kedebideri",
+    "commit": "4973b2e0258ef40acc0da3c2c1d155630faecc2c",
+    "has_override": false
+  },
+  {
+    "family_name": "Khand",
+    "path": "ofl/khand/METADATA.pb",
+    "dir_name": "khand",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/khand",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Khula",
+    "path": "ofl/khula/METADATA.pb",
+    "dir_name": "khula",
+    "license": "ofl",
+    "repository_url": "https://github.com/erinmclaughlin/Khula",
+    "commit": "1389c0184856d690ea489f86e84c546e4473722d",
+    "has_override": true
+  },
+  {
+    "family_name": "Kite One",
+    "path": "ofl/kiteone/METADATA.pb",
+    "dir_name": "kiteone",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/Kite-One",
+    "commit": "be1d4f26c91c29993c47fa4b4857337b0d94e2f2",
+    "has_override": true
+  },
+  {
+    "family_name": "Kiwi Maru",
+    "path": "ofl/kiwimaru/METADATA.pb",
+    "dir_name": "kiwimaru",
+    "license": "ofl",
+    "repository_url": "https://github.com/Kiwi-KawagotoKajiru/Kiwi-Maru",
+    "commit": "65a112c7ec9ffe81595406982a670c7f945d7c5b",
+    "has_override": true
+  },
+  {
+    "family_name": "Klee One",
+    "path": "ofl/kleeone/METADATA.pb",
+    "dir_name": "kleeone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/Klee",
+    "commit": "8b0532731b63ad8a445ca341d8d7d941079b83ab",
+    "has_override": true
+  },
+  {
+    "family_name": "Knewave",
+    "path": "ofl/knewave/METADATA.pb",
+    "dir_name": "knewave",
+    "license": "ofl",
+    "repository_url": "https://github.com/theleagueof/knewave",
+    "commit": "f335d5ff1f12e4acf97d4208e1c37b4d386e57fb",
+    "has_override": true
+  },
+  {
+    "family_name": "Kodchasan",
+    "path": "ofl/kodchasan/METADATA.pb",
+    "dir_name": "kodchasan",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Kodchasan",
+    "commit": "d68c1268f993ce0ee23a36ba6f2d1366e0d84453",
+    "has_override": true
+  },
+  {
+    "family_name": "KoHo",
+    "path": "ofl/koho/METADATA.pb",
+    "dir_name": "koho",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Koho",
+    "commit": "066267ad87e1bd2de617bf4129902317ccb6c04c",
+    "has_override": true
+  },
+  {
+    "family_name": "Krub",
+    "path": "ofl/krub/METADATA.pb",
+    "dir_name": "krub",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Krub",
+    "commit": "c568bc61bd5b8af816057893e527aa55d6f08908",
+    "has_override": true
+  },
+  {
+    "family_name": "Kufam",
+    "path": "ofl/kufam/METADATA.pb",
+    "dir_name": "kufam",
+    "license": "ofl",
+    "repository_url": "https://github.com/originaltype/kufam",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Kulim Park",
+    "path": "ofl/kulimpark/METADATA.pb",
+    "dir_name": "kulimpark",
+    "license": "ofl",
+    "repository_url": "https://github.com/noponies/Kulim-Park",
+    "commit": "e080ee92d3f56075f641d0c988a480c0590a4426",
+    "has_override": true
+  },
+  {
+    "family_name": "Kurale",
+    "path": "ofl/kurale/METADATA.pb",
+    "dir_name": "kurale",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/kurale",
+    "commit": "ff36a9f75711afc415a9a9f96968861d22d878cf",
+    "has_override": true
+  },
+  {
+    "family_name": "Lacquer",
+    "path": "ofl/lacquer/METADATA.pb",
+    "dir_name": "lacquer",
+    "license": "ofl",
+    "repository_url": "https://github.com/Lacquer-Font/Lacquer",
+    "commit": "efffa0e54fbf2a6cd5e1b3909a9a8082cab61b5a",
+    "has_override": true
+  },
+  {
+    "family_name": "Laila",
+    "path": "ofl/laila/METADATA.pb",
+    "dir_name": "laila",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/laila",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lakki Reddy",
+    "path": "ofl/lakkireddy/METADATA.pb",
+    "dir_name": "lakkireddy",
+    "license": "ofl",
+    "repository_url": "https://github.com/appajid/lakkireddy",
+    "commit": "bf2dceb7e47e591aa7e76d7e268636ea67d66986",
+    "has_override": true
+  },
+  {
+    "family_name": "Lalezar",
+    "path": "ofl/lalezar/METADATA.pb",
+    "dir_name": "lalezar",
+    "license": "ofl",
+    "repository_url": "https://github.com/BornaIz/Lalezar",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lancelot",
+    "path": "ofl/lancelot/METADATA.pb",
+    "dir_name": "lancelot",
+    "license": "ofl",
+    "repository_url": "https://github.com/antonxheight/Lancelot",
+    "commit": "3039d277fadddec95a3dc5aa58182b0aa20659b8",
+    "has_override": true
+  },
+  {
+    "family_name": "Langar",
+    "path": "ofl/langar/METADATA.pb",
+    "dir_name": "langar",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeland/Langar",
+    "commit": "82c844e60ab055cef1169f7825bc119ea3bd5090",
+    "has_override": true
+  },
+  {
+    "family_name": "Lateef",
+    "path": "ofl/lateef/METADATA.pb",
+    "dir_name": "lateef",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-lateef",
+    "commit": "d682ea7cc0305b592058255167c83d059aa640fa",
+    "has_override": false
+  },
+  {
+    "family_name": "Lato",
+    "path": "ofl/lato/METADATA.pb",
+    "dir_name": "lato",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/LatoGFVersion",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "League Script",
+    "path": "ofl/leaguescript/METADATA.pb",
+    "dir_name": "leaguescript",
+    "license": "ofl",
+    "repository_url": "https://github.com/theleagueof/league-script-number-one",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lemon",
+    "path": "ofl/lemon/METADATA.pb",
+    "dir_name": "lemon",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/lemon",
+    "commit": "88027507a29de7878336812a328d25245c106e9b",
+    "has_override": true
+  },
+  {
+    "family_name": "Libertinus Keyboard",
+    "path": "ofl/libertinuskeyboard/METADATA.pb",
+    "dir_name": "libertinuskeyboard",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/libertinus",
+    "commit": "88dfbb0a7715817a43499e613fc8e6645174cd6a",
+    "has_override": false
+  },
+  {
+    "family_name": "Libertinus Math",
+    "path": "ofl/libertinusmath/METADATA.pb",
+    "dir_name": "libertinusmath",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/libertinus",
+    "commit": "88dfbb0a7715817a43499e613fc8e6645174cd6a",
+    "has_override": false
+  },
+  {
+    "family_name": "Libertinus Mono",
+    "path": "ofl/libertinusmono/METADATA.pb",
+    "dir_name": "libertinusmono",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/libertinus",
+    "commit": "88dfbb0a7715817a43499e613fc8e6645174cd6a",
+    "has_override": false
+  },
+  {
+    "family_name": "Libertinus Sans",
+    "path": "ofl/libertinussans/METADATA.pb",
+    "dir_name": "libertinussans",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/libertinus",
+    "commit": "63b24ea7904a0ae69b38732b50dc6ebc277f9b68",
+    "has_override": false
+  },
+  {
+    "family_name": "Libertinus Serif",
+    "path": "ofl/libertinusserif/METADATA.pb",
+    "dir_name": "libertinusserif",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/libertinus",
+    "commit": "63b24ea7904a0ae69b38732b50dc6ebc277f9b68",
+    "has_override": false
+  },
+  {
+    "family_name": "Libertinus Serif Display",
+    "path": "ofl/libertinusserifdisplay/METADATA.pb",
+    "dir_name": "libertinusserifdisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/libertinus",
+    "commit": "63b24ea7904a0ae69b38732b50dc6ebc277f9b68",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode 128",
+    "path": "ofl/librebarcode128/METADATA.pb",
+    "dir_name": "librebarcode128",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode 128 Text",
+    "path": "ofl/librebarcode128text/METADATA.pb",
+    "dir_name": "librebarcode128text",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode 39",
+    "path": "ofl/librebarcode39/METADATA.pb",
+    "dir_name": "librebarcode39",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode 39 Extended",
+    "path": "ofl/librebarcode39extended/METADATA.pb",
+    "dir_name": "librebarcode39extended",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode 39 Extended Text",
+    "path": "ofl/librebarcode39extendedtext/METADATA.pb",
+    "dir_name": "librebarcode39extendedtext",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode 39 Text",
+    "path": "ofl/librebarcode39text/METADATA.pb",
+    "dir_name": "librebarcode39text",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Barcode EAN13 Text",
+    "path": "ofl/librebarcodeean13text/METADATA.pb",
+    "dir_name": "librebarcodeean13text",
+    "license": "ofl",
+    "repository_url": "https://github.com/graphicore/librebarcode",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Caslon Display",
+    "path": "ofl/librecaslondisplay/METADATA.pb",
+    "dir_name": "librecaslondisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/Libre-Caslon-Display",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Libre Caslon Text",
+    "path": "ofl/librecaslontext/METADATA.pb",
+    "dir_name": "librecaslontext",
+    "license": "ofl",
+    "repository_url": "https://github.com/thundernixon/Libre-Caslon",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lilex",
+    "path": "ofl/lilex/METADATA.pb",
+    "dir_name": "lilex",
+    "license": "ofl",
+    "repository_url": "https://github.com/mishamyrt/Lilex",
+    "commit": "50260ef98a52ee7e74617c13894505497fa8b2ea",
+    "has_override": false
+  },
+  {
+    "family_name": "Linden Hill",
+    "path": "ofl/lindenhill/METADATA.pb",
+    "dir_name": "lindenhill",
+    "license": "ofl",
+    "repository_url": "https://github.com/theleagueof/linden-hill",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "LINE Seed JP",
+    "path": "ofl/lineseedjp/METADATA.pb",
+    "dir_name": "lineseedjp",
+    "license": "ofl",
+    "repository_url": "https://github.com/line/seed",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lisu Bosa",
+    "path": "ofl/lisubosa/METADATA.pb",
+    "dir_name": "lisubosa",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-lisu-bosa",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Liu Jian Mao Cao",
+    "path": "ofl/liujianmaocao/METADATA.pb",
+    "dir_name": "liujianmaocao",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/liujianmaocao",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Livvic",
+    "path": "ofl/livvic/METADATA.pb",
+    "dir_name": "livvic",
+    "license": "ofl",
+    "repository_url": "https://github.com/Fonthausen/Livvic",
+    "commit": "30f612bf37946b0462c91ba2b4323e955a519463",
+    "has_override": true
+  },
+  {
+    "family_name": "Lobster",
+    "path": "ofl/lobster/METADATA.pb",
+    "dir_name": "lobster",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/The-Lobster-Font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lohit Bengali",
+    "path": "ofl/lohitbengali/METADATA.pb",
+    "dir_name": "lohitbengali",
+    "license": "ofl",
+    "repository_url": "https://github.com/pravins/lohit",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Lohit Tamil",
+    "path": "ofl/lohittamil/METADATA.pb",
+    "dir_name": "lohittamil",
+    "license": "ofl",
+    "repository_url": "https://github.com/pravins/lohit",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Londrina Outline",
+    "path": "ofl/londrinaoutline/METADATA.pb",
+    "dir_name": "londrinaoutline",
+    "license": "ofl",
+    "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
+    "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
+    "has_override": true
+  },
+  {
+    "family_name": "Londrina Shadow",
+    "path": "ofl/londrinashadow/METADATA.pb",
+    "dir_name": "londrinashadow",
+    "license": "ofl",
+    "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
+    "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
+    "has_override": true
+  },
+  {
+    "family_name": "Londrina Sketch",
+    "path": "ofl/londrinasketch/METADATA.pb",
+    "dir_name": "londrinasketch",
+    "license": "ofl",
+    "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
+    "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
+    "has_override": true
+  },
+  {
+    "family_name": "Londrina Solid",
+    "path": "ofl/londrinasolid/METADATA.pb",
+    "dir_name": "londrinasolid",
+    "license": "ofl",
+    "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
+    "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
+    "has_override": true
+  },
+  {
+    "family_name": "Mada",
+    "path": "ofl/mada/METADATA.pb",
+    "dir_name": "mada",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/mada",
+    "commit": "2f7dea3a2bad718583bfcc1dc2030cf15401c789",
+    "has_override": true
+  },
+  {
+    "family_name": "Maitree",
+    "path": "ofl/maitree/METADATA.pb",
+    "dir_name": "maitree",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/maitree",
+    "commit": "e530c1fb68e167a5e990b8125e62231cbedfe4be",
+    "has_override": true
+  },
+  {
+    "family_name": "Major Mono Display",
+    "path": "ofl/majormonodisplay/METADATA.pb",
+    "dir_name": "majormonodisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/majormono",
+    "commit": "fae0bb9c728fe082097baedaf23604e290ddac16",
+    "has_override": true
+  },
+  {
+    "family_name": "Mali",
+    "path": "ofl/mali/METADATA.pb",
+    "dir_name": "mali",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Mali",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Mallanna",
+    "path": "ofl/mallanna/METADATA.pb",
+    "dir_name": "mallanna",
+    "license": "ofl",
+    "repository_url": "https://github.com/appajid/mallanna",
+    "commit": "52b5b8b53bd89d84ecc8a0da7b809ea241c8eb74",
+    "has_override": true
+  },
+  {
+    "family_name": "Mandali",
+    "path": "ofl/mandali/METADATA.pb",
+    "dir_name": "mandali",
+    "license": "ofl",
+    "repository_url": "https://github.com/appajid/mandali",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Manjari",
+    "path": "ofl/manjari/METADATA.pb",
+    "dir_name": "manjari",
+    "license": "ofl",
+    "repository_url": "https://gitlab.com/smc/fonts/manjari",
+    "commit": "8948773e572ce0b58d93b0f120f561a0b02e9853",
+    "has_override": true
+  },
+  {
+    "family_name": "Manrope",
+    "path": "ofl/manrope/METADATA.pb",
+    "dir_name": "manrope",
+    "license": "ofl",
+    "repository_url": "https://github.com/sharanda/manrope",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Marko One",
+    "path": "ofl/markoone/METADATA.pb",
+    "dir_name": "markoone",
+    "license": "ofl",
+    "repository_url": "https://github.com/cyrealtype/Marko-One",
+    "commit": "d5cfae97a173fc09d182a391fb78dd3d8a727cd8",
+    "has_override": true
+  },
+  {
+    "family_name": "Martel",
+    "path": "ofl/martel/METADATA.pb",
+    "dir_name": "martel",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeoff/martel",
+    "commit": "ae74b972c6870d296e1a2693c91006beba8c4801",
+    "has_override": true
+  },
+  {
+    "family_name": "Martel Sans",
+    "path": "ofl/martelsans/METADATA.pb",
+    "dir_name": "martelsans",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeoff/martel_sans",
+    "commit": "7a536b7ce5f6059665d45bfff7c24bee414c1fd1",
+    "has_override": true
+  },
+  {
+    "family_name": "Merriweather Sans",
+    "path": "ofl/merriweathersans/METADATA.pb",
+    "dir_name": "merriweathersans",
+    "license": "ofl",
+    "repository_url": "https://github.com/SorkinType/Merriweather-Sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Michroma",
+    "path": "ofl/michroma/METADATA.pb",
+    "dir_name": "michroma",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/Michroma-font",
+    "commit": "5822b9d1a733db7ae4f1a63a65a8b41b2d5b15cf",
+    "has_override": true
+  },
+  {
+    "family_name": "Mina",
+    "path": "ofl/mina/METADATA.pb",
+    "dir_name": "mina",
+    "license": "ofl",
+    "repository_url": "https://github.com/suman51284/Mina",
+    "commit": "20350840b9a0b08d7855d22e2890c3ed93237edd",
+    "has_override": true
+  },
+  {
+    "family_name": "Mingzat",
+    "path": "ofl/mingzat/METADATA.pb",
+    "dir_name": "mingzat",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-mingzat",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Mochiy Pop One",
+    "path": "ofl/mochiypopone/METADATA.pb",
+    "dir_name": "mochiypopone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontdasu/Mochiypop",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Mochiy Pop P One",
+    "path": "ofl/mochiypoppone/METADATA.pb",
+    "dir_name": "mochiypoppone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontdasu/Mochiypop",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Momo Signature",
+    "path": "ofl/momosignature/METADATA.pb",
+    "dir_name": "momosignature",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeassociates/MomoSignature",
+    "commit": "c3ba208abfc2d6e661da920121653f0557bae611",
+    "has_override": false
+  },
+  {
+    "family_name": "Momo Trust Display",
+    "path": "ofl/momotrustdisplay/METADATA.pb",
+    "dir_name": "momotrustdisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeassociates/MomoTrustDisplay",
+    "commit": "33a85fe93dfe2ee4ee1cc0fe853f08b6a12d1815",
+    "has_override": false
+  },
+  {
+    "family_name": "Momo Trust Sans",
+    "path": "ofl/momotrustsans/METADATA.pb",
+    "dir_name": "momotrustsans",
+    "license": "ofl",
+    "repository_url": "https://github.com/typeassociates/MomoTrustSans",
+    "commit": "35a9521152ca14fd2a4300902519a3c00706dd5b",
+    "has_override": false
+  },
+  {
+    "family_name": "Monofett",
+    "path": "ofl/monofett/METADATA.pb",
+    "dir_name": "monofett",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/monofett",
+    "commit": "a1a60166b5db2c6676d0a0a7751fe378fff1af9e",
+    "has_override": true
+  },
+  {
+    "family_name": "Monomaniac One",
+    "path": "ofl/monomaniacone/METADATA.pb",
+    "dir_name": "monomaniacone",
+    "license": "ofl",
+    "repository_url": "https://github.com/ManiackersDesign/monomaniac",
+    "commit": "2318283d6dbf3cbe50e8eed3c75a17a425e6bd8c",
+    "has_override": true
+  },
+  {
+    "family_name": "Moul",
+    "path": "ofl/moul/METADATA.pb",
+    "dir_name": "moul",
+    "license": "ofl",
+    "repository_url": "https://github.com/danhhong/Moul",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "M PLUS 1",
+    "path": "ofl/mplus1/METADATA.pb",
+    "dir_name": "mplus1",
+    "license": "ofl",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "M PLUS 1 Code",
+    "path": "ofl/mplus1code/METADATA.pb",
+    "dir_name": "mplus1code",
+    "license": "ofl",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "M PLUS 2",
+    "path": "ofl/mplus2/METADATA.pb",
+    "dir_name": "mplus2",
+    "license": "ofl",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "M PLUS Code Latin",
+    "path": "ofl/mpluscodelatin/METADATA.pb",
+    "dir_name": "mpluscodelatin",
+    "license": "ofl",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Nabla",
+    "path": "ofl/nabla/METADATA.pb",
+    "dir_name": "nabla",
+    "license": "ofl",
+    "repository_url": "https://github.com/justvanrossum/nabla",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Namdhinggo",
+    "path": "ofl/namdhinggo/METADATA.pb",
+    "dir_name": "namdhinggo",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-namdhinggo",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Narnoor",
+    "path": "ofl/narnoor/METADATA.pb",
+    "dir_name": "narnoor",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-narnoor",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Nata Sans",
+    "path": "ofl/natasans/METADATA.pb",
+    "dir_name": "natasans",
+    "license": "ofl",
+    "repository_url": "https://github.com/dnlzqn/nata-sans",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Nerko One",
+    "path": "ofl/nerkoone/METADATA.pb",
+    "dir_name": "nerkoone",
+    "license": "ofl",
+    "repository_url": "https://github.com/nermink99/Nerko",
+    "commit": "62c2998197eaa09664ca1e0605fa4cfd273ac8bf",
+    "has_override": true
+  },
+  {
+    "family_name": "Newsreader",
+    "path": "ofl/newsreader/METADATA.pb",
+    "dir_name": "newsreader",
+    "license": "ofl",
+    "repository_url": "https://github.com/productiontype/NewsReader",
+    "commit": "1ece6a8bfe5db1a2b90c76cc1fe5d3b2eed5dcf3",
+    "has_override": true
+  },
+  {
+    "family_name": "New Tegomin",
+    "path": "ofl/newtegomin/METADATA.pb",
+    "dir_name": "newtegomin",
+    "license": "ofl",
+    "repository_url": "https://github.com/nagamaki008/NewTegomin",
+    "commit": "955803d27527edbfb9a416f765b6144215c250df",
+    "has_override": true
+  },
+  {
+    "family_name": "Niramit",
+    "path": "ofl/niramit/METADATA.pb",
+    "dir_name": "niramit",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Niramit",
+    "commit": "1b5fd503662d7fb259b0d09ba714d7dace5cefff",
+    "has_override": true
+  },
+  {
+    "family_name": "Noto Color Emoji",
+    "path": "ofl/notocoloremoji/METADATA.pb",
+    "dir_name": "notocoloremoji",
+    "license": "ofl",
+    "repository_url": "",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Emoji",
+    "path": "ofl/notoemoji/METADATA.pb",
+    "dir_name": "notoemoji",
+    "license": "ofl",
+    "repository_url": "",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Kufi Arabic",
+    "path": "ofl/notokufiarabic/METADATA.pb",
+    "dir_name": "notokufiarabic",
+    "license": "ofl",
+    "repository_url": "https://github.com/notofonts/arabic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Sans Mono",
+    "path": "ofl/notosansmono/METADATA.pb",
+    "dir_name": "notosansmono",
+    "license": "ofl",
+    "repository_url": "https://github.com/notofonts/latin-greek-cyrillic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Sans Syriac Western",
+    "path": "ofl/notosanssyriacwestern/METADATA.pb",
+    "dir_name": "notosanssyriacwestern",
+    "license": "ofl",
+    "repository_url": "https://github.com/notofonts/syriac",
+    "commit": "a24ba4586441a6b76df20215464898852e702078",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Serif HK",
+    "path": "ofl/notoserifhk/METADATA.pb",
+    "dir_name": "notoserifhk",
+    "license": "ofl",
+    "repository_url": "https://www.github.com/notofonts/noto-cjk",
+    "commit": "985fa52c81c1d6692ccdd82bc3656e8fb932fd89",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Serif JP",
+    "path": "ofl/notoserifjp/METADATA.pb",
+    "dir_name": "notoserifjp",
+    "license": "ofl",
+    "repository_url": "https://www.github.com/notofonts/noto-cjk",
+    "commit": "985fa52c81c1d6692ccdd82bc3656e8fb932fd89",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Serif KR",
+    "path": "ofl/notoserifkr/METADATA.pb",
+    "dir_name": "notoserifkr",
+    "license": "ofl",
+    "repository_url": "https://www.github.com/notofonts/noto-cjk",
+    "commit": "985fa52c81c1d6692ccdd82bc3656e8fb932fd89",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Serif SC",
+    "path": "ofl/notoserifsc/METADATA.pb",
+    "dir_name": "notoserifsc",
+    "license": "ofl",
+    "repository_url": "https://www.github.com/notofonts/noto-cjk",
+    "commit": "985fa52c81c1d6692ccdd82bc3656e8fb932fd89",
+    "has_override": false
+  },
+  {
+    "family_name": "Noto Serif TC",
+    "path": "ofl/notoseriftc/METADATA.pb",
+    "dir_name": "notoseriftc",
+    "license": "ofl",
+    "repository_url": "https://www.github.com/notofonts/noto-cjk",
+    "commit": "985fa52c81c1d6692ccdd82bc3656e8fb932fd89",
+    "has_override": false
+  },
+  {
+    "family_name": "Nuosu SIL",
+    "path": "ofl/nuosusil/METADATA.pb",
+    "dir_name": "nuosusil",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-nuosu",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Odibee Sans",
+    "path": "ofl/odibeesans/METADATA.pb",
+    "dir_name": "odibeesans",
+    "license": "ofl",
+    "repository_url": "https://github.com/barnard555/odibeesans",
+    "commit": "c72b102fec681b3b74f025e70a673d2ef4ac664e",
+    "has_override": true
+  },
+  {
+    "family_name": "Offside",
+    "path": "ofl/offside/METADATA.pb",
+    "dir_name": "offside",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/offside",
+    "commit": "025804545334bb6270119f43fb8fe7d05b31cd7d",
+    "has_override": true
+  },
+  {
+    "family_name": "Open Sans",
+    "path": "ofl/opensans/METADATA.pb",
+    "dir_name": "opensans",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/opensans",
+    "commit": "bd7e37632246368c60fdcbd374dbf9bad11969b6",
+    "has_override": false
+  },
+  {
+    "family_name": "Orelega One",
+    "path": "ofl/orelegaone/METADATA.pb",
+    "dir_name": "orelegaone",
+    "license": "ofl",
+    "repository_url": "https://github.com/JapanYoshi/Orelega",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Orienta",
+    "path": "ofl/orienta/METADATA.pb",
+    "dir_name": "orienta",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/orienta",
+    "commit": "18d3b4ce823c8a5b374023c559cf6d2b2bd505a2",
+    "has_override": true
+  },
+  {
+    "family_name": "Otomanopee One",
+    "path": "ofl/otomanopeeone/METADATA.pb",
+    "dir_name": "otomanopeeone",
+    "license": "ofl",
+    "repository_url": "https://github.com/Gutenberg-Labo/Otomanopee",
+    "commit": "21c3571eebc24b2723f94ef25dbf478c3a996047",
+    "has_override": true
+  },
+  {
+    "family_name": "Oxanium",
+    "path": "ofl/oxanium/METADATA.pb",
+    "dir_name": "oxanium",
+    "license": "ofl",
+    "repository_url": "https://github.com/sevmeyer/oxanium",
+    "commit": "a8f39e0c71186190027a093e9001459410192d1e",
+    "has_override": true
+  },
+  {
+    "family_name": "Padauk",
+    "path": "ofl/padauk/METADATA.pb",
+    "dir_name": "padauk",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-padauk",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Palette Mosaic",
+    "path": "ofl/palettemosaic/METADATA.pb",
+    "dir_name": "palettemosaic",
+    "license": "ofl",
+    "repository_url": "https://github.com/shibuyafont/Palette-mosaic-font-mono",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Pangolin",
+    "path": "ofl/pangolin/METADATA.pb",
+    "dir_name": "pangolin",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/pangolin",
+    "commit": "8257f00935ee0d1dba28c9e9142c85bcb357aae2",
+    "has_override": true
+  },
+  {
+    "family_name": "Pathway Gothic One",
+    "path": "ofl/pathwaygothicone/METADATA.pb",
+    "dir_name": "pathwaygothicone",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/pathway-gothic",
+    "commit": "cb77ed5f79d4572096191b7c7dfb157b65abf748",
+    "has_override": true
+  },
+  {
+    "family_name": "Petrona",
+    "path": "ofl/petrona/METADATA.pb",
+    "dir_name": "petrona",
+    "license": "ofl",
+    "repository_url": "https://github.com/RingoSeeber/Petrona",
+    "commit": "03d4b6dd8af6ecf3a51d3b126bd64e491cb01d18",
+    "has_override": true
+  },
+  {
+    "family_name": "Piazzolla",
+    "path": "ofl/piazzolla/METADATA.pb",
+    "dir_name": "piazzolla",
+    "license": "ofl",
+    "repository_url": "https://github.com/huertatipografica/piazzolla",
+    "commit": "fbd775f98a0a27570de0eaf20206860021c68b6b",
+    "has_override": true
+  },
+  {
+    "family_name": "Playwrite NZ Basic",
+    "path": "ofl/playwritenzbasic/METADATA.pb",
+    "dir_name": "playwritenzbasic",
+    "license": "ofl",
+    "repository_url": "https://github.com/TypeTogether/Playwrite",
+    "commit": "fbc8d9790feeba3a5d0c0b4ccdcf246d3c41526e",
+    "has_override": false
+  },
+  {
+    "family_name": "Playwrite NZ Basic Guides",
+    "path": "ofl/playwritenzbasicguides/METADATA.pb",
+    "dir_name": "playwritenzbasicguides",
+    "license": "ofl",
+    "repository_url": "https://github.com/TypeTogether/Playwrite",
+    "commit": "fbc8d9790feeba3a5d0c0b4ccdcf246d3c41526e",
+    "has_override": false
+  },
+  {
+    "family_name": "Poiret One",
+    "path": "ofl/poiretone/METADATA.pb",
+    "dir_name": "poiretone",
+    "license": "ofl",
+    "repository_url": "https://github.com/alexeiva/poiretone",
+    "commit": "74eec8d29c9b5179cbd63b1c3d152233aa537123",
+    "has_override": true
+  },
+  {
+    "family_name": "Poppins",
+    "path": "ofl/poppins/METADATA.pb",
+    "dir_name": "poppins",
+    "license": "ofl",
+    "repository_url": "https://github.com/itfoundry/Poppins",
+    "commit": "738d9d691b66f1ad917123c58df104d16c74e1a7",
+    "has_override": true
+  },
+  {
+    "family_name": "Potta One",
+    "path": "ofl/pottaone/METADATA.pb",
+    "dir_name": "pottaone",
+    "license": "ofl",
+    "repository_url": "https://github.com/go108go/Potta",
+    "commit": "574738ac030a0551d675056dc56166fddbcad53c",
+    "has_override": true
+  },
+  {
+    "family_name": "Public Sans",
+    "path": "ofl/publicsans/METADATA.pb",
+    "dir_name": "publicsans",
+    "license": "ofl",
+    "repository_url": "https://github.com/uswds/public-sans",
+    "commit": "c7923167a592d941646f99fb7b5fba17aa7d69e1",
+    "has_override": false
+  },
+  {
+    "family_name": "Pushster",
+    "path": "ofl/pushster/METADATA.pb",
+    "dir_name": "pushster",
+    "license": "ofl",
+    "repository_url": "https://github.com/impallari/The-Lobster-Font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Qahiri",
+    "path": "ofl/qahiri/METADATA.pb",
+    "dir_name": "qahiri",
+    "license": "ofl",
+    "repository_url": "https://github.com/alif-type/qahiri",
+    "commit": "2fbfe8ca2e5ed04b0455e15c717774766f174ad1",
+    "has_override": true
+  },
+  {
+    "family_name": "Quicksand",
+    "path": "ofl/quicksand/METADATA.pb",
+    "dir_name": "quicksand",
+    "license": "ofl",
+    "repository_url": "https://github.com/ThomasJockin/QuicksandFamily",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Rakkas",
+    "path": "ofl/rakkas/METADATA.pb",
+    "dir_name": "rakkas",
+    "license": "ofl",
+    "repository_url": "https://github.com/zeynepakay/Rakkas",
+    "commit": "3bdb0ba164c9e987a5ab4de7f7cc8842a04d267a",
+    "has_override": true
+  },
+  {
+    "family_name": "Raleway",
+    "path": "ofl/raleway/METADATA.pb",
+    "dir_name": "raleway",
+    "license": "ofl",
+    "repository_url": "https://github.com/theleagueof/raleway",
+    "commit": "7b288c6faaed52cd237ec3a2e82c637d2a941fa7",
+    "has_override": true
+  },
+  {
+    "family_name": "Rampart One",
+    "path": "ofl/rampartone/METADATA.pb",
+    "dir_name": "rampartone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/Rampart",
+    "commit": "3f5fe9d544c290f6fc7c2176976ee7fe6ce14fbb",
+    "has_override": true
+  },
+  {
+    "family_name": "Ramsina",
+    "path": "ofl/ramsina/METADATA.pb",
+    "dir_name": "ramsina",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-ramsina",
+    "commit": "263c8d552bff566fad9e8c9b266ae32e6ab341b4",
+    "has_override": false
+  },
+  {
+    "family_name": "Rasa",
+    "path": "ofl/rasa/METADATA.pb",
+    "dir_name": "rasa",
+    "license": "ofl",
+    "repository_url": "https://github.com/rosettatype/yrsa-rasa",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Recursive",
+    "path": "ofl/recursive/METADATA.pb",
+    "dir_name": "recursive",
+    "license": "ofl",
+    "repository_url": "https://github.com/arrowtype/recursive",
+    "commit": "071fc21f217781110d67e8d0bf5021f31cbdcb85",
+    "has_override": false
+  },
+  {
+    "family_name": "Red Hat Display",
+    "path": "ofl/redhatdisplay/METADATA.pb",
+    "dir_name": "redhatdisplay",
+    "license": "ofl",
+    "repository_url": "https://github.com/bghryct/RedHatDisplay",
+    "commit": "fd36df3a3ad95084fe777597ed4b5c19961b3631",
+    "has_override": false
+  },
+  {
+    "family_name": "Red Hat Mono",
+    "path": "ofl/redhatmono/METADATA.pb",
+    "dir_name": "redhatmono",
+    "license": "ofl",
+    "repository_url": "https://github.com/bghryct/RedHatMono",
+    "commit": "a0f2a7032143500e44dfd569d09ba30414d51a1c",
+    "has_override": false
+  },
+  {
+    "family_name": "Red Hat Text",
+    "path": "ofl/redhattext/METADATA.pb",
+    "dir_name": "redhattext",
+    "license": "ofl",
+    "repository_url": "https://github.com/bghryct/RedHatText",
+    "commit": "dfbc50b16e27d5be1986c3ec79534460a74c1370",
+    "has_override": false
+  },
+  {
+    "family_name": "Red Rose",
+    "path": "ofl/redrose/METADATA.pb",
+    "dir_name": "redrose",
+    "license": "ofl",
+    "repository_url": "https://github.com/magictype/redrose",
+    "commit": "d173625490893538463fa9746477f35c975ab0e9",
+    "has_override": true
+  },
+  {
+    "family_name": "Reem Kufi",
+    "path": "ofl/reemkufi/METADATA.pb",
+    "dir_name": "reemkufi",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/reem-kufi",
+    "commit": "d304c9a381a4b005d9527312c8d51508e57ed0ed",
+    "has_override": false
+  },
+  {
+    "family_name": "Reem Kufi Fun",
+    "path": "ofl/reemkufifun/METADATA.pb",
+    "dir_name": "reemkufifun",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/reem-kufi",
+    "commit": "359f25e571c7d56d6ef48c844c2f641a7a124a4d",
+    "has_override": false
+  },
+  {
+    "family_name": "Reem Kufi Ink",
+    "path": "ofl/reemkufiink/METADATA.pb",
+    "dir_name": "reemkufiink",
+    "license": "ofl",
+    "repository_url": "https://github.com/aliftype/reem-kufi",
+    "commit": "359f25e571c7d56d6ef48c844c2f641a7a124a4d",
+    "has_override": false
+  },
+  {
+    "family_name": "Reggae One",
+    "path": "ofl/reggaeone/METADATA.pb",
+    "dir_name": "reggaeone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/Reggae",
+    "commit": "fe9be09d02ad8ba5e71d5ce24efc5249fe77dcfc",
+    "has_override": true
+  },
+  {
+    "family_name": "Roboto",
+    "path": "ofl/roboto/METADATA.pb",
+    "dir_name": "roboto",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/roboto-classic",
+    "commit": "91d5d3e5b81efa04a77925cc609fdcdd7ee663d1",
+    "has_override": false
+  },
+  {
+    "family_name": "Roboto Condensed",
+    "path": "ofl/robotocondensed/METADATA.pb",
+    "dir_name": "robotocondensed",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/roboto-classic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Rock 3D",
+    "path": "ofl/rock3d/METADATA.pb",
+    "dir_name": "rock3d",
+    "license": "ofl",
+    "repository_url": "https://github.com/shibuyafont/3d-rock-font",
+    "commit": "04e20f0b2387a7619f8e9e8b06cb9b5337f6a2fe",
+    "has_override": true
+  },
+  {
+    "family_name": "RocknRoll One",
+    "path": "ofl/rocknrollone/METADATA.pb",
+    "dir_name": "rocknrollone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/RocknRoll",
+    "commit": "29a2aa8bb7ab10702dee769ee681a9baeeb52ec1",
+    "has_override": true
+  },
+  {
+    "family_name": "Rowdies",
+    "path": "ofl/rowdies/METADATA.pb",
+    "dir_name": "rowdies",
+    "license": "ofl",
+    "repository_url": "https://github.com/magictype/rowdies",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Ruslan Display",
+    "path": "ofl/ruslandisplay/METADATA.pb",
+    "dir_name": "ruslandisplay",
+    "license": "ofl",
+    "repository_url": "",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Ruwudu",
+    "path": "ofl/ruwudu/METADATA.pb",
+    "dir_name": "ruwudu",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-ruwudu",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Saira Stencil One",
+    "path": "ofl/sairastencilone/METADATA.pb",
+    "dir_name": "sairastencilone",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/Saira",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Sansita Swashed",
+    "path": "ofl/sansitaswashed/METADATA.pb",
+    "dir_name": "sansitaswashed",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/Sansita-Swashed",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Sarabun",
+    "path": "ofl/sarabun/METADATA.pb",
+    "dir_name": "sarabun",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Sarabun",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Scheherazade New",
+    "path": "ofl/scheherazadenew/METADATA.pb",
+    "dir_name": "scheherazadenew",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-scheherazade",
+    "commit": "e630202ccd00ca8f147641658b4518f7b847a511",
+    "has_override": false
+  },
+  {
+    "family_name": "Science Gothic",
+    "path": "ofl/sciencegothic/METADATA.pb",
+    "dir_name": "sciencegothic",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/science-gothic",
+    "commit": "9eae80c1fe8f937e4f7009629c8248a959735c77",
+    "has_override": false
+  },
+  {
+    "family_name": "Sekuya",
+    "path": "ofl/sekuya/METADATA.pb",
+    "dir_name": "sekuya",
+    "license": "ofl",
+    "repository_url": "https://github.com/kevinnseptian/SEKUYA",
+    "commit": "74983eccdc3ee4233b3729132398e78eac409d04",
+    "has_override": false
+  },
+  {
+    "family_name": "Sen",
+    "path": "ofl/sen/METADATA.pb",
+    "dir_name": "sen",
+    "license": "ofl",
+    "repository_url": "https://github.com/philatype/Sen/",
+    "commit": "8a0a0d7648fb466ebbab3a00b0e07046b0814727",
+    "has_override": false
+  },
+  {
+    "family_name": "Shantell Sans",
+    "path": "ofl/shantellsans/METADATA.pb",
+    "dir_name": "shantellsans",
+    "license": "ofl",
+    "repository_url": "https://github.com/arrowtype/shantell-sans",
+    "commit": "68f5eca1490a58973b2a814d3a7d0f61291fd0c9",
+    "has_override": false
+  },
+  {
+    "family_name": "Shippori Antique",
+    "path": "ofl/shipporiantique/METADATA.pb",
+    "dir_name": "shipporiantique",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontdasu/ShipporiAntique",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Shippori Antique B1",
+    "path": "ofl/shipporiantiqueb1/METADATA.pb",
+    "dir_name": "shipporiantiqueb1",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontdasu/ShipporiAntique",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Shippori Mincho",
+    "path": "ofl/shipporimincho/METADATA.pb",
+    "dir_name": "shipporimincho",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontdasu/ShipporiMincho",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Shippori Mincho B1",
+    "path": "ofl/shipporiminchob1/METADATA.pb",
+    "dir_name": "shipporiminchob1",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontdasu/ShipporiMincho",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Shizuru",
+    "path": "ofl/shizuru/METADATA.pb",
+    "dir_name": "shizuru",
+    "license": "ofl",
+    "repository_url": "https://github.com/shibuyafont/shizuru-font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Sigmar",
+    "path": "ofl/sigmar/METADATA.pb",
+    "dir_name": "sigmar",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/sigmarone",
+    "commit": "1fb4311d78953da0f943e0e4b806acdd076af81b",
+    "has_override": false
+  },
+  {
+    "family_name": "Slackside One",
+    "path": "ofl/slacksideone/METADATA.pb",
+    "dir_name": "slacksideone",
+    "license": "ofl",
+    "repository_url": "https://github.com/ManiackersDesign/slackside",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "SN Pro",
+    "path": "ofl/snpro/METADATA.pb",
+    "dir_name": "snpro",
+    "license": "ofl",
+    "repository_url": "https://github.com/supernotes/sn-pro",
+    "commit": "e025ac4755352167a4b160bfb77c72068b04b55c",
+    "has_override": false
+  },
+  {
+    "family_name": "Solway",
+    "path": "ofl/solway/METADATA.pb",
+    "dir_name": "solway",
+    "license": "ofl",
+    "repository_url": "https://github.com/mashavp/Solway",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Sora",
+    "path": "ofl/sora/METADATA.pb",
+    "dir_name": "sora",
+    "license": "ofl",
+    "repository_url": "https://github.com/sora-xor/sora-font",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Source Code Pro",
+    "path": "ofl/sourcecodepro/METADATA.pb",
+    "dir_name": "sourcecodepro",
+    "license": "ofl",
+    "repository_url": "https://github.com/adobe-fonts/source-code-pro",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Space Grotesk",
+    "path": "ofl/spacegrotesk/METADATA.pb",
+    "dir_name": "spacegrotesk",
+    "license": "ofl",
+    "repository_url": "https://github.com/floriankarsten/space-grotesk",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Srisakdi",
+    "path": "ofl/srisakdi/METADATA.pb",
+    "dir_name": "srisakdi",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Srisakdi",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Staatliches",
+    "path": "ofl/staatliches/METADATA.pb",
+    "dir_name": "staatliches",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/staatliches",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Stick",
+    "path": "ofl/stick/METADATA.pb",
+    "dir_name": "stick",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/Stick",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "STIX Two Math",
+    "path": "ofl/stixtwomath/METADATA.pb",
+    "dir_name": "stixtwomath",
+    "license": "ofl",
+    "repository_url": "https://github.com/stipub/stixfonts",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "STIX Two Text",
+    "path": "ofl/stixtwotext/METADATA.pb",
+    "dir_name": "stixtwotext",
+    "license": "ofl",
+    "repository_url": "https://github.com/stipub/stixfonts",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Strait",
+    "path": "ofl/strait/METADATA.pb",
+    "dir_name": "strait",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/Strait",
+    "commit": "527c8d122601563758492117058d6727aa58cd32",
+    "has_override": true
+  },
+  {
+    "family_name": "Syne",
+    "path": "ofl/syne/METADATA.pb",
+    "dir_name": "syne",
+    "license": "ofl",
+    "repository_url": "https://gitlab.com/bonjour-monde/fonderie/syne-typeface",
+    "commit": "d9098c0a72125d411dbb225a2e5a61dc15265ffc",
+    "has_override": false
+  },
+  {
+    "family_name": "Tai Heritage Pro",
+    "path": "ofl/taiheritagepro/METADATA.pb",
+    "dir_name": "taiheritagepro",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-taiheritagepro",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "TASA Orbiter",
+    "path": "ofl/tasaorbiter/METADATA.pb",
+    "dir_name": "tasaorbiter",
+    "license": "ofl",
+    "repository_url": "https://github.com/localremotetw/TASA-Typeface-Collection",
+    "commit": "659e7c4a05cfa1e22b4317303fcd40d5ff3587a2",
+    "has_override": false
+  },
+  {
+    "family_name": "Thasadith",
+    "path": "ofl/thasadith/METADATA.pb",
+    "dir_name": "thasadith",
+    "license": "ofl",
+    "repository_url": "https://github.com/cadsondemak/Thasadith",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Tilt Neon",
+    "path": "ofl/tiltneon/METADATA.pb",
+    "dir_name": "tiltneon",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/Tilt-Fonts",
+    "commit": "0773dc9f490aabba0c19c15d290b575b62245970",
+    "has_override": false
+  },
+  {
+    "family_name": "Tilt Prism",
+    "path": "ofl/tiltprism/METADATA.pb",
+    "dir_name": "tiltprism",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/Tilt-Fonts",
+    "commit": "0773dc9f490aabba0c19c15d290b575b62245970",
+    "has_override": false
+  },
+  {
+    "family_name": "Tilt Warp",
+    "path": "ofl/tiltwarp/METADATA.pb",
+    "dir_name": "tiltwarp",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/Tilt-Fonts",
+    "commit": "0773dc9f490aabba0c19c15d290b575b62245970",
+    "has_override": false
+  },
+  {
+    "family_name": "Tiny5",
+    "path": "ofl/tiny5/METADATA.pb",
+    "dir_name": "tiny5",
+    "license": "ofl",
+    "repository_url": "https://github.com/Gissio/font_tiny5",
+    "commit": "1d6e16fe1ffe3f91def8cf512ae45188503f7685",
+    "has_override": false
+  },
+  {
+    "family_name": "Tiro Bangla",
+    "path": "ofl/tirobangla/METADATA.pb",
+    "dir_name": "tirobangla",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Devanagari Hindi",
+    "path": "ofl/tirodevanagarihindi/METADATA.pb",
+    "dir_name": "tirodevanagarihindi",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Devanagari Marathi",
+    "path": "ofl/tirodevanagarimarathi/METADATA.pb",
+    "dir_name": "tirodevanagarimarathi",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Devanagari Sanskrit",
+    "path": "ofl/tirodevanagarisanskrit/METADATA.pb",
+    "dir_name": "tirodevanagarisanskrit",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Gurmukhi",
+    "path": "ofl/tirogurmukhi/METADATA.pb",
+    "dir_name": "tirogurmukhi",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Kannada",
+    "path": "ofl/tirokannada/METADATA.pb",
+    "dir_name": "tirokannada",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Tamil",
+    "path": "ofl/tirotamil/METADATA.pb",
+    "dir_name": "tirotamil",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
+    "has_override": true
+  },
+  {
+    "family_name": "Tiro Telugu",
+    "path": "ofl/tirotelugu/METADATA.pb",
+    "dir_name": "tirotelugu",
+    "license": "ofl",
+    "repository_url": "https://github.com/TiroTypeworks/Indigo",
+    "commit": "24f67ca20ca4720eb4302592f2e0f6ec21042a5d",
+    "has_override": true
+  },
+  {
+    "family_name": "Tirra",
+    "path": "ofl/tirra/METADATA.pb",
+    "dir_name": "tirra",
+    "license": "ofl",
+    "repository_url": "https://github.com/silnrsi/font-akatab",
+    "commit": "faaa0ba74f0709b88969d83888508271d0a2f627",
+    "has_override": false
+  },
+  {
+    "family_name": "Tomorrow",
+    "path": "ofl/tomorrow/METADATA.pb",
+    "dir_name": "tomorrow",
+    "license": "ofl",
+    "repository_url": "https://github.com/MonicaRizzolli/Tomorrow",
+    "commit": "5be77729a028a17876819eb262d22ba5977b5d7c",
+    "has_override": true
+  },
+  {
+    "family_name": "Train One",
+    "path": "ofl/trainone/METADATA.pb",
+    "dir_name": "trainone",
+    "license": "ofl",
+    "repository_url": "https://github.com/fontworks-fonts/Train",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Trispace",
+    "path": "ofl/trispace/METADATA.pb",
+    "dir_name": "trispace",
+    "license": "ofl",
+    "repository_url": "https://github.com/Etcetera-Type-Co/Trispace",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Trocchi",
+    "path": "ofl/trocchi/METADATA.pb",
+    "dir_name": "trocchi",
+    "license": "ofl",
+    "repository_url": "https://github.com/m4rc1e/Trocchi",
+    "commit": "543ac4fee3173ed80706c4caf5398b8bb3439ae1",
+    "has_override": false
+  },
+  {
+    "family_name": "Truculenta",
+    "path": "ofl/truculenta/METADATA.pb",
+    "dir_name": "truculenta",
+    "license": "ofl",
+    "repository_url": "https://github.com/Omnibus-Type/Truculenta",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Tsukimi Rounded",
+    "path": "ofl/tsukimirounded/METADATA.pb",
+    "dir_name": "tsukimirounded",
+    "license": "ofl",
+    "repository_url": "https://github.com/mt-funa/Tsukimi-Rounded",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Turret Road",
+    "path": "ofl/turretroad/METADATA.pb",
+    "dir_name": "turretroad",
+    "license": "ofl",
+    "repository_url": "https://github.com/noponies/Turret-Road",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Unica One",
+    "path": "ofl/unicaone/METADATA.pb",
+    "dir_name": "unicaone",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/unica",
+    "commit": "e92da87539ff465aab50b7767512080bf71e39f1",
+    "has_override": true
+  },
+  {
+    "family_name": "Unlock",
+    "path": "ofl/unlock/METADATA.pb",
+    "dir_name": "unlock",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/unlock",
+    "commit": "cf3defaec0849f2d59a9db60eb810ffa32d07eee",
+    "has_override": true
+  },
+  {
+    "family_name": "Varela Round",
+    "path": "ofl/varelaround/METADATA.pb",
+    "dir_name": "varelaround",
+    "license": "ofl",
+    "repository_url": "https://github.com/m4rc1e/Varela-Round-Hebrew",
+    "commit": "9bb2c89690095dd41f0f74d4954d3196eeaed68e",
+    "has_override": false
+  },
+  {
+    "family_name": "Varta",
+    "path": "ofl/varta/METADATA.pb",
+    "dir_name": "varta",
+    "license": "ofl",
+    "repository_url": "https://github.com/SorkinType/Varta",
+    "commit": "38d842bff4d906c7f8859d898b1ac946a549c092",
+    "has_override": true
+  },
+  {
+    "family_name": "Vazirmatn",
+    "path": "ofl/vazirmatn/METADATA.pb",
+    "dir_name": "vazirmatn",
+    "license": "ofl",
+    "repository_url": "https://github.com/rastikerdar/vazirmatn",
+    "commit": "14f8686945b97ac535bdb144a7c3794431d894d2",
+    "has_override": false
+  },
+  {
+    "family_name": "Viaoda Libre",
+    "path": "ofl/viaodalibre/METADATA.pb",
+    "dir_name": "viaodalibre",
+    "license": "ofl",
+    "repository_url": "https://github.com/bettergui/ViaodaLibre",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Vibes",
+    "path": "ofl/vibes/METADATA.pb",
+    "dir_name": "vibes",
+    "license": "ofl",
+    "repository_url": "https://github.com/bluemix/vibes-typeface",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Vollkorn",
+    "path": "ofl/vollkorn/METADATA.pb",
+    "dir_name": "vollkorn",
+    "license": "ofl",
+    "repository_url": "https://github.com/FAlthausen/Vollkorn-Typeface",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Vollkorn SC",
+    "path": "ofl/vollkornsc/METADATA.pb",
+    "dir_name": "vollkornsc",
+    "license": "ofl",
+    "repository_url": "https://github.com/FAlthausen/Vollkorn-Typeface",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Warnes",
+    "path": "ofl/warnes/METADATA.pb",
+    "dir_name": "warnes",
+    "license": "ofl",
+    "repository_url": "https://github.com/etunni/warnes",
+    "commit": "ec72daae3a0a1542706f636b9165f70874599cc5",
+    "has_override": true
+  },
+  {
+    "family_name": "WDXL Lubrifont JP N",
+    "path": "ofl/wdxllubrifontjpn/METADATA.pb",
+    "dir_name": "wdxllubrifontjpn",
+    "license": "ofl",
+    "repository_url": "https://github.com/NightFurySL2001/WD-XL-font",
+    "commit": "75c4a3bb2fffefa0f0aae470c2c0a73d6f79d0b9",
+    "has_override": false
+  },
+  {
+    "family_name": "WDXL Lubrifont SC",
+    "path": "ofl/wdxllubrifontsc/METADATA.pb",
+    "dir_name": "wdxllubrifontsc",
+    "license": "ofl",
+    "repository_url": "https://github.com/NightFurySL2001/WD-XL-font",
+    "commit": "75c4a3bb2fffefa0f0aae470c2c0a73d6f79d0b9",
+    "has_override": false
+  },
+  {
+    "family_name": "WDXL Lubrifont TC",
+    "path": "ofl/wdxllubrifonttc/METADATA.pb",
+    "dir_name": "wdxllubrifonttc",
+    "license": "ofl",
+    "repository_url": "https://github.com/NightFurySL2001/WD-XL-font",
+    "commit": "75c4a3bb2fffefa0f0aae470c2c0a73d6f79d0b9",
+    "has_override": false
+  },
+  {
+    "family_name": "Xanh Mono",
+    "path": "ofl/xanhmono/METADATA.pb",
+    "dir_name": "xanhmono",
+    "license": "ofl",
+    "repository_url": "https://github.com/yellow-type-foundry/xanhmono",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yaldevi Colombo",
+    "path": "ofl/yaldevicolombo/METADATA.pb",
+    "dir_name": "yaldevicolombo",
+    "license": "ofl",
+    "repository_url": "https://github.com/mooniak/yaldevi-font",
+    "commit": "bd4f7c3222d4508c61bdcdc33467f5a865470370",
+    "has_override": false
+  },
+  {
+    "family_name": "Yomogi",
+    "path": "ofl/yomogi/METADATA.pb",
+    "dir_name": "yomogi",
+    "license": "ofl",
+    "repository_url": "https://github.com/satsuyako/YomogiFont",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yrsa",
+    "path": "ofl/yrsa/METADATA.pb",
+    "dir_name": "yrsa",
+    "license": "ofl",
+    "repository_url": "https://github.com/rosettatype/yrsa-rasa",
+    "commit": "ec1d6aa68525da0859a43048228aef2c5bff3b40",
+    "has_override": true
+  },
+  {
+    "family_name": "Yuji Boku",
+    "path": "ofl/yujiboku/METADATA.pb",
+    "dir_name": "yujiboku",
+    "license": "ofl",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yuji Hentaigana Akari",
+    "path": "ofl/yujihentaiganaakari/METADATA.pb",
+    "dir_name": "yujihentaiganaakari",
+    "license": "ofl",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yuji Hentaigana Akebono",
+    "path": "ofl/yujihentaiganaakebono/METADATA.pb",
+    "dir_name": "yujihentaiganaakebono",
+    "license": "ofl",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yuji Mai",
+    "path": "ofl/yujimai/METADATA.pb",
+    "dir_name": "yujimai",
+    "license": "ofl",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yuji Syuku",
+    "path": "ofl/yujisyuku/METADATA.pb",
+    "dir_name": "yujisyuku",
+    "license": "ofl",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Yusei Magic",
+    "path": "ofl/yuseimagic/METADATA.pb",
+    "dir_name": "yuseimagic",
+    "license": "ofl",
+    "repository_url": "https://github.com/tanukifont/YuseiMagic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zain",
+    "path": "ofl/zain/METADATA.pb",
+    "dir_name": "zain",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zain",
+    "commit": "7c4a81812cee52243a8b52cc362650042b831d28",
+    "has_override": false
+  },
+  {
+    "family_name": "ZCOOL KuaiLe",
+    "path": "ofl/zcoolkuaile/METADATA.pb",
+    "dir_name": "zcoolkuaile",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zcool-kuaile",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "ZCOOL QingKe HuangYou",
+    "path": "ofl/zcoolqingkehuangyou/METADATA.pb",
+    "dir_name": "zcoolqingkehuangyou",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zcool-qingke-huangyou",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "ZCOOL XiaoWei",
+    "path": "ofl/zcoolxiaowei/METADATA.pb",
+    "dir_name": "zcoolxiaowei",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zcool-xiaowei",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Antique",
+    "path": "ofl/zenantique/METADATA.pb",
+    "dir_name": "zenantique",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-antique",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Antique Soft",
+    "path": "ofl/zenantiquesoft/METADATA.pb",
+    "dir_name": "zenantiquesoft",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-antique",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Kaku Gothic Antique",
+    "path": "ofl/zenkakugothicantique/METADATA.pb",
+    "dir_name": "zenkakugothicantique",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-kakugothic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Kaku Gothic New",
+    "path": "ofl/zenkakugothicnew/METADATA.pb",
+    "dir_name": "zenkakugothicnew",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-kakugothic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Kurenaido",
+    "path": "ofl/zenkurenaido/METADATA.pb",
+    "dir_name": "zenkurenaido",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-kurenaido",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Maru Gothic",
+    "path": "ofl/zenmarugothic/METADATA.pb",
+    "dir_name": "zenmarugothic",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-marugothic",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Zen Old Mincho",
+    "path": "ofl/zenoldmincho/METADATA.pb",
+    "dir_name": "zenoldmincho",
+    "license": "ofl",
+    "repository_url": "https://github.com/googlefonts/zen-oldmincho",
+    "commit": "",
+    "has_override": false
+  },
+  {
+    "family_name": "Arimo",
+    "path": "apache/arimo/METADATA.pb",
+    "dir_name": "arimo",
+    "license": "apache",
+    "repository_url": "https://github.com/TypeNetwork/Arimo",
+    "commit": "77fdf7e032ef18c5ad72929bdea60ae6ab19adbe",
+    "has_override": true
+  }
+]
