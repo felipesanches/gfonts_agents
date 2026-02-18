@@ -26,6 +26,7 @@
             <button class="tab-btn" data-tab="disk">Disk Usage</button>
             <button class="tab-btn" data-tab="bio-guide">Bio Guide</button>
             <button class="tab-btn" data-tab="bio-audit">Bio Audit</button>
+            <button class="tab-btn" data-tab="prebuild">Pre-Build Research</button>
         </nav>
 
         <section id="tab-sources" class="tab-content active">
@@ -694,6 +695,120 @@ in African history and culture.&lt;/p&gt;
                 <h2>Bio Audit Report</h2>
                 <p class="panel-description">Full compliance review of all designer biographies against the Editorial Guide</p>
                 <div id="bio-audit-content">Loading audit data...</div>
+            </div>
+        </section>
+
+        <section id="tab-prebuild" class="tab-content">
+            <div class="panel">
+                <h2>Pre-Build Scripts Research</h2>
+                <p class="panel-description">Analysis of pre-compilation actions across Google Fonts upstream repositories.
+                    Related: <a href="https://github.com/googlefonts/gftools/issues/1171" target="_blank">gftools issue #1171</a>
+                    &mdash; <a href="https://github.com/googlefonts/gftools/issues/1170" target="_blank">issue #1170</a>
+                </p>
+
+                <div class="guide-section">
+                    <h3>Context</h3>
+                    <p>Many upstream Google Fonts repos need to run preparation commands before invoking <code>gftools-builder</code>.
+                    Currently they do this with custom wrapper scripts (<code>build.sh</code>, <code>build.py</code>, Makefiles),
+                    which means they can't use a pure <code>config.yaml</code>-driven build. Simon Cozens and Rod Sheeter oppose a
+                    generic <code>preCompile</code> shell-execution feature (<a href="https://github.com/googlefonts/gftools/issues/1170" target="_blank">issue #1170</a>).
+                    Instead, we should implement well-defined, declarative builder operations for the most common patterns.</p>
+                    <p><strong>Data source:</strong> Full scan of 404 Makefiles and 86 build.py/build.sh files across 280 organizations
+                    in the fontc crater cache, plus GitHub code search results.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Action Types Summary</h3>
+                    <div id="prebuild-summary" class="builds-summary">
+                        <div class="summary-card complete">
+                            <span class="summary-value" id="prebuild-total-repos">--</span>
+                            <span class="summary-label">Total Repos w/ Pre-Build</span>
+                        </div>
+                        <div class="summary-card complete">
+                            <span class="summary-value" id="prebuild-action-types">--</span>
+                            <span class="summary-label">Action Types Found</span>
+                        </div>
+                        <div class="summary-card warning">
+                            <span class="summary-value" id="prebuild-ufo-merge">--</span>
+                            <span class="summary-label">UFO Merging (top priority)</span>
+                        </div>
+                    </div>
+                    <div id="prebuild-types-chart-container" class="builds-charts">
+                        <div class="builds-chart">
+                            <h4>Pre-Build Action Types by Repo Count</h4>
+                            <canvas id="prebuild-types-chart" width="700" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Priority Assessment</h3>
+                    <table class="guide-table" id="prebuild-priority-table">
+                        <thead>
+                            <tr>
+                                <th>Priority</th>
+                                <th>Action Type</th>
+                                <th>Repo Count</th>
+                                <th>Uses gftools-builder?</th>
+                                <th>Proposed Feature</th>
+                            </tr>
+                        </thead>
+                        <tbody id="prebuild-priority-tbody"></tbody>
+                    </table>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Top Priority: UFO Source Merging</h3>
+                    <p><strong>~47 repos</strong> depend on <code>ufomerge</code> (5 with explicit merge scripts + ~42 as build dependency),
+                    making UFO merging the most widespread pre-compile operation. A declarative <code>mergeUFOs</code> config key would
+                    allow these repos to express merge operations directly in <code>config.yaml</code>:</p>
+                    <div class="guide-template">
+                        <pre>mergeUFOs:
+  - target: sources/master_ufo/MyFont-Regular.ufo
+    source: external/LatinCore-Regular.ufo
+    codepoints: GF_Latin_Core
+    existing_handling: replace
+  - target: sources/master_ufo/MyFont-Regular.ufo
+    source: sources/japanese/MyFontJP-Regular.ufo
+    glyphs: sources/japanese/JPN_whitelist.txt
+    layout_handling: subset
+    existing_handling: skip</pre>
+                    </div>
+                    <p><code>gftools</code> already depends on <code>ufomerge</code>. The builder would read merge instructions from
+                    config, run them before the recipe provider reads sources, and operate on temporary copies of the UFOs.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Repos with Explicit Merge Scripts</h3>
+                    <p>These repos would directly benefit from a declarative <code>mergeUFOs</code> config key:</p>
+                    <div id="prebuild-merge-repos"></div>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Full Repo Inventory</h3>
+                    <p>Complete inventory of repos and their pre-compile action types.</p>
+                    <div class="filter-bar builds-filter">
+                        <input type="text" id="prebuild-search" placeholder="Search by repo name..." />
+                        <select id="prebuild-action-filter">
+                            <option value="all">All action types</option>
+                        </select>
+                        <span id="prebuild-count"></span>
+                    </div>
+                    <div id="prebuild-table-container"></div>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Key Insights</h3>
+                    <ol>
+                        <li><strong>UFO merging is the clear #1 priority</strong> &mdash; ~47 repos depend on ufomerge, most already use gftools-builder</li>
+                        <li><strong>Glyphs-to-UFO conversion</strong> (~29 repos) is usually a prerequisite for merging or custom pipelines &mdash; subsumed by a <code>mergeUFOs</code> feature</li>
+                        <li><strong>Source manipulation</strong> (Glyphs or UFO, ~21 repos) is too diverse to standardize &mdash; each script is unique to its font</li>
+                        <li><strong>~66 repos</strong> have fully custom build pipelines not using gftools-builder &mdash; builder features won't help them</li>
+                        <li><strong>~249 repos</strong> have template initialization scripts that are not build actions</li>
+                    </ol>
+                </div>
+
+                <p class="sources-updated">Research date: <span id="prebuild-timestamp">--</span></p>
             </div>
         </section>
 

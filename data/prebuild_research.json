@@ -1,0 +1,604 @@
+{
+  "_metadata": {
+    "description": "Inventory of pre-compile actions in Google Fonts upstream repos",
+    "data_source": "fontc_crater_cache at /mnt/shared/upstream_repos/fontc_crater_cache/ (280 orgs, 404 Makefiles, 86 build scripts) + GitHub code search",
+    "generated": "2026-02-18",
+    "scope": "Pre-compile actions only (before font compilation). Post-build fixups excluded."
+  },
+  "action_types": {
+    "ufo_merging": {
+      "description": "Merging glyphs from one set of UFO masters into another using ufomerge.merge_ufos()",
+      "priority": "HIGH",
+      "proposed_feature": "mergeUFOs config key",
+      "total_repos_with_scripts": 5,
+      "total_repos_with_dependency": 42
+    },
+    "glyphs_to_ufo_conversion": {
+      "description": "Converting .glyphs/.glyphspackage sources to UFO format before build (via fontmake -o ufo or glyphs2ufo)",
+      "priority": "MEDIUM",
+      "proposed_feature": "Subsumed by mergeUFOs (builder already handles conversion internally)",
+      "total_repos": 29
+    },
+    "glyphs_source_manipulation": {
+      "description": "Programmatically modifying .glyphs source files before compilation (removing layers, adjusting components, generating variants)",
+      "priority": "LOW",
+      "proposed_feature": "None - too diverse to standardize",
+      "total_repos": 8
+    },
+    "designspace_manipulation": {
+      "description": "Programmatically modifying designspace files before compilation (dropping sources/instances, adjusting axis ranges, filtering axes, injecting filters)",
+      "priority": "MEDIUM",
+      "proposed_feature": "Could extend existing builder config keys (fvarInstances, axis config) or add designspaceModifications",
+      "total_repos": 10
+    },
+    "ufo_source_manipulation": {
+      "description": "Programmatically modifying UFO source files before compilation (fixing contours, preprocessing, assembling variants, lib patching)",
+      "priority": "LOW",
+      "proposed_feature": "None - too diverse to standardize",
+      "total_repos": 13
+    },
+    "direct_glyph_addition": {
+      "description": "Adding glyphs from external UFOs using ufoLib2.Font.addGlyph() directly (lower-level alternative to ufomerge)",
+      "priority": "N/A",
+      "proposed_feature": "None - repos don't use gftools-builder",
+      "total_repos": 11
+    },
+    "fully_custom_pipeline": {
+      "description": "Entire font compilation via fontmake/ufo2ft/hindkit/fontforge directly, bypassing gftools-builder",
+      "priority": "N/A",
+      "proposed_feature": "None - repos don't use gftools-builder",
+      "total_repos": 66
+    },
+    "config_source_generation": {
+      "description": "Programmatically generating config.yaml or source files from data/templates",
+      "priority": "LOW",
+      "proposed_feature": "None - too niche",
+      "total_repos": 3
+    },
+    "repo_initialization": {
+      "description": "One-time repo setup from template (customize.py / first-run.py). NOT a build action.",
+      "priority": "N/A",
+      "proposed_feature": "None - not a build action",
+      "total_repos": 249
+    }
+  },
+  "repos": {
+    "ufo_merging": {
+      "with_explicit_scripts": [
+        {
+          "repo": "aaronbell/LxgwWenkaiTC",
+          "scripts": ["sources/scripts/merge.py"],
+          "tool": "ufomerge.merge_ufos()",
+          "uses_gftools_builder": true,
+          "details": "Merges common Hanzi UFO data into Latin masters (Regular/Bold/Light variants). layout_handling=ignore, existing_handling=skip."
+        },
+        {
+          "repo": "googlefonts/googlesans-persian",
+          "scripts": ["scripts/add-latin-core.py"],
+          "tool": "gftools.ufomerge.merge_ufos()",
+          "uses_gftools_builder": true,
+          "details": "Merges GF_Latin_Core from upstream Google Sans UFOs into Persian masters. Also modifies designspace (drops Light/Medium sources, sets weight axis min/default to 400). 4 masters mapped by opsz/wght."
+        },
+        {
+          "repo": "googlefonts/googlesans-myanmar",
+          "scripts": ["scripts/add-latin-core.py", "scripts/subset-gs.py"],
+          "tool": "gftools.ufomerge.merge_ufos()",
+          "uses_gftools_builder": true,
+          "details": "Merges Latin Core into Myanmar masters."
+        },
+        {
+          "repo": "googlefonts/googlesans-gurage",
+          "scripts": ["tools/merge-sources.py", "tools/update-googlesans.py"],
+          "tool": "ufomerge.merge_ufos(), ufomerge.subset_ufo()",
+          "uses_gftools_builder": true,
+          "details": "Merges and subsets UFO sources."
+        },
+        {
+          "repo": "googlefonts/youtube-sans",
+          "scripts": ["sources/scripts/megaMerge.py", "sources/scripts/merge_JP.py", "sources/scripts/premerge.py"],
+          "tool": "ufomerge.merge_ufos()",
+          "uses_gftools_builder": true,
+          "details": "Merges 7 language scripts (Latin + Devanagari, Hebrew, Thai, Arabic, Tamil, Korean) into unified mega masters. Japanese merged separately via whitelist. layout_handling=subset, existing_handling=skip."
+        }
+      ],
+      "with_dependency_only": [
+        {"repo": "googlefonts/googlesans-code", "source": "requirements.txt"},
+        {"repo": "googlefonts/googlesans-urdu", "source": "requirements.in", "version": ">=1.7.0"},
+        {"repo": "googlefonts/googlesans-flex", "source": "requirements.txt"},
+        {"repo": "googlefonts/roboto-3-classic", "source": "requirements.txt", "version": "==1.9.5"},
+        {"repo": "googlefonts/RobotoMono", "source": "requirements.txt", "version": "==1.8.2"},
+        {"repo": "googlefonts/josefinslab", "source": "requirements.txt", "version": "==1.8.2"},
+        {"repo": "googlefonts/GS_Flex_CJK", "source": "build-workflow/requirements.txt", "version": "==1.8.2"},
+        {"repo": "googlefonts/cossette-fonts", "source": "requirements.txt", "version": "==1.9.5"},
+        {"repo": "googlefonts/atkinson-hyperlegible-next", "source": "requirements.txt"},
+        {"repo": "googlefonts/atkinson-hyperlegible-next-mono", "source": "requirements.txt", "version": "==1.8.2"},
+        {"repo": "googlefonts/gidugu", "source": "requirements.txt"},
+        {"repo": "googlefonts/Playfair", "source": "requirements.txt"},
+        {"repo": "googlefonts/roboto-classic", "source": "requirements.txt"},
+        {"repo": "googlefonts/youtube-display", "source": "requirements.txt", "version": "==1.9.6"},
+        {"repo": "calcom/font", "source": "requirements.txt"},
+        {"repo": "CatharsisFonts/Cormorant", "source": "requirements.txt"},
+        {"repo": "isaozler/kode-mono", "source": "requirements.txt"},
+        {"repo": "jenskutilek/homecomputer-fonts", "source": "requirements.txt"},
+        {"repo": "JulietaUla/Montserrat", "source": "requirements.txt"},
+        {"repo": "Kief-Type-Foundry/Fustat", "source": "requirements.txt"},
+        {"repo": "line/seed", "source": "requirements.txt"},
+        {"repo": "loudifier/Comic-Relief", "source": "requirements.txt"},
+        {"repo": "m4rc1e/mavenproFont", "source": "requirements.txt"},
+        {"repo": "mara-aa/elms-sans", "source": "requirements.txt"},
+        {"repo": "maxesnee/savate", "source": "requirements.txt"},
+        {"repo": "mozilla/mozilla-headline-type", "source": "requirements.txt"},
+        {"repo": "mozilla/mozilla-text-type", "source": "requirements.txt"},
+        {"repo": "productiontype/Spectral", "source": "requirements.txt"},
+        {"repo": "redstonedesign/parkinsans", "source": "requirements.txt"},
+        {"repo": "slavonic/Monomakh", "source": "requirements.txt"},
+        {"repo": "slavonic/pochaevsk", "source": "requirements.txt"},
+        {"repo": "slavonic/Ponomar", "source": "requirements.txt"},
+        {"repo": "slavonic/shafarik", "source": "requirements.txt"},
+        {"repo": "slavonic/Triodion", "source": "requirements.txt"},
+        {"repo": "theseunbadejo/Agu-Display", "source": "requirements.txt"},
+        {"repo": "TikTok/TikTokSans", "source": "requirements.txt"},
+        {"repo": "TypeTogether/Playpen-Sans", "source": "requirements.txt"},
+        {"repo": "TypeTogether/Playpen-Sans_1248371465", "source": "requirements.txt"},
+        {"repo": "TypeTogether/Playpen-Sans_7a0794f021", "source": "requirements.txt"},
+        {"repo": "TypeTogether/Playpen-Sans_a4829cda74", "source": "requirements.txt"},
+        {"repo": "TypeTogether/Playpen-Sans_c85bb380b5", "source": "requirements.txt"},
+        {"repo": "typofactur/epundasans", "source": "requirements.txt"},
+        {"repo": "typofactur/epundaslab", "source": "requirements.txt"},
+        {"repo": "typofactur/winkyrough", "source": "requirements.txt"},
+        {"repo": "undercasetype/Fraunces", "source": "requirements.freeze.txt"},
+        {"repo": "notofonts/notobuilder", "source": "pyproject.toml", "version": ">=1.6.1"}
+      ]
+    },
+    "glyphs_to_ufo_conversion": {
+      "before_gftools_builder": [
+        {
+          "repo": "42dot/42dot-Sans",
+          "script_location": "Makefile",
+          "tool": "glyphs2ufo",
+          "command": "glyphs2ufo sources/42dotSans.glyphspackage -m sources/masters",
+          "uses_gftools_builder": true
+        },
+        {
+          "repo": "42dot/Asta-Sans",
+          "script_location": "Makefile",
+          "tool": "glyphs2ufo",
+          "command": "glyphs2ufo sources/AstaSans.glyphspackage -m sources/masters",
+          "uses_gftools_builder": true
+        },
+        {
+          "repo": "RedHatOfficial/Overpass",
+          "script_location": "Makefile",
+          "tool": "glyphs2ufo",
+          "command": "glyphs2ufo sources/Overpass.glyphs -m sources/master_ufo/",
+          "uses_gftools_builder": true
+        },
+        {
+          "repo": "TikTok/TikTokSans",
+          "script_location": "scripts/build/glyphsToUFO.py",
+          "tool": "glyphsLib (custom)",
+          "uses_gftools_builder": true,
+          "details": "Custom conversion with slant/dark/optical-size adjustments"
+        },
+        {
+          "repo": "googlefonts/googlesans-persian",
+          "script_location": "Makefile",
+          "tool": "fontmake -o ufo",
+          "uses_gftools_builder": true
+        },
+        {
+          "repo": "googlefonts/youtube-sans",
+          "script_location": "Makefile (8 prep_* targets)",
+          "tool": "fontmake -o ufo",
+          "uses_gftools_builder": true
+        }
+      ],
+      "in_custom_build_py": [
+        {"repo": "googlefonts/zen-marugothic", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "googlefonts/zen-kurenaido", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "googlefonts/zen-oldmincho", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "googlefonts/zen-kakugothic", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "googlefonts/zen-antique", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "coz-m/MPLUS_FONTS", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "Kinutafontfactory/Yuji", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "nagamaki008/kapakana", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "satsuyako/CherryBomb", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "satsuyako/YomogiFont", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "tanukifont/YuseiMagic", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "yangheeryu/Dongle", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "yangheeryu/Gowun-Batang", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "yangheeryu/Gowun-Dodum", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "fontdasu/Mochiypop", "tool": "glyphsLib.cli glyphs2ufo"},
+        {"repo": "FontKai-Kaisei/Kaisei", "tool": "glyphsLib.cli glyphs2ufo"}
+      ],
+      "in_standalone_scripts": [
+        {"repo": "huertatipografica/piazzolla", "tool": "glyphs2ufo", "script": "build.sh"},
+        {"repo": "justvanrossum/nabla", "tool": "glyphs2ufo", "script": "build.sh"},
+        {"repo": "aliftype/amiri", "tool": "glyphs2ufo", "script": "Makefile"},
+        {"repo": "aliftype/aref-ruqaa", "tool": "glyphs2ufo", "script": "Makefile"},
+        {"repo": "aliftype/reem-kufi", "tool": "glyphs2ufo", "script": "Makefile"},
+        {"repo": "EkType/Anek", "tool": "glyphs2ufo", "script": "sources/convert_glyphs_source.sh"},
+        {"repo": "rsms/inter", "tool": "fontmake -o ufo", "script": "Makefile"},
+        {"repo": "rastikerdar/vazirmatn", "tool": "glyphs2ufo", "script": "scripts/make-fonts.sh"}
+      ]
+    },
+    "glyphs_source_manipulation": [
+      {
+        "repo": "Gue3bara/Cairo",
+        "scripts": ["scripts/makenormal.py", "scripts/makeplay.py", "scripts/settransformedcomponents.py"],
+        "uses_gftools_builder": true,
+        "details": "Removes Color layers to create non-color variant; creates CairoPlay variant; adjusts components"
+      },
+      {
+        "repo": "mishamyrt/Lilex",
+        "scripts": ["scripts/lilexgen/generate.py"],
+        "uses_gftools_builder": true,
+        "details": "Regenerates Glyphs sources from config (feature toggling, OT features)"
+      },
+      {
+        "repo": "arrowtype/shantell-sans",
+        "scripts": ["scripts--build/prep-build.py"],
+        "uses_gftools_builder": false,
+        "details": "Prepares Glyphs sources for build"
+      },
+      {
+        "repo": "simoncozens/Gulzar",
+        "scripts": ["scripts/add-utility-glyphs.py"],
+        "uses_gftools_builder": false,
+        "details": "Adds utility glyphs to source"
+      },
+      {
+        "repo": "TypeTogether/Playwrite",
+        "scripts": ["scripts/add-guidelines.py", "scripts/generate-guideline-source.py"],
+        "uses_gftools_builder": true,
+        "details": "Adds guidelines to Glyphs source for handwriting fonts"
+      },
+      {
+        "repo": "CatharsisFonts/Ysabeau",
+        "scripts": ["scripts/Ysabeau Generate.py"],
+        "uses_gftools_builder": false,
+        "details": "Generates Glyphs source variants"
+      },
+      {
+        "repo": "mjlagattuta/Hepta-Slab",
+        "scripts": ["sources/tools/build-hairline/prepHairline.py", "sources/tools/build-final/fixBrackets.py"],
+        "uses_gftools_builder": false,
+        "details": "Prepares hairline variant, fixes bracket layers"
+      },
+      {
+        "repo": "googlefonts/Expletus-Sans",
+        "scripts": ["old/tools/build-linked/prep-italic.py", "old/tools/build-linked/prep-roman.py"],
+        "uses_gftools_builder": false,
+        "details": "Prepares italic and roman sources (legacy scripts in old/ directory)"
+      }
+    ],
+    "designspace_manipulation": [
+      {
+        "repo": "googlefonts/googlesans-persian",
+        "scripts": ["scripts/add-latin-core.py"],
+        "uses_gftools_builder": true,
+        "details": "Drops Light/Medium sources and instances from designspace; sets weight axis min/default to 400. Combined with UFO merging."
+      },
+      {
+        "repo": "googlefonts/googlesans-myanmar",
+        "scripts": ["scripts/merge-upstream-latin.py", "scripts/build-ui-axis.py"],
+        "uses_gftools_builder": false,
+        "details": "Drops ital and GSUI axes; filters sources/instances by location; removes location keys; replaces source paths; renames sources/instances for UI variant."
+      },
+      {
+        "repo": "googlefonts/googlesans-flex",
+        "scripts": ["scripts/glyphs_to_ds.py"],
+        "uses_gftools_builder": true,
+        "details": "Preprocesses .glyphs source in memory (clears backgrounds, injects axis mappings, names brace layers), then post-processes designspace (extends skipExportGlyphs, removes eraseOpenCorners filter, renames default source)."
+      },
+      {
+        "repo": "googlefonts/googlesans",
+        "scripts": ["scripts/gs-merge-designspace.py"],
+        "uses_gftools_builder": false,
+        "details": "Cross-designspace glyph/group/kerning merge. Imports glyphs, kerning groups, kerning pairs, updates glyphOrder/postscriptNames, manages skipExportGlyphs, handles bracket glyphs, propagates to GRAD sources."
+      },
+      {
+        "repo": "googlefonts/emoji-bw",
+        "scripts": ["scripts/update-uvs.py"],
+        "uses_gftools_builder": false,
+        "details": "Loads designspace, injects public.unicodeVariationSequences into every UFO lib."
+      },
+      {
+        "repo": "googlefonts/zen-marugothic",
+        "scripts": ["build.py"],
+        "uses_gftools_builder": false,
+        "details": "Injects flattenComponents filter into every UFO lib after glyphs2ufo conversion. Custom instantiation via fontmake.instantiator."
+      },
+      {
+        "repo": "googlefonts/zen-kakugothic",
+        "scripts": ["build.py"],
+        "uses_gftools_builder": false,
+        "details": "Same as zen-marugothic plus deep-copies instances and merges kana glyphs from separate UFOs to produce two families."
+      },
+      {
+        "repo": "googlefonts/zen-antique",
+        "scripts": ["build.py"],
+        "uses_gftools_builder": false,
+        "details": "Same pattern as zen-marugothic (flattenComponents injection, custom instantiation)."
+      },
+      {
+        "repo": "googlefonts/zen-oldmincho",
+        "scripts": ["build.py"],
+        "uses_gftools_builder": false,
+        "details": "Same pattern as zen-marugothic."
+      },
+      {
+        "repo": "googlefonts/zen-kurenaido",
+        "scripts": ["build.py"],
+        "uses_gftools_builder": false,
+        "details": "Same pattern as zen-marugothic."
+      }
+    ],
+    "ufo_source_manipulation": [
+      {
+        "repo": "aaronbell/signika",
+        "scripts": ["sources/preprocess.py"],
+        "uses_gftools_builder": true,
+        "details": "Converts Glyphs to UFO, uses fontmake.instantiator to generate instances before gftools builder"
+      },
+      {
+        "repo": "MoonlitOwen/CactusSerif",
+        "scripts": ["source/scripts/extract.py", "source/fcp_ufo_process.py"],
+        "uses_gftools_builder": true,
+        "details": "Extracts .ufoz files, fixes UFOs from Font Creator (BOM encoding, contour direction, glyph order)"
+      },
+      {
+        "repo": "MoonlitOwen/ChocolateSans",
+        "scripts": ["source/scripts/extract.py", "source/fcp_ufo_process.py"],
+        "uses_gftools_builder": true,
+        "details": "Same pattern as CactusSerif"
+      },
+      {
+        "repo": "MoonlitOwen/ThenKhung",
+        "scripts": ["source/scripts/extract.py", "source/fcp_ufo_process.py"],
+        "uses_gftools_builder": true,
+        "details": "Same pattern as CactusSerif"
+      },
+      {
+        "repo": "stipub/stixfonts",
+        "scripts": ["tools/preprocess-ufo.py"],
+        "uses_gftools_builder": false,
+        "details": "Preprocesses UFOs: renames glyphs, adds OTL tables from external source"
+      },
+      {
+        "repo": "djrrb/Bungee",
+        "scripts": ["scripts/assembleSources.py", "scripts/assembleRotatedSources.py", "scripts/assembleColorSources.py"],
+        "uses_gftools_builder": false,
+        "details": "Assembles UFO sources from layers — breaks out color/rotated/layered variants from single source"
+      },
+      {
+        "repo": "DylanYoungKoto/Stack-Sans",
+        "scripts": ["scripts/prepare_notch.py"],
+        "uses_gftools_builder": true,
+        "details": "Modifies UFO family names and structure to create notch variant before gftools builder"
+      }
+    ],
+    "direct_glyph_addition": [
+      {
+        "repo": "googlefonts/zen-marugothic",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "step_merge_glyphs_from_ufo() — merges glyphs from external UFOs via textfile glyph lists"
+      },
+      {
+        "repo": "googlefonts/zen-kurenaido",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same pattern as zen-marugothic"
+      },
+      {
+        "repo": "googlefonts/zen-oldmincho",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same pattern"
+      },
+      {
+        "repo": "googlefonts/zen-kakugothic",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same pattern"
+      },
+      {
+        "repo": "googlefonts/zen-antique",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same pattern"
+      },
+      {
+        "repo": "coz-m/MPLUS_FONTS",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same architecture as Zen family"
+      },
+      {
+        "repo": "Kinutafontfactory/Yuji",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same architecture"
+      },
+      {
+        "repo": "FontKai-Kaisei/Kaisei",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Same architecture"
+      },
+      {
+        "repo": "balt-dev/bytesized-gf",
+        "scripts": ["scripts/create.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": true,
+        "details": "Creates pixel font glyphs programmatically"
+      },
+      {
+        "repo": "microsoft/cascadia-code",
+        "scripts": ["build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Custom build pipeline with programmatic glyph creation"
+      },
+      {
+        "repo": "aliftype/amiri",
+        "scripts": ["scripts/build.py"],
+        "tool": "ufoLib2.Font.addGlyph()",
+        "uses_gftools_builder": false,
+        "details": "Custom build with glyph manipulation"
+      }
+    ],
+    "fully_custom_pipeline": {
+      "fontmake_direct": [
+        {"repo": "fontworks-fonts/DotGothic16", "tool": "fontmake.__main__"},
+        {"repo": "fontworks-fonts/Klee", "tool": "fontmake.__main__"},
+        {"repo": "fontworks-fonts/Rampart", "tool": "fontmake.__main__"},
+        {"repo": "fontworks-fonts/Reggae", "tool": "fontmake.__main__"},
+        {"repo": "fontworks-fonts/RocknRoll", "tool": "fontmake.__main__"},
+        {"repo": "fontworks-fonts/Stick", "tool": "fontmake.__main__"},
+        {"repo": "fontworks-fonts/Train", "tool": "fontmake.__main__"},
+        {"repo": "go108go/Chokokutai", "tool": "fontmake.__main__"},
+        {"repo": "go108go/Potta", "tool": "fontmake.__main__"},
+        {"repo": "googlefonts/morisawa-biz-ud-gothic", "tool": "fontmake.__main__"},
+        {"repo": "googlefonts/morisawa-biz-ud-mincho", "tool": "fontmake.__main__"},
+        {"repo": "shibuyafont/3d-rock-font", "tool": "fontmake.__main__"},
+        {"repo": "shibuyafont/Palette-mosaic-font-mono", "tool": "fontmake.__main__"},
+        {"repo": "shibuyafont/shizuru-font", "tool": "fontmake.__main__"},
+        {"repo": "ManiackersDesign/darumadrop", "tool": "fontmake.__main__"},
+        {"repo": "ManiackersDesign/monomaniac", "tool": "fontmake.__main__"},
+        {"repo": "ManiackersDesign/slackside", "tool": "fontmake.__main__"},
+        {"repo": "Gutenberg-Labo/Otomanopee", "tool": "fontmake.__main__"},
+        {"repo": "nagamaki008/NewTegomin", "tool": "fontmake.__main__"},
+        {"repo": "noriokanisawa/HachiMaruPop", "tool": "fontmake.__main__"},
+        {"repo": "Kiwi-KawagotoKajiru/Kiwi-Maru", "tool": "fontmake.__main__"},
+        {"repo": "satsuyako/CherryBomb", "tool": "fontmake.__main__ + glyphs2ufo"},
+        {"repo": "satsuyako/YomogiFont", "tool": "fontmake.__main__ + glyphs2ufo"},
+        {"repo": "tanukifont/YuseiMagic", "tool": "fontmake.__main__ + glyphs2ufo"}
+      ],
+      "hindkit": [
+        {"repo": "itfoundry/halant"},
+        {"repo": "itfoundry/hind"},
+        {"repo": "itfoundry/hind-colombo"},
+        {"repo": "itfoundry/hind-guntur"},
+        {"repo": "itfoundry/hind-jalandhar"},
+        {"repo": "itfoundry/hind-kochi"},
+        {"repo": "itfoundry/hind-madurai"},
+        {"repo": "itfoundry/hind-mysuru"},
+        {"repo": "itfoundry/hind-siliguri"},
+        {"repo": "itfoundry/hind-vadodara"},
+        {"repo": "itfoundry/kalam"},
+        {"repo": "itfoundry/karma"},
+        {"repo": "itfoundry/khand"},
+        {"repo": "itfoundry/kumar"},
+        {"repo": "itfoundry/laila"},
+        {"repo": "itfoundry/sarpanch"},
+        {"repo": "itfoundry/tillana"},
+        {"repo": "jonpinhorn/shrikhand"},
+        {"repo": "lipiraval/mogra"}
+      ],
+      "fontforge": [
+        {"repo": "notofonts/duployan", "details": "Entire font constructed via FontForge API"},
+        {"repo": "suman51284/Mina", "details": "FontForge-based build"},
+        {"repo": "Tarobish/Jomhuria", "details": "FontForge tools for various operations"}
+      ],
+      "ufo2ft_direct": [
+        {"repo": "aliftype/amiri"},
+        {"repo": "coz-m/MPLUS_FONTS"},
+        {"repo": "daltonmaag/scope-one"},
+        {"repo": "fontdasu/Mochiypop"},
+        {"repo": "fontdasu/ShipporiAntique"},
+        {"repo": "fontdasu/ShipporiMincho"},
+        {"repo": "FontKai-Kaisei/Kaisei"},
+        {"repo": "googlefonts/zen-marugothic"},
+        {"repo": "googlefonts/zen-kurenaido"},
+        {"repo": "googlefonts/zen-oldmincho"},
+        {"repo": "googlefonts/zen-kakugothic"},
+        {"repo": "googlefonts/zen-antique"},
+        {"repo": "Kinutafontfactory/Yuji"},
+        {"repo": "matsuba723/Aoboshi"},
+        {"repo": "microsoft/cascadia-code"},
+        {"repo": "mt-funa/Tsukimi-Rounded"},
+        {"repo": "nagamaki008/kapakana"},
+        {"repo": "satsuyako/CherryBomb"},
+        {"repo": "satsuyako/Hina-Mincho"},
+        {"repo": "satsuyako/YomogiFont"},
+        {"repo": "syakuzen/DelaGothic"},
+        {"repo": "tanukifont/YuseiMagic"},
+        {"repo": "yangheeryu/Dongle"},
+        {"repo": "yangheeryu/Gowun-Batang"},
+        {"repo": "yangheeryu/Gowun-Dodum"}
+      ],
+      "fontmake_in_shell": [
+        {"repo": "barnard555/odibeesans", "script": "build.sh"},
+        {"repo": "googlefonts/beiruti", "script": "build.sh"},
+        {"repo": "googlefonts/NunitoSans", "script": "build.sh"},
+        {"repo": "googlefonts/zain", "script": "build.sh"},
+        {"repo": "liamspradlin/Girassol-Display", "script": "build.sh"},
+        {"repo": "MonicaRizzolli/Tomorrow", "script": "build.sh"},
+        {"repo": "noponies/Kulim-Park", "script": "build.sh"}
+      ]
+    },
+    "config_source_generation": [
+      {
+        "repo": "TypeTogether/Playwrite",
+        "scripts": ["scripts/create-builder-config.py"],
+        "uses_gftools_builder": true,
+        "details": "Generates config.yaml from CSV data for 200+ country variants"
+      },
+      {
+        "repo": "Gissio/font_tiny5",
+        "scripts": ["scripts/bdf2ufo.py"],
+        "uses_gftools_builder": true,
+        "details": "Converts BDF pixel font to UFO format + generates config.yaml"
+      },
+      {
+        "repo": "DylanYoungKoto/Stack-Sans",
+        "scripts": ["scripts/prepare_notch.py"],
+        "uses_gftools_builder": true,
+        "details": "Creates variant UFO sources before building notch variant"
+      }
+    ],
+    "repo_initialization": {
+      "customize_py": {
+        "count": 73,
+        "template": "googlefonts-project-template",
+        "sample_repos": [
+          "googlefonts/atkinson-hyperlegible-next",
+          "googlefonts/atkinson-hyperlegible-next-mono",
+          "googlefonts/boldonse",
+          "googlefonts/buenard",
+          "googlefonts/gidugu",
+          "googlefonts/great-vibes",
+          "googlefonts/libertinus",
+          "googlefonts/life-savers",
+          "googlefonts/mashanzheng",
+          "googlefonts/mulish",
+          "googlefonts/sawarabi-mincho",
+          "googlefonts/zcool-kuaile",
+          "JulietaUla/Montserrat",
+          "mozilla/mozilla-headline-type",
+          "mozilla/mozilla-text-type",
+          "slavonic/Monomakh",
+          "slavonic/pochaevsk",
+          "slavonic/Ponomar",
+          "slavonic/shafarik",
+          "slavonic/Triodion"
+          ]
+      },
+      "first_run_py": {
+        "count": 176,
+        "template": "notofonts template",
+        "note": "176 notofonts repos have scripts/first-run.py"
+      }
+    }
+  }
+}

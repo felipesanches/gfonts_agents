@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPlans();
     loadDiskUsage();
     loadBioAudit();
+    loadPrebuildResearch();
 });
 
 function initTabs() {
@@ -1736,4 +1737,317 @@ function renderBioAuditTable(results, severityFilter, searchFilter) {
         msg.textContent = `Showing first 200 of ${sorted.length} results. Use filters to narrow down.`;
         tableContainer.appendChild(msg);
     }
+}
+
+// Pre-Build Research functionality
+let prebuildData = null;
+
+async function loadPrebuildResearch() {
+    try {
+        const response = await fetch('data/prebuild_research.json');
+        prebuildData = await response.json();
+        renderPrebuildResearch(prebuildData);
+    } catch (error) {
+        console.error('Error loading prebuild research:', error);
+    }
+}
+
+function renderPrebuildResearch(data) {
+    // Update timestamp
+    const tsEl = document.getElementById('prebuild-timestamp');
+    if (tsEl && data._metadata) {
+        tsEl.textContent = data._metadata.generated;
+    }
+
+    // Build flat repo list for filtering
+    const allRepos = [];
+    const actionTypes = data.action_types;
+    const repos = data.repos;
+
+    // Compute totals
+    let totalRepos = 0;
+    const actionTypeEntries = [];
+
+    for (const [key, info] of Object.entries(actionTypes)) {
+        const count = info.total_repos || (info.total_repos_with_scripts || 0) + (info.total_repos_with_dependency || 0);
+        totalRepos += count;
+        actionTypeEntries.push({
+            key,
+            label: formatActionType(key),
+            count,
+            priority: info.priority,
+            proposed: info.proposed_feature,
+            description: info.description
+        });
+    }
+
+    // Summary cards
+    const totalEl = document.getElementById('prebuild-total-repos');
+    if (totalEl) totalEl.textContent = totalRepos;
+
+    const typesEl = document.getElementById('prebuild-action-types');
+    if (typesEl) typesEl.textContent = Object.keys(actionTypes).length;
+
+    const ufoEl = document.getElementById('prebuild-ufo-merge');
+    if (ufoEl) {
+        const ufo = actionTypes.ufo_merging;
+        ufoEl.textContent = (ufo.total_repos_with_scripts || 0) + (ufo.total_repos_with_dependency || 0);
+    }
+
+    // Priority table
+    const priorityRows = [
+        { priority: 'HIGH', type: 'UFO Source Merging', count: '~47', builder: 'Most yes', feature: 'mergeUFOs config key' },
+        { priority: 'MEDIUM', type: 'Glyphs-to-UFO Conversion', count: '~29', builder: '~6 yes, ~23 no', feature: 'Subsumed by mergeUFOs' },
+        { priority: 'MEDIUM', type: 'Designspace Manipulation', count: '~10', builder: '~2 yes', feature: 'Extend existing config keys' },
+        { priority: 'LOW', type: 'Glyphs Source Manipulation', count: '~8', builder: '~3 yes', feature: 'Too diverse to standardize' },
+        { priority: 'LOW', type: 'UFO Source Manipulation', count: '~13', builder: '~5 yes', feature: 'Too diverse to standardize' },
+        { priority: 'LOW', type: 'Direct addGlyph', count: '~11', builder: 'No', feature: 'N/A (repos don\'t use builder)' },
+        { priority: 'N/A', type: 'Fully Custom Pipelines', count: '~66', builder: 'No', feature: 'N/A (not using builder)' },
+        { priority: 'N/A', type: 'Config/Source Generation', count: '~3', builder: 'Yes', feature: 'Too niche' },
+        { priority: 'N/A', type: 'Repo Initialization', count: '~249', builder: 'N/A', feature: 'Not a build action' }
+    ];
+
+    const priorityTbody = document.getElementById('prebuild-priority-tbody');
+    if (priorityTbody) {
+        priorityTbody.innerHTML = priorityRows.map(r => {
+            const priorityColor = r.priority === 'HIGH' ? '#f44336' :
+                                  r.priority === 'MEDIUM' ? '#ff9800' :
+                                  r.priority === 'LOW' ? '#2196f3' : '#888';
+            return `<tr>
+                <td><strong style="color: ${priorityColor}">${escapeHtml(r.priority)}</strong></td>
+                <td>${escapeHtml(r.type)}</td>
+                <td>${escapeHtml(r.count)}</td>
+                <td>${escapeHtml(r.builder)}</td>
+                <td>${escapeHtml(r.feature)}</td>
+            </tr>`;
+        }).join('');
+    }
+
+    // Chart
+    renderPrebuildChart(actionTypeEntries.filter(e => e.key !== 'repo_initialization'));
+
+    // Merge repos detail
+    renderMergeRepos(repos);
+
+    // Full inventory table
+    renderPrebuildInventory(repos);
+
+    // Populate action type filter
+    const filterSelect = document.getElementById('prebuild-action-filter');
+    if (filterSelect) {
+        for (const [key] of Object.entries(repos)) {
+            const opt = document.createElement('option');
+            opt.value = key;
+            opt.textContent = formatActionType(key);
+            filterSelect.appendChild(opt);
+        }
+        filterSelect.addEventListener('change', () => filterPrebuild());
+    }
+
+    const searchInput = document.getElementById('prebuild-search');
+    if (searchInput) {
+        searchInput.addEventListener('input', () => filterPrebuild());
+    }
+}
+
+function formatActionType(key) {
+    const labels = {
+        ufo_merging: 'UFO Source Merging',
+        glyphs_to_ufo_conversion: 'Glyphs-to-UFO Conversion',
+        glyphs_source_manipulation: 'Glyphs Source Manipulation',
+        designspace_manipulation: 'Designspace Manipulation',
+        ufo_source_manipulation: 'UFO Source Manipulation',
+        direct_glyph_addition: 'Direct Glyph Addition',
+        fully_custom_pipeline: 'Fully Custom Pipeline',
+        config_source_generation: 'Config/Source Generation',
+        repo_initialization: 'Repo Initialization'
+    };
+    return labels[key] || key;
+}
+
+const PREBUILD_COLORS = {
+    ufo_merging: '#f44336',
+    glyphs_to_ufo_conversion: '#ff9800',
+    designspace_manipulation: '#ff5722',
+    glyphs_source_manipulation: '#9c27b0',
+    ufo_source_manipulation: '#2196f3',
+    direct_glyph_addition: '#4caf50',
+    fully_custom_pipeline: '#795548',
+    config_source_generation: '#607d8b',
+    repo_initialization: '#9e9e9e'
+};
+
+function renderPrebuildChart(entries) {
+    const canvas = document.getElementById('prebuild-types-chart');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    ctx.clearRect(0, 0, width, height);
+
+    const data = entries.filter(e => e.count > 0).sort((a, b) => b.count - a.count);
+    if (data.length === 0) return;
+
+    const maxCount = Math.max(...data.map(d => d.count));
+    const barHeight = 32;
+    const barGap = 12;
+    const labelWidth = 220;
+    const valueWidth = 100;
+    const startX = labelWidth;
+    const maxBarWidth = width - labelWidth - valueWidth - 20;
+
+    data.forEach((d, i) => {
+        const y = 20 + i * (barHeight + barGap);
+        const barWidth = Math.max(2, (d.count / maxCount) * maxBarWidth);
+
+        ctx.fillStyle = '#e0e0e0';
+        ctx.font = '13px system-ui, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.fillText(d.label, labelWidth - 10, y + barHeight / 2 + 4);
+
+        ctx.fillStyle = PREBUILD_COLORS[d.key] || '#9e9e9e';
+        ctx.fillRect(startX, y, barWidth, barHeight);
+
+        ctx.fillStyle = '#e0e0e0';
+        ctx.textAlign = 'left';
+
+        const priorityTag = d.priority !== 'N/A' ? ` [${d.priority}]` : '';
+        ctx.fillText(`${d.count} repos${priorityTag}`, startX + barWidth + 8, y + barHeight / 2 + 4);
+    });
+}
+
+function renderMergeRepos(repos) {
+    const container = document.getElementById('prebuild-merge-repos');
+    if (!container || !repos.ufo_merging) return;
+
+    const scripts = repos.ufo_merging.with_explicit_scripts || [];
+    if (scripts.length === 0) {
+        container.innerHTML = '<p>No explicit merge script repos found.</p>';
+        return;
+    }
+
+    const table = document.createElement('table');
+    table.className = 'guide-table';
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Script(s)</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${scripts.map(r => `
+                <tr>
+                    <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                    <td>${r.scripts.map(s => `<code>${escapeHtml(s)}</code>`).join('<br>')}</td>
+                    <td>${escapeHtml(r.details)}</td>
+                </tr>
+            `).join('')}
+        </tbody>
+    `;
+    container.appendChild(table);
+}
+
+function renderPrebuildInventory(repos) {
+    const container = document.getElementById('prebuild-table-container');
+    if (!container) return;
+
+    // Flatten all repos into a single list
+    const allRepos = [];
+    for (const [actionType, data] of Object.entries(repos)) {
+        // Handle different data shapes
+        if (Array.isArray(data)) {
+            data.forEach(r => allRepos.push({ ...r, action_type: actionType }));
+        } else if (typeof data === 'object') {
+            for (const [subKey, subData] of Object.entries(data)) {
+                if (Array.isArray(subData)) {
+                    subData.forEach(r => allRepos.push({ ...r, action_type: actionType, sub_type: subKey }));
+                }
+            }
+        }
+    }
+
+    renderPrebuildTable(container, allRepos, allRepos);
+}
+
+function renderPrebuildTable(container, repos, allRepos) {
+    if (!repos || repos.length === 0) {
+        container.innerHTML = '<p class="no-results">No repos match the current filters.</p>';
+        return;
+    }
+
+    const countSpan = document.getElementById('prebuild-count');
+    if (countSpan) {
+        countSpan.textContent = `${repos.length} of ${allRepos.length} repos`;
+    }
+
+    const display = repos.slice(0, 200);
+    const hasMore = repos.length > 200;
+
+    const table = document.createElement('table');
+    table.className = 'builds-table';
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Action Type</th>
+                <th>Tool</th>
+                <th>Uses Builder?</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${display.map(r => `
+                <tr>
+                    <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                    <td><span class="category-badge" style="background: ${PREBUILD_COLORS[r.action_type] || '#9e9e9e'}; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.85em;">${escapeHtml(formatActionType(r.action_type))}</span></td>
+                    <td><code>${escapeHtml(r.tool || '-')}</code></td>
+                    <td>${r.uses_gftools_builder === true ? 'Yes' : r.uses_gftools_builder === false ? 'No' : '-'}</td>
+                    <td>${r.details ? `<details><summary>Show</summary>${escapeHtml(r.details)}</details>` : '-'}</td>
+                </tr>
+            `).join('')}
+        </tbody>
+    `;
+
+    container.innerHTML = '';
+    container.appendChild(table);
+
+    if (hasMore) {
+        const msg = document.createElement('p');
+        msg.className = 'more-results';
+        msg.textContent = `Showing first 200 of ${repos.length} results.`;
+        container.appendChild(msg);
+    }
+}
+
+function filterPrebuild() {
+    if (!prebuildData) return;
+
+    const searchTerm = (document.getElementById('prebuild-search').value || '').toLowerCase();
+    const actionValue = document.getElementById('prebuild-action-filter').value;
+
+    // Rebuild flat list
+    const allRepos = [];
+    for (const [actionType, data] of Object.entries(prebuildData.repos)) {
+        if (Array.isArray(data)) {
+            data.forEach(r => allRepos.push({ ...r, action_type: actionType }));
+        } else if (typeof data === 'object') {
+            for (const [subKey, subData] of Object.entries(data)) {
+                if (Array.isArray(subData)) {
+                    subData.forEach(r => allRepos.push({ ...r, action_type: actionType, sub_type: subKey }));
+                }
+            }
+        }
+    }
+
+    const filtered = allRepos.filter(r => {
+        const matchesSearch = !searchTerm || r.repo.toLowerCase().includes(searchTerm);
+        const matchesAction = actionValue === 'all' || r.action_type === actionValue;
+        return matchesSearch && matchesAction;
+    });
+
+    renderPrebuildTable(document.getElementById('prebuild-table-container'), filtered, allRepos);
 }
