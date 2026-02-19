@@ -706,6 +706,25 @@ in African history and culture.&lt;/p&gt;
                     &mdash; <a href="https://github.com/googlefonts/gftools/issues/1170" target="_blank">issue #1170</a>
                 </p>
 
+                <div class="guide-section" style="background: #1a3a1a; border-left: 4px solid #4caf50; padding: 1em; border-radius: 4px; margin-bottom: 1.5em;">
+                    <h3 style="color: #4caf50;">Key Finding: Most Patterns Already Covered</h3>
+                    <p>After reviewing the <a href="https://github.com/googlefonts/gftools/tree/main/docs/gftools-builder" target="_blank">gftools-builder documentation</a>,
+                    we discovered that <strong>the builder already has features covering the top pre-build patterns</strong>:</p>
+                    <table class="guide-table">
+                        <thead><tr><th>Pattern</th><th>Existing Feature</th><th>Status</th></tr></thead>
+                        <tbody>
+                            <tr><td>UFO Source Merging</td><td><code>includeSubsets</code> config key + <code>addSubset</code> operation</td><td><strong style="color: #4caf50;">COVERED</strong></td></tr>
+                            <tr><td>Glyphs-to-UFO Conversion</td><td><code>glyphs2ds</code> operation (auto-triggered)</td><td><strong style="color: #4caf50;">COVERED</strong></td></tr>
+                            <tr><td>flattenComponents filter</td><td><code>flattenComponents: true</code> (default)</td><td><strong style="color: #4caf50;">COVERED</strong></td></tr>
+                            <tr><td>Arbitrary pre-processing</td><td><code>exec</code> recipe operation</td><td><strong style="color: #ff9800;">ESCAPE HATCH</strong></td></tr>
+                            <tr><td>Post-compilation steps</td><td><code>postCompile</code> config key</td><td><strong style="color: #4caf50;">COVERED</strong></td></tr>
+                            <tr><td>Designspace axis manipulation</td><td><code>subspace</code> operation, <code>instances</code> config</td><td><strong style="color: #ff9800;">PARTIAL</strong></td></tr>
+                        </tbody>
+                    </table>
+                    <p>The originally proposed <code>mergeUFOs</code> config key is <strong>largely redundant</strong> with the existing <code>includeSubsets</code>,
+                    which already supports local files, remote repos, named glyphsets, codepoint ranges, layout handling, and force-replace.</p>
+                </div>
+
                 <div class="guide-section">
                     <h3>Context</h3>
                     <p>Many upstream Google Fonts repos need to run preparation commands before invoking <code>gftools-builder</code>.
@@ -742,15 +761,15 @@ in African history and culture.&lt;/p&gt;
                 </div>
 
                 <div class="guide-section">
-                    <h3>Priority Assessment</h3>
+                    <h3>Priority Assessment (Revised)</h3>
                     <table class="guide-table" id="prebuild-priority-table">
                         <thead>
                             <tr>
-                                <th>Priority</th>
+                                <th>Status</th>
                                 <th>Action Type</th>
                                 <th>Repo Count</th>
-                                <th>Uses gftools-builder?</th>
-                                <th>Proposed Feature</th>
+                                <th>Existing Feature</th>
+                                <th>Remaining Gap</th>
                             </tr>
                         </thead>
                         <tbody id="prebuild-priority-tbody"></tbody>
@@ -758,29 +777,34 @@ in African history and culture.&lt;/p&gt;
                 </div>
 
                 <div class="guide-section">
-                    <h3>Top Priority: UFO Source Merging</h3>
+                    <h3>Existing Feature: <code>includeSubsets</code></h3>
                     <p><strong>~47 repos</strong> depend on <code>ufomerge</code> (5 with explicit merge scripts + ~42 as build dependency),
-                    making UFO merging the most widespread pre-compile operation. A declarative <code>mergeUFOs</code> config key would
-                    allow these repos to express merge operations directly in <code>config.yaml</code>:</p>
+                    making UFO merging the most widespread pre-compile operation. The builder's existing <code>includeSubsets</code>
+                    config key already provides declarative UFO merging:</p>
                     <div class="guide-template">
-                        <pre>mergeUFOs:
-  - target: sources/master_ufo/MyFont-Regular.ufo
-    source: external/LatinCore-Regular.ufo
-    codepoints: GF_Latin_Core
-    existing_handling: replace
-  - target: sources/master_ufo/MyFont-Regular.ufo
-    source: sources/japanese/MyFontJP-Regular.ufo
-    glyphs: sources/japanese/JPN_whitelist.txt
-    layout_handling: subset
-    existing_handling: skip</pre>
+                        <pre>sources:
+  - sources/MyFont.designspace
+includeSubsets:
+  - from: "Noto Sans"
+    name: GF_Latin_Core
+  - from: {repo: "notofonts/devanagari", path: "sources/NotoSansDevanagari.glyphspackage"}
+    name: Devanagari
+    layoutHandling: closure
+  - from: "path/to/local/donor.designspace"
+    ranges:
+      - start: 0x3000
+        end: 0x30FF
+    force: replace</pre>
                     </div>
-                    <p><code>gftools</code> already depends on <code>ufomerge</code>. The builder would read merge instructions from
-                    config, run them before the recipe provider reads sources, and operate on temporary copies of the UFOs.</p>
+                    <p><code>includeSubsets</code> supports local files, remote GitHub repos (with version refs),
+                    pre-defined Noto sources, named glyphsets, custom Unicode ranges, layout/kerning handling,
+                    force-replace, and glyph/codepoint exclusions. When used with Glyphs sources, the conversion
+                    to UFO happens automatically via <code>glyphs2ds</code>.</p>
                 </div>
 
                 <div class="guide-section">
-                    <h3>Repos with Explicit Merge Scripts</h3>
-                    <p>These repos would directly benefit from a declarative <code>mergeUFOs</code> config key:</p>
+                    <h3>Repos to Investigate for <code>includeSubsets</code> Migration</h3>
+                    <p>These repos currently use custom merge scripts and should be checked to see if <code>includeSubsets</code> can replace them:</p>
                     <div id="prebuild-merge-repos"></div>
                 </div>
 
@@ -798,13 +822,14 @@ in African history and culture.&lt;/p&gt;
                 </div>
 
                 <div class="guide-section">
-                    <h3>Key Insights</h3>
+                    <h3>Key Insights (Revised)</h3>
                     <ol>
-                        <li><strong>UFO merging is the clear #1 priority</strong> &mdash; ~47 repos depend on ufomerge, most already use gftools-builder</li>
-                        <li><strong>Glyphs-to-UFO conversion</strong> (~29 repos) is usually a prerequisite for merging or custom pipelines &mdash; subsumed by a <code>mergeUFOs</code> feature</li>
-                        <li><strong>Source manipulation</strong> (Glyphs or UFO, ~21 repos) is too diverse to standardize &mdash; each script is unique to its font</li>
+                        <li><strong>The builder already covers the top patterns</strong> &mdash; <code>includeSubsets</code> handles UFO merging, <code>glyphs2ds</code> handles conversion, <code>flattenComponents</code> handles filter injection</li>
+                        <li><strong>No new <code>mergeUFOs</code> feature is needed</strong> &mdash; the existing <code>includeSubsets</code> config key is largely equivalent to what was proposed</li>
+                        <li><strong>5 repos with custom merge scripts</strong> should be investigated to confirm they can migrate to <code>includeSubsets</code></li>
+                        <li><strong>Source manipulation</strong> (Glyphs or UFO, ~21 repos) is too diverse to standardize &mdash; the <code>exec</code> recipe operation serves as an escape hatch</li>
                         <li><strong>~66 repos</strong> have fully custom build pipelines not using gftools-builder &mdash; builder features won't help them</li>
-                        <li><strong>~249 repos</strong> have template initialization scripts that are not build actions</li>
+                        <li><strong>The main value now</strong> is documentation and migration guides, not new features</li>
                     </ol>
                 </div>
 

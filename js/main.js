@@ -1794,31 +1794,31 @@ function renderPrebuildResearch(data) {
         ufoEl.textContent = (ufo.total_repos_with_scripts || 0) + (ufo.total_repos_with_dependency || 0);
     }
 
-    // Priority table
+    // Priority table (revised with existing feature overlap)
     const priorityRows = [
-        { priority: 'HIGH', type: 'UFO Source Merging', count: '~47', builder: 'Most yes', feature: 'mergeUFOs config key' },
-        { priority: 'MEDIUM', type: 'Glyphs-to-UFO Conversion', count: '~29', builder: '~6 yes, ~23 no', feature: 'Subsumed by mergeUFOs' },
-        { priority: 'MEDIUM', type: 'Designspace Manipulation', count: '~10', builder: '~2 yes', feature: 'Extend existing config keys' },
-        { priority: 'LOW', type: 'Glyphs Source Manipulation', count: '~8', builder: '~3 yes', feature: 'Too diverse to standardize' },
-        { priority: 'LOW', type: 'UFO Source Manipulation', count: '~13', builder: '~5 yes', feature: 'Too diverse to standardize' },
-        { priority: 'LOW', type: 'Direct addGlyph', count: '~11', builder: 'No', feature: 'N/A (repos don\'t use builder)' },
-        { priority: 'N/A', type: 'Fully Custom Pipelines', count: '~66', builder: 'No', feature: 'N/A (not using builder)' },
-        { priority: 'N/A', type: 'Config/Source Generation', count: '~3', builder: 'Yes', feature: 'Too niche' },
-        { priority: 'N/A', type: 'Repo Initialization', count: '~249', builder: 'N/A', feature: 'Not a build action' }
+        { status: 'COVERED', type: 'UFO Source Merging', count: '~47', existing: 'includeSubsets + addSubset', gap: 'Complex multi-step merges need investigation' },
+        { status: 'COVERED', type: 'Glyphs-to-UFO Conversion', count: '~29', existing: 'glyphs2ds (auto-triggered)', gap: 'Custom flags not covered' },
+        { status: 'PARTIAL', type: 'Designspace Manipulation', count: '~10', existing: 'flattenComponents, subspace', gap: 'Source-level axis dropping' },
+        { status: 'LOW', type: 'Glyphs Source Manipulation', count: '~8', existing: 'exec recipe operation', gap: 'Too diverse to standardize' },
+        { status: 'LOW', type: 'UFO Source Manipulation', count: '~13', existing: 'exec recipe operation', gap: 'Too diverse to standardize' },
+        { status: 'N/A', type: 'Direct addGlyph', count: '~11', existing: 'includeSubsets (if migrated)', gap: 'Repos don\'t use builder' },
+        { status: 'N/A', type: 'Fully Custom Pipelines', count: '~66', existing: 'N/A', gap: 'Repos don\'t use builder' },
+        { status: 'N/A', type: 'Config/Source Generation', count: '~3', existing: 'None', gap: 'Too niche' },
+        { status: 'N/A', type: 'Repo Initialization', count: '~249', existing: 'N/A', gap: 'Not a build action' }
     ];
 
     const priorityTbody = document.getElementById('prebuild-priority-tbody');
     if (priorityTbody) {
         priorityTbody.innerHTML = priorityRows.map(r => {
-            const priorityColor = r.priority === 'HIGH' ? '#f44336' :
-                                  r.priority === 'MEDIUM' ? '#ff9800' :
-                                  r.priority === 'LOW' ? '#2196f3' : '#888';
+            const statusColor = r.status === 'COVERED' ? '#4caf50' :
+                                r.status === 'PARTIAL' ? '#ff9800' :
+                                r.status === 'LOW' ? '#2196f3' : '#888';
             return `<tr>
-                <td><strong style="color: ${priorityColor}">${escapeHtml(r.priority)}</strong></td>
+                <td><strong style="color: ${statusColor}">${escapeHtml(r.status)}</strong></td>
                 <td>${escapeHtml(r.type)}</td>
                 <td>${escapeHtml(r.count)}</td>
-                <td>${escapeHtml(r.builder)}</td>
-                <td>${escapeHtml(r.feature)}</td>
+                <td>${escapeHtml(r.existing)}</td>
+                <td>${escapeHtml(r.gap)}</td>
             </tr>`;
         }).join('');
     }

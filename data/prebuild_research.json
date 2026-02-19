@@ -2,62 +2,81 @@
   "_metadata": {
     "description": "Inventory of pre-compile actions in Google Fonts upstream repos",
     "data_source": "fontc_crater_cache at /mnt/shared/upstream_repos/fontc_crater_cache/ (280 orgs, 404 Makefiles, 86 build scripts) + GitHub code search",
-    "generated": "2026-02-18",
-    "scope": "Pre-compile actions only (before font compilation). Post-build fixups excluded."
+    "generated": "2026-02-19",
+    "scope": "Pre-compile actions only (before font compilation). Post-build fixups excluded.",
+    "revision_note": "2026-02-19: Updated after reviewing gftools-builder docs. Many patterns already covered by existing features (includeSubsets, flattenComponents, exec, glyphs2ds)."
   },
   "action_types": {
     "ufo_merging": {
       "description": "Merging glyphs from one set of UFO masters into another using ufomerge.merge_ufos()",
-      "priority": "HIGH",
-      "proposed_feature": "mergeUFOs config key",
+      "priority": "COVERED",
+      "existing_feature": "includeSubsets config key + addSubset operation (uses SubsetMerger -> ufomerge internally). Supports local files, remote repos, named glyphsets, codepoint ranges, layout handling, force replace.",
+      "remaining_gap": "Complex multi-step merges (e.g. youtube-sans with 7+ scripts) need investigation to confirm includeSubsets compatibility.",
+      "proposed_feature": "No new feature needed - use existing includeSubsets. Repos with custom merge scripts should be investigated for migration.",
       "total_repos_with_scripts": 5,
       "total_repos_with_dependency": 42
     },
     "glyphs_to_ufo_conversion": {
       "description": "Converting .glyphs/.glyphspackage sources to UFO format before build (via fontmake -o ufo or glyphs2ufo)",
-      "priority": "MEDIUM",
-      "proposed_feature": "Subsumed by mergeUFOs (builder already handles conversion internally)",
+      "priority": "COVERED",
+      "existing_feature": "glyphs2ds operation (auto-triggered by includeSubsets when source is .glyphs). Builder handles Glyphs-to-UFO conversion internally.",
+      "remaining_gap": "Custom flags like --write-public-skip-export-glyphs or post-conversion modifications (slant adjustments) not covered.",
+      "proposed_feature": "No new feature needed for standard conversion. Custom conversions can use exec recipe operation.",
       "total_repos": 29
     },
     "glyphs_source_manipulation": {
       "description": "Programmatically modifying .glyphs source files before compilation (removing layers, adjusting components, generating variants)",
       "priority": "LOW",
+      "existing_feature": "exec recipe operation available as escape hatch",
+      "remaining_gap": "Too diverse to standardize - each script is unique",
       "proposed_feature": "None - too diverse to standardize",
       "total_repos": 8
     },
     "designspace_manipulation": {
       "description": "Programmatically modifying designspace files before compilation (dropping sources/instances, adjusting axis ranges, filtering axes, injecting filters)",
-      "priority": "MEDIUM",
-      "proposed_feature": "Could extend existing builder config keys (fvarInstances, axis config) or add designspaceModifications",
+      "priority": "PARTIALLY_COVERED",
+      "existing_feature": "flattenComponents (default: true) covers filter injection for 5 Zen repos. subspace operation covers axis subsetting on compiled fonts. instances config controls instance generation.",
+      "remaining_gap": "Source-level axis dropping/range adjustment, custom filter injection (non-flattenComponents), cross-designspace merging",
+      "proposed_feature": "Could extend existing config keys for source-level designspace modifications",
       "total_repos": 10
     },
     "ufo_source_manipulation": {
       "description": "Programmatically modifying UFO source files before compilation (fixing contours, preprocessing, assembling variants, lib patching)",
       "priority": "LOW",
+      "existing_feature": "exec recipe operation available as escape hatch",
+      "remaining_gap": "Too diverse to standardize - each script is unique",
       "proposed_feature": "None - too diverse to standardize",
       "total_repos": 13
     },
     "direct_glyph_addition": {
       "description": "Adding glyphs from external UFOs using ufoLib2.Font.addGlyph() directly (lower-level alternative to ufomerge)",
       "priority": "N/A",
-      "proposed_feature": "None - repos don't use gftools-builder",
+      "existing_feature": "includeSubsets could replace this if repos migrated to gftools-builder",
+      "remaining_gap": "Repos don't use gftools-builder",
+      "proposed_feature": "None - repos would need to migrate to builder first",
       "total_repos": 11
     },
     "fully_custom_pipeline": {
       "description": "Entire font compilation via fontmake/ufo2ft/hindkit/fontforge directly, bypassing gftools-builder",
       "priority": "N/A",
+      "existing_feature": "N/A - repos don't use gftools-builder",
+      "remaining_gap": "N/A",
       "proposed_feature": "None - repos don't use gftools-builder",
       "total_repos": 66
     },
     "config_source_generation": {
       "description": "Programmatically generating config.yaml or source files from data/templates",
       "priority": "LOW",
+      "existing_feature": "None",
+      "remaining_gap": "Too niche for standardization",
       "proposed_feature": "None - too niche",
       "total_repos": 3
     },
     "repo_initialization": {
       "description": "One-time repo setup from template (customize.py / first-run.py). NOT a build action.",
       "priority": "N/A",
+      "existing_feature": "N/A - not a build action",
+      "remaining_gap": "N/A",
       "proposed_feature": "None - not a build action",
       "total_repos": 249
     }
