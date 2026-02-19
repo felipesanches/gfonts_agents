@@ -4,7 +4,8 @@
     "data_source": "fontc_crater_cache at /mnt/shared/upstream_repos/fontc_crater_cache/ (280 orgs, 404 Makefiles, 86 build scripts) + GitHub code search",
     "generated": "2026-02-19",
     "scope": "Pre-compile actions only (before font compilation). Post-build fixups excluded.",
-    "revision_note": "2026-02-19: Updated after reviewing gftools-builder docs. Many patterns already covered by existing features (includeSubsets, flattenComponents, exec, glyphs2ds)."
+    "revision_note": "2026-02-19: Updated after reviewing gftools-builder docs. Many patterns already covered by existing features (includeSubsets, flattenComponents, exec, glyphs2ds).",
+    "revision_note_2": "2026-02-19: Added migration_analysis section with per-repo convertibility assessment and grouped missing features."
   },
   "action_types": {
     "ufo_merging": {
@@ -617,6 +618,227 @@
         "count": 176,
         "template": "notofonts template",
         "note": "176 notofonts repos have scripts/first-run.py"
+      }
+    }
+  },
+  "migration_analysis": {
+    "_description": "Per-repo assessment of whether pre-build scripts can be fully replaced by existing gftools-builder features",
+    "fully_convertible": [
+      {
+        "repo": "42dot/42dot-Sans",
+        "current_prebuild": "glyphs2ufo sources/42dotSans.glyphspackage -m sources/masters",
+        "migration_action": "Point config.yaml sources directly at 42dotSans.glyphspackage instead of the generated designspace. Builder handles .glyphspackage natively via fontmake -g flag.",
+        "existing_feature": "Native .glyphs/.glyphspackage source support",
+        "notes": "post.py only modifies compiled TTFs (gasp/prep tables), not sources — can remain as postCompile or postprocess step."
+      },
+      {
+        "repo": "42dot/Asta-Sans",
+        "current_prebuild": "glyphs2ufo sources/AstaSans.glyphspackage -m sources/masters",
+        "migration_action": "Point config.yaml sources directly at AstaSans.glyphspackage. Identical pattern to 42dot-Sans.",
+        "existing_feature": "Native .glyphs/.glyphspackage source support",
+        "notes": "Same post.py pattern as 42dot-Sans."
+      },
+      {
+        "repo": "RedHatOfficial/Overpass",
+        "current_prebuild": "glyphs2ufo sources/Overpass.glyphs -m sources/master_ufo/",
+        "migration_action": "Point config.yaml sources at Overpass.glyphs and Overpass-Italic.glyphs directly. config_mono.yaml already points at OverpassMono.glyphs — proving the pattern works.",
+        "existing_feature": "Native .glyphs source support",
+        "notes": "OverpassMono config already demonstrates direct .glyphs usage."
+      }
+    ],
+    "partially_convertible": [
+      {
+        "repo": "aaronbell/LxgwWenkaiTC",
+        "current_prebuild": "extract.py (unzips .ufoz) + merge.py (ufomerge with layout_handling=ignore)",
+        "convertible_parts": "The UFO merge itself could use includeSubsets with layoutHandling: ignore",
+        "blocking_gaps": [
+          "Feature code override: script replaces entire features.fea after merge — no declarative equivalent",
+          ".ufoz donor format: common Hanzi sources are .ufoz archives that need extraction; donor must be wrapped in a designspace for includeSubsets",
+          "Six single-master designspaces: each weight variant is a separate designspace, not one multi-master source"
+        ],
+        "missing_features_needed": ["featureFile_override", "ufoz_support", "preCompile"]
+      },
+      {
+        "repo": "googlefonts/googlesans-persian",
+        "current_prebuild": "add-latin-core.py (merges GF_Latin_Core + drops Light/Medium DS sources + adjusts wght axis min/default)",
+        "convertible_parts": "The GF_Latin_Core merge could use includeSubsets with name: GF_Latin_Core",
+        "blocking_gaps": [
+          "Designspace manipulation: drops Light/Medium sources and instances — no config key for source-level DS editing",
+          "Axis range adjustment: sets wght axis minimum and default to 400 — no config key for source-level axis range changes"
+        ],
+        "missing_features_needed": ["source_ds_manipulation", "preCompile"]
+      },
+      {
+        "repo": "googlefonts/googlesans-myanmar",
+        "current_prebuild": "add-latin-core.py + subset-gs.py (merges Latin Core + drops ital/GSUI axes + filters sources/instances + injects UI transformation filters)",
+        "convertible_parts": "The GF_Latin_Core merge could use includeSubsets",
+        "blocking_gaps": [
+          "Axis dropping: removes ital and GSUI axes from designspace — no source-level axis dropping",
+          "Source/instance filtering: filters by location — no builder support for dropping sources at DS level",
+          "Transformation filter injection: injects scaling/offset filters for UI variant — only flattenComponents/decomposeTransformedComponents are declarative"
+        ],
+        "missing_features_needed": ["source_ds_manipulation", "custom_filter_injection", "preCompile"]
+      },
+      {
+        "repo": "googlefonts/googlesans-gurage",
+        "current_prebuild": "merge-sources.py + update-googlesans.py (ufomerge.merge_ufos + ufomerge.subset_ufo)",
+        "convertible_parts": "The merge_ufos() calls could use includeSubsets",
+        "blocking_gaps": [
+          "subset_ufo() has no equivalent: removes glyphs FROM the target UFO. includeSubsets only adds glyphs — no mechanism for removing glyphs from target"
+        ],
+        "missing_features_needed": ["target_ufo_subsetting", "preCompile"]
+      },
+      {
+        "repo": "googlefonts/youtube-sans",
+        "current_prebuild": "premerge.py (glyphs→UFO for 8 languages) + megaMerge.py (merges 7 scripts) + merge_JP.py (Japanese whitelist merge)",
+        "convertible_parts": "The non-Japanese multi-script merge could use includeSubsets with multiple entries (layoutHandling: subset). The per-language .glyphs conversion is handled by glyphs2ds.",
+        "blocking_gaps": [
+          "Japanese glyph-name whitelist: merge_JP.py selects glyphs by name, not by Unicode codepoint. includeSubsets has exclude_glyphs but no include_glyphs parameter",
+          "Complex 8-source structure: each language is a separate .glyphs file that must be converted and matched by axis location"
+        ],
+        "missing_features_needed": ["include_glyphs_parameter", "preCompile"]
+      },
+      {
+        "repo": "aaronbell/signika",
+        "current_prebuild": "preprocess.py (glyphs2ufo + adds propagateAnchors filter to UFO lib + generates instances)",
+        "convertible_parts": "The glyphs2ufo step is handled natively. Instance generation uses instantiateUfo.",
+        "blocking_gaps": [
+          "UFO lib modification: adds com.github.googlei18n.ufo2ft.filters for propagateAnchors — no declarative config key"
+        ],
+        "missing_features_needed": ["ufo_lib_modification", "preCompile"]
+      },
+      {
+        "repo": "Gue3bara/Cairo",
+        "current_prebuild": "makenormal.py (removes Color layers) + makeplay.py (creates CairoPlay variant) + settransformedcomponents.py (adjusts component scales)",
+        "convertible_parts": "rename operation could handle family name changes",
+        "blocking_gaps": [
+          "Glyphs layer removal: no built-in capability to remove layers from .glyphs files",
+          "Glyphs custom parameter manipulation: setting/removing Export COLR Table, Color Palettes",
+          "Component transform adjustment: changing scale values in glyph components"
+        ],
+        "missing_features_needed": ["glyphs_source_modification", "preCompile"]
+      },
+      {
+        "repo": "mishamyrt/Lilex",
+        "current_prebuild": "generate.py (regenerates Glyphs sources from lilexgen config with feature toggling)",
+        "convertible_parts": "Builder can compile the generated sources",
+        "blocking_gaps": [
+          "Source generation: entire Glyphs file is regenerated from a YAML config using the lilexgen library — must run before builder"
+        ],
+        "missing_features_needed": ["preCompile"]
+      },
+      {
+        "repo": "TypeTogether/Playwrite",
+        "current_prebuild": "add-guidelines.py (adds guideline rectangles to Glyphs) + create-builder-config.py (generates config.yaml from CSV for 200+ variants)",
+        "convertible_parts": "Builder operations (subspace, remap, hbsubset) are already used in the generated config",
+        "blocking_gaps": [
+          "Guidelines addition: decomposes components and adds guideline rectangles — must run before builder",
+          "Config generation: generates YAML config from CSV data — preprocessing step"
+        ],
+        "missing_features_needed": ["preCompile"]
+      },
+      {
+        "repo": "DylanYoungKoto/Stack-Sans",
+        "current_prebuild": "prepare_notch.py (copies .glyphspackage, renames family, replaces glyph layers with .ss01 variants)",
+        "convertible_parts": "rename operation could handle family name change",
+        "blocking_gaps": [
+          "Glyph layer replacement: replaces default layers with .ss01 layers — no declarative equivalent",
+          "Source file copying/modification before build"
+        ],
+        "missing_features_needed": ["glyphs_source_modification", "preCompile"]
+      }
+    ],
+    "not_convertible": [
+      {
+        "repo": "MoonlitOwen/CactusSerif",
+        "current_prebuild": "extract.py (.ufoz extraction) + fcp_ufo_process.py (BOM encoding fix, fontinfo patching, features.fea fixing, version setting, unicodeVariationSequences, openTypeMeta, BASE table)",
+        "reason": "Too many custom UFO-level fixes specific to Font Creator 15 output. Would need preCompile hooks or commit pre-processed UFOs.",
+        "also_applies_to": ["MoonlitOwen/ChocolateSans", "MoonlitOwen/ThenKhung"],
+        "missing_features_needed": ["preCompile"]
+      },
+      {
+        "repo": "Gissio/font_tiny5",
+        "current_prebuild": "bdf2ufo.py (converts BDF pixel font format to UFO with custom axes + generates config.yaml)",
+        "reason": "Entirely custom source format conversion (BDF → UFO with custom axes ESIZ/ROND/BLED/XESP/EJIT). Must generate sources before builder runs.",
+        "missing_features_needed": ["preCompile"]
+      },
+      {
+        "repo": "balt-dev/bytesized-gf",
+        "current_prebuild": "create.py (programmatically creates UFO from glyphs.toml + image files, generates OT features)",
+        "reason": "Entirely programmatic UFO creation. Must generate sources before builder runs.",
+        "missing_features_needed": ["preCompile"]
+      }
+    ],
+    "grouped_missing_features": {
+      "_description": "Missing gftools-builder features grouped by type, with the repos that would benefit from each",
+      "preCompile_hooks": {
+        "description": "Run arbitrary shell commands before the build graph is created. This is the most broadly useful missing feature — it would unblock ALL partially/not-convertible repos by allowing them to run their custom scripts declaratively from config.yaml.",
+        "proposed_config": "preCompile:\n  - python3 scripts/fix_sources.py\n  - bash scripts/generate_data.sh",
+        "would_benefit": [
+          "aaronbell/LxgwWenkaiTC",
+          "googlefonts/googlesans-persian",
+          "googlefonts/googlesans-myanmar",
+          "googlefonts/googlesans-gurage",
+          "googlefonts/youtube-sans",
+          "aaronbell/signika",
+          "Gue3bara/Cairo",
+          "mishamyrt/Lilex",
+          "TypeTogether/Playwrite",
+          "DylanYoungKoto/Stack-Sans",
+          "MoonlitOwen/CactusSerif",
+          "Gissio/font_tiny5",
+          "balt-dev/bytesized-gf"
+        ],
+        "count": 13,
+        "priority": "HIGH — universal escape hatch, unblocks all repos"
+      },
+      "source_ds_manipulation": {
+        "description": "Declarative config keys for modifying the designspace before compilation: dropping sources/instances by name or location, adjusting axis ranges (min/default/max), removing axes.",
+        "proposed_config": "dropSources:\n  - name: Light\n  - name: Medium\naxisRanges:\n  wght:\n    min: 400\n    default: 400\ndropAxes:\n  - ital\n  - GSUI",
+        "would_benefit": [
+          "googlefonts/googlesans-persian",
+          "googlefonts/googlesans-myanmar",
+          "googlefonts/googlesans-flex"
+        ],
+        "count": 3,
+        "priority": "MEDIUM — targeted at Google Sans family repos"
+      },
+      "include_glyphs_parameter": {
+        "description": "Add an include_glyphs parameter to includeSubsets (parallel to exclude_glyphs) to allow glyph-name-based whitelist selection from donors. Currently only codepoint-based selection is supported.",
+        "proposed_config": "includeSubsets:\n  - from: path/to/japanese.designspace\n    include_glyphs:\n      - glyph_name_1\n      - glyph_name_2\n    # or: include_glyphs_file: glyphs_to_merge.txt",
+        "would_benefit": [
+          "googlefonts/youtube-sans"
+        ],
+        "count": 1,
+        "priority": "LOW — only youtube-sans needs this"
+      },
+      "target_ufo_subsetting": {
+        "description": "A mechanism to remove glyphs FROM the target UFO (the inverse of includeSubsets). Equivalent to ufomerge.subset_ufo().",
+        "proposed_config": "excludeFromSource:\n  - glyphs:\n      - glyph_to_remove_1\n    codepoints:\n      - 0x1234",
+        "would_benefit": [
+          "googlefonts/googlesans-gurage"
+        ],
+        "count": 1,
+        "priority": "LOW — only googlesans-gurage needs this"
+      },
+      "glyphs_source_modification": {
+        "description": "Declarative operations on .glyphs source files: layer removal, layer replacement (e.g. swap default with .ss01), custom parameter setting. Very diverse — may be better served by preCompile hooks.",
+        "would_benefit": [
+          "Gue3bara/Cairo",
+          "DylanYoungKoto/Stack-Sans"
+        ],
+        "count": 2,
+        "priority": "LOW — too diverse to standardize, preCompile is better solution"
+      },
+      "custom_filter_injection": {
+        "description": "Inject arbitrary ufo2ft filters into UFO libs before compilation. Currently only flattenComponents and decomposeTransformedComponents are declarative.",
+        "proposed_config": "ufoFilters:\n  - name: propagateAnchors\n  - name: transformComponents\n    args: {scaleX: 0.999}",
+        "would_benefit": [
+          "aaronbell/signika",
+          "googlefonts/googlesans-myanmar"
+        ],
+        "count": 2,
+        "priority": "LOW — could be handled by preCompile"
       }
     }
   }

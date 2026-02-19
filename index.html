@@ -809,6 +809,29 @@ includeSubsets:
                 </div>
 
                 <div class="guide-section">
+                    <h3>Migration Analysis</h3>
+                    <p>Per-repo assessment of whether pre-build scripts can be fully replaced by existing gftools-builder features.</p>
+
+                    <h4 style="color: #4caf50;">Fully Convertible (3 repos)</h4>
+                    <p>These repos can eliminate their pre-build scripts entirely today by pointing <code>sources:</code> directly at their <code>.glyphs</code>/<code>.glyphspackage</code> files:</p>
+                    <div id="migration-fully-convertible"></div>
+
+                    <h4 style="color: #ff9800;">Partially Convertible (10 repos)</h4>
+                    <p>The merge/conversion parts can use existing features, but other operations still need custom scripts or new builder features:</p>
+                    <div id="migration-partially-convertible"></div>
+
+                    <h4 style="color: #f44336;">Not Convertible (3 repos + 2 siblings)</h4>
+                    <p>These repos have pre-build scripts too custom for any existing builder features:</p>
+                    <div id="migration-not-convertible"></div>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Grouped Missing Features (Proposals)</h3>
+                    <p>Missing gftools-builder features grouped by type, ordered by priority and number of repos that would benefit.</p>
+                    <div id="missing-features-table"></div>
+                </div>
+
+                <div class="guide-section">
                     <h3>Full Repo Inventory</h3>
                     <p>Complete inventory of repos and their pre-compile action types.</p>
                     <div class="filter-bar builds-filter">
@@ -824,12 +847,12 @@ includeSubsets:
                 <div class="guide-section">
                     <h3>Key Insights (Revised)</h3>
                     <ol>
-                        <li><strong>The builder already covers the top patterns</strong> &mdash; <code>includeSubsets</code> handles UFO merging, <code>glyphs2ds</code> handles conversion, <code>flattenComponents</code> handles filter injection</li>
-                        <li><strong>No new <code>mergeUFOs</code> feature is needed</strong> &mdash; the existing <code>includeSubsets</code> config key is largely equivalent to what was proposed</li>
-                        <li><strong>5 repos with custom merge scripts</strong> should be investigated to confirm they can migrate to <code>includeSubsets</code></li>
-                        <li><strong>Source manipulation</strong> (Glyphs or UFO, ~21 repos) is too diverse to standardize &mdash; the <code>exec</code> recipe operation serves as an escape hatch</li>
-                        <li><strong>~66 repos</strong> have fully custom build pipelines not using gftools-builder &mdash; builder features won't help them</li>
-                        <li><strong>The main value now</strong> is documentation and migration guides, not new features</li>
+                        <li><strong>3 repos can convert today</strong> &mdash; 42dot-Sans, Asta-Sans, and Overpass can eliminate pre-build scripts by pointing sources directly at .glyphs/.glyphspackage files</li>
+                        <li><strong>10 repos are partially convertible</strong> &mdash; merge/conversion parts work with existing features, but designspace manipulation, target subsetting, and source modification gaps block full migration</li>
+                        <li><strong><code>preCompile</code> hooks would unblock all 13 repos</strong> &mdash; despite opposition to generic shell execution (issue #1170), it's the single most impactful missing feature</li>
+                        <li><strong>Source-level DS manipulation</strong> is the most targeted gap &mdash; a <code>dropSources</code>/<code>axisRanges</code>/<code>dropAxes</code> config would help 3 Google Sans repos</li>
+                        <li><strong>Other gaps are too niche</strong> &mdash; <code>include_glyphs</code> (youtube-sans only), target UFO subsetting (googlesans-gurage only), custom filter injection (2 repos)</li>
+                        <li><strong>~66 repos</strong> have fully custom pipelines not using gftools-builder &mdash; builder features won't help them</li>
                     </ol>
                 </div>
 

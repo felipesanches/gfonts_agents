@@ -1829,6 +1829,9 @@ function renderPrebuildResearch(data) {
     // Merge repos detail
     renderMergeRepos(repos);
 
+    // Migration analysis
+    renderMigrationAnalysis(data);
+
     // Full inventory table
     renderPrebuildInventory(repos);
 
@@ -2050,4 +2053,85 @@ function filterPrebuild() {
     });
 
     renderPrebuildTable(document.getElementById('prebuild-table-container'), filtered, allRepos);
+}
+
+function renderMigrationAnalysis(data) {
+    const migration = data.migration_analysis;
+    if (!migration) return;
+
+    // Fully convertible
+    const fullyEl = document.getElementById('migration-fully-convertible');
+    if (fullyEl && migration.fully_convertible) {
+        const table = document.createElement('table');
+        table.className = 'guide-table';
+        table.innerHTML = `
+            <thead><tr><th>Repository</th><th>Current Pre-Build</th><th>Migration Action</th></tr></thead>
+            <tbody>
+                ${migration.fully_convertible.map(r => `<tr>
+                    <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                    <td><code>${escapeHtml(r.current_prebuild)}</code></td>
+                    <td>${escapeHtml(r.migration_action)}</td>
+                </tr>`).join('')}
+            </tbody>`;
+        fullyEl.appendChild(table);
+    }
+
+    // Partially convertible
+    const partialEl = document.getElementById('migration-partially-convertible');
+    if (partialEl && migration.partially_convertible) {
+        const table = document.createElement('table');
+        table.className = 'guide-table';
+        table.innerHTML = `
+            <thead><tr><th>Repository</th><th>Convertible Parts</th><th>Blocking Gaps</th></tr></thead>
+            <tbody>
+                ${migration.partially_convertible.map(r => `<tr>
+                    <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                    <td>${escapeHtml(r.convertible_parts)}</td>
+                    <td><ul style="margin:0;padding-left:1.2em;">${r.blocking_gaps.map(g => `<li style="font-size:0.9em;">${escapeHtml(g)}</li>`).join('')}</ul></td>
+                </tr>`).join('')}
+            </tbody>`;
+        partialEl.appendChild(table);
+    }
+
+    // Not convertible
+    const notEl = document.getElementById('migration-not-convertible');
+    if (notEl && migration.not_convertible) {
+        const table = document.createElement('table');
+        table.className = 'guide-table';
+        table.innerHTML = `
+            <thead><tr><th>Repository</th><th>Reason</th></tr></thead>
+            <tbody>
+                ${migration.not_convertible.map(r => `<tr>
+                    <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a>${r.also_applies_to ? '<br><span style="font-size:0.85em;color:#888;">Also: ' + r.also_applies_to.join(', ') + '</span>' : ''}</td>
+                    <td>${escapeHtml(r.reason)}</td>
+                </tr>`).join('')}
+            </tbody>`;
+        notEl.appendChild(table);
+    }
+
+    // Missing features
+    const featuresEl = document.getElementById('missing-features-table');
+    if (featuresEl && migration.grouped_missing_features) {
+        const features = Object.entries(migration.grouped_missing_features)
+            .filter(([k]) => k !== '_description')
+            .sort((a, b) => (b[1].count || 0) - (a[1].count || 0));
+
+        const table = document.createElement('table');
+        table.className = 'guide-table';
+        table.innerHTML = `
+            <thead><tr><th>Missing Feature</th><th>Priority</th><th>Repos</th><th>Description</th></tr></thead>
+            <tbody>
+                ${features.map(([key, f]) => {
+                    const priorityColor = f.priority && f.priority.startsWith('HIGH') ? '#f44336' :
+                                          f.priority && f.priority.startsWith('MEDIUM') ? '#ff9800' : '#2196f3';
+                    return `<tr>
+                        <td><strong>${escapeHtml(key.replace(/_/g, ' '))}</strong></td>
+                        <td><span style="color:${priorityColor};font-weight:bold;">${escapeHtml((f.priority || '').split(' — ')[0])}</span></td>
+                        <td>${f.count || 0}</td>
+                        <td>${escapeHtml(f.description)}${f.proposed_config ? '<br><details><summary>Example config</summary><pre style="background:#1a1a1a;padding:0.5em;margin-top:0.5em;font-size:0.85em;white-space:pre-wrap;">' + escapeHtml(f.proposed_config) + '</pre></details>' : ''}</td>
+                    </tr>`;
+                }).join('')}
+            </tbody>`;
+        featuresEl.appendChild(table);
+    }
 }
