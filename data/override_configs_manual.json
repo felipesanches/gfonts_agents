@@ -1,0 +1,282 @@
+{
+  "Abyssinica SIL": {
+    "sources": [
+      "source/AbyssinicaSIL.designspace"
+    ]
+  },
+  "Akatab": {
+    "sources": [
+      "source/akatab.designspace"
+    ]
+  },
+  "Harmattan": {
+    "sources": [
+      "source/Harmattan.designspace"
+    ]
+  },
+  "Lateef": {
+    "sources": [
+      "source/lateef-edit.designspace"
+    ]
+  },
+  "Scheherazade New": {
+    "sources": [
+      "source/ScheherazadeNew.designspace"
+    ]
+  },
+  "Tirra": {
+    "sources": [
+      "source/tirra.designspace"
+    ]
+  },
+  "Amiri": {
+    "sources": [
+      "sources/Amiri.glyphspackage"
+    ]
+  },
+  "Amiri Quran": {
+    "sources": [
+      "sources/Amiri.glyphspackage"
+    ]
+  },
+  "Bitcount Grid Double": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Grid Double Ink": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Grid Single": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Grid Single Ink": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Ink": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Prop Double": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Prop Double Ink": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Prop Single": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "Bitcount Single": {
+    "sources": [
+      "sources/Bitcount_Template.designspace"
+    ]
+  },
+  "BIZ UDGothic": {
+    "sources": [
+      "sources/extensions/BIZ-UDGothicExt.glyphs"
+    ]
+  },
+  "BIZ UDMincho": {
+    "sources": [
+      "sources/extensions/BIZ-UDMinchoExt.glyphs"
+    ]
+  },
+  "BIZ UDPGothic": {
+    "sources": [
+      "sources/extensions/BIZ-UDPGothicExt.glyphs"
+    ]
+  },
+  "BIZ UDPMincho": {
+    "sources": [
+      "sources/extensions/BIZ-UDPMinchoExt.glyphs"
+    ]
+  },
+  "Black Ops One": {
+    "sources": [
+      "sources/BlackOpsOne.glyphs"
+    ]
+  },
+  "Cormorant Upright": {
+    "sources": [
+      "4. Glyphs Source Files/CormorantUpright.glyphs"
+    ]
+  },
+  "Sigmar": {
+    "sources": [
+      "archive/Sigmar.glyphs"
+    ]
+  },
+  "Trocchi": {
+    "sources": [
+      "sources/Trocchi.glyphs"
+    ]
+  },
+  "IBM Plex Mono": {
+    "sources": [
+      "IBM-Plex-Mono/sources/masters/IBM Plex Mono Roman.designspace",
+      "IBM-Plex-Mono/sources/masters/IBM Plex Mono Italic.designspace"
+    ]
+  },
+  "IBM Plex Sans": {
+    "sources": [
+      "IBM-Plex-Sans/sources/masters/IBM Plex Sans Roman.designspace",
+      "IBM-Plex-Sans/sources/masters/IBM Plex Sans Italic.designspace"
+    ]
+  },
+  "IBM Plex Sans Arabic": {
+    "sources": [
+      "IBM-Plex-Sans-Arabic/sources/masters/IBM Plex Sans Arabic.designspace"
+    ]
+  },
+  "IBM Plex Sans JP": {
+    "sources": [
+      "IBM-Plex-Sans-JP/sources/masters/IBM Plex Sans JP.glyphs"
+    ]
+  },
+  "Inter": {
+    "sources": [
+      "src/Inter-Roman.glyphspackage",
+      "src/Inter-Italic.glyphspackage"
+    ]
+  },
+  "Libertinus Keyboard": {
+    "sources": [
+      "sources/LibertinusKeyboard-Regular.sfd"
+    ]
+  },
+  "Libertinus Math": {
+    "sources": [
+      "sources/LibertinusMath-Regular.sfd"
+    ]
+  },
+  "Libertinus Mono": {
+    "sources": [
+      "sources/LibertinusMono-Regular.sfd"
+    ]
+  },
+  "Libertinus Sans": {
+    "sources": [
+      "sources/LibertinusSans-Regular.sfd",
+      "sources/LibertinusSans-Bold.sfd",
+      "sources/LibertinusSans-Italic.sfd"
+    ]
+  },
+  "Libertinus Serif": {
+    "sources": [
+      "sources/LibertinusSerif-Regular.sfd",
+      "sources/LibertinusSerif-Bold.sfd",
+      "sources/LibertinusSerif-Italic.sfd",
+      "sources/LibertinusSerif-BoldItalic.sfd"
+    ]
+  },
+  "Libertinus Serif Display": {
+    "sources": [
+      "sources/LibertinusSerifDisplay-Regular.sfd"
+    ]
+  },
+  "Open Sans": {
+    "sources": [
+      "original source/OpenSans-Italic.glyphs",
+      "original source/OpenSans.glyphs"
+    ]
+  },
+  "Public Sans": {
+    "sources": [
+      "sources/PublicSans.glyphs",
+      "sources/PublicSans-Italic.glyphs"
+    ]
+  },
+  "Recursive": {
+    "sources": [
+      "src/Recursive.designspace"
+    ]
+  },
+  "Reem Kufi": {
+    "sources": [
+      "sources/ReemKufi.glyphspackage"
+    ]
+  },
+  "Reem Kufi Fun": {
+    "sources": [
+      "sources/ReemKufi.glyphspackage"
+    ]
+  },
+  "Reem Kufi Ink": {
+    "sources": [
+      "sources/ReemKufi.glyphspackage"
+    ]
+  },
+  "Roboto": {
+    "sources": [
+      "sources/Roboto.designspace"
+    ]
+  },
+  "Sen": {
+    "sources": [
+      "sources/sen.glyphs"
+    ]
+  },
+  "Shantell Sans": {
+    "sources": [
+      "sources/ShantellSans.glyphspackage"
+    ]
+  },
+  "Tilt Neon": {
+    "sources": [
+      "sources/Tilt Neon/Rotated/TiltNeon[XROT,YROT].designspace"
+    ]
+  },
+  "Tilt Prism": {
+    "sources": [
+      "sources/Tilt Prism/Rotated 01 Inline/Tilt-Prism.designspace"
+    ]
+  },
+  "Tilt Warp": {
+    "sources": [
+      "sources/Tilt Warp/Rotated/TiltWarp[XROT,YROT].designspace"
+    ]
+  },
+  "Vazirmatn": {
+    "sources": [
+      "scripts/Vazirmatn.designspace"
+    ]
+  },
+  "WDXL Lubrifont JP N": {
+    "sources": [
+      "sources/WDXL-Lubrifont-TC.designspace"
+    ]
+  },
+  "WDXL Lubrifont SC": {
+    "sources": [
+      "sources/WDXL-Lubrifont-TC.designspace"
+    ]
+  },
+  "WDXL Lubrifont TC": {
+    "sources": [
+      "sources/WDXL-Lubrifont-TC.designspace"
+    ]
+  },
+  "Yaldevi Colombo": {
+    "sources": [
+      "sources/glyphs/Yaldevi.glyphs"
+    ]
+  },
+  "Zain": {
+    "sources": [
+      "Source/1-Drawings/Zain-Regular.glyphs"
+    ]
+  }
+}

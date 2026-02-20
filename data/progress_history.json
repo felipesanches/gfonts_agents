@@ -36,6 +36,18 @@
         "no_source": 14
       },
       "source": "claude_code"
+    },
+    {
+      "timestamp": "2026-02-20T01:12:55.939237-03:00",
+      "summary": {
+        "total": 1948,
+        "complete": 1131,
+        "missing_config": 44,
+        "missing_commit": 82,
+        "incomplete_source": 134,
+        "no_source": 557
+      },
+      "source": "claude_code"
     }
   ]
 }

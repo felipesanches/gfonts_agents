@@ -1,0 +1,3686 @@
+[
+  {
+    "family_name": "ABeeZee",
+    "path": "ofl/abeezee/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "ADLaM Display",
+    "path": "ofl/adlamdisplay/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "AR One Sans",
+    "path": "ofl/aronesans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Advent Pro",
+    "path": "ofl/adventpro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Afacad",
+    "path": "ofl/afacad/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "manual"
+  },
+  {
+    "family_name": "Afacad Flux",
+    "path": "ofl/afacadflux/METADATA.pb",
+    "config_yaml": "sources/config_flux.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Agbalumo",
+    "path": "ofl/agbalumo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Agdasima",
+    "path": "ofl/agdasima/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Agu Display",
+    "path": "ofl/agudisplay/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alata",
+    "path": "ofl/alata/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Albert Sans",
+    "path": "ofl/albertsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Aleo",
+    "path": "ofl/aleo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alex Brush",
+    "path": "ofl/alexbrush/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alexandria",
+    "path": "ofl/alexandria/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alice",
+    "path": "ofl/alice/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alike",
+    "path": "ofl/alike/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alike Angular",
+    "path": "ofl/alikeangular/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alkatra",
+    "path": "ofl/alkatra/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Allison",
+    "path": "ofl/allison/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Allura",
+    "path": "ofl/allura/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alumni Sans Collegiate One",
+    "path": "ofl/alumnisanscollegiateone/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alumni Sans Collegiate One SC",
+    "path": "ofl/alumnisanscollegiateonesc/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alumni Sans Inline One",
+    "path": "ofl/alumnisansinlineone/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alumni Sans Pinstripe",
+    "path": "ofl/alumnisanspinstripe/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Alumni Sans SC",
+    "path": "ofl/alumnisanssc/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Amarna",
+    "path": "ofl/amarna/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Anaheim",
+    "path": "ofl/anaheim/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Anta",
+    "path": "ofl/anta/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Anton",
+    "path": "ofl/anton/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Anton SC",
+    "path": "ofl/antonsc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Antonio",
+    "path": "ofl/antonio/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Anuphan",
+    "path": "ofl/anuphan/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Anybody",
+    "path": "ofl/anybody/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Archivo",
+    "path": "ofl/archivo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Archivo Narrow",
+    "path": "ofl/archivonarrow/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Are You Serious",
+    "path": "ofl/areyouserious/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Arizonia",
+    "path": "ofl/arizonia/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Asap",
+    "path": "ofl/asap/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Asap Condensed",
+    "path": "ofl/asapcondensed/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "manual"
+  },
+  {
+    "family_name": "Asset",
+    "path": "ofl/asset/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Atkinson Hyperlegible",
+    "path": "ofl/atkinsonhyperlegible/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Atkinson Hyperlegible Mono",
+    "path": "ofl/atkinsonhyperlegiblemono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Atkinson Hyperlegible Next",
+    "path": "ofl/atkinsonhyperlegiblenext/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Azeret Mono",
+    "path": "ofl/azeretmono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Babylonica",
+    "path": "ofl/babylonica/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bacasime Antique",
+    "path": "ofl/bacasimeantique/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bad Script",
+    "path": "ofl/badscript/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bagel Fat One",
+    "path": "ofl/bagelfatone/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bakbak One",
+    "path": "ofl/bakbakone/METADATA.pb",
+    "config_yaml": "sources/builder.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Balsamiq Sans",
+    "path": "ofl/balsamiqsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bangers",
+    "path": "ofl/bangers/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Baskervville",
+    "path": "ofl/baskervville/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Baskervville SC",
+    "path": "ofl/baskervvillesc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Be Vietnam Pro",
+    "path": "ofl/bevietnampro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Beau Rivage",
+    "path": "ofl/beaurivage/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Belanosima",
+    "path": "ofl/belanosima/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Benne",
+    "path": "ofl/benne/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bevan",
+    "path": "ofl/bevan/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Big Shoulders",
+    "path": "ofl/bigshoulders/METADATA.pb",
+    "config_yaml": "Big-Shoulders/sources/config.yml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Big Shoulders Inline",
+    "path": "ofl/bigshouldersinline/METADATA.pb",
+    "config_yaml": "Big-Shoulders-Inline/sources/config.yml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Big Shoulders Stencil",
+    "path": "ofl/bigshouldersstencil/METADATA.pb",
+    "config_yaml": "Big-Shoulders-Stencil/sources/config.yml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Bilbo",
+    "path": "ofl/bilbo/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "BioRhyme",
+    "path": "ofl/biorhyme/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Birthstone",
+    "path": "ofl/birthstone/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Birthstone Bounce",
+    "path": "ofl/birthstonebounce/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bitter",
+    "path": "ofl/bitter/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bodoni Moda",
+    "path": "ofl/bodonimoda/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bodoni Moda SC",
+    "path": "ofl/bodonimodasc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Boldonse",
+    "path": "ofl/boldonse/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bona Nova",
+    "path": "ofl/bonanova/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bona Nova SC",
+    "path": "ofl/bonanovasc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bonheur Royale",
+    "path": "ofl/bonheurroyale/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Brawler",
+    "path": "ofl/brawler/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bricolage Grotesque",
+    "path": "ofl/bricolagegrotesque/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Briem Hand",
+    "path": "ofl/briemhand/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "manual"
+  },
+  {
+    "family_name": "Brygada 1918",
+    "path": "ofl/brygada1918/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Buenard",
+    "path": "ofl/buenard/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Bytesized",
+    "path": "ofl/bytesized/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Cal Sans",
+    "path": "ofl/calsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Calistoga",
+    "path": "ofl/calistoga/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Caprasimo",
+    "path": "ofl/caprasimo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Caramel",
+    "path": "ofl/caramel/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Carattere",
+    "path": "ofl/carattere/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Changa",
+    "path": "ofl/changa/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Cherish",
+    "path": "ofl/cherish/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Chivo Mono",
+    "path": "ofl/chivomono/METADATA.pb",
+    "config_yaml": "sources/configmono.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Climate Crisis",
+    "path": "ofl/climatecrisis/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Comforter",
+    "path": "ofl/comforter/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Comforter Brush",
+    "path": "ofl/comforterbrush/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Comic Relief",
+    "path": "ofl/comicrelief/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Comme",
+    "path": "ofl/comme/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Commissioner",
+    "path": "ofl/commissioner/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Corinthia",
+    "path": "ofl/corinthia/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Cossette Texte",
+    "path": "ofl/cossettetexte/METADATA.pb",
+    "config_yaml": "sources/config-texte.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Cossette Titre",
+    "path": "ofl/cossettetitre/METADATA.pb",
+    "config_yaml": "sources/config-titre.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Crimson Text",
+    "path": "ofl/crimsontext/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Cutive",
+    "path": "ofl/cutive/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Cutive Mono",
+    "path": "ofl/cutivemono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Damion",
+    "path": "ofl/damion/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Dancing Script",
+    "path": "ofl/dancingscript/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Danfo",
+    "path": "ofl/danfo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Darker Grotesque",
+    "path": "ofl/darkergrotesque/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "David Libre",
+    "path": "ofl/davidlibre/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Delicious Handrawn",
+    "path": "ofl/delicioushandrawn/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Denk One",
+    "path": "ofl/denkone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Diphylleia",
+    "path": "ofl/diphylleia/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Dosis",
+    "path": "ofl/dosis/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Doto",
+    "path": "ofl/doto/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "DynaPuff",
+    "path": "ofl/dynapuff/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Edu AU VIC WA NT Arrows",
+    "path": "ofl/eduauvicwantarrows/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Edu AU VIC WA NT Dots",
+    "path": "ofl/eduauvicwantdots/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Edu AU VIC WA NT Guides",
+    "path": "ofl/eduauvicwantguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Edu AU VIC WA NT Hand",
+    "path": "ofl/eduauvicwanthand/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Edu AU VIC WA NT Pre",
+    "path": "ofl/eduauvicwantpre/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "El Messiri",
+    "path": "ofl/elmessiri/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Elms Sans",
+    "path": "ofl/elmssans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ephesis",
+    "path": "ofl/ephesis/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Estonia",
+    "path": "ofl/estonia/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Exo 2",
+    "path": "ofl/exo2/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Expletus Sans",
+    "path": "ofl/expletussans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Explora",
+    "path": "ofl/explora/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Faculty Glyphic",
+    "path": "ofl/facultyglyphic/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Familjen Grotesk",
+    "path": "ofl/familjengrotesk/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Faustina",
+    "path": "ofl/faustina/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Festive",
+    "path": "ofl/festive/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Figtree",
+    "path": "ofl/figtree/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Finlandica",
+    "path": "ofl/finlandica/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fleur De Leah",
+    "path": "ofl/fleurdeleah/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Foldit",
+    "path": "ofl/foldit/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fragment Mono",
+    "path": "ofl/fragmentmono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fragment Mono SC",
+    "path": "ofl/fragmentmonosc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Frank Ruhl Libre",
+    "path": "ofl/frankruhllibre/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fredoka",
+    "path": "ofl/fredoka/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Freeman",
+    "path": "ofl/freeman/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fruktur",
+    "path": "ofl/fruktur/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fuggles",
+    "path": "ofl/fuggles/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Funnel Display",
+    "path": "ofl/funneldisplay/METADATA.pb",
+    "config_yaml": "sources/config_display.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Funnel Sans",
+    "path": "ofl/funnelsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Fustat",
+    "path": "ofl/fustat/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Fuzzy Bubbles",
+    "path": "ofl/fuzzybubbles/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ga Maamli",
+    "path": "ofl/gamaamli/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gabarito",
+    "path": "ofl/gabarito/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gabriela",
+    "path": "ofl/gabriela/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gajraj One",
+    "path": "ofl/gajrajone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gantari",
+    "path": "ofl/gantari/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gasoek One",
+    "path": "ofl/gasoekone/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gelasio",
+    "path": "ofl/gelasio/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Genos",
+    "path": "ofl/genos/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Geologica",
+    "path": "ofl/geologica/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Geom",
+    "path": "ofl/geom/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gideon Roman",
+    "path": "ofl/gideonroman/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gidole",
+    "path": "ofl/gidole/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gloock",
+    "path": "ofl/gloock/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Glory",
+    "path": "ofl/glory/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gluten",
+    "path": "ofl/gluten/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Golos Text",
+    "path": "ofl/golostext/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Graduate",
+    "path": "ofl/graduate/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Grandiflora One",
+    "path": "ofl/grandifloraone/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Grape Nuts",
+    "path": "ofl/grapenuts/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Great Vibes",
+    "path": "ofl/greatvibes/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Grechen Fuemen",
+    "path": "ofl/grechenfuemen/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Grey Qo",
+    "path": "ofl/greyqo/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gveret Levin",
+    "path": "ofl/gveretlevin/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Gwendolyn",
+    "path": "ofl/gwendolyn/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Hanken Grotesk",
+    "path": "ofl/hankengrotesk/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Heebo",
+    "path": "ofl/heebo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Holtwood One SC",
+    "path": "ofl/holtwoodonesc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Honk",
+    "path": "ofl/honk/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Host Grotesk",
+    "path": "ofl/hostgrotesk/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Hubot Sans",
+    "path": "ofl/hubotsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Hurricane",
+    "path": "ofl/hurricane/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Imperial Script",
+    "path": "ofl/imperialscript/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Inclusive Sans",
+    "path": "ofl/inclusivesans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ingrid Darling",
+    "path": "ofl/ingriddarling/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Instrument Sans",
+    "path": "ofl/instrumentsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Instrument Serif",
+    "path": "ofl/instrumentserif/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Inter Tight",
+    "path": "ofl/intertight/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Island Moments",
+    "path": "ofl/islandmoments/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Italianno",
+    "path": "ofl/italianno/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Jacquarda Bastarda 9",
+    "path": "ofl/jacquardabastarda9/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Jacquarda Bastarda 9 Charted",
+    "path": "ofl/jacquardabastarda9charted/METADATA.pb",
+    "config_yaml": "sources/config-charted.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Jaro",
+    "path": "ofl/jaro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "JetBrains Mono",
+    "path": "ofl/jetbrainsmono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Joan",
+    "path": "ofl/joan/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Josefin Slab",
+    "path": "ofl/josefinslab/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kablammo",
+    "path": "ofl/kablammo/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kalnia",
+    "path": "ofl/kalnia/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kalnia Glaze",
+    "path": "ofl/kalniaglaze/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kameron",
+    "path": "ofl/kameron/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kantumruy Pro",
+    "path": "ofl/kantumruypro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Karantina",
+    "path": "ofl/karantina/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Karla",
+    "path": "ofl/karla/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kdam Thmor Pro",
+    "path": "ofl/kdamthmorpro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kings",
+    "path": "ofl/kings/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kode Mono",
+    "path": "ofl/kodemono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kolker Brush",
+    "path": "ofl/kolkerbrush/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Konkhmer Sleokchher",
+    "path": "ofl/konkhmersleokchher/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Kumbh Sans",
+    "path": "ofl/kumbhsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Labrada",
+    "path": "ofl/labrada/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Lavishly Yours",
+    "path": "ofl/lavishlyyours/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "League Gothic",
+    "path": "ofl/leaguegothic/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "League Spartan",
+    "path": "ofl/leaguespartan/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Libre Bodoni",
+    "path": "ofl/librebodoni/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Libre Franklin",
+    "path": "ofl/librefranklin/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Licorice",
+    "path": "ofl/licorice/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Life Savers",
+    "path": "ofl/lifesavers/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Linefont",
+    "path": "ofl/linefont/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Liter",
+    "path": "ofl/liter/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Literata",
+    "path": "ofl/literata/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Lora",
+    "path": "ofl/lora/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Love Light",
+    "path": "ofl/lovelight/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Lovers Quarrel",
+    "path": "ofl/loversquarrel/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Lugrasimo",
+    "path": "ofl/lugrasimo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Lumanosimo",
+    "path": "ofl/lumanosimo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Lunasima",
+    "path": "ofl/lunasima/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Luxurious Roman",
+    "path": "ofl/luxuriousroman/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Luxurious Script",
+    "path": "ofl/luxuriousscript/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ma Shan Zheng",
+    "path": "ofl/mashanzheng/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Madimi One",
+    "path": "ofl/madimione/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mako",
+    "path": "ofl/mako/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Maname",
+    "path": "ofl/maname/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mansalva",
+    "path": "ofl/mansalva/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Marmelad",
+    "path": "ofl/marmelad/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Martian Mono",
+    "path": "ofl/martianmono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Matangi",
+    "path": "ofl/matangi/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Matemasie",
+    "path": "ofl/matemasie/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mea Culpa",
+    "path": "ofl/meaculpa/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Meow Script",
+    "path": "ofl/meowscript/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Merienda",
+    "path": "ofl/merienda/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Merriweather",
+    "path": "ofl/merriweather/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Metrophobic",
+    "path": "ofl/metrophobic/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Micro 5",
+    "path": "ofl/micro5/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Micro 5 Charted",
+    "path": "ofl/micro5charted/METADATA.pb",
+    "config_yaml": "sources/config-charted.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Miriam Libre",
+    "path": "ofl/miriamlibre/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Moderustic",
+    "path": "ofl/moderustic/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Moirai One",
+    "path": "ofl/moiraione/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Momo Signature",
+    "path": "ofl/momosignature/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Momo Trust Display",
+    "path": "ofl/momotrustdisplay/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Momo Trust Sans",
+    "path": "ofl/momotrustsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mona Sans",
+    "path": "ofl/monasans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Monda",
+    "path": "ofl/monda/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Monomakh",
+    "path": "ofl/monomakh/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "MonteCarlo",
+    "path": "ofl/montecarlo/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Montserrat",
+    "path": "ofl/montserrat/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Montserrat Underline",
+    "path": "ofl/montserratunderline/METADATA.pb",
+    "config_yaml": "sources/config-underline.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Moo Lah Lah",
+    "path": "ofl/moolahlah/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mooli",
+    "path": "ofl/mooli/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Moon Dance",
+    "path": "ofl/moondance/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ms Madi",
+    "path": "ofl/msmadi/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mulish",
+    "path": "ofl/mulish/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Murecho",
+    "path": "ofl/murecho/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "MuseoModerno",
+    "path": "ofl/museomoderno/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "My Soul",
+    "path": "ofl/mysoul/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Mynerve",
+    "path": "ofl/mynerve/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "National Park",
+    "path": "ofl/nationalpark/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Neonderthaw",
+    "path": "ofl/neonderthaw/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "New Amsterdam",
+    "path": "ofl/newamsterdam/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Norican",
+    "path": "ofl/norican/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Music",
+    "path": "ofl/notomusic/METADATA.pb",
+    "config_yaml": "sources/config-music.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Nastaliq Urdu",
+    "path": "ofl/notonastaliqurdu/METADATA.pb",
+    "config_yaml": "sources/config-nastaliq-urdu.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Anatolian Hieroglyphs",
+    "path": "ofl/notosansanatolianhieroglyphs/METADATA.pb",
+    "config_yaml": "sources/config-sans-anatolian-hieroglyphs.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Avestan",
+    "path": "ofl/notosansavestan/METADATA.pb",
+    "config_yaml": "sources/config-sans-avestan.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Bamum",
+    "path": "ofl/notosansbamum/METADATA.pb",
+    "config_yaml": "sources/config-sans-bamum.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Bassa Vah",
+    "path": "ofl/notosansbassavah/METADATA.pb",
+    "config_yaml": "sources/config-sans-bassa-vah.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Batak",
+    "path": "ofl/notosansbatak/METADATA.pb",
+    "config_yaml": "sources/config-sans-batak.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Bhaiksuki",
+    "path": "ofl/notosansbhaiksuki/METADATA.pb",
+    "config_yaml": "sources/config-sans-bhaiksuki.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Brahmi",
+    "path": "ofl/notosansbrahmi/METADATA.pb",
+    "config_yaml": "sources/config-sans-brahmi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Buginese",
+    "path": "ofl/notosansbuginese/METADATA.pb",
+    "config_yaml": "sources/config-sans-buginese.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Buhid",
+    "path": "ofl/notosansbuhid/METADATA.pb",
+    "config_yaml": "sources/config-sans-buhid.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Canadian Aboriginal",
+    "path": "ofl/notosanscanadianaboriginal/METADATA.pb",
+    "config_yaml": "sources/config-sans-canadian-aboriginal.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Carian",
+    "path": "ofl/notosanscarian/METADATA.pb",
+    "config_yaml": "sources/config-sans-carian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Caucasian Albanian",
+    "path": "ofl/notosanscaucasianalbanian/METADATA.pb",
+    "config_yaml": "sources/config-sans-caucasian-albanian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Chakma",
+    "path": "ofl/notosanschakma/METADATA.pb",
+    "config_yaml": "sources/config-sans-chakma.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Cham",
+    "path": "ofl/notosanscham/METADATA.pb",
+    "config_yaml": "sources/config-sans-cham.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Cherokee",
+    "path": "ofl/notosanscherokee/METADATA.pb",
+    "config_yaml": "sources/config-sans-cherokee.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Chorasmian",
+    "path": "ofl/notosanschorasmian/METADATA.pb",
+    "config_yaml": "sources/config-sans-chorasmian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Coptic",
+    "path": "ofl/notosanscoptic/METADATA.pb",
+    "config_yaml": "sources/config-sans-coptic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Cuneiform",
+    "path": "ofl/notosanscuneiform/METADATA.pb",
+    "config_yaml": "sources/config-sans-cuneiform.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Cypriot",
+    "path": "ofl/notosanscypriot/METADATA.pb",
+    "config_yaml": "sources/config-sans-cypriot.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Cypro Minoan",
+    "path": "ofl/notosanscyprominoan/METADATA.pb",
+    "config_yaml": "sources/config-sans-cypro-minoan.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Deseret",
+    "path": "ofl/notosansdeseret/METADATA.pb",
+    "config_yaml": "sources/config-sans-deseret.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Duployan",
+    "path": "ofl/notosansduployan/METADATA.pb",
+    "config_yaml": "sources/config-sans-duployan.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Egyptian Hieroglyphs",
+    "path": "ofl/notosansegyptianhieroglyphs/METADATA.pb",
+    "config_yaml": "sources/config-sans-egyptian-hieroglyphs.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Elbasan",
+    "path": "ofl/notosanselbasan/METADATA.pb",
+    "config_yaml": "sources/config-sans-elbasan.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Elymaic",
+    "path": "ofl/notosanselymaic/METADATA.pb",
+    "config_yaml": "sources/config-sans-elymaic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Glagolitic",
+    "path": "ofl/notosansglagolitic/METADATA.pb",
+    "config_yaml": "sources/config-sans-glagolitic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Gothic",
+    "path": "ofl/notosansgothic/METADATA.pb",
+    "config_yaml": "sources/config-sans-gothic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Gunjala Gondi",
+    "path": "ofl/notosansgunjalagondi/METADATA.pb",
+    "config_yaml": "sources/config-sans-gunjala-gondi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Hanifi Rohingya",
+    "path": "ofl/notosanshanifirohingya/METADATA.pb",
+    "config_yaml": "sources/config-sans-hanifi-rohingya.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Hanunoo",
+    "path": "ofl/notosanshanunoo/METADATA.pb",
+    "config_yaml": "sources/config-sans-hanunoo.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Hatran",
+    "path": "ofl/notosanshatran/METADATA.pb",
+    "config_yaml": "sources/config-sans-hatran.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Imperial Aramaic",
+    "path": "ofl/notosansimperialaramaic/METADATA.pb",
+    "config_yaml": "sources/config-sans-imperial-aramaic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Indic Siyaq Numbers",
+    "path": "ofl/notosansindicsiyaqnumbers/METADATA.pb",
+    "config_yaml": "sources/config-sans-indic-siyaq-numbers.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Inscriptional Pahlavi",
+    "path": "ofl/notosansinscriptionalpahlavi/METADATA.pb",
+    "config_yaml": "sources/config-sans-inscriptional-pahlavi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Inscriptional Parthian",
+    "path": "ofl/notosansinscriptionalparthian/METADATA.pb",
+    "config_yaml": "sources/config-sans-inscriptional-parthian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Javanese",
+    "path": "ofl/notosansjavanese/METADATA.pb",
+    "config_yaml": "sources/config-sans-javanese.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Kaithi",
+    "path": "ofl/notosanskaithi/METADATA.pb",
+    "config_yaml": "sources/config-sans-kaithi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Kawi",
+    "path": "ofl/notosanskawi/METADATA.pb",
+    "config_yaml": "sources/config-sans-kawi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Kayah Li",
+    "path": "ofl/notosanskayahli/METADATA.pb",
+    "config_yaml": "sources/config-sans-kayah-li.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Kharoshthi",
+    "path": "ofl/notosanskharoshthi/METADATA.pb",
+    "config_yaml": "sources/config-sans-kharoshthi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Khudawadi",
+    "path": "ofl/notosanskhudawadi/METADATA.pb",
+    "config_yaml": "sources/config-sans-khudawadi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Lepcha",
+    "path": "ofl/notosanslepcha/METADATA.pb",
+    "config_yaml": "sources/config-sans-lepcha.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Limbu",
+    "path": "ofl/notosanslimbu/METADATA.pb",
+    "config_yaml": "sources/config-sans-limbu.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Linear A",
+    "path": "ofl/notosanslineara/METADATA.pb",
+    "config_yaml": "sources/config-sans-linear-a.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Linear B",
+    "path": "ofl/notosanslinearb/METADATA.pb",
+    "config_yaml": "sources/config-sans-linear-b.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Lisu",
+    "path": "ofl/notosanslisu/METADATA.pb",
+    "config_yaml": "sources/config-sans-lisu.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Lycian",
+    "path": "ofl/notosanslycian/METADATA.pb",
+    "config_yaml": "sources/config-sans-lycian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Lydian",
+    "path": "ofl/notosanslydian/METADATA.pb",
+    "config_yaml": "sources/config-sans-lydian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Mahajani",
+    "path": "ofl/notosansmahajani/METADATA.pb",
+    "config_yaml": "sources/config-sans-mahajani.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Mandaic",
+    "path": "ofl/notosansmandaic/METADATA.pb",
+    "config_yaml": "sources/config-sans-mandaic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Manichaean",
+    "path": "ofl/notosansmanichaean/METADATA.pb",
+    "config_yaml": "sources/config-sans-manichaean.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Marchen",
+    "path": "ofl/notosansmarchen/METADATA.pb",
+    "config_yaml": "sources/config-sans-marchen.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Masaram Gondi",
+    "path": "ofl/notosansmasaramgondi/METADATA.pb",
+    "config_yaml": "sources/config-sans-masaram-gondi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Mayan Numerals",
+    "path": "ofl/notosansmayannumerals/METADATA.pb",
+    "config_yaml": "sources/config-sans-mayan-numerals.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Medefaidrin",
+    "path": "ofl/notosansmedefaidrin/METADATA.pb",
+    "config_yaml": "sources/config-sans-medefaidrin.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Meetei Mayek",
+    "path": "ofl/notosansmeeteimayek/METADATA.pb",
+    "config_yaml": "sources/config-sans-meetei-mayek.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Mende Kikakui",
+    "path": "ofl/notosansmendekikakui/METADATA.pb",
+    "config_yaml": "sources/config-sans-mende-kikakui.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Meroitic",
+    "path": "ofl/notosansmeroitic/METADATA.pb",
+    "config_yaml": "sources/config-sans-meroitic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Miao",
+    "path": "ofl/notosansmiao/METADATA.pb",
+    "config_yaml": "sources/config-sans-miao.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Modi",
+    "path": "ofl/notosansmodi/METADATA.pb",
+    "config_yaml": "sources/config-sans-modi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Mongolian",
+    "path": "ofl/notosansmongolian/METADATA.pb",
+    "config_yaml": "sources/config-sans-mongolian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Mro",
+    "path": "ofl/notosansmro/METADATA.pb",
+    "config_yaml": "sources/config-sans-mro.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Multani",
+    "path": "ofl/notosansmultani/METADATA.pb",
+    "config_yaml": "sources/config-sans-multani.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Nabataean",
+    "path": "ofl/notosansnabataean/METADATA.pb",
+    "config_yaml": "sources/config-sans-nabataean.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Nag Mundari",
+    "path": "ofl/notosansnagmundari/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Nandinagari",
+    "path": "ofl/notosansnandinagari/METADATA.pb",
+    "config_yaml": "sources/config-sans-nandinagari.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans New Tai Lue",
+    "path": "ofl/notosansnewtailue/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Newa",
+    "path": "ofl/notosansnewa/METADATA.pb",
+    "config_yaml": "sources/config-sans-newa.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Ogham",
+    "path": "ofl/notosansogham/METADATA.pb",
+    "config_yaml": "sources/config-sans-ogham.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Ol Chiki",
+    "path": "ofl/notosansolchiki/METADATA.pb",
+    "config_yaml": "sources/config-sans-ol-chiki.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old Hungarian",
+    "path": "ofl/notosansoldhungarian/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-hungarian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old Italic",
+    "path": "ofl/notosansolditalic/METADATA.pb",
+    "config_yaml": "sources/config-sans-old.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old North Arabian",
+    "path": "ofl/notosansoldnortharabian/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-north-arabian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old Permic",
+    "path": "ofl/notosansoldpermic/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-permic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old Persian",
+    "path": "ofl/notosansoldpersian/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-persian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old Sogdian",
+    "path": "ofl/notosansoldsogdian/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-sogdian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old South Arabian",
+    "path": "ofl/notosansoldsoutharabian/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-south-arabian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Old Turkic",
+    "path": "ofl/notosansoldturkic/METADATA.pb",
+    "config_yaml": "sources/config-sans-old-turkic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Osage",
+    "path": "ofl/notosansosage/METADATA.pb",
+    "config_yaml": "sources/config-sans-osage.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Osmanya",
+    "path": "ofl/notosansosmanya/METADATA.pb",
+    "config_yaml": "sources/config-sans-osmanya.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Pahawh Hmong",
+    "path": "ofl/notosanspahawhhmong/METADATA.pb",
+    "config_yaml": "sources/config-sans-pahawh-hmong.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Palmyrene",
+    "path": "ofl/notosanspalmyrene/METADATA.pb",
+    "config_yaml": "sources/config-sans-palmyrene.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Pau Cin Hau",
+    "path": "ofl/notosanspaucinhau/METADATA.pb",
+    "config_yaml": "sources/config-sans-pau-cin-hau.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans PhagsPa",
+    "path": "ofl/notosansphagspa/METADATA.pb",
+    "config_yaml": "sources/config-sans-phags-pa.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Phoenician",
+    "path": "ofl/notosansphoenician/METADATA.pb",
+    "config_yaml": "sources/config-sans-phoenician.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Psalter Pahlavi",
+    "path": "ofl/notosanspsalterpahlavi/METADATA.pb",
+    "config_yaml": "sources/config-sans-psalter-pahlavi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Runic",
+    "path": "ofl/notosansrunic/METADATA.pb",
+    "config_yaml": "sources/config-sans-runic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Samaritan",
+    "path": "ofl/notosanssamaritan/METADATA.pb",
+    "config_yaml": "sources/config-sans-samaritan.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Saurashtra",
+    "path": "ofl/notosanssaurashtra/METADATA.pb",
+    "config_yaml": "sources/config-sans-saurashtra.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Sharada",
+    "path": "ofl/notosanssharada/METADATA.pb",
+    "config_yaml": "sources/config-sans-sharada.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Shavian",
+    "path": "ofl/notosansshavian/METADATA.pb",
+    "config_yaml": "sources/config-sans-shavian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Siddham",
+    "path": "ofl/notosanssiddham/METADATA.pb",
+    "config_yaml": "sources/config-sans-siddham.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans SignWriting",
+    "path": "ofl/notosanssignwriting/METADATA.pb",
+    "config_yaml": "sources/config-sans-sign-writing.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Sogdian",
+    "path": "ofl/notosanssogdian/METADATA.pb",
+    "config_yaml": "sources/config-sans-sogdian.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Sora Sompeng",
+    "path": "ofl/notosanssorasompeng/METADATA.pb",
+    "config_yaml": "sources/config-sans-sora-sompeng.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Soyombo",
+    "path": "ofl/notosanssoyombo/METADATA.pb",
+    "config_yaml": "sources/config-sans-soyombo.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Sundanese",
+    "path": "ofl/notosanssundanese/METADATA.pb",
+    "config_yaml": "sources/config-sans-sundanese.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Sunuwar",
+    "path": "ofl/notosanssunuwar/METADATA.pb",
+    "config_yaml": "sources/config-sans-sunuwar.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Syloti Nagri",
+    "path": "ofl/notosanssylotinagri/METADATA.pb",
+    "config_yaml": "sources/config-sans-syloti-nagri.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tagalog",
+    "path": "ofl/notosanstagalog/METADATA.pb",
+    "config_yaml": "sources/config-sans-tagalog.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tagbanwa",
+    "path": "ofl/notosanstagbanwa/METADATA.pb",
+    "config_yaml": "sources/config-sans-tagbanwa.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tai Le",
+    "path": "ofl/notosanstaile/METADATA.pb",
+    "config_yaml": "sources/config-sans-tai-le.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tai Tham",
+    "path": "ofl/notosanstaitham/METADATA.pb",
+    "config_yaml": "sources/config-sans-tai-tham.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tai Viet",
+    "path": "ofl/notosanstaiviet/METADATA.pb",
+    "config_yaml": "sources/config-sans-tai-viet.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Takri",
+    "path": "ofl/notosanstakri/METADATA.pb",
+    "config_yaml": "sources/config-sans-takri.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tangsa",
+    "path": "ofl/notosanstangsa/METADATA.pb",
+    "config_yaml": "sources/config-sans-tangsa.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Thaana",
+    "path": "ofl/notosansthaana/METADATA.pb",
+    "config_yaml": "sources/config-sans-thaana.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tifinagh",
+    "path": "ofl/notosanstifinagh/METADATA.pb",
+    "config_yaml": "sources/config-sans-tifinagh.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Tirhuta",
+    "path": "ofl/notosanstirhuta/METADATA.pb",
+    "config_yaml": "sources/config-sans-tirhuta.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Ugaritic",
+    "path": "ofl/notosansugaritic/METADATA.pb",
+    "config_yaml": "sources/config-sans-ugaritic.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Vai",
+    "path": "ofl/notosansvai/METADATA.pb",
+    "config_yaml": "sources/config-sans-vai.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Wancho",
+    "path": "ofl/notosanswancho/METADATA.pb",
+    "config_yaml": "sources/config-sans-wancho.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Warang Citi",
+    "path": "ofl/notosanswarangciti/METADATA.pb",
+    "config_yaml": "sources/config-sans-warang-citi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Yi",
+    "path": "ofl/notosansyi/METADATA.pb",
+    "config_yaml": "sources/config-sans-yi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Sans Zanabazar Square",
+    "path": "ofl/notosanszanabazarsquare/METADATA.pb",
+    "config_yaml": "sources/config-sans-zanabazar-square.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Ahom",
+    "path": "ofl/notoserifahom/METADATA.pb",
+    "config_yaml": "sources/config-serif-ahom.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Bengali",
+    "path": "ofl/notoserifbengali/METADATA.pb",
+    "config_yaml": "sources/config-serif-bengali.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Noto Serif Dogra",
+    "path": "ofl/notoserifdogra/METADATA.pb",
+    "config_yaml": "sources/config-serif-dogra.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Hentaigana",
+    "path": "ofl/notoserifhentaigana/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Makasar",
+    "path": "ofl/notoserifmakasar/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Old Uyghur",
+    "path": "ofl/notoserifolduyghur/METADATA.pb",
+    "config_yaml": "sources/config-serif-old-uyghur.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Ottoman Siyaq",
+    "path": "ofl/notoserifottomansiyaq/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Tangut",
+    "path": "ofl/notoseriftangut/METADATA.pb",
+    "config_yaml": "sources/config-serif-tangut.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Tibetan",
+    "path": "ofl/notoseriftibetan/METADATA.pb",
+    "config_yaml": "sources/config-serif-tibetan.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Todhri",
+    "path": "ofl/notoseriftodhri/METADATA.pb",
+    "config_yaml": "sources/config-serif-todhri.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Toto",
+    "path": "ofl/notoseriftoto/METADATA.pb",
+    "config_yaml": "sources/config-serif-toto.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Serif Yezidi",
+    "path": "ofl/notoserifyezidi/METADATA.pb",
+    "config_yaml": "sources/config-serif-yezidi.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Noto Znamenny Musical Notation",
+    "path": "ofl/notoznamennymusicalnotation/METADATA.pb",
+    "config_yaml": "sources/config-znamenny.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Nunito",
+    "path": "ofl/nunito/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Nunito Sans",
+    "path": "ofl/nunitosans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Oi",
+    "path": "ofl/oi/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ojuju",
+    "path": "ofl/ojuju/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ole",
+    "path": "ofl/ole/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Onest",
+    "path": "ofl/onest/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "manual"
+  },
+  {
+    "family_name": "Oooh Baby",
+    "path": "ofl/ooohbaby/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Orbit",
+    "path": "ofl/orbit/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Oswald",
+    "path": "ofl/oswald/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Outfit",
+    "path": "ofl/outfit/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Overpass",
+    "path": "ofl/overpass/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Overpass Mono",
+    "path": "ofl/overpassmono/METADATA.pb",
+    "config_yaml": "sources/config_mono.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Paprika",
+    "path": "ofl/paprika/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Parkinsans",
+    "path": "ofl/parkinsans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Passions Conflict",
+    "path": "ofl/passionsconflict/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Pathway Extreme",
+    "path": "ofl/pathwayextreme/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Paytone One",
+    "path": "ofl/paytoneone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Petemoss",
+    "path": "ofl/petemoss/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Philosopher",
+    "path": "ofl/philosopher/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Phudu",
+    "path": "ofl/phudu/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Pinyon Script",
+    "path": "ofl/pinyonscript/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Pixelify Sans",
+    "path": "ofl/pixelifysans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Platypi",
+    "path": "ofl/platypi/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playball",
+    "path": "ofl/playball/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playfair",
+    "path": "ofl/playfair/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playpen Sans",
+    "path": "ofl/playpensans/METADATA.pb",
+    "config_yaml": "sources/config-LGC.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Playpen Sans Arabic",
+    "path": "ofl/playpensansarabic/METADATA.pb",
+    "config_yaml": "sources/config-Arabic.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Playpen Sans Deva",
+    "path": "ofl/playpensansdeva/METADATA.pb",
+    "config_yaml": "sources/config-Deva.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Playpen Sans Hebrew",
+    "path": "ofl/playpensanshebrew/METADATA.pb",
+    "config_yaml": "sources/config-Hebrew.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Playpen Sans Thai",
+    "path": "ofl/playpensansthai/METADATA.pb",
+    "config_yaml": "sources/config-Thai.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Playwrite AR",
+    "path": "ofl/playwritear/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AR Guides",
+    "path": "ofl/playwritearguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AT",
+    "path": "ofl/playwriteat/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AT Guides",
+    "path": "ofl/playwriteatguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU NSW",
+    "path": "ofl/playwriteaunsw/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU NSW Guides",
+    "path": "ofl/playwriteaunswguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU QLD",
+    "path": "ofl/playwriteauqld/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU QLD Guides",
+    "path": "ofl/playwriteauqldguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU SA",
+    "path": "ofl/playwriteausa/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU SA Guides",
+    "path": "ofl/playwriteausaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU TAS",
+    "path": "ofl/playwriteautas/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU TAS Guides",
+    "path": "ofl/playwriteautasguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU VIC",
+    "path": "ofl/playwriteauvic/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite AU VIC Guides",
+    "path": "ofl/playwriteauvicguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite BE VLG",
+    "path": "ofl/playwritebevlg/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite BE VLG Guides",
+    "path": "ofl/playwritebevlgguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite BE WAL",
+    "path": "ofl/playwritebewal/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite BE WAL Guides",
+    "path": "ofl/playwritebewalguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite BR",
+    "path": "ofl/playwritebr/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite BR Guides",
+    "path": "ofl/playwritebrguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CA",
+    "path": "ofl/playwriteca/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CA Guides",
+    "path": "ofl/playwritecaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CL",
+    "path": "ofl/playwritecl/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CL Guides",
+    "path": "ofl/playwriteclguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CO",
+    "path": "ofl/playwriteco/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CO Guides",
+    "path": "ofl/playwritecoguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CU",
+    "path": "ofl/playwritecu/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CU Guides",
+    "path": "ofl/playwritecuguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CZ",
+    "path": "ofl/playwritecz/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite CZ Guides",
+    "path": "ofl/playwriteczguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE Grund",
+    "path": "ofl/playwritedegrund/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE Grund Guides",
+    "path": "ofl/playwritedegrundguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE LA",
+    "path": "ofl/playwritedela/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE LA Guides",
+    "path": "ofl/playwritedelaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE SAS",
+    "path": "ofl/playwritedesas/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE SAS Guides",
+    "path": "ofl/playwritedesasguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE VA",
+    "path": "ofl/playwritedeva/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DE VA Guides",
+    "path": "ofl/playwritedevaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DK Loopet",
+    "path": "ofl/playwritedkloopet/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DK Loopet Guides",
+    "path": "ofl/playwritedkloopetguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DK Uloopet",
+    "path": "ofl/playwritedkuloopet/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite DK Uloopet Guides",
+    "path": "ofl/playwritedkuloopetguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ES",
+    "path": "ofl/playwritees/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ES Deco",
+    "path": "ofl/playwriteesdeco/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ES Deco Guides",
+    "path": "ofl/playwriteesdecoguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ES Guides",
+    "path": "ofl/playwriteesguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite FR Moderne",
+    "path": "ofl/playwritefrmoderne/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite FR Moderne Guides",
+    "path": "ofl/playwritefrmoderneguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite FR Trad",
+    "path": "ofl/playwritefrtrad/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite FR Trad Guides",
+    "path": "ofl/playwritefrtradguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite GB J",
+    "path": "ofl/playwritegbj/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite GB J Guides",
+    "path": "ofl/playwritegbjguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite GB S",
+    "path": "ofl/playwritegbs/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite GB S Guides",
+    "path": "ofl/playwritegbsguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite HR",
+    "path": "ofl/playwritehr/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite HR Guides",
+    "path": "ofl/playwritehrguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite HR Lijeva",
+    "path": "ofl/playwritehrlijeva/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite HR Lijeva Guides",
+    "path": "ofl/playwritehrlijevaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite HU",
+    "path": "ofl/playwritehu/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite HU Guides",
+    "path": "ofl/playwritehuguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ID",
+    "path": "ofl/playwriteid/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ID Guides",
+    "path": "ofl/playwriteidguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IE",
+    "path": "ofl/playwriteie/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IE Guides",
+    "path": "ofl/playwriteieguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IN",
+    "path": "ofl/playwritein/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IN Guides",
+    "path": "ofl/playwriteinguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IS",
+    "path": "ofl/playwriteis/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IS Guides",
+    "path": "ofl/playwriteisguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IT Moderna",
+    "path": "ofl/playwriteitmoderna/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IT Moderna Guides",
+    "path": "ofl/playwriteitmodernaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IT Trad",
+    "path": "ofl/playwriteittrad/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite IT Trad Guides",
+    "path": "ofl/playwriteittradguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite MX",
+    "path": "ofl/playwritemx/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite MX Guides",
+    "path": "ofl/playwritemxguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite NG Modern",
+    "path": "ofl/playwritengmodern/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite NG Modern Guides",
+    "path": "ofl/playwritengmodernguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite NL",
+    "path": "ofl/playwritenl/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite NL Guides",
+    "path": "ofl/playwritenlguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite NO",
+    "path": "ofl/playwriteno/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite NO Guides",
+    "path": "ofl/playwritenoguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite PE",
+    "path": "ofl/playwritepe/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite PE Guides",
+    "path": "ofl/playwritepeguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite PL",
+    "path": "ofl/playwritepl/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite PL Guides",
+    "path": "ofl/playwriteplguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite PT",
+    "path": "ofl/playwritept/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite PT Guides",
+    "path": "ofl/playwriteptguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite RO",
+    "path": "ofl/playwritero/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite RO Guides",
+    "path": "ofl/playwriteroguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite SK",
+    "path": "ofl/playwritesk/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite SK Guides",
+    "path": "ofl/playwriteskguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite TZ",
+    "path": "ofl/playwritetz/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite TZ Guides",
+    "path": "ofl/playwritetzguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite US Modern",
+    "path": "ofl/playwriteusmodern/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite US Modern Guides",
+    "path": "ofl/playwriteusmodernguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite US Trad",
+    "path": "ofl/playwriteustrad/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite US Trad Guides",
+    "path": "ofl/playwriteustradguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite VN",
+    "path": "ofl/playwritevn/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite VN Guides",
+    "path": "ofl/playwritevnguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ZA",
+    "path": "ofl/playwriteza/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Playwrite ZA Guides",
+    "path": "ofl/playwritezaguides/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Plus Jakarta Sans",
+    "path": "ofl/plusjakartasans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Pochaevsk",
+    "path": "ofl/pochaevsk/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Poltawski Nowy",
+    "path": "ofl/poltawskinowy/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ponomar",
+    "path": "ofl/ponomar/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Pontano Sans",
+    "path": "ofl/pontanosans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Praise",
+    "path": "ofl/praise/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Puppies Play",
+    "path": "ofl/puppiesplay/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Qwigley",
+    "path": "ofl/qwigley/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Qwitcher Grypen",
+    "path": "ofl/qwitchergrypen/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "REM",
+    "path": "ofl/rem/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Radio Canada",
+    "path": "ofl/radiocanada/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Radio Canada Big",
+    "path": "ofl/radiocanadabig/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Rammetto One",
+    "path": "ofl/rammettoone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Readex Pro",
+    "path": "ofl/readexpro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Rethink Sans",
+    "path": "ofl/rethinksans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Road Rage",
+    "path": "ofl/roadrage/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Roboto Flex",
+    "path": "ofl/robotoflex/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Roboto Serif",
+    "path": "ofl/robotoserif/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Rokkitt",
+    "path": "ofl/rokkitt/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Rosario",
+    "path": "ofl/rosario/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ruge Boogie",
+    "path": "ofl/rugeboogie/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ruthie",
+    "path": "ofl/ruthie/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "SN Pro",
+    "path": "ofl/snpro/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "SUSE",
+    "path": "ofl/suse/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "SUSE Mono",
+    "path": "ofl/susemono/METADATA.pb",
+    "config_yaml": "sources/config-mono.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Sancreek",
+    "path": "ofl/sancreek/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sankofa Display",
+    "path": "ofl/sankofadisplay/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sassy Frass",
+    "path": "ofl/sassyfrass/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sawarabi Mincho",
+    "path": "ofl/sawarabimincho/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Schibsted Grotesk",
+    "path": "ofl/schibstedgrotesk/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Secular One",
+    "path": "ofl/secularone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sedan",
+    "path": "ofl/sedan/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sedan SC",
+    "path": "ofl/sedansc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sekuya",
+    "path": "ofl/sekuya/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Send Flowers",
+    "path": "ofl/sendflowers/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Seymour One",
+    "path": "ofl/seymourone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Shafarik",
+    "path": "ofl/shafarik/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Shalimar",
+    "path": "ofl/shalimar/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Shanti",
+    "path": "ofl/shanti/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Signika",
+    "path": "ofl/signika/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Signika Negative",
+    "path": "ofl/signikanegative/METADATA.pb",
+    "config_yaml": "sources/configNegative.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Silkscreen",
+    "path": "ofl/silkscreen/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Smooch",
+    "path": "ofl/smooch/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Smooch Sans",
+    "path": "ofl/smoochsans/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Solitreo",
+    "path": "ofl/solitreo/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sometype Mono",
+    "path": "ofl/sometypemono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sono",
+    "path": "ofl/sono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Sour Gummy",
+    "path": "ofl/sourgummy/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Space Mono",
+    "path": "ofl/spacemono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Special Gothic",
+    "path": "ofl/specialgothic/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Special Gothic Condensed One",
+    "path": "ofl/specialgothiccondensedone/METADATA.pb",
+    "config_yaml": "sources/config-condensed.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Special Gothic Expanded One",
+    "path": "ofl/specialgothicexpandedone/METADATA.pb",
+    "config_yaml": "sources/config-expanded.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Spectral",
+    "path": "ofl/spectral/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Spectral SC",
+    "path": "ofl/spectralsc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Splash",
+    "path": "ofl/splash/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Spline Sans",
+    "path": "ofl/splinesans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Spline Sans Mono",
+    "path": "ofl/splinesansmono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Square Peg",
+    "path": "ofl/squarepeg/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Style Script",
+    "path": "ofl/stylescript/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "TASA Orbiter",
+    "path": "ofl/tasaorbiter/METADATA.pb",
+    "config_yaml": "sources/config-TASAOrbiter.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Tac One",
+    "path": "ofl/tacone/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Tagesschrift",
+    "path": "ofl/tagesschrift/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Tapestry",
+    "path": "ofl/tapestry/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Teachers",
+    "path": "ofl/teachers/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Tektur",
+    "path": "ofl/tektur/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Texturina",
+    "path": "ofl/texturina/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "The Nautigal",
+    "path": "ofl/thenautigal/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Tiny5",
+    "path": "ofl/tiny5/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Tourney",
+    "path": "ofl/tourney/METADATA.pb",
+    "config_yaml": "Sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Triodion",
+    "path": "ofl/triodion/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Twinkle Star",
+    "path": "ofl/twinklestar/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Updock",
+    "path": "ofl/updock/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Urbanist",
+    "path": "ofl/urbanist/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Varela Round",
+    "path": "ofl/varelaround/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Victor Mono",
+    "path": "ofl/victormono/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Vina Sans",
+    "path": "ofl/vinasans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Voltaire",
+    "path": "ofl/voltaire/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Vujahday Script",
+    "path": "ofl/vujahdayscript/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Water Brush",
+    "path": "ofl/waterbrush/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Waterfall",
+    "path": "ofl/waterfall/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Wavefont",
+    "path": "ofl/wavefont/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Whisper",
+    "path": "ofl/whisper/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "WindSong",
+    "path": "ofl/windsong/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Winky Sans",
+    "path": "ofl/winkysans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Wittgenstein",
+    "path": "ofl/wittgenstein/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Wix Madefor Display",
+    "path": "ofl/wixmadefordisplay/METADATA.pb",
+    "config_yaml": "sources/config_display.yaml",
+    "resolution": "multi_resolved"
+  },
+  {
+    "family_name": "Work Sans",
+    "path": "ofl/worksans/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Yanone Kaffeesatz",
+    "path": "ofl/yanonekaffeesatz/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Young Serif",
+    "path": "ofl/youngserif/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ysabeau",
+    "path": "ofl/ysabeau/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ysabeau Infant",
+    "path": "ofl/ysabeauinfant/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ysabeau Office",
+    "path": "ofl/ysabeauoffice/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Ysabeau SC",
+    "path": "ofl/ysabeausc/METADATA.pb",
+    "config_yaml": "sources/config.yaml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Zen Dots",
+    "path": "ofl/zendots/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Zen Loop",
+    "path": "ofl/zenloop/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  },
+  {
+    "family_name": "Zen Tokyo Zoo",
+    "path": "ofl/zentokyozoo/METADATA.pb",
+    "config_yaml": "sources/config.yml",
+    "resolution": "single_config"
+  }
+]

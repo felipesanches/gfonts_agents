@@ -1,14 +1,22 @@
 {
-  "timestamp": "2026-01-30T12:00:00",
+  "timestamp": "2026-02-20T01:12:55.939237-03:00",
   "filesystem": {
     "mount": "/mnt/shared",
     "total": "1.8T",
     "used": "1.7T",
-    "available": "32G",
+    "available": "27G",
     "percent": 99
   },
   "breakdown": [
-    {"path": "/mnt/shared/upstream_repos/fontc_crater_cache", "description": "Upstream repos cache", "size": "estimating..."},
-    {"path": "/mnt/shared/gfonts", "description": "google/fonts clone", "size": "4.0G"}
+    {
+      "path": "/mnt/shared/upstream_repos/fontc_crater_cache",
+      "description": "Upstream repos cache",
+      "size": "63G"
+    },
+    {
+      "path": "/mnt/shared/gfonts",
+      "description": "google/fonts clone",
+      "size": "2.3G"
+    }
   ]
 }

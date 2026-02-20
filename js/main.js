@@ -99,11 +99,13 @@ function updateSourcesSummary(summary) {
     document.getElementById('summary-complete').textContent = summary.complete;
     document.getElementById('summary-missing-config').textContent = summary.missing_config;
     document.getElementById('summary-missing-commit').textContent = summary.missing_commit;
+    const incompleteEl = document.getElementById('summary-incomplete-source');
+    if (incompleteEl) incompleteEl.textContent = summary.incomplete_source || 0;
     document.getElementById('summary-no-source').textContent = summary.no_source;
 
     // Update progress bar
     const completePercent = (summary.complete / summary.total * 100).toFixed(1);
-    const partialPercent = ((summary.missing_config + summary.missing_commit) / summary.total * 100).toFixed(1);
+    const partialPercent = ((summary.missing_config + summary.missing_commit + (summary.incomplete_source || 0)) / summary.total * 100).toFixed(1);
 
     document.getElementById('progress-complete').style.width = completePercent + '%';
     document.getElementById('progress-partial').style.width = partialPercent + '%';
@@ -130,8 +132,9 @@ function renderStatusChart(summary) {
         { label: 'Complete', value: summary.complete, color: '#4caf50' },
         { label: 'Missing Config', value: summary.missing_config, color: '#ff9800' },
         { label: 'Missing Commit', value: summary.missing_commit, color: '#2196f3' },
+        { label: 'Incomplete', value: summary.incomplete_source || 0, color: '#9c27b0' },
         { label: 'No Source', value: summary.no_source, color: '#f44336' }
-    ];
+    ].filter(d => d.value > 0);
 
     const total = data.reduce((sum, d) => sum + d.value, 0);
     const barHeight = 40;
@@ -219,6 +222,7 @@ function renderProgressChart(entries, claudeCodeStartDate) {
             { value: e.summary.complete, color: '#4caf50' },
             { value: e.summary.missing_config, color: '#ff9800' },
             { value: e.summary.missing_commit, color: '#2196f3' },
+            { value: e.summary.incomplete_source || 0, color: '#9c27b0' },
             { value: e.summary.no_source, color: '#f44336' }
         ];
 
@@ -243,6 +247,7 @@ function renderProgressChart(entries, claudeCodeStartDate) {
             { key: 'complete', color: '#4caf50' },
             { key: 'missing_config', color: '#ff9800' },
             { key: 'missing_commit', color: '#2196f3' },
+            { key: 'incomplete_source', color: '#9c27b0' },
             { key: 'no_source', color: '#f44336' }
         ];
 
@@ -252,7 +257,8 @@ function renderProgressChart(entries, claudeCodeStartDate) {
             ctx.beginPath();
             entries.forEach((e, i) => {
                 const x = padding.left + i * xStep;
-                const y = height - padding.bottom - (e.summary[s.key] / maxValue) * chartHeight;
+                const val = e.summary[s.key] || 0;
+                const y = height - padding.bottom - (val / maxValue) * chartHeight;
                 if (i === 0) ctx.moveTo(x, y);
                 else ctx.lineTo(x, y);
             });
@@ -369,7 +375,9 @@ function renderSourcesTable(container, families) {
                     <td class="config-cell">
                         ${family.config_yaml
                             ? `<code title="${escapeHtml(family.config_yaml)}">${escapeHtml(family.config_yaml.split('/').pop())}</code>`
-                            : '<span class="missing">—</span>'
+                            : family.override_config
+                                ? '<code title="Override config.yaml in family directory">override</code>'
+                                : '<span class="missing">—</span>'
                         }
                     </td>
                     <td class="status-cell">

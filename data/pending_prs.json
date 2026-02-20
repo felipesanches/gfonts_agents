@@ -391,7 +391,9 @@
     "description": "Austrian/German type designer, MATD Reading 2010. Collaborated with Sorkin Type Co on Limelight, Rye, Hammersmith One, Pinyon Script.",
     "type": "designer_metadata",
     "priority": "medium",
-    "designers": ["Nicole Fally"],
+    "designers": [
+      "Nicole Fally"
+    ],
     "designers_count": 1,
     "status": "submitted",
     "created": "2026-01-29",
@@ -444,5 +446,25 @@
     },
     "status": "draft",
     "created": "2026-01-30"
+  },
+  {
+    "id": "pr-config-yaml-batch5",
+    "title": "Add config_yaml enrichment for 82 font families",
+    "description": "Batch 5: Add config_yaml field to METADATA.pb for 14 families with upstream configs, and create 68 override config.yaml files for families with source files but no gftools-builder config.",
+    "type": "config_yaml",
+    "priority": "high",
+    "files_to_modify": [
+      "14 METADATA.pb files (config_yaml additions)",
+      "68 new config.yaml override files"
+    ],
+    "changes": {
+      "part1_metadata_additions": 14,
+      "part2_override_configs": 68,
+      "total_families": 82
+    },
+    "status": "submitted",
+    "created": "2026-02-20T01:12:55.939237-03:00",
+    "github_pr": "https://github.com/google/fonts/pull/10248",
+    "submitted_date": "2026-02-20T01:12:55.939237-03:00"
   }
 ]
