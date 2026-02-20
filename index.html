@@ -27,6 +27,7 @@
             <button class="tab-btn" data-tab="bio-guide">Bio Guide</button>
             <button class="tab-btn" data-tab="bio-audit">Bio Audit</button>
             <button class="tab-btn" data-tab="prebuild">Pre-Build Research</button>
+            <button class="tab-btn" data-tab="crater">Crater Failures</button>
         </nav>
 
         <section id="tab-sources" class="tab-content active">
@@ -857,6 +858,38 @@ includeSubsets:
                 </div>
 
                 <p class="sources-updated">Research date: <span id="prebuild-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-crater" class="tab-content">
+            <div class="panel">
+                <h2>fontc_crater Target Discovery Failures</h2>
+                <p class="panel-description">Analysis of 17 repos where fontc_crater failed to find build targets.
+                    Source: <a href="https://googlefonts.github.io/fontc_crater/" target="_blank">fontc_crater report</a>
+                </p>
+
+                <div class="builds-summary" id="crater-summary">
+                    <div class="summary-card total">
+                        <span class="summary-value" id="crater-total">17</span>
+                        <span class="summary-label">Total Failures</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="crater-prebuild">6</span>
+                        <span class="summary-label">Need Pre-Build Scripts</span>
+                    </div>
+                    <div class="summary-card error">
+                        <span class="summary-value" id="crater-path-bugs">3</span>
+                        <span class="summary-label">Path Resolution Bugs</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="crater-cache">4</span>
+                        <span class="summary-label">Cache / Branch Issues</span>
+                    </div>
+                </div>
+
+                <div id="crater-categories"></div>
+
+                <p class="sources-updated">Analysis date: <span id="crater-timestamp">--</span></p>
             </div>
         </section>
 

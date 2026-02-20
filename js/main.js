@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadDiskUsage();
     loadBioAudit();
     loadPrebuildResearch();
+    loadCraterFailures();
 });
 
 function initTabs() {
@@ -2133,5 +2134,137 @@ function renderMigrationAnalysis(data) {
                 }).join('')}
             </tbody>`;
         featuresEl.appendChild(table);
+    }
+}
+
+// fontc_crater failures functionality
+async function loadCraterFailures() {
+    try {
+        const response = await fetch('data/fontc_crater_failures.json');
+        const data = await response.json();
+        renderCraterFailures(data);
+    } catch (error) {
+        console.error('Error loading crater failures:', error);
+    }
+}
+
+function renderCraterFailures(data) {
+    const tsEl = document.getElementById('crater-timestamp');
+    if (tsEl && data._metadata) {
+        tsEl.textContent = data._metadata.generated;
+    }
+
+    const container = document.getElementById('crater-categories');
+    if (!container) return;
+
+    const CATEGORY_META = {
+        prebuild_script_needed: {
+            title: 'Pre-Build Scripts Generate the Missing Source',
+            color: '#ff9800',
+            icon: 'Needs pre-build step',
+            columns: ['Repository', 'Error', 'Root Cause', 'Fix Command']
+        },
+        path_resolution_bugs: {
+            title: 'fontc_crater Path Resolution Bugs',
+            color: '#f44336',
+            icon: 'Files exist — crater bug',
+            columns: ['Repository', 'Error', 'Actual Path', 'Root Cause']
+        },
+        stale_cache_wrong_branch: {
+            title: 'Stale Cache / Wrong Branch',
+            color: '#2196f3',
+            icon: 'Cache issue',
+            columns: ['Repository', 'Error', 'Commit Present?', 'Root Cause']
+        },
+        incompatible_build_system: {
+            title: 'Incompatible Build System (Not gftools-builder)',
+            color: '#9e9e9e',
+            icon: 'Exclude from testing',
+            columns: ['Repository', 'Error', 'Build System', 'Root Cause']
+        },
+        stale_crater_result: {
+            title: 'Stale Crater Result',
+            color: '#4caf50',
+            icon: 'Re-test needed',
+            columns: ['Repository', 'Error', 'Current Source', 'Root Cause']
+        },
+        inline_recipe_generated: {
+            title: 'Inline Recipe-Generated Source',
+            color: '#9c27b0',
+            icon: 'Recipe generates source',
+            columns: ['Repository', 'Error', 'Actual Source', 'Root Cause']
+        }
+    };
+
+    for (const [catKey, catData] of Object.entries(data.failures)) {
+        const meta = CATEGORY_META[catKey] || { title: catKey, color: '#888', columns: ['Repository', 'Error', 'Root Cause'] };
+        const repos = catData.repos || [];
+
+        const section = document.createElement('div');
+        section.className = 'guide-section';
+        section.innerHTML = `
+            <h3 style="border-left: 4px solid ${meta.color}; padding-left: 0.8em;">
+                ${escapeHtml(meta.title)}
+                <span style="font-size: 0.7em; color: ${meta.color}; font-weight: normal; margin-left: 0.5em;">${repos.length} repo${repos.length !== 1 ? 's' : ''}</span>
+            </h3>
+            <p>${escapeHtml(catData.description)}</p>
+            <p><strong>Fix strategy:</strong> ${escapeHtml(catData.fix_strategy)}</p>
+        `;
+
+        const table = document.createElement('table');
+        table.className = 'guide-table';
+
+        let headerHtml, bodyHtml;
+
+        if (catKey === 'prebuild_script_needed') {
+            headerHtml = '<tr><th>Repository</th><th>Missing File</th><th>Root Cause</th><th>Fix Command</th></tr>';
+            bodyHtml = repos.map(r => `<tr>
+                <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                <td><code>${escapeHtml(r.missing_file)}</code></td>
+                <td style="font-size:0.9em;">${escapeHtml(r.root_cause)}</td>
+                <td><code style="font-size:0.85em;word-break:break-all;">${escapeHtml(r.fix_command || '-')}</code></td>
+            </tr>`).join('');
+        } else if (catKey === 'path_resolution_bugs') {
+            headerHtml = '<tr><th>Repository</th><th>Reported Missing</th><th>Actual Path</th><th>Root Cause</th></tr>';
+            bodyHtml = repos.map(r => `<tr>
+                <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                <td><code>${escapeHtml(r.missing_file)}</code></td>
+                <td><code style="color:#4caf50;">${escapeHtml(r.file_actual_path || '-')}</code></td>
+                <td style="font-size:0.9em;">${escapeHtml(r.root_cause)}</td>
+            </tr>`).join('');
+        } else if (catKey === 'stale_cache_wrong_branch') {
+            headerHtml = '<tr><th>Repository</th><th>Missing Commit</th><th>Present?</th><th>Root Cause</th></tr>';
+            bodyHtml = repos.map(r => {
+                const commitShort = (r.error.match(/'([a-f0-9]+)'/) || ['', ''])[1].substring(0, 10);
+                const presentColor = r.commit_exists ? '#4caf50' : '#f44336';
+                const presentText = r.commit_exists ? 'YES' : 'NO';
+                return `<tr>
+                    <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                    <td><code>${escapeHtml(commitShort)}...</code></td>
+                    <td><strong style="color:${presentColor}">${presentText}</strong></td>
+                    <td style="font-size:0.9em;">${escapeHtml(r.root_cause)}</td>
+                </tr>`;
+            }).join('');
+        } else if (catKey === 'incompatible_build_system') {
+            headerHtml = '<tr><th>Repository</th><th>Error</th><th>Build System</th><th>Root Cause</th></tr>';
+            bodyHtml = repos.map(r => `<tr>
+                <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                <td><code>${escapeHtml(r.error)}</code></td>
+                <td style="font-size:0.9em;">${escapeHtml(r.build_system || '-')}</td>
+                <td style="font-size:0.9em;">${escapeHtml(r.root_cause)}</td>
+            </tr>`).join('');
+        } else {
+            headerHtml = '<tr><th>Repository</th><th>Error</th><th>Root Cause</th><th>Fix</th></tr>';
+            bodyHtml = repos.map(r => `<tr>
+                <td><a href="https://github.com/${escapeHtml(r.repo)}" target="_blank">${escapeHtml(r.repo)}</a></td>
+                <td><code>${escapeHtml(r.error)}</code></td>
+                <td style="font-size:0.9em;">${escapeHtml(r.root_cause)}</td>
+                <td style="font-size:0.9em;">${escapeHtml(r.fix || r.current_source || r.actual_source || '-')}</td>
+            </tr>`).join('');
+        }
+
+        table.innerHTML = `<thead>${headerHtml}</thead><tbody>${bodyHtml}</tbody>`;
+        section.appendChild(table);
+        container.appendChild(section);
     }
 }
