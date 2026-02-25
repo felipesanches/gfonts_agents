@@ -146,8 +146,8 @@
         ]
       },
       "adeleantignac": {
-        "name": "Ad\u00e8le Antignac",
-        "bio_html": "<p>Ad\u00e8le Antignac is a French type designer who has worked with Production Type, a Paris-based digital type foundry. She studied type design and has contributed to various typeface projects during her time at the foundry.</p><p>She is credited as a co-designer of Spectral, an open-source serif typeface commissioned by Google and designed in collaboration with Production Type. The Spectral family was designed specifically for screen reading and text-rich environments.</p>\n<p><a href=\"https://www.productiontype.com\">www.productiontype.com</a></p>",
+        "name": "Adèle Antignac",
+        "bio_html": "<p>Adèle Antignac is a French type designer who has worked with Production Type, a Paris-based digital type foundry. She studied type design and has contributed to various typeface projects during her time at the foundry.</p><p>She is credited as a co-designer of Spectral, an open-source serif typeface commissioned by Google and designed in collaboration with Production Type. The Spectral family was designed specifically for screen reading and text-rich environments.</p>\n<p><a href=\"https://www.productiontype.com\">www.productiontype.com</a></p>",
         "notable_fonts": [
           "Spectral"
         ]
@@ -376,7 +376,7 @@
       "Martin Sommaruga",
       "Michal Sahar",
       "Natalia Raices",
-      "Onur Yaz\u0131c\u0131gil",
+      "Onur Yazıcıgil",
       "Pablo Ugerman",
       "Riccardo De Franceschi"
     ],
@@ -471,7 +471,7 @@
     "id": "pr-fix-broken-urls",
     "font": "Red Hat Display, Red Hat Mono, Red Hat Text, Manrope, Orelega One, Elsie",
     "title": "Fix broken repository_url in 6 METADATA.pb files",
-    "description": "Fix 6 broken repository_url fields: Red Hat fonts (bghryct\u2192RedHatOfficial), Manrope (sharanda\u2192aaronbell), Orelega One (JapanYoshi\u2192haleyhalcyon/GitLab), Elsie (remove invalid URL)",
+    "description": "Fix 6 broken repository_url fields: Red Hat fonts (bghryct→RedHatOfficial), Manrope (sharanda→aaronbell), Orelega One (JapanYoshi→haleyhalcyon/GitLab), Elsie (remove invalid URL)",
     "type": "metadata_fix",
     "priority": "high",
     "files_to_modify": [
@@ -486,5 +486,179 @@
     "pr_number": 10266,
     "pr_url": "https://github.com/google/fonts/pull/10266",
     "created": "2026-02-25T15:30:00Z"
+  },
+  {
+    "id": "pr-add-source-blocks-batch1",
+    "title": "Add source blocks to 23 METADATA.pb files",
+    "description": "Add source blocks (repository_url, commit, config_yaml) to 23 families that have config.yaml in upstream",
+    "type": "metadata_fix",
+    "priority": "medium",
+    "families": [
+      "Chiron GoRound TC",
+      "Khmer",
+      "Noto Sans Arabic UI",
+      "Noto Sans Bengali UI",
+      "Noto Sans Devanagari UI",
+      "Noto Sans Display",
+      "Noto Sans Gujarati UI",
+      "Noto Sans Gurmukhi UI",
+      "Noto Sans Kannada UI",
+      "Noto Sans Khmer UI",
+      "Noto Sans Lao UI",
+      "Noto Sans Malayalam UI",
+      "Noto Sans Myanmar UI",
+      "Noto Sans Oriya UI",
+      "Noto Sans Sinhala UI",
+      "Noto Sans Tamil UI",
+      "Noto Sans Telugu UI",
+      "Noto Sans Thai UI",
+      "Noto Serif Display",
+      "Noto Serif Myanmar",
+      "Rubik Mono One",
+      "Rubik One",
+      "Signika Negative SC"
+    ],
+    "details": [
+      {
+        "family_name": "Chiron GoRound TC",
+        "repository_url": "https://github.com/chiron-fonts/chiron-go-round-tc",
+        "commit": "803fb2f0423d5ce9683859cdaa19942896abaf74",
+        "config_yaml": "scripts/config.yaml"
+      },
+      {
+        "family_name": "Khmer",
+        "repository_url": "https://github.com/notofonts/khmer",
+        "commit": "d30b39a6297274bc92879ca79db58358ac84b690",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Arabic UI",
+        "repository_url": "https://github.com/notofonts/arabic",
+        "commit": "6139a36c3f1aaf47e5f0fcf1842a7a28c17d40c1",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Bengali UI",
+        "repository_url": "https://github.com/notofonts/bengali",
+        "commit": "1914ac0684b08dfdf23e7c5e94651b40354a22da",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Devanagari UI",
+        "repository_url": "https://github.com/notofonts/devanagari",
+        "commit": "782d729b8111ec4850475a6d9934c8ab166257dd",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Display",
+        "repository_url": "https://github.com/notofonts/latin-greek-cyrillic",
+        "commit": "12fd123ea9186a2ad0046d2ba66dfc44fd3a1756",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Gujarati UI",
+        "repository_url": "https://github.com/notofonts/gujarati",
+        "commit": "ef211973e3cd5c2d8de2781398d39fd2b5e27d1b",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Gurmukhi UI",
+        "repository_url": "https://github.com/notofonts/gurmukhi",
+        "commit": "edd162eeff44702b1c9a014845b5976d4937e519",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Kannada UI",
+        "repository_url": "https://github.com/notofonts/kannada",
+        "commit": "c609d8054606603e661ba15648eddc47d1fed50e",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Khmer UI",
+        "repository_url": "https://github.com/notofonts/khmer",
+        "commit": "d30b39a6297274bc92879ca79db58358ac84b690",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Lao UI",
+        "repository_url": "https://github.com/notofonts/lao",
+        "commit": "a1a55ba32928f6bc90a3e3d4178a2eb0a50c827c",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Malayalam UI",
+        "repository_url": "https://github.com/notofonts/malayalam",
+        "commit": "466ba6550c01b16f84100ba122e6e7697d21c861",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Myanmar UI",
+        "repository_url": "https://github.com/notofonts/myanmar",
+        "commit": "856c39877008b3de4041420c9065417a5ebaf3d2",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Oriya UI",
+        "repository_url": "https://github.com/notofonts/oriya",
+        "commit": "35c66b0081efc8779058e9d4134e8c0268669fc6",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Sinhala UI",
+        "repository_url": "https://github.com/notofonts/sinhala",
+        "commit": "b45c383be01ece369f5c3b35cef0688fb3a140be",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Tamil UI",
+        "repository_url": "https://github.com/notofonts/tamil",
+        "commit": "28681200e17e47def7ad3c982b9cb8225c1d2525",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Telugu UI",
+        "repository_url": "https://github.com/notofonts/telugu",
+        "commit": "c8136f83d527f1aab275545302b9c291d0ed1e9e",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Sans Thai UI",
+        "repository_url": "https://github.com/notofonts/thai",
+        "commit": "fe7c82a2e55c38c5296d6415ba07015ef490970a",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Serif Display",
+        "repository_url": "https://github.com/notofonts/latin-greek-cyrillic",
+        "commit": "12fd123ea9186a2ad0046d2ba66dfc44fd3a1756",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Noto Serif Myanmar",
+        "repository_url": "https://github.com/notofonts/myanmar",
+        "commit": "856c39877008b3de4041420c9065417a5ebaf3d2",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Rubik Mono One",
+        "repository_url": "https://github.com/googlefonts/rubik",
+        "commit": "e337a5f69a9bea30e58d05bd40184d79cc099628",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Rubik One",
+        "repository_url": "https://github.com/googlefonts/rubik",
+        "commit": "e337a5f69a9bea30e58d05bd40184d79cc099628",
+        "config_yaml": "sources/config.yaml"
+      },
+      {
+        "family_name": "Signika Negative SC",
+        "repository_url": "https://github.com/googlefonts/Signika",
+        "commit": "7361a224d1d77274af1ea11dd06448c54c16f598",
+        "config_yaml": "sources/config.yaml"
+      }
+    ],
+    "status": "draft",
+    "created": "2026-02-25"
   }
 ]
