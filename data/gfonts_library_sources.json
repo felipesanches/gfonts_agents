@@ -823,12 +823,13 @@
       "designer": "Gesine Todt",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/amaranth",
-      "commit": null,
+      "commit": "f4f60a57f54a04186030913a86e3e56105bbe848",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Latest commit in upstream (2017-07-21), used for gfonts PR #759 merged 2017-08-07. All commits are from the same day."
     },
     {
       "path": "ofl/amarna/METADATA.pb",
@@ -862,12 +863,13 @@
       "designer": "Cyreal",
       "license": "OFL",
       "repository_url": "https://github.com/cyrealtype/Amethysta",
-      "commit": null,
+      "commit": "10ae36bc060bec28f1c504c42ce6871b7c034add",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Second commit in upstream (2016-04-06, adds sample image). Font files present since initial commit. Used for gfonts PR #760 merged 2017-08-07."
     },
     {
       "path": "ofl/amiko/METADATA.pb",
@@ -1486,12 +1488,13 @@
       "designer": "Andrij Shevchenko",
       "license": "OFL",
       "repository_url": "https://github.com/alexeiva/Arsenal",
-      "commit": null,
+      "commit": "878af0840749599133561eb6579d84f5c94f58f5",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "m4rc1e's commit 'fixed copyright string' (2016-12-06) from PR #6 branch, used for gfonts PR #507 merged same day. Later merged to master as ec148f6."
     },
     {
       "path": "ofl/arsenalsc/METADATA.pb",
@@ -4349,12 +4352,13 @@
       "designer": "Cadson Demak",
       "license": "OFL",
       "repository_url": "https://github.com/m4rc1e/Chakra-Petch",
-      "commit": null,
+      "commit": "6176529d05acf654f31e024daad77966319e499d",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Latest commit before gfonts commit (2018-08-23) 'Updated vertical metrics to stop first line clipping'. The gfonts commit was 'chakrapetch: unhinted fonts' from Sep 2018."
     },
     {
       "path": "ofl/changa/METADATA.pb",
@@ -5417,12 +5421,13 @@
       "designer": "artakana",
       "license": "OFL",
       "repository_url": "https://github.com/syakuzen/DelaGothic",
-      "commit": null,
+      "commit": "da8b03e57a8977132b3d0358c48c8463374c74ab",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Latest commit 'Updated ttf' (2021-03-29). Version 1.005 used in gfonts PR #3618 merged 2021-08-26. PR description mentions version bump and designer name correction."
     },
     {
       "path": "ofl/delicioushandrawn/METADATA.pb",
@@ -6748,12 +6753,13 @@
       "designer": "The Mozilla Foundation, Telefonica S.A., Nikita Prokopov",
       "license": "OFL",
       "repository_url": "https://github.com/tonsky/FiraCode",
-      "commit": null,
+      "commit": "8da49d55f8b5978c5f888dd85452b79aad16cca2",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Tag '5.2' resolves to this commit (2020-06-12). Used for gfonts PR #3786 'Updating to Fira Code 5.2' merged 2021-09-08."
     },
     {
       "path": "ofl/firamono/METADATA.pb",
@@ -8525,12 +8531,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-guntur",
-      "commit": null,
+      "commit": "d1f95f8d9a6013297a6a63cc54e48e3885eb5813",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "HEAD commit 'Compile 1.000' (2015-10-17). Upstream has no v1.001. The gfonts PRs (#892 hotfix v1.001 in 2017, #2378 re-hinting in 2020) modified fonts on the gfonts side."
     },
     {
       "path": "ofl/hindjalandhar/METADATA.pb",
@@ -8566,12 +8573,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-madurai",
-      "commit": null,
+      "commit": "3f3bd222489daea4dfec65d5de86012ed4819b5b",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "HEAD commit 'Compile 1.000' (2015-10-17). Upstream has no v1.001. Gfonts PR #892 hotfix v1.001 merged 2017-05-08."
     },
     {
       "path": "ofl/hindmysuru/METADATA.pb",
@@ -8593,12 +8601,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-siliguri",
-      "commit": null,
+      "commit": "affb7dbd00dc554c33ecafc92cbfef5323ae5235",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "HEAD commit 'Merge branch develop' (2015-10-17) containing 'Compile 1.000'. Upstream has no v1.001. Gfonts PR #893 hotfix merged 2017-05-08."
     },
     {
       "path": "ofl/hindvadodara/METADATA.pb",
@@ -8606,12 +8615,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-vadodara",
-      "commit": null,
+      "commit": "d1972e4ebebc3a65feef2f66823a83444469ece4",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "HEAD commit 'Compile 1.000' (2015-10-17). Upstream has no v1.001. Gfonts PR #894 hotfix merged 2017-05-08."
     },
     {
       "path": "ofl/holtwoodonesc/METADATA.pb",
@@ -9441,12 +9451,13 @@
       "designer": "Cyreal",
       "license": "OFL",
       "repository_url": "https://github.com/cyrealtype/Jacques-Francois",
-      "commit": null,
+      "commit": "bc37f476a7e982327ae359c67068356597cd45aa",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Initial commit (2016-01-10). Font was added to gfonts in 2012, before the upstream repo existed. The initial commit is the earliest available reference. The v1.100 tag (2018) was never pushed to gfonts."
     },
     {
       "path": "ofl/jacquesfrancoisshadow/METADATA.pb",
@@ -9454,12 +9465,13 @@
       "designer": "Cyreal",
       "license": "OFL",
       "repository_url": "https://github.com/cyrealtype/Jacques-Francois-Shadow",
-      "commit": null,
+      "commit": "90c9f94cc747ac7c356d882d7553c07d344992f8",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Initial commit (2016-01-10). Same situation as Jacques Francois - font was in gfonts (2012) before the upstream repo. The v1.100 tag (2018) was never pushed to gfonts."
     },
     {
       "path": "ofl/jaini/METADATA.pb",
@@ -9714,12 +9726,13 @@
       "designer": "Santiago Orozco",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/josefinsans",
-      "commit": null,
+      "commit": "bf6907e3a34924300dd407201262f62c2fc2a642",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Merge PR #22 'Updating to UFR build format' (2021-07-29). Used for gfonts PR #3664 'Josefin Sans v2.001 (stat fix)' merged 2021-08-26."
     },
     {
       "path": "ofl/josefinslab/METADATA.pb",
@@ -10669,12 +10682,13 @@
       "designer": "Borna Izadpanah",
       "license": "OFL",
       "repository_url": "https://github.com/BornaIz/Lalezar",
-      "commit": null,
+      "commit": "238701c4241f207e92515f845a199be9131c1109",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Only commit in upstream: Merge PR #12 from m4rc1e/gf 'v1.004 mastered for GF' (2017-02-28). Used for gfonts PR #682 merged 2017-05-01."
     },
     {
       "path": "ofl/lancelot/METADATA.pb",
@@ -11169,12 +11183,13 @@
       "designer": "Pablo Impallari",
       "license": "OFL",
       "repository_url": "https://github.com/thundernixon/Libre-Caslon",
-      "commit": null,
+      "commit": "52200a76d723e4a8cb9a566686ed1f56a794f39a",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Latest commit 'Make all italic styles available in VF on mac' (2020-06-10). Used for gfonts PR #2432 'librecaslontext: v2.0 added' merged 2020-06-11."
     },
     {
       "path": "ofl/librefranklin/METADATA.pb",
@@ -11378,12 +11393,13 @@
       "designer": "Impallari Type",
       "license": "OFL",
       "repository_url": "https://github.com/impallari/The-Lobster-Font",
-      "commit": null,
+      "commit": "0796aa8aa42f6cbc89fa61be4a2a12fdcd2b8998",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Commit 'regenerated fonts' (2017-10-27) for v2.100 from cyrealtype. Gfonts PR #1296 says 'Taken from GF Repo googlefonts/The-Lobster-Font'. Same content exists in impallari repo master branch."
     },
     {
       "path": "ofl/lobstertwo/METADATA.pb",
@@ -12498,12 +12514,13 @@
       "designer": "SIL International",
       "license": "OFL",
       "repository_url": "https://github.com/silnrsi/font-mingzat",
-      "commit": null,
+      "commit": "bfe7e714b737d9d0b3b43ad88e3b844449175560",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "v1.100 tag commit 'Update FONTLOG release date' (2022-05-19). Used for gfonts PR #4721 'Mingzat: Version 1.100 added' merged 2022-06-01. The PR's gftools-packager text had an empty commit hash."
     },
     {
       "path": "ofl/miniver/METADATA.pb",
@@ -13318,12 +13335,13 @@
       "designer": "Arthur Reinders Folmer, Just van Rossum",
       "license": "OFL",
       "repository_url": "https://github.com/justvanrossum/nabla",
-      "commit": null,
+      "commit": "2a06e9f735390a7988d0ef190981ce4abf4dfd28",
       "branch": "main",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "v1.002 tag commit (2022-08-27). Gfonts PRs #5117 (v1.000) and #5160 (v1.002) both had empty commit hashes from gftools-packager. Later PRs #5245 (re-maximum_color) and #5279 (version bump) reprocessed the font binary but didn't change the source."
     },
     {
       "path": "ofl/namdhinggo/METADATA.pb",
@@ -22496,12 +22514,13 @@
       "designer": "Mariya Lish, The Northern Block",
       "license": "OFL",
       "repository_url": "https://github.com/mashavp/Solway",
-      "commit": null,
+      "commit": "830b85f39cc1e0ab45341d8caf262d872c8a8220",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Commit 'Merge PR #15 from vv-monsalve/master' (2019-11-11). Recorded in Font Bakery Dashboard PR #2252 merged 2019-11-18."
     },
     {
       "path": "ofl/sometypemono/METADATA.pb",
@@ -22874,12 +22893,13 @@
       "designer": "Brian LaRossa, Erica Carras",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/staatliches",
-      "commit": null,
+      "commit": "34b655c4219697687bb744c2333cd67e3e85f496",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Merge PR #30 'specimen-update' (2018-10-29). HEAD of upstream when gfonts PR #1727 was merged 2018-11-15. Font binary last changed at 2329fe0 (2018-10-19)."
     },
     {
       "path": "ofl/stacksansheadline/METADATA.pb",
@@ -23643,12 +23663,13 @@
       "designer": "Grilli Type, Contrast Foundry, Type Network",
       "license": "OFL",
       "repository_url": "https://github.com/TikTok/TikTokSans",
-      "commit": null,
+      "commit": "44862db3a4bf3a544b664a90245ca5daa5393571",
       "branch": "main",
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "v4.000 tag commit 'Exclude docs from release' (2025-07-09). Used for gfonts PR #9650 'Initial push of TikTok Sans' merged 2025-07-11."
     },
     {
       "path": "ofl/tillana/METADATA.pb",
@@ -24464,12 +24485,13 @@
       "designer": "Friedrich Althausen",
       "license": "OFL",
       "repository_url": "https://github.com/FAlthausen/Vollkorn-Typeface",
-      "commit": null,
+      "commit": "38ab7a896bd6b163ac7f834ec696d6c68e5dedd6",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Recorded in gfonts PR #2443 body: 'taken from upstream at commit 38ab7a89...'. PR #2960 (v5.000) and #4124 (version bump hotfix) used the same upstream base."
     },
     {
       "path": "ofl/vollkornsc/METADATA.pb",
