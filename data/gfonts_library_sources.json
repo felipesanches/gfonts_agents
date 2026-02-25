@@ -2,11 +2,12 @@
   "generated_at": "2026-02-25T17:46:17.137365",
   "summary": {
     "total": 1948,
-    "complete": 1131,
-    "missing_config": 44,
-    "missing_commit": 82,
-    "incomplete_source": 604,
-    "no_source": 87
+    "complete": 1233,
+    "missing_config": 659,
+    "missing_commit": 0,
+    "incomplete_source": 0,
+    "no_source": 0,
+    "no_upstream_repo": 56
   },
   "families": [
     {

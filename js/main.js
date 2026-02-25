@@ -102,17 +102,24 @@ function updateSourcesSummary(summary) {
     document.getElementById('summary-total').textContent = summary.total;
     document.getElementById('summary-complete').textContent = summary.complete;
     document.getElementById('summary-missing-config').textContent = summary.missing_config;
-    document.getElementById('summary-missing-commit').textContent = summary.missing_commit;
+    const missingCommitEl = document.getElementById('summary-missing-commit');
+    if (missingCommitEl) missingCommitEl.textContent = summary.missing_commit || 0;
     const incompleteEl = document.getElementById('summary-incomplete-source');
     if (incompleteEl) incompleteEl.textContent = summary.incomplete_source || 0;
-    document.getElementById('summary-no-source').textContent = summary.no_source;
+    const noSourceEl = document.getElementById('summary-no-source');
+    if (noSourceEl) noSourceEl.textContent = summary.no_source || 0;
+    const noRepoEl = document.getElementById('summary-no-upstream-repo');
+    if (noRepoEl) noRepoEl.textContent = summary.no_upstream_repo || 0;
 
     // Update progress bar
     const completePercent = (summary.complete / summary.total * 100).toFixed(1);
-    const partialPercent = ((summary.missing_config + summary.missing_commit + (summary.incomplete_source || 0)) / summary.total * 100).toFixed(1);
+    const partialPercent = ((summary.missing_config + (summary.missing_commit || 0) + (summary.incomplete_source || 0)) / summary.total * 100).toFixed(1);
+    const noRepoPercent = ((summary.no_upstream_repo || 0) / summary.total * 100).toFixed(1);
 
     document.getElementById('progress-complete').style.width = completePercent + '%';
     document.getElementById('progress-partial').style.width = partialPercent + '%';
+    const noRepoBar = document.getElementById('progress-no-repo');
+    if (noRepoBar) noRepoBar.style.width = noRepoPercent + '%';
 
     // Render status breakdown chart
     renderStatusChart(summary);
@@ -135,9 +142,10 @@ function renderStatusChart(summary) {
     const data = [
         { label: 'Complete', value: summary.complete, color: '#4caf50' },
         { label: 'Missing Config', value: summary.missing_config, color: '#ff9800' },
-        { label: 'Missing Commit', value: summary.missing_commit, color: '#2196f3' },
+        { label: 'Missing Commit', value: summary.missing_commit || 0, color: '#2196f3' },
         { label: 'Incomplete', value: summary.incomplete_source || 0, color: '#9c27b0' },
-        { label: 'No Source', value: summary.no_source, color: '#f44336' }
+        { label: 'No Upstream Repo', value: summary.no_upstream_repo || 0, color: '#9e9e9e' },
+        { label: 'No Source', value: summary.no_source || 0, color: '#f44336' }
     ].filter(d => d.value > 0);
 
     const total = data.reduce((sum, d) => sum + d.value, 0);
