@@ -2434,6 +2434,14 @@ function simpleMarkdownToHtml(md) {
     let inList = false;
     let listType = null;
     let skipTitle = true; // skip the first H1 (already shown in summary)
+    let paraLines = []; // accumulate paragraph lines
+
+    function closePara() {
+        if (paraLines.length > 0) {
+            out.push(`<p style="margin:0.5em 0;">${paraLines.join(' ')}</p>`);
+            paraLines = [];
+        }
+    }
 
     function esc(s) {
         return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -2466,6 +2474,7 @@ function simpleMarkdownToHtml(md) {
 
         // Code blocks
         if (line.startsWith('```')) {
+            closePara();
             closeList();
             closeTable();
             if (inCodeBlock) {
@@ -2485,6 +2494,7 @@ function simpleMarkdownToHtml(md) {
 
         // Blank lines
         if (line.trim() === '') {
+            closePara();
             closeList();
             closeTable();
             continue;
@@ -2497,6 +2507,7 @@ function simpleMarkdownToHtml(md) {
 
         // Table rows
         if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            closePara();
             closeList();
             const cells = line.split('|').slice(1, -1).map(c => c.trim());
             if (!inTable) {
@@ -2515,11 +2526,12 @@ function simpleMarkdownToHtml(md) {
 
         // Headings
         const h3Match = line.match(/^### (.+)/);
-        if (h3Match) { closeList(); out.push(`<h4 style="margin-top:1.2em; margin-bottom:0.4em; color:#333;">${inline(h3Match[1])}</h4>`); continue; }
+        if (h3Match) { closePara(); closeList(); out.push(`<h4 style="margin-top:1.2em; margin-bottom:0.4em; color:#333;">${inline(h3Match[1])}</h4>`); continue; }
         const h2Match = line.match(/^## (.+)/);
-        if (h2Match) { closeList(); out.push(`<h3 style="margin-top:1.5em; margin-bottom:0.5em; border-bottom:1px solid #ddd; padding-bottom:0.3em;">${inline(h2Match[1])}</h3>`); continue; }
+        if (h2Match) { closePara(); closeList(); out.push(`<h3 style="margin-top:1.5em; margin-bottom:0.5em; border-bottom:1px solid #ddd; padding-bottom:0.3em;">${inline(h2Match[1])}</h3>`); continue; }
         const h1Match = line.match(/^# (.+)/);
         if (h1Match) {
+            closePara();
             closeList();
             if (skipTitle) { skipTitle = false; continue; }
             out.push(`<h2>${inline(h1Match[1])}</h2>`);
@@ -2529,6 +2541,7 @@ function simpleMarkdownToHtml(md) {
         // Unordered list
         const ulMatch = line.match(/^(\s*)- (.+)/);
         if (ulMatch) {
+            closePara();
             if (!inList || listType !== 'ul') {
                 closeList();
                 out.push('<ul style="margin:0.5em 0; padding-left:1.5em;">');
@@ -2542,6 +2555,7 @@ function simpleMarkdownToHtml(md) {
         // Ordered list
         const olMatch = line.match(/^(\s*)\d+\. (.+)/);
         if (olMatch) {
+            closePara();
             if (!inList || listType !== 'ol') {
                 closeList();
                 out.push('<ol style="margin:0.5em 0; padding-left:1.5em;">');
@@ -2552,11 +2566,12 @@ function simpleMarkdownToHtml(md) {
             continue;
         }
 
-        // Regular paragraph
+        // Regular paragraph — accumulate consecutive lines
         closeList();
-        out.push(`<p style="margin:0.5em 0;">${inline(line)}</p>`);
+        paraLines.push(inline(line));
     }
 
+    closePara();
     closeList();
     closeTable();
     if (inCodeBlock) out.push('</code></pre>');
