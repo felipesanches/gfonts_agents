@@ -1,20 +1,5 @@
 [
   {
-    "id": "gfonts_agents-kn6",
-    "title": "Fix 28 broken repository URLs",
-    "description": "28 font families have repository_url fields pointing to deleted or moved repos (HTTP 404). Primarily nicholasjohnson/* (23 fonts) and bghryct/* repos. Need to find where these repos moved or identify replacement sources. Tracked in data/pending_questions.json (q7).",
-    "status": "in_progress",
-    "priority": 1,
-    "issue_type": "task",
-    "assignee": "Felipe Correa da Silva Sanches",
-    "owner": "juca@members.fsf.org",
-    "created_at": "2026-02-25T15:09:38.500025801Z",
-    "created_by": "Felipe Correa da Silva Sanches",
-    "updated_at": "2026-02-25T15:13:45.327349434Z",
-    "dependency_count": 0,
-    "dependent_count": 0
-  },
-  {
     "id": "gfonts_agents-5zf",
     "title": "Discover upstream repos for 557 'no source' font families",
     "description": "557 font families (28.6%) in gfonts_library_sources.json have no upstream repository URL identified. These need investigation via PR history, commit messages, designer profiles, and GitHub searches to find their source repos. This is the single largest gap in fontc_crater target coverage.",

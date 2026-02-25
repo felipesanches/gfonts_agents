@@ -146,8 +146,8 @@
         ]
       },
       "adeleantignac": {
-        "name": "Adèle Antignac",
-        "bio_html": "<p>Adèle Antignac is a French type designer who has worked with Production Type, a Paris-based digital type foundry. She studied type design and has contributed to various typeface projects during her time at the foundry.</p><p>She is credited as a co-designer of Spectral, an open-source serif typeface commissioned by Google and designed in collaboration with Production Type. The Spectral family was designed specifically for screen reading and text-rich environments.</p>\n<p><a href=\"https://www.productiontype.com\">www.productiontype.com</a></p>",
+        "name": "Ad\u00e8le Antignac",
+        "bio_html": "<p>Ad\u00e8le Antignac is a French type designer who has worked with Production Type, a Paris-based digital type foundry. She studied type design and has contributed to various typeface projects during her time at the foundry.</p><p>She is credited as a co-designer of Spectral, an open-source serif typeface commissioned by Google and designed in collaboration with Production Type. The Spectral family was designed specifically for screen reading and text-rich environments.</p>\n<p><a href=\"https://www.productiontype.com\">www.productiontype.com</a></p>",
         "notable_fonts": [
           "Spectral"
         ]
@@ -376,7 +376,7 @@
       "Martin Sommaruga",
       "Michal Sahar",
       "Natalia Raices",
-      "Onur Yazıcıgil",
+      "Onur Yaz\u0131c\u0131gil",
       "Pablo Ugerman",
       "Riccardo De Franceschi"
     ],
@@ -466,5 +466,25 @@
     "created": "2026-02-20T01:12:55.939237-03:00",
     "github_pr": "https://github.com/google/fonts/pull/10248",
     "submitted_date": "2026-02-20T01:12:55.939237-03:00"
+  },
+  {
+    "id": "pr-fix-broken-urls",
+    "font": "Red Hat Display, Red Hat Mono, Red Hat Text, Manrope, Orelega One, Elsie",
+    "title": "Fix broken repository_url in 6 METADATA.pb files",
+    "description": "Fix 6 broken repository_url fields: Red Hat fonts (bghryct\u2192RedHatOfficial), Manrope (sharanda\u2192aaronbell), Orelega One (JapanYoshi\u2192haleyhalcyon/GitLab), Elsie (remove invalid URL)",
+    "type": "metadata_fix",
+    "priority": "high",
+    "files_to_modify": [
+      "ofl/redhatdisplay/METADATA.pb",
+      "ofl/redhatmono/METADATA.pb",
+      "ofl/redhattext/METADATA.pb",
+      "ofl/manrope/METADATA.pb",
+      "ofl/orelegaone/METADATA.pb",
+      "ofl/elsie/METADATA.pb"
+    ],
+    "status": "submitted",
+    "pr_number": 10266,
+    "pr_url": "https://github.com/google/fonts/pull/10266",
+    "created": "2026-02-25T15:30:00Z"
   }
 ]
