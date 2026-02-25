@@ -2322,21 +2322,141 @@ function renderInvestigations(data) {
 }
 
 function simpleMarkdownToHtml(md) {
-    return md
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-        .replace(/^### (.+)$/gm, '<h4>$1</h4>')
-        .replace(/^## (.+)$/gm, '<h3>$1</h3>')
-        .replace(/^# (.+)$/gm, '<h2>$1</h2>')
-        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/`([^`]+)`/g, '<code>$1</code>')
-        .replace(/^\| (.+)$/gm, (match) => {
-            const cells = match.split('|').filter(c => c.trim()).map(c => `<td>${c.trim()}</td>`).join('');
-            return `<tr>${cells}</tr>`;
-        })
-        .replace(/^- (.+)$/gm, '<li>$1</li>')
-        .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>')
-        .replace(/\n{2,}/g, '<br><br>')
-        .replace(/\n/g, '<br>');
+    const lines = md.split('\n');
+    const out = [];
+    let inCodeBlock = false;
+    let inTable = false;
+    let inList = false;
+    let listType = null;
+    let skipTitle = true; // skip the first H1 (already shown in summary)
+
+    function esc(s) {
+        return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function inline(s) {
+        return esc(s)
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.+?)\*/g, '<em>$1</em>')
+            .replace(/`([^`]+)`/g, '<code>$1</code>');
+    }
+
+    function closeList() {
+        if (inList) {
+            out.push(listType === 'ol' ? '</ol>' : '</ul>');
+            inList = false;
+            listType = null;
+        }
+    }
+
+    function closeTable() {
+        if (inTable) {
+            out.push('</tbody></table>');
+            inTable = false;
+        }
+    }
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+
+        // Code blocks
+        if (line.startsWith('```')) {
+            closeList();
+            closeTable();
+            if (inCodeBlock) {
+                out.push('</code></pre>');
+                inCodeBlock = false;
+            } else {
+                out.push('<pre style="background:#272822; color:#f8f8f2; padding:1em; border-radius:4px; overflow-x:auto; font-size:0.9em;"><code>');
+                inCodeBlock = true;
+            }
+            continue;
+        }
+        if (inCodeBlock) {
+            out.push(esc(line));
+            out.push('\n');
+            continue;
+        }
+
+        // Blank lines
+        if (line.trim() === '') {
+            closeList();
+            closeTable();
+            continue;
+        }
+
+        // Table separator row (|---|---|)
+        if (/^\|[\s\-:|]+\|$/.test(line.trim())) {
+            continue;
+        }
+
+        // Table rows
+        if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            closeList();
+            const cells = line.split('|').slice(1, -1).map(c => c.trim());
+            if (!inTable) {
+                inTable = true;
+                const headerCells = cells.map(c => `<th>${inline(c)}</th>`).join('');
+                out.push('<table class="guide-table"><thead><tr>' + headerCells + '</tr></thead><tbody>');
+                // Skip the separator row (next line)
+                continue;
+            }
+            const bodyCells = cells.map(c => `<td>${inline(c)}</td>`).join('');
+            out.push('<tr>' + bodyCells + '</tr>');
+            continue;
+        } else {
+            closeTable();
+        }
+
+        // Headings
+        const h3Match = line.match(/^### (.+)/);
+        if (h3Match) { closeList(); out.push(`<h4 style="margin-top:1.2em; margin-bottom:0.4em; color:#333;">${inline(h3Match[1])}</h4>`); continue; }
+        const h2Match = line.match(/^## (.+)/);
+        if (h2Match) { closeList(); out.push(`<h3 style="margin-top:1.5em; margin-bottom:0.5em; border-bottom:1px solid #ddd; padding-bottom:0.3em;">${inline(h2Match[1])}</h3>`); continue; }
+        const h1Match = line.match(/^# (.+)/);
+        if (h1Match) {
+            closeList();
+            if (skipTitle) { skipTitle = false; continue; }
+            out.push(`<h2>${inline(h1Match[1])}</h2>`);
+            continue;
+        }
+
+        // Unordered list
+        const ulMatch = line.match(/^(\s*)- (.+)/);
+        if (ulMatch) {
+            if (!inList || listType !== 'ul') {
+                closeList();
+                out.push('<ul style="margin:0.5em 0; padding-left:1.5em;">');
+                inList = true;
+                listType = 'ul';
+            }
+            out.push(`<li>${inline(ulMatch[2])}</li>`);
+            continue;
+        }
+
+        // Ordered list
+        const olMatch = line.match(/^(\s*)\d+\. (.+)/);
+        if (olMatch) {
+            if (!inList || listType !== 'ol') {
+                closeList();
+                out.push('<ol style="margin:0.5em 0; padding-left:1.5em;">');
+                inList = true;
+                listType = 'ol';
+            }
+            out.push(`<li>${inline(olMatch[2])}</li>`);
+            continue;
+        }
+
+        // Regular paragraph
+        closeList();
+        out.push(`<p style="margin:0.5em 0;">${inline(line)}</p>`);
+    }
+
+    closeList();
+    closeTable();
+    if (inCodeBlock) out.push('</code></pre>');
+
+    return out.join('\n');
 }
 
 // --- Beads Issues tab ---
