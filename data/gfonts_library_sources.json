@@ -6294,7 +6294,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "incomplete_source"
+      "status": "no_upstream_repo",
+      "notes": "Repository googlefonts/elsiefont returns 404."
     },
     {
       "path": "ofl/elsieswashcaps/METADATA.pb",
@@ -12165,13 +12166,14 @@
       "family_name": "Manrope",
       "designer": "Mikhail Sharanda",
       "license": "OFL",
-      "repository_url": "https://github.com/sharanda/manrope",
-      "commit": null,
+      "repository_url": "https://github.com/davelab6/manrope",
+      "commit": "f521bf8a764ebc8d6b0c1ac6d1df75503441eba5",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "incomplete_source"
+      "status": "missing_config",
+      "notes": "URL corrected from sharanda/manrope (404) to davelab6/manrope."
     },
     {
       "path": "ofl/mansalva/METADATA.pb",
@@ -12526,13 +12528,13 @@
       "designer": "SMC",
       "license": "OFL",
       "repository_url": "https://gitlab.com/smc/meera-inimai/",
-      "commit": null,
+      "commit": "unknown",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source",
-      "notes": "GitLab repo (not GitHub). No config.yaml."
+      "status": "missing_config",
+      "notes": "GitLab repo. Needs manual commit hash investigation."
     },
     {
       "path": "ofl/megrim/METADATA.pb",
@@ -14882,13 +14884,13 @@
       "family_name": "Noto Sans HK",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": "https://github.com/googlefonts/noto-cjk",
-      "commit": null,
+      "repository_url": "https://github.com/notofonts/noto-cjk",
+      "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/notosansimperialaramaic/METADATA.pb",
@@ -14960,13 +14962,13 @@
       "family_name": "Noto Sans JP",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": "https://github.com/googlefonts/noto-cjk",
-      "commit": null,
+      "repository_url": "https://github.com/notofonts/noto-cjk",
+      "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/notosanskaithi/METADATA.pb",
@@ -15105,13 +15107,13 @@
       "family_name": "Noto Sans KR",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": "https://github.com/googlefonts/noto-cjk",
-      "commit": null,
+      "repository_url": "https://github.com/notofonts/noto-cjk",
+      "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/notosanslao/METADATA.pb",
@@ -15955,13 +15957,13 @@
       "family_name": "Noto Sans SC",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": "https://github.com/googlefonts/noto-cjk",
-      "commit": null,
+      "repository_url": "https://github.com/notofonts/noto-cjk",
+      "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/notosanssharada/METADATA.pb",
@@ -16322,13 +16324,13 @@
       "family_name": "Noto Sans TC",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": "https://github.com/googlefonts/noto-cjk",
-      "commit": null,
+      "repository_url": "https://github.com/notofonts/noto-cjk",
+      "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/notosanstelugu/METADATA.pb",
@@ -17563,7 +17565,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "incomplete_source"
+      "status": "no_upstream_repo",
+      "notes": "Repository JapanYoshi/Orelega returns 404."
     },
     {
       "path": "ofl/orienta/METADATA.pb",
@@ -23867,12 +23870,12 @@
       "designer": "Bonjour Monde, Lucas Descroix",
       "license": "OFL",
       "repository_url": "https://gitlab.com/RosaWagner/syne-typeface",
-      "commit": null,
+      "commit": "e536e8f1a8724bf282da74bbae410f91231ce94c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/synetactile/METADATA.pb",
@@ -23880,12 +23883,12 @@
       "designer": "Bonjour Monde, Lucas Descroix",
       "license": "OFL",
       "repository_url": "https://gitlab.com/RosaWagner/syne-typeface",
-      "commit": null,
+      "commit": "e536e8f1a8724bf282da74bbae410f91231ce94c",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "incomplete_source"
+      "status": "missing_config"
     },
     {
       "path": "ofl/tacone/METADATA.pb",
