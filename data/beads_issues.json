@@ -26,8 +26,8 @@
   },
   {
     "id": "gfonts_agents-4i9",
-    "title": "Create override config.yaml for 32 font families",
-    "description": "32 font families have upstream repos but no config.yaml exists anywhere (neither upstream nor as override in google/fonts). Many use custom build systems (process.py, build.sh, CID-keyed fonts). Override config.yaml files need to be created in google/fonts family directories where feasible. Some may not be buildable with gftools-builder.",
+    "title": "Fill config_yaml for 560 missing_config font families",
+    "description": "560 font families have upstream repos and commit hashes but no config.yaml. Most upstream repos lack gftools-builder configs. Override config.yaml files may need to be created in google/fonts family directories.",
     "status": "open",
     "priority": 2,
     "issue_type": "task",
@@ -35,7 +35,7 @@
     "created_at": "2026-02-25T15:09:42.973762128Z",
     "created_by": "Felipe Correa da Silva Sanches",
     "updated_at": "2026-02-25T15:09:42.973762128Z",
-    "notes": "12 of original 44 resolved: config.yaml found in upstream repos. 32 remain without any config."
+    "notes": "12 of original 44 resolved: config.yaml found in upstream repos. 32 remain without any config.\n\n58 resolved (51 override configs found, 7 upstream configs). 560 remain without any config.yaml."
   },
   {
     "id": "gfonts_agents-5zf",
@@ -99,7 +99,7 @@
   },
   {
     "id": "gfonts_agents-plr",
-    "title": "Resolve 637 incomplete_source font families",
+    "title": "Resolve 102 incomplete_source font families",
     "description": "637 font families have upstream repos but are missing both commit hash and config_yaml. These need systematic investigation of upstream repos and PR history.",
     "status": "open",
     "priority": 2,
@@ -107,6 +107,7 @@
     "owner": "juca@members.fsf.org",
     "created_at": "2026-02-25T15:09:44.943545002Z",
     "created_by": "Felipe Correa da Silva Sanches",
-    "updated_at": "2026-02-25T15:09:44.943545002Z"
+    "updated_at": "2026-02-25T15:09:44.943545002Z",
+    "notes": "535 resolved via date-matched commits. 102 remain (repos not in cache or no commits before onboarding date)."
   }
 ]
