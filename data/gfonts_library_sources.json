@@ -21571,7 +21571,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete"
+      "status": "complete",
+      "notes": "Commit 7b288c6f not found in current repo history (possible force-push). Already in METADATA.pb."
     },
     {
       "path": "ofl/ralewaydots/METADATA.pb",
@@ -21854,7 +21855,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "notes": "URL corrected from bghryct/RedHatDisplay (404) to RedHatOfficial/RedHatFont. Commit is from bghryct/RedHatDisplay (now 404). Repo migrated to RedHatOfficial/RedHatFont."
+      "notes": "Original bghryct repo is 404. Commit hash from bghryct repo is unverifiable in RedHatOfficial/RedHatFont. Needs investigation."
     },
     {
       "path": "ofl/redhatmono/METADATA.pb",
@@ -21868,7 +21869,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "notes": "URL corrected from bghryct/RedHatMono (404) to RedHatOfficial/RedHatFont. Commit is from bghryct/RedHatMono (now 404). Repo migrated to RedHatOfficial/RedHatFont."
+      "notes": "Original bghryct repo is 404. Commit hash from bghryct repo is unverifiable in RedHatOfficial/RedHatFont. Needs investigation."
     },
     {
       "path": "ofl/redhattext/METADATA.pb",
@@ -21882,7 +21883,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "notes": "URL corrected from bghryct/RedHatText (404) to RedHatOfficial/RedHatFont. Commit is from bghryct/RedHatText (now 404). Repo migrated to RedHatOfficial/RedHatFont."
+      "notes": "Original bghryct repo is 404. Commit hash from bghryct repo is unverifiable in RedHatOfficial/RedHatFont. Needs investigation."
     },
     {
       "path": "ofl/redrose/METADATA.pb",
