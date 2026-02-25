@@ -3,13 +3,14 @@
     "id": "gfonts_agents-0lj",
     "title": "Fill missing commit hashes for 82 font families",
     "description": "82 font families have upstream repos identified but are missing the original onboarding commit hash. Need to investigate binary file history in google/fonts, analyze commit messages, and trace linked PRs to identify the exact commits used for onboarding.",
-    "status": "open",
+    "status": "closed",
     "priority": 2,
     "issue_type": "task",
     "owner": "juca@members.fsf.org",
     "created_at": "2026-02-25T15:09:40.633595872Z",
     "created_by": "Felipe Correa da Silva Sanches",
-    "updated_at": "2026-02-25T15:09:40.633595872Z"
+    "updated_at": "2026-02-25T15:09:40.633595872Z",
+    "notes": "Closed: All 94 missing_commit families resolved. 72 from PR bodies/commit messages, 22 from tags/date correlation/repo analysis."
   },
   {
     "id": "gfonts_agents-2uh",
@@ -98,8 +99,8 @@
   },
   {
     "id": "gfonts_agents-plr",
-    "title": "Resolve 134 'incomplete source' font families",
-    "description": "134 font families (6.9%) have status 'incomplete_source' in gfonts_library_sources.json. These have partial metadata but need additional fields filled in (some combination of repository_url, commit_hash, or config_yaml).",
+    "title": "Resolve 637 incomplete_source font families",
+    "description": "637 font families have upstream repos but are missing both commit hash and config_yaml. These need systematic investigation of upstream repos and PR history.",
     "status": "open",
     "priority": 2,
     "issue_type": "task",
