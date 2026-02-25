@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBioAudit();
     loadPrebuildResearch();
     loadCraterFailures();
+    loadInvestigations();
+    loadBeadsIssues();
 });
 
 function initTabs() {
@@ -2275,4 +2277,134 @@ function renderCraterFailures(data) {
         section.appendChild(table);
         container.appendChild(section);
     }
+}
+
+// --- Investigations tab ---
+
+async function loadInvestigations() {
+    try {
+        const response = await fetch('data/investigations/index.json');
+        const data = await response.json();
+        renderInvestigations(data);
+    } catch (error) {
+        console.error('Error loading investigations:', error);
+    }
+}
+
+function renderInvestigations(data) {
+    const container = document.getElementById('investigations-list');
+    if (!container) return;
+
+    if (!data.reports || data.reports.length === 0) {
+        container.innerHTML = '<p>No investigation reports yet.</p>';
+        return;
+    }
+
+    for (const report of data.reports) {
+        const section = document.createElement('div');
+        section.className = 'guide-section';
+
+        const contentHtml = simpleMarkdownToHtml(report.content);
+        section.innerHTML = `
+            <details>
+                <summary style="cursor:pointer;">
+                    <strong>${escapeHtml(report.title)}</strong>
+                    <span style="color:#666; margin-left:1em; font-size:0.9em;">${escapeHtml(report.families)} &middot; ${escapeHtml(report.date)}</span>
+                    ${report.issue ? `<span style="color:#999; margin-left:0.5em; font-size:0.85em;">[${escapeHtml(report.issue)}]</span>` : ''}
+                </summary>
+                <div style="margin-top:1em; padding:1em; background:#f8f9fa; border-radius:6px; font-size:0.95em; line-height:1.6;">
+                    ${contentHtml}
+                </div>
+            </details>
+        `;
+        container.appendChild(section);
+    }
+}
+
+function simpleMarkdownToHtml(md) {
+    return md
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/^### (.+)$/gm, '<h4>$1</h4>')
+        .replace(/^## (.+)$/gm, '<h3>$1</h3>')
+        .replace(/^# (.+)$/gm, '<h2>$1</h2>')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/^\| (.+)$/gm, (match) => {
+            const cells = match.split('|').filter(c => c.trim()).map(c => `<td>${c.trim()}</td>`).join('');
+            return `<tr>${cells}</tr>`;
+        })
+        .replace(/^- (.+)$/gm, '<li>$1</li>')
+        .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>')
+        .replace(/\n{2,}/g, '<br><br>')
+        .replace(/\n/g, '<br>');
+}
+
+// --- Beads Issues tab ---
+
+async function loadBeadsIssues() {
+    try {
+        const response = await fetch('data/beads_issues.json');
+        const data = await response.json();
+        renderBeadsIssues(data);
+    } catch (error) {
+        console.error('Error loading beads issues:', error);
+    }
+}
+
+function renderBeadsIssues(data) {
+    const container = document.getElementById('beads-issues-list');
+    if (!container) return;
+
+    const tsEl = document.getElementById('beads-timestamp');
+
+    if (!Array.isArray(data) || data.length === 0) {
+        container.innerHTML = '<p>No beads issues found.</p>';
+        return;
+    }
+
+    // Group by status
+    const inProgress = data.filter(i => i.status === 'in_progress');
+    const open = data.filter(i => i.status === 'open');
+    const closed = data.filter(i => i.status === 'closed');
+
+    // Find latest updated_at for timestamp
+    const latestUpdate = data.reduce((max, i) => i.updated_at > max ? i.updated_at : max, '');
+    if (tsEl && latestUpdate) {
+        tsEl.textContent = new Date(latestUpdate).toLocaleString();
+    }
+
+    const statusColors = {
+        in_progress: '#2196f3',
+        open: '#ff9800',
+        closed: '#4caf50'
+    };
+
+    const priorityLabels = { 0: 'P0', 1: 'P1', 2: 'P2', 3: 'P3' };
+
+    function renderGroup(title, issues) {
+        if (issues.length === 0) return '';
+        const rows = issues.map(issue => {
+            const pLabel = priorityLabels[issue.priority] || `P${issue.priority}`;
+            const pColor = issue.priority <= 1 ? '#f44336' : '#ff9800';
+            const statusColor = statusColors[issue.status] || '#999';
+            return `<tr>
+                <td><code>${escapeHtml(issue.id)}</code></td>
+                <td><span style="color:${pColor}; font-weight:bold;">${pLabel}</span></td>
+                <td><span style="display:inline-block; padding:2px 8px; border-radius:12px; background:${statusColor}; color:white; font-size:0.8em;">${escapeHtml(issue.status)}</span></td>
+                <td><strong>${escapeHtml(issue.title)}</strong><br><span style="color:#666; font-size:0.85em;">${escapeHtml(issue.description || '')}</span></td>
+                <td style="font-size:0.85em;">${escapeHtml(issue.assignee || '-')}</td>
+                <td style="font-size:0.85em;">${issue.created_at ? new Date(issue.created_at).toLocaleDateString() : '-'}</td>
+            </tr>`;
+        }).join('');
+        return `<h3>${title} (${issues.length})</h3>
+            <table class="guide-table">
+                <thead><tr><th>ID</th><th>Priority</th><th>Status</th><th>Title / Description</th><th>Assignee</th><th>Created</th></tr></thead>
+                <tbody>${rows}</tbody>
+            </table>`;
+    }
+
+    container.innerHTML =
+        renderGroup('In Progress', inProgress) +
+        renderGroup('Open', open) +
+        renderGroup('Closed', closed);
 }

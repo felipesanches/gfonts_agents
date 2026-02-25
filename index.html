@@ -28,6 +28,8 @@
             <button class="tab-btn" data-tab="bio-audit">Bio Audit</button>
             <button class="tab-btn" data-tab="prebuild">Pre-Build Research</button>
             <button class="tab-btn" data-tab="crater">Crater Failures</button>
+            <button class="tab-btn" data-tab="investigations">Investigations</button>
+            <button class="tab-btn" data-tab="beads">Beads Issues</button>
             <button class="tab-btn" data-tab="about">About</button>
         </nav>
 
@@ -896,6 +898,23 @@ includeSubsets:
                 <div id="crater-categories"></div>
 
                 <p class="sources-updated">Analysis date: <span id="crater-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-investigations" class="tab-content">
+            <div class="panel">
+                <h2>Investigation Reports</h2>
+                <p class="panel-description">Detailed research reports documenting upstream URL and commit decisions</p>
+                <div id="investigations-list"></div>
+            </div>
+        </section>
+
+        <section id="tab-beads" class="tab-content">
+            <div class="panel">
+                <h2>Beads Issue Tracker</h2>
+                <p class="panel-description">Task tracking via <a href="https://github.com/steveyegge/beads">Steve Yegge's Beads</a></p>
+                <div id="beads-issues-list"></div>
+                <p class="sources-updated">Last synced: <span id="beads-timestamp">--</span></p>
             </div>
         </section>
 
