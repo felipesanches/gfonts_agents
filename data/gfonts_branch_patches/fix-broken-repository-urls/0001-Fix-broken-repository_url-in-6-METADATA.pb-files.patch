@@ -1,0 +1,164 @@
+From 3fabc27eff7daa9517b4ccbc4e1c034ad1376925 Mon Sep 17 00:00:00 2001
+From: Felipe Correa da Silva Sanches <juca@members.fsf.org>
+Date: Wed, 25 Feb 2026 15:31:09 +0000
+Subject: [PATCH] Fix broken repository_url in 6 METADATA.pb files
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Red Hat Display/Mono/Text: bghryct/* (deleted) → RedHatOfficial/RedHatFont
+  Also adds config_yaml paths and updates file paths for new repo structure
+- Manrope: sharanda/manrope (deleted) → aaronbell/manrope
+  Also adds commit hash and config_yaml
+- Orelega One: JapanYoshi/Orelega (deleted) → gitlab.com/haleyhalcyon/orelega
+  Designer migrated from GitHub to GitLab
+- Elsie: Remove invalid URL "googlefonts/elsiefont (404)"
+  Sources are genuinely lost; no upstream repo exists
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+---
+ ofl/elsie/METADATA.pb         |  1 -
+ ofl/manrope/METADATA.pb       |  4 +++-
+ ofl/orelegaone/METADATA.pb    |  2 +-
+ ofl/redhatdisplay/METADATA.pb | 11 ++++++-----
+ ofl/redhatmono/METADATA.pb    | 11 ++++++-----
+ ofl/redhattext/METADATA.pb    | 11 ++++++-----
+ 6 files changed, 22 insertions(+), 18 deletions(-)
+
+diff --git a/ofl/elsie/METADATA.pb b/ofl/elsie/METADATA.pb
+index aaacab691..927fa92ff 100644
+--- a/ofl/elsie/METADATA.pb
++++ b/ofl/elsie/METADATA.pb
+@@ -25,7 +25,6 @@ subsets: "latin"
+ subsets: "latin-ext"
+ subsets: "menu"
+ source {
+-  repository_url: "https://github.com/googlefonts/elsiefont (404)"
+ }
+ stroke: "SERIF"
+ classifications: "DISPLAY"
+diff --git a/ofl/manrope/METADATA.pb b/ofl/manrope/METADATA.pb
+index 78b9aae0b..8f47a5123 100644
+--- a/ofl/manrope/METADATA.pb
++++ b/ofl/manrope/METADATA.pb
+@@ -25,5 +25,7 @@ axes {
+   max_value: 800.0
+ }
+ source {
+-  repository_url: "https://github.com/sharanda/manrope"
++  repository_url: "https://github.com/aaronbell/manrope"
++  commit: "6f81ebecdf65e4463b798cc07b16a4f8d5216917"
++  config_yaml: "sources/config.yaml"
+ }
+diff --git a/ofl/orelegaone/METADATA.pb b/ofl/orelegaone/METADATA.pb
+index 4b58a56fb..6fef87082 100644
+--- a/ofl/orelegaone/METADATA.pb
++++ b/ofl/orelegaone/METADATA.pb
+@@ -18,7 +18,7 @@ subsets: "latin"
+ subsets: "latin-ext"
+ subsets: "menu"
+ source {
+-  repository_url: "https://github.com/JapanYoshi/Orelega"
++  repository_url: "https://gitlab.com/haleyhalcyon/orelega"
+   files {
+     source_file: "OFL.txt"
+     dest_file: "OFL.txt"
+diff --git a/ofl/redhatdisplay/METADATA.pb b/ofl/redhatdisplay/METADATA.pb
+index b9bb31338..7da05f8f4 100644
+--- a/ofl/redhatdisplay/METADATA.pb
++++ b/ofl/redhatdisplay/METADATA.pb
+@@ -30,21 +30,22 @@ axes {
+   max_value: 900.0
+ }
+ source {
+-  repository_url: "https://github.com/bghryct/RedHatDisplay"
+-  commit: "fd36df3a3ad95084fe777597ed4b5c19961b3631"
++  repository_url: "https://github.com/RedHatOfficial/RedHatFont"
++  commit: "32287097803f6c58136b60bc7a4a594a7fcbd689"
++  config_yaml: "source/Proportional/RedHatDisplay/config.yaml"
+   files {
+     source_file: "OFL.txt"
+     dest_file: "OFL.txt"
+   }
+   files {
+-    source_file: "fonts/variable/RedHatDisplay[wght].ttf"
++    source_file: "fonts/Proportional/RedHatDisplay/variable/RedHatDisplay[wght].ttf"
+     dest_file: "RedHatDisplay[wght].ttf"
+   }
+   files {
+-    source_file: "fonts/variable/RedHatDisplay-Italic[wght].ttf"
++    source_file: "fonts/Proportional/RedHatDisplay/variable/RedHatDisplay-Italic[wght].ttf"
+     dest_file: "RedHatDisplay-Italic[wght].ttf"
+   }
+-  branch: "main"
++  branch: "master"
+ }
+ 
+ stroke: "SANS_SERIF"
+diff --git a/ofl/redhatmono/METADATA.pb b/ofl/redhatmono/METADATA.pb
+index f53fae15f..8791d7971 100644
+--- a/ofl/redhatmono/METADATA.pb
++++ b/ofl/redhatmono/METADATA.pb
+@@ -31,21 +31,22 @@ axes {
+   max_value: 700.0
+ }
+ source {
+-  repository_url: "https://github.com/bghryct/RedHatMono"
+-  commit: "a0f2a7032143500e44dfd569d09ba30414d51a1c"
++  repository_url: "https://github.com/RedHatOfficial/RedHatFont"
++  commit: "32287097803f6c58136b60bc7a4a594a7fcbd689"
++  config_yaml: "source/Mono/config.yaml"
+   files {
+     source_file: "OFL.txt"
+     dest_file: "OFL.txt"
+   }
+   files {
+-    source_file: "fonts/variable/RedHatMono[wght].ttf"
++    source_file: "fonts/Mono/variable/RedHatMono[wght].ttf"
+     dest_file: "RedHatMono[wght].ttf"
+   }
+   files {
+-    source_file: "fonts/variable/RedHatMono-Italic[wght].ttf"
++    source_file: "fonts/Mono/variable/RedHatMono-Italic[wght].ttf"
+     dest_file: "RedHatMono-Italic[wght].ttf"
+   }
+-  branch: "main"
++  branch: "master"
+ }
+ 
+ classifications: "MONOSPACE"
+diff --git a/ofl/redhattext/METADATA.pb b/ofl/redhattext/METADATA.pb
+index 5ebe2e964..34ee32cb1 100644
+--- a/ofl/redhattext/METADATA.pb
++++ b/ofl/redhattext/METADATA.pb
+@@ -30,21 +30,22 @@ axes {
+   max_value: 700.0
+ }
+ source {
+-  repository_url: "https://github.com/bghryct/RedHatText"
+-  commit: "dfbc50b16e27d5be1986c3ec79534460a74c1370"
++  repository_url: "https://github.com/RedHatOfficial/RedHatFont"
++  commit: "32287097803f6c58136b60bc7a4a594a7fcbd689"
++  config_yaml: "source/Proportional/RedHatText/config.yaml"
+   files {
+     source_file: "OFL.txt"
+     dest_file: "OFL.txt"
+   }
+   files {
+-    source_file: "fonts/variable/RedHatText[wght].ttf"
++    source_file: "fonts/Proportional/RedHatText/variable/RedHatText[wght].ttf"
+     dest_file: "RedHatText[wght].ttf"
+   }
+   files {
+-    source_file: "fonts/variable/RedHatText-Italic[wght].ttf"
++    source_file: "fonts/Proportional/RedHatText/variable/RedHatText-Italic[wght].ttf"
+     dest_file: "RedHatText-Italic[wght].ttf"
+   }
+-  branch: "main"
++  branch: "master"
+ }
+ 
+ stroke: "SANS_SERIF"
+-- 
+2.47.3
+

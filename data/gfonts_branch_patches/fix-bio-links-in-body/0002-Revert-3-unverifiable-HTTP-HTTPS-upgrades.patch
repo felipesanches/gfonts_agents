@@ -1,0 +1,47 @@
+From 4de32ff3ba9ba5443c8436b5a385ec28fefd31c8 Mon Sep 17 00:00:00 2001
+From: Felipe Correa da Silva Sanches <juca@members.fsf.org>
+Date: Fri, 13 Feb 2026 15:56:57 -0300
+Subject: [PATCH 2/2] =?UTF-8?q?Revert=203=20unverifiable=20HTTP=E2=86=92HT?=
+ =?UTF-8?q?TPS=20upgrades?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revert font.cadsondemak.com, input.fontbureau.com, and
+jonnypinhorn.co.uk to HTTP — these domains do not resolve,
+so HTTPS cannot be verified as working.
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+---
+ catalog/designers/cadsondemak/bio.html       | 2 +-
+ catalog/designers/davidjonathanross/bio.html | 2 +-
+ catalog/designers/jonnypinhorn/bio.html      | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/catalog/designers/cadsondemak/bio.html b/catalog/designers/cadsondemak/bio.html
+index 485f973d9..3173fe72e 100644
+--- a/catalog/designers/cadsondemak/bio.html
++++ b/catalog/designers/cadsondemak/bio.html
+@@ -1,2 +1,2 @@
+ <p>Cadson Demak is the first Thai communication design firm to develop type design solutions. Founded in 2002, the studio came together through a shared love of typography and design, a wish to expand and modernize the font industry as a whole, and the desire to make everyday use of type more accessible. They expanded from a modest design firm with dozens of their own typefaces into a boutique type foundry under the name Cadson Demak in 2008.</p>
+-<p><a href="https://font.cadsondemak.com/foundry/" target="_blank">font.cadsondemak.com</a> | <a href="https://github.com/cadsondemak" target="_blank">GitHub</a> | <a href="https://twitter.com/cadsondemak" target="_blank">Twitter</a></p>
++<p><a href="http://font.cadsondemak.com/foundry/" target="_blank">font.cadsondemak.com</a> | <a href="https://github.com/cadsondemak" target="_blank">GitHub</a> | <a href="https://twitter.com/cadsondemak" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/davidjonathanross/bio.html b/catalog/designers/davidjonathanross/bio.html
+index 28084aaa6..17070abd4 100644
+--- a/catalog/designers/davidjonathanross/bio.html
++++ b/catalog/designers/davidjonathanross/bio.html
+@@ -1,2 +1,2 @@
+ <p>David draws letters of all shapes and sizes for custom and retail typeface designs. He joined The Font Bureau in 2007, and his typeface designs include Manicotti, a Wild West slab; Turnip, a rugged book face; and Input, an extensive family designed for computer programming. David shares his love of letters through lectures and workshops, and co-curates a collection of cursive signage in Los Angeles.</p>
+-<p><a href="https://www.djr.com/" target="_blank">djr.com</a> | <a href="https://www.fontbureau.com/" target="_blank">fontbureau.com</a> | <a href="https://input.fontbureau.com/" target="_blank">input.fontbureau.com</a> | <a href="https://retroscriptla.com/" target="_blank">retroscriptla.com</a> | <a href="https://www.djr.com/typefaces/manicotti" target="_blank">Manicotti</a> | <a href="https://www.djr.com/typefaces/turnip" target="_blank">Turnip</a> | <a href="https://www.github.com/djrrb" target="_blank">GitHub</a> | <a href="https://www.twitter.com/djrrb" target="_blank">Twitter</a></p>
++<p><a href="https://www.djr.com/" target="_blank">djr.com</a> | <a href="https://www.fontbureau.com/" target="_blank">fontbureau.com</a> | <a href="http://input.fontbureau.com/" target="_blank">input.fontbureau.com</a> | <a href="https://retroscriptla.com/" target="_blank">retroscriptla.com</a> | <a href="https://www.djr.com/typefaces/manicotti" target="_blank">Manicotti</a> | <a href="https://www.djr.com/typefaces/turnip" target="_blank">Turnip</a> | <a href="https://www.github.com/djrrb" target="_blank">GitHub</a> | <a href="https://www.twitter.com/djrrb" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/jonnypinhorn/bio.html b/catalog/designers/jonnypinhorn/bio.html
+index 6a51d4241..ee4092cab 100644
+--- a/catalog/designers/jonnypinhorn/bio.html
++++ b/catalog/designers/jonnypinhorn/bio.html
+@@ -1,2 +1,2 @@
+ <p>After completing an MA in Type Design at the University of Reading, Jonny went on to design Karla for Google Fonts. Karla is a popular and quirky sans-serif typeface that supports both Latin and Tamil scripts. His continued fascination with India and Indian languages led him to ITF, where he worked for three years. Jonny continues to work exclusively on Indic scripts—including Shrikhand and Atithi most recently.</p>
+-<p><a href="https://jonnypinhorn.co.uk/" target="_blank">jonnypinhorn.co.uk</a> | <a href="https://github.com/jonpinhorn/atithi" target="_blank">Atithi</a> | <a href="https://github.com/jonpinhorn/shrikhand" target="_blank">Shrikhand</a> | <a href="https://github.com/jonpinhorn" target="_blank">GitHub</a> | <a href="https://twitter.com/jonpinhorn_type" target="_blank">Twitter</a></p>
++<p><a href="http://jonnypinhorn.co.uk/" target="_blank">jonnypinhorn.co.uk</a> | <a href="https://github.com/jonpinhorn/atithi" target="_blank">Atithi</a> | <a href="https://github.com/jonpinhorn/shrikhand" target="_blank">Shrikhand</a> | <a href="https://github.com/jonpinhorn" target="_blank">GitHub</a> | <a href="https://twitter.com/jonpinhorn_type" target="_blank">Twitter</a></p>
+-- 
+2.47.3
+

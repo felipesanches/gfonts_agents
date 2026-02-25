@@ -1,0 +1,99 @@
+From 9172d90ee08b9d401bddc550323055650d355a7e Mon Sep 17 00:00:00 2001
+From: Felipe Correa da Silva Sanches <juca@members.fsf.org>
+Date: Fri, 13 Feb 2026 11:52:29 -0300
+Subject: [PATCH] Add biographies for 8 designers
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Add bio.html files for Frank Grießhammer, Sudtipos, Monokrom,
+Sandoll, Dan Sayers, Denis Jacquerye, Joe Prince, and Sindre Bremnes.
+
+All bios follow the editorial guide: third person, present tense,
+verifiable facts only, proper HTML format with only <p> and <a> tags.
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+---
+ catalog/designers/dansayers/bio.html       | 1 +
+ catalog/designers/denisjacquerye/bio.html  | 2 ++
+ catalog/designers/frankgriehammer/bio.html | 2 ++
+ catalog/designers/joeprince/bio.html       | 1 +
+ catalog/designers/monokrom/bio.html        | 2 ++
+ catalog/designers/sandoll/bio.html         | 2 ++
+ catalog/designers/sindrebremnes/bio.html   | 2 ++
+ catalog/designers/sudtipos/bio.html        | 2 ++
+ 8 files changed, 14 insertions(+)
+ create mode 100644 catalog/designers/dansayers/bio.html
+ create mode 100644 catalog/designers/denisjacquerye/bio.html
+ create mode 100644 catalog/designers/frankgriehammer/bio.html
+ create mode 100644 catalog/designers/joeprince/bio.html
+ create mode 100644 catalog/designers/monokrom/bio.html
+ create mode 100644 catalog/designers/sandoll/bio.html
+ create mode 100644 catalog/designers/sindrebremnes/bio.html
+ create mode 100644 catalog/designers/sudtipos/bio.html
+
+diff --git a/catalog/designers/dansayers/bio.html b/catalog/designers/dansayers/bio.html
+new file mode 100644
+index 000000000..b3b39edab
+--- /dev/null
++++ b/catalog/designers/dansayers/bio.html
+@@ -0,0 +1 @@
++<p>Dan Sayers is a software engineer and type designer. He studied mathematics at the University of Oxford. In 2011, he created the Averia typeface family by computationally averaging the outlines of all 725 fonts installed on his computer. The name is derived from the Spanish word "avería," meaning "breakdown," which shares an etymological root with the English word "average." Four variants are available on Google Fonts: Averia Libre, Averia Sans Libre, Averia Serif Libre, and Averia Gruesa Libre.</p>
+diff --git a/catalog/designers/denisjacquerye/bio.html b/catalog/designers/denisjacquerye/bio.html
+new file mode 100644
+index 000000000..82781d0a5
+--- /dev/null
++++ b/catalog/designers/denisjacquerye/bio.html
+@@ -0,0 +1,2 @@
++<p>Denis Jacquerye is a font and language engineer based in Luxembourg. Born in Lubumbashi, Zaire (now the Democratic Republic of the Congo), he holds a BSc in Computer Science with a minor in Linguistics from McGill University in Montreal. He specializes in extending open-source fonts to support African orthographies in the Latin script and is a co-leader of the DejaVu font project. He designed the Molengo typeface, available on Google Fonts. In 2020, Google Fonts commissioned him as a language consultant to expand the Questrial font to include an African Latin glyph set.</p>
++<p><a href="https://github.com/moyogo" target="_blank">GitHub</a></p>
+diff --git a/catalog/designers/frankgriehammer/bio.html b/catalog/designers/frankgriehammer/bio.html
+new file mode 100644
+index 000000000..955f41042
+--- /dev/null
++++ b/catalog/designers/frankgriehammer/bio.html
+@@ -0,0 +1,2 @@
++<p>Frank Grießhammer is a type designer and font developer at Adobe. He studied graphic design at HBKsaar in Saarbrücken and ISIA in Florence, and graduated with a Master of Design in Type and Media from KABK in The Hague in 2010. He joined Adobe in 2011, where he designed Source Serif, the serif companion to Source Sans. The Latin, Greek, and Cyrillic glyphs in Source Han Serif are also his work. His other typefaces include HWT Tuscan Extended, Stempel Elan, and Chidori. Source Serif 4 is available on Google Fonts.</p>
++<p><a href="https://github.com/frankrolf" target="_blank">GitHub</a> | <a href="https://fonts.adobe.com/designers/frank-griesshammer" target="_blank">Adobe Fonts</a></p>
+diff --git a/catalog/designers/joeprince/bio.html b/catalog/designers/joeprince/bio.html
+new file mode 100644
+index 000000000..fe288c552
+--- /dev/null
++++ b/catalog/designers/joeprince/bio.html
+@@ -0,0 +1 @@
++<p>Joe Prince is a type designer based in Los Angeles, California. He has designed nine font families available on Google Fonts, including Maven Pro, Varela Round, Questrial, Handlee, Squada One, Varela, Geostar, and Geostar Fill. NTR, also on Google Fonts, was a collaboration with Appaji Ambarisha Darbha and Purushoth Kumar Guthula.</p>
+diff --git a/catalog/designers/monokrom/bio.html b/catalog/designers/monokrom/bio.html
+new file mode 100644
+index 000000000..0a456ab25
+--- /dev/null
++++ b/catalog/designers/monokrom/bio.html
+@@ -0,0 +1,2 @@
++<p>Monokrom Skriftforlag is an independent Norwegian type foundry founded in 2012 by Sindre Bremnes and Frode Helland. The foundry produces retail typefaces and custom type design. Its typefaces Satyr and Faunus received a Visuelt Gold Medal in 2013. Geologica, a variable sans-serif designed by Bremnes and Helland, is available on Google Fonts.</p>
++<p><a href="https://monokrom.no" target="_blank">monokrom.no</a> | <a href="https://www.instagram.com/monokromskriftforlag/" target="_blank">Instagram</a></p>
+diff --git a/catalog/designers/sandoll/bio.html b/catalog/designers/sandoll/bio.html
+new file mode 100644
+index 000000000..f6ac01539
+--- /dev/null
++++ b/catalog/designers/sandoll/bio.html
+@@ -0,0 +1,2 @@
++<p>Based in Seoul, Sandoll is a Korean type foundry established in 1984 by Paul Geumho Seok. It was Korea's first digital font foundry and has developed typefaces for Samsung, Apple, Google, LG, and IBM. Sandoll designed the Korean glyphs for Noto Sans and Noto Serif KR in collaboration with Google and Adobe. Its Nanum font series, originally commissioned by Naver, includes Nanum Gothic, Nanum Myeongjo, Nanum Gothic Coding, Nanum Brush Script, and Nanum Pen Script, all available on Google Fonts.</p>
++<p><a href="https://en.sandoll.co.kr" target="_blank">sandoll.co.kr</a></p>
+diff --git a/catalog/designers/sindrebremnes/bio.html b/catalog/designers/sindrebremnes/bio.html
+new file mode 100644
+index 000000000..49fc15cc7
+--- /dev/null
++++ b/catalog/designers/sindrebremnes/bio.html
+@@ -0,0 +1,2 @@
++<p>Sindre Bremnes is a Norwegian type designer and co-founder of Monokrom Skriftforlag. Before turning to type design in his late thirties, he worked as a journalist and editor at several Norwegian newspapers, including Universitas and Klassekampen. He is self-taught as a type designer. His debut typefaces Satyr and Faunus, both released in 2012, received a Visuelt Gold Medal in 2013. Geologica, a variable sans-serif he designed with Frode Helland, is available on Google Fonts.</p>
++<p><a href="https://monokrom.no" target="_blank">monokrom.no</a></p>
+diff --git a/catalog/designers/sudtipos/bio.html b/catalog/designers/sudtipos/bio.html
+new file mode 100644
+index 000000000..cc6a14e9d
+--- /dev/null
++++ b/catalog/designers/sudtipos/bio.html
+@@ -0,0 +1,2 @@
++<p>Based in Buenos Aires, Sudtipos is a type foundry established in 2002 by Alejandro Paul, Diego Giaccone, Claudio Pousada, and Ariel Garofalo. The foundry specializes in script and display typefaces for packaging, advertising, and corporate identity. Its catalog includes over 270 typeface families. Fifteen of its fonts are available on Google Fonts, including Aguafina Script, Mr Dafoe, and Bubblegum Sans.</p>
++<p><a href="https://www.sudtipos.com" target="_blank">sudtipos.com</a> | <a href="https://www.instagram.com/sudtipos/" target="_blank">Instagram</a></p>
+-- 
+2.47.3
+

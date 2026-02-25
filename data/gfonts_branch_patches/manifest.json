@@ -1,0 +1,91 @@
+{
+  "description": "Patch files for open PR branches on google/fonts (felipesanches fork)",
+  "upstream_repo": "https://github.com/google/fonts",
+  "fork_repo": "https://github.com/felipesanches/fonts",
+  "remotes": {
+    "origin": "https://github.com/google/fonts.git",
+    "felipesanches": "https://github.com/felipesanches/fonts.git"
+  },
+  "branches": {
+    "add-designer-bios-v2": {
+      "base_commit": "113eb7cbd7958cdbda9a7670d78aae527bbb149a",
+      "tip_commit": "9172d90ee08b9d401bddc550323055650d355a7e",
+      "patch_count": 1,
+      "patches": [
+        "0001-Add-biographies-for-8-designers.patch"
+      ],
+      "pr": {
+        "pr": 10224,
+        "state": "OPEN",
+        "title": "Add biographies for 8 designers (v2)"
+      }
+    },
+    "fix-arsenal-config": {
+      "base_commit": "5ddf312e67246ed2c81e28a5137c6d238b5886ab",
+      "tip_commit": "603bf82c4aa61379f6fc8ad6b4beb3a7e943890b",
+      "patch_count": 1,
+      "patches": [
+        "0001-Add-buildVariable-false-to-Arsenal-config.yaml.patch"
+      ],
+      "pr": {
+        "pr": 10249,
+        "state": "OPEN",
+        "title": "Arsenal: add buildVariable: false to config.yaml"
+      }
+    },
+    "fix-bio-links-in-body": {
+      "base_commit": "113eb7cbd7958cdbda9a7670d78aae527bbb149a",
+      "tip_commit": "4de32ff3ba9ba5443c8436b5a385ec28fefd31c8",
+      "patch_count": 2,
+      "patches": [
+        "0001-Move-inline-links-to-final-links-paragraph-in-17-des.patch",
+        "0002-Revert-3-unverifiable-HTTP-HTTPS-upgrades.patch"
+      ],
+      "pr": {
+        "pr": 10228,
+        "state": "OPEN",
+        "title": "Move inline links to final links paragraph in 17 designer bios"
+      }
+    },
+    "fix-bio-target-blank": {
+      "base_commit": "113eb7cbd7958cdbda9a7670d78aae527bbb149a",
+      "tip_commit": "65c082d5d0fa88a94a85aa952d4e7433d623f079",
+      "patch_count": 1,
+      "patches": [
+        "0001-Add-missing-target-_blank-to-links-in-221-designer-b.patch"
+      ],
+      "pr": {
+        "pr": 10226,
+        "state": "OPEN",
+        "title": "Add missing target=\"_blank\" to links in 221 designer bios"
+      }
+    },
+    "fix-broken-repository-urls": {
+      "base_commit": "52497b82fc2dee159046b96747ab265e4f39b282",
+      "tip_commit": "3fabc27eff7daa9517b4ccbc4e1c034ad1376925",
+      "patch_count": 1,
+      "patches": [
+        "0001-Fix-broken-repository_url-in-6-METADATA.pb-files.patch"
+      ],
+      "pr": {
+        "pr": 10266,
+        "state": "OPEN",
+        "title": "Fix broken repository_url in 6 METADATA.pb files"
+      }
+    },
+    "fix-raleway-config": {
+      "base_commit": "5ddf312e67246ed2c81e28a5137c6d238b5886ab",
+      "tip_commit": "ca5bf4cf49556825f4ea1d6b4a3c034969f59532",
+      "patch_count": 1,
+      "patches": [
+        "0001-Fix-Raleway-config.yaml-source-paths.patch"
+      ],
+      "pr": {
+        "pr": 10250,
+        "state": "OPEN",
+        "title": "Raleway: fix incorrect source paths in config.yaml"
+      }
+    }
+  },
+  "restore_instructions": "\nTo restore these branches on a fresh google/fonts clone:\n\n1. Clone google/fonts:\n   git clone https://github.com/google/fonts.git /mnt/shared/gfonts\n   cd /mnt/shared/gfonts\n\n2. Add the fork remote:\n   git remote add felipesanches https://github.com/felipesanches/fonts.git\n\n3. For each branch, create it and apply patches:\n   git checkout -b <branch-name> origin/main\n   git am data/gfonts_branch_patches/<branch-name>/*.patch\n\n   If patches don't apply cleanly (main has moved forward), try:\n   git checkout -b <branch-name> <base_commit>\n   git am data/gfonts_branch_patches/<branch-name>/*.patch\n\n   Or fetch from the fork (branches are still pushed there):\n   git fetch felipesanches <branch-name>\n   git checkout -b <branch-name> felipesanches/<branch-name>\n\n4. Push updated branches to the fork if needed:\n   git push felipesanches <branch-name>\n"
+}

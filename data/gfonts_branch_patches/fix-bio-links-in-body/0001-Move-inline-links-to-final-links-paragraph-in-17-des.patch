@@ -1,0 +1,239 @@
+From f908ddb4cb47f8028b7105731accced862130325 Mon Sep 17 00:00:00 2001
+From: Felipe Correa da Silva Sanches <juca@members.fsf.org>
+Date: Fri, 13 Feb 2026 15:47:28 -0300
+Subject: [PATCH 1/2] Move inline links to final links paragraph in 17 designer
+ bios
+
+Unwrap <a> tags from body text and move URLs to the final
+pipe-separated links paragraph. Link text follows editorial guide:
+- Domain name for websites
+- Platform name for social media
+- Typeface name for specimen/typeface-specific pages
+
+Also upgrades HTTP URLs to HTTPS and fixes a broken </p> tag
+in huertatipografica bio.
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+---
+ catalog/designers/arrowtype/bio.html         | 9 ++-------
+ catalog/designers/cadsondemak/bio.html       | 4 ++--
+ catalog/designers/davidjonathanross/bio.html | 4 ++--
+ catalog/designers/gunnlaugurbriem/bio.html   | 4 ++--
+ catalog/designers/huertatipografica/bio.html | 5 ++---
+ catalog/designers/indiantypefoundry/bio.html | 4 ++--
+ catalog/designers/jamespuckett/bio.html      | 4 ++--
+ catalog/designers/jonnypinhorn/bio.html      | 4 ++--
+ catalog/designers/markdavis/bio.html         | 4 ++--
+ catalog/designers/mckl/bio.html              | 7 ++-----
+ catalog/designers/meirsadan/bio.html         | 4 ++--
+ catalog/designers/paratype/bio.html          | 4 ++--
+ catalog/designers/petrvanblokland/bio.html   | 9 +++------
+ catalog/designers/rosetta/bio.html           | 4 ++--
+ catalog/designers/satsuyako/bio.html         | 7 ++-----
+ catalog/designers/typetogether/bio.html      | 4 ++--
+ catalog/designers/yanekiontef/bio.html       | 4 ++--
+ 17 files changed, 35 insertions(+), 50 deletions(-)
+
+diff --git a/catalog/designers/arrowtype/bio.html b/catalog/designers/arrowtype/bio.html
+index 6e71eb4b7..76b1d47a6 100644
+--- a/catalog/designers/arrowtype/bio.html
++++ b/catalog/designers/arrowtype/bio.html
+@@ -3,12 +3,7 @@
+     design, and font development, run by Stephen Nixon. Previously, Stephen worked in digital product design and brand
+     experience design at IBM. In 2018, Stephen graduated with a Master&rsquo;s degree in Type and Media from The Royal
+     Academy of Art (KABK) in The Hague, Netherlands. In 2019, Google Fonts commissioned and published Arrow Type&rsquo;s
+-    first release, <a href="https://fonts.google.com/specimen/Recursive">Recursive</a>. Today, Arrow Type has a focus on
++    first release, Recursive. Today, Arrow Type has a focus on
+     creating fonts that are beautiful, uniquely useful, and tell a story.
+ </p>
+-<p>
+-    <a href="https://arrowtype.com/" target="_blank">arrowtype.com</a> |
+-    <a href="https://github.com/arrowtype" target="_blank">GitHub</a> |
+-    <a href="https://youtube.com/arrowtype" target="_blank">YouTube</a> |
+-    <a href="https://instagram.com/arrowtype" target="_blank">Instagram</a>
+-</p>
+\ No newline at end of file
++<p><a href="https://arrowtype.com/" target="_blank">arrowtype.com</a> | <a href="https://fonts.google.com/specimen/Recursive" target="_blank">Recursive</a> | <a href="https://github.com/arrowtype" target="_blank">GitHub</a> | <a href="https://instagram.com/arrowtype" target="_blank">Instagram</a> | <a href="https://youtube.com/arrowtype" target="_blank">YouTube</a></p>
+\ No newline at end of file
+diff --git a/catalog/designers/cadsondemak/bio.html b/catalog/designers/cadsondemak/bio.html
+index 192f085d2..485f973d9 100644
+--- a/catalog/designers/cadsondemak/bio.html
++++ b/catalog/designers/cadsondemak/bio.html
+@@ -1,2 +1,2 @@
+-<p><a href="http://font.cadsondemak.com/foundry/" target="_blank">Cadson Demak</a> is the first Thai communication design firm to develop type design solutions. Founded in 2002, the studio came together through a shared love of typography and design, a wish to expand and modernize the font industry as a whole, and the desire to make everyday use of type more accessible. They expanded from a modest design firm with dozens of their own typefaces into a boutique type foundry under the name Cadson Demak in 2008.</p>
+-<p><a href="https://github.com/cadsondemak" target="_blank">Github</a> | <a href="https://twitter.com/cadsondemak" target="_blank">Twitter</a></p>
++<p>Cadson Demak is the first Thai communication design firm to develop type design solutions. Founded in 2002, the studio came together through a shared love of typography and design, a wish to expand and modernize the font industry as a whole, and the desire to make everyday use of type more accessible. They expanded from a modest design firm with dozens of their own typefaces into a boutique type foundry under the name Cadson Demak in 2008.</p>
++<p><a href="https://font.cadsondemak.com/foundry/" target="_blank">font.cadsondemak.com</a> | <a href="https://github.com/cadsondemak" target="_blank">GitHub</a> | <a href="https://twitter.com/cadsondemak" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/davidjonathanross/bio.html b/catalog/designers/davidjonathanross/bio.html
+index 17283ead1..28084aaa6 100644
+--- a/catalog/designers/davidjonathanross/bio.html
++++ b/catalog/designers/davidjonathanross/bio.html
+@@ -1,2 +1,2 @@
+-<p>David draws letters of all shapes and sizes for custom and retail typeface designs. He joined <a href="http://www.fontbureau.com/" target="_blank">The Font Bureau</a> in 2007, and his typeface designs include <a href="http://www.djr.com/typefaces/manicotti" target="_blank">Manicotti</a>, a Wild West slab; <a href="http://www.djr.com/typefaces/turnip" target="_blank">Turnip</a>, a rugged book face; and <a href="http://input.fontbureau.com/" target="_blank">Input</a>, an extensive family designed for computer programming. David shares his love of letters through lectures and workshops, and co-curates <a href="http://retroscriptla.com/" target="_blank">a collection of cursive signage</a> in Los Angeles.</p>
+-<p><a href="http://www.djr.com/" target="_blank">www.djr.com</a> | <a href="http://www.github.com/djrrb" target="_blank">GitHub</a> | <a href="http://www.twitter.com/djrrb" target="_blank">Twitter</a></p>
++<p>David draws letters of all shapes and sizes for custom and retail typeface designs. He joined The Font Bureau in 2007, and his typeface designs include Manicotti, a Wild West slab; Turnip, a rugged book face; and Input, an extensive family designed for computer programming. David shares his love of letters through lectures and workshops, and co-curates a collection of cursive signage in Los Angeles.</p>
++<p><a href="https://www.djr.com/" target="_blank">djr.com</a> | <a href="https://www.fontbureau.com/" target="_blank">fontbureau.com</a> | <a href="https://input.fontbureau.com/" target="_blank">input.fontbureau.com</a> | <a href="https://retroscriptla.com/" target="_blank">retroscriptla.com</a> | <a href="https://www.djr.com/typefaces/manicotti" target="_blank">Manicotti</a> | <a href="https://www.djr.com/typefaces/turnip" target="_blank">Turnip</a> | <a href="https://www.github.com/djrrb" target="_blank">GitHub</a> | <a href="https://www.twitter.com/djrrb" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/gunnlaugurbriem/bio.html b/catalog/designers/gunnlaugurbriem/bio.html
+index 0f73f1775..c9ba37f39 100644
+--- a/catalog/designers/gunnlaugurbriem/bio.html
++++ b/catalog/designers/gunnlaugurbriem/bio.html
+@@ -1,9 +1,9 @@
+ <p>Gunnlaugur SE Briem is a designer and lives in California. His postgraduate studies in Copenhagen and London culminated in a PhD from the Royal College of Art. He also passed, for good measure, an apprenticeship exam at a typography college in Reykjavik in 1989.</p>
+ 
+-<p>He took part in the introduction of cursive handwriting in his native Iceland, where his method and manuals have been used in classrooms for over twenty years. Some are available on his website: <a href="https://sites.google.com/view/briem">briem.net</a>. He is also a member of the advisory board of Visible Language, a research magazine. Additionally, he publishes free e-books on fonts and related subjects at: <a href="https://sites.google.com/view/briem/free-books">www.operina.com</a>.</p>
++<p>He took part in the introduction of cursive handwriting in his native Iceland, where his method and manuals have been used in classrooms for over twenty years. Some are available on his website: briem.net. He is also a member of the advisory board of Visible Language, a research magazine. Additionally, he publishes free e-books on fonts and related subjects at: www.operina.com.</p>
+     
+ <p>He has designed several fonts for The Economist, The Times, and for general licensing. He has also lectured widely in Europe and America, and was Designer-in-Residence at the Rhode Island School of Design in 1990.</p>
+     
+ <p>He organized traveling exhibitions of lettering and calligraphy and, for a time, ran a calligraphy gallery. He has had several one-man shows of his own work, most recently at the Victoria and Albert Museum in London, and has won a few awards.</p>
+ 
+-<p><a href="https://sites.google.com/view/briem">briem.net</a></p>
+\ No newline at end of file
++<p><a href="https://sites.google.com/view/briem" target="_blank">briem.net</a> | <a href="https://sites.google.com/view/briem/free-books" target="_blank">Free e-books</a></p>
+\ No newline at end of file
+diff --git a/catalog/designers/huertatipografica/bio.html b/catalog/designers/huertatipografica/bio.html
+index 81d4a0e3b..49f727bad 100644
+--- a/catalog/designers/huertatipografica/bio.html
++++ b/catalog/designers/huertatipografica/bio.html
+@@ -1,3 +1,2 @@
+-<p>Argentina</p>
+-<p><a href="http://huertatipografica.com/" target="_blank">Huerta Tipográfica</a> is a collaborative Argentinian type foundry with a deep respect for design and typography. Founded in 2009, the company began as a place to meet, cooperate, and share experiences while collaborating on academic and commercial projects. Huerta Tipográfica develops custom and retail fonts with libre, proprietary, or exclusive licenses, and is strongly committed to creating innovative and functional type. Their award-winning work has been recognized by Letter.2, Tipos Latinos, and the Bienal Iberoamericana de Diseño.</p>
+-<p><a href="https://github.com/huertatipografica" target="_blank">GitHub</a> | <a href="https://twitter.com/huertatipo?lang=en" target="_blank">Twitter</a><p>
++<p>Huerta Tipográfica is a collaborative Argentinian type foundry with a deep respect for design and typography. Founded in 2009, the company began as a place to meet, cooperate, and share experiences while collaborating on academic and commercial projects. Huerta Tipográfica develops custom and retail fonts with libre, proprietary, or exclusive licenses, and is strongly committed to creating innovative and functional type. Their award-winning work has been recognized by Letter.2, Tipos Latinos, and the Bienal Iberoamericana de Diseño.</p>
++<p><a href="https://huertatipografica.com/" target="_blank">huertatipografica.com</a> | <a href="https://github.com/huertatipografica" target="_blank">GitHub</a> | <a href="https://twitter.com/huertatipo?lang=en" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/indiantypefoundry/bio.html b/catalog/designers/indiantypefoundry/bio.html
+index 5210fa894..e463e1607 100644
+--- a/catalog/designers/indiantypefoundry/bio.html
++++ b/catalog/designers/indiantypefoundry/bio.html
+@@ -1,2 +1,2 @@
+-<p><a href="http://www.indiantypefoundry.com/" target="_blank">Indian Type Foundry</a> (ITF) creates retail and custom multilingual fonts for print and digital media. Started in 2009 by Satya Rajpurohit and Peter Bil’ak, ITF works with designers from across the world. ITF fonts are used by clients ranging from tech giants like Apple, Google, and Sony, to various international brands.</p>
+-<p><a href="http://github.com/itfoundry" target="_blank">Github</a> | <a href="https://twitter.com/itfoundry" target="_blank">Twitter</a></p>
++<p>Indian Type Foundry (ITF) creates retail and custom multilingual fonts for print and digital media. Started in 2009 by Satya Rajpurohit and Peter Bil’ak, ITF works with designers from across the world. ITF fonts are used by clients ranging from tech giants like Apple, Google, and Sony, to various international brands.</p>
++<p><a href="https://www.indiantypefoundry.com/" target="_blank">indiantypefoundry.com</a> | <a href="https://github.com/itfoundry" target="_blank">GitHub</a> | <a href="https://twitter.com/itfoundry" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/jamespuckett/bio.html b/catalog/designers/jamespuckett/bio.html
+index 9218504d4..c20a675b7 100644
+--- a/catalog/designers/jamespuckett/bio.html
++++ b/catalog/designers/jamespuckett/bio.html
+@@ -1,2 +1,2 @@
+-<p>James studied graphic design at the Corcoran College of Art where he graduated with honors. He designed the Armitage, Ironstrike, and Lorimer type families, and has worked on custom type designs for clients including Mucca, Mutt Industries, and Google. In 2009, he started <a href="http://dunwichtype.com/" target="_blank">Dunwich Type Founders</a>.</p>
+-<p><a href="http://github.com/DunwichType" target="_blank">GitHub</a>  | <a href="https://twitter.com/Dunwich_Type" target="_blank">Twitter</a></p>
++<p>James studied graphic design at the Corcoran College of Art where he graduated with honors. He designed the Armitage, Ironstrike, and Lorimer type families, and has worked on custom type designs for clients including Mucca, Mutt Industries, and Google. In 2009, he started Dunwich Type Founders.</p>
++<p><a href="https://dunwichtype.com/" target="_blank">dunwichtype.com</a> | <a href="https://github.com/DunwichType" target="_blank">GitHub</a> | <a href="https://twitter.com/Dunwich_Type" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/jonnypinhorn/bio.html b/catalog/designers/jonnypinhorn/bio.html
+index c6f51db35..6a51d4241 100644
+--- a/catalog/designers/jonnypinhorn/bio.html
++++ b/catalog/designers/jonnypinhorn/bio.html
+@@ -1,2 +1,2 @@
+-<p>After completing an MA in Type Design at the University of Reading, Jonny went on to design Karla for Google Fonts. Karla is a popular and quirky sans-serif typeface that supports both Latin and Tamil scripts. His continued fascination with India and Indian languages led him to ITF, where he worked for three years. Jonny continues to work exclusively on Indic scripts—including <a href="https://github.com/jonpinhorn/shrikhand" target="_blank">Shrikhand</a> and <a href="https://github.com/jonpinhorn/atithi" target="_blank">Atithi</a> most recently.</p>
+-<p><a href="http://jonnypinhorn.co.uk/" target="_blank">Jonnypinhorn.co.uk</a> | <a href="https://github.com/jonpinhorn" target="_blank">GitHub</a> | <a href="https://twitter.com/jonpinhorn_type" target="_blank">Twitter</a></p>
++<p>After completing an MA in Type Design at the University of Reading, Jonny went on to design Karla for Google Fonts. Karla is a popular and quirky sans-serif typeface that supports both Latin and Tamil scripts. His continued fascination with India and Indian languages led him to ITF, where he worked for three years. Jonny continues to work exclusively on Indic scripts—including Shrikhand and Atithi most recently.</p>
++<p><a href="https://jonnypinhorn.co.uk/" target="_blank">jonnypinhorn.co.uk</a> | <a href="https://github.com/jonpinhorn/atithi" target="_blank">Atithi</a> | <a href="https://github.com/jonpinhorn/shrikhand" target="_blank">Shrikhand</a> | <a href="https://github.com/jonpinhorn" target="_blank">GitHub</a> | <a href="https://twitter.com/jonpinhorn_type" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/markdavis/bio.html b/catalog/designers/markdavis/bio.html
+index b2ab22394..a6b122aa5 100644
+--- a/catalog/designers/markdavis/bio.html
++++ b/catalog/designers/markdavis/bio.html
+@@ -1,2 +1,2 @@
+-<p><a href="https://designermarkdavis.com">Mark Davis</a> is a Brooklyn-based type designer and art director, working with clients from local institutions to national brands. His fascination with typography began in high school after seeing Gary Hustwit’s Helvetica (2007), sparking a lifelong obsession with type’s role in shaping communication. A Taylor University graduate, Mark studied type design at The Cooper Union before interning at the legendary Font Bureau. He’s since shaped brand and campaign identities at BuzzFeed News, NBCUniversal, SME Branding, Tronvig, and independently, contributing to projects for Ticketmaster, Cal.com, WWD, Type Network, The Font Bureau, NMWA, VNS Health, the Kentucky Derby, the Breeders’ Cup, and Nike.</p>
+-<p><a href="https://designermarkdavis.com">designermarkdavis.com</a> | <a href="https://x.com/MarkFonts">x.com/MarkFonts</a></p>
+\ No newline at end of file
++<p>Mark Davis is a Brooklyn-based type designer and art director, working with clients from local institutions to national brands. His fascination with typography began in high school after seeing Gary Hustwit’s Helvetica (2007), sparking a lifelong obsession with type’s role in shaping communication. A Taylor University graduate, Mark studied type design at The Cooper Union before interning at the legendary Font Bureau. He’s since shaped brand and campaign identities at BuzzFeed News, NBCUniversal, SME Branding, Tronvig, and independently, contributing to projects for Ticketmaster, Cal.com, WWD, Type Network, The Font Bureau, NMWA, VNS Health, the Kentucky Derby, the Breeders’ Cup, and Nike.</p>
++<p><a href="https://designermarkdavis.com" target="_blank">designermarkdavis.com</a> | <a href="https://x.com/MarkFonts" target="_blank">X</a></p>
+\ No newline at end of file
+diff --git a/catalog/designers/mckl/bio.html b/catalog/designers/mckl/bio.html
+index 2dff3a547..22179aea8 100644
+--- a/catalog/designers/mckl/bio.html
++++ b/catalog/designers/mckl/bio.html
+@@ -1,9 +1,6 @@
+ <p>
+-<a href="https://mckltype.com/" target="_blank">MCKL</a> is a Los Angeles-based type foundry and design studio, publishing original fonts and creating custom designs for clients.
++MCKL is a Los Angeles-based type foundry and design studio, publishing original fonts and creating custom designs for clients.
+ Founded in 2012, MCKL is run by Jeremy Mickel, its primary designer and operating officer.
+ MCKL has collaborated with leading design firms, companies, and organizations around the world to produce custom typeface and logo design services.
+ </p>
+-<p>
+-<a href="https://twitter.com/mckltype" target="_blank">Twitter</a> | 
+-<a href="https://instagram.com/mckltype/" target="_blank">Instagram</a>
+-</p>
++<p><a href="https://mckltype.com/" target="_blank">mckltype.com</a> | <a href="https://instagram.com/mckltype/" target="_blank">Instagram</a> | <a href="https://twitter.com/mckltype" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/meirsadan/bio.html b/catalog/designers/meirsadan/bio.html
+index 994c6ec3f..0f2b8b855 100644
+--- a/catalog/designers/meirsadan/bio.html
++++ b/catalog/designers/meirsadan/bio.html
+@@ -1,2 +1,2 @@
+-<p>Meir is a designer specializing in type design, typography, interactive digital design, and web development. He serves as Creative Director at <a href="http://feelter.net/" target="_blank">feelternet</a>, and teaches at Bezalel Academy of Arts and Design, and Minshar School for Art.</p>
+-<p><a href="http://meirsadan.com/" target="_blank">meirsadan.com</a> | <a href="http://github.com/meirsadan/" target="_blank">GitHub</a> | <a href="http://twitter.com/meirsadan/" target="_blank">Twitter</a></p>
++<p>Meir is a designer specializing in type design, typography, interactive digital design, and web development. He serves as Creative Director at feelternet, and teaches at Bezalel Academy of Arts and Design, and Minshar School for Art.</p>
++<p><a href="https://meirsadan.com/" target="_blank">meirsadan.com</a> | <a href="https://feelter.net/" target="_blank">feelter.net</a> | <a href="https://github.com/meirsadan/" target="_blank">GitHub</a> | <a href="https://twitter.com/meirsadan/" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/paratype/bio.html b/catalog/designers/paratype/bio.html
+index 98caa528d..51def3670 100644
+--- a/catalog/designers/paratype/bio.html
++++ b/catalog/designers/paratype/bio.html
+@@ -1,2 +1,2 @@
+-<p><a href="http://www.paratype.com/" target="_blank">ParaType</a> was established in 1998 as a successor to the ParaGraph International type department. The company develops and distributes multilingual typefaces that support the Latin, Cyrillic, Greek, Arabic, Hebrew, Armenian, and Georgian scripts. A specialist in manual TrueType hinting, ParaType offers high-quality hinting services to other type designers. The most popular ParaType projects include <a href="http://www.paratype.com/pstore/default.asp?fcode=PT_PRG&letter=P" target="_blank">Pragmatica</a>, <a href="http://www.paratype.com/public/" target="_blank">PT Serif</a>, and <a href="http://www.paratype.com/pstore/default.asp?fcode=PT_CRC&letter=C" target="_blank">Circe</a>.</p>
+-<p><a href="https://twitter.com/ParaTypeNews" target="_blank">Twitter</a></p>
++<p>ParaType was established in 1998 as a successor to the ParaGraph International type department. The company develops and distributes multilingual typefaces that support the Latin, Cyrillic, Greek, Arabic, Hebrew, Armenian, and Georgian scripts. A specialist in manual TrueType hinting, ParaType offers high-quality hinting services to other type designers. The most popular ParaType projects include Pragmatica, PT Serif, and Circe.</p>
++<p><a href="https://www.paratype.com/" target="_blank">paratype.com</a> | <a href="https://www.paratype.com/pstore/default.asp?fcode=PT_PRG&letter=P" target="_blank">Pragmatica</a> | <a href="https://www.paratype.com/public/" target="_blank">PT Serif</a> | <a href="https://www.paratype.com/pstore/default.asp?fcode=PT_CRC&letter=C" target="_blank">Circe</a> | <a href="https://twitter.com/ParaTypeNews" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/petrvanblokland/bio.html b/catalog/designers/petrvanblokland/bio.html
+index b5d2e8d0e..1cbf9712a 100644
+--- a/catalog/designers/petrvanblokland/bio.html
++++ b/catalog/designers/petrvanblokland/bio.html
+@@ -10,10 +10,7 @@ In 1988 he also began running novel design games at various design schools and c
+ His writing on design is published in the Dutch design magazines <em>Items</em> and <em>BNO Vormberichten</em> on a regular basis.
+ </p>
+ <p>
+-He co-founded <a href="https://web.archive.org/web/20110221070544/http://www.webtype.com/info/about/">webtype.com</a> in 2010, and <a href="https://typenetwork.com">typenetwork.com</a> in 2016, for which he has developed many type design tools.
+-Currently his focus is with his type foundry <a href="https://typetr.com">TYPETR</a> where he publishes new type alongside best-sellers including Proforma, Productus, Presti, Upgrade, Responder, Powerlift and Bitcount.
+-</p>
+-<p>
+-  <a href="https://typetr.com">typetr.com</a> | 
+-  <a href="https://instagram.com/petrvanblokland">@petrvanblokland</a>
++He co-founded webtype.com in 2010, and typenetwork.com in 2016, for which he has developed many type design tools.
++Currently his focus is with his type foundry TYPETR where he publishes new type alongside best-sellers including Proforma, Productus, Presti, Upgrade, Responder, Powerlift and Bitcount.
+ </p>
++<p><a href="https://typetr.com" target="_blank">typetr.com</a> | <a href="https://typenetwork.com" target="_blank">typenetwork.com</a> | <a href="https://web.archive.org/web/20110221070544/http://www.webtype.com/info/about/" target="_blank">webtype.com</a> | <a href="https://instagram.com/petrvanblokland" target="_blank">Instagram</a></p>
+diff --git a/catalog/designers/rosetta/bio.html b/catalog/designers/rosetta/bio.html
+index baa9f148e..43858da7b 100644
+--- a/catalog/designers/rosetta/bio.html
++++ b/catalog/designers/rosetta/bio.html
+@@ -1,2 +1,2 @@
+-<p><a href="http://rosettatype.com/" target="_blank">Rosetta</a> addresses the needs of global typography by working with collaborators to create original fonts for a polyphonic world. Their work has won numerous awards, but more importantly it has enabled people to read more easily in their native language. The Rosetta font library currently supports over 200 languages including Latin, Arabic, Armenian, Greek, Cyrillic, Inuktitut, and Indic scripts. Their fonts serve numerous clients including the BBC, RFE/RL, LG, and Harvard University Press.</p>
+-<p><a href="http://github.rosettatype.com/" target="_blank">GitHub</a> | <a href="http://twitter.com/rosettatype" target="_blank">Twitter</a></p>
++<p>Rosetta addresses the needs of global typography by working with collaborators to create original fonts for a polyphonic world. Their work has won numerous awards, but more importantly it has enabled people to read more easily in their native language. The Rosetta font library currently supports over 200 languages including Latin, Arabic, Armenian, Greek, Cyrillic, Inuktitut, and Indic scripts. Their fonts serve numerous clients including the BBC, RFE/RL, LG, and Harvard University Press.</p>
++<p><a href="https://rosettatype.com/" target="_blank">rosettatype.com</a> | <a href="https://github.rosettatype.com/" target="_blank">GitHub</a> | <a href="https://twitter.com/rosettatype" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/satsuyako/bio.html b/catalog/designers/satsuyako/bio.html
+index 822960ce1..e5e96f6f3 100644
+--- a/catalog/designers/satsuyako/bio.html
++++ b/catalog/designers/satsuyako/bio.html
+@@ -1,9 +1,6 @@
+ <p>
+ A freelance designer based in Saitama, Japan.
+-Started designing Japanese fonts in 2012, including <a href="https://fonts.google.com/specimen/Yomogi">Yomogi</a>, <a href="https://fonts.google.com/specimen/Cherry+Bomb+One">Cherry Bomb One</a>, and more.
++Started designing Japanese fonts in 2012, including Yomogi, Cherry Bomb One, and more.
+ They have also worked on Latin fonts since 2019.
+ </p>
+-<p>
+-<a href="https://satsuyako.com/" target="_blank">website</a> |
+-<a href="https://twitter.com/satsuyako" target="_blank">twitter</a>
+-</p>
++<p><a href="https://satsuyako.com/" target="_blank">satsuyako.com</a> | <a href="https://fonts.google.com/specimen/Yomogi" target="_blank">Yomogi</a> | <a href="https://fonts.google.com/specimen/Cherry+Bomb+One" target="_blank">Cherry Bomb One</a> | <a href="https://twitter.com/satsuyako" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/typetogether/bio.html b/catalog/designers/typetogether/bio.html
+index 56007b89c..c543aecad 100644
+--- a/catalog/designers/typetogether/bio.html
++++ b/catalog/designers/typetogether/bio.html
+@@ -1,2 +1,2 @@
+-<p><a href="http://www.type-together.com" target="_blank">TypeTogether</a> is an independent type foundry committed to excellence in type design with a focus on editorial use. Known for the popular typefaces <a href="http://www.type-together.com/Adelle" target="_blank">Adelle</a> and <a href="http://www.type-together.com/Bree" target="_blank">Bree</a>, TypeTogether also creates custom type designs for corporate use, including their work for <a href="http://www.type-together.com/index.php?action=portal/viewContent&cntId_content=3301&id_section=141" target="_blank">Google Play Books</a>, <a href="http://www.type-together.com/index.php?action=portal/viewContent&cntId_content=3230&id_section=141" target="_blank">Clarín</a>, and <a href="http://www.type-together.com/index.php?action=portal/viewContent&cntId_content=3198&id_section=141" target="_blank">Apple</a>.</p>
+-<p><a href="https://twitter.com/TypeTogether" target="_blank">Twitter</a></p>
++<p>TypeTogether is an independent type foundry committed to excellence in type design with a focus on editorial use. Known for the popular typefaces Adelle and Bree, TypeTogether also creates custom type designs for corporate use, including their work for Google Play Books, Clarín, and Apple.</p>
++<p><a href="https://www.type-together.com" target="_blank">type-together.com</a> | <a href="https://www.type-together.com/Adelle" target="_blank">Adelle</a> | <a href="https://www.type-together.com/Bree" target="_blank">Bree</a> | <a href="https://www.type-together.com/index.php?action=portal/viewContent&cntId_content=3301&id_section=141" target="_blank">Google Play Books</a> | <a href="https://www.type-together.com/index.php?action=portal/viewContent&cntId_content=3230&id_section=141" target="_blank">Clarín</a> | <a href="https://www.type-together.com/index.php?action=portal/viewContent&cntId_content=3198&id_section=141" target="_blank">Apple</a> | <a href="https://twitter.com/TypeTogether" target="_blank">Twitter</a></p>
+diff --git a/catalog/designers/yanekiontef/bio.html b/catalog/designers/yanekiontef/bio.html
+index 89b339cbb..3369fc20c 100644
+--- a/catalog/designers/yanekiontef/bio.html
++++ b/catalog/designers/yanekiontef/bio.html
+@@ -1,2 +1,2 @@
+-<p>Yanek is a typeface designer and typographer‭. ‬Born in the USSR‭, ‬he emigrated to Israel at the age of 16‭ ‬and studied graphic design at Bezalel Academy of Arts and Design. ‬He has worked in London and Tel Aviv‭, and taught typography‭ ‬and type design at the Bezalel Academy ‬and at Shenkar College of Engineering and Design. ‬An award-winning type designer‭, Yanek runs Fontef, his own foundry specializing in Hebrew type design. He designed the FF Cartonnage‭, ‬Hadasah Friedlaender,‭ ‬and Mandatory type families‭. ‬His interest in <a href="http://www.fontef.com/photolog" target="_blank">found typography</a> and <a href="https://bicyclog.wordpress.com/" target="_blank">bicycle culture</a>‭ is documented online‭.</p>
+-<p><a href="http://github.com/fontef" target="_blank">GitHub‭</a> | <a href="https://twitter.com/YanekIontef" target="_blank">Twitter</a></p>
++<p>Yanek is a typeface designer and typographer‭. ‬Born in the USSR‭, ‬he emigrated to Israel at the age of 16‭ ‬and studied graphic design at Bezalel Academy of Arts and Design. ‬He has worked in London and Tel Aviv‭, and taught typography‭ ‬and type design at the Bezalel Academy ‬and at Shenkar College of Engineering and Design. ‬An award-winning type designer‭, Yanek runs Fontef, his own foundry specializing in Hebrew type design. He designed the FF Cartonnage‭, ‬Hadasah Friedlaender,‭ ‬and Mandatory type families‭. ‬His interest in found typography and bicycle culture‭ is documented online‭.</p>
++<p><a href="https://www.fontef.com/photolog" target="_blank">fontef.com</a> | <a href="https://bicyclog.wordpress.com/" target="_blank">bicyclog.wordpress.com</a> | <a href="https://github.com/fontef" target="_blank">GitHub</a> | <a href="https://twitter.com/YanekIontef" target="_blank">Twitter</a></p>
+-- 
+2.47.3
+
