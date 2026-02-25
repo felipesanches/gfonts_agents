@@ -9,7 +9,7 @@ import sys
 from html.parser import HTMLParser
 
 
-GFONTS_DIR = "/mnt/shared/gfonts"
+GFONTS_DIR = "/mnt/shared/google/fonts"
 CATALOG_DIR = os.path.join(GFONTS_DIR, "catalog", "designers")
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "bio_audit.json")
 

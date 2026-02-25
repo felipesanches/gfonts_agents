@@ -10,7 +10,7 @@ import os
 import re
 import json
 
-GFONTS_BASE = "/mnt/shared/gfonts/ofl"
+GFONTS_BASE = "/mnt/shared/google/fonts/ofl"
 CACHE_BASE = "/mnt/shared/upstream_repos/fontc_crater_cache"
 
 # ============================================================

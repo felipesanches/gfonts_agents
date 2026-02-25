@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 CACHE_BASE = "/mnt/shared/upstream_repos/fontc_crater_cache"
-GFONTS_DIR = "/mnt/shared/gfonts"
+GFONTS_DIR = "/mnt/shared/google/fonts"
 TRACKING_FILE = "data/gfonts_library_sources.json"
 RESULTS_FILE = "data/config_yaml_scan_results.json"
 

@@ -15,7 +15,7 @@ import os
 import re
 import sys
 
-GFONTS_DIR = "/mnt/shared/gfonts"
+GFONTS_DIR = "/mnt/shared/google/fonts"
 READY_FILE = "data/config_yaml_ready_for_pr.json"
 
 

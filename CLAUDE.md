@@ -121,7 +121,7 @@ The directories `upstream_repos_cache` and `consumed_complementary_cache` were l
 
 ## Google Fonts Repository (STRICT POLICY)
 
-Keep an always up-to-date clone of the `google/fonts` repository at `/mnt/shared/gfonts`.
+Keep an always up-to-date clone of the `google/fonts` repository at `/mnt/shared/google/fonts`.
 
 This repository is used for:
 - Reading METADATA.pb files to extract metadata information
@@ -130,7 +130,7 @@ This repository is used for:
 
 Before any operation that depends on METADATA.pb data, ensure the clone is up-to-date:
 ```bash
-git -C /mnt/shared/gfonts fetch origin && git -C /mnt/shared/gfonts pull --ff-only
+git -C /mnt/shared/google/fonts fetch origin && git -C /mnt/shared/google/fonts pull --ff-only
 ```
 
 ## Progress Tracking (STRICT POLICY)
