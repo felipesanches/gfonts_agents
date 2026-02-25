@@ -561,12 +561,13 @@
       "designer": "SIL International",
       "license": "OFL",
       "repository_url": "https://github.com/silnrsi/font-alkalami",
-      "commit": null,
+      "commit": "aac8fee84607803af27a8c3bdae12056b0ba0aec",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "v3.000 tag."
     },
     {
       "path": "ofl/alkatra/METADATA.pb",
@@ -645,7 +646,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/allura/METADATA.pb",
@@ -801,7 +802,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/amarante/METADATA.pb",
@@ -1290,12 +1291,12 @@
       "designer": "Natsumi Matsuba",
       "license": "OFL",
       "repository_url": "https://github.com/matsuba723/Aoboshi",
-      "commit": null,
+      "commit": "97f6481745f4184f60e61a9a628e48f7ea5bdcf2",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/arapey/METADATA.pb",
@@ -1616,12 +1617,12 @@
       "designer": "Adobe Systems Inc., Ben Nathan",
       "license": "OFL",
       "repository_url": "https://github.com/TypeNetwork/Assistant",
-      "commit": null,
+      "commit": "2b5ffdccb0216ccbdbdc8a623f3b935fc5b5e04a",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/astasans/METADATA.pb",
@@ -1993,12 +1994,13 @@
       "designer": "Cadson Demak",
       "license": "OFL",
       "repository_url": "https://github.com/cadsondemak/Bai-Jamjuree",
-      "commit": null,
+      "commit": "e35cafdf694905d1ac0f27afc587c0e972be1260",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date (2018-08-23)."
     },
     {
       "path": "ofl/bakbakone/METADATA.pb",
@@ -2372,12 +2374,13 @@
       "designer": "Studio DRAMA",
       "license": "OFL",
       "repository_url": "https://github.com/Studio-DRAMA/BBH",
-      "commit": null,
+      "commit": "b8d40ef62b138be4c7c3dac2de117217f261b24b",
       "branch": "main",
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Inferred: upstream commit 1 day before google/fonts add."
     },
     {
       "path": "ofl/bbhbogle/METADATA.pb",
@@ -2385,12 +2388,13 @@
       "designer": "Studio DRAMA",
       "license": "OFL",
       "repository_url": "https://github.com/Studio-DRAMA/BBH",
-      "commit": null,
+      "commit": "b8d40ef62b138be4c7c3dac2de117217f261b24b",
       "branch": "main",
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Inferred: upstream commit 1 day before google/fonts add."
     },
     {
       "path": "ofl/bbhhegarty/METADATA.pb",
@@ -2398,12 +2402,13 @@
       "designer": "Studio DRAMA",
       "license": "OFL",
       "repository_url": "https://github.com/Studio-DRAMA/BBH",
-      "commit": null,
+      "commit": "b8d40ef62b138be4c7c3dac2de117217f261b24b",
       "branch": "main",
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Inferred: upstream commit 1 day before google/fonts add."
     },
     {
       "path": "ofl/beaurivage/METADATA.pb",
@@ -2424,12 +2429,12 @@
       "designer": "Ryoichi Tsunekawa",
       "license": "OFL",
       "repository_url": "https://github.com/dharmatype/Bebas-Neue",
-      "commit": null,
+      "commit": "686d14af640c17af3691c597778f121d840d9051",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/beiruti/METADATA.pb",
@@ -2598,7 +2603,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/betaniapatmosgdl/METADATA.pb",
@@ -2611,7 +2616,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/betaniapatmosguideline/METADATA.pb",
@@ -2624,7 +2629,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/betaniapatmosin/METADATA.pb",
@@ -2637,7 +2642,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/betaniapatmosingdl/METADATA.pb",
@@ -2650,7 +2655,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/bethellen/METADATA.pb",
@@ -2762,12 +2767,12 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": null,
+      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/bigshouldersdisplaysc/METADATA.pb",
@@ -2801,12 +2806,13 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": null,
+      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Same packager batch as Big Shoulders Display."
     },
     {
       "path": "ofl/bigshouldersinlinedisplaysc/METADATA.pb",
@@ -2827,12 +2833,13 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": null,
+      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Same packager batch as Big Shoulders Display."
     },
     {
       "path": "ofl/bigshouldersinlinetextsc/METADATA.pb",
@@ -2866,12 +2873,13 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": null,
+      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Same packager batch as Big Shoulders Display."
     },
     {
       "path": "ofl/bigshouldersstencildisplaysc/METADATA.pb",
@@ -2892,12 +2900,13 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": null,
+      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Same packager batch as Big Shoulders Display."
     },
     {
       "path": "ofl/bigshouldersstenciltextsc/METADATA.pb",
@@ -2918,12 +2927,13 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": null,
+      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Same packager batch as Big Shoulders Display."
     },
     {
       "path": "ofl/bigshoulderstextsc/METADATA.pb",
@@ -4417,12 +4427,13 @@
       "designer": "Cadson Demak",
       "license": "OFL",
       "repository_url": "https://github.com/cadsondemak/Charmonman",
-      "commit": null,
+      "commit": "8590fc4aaefe8ccf9ec0abeff7f66b6bc1a83503",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/chathura/METADATA.pb",
@@ -4586,12 +4597,12 @@
       "designer": "Tamcy",
       "license": "OFL",
       "repository_url": "https://github.com/chiron-fonts/chiron-sung-hk",
-      "commit": null,
+      "commit": "65b752caf7698f9e773991fda674152c4bce21fb",
       "branch": "source",
       "config_yaml": "scripts/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/chivo/METADATA.pb",
@@ -5106,12 +5117,13 @@
       "designer": "Alan Dague-Greene",
       "license": "OFL",
       "repository_url": "https://github.com/quoteunquoteapps/CourierPrime",
-      "commit": null,
+      "commit": "7fd585a2dd4c1612c79b3308e300923d1c13df93",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream on same day as Font Bakery Dashboard create."
     },
     {
       "path": "ofl/coustard/METADATA.pb",
@@ -5600,12 +5612,12 @@
       "designer": "Colophon Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/dm-mono",
-      "commit": null,
+      "commit": "57fadabfb200a77de2812540026c249dc3013077",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/dmsans/METADATA.pb",
@@ -5757,12 +5769,12 @@
       "designer": "Fontworks Inc.",
       "license": "OFL",
       "repository_url": "https://github.com/fontworks-fonts/DotGothic16",
-      "commit": null,
+      "commit": "e44ca7bb46e7f353302c1431bf752af007c4fdfe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/doto/METADATA.pb",
@@ -6280,12 +6292,12 @@
       "designer": "FontFuror",
       "license": "OFL",
       "repository_url": "https://github.com/vv-monsalve/Enriqueta_2019",
-      "commit": null,
+      "commit": "c1dbf07dd69dc7146e073a549810166587c65de3",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/ephesis/METADATA.pb",
@@ -6631,12 +6643,13 @@
       "designer": "Cyreal",
       "license": "OFL",
       "repository_url": "https://github.com/cyrealtype/Federant",
-      "commit": null,
+      "commit": "c5c5f602213ac00b181d95e2078fff665dd31809",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: upstream commit on same day as google/fonts update."
     },
     {
       "path": "ofl/federo/METADATA.pb",
@@ -6878,12 +6891,12 @@
       "designer": "Dan Ross",
       "license": "OFL",
       "repository_url": "https://github.com/HYPD/flow-typeface",
-      "commit": null,
+      "commit": "44f3478408936f5240cbc4fb3f7b4ed19d22822e",
       "branch": "main",
       "config_yaml": "Circular/sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/flowrounded/METADATA.pb",
@@ -6891,12 +6904,12 @@
       "designer": "Dan Ross",
       "license": "OFL",
       "repository_url": "https://github.com/HYPD/flow-typeface",
-      "commit": null,
+      "commit": "44f3478408936f5240cbc4fb3f7b4ed19d22822e",
       "branch": "main",
       "config_yaml": "Rounded/sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/foldit/METADATA.pb",
@@ -7781,7 +7794,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete"
     },
     {
       "path": "ofl/gorditas/METADATA.pb",
@@ -8198,12 +8211,12 @@
       "designer": "Nonty",
       "license": "OFL",
       "repository_url": "https://github.com/noriokanisawa/HachiMaruPop",
-      "commit": null,
+      "commit": "efaa0d31f7bcace6cf4255b746911df1243af982",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/hahmlet/METADATA.pb",
@@ -8419,12 +8432,12 @@
       "designer": "Mike LaGattuta",
       "license": "OFL",
       "repository_url": "https://github.com/mjlagattuta/Hepta-Slab",
-      "commit": null,
+      "commit": "1af723aa23928fe472c2cd71338dc88a6839c08c",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/hermeneusone/METADATA.pb",
@@ -8498,12 +8511,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-colombo",
-      "commit": null,
+      "commit": "3cf4e8b8400db78e2e07c75d162e66eb59e042c5",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream (only HEAD, no later commits)."
     },
     {
       "path": "ofl/hindguntur/METADATA.pb",
@@ -8524,12 +8538,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-jalandhar",
-      "commit": null,
+      "commit": "6d0af0d80b97ce24b8b1ff61d60f814c8904626d",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/hindkochi/METADATA.pb",
@@ -8537,12 +8552,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-kochi",
-      "commit": null,
+      "commit": "a666cfd2e6576e648cd4da6748cb3912950dd49a",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/hindmadurai/METADATA.pb",
@@ -8563,12 +8579,13 @@
       "designer": "Indian Type Foundry",
       "license": "OFL",
       "repository_url": "https://github.com/itfoundry/hind-mysuru",
-      "commit": null,
+      "commit": "d7512b575b3400139785d6257bab923f52c6bc66",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/hindsiliguri/METADATA.pb",
@@ -11282,12 +11299,13 @@
       "designer": "LY Corporation, Fontrix, Fontworks",
       "license": "OFL",
       "repository_url": "https://github.com/line/seed",
-      "commit": null,
+      "commit": "ea7a320d85172a57dc458507267d82e7c0f2d49a",
       "branch": null,
       "config_yaml": "LINESeedJP/sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Inferred: v20251119 tag, 1 day before google/fonts add."
     },
     {
       "path": "ofl/lisubosa/METADATA.pb",
@@ -11334,12 +11352,12 @@
       "designer": "Liu Zhengjiang, Kimberly Geswein, ZhongQi",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/liujianmaocao",
-      "commit": null,
+      "commit": "e589ccd1fe37fa9d2076a52096a3e3992489ad2c",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/livvic/METADATA.pb",
@@ -11776,12 +11794,13 @@
       "designer": "Cadson Demak",
       "license": "OFL",
       "repository_url": "https://github.com/cadsondemak/Mali",
-      "commit": null,
+      "commit": "4f4843c99ad83880f530b33a2ac1d69054c236bf",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/mallanna/METADATA.pb",
@@ -12297,12 +12316,12 @@
       "designer": "Sorkin Type",
       "license": "OFL",
       "repository_url": "https://github.com/SorkinType/Merriweather-Sans",
-      "commit": null,
+      "commit": "df645349406c0d06562040d3a5268d60dc34ec56",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/mervalescript/METADATA.pb",
@@ -12947,12 +12966,13 @@
       "designer": "Danh Hong",
       "license": "OFL",
       "repository_url": "https://github.com/danhhong/Moul",
-      "commit": null,
+      "commit": "9bd37b4c66a42ed6f78619c305a59fe13aee2316",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "v8.001 commit. v8.002 was done directly in google/fonts."
     },
     {
       "path": "ofl/moulpali/METADATA.pb",
@@ -13403,12 +13423,13 @@
       "designer": "Daniel Uzquiano",
       "license": "OFL",
       "repository_url": "https://github.com/dnlzqn/nata-sans",
-      "commit": null,
+      "commit": "dbb0c0d3952e6a451bdf1e19febeeb58b9ae0823",
       "branch": "main",
       "config_yaml": "config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Inferred: upstream commit on same day as google/fonts add."
     },
     {
       "path": "ofl/nationalpark/METADATA.pb",
@@ -15774,7 +15795,8 @@
       "config_yaml": "sources/config-sans-syriac-western.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "From METADATA.pb source block."
     },
     {
       "path": "ofl/notosanstagalog/METADATA.pb",
@@ -17389,12 +17411,12 @@
       "designer": "Shibuya Font",
       "license": "OFL",
       "repository_url": "https://github.com/shibuyafont/Palette-mosaic-font-mono",
-      "commit": null,
+      "commit": "155e6ec5d439f1cbd54fb808ac93ce2a07ebce97",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/pangolin/METADATA.pb",
@@ -19939,12 +19961,12 @@
       "designer": "Andrew Paglinawan",
       "license": "OFL",
       "repository_url": "https://github.com/ThomasJockin/QuicksandFamily",
-      "commit": null,
+      "commit": "03f689e640d4418925dc6ab1f60a818a06bab778",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/quintessential/METADATA.pb",
@@ -20337,8 +20359,8 @@
       "config_yaml": "source/Proportional/RedHatDisplay/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit",
-      "notes": "URL corrected from bghryct/RedHatDisplay (404) to RedHatOfficial/RedHatFont."
+      "status": "complete",
+      "notes": "URL corrected from bghryct/RedHatDisplay (404) to RedHatOfficial/RedHatFont. Commit is from bghryct/RedHatDisplay (now 404). Repo migrated to RedHatOfficial/RedHatFont."
     },
     {
       "path": "ofl/redhatmono/METADATA.pb",
@@ -20351,8 +20373,8 @@
       "config_yaml": "source/Mono/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit",
-      "notes": "URL corrected from bghryct/RedHatMono (404) to RedHatOfficial/RedHatFont."
+      "status": "complete",
+      "notes": "URL corrected from bghryct/RedHatMono (404) to RedHatOfficial/RedHatFont. Commit is from bghryct/RedHatMono (now 404). Repo migrated to RedHatOfficial/RedHatFont."
     },
     {
       "path": "ofl/redhattext/METADATA.pb",
@@ -20365,8 +20387,8 @@
       "config_yaml": "source/Proportional/RedHatText/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit",
-      "notes": "URL corrected from bghryct/RedHatText (404) to RedHatOfficial/RedHatFont."
+      "status": "complete",
+      "notes": "URL corrected from bghryct/RedHatText (404) to RedHatOfficial/RedHatFont. Commit is from bghryct/RedHatText (now 404). Repo migrated to RedHatOfficial/RedHatFont."
     },
     {
       "path": "ofl/redrose/METADATA.pb",
@@ -20738,12 +20760,12 @@
       "designer": "Jaikishan Patel",
       "license": "OFL",
       "repository_url": "https://github.com/magictype/rowdies",
-      "commit": null,
+      "commit": "b0821f35f8e325b1dbce0129fd62848fcda72646",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/rozhaone/METADATA.pb",
@@ -21246,12 +21268,13 @@
       "designer": "SIL International",
       "license": "OFL",
       "repository_url": "https://github.com/silnrsi/font-ruwudu",
-      "commit": null,
+      "commit": "b5aa4e64386fa7fe286634b10b7c874a42b9d1cf",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "v3.000 tag."
     },
     {
       "path": "ofl/rye/METADATA.pb",
@@ -21467,12 +21490,12 @@
       "designer": "Omnibus-Type",
       "license": "OFL",
       "repository_url": "https://github.com/Omnibus-Type/Sansita-Swashed",
-      "commit": null,
+      "commit": "4b18bac65511ce185c1dc687472a8c77bdc6cc4d",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/sarabun/METADATA.pb",
@@ -21480,12 +21503,13 @@
       "designer": "Suppakit Chalermlarp",
       "license": "OFL",
       "repository_url": "https://github.com/cadsondemak/Sarabun",
-      "commit": null,
+      "commit": "854cdbc6afa002ff8c2ce6aa7b86f99c7f71c9eb",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/sarala/METADATA.pb",
@@ -21910,12 +21934,12 @@
       "designer": "FONTDASU",
       "license": "OFL",
       "repository_url": "https://github.com/fontdasu/ShipporiAntique",
-      "commit": null,
+      "commit": "5653d23ee96e457921b2dbec7692e8e5d243e5fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/shipporiantiqueb1/METADATA.pb",
@@ -21923,12 +21947,12 @@
       "designer": "FONTDASU",
       "license": "OFL",
       "repository_url": "https://github.com/fontdasu/ShipporiAntique",
-      "commit": null,
+      "commit": "5653d23ee96e457921b2dbec7692e8e5d243e5fe",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/shipporimincho/METADATA.pb",
@@ -21962,12 +21986,12 @@
       "designer": "Shibuya Font",
       "license": "OFL",
       "repository_url": "https://github.com/shibuyafont/shizuru-font",
-      "commit": null,
+      "commit": "a03af0c110a8ac65c79fdb1b67df89cd5cfffda8",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/shojumaru/METADATA.pb",
@@ -22277,12 +22301,12 @@
       "designer": "Maniackers Design",
       "license": "OFL",
       "repository_url": "https://github.com/ManiackersDesign/slackside",
-      "commit": null,
+      "commit": "e5a03bb81c7a6c6eb9f901b993c2164213f143d4",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/smooch/METADATA.pb",
@@ -22836,12 +22860,13 @@
       "designer": "Cadson Demak",
       "license": "OFL",
       "repository_url": "https://github.com/cadsondemak/Srisakdi",
-      "commit": null,
+      "commit": "db08a3a88093caf28fddb5ec3e90825114c9ea8d",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config",
+      "notes": "Inferred: HEAD of upstream at onboarding date."
     },
     {
       "path": "ofl/staatliches/METADATA.pb",
@@ -22940,12 +22965,12 @@
       "designer": "Fontworks Inc.",
       "license": "OFL",
       "repository_url": "https://github.com/fontworks-fonts/Stick",
-      "commit": null,
+      "commit": "7872941e6d29cb238ea7cc8d0e1d1499d02bc482",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/sticknobills/METADATA.pb",
@@ -23566,12 +23591,12 @@
       "designer": "Cadson Demak",
       "license": "OFL",
       "repository_url": "https://github.com/cadsondemak/Thasadith",
-      "commit": null,
+      "commit": "e3721fb178b0e5b22e7f2802c2bebb5c09582f3c",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/thegirlnextdoor/METADATA.pb",
@@ -23891,12 +23916,12 @@
       "designer": "Fontworks Inc.",
       "license": "OFL",
       "repository_url": "https://github.com/fontworks-fonts/Train",
-      "commit": null,
+      "commit": "7c77b21fbff6c182395862ab07273cb15423803e",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/triodion/METADATA.pb",
@@ -23995,12 +24020,12 @@
       "designer": "Takashi Funayama",
       "license": "OFL",
       "repository_url": "https://github.com/mt-funa/Tsukimi-Rounded",
-      "commit": null,
+      "commit": "7199ebaed5a78b14f7824cc3ea44f5694e790807",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/tuffy/METADATA.pb",
@@ -24034,12 +24059,12 @@
       "designer": "Dale Sattler",
       "license": "OFL",
       "repository_url": "https://github.com/noponies/Turret-Road",
-      "commit": null,
+      "commit": "c77a268e22034f5427de1bbed2d13fdf7b91b1d8",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/twinklestar/METADATA.pb",
@@ -24322,12 +24347,12 @@
       "designer": "Gydient, ViệtAnh Nguyễn",
       "license": "OFL",
       "repository_url": "https://github.com/bettergui/ViaodaLibre",
-      "commit": null,
+      "commit": "d3fcf66aa394cab6c638249c042f4133394088b6",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/vibes/METADATA.pb",
@@ -24335,12 +24360,12 @@
       "designer": "AbdElmomen Kadhim (blueMix)",
       "license": "OFL",
       "repository_url": "https://github.com/bluemix/vibes-typeface",
-      "commit": null,
+      "commit": "4cfe8e24413fc3711d3bba4c278e17429f93fc13",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/vibur/METADATA.pb",
@@ -24780,12 +24805,12 @@
       "designer": "Yellow Type, Lâm Bảo, Duy Dao",
       "license": "OFL",
       "repository_url": "https://github.com/yellow-type-foundry/xanhmono",
-      "commit": null,
+      "commit": "5c0ceb816ffc1e8f79be71c82a43201395f3eca5",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/yaldevi/METADATA.pb",
@@ -24965,12 +24990,12 @@
       "designer": "Satsuyako",
       "license": "OFL",
       "repository_url": "https://github.com/satsuyako/YomogiFont",
-      "commit": null,
+      "commit": "27a69d9253eb61d46772f65fcb7362647cedd148",
       "branch": "ver3.00",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/youngserif/METADATA.pb",
@@ -25121,12 +25146,12 @@
       "designer": "Tanukizamurai",
       "license": "OFL",
       "repository_url": "https://github.com/tanukifont/YuseiMagic",
-      "commit": null,
+      "commit": "77e9fd3bcea003fc115f377cbd0f2fe2963d4979",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/zain/METADATA.pb",
@@ -25186,12 +25211,13 @@
       "designer": "Liu Bingke, Yang Kang, Wu Shaojie",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/zcool-kuaile",
-      "commit": null,
+      "commit": "3c7292082f3dec8d09f900c37adc89b6b4f5fd39",
       "branch": null,
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "complete",
+      "notes": "Original v1.000 add commit."
     },
     {
       "path": "ofl/zcoolqingkehuangyou/METADATA.pb",
@@ -25199,12 +25225,12 @@
       "designer": "Zheng Qingke",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/zcool-qingke-huangyou",
-      "commit": null,
+      "commit": "c9dac424b0a9f47d3b113cff4a4922f632d82c94",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/zcoolxiaowei/METADATA.pb",
@@ -25212,12 +25238,12 @@
       "designer": "Li Dawei",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/zcool-xiaowei",
-      "commit": null,
+      "commit": "e94fc01eed059b3396129a48f756a46f7737fe2f",
       "branch": null,
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/zenantique/METADATA.pb",
@@ -25290,12 +25316,12 @@
       "designer": "Yoshimichi Ohira",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/zen-kurenaido",
-      "commit": null,
+      "commit": "965c8adca85e247f8caa19fbe3ede6bef19485d7",
       "branch": "main",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_commit"
+      "status": "missing_config"
     },
     {
       "path": "ofl/zenloop/METADATA.pb",
