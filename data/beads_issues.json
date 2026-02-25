@@ -25,15 +25,16 @@
   },
   {
     "id": "gfonts_agents-4i9",
-    "title": "Fill missing config_yaml for 44 font families",
-    "description": "44 font families have upstream repos but are missing config_yaml paths. Need to check upstream repos for config.yaml files or create override config.yaml files in google/fonts family directories. Similar to the batch 5 effort (PR #10248).",
+    "title": "Create override config.yaml for 32 font families",
+    "description": "32 font families have upstream repos but no config.yaml exists anywhere (neither upstream nor as override in google/fonts). Many use custom build systems (process.py, build.sh, CID-keyed fonts). Override config.yaml files need to be created in google/fonts family directories where feasible. Some may not be buildable with gftools-builder.",
     "status": "open",
     "priority": 2,
     "issue_type": "task",
     "owner": "juca@members.fsf.org",
     "created_at": "2026-02-25T15:09:42.973762128Z",
     "created_by": "Felipe Correa da Silva Sanches",
-    "updated_at": "2026-02-25T15:09:42.973762128Z"
+    "updated_at": "2026-02-25T15:09:42.973762128Z",
+    "notes": "12 of original 44 resolved: config.yaml found in upstream repos. 32 remain without any config."
   },
   {
     "id": "gfonts_agents-5zf",
