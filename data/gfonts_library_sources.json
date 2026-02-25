@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-02-25T17:03:05.442010",
+  "generated_at": "2026-02-25T17:44:17.984696",
   "summary": {
     "total": 1948,
     "complete": 1131,
     "missing_config": 44,
     "missing_commit": 82,
-    "incomplete_source": 582,
-    "no_source": 109
+    "incomplete_source": 595,
+    "no_source": 96
   },
   "families": [
     {
@@ -7333,13 +7333,13 @@
       "family_name": "Gayathri",
       "designer": "SMC, Binoy Dominic",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/smc/gayathri",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/geist/METADATA.pb",
@@ -11428,13 +11428,13 @@
       "family_name": "Long Cang",
       "designer": "Chen Xiaomin",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/m4rc1e/longcang",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/lora/METADATA.pb",
@@ -14444,13 +14444,13 @@
       "family_name": "Noto Sans HK",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-cjk",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansimperialaramaic/METADATA.pb",
@@ -14522,13 +14522,13 @@
       "family_name": "Noto Sans JP",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-cjk",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanskaithi/METADATA.pb",
@@ -14665,13 +14665,13 @@
       "family_name": "Noto Sans KR",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-cjk",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanslao/METADATA.pb",
@@ -15510,13 +15510,13 @@
       "family_name": "Noto Sans SC",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-cjk",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanssharada/METADATA.pb",
@@ -15874,13 +15874,13 @@
       "family_name": "Noto Sans TC",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-cjk",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanstelugu/METADATA.pb",
@@ -22517,26 +22517,26 @@
       "family_name": "Source Sans 3",
       "designer": "Paul D. Hunt",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/adobe-fonts/source-sans",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/sourceserif4/METADATA.pb",
       "family_name": "Source Serif 4",
       "designer": "Frank Grie\u00dfhammer",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/adobe-fonts/source-serif",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/sourgummy/METADATA.pb",
@@ -23219,26 +23219,26 @@
       "family_name": "Syne Mono",
       "designer": "Bonjour Monde, Lucas Descroix",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://gitlab.com/RosaWagner/syne-typeface",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/synetactile/METADATA.pb",
       "family_name": "Syne Tactile",
       "designer": "Bonjour Monde, Lucas Descroix",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://gitlab.com/RosaWagner/syne-typeface",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/tacone/METADATA.pb",
@@ -24675,13 +24675,13 @@
       "family_name": "Wix Madefor Text",
       "designer": "Dalton Maag",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/wix-incubator/wixmadefor",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/workbench/METADATA.pb",
@@ -25299,13 +25299,13 @@
       "family_name": "Zhi Mang Xing",
       "designer": "Wei Zhimang",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/m4rc1e/zhimangxing",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/zillaslab/METADATA.pb",
