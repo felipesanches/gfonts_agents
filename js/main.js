@@ -4,6 +4,7 @@ let questionsData = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
+    initFamilyDialog();
     loadLibrarySources();
     loadCacheStats();
     loadFontsAudit();
@@ -358,7 +359,7 @@ function renderSourcesTable(container, families) {
         <tbody>
             ${displayFamilies.map(family => `
                 <tr class="status-row-${family.status}">
-                    <td class="family-name">${escapeHtml(family.family_name || 'Unknown')}</td>
+                    <td class="family-name"><span class="family-name-link" data-family-path="${escapeHtml(family.path || '')}">${escapeHtml(family.family_name || 'Unknown')}</span></td>
                     <td class="designer-name">${escapeHtml(family.designer || '-')}</td>
                     <td class="repo-cell">
                         ${family.repository_url
@@ -410,6 +411,87 @@ function formatStatus(status) {
         'no_source': 'No Source'
     };
     return statusLabels[status] || status;
+}
+
+function initFamilyDialog() {
+    const dialog = document.getElementById('family-detail-dialog');
+    if (!dialog) return;
+
+    dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) dialog.close();
+    });
+
+    // Event delegation on the sources table container
+    const container = document.getElementById('sources-table-container');
+    if (container) {
+        container.addEventListener('click', (e) => {
+            const link = e.target.closest('.family-name-link');
+            if (!link || !sourcesData) return;
+            const path = link.dataset.familyPath;
+            const family = sourcesData.families.find(f => f.path === path);
+            if (family) showFamilyDetail(family);
+        });
+    }
+}
+
+function showFamilyDetail(family) {
+    const dialog = document.getElementById('family-detail-dialog');
+    document.getElementById('dialog-family-name').textContent = family.family_name || 'Unknown';
+
+    const repoShort = family.repository_url
+        ? family.repository_url.replace('https://github.com/', '')
+        : null;
+    const commitUrl = (family.repository_url && family.commit)
+        ? `${family.repository_url}/commit/${family.commit}`
+        : null;
+    const dirPath = family.path ? family.path.replace('/METADATA.pb', '') : null;
+    const gfontsDir = dirPath
+        ? `https://github.com/google/fonts/tree/main/${dirPath}`
+        : null;
+    const metadataUrl = family.path
+        ? `https://github.com/google/fonts/blob/main/${family.path}`
+        : null;
+    const specimenUrl = family.family_name
+        ? `https://fonts.google.com/specimen/${encodeURIComponent(family.family_name)}`
+        : null;
+
+    const field = (label, value) =>
+        `<div class="dialog-field"><span class="dialog-field-label">${label}</span><span class="dialog-field-value">${value}</span></div>`;
+
+    const body = document.getElementById('dialog-body');
+    body.innerHTML = `
+        <div class="dialog-section">
+            <h4>General</h4>
+            ${field('Designer', escapeHtml(family.designer || '—'))}
+            ${field('License', escapeHtml(family.license || '—'))}
+            ${field('Path', dirPath ? `<code>${escapeHtml(dirPath)}</code>` : '—')}
+            ${field('Status', `<span class="status-badge status-${family.status}">${formatStatus(family.status)}</span>`)}
+            ${field('Specimen', specimenUrl ? `<a href="${specimenUrl}" target="_blank">${escapeHtml(family.family_name)}</a>` : '—')}
+        </div>
+        <div class="dialog-section">
+            <h4>Source</h4>
+            ${field('Repository', family.repository_url
+                ? `<a href="${escapeHtml(family.repository_url)}" target="_blank">${escapeHtml(repoShort)}</a>`
+                : '—')}
+            ${field('Commit', family.commit
+                ? (commitUrl
+                    ? `<a href="${escapeHtml(commitUrl)}" target="_blank"><code>${escapeHtml(family.commit)}</code></a>`
+                    : `<code>${escapeHtml(family.commit)}</code>`)
+                : '—')}
+            ${field('Branch', escapeHtml(family.branch || '—'))}
+            ${field('Config YAML', family.config_yaml ? `<code>${escapeHtml(family.config_yaml)}</code>` : '—')}
+            ${field('Override Config', family.override_config ? 'Yes' : 'No')}
+            ${field('Has Source Block', family.has_source_block ? 'Yes' : 'No')}
+        </div>
+        <div class="dialog-section">
+            <h4>Links</h4>
+            ${field('google/fonts dir', gfontsDir ? `<a href="${escapeHtml(gfontsDir)}" target="_blank">${escapeHtml(dirPath)}</a>` : '—')}
+            ${field('METADATA.pb', metadataUrl ? `<a href="${escapeHtml(metadataUrl)}" target="_blank">View on GitHub</a>` : '—')}
+        </div>
+    `;
+
+    dialog.showModal();
 }
 
 async function loadFontsAudit() {
