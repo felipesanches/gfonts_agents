@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-02-25T17:01:33.974493",
+  "generated_at": "2026-02-25T17:03:05.442010",
   "summary": {
     "total": 1948,
     "complete": 1131,
     "missing_config": 44,
     "missing_commit": 82,
-    "incomplete_source": 546,
-    "no_source": 145
+    "incomplete_source": 582,
+    "no_source": 109
   },
   "families": [
     {
@@ -1977,13 +1977,13 @@
       "family_name": "Bahianita",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Bahiana",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/baijamjuree/METADATA.pb",
@@ -2237,13 +2237,13 @@
       "family_name": "Barriecito",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Barrio",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/barrio/METADATA.pb",
@@ -13001,13 +13001,13 @@
       "family_name": "M PLUS 1p",
       "designer": "Coji Morishita, M+ Fonts Project",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/mplus2/METADATA.pb",
@@ -13040,13 +13040,13 @@
       "family_name": "M PLUS Rounded 1c",
       "designer": "Coji Morishita, M+ Fonts Project",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/mrbedfort/METADATA.pb",
@@ -13144,39 +13144,39 @@
       "family_name": "Mukta Mahee",
       "designer": "Ek Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/EkType/Mukta",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/muktamalar/METADATA.pb",
       "family_name": "Mukta Malar",
       "designer": "Ek Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/EkType/Mukta",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/muktavaani/METADATA.pb",
       "family_name": "Mukta Vaani",
       "designer": "Ek Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/EkType/Mukta",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/mulish/METADATA.pb",
@@ -13742,13 +13742,13 @@
       "family_name": "Noto Naskh Arabic UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/arabic",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notonastaliqurdu/METADATA.pb",
@@ -13846,13 +13846,13 @@
       "family_name": "Noto Sans Arabic UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/arabic",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansarmenian/METADATA.pb",
@@ -13950,13 +13950,13 @@
       "family_name": "Noto Sans Bengali UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/bengali",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansbhaiksuki/METADATA.pb",
@@ -14184,26 +14184,26 @@
       "family_name": "Noto Sans Devanagari UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/devanagari",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansdisplay/METADATA.pb",
       "family_name": "Noto Sans Display",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/latin-greek-cyrillic",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansduployan/METADATA.pb",
@@ -14340,13 +14340,13 @@
       "family_name": "Noto Sans Gujarati UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/gujarati",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansgunjalagondi/METADATA.pb",
@@ -14379,13 +14379,13 @@
       "family_name": "Noto Sans Gurmukhi UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/gurmukhi",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanshanifirohingya/METADATA.pb",
@@ -14561,13 +14561,13 @@
       "family_name": "Noto Sans Kannada UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/kannada",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanskawi/METADATA.pb",
@@ -14626,13 +14626,13 @@
       "family_name": "Noto Sans Khmer UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/khmer",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanskhojki/METADATA.pb",
@@ -14704,13 +14704,13 @@
       "family_name": "Noto Sans Lao UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/lao",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanslepcha/METADATA.pb",
@@ -14834,13 +14834,13 @@
       "family_name": "Noto Sans Malayalam UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/malayalam",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansmandaic/METADATA.pb",
@@ -15068,13 +15068,13 @@
       "family_name": "Noto Sans Myanmar UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/myanmar",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansnabataean/METADATA.pb",
@@ -15159,13 +15159,13 @@
       "family_name": "Noto Sans N Ko",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/nko",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansnkounjoined/METADATA.pb",
@@ -15341,13 +15341,13 @@
       "family_name": "Noto Sans Oriya UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/oriya",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansosage/METADATA.pb",
@@ -15588,13 +15588,13 @@
       "family_name": "Noto Sans Sinhala UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/sinhala",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanssogdian/METADATA.pb",
@@ -15848,13 +15848,13 @@
       "family_name": "Noto Sans Tamil UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/tamil",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanstangsa/METADATA.pb",
@@ -15900,13 +15900,13 @@
       "family_name": "Noto Sans Telugu UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/telugu",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosansthaana/METADATA.pb",
@@ -15952,13 +15952,13 @@
       "family_name": "Noto Sans Thai UI",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/thai",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notosanstifinagh/METADATA.pb",
@@ -16160,13 +16160,13 @@
       "family_name": "Noto Serif Display",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/latin-greek-cyrillic",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notoserifdivesakuru/METADATA.pb",
@@ -16420,39 +16420,39 @@
       "family_name": "Noto Serif Myanmar",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/myanmar",
       "commit": null,
-      "branch": null,
+      "branch": "HEAD",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notoserifnphmong/METADATA.pb",
       "family_name": "Noto Serif NP Hmong",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
       "commit": null,
-      "branch": null,
+      "branch": "main",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notoserifnyiakengpuachuehmong/METADATA.pb",
       "family_name": "Noto Serif Nyiakeng Puachue Hmong",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
       "commit": null,
-      "branch": null,
+      "branch": "main",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notoserifolduyghur/METADATA.pb",
@@ -20957,13 +20957,13 @@
       "family_name": "Rubik Mono One",
       "designer": "Hubert and Fischer",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/rubik",
       "commit": null,
-      "branch": null,
+      "branch": "main",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/rubikmoonrocks/METADATA.pb",
@@ -20983,13 +20983,13 @@
       "family_name": "Rubik One",
       "designer": "Hubert and Fischer",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/rubik",
       "commit": null,
-      "branch": null,
+      "branch": "main",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/rubikpixels/METADATA.pb",
@@ -21269,39 +21269,39 @@
       "family_name": "Saira Condensed",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/sairaextracondensed/METADATA.pb",
       "family_name": "Saira Extra Condensed",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/sairasemicondensed/METADATA.pb",
       "family_name": "Saira Semi Condensed",
       "designer": "Omnibus-Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/sairastencilone/METADATA.pb",
@@ -22023,13 +22023,13 @@
       "family_name": "Signika Negative SC",
       "designer": "Anna Giedry\u015b",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/Signika",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/signikasc/METADATA.pb",
@@ -25325,13 +25325,13 @@
       "family_name": "Zilla Slab Highlight",
       "designer": "Typotheque",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/mozilla/zilla-slab",
       "commit": null,
-      "branch": null,
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     }
   ]
 }
