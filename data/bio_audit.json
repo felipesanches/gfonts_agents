@@ -117,7 +117,7 @@
       "designer_id": "afrotype",
       "designer_name": "Afrotype",
       "issues": [
-        "Link missing target=\"_blank\": https://twitter.com/useafrotype",
+        "Link missing target=\"_blank\": https://x.com/useafrotype",
         "Link missing target=\"_blank\": https://www.afrotype.com"
       ],
       "info": [
@@ -505,7 +505,7 @@
       "designer_id": "annagiedrys",
       "designer_name": "Anna Giedry\u015b",
       "issues": [
-        "HTTP instead of HTTPS: http://twitter.com/Ancymonic",
+        "HTTP instead of HTTPS: https://x.com/Ancymonic",
         "HTTP instead of HTTPS: http://ancymonic.com/"
       ],
       "info": [
@@ -645,7 +645,7 @@
       "designer_name": "Arthur Reinders Folmer",
       "issues": [
         "Link missing target=\"_blank\": https://www.typearture.com",
-        "Link missing target=\"_blank\": https://twitter.com/typearture"
+        "Link missing target=\"_blank\": https://x.com/typearture"
       ],
       "info": [
         "Word count: 93"
@@ -877,7 +877,7 @@
       "designer_id": "boutrosfonts",
       "designer_name": "Boutros Fonts",
       "issues": [
-        "Link missing target=\"_blank\": https://twitter.com/BoutrosFonts",
+        "Link missing target=\"_blank\": https://x.com/BoutrosFonts",
         "Link missing target=\"_blank\": https://www.boutrosfonts.com",
         "Generic link text \"Homepage\" instead of domain name or platform name"
       ],
@@ -1108,7 +1108,7 @@
       "designer_id": "chisaokwujoboson",
       "designer_name": "Chisaokwu Joboson",
       "issues": [
-        "Link missing target=\"_blank\": https://www.twitter.com/jobosonchisa",
+        "Link missing target=\"_blank\": https://x.com/jobosonchisa",
         "Link missing target=\"_blank\": https://www.jobosonchisa.com"
       ],
       "info": [
@@ -1153,7 +1153,7 @@
       "designer_id": "christianthalmann",
       "designer_name": "Christian Thalmann",
       "issues": [
-        "Link missing target=\"_blank\": https://twitter.com/CatharsisFonts",
+        "Link missing target=\"_blank\": https://x.com/CatharsisFonts",
         "Link missing target=\"_blank\": https://www.myfonts.com/collections/catharsis-fonts-foundry"
       ],
       "info": [
@@ -1443,7 +1443,7 @@
       "designer_id": "davidbrezina",
       "designer_name": "David B\u0159ezina",
       "issues": [
-        "HTTP instead of HTTPS: http://twitter.com/MrBrezina"
+        "HTTP instead of HTTPS: https://x.com/MrBrezina"
       ],
       "info": [
         "Word count: 35"
@@ -1584,7 +1584,7 @@
       "designer_name": "Dmitry Ivanov",
       "issues": [
         "Link missing target=\"_blank\": https://github.com/dy",
-        "Link missing target=\"_blank\": https://twitter.com/DimaYv",
+        "Link missing target=\"_blank\": https://x.com/DimaYv",
         "Link text \"Github\" should be \"GitHub\" (capitalization)"
       ],
       "info": [
@@ -1693,7 +1693,7 @@
         "Link missing target=\"_blank\": https://github.com/EkType/",
         "Link missing target=\"_blank\": https://www.instagram.com/ektype/",
         "Link missing target=\"_blank\": https://www.instagram.com/letterbox.india/",
-        "Link missing target=\"_blank\": https://twitter.com/EkTypeFoundry",
+        "Link missing target=\"_blank\": https://x.com/EkTypeFoundry",
         "Generic link text \"Website\" instead of domain name or platform name",
         "Link text \"Github\" should be \"GitHub\" (capitalization)",
         "Vague filler: \"wide range\""
@@ -2221,7 +2221,7 @@
       "designer_name": "Gutenberg Labo",
       "issues": [
         "Link missing target=\"_blank\": http://gutenberg.osdn.jp/",
-        "Link missing target=\"_blank\": https://twitter.com/Gutenberg_Labo",
+        "Link missing target=\"_blank\": https://x.com/Gutenberg_Labo",
         "HTTP instead of HTTPS: http://gutenberg.osdn.jp/"
       ],
       "info": [
@@ -2307,7 +2307,7 @@
       "designer_name": "Haruki Wakamatsu",
       "issues": [
         "Link missing target=\"_blank\": https://2gd4.me",
-        "Link missing target=\"_blank\": https://twitter.com/ItsSpelledHALEY",
+        "Link missing target=\"_blank\": https://x.com/ItsSpelledHALEY",
         "Generic link text \"Homepage\" instead of domain name or platform name"
       ],
       "info": [
@@ -2574,7 +2574,7 @@
       "designer_name": "Jacques Le Bailly",
       "issues": [
         "Link missing target=\"_blank\": https://www.baronvonfonthausen.com",
-        "Link missing target=\"_blank\": https://twitter.com/fonthausen"
+        "Link missing target=\"_blank\": https://x.com/fonthausen"
       ],
       "info": [
         "Word count: 56"
@@ -3644,7 +3644,7 @@
       "designer_id": "natsumimatsuba",
       "designer_name": "Natsumi Matsuba",
       "issues": [
-        "Link missing target=\"_blank\": https://twitter.com/723moji"
+        "Link missing target=\"_blank\": https://x.com/723moji"
       ],
       "info": [
         "Word count: 29"
@@ -4232,7 +4232,7 @@
       "designer_id": "romanshamin",
       "designer_name": "Roman Shamin",
       "issues": [
-        "Link missing target=\"_blank\": https://twitter.com/romanshamin_en"
+        "Link missing target=\"_blank\": https://x.com/romanshamin_en"
       ],
       "info": [
         "Word count: 91"
@@ -4457,7 +4457,7 @@
       "designer_id": "seyiolusanya",
       "designer_name": "Seyi Olusanya",
       "issues": [
-        "Link missing target=\"_blank\": https://twitter.com/ogbeniseyi",
+        "Link missing target=\"_blank\": https://x.com/ogbeniseyi",
         "Link missing target=\"_blank\": https://ogbeniseyi.com",
         "Promotional language: \"passion/passionate\""
       ],
@@ -5212,7 +5212,7 @@
       "designer_id": "udifoundry",
       "designer_name": "\u1ee4d\u1ecb Foundry",
       "issues": [
-        "Link missing target=\"_blank\": https://www.twitter.com/udifoundry",
+        "Link missing target=\"_blank\": https://x.com/udifoundry",
         "Link missing target=\"_blank\": https://www.udifoundry.com"
       ],
       "info": [
