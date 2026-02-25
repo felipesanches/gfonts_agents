@@ -1,6 +1,7 @@
 // Google Fonts Dashboard - Main Script
 
 let questionsData = null;
+let investigationsData = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
@@ -489,9 +490,30 @@ function showFamilyDetail(family) {
             ${field('google/fonts dir', gfontsDir ? `<a href="${escapeHtml(gfontsDir)}" target="_blank">${escapeHtml(dirPath)}</a>` : '—')}
             ${field('METADATA.pb', metadataUrl ? `<a href="${escapeHtml(metadataUrl)}" target="_blank">View on GitHub</a>` : '—')}
         </div>
+        ${renderFamilyInvestigations(family.family_name)}
     `;
 
     dialog.showModal();
+}
+
+function renderFamilyInvestigations(familyName) {
+    if (!investigationsData || !investigationsData.reports || !familyName) return '';
+    const matching = investigationsData.reports.filter(r => {
+        const names = r.families.split(',').map(s => s.trim().toLowerCase());
+        return names.includes(familyName.toLowerCase());
+    });
+    if (matching.length === 0) return '';
+
+    const items = matching.map(report => {
+        const contentHtml = simpleMarkdownToHtml(report.content);
+        return `
+            <details class="dialog-investigation">
+                <summary>${escapeHtml(report.title)}<span class="dialog-investigation-date">${escapeHtml(report.date)}</span></summary>
+                <div class="dialog-investigation-body">${contentHtml}</div>
+            </details>`;
+    }).join('');
+
+    return `<div class="dialog-section"><h4>Investigations</h4>${items}</div>`;
 }
 
 async function loadFontsAudit() {
@@ -2367,6 +2389,7 @@ async function loadInvestigations() {
     try {
         const response = await fetch('data/investigations/index.json');
         const data = await response.json();
+        investigationsData = data;
         renderInvestigations(data);
     } catch (error) {
         console.error('Error loading investigations:', error);

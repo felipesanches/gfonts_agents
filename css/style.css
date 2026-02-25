@@ -1370,6 +1370,66 @@ footer {
     font-size: 0.85rem;
 }
 
+.dialog-investigation {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.dialog-investigation summary {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1a73e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-investigation summary:hover {
+    background: #f0f4f8;
+}
+
+.dialog-investigation-date {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 400;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+}
+
+.dialog-investigation-body {
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dialog-investigation-body h3 {
+    font-size: 0.95rem;
+    margin: 1rem 0 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.dialog-investigation-body h4 {
+    font-size: 0.9rem;
+    margin: 0.75rem 0 0.25rem;
+}
+
+.dialog-investigation-body pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 0.5rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.8rem;
+}
+
 @media (max-width: 500px) {
     .dialog-field {
         flex-direction: column;
