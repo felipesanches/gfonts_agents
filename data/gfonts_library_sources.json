@@ -642,10 +642,10 @@
       "repository_url": "https://github.com/googlefonts/allkin",
       "commit": "fffaa4201dfbd887a78e3d0c79654a7ad0d155f3",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/allura/METADATA.pb",
@@ -798,10 +798,10 @@
       "repository_url": "https://github.com/Mestaratype/AlYamama",
       "commit": "aecc9e395072c0e1d4cdd9dc296c0da5744f3360",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/amarante/METADATA.pb",
@@ -2310,7 +2310,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build, no gftools-builder config."
     },
     {
       "path": "ofl/batangche/METADATA.pb",
@@ -2323,7 +2324,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build, no gftools-builder config."
     },
     {
       "path": "ofl/battambang/METADATA.pb",
@@ -2593,10 +2595,10 @@
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/betaniapatmosgdl/METADATA.pb",
@@ -2606,10 +2608,10 @@
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/betaniapatmosguideline/METADATA.pb",
@@ -2619,10 +2621,10 @@
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/betaniapatmosin/METADATA.pb",
@@ -2632,10 +2634,10 @@
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/betaniapatmosingdl/METADATA.pb",
@@ -2645,10 +2647,10 @@
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/bethellen/METADATA.pb",
@@ -3793,7 +3795,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom build.sh build, no gftools-builder config."
     },
     {
       "path": "ofl/butcherman/METADATA.pb",
@@ -4131,7 +4134,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Binary-only repo, no source files or build config."
     },
     {
       "path": "ofl/carme/METADATA.pb",
@@ -4235,7 +4239,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Legacy .yml configs (castoro-titling.yml), not gftools-builder format."
     },
     {
       "path": "ofl/catamaran/METADATA.pb",
@@ -5783,7 +5788,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build (gulim repo), no gftools-builder config."
     },
     {
       "path": "ofl/dotumche/METADATA.pb",
@@ -5796,7 +5802,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build (gulim repo), no gftools-builder config."
     },
     {
       "path": "ofl/drsugiyama/METADATA.pb",
@@ -7771,10 +7778,10 @@
       "repository_url": "https://github.com/googlefonts/googlesans-code",
       "commit": "edcd56e39fb7e98d6f1b697e187c144cef2fd994",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/gorditas/METADATA.pb",
@@ -8062,7 +8069,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build, no gftools-builder config."
     },
     {
       "path": "ofl/gulimche/METADATA.pb",
@@ -8075,7 +8083,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build, no gftools-builder config."
     },
     {
       "path": "ofl/gulzar/METADATA.pb",
@@ -8101,7 +8110,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build, no gftools-builder config."
     },
     {
       "path": "ofl/gungsuhche/METADATA.pb",
@@ -8114,7 +8124,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "Custom process.py build, no gftools-builder config."
     },
     {
       "path": "ofl/gupter/METADATA.pb",
@@ -8739,7 +8750,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream plex repo."
     },
     {
       "path": "ofl/ibmplexsansarabic/METADATA.pb",
@@ -8752,7 +8764,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream plex repo."
     },
     {
       "path": "ofl/ibmplexsanscondensed/METADATA.pb",
@@ -8895,7 +8908,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (silnrsi/font-idiqlat)."
     },
     {
       "path": "ofl/imbue/METADATA.pb",
@@ -9975,7 +9989,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (silnrsi/font-kanchenjunga)."
     },
     {
       "path": "ofl/kanit/METADATA.pb",
@@ -10183,7 +10198,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (silnrsi/font-kedebideri)."
     },
     {
       "path": "ofl/kellyslab/METADATA.pb",
@@ -10927,7 +10943,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (googlefonts/libertinus)."
     },
     {
       "path": "ofl/libertinusmath/METADATA.pb",
@@ -10940,7 +10957,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (googlefonts/libertinus)."
     },
     {
       "path": "ofl/libertinusmono/METADATA.pb",
@@ -10953,7 +10971,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (googlefonts/libertinus)."
     },
     {
       "path": "ofl/libertinussans/METADATA.pb",
@@ -10966,7 +10985,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (googlefonts/libertinus)."
     },
     {
       "path": "ofl/libertinusserif/METADATA.pb",
@@ -10979,7 +10999,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (googlefonts/libertinus)."
     },
     {
       "path": "ofl/libertinusserifdisplay/METADATA.pb",
@@ -10992,7 +11013,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (googlefonts/libertinus)."
     },
     {
       "path": "ofl/librebarcode128/METADATA.pb",
@@ -15749,10 +15771,10 @@
       "repository_url": "https://github.com/notofonts/syriac",
       "commit": "a24ba4586441a6b76df20215464898852e702078",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "sources/config-sans-syriac-western.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit"
     },
     {
       "path": "ofl/notosanstagalog/METADATA.pb",
@@ -16311,7 +16333,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in noto-cjk repo. Pre-built binaries."
     },
     {
       "path": "ofl/notoserifjp/METADATA.pb",
@@ -16324,7 +16347,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in noto-cjk repo. Pre-built binaries."
     },
     {
       "path": "ofl/notoserifkannada/METADATA.pb",
@@ -16389,7 +16413,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in noto-cjk repo. Pre-built binaries."
     },
     {
       "path": "ofl/notoseriflao/METADATA.pb",
@@ -16519,7 +16544,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in noto-cjk repo. Pre-built binaries."
     },
     {
       "path": "ofl/notoserifsinhala/METADATA.pb",
@@ -16571,7 +16597,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in noto-cjk repo. Pre-built binaries."
     },
     {
       "path": "ofl/notoseriftelugu/METADATA.pb",
@@ -20139,7 +20166,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (silnrsi/font-ramsina)."
     },
     {
       "path": "ofl/ranchers/METADATA.pb",
@@ -20303,39 +20331,42 @@
       "family_name": "Red Hat Display",
       "designer": "MCKL",
       "license": "OFL",
-      "repository_url": "https://github.com/bghryct/RedHatDisplay",
+      "repository_url": "https://github.com/RedHatOfficial/RedHatFont",
       "commit": "fd36df3a3ad95084fe777597ed4b5c19961b3631",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "source/Proportional/RedHatDisplay/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit",
+      "notes": "URL corrected from bghryct/RedHatDisplay (404) to RedHatOfficial/RedHatFont."
     },
     {
       "path": "ofl/redhatmono/METADATA.pb",
       "family_name": "Red Hat Mono",
       "designer": "MCKL",
       "license": "OFL",
-      "repository_url": "https://github.com/bghryct/RedHatMono",
+      "repository_url": "https://github.com/RedHatOfficial/RedHatFont",
       "commit": "a0f2a7032143500e44dfd569d09ba30414d51a1c",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "source/Mono/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit",
+      "notes": "URL corrected from bghryct/RedHatMono (404) to RedHatOfficial/RedHatFont."
     },
     {
       "path": "ofl/redhattext/METADATA.pb",
       "family_name": "Red Hat Text",
       "designer": "MCKL",
       "license": "OFL",
-      "repository_url": "https://github.com/bghryct/RedHatText",
+      "repository_url": "https://github.com/RedHatOfficial/RedHatFont",
       "commit": "dfbc50b16e27d5be1986c3ec79534460a74c1370",
       "branch": "main",
-      "config_yaml": null,
+      "config_yaml": "source/Proportional/RedHatText/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_commit",
+      "notes": "URL corrected from bghryct/RedHatText (404) to RedHatOfficial/RedHatFont."
     },
     {
       "path": "ofl/redrose/METADATA.pb",
@@ -23240,7 +23271,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml in upstream (GitLab). Uses custom build.sh."
     },
     {
       "path": "ofl/synemono/METADATA.pb",
@@ -24555,7 +24587,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml. CID-keyed font with custom mergeFonts build."
     },
     {
       "path": "ofl/wdxllubrifontsc/METADATA.pb",
@@ -24568,7 +24601,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml. CID-keyed font with custom mergeFonts build."
     },
     {
       "path": "ofl/wdxllubrifonttc/METADATA.pb",
@@ -24581,7 +24615,8 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "missing_config",
+      "notes": "No config.yaml. CID-keyed font with custom mergeFonts build."
     },
     {
       "path": "ofl/wellfleet/METADATA.pb",
