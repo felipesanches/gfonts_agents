@@ -668,8 +668,8 @@ as Lora, Prata, and Alice. ...&lt;/p&gt;
 Olusanya, intends to subvert cliches around African graphic
 design and identity by creating typefaces that are grounded
 in African history and culture.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://twitter.com/useafrotype"&gt;Twitter&lt;/a&gt;
-| &lt;a href="https://www.afrotype.com"&gt;afrotype.com
+&lt;p&gt;&lt;a href="https://www.afrotype.com"&gt;afrotype.com&lt;/a&gt;
+| &lt;a href="https://x.com/useafrotype"&gt;X
 &lt;/a&gt;&lt;/p&gt;</pre>
                         </div>
                     </div>
@@ -947,7 +947,7 @@ includeSubsets:
                         <li><strong>Find the Config:</strong> Run discovery scripts to identify eligible families.</li>
                         <li><strong>Update Metadata:</strong> Use <code>scripts/add_config_yaml_to_metadata.py</code> to update <code>METADATA.pb</code>.</li>
                         <li><strong>Submit PR:</strong> Commit changes to <code>google/fonts</code>.</li>
-                        <li><strong>Automatic Detection:</strong> <code>fontc_crater</code> automatically picks up the new target after merge.</li>
+                        <li><strong>Update Targets:</strong> The <code>fontc_crater</code> repository must have its <code>targets.json</code> file updated via a PR before it can recognize the new targets. Such PR is prepared by running the <code>google-fonts-sources</code> tool that detects the <code>config.yaml</code> overrides and the relevant fields in <code>METADATA.pb</code> files of the <code>google/fonts</code> repository.</li>
                     </ol>
                 </div>
             </div>

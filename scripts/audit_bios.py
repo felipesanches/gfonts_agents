@@ -182,7 +182,6 @@ def check_link_text(link):
     # Known platform names
     platforms = {
         'instagram': 'Instagram',
-        'twitter': 'Twitter',
         'x.com': 'X',
         'linkedin': 'LinkedIn',
         'behance': 'Behance',
@@ -199,8 +198,15 @@ def check_link_text(link):
     if text.lower() in generic_texts:
         issues.append(f'Generic link text "{text}" instead of domain name or platform name')
 
-    # Check capitalization for known platforms
     href_lower = href.lower()
+    
+    # Check for outdated Twitter links
+    if 'twitter.com' in href_lower:
+        issues.append('Twitter links should use x.com')
+        if text.lower() == 'twitter':
+            issues.append('Link text should be "X" instead of "Twitter"')
+
+    # Check capitalization for known platforms
     for platform_key, platform_name in platforms.items():
         if platform_key in href_lower:
             if text != platform_name and text.lower() == platform_name.lower():
