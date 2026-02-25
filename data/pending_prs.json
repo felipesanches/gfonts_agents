@@ -494,12 +494,14 @@
     "type": "metadata_fix",
     "priority": "high",
     "branch": "sources_info_2026-02-25",
-    "families_count": 727,
+    "families_count": 724,
     "breakdown": {
       "commit_1_complete_families": 125,
       "commit_2_missing_config_families": 602
     },
-    "status": "ready_to_submit",
-    "created": "2026-02-25"
+    "status": "submitted",
+    "created": "2026-02-25",
+    "pr_url": "https://github.com/google/fonts/pull/10270",
+    "submitted": "2026-02-25"
   }
 ]
