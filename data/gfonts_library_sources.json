@@ -3063,10 +3063,10 @@
       "repository_url": "https://github.com/aoifemooney/makingbiorhyme",
       "commit": "b3c0488559ad7c42e11b71e65d255344faff63b9",
       "branch": null,
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has source files. No config.yaml. Commit inferred."
     },
     {
