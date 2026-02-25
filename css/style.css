@@ -1270,6 +1270,11 @@ footer {
     width: 90vw;
     max-height: 80vh;
     overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
 
 #family-detail-dialog::backdrop {
