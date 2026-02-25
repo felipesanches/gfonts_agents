@@ -576,8 +576,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "v3.000 tag."
+      "status": "complete",
+      "notes": "v3.000 tag. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/alkatra/METADATA.pb",
@@ -1320,7 +1320,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/arapey/METADATA.pb",
@@ -1654,7 +1655,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/astasans/METADATA.pb",
@@ -2040,8 +2042,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date (2018-08-23)."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date (2018-08-23). Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bakbakone/METADATA.pb",
@@ -2484,7 +2486,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/beiruti/METADATA.pb",
@@ -2832,7 +2835,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bigshouldersdisplaysc/METADATA.pb",
@@ -2871,8 +2875,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Same packager batch as Big Shoulders Display."
+      "status": "complete",
+      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bigshouldersinlinedisplaysc/METADATA.pb",
@@ -2898,8 +2902,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Same packager batch as Big Shoulders Display."
+      "status": "complete",
+      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bigshouldersinlinetextsc/METADATA.pb",
@@ -2938,8 +2942,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Same packager batch as Big Shoulders Display."
+      "status": "complete",
+      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bigshouldersstencildisplaysc/METADATA.pb",
@@ -2965,8 +2969,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Same packager batch as Big Shoulders Display."
+      "status": "complete",
+      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bigshouldersstenciltextsc/METADATA.pb",
@@ -2992,8 +2996,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Same packager batch as Big Shoulders Display."
+      "status": "complete",
+      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/bigshoulderstextsc/METADATA.pb",
@@ -4525,8 +4529,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/chathura/METADATA.pb",
@@ -5234,8 +5238,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream on same day as Font Bakery Dashboard create."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream on same day as Font Bakery Dashboard create. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/coustard/METADATA.pb",
@@ -5745,7 +5749,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/dmsans/METADATA.pb",
@@ -5768,10 +5773,10 @@
       "repository_url": "https://github.com/googlefonts/dm-fonts",
       "commit": "027cea4e4f45827128860a4dec7b9a0852a295d7",
       "branch": null,
-      "config_yaml": null,
+      "config_yaml": "Sans/Source/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete"
     },
     {
       "path": "ofl/dmseriftext/METADATA.pb",
@@ -5781,10 +5786,10 @@
       "repository_url": "https://github.com/googlefonts/dm-fonts",
       "commit": "027cea4e4f45827128860a4dec7b9a0852a295d7",
       "branch": null,
-      "config_yaml": null,
+      "config_yaml": "Sans/Source/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete"
     },
     {
       "path": "ofl/dohyeon/METADATA.pb",
@@ -5905,7 +5910,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/doto/METADATA.pb",
@@ -6446,7 +6452,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/ephesis/METADATA.pb",
@@ -6804,8 +6811,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: upstream commit on same day as google/fonts update."
+      "status": "complete",
+      "notes": "Inferred: upstream commit on same day as google/fonts update. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/federo/METADATA.pb",
@@ -8412,7 +8419,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/hahmlet/METADATA.pb",
@@ -8641,7 +8649,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/hermeneusone/METADATA.pb",
@@ -8724,8 +8733,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream (only HEAD, no later commits)."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream (only HEAD, no later commits). Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/hindguntur/METADATA.pb",
@@ -8752,8 +8761,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/hindkochi/METADATA.pb",
@@ -8766,8 +8775,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/hindmadurai/METADATA.pb",
@@ -8794,8 +8803,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/hindsiliguri/METADATA.pb",
@@ -11628,7 +11637,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/livvic/METADATA.pb",
@@ -12081,8 +12091,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/mallanna/METADATA.pb",
@@ -12616,7 +12626,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/mervalescript/METADATA.pb",
@@ -13287,8 +13298,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "v8.001 commit. v8.002 was done directly in google/fonts."
+      "status": "complete",
+      "notes": "v8.001 commit. v8.002 was done directly in google/fonts. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/moulpali/METADATA.pb",
@@ -17779,7 +17790,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/pangolin/METADATA.pb",
@@ -20365,7 +20377,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/quintessential/METADATA.pb",
@@ -21183,7 +21196,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/rozhaone/METADATA.pb",
@@ -21696,8 +21710,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "v3.000 tag."
+      "status": "complete",
+      "notes": "v3.000 tag. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/rye/METADATA.pb",
@@ -21775,10 +21789,10 @@
       "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": "30dd1fe19abde40a74341f6db3f71cbc7a574a77",
       "branch": "master",
-      "config_yaml": null,
+      "config_yaml": "Saira/sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date."
     },
     {
@@ -21789,10 +21803,10 @@
       "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": "30dd1fe19abde40a74341f6db3f71cbc7a574a77",
       "branch": "master",
-      "config_yaml": null,
+      "config_yaml": "Saira/sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date."
     },
     {
@@ -21803,10 +21817,10 @@
       "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": "30dd1fe19abde40a74341f6db3f71cbc7a574a77",
       "branch": "master",
-      "config_yaml": null,
+      "config_yaml": "Saira/sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date."
     },
     {
@@ -21817,10 +21831,10 @@
       "repository_url": "https://github.com/Omnibus-Type/Saira",
       "commit": "a84254850c80b93b3a2256c055505bca011c751d",
       "branch": null,
-      "config_yaml": null,
+      "config_yaml": "Saira/sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date."
     },
     {
@@ -21928,7 +21942,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/sarabun/METADATA.pb",
@@ -21941,8 +21956,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/sarala/METADATA.pb",
@@ -22382,7 +22397,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/shipporiantiqueb1/METADATA.pb",
@@ -22395,7 +22411,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/shipporimincho/METADATA.pb",
@@ -22436,7 +22453,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/shojumaru/METADATA.pb",
@@ -22760,7 +22778,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/smooch/METADATA.pb",
@@ -23337,8 +23356,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "Inferred: HEAD of upstream at onboarding date."
+      "status": "complete",
+      "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/staatliches/METADATA.pb",
@@ -23446,7 +23465,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/sticknobills/METADATA.pb",
@@ -24089,7 +24109,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/thegirlnextdoor/METADATA.pb",
@@ -24422,7 +24443,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/triodion/METADATA.pb",
@@ -24531,7 +24553,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/tuffy/METADATA.pb",
@@ -24572,7 +24595,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/twinklestar/METADATA.pb",
@@ -24868,7 +24892,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/vibes/METADATA.pb",
@@ -24881,7 +24906,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/vibur/METADATA.pb",
@@ -25295,10 +25321,10 @@
       "repository_url": "https://github.com/wix-incubator/wixmadefor",
       "commit": "85646f130c8d3edffe66c4d8755c3f9f7abfa877",
       "branch": null,
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date."
     },
     {
@@ -25338,7 +25364,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/yaldevi/METADATA.pb",
@@ -25526,7 +25553,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/youngserif/METADATA.pb",
@@ -25687,7 +25715,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/zain/METADATA.pb",
@@ -25766,7 +25795,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/zcoolxiaowei/METADATA.pb",
@@ -25779,7 +25809,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/zenantique/METADATA.pb",
@@ -25861,7 +25892,8 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config"
+      "status": "complete",
+      "notes": "Override config.yaml exists in google/fonts."
     },
     {
       "path": "ofl/zenloop/METADATA.pb",
