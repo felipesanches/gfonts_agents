@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-02-25T17:44:17.984696",
+  "generated_at": "2026-02-25T17:46:17.137365",
   "summary": {
     "total": 1948,
     "complete": 1131,
     "missing_config": 44,
     "missing_commit": 82,
-    "incomplete_source": 595,
-    "no_source": 96
+    "incomplete_source": 604,
+    "no_source": 87
   },
   "families": [
     {
@@ -157,13 +157,13 @@
       "family_name": "Adobe Blank",
       "designer": "Dr. Ken Lunde",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/adobe-fonts/adobe-blank",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/adventpro/METADATA.pb",
@@ -1158,13 +1158,13 @@
       "family_name": "Anonymous Pro",
       "designer": "Mark Simonson",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/fontmgr/AnonymousPro",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/anta/METADATA.pb",
@@ -12416,13 +12416,13 @@
       "family_name": "Miltonian Tattoo",
       "designer": "Impallari Type",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/impallari/Miltonian",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/mina/METADATA.pb",
@@ -13664,39 +13664,39 @@
       "family_name": "Noto Color Emoji",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-emoji",
       "commit": null,
       "branch": "main",
       "config_yaml": null,
       "override_config": false,
-      "has_source_block": true,
-      "status": "no_source"
+      "has_source_block": false,
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notocoloremojicompattest/METADATA.pb",
       "family_name": "Noto Color Emoji Compat Test",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-emoji",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notoemoji/METADATA.pb",
       "family_name": "Noto Emoji",
       "designer": "Google",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/noto-emoji",
       "commit": null,
       "branch": "main",
       "config_yaml": null,
       "override_config": false,
-      "has_source_block": true,
-      "status": "no_source"
+      "has_source_block": false,
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/notokufiarabic/METADATA.pb",
@@ -16940,13 +16940,13 @@
       "family_name": "Old Standard TT",
       "designer": "Alexey Kryukov",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/akryukov/oldstand",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/ole/METADATA.pb",
@@ -19527,13 +19527,13 @@
       "family_name": "Press Start 2P",
       "designer": "CodeMan38",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/codeman38/PressStart2P",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/pridi/METADATA.pb",
@@ -23297,13 +23297,13 @@
       "family_name": "Tangerine",
       "designer": "Toshi Omagari",
       "license": "OFL",
-      "repository_url": null,
+      "repository_url": "https://github.com/googlefonts/TangerineFont",
       "commit": null,
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_source"
+      "status": "incomplete_source"
     },
     {
       "path": "ofl/tapestry/METADATA.pb",
