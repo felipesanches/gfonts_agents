@@ -4940,7 +4940,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cause/METADATA.pb",
@@ -4954,7 +4954,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/caveat/METADATA.pb",
@@ -4974,7 +4974,7 @@
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/caveatbrush/METADATA.pb",
@@ -4989,7 +4989,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cedarvillecursive/METADATA.pb",
@@ -5004,7 +5004,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cevicheone/METADATA.pb",
@@ -5022,7 +5022,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chakrapetch/METADATA.pb",
@@ -5037,7 +5037,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Latest commit before gfonts commit (2018-08-23) 'Updated vertical metrics to stop first line clipping'. The gfonts commit was 'chakrapetch: unhinted fonts' from Sep 2018.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/changa/METADATA.pb",
@@ -5051,7 +5051,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/changaone/METADATA.pb",
@@ -5069,7 +5069,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chango/METADATA.pb",
@@ -5087,7 +5087,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/charissil/METADATA.pb",
@@ -5101,7 +5101,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/charm/METADATA.pb",
@@ -5115,7 +5115,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/charmonman/METADATA.pb",
@@ -5130,7 +5130,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chathura/METADATA.pb",
@@ -5148,7 +5148,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chauphilomeneone/METADATA.pb",
@@ -5166,7 +5166,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chelaone/METADATA.pb",
@@ -5184,7 +5184,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chelseamarket/METADATA.pb",
@@ -5199,21 +5199,22 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chenla/METADATA.pb",
       "family_name": "Chenla",
       "designer": "Danh Hong",
       "license": "OFL",
-      "repository_url": null,
-      "commit": null,
-      "branch": null,
+      "repository_url": "https://github.com/librefonts/chenla",
+      "commit": "e90a349be27913a318f18470ac16c358ea316fa4",
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_upstream_repo",
-      "has_investigation_report": false
+      "status": "missing_config",
+      "has_investigation_report": true,
+      "notes": "TTX-only archive in librefonts, no buildable source files (SFD/VFB/Glyphs/UFO)"
     },
     {
       "path": "ofl/cherish/METADATA.pb",
@@ -5227,7 +5228,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cherrybombone/METADATA.pb",
@@ -5241,7 +5242,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cherryswash/METADATA.pb",
