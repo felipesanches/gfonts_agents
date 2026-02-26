@@ -4237,7 +4237,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/buenard/METADATA.pb",
@@ -4251,7 +4251,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bungee/METADATA.pb",
@@ -4265,7 +4265,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bungeecolor/METADATA.pb",
@@ -4279,7 +4279,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bungeehairline/METADATA.pb",
@@ -4293,7 +4293,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bungeeinline/METADATA.pb",
