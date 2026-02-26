@@ -3443,7 +3443,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/biorhymeexpanded/METADATA.pb",
@@ -3458,7 +3458,7 @@
       "has_source_block": false,
       "status": "complete",
       "notes": "Has source files. No config.yaml. Commit inferred.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/birthstone/METADATA.pb",
@@ -3472,7 +3472,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/birthstonebounce/METADATA.pb",
@@ -3486,7 +3486,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/biryani/METADATA.pb",
@@ -3505,7 +3505,7 @@
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bitcount/METADATA.pb",
