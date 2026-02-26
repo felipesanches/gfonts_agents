@@ -5260,7 +5260,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chicle/METADATA.pb",
@@ -5278,7 +5278,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chilanka/METADATA.pb",
@@ -5292,7 +5292,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chirongoroundtc/METADATA.pb",
@@ -5307,7 +5307,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chironheihk/METADATA.pb",
@@ -5321,7 +5321,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chironsunghk/METADATA.pb",
@@ -5335,7 +5335,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chivo/METADATA.pb",
@@ -5349,7 +5349,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chivomono/METADATA.pb",
@@ -5363,7 +5363,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chocolateclassicalsans/METADATA.pb",
@@ -5377,7 +5377,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chokokutai/METADATA.pb",
@@ -5391,7 +5391,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/chonburi/METADATA.pb",
@@ -5405,7 +5405,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cinzel/METADATA.pb",
@@ -5419,7 +5419,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cinzeldecorative/METADATA.pb",
@@ -5433,7 +5433,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/clickerscript/METADATA.pb",
@@ -5448,7 +5448,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/climatecrisis/METADATA.pb",
@@ -5456,13 +5456,13 @@
       "designer": "Daniel Coull, Eino Korkala",
       "license": "OFL",
       "repository_url": "https://github.com/dancoull/ClimateCrisis",
-      "commit": "abb2058c737b353e2b32ece0bc6c229bf7f6858b",
+      "commit": "8e3882135dddeb43f582ae88f337589dbba625f4",
       "branch": "main",
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/coda/METADATA.pb",
@@ -5480,7 +5480,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/codystar/METADATA.pb",
@@ -5494,7 +5494,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/coiny/METADATA.pb",
@@ -5508,7 +5508,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/combo/METADATA.pb",
@@ -5523,25 +5523,25 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/comfortaa/METADATA.pb",
       "family_name": "Comfortaa",
       "designer": "Johan Aakerlund",
       "license": "OFL",
-      "repository_url": "https://github.com/alexeiva/comfortaa",
-      "commit": "4aa21cfb7b018629dcf17aab6220e638411c7164",
+      "repository_url": "https://github.com/googlefonts/comfortaa",
+      "commit": "2a87ac6f6ea3495150bfa00d0c0fb53dd0a2f11b",
       "branch": null,
-      "config_yaml": null,
+      "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
+      "notes": "URL should be updated to https://github.com/googlefonts/comfortaa (alexeiva/comfortaa is a fork). Commit should be 2a87ac6f6ea3495150bfa00d0c0fb53dd0a2f11b (HEAD of googlefonts/comfortaa, used for v3.105). Config at sources/config.yaml in upstream.",
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/comforter/METADATA.pb",
