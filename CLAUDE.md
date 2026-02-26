@@ -41,6 +41,56 @@ When data is missing or incorrect (e.g., missing config.yaml, missing commit has
 
 PRs to be created are tracked in `data/pending_prs.json` and displayed in the dashboard.
 
+### PR Structure for google/fonts (STRICT POLICY)
+
+All PRs to google/fonts that enrich source metadata MUST follow this structure, established in PR #10271:
+
+#### Per-Family Commits
+
+Each commit modifies exactly ONE font family and contains exactly these files:
+1. **`METADATA.pb`** — the source block addition/modification
+2. **`upstream_info.md`** — the full investigation report (with `/mnt/shared` paths cleaned)
+3. **`config.yaml`** (when applicable) — override config for gftools-builder
+
+No commit may touch files from multiple families. No family may be spread across multiple commits.
+
+#### Commit Message Format
+
+```
+{Family Name}: {add|fix} source block {to|in} METADATA.pb
+
+- Repo: {owner/repo}
+- Commit: {short_hash} ({brief description})
+- Config: {config path | "override config.yaml in google/fonts" | "none (SFD-only sources)" | "none"}
+- Status: {complete|missing_config|needs_correction}
+- Confidence: {HIGH|MEDIUM|LOW}
+{Optional: 1-line note about corrections or notable findings}
+```
+
+Use "add" / "to" for new source blocks. Use "fix" / "in" when correcting existing data (e.g., wrong repo URL or commit hash).
+
+#### upstream_info.md Requirements
+
+- Must be the cleaned investigation report from `data/investigations/families/{slug}.md`
+- ALL `/mnt/shared` path prefixes MUST be removed (use relative paths)
+- Status and config fields must be updated to reflect what the commit actually delivers
+- When an override config.yaml is included, the report must document it
+
+#### Override config.yaml
+
+When the upstream repo has gftools-builder compatible sources (.glyphs, .ufo, .designspace) but no config.yaml:
+- Create an override `config.yaml` in the google/fonts family directory
+- Do NOT set `config_yaml` in METADATA.pb (google-fonts-sources auto-detects local overrides)
+- The config must reference source paths relative to the upstream repo root at the referenced commit
+- Update the commit message Config line to "override config.yaml in google/fonts"
+- Update the commit message Status to "complete"
+
+#### Prerequisites
+
+- Every family in the PR MUST have a completed investigation report in `data/investigations/families/`
+- Never include a family in a PR without its investigation report
+- Investigation reports must reflect genuine per-family research (see Investigation Reports policy in MEMORY.md)
+
 ### Validation Strategies
 
 To identify the original onboarding commits, we can use the following approaches:
