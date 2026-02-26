@@ -2408,7 +2408,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/balooda2/METADATA.pb",
@@ -2422,7 +2422,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/baloopaaji2/METADATA.pb",
@@ -2436,7 +2436,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/balootamma2/METADATA.pb",
@@ -2450,7 +2450,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/balootammudu2/METADATA.pb",
@@ -2464,7 +2464,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/baloothambi2/METADATA.pb",
