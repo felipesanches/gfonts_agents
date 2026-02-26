@@ -5867,7 +5867,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cormorantupright/METADATA.pb",
@@ -5881,7 +5881,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cossettetexte/METADATA.pb",
@@ -5942,7 +5942,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: HEAD of upstream on same day as Font Bakery Dashboard create. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/coustard/METADATA.pb",
@@ -5960,7 +5960,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/coveredbyyourgrace/METADATA.pb",
@@ -5978,7 +5978,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/creepster/METADATA.pb",
@@ -5996,7 +5996,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/creteround/METADATA.pb",
@@ -6014,7 +6014,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/crimsonpro/METADATA.pb",
@@ -6028,7 +6028,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/crimsontext/METADATA.pb",
@@ -6102,7 +6102,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cutivemono/METADATA.pb",
@@ -6116,7 +6116,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/daibannasil/METADATA.pb",
@@ -6135,7 +6135,7 @@
         "designspace",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/damion/METADATA.pb",
@@ -6149,7 +6149,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dancingscript/METADATA.pb",
@@ -6163,7 +6163,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/danfo/METADATA.pb",
