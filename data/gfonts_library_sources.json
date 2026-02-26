@@ -2765,7 +2765,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: upstream commit 1 day before google/fonts add.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bbhhegarty/METADATA.pb",
@@ -2780,7 +2780,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: upstream commit 1 day before google/fonts add.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/beaurivage/METADATA.pb",
@@ -3701,7 +3701,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bizudmincho/METADATA.pb",
@@ -3715,7 +3715,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bizudpgothic/METADATA.pb",
@@ -3729,7 +3729,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bizudpmincho/METADATA.pb",
