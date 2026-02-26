@@ -4321,7 +4321,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bungeeshade/METADATA.pb",
@@ -4498,7 +4498,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cagliostro/METADATA.pb",
