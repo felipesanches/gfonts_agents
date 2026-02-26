@@ -1990,7 +1990,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/atomicage/METADATA.pb",
@@ -2005,7 +2005,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/aubrey/METADATA.pb",
@@ -2019,7 +2019,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/audiowide/METADATA.pb",
@@ -2034,7 +2034,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/autourone/METADATA.pb",
@@ -2052,7 +2052,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/average/METADATA.pb",
@@ -2140,7 +2140,7 @@
       "override_config": false,
       "has_source_block": false,
       "status": "no_upstream_repo",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/azeretmono/METADATA.pb",
@@ -2154,7 +2154,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/b612/METADATA.pb",
@@ -2168,7 +2168,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/b612mono/METADATA.pb",
@@ -2182,7 +2182,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/babylonica/METADATA.pb",
@@ -2750,7 +2750,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: upstream commit 1 day before google/fonts add.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bbhbogle/METADATA.pb",
