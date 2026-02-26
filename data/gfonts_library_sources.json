@@ -2837,7 +2837,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/belgrano/METADATA.pb",
@@ -2855,7 +2855,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bellefair/METADATA.pb",
@@ -2869,7 +2869,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/belleza/METADATA.pb",
@@ -2883,7 +2883,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bellota/METADATA.pb",
@@ -2902,7 +2902,7 @@
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bellotatext/METADATA.pb",
