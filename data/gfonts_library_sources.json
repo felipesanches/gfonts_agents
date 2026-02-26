@@ -8,7 +8,7 @@
     "incomplete_source": 0,
     "no_source": 0,
     "no_upstream_repo": 56,
-    "investigation_reports": 151,
+    "investigation_reports": 166,
     "investigation_reports_missing": 1797
   },
   "families": [
@@ -2252,7 +2252,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bahiana/METADATA.pb",
@@ -2271,7 +2271,7 @@
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bahianita/METADATA.pb",
@@ -2279,18 +2279,18 @@
       "designer": "Omnibus-Type",
       "license": "OFL",
       "repository_url": "https://github.com/Omnibus-Type/Bahiana",
-      "commit": "0efedac55f05ea7f6b277b2d63424984e53d005d",
+      "commit": "e96af6905aadd095bf2568c44fc643c1b2c412d4",
       "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
+      "notes": "PR #1669 explicitly references commit e96af69 (was incorrectly set to HEAD 0efedac). Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/baijamjuree/METADATA.pb",
@@ -2305,7 +2305,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: HEAD of upstream at onboarding date (2018-08-23). Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bakbakone/METADATA.pb",
@@ -2319,7 +2319,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/ballet/METADATA.pb",
