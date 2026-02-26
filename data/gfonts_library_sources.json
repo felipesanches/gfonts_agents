@@ -4628,7 +4628,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/candal/METADATA.pb",
@@ -4646,7 +4646,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cantarell/METADATA.pb",
@@ -4660,7 +4660,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cantataone/METADATA.pb",
@@ -4678,7 +4678,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cantoraone/METADATA.pb",
@@ -4693,7 +4693,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/caprasimo/METADATA.pb",
@@ -4707,7 +4707,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/capriola/METADATA.pb",
@@ -4721,7 +4721,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/caramel/METADATA.pb",
@@ -4735,7 +4735,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/carattere/METADATA.pb",
@@ -4749,7 +4749,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cardo/METADATA.pb",
@@ -4767,7 +4767,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/carlito/METADATA.pb",
@@ -4782,7 +4782,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/carme/METADATA.pb",
@@ -4796,7 +4796,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/carroisgothic/METADATA.pb",
@@ -4811,7 +4811,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/carroisgothicsc/METADATA.pb",
@@ -4826,7 +4826,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/carterone/METADATA.pb",
@@ -4844,7 +4844,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cascadiacode/METADATA.pb",
@@ -4858,7 +4858,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cascadiamono/METADATA.pb",
@@ -4872,7 +4872,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/castoro/METADATA.pb",
@@ -4886,7 +4886,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/castorotitling/METADATA.pb",
@@ -4904,7 +4904,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/catamaran/METADATA.pb",
@@ -4922,7 +4922,7 @@
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/caudex/METADATA.pb",
