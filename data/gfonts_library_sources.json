@@ -3659,7 +3659,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bitcountsingleink/METADATA.pb",
@@ -3673,7 +3673,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bitter/METADATA.pb",
@@ -3687,7 +3687,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bizudgothic/METADATA.pb",
@@ -3757,7 +3757,7 @@
       "override_config": false,
       "has_source_block": false,
       "status": "no_upstream_repo",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/blackhansans/METADATA.pb",
@@ -3772,7 +3772,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/blackopsone/METADATA.pb",
