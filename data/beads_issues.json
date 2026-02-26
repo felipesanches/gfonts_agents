@@ -109,5 +109,16 @@
     "created_by": "Felipe Correa da Silva Sanches",
     "updated_at": "2026-02-25T15:09:44.943545002Z",
     "notes": "535 resolved via date-matched commits. 102 remain (repos not in cache or no commits before onboarding date).\n\nClosed: All incomplete_source families resolved. 0 remain."
+  },
+  {
+    "id": "gfonts_agents-rpt",
+    "title": "Write per-family investigation reports (126/1948 done)",
+    "description": "Every font family must have an individual investigation report in data/investigations/families/. Each report requires genuine research: reading METADATA.pb, checking git history, inspecting upstream repos, verifying commits, reading PR bodies. Progress tracked via has_investigation_report field in gfonts_library_sources.json.",
+    "type": "task",
+    "status": "in_progress",
+    "priority": 1,
+    "created_at": "2026-02-26T01:38:31.976729+00:00",
+    "updated_at": "2026-02-26T01:38:31.976729+00:00",
+    "notes": "126/1948 reports written (first 20 families alphabetically, plus agent overshoot). Next batch: families starting from Atacama onward."
   }
 ]
