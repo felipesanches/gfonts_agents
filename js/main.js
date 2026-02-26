@@ -507,7 +507,7 @@ function showFamilyDetail(family) {
 function renderFamilyInvestigations(familyName) {
     if (!investigationsData || !investigationsData.reports || !familyName) return '';
     const matching = investigationsData.reports.filter(r => {
-        const names = r.families.split(',').map(s => s.trim().toLowerCase());
+        const names = (r.families || '').split(',').map(s => s.trim().toLowerCase());
         return names.includes(familyName.toLowerCase());
     });
     if (matching.length === 0) return '';
