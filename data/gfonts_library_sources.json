@@ -2556,11 +2556,11 @@
       "override_config": false,
       "has_source_block": true,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
+      "notes": "Has gftools-buildable sources (glyphs), needs config.yaml. Part of Barlow superfamily (shared source with Barlow and Barlow Semi Condensed).",
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/barlowsemicondensed/METADATA.pb",
@@ -2574,11 +2574,11 @@
       "override_config": false,
       "has_source_block": true,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
+      "notes": "Has gftools-buildable sources (glyphs), needs config.yaml. Part of Barlow superfamily (shared source with Barlow and Barlow Condensed).",
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/barriecito/METADATA.pb",
@@ -2586,18 +2586,18 @@
       "designer": "Omnibus-Type",
       "license": "OFL",
       "repository_url": "https://github.com/Omnibus-Type/Barrio",
-      "commit": "8f33bf10cb73ecf914110fd7182e543a59a70382",
+      "commit": "a65aa86a745f39053a1ac892cf917cdcc1cacdf3",
       "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
+      "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml. Commit corrected from HEAD to PR #1673 referenced commit. Sources in Barriecito/ subdirectory of Barrio repo.",
       "source_types": [
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/barrio/METADATA.pb",
@@ -2605,18 +2605,18 @@
       "designer": "Omnibus-Type",
       "license": "OFL",
       "repository_url": "https://github.com/Omnibus-Type/Barrio",
-      "commit": "ced3c1e20646c75272147a8b472fa0c4e359d45a",
+      "commit": "4cb00e50284f63512cce98d382b495955bde4e72",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
+      "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml. Commit corrected from ced3c1e (2015) to 4cb00e5 (2016-12-02, onboarding date).",
       "source_types": [
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/basic/METADATA.pb",
@@ -2630,11 +2630,11 @@
       "override_config": false,
       "has_source_block": true,
       "status": "missing_config",
-      "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
+      "notes": "Has gftools-buildable sources (ufo), needs config.yaml. Very early font (2011), pre-dates modern onboarding workflow.",
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/baskervville/METADATA.pb",
