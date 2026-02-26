@@ -2478,7 +2478,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/balsamiqsans/METADATA.pb",
@@ -2492,7 +2492,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/balthazar/METADATA.pb",
@@ -2510,7 +2510,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bangers/METADATA.pb",
@@ -2524,7 +2524,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/barlow/METADATA.pb",
@@ -2542,7 +2542,7 @@
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/barlowcondensed/METADATA.pb",
@@ -2648,7 +2648,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/baskervvillesc/METADATA.pb",
@@ -2662,7 +2662,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/batang/METADATA.pb",
@@ -2677,7 +2677,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/batangche/METADATA.pb",
@@ -2692,7 +2692,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/battambang/METADATA.pb",
@@ -2706,7 +2706,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/baumans/METADATA.pb",
