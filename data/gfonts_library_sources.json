@@ -2921,7 +2921,7 @@
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/benchnine/METADATA.pb",
@@ -2939,7 +2939,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/benne/METADATA.pb",
@@ -2953,7 +2953,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bentham/METADATA.pb",
@@ -2971,7 +2971,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/berkshireswash/METADATA.pb",
@@ -2986,7 +2986,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/besley/METADATA.pb",
