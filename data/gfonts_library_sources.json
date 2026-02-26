@@ -5555,7 +5555,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/comforterbrush/METADATA.pb",
@@ -5569,7 +5569,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/comicneue/METADATA.pb",
@@ -5583,7 +5583,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/comicrelief/METADATA.pb",
@@ -5597,7 +5597,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/comme/METADATA.pb",
@@ -5611,7 +5611,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/commissioner/METADATA.pb",
@@ -5625,7 +5625,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/concertone/METADATA.pb",
@@ -5643,7 +5643,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/condiment/METADATA.pb",
@@ -5661,21 +5661,25 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/content/METADATA.pb",
       "family_name": "Content",
       "designer": "Danh Hong",
       "license": "OFL",
-      "repository_url": null,
-      "commit": null,
-      "branch": null,
+      "repository_url": "https://github.com/librefonts/content",
+      "commit": "15b7178f9b93d01ba29f9a6cca770578cc7275e5",
+      "branch": "master",
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "no_upstream_repo",
-      "has_investigation_report": false
+      "status": "missing_config",
+      "has_investigation_report": true,
+      "notes": "No editable source files in upstream repo (only TTX dumps). Khmer script font from KhmerOS project.",
+      "source_types": [
+        "ttx_only"
+      ]
     },
     {
       "path": "ofl/contrailone/METADATA.pb",
@@ -5693,7 +5697,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/convergence/METADATA.pb",
@@ -5711,7 +5715,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cookie/METADATA.pb",
@@ -5729,7 +5733,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/copse/METADATA.pb",
@@ -5747,7 +5751,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/coralpixels/METADATA.pb",
@@ -5761,7 +5765,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/corben/METADATA.pb",
@@ -5779,7 +5783,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/corinthia/METADATA.pb",
@@ -5793,7 +5797,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cormorant/METADATA.pb",
@@ -5807,7 +5811,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cormorantgaramond/METADATA.pb",
@@ -5821,7 +5825,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cormorantinfant/METADATA.pb",
@@ -5835,7 +5839,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cormorantsc/METADATA.pb",
@@ -5849,7 +5853,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/cormorantunicase/METADATA.pb",
