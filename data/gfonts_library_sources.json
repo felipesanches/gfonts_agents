@@ -2721,7 +2721,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bayon/METADATA.pb",
@@ -2735,7 +2735,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bbhbartle/METADATA.pb",
@@ -2794,7 +2794,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bebasneue/METADATA.pb",
@@ -2809,7 +2809,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/beiruti/METADATA.pb",
@@ -2823,7 +2823,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/belanosima/METADATA.pb",
