@@ -3368,7 +3368,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshoulderstext/METADATA.pb",
@@ -3376,14 +3376,14 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
+      "commit": "465a9c592f06d493841b35dca5d248c8142b75f8",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "notes": "Commit corrected from 41153e6 to 465a9c5 based on binary blob verification. PR #3432 merged commit says v2.002 at 465a9c5. Override config.yaml exists in google/fonts.",
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshoulderstextsc/METADATA.pb",
@@ -3397,7 +3397,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bilbo/METADATA.pb",
@@ -3411,7 +3411,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bilboswashcaps/METADATA.pb",
@@ -3429,7 +3429,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/biorhyme/METADATA.pb",
