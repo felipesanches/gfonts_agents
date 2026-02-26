@@ -906,6 +906,10 @@ footer {
     border-left-color: #9e9e9e;
 }
 
+.summary-card.investigated {
+    border-left-color: #673ab7;
+}
+
 .summary-card.error {
     border-left: 4px solid #ea4335;
 }

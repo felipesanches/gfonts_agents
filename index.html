@@ -55,6 +55,10 @@
                         <span class="summary-value" id="summary-no-upstream-repo">--</span>
                         <span class="summary-label">No Upstream Repo</span>
                     </div>
+                    <div class="summary-card investigated">
+                        <span class="summary-value" id="summary-investigated">--</span>
+                        <span class="summary-label">Investigated</span>
+                    </div>
                 </div>
 
                 <div class="sources-progress">
@@ -121,6 +125,11 @@
                         <option value="OFL">OFL</option>
                         <option value="Apache">Apache</option>
                         <option value="UFL">UFL</option>
+                    </select>
+                    <select id="sources-report-filter">
+                        <option value="all">All (report status)</option>
+                        <option value="has_report">Has investigation report</option>
+                        <option value="no_report">Missing investigation report</option>
                     </select>
                     <span id="sources-count"></span>
                 </div>

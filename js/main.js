@@ -88,6 +88,8 @@ async function loadLibrarySources() {
         searchInput.addEventListener('input', () => filterSources());
         statusFilter.addEventListener('change', () => filterSources());
         licenseFilter.addEventListener('change', () => filterSources());
+        const reportFilter = document.getElementById('sources-report-filter');
+        if (reportFilter) reportFilter.addEventListener('change', () => filterSources());
 
         // Initial render
         renderSourcesTable(container, sourcesData.families);
@@ -110,6 +112,14 @@ function updateSourcesSummary(summary) {
     if (noSourceEl) noSourceEl.textContent = summary.no_source || 0;
     const noRepoEl = document.getElementById('summary-no-upstream-repo');
     if (noRepoEl) noRepoEl.textContent = summary.no_upstream_repo || 0;
+
+    // Investigation report stats - count from families data
+    const investigatedEl = document.getElementById('summary-investigated');
+    if (investigatedEl && sourcesData) {
+        const reportCount = sourcesData.families.filter(f => f.has_investigation_report).length;
+        const reportPercent = (reportCount / summary.total * 100).toFixed(1);
+        investigatedEl.textContent = `${reportCount} (${reportPercent}%)`;
+    }
 
     // Update progress bar
     const completePercent = (summary.complete / summary.total * 100).toFixed(1);
@@ -326,6 +336,7 @@ function filterSources() {
     const searchTerm = document.getElementById('sources-search').value.toLowerCase();
     const statusValue = document.getElementById('sources-status-filter').value;
     const licenseValue = document.getElementById('sources-license-filter').value;
+    const reportValue = document.getElementById('sources-report-filter')?.value || 'all';
 
     const filtered = sourcesData.families.filter(family => {
         const matchesSearch = !searchTerm ||
@@ -333,7 +344,10 @@ function filterSources() {
             (family.designer && family.designer.toLowerCase().includes(searchTerm));
         const matchesStatus = statusValue === 'all' || family.status === statusValue;
         const matchesLicense = licenseValue === 'all' || family.license === licenseValue;
-        return matchesSearch && matchesStatus && matchesLicense;
+        const matchesReport = reportValue === 'all' ||
+            (reportValue === 'has_report' && family.has_investigation_report) ||
+            (reportValue === 'no_report' && !family.has_investigation_report);
+        return matchesSearch && matchesStatus && matchesLicense && matchesReport;
     });
 
     const container = document.getElementById('sources-table-container');
@@ -499,9 +513,33 @@ function showFamilyDetail(family) {
             ${field('METADATA.pb', metadataUrl ? `<a href="${escapeHtml(metadataUrl)}" target="_blank">View on GitHub</a>` : '—')}
         </div>
         ${renderFamilyInvestigations(family.family_name)}
+        <div id="dialog-family-report"></div>
     `;
 
     dialog.showModal();
+
+    // Try to load per-family investigation report
+    loadFamilyReport(family);
+}
+
+async function loadFamilyReport(family) {
+    const container = document.getElementById('dialog-family-report');
+    if (!container || !family.family_name) return;
+
+    const slug = family.family_name.toLowerCase().replace(/\s+/g, '-');
+    try {
+        const response = await fetch(`data/investigations/families/${slug}.md`);
+        if (!response.ok) return;
+        const markdown = await response.text();
+        const contentHtml = simpleMarkdownToHtml(markdown);
+        container.innerHTML = `
+            <div class="dialog-section">
+                <h4>Per-Family Investigation Report</h4>
+                <div class="dialog-investigation-body">${contentHtml}</div>
+            </div>`;
+    } catch (e) {
+        // No per-family report exists, that's fine
+    }
 }
 
 function renderFamilyInvestigations(familyName) {
@@ -799,6 +837,10 @@ function filterQuestions(personId) {
     });
 }
 
+function getMessageText(entry) {
+    return entry.message || entry.content || '';
+}
+
 async function loadMessageLog() {
     const container = document.getElementById('messages');
 
@@ -839,7 +881,7 @@ async function loadMessageLog() {
                             <div class="message-entry ${entry.role || 'user'}">
                                 <span class="message-role">${entry.role === 'assistant' ? 'Claude' : 'User'}</span>
                                 <span class="timestamp">${formatTimestamp(entry.timestamp)}</span>
-                                <p class="message-text">${escapeHtml(entry.message)}</p>
+                                <p class="message-text">${escapeHtml(getMessageText(entry))}</p>
                                 ${entry.translation ? `<p class="message-translation">${escapeHtml(entry.translation)}</p>` : ''}
                             </div>
                         `).join('')}
@@ -849,13 +891,14 @@ async function loadMessageLog() {
         }).join('');
     } catch (error) {
         container.innerHTML = '<p class="error">Failed to load message log.</p>';
+        console.error('Error loading message log:', error);
     }
 }
 
 function generateDaySummary(messages) {
     const topics = [];
     messages.forEach(msg => {
-        const text = msg.message.toLowerCase();
+        const text = getMessageText(msg).toLowerCase();
         if (text.includes('repository') || text.includes('repo')) topics.push('repository setup');
         if (text.includes('investigate') || text.includes('audit')) topics.push('font investigation');
         if (text.includes('dashboard') || text.includes('panel')) topics.push('dashboard development');
@@ -979,11 +1022,12 @@ function extractStatusFromMessages(messages) {
     // Analyze assistant messages for accomplishments
     messages.forEach(msg => {
         if (msg.role === 'assistant') {
-            const text = msg.message.toLowerCase();
+            const msgText = getMessageText(msg);
+            const text = msgText.toLowerCase();
 
             // Detect completed work - PRs
             if (text.includes('created pr') || text.includes('submitted pr')) {
-                const prMatch = msg.message.match(/PR #(\d+)/i);
+                const prMatch = msgText.match(/PR #(\d+)/i);
                 if (prMatch && !seenPRs.has(prMatch[1])) {
                     seenPRs.add(prMatch[1]);
                     done.push({
@@ -996,7 +1040,7 @@ function extractStatusFromMessages(messages) {
                 }
             }
             if (text.includes('added') && text.includes('designer')) {
-                const countMatch = msg.message.match(/(\d+)\s+designer/i);
+                const countMatch = msgText.match(/(\d+)\s+designer/i);
                 if (countMatch && !done.some(d => d.text && d.text.includes('designer biographies'))) {
                     done.push({ text: `Researched and added ${countMatch[1]} designer biographies` });
                 }
@@ -1007,7 +1051,7 @@ function extractStatusFromMessages(messages) {
                 }
             }
             if (text.includes('implemented') || text.includes('added') && text.includes('tab')) {
-                const feature = msg.message.match(/added\s+(?:the\s+)?["']?([^"'\n]+)["']?\s+tab/i);
+                const feature = msgText.match(/added\s+(?:the\s+)?["']?([^"'\n]+)["']?\s+tab/i);
                 if (feature) {
                     done.push({ text: `Implemented ${feature[1]} feature` });
                 }
