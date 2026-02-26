@@ -3224,7 +3224,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshouldersinline/METADATA.pb",
@@ -3238,7 +3238,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshouldersinlinedisplay/METADATA.pb",
@@ -3246,14 +3246,14 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
+      "commit": "2f924dd1205484c5e0054b1f3955f434224ba72e",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "notes": "Commit corrected from 41153e6 to 2f924dd based on binary blob hash verification. The 41153e6 commit was from the first packager run in PR #3438, but the final merged binary matches 2f924dd (the second packager run). Override config.yaml exists in google/fonts.",
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshouldersinlinedisplaysc/METADATA.pb",
@@ -3267,7 +3267,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshouldersinlinetext/METADATA.pb",
@@ -3275,14 +3275,14 @@
       "designer": "Patric King",
       "license": "OFL",
       "repository_url": "https://github.com/xotypeco/big_shoulders",
-      "commit": "41153e6fe01d218e933919a1d08c8e45065bc8fe",
+      "commit": "2f924dd1205484c5e0054b1f3955f434224ba72e",
       "branch": "master",
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "notes": "Same packager batch as Big Shoulders Display. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "notes": "Commit corrected from 41153e6 to 2f924dd based on binary blob hash verification. The 41153e6 commit was from the first packager run in PR #3437, but the final merged binary matches 2f924dd (the second packager run). Override config.yaml exists in google/fonts.",
+      "has_investigation_report": true
     },
     {
       "path": "ofl/bigshouldersinlinetextsc/METADATA.pb",
