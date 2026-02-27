@@ -1,57 +1,54 @@
-# Atkinson Hyperlegible Next
+# Investigation: Atkinson Hyperlegible Next
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Braille Institute, Applied Design Works, Elliott Scott, Megan Eiswerth, Letters From Sweden
-**METADATA.pb path**: `ofl/atkinsonhyperlegiblenext/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Atkinson Hyperlegible Next |
+| Slug | atkinson-hyperlegible-next |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/atkinson-hyperlegible-next |
-| Commit | `7925f50f649b3813257faf2f4c0b381011f434f1` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | 7925f50f649b3813257faf2f4c0b381011f434f1 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/googlefonts/atkinson-hyperlegible-next` was present in METADATA.pb from the original onboarding commit (`66eef7072`, "Atkinson Hyperlegible Next: Version 2.001 added", 2025-01-07). The commit body states: "Taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible-next". The URL is also embedded in the font's copyright string in METADATA.pb.
+```
+source {
+  repository_url: "https://github.com/googlefonts/atkinson-hyperlegible-next"
+  commit: "7925f50f649b3813257faf2f4c0b381011f434f1"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/AtkinsonHyperlegibleNext[wght].ttf"
+    dest_file: "AtkinsonHyperlegibleNext[wght].ttf"
+  }
+  files {
+    source_file: "fonts/variable/AtkinsonHyperlegibleNext-Italic[wght].ttf"
+    dest_file: "AtkinsonHyperlegibleNext-Italic[wght].ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-**Important note on commit hash discrepancy**: The original onboarding commit (`66eef7072`) in google/fonts referenced upstream commit `5d633f80fc654ef5fffa7cfc257528685158dcef`. However, the current METADATA.pb contains commit `7925f50f649b3813257faf2f4c0b381011f434f1` (dated 2025-02-21, message: "Fix Cairo in CI"). This change was made in commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31), which ported data from the fontc_crater targets.json file.
+Atkinson Hyperlegible Next was added to Google Fonts on 2025-01-07. The onboarding commit in google/fonts is `66eef7072` ("Atkinson Hyperlegible Next: Version 2.001 added"), which states the upstream repo and original onboarding commit. PR #8813 body confirms: "Taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible-next at commit https://github.com/googlefonts/atkinson-hyperlegible-next/commit/5d633f80fc654ef5fffa7cfc257528685158dcef."
 
-The fontc_crater targets list uses commit `7925f50f` (which is newer than the original onboarding commit `5d633f80`). This means the METADATA.pb now references a commit that is more recent than the one actually used to build the fonts in google/fonts.
+**Commit hash discrepancy**: The original onboarding used commit `5d633f80fc654ef5fffa7cfc257528685158dcef`, but the current METADATA.pb contains `7925f50f649b3813257faf2f4c0b381011f434f1` (dated 2025-02-21, "Fix Cairo in CI"). The METADATA.pb was updated by the batch commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31), which ported data from the fontc_crater targets.json. The fontc_crater targets list apparently used the newer commit `7925f50f` instead of the original onboarding commit.
 
-The original onboarding commit `5d633f80fc654ef5fffa7cfc257528685158dcef` could not be verified in the local cache because the upstream repo is a shallow clone containing only the latest commit.
+The current commit `7925f50f` is 45 days newer than the font onboarding date (2025-01-07). The upstream cache at `googlefonts/atkinson-hyperlegible-next` shows only the latest commit (shallow clone), so the original commit `5d633f80` cannot be verified locally.
 
-PR #8813 body confirms the original reference: "Taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible-next at commit https://github.com/googlefonts/atkinson-hyperlegible-next/commit/5d633f80fc654ef5fffa7cfc257528685158dcef."
-
-## How Config YAML Was Resolved
-
-The `config_yaml: "sources/config.yaml"` field was added in commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list"). The config.yaml exists in the upstream repository at the referenced commit (7925f50f) and contains:
-
-- Two .glyphs source files: `AtkinsonHyperlegibleNext.glyphs` and `AtkinsonHyperlegibleNext-Italic.glyphs`
-- Family name: "Atkinson Hyperlegible Next"
+The `sources/config.yaml` exists at the current commit and specifies:
+- Sources: `AtkinsonHyperlegibleNext.glyphs` and `AtkinsonHyperlegibleNext-Italic.glyphs`
 - `cleanUp: true`
-- Full STAT table configuration for weight and italic axes
+- Full STAT table configuration for wght and ital axes
 
-There is no override config.yaml in the google/fonts family directory.
+## Conclusion
 
-## Verification
-
-- Commit exists in upstream repo: Yes (7925f50f, the current METADATA.pb value)
-- Commit date: 2025-02-21 16:04:57 +0000
-- Commit message: "Fix Cairo in CI"
-- Source files at commit: `sources/AtkinsonHyperlegibleNext.glyphs`, `sources/AtkinsonHyperlegibleNext-Italic.glyphs`, `sources/config.yaml`, `.github/workflows/build.yaml`
-
-## Confidence
-
-**Medium**: The repository URL and config.yaml path are correct and verified. However, there is a commit hash discrepancy: the METADATA.pb currently records commit `7925f50f` (2025-02-21, "Fix Cairo in CI") from the fontc_crater targets list, while the original onboarding PR #8813 referenced commit `5d633f80` (which could not be verified locally due to the shallow clone). The commit `7925f50f` is newer than the font onboarding date (2025-01-07) and may include changes beyond what was actually used to build the fonts. The original commit `5d633f80` should be restored as the correct onboarding commit, or the discrepancy should be investigated further.
-
-## Open Questions
-
-1. Should the commit hash in METADATA.pb be reverted to the original onboarding commit `5d633f80fc654ef5fffa7cfc257528685158dcef` as referenced in PR #8813?
-2. Were the font binaries rebuilt from the newer commit `7925f50f`, or does the METADATA.pb now incorrectly reference a newer commit than what was actually used?
-3. The fontc_crater targets list may use a different commit for its own CI purposes -- should METADATA.pb track the original onboarding commit or the fontc_crater reference?
+Status is complete in terms of having all required METADATA.pb fields populated. However, the commit hash `7925f50f` in METADATA.pb is newer than the original onboarding commit `5d633f80` referenced in PR #8813. This is a known issue from the fontc_crater batch import. The correct commit should ideally be `5d633f80fc654ef5fffa7cfc257528685158dcef`, but since the repo is only available as a shallow clone locally, this cannot be verified without a full clone. Flagged as MEDIUM confidence due to this commit discrepancy.

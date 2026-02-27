@@ -1,49 +1,61 @@
-# Alumni Sans SC
+# Investigation: Alumni Sans SC
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Robert Leuschke
-**License**: OFL
-**METADATA.pb**: `ofl/alumnisanssc/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Alumni Sans SC |
+| Slug | alumni-sans-sc |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/alumni |
-| Commit | `44a7998fa2bfa1b3e119983cdc565dd7f0f03bda` |
-| Config YAML | `sources/config.yml` |
-| Branch | `master` |
+| Commit Hash | 44a7998fa2bfa1b3e119983cdc565dd7f0f03bda |
+| Config YAML | sources/config.yml |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/googlefonts/alumni"
+  commit: "44a7998fa2bfa1b3e119983cdc565dd7f0f03bda"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/AlumniSansSC[wght].ttf"
+    dest_file: "AlumniSansSC[wght].ttf"
+  }
+  files {
+    source_file: "fonts/variable/AlumniSansSC-Italic[wght].ttf"
+    dest_file: "AlumniSansSC-Italic[wght].ttf"
+  }
+  branch: "master"
+  config_yaml: "sources/config.yml"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2021-12-18 09:38:51 -0500
-- Commit message: "one blank line added to the OFL"
+## Investigation
 
-### Config YAML
-Found `sources/config.yml` in upstream repository at the recorded commit hash.
+The font file history in google/fonts shows one onboarding commit:
 
-## Evidence
+- `521d1cdf3` — "Alumni Sans SC: Version 1.016 added", merged 2024-05-27
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/googlefonts/alumni`
-- `commit`: `44a7998fa2bfa1b3e119983cdc565dd7f0f03bda`
-- `config_yaml`: `—`
+The commit body states:
 
-### google/fonts history
-- Last font modification: `521d1cdf3253`
-- Date: 2024-05-27 10:50:21 +0100
-- Subject: "Alumni Sans SC: Version 1.016 added"
+> "Taken from the upstream repo https://github.com/googlefonts/alumni at commit https://github.com/googlefonts/alumni/commit/44a7998fa2bfa1b3e119983cdc565dd7f0f03bda."
 
-### Upstream repo cache
-- Cached at: `googlefonts/alumni`
-- Commit `44a7998fa2bf` verified ✓
+This exactly matches the commit recorded in METADATA.pb. The upstream repo is shared with Alumni Sans (the non-SC variant) and is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/alumni`. The top commit is `44a7998` (message: "one blank line added to the OFL", dated 2021-12-18), confirming the hash is correct.
 
-## Confidence
+Note that this is the same repository and commit used for the original Alumni Sans onboarding. Alumni Sans SC is a small-capitals variant derived from the same upstream source files. The SC variant was added to google/fonts in May 2024, but the upstream commit references the same state of the repository that was used for the regular Alumni Sans onboarding in January 2022.
 
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+The `sources/config.yml` exists in the upstream repo and is a gftools-builder configuration referencing `AlumniSans.glyphs` and `AlumniSans-Italic.glyphs` with full STAT axis table definitions. The `config_yaml` field in METADATA.pb correctly points to `sources/config.yml`.
+
+Cross-reference: The Alumni Sans METADATA.pb (non-SC) currently records a different (incorrect) commit `28754a9295` for the same repository — see the alumni-sans investigation for details. The Alumni Sans SC METADATA.pb correctly preserves `44a7998`, which is the actual onboarding commit.
+
+All fields in the METADATA.pb source block are accurate and verified.
+
+## Conclusion
+
+The METADATA.pb source block is complete and correct. The repository URL, commit hash, and config_yaml path are all verified against the google/fonts onboarding commit message and the upstream repo cache. No changes are needed.

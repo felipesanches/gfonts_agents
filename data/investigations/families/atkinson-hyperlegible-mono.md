@@ -1,51 +1,58 @@
-# Atkinson Hyperlegible Mono
+# Investigation: Atkinson Hyperlegible Mono
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Braille Institute, Applied Design Works, Elliott Scott, Megan Eiswerth, Letters From Sweden
-**METADATA.pb path**: `ofl/atkinsonhyperlegiblemono/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Atkinson Hyperlegible Mono |
+| Slug | atkinson-hyperlegible-mono |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/atkinson-hyperlegible-next-mono |
-| Commit | `154d50362016cc3e873eb21d242cd0772384c8f9` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | 154d50362016cc3e873eb21d242cd0772384c8f9 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/googlefonts/atkinson-hyperlegible-next-mono` was present in METADATA.pb from the original onboarding commit (`a4ccc36e5`, "Atkinson Hyperlegible Mono: Version 2.001 added", 2024-11-20). The commit body explicitly states: "Taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible-next-mono". The URL is also embedded in the font's copyright string in METADATA.pb.
+```
+source {
+  repository_url: "https://github.com/googlefonts/atkinson-hyperlegible-next-mono"
+  commit: "154d50362016cc3e873eb21d242cd0772384c8f9"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/AtkinsonHyperlegibleMono-Italic[wght].ttf"
+    dest_file: "AtkinsonHyperlegibleMono-Italic[wght].ttf"
+  }
+  files {
+    source_file: "fonts/variable/AtkinsonHyperlegibleMono[wght].ttf"
+    dest_file: "AtkinsonHyperlegibleMono[wght].ttf"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `154d50362016cc3e873eb21d242cd0772384c8f9` was present in METADATA.pb from the original onboarding commit. The google/fonts commit body explicitly states: "at commit https://github.com/googlefonts/atkinson-hyperlegible-next-mono/commit/154d50362016cc3e873eb21d242cd0772384c8f9."
+Atkinson Hyperlegible Mono was added to Google Fonts on 2024-11-20. The onboarding commit in google/fonts is `a4ccc36e5` ("Atkinson Hyperlegible Mono: Version 2.001 added"), which explicitly states the upstream repo and commit. PR #8519 body confirms: "taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible-next-mono at commit https://github.com/googlefonts/atkinson-hyperlegible-next-mono/commit/154d50362016cc3e873eb21d242cd0772384c8f9."
 
-This was also confirmed in PR #8519 body, which contains the same reference.
+The commit hash `154d50362016cc3e873eb21d242cd0772384c8f9` is confirmed in the upstream cache at `googlefonts/atkinson-hyperlegible-next-mono` (dated 2024-11-20 14:50:37 +0100, "last fixes"), which is just minutes before the google/fonts onboarding commit, confirming this is the exact commit used.
 
-## How Config YAML Was Resolved
-
-The `config_yaml: "sources/config.yaml"` field was added in commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31). The config.yaml exists in the upstream repository at the referenced commit and contains:
-
-- Two .glyphs source files: `AtkinsonHyperlegibleMono.glyphs` and `AtkinsonHyperlegibleMono-Italic.glyphs`
-- Family name: "Atkinson Hyperlegible Mono"
+The `sources/config.yaml` file exists at the referenced commit and specifies:
+- Sources: `AtkinsonHyperlegibleMono.glyphs` and `AtkinsonHyperlegibleMono-Italic.glyphs`
 - `cleanUp: true`
-- Full STAT table configuration for weight and italic axes
+- Full STAT table configuration for wght and ital axes
 
-There is no override config.yaml in the google/fonts family directory.
+The repository name `atkinson-hyperlegible-next-mono` reflects the historical naming (the project was initially called "next mono" before being released as "Atkinson Hyperlegible Mono"). The config_yaml field was added by the batch commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31).
 
-## Verification
+## Conclusion
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2024-11-20 14:50:37 +0100
-- Commit message: "last fixes"
-- Source files at commit: `sources/AtkinsonHyperlegibleMono.glyphs`, `sources/AtkinsonHyperlegibleMono-Italic.glyphs`, `sources/config.yaml`, `.github/workflows/build.yaml`
-
-## Confidence
-
-**High**: The commit hash is explicitly referenced in both the google/fonts onboarding commit body and PR #8519. The commit date (2024-11-20 14:50:37) is just minutes before the google/fonts onboarding commit (2024-11-20 15:04:40), confirming this is the exact commit used. The repository is under the `googlefonts` organization and the config.yaml exists at the commit.
-
-## Open Questions
-
-None
+Status is complete. All required fields (repository_url, commit, config_yaml) are present and verified in METADATA.pb. The commit timestamp aligns precisely with the google/fonts onboarding. No further action needed.

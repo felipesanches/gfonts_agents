@@ -1,53 +1,57 @@
-# Aref Ruqaa
+# Investigation: Aref Ruqaa
 
-**Status**: `missing_config`
-**Date**: 2026-02-25
-**Designer**: Abdullah Aref, Khaled Hosny, Hermann Zapf
-**License**: OFL
-**METADATA.pb**: `ofl/arefruqaa/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Aref Ruqaa |
+| Slug | aref-ruqaa |
+| License Dir | ofl |
 | Repository URL | https://github.com/aliftype/aref-ruqaa |
-| Commit | `175e1ed565e75aba8059675b80dadc0a184d53e6` |
-| Config YAML | — |
-| Source types | ufo |
+| Commit Hash | 175e1ed565e75aba8059675b80dadc0a184d53e6 |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/aliftype/aref-ruqaa"
+  commit: "175e1ed565e75aba8059675b80dadc0a184d53e6"
+}
+```
+
+## Investigation
+
+### Repository
+
+The upstream repository `aliftype/aref-ruqaa` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/aliftype/aref-ruqaa`. The repository URL is pre-existing in METADATA.pb.
+
+Note: The METADATA.pb copyright line references `alif-type/aref-ruqaa` (old URL), but the source block correctly uses the current `aliftype/aref-ruqaa` URL.
 
 ### Commit Hash
-Matched via version tag(s): v1.003.
-- Commit date: 2021-03-18 17:16:34 +0200
-- Commit message: "1.003"
+
+The commit `175e1ed565e75aba8059675b80dadc0a184d53e6` was verified present in the cached repo: `git cat-file -t 175e1ed5` returns `commit`. The commit is dated 2021-03-18 with message "1.003" by Khaled Hosny. It matches version 1.003 of the font.
+
+The google/fonts TTF was last updated in commit `de3320b54` ("arefruqaa: v1.003 (#3215)") on 2021-03-25. The commit message does not contain an explicit upstream commit hash, but the version number "1.003" and date correlation confirm commit `175e1ed5` as the onboarding commit.
+
+### Source Files
+
+Inspection of the upstream repo at commit `175e1ed5` via `git ls-tree -r 175e1ed5 -- sources/` reveals:
+- `sources/ArefRuqaa.fea` — OpenType feature file
+- `sources/EulerText-Bold.ufo/` — UFO format (a separate experimental source, not Aref Ruqaa)
+- `sources/ArefRuqaa-Bold.sfdir/` — FontForge SFDir format
+- (other sfdir files for the Bold master)
+
+At commit `175e1ed5`, the Aref Ruqaa sources are in FontForge `.sfdir` format. The current HEAD of the repo has been migrated to a `.glyphspackage` format, but that migration happened after the onboarding commit.
 
 ### Config YAML
-Missing — upstream repo has gftools-compatible sources (ufo) but no config.yaml file exists. An override config.yaml could be created.
 
-## Evidence
+No config.yaml exists at commit `175e1ed5`. The sources at that commit are FontForge `.sfdir` format, which is not supported by gftools-builder. While the current HEAD has Glyphs sources, using a different commit would not reflect what was actually onboarded.
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/aliftype/aref-ruqaa`
-- `commit`: `—`
-- `config_yaml`: `—`
+An override config.yaml could potentially be created using the current (post-onboarding) glyphspackage sources, but this would require investigation into what version of the font they produce vs what is in google/fonts.
 
-### google/fonts history
-- Last font modification: `de3320b54068`
-- Date: 2021-03-25 16:09:09 +0200
-- Subject: "arefruqaa: v1.003 (#3215)"
+## Conclusion
 
-### Upstream repo cache
-- Cached at: `aliftype/aref-ruqaa`
-- Commit `175e1ed565e7` verified ✓
-
-## Confidence
-
-**High**: URL pre-existing in METADATA.pb; commit verified in upstream repo
-
-## Notes
-
-Has gftools-buildable sources (ufo), needs config.yaml
+The METADATA.pb source block has repository URL and commit hash. Status is `missing_config` because at the recorded commit `175e1ed5`, the sources are in FontForge `.sfdir` format, which gftools-builder does not support. The repo has since been migrated to Glyphs format, but creating a config.yaml pointing to post-onboarding sources requires additional review.

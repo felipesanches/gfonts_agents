@@ -1,47 +1,65 @@
-# Alan Sans
+# Investigation: Alan Sans
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Raphaël Ronot
-**License**: OFL
-**METADATA.pb**: `ofl/alansans/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Alan Sans |
+| Slug | alan-sans |
+| License Dir | ofl |
 | Repository URL | https://github.com/alan-eu/Alan-Sans |
-| Commit | `425d3a0674a49f0ad6bc6ceef5ca0c557b520838` (unverified) |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | 425d3a0674a49f0ad6bc6ceef5ca0c557b520838 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/alan-eu/Alan-Sans"
+  commit: "425d3a0674a49f0ad6bc6ceef5ca0c557b520838"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/AlanSans[wght].ttf"
+    dest_file: "AlanSans[wght].ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
+## Investigation
 
-### Config YAML
-Found `sources/config.yaml` in upstream repository at the recorded commit hash.
+Alan Sans was added to google/fonts in commit `1b91df7f5cb3c1018f1d279af8aa3e5671cd4e08` ("Alan Sans: Version 1.000 added"). The commit message confirms:
 
-## Evidence
+> Taken from the upstream repo https://github.com/alan-eu/Alan-Sans at commit https://github.com/alan-eu/Alan-Sans/commit/425d3a0674a49f0ad6bc6ceef5ca0c557b520838.
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/alan-eu/Alan-Sans`
-- `commit`: `425d3a0674a49f0ad6bc6ceef5ca0c557b520838`
-- `config_yaml`: `—`
+The METADATA.pb was set correctly from the start, including the `config_yaml: "sources/config.yaml"` field.
 
-### google/fonts history
-- Last font modification: `1b91df7f5cb3`
-- Date: 2025-09-05 13:46:00 +0200
-- Subject: "Alan Sans: Version 1.000 added"
+The upstream repository is cached at `upstream_repos/fontc_crater_cache/alan-eu/Alan-Sans/`. The local cache appears to be a shallow clone containing only the latest commit (`11bb823f`, dated 2026-01-20), while the METADATA.pb references commit `425d3a0674a49f0ad6bc6ceef5ca0c557b520838` which is not present in the local cache. However, the commit hash is directly confirmed by the google/fonts commit message.
 
-### Upstream repo cache
-- Cached at: `alan-eu/Alan-Sans`
-- Commit `425d3a0674a4` NOT found in cache ✗
+The `sources/config.yaml` exists in the current cache:
+```yaml
+sources:
+  - AlanSans.glyphs
+familyName: "Alan Sans"
+cleanUp: true
+stat:
+  AlanSans[wght].ttf:
+  - name: Weight
+    tag: wght
+    values:
+    - name: Light
+      value: 300
+    ...
+```
 
-## Confidence
+The config references `AlanSans.glyphs` as the source, with appropriate stat table configuration for the variable weight axis.
 
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+## Conclusion
+
+METADATA.pb is complete and correct: repository URL, commit hash, and config_yaml path are all present and consistent with the google/fonts onboarding commit. No action needed.

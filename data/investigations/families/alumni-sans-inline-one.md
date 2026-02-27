@@ -1,49 +1,71 @@
-# Alumni Sans Inline One
+# Investigation: Alumni Sans Inline One
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Robert Leuschke
-**License**: OFL
-**METADATA.pb**: `ofl/alumnisansinlineone/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Alumni Sans Inline One |
+| Slug | alumni-sans-inline-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/alumni-sans-inline |
-| Commit | `81ea544e0ce487475c75df9545cd3df946c7ba26` |
-| Config YAML | `sources/config.yml` |
-| Branch | `main` |
+| Commit Hash | 81ea544e0ce487475c75df9545cd3df946c7ba26 |
+| Config YAML | sources/config.yml |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/googlefonts/alumni-sans-inline"
+  commit: "81ea544e0ce487475c75df9545cd3df946c7ba26"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "documentation/DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/AlumniSansInlineOne-Regular.ttf"
+    dest_file: "AlumniSansInlineOne-Regular.ttf"
+  }
+  files {
+    source_file: "fonts/ttf/AlumniSansInlineOne-Italic.ttf"
+    dest_file: "AlumniSansInlineOne-Italic.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yml"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2022-02-24 10:00:52 -0500
-- Commit message: "Description updated"
+## Investigation
 
-### Config YAML
-Found `sources/config.yml` in upstream repository at the recorded commit hash.
+The font file history in google/fonts shows one onboarding commit:
 
-## Evidence
+- `d2ed457c9` — "Alumni Sans Inline One: Version 1.100; ttfautohint (v1.8.3) added (#4331)", merged 2022-02-25
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/googlefonts/alumni-sans-inline`
-- `commit`: `81ea544e0ce487475c75df9545cd3df946c7ba26`
-- `config_yaml`: `—`
+The commit body explicitly states:
 
-### google/fonts history
-- Last font modification: `d2ed457c9dd4`
-- Date: 2022-02-25 09:10:25 -0500
-- Subject: "Alumni Sans Inline One: Version 1.100; ttfautohint (v1.8.3) added (#4331)"
+> "Alumni Sans Inline One Version 1.100; ttfautohint (v1.8.3) taken from the upstream repo https://github.com/googlefonts/alumni-sans-inline at commit https://github.com/googlefonts/alumni-sans-inline/commit/81ea544e0ce487475c75df9545cd3df946c7ba26."
 
-### Upstream repo cache
-- Cached at: `googlefonts/alumni-sans-inline`
-- Commit `81ea544e0ce4` verified ✓
+This exactly matches the commit recorded in METADATA.pb. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/alumni-sans-inline` and the top commit is `81ea544` (message: "Description updated", dated 2022-02-24), confirming the hash is correct and is the most recent commit in the upstream repo.
 
-## Confidence
+The `sources/config.yml` exists in the upstream repo and contains:
+```yaml
+sources:
+  - AlumniSansInline.glyphs
+  - AlumniSansInline-Italic.glyphs
+familyName: "Alumni Sans Inline One"
+buildVariable: false
+# autohintTTF: false
+```
 
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+The `config_yaml` field in METADATA.pb correctly points to `sources/config.yml`.
+
+All fields in the METADATA.pb source block are accurate and verified against the gftools-packager onboarding commit message and the upstream repo cache.
+
+## Conclusion
+
+The METADATA.pb source block is complete and correct. The repository URL, commit hash, and config_yaml path are all verified. No changes are needed.

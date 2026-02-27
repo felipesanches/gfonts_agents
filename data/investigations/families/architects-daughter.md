@@ -1,52 +1,51 @@
-# Architects Daughter
+# Investigation: Architects Daughter
 
-**Status**: `missing_config`
-**Date**: 2026-02-25
-**Designer**: Kimberly Geswein
-**License**: OFL
-**METADATA.pb**: `ofl/architectsdaughter/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Architects Daughter |
+| Slug | architects-daughter |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/architectsdaughter |
-| Commit | `1a94ca0aea18288ee7685ed6aee918b58399a307` |
-| Config YAML | — |
-| Branch | `master` |
-| Source types | sfd |
+| Commit Hash | 1a94ca0aea18288ee7685ed6aee918b58399a307 |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | MEDIUM |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Discovered via google/fonts commit history, PR references, or GitHub search.
+```
+source {
+  repository_url: "https://github.com/librefonts/architectsdaughter"
+  commit: "1a94ca0aea18288ee7685ed6aee918b58399a307"
+}
+```
+
+## Investigation
+
+### Repository
+
+The upstream repository `librefonts/architectsdaughter` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/architectsdaughter`. The repository URL is pre-existing in METADATA.pb.
 
 ### Commit Hash
-Used HEAD of upstream repository (latest commit at time of onboarding).
-- Commit date: 2014-10-17 13:29:26 +0300
-- Commit message: "update .travis.yml"
+
+The commit `1a94ca0aea18288ee7685ed6aee918b58399a307` was verified present in the cached repo: `git cat-file -t 1a94ca0a` returns `commit`. The commit is dated 2014-10-17 with message "update .travis.yml" by author hash3g — this is the HEAD of the repository.
+
+The google/fonts TTF was last updated in commit `2a0c94b33` ("hotfix-architectsdaughter: v1.003 added (#821)") on 2017-08-07. No upstream commit hash or PR reference appears in the commit body.
+
+### Source Files
+
+Inspection of `src/` in the cached repo reveals:
+- `ArchitectsDaughter.vfb` — FontLab binary
+- `ArchitectsDaughter-TTF.sfd` — FontForge SFD format
+
+The `.sfd` file is FontForge format, which is not supported by gftools-builder. The `.vfb` file is FontLab binary, also not supported.
 
 ### Config YAML
-Not applicable — upstream repo contains only FontForge .sfd sources, which are not compatible with gftools-builder.
 
-## Evidence
+No config.yaml exists. Because the only buildable sources are `.sfd` (FontForge), which gftools-builder does not support, no config.yaml can be created.
 
-### METADATA.pb source block
-No source block present in METADATA.pb.
+## Conclusion
 
-### google/fonts history
-- Last font modification: `2a0c94b33e35`
-- Date: 2017-08-07 21:29:56 +0100
-- Subject: "hotfix-architectsdaughter: v1.003 added (#821)"
-
-### Upstream repo cache
-- Cached at: `librefonts/architectsdaughter`
-- Commit `1a94ca0aea18` verified ✓
-
-## Confidence
-
-**Medium**: URL discovered via research; commit verified in upstream repo
-
-## Notes
-
-SFD-only sources (FontForge format), not gftools-builder compatible
+The METADATA.pb source block exists with repository URL and commit hash. Status is `missing_config` because the upstream contains only SFD (FontForge) and VFB (FontLab) sources, neither of which is supported by gftools-builder. No config.yaml is possible for this family.

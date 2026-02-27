@@ -1,63 +1,90 @@
-# Afacad Flux
+# Investigation: Afacad Flux
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Kristian Moller, Dicotype
-**METADATA.pb path**: `ofl/afacadflux/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Afacad Flux |
+| Slug | afacad-flux |
+| License Dir | ofl |
 | Repository URL | https://github.com/Dicotype/Afacad |
-| Commit | `b294b1f8610ff16a3846a255b1a6a2e6788a056e` |
-| Config YAML | `sources/config_flux.yaml` |
-| Branch | `main` |
+| Commit Hash | b294b1f8610ff16a3846a255b1a6a2e6788a056e |
+| Config YAML | sources/config_flux.yaml |
+| Status | needs_correction |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL was already present in the METADATA.pb source block when the font was first onboarded. The onboarding commit `ef30d6c3` (2024-07-05) stated: "Taken from the upstream repo https://github.com/Dicotype/Afacad at commit 4655a472cef57467e1604ce80336ab87ea72facc." The copyright field in the font binary also references this same GitHub URL. This is the shared repository for all Afacad variants (Afacad, Afacad Flux).
+```
+source {
+  repository_url: "https://github.com/Dicotype/Afacad"
+  commit: "b294b1f8610ff16a3846a255b1a6a2e6788a056e"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/Afacad_Flux/variable/AfacadFlux[slnt,wght].ttf"
+    dest_file: "AfacadFlux[slnt,wght].ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config_flux.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash has a notable history with multiple updates:
+**Git history for TTF files in google/fonts:**
+- `ef30d6c39` — "Afacad Flux: Version 1.100 added" (2024-07-05, authored by Emma Marichal) — only commit ever touching these TTF files
 
-1. **Original onboarding** (google/fonts commit `ef30d6c3`, 2024-07-05): The font was taken from upstream commit `4655a472cef57467e1604ce80336ab87ea72facc`. This commit no longer exists in the upstream repository, likely due to a force-push or rebase of the main branch.
+The commit message body states:
+> "Taken from the upstream repo https://github.com/Dicotype/Afacad at commit https://github.com/Dicotype/Afacad/commit/4655a472cef57467e1604ce80336ab87ea72facc."
 
-2. **Batch port from fontc_crater** (google/fonts commit `19cdcec59`, 2025-03-31): The commit hash was updated from `4655a472` to `b294b1f8610ff16a3846a255b1a6a2e6788a056e`, based on fontc_crater's target.json data (from fontc_crater commit `ee7a65d4`). This commit is the current HEAD of the upstream repo.
+**Commit hash discrepancy:**
+- **Original onboarding commit** (from google/fonts commit message): `4655a472cef57467e1604ce80336ab87ea72facc`
+- **Current METADATA.pb commit**: `b294b1f8610ff16a3846a255b1a6a2e6788a056e`
 
-3. **PR #7851** (google/fonts commit `187711d44`, 2025-05-22): This PR's body referenced yet another commit `a3d77cea32b6f29801c5c1771fbad276d817c97a` (also not found in the upstream repo), but the PR only changed the `config_yaml` field -- it did not modify the commit hash.
+The original METADATA.pb at the time of onboarding (visible in `git show ef30d6c39:ofl/afacadflux/METADATA.pb`) also had `4655a472`, which is consistent with the commit message. The current METADATA.pb has a different commit (`b294b1f8`), which is the upstream HEAD as of the local shallow clone. This was changed by a subsequent batch update (fontc_crater port, google/fonts commit `19cdcec59`, 2025-03-31).
 
-The current METADATA.pb commit `b294b1f8` is from 2024-10-03 ("Update README.md") and is the latest commit in the upstream repo. It is NOT the original onboarding commit; it came from fontc_crater data. The original onboarding commit `4655a472` is no longer verifiable.
+**Upstream repo (Dicotype/Afacad) at METADATA.pb commit:**
+- Commit `b294b1f8` exists in the local cache (it is the HEAD of the shallow clone)
+- Date: 2024-10-03 10:40:24 +0200
+- Message: "Update README.md"
+- This commit is approximately 3 months newer than the original onboarding (July 2024)
 
-## How Config YAML Was Resolved
+The original onboarding commit `4655a472` is NOT present in the local shallow cache (only one commit deep). It cannot be verified without unshallowing the repo.
 
-The config YAML path `sources/config_flux.yaml` was set by PR #7851 (google/fonts commit `187711d44`, 2025-05-22). Previously, the batch port commit `19cdcec59` had incorrectly set it to `sources/config.yaml`, which is the config for the main Afacad family, not Afacad Flux. The Afacad upstream repo contains two config files:
+**Config YAML:**
+`sources/config_flux.yaml` exists in the upstream repo at the current HEAD. It references `AfacadFlux.glyphs` as its source file. The config path was correctly set by PR #7851 (google/fonts commit `187711d44`, 2025-05-22), which corrected a prior error where the batch update had incorrectly set `config_yaml: "sources/config.yaml"` (the config for the main Afacad family, not Afacad Flux).
 
-- `sources/config.yaml` -- for the main Afacad family
-- `sources/config_flux.yaml` -- for Afacad Flux, referencing `AfacadFlux.glyphs` as its source
+**Config file contents at HEAD:**
+```yaml
+sources:
+  - AfacadFlux.glyphs
+familyName: Afacad Flux
+axisOrder:
+  - slnt
+  - wght
+stat:
+  AfacadFlux[slnt,wght].ttf:
+  - name: Slant
+    tag: slnt
+    ...
+  - name: Weight
+    tag: wght
+    ...
+outputDir: "../fonts/Afacad_Flux"
+buildTTF: false
+buildOTF: false
+splitItalic: false
+autohintTTF: false
+```
 
-The `config_flux.yaml` file specifies `familyName: Afacad Flux` and includes axis ordering for slnt and wght. No override config.yaml exists in the google/fonts family directory.
+**Status assessment:**
+The commit hash in METADATA.pb (`b294b1f8`) is NOT the original onboarding commit. The original commit (`4655a472`) is lost from the upstream repo (possible force-push or rebase). The README-only commit `b294b1f8` is unlikely to have changed font sources, but this cannot be formally verified without unshallowing the repo. The config_yaml path (`sources/config_flux.yaml`) is correct and was fixed after initial incorrect population.
 
-## Verification
+The status is `needs_correction` because the commit hash does not match what was originally used for onboarding, though the practical impact may be minimal since the intermediate commit only changed documentation.
 
-- Commit exists in upstream repo: Yes (it is HEAD of the shallow clone)
-- Commit date: 2024-10-03 10:40:24 +0200
-- Commit message: "Update README.md"
-- Source files at commit:
-  - `sources/AfacadFlux.glyphs`
-  - `sources/Afacad.glyphs`
-  - `sources/Afacad-Italic.glyphs`
-  - `sources/config.yaml`
-  - `sources/config_flux.yaml`
-  - Multiple `sources/instance_ufos/*.ufo.json` files
+## Conclusion
 
-## Confidence
-
-**Medium**: The repository URL and config_yaml path are well-established and verified. However, the commit hash `b294b1f8` is NOT the original onboarding commit -- it is the latest HEAD from fontc_crater data, dated 2024-10-03, which is three months after the original onboarding on 2024-07-05. The commit "Update README.md" is unlikely to have changed font source files, but the original onboarding commit `4655a472` cannot be recovered to verify this. Since the upstream repo is shallow-cloned (depth 1), full history verification is not possible without unshallowing.
-
-## Open Questions
-
-1. Why was the original onboarding commit `4655a472` lost from the upstream repo? Was the repo force-pushed or rebased?
-2. Were any source changes made between the original onboarding (2024-07-05) and the current METADATA.pb commit (2024-10-03) that would affect the built font, or were the only changes to documentation files like README.md?
-3. Should the commit hash be considered "good enough" given that the original cannot be recovered?
+The METADATA.pb commit hash (`b294b1f8`) does not match the original onboarding commit (`4655a472`) documented in the google/fonts commit message for PR `ef30d6c39`. The original commit is no longer present in the upstream repo's accessible history (shallow clone). The config_yaml path is correct (`sources/config_flux.yaml`). To fully resolve, the upstream repo should be unshallowed to verify whether font sources changed between `4655a472` and `b294b1f8`, and ideally the METADATA.pb commit should be restored to the original onboarding commit if it still exists in full history.

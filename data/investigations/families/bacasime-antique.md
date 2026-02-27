@@ -1,37 +1,68 @@
-# Bacasime Antique
+# Investigation: Bacasime Antique
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: The DocRepair Project, Claus Eggers Sorensen
-**METADATA.pb path**: `ofl/bacasimeantique/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bacasime Antique |
+| Slug | bacasime-antique |
+| License Dir | ofl |
 | Repository URL | https://github.com/docrepair-fonts/bacasime-antique-fonts |
-| Commit | `673db74ee28486bb370847e062a97a5f94cec2e0` |
-| Config YAML | `sources/config.yaml` |
-| Branch | main |
+| Commit Hash | 673db74ee28486bb370847e062a97a5f94cec2e0 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/docrepair-fonts/bacasime-antique-fonts` is documented in the METADATA.pb `source` block and in the font copyright string. The google/fonts commit body also explicitly references this repo. The `docrepair-fonts` organization on GitHub hosts several font projects, and this is a legitimate upstream source.
+```
+source {
+  repository_url: "https://github.com/docrepair-fonts/bacasime-antique-fonts"
+  commit: "673db74ee28486bb370847e062a97a5f94cec2e0"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/BacasimeAntique-Regular.ttf"
+    dest_file: "BacasimeAntique-Regular.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit `673db74ee28486bb370847e062a97a5f94cec2e0` is referenced in the google/fonts commit body (by Yanone, on 2023-06-14): "Bacasime Antique Version 2.000 taken from the upstream repo [...] at commit 673db74ee28486bb370847e062a97a5f94cec2e0."
+### Git History in google/fonts
 
-Cross-verification:
-- The upstream commit is dated 2023-06-14 17:50:05 +0200.
-- The google/fonts commit is dated 2023-06-14 17:50:31 +0200 -- just 26 seconds later.
-- This extremely tight timing (same minute) suggests Yanone committed to both the upstream repo and google/fonts essentially simultaneously, likely as part of a scripted or rapid onboarding process.
-- The commit is the HEAD of the upstream repo (only 1 commit visible in the shallow clone, and no newer commits on origin/main).
-- The commit was pushed directly to google/fonts (not via a PR).
+The TTF files have a single commit:
 
-## How Config YAML Was Resolved
+- `068ca5cdc` — "[gftools-packager] Bacasime Antique: Version 2.000 added" (2023-06-14)
 
-The upstream repo contains `sources/config.yaml` at the referenced commit with the following content:
+The commit message says:
+
+> Bacasime Antique Version 2.000 taken from the upstream repo
+> https://github.com/docrepair-fonts/bacasime-antique-fonts at commit
+> https://github.com/docrepair-fonts/bacasime-antique-fonts/commit/673db74ee28486bb370847e062a97a5f94cec2e0
+
+This matches exactly what is recorded in METADATA.pb.
+
+### Commit Verification
+
+Inspecting the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/docrepair-fonts/bacasime-antique-fonts`:
+
+- Commit `673db74ee28486bb370847e062a97a5f94cec2e0` (2023-06-14) — "Merge branch 'main' of https://github.com/docrepair-fonts/bacasime-antique-fonts"
+
+The commit is confirmed present in the cache and the date matches the google/fonts onboarding date.
+
+### Config YAML Verification
+
+The `config.yaml` at `sources/config.yaml` in the upstream repo contains:
 
 ```yaml
 buildOTF: false
@@ -42,21 +73,13 @@ sources:
   - Bacasime-Antique-Regular.designspace
 ```
 
-This is a valid gftools-builder configuration. The METADATA.pb correctly records the path as `sources/config.yaml`. No override config.yaml exists in the google/fonts family directory.
+This is a valid gftools-builder configuration. The `config_yaml: "sources/config.yaml"` field in METADATA.pb correctly references this file.
 
-## Verification
+### Repository Cache
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2023-06-14 17:50:05 +0200
-- Commit message: "Merge branch 'main' of https://github.com/docrepair-fonts/bacasime-antique-fonts"
-- Commit author: Yanone
-- Source files at commit: `sources/Bacasime-Antique-Regular.designspace`, `sources/config.yaml`, `sources/masters/BacasimeAntique-Regular.ufo/`, `fonts/ttf/BacasimeAntique-Regular.ttf`
-- Commit is HEAD of upstream main branch: Yes (no newer commits)
+The upstream repo is cached at:
+`/mnt/shared/upstream_repos/fontc_crater_cache/docrepair-fonts/bacasime-antique-fonts`
 
-## Confidence
+## Conclusion
 
-**High**: The commit hash is consistently referenced in the google/fonts commit body and METADATA.pb. The near-simultaneous timestamps between upstream and google/fonts commits are consistent with a coordinated onboarding by Yanone. The config.yaml path is verified and the commit is the latest in the upstream repo.
-
-## Open Questions
-
-None. The commit message ("Merge branch 'main' of ...") suggests a typical merge commit from a remote pull, likely part of Yanone's onboarding workflow.
+The METADATA.pb source block is complete and correct. The repository URL, commit hash, and config_yaml path are all verified. No action required.

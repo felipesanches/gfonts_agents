@@ -1,56 +1,70 @@
-# Aoboshi One
+# Investigation: Aoboshi One
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Natsumi Matsuba
-**License**: OFL
-**METADATA.pb**: `ofl/aoboshione/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Aoboshi One |
+| Slug | aoboshi-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/matsuba723/Aoboshi |
-| Commit | `97f6481745f4184f60e61a9a628e48f7ea5bdcf2` |
-| Config YAML | Override in google/fonts family directory |
-| Branch | `master` |
+| Commit Hash | 97f6481745f4184f60e61a9a628e48f7ea5bdcf2 |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/matsuba723/Aoboshi"
+  commit: "97f6481745f4184f60e61a9a628e48f7ea5bdcf2"
+  files {
+    source_file: "fonts/ttf/AoboshiOne-Regular.ttf"
+    dest_file: "AoboshiOne-Regular.ttf"
+  }
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "master"
+}
+```
+
+## Investigation
+
+### Repository
+
+The upstream repository `matsuba723/Aoboshi` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/matsuba723/Aoboshi`. The repository URL is pre-existing in METADATA.pb.
 
 ### Commit Hash
-Identified via google/fonts PR body analysis, commit message references, or date correlation with upstream history.
-- Commit date: 2020-12-16 10:04:12 -0800
-- Commit message: "Rebuilding font for test"
+
+The commit `97f6481745f4184f60e61a9a628e48f7ea5bdcf2` was verified present in the cached repo: `git cat-file -t 97f64817` returns `commit`. The commit is dated 2020-12-16 with message "Rebuilding font for test" by Natsumi Matsuba.
+
+The google/fonts TTF was last updated in commit `cf2da3975` ("Aoboshi One: Version 1.000; ttfautohint (v1.8.3) added (#2918)") on 2021-01-28. The PR body reads: "Aoboshi One Version 1.000; ttfautohint (v1.8.3) taken from the upstream repo https://github.com/matsuba723/Aoboshi.git at commit https://github.com/matsuba723/Aoboshi/commit/97f6481745f4184f60e61a9a628e48f7ea5bdcf2." This exactly matches METADATA.pb.
+
+### Source Files
+
+The `sources/` directory contains:
+- `aoboshi.glyphs` — Glyphs format source
+
+No config.yaml exists in the upstream repo. However, an override `config.yaml` was previously created in the google/fonts family directory (`ofl/aoboshione/config.yaml`) with contents:
+
+```yaml
+sources:
+  - sources/aoboshi.glyphs
+```
+
+Per project policy, when an override config.yaml exists in google/fonts, the `config_yaml` field is omitted from METADATA.pb and google-fonts-sources detects the local override automatically.
 
 ### Config YAML
-Override `config.yaml` exists in the google/fonts family directory. Per policy, `config_yaml` field is omitted from METADATA.pb.
 
-## Evidence
+An override `config.yaml` exists at `ofl/aoboshione/config.yaml` in google/fonts. No `config_yaml` field is set in METADATA.pb (correct per policy).
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/matsuba723/Aoboshi`
-- `commit`: `—`
-- `config_yaml`: `—`
+## Conclusion
 
-### google/fonts history
-- Last font modification: `cf2da3975aef`
-- Date: 2021-01-28 07:12:07 -0800
-- Subject: "Aoboshi One: Version 1.000; ttfautohint (v1.8.3) added (#2918)"
-
-### Upstream repo cache
-- Cached at: `matsuba723/Aoboshi`
-- Commit `97f6481745f4` verified ✓
-
-### Override config
-Override `config.yaml` exists in `ofl/aoboshione/config.yaml`.
-
-## Confidence
-
-**High**: URL pre-existing in METADATA.pb; commit verified in upstream repo
-
-## Notes
-
-Override config.yaml exists in google/fonts.
+All source metadata is complete. Repository URL and commit hash are present and verified. An override config.yaml exists in google/fonts referencing the Glyphs source. Status is `complete` with HIGH confidence.

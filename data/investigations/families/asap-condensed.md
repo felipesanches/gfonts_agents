@@ -1,49 +1,53 @@
-# Asap Condensed
+# Investigation: Asap Condensed
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Omnibus-Type
-**License**: OFL
-**METADATA.pb**: `ofl/asapcondensed/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Asap Condensed |
+| Slug | asap-condensed |
+| License Dir | ofl |
 | Repository URL | https://github.com/Omnibus-Type/Asap |
-| Commit | `927ab390d4ece9eaa70a3b16a6124baa9192e34c` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `master` |
+| Commit Hash | 927ab390d4ece9eaa70a3b16a6124baa9192e34c |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/Omnibus-Type/Asap"
+  commit: "927ab390d4ece9eaa70a3b16a6124baa9192e34c"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/AsapCondensed-Black.ttf"
+    dest_file: "AsapCondensed-Black.ttf"
+  }
+  [... additional file mappings ...]
+  branch: "master"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2022-10-13 17:17:42 +0200
-- Commit message: "Font exported"
+## Investigation
 
-### Config YAML
-Found `sources/config.yaml` in upstream repository at the recorded commit hash.
+Asap Condensed was most recently updated via PR #5492, with the gftools-packager commit `b1254ac0b` (2022-11-04, "Asap Condensed: Version 3.001; ttfautohint (v1.8.4.7-5d5b) added") by Rosalie Wagner. The commit body explicitly states: "Asap Condensed Version 3.001; ttfautohint (v1.8.4.7-5d5b) taken from the upstream repo https://github.com/Omnibus-Type/Asap at commit https://github.com/Omnibus-Type/Asap/commit/927ab390d4ece9eaa70a3b16a6124baa9192e34c."
 
-## Evidence
+The upstream repository `Omnibus-Type/Asap` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Omnibus-Type/Asap`. Commit `927ab390` is confirmed present (dated 2022-10-13 17:17:42 +0200, "Font exported").
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/Omnibus-Type/Asap`
-- `commit`: `927ab390d4ece9eaa70a3b16a6124baa9192e34c`
-- `config_yaml`: `—`
+The `sources/config.yaml` file exists in the upstream repository and specifies:
+- Sources: `Asap.glyphs` and `Asap-Italic.glyphs`
+- Axis order: wdth, wght
+- Comprehensive STAT table configuration for all widths and weights
 
-### google/fonts history
-- Last font modification: `b1254ac0b9f7`
-- Date: 2022-11-04 11:18:43 +0100
-- Subject: "[gftools-packager] Asap Condensed: Version 3.001; ttfautohint (v1.8.4.7-5d5b) added (#5492)"
+Note: This is the shared upstream repository for both Asap and Asap Condensed. The config.yaml is designed for the full Asap family with all width variants (Condensed through Expanded). The METADATA.pb config_yaml field correctly points to `sources/config.yaml` in the Omnibus-Type/Asap repository.
 
-### Upstream repo cache
-- Cached at: `Omnibus-Type/Asap`
-- Commit `927ab390d4ec` verified ✓
+The font directory was first added in 2016 (date_added: "2016-12-07") and has been updated multiple times since then.
 
-## Confidence
+## Conclusion
 
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+Status is complete. All required fields (repository_url, commit, config_yaml) are present and verified in METADATA.pb. The commit matches the gftools-packager onboarding reference. No further action needed.

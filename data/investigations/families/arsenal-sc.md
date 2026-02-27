@@ -1,52 +1,66 @@
-# Arsenal SC
+# Investigation: Arsenal SC
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Andrij Shevchenko
-**License**: OFL
-**METADATA.pb**: `ofl/arsenalsc/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Arsenal SC |
+| Slug | arsenal-sc |
+| License Dir | ofl |
 | Repository URL | https://github.com/alexeiva/Arsenal |
-| Commit | `e34db566b2f5de986eea9b36986d602015d80615` |
-| Config YAML | Override in google/fonts family directory |
-| Branch | `master` |
+| Commit Hash | e34db566b2f5de986eea9b36986d602015d80615 |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/alexeiva/Arsenal"
+  commit: "e34db566b2f5de986eea9b36986d602015d80615"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/TTF/ArsenalSC-Regular.ttf"
+    dest_file: "ArsenalSC-Regular.ttf"
+  }
+  files {
+    source_file: "fonts/TTF/ArsenalSC-Italic.ttf"
+    dest_file: "ArsenalSC-Italic.ttf"
+  }
+  files {
+    source_file: "fonts/TTF/ArsenalSC-Bold.ttf"
+    dest_file: "ArsenalSC-Bold.ttf"
+  }
+  files {
+    source_file: "fonts/TTF/ArsenalSC-BoldItalic.ttf"
+    dest_file: "ArsenalSC-BoldItalic.ttf"
+  }
+  branch: "master"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2017-06-26 16:06:03 +0300
-- Commit message: "updated README"
+## Investigation
 
-### Config YAML
-Override `config.yaml` exists in the google/fonts family directory. Per policy, `config_yaml` field is omitted from METADATA.pb.
+The family was added to Google Fonts on 2024-05-27, when Simon Cozens committed `b2e732cec` ("Arsenal SC: Version 2.001; ttfautohint (v1.8.4.7-5d5b) added"). The commit body explicitly states: "Taken from the upstream repo https://github.com/alexeiva/Arsenal at commit https://github.com/alexeiva/Arsenal/commit/e34db566b2f5de986eea9b36986d602015d80615."
 
-## Evidence
+The upstream repository `alexeiva/Arsenal` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/alexeiva/Arsenal`. The commit `e34db566` is confirmed present in the cached repo (dated 2017-06-26, "updated README").
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/alexeiva/Arsenal`
-- `commit`: `e34db566b2f5de986eea9b36986d602015d80615`
-- `config_yaml`: `—`
+The `sources/` directory in the upstream repo contains two .glyphs source files: `Arsenal.glyphs` and `Arsenal-Italic.glyphs`. No `config.yaml` exists in the upstream repository.
 
-### google/fonts history
-- Last font modification: `b2e732cec4e0`
-- Date: 2024-05-27 11:34:33 +0100
-- Subject: "Arsenal SC: Version 2.001; ttfautohint (v1.8.4.7-5d5b) added"
+An override `config.yaml` exists in the google/fonts family directory at `ofl/arsenalsc/config.yaml`. Per policy, the `config_yaml` field is omitted from METADATA.pb when an override config exists locally. The override config.yaml specifies:
+- `buildVariable: false`
+- Sources: `Arsenal.glyphs` and `Arsenal-Italic.glyphs`
 
-### Upstream repo cache
-- Cached at: `alexeiva/Arsenal`
-- Commit `e34db566b2f5` verified ✓
+The source block is fully populated with repository_url and commit. The absence of config_yaml in METADATA.pb is correct per the override config policy.
 
-### Override config
-Override `config.yaml` exists in `ofl/arsenalsc/config.yaml`.
+## Conclusion
 
-## Confidence
-
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+Status is complete. The repository URL, commit hash, and override config.yaml are all established. The override config references the upstream .glyphs source files. No further action needed.

@@ -1,34 +1,73 @@
-# Bagel Fat One
+# Investigation: Bagel Fat One
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Kyungwon Kim, JAMO
-**METADATA.pb path**: `ofl/bagelfatone/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bagel Fat One |
+| Slug | bagel-fat-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/JAMO-TYPEFACE/BagelFat |
-| Commit | `d8dd4e8b5dd0e74fbf87a78290ee9a9aaed1270b` |
-| Config YAML | `Sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | d8dd4e8b5dd0e74fbf87a78290ee9a9aaed1270b |
+| Config YAML | Sources/config.yaml |
+| Status | complete |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL is documented directly in the METADATA.pb `source {}` block and also in the copyright string: "Copyright 2022 The Bagel Fat Project Authors (https://github.com/JAMO-TYPEFACE/BagelFat)". The original gftools-packager onboarding commit `d9406e5bf` (2023-05-18) also explicitly referenced this URL.
+```
+source {
+  repository_url: "https://github.com/JAMO-TYPEFACE/BagelFat"
+  commit: "d8dd4e8b5dd0e74fbf87a78290ee9a9aaed1270b"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "Fonts/ttf/BagelFatOne-Regular.ttf"
+    dest_file: "BagelFatOne-Regular.ttf"
+  }
+  branch: "main"
+  config_yaml: "Sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The font was originally onboarded via gftools-packager on 2023-05-18 at upstream commit `5ff1333d3384611f499419a844e2b3006dc7cacd`. However, this commit no longer exists in the upstream repository (it was force-pushed away; the repo is currently a shallow clone with only one commit visible).
+### Git History in google/fonts
 
-On 2023-05-24, the TTF was updated in google/fonts (commit `42021857`) with the message "Adding missing glyph from GF Kernal". The upstream merge commit `d8dd4e8b5dd0e74fbf87a78290ee9a9aaed1270b` ("Merge pull request #3 from aaronbell/main") is dated the same day (2023-05-24), indicating Aaron Bell pushed the fix upstream and then the binary was updated in google/fonts.
+The TTF files have two commits:
 
-The commit hash was later updated from `5ff1333` to `d8dd4e8` by the fontc_crater batch import (commit `19cdcec59` on 2025-03-31). The `config_yaml` path was initially set as `sources/config.yaml` (lowercase) but corrected to `Sources/config.yaml` (uppercase) in commit `7190093b1`.
+- `420218575` — "Update BagelFatOne-Regular.ttf" (2023-05-24) — manual update: "Adding missing glyph from GF Kernel"
+- `d9406e5bf` — "[gftools-packager] Bagel Fat One: Version 1.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28] added" (2023-05-18)
 
-## How Config YAML Was Resolved
+The gftools-packager commit message (`d9406e5bf`) says:
 
-The config.yaml exists in the upstream repository at `Sources/config.yaml`. It was added as part of the fontc_crater batch import. No override config.yaml exists in the google/fonts family directory. The config contains:
+> Bagel Fat One Version 1.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28] taken from the upstream repo
+> https://github.com/JAMO-TYPEFACE/BagelFat at commit
+> https://github.com/JAMO-TYPEFACE/BagelFat/commit/5ff1333d3384611f499419a844e2b3006dc7cacd.
+
+However, METADATA.pb records `d8dd4e8b5dd0e74fbf87a78290ee9a9aaed1270b`, which is different from the originally packaged commit `5ff1333`.
+
+### Commit Hash Analysis
+
+Inspecting the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/JAMO-TYPEFACE/BagelFat`:
+
+- `d8dd4e8b5dd0e74fbf87a78290ee9a9aaed1270b` (2023-05-24) — "Merge pull request #3 from aaronbell/main"
+
+The commit `5ff1333d3384611f499419a844e2b3006dc7cacd` referenced in the gftools-packager message is NOT present in the local cache.
+
+Notably, both the upstream commit `d8dd4e8` (2023-05-24) and the manual TTF update in google/fonts (`420218575`, also 2023-05-24) share the same date. This strongly suggests that the missing-glyph fix was made upstream (in `d8dd4e8`, merge of PR #3 from aaronbell) and simultaneously applied as a manual TTF update in google/fonts. The METADATA.pb was then updated to record this newer commit as the canonical onboarding point.
+
+The METADATA.pb's commit `d8dd4e8` is therefore the more accurate reference — it corresponds to the actual TTF files served in production.
+
+### Config YAML Verification
+
+The `config.yaml` at `Sources/config.yaml` in the upstream repo contains:
 
 ```yaml
 sources:
@@ -37,17 +76,13 @@ familyName: "Bagel Fat One"
 buildOTF: false
 ```
 
-## Verification
+This is a valid gftools-builder configuration. The `config_yaml: "Sources/config.yaml"` field in METADATA.pb correctly references this file.
 
-- Commit exists in upstream repo: Yes (it is the HEAD/only visible commit in the shallow clone)
-- Commit date: 2023-05-24 09:58:56 -0700
-- Commit message: "Merge pull request #3 from aaronbell/main"
-- Source files at commit: `Sources/BagelFat.glyphs`, `Sources/config.yaml`
+### Repository Cache
 
-## Confidence
+The upstream repo is cached at:
+`/mnt/shared/upstream_repos/fontc_crater_cache/JAMO-TYPEFACE/BagelFat`
 
-**High**: The commit `d8dd4e8` corresponds to the latest binary update in google/fonts (both dated 2023-05-24). While the original onboarding commit `5ff1333` was the initial upload, the current binaries reflect the subsequent fix (PR #3 for missing glyph). The original commit no longer exists due to force-push, making `d8dd4e8` the only verifiable reference point.
+## Conclusion
 
-## Open Questions
-
-- The original onboarding commit `5ff1333` was lost due to a force-push in the upstream repository. This cannot be recovered. The current commit `d8dd4e8` correctly reflects the state of the binaries currently in google/fonts.
+The METADATA.pb source block is complete. The repository URL and config_yaml path are verified. The commit hash `d8dd4e8` is confirmed in the upstream cache and corresponds to the date of the final TTF update in google/fonts, making it the correct onboarding reference. Confidence is MEDIUM due to the discrepancy between the gftools-packager commit message (`5ff1333`) and the METADATA.pb commit (`d8dd4e8`), though the evidence points to `d8dd4e8` being correct. No action required.

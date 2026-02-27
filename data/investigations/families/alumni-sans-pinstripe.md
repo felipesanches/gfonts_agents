@@ -1,49 +1,70 @@
-# Alumni Sans Pinstripe
+# Investigation: Alumni Sans Pinstripe
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Robert Leuschke
-**License**: OFL
-**METADATA.pb**: `ofl/alumnisanspinstripe/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Alumni Sans Pinstripe |
+| Slug | alumni-sans-pinstripe |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/alumni-sans-pinstripe |
-| Commit | `26cf834f2eca219b017478be9ea1387c78756e78` |
-| Config YAML | `sources/config.yml` |
-| Branch | `main` |
+| Commit Hash | 26cf834f2eca219b017478be9ea1387c78756e78 |
+| Config YAML | sources/config.yml |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/googlefonts/alumni-sans-pinstripe"
+  commit: "26cf834f2eca219b017478be9ea1387c78756e78"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "documentation/DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/AlumniSansPinstripe-Regular.ttf"
+    dest_file: "AlumniSansPinstripe-Regular.ttf"
+  }
+  files {
+    source_file: "fonts/ttf/AlumniSansPinstripe-Italic.ttf"
+    dest_file: "AlumniSansPinstripe-Italic.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yml"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2022-06-09 13:03:55 -0500
-- Commit message: "v1.010 fonts added"
+## Investigation
 
-### Config YAML
-Found `sources/config.yml` in upstream repository at the recorded commit hash.
+The font file history in google/fonts shows one onboarding commit:
 
-## Evidence
+- `9d68dcf8e` — "Alumni Sans Pinstripe: Version 1.010; ttfautohint (v1.8.4.7-5d5b) added (#4759)", merged 2022-06-17
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/googlefonts/alumni-sans-pinstripe`
-- `commit`: `26cf834f2eca219b017478be9ea1387c78756e78`
-- `config_yaml`: `—`
+The commit body explicitly states:
 
-### google/fonts history
-- Last font modification: `9d68dcf8ea9b`
-- Date: 2022-06-17 09:01:33 -0500
-- Subject: "Alumni Sans Pinstripe: Version 1.010; ttfautohint (v1.8.4.7-5d5b) added (#4759)"
+> "Alumni Sans Pinstripe Version 1.010; ttfautohint (v1.8.4.7-5d5b) taken from the upstream repo https://github.com/googlefonts/alumni-sans-pinstripe at commit https://github.com/googlefonts/alumni-sans-pinstripe/commit/26cf834f2eca219b017478be9ea1387c78756e78."
 
-### Upstream repo cache
-- Cached at: `googlefonts/alumni-sans-pinstripe`
-- Commit `26cf834f2eca` verified ✓
+This exactly matches the commit recorded in METADATA.pb. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/alumni-sans-pinstripe` and the top commit is `26cf834` (message: "v1.010 fonts added", dated 2022-06-09), confirming the hash is correct and is the most recent commit in the upstream repo.
 
-## Confidence
+The `sources/config.yml` exists in the upstream repo and contains:
+```yaml
+sources:
+  - AlumniSansPinstripe.glyphs
+  - AlumniSansPinstripe-Italic.glyphs
+familyName: "Alumni Sans Pinstripe"
+buildVariable: false
+```
 
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+The `config_yaml` field in METADATA.pb correctly points to `sources/config.yml`.
+
+All fields in the METADATA.pb source block are accurate and verified against the gftools-packager onboarding commit message and the upstream repo cache.
+
+## Conclusion
+
+The METADATA.pb source block is complete and correct. The repository URL, commit hash, and config_yaml path are all verified. No changes are needed.

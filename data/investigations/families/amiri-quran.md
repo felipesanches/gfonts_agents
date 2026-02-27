@@ -1,52 +1,55 @@
-# Amiri Quran
+# Investigation: Amiri Quran
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Khaled Hosny, Sebastian Kosch
-**License**: OFL
-**METADATA.pb**: `ofl/amiriquran/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Amiri Quran |
+| Slug | amiri-quran |
+| License Dir | ofl |
 | Repository URL | https://github.com/aliftype/amiri |
-| Commit | `480bb746e99ea700bb0d6b4dbf96302d58192103` |
-| Config YAML | Override in google/fonts family directory |
-| Branch | `main` |
+| Commit Hash | 480bb746e99ea700bb0d6b4dbf96302d58192103 |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/aliftype/amiri"
+  commit: "480bb746e99ea700bb0d6b4dbf96302d58192103"
+  archive_url: "https://github.com/aliftype/amiri/releases/download/1.003/Amiri-1.003.zip"
+  files {
+    source_file: "Amiri-1.003/OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "Amiri-1.003/AmiriQuran-Regular.ttf"
+    dest_file: "AmiriQuran-Regular.ttf"
+  }
+  branch: "main"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2025-06-13 16:37:57 +0300
-- Commit message: "1.003"
+## Investigation
 
-### Config YAML
-Override `config.yaml` exists in the google/fonts family directory. Per policy, `config_yaml` field is omitted from METADATA.pb.
+The Amiri Quran font was added to google/fonts in stages. The most recent binary update was at commit `3c5672f8a` (July 16, 2025, "push version 1.003"), authored by Emma Marichal, followed by a filename normalization commit `2e4388d44` (July 17, 2025, "file name") that renamed `AmiriQuran.ttf` to `AmiriQuran-Regular.ttf`.
 
-## Evidence
+The METADATA.pb source block uses `archive_url` pointing to the 1.003 release archive (`https://github.com/aliftype/amiri/releases/download/1.003/Amiri-1.003.zip`). The `commit` field `480bb746e99ea700bb0d6b4dbf96302d58192103` corresponds to the "1.003" commit in the aliftype/amiri repo, dated June 13, 2025. This commit was verified in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/aliftype/amiri/`.
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/aliftype/amiri`
-- `commit`: `480bb746e99ea700bb0d6b4dbf96302d58192103`
-- `config_yaml`: `—`
+The upstream Amiri repo uses a Makefile build system (not gftools-builder natively), with sources in `sources/Amiri.glyphspackage`. There is no `config.yaml` in the upstream repo. However, an override `config.yaml` exists in `ofl/amiriquran/` within google/fonts, containing:
 
-### google/fonts history
-- Last font modification: `2e4388d444fb`
-- Date: 2025-07-17 10:12:59 +0200
-- Subject: "file name"
+```yaml
+sources:
+  - sources/Amiri.glyphspackage
+familyName: Amiri Quran
+buildStatic: true
+buildOTF: false
+```
 
-### Upstream repo cache
-- Cached at: `aliftype/amiri`
-- Commit `480bb746e99e` verified ✓
+Per project policy, since the override `config.yaml` exists in the google/fonts family directory, the `config_yaml` field is correctly omitted from the METADATA.pb `source { }` block (google-fonts-sources auto-detects local overrides).
 
-### Override config
-Override `config.yaml` exists in `ofl/amiriquran/config.yaml`.
+## Conclusion
 
-## Confidence
-
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+Status is complete. The METADATA.pb has `repository_url`, `commit`, and `archive_url` all correctly set. An override `config.yaml` exists in the google/fonts family directory. No action needed.

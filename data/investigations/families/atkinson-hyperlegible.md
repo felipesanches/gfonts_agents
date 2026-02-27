@@ -1,50 +1,65 @@
-# Atkinson Hyperlegible
+# Investigation: Atkinson Hyperlegible
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Braille Institute, Applied Design Works, Elliott Scott, Megan Eiswerth, Linus Boman, Theodore Petrosky
-**METADATA.pb path**: `ofl/atkinsonhyperlegible/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Atkinson Hyperlegible |
+| Slug | atkinson-hyperlegible |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/atkinson-hyperlegible |
-| Commit | `1cb311624b2ddf88e9e37873999d165a8cd28b46` |
-| Config YAML | `sources/config.yml` |
-| Branch | `main` |
+| Commit Hash | 1cb311624b2ddf88e9e37873999d165a8cd28b46 |
+| Config YAML | sources/config.yml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/googlefonts/atkinson-hyperlegible` was added to METADATA.pb by Simon Cozens in commit `66f91f10f` ("Merge upstream.yaml into METADATA.pb", 2024-04-03). This was part of a systematic effort to merge upstream repository information from `upstream.yaml` files into METADATA.pb source blocks. The URL is also explicitly referenced in the google/fonts onboarding commit body for PR #3362: "taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible".
+```
+source {
+  repository_url: "https://github.com/googlefonts/atkinson-hyperlegible"
+  commit: "1cb311624b2ddf88e9e37873999d165a8cd28b46"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/AtkinsonHyperlegible-Regular.ttf"
+    dest_file: "AtkinsonHyperlegible-Regular.ttf"
+  }
+  files {
+    source_file: "fonts/ttf/AtkinsonHyperlegible-Bold.ttf"
+    dest_file: "AtkinsonHyperlegible-Bold.ttf"
+  }
+  files {
+    source_file: "fonts/ttf/AtkinsonHyperlegible-Italic.ttf"
+    dest_file: "AtkinsonHyperlegible-Italic.ttf"
+  }
+  files {
+    source_file: "fonts/ttf/AtkinsonHyperlegible-BoldItalic.ttf"
+    dest_file: "AtkinsonHyperlegible-BoldItalic.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `1cb311624b2ddf88e9e37873999d165a8cd28b46` was added in commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31), porting data from the fontc_crater targets.json file. This commit hash is also directly referenced in the google/fonts onboarding PR #3362 body, which states: "taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible at commit https://github.com/googlefonts/atkinson-hyperlegible/commit/1cb311624b2ddf88e9e37873999d165a8cd28b46."
+Atkinson Hyperlegible was added to Google Fonts on 2021-04-30. The original onboarding commit in google/fonts is `1b22086d1` ("Atkinson Hyperlegible: Version 1.006; ttfautohint (v1.8.3) added", PR #3362), whose body explicitly states: "taken from the upstream repo https://github.com/googlefonts/atkinson-hyperlegible at commit https://github.com/googlefonts/atkinson-hyperlegible/commit/1cb311624b2ddf88e9e37873999d165a8cd28b46."
 
-PR #3362 was created by `vv-monsalve` and merged on 2021-05-07. The font was initially added to Google Fonts on 2021-04-30, and this was the onboarding commit using gftools-packager.
+The commit hash `1cb311624b2ddf88e9e37873999d165a8cd28b46` was added to METADATA.pb by the batch commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31). It is confirmed present in the upstream cache at `googlefonts/atkinson-hyperlegible` (dated 2021-04-29 22:23:13 -0500, "OFL single line").
 
-## How Config YAML Was Resolved
+The repository URL was added earlier by Simon Cozens in commit `66f91f10f` ("Merge upstream.yaml into METADATA.pb", 2024-04-03).
 
-The config file `sources/config.yml` (note: `.yml` extension, not `.yaml`) exists in the upstream repository at the referenced commit. It was added to METADATA.pb in the same [Batch 1/4] commit that added the commit hash. The config specifies:
-
-- Two .glyphs source files: `AtkinsonHyperlegible.glyphs` and `AtkinsonHyperlegible-Italic.glyphs`
+The `sources/config.yml` file (note: `.yml` extension, not `.yaml`) exists in the upstream repo at the referenced commit and specifies:
+- Sources: `AtkinsonHyperlegible.glyphs` and `AtkinsonHyperlegible-Italic.glyphs`
 - `buildVariable: false` (static font build)
-- Family name: "Atkinson Hyperlegible"
 
-There is no override config.yaml in the google/fonts family directory.
+## Conclusion
 
-## Verification
-
-- Commit exists in upstream repo: Yes
-- Commit date: 2021-04-29 22:23:13 -0500
-- Commit message: "OFL single line"
-- Source files at commit: `sources/AtkinsonHyperlegible.glyphs`, `sources/AtkinsonHyperlegible-Italic.glyphs`, `sources/config.yml`
-
-## Confidence
-
-**High**: The commit hash is explicitly referenced in the google/fonts onboarding PR #3362 body, providing a direct paper trail. The repository is under the `googlefonts` organization. The config.yml exists at the referenced commit and correctly lists the source files. The METADATA.pb files block includes explicit file mappings from the upstream repo to the google/fonts directory.
-
-## Open Questions
-
-None
+Status is complete. All required fields (repository_url, commit, config_yaml) are present and verified in METADATA.pb. The commit matches the original gftools-packager onboarding reference from PR #3362. No further action needed.

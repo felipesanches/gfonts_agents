@@ -1,60 +1,58 @@
-# Azeret Mono
+# Investigation: Azeret Mono
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Displaay, Martin Vacha
-**METADATA.pb path**: `ofl/azeretmono/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Azeret Mono |
+| Slug | azeret-mono |
+| License Dir | ofl |
 | Repository URL | https://github.com/displaay/Azeret |
-| Commit | `3d45a6c3e094f08bfc70551b525bd2037cac51ba` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | 3d45a6c3e094f08bfc70551b525bd2037cac51ba |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/displaay/Azeret` is documented in the METADATA.pb `source {}` block. It is also referenced in the copyright string of the font files: "Copyright 2021 The Azeret Project Authors (https://github.com/displaay/azeret)".
-
-The original onboarding PR #3475 (commit `c44cf77ca`, 2021-06-09) explicitly states: "Azeret Version 1.002 taken from the upstream repo https://github.com/displaay/Azeret at commit https://github.com/displaay/Azeret/commit/3d45a6c3e094f08bfc70551b525bd2037cac51ba."
-
-The font was initially added as `ofl/azeret`, then renamed to `ofl/azeretmono` in PR #3739 (2021-08-16, "ofl/azeret -> ofl/azeretmono"). The font binaries were last modified in the deploy commit `76adaf1d2` on 2021-11-01.
-
-## How the Commit Hash Was Identified
-
-The commit hash `3d45a6c3e094f08bfc70551b525bd2037cac51ba` was explicitly documented in the original onboarding PR #3475 body: "taken from the upstream repo https://github.com/displaay/Azeret at commit https://github.com/displaay/Azeret/commit/3d45a6c3e094f08bfc70551b525bd2037cac51ba."
-
-This commit was verified in the local upstream cache at `/mnt/shared/upstream_repos/fontc_crater_cache/displaay/Azeret`. The commit exists and is dated 2021-06-04, with the message "Merge pull request #3 from RosaWagner/main".
-
-## How Config YAML Was Resolved
-
-The config.yaml is located at `sources/config.yaml` in the upstream repository. This was verified at the recorded commit hash. The file contains:
-
-```yaml
-sources:
-  - AzeretMono.glyphs
-  - AzeretMono-Italic.glyphs
-axisOrder:
-  - wght
-  - ital
-familyName: Azeret Mono
+```
+source {
+  repository_url: "https://github.com/displaay/Azeret"
+  commit: "3d45a6c3e094f08bfc70551b525bd2037cac51ba"
+  files {
+    source_file: "fonts/variable/AzeretMono[wght].ttf"
+    dest_file: "AzeretMono[wght].ttf"
+  }
+  files {
+    source_file: "fonts/variable/AzeretMono-Italic[wght].ttf"
+    dest_file: "AzeretMono-Italic[wght].ttf"
+  }
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
 ```
 
-No override config.yaml exists in the google/fonts family directory.
+## Investigation
 
-## Verification
+Azeret Mono is a variable monospace font by Displaay (Martin Vacha), added to Google Fonts on 2021-06-08. The font was initially added as `ofl/azeret` (in PR #3475, commit `c44cf77ca`, 2021-06-09) and renamed to `ofl/azeretmono` in PR #3739 (2021-08-16, "ofl/azeret -> ofl/azeretmono").
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2021-06-04 21:41:25 +0200
-- Commit message: "Merge pull request #3 from RosaWagner/main"
-- Source files at commit: `sources/AzeretMono.glyphs`, `sources/AzeretMono-Italic.glyphs`, `sources/config.yaml`
+The original onboarding commit body explicitly states: "Azeret Version 1.002 taken from the upstream repo https://github.com/displaay/Azeret at commit https://github.com/displaay/Azeret/commit/3d45a6c3e094f08bfc70551b525bd2037cac51ba."
 
-## Confidence
+The commit `3d45a6c3e094f08bfc70551b525bd2037cac51ba` is confirmed in the upstream cache at `displaay/Azeret` (dated 2021-06-04 21:41:25 +0200, "Merge pull request #3 from RosaWagner/main").
 
-**High**: The commit hash is explicitly documented in the onboarding PR body, exists in the upstream repository, and was created just 5 days before the fonts were added to Google Fonts. The repository URL matches the copyright string. The config.yaml is present at the recorded commit. All data is fully verified and consistent.
+The repository URL and commit hash were merged into METADATA.pb from `upstream.yaml` by Simon Cozens in commit `66f91f10f` ("Merge upstream.yaml into METADATA.pb", 2024-04-03). The `config_yaml` field was added by the batch commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31).
 
-## Open Questions
+The `sources/config.yaml` exists at the referenced commit and specifies:
+- Sources: `AzeretMono.glyphs` and `AzeretMono-Italic.glyphs`
+- `axisOrder: [wght, ital]`
+- Family name: Azeret Mono
 
-None
+The copyright string in METADATA.pb references `https://github.com/displaay/azeret` (lowercase), while the actual repo is `displaay/Azeret` (uppercase E). Both refer to the same repository.
+
+## Conclusion
+
+Status is complete. All required fields (repository_url, commit, config_yaml) are present and verified in METADATA.pb. The commit matches the original gftools-packager onboarding reference. No further action needed.

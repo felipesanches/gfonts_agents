@@ -1,52 +1,52 @@
-# Akaya Telivigala
+# Investigation: Akaya Telivigala
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Vaishnavi Murthy, Juan Luis Blanco
-**License**: OFL
-**METADATA.pb**: `ofl/akayatelivigala/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Akaya Telivigala |
+| Slug | akaya-telivigala |
+| License Dir | ofl |
 | Repository URL | https://github.com/vaishnavimurthy/Akaya-Telivigala |
-| Commit | `93b31e45b69178ecfdb48981a5aa8a8b33bb0340` |
-| Config YAML | Override in google/fonts family directory |
-| Branch | `master` |
+| Commit Hash | 93b31e45b69178ecfdb48981a5aa8a8b33bb0340 |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/vaishnavimurthy/Akaya-Telivigala"
+  commit: "93b31e45b69178ecfdb48981a5aa8a8b33bb0340"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "TTF/AkayaTelivigala-Regular.ttf"
+    dest_file: "AkayaTelivigala-Regular.ttf"
+  }
+  branch: "master"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2021-04-29 19:04:00 +0530
-- Commit message: "Merge pull request #5 from yanone/master"
+## Investigation
 
-### Config YAML
-Override `config.yaml` exists in the google/fonts family directory. Per policy, `config_yaml` field is omitted from METADATA.pb.
+The font was most recently updated in google/fonts via PR #3355, merged on 2021-04-30 by Yanone (google/fonts commit `7b4021c0a`). The commit message references:
 
-## Evidence
+> Akaya Telivigala Version 1.002; ttfautohint (v1.8.3) taken from the upstream repo https://github.com/vaishnavimurthy/Akaya-Telivigala.git at commit https://github.com/vaishnavimurthy/Akaya-Telivigala/commit/93b31e45b69178ecfdb48981a5aa8a8b33bb0340.
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/vaishnavimurthy/Akaya-Telivigala`
-- `commit`: `93b31e45b69178ecfdb48981a5aa8a8b33bb0340`
-- `config_yaml`: `—`
+The METADATA.pb commit `93b31e45b69178ecfdb48981a5aa8a8b33bb0340` is the merge commit of PR #5 in the upstream repository ("Merge pull request #5 from yanone/master", dated 2021-04-29). This is the correct commit — it was directly referenced by the gftools-packager message and matches what is in METADATA.pb. The commit exists and is verified in the cached repository.
 
-### google/fonts history
-- Last font modification: `7b4021c0a1fb`
-- Date: 2021-04-30 15:58:22 +0200
-- Subject: "Akaya Telivigala: Version 1.002; ttfautohint (v1.8.3) added (#3355)"
+Earlier google/fonts updates are visible: PR #2971 (Version 1.001, Jan 2021) and PR #2957 (initial, Jan 2021).
 
-### Upstream repo cache
-- Cached at: `vaishnavimurthy/Akaya-Telivigala`
-- Commit `93b31e45b691` verified ✓
+The upstream repository is cached at `upstream_repos/fontc_crater_cache/vaishnavimurthy/Akaya-Telivigala/`. It contains a `.glyphs` source file at `Source/AkayaTelivigala.glyphs`. Inspection of the tree at commit `93b31e45` via `git ls-tree` reveals **no `config.yaml`** file. None exists in the repository currently either.
 
-### Override config
-Override `config.yaml` exists in `ofl/akayatelivigala/config.yaml`.
+## Conclusion
 
-## Confidence
-
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+The repository URL and commit hash in METADATA.pb are correct and HIGH confidence. An override `config.yaml` should be created in the google/fonts `ofl/akayatelivigala/` directory to enable gftools-builder builds from the upstream `.glyphs` source file (`Source/AkayaTelivigala.glyphs`).

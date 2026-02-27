@@ -1,61 +1,94 @@
-# Agu Display
+# Investigation: Agu Display
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Seun Badejo
-**METADATA.pb path**: `ofl/agudisplay/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Agu Display |
+| Slug | agu-display |
+| License Dir | ofl |
 | Repository URL | https://github.com/theseunbadejo/Agu-Display |
-| Commit | `d520ebead8de4091a82040fe3d8f94d84c38c66f` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | d520ebead8de4091a82040fe3d8f94d84c38c66f |
+| Config YAML | sources/config.yaml |
+| Status | needs_correction |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL was already present in the METADATA.pb source block from the initial onboarding. The onboarding commit `6913b3938` (2024-11-25) stated: "Taken from the upstream repo https://github.com/theseunbadejo/Agu-Display at commit 17a7ce91583f40d9e8f21eab6c57870a59c1b668." The copyright field also references this URL. The METADATA.pb also includes a minisite URL: https://www.agudisplay.com.
+```
+source {
+  repository_url: "https://github.com/theseunbadejo/Agu-Display"
+  commit: "d520ebead8de4091a82040fe3d8f94d84c38c66f"
+  archive_url: "https://github.com/theseunbadejo/Agu-Display/releases/download/1.05/Agu-Display-1.05.zip"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/AguDisplay[MORF].ttf"
+    dest_file: "AguDisplay[MORF].ttf"
+  }
+  files {
+    source_file: "ARTICLE.en_us.html"
+    dest_file: "article/ARTICLE.en_us.html"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash has been updated once since onboarding:
+**Git history for TTF files in google/fonts:**
+- `6913b3938` — "Agu Display: Version 1.103 added" (2024-11-25, authored by Nathan Willis) — only commit ever touching these TTF files
 
-1. **Original onboarding** (PR #8487, google/fonts commit `6913b3938`, 2024-11-25): Version 1.103 was taken from upstream commit `17a7ce91583f40d9e8f21eab6c57870a59c1b668`. This commit no longer exists in the upstream repository (likely due to force-push or rebase). PR #8487 had an empty body; the commit reference was only in the commit message.
+The commit message body states:
+> "Taken from the upstream repo https://github.com/theseunbadejo/Agu-Display at commit https://github.com/theseunbadejo/Agu-Display/commit/17a7ce91583f40d9e8f21eab6c57870a59c1b668."
 
-2. **Batch port from fontc_crater** (google/fonts commit `19cdcec59`, 2025-03-31): The commit hash was changed from `17a7ce91` to `d520ebead8de4091a82040fe3d8f94d84c38c66f`, based on fontc_crater's target.json data. This commit is the current HEAD of the upstream repo, dated 2025-02-10 ("Merge pull request #35 from theseunbadejo/ghactions-cairofix").
+**Commit hash discrepancy:**
+- **Original onboarding commit** (from google/fonts commit message): `17a7ce91583f40d9e8f21eab6c57870a59c1b668`
+- **Current METADATA.pb commit**: `d520ebead8de4091a82040fe3d8f94d84c38c66f`
 
-The current METADATA.pb commit `d520ebea` is from February 2025, approximately 3 months after the font was originally onboarded in November 2024. The original onboarding commit `17a7ce91` is no longer recoverable from the upstream repo.
+The original METADATA.pb at the time of onboarding (visible in `git show 6913b3938:ofl/agudisplay/METADATA.pb`) had `17a7ce91`, consistent with the commit message. The current METADATA.pb has a different commit (`d520ebea`), which was set by a subsequent batch fontc_crater update (google/fonts commit `19cdcec59`, 2025-03-31).
 
-## How Config YAML Was Resolved
+**Upstream repo (theseunbadejo/Agu-Display) at METADATA.pb commit:**
+- Commit `d520ebea` exists in the local cache (it is the HEAD of the shallow clone)
+- Date: 2025-02-10 23:52:34 +0100
+- Message: "Merge pull request #35 from theseunbadejo/ghactions-cairofix"
+- This commit is approximately 3 months newer than the original onboarding (November 2024)
 
-The `sources/config.yaml` path was added by the batch port commit `19cdcec59` (2025-03-31). The config file exists at the recorded commit and specifies:
-- Source: `AguDisplay.glyphs`
-- Family name: Agu Display
-- Axis order: morf (custom MORF axis for morphing between letterform styles)
-- `autohintOTF: False`
-- STAT table with values: Uzo (0), Ala (30), Osisi (60)
+The original onboarding commit `17a7ce91` is NOT present in the local shallow cache. It cannot be verified without unshallowing the repo.
 
-No override config.yaml exists in the google/fonts family directory.
+**Config YAML:**
+`sources/config.yaml` exists at the current HEAD of the upstream repo:
+```yaml
+sources:
+  - AguDisplay.glyphs
+axisOrder:
+  - morf
+familyName: Agu Display
+autohintOTF: False
+stat:
+  - name: Morph
+    tag: MORF
+    values:
+    - name: Uzo
+      value: 0
+    - name: Ala
+      value: 30
+    - name: Osisi
+      value: 60
+```
+This is a valid gftools-builder config for a variable font with a custom MORF axis. The source file is `AguDisplay.glyphs`. The config_yaml path (`sources/config.yaml`) was added by the fontc_crater batch update commit `19cdcec59` (2025-03-31), which also changed the commit hash.
 
-## Verification
+**Additional context:**
+- The METADATA.pb includes an `archive_url` pointing to GitHub release v1.05, which may provide an additional reference for the original onboarding binary
+- The PR #8487 that onboarded this font had an empty body; the upstream commit reference only appeared in the commit message
+- The intermediate commit `d520ebea` ("ghactions-cairofix") relates to a CI fix, suggesting font sources likely did not change between `17a7ce91` and `d520ebea`, but this cannot be formally confirmed without full repo history
 
-- Commit exists in upstream repo: Yes (it is HEAD of the shallow clone)
-- Commit date: 2025-02-10 23:52:34 +0100
-- Commit message: "Merge pull request #35 from theseunbadejo/ghactions-cairofix"
-- Source files at commit:
-  - `sources/AguDisplay.glyphs`
-  - `sources/config.yaml`
-  - `documentation/Nsibidi_Libre_Skeleton.glyphs`
-  - `.github/workflows/build.yaml`
+**Status assessment:**
+The commit hash in METADATA.pb (`d520ebea`) is NOT the original onboarding commit. The original commit (`17a7ce91`) is lost from accessible shallow clone history. The config_yaml path is correct and verified. The status is `needs_correction` because the recorded commit does not match what was used for onboarding.
 
-## Confidence
+## Conclusion
 
-**Medium**: The repository URL is well-established and confirmed by the onboarding commit. However, the commit hash `d520ebea` is NOT the original onboarding commit -- it is the fontc_crater HEAD, dated 2025-02-10, approximately 3 months after the original onboarding on 2024-11-25. The original onboarding commit `17a7ce91` is lost from the upstream repo. The current commit's message ("Merge pull request #35 from theseunbadejo/ghactions-cairofix") suggests it relates to a GitHub Actions CI fix, not a font source change, so the font sources at this commit are likely identical to what was originally onboarded. The METADATA.pb also includes an `archive_url` pointing to a release zip (v1.05), providing an additional reference point.
-
-## Open Questions
-
-1. Were any font source changes made between the original onboarding commit `17a7ce91` (November 2024) and the current METADATA.pb commit `d520ebea` (February 2025)? The "ghactions-cairofix" merge suggests only CI changes, but this should be confirmed.
-2. Why was the original onboarding commit `17a7ce91` lost? Was the repo rebased or force-pushed?
-3. Does the archive_url release (v1.05) correspond to the onboarded fonts, and could it serve as an alternative verification reference?
+The METADATA.pb commit hash (`d520ebea`) does not match the original onboarding commit (`17a7ce91`) documented in the google/fonts commit message. The original commit is no longer accessible in the shallow clone. The config_yaml (`sources/config.yaml`) is correct. To fully resolve, the upstream repo should be unshallowed to verify whether the original commit still exists and whether font sources changed between the two commits. If no source changes occurred (as the "ghactions-cairofix" commit message suggests), the current METADATA.pb state is functionally correct but technically inaccurate regarding the commit hash.

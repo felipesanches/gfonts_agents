@@ -1,36 +1,57 @@
-# Abhaya Libre
+# Investigation: Abhaya Libre
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Mooniak
-**METADATA.pb path**: `ofl/abhayalibre/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Abhaya Libre |
+| Slug | abhaya-libre |
+| License Dir | ofl |
 | Repository URL | https://github.com/mooniak/abhaya-libre-font |
-| Commit | `f53da70786fe1dba6193bdbd45a2c4159e511079` |
-| Config YAML | override in google/fonts |
-| Branch | -- |
+| Commit Hash | f53da70786fe1dba6193bdbd45a2c4159e511079 |
+| Config YAML | override in google/fonts (ofl/abhayalibre/config.yaml) |
+| Status | missing_commit |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL was already present in the METADATA.pb `source { repository_url }` field: `https://github.com/mooniak/abhaya-libre-font`. This URL was added to google/fonts in commit `aec1b9f3e` ("Add upstream repository URL"). The URL matches the copyright holder "Mooniak" listed in the font files.
+```
+source {
+  repository_url: "https://github.com/mooniak/abhaya-libre-font"
+  commit: "f53da70786fe1dba6193bdbd45a2c4159e511079"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `f53da70786fe1dba6193bdbd45a2c4159e511079` was pre-existing in the METADATA.pb `source { commit }` field. This commit was added to METADATA.pb via commits `04009b5bb` and `5862ed413` ("sources info for Abhaya Libre").
+### Git History
 
-**Important note on commit relevance**: This commit (`f53da70`, dated 2024-05-31) is the HEAD of the upstream repository -- its message is "Update to GF repo tempalte and CI". It is NOT the original onboarding commit. The actual last font-modifying commit in google/fonts on the main branch is `f8dbc76905437e` from 2017-02-17, created via PR #665 ("abhayalibre: v1.050 added"), submitted by `m4rc1e`. The PR body simply says "Fixes #460."
+The TTF files in `ofl/abhayalibre/` have the following commit history in google/fonts:
 
-At the time of PR #665, the upstream repo's HEAD was approximately `ade314aa` ("Adding description for Google Fonts"). The referenced commit `f53da70` represents a much later state of the upstream repo with CI and template updates. This commit was likely chosen for the `config_yaml` field pointing to `sources/config.yaml`, which only exists at this newer commit.
+```
+f8dbc7690 abhayalibre: v1.050 added. (#665)
+7a4070f65 Update Abhaya Libre to v1.041
+2076d77e0 ofl/abhayalibre Updated to v1.030
+9552ec151 Add Abhaya Libre (Sinhala + Latin)
+```
 
-The upstream repo has had significant development since 2017, including source file reorganization (the main source file changed from `sources/glyphs/Abhaya-Masters.glyphs` to `sources/AbhayaLibre.glyphs`).
+The most recent font-modifying commit is `f8dbc7690` (dated 2017-02-17), which is PR #665 ("abhayalibre: v1.050 added. Fixes #460."). This PR was submitted by `m4rc1e`.
 
-## How Config YAML Was Resolved
+### Commit Hash Analysis
 
-An override `config.yaml` exists in the google/fonts family directory at `ofl/abhayalibre/config.yaml`. Its contents:
+The commit `f53da70786fe1dba6193bdbd45a2c4159e511079` currently in METADATA.pb is **not** the original onboarding commit. It is the HEAD of the upstream repo as of 2024-05-31, with message "Update to GF repo tempalte and CI". This commit is from 7 years after the last font was onboarded via PR #665 in 2017.
+
+This commit was likely chosen when the source block was retroactively added to METADATA.pb (via google/fonts commits `04009b5bb` and `5862ed413`, "sources info for Abhaya Libre"), as it is the repo HEAD and contains the `sources/config.yaml` referenced in `config_yaml`. However, the fonts currently in google/fonts correspond to the v1.050 state from 2017, not the 2024 repo HEAD.
+
+### Upstream Repository
+
+The repo is cloned at `upstream_repos/fontc_crater_cache/mooniak/abhaya-libre-font/`. The sources directory contains:
+- `AbhayaLibre.glyphs` (at HEAD `f53da70`)
+
+### Override Config.yaml
+
+An override `config.yaml` exists in the google/fonts family directory at `ofl/abhayalibre/config.yaml`:
 
 ```yaml
 sources:
@@ -39,22 +60,12 @@ buildStatic: true
 buildVariable: false
 ```
 
-This override references the source file path `sources/glyphs/Abhaya-Masters.glyphs`, which matches the file structure at the original onboarding time (circa 2017). The upstream repo's own `sources/config.yaml` at commit `f53da70` references `AbhayaLibre.glyphs` (relative path) and is configured for variable font builds, which differs from the static fonts currently in the Google Fonts catalog.
+This override references `sources/glyphs/Abhaya-Masters.glyphs`, which matches the file structure at the time of the original v1.050 onboarding (~2017). The upstream repo's source file was later reorganized to `sources/AbhayaLibre.glyphs`. Since a local override exists, the `config_yaml` field in METADATA.pb pointing to the upstream's `sources/config.yaml` is redundant but not harmful.
 
-The METADATA.pb also has `config_yaml: "sources/config.yaml"` pointing to the upstream config. Since a local override exists, this field could be considered redundant, but it documents where the upstream config lives.
+### Key Concern
 
-## Verification
+The `commit` field in METADATA.pb points to the 2024 repo HEAD (`f53da70`), not the original onboarding commit from circa 2017. The correct commit would be the HEAD of the upstream repo at the time PR #665 was merged (2017-02-17). However, since the upstream repo shows no git history predating `f53da70` as the earliest cached commit, and the repo may have been rewritten, identifying the exact original commit is difficult without additional research.
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2024-05-31 08:15:08 +0530
-- Commit message: "Update to GF repo tempalte and CI"
-- Source files at commit: `sources/AbhayaLibre.glyphs`, `sources/config.yaml`, plus multiple historical `.glyphs` and `.ufo` files in `documentation/development/`
+## Conclusion
 
-## Confidence
-
-**Medium**: The repository URL is well-established and verified. However, the commit hash in METADATA.pb (`f53da70`) does not correspond to the original onboarding commit -- it is the repo HEAD from 2024, significantly newer than the 2017 font onboarding via PR #665. The override config.yaml correctly references the older source file structure (`sources/glyphs/Abhaya-Masters.glyphs`), which suggests the override was written with knowledge of the actual onboarding state. The current METADATA.pb commit reference is a pragmatic choice to support the `config_yaml` field pointing to the upstream's `sources/config.yaml`.
-
-## Open Questions
-
-- The commit `f53da70` in METADATA.pb is the repo HEAD (2024), not the original onboarding commit from ~2017. Should the commit reference be updated to match the actual state used for onboarding (approximately `ade314aa` or earlier)?
-- The upstream repo has had significant changes since 2017, including adding Tamil support and renaming source files. Is a font update from the newer upstream planned?
+The METADATA.pb `commit` field points to a 2024 repo HEAD, not the actual commit used for the 2017 onboarding. This is a `missing_commit` situation (the recorded commit is present but wrong). The `config_yaml` field pointing to the upstream `sources/config.yaml` is also inconsistent with the override config.yaml in google/fonts, which references the older source path `sources/glyphs/Abhaya-Masters.glyphs`. The `config_yaml` field in METADATA.pb should be removed (since the local override is auto-detected and it references an incompatible source path). A follow-up question to the Mooniak team or Google Fonts engineers would be needed to identify the correct original commit.

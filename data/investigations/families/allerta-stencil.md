@@ -1,51 +1,54 @@
-# Allerta Stencil
+# Investigation: Allerta Stencil
 
-**Status**: `missing_config`
-**Date**: 2026-02-25
-**Designer**: Matt McInerney
-**License**: OFL
-**METADATA.pb**: `ofl/allertastencil/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Allerta Stencil |
+| Slug | allerta-stencil |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/allerta |
-| Commit | `88a8c57b949cb8224f24815d5d3aa05d4950de69` |
-| Config YAML | — |
-| Source types | sfd |
+| Commit Hash | 88a8c57b949cb8224f24815d5d3aa05d4950de69 |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | MEDIUM |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Discovered via google/fonts commit history, PR references, or GitHub search.
+```
+source {
+  repository_url: "https://github.com/librefonts/allerta"
+  commit: "88a8c57b949cb8224f24815d5d3aa05d4950de69"
+}
+```
 
-### Commit Hash
-Used HEAD of upstream repository (latest commit at time of onboarding).
-- Commit date: 2014-10-17 13:28:23 +0300
-- Commit message: "update .travis.yml"
+## Investigation
 
-### Config YAML
-Not applicable — upstream repo contains only FontForge .sfd sources, which are not compatible with gftools-builder.
+### google/fonts commit history
 
-## Evidence
+The TTF file was last modified in the "Initial commit" (`90abd17b4f97671435798b6147b698aa9087612f`, dated 2015-03-07, by Dave Crossland). This initial commit added `AllertaStencil-Regular.ttf`, `DESCRIPTION.en_us.html`, `METADATA.json`, and `OFL.txt`. No PR reference is in the commit message.
 
-### METADATA.pb source block
-No source block present in METADATA.pb.
+The `source {}` block was added later, in commit `3f73c2eb035060c81777a3f950586bb7cdaf6cff` (authored by Felipe Sanches, dated 2026-02-26), along with `upstream_info.md`. This was part of PR #10271 to document upstream source metadata.
 
-### google/fonts history
-- Last font modification: `90abd17b4f97`
-- Date: 2015-03-07 05:14:52 +0530
-- Subject: "Initial commit"
+### Upstream repository
 
-### Upstream repo cache
-- Cached at: `librefonts/allerta`
-- Commit `88a8c57b949c` verified ✓
+The upstream repo `https://github.com/librefonts/allerta` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/allerta/`. The repository has only a single commit:
 
-## Confidence
+- `88a8c57b949c` — "update .travis.yml" (2014-10-17, by hash3g)
 
-**Medium**: URL discovered via research; commit verified in upstream repo
+This matches exactly the commit recorded in METADATA.pb.
 
-## Notes
+Note: The repository name is `allerta` (not `allertastencil`). This same repo hosts sources for both the Allerta and Allerta Stencil families. The `src/` directory contains:
+- `AllertaStencil-Regular.sfd` — FontForge source for Allerta Stencil
+- `AllertaStencil-Regular-TTF.sfd` — FontForge source (TTF variant)
+- `Allerta-Regular.sfd` and `Allerta-Regular-TTF.sfd` — FontForge sources for Allerta
+- `Allerta-Regular.vfb` — FontLab source for Allerta
+- Various `.ttx` files (decomposed binary data)
 
-SFD-only sources (FontForge format), not gftools-builder compatible
+### Source file types and config.yaml status
+
+The Allerta Stencil source files in this repo are `.sfd` (FontForge) format only. FontForge SFD files are **not compatible with gftools-builder**. No `config.yaml` exists in the repository. No override `config.yaml` has been added to the google/fonts family directory.
+
+## Conclusion
+
+The `source {}` block in METADATA.pb is complete with correct `repository_url` and `commit` (both verified). No `config.yaml` can be provided because the upstream sources are in FontForge (.sfd) format, which gftools-builder cannot process. Status remains `missing_config`. No further action is possible without source format conversion.

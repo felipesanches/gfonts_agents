@@ -1,48 +1,47 @@
-# Amatic SC
+# Investigation: Amatic SC
 
-**Status**: `complete`
-**Date**: 2026-02-25
-**Designer**: Vernon Adams, Ben Nathan, Thomas Jockin
-**License**: OFL
-**METADATA.pb**: `ofl/amaticsc/METADATA.pb`
-
-## Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Amatic SC |
+| Slug | amatic-sc |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/AmaticSC |
-| Commit | `308846136d2dcfb6aef2160d7e927698cdaf9c05` |
-| Config YAML | `sources/config.yaml` |
+| Commit Hash | 308846136d2dcfb6aef2160d7e927698cdaf9c05 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## Methodology
+## Source Data (METADATA.pb)
 
-### Repository URL
-Pre-existing in METADATA.pb `source { repository_url }` field.
+```
+source {
+  repository_url: "https://github.com/googlefonts/AmaticSC"
+  commit: "308846136d2dcfb6aef2160d7e927698cdaf9c05"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-### Commit Hash
-Pre-existing in METADATA.pb `source { commit }` field.
-- Commit date: 2025-02-24 22:33:35 -0300
-- Commit message: "Merge pull request #18 from felipesanches/add_config_yaml"
+## Investigation
 
-### Config YAML
-Found `sources/config.yaml` in upstream repository at the recorded commit hash.
+The font files were last updated in google/fonts at commit `81e5d4b23` (October 31, 2017, "amaticsc: v2.505 added. (#1271)"), authored by Marc Foley. The commit message confirms the font was taken from `https://github.com/googlefonts/AmaticSC`.
 
-## Evidence
+The `repository_url` and `commit` fields were added to METADATA.pb in two stages:
+1. `repository_url` was added by Simon Cozens in December 2023 ("Update upstreams").
+2. `commit` and `config_yaml` were added by @felipesanches in commit `19cdcec59` (March 31, 2025, "[Batch 1/4] port info from fontc_crater targets list").
 
-### METADATA.pb source block
-- `repository_url`: `https://github.com/googlefonts/AmaticSC`
-- `commit`: `308846136d2dcfb6aef2160d7e927698cdaf9c05`
-- `config_yaml`: `sources/config.yaml`
+The commit hash `308846136d2dcfb6aef2160d7e927698cdaf9c05` corresponds to the merge of PR #18 ("add sources/config.yaml") in the AmaticSC upstream repo, authored by @felipesanches on February 24, 2025. This was a deliberate addition to make the upstream repo gftools-builder-compatible.
 
-### google/fonts history
-- Last font modification: `81e5d4b23540`
-- Date: 2017-10-31 19:19:13 +0000
-- Subject: "amaticsc: v2.505 added. (#1271)"
+The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/AmaticSC/` as a shallow clone (depth 1) at this commit. The `sources/config.yaml` exists and contains:
 
-### Upstream repo cache
-- Cached at: `googlefonts/AmaticSC`
-- Commit `308846136d2d` verified ✓
+```yaml
+sources:
+  - AmaticSC.glyphs
+```
 
-## Confidence
+This is a valid gftools-builder configuration. The referenced commit is the HEAD of the upstream repo after the config.yaml was added for fontc_crater compatibility. The actual font binaries in google/fonts predate this commit (from 2017), but the upstream source structure is correctly documented.
 
-**High**: URL pre-existing in METADATA.pb; commit pre-existing in METADATA.pb
+## Conclusion
+
+Status is complete. All required fields (`repository_url`, `commit`, `config_yaml`) are correctly populated in METADATA.pb. The `sources/config.yaml` exists at the referenced commit in the upstream repo. No action needed.

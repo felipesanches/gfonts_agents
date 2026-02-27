@@ -1,46 +1,82 @@
-# ADLaM Display
+# Investigation: ADLaM Display
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Mark Jamra, Neil Patel, Andrew Footit
-**METADATA.pb path**: `ofl/adlamdisplay/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | ADLaM Display |
+| Slug | adlam-display |
+| License Dir | ofl |
 | Repository URL | https://github.com/microsoft/ADLaM-Display |
-| Commit | `879176243e9f7161a8aefdab8c36a4a7318ebe15` |
-| Config YAML | `Sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | 879176243e9f7161a8aefdab8c36a4a7318ebe15 |
+| Config YAML | Sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL was already present in the METADATA.pb `source { repository_url }` field, set to `https://github.com/microsoft/ADLaM-Display`. The gftools-packager onboarding commit `40699510e6bf` in google/fonts confirms this, stating in its body: "ADLaM Display Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28] taken from the upstream repo https://github.com/microsoft/ADLaM-Display". PR #6522 in google/fonts also references this URL.
+```
+source {
+  repository_url: "https://github.com/microsoft/ADLaM-Display"
+  commit: "879176243e9f7161a8aefdab8c36a4a7318ebe15"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "Fonts/ttf/ADLaMDisplay-Regular.ttf"
+    dest_file: "ADLaMDisplay-Regular.ttf"
+  }
+  branch: "main"
+  config_yaml: "Sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `879176243e9f7161a8aefdab8c36a4a7318ebe15` was already present in the METADATA.pb `source { commit }` field. This commit is directly confirmed by multiple sources:
+### Git History
 
-1. The gftools-packager onboarding commit `40699510e6bf` (2023-07-10 12:48:26 -0700) body states: "taken from the upstream repo https://github.com/microsoft/ADLaM-Display at commit https://github.com/microsoft/ADLaM-Display/commit/879176243e9f7161a8aefdab8c36a4a7318ebe15"
-2. PR #6522 in google/fonts repeats this exact reference
-3. The upstream commit date (2023-07-10 12:36:52 -0700) is just 12 minutes before the google/fonts onboarding commit (2023-07-10 12:48:26 -0700), indicating the font was packaged immediately after the upstream commit
+The TTF files in `ofl/adlamdisplay/` have one commit in google/fonts:
 
-## How Config YAML Was Resolved
+```
+40699510e [gftools-packager] ADLaM Display: Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28] added
+```
 
-The config file `Sources/config.yaml` (note: capital "S" in `Sources`) exists in the upstream repository at the recorded commit hash. It contains gftools-builder configuration referencing the `ADLaM-Display.glyphs` source file with `buildOTF: false`. The capitalized directory name is notable -- commit `7190093b1` in google/fonts ("A few fonts have `Sources` instead of `sources` directory") specifically addressed this naming convention. No override config.yaml exists in the google/fonts family directory (`ofl/adlamdisplay/`).
+The full body of `40699510e` (dated 2023-07-10 12:48:26 -0700) states:
 
-## Verification
+> ADLaM Display Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28] taken from the upstream repo https://github.com/microsoft/ADLaM-Display at commit https://github.com/microsoft/ADLaM-Display/commit/879176243e9f7161a8aefdab8c36a4a7318ebe15.
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2023-07-10 12:36:52 -0700
-- Commit message: "Build"
-- Source files at commit: `Sources/ADLaM-Display CORNERS.glyphs`, `Sources/ADLaM-Display.glyphs`, `Sources/config.yaml`
+### Commit Verification
 
-## Confidence
+The commit `879176243e9f7161a8aefdab8c36a4a7318ebe15` exists in the upstream repo (cloned at `upstream_repos/fontc_crater_cache/microsoft/ADLaM-Display/`) with:
+- Date: 2023-07-10 12:36:52 -0700
+- Message: "Build"
 
-**High**: All data is fully consistent. The repository URL, commit hash, and config_yaml were all pre-existing in METADATA.pb. The commit hash is directly corroborated by the gftools-packager commit message, PR #6522, and the near-simultaneous timestamps (12 minutes apart) between the upstream commit and the onboarding. The commit exists in the upstream repo and contains the expected source files and build configuration.
+The upstream commit is dated just 12 minutes before the google/fonts onboarding commit, strongly confirming this is the exact commit used for onboarding. The gftools-packager tool (referenced in the commit title) automatically records this information.
 
-## Open Questions
+### Upstream Repository Structure
 
-None
+The `Sources/` directory (capital S) at the recorded commit contains:
+- `Sources/ADLaM-Display.glyphs` (primary Glyphs source)
+- `Sources/ADLaM-Display CORNERS.glyphs` (corners file)
+- `Sources/config.yaml`
+
+The `Sources/config.yaml` contains:
+```yaml
+sources:
+  - ADLaM-Display.glyphs
+familyName: "ADLaM Display"
+buildOTF: false
+```
+
+Note: The capitalized `Sources/` directory name is notable. A google/fonts commit `7190093b1` ("A few fonts have `Sources` instead of `sources` directory") specifically addressed this convention. The METADATA.pb correctly records `config_yaml: "Sources/config.yaml"` with the capital S.
+
+No override `config.yaml` exists in `ofl/adlamdisplay/` in google/fonts.
+
+## Conclusion
+
+No action needed. The METADATA.pb `source {}` block is complete and accurate: repository URL, commit hash, branch, files mappings, and config_yaml are all set and verified. The commit is directly corroborated by the gftools-packager commit message in google/fonts and the near-simultaneous timestamps (12 minutes apart). This family is fully documented.

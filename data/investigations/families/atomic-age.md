@@ -1,52 +1,39 @@
-# Atomic Age
+# Investigation: Atomic Age
 
-**Date investigated**: 2026-02-26
-**Status**: missing_config
-**Designer**: James Grieshaber
-**METADATA.pb path**: `ofl/atomicage/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Atomic Age |
+| Slug | atomic-age |
+| License Dir | ofl |
 | Repository URL | https://github.com/EbenSorkin/Atomic-Age |
-| Commit | `bb96b179ca5c48149011237c64781fa94817e711` |
-| Config YAML | — |
-| Branch | — |
+| Commit Hash | bb96b179ca5c48149011237c64781fa94817e711 |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL is already present in the METADATA.pb source block on the main branch, added by Simon Cozens in commit `46a7c0576` ("Add more upstreams (a,b)", 2024-01-14).
+```
+source {
+  repository_url: "https://github.com/EbenSorkin/Atomic-Age"
+  commit: "bb96b179ca5c48149011237c64781fa94817e711"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit `bb96b179ca5c48149011237c64781fa94817e711` is the latest commit in the upstream repository (2016-01-16, "Merge pull request #3 from davelab6/master"). This is the head of the repo.
+Atomic Age is a display font by James Grieshaber, published by Sorkin Type Co. It was added to Google Fonts on 2011-10-26 (initial commit `90abd17b4`) and last updated via PR #830 (`892763811`, "hotfix-atomicage: v1.008 added", 2017-08-07) by Marc Foley.
 
-The font was last updated in google/fonts via PR #830 (`89276381`, "hotfix-atomicage: v1.008 added", 2017-08-07) by Marc Foley. The hotfix claims v1.008, but the upstream repo only contains up to v1.007 (commit `5e7452c`, "Updating to v1.007 (vertical metrics)", 2016-01-15). This suggests the v1.008 hotfix was done directly on the binary font file (likely vertical metrics adjustments) without corresponding upstream source changes. The PR #830 body and comments are empty, providing no further details.
+The repository URL `https://github.com/EbenSorkin/Atomic-Age` was added to METADATA.pb by Simon Cozens in commit `46a7c0576` ("Add more upstreams (a,b)", 2024-01-14). The commit hash `bb96b179ca5c48149011237c64781fa94817e711` was added in commit `862210c9f` ("Atomic Age: add source block to METADATA.pb").
 
-The repo has 14 total commits, with the most recent being from January 2016. The repo appears to be inactive.
+The upstream repository is cached at `EbenSorkin/Atomic-Age`. The commit `bb96b179` is the latest (and effectively the final) commit in the repo, dated 2016-01-16, "Merge pull request #3 from davelab6/master". The repo has 14 commits total and has been inactive since 2016.
 
-## How Config YAML Was Resolved
+**Version discrepancy**: The PR #830 hotfix in google/fonts claims v1.008, but the upstream repo only contains up to v1.007 (commit `5e7452c`, "Updating to v1.007 (vertical metrics)", 2016-01-15). The v1.008 changes appear to be direct binary modifications done in google/fonts without corresponding upstream source changes.
 
-No `config.yaml` or `builder.yaml` exists in the upstream repository. No override `config.yaml` exists in `/mnt/shared/google/fonts/ofl/atomicage/`.
+**No config.yaml**: The only source file in the repo is `SRC/AtomicAge-Regular.vfb` (FontLab binary format). The original UFO was present and then removed (commit `7190e2a`, "Remove UFO"). No `config.yaml` exists in the upstream repository or in the google/fonts family directory (`ofl/atomicage/`). VFB format is proprietary and not compatible with gftools-builder.
 
-The only source file in the repo is a VFB (FontLab) binary: `SRC/AtomicAge-Regular.vfb`. The original UFO was created and then removed (commit `7190e2a`, "Remove UFO"). VFB files are proprietary FontLab format and cannot be used with gftools-builder.
+## Conclusion
 
-## Verification
-
-- Commit exists in upstream repo: Yes
-- Commit date: 2016-01-16 23:13:27 -0500
-- Commit message: "Merge pull request #3 from davelab6/master"
-- Source files at commit:
-  - `SRC/AtomicAge-Regular.vfb` (FontLab binary, not gftools-compatible)
-  - `fonts/ttf/AtomicAge-Regular.ttf` (pre-compiled binary)
-  - `fonts/otf/AtomicAge-Regular.otf` (pre-compiled binary)
-
-## Confidence
-
-**Medium**: The repository URL is confirmed in METADATA.pb. The commit hash is the latest commit, which is a reasonable default since the repo predates the google/fonts hotfix. However, the v1.008 hotfix in google/fonts does not correspond to any upstream commit, indicating the binary was modified directly. The VFB-only source means this family cannot be built with gftools-builder without source conversion.
-
-## Open Questions
-
-- The google/fonts version is v1.008 but the upstream only has v1.007. The v1.008 changes appear to be direct binary modifications (copyright and metadata updates per the METADATA.pb diff). Should the commit hash reference the latest upstream commit even though the actual binary diverges?
-- The VFB source would need to be converted to UFO or .glyphs format before a config.yaml could be useful. Is there a plan to convert the sources?
+The repository URL and commit hash are documented in METADATA.pb. However, no config.yaml is possible because the only source file is a proprietary FontLab VFB binary, which is not compatible with gftools-builder. The family needs source file conversion (VFB to UFO or .glyphs) before a config.yaml can be created. Status remains missing_config.

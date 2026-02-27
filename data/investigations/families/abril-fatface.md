@@ -1,57 +1,62 @@
-# Abril Fatface
+# Investigation: Abril Fatface
 
-**Date investigated**: 2026-02-26
-**Status**: missing_config
-**Designer**: TypeTogether
-**METADATA.pb path**: `ofl/abrilfatface/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Abril Fatface |
+| Slug | abril-fatface |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/abrilfatface |
-| Commit | `5e899bfd997c34d1c2bd43ca9f94d2d0ded6346f` |
-| Config YAML | -- |
-| Branch | `master` |
+| Commit Hash | 5e899bfd997c34d1c2bd43ca9f94d2d0ded6346f |
+| Config YAML | none |
+| Status | no_config_possible |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/abrilfatface` was identified from the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/abrilfatface`. There is no `source { }` block in METADATA.pb at all. The `librefonts` organization on GitHub hosts TTX-decomposed mirrors of many early Google Fonts families, created by Dave Crossland.
+```
+source {
+  repository_url: "https://github.com/librefonts/abrilfatface"
+  commit: "5e899bfd997c34d1c2bd43ca9f94d2d0ded6346f"
+}
+```
 
-Note: TypeTogether (the credited designer) does not appear to have a public GitHub repository for Abril Fatface. The `librefonts/abrilfatface` repo is a legacy TTX mirror, not the original design source.
+## Investigation
 
-## How the Commit Hash Was Identified
+### Git History
 
-The upstream repo has only a single commit: `5e899bfd997c34d1c2bd43ca9f94d2d0ded6346f` (dated 2014-10-17, message: "update .travis.yml"). This is the HEAD and only commit of the repository. The commit hash was selected as it represents the complete state of this single-commit repo.
+The TTF files in `ofl/abrilfatface/` have only one commit in google/fonts:
 
-The last font-modifying commit in google/fonts is `90abd17b4f97` from 2015-03-07, with message "Initial commit" (part of the initial google/fonts repository setup). The font was added to Google Fonts on 2011-08-31 according to METADATA.pb, predating this repository's creation.
+```
+90abd17b4 Initial commit
+```
 
-## How Config YAML Was Resolved
+This "Initial commit" (dated 2015-03-07) was part of the initial google/fonts repository setup. The font was added to Google Fonts on 2011-08-31 per METADATA.pb `date_added`, predating the current google/fonts git history.
 
-No `config.yaml` exists in the upstream repository. No override `config.yaml` exists in the google/fonts family directory (`ofl/abrilfatface/`).
+### Source Block Status
 
-The upstream repo contains only legacy source formats:
+The METADATA.pb currently has a `source {}` block with `repository_url` and `commit` fields. The upstream repo (`librefonts/abrilfatface`) is cloned at `upstream_repos/fontc_crater_cache/librefonts/abrilfatface/`.
+
+### Upstream Repository
+
+The `librefonts/abrilfatface` repository on GitHub is a legacy TTX-decomposed mirror created by Dave Crossland. It contains:
 - `src/AbrilFatface-Regular-TTF.sfd` (FontForge SFD format)
 - `src/AbrilFatface-Regular.vfb` (FontLab VFB format)
-- Various `.ttx` decomposed table files
-- OTF-related TTX source files
+- `src/AbrilFatface-Regular.ttf.*.ttx` (TTX decomposed TTF tables)
+- `src/AbrilFatface-Regular.otf.*.ttx` (TTX decomposed OTF tables)
+- `DESCRIPTION.en_us.html`, `METADATA.json`, `OFL.txt`
 
-These source formats are not compatible with gftools-builder, which requires `.glyphs`, `.ufo`, or `.designspace` sources. A config.yaml cannot be meaningfully created without converting the sources to a modern format first.
+This is **not** the original design source repository. TypeTogether (the credited designer) created the font, and `librefonts/abrilfatface` is an archival/reproducibility mirror created years after the original font production.
 
-## Verification
+### Commit Verification
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2014-10-17 13:27:35 +0300
-- Commit message: "update .travis.yml"
-- Source files at commit: `src/AbrilFatface-Regular-TTF.sfd`, `src/AbrilFatface-Regular.vfb`, various `.ttx` files
+The upstream repo has exactly one commit: `5e899bfd997c34d1c2bd43ca9f94d2d0ded6346f` (dated 2014-10-17, message: "update .travis.yml"). This is the only commit and represents the complete state of this single-commit repository. The commit predates the google/fonts Initial commit (2015-03-07) and post-dates the reported `date_added` (2011-08-31).
 
-## Confidence
+### Config YAML Assessment
 
-**Medium**: The repository URL is confirmed and the commit is verified in the upstream repo. However, `librefonts/abrilfatface` is a legacy TTX mirror, not a true design source repository. TypeTogether (the credited designer) may have the original design sources in a different format or location. The font binary in google/fonts predates the librefonts repo (2011 vs 2014). The relationship between this repo and the original font production is indirect -- the repo was created as an archival/reproducibility effort, not as the original design source.
+No `config.yaml` exists in the upstream repository. No override `config.yaml` exists in `ofl/abrilfatface/` in google/fonts. The source formats available (SFD, VFB, TTX) are **not compatible with gftools-builder**, which requires `.glyphs`, `.ufo`, or `.designspace` sources. A config.yaml cannot be meaningfully created without first converting the sources to a modern format.
 
-## Open Questions
+## Conclusion
 
-- Does TypeTogether maintain an original source repository for Abril Fatface with `.glyphs` or `.ufo` sources?
-- Since the source formats (SFD/VFB) are not gftools-builder compatible, is there a plan to convert the sources to a modern format?
-- Should METADATA.pb be updated to include a `source { }` block pointing to this repo, even though it cannot be built with gftools-builder?
-- The font has been in Google Fonts since 2011 and has not been updated since the initial commit. Is an update planned?
+The source block in METADATA.pb is partially complete (repo URL and commit are set). However, no `config_yaml` can be set because the upstream repo only contains legacy source formats (SFD/VFB/TTX) incompatible with gftools-builder. Status is `no_config_possible`. If TypeTogether has modern sources (`.glyphs` or `.ufo`), those would need to be contributed upstream first. No further action is needed for the metadata documentation effort unless modern sources become available.

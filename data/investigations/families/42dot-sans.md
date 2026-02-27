@@ -1,46 +1,70 @@
-# 42dot Sans
+# Investigation: 42dot Sans
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: 42dot
-**METADATA.pb path**: `ofl/42dotsans/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | 42dot Sans |
+| Slug | 42dot-sans |
+| License Dir | ofl |
 | Repository URL | https://github.com/42dot/42dot-Sans |
-| Commit | `d23e87fe44d5b4f5afaa9dca9d5926d7c414d625` |
-| Config YAML | `sources/config_variable.yaml` |
-| Branch | `main` |
+| Commit Hash | d23e87fe44d5b4f5afaa9dca9d5926d7c414d625 |
+| Config YAML | sources/config_variable.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL was already present in the METADATA.pb `source { repository_url }` field, set to `https://github.com/42dot/42dot-Sans`. This matches the copyright string in the font metadata ("Copyright 2024 The 42dot Sans Project Authors (https://github.com/42dot/42dot-Sans)"). The onboarding commit `d60948acd8c1` in google/fonts also references this same URL in its commit body: "Taken from the upstream repo https://github.com/42dot/42dot-Sans". PR #8772 in google/fonts confirms this URL.
+```
+source {
+  repository_url: "https://github.com/42dot/42dot-Sans"
+  commit: "d23e87fe44d5b4f5afaa9dca9d5926d7c414d625"
+  branch: "main"
+  config_yaml: "sources/config_variable.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `d23e87fe44d5b4f5afaa9dca9d5926d7c414d625` was already present in the METADATA.pb `source { commit }` field. This commit is directly cited in multiple places:
+### Git History
 
-1. The google/fonts onboarding commit `d60948acd8c1` (2024-12-23) body states: "Taken from the upstream repo https://github.com/42dot/42dot-Sans at commit https://github.com/42dot/42dot-Sans/commit/d23e87fe44d5b4f5afaa9dca9d5926d7c414d625"
-2. PR #8772 in google/fonts has the same reference in its body
-3. The commit date in the upstream repo (2024-12-23 05:50:28 -0800) is essentially simultaneous with the google/fonts onboarding commit (2024-12-23 05:51:32 -0800), indicating the font was added immediately upon the upstream commit being made
+The TTF files in `ofl/42dotsans/` have a single commit in the google/fonts repository:
 
-## How Config YAML Was Resolved
+```
+d60948acd 42dot Sans : v1.00 added
+```
 
-The config file `sources/config_variable.yaml` was found in the upstream repository at the recorded commit hash. It contains a gftools-builder configuration referencing the `42dotSans.designspace` source file, with settings for variable font build only (no static, no OTF, no webfont). No override config.yaml exists in the google/fonts family directory (`ofl/42dotsans/`).
+The full commit message of `d60948acd` explicitly references the upstream repo and commit:
 
-## Verification
+> Taken from the upstream repo https://github.com/42dot/42dot-Sans at commit https://github.com/42dot/42dot-Sans/commit/d23e87fe44d5b4f5afaa9dca9d5926d7c414d625
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2024-12-23 05:50:28 -0800
-- Commit message: "Adding some metadata"
-- Source files at commit: `sources/42dotSans.designspace`, `sources/42dotSans.glyphspackage/` (with many glyph files), `sources/config_variable.yaml`
+### Upstream Repository
 
-## Confidence
+The upstream repo is cloned at `upstream_repos/fontc_crater_cache/42dot/42dot-Sans/`. The commit `d23e87fe44d5b4f5afaa9dca9d5926d7c414d625` exists in the repo with message "Adding some metadata" (dated 2024-12-23 05:50:28 -0800).
 
-**High**: All data is fully consistent. The repository URL, commit hash, and config_yaml were all pre-existing in METADATA.pb. The commit hash is directly corroborated by the google/fonts onboarding commit message and PR #8772. The commit exists in the upstream repo and contains the expected source files and build configuration. The near-simultaneous timestamps (within 1 minute) between upstream commit and onboarding strongly confirm the correct commit.
+The `sources/` directory at this commit contains:
+- `42dotSans.designspace`
+- `42dotSans.glyphspackage/` (Glyphs package source)
+- `config_variable.yaml`
+- `config_static.yaml`
 
-## Open Questions
+The `config_variable.yaml` file contains:
+```yaml
+sources:
+  - 42dotSans.designspace
+familyName: 42dot Sans
+autohintTTF: False
+buildOTF: False
+buildStatic: False
+buildVariable: True
+buildWebfont: False
+removeOutlineOverlaps: False
+```
 
-None
+### Commit Verification
+
+The upstream commit `d23e87fe` is dated 2024-12-23 05:50:28 -0800, which is just 1 minute before the google/fonts onboarding commit `d60948acd` (implied by "42dot Sans : v1.00 added"), confirming the font was packaged immediately from this upstream commit. All data in METADATA.pb is consistent with this commit.
+
+## Conclusion
+
+No action needed. The METADATA.pb `source {}` block is complete and accurate: repository URL, commit hash, branch, and config_yaml are all verified and consistent. This family is fully documented.

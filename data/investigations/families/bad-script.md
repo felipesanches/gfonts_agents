@@ -1,40 +1,68 @@
-# Bad Script
+# Investigation: Bad Script
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Gaslight
-**METADATA.pb path**: `ofl/badscript/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bad Script |
+| Slug | bad-script |
+| License Dir | ofl |
 | Repository URL | https://github.com/alexeiva/badscript |
-| Commit | `dca2962433a2b5817f1e716d6731a743440fbd79` |
-| Config YAML | `sources/config.yaml` |
-| Branch | master |
+| Commit Hash | dca2962433a2b5817f1e716d6731a743440fbd79 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/alexeiva/badscript` is documented in the METADATA.pb `source` block and in the font copyright string. The google/fonts commit body also explicitly references this repo. The repository owner `alexeiva` is Alexei Vanyashin, the original designer (Gaslight is the design studio name).
+```
+source {
+  repository_url: "https://github.com/alexeiva/badscript"
+  commit: "dca2962433a2b5817f1e716d6731a743440fbd79"
+  files {
+    source_file: "fonts/ttf/BadScript-Regular.ttf"
+    dest_file: "BadScript-Regular.ttf"
+  }
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  branch: "master"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit `dca2962433a2b5817f1e716d6731a743440fbd79` is referenced in the google/fonts commit `0827c33` (by Emma Marichal, 2024-11-08): "Taken from the upstream repo https://github.com/alexeiva/badscript at commit dca2962433a2b5817f1e716d6731a743440fbd79."
+### Git History in google/fonts
 
-Cross-verification:
-- The upstream commit is dated 2024-11-08 18:10:45 +0500 (a merge of PR #6 from emmamarichal/master).
-- The google/fonts commit is dated 2024-11-08 14:13:45 +0100 (same day, adjusting for timezones this is 18:13 +0500 -- just 3 minutes after the upstream merge).
-- The upstream PR #6 was by Emma Marichal herself, with the message "So sorry, I totally forgot to push the fonts... Here they are!" -- this was exporting the rebuilt fonts after fixing outline issues in PR #5.
-- The previous upstream PR #5 (also by Emma Marichal) fixed outline issues and updated v-metrics.
-- This commit was pushed directly to google/fonts (not via a PR), which is consistent with the tight timeline.
-- The commit is HEAD of the upstream master branch -- no newer commits exist.
+The TTF files have the following commits (newest first):
 
-This represents a Version 2.000 update of Bad Script, originally added to Google Fonts in 2011.
+- `0827c33ed` — "Bad Script: Version 2.000; ttfautohint (v1.8.4.7-5d5b) added" (most recent)
+- `235f2c1aa` — "badscript: disabled Use Typo Metrics flag"
+- `006c20a1d` — "badscript: updated win asc and win desc"
+- `6bd3f5e01` — "badscript: inherited old vertical metrics from v1.002"
+- `b44c3c58f` — "v2.000: added"
+- `90abd17b4` — "Initial commit"
 
-## How Config YAML Was Resolved
+The most recent font commit message (`0827c33ed`) says:
 
-The upstream repo contains `sources/config.yaml` at the referenced commit with the following content:
+> Taken from the upstream repo https://github.com/alexeiva/badscript at commit
+> https://github.com/alexeiva/badscript/commit/dca2962433a2b5817f1e716d6731a743440fbd79.
+
+This matches exactly what is recorded in METADATA.pb.
+
+### Commit Verification
+
+Inspecting the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/alexeiva/badscript`:
+
+- Commit `dca2962433a2b5817f1e716d6731a743440fbd79` (2024-11-08) — "Merge pull request #6 from emmamarichal/master"
+
+The commit is confirmed present in the cache. The upstream commit (2024-11-08) predates the google/fonts onboarding, which is consistent.
+
+### Config YAML Verification
+
+The `config.yaml` at `sources/config.yaml` in the upstream repo contains:
 
 ```yaml
 sources:
@@ -43,24 +71,13 @@ familyName: Bad Script
 cleanUp: true
 ```
 
-This is a valid gftools-builder configuration. The METADATA.pb correctly records the path as `sources/config.yaml`. No override config.yaml exists in the google/fonts family directory.
+This is a valid gftools-builder configuration. The `config_yaml: "sources/config.yaml"` field in METADATA.pb correctly references this file.
 
-Note: The upstream repo uses `master` as its default branch (not `main`), and this is correctly reflected in the METADATA.pb `branch` field.
+### Repository Cache
 
-## Verification
+The upstream repo is cached at:
+`/mnt/shared/upstream_repos/fontc_crater_cache/alexeiva/badscript`
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2024-11-08 18:10:45 +0500
-- Commit message: "Merge pull request #6 from emmamarichal/master"
-- Commit author: Alexei Vanyashin (merge commit)
-- Source files at commit: `sources/BadScript.glyphs`, `sources/config.yaml`, `fonts/ttf/BadScript-Regular.ttf`
-- Commit is HEAD of upstream master branch: Yes (no newer commits)
-- Default branch: master (not main)
+## Conclusion
 
-## Confidence
-
-**High**: The commit hash is consistently referenced in the google/fonts commit body and METADATA.pb. The extremely tight timing between upstream merge and google/fonts commit (3 minutes) confirms the hash was used immediately. Emma Marichal authored both the upstream PR and the google/fonts commit. The config.yaml path is verified and the commit is the latest.
-
-## Open Questions
-
-None. The font was originally added in 2011 and received a major update (Version 2.000) in November 2024 with outline fixes and updated metrics by Emma Marichal.
+The METADATA.pb source block is complete and correct. The repository URL, commit hash, and config_yaml path are all verified. No action required.

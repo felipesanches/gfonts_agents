@@ -1,59 +1,43 @@
-# Autour One
+# Investigation: Autour One
 
-**Date investigated**: 2026-02-26
-**Status**: missing_config
-**Designer**: Sorkin Type
-**METADATA.pb path**: `ofl/autourone/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Autour One |
+| Slug | autour-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/autourone |
-| Commit | `10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c` |
-| Config YAML | — |
-| Branch | `master` |
+| Commit Hash | 10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL is not present in the current METADATA.pb on the main branch (there is no source block). It was identified in the tracking data (`gfonts_library_sources.json`) and exists on a pending PR branch (`sources_info_2026-02-25`, commit `9a14639f3`). The upstream repo at `librefonts/autourone` was verified in the cache with remote URL `https://github.com/librefonts/autourone`.
+```
+source {
+  repository_url: "https://github.com/librefonts/autourone"
+  commit: "10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c"
+}
+```
 
-As with Audiowide, this is a `librefonts` organization mirror typical of early Google Fonts families.
+## Investigation
 
-## How the Commit Hash Was Identified
+Autour One is a display font by Sorkin Type, added to Google Fonts on 2012-05-15. The font was last updated via PR #833 (`592bee48b`, "hotfix-autourone: v1.007 added", 2017-08-07) by Marc Foley. The source block in METADATA.pb was added by commit `42e01ed7f` ("Autour One: add source block to METADATA.pb", 2026-02-26), which populated the repository_url and commit from research into the librefonts archive.
 
-The upstream repository has only a single commit: `10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c` (2014-10-17, "update .travis.yml"). The font was last updated in google/fonts via PR #833 (`592bee48`, "hotfix-autourone: v1.007 added", 2017-08-07) by Marc Foley. The PR body and comments are empty. Since the upstream repo has only one commit, this is the only possible reference point.
+The upstream repository `librefonts/autourone` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/autourone`. The repo has a single commit: `10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c` (dated 2014-10-17, "update .travis.yml"). Since it is the only commit, it is the only possible reference point.
 
-## How Config YAML Was Resolved
-
-No `config.yaml` or `builder.yaml` exists in the upstream repository. No override `config.yaml` exists in `/mnt/shared/google/fonts/ofl/autourone/`.
-
-The source files in the repository are:
+**Source file format**: The repository contains:
 - `src/AutourOne-Regular-OTF.sfd` (FontForge SFD)
 - `src/AutourOne-Regular-TTF.sfd` (FontForge SFD)
-- `src/AutourOne-Regular.vfb` (FontLab binary, not listed in source_types but present)
-- Various `.ttx` XML dumps of font tables
+- `src/AutourOne-Regular.vfb` (FontLab binary)
+- Multiple TTX (decompiled font table) XML files
 
-SFD files are FontForge's native format and are not directly compatible with gftools-builder. The VFB file is FontLab's proprietary format.
+None of these formats are compatible with gftools-builder, which requires `.glyphs`, `.ufo`, or `.designspace` sources. No `config.yaml` exists in the repository or in the google/fonts family directory (`ofl/autourone/`).
 
-## Verification
+The librefonts organization is a GitHub mirror of early Google Fonts families. The v1.007 hotfix in google/fonts (2017) was made 3 years after the last upstream commit (2014), suggesting binary modifications were done independently.
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2014-10-17 13:29:59 +0300
-- Commit message: "update .travis.yml"
-- Source files at commit:
-  - `src/AutourOne-Regular-OTF.sfd` (FontForge format)
-  - `src/AutourOne-Regular-TTF.sfd` (FontForge format)
-  - `src/AutourOne-Regular.vfb` (FontLab binary)
-  - Multiple `.ttx` table dumps (not editable sources)
+## Conclusion
 
-## Confidence
-
-**Medium**: The repository URL is verified and the commit is the only one available. However, the repo is a librefonts archive with only SFD and VFB sources, not modern buildable formats. The v1.007 hotfix in google/fonts (2017) was made 3 years after the last upstream commit (2014), suggesting the binary was modified independently. Without source conversion, a config.yaml cannot be meaningfully added.
-
-## Open Questions
-
-- Is there an original upstream repository maintained by Sorkin Type (Eben Sorkin)?
-- Eben Sorkin maintains the `EbenSorkin` GitHub account and is associated with Sorkin Type. It's worth checking if there's a dedicated Autour One repo under that account.
-- Should the SFD sources be converted to UFO or .glyphs format to enable gftools-builder builds?
-- The SFD sources include separate OTF and TTF variants, which is an unusual source structure.
+Repository URL and commit hash are documented in METADATA.pb. No config.yaml is possible without source conversion: the only available sources are SFD (FontForge) and VFB (FontLab) files not compatible with gftools-builder. Status remains missing_config. An investigation into whether Eben Sorkin (Sorkin Type) maintains a separate, more modern source repository for Autour One may be warranted.
