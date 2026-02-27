@@ -8,8 +8,8 @@
     "incomplete_source": 0,
     "no_source": 0,
     "no_upstream_repo": 56,
-    "investigation_reports": 166,
-    "investigation_reports_missing": 1782
+    "investigation_reports": 450,
+    "investigation_reports_missing": 1498
   },
   "families": [
     {
@@ -8548,7 +8548,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gasoekone/METADATA.pb",
@@ -8562,7 +8562,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gayathri/METADATA.pb",
@@ -8841,7 +8841,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gidole/METADATA.pb",
@@ -8855,7 +8855,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gidugu/METADATA.pb",
@@ -8869,7 +8869,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gildadisplay/METADATA.pb",
