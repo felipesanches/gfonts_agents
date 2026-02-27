@@ -9451,9 +9451,9 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "status": "no_config_possible",
+      "notes": "Legacy TTF-only sources processed by custom Python script (process.py), not gftools-builder compatible",
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gungsuhche/METADATA.pb",
@@ -9466,9 +9466,9 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
-      "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "status": "no_config_possible",
+      "notes": "Legacy TTF-only sources processed by custom Python script (process.py), not gftools-builder compatible",
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gupter/METADATA.pb",
@@ -9482,7 +9482,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/gurajada/METADATA.pb",
