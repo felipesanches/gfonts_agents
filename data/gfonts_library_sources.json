@@ -6381,7 +6381,7 @@
       "override_config": false,
       "has_source_block": false,
       "status": "no_upstream_repo",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/denkone/METADATA.pb",
@@ -6395,7 +6395,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/devonshire/METADATA.pb",
@@ -6413,7 +6413,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dhurjati/METADATA.pb",
@@ -6431,7 +6431,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dhyana/METADATA.pb",
@@ -6449,7 +6449,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/didactgothic/METADATA.pb",
@@ -6468,7 +6468,7 @@
         "glyphs",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/digitalnumbers/METADATA.pb",
@@ -6486,7 +6486,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/diphylleia/METADATA.pb",
@@ -6500,7 +6500,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/diplomata/METADATA.pb",
@@ -6514,7 +6514,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/diplomatasc/METADATA.pb",
@@ -6528,7 +6528,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dmmono/METADATA.pb",
@@ -6543,7 +6543,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dmsans/METADATA.pb",
@@ -6557,7 +6557,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dmserifdisplay/METADATA.pb",
@@ -6567,11 +6567,12 @@
       "repository_url": "https://github.com/googlefonts/dm-fonts",
       "commit": "027cea4e4f45827128860a4dec7b9a0852a295d7",
       "branch": null,
-      "config_yaml": "Sans/Source/config.yaml",
+      "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "complete",
-      "has_investigation_report": false
+      "status": "missing_config",
+      "has_investigation_report": true,
+      "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh."
     },
     {
       "path": "ofl/dmseriftext/METADATA.pb",
@@ -6581,11 +6582,12 @@
       "repository_url": "https://github.com/googlefonts/dm-fonts",
       "commit": "027cea4e4f45827128860a4dec7b9a0852a295d7",
       "branch": null,
-      "config_yaml": "Sans/Source/config.yaml",
+      "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "complete",
-      "has_investigation_report": false
+      "status": "missing_config",
+      "has_investigation_report": true,
+      "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh."
     },
     {
       "path": "ofl/dohyeon/METADATA.pb",
@@ -6600,7 +6602,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dokdo/METADATA.pb",
@@ -6614,7 +6616,7 @@
       "override_config": false,
       "has_source_block": false,
       "status": "no_upstream_repo",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/domine/METADATA.pb",
@@ -6628,7 +6630,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/donegalone/METADATA.pb",
@@ -6646,7 +6648,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dongle/METADATA.pb",
@@ -6660,7 +6662,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/doppioone/METADATA.pb",
@@ -6678,7 +6680,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/dorsa/METADATA.pb",
