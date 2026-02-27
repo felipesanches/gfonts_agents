@@ -6893,12 +6893,12 @@
       "license": "OFL",
       "repository_url": "https://github.com/octaviopardo/EBGaramond12",
       "commit": "e608414f52e532b68e2182f96b4ce9db35335593",
-      "branch": null,
+      "branch": "master",
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/economica/METADATA.pb",
