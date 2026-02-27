@@ -1,46 +1,65 @@
-# Baloo Tammudu 2
+# Investigation: Baloo Tammudu 2
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Ek Type
-**METADATA.pb path**: `ofl/balootammudu2/METADATA.pb`
+## Summary
 
-## Source Data
 | Field | Value |
 |-------|-------|
+| Family Name | Baloo Tammudu 2 |
+| Slug | baloo-tammudu-2 |
+| License Dir | ofl |
 | Repository URL | https://github.com/yanone/Baloo2-Variable |
-| Commit | `da523dfa21aa0e376253d61c21e39146dc55702a` |
-| Config YAML | `builder/BalooTammudu2.yaml` |
-| Branch | `master` |
+| Commit Hash | da523dfa21aa0e376253d61c21e39146dc55702a |
+| Config YAML | builder/BalooTammudu2.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
-The repository URL `https://github.com/yanone/Baloo2-Variable` is documented in the METADATA.pb `source` block and confirmed by the gftools-packager commit message in google/fonts PR #3987. The copyright string references the original Ek Type repo `https://github.com/EkType/Baloo2`, but the variable font conversion was done by Yanone in this separate repository.
+## Source Data (METADATA.pb)
 
-## How the Commit Hash Was Identified
-The commit hash `da523dfa21aa0e376253d61c21e39146dc55702a` was identified through the following evidence:
+```
+source {
+  repository_url: "https://github.com/yanone/Baloo2-Variable"
+  commit: "da523dfa21aa0e376253d61c21e39146dc55702a"
+  config_yaml: "builder/BalooTammudu2.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BalooTammudu2[wght].ttf"
+    dest_file: "BalooTammudu2[wght].ttf"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "master"
+}
+```
 
-1. **Submission**: PR #3987 was submitted by @yanone with commit `da523dfa21aa0e376253d61c21e39146dc55702a` (Oct 28, 2021).
-2. **No review issues**: The only comment on the PR was the fontbakery bot report. No regressions were flagged.
-3. **Same-day merge**: PR was merged by @RosaWagner on Oct 29, 2021 (just 1 day after submission).
-4. **No upstream updates**: This family did not have the kerning/glyph issues that affected Chettan 2 and Da 2, so the original commit was used as-is.
+## Investigation
 
-The final merged commit in google/fonts (`ece08a06735a5c407cba20e373f1b1f6e17f590f`) confirms the font was taken from commit `da523df`.
+The METADATA.pb already contains a complete source block. The repository URL points to `yanone/Baloo2-Variable`, which is a fork by type engineer Yanone of the canonical EkType upstream repository (`EkType/Baloo2-Variable`).
 
-Note: Commit `da523df` itself updated the BalooTammudu2[wght].ttf binary, making it the exact commit where this family's font was last rebuilt upstream before onboarding.
+The latest TTF was added in google/fonts commit `ece08a067` (PR #3987, merged 2021-11-25), with commit message:
+> "Baloo Tammudu 2 Version 1.700 taken from the upstream repo https://github.com/yanone/Baloo2-Variable at commit https://github.com/yanone/Baloo2-Variable/commit/da523dfa21aa0e376253d61c21e39146dc55702a."
 
-## How Config YAML Was Resolved
-The config file `builder/BalooTammudu2.yaml` exists at commit `da523df` in the upstream repository. It specifies the source as `../sources/BalooTammudu2.glyphs` with variable font build only. No override config.yaml exists in the google/fonts family directory.
+Notably, the commit `da523dfa` is actually named "Update BalooTammudu2[wght].ttf" in the yanone repo — it is the commit that specifically updated this family's TTF. This is the most recent commit that touched any file in the Baloo2-Variable repository as of the batch onboarding date.
 
-## Verification
-- Commit exists in upstream repo: Yes
-- Commit date: 2021-10-28 17:08:59 +0200
-- Commit message: "Update BalooTammudu2[wght].ttf"
-- Source files at commit: `sources/BalooTammudu2.glyphs`, `builder/BalooTammudu2.yaml`
-- PR #3987 merged by @RosaWagner on 2021-10-29
-- google/fonts commit: `ece08a06735a5c407cba20e373f1b1f6e17f590f`
+The commit `da523dfa21aa0e376253d61c21e39146dc55702a` is confirmed present in the local cache at `upstream_repos/fontc_crater_cache/yanone/Baloo2-Variable`. The commit is also present in `EkType/Baloo2-Variable` (same hash).
 
-## Confidence
-**High**: The commit hash is consistent across all sources: METADATA.pb, gftools-packager message in the PR body, and the google/fonts merge commit. The commit itself directly updated this family's binary, providing an exact match.
+The config file `builder/BalooTammudu2.yaml` exists at commit `da523dfa` and contains:
+```yaml
+sources:
+  - ../sources/BalooTammudu2.glyphs
+outputDir: "../fonts"
+buildTTF: false
+buildOTF: false
+buildWebfont: false
+buildVariable: true
+```
 
-## Open Questions
-None
+This family covers the Telugu script. The source file `sources/BalooTammudu2.glyphs` exists in the repository.
+
+## Conclusion
+
+The source block in METADATA.pb is complete and correct. Repository URL, commit hash, and config_yaml are all properly set and verified. The referenced commit (`da523dfa`) is the HEAD commit of the yanone/Baloo2-Variable repository at the time of onboarding and directly corresponds to this family's TTF update. No action needed.

@@ -1,33 +1,45 @@
-# Bitcount Grid Double
+# Investigation: Bitcount Grid Double
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Petr van Blokland
-**METADATA.pb path**: `ofl/bitcountgriddouble/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bitcount Grid Double |
+| Slug | bitcount-grid-double |
+| License Dir | ofl |
 | Repository URL | https://github.com/petrvanblokland/TYPETR-Bitcount |
-| Commit | `af0818eaeb3b0839806ea19134fc18f317cdcf5a` |
-| Config YAML | Override in `ofl/bitcountgriddouble/config.yaml` |
-| Branch | `main` |
+| Commit Hash | af0818eaeb3b0839806ea19134fc18f317cdcf5a |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL was set in METADATA.pb from the initial onboarding commit `bb009d354` (2025-01-17), authored by Yanone. The commit message states: "Taken from the upstream repo https://github.com/petrvanblokland/TYPETR-Bitcount at commit af0818eaeb3b0839806ea19134fc18f317cdcf5a." This is part of the same Bitcount family project (issue #5468). All 12 Bitcount variants share the same upstream repository.
+```
+source {
+  repository_url: "https://github.com/petrvanblokland/TYPETR-Bitcount"
+  commit: "af0818eaeb3b0839806ea19134fc18f317cdcf5a"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/variable/BitcountGridDouble[CRSV,ELSH,ELXP,slnt,wght].ttf"
+    dest_file: "BitcountGridDouble[CRSV,ELSH,ELXP,slnt,wght].ttf"
+  }
+  branch: "main"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The onboarding commit `bb009d354` in google/fonts (2025-01-17) and the corresponding PR #8959 (merged 2025-06-06) both explicitly reference upstream commit `af0818eaeb3b0839806ea19134fc18f317cdcf5a` (2025-01-13, "Update fixAnchors.py"). The METADATA.pb still records this original onboarding commit, which is consistent.
+The METADATA.pb contains a source block with repository URL and commit hash. No `config_yaml` is set in METADATA.pb.
 
-The font binary `BitcountGridDouble[CRSV,ELSH,ELXP,slnt,wght].ttf` (168,092 bytes) in google/fonts corresponds to the binary at commit `af0818eae` in the upstream repo. The upstream repo later rebuilt fonts at commit `b43573a4c` (part of PR #37, merged as `89e7994f7`), which changed the Grid Double binary to 168,224 bytes. The binary in google/fonts matches the original `af0818eae` version, not the later rebuild.
+The font was added to google/fonts in commit `bb009d354` (January 17, 2025), titled "Bitcount Grid Double: Version 1.0 added". The commit body confirms: "Taken from the upstream repo https://github.com/petrvanblokland/TYPETR-Bitcount at commit https://github.com/petrvanblokland/TYPETR-Bitcount/commit/af0818eaeb3b0839806ea19134fc18f317cdcf5a." This matches the commit hash in the current METADATA.pb.
 
-## How Config YAML Was Resolved
+Commit `af0818eaeb3b` exists in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount` and is dated January 13, 2025 ("Update fixAnchors.py"), just 4 days before the google/fonts addition — confirming this is the correct onboarding commit.
 
-The upstream `sources/config.yaml` only contains `familyName: Bitcount` -- it does not reference the designspace file or specify builds for individual Bitcount variants. Therefore, a local override config.yaml was created in `ofl/bitcountgriddouble/config.yaml` (added by commit `f6c68379a`, 2026-02-16, "Add override config.yaml for 50 font families"). The override contains:
-
+The upstream repo does have a `sources/config.yaml` file (content: `familyName: Bitcount`), but this is a minimal family-name-only file, insufficient as a full gftools-builder config. An override `config.yaml` is present in the google/fonts family directory (`ofl/bitcountgriddouble/config.yaml`) with proper content:
 ```yaml
 sources:
   - sources/Bitcount_Template.designspace
@@ -36,21 +48,8 @@ buildVariable: true
 buildOTF: false
 ```
 
-Since there is a local override, no `config_yaml` field is set in the METADATA.pb `source {}` block, which is correct per policy.
+Per policy, since an override `config.yaml` exists in the google/fonts directory, the `config_yaml` field is correctly omitted from METADATA.pb. The google-fonts-sources tool auto-detects the local override.
 
-## Verification
+## Conclusion
 
-- Commit `af0818eae` exists in upstream repo: Yes
-- Commit date: 2025-01-13 11:46:24 +0100
-- Commit message: "Update fixAnchors.py"
-- Font binary in google/fonts matches upstream binary at `af0818eae`: Yes (168,092 bytes)
-- Designspace file `sources/Bitcount_Template.designspace` exists at commit: Yes
-- Override config.yaml present in google/fonts: Yes
-
-## Confidence
-
-**High**: The repository URL and commit hash are consistently referenced across the onboarding commit message, the PR body (#8959), and METADATA.pb. The font binary size in google/fonts (168,092 bytes) matches the upstream binary at `af0818eae`, confirming the correct onboarding commit. The override config.yaml properly references the designspace source file.
-
-## Open Questions
-
-None. The data is fully consistent and verified.
+The METADATA.pb source block is complete. The commit `af0818eaeb3b0839806ea19134fc18f317cdcf5a` is confirmed as the onboarding commit. An override `config.yaml` is present in the google/fonts family directory. No action needed.

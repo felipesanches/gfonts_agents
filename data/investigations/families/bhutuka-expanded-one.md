@@ -1,34 +1,50 @@
-# Investigation Report: BhuTuka Expanded One
+# Investigation: BhuTuka Expanded One
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | BhuTuka Expanded One |
-| Designer | Erin McLaughlin |
-| License | OFL |
-| Date Added | 2022-01-21 |
+| Slug | bhutuka-expanded-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/erinmclaughlin/BhuTuka-Extended-One |
-| Commit Hash | `ac2ad17bcd23da70b2c63a4ed794cbb7a7ebaac6` |
-| Branch | master |
-| Config YAML | `sources/builder.yaml` |
-| Status | **Complete** |
+| Commit Hash | ac2ad17bcd23da70b2c63a4ed794cbb7a7ebaac6 |
+| Config YAML | sources/builder.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL is documented in the copyright field of the font file itself ("Copyright 2017 The BhuTuka Expanded One Project Authors (https://github.com/erinmclaughlin/BhuTuka-Extended-One)") and was explicitly stated in the gftools-packager commit message and PR body.
+```
+source {
+  repository_url: "https://github.com/erinmclaughlin/BhuTuka-Extended-One"
+  commit: "ac2ad17bcd23da70b2c63a4ed794cbb7a7ebaac6"
+  config_yaml: "sources/builder.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/BhuTukaExpandedOne-Regular.ttf"
+    dest_file: "BhuTukaExpandedOne-Regular.ttf"
+  }
+  branch: "master"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit hash was determined from **PR #4222** in google/fonts, submitted by Yanone (Jens Kutilek). Both the commit message and PR body explicitly state:
+The font was added to google/fonts on 2022-01-28 in commit `b52c85605` (PR #4222) by Yanone (Jens Kutilek), co-authored by Rosalie Wagner. The commit message from the gftools-packager update explicitly states:
 
 > "BhuTuka Expanded One Version 1.000; ttfautohint (v1.8.3) taken from the upstream repo https://github.com/erinmclaughlin/BhuTuka-Extended-One at commit ac2ad17bcd23da70b2c63a4ed794cbb7a7ebaac6."
 
-**Cross-verification**: The upstream repository has only a single commit (`ac2ad17`), which is a merge of PR #4 from Yanone's fork. This is the HEAD of the master branch, making the commit hash trivially verifiable.
+The upstream commit `ac2ad17` is verified locally in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/erinmclaughlin/BhuTuka-Extended-One`. The commit message is: "Merge pull request #4 from yanone/master". This is the only commit in the repository and the HEAD of master, making verification trivial.
 
-## Config YAML Status
-
-The file `sources/builder.yaml` exists at commit `ac2ad17` in the upstream repository. Its contents:
+The config file is named `builder.yaml` (not `config.yaml`) and is located at `sources/builder.yaml`. Its contents at the recorded commit:
 
 ```yaml
 sources:
@@ -41,19 +57,12 @@ buildOTF: false
 buildWebfont: false
 ```
 
-This is a valid gftools-builder configuration targeting the Glyphs source file.
+This is a valid gftools-builder configuration targeting the Glyphs source file `BhuTukaExpandedOne-Regular.glyphs` in the `sources/` directory.
 
-## Verification
+The METADATA.pb source block is fully populated with `repository_url`, `commit`, `config_yaml: "sources/builder.yaml"`, `branch: "master"`, and `files{}` mappings for OFL.txt, DESCRIPTION.en_us.html, and the TTF file.
 
-- **Commit exists in upstream repo**: Yes (it is the only commit and HEAD of master)
-- **Config YAML exists at commit**: Yes (`sources/builder.yaml`)
-- **Font file path matches**: The METADATA.pb references `fonts/ttf/BhuTukaExpandedOne-Regular.ttf`, which is the output path from the builder config
-- **Source block in METADATA.pb**: Complete with repository_url, commit, config_yaml, files mapping, and branch
+The repository URL is also confirmed by the copyright field: "Copyright 2017 The BhuTuka Expanded One Project Authors (https://github.com/erinmclaughlin/BhuTuka-Extended-One)".
 
-## Confidence Level
+## Conclusion
 
-**High** - All data is fully verified. The gftools-packager commit explicitly referenced this exact commit hash, the upstream repo has only one commit making verification trivial, and the builder configuration is present and valid.
-
-## Open Questions
-
-None. This family is fully documented and verified.
+The source metadata is complete. The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` — all correct and verified against the local cached upstream repo. No action needed.

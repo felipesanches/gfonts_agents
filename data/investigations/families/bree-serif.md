@@ -1,49 +1,70 @@
-# Investigation Report: Bree Serif
+# Investigation: Bree Serif
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Bree Serif |
-| Designer | TypeTogether |
-| License | OFL |
-| Date Added | 2011-12-19 |
+| Slug | bree-serif |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/breeserif |
-| Commit Hash | `86684a17aaa88ce2d9d85d77f9e9ce1f64c06462` |
-| Branch | master |
-| Config YAML | N/A (SFD-only sources) |
+| Commit Hash | 86684a17aaa88ce2d9d85d77f9e9ce1f64c06462 |
+| Config YAML | none (SFD-only sources) |
 | Status | missing_config |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/breeserif` was identified from the `librefonts` organization on GitHub, which hosts many libre font projects. It was added to the tracking data and a source block was prepared on branch `sources_info_2026-02-25` (commit `9a14639f3`), though this has not yet been merged to google/fonts main.
+```
+source {
+  repository_url: "https://github.com/librefonts/breeserif"
+  commit: "86684a17aaa88ce2d9d85d77f9e9ce1f64c06462"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit hash `86684a17aaa88ce2d9d85d77f9e9ce1f64c06462` is the only commit in the upstream repository, authored on 2014-10-17 by hash3g with message "update .travis.yml". Since the repo has only one commit, this is definitively the latest (and only) available state.
+### Git History in google/fonts
 
-The font was originally added to google/fonts in the initial commit (`90abd17b4`) and later updated via hotfix in PR #866 (`faaf4889d`: "hotfix-breeserif: v1.002 added"). These early hotfix commits did not include upstream repo or commit hash references.
+The font has three commits in google/fonts:
 
-## Config YAML Status
+1. `faaf4889d` — `hotfix-breeserif: v1.002 added (#866)`
+2. `ff120e059` — `Updating ofl/breeserif/*ttf with nbspace and fsType fixes`
+3. `90abd17b4` — `Initial commit`
 
-- **No `config.yaml` exists** in the upstream repository
-- **No override `config.yaml`** exists in google/fonts
-- The upstream sources are in SFD (FontForge) format only: `src/BreeSerif-Regular-TTF.sfd` and `src/BreeSerif-Regular-OTF.vfb`
-- These formats are not compatible with gftools-builder, so no config.yaml can be created
-- The family is correctly marked as `missing_config` with note "SFD-only sources (FontForge format), not gftools-builder compatible"
+The hotfix commit from PR #866 is the last meaningful update to the TTF files. Its commit message is minimal and does not include upstream repo/commit references. The family was added in the initial commit of the google/fonts repository, predating the gftools-packager workflow.
 
-## Verification
+A separate commit `324bd0aa8` added the source block to METADATA.pb:
 
-1. **Commit exists in upstream**: Confirmed. `86684a17aaa88ce2d9d85d77f9e9ce1f64c06462` is the sole commit in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/breeserif`
-2. **Source format**: SFD and VFB files only - no `.glyphs`, `.ufo`, or `.designspace` files
-3. **No config.yaml possible**: Not gftools-builder compatible due to legacy source format
-4. **METADATA.pb source block**: Currently not present on google/fonts main branch; prepared on branch `sources_info_2026-02-25` with `repository_url` and `commit` only (no `config_yaml` field)
+> Bree Serif: add source block to METADATA.pb
+> - Repo: librefonts/breeserif
+> - Commit: 86684a17 (only commit in repo)
+> - Config: none (SFD-only sources)
+> - Status: missing_config
+> - Confidence: HIGH
 
-## Confidence Level
+### Upstream Repository
 
-**HIGH** - The repo has only one commit, so the hash is unambiguous. The URL is the correct librefonts mirror. The lack of config.yaml is expected since the sources are in FontForge SFD format, which predates the gftools-builder workflow.
+The repo is cached at `upstream_repos/fontc_crater_cache/librefonts/breeserif`. It contains only a single commit: `86684a17aaa88ce2d9d85d77f9e9ce1f64c06462` ("update .travis.yml", authored 2014-10-17 by hash3g).
 
-## Open Questions
+The repository's source files are:
+- `src/BreeSerif-Regular-TTF.sfd` — FontForge SFD format
+- `src/BreeSerif-Regular-OTF.vfb` — FontForge VFB format
+- A collection of `.ttx` decomposed font table files
 
-1. The source block for this family has been prepared but is not yet merged to google/fonts main (pending PR on `sources_info_2026-02-25` branch).
-2. TypeTogether may have more recent sources for Bree Serif in a different format (Glyphs/UFO), but the librefonts repository only contains the legacy SFD sources.
+These are legacy FontForge formats (SFD/VFB) that are **not compatible with gftools-builder**. No `.glyphs`, `.ufo`, or `.designspace` files are present.
+
+### Config YAML Status
+
+No `config.yaml` exists in the upstream repository, and no override `config.yaml` exists in the google/fonts `ofl/breeserif/` directory. Because the sources are in SFD/VFB format only, a valid gftools-builder `config.yaml` cannot be created. The family is correctly marked `missing_config`.
+
+### METADATA.pb Status
+
+The source block was added to METADATA.pb (commit `324bd0aa8` on google/fonts main) with:
+- `repository_url` set correctly
+- `commit` set to `86684a17...` (the only commit in the upstream repo — unambiguous)
+- No `config_yaml` field (correct, since no gftools-builder config is possible)
+
+## Conclusion
+
+No further action needed for source metadata. The source block is complete and correct for what can be documented. The `missing_config` status reflects that the upstream sources are in legacy FontForge format and cannot be rebuilt with gftools-builder. TypeTogether (the designers) may hold more recent Glyphs/UFO sources, but they are not publicly available.

@@ -1,38 +1,44 @@
-# BBH Bartle
+# Investigation: BBH Bartle
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Studio DRAMA
-**METADATA.pb path**: `ofl/bbhbartle/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | BBH Bartle |
+| Slug | bbh-bartle |
+| License Dir | ofl |
 | Repository URL | https://github.com/Studio-DRAMA/BBH |
-| Commit | `b8d40ef62b138be4c7c3dac2de117217f261b24b` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | b8d40ef62b138be4c7c3dac2de117217f261b24b |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/Studio-DRAMA/BBH` is documented in the METADATA.pb `source {}` block. It is also referenced in the copyright string: "Copyright 2025 The BBH Project Authors (https://github.com/Studio-DRAMA/BBH)".
+```
+source {
+  repository_url: "https://github.com/Studio-DRAMA/BBH"
+  commit: "b8d40ef62b138be4c7c3dac2de117217f261b24b"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/BBHBartle-Regular.ttf"
+    dest_file: "BBHBartle-Regular.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-The font was added to google/fonts in commit `7fd17744c` (2025-11-27, "Add Bartle (new name)") along with the METADATA.pb file that already included the repository_url.
+## Investigation
 
-## How the Commit Hash Was Identified
+BBH Bartle was added to google/fonts on 2025-11-27 in commit `7fd17744cf5eaccc62d832e0d171183df8768ac1` ("Add Bartle (new name)") by Emma Marichal. The METADATA.pb already included `repository_url: "https://github.com/Studio-DRAMA/BBH"`. The URL is also referenced in the copyright string.
 
-The commit hash `b8d40ef62b138be4c7c3dac2de117217f261b24b` was added to METADATA.pb in a subsequent enrichment commit (`4fd9e2392`, 2026-02-25, "Add source metadata to 125 METADATA.pb files").
+The commit hash `b8d40ef62b138be4c7c3dac2de117217f261b24b` was added to METADATA.pb in a subsequent enrichment commit (`ec997b1d4`, 2026-02-26, "BBH Bartle: add source block to METADATA.pb"). This commit was identified by inference and binary verification: it is the last upstream commit before the google/fonts onboarding date (dated 2025-11-26, one day prior). The font binary was confirmed byte-identical between the upstream repo at `b8d40ef` and the file added to google/fonts.
 
-This commit was identified by inference: it is the latest commit in the BBH upstream repository dated before the google/fonts onboarding date (2025-11-27). The upstream commit is dated 2025-11-26, just one day before the google/fonts add.
-
-Binary verification confirms the match: the SHA-256 hash of `fonts/ttf/BBHBartle-Regular.ttf` at commit `b8d40ef` in the upstream repo is `f0de1a96b31ed2ce012172dd28d4a5a7c3d4c7fdee84f32f311608ec4eca3431`, which is identical to the font binary added to google/fonts in commit `7fd17744c`.
-
-The upstream commit log around the onboarding period shows `b8d40ef` ("push fonts") was the last commit before the google/fonts add. Subsequent commits (`5d71932`, `3c2301f`, etc.) occurred after the onboarding.
-
-## How Config YAML Was Resolved
-
-The config.yaml is located at `sources/config.yaml` in the upstream repository. This was verified at the recorded commit. The file contains configuration for three BBH font families (Bartle, Bogle, Hegarty):
+The upstream repo `Studio-DRAMA/BBH` hosts all three BBH font families (Bartle, Bogle, Hegarty). The `sources/config.yaml` in the upstream repo covers all three:
 
 ```yaml
 sources:
@@ -50,21 +56,10 @@ includeSourceFixes: true
 cleanUp: true
 ```
 
-The `config_yaml` field was added to METADATA.pb in commit `5ddf312e6` (2026-02-20, "Add config_yaml enrichment for 82 font families"). No override config.yaml exists in the google/fonts family directory.
+The `config_yaml` field in METADATA.pb correctly points to `sources/config.yaml`. No override config.yaml exists in the google/fonts family directory.
 
-## Verification
+The upstream repo has 2 additional commits after the onboarding commit (merge commits `5d71932` and `28579a3`). The repo is cached at `upstream_repos/fontc_crater_cache/Studio-DRAMA/BBH`.
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2025-11-26 14:40:26 +0100
-- Commit message: "push fonts"
-- Source files at commit: `sources/BBH-Bartle.glyphs`, `sources/BBH-Bogle.glyphs`, `sources/BBH-Hegarty.glyphs`, `sources/config.yaml`, `.github/workflows/build.yaml`
-- Font binary match: Confirmed (SHA-256 identical between upstream and google/fonts)
+## Conclusion
 
-## Confidence
-
-**High**: The commit hash is verified by binary comparison of the font file between the upstream repo and google/fonts. The commit is dated one day before the google/fonts onboarding, and it is the latest upstream commit before the add date. The repository URL matches the copyright string. The config.yaml exists at the recorded commit and contains gftools-builder configuration.
-
-## Open Questions
-
-- The BBH upstream repository contains three font families (Bartle, Bogle, Hegarty) sharing a single `config.yaml` with `familyName: "BBH Display"`. This multi-family config may need special handling if individual families need to be rebuilt independently.
-- The repository has received additional commits after onboarding (latest: `5d71932`, 2025-12-04, "Merge pull request #8 from emmamarichal/main"). Any updates to the fonts would need to go through review.
+Status is complete. The METADATA.pb source block has all required fields: `repository_url`, `commit`, `branch`, and `config_yaml`. No action needed.

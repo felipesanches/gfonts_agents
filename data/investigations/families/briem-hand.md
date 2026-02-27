@@ -1,68 +1,86 @@
-# Investigation Report: Briem Hand
+# Investigation: Briem Hand
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Briem Hand |
-| Designer | Gunnlaugur SE Briem, Eben Sorkin |
-| License | OFL |
-| Date Added | 2024-03-27 |
+| Slug | briem-hand |
+| License Dir | ofl |
 | Repository URL | https://github.com/SorkinType/Briem-Hand |
-| Commit Hash | `7b991840508c9a90632354034ed0a72002836c05` |
-| Branch | main |
-| Config YAML | `sources/config.yaml` (in upstream) |
-| Status | Complete |
+| Commit Hash | 7b991840508c9a90632354034ed0a72002836c05 |
+| Config YAML | sources/config.yaml |
+| Status | needs_correction |
+| Confidence | MEDIUM |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/SorkinType/Briem-Hand` is recorded in the METADATA.pb `source {}` block and matches the copyright string. The repo is owned by SorkinType (Eben Sorkin), who is one of the listed designers.
+```
+source {
+  repository_url: "https://github.com/SorkinType/Briem-Hand"
+  commit: "7b991840508c9a90632354034ed0a72002836c05"
+  archive_url: "https://github.com/SorkinType/Briem-Hand/releases/download/v1.004/Briem-Hand-v1.004.zip"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/variable/BriemHand[wght].ttf"
+    dest_file: "BriemHand[wght].ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit hash `7b991840508c9a90632354034ed0a72002836c05` was ported from the fontc_crater targets list in google/fonts commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list").
+### Git History in google/fonts
 
-### Complex Onboarding History
+The font directory has been updated multiple times:
 
-This family has a complex history with multiple versions added to google/fonts:
+1. `379bcfca1` (2024-05-16) — `One more missing join (bf)` — direct TTF edit
+2. `d619ba521` (after 2024-03-28) — `And again` — direct TTF edit
+3. `2beab1628` (after 2024-03-28) — `Fix astroke` — direct TTF edit
+4. `099159dd0` (2023-11-30) — `[gftools-packager] Briem Hand: Version 1.002 added`
+5. `2f2518247` (2024-03-28) — `Briem Hand: Version 1.003 added` (upstream commit: `bd68ecf`)
+6. `6df879b16` (2024-03-27) — `Briem Hand: Version 1.003 added` (upstream commit: `24564101f1`)
+7. `eef42261c` (2024-03-27) — `Briem Hand: Version 1.003 added` (upstream commit: `3f9aa7c9`)
 
-1. **Version 1.003 (first attempt)** - commit `eef42261c` (2024-03-27): upstream commit `3f9aa7c9dab4d104991c127dc7384e6e5d48c0bb`
-2. **Version 1.003 (second attempt)** - commit `6df879b16` (2024-03-28): upstream commit `24564101f1b8b5bd66ead0edf82c2bbef0d2ff3a`
-3. **Version 1.003 (third attempt)** - commit `2f2518247` (2024-03-28): upstream commit `bd68ecf84950b0c2e975716cce88c1b43b99d138`
-4. **Version 1.002** - commit `099159dd0` (2023-11-30): "[gftools-packager] Briem Hand: Version 1.002 added" - upstream commit hash was empty in the message
-5. **Fix astroke** - commit `2beab1628` (2024-05-15): by Simon Cozens, rebuilt font
-6. **And again** - commit `d619ba521` (2024-05-15): by Simon Cozens, another fix
-7. **One more missing join (bf)** - commit `379bcfca1` (2024-05-16): by Simon Cozens, latest font binary change
+The Version 1.003 update went through multiple attempts (commits `eef42261c`, `6df879b16`, `2f2518247`). The final accepted commit `2f2518247` references upstream commit `bd68ecf84950b0c2e975716cce88c1b43b99d138` (dated 2024-03-28, "Remove axis mappings custom parameter").
 
-The METADATA.pb also includes an `archive_url` field pointing to release v1.004: `https://github.com/SorkinType/Briem-Hand/releases/download/v1.004/Briem-Hand-v1.004.zip`
+After the 1.003 packager update, three manual TTF edits were made directly to `ofl/briemhand/BriemHand[wght].ttf` without a gftools-packager run (commits `2beab1628`, `d619ba521`, `379bcfca1`).
 
-### Analysis of the Recorded Commit
+### METADATA.pb Commit Hash History
 
-The recorded commit `7b99184` is dated 2024-10-30 ("Missing metrics") in the upstream repo. This is **after** the last font binary change in google/fonts (2024-05-16). The commit was sourced from fontc_crater targets, which may reference a different (more recent) upstream state than what was actually used for the font binaries currently in google/fonts.
+The METADATA.pb was modified by commit `19cdcec59` (`[Batch 1/4] port info from fontc_crater targets list`, 2025-03-31), which changed the commit field from `68fedd7eb5d65c2c1490300719ef8b1fa51fbcd5` to `7b991840508c9a90632354034ed0a72002836c05` and added `config_yaml: "sources/config.yaml"`. This batch update ported data from the fontc_crater targets list.
 
-The font binary was last modified by Simon Cozens directly on google/fonts (commits 2beab1628, d619ba521, 379bcfca1 in May 2024), suggesting the font may have been rebuilt from sources rather than copied from pre-built upstream binaries.
+Commit timeline analysis:
+- `bd68ecf` (2024-03-28): actual upstream commit used for the 1.003 packager run
+- `68fedd7` (2024-05-10): "Bump version to 1.004" — set as METADATA.pb commit before the batch update, but NEWER than the actual 1.003 onboarding
+- `7b991840` (2024-10-30): "Missing metrics" — current METADATA.pb commit, MUCH NEWER than the 1.003 onboarding
 
-## Config YAML Status
+The `archive_url` points to `v1.004`, which corresponds to commit `68fedd7`, not the actual onboarding commit.
 
-- `sources/config.yaml` exists in the upstream repository at the recorded commit
-- It is correctly referenced in the METADATA.pb `config_yaml` field
-- No override config.yaml exists in google/fonts
-- The config.yaml is extensive, defining a complex recipe-based build that includes multiple font families (Briem Hand, Briem Hand Guides, Briem Classic) with various weights
+### Upstream Repository
 
-## Verification
+The repo is cached at `upstream_repos/fontc_crater_cache/SorkinType/Briem-Hand`. All three commits (`7b991840`, `68fedd7`, `bd68ecf`) exist and were verified. The `sources/config.yaml` file exists at all three commits.
 
-1. **Commit exists in upstream**: Confirmed. `7b991840508c9a90632354034ed0a72002836c05` exists in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/SorkinType/Briem-Hand`
-2. **Commit date**: 2024-10-30, which is after the last font file change in google/fonts (2024-05-16)
-3. **Config YAML valid**: `sources/config.yaml` exists at this commit with a recipe-based build from `BriemHand.glyphs`
-4. **3 newer commits exist**: The upstream repo has 3 commits after the recorded one (latest: `a346311`)
-5. **fontc_crater source**: The commit hash was sourced from fontc_crater targets
+The `sources/config.yaml` is a complex fontprimer-based recipe that builds multiple variants of Briem Hand (variable, statics, and "Classic Briem Guides" educational variants).
 
-## Confidence Level
+### Assessment
 
-**MEDIUM** - The repository URL is correct. The commit hash `7b99184` exists and has a valid config.yaml, but it postdates the last font binary update in google/fonts (May 2024 vs October 2024). The fontc_crater target may reference a commit used for CI testing rather than the exact commit that produced the currently deployed binaries. The font was actively modified directly in google/fonts by Simon Cozens (May 2024), which further complicates tracing the exact source state.
+The current METADATA.pb commit (`7b991840`, October 2024) is significantly newer than the actual onboarding commit. The TTFs currently in google/fonts were based on the 1.003 packager run (commit `bd68ecf`, March 2024) plus subsequent manual edits. The `archive_url` references v1.004 which does not correspond to the actual onboarded version.
 
-## Open Questions
+This situation is complex:
+- The manual post-packager edits (commits `2beab1628`, `d619ba521`, `379bcfca1`) mean the current TTFs don't correspond to any single upstream commit
+- The `config_yaml` field is correctly set to `sources/config.yaml` (which exists at the referenced commit)
+- The commit hash needs correction but the "correct" hash is ambiguous given the post-packager manual edits
 
-1. Which upstream commit was actually used to build the font binaries currently in google/fonts? The May 2024 Simon Cozens commits suggest direct rebuilds, possibly from a state between the v1.003 commits (March 2024) and the recorded commit (October 2024).
-2. The archive_url points to v1.004 - is this the version currently deployed, or should it match a specific upstream commit?
-3. Should the commit hash be updated to match the state that actually produced the current binaries, or should it track the fontc_crater target reference?
+## Conclusion
+
+The source block needs correction. The commit hash `7b991840` (October 2024) is newer than the actual onboarding. The most defensible onboarding commit is `bd68ecf84950b0c2e975716cce88c1b43b99d138` (March 28, 2024), which is the upstream commit explicitly referenced in the final accepted 1.003 packager commit. However, the subsequent manual TTF edits to google/fonts (through May 2024) are not reflected in any upstream commit. This should be flagged for review by Eben Sorkin (SorkinType), the font engineer who managed the onboarding.

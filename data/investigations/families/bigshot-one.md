@@ -1,56 +1,59 @@
-# Investigation Report: Bigshot One
+# Investigation: Bigshot One
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Bigshot One |
-| Designer | Gesine Todt |
-| License | OFL |
-| Date Added | 2011-05-04 |
+| Slug | bigshot-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/bigshotone |
-| Commit Hash | `b8d1fa459ee9a43fbe1d7fd07b570878206bd6d5` |
-| Branch | master |
-| Config YAML | N/A (needs config.yaml) |
-| Status | **Missing config** (has UFO, needs config.yaml) |
+| Commit Hash | b8d1fa459ee9a43fbe1d7fd07b570878206bd6d5 |
+| Config YAML | none (no config.yaml in repo; UFO source present but no config) |
+| Status | missing_config |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/bigshotone` was identified from the librefonts organization on GitHub, which hosts archived copies of many Google Fonts. This is a standard librefonts mirror repository.
+```
+source {
+  repository_url: "https://github.com/librefonts/bigshotone"
+  commit: "b8d1fa459ee9a43fbe1d7fd07b570878206bd6d5"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The upstream repository has only **one commit** (`b8d1fa4 update .travis.yml`), making the commit hash trivially the only option. The font was last updated in google/fonts via PR #857 ("hotfix-bigshotone: v1.001 added") by Marc Foley on 2017-08-07.
+### Repository URL
 
-## Config YAML Status
+The repository URL `https://github.com/librefonts/bigshotone` is already documented in METADATA.pb. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bigshotone`.
 
-**No config.yaml exists** in the upstream repository. However, unlike Bigelow Rules, this repository contains a UFO source file that could potentially be used with gftools-builder:
+### Commit Hash
 
-- `src/BigshotOne.ufo/` - UFO source directory (contains fontinfo.plist, features.fea, glyphs/, groups.plist, kerning.plist)
-- `src/BigshotOne-TTF.sfd` - FontForge SFD
-- `src/BigshotOne.vfb` - FontLab VFB (proprietary format)
-- `src/BigshotOne-TTF.vfb` - FontLab VFB
+The METADATA.pb records commit `b8d1fa459ee9a43fbe1d7fd07b570878206bd6d5`. The upstream repo shows:
 
-The UFO file could be targeted by a config.yaml for gftools-builder, but no such configuration has been created yet. An override config.yaml could be placed in the google/fonts family directory.
+```
+b8d1fa4 update .travis.yml
+```
 
-## Verification
+This is a shallow clone with one visible commit. The commit `b8d1fa4` matches the hash in METADATA.pb. The font was last updated in google/fonts via commit `c49ea1306` ("hotfix-bigshotone: v1.001 added (#857)") dated 2017-08-07.
 
-- **Commit exists in upstream repo**: Yes (it is the only commit)
-- **Config YAML exists at commit**: No
-- **Buildable sources available**: Yes (UFO)
-- **Source block in METADATA.pb**: Not yet in the upstream google/fonts (pending PR)
-- **Override config.yaml in google/fonts**: No
+### Source Files
 
-## Google Fonts History
+The upstream repo contains a mix of source formats in `src/`:
 
-1. `90abd17b4` - Initial commit (part of the original google/fonts repo)
-2. `c49ea1306` - PR #857: "hotfix-bigshotone: v1.001 added" by m4rc1e (2017-08-07) - last font binary update; renamed from `BigshotOne.ttf` to `BigshotOne-Regular.ttf`
-3. Various metadata updates (stroke, classifications, languages)
+- `src/BigshotOne.ufo/` — UFO format (gftools-compatible)
+- `src/BigshotOne-TTF.sfd` — FontForge SFD format
+- `src/BigshotOne-TTF.vfb` — FontLab VFB format
+- `src/BigshotOne.vfb` — FontLab VFB format
+- Various TTX decomposition files and OTF TTX files
 
-## Confidence Level
+A UFO source file is present (`BigshotOne.ufo`), which is supported by gftools-builder. However, there is no `config.yaml` in the repository to configure the build.
 
-**High** for URL and commit hash (single-commit repo, standard librefonts mirror). **Actionable** for config.yaml - the UFO source exists and a config.yaml could be written.
+### Config YAML
 
-## Open Questions
+No `config.yaml` exists in the upstream repo and no override exists in the google/fonts family directory. While the UFO source could be used with gftools-builder, no configuration file is present.
 
-- A config.yaml needs to be created (either in the upstream repo or as an override in google/fonts) targeting `src/BigshotOne.ufo` to enable gftools-builder compilation. The quality and completeness of the UFO source should be verified before creating the config.
+## Conclusion
+
+The source block in METADATA.pb has repository URL and commit hash. A UFO source file exists in the upstream repo that could potentially be built with gftools-builder, but no `config.yaml` is present to configure the build. Status is `missing_config`. An override `config.yaml` could be created in the google/fonts family directory to enable building from `src/BigshotOne.ufo`.

@@ -1,37 +1,54 @@
-# Baloo Bhaijaan 2
+# Investigation: Baloo Bhaijaan 2
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Ek Type
-**METADATA.pb path**: `ofl/baloobhaijaan2/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Baloo Bhaijaan 2 |
+| Slug | baloo-bhaijaan-2 |
+| License Dir | ofl |
 | Repository URL | https://github.com/EkType/Baloo2-Variable |
-| Commit | da4090c1dd5798a3e72d7138e379ee1f94d6349c |
+| Commit Hash | da4090c1dd5798a3e72d7138e379ee1f94d6349c |
 | Config YAML | builder/BalooBhaijaan2.yaml |
-| Branch | master |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/EkType/Baloo2-Variable` is documented in the METADATA.pb `source` block. Unlike the other Baloo 2 families (Baloo 2, Baloo Bhai 2, Baloo Bhaina 2) which reference the yanone fork, Baloo Bhaijaan 2 correctly points to the EkType parent repository. This is because Baloo Bhaijaan 2 was onboarded later (Version 1.701, September 2022) compared to the others (Version 1.700, October-November 2021), and by that time the URL had been corrected to point to the canonical upstream.
+```
+source {
+  repository_url: "https://github.com/EkType/Baloo2-Variable"
+  commit: "da4090c1dd5798a3e72d7138e379ee1f94d6349c"
+  config_yaml: "builder/BalooBhaijaan2.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BalooBhaijaan2[wght].ttf"
+    dest_file: "BalooBhaijaan2[wght].ttf"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "master"
+}
+```
 
-PR #5216 ("Baloo Bhaijaan 2: Version 1.701 added") confirms: "taken from the upstream repo https://github.com/EkType/Baloo2-Variable at commit da4090c1dd5798a3e72d7138e379ee1f94d6349c."
+## Investigation
 
-## How the Commit Hash Was Identified
+The METADATA.pb contains a complete source block. Unlike the other 9 Baloo 2 variants, this family's source block points to the canonical `EkType/Baloo2-Variable` repository (rather than `yanone/Baloo2-Variable`), and references a later commit.
 
-The commit `da4090c1dd5798a3e72d7138e379ee1f94d6349c` was identified from the google/fonts commit `d3d979f3d` (2022-09-13) with message: "[gftools-packager] Baloo Bhaijaan 2: Version 1.701 added (#5216)". The commit body states: "Baloo Bhaijaan 2 Version 1.701 taken from the upstream repo https://github.com/EkType/Baloo2-Variable at commit da4090c1dd5798a3e72d7138e379ee1f94d6349c."
+**Two-stage update history:**
 
-Cross-verification: The upstream commit `da4090c` is dated 2022-09-09 18:21:28 +0530, while the google/fonts merge was on 2022-09-13, giving a 4-day gap. This is consistent with a rapid onboarding cycle.
+1. **First onboarding** — google/fonts commit `a6eb370bf` (PR #3979, 2021-11-25): Version 1.700 added from `yanone/Baloo2-Variable` at commit `da523dfa`. At this point there was no source block in METADATA.pb.
 
-The upstream commit `da4090c` is a merge commit: "Merge pull request #5 from yanone/master". This merge brought in commit `29ddd81` ("Regenerated fonts as 1.701 without data changes") from the yanone fork. So the Version 1.701 update was done by yanone regenerating the fonts, then merging that work into the EkType parent repo.
+2. **Updated to v1.701** — google/fonts commit `d3d979f3d` (PR #5216, 2022-09-13): Version 1.701 added by Yanone himself from `EkType/Baloo2-Variable` at commit `da4090c1dd5798a3e72d7138e379ee1f94d6349c`. This update added the source block to METADATA.pb for the first time and switched the repository reference to the canonical EkType upstream.
 
-## How Config YAML Was Resolved
+The commit `da4090c1` is confirmed present in the local cache at `upstream_repos/fontc_crater_cache/EkType/Baloo2-Variable`. The commit message reads "Merge pull request #5 from yanone/master" (dated 2022-09-09), and is a merge commit of Yanone's regenerated 1.701 fonts into the canonical EkType repository.
 
-The config file `builder/BalooBhaijaan2.yaml` is specified in the METADATA.pb `source` block and was verified to exist at commit `da4090c`. Contents:
-
+The config file `builder/BalooBhaijaan2.yaml` exists at commit `da4090c1` and contains:
 ```yaml
 sources:
   - ../sources/BalooBhaijaan2.glyphs
@@ -42,21 +59,10 @@ buildWebfont: false
 buildVariable: true
 ```
 
-No override config.yaml exists in the google/fonts family directory (`ofl/baloobhaijaan2/`).
+This family covers the Arabic script. The source file `sources/BalooBhaijaan2.glyphs` exists in the repository.
 
-## Verification
+This family stands out as the only one of the 10 Baloo 2 variants where the source block references the canonical `EkType/Baloo2-Variable` repo. The others still reference `yanone/Baloo2-Variable` (the fork). Since `da523dfa` is present in the EkType repo too, all families could in principle be updated to use the canonical EkType URL — but that is outside the scope of this investigation.
 
-- **Commit exists in upstream repo**: Yes, verified in `/mnt/shared/upstream_repos/fontc_crater_cache/EkType/Baloo2-Variable/`
-- **Commit date**: 2022-09-09 18:21:28 +0530
-- **Commit message**: "Merge pull request #5 from yanone/master"
-- **Source files at commit**: `sources/BalooBhaijaan2.glyphs` (among 10 family .glyphs files)
-- **Font files at commit**: `fonts/variable/BalooBhaijaan2[wght].ttf` (among 10 family variable fonts)
-- **Builder config at commit**: `builder/BalooBhaijaan2.yaml` (confirmed present)
+## Conclusion
 
-## Confidence
-
-**HIGH**: All data is fully consistent. The METADATA.pb correctly points to the EkType parent repo (not the yanone fork). The commit hash matches the gftools-packager message. The commit date is 4 days before the google/fonts merge, which is consistent with normal processing time. The `da4090c` merge commit is the tip of the EkType repo's master branch, representing the latest state at onboarding time.
-
-## Open Questions
-
-None. This family's source data is correctly documented and verified.
+The source block in METADATA.pb is complete and correct. Repository URL, commit hash, and config_yaml are all properly set and verified. This family was updated to v1.701 in PR #5216 and now correctly references the canonical EkType repository. No action needed.

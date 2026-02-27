@@ -1,46 +1,64 @@
-# Investigation Report: Cairo Play
+# Investigation: Cairo Play
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Cairo Play |
-| Designer | Mohamed Gaber, Accademia di Belle Arti di Urbino |
-| License | OFL |
+| Slug | cairo-play |
+| License Dir | ofl |
 | Repository URL | https://github.com/Gue3bara/Cairo |
-| Commit Hash | `73d16933c6a0f341c27a69e401da83dcb0d53114` |
-| Branch | master |
-| Config YAML | `sources/cairoplay.yaml` |
+| Commit Hash | 73d16933c6a0f341c27a69e401da83dcb0d53114 |
+| Config YAML | sources/cairoplay.yaml |
 | Status | complete |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/Gue3bara/Cairo` is recorded in the METADATA.pb `source {}` block and is consistent with the copyright notice in the font metadata: "Copyright 2009 The Cairo Project Authors (https://github.com/Gue3bara/Cairo)". The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Gue3bara/Cairo/`.
+```
+source {
+  repository_url: "https://github.com/Gue3bara/Cairo"
+  commit: "73d16933c6a0f341c27a69e401da83dcb0d53114"
+  config_yaml: "sources/cairoplay.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/CairoPlay/variable/CairoPlay[slnt,wght].ttf"
+    dest_file: "CairoPlay[slnt,wght].ttf"
+  }
+  branch: "master"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit `73d16933c6a0f341c27a69e401da83dcb0d53114` is recorded in METADATA.pb. It was explicitly referenced in the gftools-packager commit `27c225737` (PR #5972), which states:
+Cairo Play is a variable font (wght 200-1000, slnt -11 to +11) by Mohamed Gaber and Accademia di Belle Arti di Urbino. It was onboarded via gftools-packager.
 
-> Cairo Play Version 3.130;gftools[0.9.24] taken from the upstream repo https://github.com/Gue3bara/Cairo at commit https://github.com/Gue3bara/Cairo/commit/73d16933c6a0f341c27a69e401da83dcb0d53114.
+The last binary update was in google/fonts commit `27c225737` ("Cairo Play: Version 3.130;gftools[0.9.24] added", PR #5972, Yanone, 2023-03-08). The commit message explicitly states: "Cairo Play Version 3.130;gftools[0.9.24] taken from the upstream repo https://github.com/Gue3bara/Cairo at commit https://github.com/Gue3bara/Cairo/commit/73d16933c6a0f341c27a69e401da83dcb0d53114."
 
-The PR was authored by yanone. This commit corresponds to "Merge pull request #94 from yanone/master" in the upstream repo and is the HEAD of the master branch, confirming it was the latest upstream commit at the time of onboarding.
+The `config_yaml` field was added later by Felipe Sanches in commit `53995c52a` ("[METADATA.pb] Populate font sources related fields for a few font families.", 2025-03-25), which also removed the `branch: "master"` field (later restored in commit `f19b6da7d`).
 
-## Config YAML Status
+The upstream repo is cached at `upstream_repos/fontc_crater_cache/Gue3bara/Cairo/`. The commit `73d16933` (message: "Merge pull request #94 from yanone/master", Mohamed Gaber, 2023-03-06) was verified to exist. The config file `sources/cairoplay.yaml` was verified to exist at the recorded commit with contents:
 
-The config file `sources/cairoplay.yaml` exists at the recorded commit in the upstream repo. It contains gftools-builder configuration for building the variable font `CairoPlay[slnt,wght].ttf` from `CairoPlay.glyphs` source.
+```yaml
+buildStatic: false
+buildVariable: true
+buildTTF: true
+buildOTF: false
+buildWebfont: false
+outputDir: ../fonts/CairoPlay
+sources:
+  - CairoPlay.glyphs
+axisOrder:
+  - slnt
+  - wght
+familyName: "Cairo Play"
+```
 
-## Verification
+This is a variable font built from a Glyphs source. The `config_yaml` field in METADATA.pb correctly points to `sources/cairoplay.yaml` in the upstream repository.
 
-- **Commit exists in upstream repo**: Yes, verified
-- **Config YAML exists at commit**: Yes, `sources/cairoplay.yaml` confirmed
-- **Binary file path matches**: Yes, `fonts/CairoPlay/variable/CairoPlay[slnt,wght].ttf` is built to the output directory specified in the config
-- **PR reference cross-verified**: PR #5972 explicitly cites the commit hash
-- **gftools-packager commit message**: Matches the recorded commit hash
+## Conclusion
 
-## Confidence Level
-
-**High** - All data is consistent and cross-verified through the gftools-packager commit message, PR #5972, and the upstream repository.
-
-## Open Questions
-
-None. All source data is complete and verified.
+All source metadata is complete and verified. The repository URL, commit hash, and config_yaml path are all in place and confirmed by the gftools-packager commit message (PR #5972). Status is `complete`.

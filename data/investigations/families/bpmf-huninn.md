@@ -1,64 +1,61 @@
-# Investigation Report: Bpmf Huninn
+# Investigation: Bpmf Huninn
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Bpmf Huninn |
-| Designer | But Ko, justfont |
-| License | OFL |
-| Date Added | 2026-01-30 |
+| Slug | bpmf-huninn |
+| License Dir | ofl |
 | Repository URL | https://github.com/ButTaiwan/bpmfvs |
-| Commit Hash | `20f741c18bb917b63576293906c01e82ddfce032` |
-| Config YAML | None |
+| Commit Hash | 20f741c18bb917b63576293906c01e82ddfce032 |
+| Config YAML | none |
 | Status | missing_config |
+| Confidence | MEDIUM |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL was set in METADATA.pb by Aaron Bell during the original onboarding (commit `423e25002`, 2026-01-30). The METADATA.pb `source` block points to `https://github.com/ButTaiwan/bpmfvs`.
+```
+source {
+  repository_url: "https://github.com/ButTaiwan/bpmfvs"
+  commit: "20f741c18bb917b63576293906c01e82ddfce032"
+}
+```
 
-However, the PR (#10171) reveals that the fonts were actually built in Aaron Bell's fork at `https://github.com/aaronbell/bpmfvs`, with the intention of transitioning back to the main `ButTaiwan/bpmfvs` repository after other fonts were updated.
+## Investigation
 
-## How Commit Determined
+Bpmf Huninn is a Traditional Chinese font with Bopomofo phonetic annotations, designed by But Ko and justfont, added to Google Fonts on 2026-01-30. It is one of three Bpmf family variants (alongside Iansui and Zihi Kai Std) from the same upstream repository.
 
-The commit hash `20f741c18bb917b63576293906c01e82ddfce032` was added to METADATA.pb by our automation (commit `9a14639f3`, 2026-02-25). This commit exists in both `ButTaiwan/bpmfvs` and `aaronbell/bpmfvs`.
+### Git History
 
-**Critical issue**: This commit (`20f741c`) is the HEAD of the `ButTaiwan/bpmfvs` repo from 2025-12-13 ("Update build-ttf.yml"). But the fonts were built in `aaronbell/bpmfvs`, which forked from this point and added many new commits during Jan-Feb 2026. The actual font binaries were built from commits in the fork that are newer than this hash.
+The font was initially added by google/fonts commit `423e25002` (2026-01-30) via PR #10171 by Aaron Bell. The font binary was later updated by commit `15555bd43` (2026-02-09, "Update BpmfHuninn-Regular.ttf - Updating with various fixes"). Further metadata-only fixes followed (`d0ec3026e`, `cc204af75`, `d6f37786b`, `308c0a0a5`).
 
-The onboarding timeline:
-1. Initial onboarding: `423e25002` (2026-01-30) by Aaron Bell
-2. Font binary updated: `15555bd43` (2026-02-09) "Update BpmfHuninn-Regular.ttf - Updating with various fixes"
-3. Further metadata fixes: `d0ec3026e`, `cc204af75`, `d6f37786b`, `308c0a0a5` (formatting and string updates)
+The source block was added by google/fonts commit `928c4bbe9` ("Bpmf Huninn: add source block to METADATA.pb"), which also added an `upstream_info.md` file documenting the investigation.
 
-The font binary was updated on Feb 9, 2026. In `aaronbell/bpmfvs`, there are many commits from that date. The actual build commit is unclear but is certainly NOT `20f741c`.
+The commit hash `20f741c18bb917b63576293906c01e82ddfce032` was added by automation commit `9a14639f3` (2026-02-25).
 
-## Config YAML Status
+### Upstream Repository
 
-**No config.yaml exists** and none can be created for gftools-builder.
+The bpmfvs repo (`ButTaiwan/bpmfvs`) is not cached locally (not found in `/mnt/shared/upstream_repos/fontc_crater_cache/ButTaiwan/`). The fonts were actually built in Aaron Bell's fork at `https://github.com/aaronbell/bpmfvs`, with the intent to transition back to `ButTaiwan/bpmfvs` after other fonts are updated.
+
+The recorded commit `20f741c18bb` is the HEAD of `ButTaiwan/bpmfvs` from 2025-12-13 ("Update build-ttf.yml"). However, the actual font binary was built from a commit in `aaronbell/bpmfvs` from around 2026-02-09 — at least 2 months later. The recorded commit hash is therefore incorrect for the actual binary.
+
+### Build System
 
 The Bpmf project uses a custom Ruby-based build system (`make_font.rb`). The build process:
-1. Takes base font TTFs as input (e.g., `srcfonts/Huninn-Regular.ttf` from github.com/justfont/Huninn)
+1. Takes base font TTFs as input (Huninn base from `github.com/justfont/Huninn`)
 2. Uses `otfccdump`/`otfccbuild` to manipulate font data
 3. Adds Bopomofo phonetic annotations via IVS (Ideographic Variation Sequences)
-4. Produces output fonts in `fonts/` directory
 
-This is fundamentally different from gftools-builder and cannot be represented with a config.yaml.
+This is fundamentally incompatible with gftools-builder. No config.yaml can be created for this family.
 
-## Verification
+### Verification
 
-- **Repository accessible**: Yes, both `ButTaiwan/bpmfvs` and `aaronbell/bpmfvs` are accessible
-- **Commit exists in both repos**: Yes, `20f741c` exists in both (it is the HEAD of ButTaiwan/bpmfvs)
-- **Commit is correct for current binary**: No - the current binary was built from a later commit in `aaronbell/bpmfvs`
-- **Local cache**: Neither repo is cached locally
-- **Source files**: Custom build system (Ruby-based), no standard font sources
+- Repository URL: Correct as canonical upstream (but fonts were actually built from Aaron Bell's fork)
+- Commit hash: Incorrect — `20f741c` predates the actual build by ~2 months; the correct commit is in `aaronbell/bpmfvs` around 2026-02-09
+- Config YAML: Cannot be created (custom Ruby build system, incompatible with gftools-builder)
+- Local cache: Neither `ButTaiwan/bpmfvs` nor `aaronbell/bpmfvs` is cached locally
 
-## Confidence Level
+## Conclusion
 
-**MEDIUM** - The repository URL is reasonable (points to the canonical upstream), but the recorded commit hash is incorrect. The actual build commit should be from `aaronbell/bpmfvs` around Feb 9, 2026. The config.yaml will never exist for this project due to its custom build system.
-
-## Open Questions
-
-1. **Which exact commit in aaronbell/bpmfvs was used to build the current font binary?** Aaron Bell should be asked to clarify.
-2. **Should the repository_url point to aaronbell/bpmfvs or ButTaiwan/bpmfvs?** The PR says it will transition to ButTaiwan, but that hasn't happened yet.
-3. **Will this project ever have a config.yaml?** Given the custom Ruby-based build system, this seems unlikely without a complete rewrite of the build process.
-4. The `upstream_sources.json` in the repo reveals that the Huninn base font comes from `github.com/justfont/Huninn`, adding a dependency chain.
+The repository URL points to the canonical upstream but is not the repo from which the fonts were actually built. The commit hash is incorrect — the actual build was performed in Aaron Bell's fork (`aaronbell/bpmfvs`) from a commit around 2026-02-09. Aaron Bell should be asked to confirm the exact commit used. No config.yaml can ever be created for this family due to its custom Ruby-based build system. The status should remain `missing_config` permanently.

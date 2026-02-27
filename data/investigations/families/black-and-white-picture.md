@@ -1,58 +1,36 @@
-# Investigation Report: Black And White Picture
+# Investigation: Black And White Picture
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Black And White Picture |
-| Designer | AsiaSoft Inc. |
-| License | OFL |
-| Date Added | 2018-02-27 |
-| Repository URL | None |
-| Commit | None |
-| Branch | None |
-| Config YAML | None |
-| Status | no_upstream_repo |
+| Slug | black-and-white-picture |
+| License Dir | ofl |
+| Repository URL | unknown |
+| Commit Hash | unknown |
+| Config YAML | unknown |
+| Status | missing_url |
+| Confidence | LOW |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-No upstream repository URL has been found. The METADATA.pb has no `source {}` block.
+```
+No source block
+```
 
-### Search for upstream repository
+## Investigation
 
-The font was added as part of PR #1459 ("korean families r01: added") by Marc Foley on 2018-03-13. The PR body states: "Korean Font binaries have been mastered by Aaron Bell, https://www.sajatypeworks.com". This indicates Aaron Bell (Saja Type Works) was the font engineer who prepared the binaries, but the source files likely came from AsiaSoft Inc.
+The METADATA.pb has no source block at all — no repository URL, no commit hash, no config_yaml.
 
-The copyright string reads: "Copyright (c) 1992-2018 AsiaSoft Inc. Seoul Korea All Rights Reserved." This is a corporate font from AsiaSoft Inc., a Korean company. No public GitHub repository or other source repository could be identified for this font.
+The font was added to google/fonts in commit `16680f868` (March 13, 2018, PR #1459, "korean families r01: added"). This was a bulk addition of multiple Korean font families with no upstream reference information included.
 
-A search of the upstream repo cache found no repositories related to "blackandwhitepicture" or "asiasoft".
+The copyright string in METADATA.pb reads: "Copyright (c) 1992-2018 AsiaSoft Inc. Seoul Korea All Rights Reserved." This indicates the font was created by AsiaSoft Inc., a commercial Korean type foundry. No GitHub or publicly accessible source repository was found — a search of the upstream repos cache at `/mnt/shared/upstream_repos/fontc_crater_cache/` found no AsiaSoft-related repositories.
 
-## How Commit Determined
+The google/fonts family directory (`ofl/blackandwhitepicture/`) contains only the TTF binary, DESCRIPTION, METADATA.pb, and OFL.txt — no upstream.yaml, no source references of any kind.
 
-No commit hash exists because no upstream repository has been identified.
+Given that this is a commercial Korean foundry font from 1992-2018, it is likely that the source files (if any exist in a form usable for rebuilding) are proprietary to AsiaSoft Inc. No public upstream repository has been identified.
 
-## Config YAML Status
+## Conclusion
 
-No config.yaml exists. The font binary (`BlackAndWhitePicture-Regular.ttf`) is a static TTF file (not a variable font), and no source files (`.glyphs`, `.ufo`, `.designspace`, `.sfd`) are known to exist publicly.
-
-## Verification
-
-- **Upstream repo accessible**: No upstream repo found
-- **Font binary history**: The font binary was only modified once after the initial add - in a batch metadata deploy operation (76adaf1d2). The original binary from the 2018 Korean batch has remained unchanged.
-
-## Confidence Level
-
-**HIGH** (for the no_upstream_repo status) - This appears to be a corporate font from AsiaSoft Inc. with no public source repository. The copyright dates back to 1992, suggesting this is a proprietary font released under OFL for Google Fonts without public source files.
-
-## Open Questions
-
-1. Does AsiaSoft Inc. have any public repository for this font? The company appears to specialize in Korean fonts but no GitHub or other public VCS presence was found.
-2. Were source files ever provided to Google Fonts team privately? The font was "mastered by Aaron Bell" which may mean he processed received binaries.
-
-## Notes
-
-- This is one of a batch of Korean fonts added in March 2018 by Marc Foley (PR #1459), mastered by Aaron Bell.
-- The batch included many Korean fonts from various designers/companies.
-- The font is a display font with a scratchy, nostalgic black-and-white photo texture.
-- The DESCRIPTION mentions a matching Latin font (Flavors) built into the font.
-- At 9.6 MB, this is a large font file (typical for Korean fonts with thousands of glyphs).
-- Without a public upstream repo, this family cannot be rebuilt from source.
+No upstream source information is available. The font comes from AsiaSoft Inc., a commercial Korean type foundry, and no public repository has been found. This family likely cannot have a source block added without direct contact with AsiaSoft Inc. Status is `missing_url` with LOW confidence that a public upstream repo exists.

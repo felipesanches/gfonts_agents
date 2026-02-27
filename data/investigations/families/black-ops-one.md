@@ -1,33 +1,45 @@
-# Black Ops One
+# Investigation: Black Ops One
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: James Grieshaber, Eben Sorkin
-**METADATA.pb path**: `ofl/blackopsone/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Black Ops One |
+| Slug | black-ops-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/SorkinType/Black-Ops |
-| Commit | `c955bed3517ad3d8606a8b0105d27538309fb70d` |
-| Config YAML | Override config.yaml in google/fonts |
-| Branch | `main` |
+| Commit Hash | c955bed3517ad3d8606a8b0105d27538309fb70d |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/SorkinType/Black-Ops` was already present in the METADATA.pb `source { repository_url }` field. It is also confirmed by the copyright string in the font file ("Copyright 2022 The PinyonScript Project Authors (https://github.com/SorkinType/Black-Ops)") and by the gftools-packager commit `d50a0d29b` in google/fonts (PR #4995), which explicitly states: "taken from the upstream repo https://github.com/SorkinType/Black-Ops at commit c955bed...".
+```
+source {
+  repository_url: "https://github.com/SorkinType/Black-Ops"
+  commit: "c955bed3517ad3d8606a8b0105d27538309fb70d"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/BlackOpsOne-Regular.ttf"
+    dest_file: "BlackOpsOne-Regular.ttf"
+  }
+  branch: "main"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `c955bed3517ad3d8606a8b0105d27538309fb70d` is recorded in METADATA.pb and matches the gftools-packager commit message in PR #4995 (authored by Emma Marichal, 2022-07-28). The PR body states: "Black Ops One Version 1.004; ttfautohint (v1.8.4.7-5d5b) taken from the upstream repo https://github.com/SorkinType/Black-Ops at commit https://github.com/SorkinType/Black-Ops/commit/c955bed3517ad3d8606a8b0105d27538309fb70d."
+The METADATA.pb contains a source block with repository URL and commit hash. No `config_yaml` is set in METADATA.pb.
 
-This commit exists in the upstream repo and corresponds to "Merge pull request #1 from emmamarichal/main". The font was originally added to google/fonts much earlier (2011, commit `90abd17b4`), with an intermediate update in PR #860 (v1.003), but the current binary was taken from this v1.004 update.
+The font was last updated in google/fonts commit `d50a0d29b` (PR #4995), titled "Black Ops One: Version 1.004; ttfautohint (v1.8.4.7-5d5b) added". The commit body confirms: "Black Ops One Version 1.004; ttfautohint (v1.8.4.7-5d5b) taken from the upstream repo https://github.com/SorkinType/Black-Ops at commit https://github.com/SorkinType/Black-Ops/commit/c955bed3517ad3d8606a8b0105d27538309fb70d." This matches the commit hash in the current METADATA.pb.
 
-## How Config YAML Was Resolved
+Commit `c955bed3517ad3d8606a8b0105d27538309fb70d` is confirmed in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/SorkinType/Black-Ops` (dated July 26, 2022, merging PR #1 "Black Ops Update" from emmamarichal/main).
 
-There is no `config.yaml` in the upstream repository. An override `config.yaml` exists in the google/fonts family directory (`ofl/blackopsone/config.yaml`) with the following content:
-
+The upstream `sources/` directory at commit `c955bed` contains only `BlackOpsOne.glyphs` — no `config.yaml`. However, an override `config.yaml` is present in the google/fonts family directory (`ofl/blackopsone/config.yaml`):
 ```yaml
 sources:
   - sources/BlackOpsOne.glyphs
@@ -36,21 +48,8 @@ buildStatic: true
 buildOTF: false
 ```
 
-This override references `sources/BlackOpsOne.glyphs`, which exists in the upstream repo at the recorded commit. Since the override config.yaml is in google/fonts, the `config_yaml` field is correctly omitted from the METADATA.pb source block.
+Per policy, since an override `config.yaml` exists in the google/fonts directory, the `config_yaml` field is correctly omitted from METADATA.pb. The google-fonts-sources tool auto-detects the local override.
 
-## Verification
+## Conclusion
 
-- Commit exists in upstream repo: Yes
-- Commit date: Merge commit for PR #1 from emmamarichal/main
-- Commit message: "Merge pull request #1 from emmamarichal/main"
-- Source files at commit: `sources/BlackOpsOne.glyphs`
-- Override config.yaml in google/fonts: Yes
-- Binary file in METADATA.pb source block: `fonts/ttf/BlackOpsOne-Regular.ttf`
-
-## Confidence
-
-**High**: The repository URL and commit hash are consistently referenced across the METADATA.pb, the gftools-packager commit message, and PR #4995. The commit exists in the upstream repo. The override config.yaml in google/fonts correctly references the source file present at that commit. All data is well-corroborated.
-
-## Open Questions
-
-None. All data is verified and consistent.
+The METADATA.pb source block is complete. The commit `c955bed3517ad3d8606a8b0105d27538309fb70d` is confirmed as the onboarding commit. An override `config.yaml` is present in the google/fonts family directory. No action needed.

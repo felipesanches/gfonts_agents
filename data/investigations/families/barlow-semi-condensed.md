@@ -1,42 +1,74 @@
-# Barlow Semi Condensed
+# Investigation: Barlow Semi Condensed
 
-**Date investigated**: 2026-02-26
-**Status**: missing_config
-**Designer**: Jeremy Tribby
-**METADATA.pb path**: `ofl/barlowsemicondensed/METADATA.pb`
+## Summary
 
-## Source Data
 | Field | Value |
 |-------|-------|
+| Family Name | Barlow Semi Condensed |
+| Slug | barlow-semi-condensed |
+| License Dir | ofl |
 | Repository URL | https://github.com/jpt/barlow |
-| Commit | b4726ddf91525818e85e5fce111c285b9273d764 |
-| Config YAML | N/A (no config.yaml exists) |
-| Branch | main |
+| Commit Hash | b4726ddf91525818e85e5fce111c285b9273d764 |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
-The METADATA.pb file already contains `repository_url: "https://github.com/jpt/barlow"`. This matches the copyright string in font entries: "Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow)". Barlow Semi Condensed is part of the Barlow superfamily, all generated from a single `sources/Barlow.glyphs` source file in the jpt/barlow repository.
+## Source Data (METADATA.pb)
 
-## How the Commit Hash Was Identified
-The last commit to modify .ttf files in `ofl/barlowsemicondensed/` was `89f5431ff0db41bd2fe3f7ba21a723a01622428b` (2018-12-05, "barlow family updated to v1.408 (#1330) - major fixes"). PR #1330 was submitted by Jeremy Tribby (the designer, @jpt) himself with body: "This is a few versions ahead now, fixes a number of issues, some small some big (see jpt/barlow/releases)".
+```
+source {
+  repository_url: "https://github.com/jpt/barlow"
+  commit: "b4726ddf91525818e85e5fce111c285b9273d764"
+}
+```
 
-The v1.408 tag in the upstream repo points to commit `b4726ddf91525818e85e5fce111c285b9273d764` (2018-11-06, "Fixes #34 and #37"). Since PR #1330 references version v1.408 and was submitted by the designer who would have built the fonts from this tagged release, this commit hash is the correct onboarding reference.
+## Investigation
 
-The initial onboarding was via PR #1280 ("barlowsemicondensed: v1.101 added", by Marc Foley, merged 2017-10-31), but the v1.408 update replaced those binaries.
+### Google Fonts Git History
 
-## How Config YAML Was Resolved
-No `config.yaml` exists in the upstream repository at any commit. No override `config.yaml` exists in the google/fonts `ofl/barlowsemicondensed/` directory either. The Barlow.glyphs source file is a multi-axis source (including width axis for Condensed/Semi Condensed variants), so a config.yaml would need to be created to specify which instances to build.
+The `.ttf` files in `ofl/barlowsemicondensed/` were last modified by two commits:
 
-## Verification
-- Commit exists in upstream repo: Yes
-- Commit date: 2018-11-06
-- Commit message: "Fixes #34 and #37"
-- Source files at commit: `sources/Barlow.glyphs`, `sources/CUST_Barlow.csv`
-- v1.408 tag points to this commit: Yes
-- Pre-built Semi Condensed binaries present at this commit: Yes (in `fonts/ttf/`)
+1. `89f5431ff` (2018-12-05) — `barlow family updated to v1.408 (#1330) - major fixes`
+2. `950449b4e` (2017-10-31) — `barlowsemicondensed: v1.101 added (#1280)`
 
-## Confidence
-**High**: The v1.408 tag clearly identifies the commit, and the PR was submitted by the designer himself. The commit hash is already correctly recorded in the tracking data.
+The original onboarding (PR #1280) was done by Marc Foley with commit message:
+> "Take from the upstream repo, https://github.com/jpt/barlow"
 
-## Open Questions
-- A config.yaml needs to be created to build Barlow Semi Condensed instances from the Barlow.glyphs source. This config would need to specify the Semi Condensed width instances specifically.
-- Since Barlow, Barlow Condensed, and Barlow Semi Condensed all share the same source file, the config.yaml would ideally need to be coordinated across all three families.
+The v1.408 update (PR #1330) replaced the binaries. PR #1330 was submitted by Jeremy Tribby (the designer, @jpt) himself with description referencing version 1.408 and the jpt/barlow releases page.
+
+Note that commit `89f5431ff` updated all three Barlow subfamilies simultaneously (Barlow, Barlow Condensed, Barlow Semi Condensed) in the same PR #1330, consistent with them all being built from the same upstream source file.
+
+### Commit Hash Identification
+
+Commit `b4726ddf91525818e85e5fce111c285b9273d764` (2018-11-06, "Fixes #34 and #37") is the last commit in the upstream repo before the google/fonts update (2018-12-05). This is the same commit used for Barlow and Barlow Condensed (all three were updated together in PR #1330 since they share a single source file `sources/Barlow.glyphs`).
+
+### Config YAML
+
+No `config.yaml` exists anywhere in the upstream `jpt/barlow` repository at any commit. The Barlow.glyphs file is a multi-axis source that builds multiple width variants. An override `config.yaml` is provided in the `ofl/barlowsemicondensed/` directory of google/fonts with the following contents:
+
+```yaml
+sources:
+  - sources/Barlow.glyphs
+familyName: Barlow Semi Condensed
+buildVariable: false
+```
+
+This override was added as part of commit `3218ae2ac` in google/fonts (part of PR #10271):
+> "Barlow Semi Condensed: add source block to METADATA.pb"
+
+Per CLAUDE.md policy, when an override `config.yaml` exists in the google/fonts family directory, `config_yaml` is omitted from METADATA.pb (google-fonts-sources auto-detects local overrides).
+
+### Already Completed in PR #10271
+
+This family's source block was already added to METADATA.pb via PR #10271 (commit `3218ae2ac`). The current state is complete:
+- `repository_url`: correct
+- `commit`: correct (`b4726ddf`)
+- Override `config.yaml` in place
+
+### Upstream Repo Cache
+
+Repository is cached at `upstream_repos/fontc_crater_cache/jpt/barlow/`.
+
+## Conclusion
+
+Status is **complete**. The source block was added via google/fonts PR #10271. Repository URL, commit hash, and override config.yaml are all in place. No further action required.

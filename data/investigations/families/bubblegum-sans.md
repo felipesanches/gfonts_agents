@@ -1,53 +1,43 @@
-# Bubblegum Sans
+# Investigation: Bubblegum Sans
 
-**Date investigated**: 2026-02-26
-**Status**: missing_config (SFD-only sources)
-**Designer**: Sudtipos
-**METADATA.pb path**: `ofl/bubblegumsans/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bubblegum Sans |
+| Slug | bubblegum-sans |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/bubblegumsans |
-| Commit | `fcf8bdd5e83b65186641b2b67fd957ff061666e3` |
-| Config YAML | N/A (SFD-only sources, not gftools-builder compatible) |
-| Branch | `master` |
+| Commit Hash | fcf8bdd5e83b65186641b2b67fd957ff061666e3 |
+| Config YAML | none |
+| Status | missing_config |
+| Confidence | MEDIUM |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/bubblegumsans` was identified from the `librefonts` organization, which hosts archived Google Fonts sources in a standardized structure. This was not added by gftools-packager but rather by the batch source block addition in commit `9a14639f3` ("Add source blocks to 602 more METADATA.pb files", 2026-02-25). The METADATA.pb had no source block prior to this.
+```
+source {
+  repository_url: "https://github.com/librefonts/bubblegumsans"
+  commit: "fcf8bdd5e83b65186641b2b67fd957ff061666e3"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit `fcf8bdd5e83b65186641b2b67fd957ff061666e3` is the **only commit** in the repository (message: "update .travis.yml", by hash3g, 2014-10-17). This is a single-commit archive repository under the `librefonts` organization. Since there is only one commit, identification is unambiguous.
+The source block was added to METADATA.pb in google/fonts commit `abf3821d9` ("Bubblegum Sans: add source block to METADATA.pb", Felipe Sanches, 2026-02-26). The commit metadata records: "Config: none (SFD-only sources), Status: missing_config, Confidence: MEDIUM".
 
-The font was originally added to google/fonts in the initial commit `90abd17b4` and last had its binary updated in commit `75e7dd823` ("Updating ofl/bubblegumsans/*ttf with nbspace and fsType fixes", 2015-04-27 by Dave Crossland). These updates were done directly in the google/fonts repo, not via gftools-packager from the upstream repo. The librefonts repo serves as an archive of the original source files.
+The upstream repository URL `https://github.com/librefonts/bubblegumsans` is from the `librefonts` GitHub organization, which hosts archived copies of early Google Fonts source projects. The repository is cached at `upstream_repos/fontc_crater_cache/librefonts/bubblegumsans/`.
 
-## How Config YAML Was Resolved
+The commit `fcf8bdd5e83b65186641b2b67fd957ff061666e3` is the **only commit** in the repository (message: "update .travis.yml", by hash3g, 2014-10-17). Since there is only one commit, the identification is unambiguous.
 
-No `config.yaml` exists in the upstream repository. The source files are:
+The source files present in the repository are:
 - `src/BubblegumSans-Regular-TTF.sfd` (FontForge SFD format)
 - `src/BubblegumSans-Regular-OTF.vfb` (FontLab VFB format)
 
-These are legacy source formats that are not compatible with gftools-builder, which requires `.glyphs`, `.ufo`, or `.designspace` sources. No override config.yaml exists in the google/fonts family directory either.
+These are legacy formats not compatible with gftools-builder, which requires `.glyphs`, `.ufo`, or `.designspace` sources. No `config.yaml` exists in the upstream repository, and no override `config.yaml` exists in the google/fonts family directory.
 
-The font has not been rebuilt from sources using modern tooling. The binary in google/fonts was originally added and later patched directly.
+The font was originally added to google/fonts in the initial commit `90abd17b4` and last had its binary updated in commit `75e7dd823` ("Updating ofl/bubblegumsans/*ttf with nbspace and fsType fixes", 2015-04-27 by Dave Crossland). These updates were done directly in the google/fonts repo, not via gftools-packager from the upstream repo.
 
-## Verification
+## Conclusion
 
-- Commit exists in upstream repo: Yes (it is the only commit)
-- Commit date: 2014-10-17 13:31:31 +0300
-- Commit message: "update .travis.yml"
-- Commit author: hash3g
-- Source files at commit: `src/BubblegumSans-Regular-TTF.sfd`, `src/BubblegumSans-Regular-OTF.vfb`
-- Config YAML: Does not exist
-- No gftools-packager history: Font was added before the packager workflow existed
-
-## Confidence
-
-**Medium**: The repository URL is correct for the librefonts archive. The commit hash is trivially correct (only one commit). However, the relationship between the upstream repo and the binary in google/fonts is weak -- the font binary was likely compiled outside of this repo and the repo serves primarily as an archive of source files and TTX dumps. The font cannot be rebuilt with gftools-builder from these sources.
-
-## Open Questions
-
-1. The font sources are in SFD/VFB format only. To enable rebuilding with gftools-builder, the sources would need to be converted to `.glyphs` or `.ufo` format and a new upstream repo or config.yaml created. This is a low priority for a single-weight static font that has not been updated since 2015.
+The source metadata (repository_url and commit) is present and correct in METADATA.pb. The status is `missing_config` because the upstream repo only contains SFD/VFB sources which cannot be used with gftools-builder. No override config.yaml is possible without first converting sources to a gftools-compatible format (`.glyphs`, `.ufo`, or `.designspace`). No further action needed unless source conversion is planned.

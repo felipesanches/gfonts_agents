@@ -1,45 +1,65 @@
-# Baloo Chettan 2
+# Investigation: Baloo Chettan 2
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Ek Type
-**METADATA.pb path**: `ofl/baloochettan2/METADATA.pb`
+## Summary
 
-## Source Data
 | Field | Value |
 |-------|-------|
+| Family Name | Baloo Chettan 2 |
+| Slug | baloo-chettan-2 |
+| License Dir | ofl |
 | Repository URL | https://github.com/yanone/Baloo2-Variable |
-| Commit | `ffd6308743a5829fe6980ce86f5629ba0250df98` |
-| Config YAML | `builder/BalooChettan2.yaml` |
-| Branch | `master` |
+| Commit Hash | ffd6308743a5829fe6980ce86f5629ba0250df98 |
+| Config YAML | builder/BalooChettan2.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
-The repository URL `https://github.com/yanone/Baloo2-Variable` is documented in the METADATA.pb `source` block and confirmed by the gftools-packager commit message in google/fonts PR #3985. The copyright string in METADATA.pb references `https://github.com/EkType/Baloo2`, which is the original Ek Type repository, but the variable font conversion was done by Yanone in this separate repository.
+## Source Data (METADATA.pb)
 
-## How the Commit Hash Was Identified
-The commit hash `ffd6308743a5829fe6980ce86f5629ba0250df98` was identified through the following chain of evidence:
+```
+source {
+  repository_url: "https://github.com/yanone/Baloo2-Variable"
+  commit: "ffd6308743a5829fe6980ce86f5629ba0250df98"
+  config_yaml: "builder/BalooChettan2.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BalooChettan2[wght].ttf"
+    dest_file: "BalooChettan2[wght].ttf"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "master"
+}
+```
 
-1. **Initial submission**: PR #3985 was originally submitted by @yanone with commit `da523dfa21aa0e376253d61c21e39146dc55702a` (Oct 28, 2021).
-2. **Review feedback**: @RosaWagner flagged a kerning regression on Nov 3, 2021.
-3. **Upstream fix**: Yanone fixed kerning in Chettan and Thambi at upstream commit `7a30396`, then rebuilt the font binary at commit `ffd6308` (Nov 19, 2021).
-4. **PR update**: Yanone pushed the updated fonts to PR #3985 on Nov 19, 2021, referencing the new commit `ffd6308`.
-5. **Merge**: PR was merged by @RosaWagner on Nov 25, 2021.
+## Investigation
 
-The final merged commit in google/fonts (`164f84fea7f2a61dc501b32686e60cca9d029e08`) confirms the font was taken from commit `ffd6308`.
+The METADATA.pb already contains a complete source block. The repository URL points to `yanone/Baloo2-Variable`, which is a fork by type engineer Yanone of the canonical EkType upstream repository (`EkType/Baloo2-Variable`).
 
-## How Config YAML Was Resolved
-The config file `builder/BalooChettan2.yaml` exists at commit `ffd6308` in the upstream repository. It specifies the source as `../sources/BalooChettan2.glyphs` with variable font build only. No override config.yaml exists in the google/fonts family directory.
+The latest TTF was added in google/fonts commit `164f84fea` (PR #3985, merged 2021-11-25), with commit message:
+> "Baloo Chettan 2 Version 1.700 taken from the upstream repo https://github.com/yanone/Baloo2-Variable at commit https://github.com/yanone/Baloo2-Variable/commit/ffd6308743a5829fe6980ce86f5629ba0250df98."
 
-## Verification
-- Commit exists in upstream repo: Yes
-- Commit date: 2021-11-19 11:34:42 +0100
-- Commit message: "Update BalooChettan2[wght].ttf"
-- Source files at commit: `sources/BalooChettan2.glyphs`, `builder/BalooChettan2.yaml`
-- PR #3985 merged by @RosaWagner on 2021-11-25
-- google/fonts commit: `164f84fea7f2a61dc501b32686e60cca9d029e08`
+This family uses a different commit (`ffd6308`) compared to the majority of the Baloo 2 suite (which uses `da523df`). The commit `ffd6308743a5829fe6980ce86f5629ba0250df98` is confirmed present in the local cache at `upstream_repos/fontc_crater_cache/yanone/Baloo2-Variable`. The commit message reads "Update BalooChettan2[wght].ttf" (dated 2021-11-19), indicating a per-family update that was part of a series fixing kerning issues in Chettan and Thambi.
 
-## Confidence
-**High**: The commit hash is fully verified through multiple independent sources: gftools-packager message, PR discussion showing the update from the original commit to the fixed one, and the upstream repo history confirming the kerning fix.
+The commit is also present in `EkType/Baloo2-Variable` (same hash), since it was created in yanone's fork and later merged back into EkType.
 
-## Open Questions
-None
+The config file `builder/BalooChettan2.yaml` exists at commit `ffd6308` and contains:
+```yaml
+sources:
+  - ../sources/BalooChettan2.glyphs
+outputDir: "../fonts"
+buildTTF: false
+buildOTF: false
+buildWebfont: false
+buildVariable: true
+```
+
+This family covers the Malayalam script. The source file `sources/BalooChettan2.glyphs` exists in the repository.
+
+## Conclusion
+
+The source block in METADATA.pb is complete and correct. Repository URL, commit hash, and config_yaml are all properly set and verified. This family uses a slightly later commit than most Baloo 2 variants due to a kerning fix. No action needed.

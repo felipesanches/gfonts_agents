@@ -1,34 +1,44 @@
-# Bungee Hairline
+# Investigation: Bungee Hairline
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: David Jonathan Ross
-**METADATA.pb path**: `ofl/bungeehairline/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bungee Hairline |
+| Slug | bungee-hairline |
+| License Dir | ofl |
 | Repository URL | https://github.com/djrrb/Bungee |
-| Commit | `eb03cf69adab5094f6b84e95357789cdf3bfeb99` |
-| Config YAML | Override in google/fonts (`ofl/bungeehairline/config.yaml`) |
-| Branch | `master` |
+| Commit Hash | eb03cf69adab5094f6b84e95357789cdf3bfeb99 |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/djrrb/Bungee` is documented in the METADATA.pb `source { repository_url }` field. It is the same upstream repository used by all Bungee variants. It was referenced in the google/fonts commit `93c3a3d13` ("Bungee Hairline: Version 2.000 added"): "Taken from the upstream repo https://github.com/djrrb/Bungee". The METADATA.pb also includes a minisite URL at `https://djr.com/bungee`.
+```
+source {
+  repository_url: "https://github.com/djrrb/Bungee"
+  commit: "eb03cf69adab5094f6b84e95357789cdf3bfeb99"
+  archive_url: "https://github.com/djrrb/Bungee/releases/download/v2.000/Bungee-fonts.zip"
+  files {
+    source_file: "Bungee_Basic/BungeeHairline-Regular.ttf"
+    dest_file: "BungeeHairline-Regular.ttf"
+  }
+  branch: "master"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit `eb03cf69adab5094f6b84e95357789cdf3bfeb99` is explicitly referenced in the google/fonts commit `93c3a3d13` ("Bungee Hairline: Version 2.000 added"): "Taken from the upstream repo https://github.com/djrrb/Bungee at commit https://github.com/djrrb/Bungee/commit/eb03cf69adab5094f6b84e95357789cdf3bfeb99."
+The version 2.000 update was onboarded via google/fonts commit `93c3a3d13` ("Bungee Hairline: Version 2.000 added", Viviana Monsalve, 2024-05-30). The commit message explicitly states: "Taken from the upstream repo https://github.com/djrrb/Bungee at commit https://github.com/djrrb/Bungee/commit/eb03cf69adab5094f6b84e95357789cdf3bfeb99."
 
-This is the same commit hash used for the regular Bungee family (commit `6bc4f73e2`), which makes sense since both were updated as part of the v2.000 release. The commit exists in the upstream repo with date 2024-05-30 and message "Bump fontbakery".
+Earlier, the repository URL had been added without a commit hash by Simon Cozens in commit `46a7c0576` ("Add more upstreams (a,b)", 2024-01-14). The Bungee Hairline commit hash was added to METADATA.pb only when v2.000 was onboarded.
 
-The METADATA.pb also references a release archive URL: `https://github.com/djrrb/Bungee/releases/download/v2.000/Bungee-fonts.zip`, indicating the binary was taken from the v2.000 release ZIP.
+The repository URL `https://github.com/djrrb/Bungee` is the shared upstream for all Bungee variants. It is cached at `upstream_repos/fontc_crater_cache/djrrb/Bungee/`.
 
-## How Config YAML Was Resolved
+The commit `eb03cf69adab5094f6b84e95357789cdf3bfeb99` (message: "Bump fontbakery", Just van Rossum, 2024-05-30) is the HEAD of the master branch at the time of the v2.000 onboarding. The METADATA.pb also includes an archive_url pointing to the v2.000 release ZIP, which is the actual source of the binary.
 
-The upstream repository does not contain a `config.yaml` file. An override `config.yaml` was created in the google/fonts family directory (`ofl/bungeehairline/config.yaml`) as part of commit `f6c68379a` ("Add override config.yaml for 50 font families"). The override config contains:
+The upstream repository does not contain a `config.yaml`. An override `config.yaml` was created in the google/fonts family directory (`ofl/bungeehairline/config.yaml`) by Felipe Sanches in commit `f6c68379a` ("Add override config.yaml for 50 font families", 2026-02-16). Contents:
 
 ```yaml
 sources:
@@ -40,21 +50,6 @@ buildOTF: false
 
 The source file `sources/2-build/Bungee_Basic/Bungee-Hairline.ufo` was verified to exist at the recorded commit `eb03cf69`. Since an override config.yaml exists in google/fonts, the `config_yaml` field is correctly omitted from the METADATA.pb source block.
 
-## Verification
+## Conclusion
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2024-05-30 07:17:37 +0200
-- Commit message: "Bump fontbakery"
-- Source files at commit: `sources/2-build/Bungee_Basic/Bungee-Hairline.ufo` (verified)
-- Font binary in google/fonts: `BungeeHairline-Regular.ttf` (static)
-- Binary taken from release archive: `Bungee-fonts.zip` (v2.000 release)
-- Font originally added to Google Fonts: 2016-06-20
-- Version 2.000 update: google/fonts commit `93c3a3d13`
-
-## Confidence
-
-**High**: The commit hash is explicitly referenced in the google/fonts commit message that brought in the v2.000 update. This is the same commit used for the regular Bungee family, consistent with both being part of the same v2.000 release. The commit exists in the upstream repo and the source files are present. The override config.yaml correctly points to the source file at the recorded commit.
-
-## Open Questions
-
-None. All data is well-documented and verified. The Bungee Hairline family shares the same upstream repo and commit hash as the regular Bungee family, both updated as part of the v2.000 release.
+All source metadata is complete and verified. The repository URL, commit hash, and override config.yaml are all in place. The commit hash is well-documented in the google/fonts commit message for the v2.000 update. Status is `complete`.

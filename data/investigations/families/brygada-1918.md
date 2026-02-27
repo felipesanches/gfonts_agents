@@ -1,38 +1,65 @@
-# Brygada 1918
+# Investigation: Brygada 1918
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Capitalics, Mateusz Machalski, Borys Kosmynka, Ania Wielunska, Przemyslaw Hoffer
-**METADATA.pb path**: `ofl/brygada1918/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Brygada 1918 |
+| Slug | brygada-1918 |
+| License Dir | ofl |
 | Repository URL | https://github.com/kosmynkab/Brygada-1918 |
-| Commit | `8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b` |
-| Config YAML | `sources/config.yaml` |
-| Branch | `main` |
+| Commit Hash | 8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/kosmynkab/Brygada-1918` is recorded in the METADATA.pb `source { repository_url }` field and matches the copyright string ("Copyright 2020 The Brygada 1918 Project Authors (https://github.com/kosmynkab/Brygada-1918)"). The gftools-packager commit in PR #3252 also references this URL. The repo owner `kosmynkab` corresponds to Borys Kosmynka, one of the project designers.
+```
+source {
+  repository_url: "https://github.com/kosmynkab/Brygada-1918"
+  commit: "8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b"
+  files {
+    source_file: "fonts/variable/Brygada1918[wght].ttf"
+    dest_file: "Brygada1918[wght].ttf"
+  }
+  files {
+    source_file: "fonts/variable/Brygada1918-Italic[wght].ttf"
+    dest_file: "Brygada1918-Italic[wght].ttf"
+  }
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The METADATA.pb records commit `8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b`. This is the **only commit** in the entire upstream repository (message: "Generated version 3.006", by Rosalie Wagner, 2021-03-24).
+### Git History in google/fonts
 
-The gftools-packager commit for the latest update in google/fonts (PR #3252, commit `4714790f8`, 2021-03-24) explicitly states: "Brygada 1918 Version 3.006 taken from the upstream repo [...] at commit [...]/8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b." This is a direct match.
+The font has three commits in google/fonts:
 
-The source block was added by commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list", 2025-03-31).
+1. `4714790f8` — `Brygada 1918: Version 3.006 added (#3252)`
+2. `bc90a8ac9` — `Brygada 1918: Version 3.005 added (#3095)`
+3. `5bfd14ed2` — `Brygada 1918: Version 3.004 added (#2978)`
 
-**Binary verification**: SHA-256 comparison of `Brygada1918[wght].ttf`:
-- Font at `8325dc3` in upstream: `93a23e7c6de5e2c5...` -- MATCHES google/fonts
-- Font in google/fonts: `93a23e7c6de5e2c5...`
+The most recent commit message (from PR #3252) states:
 
-## How Config YAML Was Resolved
+> Brygada 1918 Version 3.006 taken from the upstream repo https://github.com/kosmynkab/Brygada-1918 at commit https://github.com/kosmynkab/Brygada-1918/commit/8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b.
 
-The config file `sources/config.yaml` exists at the recorded commit `8325dc3` with the following content:
+This directly confirms both the repository URL and the commit hash in METADATA.pb.
+
+### Upstream Repository
+
+The repo is cached at `upstream_repos/fontc_crater_cache/kosmynkab/Brygada-1918`. Commit `8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b` was verified to exist — it is the most recent commit on the main branch ("Generated version 3.006", dated 2021-03-24 12:55:22 +0100).
+
+### Config YAML
+
+`sources/config.yaml` exists in the upstream repository at the referenced commit. It is located at `sources/config.yaml` (relative to repo root) and contains:
+
 ```yaml
 sources:
   - Brygada1918.glyphs
@@ -42,23 +69,19 @@ axisOrder:
 familyName: Brygada 1918
 ```
 
-This is a valid gftools-builder configuration for a variable font family with roman and italic sources. No override config.yaml exists in the google/fonts family directory.
+The `config_yaml: "sources/config.yaml"` field in METADATA.pb correctly points to this file.
 
-## Verification
+### Designers
 
-- Commit exists in upstream repo: Yes (it is the only commit)
-- Commit date: 2021-03-24 12:55:22 +0100
-- Commit message: "Generated version 3.006"
-- Commit author: Rosalie Wagner
-- Source files at commit: `sources/Brygada1918.glyphs`, `sources/Brygada1918-Italic.glyphs`, `sources/config.yaml`
-- Font binary match: Confirmed
-- Packager: Rosalie Wagner (PR #3252, merged 2021-03-24)
-- Font update history in google/fonts: v3.004 (PR #2978), v3.005 (PR #3095), v3.006 (PR #3252)
+The font was created by a team: Capitalics, Mateusz Machalski, Borys Kosmynka, Ania Wieluńska, and Przemysław Hoffer. The upstream repository is hosted under `kosmynkab` (Borys Kosmynka's GitHub account).
 
-## Confidence
+### METADATA.pb Status
 
-**High**: The commit hash matches exactly between the gftools-packager commit message, METADATA.pb, and binary verification. The upstream repo has only one commit, making this unambiguous. The config.yaml is present and valid.
+All fields are complete and correct:
+- `repository_url` matches the commit message in google/fonts
+- `commit` matches the commit message and is verified in the upstream repo as the HEAD of main
+- `config_yaml: "sources/config.yaml"` is set and the file exists at the referenced commit
 
-## Open Questions
+## Conclusion
 
-None. All data is consistent and verified.
+No action needed. The source block in METADATA.pb is complete and correct. Status is **complete** with HIGH confidence.

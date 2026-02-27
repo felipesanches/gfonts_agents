@@ -1,55 +1,59 @@
-# Big Shoulders Inline
+# Investigation: Big Shoulders Inline
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Patric King
-**METADATA.pb path**: `ofl/bigshouldersinline/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Big Shoulders Inline |
+| Slug | big-shoulders-inline |
+| License Dir | ofl |
 | Repository URL | https://github.com/xotypeco/big_shoulders |
-| Commit | `8ba99c9e347396d828b263b8b818269cb99eb27c` |
-| Config YAML | `Big-Shoulders-Inline/sources/config.yml` |
-| Branch | `master` |
+| Commit Hash | 8ba99c9e347396d828b263b8b818269cb99eb27c |
+| Config YAML | Big-Shoulders-Inline/sources/config.yml (in upstream repo) |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/xotypeco/big_shoulders` was already present in the METADATA.pb `source { repository_url }` field. It matches the copyright string in the font files ("Copyright 2019 The Big Shoulders Project Authors (https://github.com/xotypeco/big_shoulders)"). All Big Shoulders variants share this upstream repository.
+```
+source {
+  repository_url: "https://github.com/xotypeco/big_shoulders"
+  commit: "8ba99c9e347396d828b263b8b818269cb99eb27c"
+  config_yaml: "Big-Shoulders-Inline/sources/config.yml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "Documentation/DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "Big-Shoulders-Inline/fonts/variable/BigShouldersInline[opsz,wght].ttf"
+    dest_file: "BigShouldersInline[opsz,wght].ttf"
+  }
+  branch: "master"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `8ba99c9e347396d828b263b8b818269cb99eb27c` was recorded in the METADATA.pb file. The onboarding commit in google/fonts (`99e4ad649`) by Yanone states: "Taken from the upstream repo https://github.com/xotypeco/big_shoulders at commit https://github.com/xotypeco/big_shoulders/commit/8ba99c9e347396d828b263b8b818269cb99eb27c."
+### Repository URL
 
-This was part of PR #9028, which was merged on 2025-02-12. The upstream commit `8ba99c9` (dated 2025-02-06) has the message "Update README.md" and was authored by XO Type Co.
+The repository URL `https://github.com/xotypeco/big_shoulders` is documented in METADATA.pb and confirmed by the copyright string. All Big Shoulders variants share this upstream repository.
 
-Big Shoulders Inline is a newer addition to the catalog (date_added: 2025-02-06), distinct from the older Big Shoulders Inline Display and Big Shoulders Inline Text families. This is the full optical-size+weight variable font (`BigShouldersInline[opsz,wght].ttf`) with both `opsz` (10-72) and `wght` (100-900) axes.
+### Commit Hash
 
-## How Config YAML Was Resolved
+The METADATA.pb records commit `8ba99c9e347396d828b263b8b818269cb99eb27c`. The google/fonts commit `99e4ad649` ("Big Shoulders Inline: Version 2.002 added") explicitly states:
 
-The `config_yaml` field in METADATA.pb is set to `Big-Shoulders-Inline/sources/config.yml`, pointing to the upstream config file. This was added by our own batch commit (`34926685b`, "Add config_yaml to METADATA.pb for 15 font families"). No override config.yaml exists in the google/fonts family directory (`ofl/bigshouldersinline/`).
+> "Taken from the upstream repo https://github.com/xotypeco/big_shoulders at commit https://github.com/xotypeco/big_shoulders/commit/8ba99c9e347396d828b263b8b818269cb99eb27c."
 
-The upstream `config.yml` at commit `8ba99c9` defines:
-- Source: `BigShouldersInline.glyphs`
-- Family name: Big Shoulders Inline
-- Axis order: opsz, wght
-- STAT table configuration for the 2-axis variable font
+This family was added on 2025-02-06 (date_added). The commit `8ba99c9` is dated 2025-02-06 in the upstream repo ("Update README.md"), confirming it is the correct onboarding commit. The commit exists in the upstream repo cache.
 
-## Verification
+### Config YAML
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2025-02-06
-- Commit message: "Update README.md"
-- Commit author: XO Type Co
-- Font binary at commit: `Big-Shoulders-Inline/fonts/variable/BigShouldersInline[opsz,wght].ttf` exists
-- Config file at commit: `Big-Shoulders-Inline/sources/config.yml` exists
-- Override config.yaml in google/fonts: No (not needed)
+The METADATA.pb `config_yaml` field points to `Big-Shoulders-Inline/sources/config.yml` in the upstream repo. This file exists in the upstream repository at `/mnt/shared/upstream_repos/fontc_crater_cache/xotypeco/big_shoulders/Big-Shoulders-Inline/sources/config.yml`. It configures the build from `BigShouldersInline.glyphs` with both `opsz` and `wght` axes.
 
-## Confidence
+## Conclusion
 
-**High**: The commit hash `8ba99c9` is directly referenced in the google/fonts onboarding commit. It is a recent commit (2025-02-06) and the font binary and config file both exist at this commit. The issue resolved (#7830) was specifically for adding the Inline family. PR #9028 by Yanone was a straightforward onboarding.
-
-## Open Questions
-
-None. The data is complete and verified.
+The source block in METADATA.pb is complete with repository URL, commit hash, and config_yaml path. The config.yml exists in the upstream repo at the specified path. Status is `complete`.

@@ -1,49 +1,53 @@
-# Betania Patmos - Investigation Report
+# Investigation: Betania Patmos
 
-## Source Data (from tracking)
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Betania Patmos |
+| Slug | betania-patmos |
+| License Dir | ofl |
 | Repository URL | https://github.com/huertatipografica/betania-patmos |
 | Commit Hash | 08c83ac9540b0b2bf86ddf6b632651142f31a93c |
 | Config YAML | sources/config.yaml |
 | Status | complete |
-| Category | HANDWRITING |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/huertatipografica/betania-patmos` was present in the METADATA.pb file's source block from the initial onboarding. The URL is also referenced in the copyright string: "Copyright 2024 The Betania Patmos Project Authors (https://github.com/huertatipografica/betania-patmos)". The onboarding commit message explicitly confirms: "Taken from the upstream repo https://github.com/huertatipografica/betania-patmos at commit ...".
+```
+source {
+  repository_url: "https://github.com/huertatipografica/betania-patmos"
+  commit: "08c83ac9540b0b2bf86ddf6b632651142f31a93c"
+  config_yaml: "sources/config.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/BetaniaPatmos-Regular.ttf"
+    dest_file: "BetaniaPatmos-Regular.ttf"
+  }
+  branch: "main"
+}
+```
 
-## How the Commit Hash Was Determined
+## Investigation
 
-The commit hash `08c83ac9540b0b2bf86ddf6b632651142f31a93c` was present in the METADATA.pb source block from the initial onboarding. The onboarding commit (`9adc7b48d`) by Emma Marichal (2026-01-15) explicitly states: "Taken from the upstream repo https://github.com/huertatipografica/betania-patmos at commit https://github.com/huertatipografica/betania-patmos/commit/08c83ac9540b0b2bf86ddf6b632651142f31a93c".
+The font was added to google/fonts on 2026-01-15 in commit `9adc7b48d` by Emma Marichal. The commit message explicitly documents the upstream source:
 
-Verification via GitHub API confirms the commit exists and is dated 2026-01-15T11:02:53Z, with message "Merge pull request #4 from emmamarichal/main - build fonts". This is a merge commit from Emma Marichal's PR that built the fonts, which was created on the same day the font was onboarded to Google Fonts. The timeline is consistent.
+> "Taken from the upstream repo https://github.com/huertatipografica/betania-patmos at commit https://github.com/huertatipografica/betania-patmos/commit/08c83ac9540b0b2bf86ddf6b632651142f31a93c."
 
-## Config YAML Status
+The repository URL is also confirmed by the copyright string: "Copyright 2024 The Betania Patmos Project Authors (https://github.com/huertatipografica/betania-patmos)".
 
-- **Path**: `sources/config.yaml`
-- **Exists at recorded commit**: Yes, verified via GitHub API
-- **Contents**: Config specifies `betania-patmos.glyphs` as the source, with `buildVariable: false`, `buildStatic: true`, `buildTTF: true`, `buildOTF: true`, `buildWebfont: true`
-- **Note**: The METADATA.pb source block does NOT include a `config_yaml` field. The tracking file records `config_yaml: "sources/config.yaml"` as the discovered path, but this has not been added to the METADATA.pb yet.
-- **No override config.yaml** exists in the google/fonts family directory
-- **Important**: The config.yaml only references one source file (`betania-patmos.glyphs`), yet the repo produces multiple font families (Betania Patmos, GDL, Guide Line, In, and InGDL). This single config likely generates all variants from the same Glyphs source.
+The upstream commit `08c83ac` is a merge commit dated 2026-01-15 with message "Merge pull request #4 from emmamarichal/main - build fonts". The font was built and onboarded on the same day — a clean workflow.
 
-## Verification
+The METADATA.pb source block contains all required fields: `repository_url`, `commit`, `config_yaml: "sources/config.yaml"`, and `branch: "main"`. The config.yaml at that commit specifies `betania-patmos.glyphs` as the source, and is shared by all five Betania Patmos variants (Betania Patmos, GDL, Guide Line, In, and In GDL).
 
-1. Commit hash `08c83ac9540b0b2bf86ddf6b632651142f31a93c` verified to exist via GitHub API
-2. Commit is dated 2026-01-15, same day as the google/fonts onboarding commit - timeline is consistent
-3. Font file `fonts/ttf/BetaniaPatmos-Regular.ttf` confirmed present at that commit
-4. `sources/config.yaml` confirmed present at that commit
-5. Repository URL confirmed accessible
-6. The `branch: "main"` field is correct
+The upstream repository is NOT currently cloned to the local fontc_crater_cache (the `huertatipografica/betania-patmos` directory does not exist in the cache, though other huertatipografica repos are present).
 
-## Confidence Level
+This family is one of five Betania Patmos variants all sharing the same upstream repository and commit hash. Each was onboarded separately to google/fonts as an independent font family.
 
-**High** - The repository URL and commit hash are well-documented with full provenance in the onboarding commit message. The commit was created by Emma Marichal on the same day she onboarded the font, indicating a clean workflow. All file paths are verified.
+## Conclusion
 
-## Open Questions
-
-1. The METADATA.pb source block is missing the `config_yaml` field. Should `config_yaml: "sources/config.yaml"` be added to the METADATA.pb, or should an override config be placed in the google/fonts family directory?
-2. There is a fifth variant "BetaniaPatmosInGDL" in the upstream repo's fonts/ttf directory that does not appear to have been onboarded to Google Fonts.
+The source metadata is complete. The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields — all correct and verified. No action needed.

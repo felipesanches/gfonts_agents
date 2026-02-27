@@ -1,55 +1,92 @@
-# Investigation Report: Bricolage Grotesque
+# Investigation: Bricolage Grotesque
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Bricolage Grotesque |
-| Designer | Mathieu Triay |
-| License | OFL |
-| Date Added | 2023-06-15 |
+| Slug | bricolage-grotesque |
+| License Dir | ofl |
 | Repository URL | https://github.com/ateliertriay/bricolage |
-| Commit Hash | `84745e5b96261ae5f8c6c856e262fe78d1d6efdd` |
-| Branch | main |
-| Config YAML | `sources/config.yaml` (in upstream) |
-| Status | Complete |
+| Commit Hash | 84745e5b96261ae5f8c6c856e262fe78d1d6efdd |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/ateliertriay/bricolage` is recorded in the METADATA.pb `source {}` block and matches the copyright string in the font files. The METADATA.pb also includes a `minisite_url` of `https://ateliertriay.github.io/bricolage`, confirming the repo owner. The URL was set during the initial gftools-packager onboarding.
+```
+source {
+  repository_url: "https://github.com/ateliertriay/bricolage"
+  commit: "84745e5b96261ae5f8c6c856e262fe78d1d6efdd"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BricolageGrotesque[opsz,wdth,wght].ttf"
+    dest_file: "BricolageGrotesque[opsz,wdth,wght].ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit hash `84745e5b96261ae5f8c6c856e262fe78d1d6efdd` was directly recorded by gftools-packager in the Version 1.001 update:
+### Git History in google/fonts
 
-- google/fonts commit `b9f6c7120`: "[gftools-packager] Bricolage Grotesque: Version 1.001;gftools[0.9.33.dev8+g029e19f] added"
-  - Body: "taken from the upstream repo https://github.com/ateliertriay/bricolage at commit https://github.com/ateliertriay/bricolage/commit/84745e5b96261ae5f8c6c856e262fe78d1d6efdd"
+The font has two commits in google/fonts:
 
-This was the second version onboarded. The initial Version 1.000 was from commit `95ddb0da9087a5f49f4616faea519e9e27d80a99` (google/fonts commit `92f1a0b27`).
+1. `b9f6c7120` — `[gftools-packager] Bricolage Grotesque: Version 1.001;gftools[0.9.33.dev8+g029e19f] added`
+2. `92f1a0b27` — `[gftools-packager] Bricolage Grotesque: Version 1.000;gftools[0.9.30] added`
 
-The same commit hash also appears in the fontc_crater targets list (google/fonts commit `19cdcec59`), providing independent confirmation.
+The most recent packager commit message states:
 
-## Config YAML Status
+> Bricolage Grotesque Version 1.001;gftools[0.9.33.dev8+g029e19f] taken from the upstream repo https://github.com/ateliertriay/bricolage at commit https://github.com/ateliertriay/bricolage/commit/84745e5b96261ae5f8c6c856e262fe78d1d6efdd.
 
-- `sources/config.yaml` exists in the upstream repository at the recorded commit
-- It is correctly referenced in the METADATA.pb `config_yaml` field
-- No override config.yaml exists in google/fonts
+This directly confirms both the repository URL and the commit hash in METADATA.pb.
 
-The config.yaml defines a variable font build with 3 axes (opsz, wdth, wght) from `BricolageGrotesque.glyphs` source, matching the font file `BricolageGrotesque[opsz,wdth,wght].ttf` in google/fonts.
+The first packager commit (`92f1a0b27`) referenced a different earlier commit: `95ddb0da9087a5f49f4616faea519e9e27d80a99` (Version 1.000).
 
-## Verification
+### Upstream Repository
 
-1. **Commit exists in upstream**: Confirmed. `84745e5b96261ae5f8c6c856e262fe78d1d6efdd` exists in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/ateliertriay/bricolage` (it is the only commit, likely a shallow clone)
-2. **Commit message**: "Merge pull request #5 from emmamarichal/main" - this aligns with emmamarichal's involvement in Google Fonts onboarding
-3. **File paths match**: METADATA.pb references `fonts/variable/BricolageGrotesque[opsz,wdth,wght].ttf` which exists at that commit
-4. **Config YAML valid**: `sources/config.yaml` references `BricolageGrotesque.glyphs` and defines axes opsz, wdth, wght
-5. **gftools-packager reference matches**: Commit hash in METADATA.pb exactly matches the gftools-packager commit message
-6. **fontc_crater confirmation**: The same commit hash was independently referenced in fontc_crater targets
+The repo is cached at `upstream_repos/fontc_crater_cache/ateliertriay/bricolage`. Commit `84745e5b96261ae5f8c6c856e262fe78d1d6efdd` was verified to exist — it is the most recent commit on the main branch ("Merge pull request #5 from emmamarichal/main", dated 2023-07-19).
 
-## Confidence Level
+### Config YAML
 
-**HIGH** - The commit hash was recorded by gftools-packager during the Version 1.001 onboarding and independently confirmed by fontc_crater targets. The config.yaml, font files, and axes all match consistently. The merge PR #5 from emmamarichal aligns with the typical Google Fonts onboarding workflow.
+`sources/config.yaml` exists in the upstream repository at the referenced commit. Content:
 
-## Open Questions
+```yaml
+sources:
+  - BricolageGrotesque.glyphs
+axisOrder:
+  - opsz
+  - wdth
+  - wght
+familyName: Bricolage Grotesque
+stat:
+  BricolageGrotesque[opsz,wdth,wght].ttf:
+  - name: Optical size
+    tag: opsz
+    values: [...]
+  - name: Width
+    tag: wdth
+    values: [...]
+  - name: Weight
+    tag: wght
+    values: [...]
+```
 
-None. This family is fully documented.
+The `config_yaml: "sources/config.yaml"` field in METADATA.pb correctly points to this file.
+
+### METADATA.pb Status
+
+All fields are complete and correct:
+- `repository_url` matches the packager commit message
+- `commit` matches the packager commit message and is verified in the upstream repo
+- `config_yaml: "sources/config.yaml"` is set and the file exists at the referenced commit
+
+## Conclusion
+
+No action needed. The source block in METADATA.pb is complete and correct. Status is **complete** with HIGH confidence.

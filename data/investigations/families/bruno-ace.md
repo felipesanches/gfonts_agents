@@ -1,43 +1,72 @@
-# Bruno Ace
+# Investigation: Bruno Ace
 
-**Date investigated**: 2026-02-26
-**Status**: complete (with commit hash concern)
-**Designer**: Astigmatic
-**METADATA.pb path**: `ofl/brunoace/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Bruno Ace |
+| Slug | bruno-ace |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/Bruno-ace |
-| Commit (recorded) | `58dc219db32ffd9eaf573f2dc3be2e342410e15a` |
-| Commit (actual build) | `4eb5f7fc38a1548b353b4ee03b1f7043b48ae181` |
-| Config YAML | `sources/brunoace-regular.yaml` |
-| Branch | `main` |
+| Commit Hash | 58dc219db32ffd9eaf573f2dc3be2e342410e15a |
+| Config YAML | sources/brunoace-regular.yaml |
+| Status | needs_correction |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/googlefonts/Bruno-ace` is recorded in the METADATA.pb `source { repository_url }` field. It matches the copyright string in the font ("Copyright 2023 The Bruno Ace Project Authors (https://github.com/googlefonts/Bruno-ace)"). The gftools-packager commit `3169bfdfe` in google/fonts and PR #6072 both reference this URL.
+```
+source {
+  repository_url: "https://github.com/googlefonts/Bruno-ace"
+  commit: "58dc219db32ffd9eaf573f2dc3be2e342410e15a"
+  config_yaml: "sources/brunoace-regular.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/BrunoAce-Regular.ttf"
+    dest_file: "BrunoAce-Regular.ttf"
+  }
+  branch: "main"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The METADATA.pb currently records commit `58dc219db32ffd9eaf573f2dc3be2e342410e15a`. However, binary comparison reveals this is **incorrect**:
+### Git History in google/fonts
 
-- The gftools-packager commit `3169bfdfe` in google/fonts states: "Bruno Ace Version 1.100 taken from the upstream repo [...] at commit [...]/4eb5f7fc38a1548b353b4ee03b1f7043b48ae181."
-- PR #6072 body references commit `58dc219` (which was the state of the repo when the PR was initially created).
-- During the PR process, Yanone updated the upstream repo with 6 additional commits (adding missing glyphs, removing softhyphen, updating compiled fonts), culminating in `4eb5f7f`.
-- The squash-merged commit in google/fonts correctly records `4eb5f7f` as the commit from which the fonts were actually taken.
+The font has two commits in google/fonts:
 
-**Binary verification**: SHA-256 comparison of `BrunoAce-Regular.ttf`:
-- Font at `58dc219` in upstream: `2f882bb0568e2aab...` -- does NOT match google/fonts
-- Font at `4eb5f7f` in upstream: `2ebb34cae30afcb6...` -- MATCHES google/fonts
-- Font in google/fonts: `2ebb34cae30afcb6...`
+1. `3169bfdfe` (2023-03-28) — `[gftools-packager] Bruno Ace: Version 1.100; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.27] added`
+2. `90abd17b4` — `Initial commit`
 
-The METADATA.pb was updated by commit `f80b31006` ("sources info for Bruno Ace (incl. SC)", 2025-04-02) which changed the commit from `4eb5f7f` to `58dc219` and added the `config_yaml` field. This change appears to have been based on the PR body text rather than the actual squash-merge commit message, introducing an error.
+The packager commit message states:
 
-## How Config YAML Was Resolved
+> Bruno Ace Version 1.100; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.27] taken from the upstream repo https://github.com/googlefonts/Bruno-ace at commit https://github.com/googlefonts/Bruno-ace/commit/4eb5f7fc38a1548b353b4ee03b1f7043b48ae181.
 
-The config file `sources/brunoace-regular.yaml` exists at both commit `58dc219` and `4eb5f7f` in the upstream repo with identical content:
+The commit message explicitly references **`4eb5f7fc38a1548b353b4ee03b1f7043b48ae181`** as the upstream commit used for onboarding — NOT the `58dc219` currently in METADATA.pb.
+
+### Commit Discrepancy Analysis
+
+The upstream repository (cached at `upstream_repos/fontc_crater_cache/googlefonts/Bruno-ace`) is currently in a detached HEAD state at `58dc219`. The main branch head is `b6fea3b` ("rename sources/*.yaml files to what fontc_crater / google-fonts-sources like").
+
+Timeline of relevant upstream commits:
+- `58dc219` (2023-03-23) — "Update README.md" — only README change
+- `4eb5f7f` (2023-03-28) — "Update BrunoAceSC-Regular.ttf" — TTF file update
+
+The google/fonts packager commit ran on 2023-03-28 15:34:32 +0200. Upstream commit `4eb5f7f` (which updated the TTF files) was also created on 2023-03-28 at 15:34:03 +0200 — just 29 seconds before the packager commit. This timing confirms that `4eb5f7f` was the actual commit used for onboarding.
+
+METADATA.pb incorrectly references `58dc219` (a README-only commit from March 23), which is an earlier commit that does not include the final TTF files that were actually packaged.
+
+### Config YAML
+
+At commit `4eb5f7f`, the file `sources/brunoace-regular.yaml` exists with content:
+
 ```yaml
 sources:
   - BrunoAce-Regular.glyphs
@@ -47,22 +76,8 @@ buildStatic: true
 buildWebfont: false
 ```
 
-Note: The latest commit in the repo (`b6fea3b`) renamed the YAML files, but the files existed with the correct names at both relevant commits. No override config.yaml exists in the google/fonts family directory.
+Note: In the latest main branch commit (`b6fea3b`), this file was renamed to `sources/config-regular.yaml`. The METADATA.pb `config_yaml` field still references the old name `sources/brunoace-regular.yaml`, which is correct for the commit `4eb5f7f` (the actual onboarding commit). If the commit is corrected to `4eb5f7f`, the config path remains valid.
 
-## Verification
+## Conclusion
 
-- Commit `58dc219` exists in upstream repo: Yes (but is NOT the correct onboarding commit)
-- Commit `4eb5f7f` exists in upstream repo: Yes (this IS the correct onboarding commit)
-- `58dc219` date: 2023-03-23, message: "Update README.md" -- only a README change
-- `4eb5f7f` date: 2023-03-28, message: "Update BrunoAceSC-Regular.ttf" -- compiled font update
-- Config YAML at both commits: Present and identical
-- Font binary match: `4eb5f7f` only
-- Packager: Yanone (PR #6072, merged 2023-03-28)
-
-## Confidence
-
-**High** for repository URL. **Low** for the currently recorded commit hash -- binary evidence definitively shows the fonts were built from `4eb5f7fc38a1548b353b4ee03b1f7043b48ae181`, not the currently recorded `58dc219db32ffd9eaf573f2dc3be2e342410e15a`. The METADATA.pb commit hash should be corrected to `4eb5f7f`.
-
-## Open Questions
-
-1. The METADATA.pb commit hash should be corrected from `58dc219` to `4eb5f7f` to match the actual font binaries. This was likely an error introduced in commit `f80b31006` which used the PR body text (initial state) rather than the squash-merge commit message (final state).
+The commit hash in METADATA.pb needs correction from `58dc219db32ffd9eaf573f2dc3be2e342410e15a` to `4eb5f7fc38a1548b353b4ee03b1f7043b48ae181`. The packager commit message explicitly states `4eb5f7f` was the onboarding commit, and the timing (29 seconds before the packager ran) further confirms this. The `config_yaml` path `sources/brunoace-regular.yaml` is valid at `4eb5f7f`.

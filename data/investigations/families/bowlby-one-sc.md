@@ -1,58 +1,74 @@
-# Investigation Report: Bowlby One SC
+# Investigation: Bowlby One SC
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Bowlby One SC |
-| Designer | Vernon Adams |
-| License | OFL |
-| Date Added | 2011-07-06 |
+| Slug | bowlby-one-sc |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/bowlbyonesc |
-| Commit Hash | `9566646d9feaafcdc1c23174931ac4599803442b` |
-| Branch | master |
-| Config YAML | None |
-| Status | missing_config |
+| Commit Hash | 9566646d9feaafcdc1c23174931ac4599803442b |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | MEDIUM |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/bowlbyonesc` was previously recorded in the tracking data. The librefonts organization hosts archival copies of many early Google Fonts projects. The repository is accessible on GitHub.
+```
+source {
+  repository_url: "https://github.com/librefonts/bowlbyonesc"
+  commit: "9566646d9feaafcdc1c23174931ac4599803442b"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The repository has only 12 commits total, all from 2014. The recorded commit `9566646` is the tip of master (the latest commit, from 2014-10-17: "update .travis.yml"). This is the only meaningful commit to use as a reference since the repo has not been updated since 2014.
+Bowlby One SC is a display typeface by Vernon Adams, added to Google Fonts on 2011-07-06. It is an archival font with no active upstream development since 2014.
 
-The font binary in google/fonts was last updated in:
-- `c6a838cef` (2015-04-27) - "Updating ofl/bowlbyonesc/*ttf with nbspace and fsType fixes" by Dave Crossland
+### Git History
 
-Unlike Bowlby One, Bowlby One SC has not received any additional hotfix updates since 2015.
+The font TTF was last updated in google/fonts commit `c6a838cef` (2015-04-27, "Updating ofl/bowlbyonesc/*ttf with nbspace and fsType fixes" by Dave Crossland). The initial commit was `90abd17b4`.
 
-## Config YAML Status
+The source block was added by google/fonts commit `bb0ae5d66` ("Bowlby One SC: add source block to METADATA.pb"), which documented:
+- Repo: librefonts/bowlbyonesc
+- Commit: 9566646d
+- Config: override config.yaml in google/fonts
+- Status: complete
+- Confidence: MEDIUM
 
-**No config.yaml exists** in either the upstream repository or as an override in google/fonts.
+### Upstream Repository
 
-The upstream repository contains a mix of source formats:
+The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bowlbyonesc/`. The repository has only 12 commits, all from 2014. Commit `9566646d` is the tip of master (2014-10-17, "update .travis.yml").
+
+The upstream repo contains a mix of source formats:
 - `src/BowlbyOneSC-Regular.sfd` (FontForge format)
 - `src/BowlbyOneSC-Regular-TTF.vfb` (FontLab format)
-- `src/BowlbyOneSC-Regular.ufo` (UFO format - gftools-buildable)
+- `src/BowlbyOneSC-Regular.ufo` (UFO format — gftools-builder compatible)
 - `src/BowlbyOneSC-TThints.vfb` (FontLab hinting file)
 
-**Important**: The presence of a UFO source means this family could potentially be built with gftools-builder if a config.yaml were created. However, the UFO source dates from 2014 and may not produce output matching the current binary (which was modified in 2015 for nbspace/fsType fixes).
+The presence of a UFO source enables building with gftools-builder.
 
-## Verification
+### Override config.yaml
 
-- **Repository accessible**: Yes, `librefonts/bowlbyonesc` is accessible on GitHub
-- **Commit exists**: Yes, `9566646` verified on GitHub (2014-10-17)
-- **Local cache**: Repo cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bowlbyonesc/`
-- **Commit matches tip**: Yes, the recorded commit is the latest commit in the repo
-- **Source files**: SFD, VFB, and UFO (UFO is gftools-builder compatible in principle)
+An override `config.yaml` was added to `/mnt/shared/google/fonts/ofl/bowlbyonesc/config.yaml` as part of the source block commit (`bb0ae5d66`). Contents:
 
-## Confidence Level
+```yaml
+sources:
+  - src/BowlbyOneSC-Regular.ufo
+buildVariable: false
+```
 
-**HIGH** - The repository URL and commit hash are correct. The commit is the tip of an archival repo that has not been updated since 2014. The current tracking notes say "Has gftools-buildable sources (ufo), needs config.yaml" which is accurate.
+This override enables gftools-builder to compile the font from the upstream UFO source. The `config_yaml` field is omitted from METADATA.pb because google-fonts-sources auto-detects local override config.yaml files.
 
-## Open Questions
+### Verification
 
-1. The UFO source file exists but is from 2014. Would building from this UFO produce output matching the current binary in google/fonts (which had nbspace/fsType fixes applied in 2015)? Testing would be needed.
-2. A config.yaml could potentially be created as an override in google/fonts to build from the UFO source, but the output would need to be verified against the current binary.
-3. This family was created by Vernon Adams, who passed away in 2014. The source is unlikely to receive further updates.
+- Repository URL: Confirmed — `librefonts/bowlbyonesc` is accessible on GitHub
+- Commit hash: Confirmed — `9566646d` is the tip of master (2014-10-17, "update .travis.yml")
+- Override config.yaml: Present at `ofl/bowlbyonesc/config.yaml` in google/fonts
+- UFO source: `src/BowlbyOneSC-Regular.ufo` exists at the recorded commit
+- Note: The UFO source dates from 2014; building from it may not perfectly replicate the 2015 nbspace/fsType-fixed binary
+
+## Conclusion
+
+The METADATA.pb source block is complete with repository URL and commit hash correctly set. An override `config.yaml` exists in the google/fonts family directory, enabling gftools-builder to compile from the UFO source. The `config_yaml` field is intentionally omitted from METADATA.pb as the google-fonts-sources tool auto-detects the local override. No additional action needed, though testing the build output against the current binary would confirm whether the UFO source matches the 2015-modified binary.

@@ -1,48 +1,56 @@
-# Investigation Report: Birthstone Bounce
+# Investigation: Birthstone Bounce
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Birthstone Bounce |
-| Designer | Robert Leuschke |
-| License | OFL |
+| Slug | birthstone-bounce |
+| License Dir | ofl |
 | Repository URL | https://github.com/googlefonts/birthstone-bounce |
-| Commit | `db48de44b60017495c71a024aa2c079d70869225` |
-| Branch | main |
-| Config YAML | `sources/config.yaml` |
-| Date Added | 2021-09-02 |
-| Status | Complete |
+| Commit Hash | db48de44b60017495c71a024aa2c079d70869225 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | MEDIUM |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/googlefonts/birthstone-bounce` was first added by Simon Cozens in commit `f7455d788` ("Populate source.repository_url", August 2023). The copyright field in METADATA.pb also references this URL. The gftools-packager commit message for PR #3793 confirms this URL.
+```
+source {
+  repository_url: "https://github.com/googlefonts/birthstone-bounce"
+  commit: "db48de44b60017495c71a024aa2c079d70869225"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "fonts/ttf/BirthstoneBounce-Regular.ttf"
+    dest_file: "BirthstoneBounce-Regular.ttf"
+  }
+  files {
+    source_file: "fonts/ttf/BirthstoneBounce-Medium.ttf"
+    dest_file: "BirthstoneBounce-Medium.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit hash `db48de44b60017495c71a024aa2c079d70869225` was sourced from the fontc_crater targets list, ported to METADATA.pb in commit `19cdcec59` ("[Batch 1/4] port info from fontc_crater targets list").
+The METADATA.pb already contains a complete source block with repository URL, commit hash, and config_yaml path.
 
-### Cross-verification with gftools-packager
+The fonts were added to google/fonts in commit `8bd4436fd` (September 8, 2021, PR #3793), titled "Birthstone Bounce: Version 1.010; ttfautohint (v1.8.3) added". The commit message states the files were "taken from the upstream repo https://github.com/googlefonts/birthstone-bounce at commit https://github.com/googlefonts/birthstone-bounce/commit/f45812daabb656a9d1d8c19c211fc19c26c95c07."
 
-The gftools-packager commit `8bd4436fd` (PR #3793, by Viviana Monsalve, September 2021) references a different commit: `f45812daabb656a9d1d8c19c211fc19c26c95c07`. However, this commit does not exist in the upstream repo.
+However, the current METADATA.pb has commit `db48de44b60017495c71a024aa2c079d70869225`, which was set by commit `19cdcec59` (a batch import from fontc_crater targets list). The upstream repository cache at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/birthstone-bounce` is a shallow clone with only a single commit (`db48de44`, "outline fixes in acute and ring", dated September 17, 2021), meaning the original commit `f45812da` referenced in the google/fonts onboarding commit no longer exists in the accessible history.
 
-The repo has been squashed to a single commit (`db48de4`, "outline fixes in acute and ring") which is the HEAD and only commit on the `main` branch. This follows the same pattern as the sibling Birthstone repo -- googlefonts repositories that underwent history cleanup.
+The commit `db48de44` is 9 days later than the onboarding event, suggesting the upstream repository was updated after onboarding. Since `db48de44` is the only available commit in the shallow clone, it is the closest we can verify.
 
-The fontc_crater targets list uses `db48de4` as the reference commit, which is the only available commit in the repository and therefore the correct one to use.
-
-### Verification that fonts match
-
-The METADATA.pb source block maps two font files from the upstream repo:
-- `fonts/ttf/BirthstoneBounce-Regular.ttf`
-- `fonts/ttf/BirthstoneBounce-Medium.ttf`
-
-Both files exist at commit `db48de4`.
-
-## Config YAML Status
-
-**Found in upstream at `sources/config.yaml`**
-
-The config at commit `db48de4` contains:
+The `sources/config.yaml` file exists in the upstream repository with content:
 ```yaml
 sources:
     - BirthstoneBounce.glyphs
@@ -51,27 +59,8 @@ outputDir: "../fonts"
 buildVariable: false
 ```
 
-This builds static fonts only from `BirthstoneBounce.glyphs`, producing the Birthstone Bounce family with Regular and Medium weights.
+The source block in METADATA.pb is complete and correctly references this config file.
 
-## History
+## Conclusion
 
-1. **2021-09-02**: Birthstone Bounce added to google/fonts (date_added)
-2. **2021-09-08**: Added via gftools-packager (commit `8bd4436fd`, PR #3793 by Viviana Monsalve), Version 1.010
-3. **2023-08-15**: repository_url added by Simon Cozens (commit `f7455d788`)
-4. **2025-03-31**: Commit hash and additional source metadata added from fontc_crater targets list (commit `19cdcec59`)
-
-## Verification
-
-- [x] Repository URL is valid and accessible
-- [x] Commit hash exists in upstream repo (HEAD and only commit on main)
-- [x] Config YAML exists at `sources/config.yaml` at the recorded commit
-- [x] Source block in METADATA.pb is complete with files mapping and branch
-- [x] Font files `BirthstoneBounce-Regular.ttf` and `BirthstoneBounce-Medium.ttf` exist at the recorded commit
-
-## Confidence Level
-
-**High** -- All data is verified. The commit hash is the only available commit in the squashed repo and matches fontc_crater's reference. The config.yaml and font files are confirmed present.
-
-## Open Questions
-
-None. The repo history was squashed (common for googlefonts repos), but the current HEAD commit serves as the definitive reference.
+The METADATA.pb source block is complete with repository URL, commit hash, and config_yaml path. The commit hash `db48de44b60017495c71a024aa2c079d70869225` is the only available commit in the upstream repo (shallow clone). The original onboarding commit `f45812daabb656a9d1d8c19c211fc19c26c95c07` (referenced in the google/fonts PR #3793 commit body) is no longer reachable in the local cache. Confidence is MEDIUM due to this discrepancy. No further action needed.

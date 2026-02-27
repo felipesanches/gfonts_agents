@@ -1,28 +1,65 @@
-# Baskervville SC
+# Investigation: Baskervville SC
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: ANRT
-**METADATA.pb path**: `ofl/baskervvillesc/METADATA.pb`
+## Summary
 
-## Source Data
 | Field | Value |
 |-------|-------|
+| Family Name | Baskervville SC |
+| Slug | baskervville-sc |
+| License Dir | ofl |
 | Repository URL | https://github.com/anrt-type/ANRT-Baskervville |
-| Commit | `0629447774568fd957d98736487afb000be38b55` |
-| Config YAML | `sources/config.yaml` |
-| Branch | master |
+| Commit Hash | 0629447774568fd957d98736487afb000be38b55 |
+| Config YAML | sources/config.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
-Baskervville SC shares the same upstream repository as Baskervville: `https://github.com/anrt-type/ANRT-Baskervville`. The Small Caps variant is built from the same Glyphs source using `buildSmallCap: true` in the config.yaml. The copyright string confirms: "Copyright 2018 The Baskervville Project Authors (https://github.com/anrt-type/ANRT-Baskervville)". The google/fonts commit fe282bb64 (2025-04-23) states: "Taken from the upstream repo https://github.com/anrt-type/ANRT-Baskervville".
+## Source Data (METADATA.pb)
 
-## How the Commit Hash Was Identified
-The commit hash `0629447774568fd957d98736487afb000be38b55` is recorded in METADATA.pb. The google/fonts commit fe282bb64 for "Baskervville SC: Version 1.100 added" explicitly confirms: "at commit https://github.com/anrt-type/ANRT-Baskervville/commit/0629447774568fd957d98736487afb000be38b55". This is the same commit used for the Baskervville family, which makes sense since both are generated from the same sources.
+```
+source {
+  repository_url: "https://github.com/anrt-type/ANRT-Baskervville"
+  commit: "0629447774568fd957d98736487afb000be38b55"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BaskervvilleSC[wght].ttf"
+    dest_file: "BaskervvilleSC[wght].ttf"
+  }
+  branch: "master"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-Note: The SC font binary was subsequently updated in commit 72f3e5c3 (2025-05-01) by Emma Marichal to "update fonts with the right OFL url", but this was a metadata fix in the binary, not a new upstream build.
+## Investigation
 
-## How Config YAML Was Resolved
-The config file `sources/config.yaml` exists in the upstream repo at the referenced commit. The `buildSmallCap: true` directive in the config is what generates the BaskervvilleSC variant:
+### Google Fonts Git History
+
+The `.ttf` files in `ofl/baskervvillesc/` have been modified in three commits:
+
+1. `72f3e5c39` — `update fonts with the right OFL url`
+2. `fe282bb64` (2025-04-23) — `Baskervville SC: Version 1.100 added`
+3. `db6a2c3f9` — `Baskervville SC: Version 1.003; ttfautohint (v1.8.4.7-5d5b) added`
+
+The Version 1.100 commit message reads:
+> "Taken from the upstream repo https://github.com/anrt-type/ANRT-Baskervville at commit https://github.com/anrt-type/ANRT-Baskervville/commit/0629447774568fd957d98736487afb000be38b55."
+
+This is a clean, complete commit URL with the full hash — no truncation.
+
+The original Version 1.003 commit message reads:
+> "Taken from the upstream repo https://github.com/anrt-type/ANRT-Baskervville at commit https://github.com/anrt-type/ANRT-Baskervville/commit/11a43fe1ef8b4c23aff9f24c218412d15cca54fd."
+
+### Commit Hash Verification
+
+Commit `0629447774568fd957d98736487afb000be38b55` (2025-04-22, "rebuilt fonts with SC") exists in the upstream repo. It predates the google/fonts update (2025-04-23) by exactly one day, which is consistent with a standard onboarding workflow.
+
+This is the commit that introduced the SC (Small Caps) variable font to the repo (`rebuilt fonts with SC`), which directly corresponds to the Baskervville SC family being added to google/fonts.
+
+### Config YAML
+
+`sources/config.yaml` exists in the upstream repo and was present at commit `0629447774568fd957d98736487afb000be38b55`. Contents:
+
 ```yaml
 sources:
     - Baskervville.glyphs
@@ -32,20 +69,23 @@ autohintOTF: false
 buildSmallCap: true
 ```
 
-No override config.yaml exists in the google/fonts family directory.
+Note that `familyName` is "Baskervville" (not "Baskervville SC"), but `buildSmallCap: true` instructs gftools-builder to generate the Small Caps variant, which produces the Baskervville SC font. The METADATA.pb correctly records `config_yaml: "sources/config.yaml"`.
 
-## Verification
-- Commit exists in upstream repo: Yes
-- Commit date: 2025-04-22 11:33:01 +0200
-- Commit message: "rebuilt fonts with SC"
-- Source files at commit: `sources/Baskervville.glyphs`, `sources/Baskervville-Italic.glyphs`, `sources/config.yaml`
-- SC font file at commit: `fonts/variable/BaskervvilleSC[wght].ttf`
+This same commit and `sources/config.yaml` is also referenced by the non-SC Baskervville family (`ofl/baskervville/METADATA.pb`), as both families are built from the same upstream source.
 
-## Note on Upstream Changes
-Same as Baskervville: 2 commits exist after the referenced commit (`75cbd68` and `35a86a0`), which would need separate review.
+### METADATA.pb History
 
-## Confidence
-**High**: The commit hash is explicitly confirmed by the google/fonts packager commit message, the upstream repo is the same as Baskervville, and the SC variant is generated by the `buildSmallCap: true` setting in config.yaml.
+The `config_yaml` field was added to METADATA.pb in batch commit `19cdcec59` (2025-03-31, "[Batch 1/4] port info from fontc_crater targets list"), imported from the fontc_crater targets.json. The repository_url and commit were added earlier via the gftools-packager-style commit `fe282bb64`.
 
-## Open Questions
-None
+### Upstream Repo Cache
+
+Repository is cached at `upstream_repos/fontc_crater_cache/anrt-type/ANRT-Baskervville/`.
+
+## Conclusion
+
+Status is **complete**. All fields in the METADATA.pb source block are correct:
+- `repository_url`: https://github.com/anrt-type/ANRT-Baskervville
+- `commit`: 0629447774568fd957d98736487afb000be38b55 (2025-04-22, one day before onboarding)
+- `config_yaml`: sources/config.yaml (exists at the referenced commit, includes `buildSmallCap: true`)
+
+No further action required.

@@ -1,62 +1,63 @@
-# Investigation Report: Bpmf Zihi Kai Std
+# Investigation: Bpmf Zihi Kai Std
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Bpmf Zihi Kai Std |
-| Designer | But Ko |
-| License | OFL |
-| Date Added | 2026-01-30 |
+| Slug | bpmf-zihi-kai-std |
+| License Dir | ofl |
 | Repository URL | https://github.com/ButTaiwan/bpmfvs |
-| Commit Hash | `20f741c18bb917b63576293906c01e82ddfce032` |
-| Config YAML | None |
+| Commit Hash | 20f741c18bb917b63576293906c01e82ddfce032 |
+| Config YAML | none |
 | Status | missing_config |
+| Confidence | MEDIUM |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL was set in METADATA.pb during the original onboarding. Bpmf Zihi Kai Std was added via PR #10173 by Aaron Bell (`aaronbell`), merged 2026-02-11. The PR body describes it as a "New project" (unlike Huninn and Iansui which are "Based on existing GF fonts"). Same note about building in `aaronbell/bpmfvs` with planned transition to `ButTaiwan/bpmfvs`.
+```
+source {
+  repository_url: "https://github.com/ButTaiwan/bpmfvs"
+  commit: "20f741c18bb917b63576293906c01e82ddfce032"
+}
+```
 
-All three Bpmf families share the same upstream repository.
+## Investigation
 
-## How Commit Determined
+Bpmf Zihi Kai Std is a Traditional Chinese standard-script font with Bopomofo phonetic annotations, designed by But Ko, added to Google Fonts on 2026-01-30. It is one of three Bpmf family variants (alongside Huninn and Iansui) from the same upstream repository. Unlike the other two variants, Zihi Kai Std is described as a "New project" (not based on an existing GF font).
 
-The commit hash `20f741c18bb917b63576293906c01e82ddfce032` was added by our automation (commit `9a14639f3`, 2026-02-25). This is the HEAD of `ButTaiwan/bpmfvs` from 2025-12-13.
+### Git History
 
-**Critical issue**: Same as the other Bpmf families. The fonts were built in `aaronbell/bpmfvs`, and the recorded commit predates the actual build by over a month.
+The font was initially added by google/fonts commit `f91754e81` (2026-01-30, "Adding Bpmf Zihi Kai Std") via PR #10173 by Aaron Bell. This family had the most font binary updates of the three Bpmf variants:
+1. First binary: `f91754e81` (2026-01-30) — initial addition
+2. Formatting/METADATA: `44d5c78d8`, `c27a727d9`
+3. First binary update: `8090ba2c9` (2026-01-30, "Update BpmfZihiKaiStd-Regular.ttf")
+4. Second binary update: `72cd1d1f6` (2026-02-09, "Updating with various fixes")
+5. Third binary update: `f55b8f2bb` (2026-02-09, "Update BpmfZihiKaiStd-Regular.ttf")
+6. Further metadata fixes: `f56ed21ec` (copyright/license URLs), `26417436c` (newline), `3b5debf6e` (URL formatting)
 
-The onboarding timeline for Bpmf Zihi Kai Std is more complex, with multiple font binary updates:
-1. Initial onboarding: `f91754e81` (2026-01-30) "Adding Bpmf Zihi Kai Std"
-2. Formatting update: `44d5c78d8`
-3. METADATA update: `c27a727d9`
-4. First binary update: `8090ba2c9` (2026-01-30) "Update BpmfZihiKaiStd-Regular.ttf"
-5. Second binary update: `72cd1d1f6` (2026-02-09) "Updating with various fixes"
-6. Third binary update: `f55b8f2bb` (2026-02-09) "Update BpmfZihiKaiStd-Regular.ttf"
-7. Further fixes: `f56ed21ec` (copyright/license URLs), `26417436c` (newline), `3b5debf6e` (URL formatting)
+The source block was added by google/fonts commit `96e87d79a` ("Bpmf Zihi Kai Std: add source block to METADATA.pb"), which also added an `upstream_info.md` file.
 
-This family had the most font binary updates of the three Bpmf families (3 updates vs 1 each for Huninn and Iansui).
+The commit hash `20f741c18bb917b63576293906c01e82ddfce032` was added by automation commit `9a14639f3` (2026-02-25).
 
-## Config YAML Status
+### Upstream Repository
 
-**No config.yaml exists** and none can be created for gftools-builder.
+Same situation as the other Bpmf families. The bpmfvs repo (`ButTaiwan/bpmfvs`) is not cached locally. The fonts were built in Aaron Bell's fork (`aaronbell/bpmfvs`). The recorded commit `20f741c18bb` predates the actual build by over a month.
 
-Same situation as all Bpmf families - custom Ruby-based build system (`make_font.rb`). The base font for Zihi Kai Std comes from `srcfonts/ZihiKaiStd.ttf` (source not documented in `upstream_sources.json`, suggesting it may be an original creation or sourced separately).
+The source of the base ZihiKaiStd font is not documented in `upstream_sources.json` within the bpmfvs repo (unlike Huninn, which comes from `justfont/Huninn`, and Iansui, which comes from `ButTaiwan/iansui`). The base font may be an original creation or sourced separately.
 
-## Verification
+### Build System
 
-- **Repository accessible**: Yes, both `ButTaiwan/bpmfvs` and `aaronbell/bpmfvs` are accessible
-- **Commit exists**: Yes, `20f741c` exists in both repos
-- **Commit is correct for current binary**: No - the current binary was built from a later commit in `aaronbell/bpmfvs` (likely from Feb 9, 2026)
-- **Local cache**: Neither repo is cached locally
-- **Source files**: Custom build system (Ruby-based), no standard font sources
+Same as all Bpmf families — a custom Ruby-based build system (`make_font.rb`) that is incompatible with gftools-builder. No config.yaml can be created.
 
-## Confidence Level
+### Verification
 
-**MEDIUM** - Same fundamental issues as the other Bpmf families. The repository URL is the canonical upstream but the fonts were built from Aaron Bell's fork. The commit hash is incorrect.
+- Repository URL: Correct as canonical upstream (but fonts were built from Aaron Bell's fork)
+- Commit hash: Incorrect — `20f741c` predates the actual build; the last binary update was `f55b8f2bb` (2026-02-09), so the correct commit in `aaronbell/bpmfvs` is from around that date
+- Config YAML: Cannot be created (custom Ruby build system)
+- Local cache: Neither `ButTaiwan/bpmfvs` nor `aaronbell/bpmfvs` is cached locally
+- This family had 3 binary updates (vs 1 each for Huninn and Iansui), suggesting more iteration was needed
 
-## Open Questions
+## Conclusion
 
-1. **Which exact commit in aaronbell/bpmfvs produced the final binary?** The third update (`f55b8f2bb`, Feb 9, 2026) was the last binary change, so the build commit in the fork should be from around that time.
-2. **Where does the ZihiKaiStd base font come from?** Unlike Huninn (from justfont) and Iansui (from ButTaiwan/iansui), the Zihi Kai Std source font is not documented in `upstream_sources.json`.
-3. **Will the transition from aaronbell/bpmfvs to ButTaiwan/bpmfvs happen?** Until it does, the recorded commit hash will remain inaccurate.
-4. This family had the most updates of the three Bpmf families, suggesting it required more iteration to get right.
+Same fundamental situation as the other Bpmf families. The repository URL points to the canonical upstream but the fonts were built from Aaron Bell's fork. The commit hash is incorrect — the final binary was updated on 2026-02-09 via commit `f55b8f2bb` in google/fonts. Aaron Bell should be asked to confirm the exact commit in `aaronbell/bpmfvs` that produced that binary. No config.yaml can be created. The source of the base ZihiKaiStd font should also be clarified. The status should remain `missing_config` permanently.

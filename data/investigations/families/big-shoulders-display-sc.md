@@ -1,56 +1,58 @@
-# Big Shoulders Display SC
+# Investigation: Big Shoulders Display SC
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Patric King
-**METADATA.pb path**: `ofl/bigshouldersdisplaysc/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Big Shoulders Display SC |
+| Slug | big-shoulders-display-sc |
+| License Dir | ofl |
 | Repository URL | https://github.com/xotypeco/big_shoulders |
-| Commit | `0b3d09a86862b19efae28eae0cd868f17c476b20` |
-| Config YAML | (omitted - override config.yaml in google/fonts) |
-| Branch | `master` |
+| Commit Hash | 0b3d09a86862b19efae28eae0cd868f17c476b20 |
+| Config YAML | override config.yaml in google/fonts (ofl/bigshouldersdisplaysc/config.yaml) |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/xotypeco/big_shoulders` was already present in the METADATA.pb `source { repository_url }` field. It matches the copyright string in the font files ("Copyright 2019 The Big Shoulders Project Authors (https://github.com/xotypeco/big_shoulders)"). This URL is shared across all Big Shoulders family variants (Display, Display SC, Inline, Inline Display, Inline Display SC, Inline Text, Stencil Display, Stencil Text, Text, Text SC).
+```
+source {
+  repository_url: "https://github.com/xotypeco/big_shoulders"
+  commit: "0b3d09a86862b19efae28eae0cd868f17c476b20"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "Documentation/DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  files {
+    source_file: "Big-Shoulders/fonts/variable/display/BigShouldersDisplaySC[wght].ttf"
+    dest_file: "BigShouldersDisplaySC[wght].ttf"
+  }
+  branch: "master"
+}
+```
 
-## How the Commit Hash Was Identified
+## Investigation
 
-The commit hash `0b3d09a86862b19efae28eae0cd868f17c476b20` was recorded in the METADATA.pb file from the initial onboarding of this family. The onboarding commit in google/fonts (`2035603`) by Simon Cozens states: "Taken from the upstream repo https://github.com/xotypeco/big_shoulders at commit https://github.com/xotypeco/big_shoulders/commit/0b3d09a86862b19efae28eae0cd868f17c476b20."
+### Repository URL
 
-This was part of PR #7783, which was merged on 2024-06-25. The upstream commit `0b3d09a` (dated 2024-02-26) has the message "regenerate font files" and was authored by XO Type Co.
+The repository URL `https://github.com/xotypeco/big_shoulders` is documented in METADATA.pb and confirmed by the copyright string. All Big Shoulders variants share this upstream repository.
 
-Big Shoulders Display SC is a Small Caps variant. The pre-built binary `BigShouldersDisplaySC[wght].ttf` does not exist in the upstream repo at this commit. Instead, it is generated via the override config.yaml recipe in the google/fonts family directory, which builds from `BigShoulders.glyphs` and applies `smcp -> ccmp` layout remapping to produce the SC variant.
+### Commit Hash
 
-## How Config YAML Was Resolved
+The METADATA.pb records commit `0b3d09a86862b19efae28eae0cd868f17c476b20`. The google/fonts commit `203560305` ("Big Shoulders Display SC: Version 2.002 added") explicitly states:
 
-There is no `config_yaml` field in the METADATA.pb source block because an override `config.yaml` exists in the google/fonts family directory at `ofl/bigshouldersdisplaysc/config.yaml`. This override config defines a recipe that:
+> "Taken from the upstream repo https://github.com/xotypeco/big_shoulders at commit https://github.com/xotypeco/big_shoulders/commit/0b3d09a86862b19efae28eae0cd868f17c476b20."
 
-1. Builds a variable font from `Big-Shoulders/sources/BigShoulders.glyphs`
-2. Subspaces to `opsz=72` (display optical size)
-3. Applies `smcp -> ccmp` layout remapping to create the Small Caps variant
-4. Renames to "Big Shoulders Display SC"
+This family was added on 2024-05-30 (date_added). The commit `0b3d09a` is dated 2024-02-26 in the upstream repo ("regenerate font files"), which predates the google/fonts addition date — consistent with being the onboarding commit. The commit exists in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/xotypeco/big_shoulders`.
 
-The override was added by Simon Cozens as part of the original onboarding PR #7783. The upstream repo has no config for this SC variant because it is a derived product.
+### Config YAML
 
-## Verification
+An override `config.yaml` exists in the google/fonts family directory at `ofl/bigshouldersdisplaysc/config.yaml`. It contains the same recipe as `ofl/bigshouldersdisplay/config.yaml` and builds both the Display and Display SC variants by subspacing to `opsz=72` and applying `smcp -> ccmp` remapping for SC. The `config_yaml` field is correctly omitted from METADATA.pb.
 
-- Commit exists in upstream repo: Yes
-- Commit date: 2024-02-26
-- Commit message: "regenerate font files"
-- Commit author: XO Type Co
-- Source file at commit: `Big-Shoulders/sources/BigShoulders.glyphs` (exists)
-- Pre-built SC binary at commit: Does not exist (expected - SC is generated via recipe)
-- Override config.yaml exists in google/fonts: Yes
+## Conclusion
 
-## Confidence
-
-**High**: The commit hash `0b3d09a` is directly referenced in both the google/fonts onboarding commit and the PR #7783 body. It exists in the upstream repo. The SC variant is generated from sources at this commit via the override config.yaml recipe. The same commit hash is shared with other SC variants (Big Shoulders Text SC, Big Shoulders Inline Display SC) that were onboarded in the same batch by Simon Cozens.
-
-## Open Questions
-
-None. The data is complete and verified.
+The source block in METADATA.pb is complete with correct repository URL and commit hash. The override config.yaml in google/fonts is correctly configured. Status is `complete`.

@@ -1,33 +1,46 @@
-# Investigation Report: Cal Sans
+# Investigation: Cal Sans
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Cal Sans |
-| Designer | Mark Davis, Cal.com Inc. |
-| License | OFL |
+| Slug | cal-sans |
+| License Dir | ofl |
 | Repository URL | https://github.com/calcom/font |
-| Commit Hash | `b833fb1129ba8c62c29b1d9f70861c77204affe2` |
-| Branch | main |
-| Config YAML | `sources/config.yaml` |
+| Commit Hash | b833fb1129ba8c62c29b1d9f70861c77204affe2 |
+| Config YAML | sources/config.yaml |
 | Status | complete |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/calcom/font` is recorded in the METADATA.pb `source {}` block and matches the copyright notice: "Copyright 2021 The Cal Sans Project Authors (https://github.com/calcom/font)". The font was added relatively recently (2025-03-19).
+```
+source {
+  repository_url: "https://github.com/calcom/font"
+  commit: "b833fb1129ba8c62c29b1d9f70861c77204affe2"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/CalSans-Regular.ttf"
+    dest_file: "CalSans-Regular.ttf"
+  }
+  branch: "main"
+  config_yaml: "sources/config.yaml"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The commit `b833fb1129ba8c62c29b1d9f70861c77204affe2` was explicitly referenced in the initial onboarding commit `59e4eb6ee` in google/fonts:
+Cal Sans is a static single-weight font (Regular 400) by Mark Davis and Cal.com Inc., added to Google Fonts on 2025-03-19.
 
-> Taken from the upstream repo https://github.com/calcom/font at commit https://github.com/calcom/font/commit/b833fb1129ba8c62c29b1d9f70861c77204affe2.
+The source information was added by Felipe Sanches in google/fonts commit `b025485e8` ("sources info for Cal Sans", 2025-04-01), which added the `config_yaml: "sources/config.yaml"` field to an already-existing source block. The initial onboarding commit `59e4eb6ee` explicitly references the upstream commit: "Taken from the upstream repo https://github.com/calcom/font at commit https://github.com/calcom/font/commit/b833fb1129ba8c62c29b1d9f70861c77204affe2."
 
-This is the HEAD of the upstream repository's main branch ("Merge pull request #7 from 0xflotus/patch-1"). The font has had no updates since initial onboarding.
+The upstream repo is cached at `upstream_repos/fontc_crater_cache/calcom/font/`. The commit `b833fb1129` (message: "Merge pull request #7 from 0xflotus/patch-1", Peer Richelsen, 2025-03-19) was verified to be the HEAD of the main branch at the time of onboarding. No further commits have been made to the upstream repo since.
 
-## Config YAML Status
-
-The config file `sources/config.yaml` exists at the recorded commit in the upstream repo. It contains:
+The config file `sources/config.yaml` was verified to exist at the recorded commit with contents:
 
 ```yaml
 sources:
@@ -36,20 +49,8 @@ familyName: "Cal Sans"
 cleanUp: True
 ```
 
-This is a static font (single weight, Regular only), built from `Cal-Sans.glyphs` source.
+This is a static font built from a Glyphs source. The `config_yaml` field in METADATA.pb correctly points to `sources/config.yaml` in the upstream repository.
 
-## Verification
+## Conclusion
 
-- **Commit exists in upstream repo**: Yes, verified as HEAD of main branch
-- **Config YAML exists at commit**: Yes, `sources/config.yaml` confirmed
-- **Repository URL accessible**: Yes
-- **gftools-packager commit message**: Explicitly cites the commit hash in the onboarding commit `59e4eb6ee`
-- **Font file path in METADATA.pb**: `fonts/ttf/CalSans-Regular.ttf` matches the expected build output
-
-## Confidence Level
-
-**High** - All data is consistent and directly cross-verified through the gftools-packager onboarding commit message.
-
-## Open Questions
-
-None. All source data is complete and verified.
+All source metadata is complete and verified. The repository URL, commit hash, and config_yaml path are all in place and confirmed by the gftools-packager onboarding commit message. Status is `complete`.

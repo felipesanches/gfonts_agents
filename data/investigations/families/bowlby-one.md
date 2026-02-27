@@ -1,56 +1,61 @@
-# Investigation Report: Bowlby One
+# Investigation: Bowlby One
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Bowlby One |
-| Designer | Vernon Adams |
-| License | OFL |
-| Date Added | 2011-07-13 |
+| Slug | bowlby-one |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/bowlbyone |
-| Commit Hash | `3aca9b57cf9c7b9688b635d5dcfb6d53948e26a2` |
-| Branch | master |
-| Config YAML | None |
+| Commit Hash | 3aca9b57cf9c7b9688b635d5dcfb6d53948e26a2 |
+| Config YAML | none |
 | Status | missing_config |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/bowlbyone` was previously recorded in the tracking data. The librefonts organization hosts archival copies of many early Google Fonts projects. The repository is accessible and contains the original source files.
+```
+source {
+  repository_url: "https://github.com/librefonts/bowlbyone"
+  commit: "3aca9b57cf9c7b9688b635d5dcfb6d53948e26a2"
+}
+```
 
-## How Commit Determined
+## Investigation
 
-The repository has only 11 commits total, all from 2014. The recorded commit `3aca9b5` is the tip of master (the latest commit, from 2014-10-17: "update .travis.yml"). This is the only meaningful commit to use as a reference since the repo has not been updated since 2014.
+Bowlby One is a display typeface by Vernon Adams, added to Google Fonts on 2011-07-13. It is an archival font with no active upstream development since 2014.
 
-The font binary in google/fonts was last updated in two key commits:
-1. `efb2eb034` (2015-04-27) - nbspace and fsType fixes by Dave Crossland
-2. `5df13fc14` (2017-08-07) - "hotfix-bowlbyone: v1.001 added" by Marc Foley via PR #864
+### Git History
 
-The 2017 hotfix updated the font binary to v1.001. This update was made by Marc Foley (m4rc1e), likely regenerating or modifying the binary outside the upstream repo. The upstream repo was never updated to reflect this change.
+The font TTF was last updated in google/fonts commit `5df13fc14` (2017-08-07, "hotfix-bowlbyone: v1.001 added", PR #864 by Marc Foley). Prior to that, commit `efb2eb034` (2015-04-27) applied nbspace and fsType fixes. The initial commit was `90abd17b4`.
 
-## Config YAML Status
+The source block was added by google/fonts commit `6e2cc4405` ("Bowlby One: add source block to METADATA.pb"), which documented:
+- Repo: librefonts/bowlbyone
+- Commit: 3aca9b57
+- Config: none (SFD-only sources)
+- Status: missing_config
+- Confidence: HIGH
 
-**No config.yaml exists** in either the upstream repository or as an override in google/fonts.
+### Upstream Repository
 
-The upstream repository only contains SFD (FontForge) and VFB (FontLab) source files:
+The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bowlbyone/`. The repository has only 11 commits, all from 2014. Commit `3aca9b57` is the tip of master (2014-10-17, "update .travis.yml").
+
+The upstream repo contains only SFD (FontForge) and VFB (FontLab) source files:
 - `src/BowlbyOne-Regular-TTF.sfd`
 - `src/BowlbyOne-Regular.vfb`
 
-These formats are not compatible with gftools-builder. There are no `.glyphs`, `.ufo`, or `.designspace` files.
+Neither of these formats is compatible with gftools-builder. There are no `.glyphs`, `.ufo`, or `.designspace` files present.
 
-## Verification
+The 2017 hotfix (v1.001) was performed by Marc Foley independently without updating the upstream repository. The upstream repo has not been updated since 2014.
 
-- **Repository accessible**: Yes, `librefonts/bowlbyone` is accessible on GitHub
-- **Commit exists**: Yes, `3aca9b5` verified on GitHub (2014-10-17)
-- **Local cache**: Repo cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bowlbyone/`
-- **Commit matches tip**: Yes, the recorded commit is the latest commit in the repo
-- **Source files**: SFD and VFB only (not gftools-builder compatible)
+### Verification
 
-## Confidence Level
+- Repository URL: Confirmed — `librefonts/bowlbyone` is accessible on GitHub
+- Commit hash: Confirmed — `3aca9b57` is the tip of master (2014-10-17, "update .travis.yml")
+- Config YAML: Cannot be created (SFD/VFB sources only, not compatible with gftools-builder)
+- Source files: SFD and VFB only
 
-**HIGH** - The repository URL and commit hash are correct. The commit is the tip of an archival repo that has not been updated since 2014. The font binary in google/fonts was later modified independently (2015, 2017) without corresponding upstream changes.
+## Conclusion
 
-## Open Questions
-
-1. The 2017 hotfix (v1.001, PR #864) was done by Marc Foley. It is unclear where the updated source for v1.001 resides, if anywhere.
-2. Since only SFD/VFB sources exist, a config.yaml cannot be created for gftools-builder. This family may need to remain in "missing_config" status permanently, or an alternative build approach would need to be developed.
+The METADATA.pb source block correctly records the repository URL and commit hash. No config.yaml can be created for this family because the upstream repo contains only SFD and VFB source files that are incompatible with gftools-builder. This family should remain with `status: missing_config` permanently unless the sources are converted to a gftools-builder-compatible format (`.glyphs`, `.ufo`, or `.designspace`). The 2017 v1.001 update by Marc Foley was performed outside the upstream repo with no corresponding source update.

@@ -1,53 +1,50 @@
-# Cabin Sketch - Investigation Report
+# Investigation: Cabin Sketch
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Cabin Sketch |
-| Designer | Impallari Type |
-| License | OFL |
-| Date Added | 2011-03-16 |
+| Slug | cabin-sketch |
+| License Dir | ofl |
 | Repository URL | https://github.com/impallari/CabinSketch |
 | Commit Hash | f74674fd7ba37fdfcdad88b58d8d3983a320a68d |
-| Config YAML | None |
-| Status | missing_config |
+| Config YAML | override config.yaml in google/fonts |
+| Status | complete |
+| Confidence | HIGH |
 
-## How URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/impallari/CabinSketch` was added to the METADATA.pb source block by Simon Cozens in commit `c8f729cbd` (2024-01-14) as part of a batch "Add more upstreams (c,d)" operation. The URL matches the impallari GitHub account, which belongs to Pablo Impallari, the designer behind Impallari Type.
+```
+source {
+  repository_url: "https://github.com/impallari/CabinSketch"
+  commit: "f74674fd7ba37fdfcdad88b58d8d3983a320a68d"
+}
+```
 
-## How Commit Was Determined
+## Investigation
 
-The commit hash `f74674fd7ba37fdfcdad88b58d8d3983a320a68d` is the HEAD of the upstream repository's master branch. This commit was made on 2016-11-10 with the message "FONTLOG: updated". It is the latest commit in the repository and corresponds to the v1.100 release that was onboarded via PR #459 by Marc Foley in December 2016.
+The repository URL `https://github.com/impallari/CabinSketch` was added by Simon Cozens in commit `c8f729cbd` ("Add more upstreams (c,d)", 2024-01-14). The URL matches the impallari GitHub account, which belongs to Pablo Impallari, the designer behind Impallari Type.
 
-The timeline is consistent:
-- Upstream commit `f74674f` was made on 2016-11-10 (updating FONTLOG)
+The commit hash `f74674fd7ba37fdfcdad88b58d8d3983a320a68d` was added in google/fonts commit `3bb35f256` ("Cabin Sketch: add source block to METADATA.pb", Felipe Sanches, 2026-02-26). The commit message notes: "Config: override config.yaml in google/fonts, Status: complete, Confidence: HIGH".
+
+The commit `f74674fd` is HEAD of the upstream repository's master branch (message: "FONTLOG: updated", Marc Foley, 2016-11-10). The timeline is consistent:
+- Upstream commit `f74674f` was made on 2016-11-10
 - PR #459 was submitted and merged on 2016-12-05, adding v1.100 to google/fonts
 - No further commits were made to the upstream repo after this
 
-The commit hash is not recorded in the current METADATA.pb source block, but is tracked in the `gfonts_library_sources.json` file.
+The upstream repo is cached at `upstream_repos/fontc_crater_cache/impallari/CabinSketch/`. The commit exists in the repo and the upstream contains `fonts/CabinSketch-Bold.ttf` and `fonts/CabinSketch-Regular.ttf` matching the files in google/fonts.
 
-## Config YAML Status
+The upstream repository does not contain a `config.yaml`. An override `config.yaml` was created in the google/fonts family directory (`ofl/cabinsketch/config.yaml`) by Felipe Sanches in commit `3bb35f256`. Contents:
 
-**No config.yaml exists** in the upstream repository. The repository contains Glyphs sources at `sources/CabinSketch.glyphs`, which is a gftools-buildable format, but there is no `config.yaml` to configure the build.
+```yaml
+sources:
+  - sources/CabinSketch.glyphs
+buildVariable: false
+```
 
-There is also no override `config.yaml` in the google/fonts family directory (`ofl/cabinsketch/`).
+The source file `sources/CabinSketch.glyphs` exists at commit `f74674fd` (Glyphs format, gftools-compatible). Since an override config.yaml exists in google/fonts, the `config_yaml` field is correctly omitted from the METADATA.pb source block.
 
-A config.yaml would need to be created (either in the upstream repo or as an override in google/fonts) for this family to be buildable with gftools-builder.
+## Conclusion
 
-## Verification
-
-- **Repository URL**: Valid. Points to the impallari/CabinSketch GitHub repository.
-- **Commit Hash**: Verified. The hash `f74674fd7ba37fdfcdad88b58d8d3983a320a68d` exists in the repository and is HEAD.
-- **Font Files Match**: The upstream repo at this commit contains `fonts/CabinSketch-Bold.ttf` and `fonts/CabinSketch-Regular.ttf`, matching the files in google/fonts.
-- **Source Files**: The repo contains `sources/CabinSketch.glyphs` (Glyphs format).
-
-## Confidence Level
-
-**HIGH** - The repository URL and commit hash are well-established. The commit is HEAD of the repo, the timeline matches PR #459, and the font files match. The only gap is the missing config.yaml.
-
-## Open Questions
-
-1. Should a config.yaml override be created in google/fonts for this family to make it gftools-builder compatible?
-2. The METADATA.pb source block currently lacks the commit hash - should it be added?
+All source metadata is complete and verified. The repository URL, commit hash, and override config.yaml are all in place. Status is `complete`. The commit is HEAD of the upstream repo with no subsequent commits, and the timeline aligns exactly with PR #459 by Marc Foley.

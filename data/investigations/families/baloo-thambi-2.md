@@ -1,37 +1,65 @@
-# Baloo Thambi 2
+# Investigation: Baloo Thambi 2
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Ek Type
-**METADATA.pb path**: `ofl/baloothambi2/METADATA.pb`
+## Summary
 
-## Source Data
 | Field | Value |
 |-------|-------|
+| Family Name | Baloo Thambi 2 |
+| Slug | baloo-thambi-2 |
+| License Dir | ofl |
 | Repository URL | https://github.com/yanone/Baloo2-Variable |
-| Commit | `ffd6308743a5829fe6980ce86f5629ba0250df98` |
-| Config YAML | `builder/BalooThambi2.yaml` |
-| Branch | `master` |
+| Commit Hash | ffd6308743a5829fe6980ce86f5629ba0250df98 |
+| Config YAML | builder/BalooThambi2.yaml |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
-The repository URL was explicitly documented in the METADATA.pb `source {}` block. It is also referenced in the copyright string of the font files. The gftools-packager commit message in google/fonts (397ea6e1a, 2021-11-26) confirms: "Baloo Thambi 2 Version 1.700 taken from the upstream repo https://github.com/yanone/Baloo2-Variable".
+## Source Data (METADATA.pb)
 
-## How the Commit Hash Was Identified
-The gftools-packager commit message (397ea6e1a) explicitly states: "at commit https://github.com/yanone/Baloo2-Variable/commit/ffd6308743a5829fe6980ce86f5629ba0250df98". This matches the commit hash in METADATA.pb.
+```
+source {
+  repository_url: "https://github.com/yanone/Baloo2-Variable"
+  commit: "ffd6308743a5829fe6980ce86f5629ba0250df98"
+  config_yaml: "builder/BalooThambi2.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BalooThambi2[wght].ttf"
+    dest_file: "BalooThambi2[wght].ttf"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "master"
+}
+```
 
-## How Config YAML Was Resolved
-The config file `builder/BalooThambi2.yaml` exists at the referenced commit in the upstream repo. It points to `../sources/BalooThambi2.glyphs` as the source and builds only variable fonts.
+## Investigation
 
-## Verification
-- Commit exists in upstream repo: Yes
-- Commit date: 2021-11-19 11:34:42 +0100
-- Commit message: "Update BalooChettan2[wght].ttf"
-- Source files at commit: `sources/BalooThambi2.glyphs` (plus 9 other Baloo family .glyphs files in this monorepo)
-- TTFs last updated in google/fonts: 2021-11-26 (commit 397ea6e1a)
-- No override config.yaml in google/fonts family directory
+The METADATA.pb already contains a complete source block. The repository URL points to `yanone/Baloo2-Variable`, which is a fork by type engineer Yanone of the canonical EkType upstream repository (`EkType/Baloo2-Variable`).
 
-## Confidence
-**High**: The gftools-packager commit message explicitly references both the upstream repo and the exact commit hash. The config.yaml exists at the commit. All data is consistent.
+The latest TTF was added in google/fonts commit `397ea6e1a` (PR #3986, merged 2021-11-25), with commit message:
+> "Baloo Thambi 2 Version 1.700 taken from the upstream repo https://github.com/yanone/Baloo2-Variable at commit https://github.com/yanone/Baloo2-Variable/commit/ffd6308743a5829fe6980ce86f5629ba0250df98."
 
-## Open Questions
-None
+This family uses commit `ffd6308`, the same as Baloo Chettan 2 and Baloo Da 2. The commit `ffd6308743a5829fe6980ce86f5629ba0250df98` is confirmed present in the local cache at `upstream_repos/fontc_crater_cache/yanone/Baloo2-Variable`. The commit message reads "Update BalooChettan2[wght].ttf" (dated 2021-11-19), and was the HEAD of the yanone fork at the time these three families were packaged. It reflects kerning fixes applied to Chettan and Thambi, with BalooThambi2 updated in the preceding commit `8844491` ("Update BalooThambi2[wght].ttf").
+
+The commit is also present in `EkType/Baloo2-Variable` (same hash), since it was created in yanone's fork and later merged back into EkType.
+
+The config file `builder/BalooThambi2.yaml` exists at commit `ffd6308` and contains:
+```yaml
+sources:
+  - ../sources/BalooThambi2.glyphs
+outputDir: "../fonts"
+buildTTF: false
+buildOTF: false
+buildWebfont: false
+buildVariable: true
+```
+
+This family covers the Tamil script. The source file `sources/BalooThambi2.glyphs` exists in the repository.
+
+## Conclusion
+
+The source block in METADATA.pb is complete and correct. Repository URL, commit hash, and config_yaml are all properly set and verified. This family uses a slightly later commit than most Baloo 2 variants due to kerning fixes applied after the initial batch. No action needed.

@@ -1,29 +1,48 @@
-# Betania Patmos In GDL - Investigation Report
+# Investigation: Betania Patmos In GDL
 
-## Source Data (from tracking)
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Betania Patmos In GDL |
+| Slug | betania-patmos-in-gdl |
+| License Dir | ofl |
 | Repository URL | https://github.com/huertatipografica/betania-patmos |
 | Commit Hash | 08c83ac9540b0b2bf86ddf6b632651142f31a93c |
 | Config YAML | sources/config.yaml |
 | Status | complete |
-| Category | HANDWRITING |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/huertatipografica/betania-patmos` is present in the METADATA.pb `source{}` block, which was set when the font was first added to google/fonts. It is also referenced in the copyright field of the font metadata and confirmed by PR #10151, which explicitly states it was "Taken from the upstream repo https://github.com/huertatipografica/betania-patmos".
+```
+source {
+  repository_url: "https://github.com/huertatipografica/betania-patmos"
+  commit: "08c83ac9540b0b2bf86ddf6b632651142f31a93c"
+  config_yaml: "sources/config.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/BetaniaPatmosInGDL-Regular.ttf"
+    dest_file: "BetaniaPatmosInGDL-Regular.ttf"
+  }
+  branch: "main"
+}
+```
 
-## How the Commit Hash Was Determined
+(Note: METADATA.pb also has `display_name: "Betania Patmos In Guideline"` indicating "GDL" stands for "Guideline".)
 
-The commit hash `08c83ac9540b0b2bf86ddf6b632651142f31a93c` was recorded directly in the METADATA.pb when the font was added to google/fonts in commit `e7a90689` (2026-01-23) by Emma Marichal. The commit message explicitly states: "Taken from the upstream repo https://github.com/huertatipografica/betania-patmos at commit https://github.com/huertatipografica/betania-patmos/commit/08c83ac9540b0b2bf86ddf6b632651142f31a93c."
+## Investigation
 
-PR #10151 (by emmamarichal) confirms this same commit hash in its body. The upstream commit is a merge commit: "Merge pull request #4 from emmamarichal/main - build fonts".
+The font was added to google/fonts on 2026-01-23 in commit `e7a906896` by Emma Marichal. The commit message explicitly documents the upstream source:
 
-## Config YAML Status
+> "Taken from the upstream repo https://github.com/huertatipografica/betania-patmos at commit https://github.com/huertatipografica/betania-patmos/commit/08c83ac9540b0b2bf86ddf6b632651142f31a93c."
 
-The upstream repository has `sources/config.yaml` at the recorded commit. Verified via GitHub API, the config contains:
+This is the same upstream repository and commit hash as all other Betania Patmos variants. The upstream commit `08c83ac` is a merge commit dated 2026-01-15 with message "Merge pull request #4 from emmamarichal/main - build fonts".
+
+The config.yaml at the recorded commit specifies `betania-patmos.glyphs` as the source file (shared by all five Betania Patmos variants):
 
 ```yaml
 sources:
@@ -38,23 +57,8 @@ interpolate: false
 cleanUp: true
 ```
 
-The `config_yaml: "sources/config.yaml"` field is not yet in the METADATA.pb on the main branch of google/fonts, but it exists in a pending PR branch (`sources_info_2026-02-25`). No override config.yaml exists in the google/fonts family directory.
+The METADATA.pb source block contains all required fields: `repository_url`, `commit`, `config_yaml: "sources/config.yaml"`, and `branch: "main"`. The upstream repository is NOT currently cloned to the local fontc_crater_cache.
 
-Note: The METADATA.pb uses `files{}` blocks to copy pre-built TTFs directly from the upstream repo, rather than building from source.
+## Conclusion
 
-## Verification
-
-- **Repository exists**: Yes, confirmed via GitHub API
-- **Commit hash exists**: Yes, verified via GitHub API (sha matches)
-- **Upstream repo NOT in local cache**: The repo is not cloned to `/mnt/shared/upstream_repos/fontc_crater_cache/`
-- **Config.yaml exists at recorded commit**: Yes, at `sources/config.yaml`
-- **Font was recently added**: Date added 2026-01-23, making this a very recent onboarding
-
-## Confidence Level
-
-**High** - The commit hash was set at onboarding time by the font engineer (Emma Marichal) and is explicitly referenced in both the METADATA.pb and the PR body. The font was added very recently (January 2026), so the provenance trail is clear and well-documented.
-
-## Open Questions
-
-- The upstream repo is not yet cloned to the local cache. Should it be cloned?
-- The `config_yaml` field in METADATA.pb is pending in a PR branch; once merged, this family will be fully documented.
+The source metadata is complete. The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields — all correct and verified. No action needed.

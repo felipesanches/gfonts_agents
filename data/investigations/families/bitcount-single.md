@@ -1,43 +1,45 @@
-# Investigation Report: Bitcount Single
+# Investigation: Bitcount Single
 
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
 | Family Name | Bitcount Single |
-| Designer | Petr van Blokland |
-| License | OFL |
-| Date Added | 2025-01-10 |
+| Slug | bitcount-single |
+| License Dir | ofl |
 | Repository URL | https://github.com/petrvanblokland/TYPETR-Bitcount |
-| Commit | `af0818eaeb3b0839806ea19134fc18f317cdcf5a` |
-| Branch | main |
-| Config YAML | Override in google/fonts |
+| Commit Hash | af0818eaeb3b0839806ea19134fc18f317cdcf5a |
+| Config YAML | override config.yaml in google/fonts |
 | Status | complete |
+| Confidence | HIGH |
 
-## How URL Found
+## Source Data (METADATA.pb)
 
-The repository URL is documented in the METADATA.pb `source {}` block and also appears in the copyright string of the font file: "Copyright 2024 The Bitcount Project Authors (https://github.com/petrvanblokland/TYPETR-Bitcount)". The URL was included in the original onboarding commit.
-
-## How Commit Determined
-
-The commit hash `af0818eaeb3b0839806ea19134fc18f317cdcf5a` is explicitly stated in the onboarding commit message by Yanone (2025-01-17):
-
-> "Taken from the upstream repo https://github.com/petrvanblokland/TYPETR-Bitcount at commit https://github.com/petrvanblokland/TYPETR-Bitcount/commit/af0818eaeb3b0839806ea19134fc18f317cdcf5a."
-
-This commit resolves issue #5468. The commit exists in the upstream repo and corresponds to "Update fixAnchors.py".
-
-### Cross-verification
-
-The commit hash was verified in the cached upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount/`. The file `fonts/ttf/variable/BitcountSingle[CRSV,ELSH,ELXP,slnt,wght].ttf` exists at this commit, matching the `source_file` path in METADATA.pb. The METADATA.pb also maps `OFL.txt` from the upstream repo.
-
-## Config YAML Status
-
-The upstream repo has a `sources/config.yaml` at this commit, but its content is minimal:
-```yaml
-familyName: Bitcount
+```
+source {
+  repository_url: "https://github.com/petrvanblokland/TYPETR-Bitcount"
+  commit: "af0818eaeb3b0839806ea19134fc18f317cdcf5a"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/ttf/variable/BitcountSingle[CRSV,ELSH,ELXP,slnt,wght].ttf"
+    dest_file: "BitcountSingle[CRSV,ELSH,ELXP,slnt,wght].ttf"
+  }
+  branch: "main"
+}
 ```
 
-This config references the family name "Bitcount" (the parent project), not "Bitcount Single" specifically. Because of this, an override `config.yaml` was added in the google/fonts family directory (`ofl/bitcountsingle/config.yaml`) with content:
+## Investigation
+
+The METADATA.pb contains a source block with repository URL and commit hash. No `config_yaml` is set in METADATA.pb.
+
+Bitcount Single is part of the initial batch of non-Ink Bitcount families added in January 2025. All non-Ink families were added at the same upstream commit `af0818eaeb3b0839806ea19134fc18f317cdcf5a`, confirmed by the google/fonts commit `bb009d354` body.
+
+Commit `af0818eaeb3b` is confirmed valid in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated January 13, 2025.
+
+The upstream `sources/config.yaml` only contains `familyName: Bitcount`. An override `config.yaml` is present in the google/fonts family directory (`ofl/bitcountsingle/config.yaml`):
 ```yaml
 sources:
   - sources/Bitcount_Template.designspace
@@ -46,26 +48,8 @@ buildVariable: true
 buildOTF: false
 ```
 
-Since an override config.yaml exists in google/fonts, the `config_yaml` field is correctly omitted from METADATA.pb.
+Per policy, since an override `config.yaml` exists in the google/fonts directory, the `config_yaml` field is correctly omitted from METADATA.pb.
 
-## Verification
+## Conclusion
 
-- **Upstream repo accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount/`
-- **Commit exists in repo**: Yes - `af0818eae Update fixAnchors.py`
-- **Font file at commit**: Yes - `fonts/ttf/variable/BitcountSingle[CRSV,ELSH,ELXP,slnt,wght].ttf` exists
-- **Source files at commit**: Yes - `sources/Bitcount_Template.designspace` and UFO sources present
-- **Config YAML**: Override config in google/fonts properly configures the build
-
-## Confidence Level
-
-**HIGH** - The commit hash is explicitly documented in the gftools-packager onboarding commit message, verified to exist in the upstream repo, and the font binary path matches.
-
-## Open Questions
-
-None. This family is fully documented with all source information verified.
-
-## Notes
-
-- Bitcount is a large family project with many sub-families (Single, Double, Grid, Ink variants, Prop variants). They all share the same upstream repo.
-- Bitcount Single was onboarded at commit af0818eae, while Bitcount Single Ink was later updated to a newer commit (89e7994f7).
-- The font binary in google/fonts was taken directly from pre-built fonts in the upstream repo (`fonts/ttf/variable/`), not compiled via gftools-builder.
+The METADATA.pb source block is complete. The commit `af0818eaeb3b0839806ea19134fc18f317cdcf5a` is confirmed as the onboarding commit. An override `config.yaml` is present in the google/fonts family directory. No action needed.

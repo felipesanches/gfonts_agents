@@ -1,53 +1,44 @@
-# Caesar Dressing - Investigation Report
+# Investigation: Caesar Dressing
 
-## Source Data
+## Summary
 
 | Field | Value |
-|---|---|
+|-------|-------|
 | Family Name | Caesar Dressing |
-| Designer | Open Window |
-| License | OFL |
-| Date Added | 2011-12-19 |
+| Slug | caesar-dressing |
+| License Dir | ofl |
 | Repository URL | https://github.com/librefonts/caesardressing |
 | Commit Hash | fb212a606bc3f65a2b3d210c88e938f6090cff15 |
-| Config YAML | None |
+| Config YAML | none |
 | Status | missing_config |
+| Confidence | HIGH |
 
-## How URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/librefonts/caesardressing` was added as part of the bulk source block addition in commit `9a14639f3` (2026-02-25). The librefonts GitHub organization hosts archived copies of many early Google Fonts projects. This is a standard librefonts archive repository containing TTX decompositions and metadata.
+```
+source {
+  repository_url: "https://github.com/librefonts/caesardressing"
+  commit: "fb212a606bc3f65a2b3d210c88e938f6090cff15"
+}
+```
 
-## How Commit Was Determined
+## Investigation
 
-The commit hash `fb212a606bc3f65a2b3d210c88e938f6090cff15` is the only commit in the repository (and therefore HEAD). It was made on 2014-10-17 with the message "update .travis.yml". This is a single-commit archive repository.
+The source block was added to METADATA.pb in google/fonts commit `b4c724343` ("Caesar Dressing: add source block to METADATA.pb", Felipe Sanches, 2026-02-26). The commit metadata records: "Config: none (VFB-only sources), Status: missing_config, Confidence: HIGH".
 
-Caesar Dressing was part of the initial commit (`90abd17b4`) in the google/fonts repository, meaning it was one of the earliest families added to Google Fonts. The librefonts repository is an archive of the original source material, not an active development repository.
+The upstream repository URL `https://github.com/librefonts/caesardressing` is from the `librefonts` GitHub organization, which hosts archived copies of early Google Fonts source projects. The repository is cached at `upstream_repos/fontc_crater_cache/librefonts/caesardressing/`.
 
-## Config YAML Status
+The commit `fb212a606bc3f65a2b3d210c88e938f6090cff15` is the **only commit** in the repository (message: "update .travis.yml", by hash3g, 2014-10-17). Since there is only one commit, the identification is trivially unambiguous.
 
-**No config.yaml exists** in the upstream repository and none is expected. The repository contains only:
-- `src/CaesarDressing-Regular-TTF.vfb` (FontLab format) - This is a legacy format not supported by gftools-builder.
-- TTX decompositions of the font in the root directory.
-- Standard metadata files (DESCRIPTION, FONTLOG, OFL, METADATA.json).
+Caesar Dressing was part of the initial commit (`90abd17b4`) in the google/fonts repository, making it one of the earliest families. The librefonts repository is an archive of the original source material.
 
-There is no override `config.yaml` in the google/fonts family directory either.
+The source files in the repository are:
+- `src/CaesarDressing-Regular-TTF.vfb` (FontLab VFB format)
+- TTX decompositions of the font tables in the root directory
+- Standard metadata files (DESCRIPTION, FONTLOG, OFL, METADATA.json)
 
-This family cannot be built with gftools-builder because the only source is in VFB (FontLab) format, which is not a supported input format. The font would need to be converted to Glyphs, UFO, or Designspace format before a config.yaml could be useful.
+VFB is a proprietary binary format from FontLab 5 that is not compatible with gftools-builder. No `config.yaml` exists in the upstream repository, and no override `config.yaml` exists in the google/fonts family directory.
 
-## Verification
+## Conclusion
 
-- **Repository URL**: Valid. The librefonts/caesardressing repository exists and is accessible.
-- **Commit Hash**: Verified. The hash `fb212a606bc3f65a2b3d210c88e938f6090cff15` is the sole commit in the repository.
-- **Source Files**: VFB format only (legacy, not gftools-buildable).
-- **Font Origin**: This is a very early Google Fonts family (initial commit). The librefonts repo is an archive, not the original development repository.
-
-## Confidence Level
-
-**HIGH** for the repository URL and commit hash. The librefonts repo is a well-known archive of early Google Fonts sources. Since there is only one commit, there is no ambiguity about the commit hash.
-
-**Note**: This family is effectively "complete" in terms of source documentation, but cannot be made gftools-buildable without converting the VFB sources to a modern format.
-
-## Open Questions
-
-1. Is there any plan to convert the VFB sources to a modern format (Glyphs/UFO) for this family?
-2. The designer "Open Window" (Dathan Boardman, dathanboardman@gmail.com per the copyright string) may have the original editable sources in a different format.
+The source metadata (repository_url and commit) is present and correct in METADATA.pb. The status is `missing_config` because only a VFB source file exists, which cannot be built with gftools-builder. No override config.yaml is possible without first converting the sources to a gftools-compatible format (`.glyphs`, `.ufo`, or `.designspace`). No further action needed unless source conversion is planned.

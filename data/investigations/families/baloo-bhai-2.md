@@ -1,37 +1,53 @@
-# Baloo Bhai 2
+# Investigation: Baloo Bhai 2
 
-**Date investigated**: 2026-02-26
-**Status**: complete
-**Designer**: Ek Type
-**METADATA.pb path**: `ofl/baloobhai2/METADATA.pb`
-
-## Source Data
+## Summary
 
 | Field | Value |
 |-------|-------|
+| Family Name | Baloo Bhai 2 |
+| Slug | baloo-bhai-2 |
+| License Dir | ofl |
 | Repository URL | https://github.com/yanone/Baloo2-Variable |
-| Commit | da523dfa21aa0e376253d61c21e39146dc55702a |
+| Commit Hash | da523dfa21aa0e376253d61c21e39146dc55702a |
 | Config YAML | builder/BalooBhai2.yaml |
-| Branch | master |
+| Status | complete |
+| Confidence | HIGH |
 
-## How the Repository URL Was Found
+## Source Data (METADATA.pb)
 
-The repository URL `https://github.com/yanone/Baloo2-Variable` is documented in the METADATA.pb `source` block. Like Baloo 2, this is a fork of the EkType/Baloo2-Variable parent repository. The font copyright references `https://github.com/EkType/Baloo2` (the original non-Variable repo), while the build sources come from the Variable fork.
+```
+source {
+  repository_url: "https://github.com/yanone/Baloo2-Variable"
+  commit: "da523dfa21aa0e376253d61c21e39146dc55702a"
+  config_yaml: "builder/BalooBhai2.yaml"
+  files {
+    source_file: "OFL.txt"
+    dest_file: "OFL.txt"
+  }
+  files {
+    source_file: "fonts/variable/BalooBhai2[wght].ttf"
+    dest_file: "BalooBhai2[wght].ttf"
+  }
+  files {
+    source_file: "DESCRIPTION.en_us.html"
+    dest_file: "DESCRIPTION.en_us.html"
+  }
+  branch: "master"
+}
+```
 
-PR #3982 ("Baloo Bhai 2: Version 1.700 added") explicitly references this URL and commit.
+## Investigation
 
-## How the Commit Hash Was Identified
+The METADATA.pb already contains a complete source block. The repository URL points to `yanone/Baloo2-Variable`, which is a fork by type engineer Yanone of the canonical EkType upstream repository (`EkType/Baloo2-Variable`). Yanone performed the variable font engineering work in his fork and submitted PRs back to EkType.
 
-The commit `da523dfa21aa0e376253d61c21e39146dc55702a` was identified from the google/fonts commit `29d0f9137` (2021-11-03) with message: "Baloo Bhai 2: Version 1.700 added (#3982)". The commit body states: "[gftools-packager] Baloo Bhai 2: Version 1.700 added ... taken from the upstream repo https://github.com/yanone/Baloo2-Variable at commit da523dfa..."
+The latest TTF was added in google/fonts commit `29d0f9137` (PR #3982, merged 2021-11-25), with commit message:
+> "Baloo Bhai 2 Version 1.700 taken from the upstream repo https://github.com/yanone/Baloo2-Variable at commit https://github.com/yanone/Baloo2-Variable/commit/da523dfa21aa0e376253d61c21e39146dc55702a."
 
-PR #3982 body confirms the same information.
+The commit `da523dfa21aa0e376253d61c21e39146dc55702a` is confirmed present in the local cache at `upstream_repos/fontc_crater_cache/yanone/Baloo2-Variable`. This commit (dated 2021-10-28) updated multiple variable fonts in the Baloo 2 suite simultaneously.
 
-Cross-verification: The upstream commit `da523df` is dated 2021-10-28, while the google/fonts merge was on 2021-11-03, giving a ~6-day gap. This is the same commit used for Baloo 2 and Baloo Bhaina 2, since all the Baloo 2 families (except Bhaijaan) were onboarded from the same upstream commit.
+The commit is also present in `EkType/Baloo2-Variable` (same hash), since it was created in yanone's fork and merged back into EkType.
 
-## How Config YAML Was Resolved
-
-The config file `builder/BalooBhai2.yaml` is specified in the METADATA.pb `source` block and was verified to exist at commit `da523df`. Contents:
-
+The config file `builder/BalooBhai2.yaml` exists at commit `da523dfa` and contains:
 ```yaml
 sources:
   - ../sources/BalooBhai2.glyphs
@@ -42,23 +58,8 @@ buildWebfont: false
 buildVariable: true
 ```
 
-No override config.yaml exists in the google/fonts family directory (`ofl/baloobhai2/`).
+This family covers the Gujarati script. The source file `sources/BalooBhai2.glyphs` exists in the repository.
 
-## Verification
+## Conclusion
 
-- **Commit exists in upstream repo**: Yes, in EkType/Baloo2-Variable (parent repo). Also accessible via GitHub API on yanone/Baloo2-Variable (fork).
-- **Commit date**: 2021-10-28 17:08:59 +0200
-- **Commit message**: "Update BalooTammudu2[wght].ttf"
-- **Source files at commit**: `sources/BalooBhai2.glyphs` (among 10 family .glyphs files)
-- **Font files at commit**: `fonts/variable/BalooBhai2[wght].ttf` (among 10 family variable fonts)
-- **Builder config at commit**: `builder/BalooBhai2.yaml` (confirmed present)
-
-## Confidence
-
-**HIGH**: All data is consistent across multiple sources. The PR, commit body, and METADATA.pb all agree. The commit date predates the google/fonts merge. The same commit was used for Baloo 2, Baloo Bhai 2, and Baloo Bhaina 2.
-
-**Minor concern**: Same as Baloo 2 -- the METADATA.pb points to yanone's fork rather than the EkType parent repo, which is the canonical upstream.
-
-## Open Questions
-
-1. Should the `repository_url` be updated to `https://github.com/EkType/Baloo2-Variable` (the parent repo)? The commit `da523df` was authored by yanone but merged into EkType via PR #2. PR #4104 attempted to correct EkType repo URLs for some Baloo families.
+The source block in METADATA.pb is complete and correct. Repository URL, commit hash, and config_yaml are all properly set and verified against the gftools-packager commit message and the cached upstream repository. No action needed.
