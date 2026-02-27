@@ -689,17 +689,19 @@ async function loadPendingPRs() {
         }
 
         container.innerHTML = prs.map(pr => `
-            <div class="pr-card priority-${pr.priority}">
+            <div class="pr-card priority-${pr.priority || 'medium'}">
                 <div class="pr-header">
-                    <div class="pr-title">${escapeHtml(pr.title)}</div>
+                    <div class="pr-title">${pr.pr_url ? `<a href="${escapeHtml(pr.pr_url)}" target="_blank">${escapeHtml(pr.title)}</a>` : escapeHtml(pr.title)}</div>
                     <div class="pr-badges">
                         <span class="pr-type">${escapeHtml(pr.type.replace('_', ' '))}</span>
-                        <span class="pr-priority priority-${pr.priority}">${escapeHtml(pr.priority)}</span>
+                        ${pr.priority ? `<span class="pr-priority priority-${pr.priority}">${escapeHtml(pr.priority)}</span>` : ''}
                         <span class="pr-status status-${pr.status}">${escapeHtml(pr.status.replace('_', ' '))}</span>
                     </div>
                 </div>
                 ${pr.font ? `<div class="pr-font">Font: ${escapeHtml(pr.font)}</div>` : ''}
                 ${pr.designers_count ? `<div class="pr-font">Designers: ${pr.designers_count}</div>` : ''}
+                ${pr.families_count ? `<div class="pr-font">Families: ${pr.families_count}${pr.override_configs ? ` &mdash; ${pr.override_configs} override config.yaml` : ''}</div>` : ''}
+                ${pr.merged ? `<div class="pr-font" style="color:#2e7d32">&#10003; Merged: ${escapeHtml(pr.merged)}</div>` : ''}
                 <div class="pr-description">${escapeHtml(pr.description)}</div>
                 ${pr.files_to_modify ? `
                 <div class="pr-files">
