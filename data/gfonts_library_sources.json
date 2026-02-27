@@ -75,7 +75,7 @@
     {
       "path": "ofl/aboreto/METADATA.pb",
       "family_name": "Aboreto",
-      "designer": "Dominik J\u00e1ger",
+      "designer": "Dominik Jáger",
       "license": "OFL",
       "repository_url": "https://github.com/domija/Aboreto",
       "commit": "6e64ee7e7ff1c53220d96b88a8d4bf2db9f76735",
@@ -121,7 +121,7 @@
     {
       "path": "ofl/acme/METADATA.pb",
       "family_name": "Acme",
-      "designer": "Juan Pablo del Peral, Huerta Tipogr\u00e1fica",
+      "designer": "Juan Pablo del Peral, Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/acme",
       "commit": "fa0a4445feb570b5cfc7ce4b8f6dbacc6ae5ad73",
@@ -216,7 +216,7 @@
     {
       "path": "ofl/afacad/METADATA.pb",
       "family_name": "Afacad",
-      "designer": "Kristian M\u00f6ller, Dicotype",
+      "designer": "Kristian Möller, Dicotype",
       "license": "OFL",
       "repository_url": "https://github.com/Dicotype/Afacad",
       "commit": "b294b1f8610ff16a3846a255b1a6a2e6788a056e",
@@ -230,7 +230,7 @@
     {
       "path": "ofl/afacadflux/METADATA.pb",
       "family_name": "Afacad Flux",
-      "designer": "Kristian M\u00f6ller, Dicotype",
+      "designer": "Kristian Möller, Dicotype",
       "license": "OFL",
       "repository_url": "https://github.com/Dicotype/Afacad",
       "commit": "b294b1f8610ff16a3846a255b1a6a2e6788a056e",
@@ -244,7 +244,7 @@
     {
       "path": "ofl/agbalumo/METADATA.pb",
       "family_name": "Agbalumo",
-      "designer": "Raphael Al\u1eb9\u0301gb\u1eb9\u0301l\u1eb9\u0301y\u1eb9\u0300, Sorkin Type, Eben Sorkin",
+      "designer": "Raphael Alẹ́gbẹ́lẹ́yẹ̀, Sorkin Type, Eben Sorkin",
       "license": "OFL",
       "repository_url": "https://github.com/SorkinType/Agbalumo",
       "commit": "261ad51ef2291821685c1bebf10cf0fb9f7e08f9",
@@ -392,7 +392,7 @@
     {
       "path": "ofl/alansans/METADATA.pb",
       "family_name": "Alan Sans",
-      "designer": "Rapha\u00ebl Ronot",
+      "designer": "Raphaël Ronot",
       "license": "OFL",
       "repository_url": "https://github.com/alan-eu/Alan-Sans",
       "commit": "425d3a0674a49f0ad6bc6ceef5ca0c557b520838",
@@ -477,7 +477,7 @@
     {
       "path": "ofl/alegreya/METADATA.pb",
       "family_name": "Alegreya",
-      "designer": "Juan Pablo del Peral, Huerta Tipogr\u00e1fica",
+      "designer": "Juan Pablo del Peral, Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/huertatipografica/Alegreya",
       "commit": "1dd6b28b57c50e3168db1cbbb8086e7978abcfbf",
@@ -491,7 +491,7 @@
     {
       "path": "ofl/alegreyasans/METADATA.pb",
       "family_name": "Alegreya Sans",
-      "designer": "Juan Pablo del Peral, Huerta Tipogr\u00e1fica",
+      "designer": "Juan Pablo del Peral, Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/huertatipografica/Alegreya-Sans",
       "commit": "030b9ac01fd9bcaccac0ebc8010283175f9ced4e",
@@ -505,7 +505,7 @@
     {
       "path": "ofl/alegreyasanssc/METADATA.pb",
       "family_name": "Alegreya Sans SC",
-      "designer": "Juan Pablo del Peral, Huerta Tipogr\u00e1fica",
+      "designer": "Juan Pablo del Peral, Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/huertatipografica/Alegreya-Sans",
       "commit": "e6d16c40fa641159b8b371e2a40bda0c9a3a1d43",
@@ -523,7 +523,7 @@
     {
       "path": "ofl/alegreyasc/METADATA.pb",
       "family_name": "Alegreya SC",
-      "designer": "Juan Pablo del Peral, Huerta Tipogr\u00e1fica",
+      "designer": "Juan Pablo del Peral, Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/huertatipografica/Alegreya",
       "commit": "d6aedcbb5a82a09dedb07ab99bb91803db8e02af",
@@ -583,7 +583,7 @@
     {
       "path": "ofl/alfaslabone/METADATA.pb",
       "family_name": "Alfa Slab One",
-      "designer": "JM Sol\u00e9",
+      "designer": "JM Solé",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/alfaslabone",
       "commit": "84a903ffba3cf8248f3b1662de782e72646e00df",
@@ -965,7 +965,7 @@
     {
       "path": "ofl/amarna/METADATA.pb",
       "family_name": "Amarna",
-      "designer": "Isht\u0101r van Looy",
+      "designer": "Ishtār van Looy",
       "license": "OFL",
       "repository_url": "https://github.com/ijvanl/Amarna",
       "commit": "22819bafba78c7f3e4644b6f68683773180a5965",
@@ -1082,7 +1082,7 @@
     {
       "path": "ofl/ancizarsans/METADATA.pb",
       "family_name": "Ancizar Sans",
-      "designer": "Universidad Nacional de Colombia (UNAL), C\u00e9sar Puertas, Viviana Monsalve, Juli\u00e1n Moncada",
+      "designer": "Universidad Nacional de Colombia (UNAL), César Puertas, Viviana Monsalve, Julián Moncada",
       "license": "OFL",
       "repository_url": "https://github.com/UNAL-OMD/UNAL-Ancizar",
       "commit": "54a5aa2153b4485ff2710612d47183c346e6b842",
@@ -1096,7 +1096,7 @@
     {
       "path": "ofl/ancizarserif/METADATA.pb",
       "family_name": "Ancizar Serif",
-      "designer": "Universidad Nacional de Colombia (UNAL), C\u00e9sar Puertas, Viviana Monsalve, Juli\u00e1n Moncada",
+      "designer": "Universidad Nacional de Colombia (UNAL), César Puertas, Viviana Monsalve, Julián Moncada",
       "license": "OFL",
       "repository_url": "https://github.com/UNAL-OMD/UNAL-Ancizar",
       "commit": "063bdd3121fef76289b035226acdc1b4e885f31a",
@@ -1110,7 +1110,7 @@
     {
       "path": "ofl/andadapro/METADATA.pb",
       "family_name": "Andada Pro",
-      "designer": "Huerta Tipogr\u00e1fica, Carolina Giovagnoli",
+      "designer": "Huerta Tipográfica, Carolina Giovagnoli",
       "license": "OFL",
       "repository_url": "https://github.com/huertatipografica/Andada-Pro",
       "commit": "a0b87b947003dee6c615809d3eebc8c1334dc575",
@@ -2145,7 +2145,7 @@
     {
       "path": "ofl/azeretmono/METADATA.pb",
       "family_name": "Azeret Mono",
-      "designer": "Displaay, Martin V\u00e1cha",
+      "designer": "Displaay, Martin Vácha",
       "license": "OFL",
       "repository_url": "https://github.com/displaay/Azeret",
       "commit": "3d45a6c3e094f08bfc70551b525bd2037cac51ba",
@@ -2201,7 +2201,7 @@
     {
       "path": "ofl/bacasimeantique/METADATA.pb",
       "family_name": "Bacasime Antique",
-      "designer": "The DocRepair Project, Claus Eggers S\u00f8rensen",
+      "designer": "The DocRepair Project, Claus Eggers Sørensen",
       "license": "OFL",
       "repository_url": "https://github.com/docrepair-fonts/bacasime-antique-fonts",
       "commit": "673db74ee28486bb370847e062a97a5f94cec2e0",
@@ -3107,7 +3107,7 @@
     {
       "path": "ofl/bevietnampro/METADATA.pb",
       "family_name": "Be Vietnam Pro",
-      "designer": "L\u00e2m B\u1ea3o, Tony Le, Vi\u1ec7tAnh Nguy\u1ec5n",
+      "designer": "Lâm Bảo, Tony Le, ViệtAnh Nguyễn",
       "license": "OFL",
       "repository_url": "https://github.com/bettergui/BeVietnamPro",
       "commit": "804e62d81abbbcdcce5686069c69b41b8c245192",
@@ -3491,7 +3491,7 @@
     {
       "path": "ofl/biryani/METADATA.pb",
       "family_name": "Biryani",
-      "designer": "Dan Reynolds, Mathieu R\u00e9guer",
+      "designer": "Dan Reynolds, Mathieu Réguer",
       "license": "OFL",
       "repository_url": "https://github.com/typeoff/biryani",
       "commit": "6f7831d27b7458109cd88aceba28efeda057dadb",
@@ -3959,7 +3959,7 @@
     {
       "path": "ofl/boogaloo/METADATA.pb",
       "family_name": "Boogaloo",
-      "designer": "John Vargas Beltr\u00e1n",
+      "designer": "John Vargas Beltrán",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/boogaloo",
       "commit": "9837380f883a9af75b9d4a9767020c1b1abc771a",
@@ -4174,7 +4174,7 @@
     {
       "path": "ofl/brygada1918/METADATA.pb",
       "family_name": "Brygada 1918",
-      "designer": "Capitalics, Mateusz Machalski, Borys Kosmynka, Ania Wielu\u0144ska, Przemys\u0142aw Hoffer",
+      "designer": "Capitalics, Mateusz Machalski, Borys Kosmynka, Ania Wieluńska, Przemysław Hoffer",
       "license": "OFL",
       "repository_url": "https://github.com/kosmynkab/Brygada-1918",
       "commit": "8325dc36ca87b8c7b8909c3e048fe90fd7e46c4b",
@@ -4224,7 +4224,7 @@
     {
       "path": "ofl/buda/METADATA.pb",
       "family_name": "Buda",
-      "designer": "Ad\u00e8le Antignac",
+      "designer": "Adèle Antignac",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/buda",
       "commit": "c632d6ba92f1c89f40f704c2cd873d5a9ede22a6",
@@ -4549,7 +4549,7 @@
     {
       "path": "ofl/caladea/METADATA.pb",
       "family_name": "Caladea",
-      "designer": "Andr\u00e9s Torresi, Carolina Giovagnoli",
+      "designer": "Andrés Torresi, Carolina Giovagnoli",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/caladea",
       "commit": "336a529cfad3d103d6527752686f8331d13e820a",
@@ -4568,7 +4568,7 @@
     {
       "path": "ofl/calistoga/METADATA.pb",
       "family_name": "Calistoga",
-      "designer": "Yvonne Sch\u00fcttler, Sorkin Type, Eben Sorkin",
+      "designer": "Yvonne Schüttler, Sorkin Type, Eben Sorkin",
       "license": "OFL",
       "repository_url": "https://github.com/SorkinType/Calistoga",
       "commit": "61662683b93028d797e7ddb327fd33ff7e2838d4",
@@ -4615,7 +4615,7 @@
     {
       "path": "ofl/cambo/METADATA.pb",
       "family_name": "Cambo",
-      "designer": "Huerta Tipogr\u00e1fica",
+      "designer": "Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/cambo",
       "commit": "3b97d12b34a587e8868700ffa711df7dc6aa0d04",
@@ -4772,7 +4772,7 @@
     {
       "path": "ofl/carlito/METADATA.pb",
       "family_name": "Carlito",
-      "designer": "\u0141ukasz Dziedzic",
+      "designer": "Łukasz Dziedzic",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/carlito",
       "commit": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
@@ -4787,7 +4787,7 @@
     {
       "path": "ofl/carme/METADATA.pb",
       "family_name": "Carme",
-      "designer": "Rub\u00e9n Prol",
+      "designer": "Rubén Prol",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/carme",
       "commit": "823391960931cedd0b9cb7caf0fcae71c4bd59ba",
@@ -4877,7 +4877,7 @@
     {
       "path": "ofl/castoro/METADATA.pb",
       "family_name": "Castoro",
-      "designer": "Tiro Typeworks, John Hudson, Paul Hanslow, Kaja S\u0142ojewska",
+      "designer": "Tiro Typeworks, John Hudson, Paul Hanslow, Kaja Słojewska",
       "license": "OFL",
       "repository_url": "https://github.com/TiroTypeworks/Castoro",
       "commit": "58a386a96e522b6d47c566175c7ee799d4c8d14f",
@@ -5153,7 +5153,7 @@
     {
       "path": "ofl/chauphilomeneone/METADATA.pb",
       "family_name": "Chau Philomene One",
-      "designer": "Vicente Lam\u00f3naca",
+      "designer": "Vicente Lamónaca",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/chauphilomeneone",
       "commit": "ac51123e5c7a33cd48b4fdf686b91922ea68c422",
@@ -5499,7 +5499,7 @@
     {
       "path": "ofl/coiny/METADATA.pb",
       "family_name": "Coiny",
-      "designer": "Marcelo Magalh\u00e3es",
+      "designer": "Marcelo Magalhães",
       "license": "OFL",
       "repository_url": "https://github.com/marcelommp/Coiny",
       "commit": "0341b95f0c79f0e0b33ab7b5404cf9265be88516",
@@ -5702,7 +5702,7 @@
     {
       "path": "ofl/convergence/METADATA.pb",
       "family_name": "Convergence",
-      "designer": "Nicol\u00e1s Silva, John Vargas Beltr\u00e1n",
+      "designer": "Nicolás Silva, John Vargas Beltrán",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/convergence",
       "commit": "475145997c07041d94fabe462233b89f15450a41",
@@ -6168,7 +6168,7 @@
     {
       "path": "ofl/danfo/METADATA.pb",
       "family_name": "Danfo",
-      "designer": "Afrotype, Seyi Olusanya, Eyiyemi Adegbite, David Udoh, Mirko Velimirovi\u0107",
+      "designer": "Afrotype, Seyi Olusanya, Eyiyemi Adegbite, David Udoh, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/Afrotype/danfo",
       "commit": "a66fc9ded8f42ad2d39b91c9cd8a1960737ad02a",
@@ -6196,7 +6196,7 @@
     {
       "path": "ofl/darkergrotesque/METADATA.pb",
       "family_name": "Darker Grotesque",
-      "designer": "Gabriel Lam, Vi\u1ec7tAnh Nguy\u1ec5n",
+      "designer": "Gabriel Lam, ViệtAnh Nguyễn",
       "license": "OFL",
       "repository_url": "https://github.com/bettergui/DarkerGrotesque",
       "commit": "a5c3584b44ab3a7d272565662139ee07bb72e8e8",
@@ -6732,7 +6732,7 @@
     {
       "path": "ofl/doto/METADATA.pb",
       "family_name": "Doto",
-      "designer": "\u00d3liver Lalan",
+      "designer": "Óliver Lalan",
       "license": "OFL",
       "repository_url": "https://github.com/oliverlalan/Doto",
       "commit": "1c587f2eed62cb257055540ac2a15f356070414f",
@@ -6794,7 +6794,7 @@
     {
       "path": "ofl/durusans/METADATA.pb",
       "family_name": "Duru Sans",
-      "designer": "Onur Yaz\u0131c\u0131gil",
+      "designer": "Onur Yazıcıgil",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/durusans",
       "commit": "2895eb6c9842f80c1e01bbf9fbb6231eaef66724",
@@ -6859,14 +6859,14 @@
       "designer": "YoonDesign Inc",
       "license": "OFL",
       "repository_url": "https://github.com/yoondesign/Yoonfont-KoreaDokdo",
-      "commit": "4daa80543f32dfb942bdf861e4e63a49b9b5352a",
+      "commit": "1bc4d9ec41e5159a839e58a349fa2e88799e93bc",
       "branch": null,
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
       "status": "missing_config",
-      "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "notes": "Binary-only upstream repo (no .glyphs/.ufo/.designspace sources). Font was re-mastered by Aaron Bell for onboarding.",
+      "has_investigation_report": true
     },
     {
       "path": "ofl/eater/METADATA.pb",
@@ -6903,7 +6903,7 @@
     {
       "path": "ofl/economica/METADATA.pb",
       "family_name": "Economica",
-      "designer": "Vicente Lam\u00f3naca",
+      "designer": "Vicente Lamónaca",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/economica",
       "commit": "6bf48e6858755227cdd104ee4b44e9e2e4bb197b",
@@ -7429,7 +7429,7 @@
     {
       "path": "ofl/esteban/METADATA.pb",
       "family_name": "Esteban",
-      "designer": "Ang\u00e9lica D\u00edaz",
+      "designer": "Angélica Díaz",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/esteban",
       "commit": "35e274d49210b9c8a7864689b48d6156e6be6bbf",
@@ -7497,7 +7497,7 @@
     {
       "path": "ofl/exile/METADATA.pb",
       "family_name": "Exile",
-      "designer": "Bart\u0142omiej R\u00f3zga",
+      "designer": "Bartłomiej Rózga",
       "license": "OFL",
       "repository_url": "https://github.com/rozgatype/Exile",
       "commit": "b5c737683dcc95f1e749e2189fc242c4a2b31e97",
@@ -7788,7 +7788,7 @@
     {
       "path": "ofl/fenix/METADATA.pb",
       "family_name": "Fenix",
-      "designer": "Fernando D\u00edaz",
+      "designer": "Fernando Díaz",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/fenix",
       "commit": "b5107c124ba8762eeaccd00b73a7302897d4367e",
@@ -8208,7 +8208,7 @@
     {
       "path": "ofl/fredoka/METADATA.pb",
       "family_name": "Fredoka",
-      "designer": "Milena Brand\u00e3o, Hafontia",
+      "designer": "Milena Brandão, Hafontia",
       "license": "OFL",
       "repository_url": "https://github.com/hafontia-zz/Fredoka-One",
       "commit": "35c584ff23450c9bcdf8819706e12fcdeefe1712",
@@ -8329,7 +8329,7 @@
     {
       "path": "ofl/funneldisplay/METADATA.pb",
       "family_name": "Funnel Display",
-      "designer": "NORD ID, Kristian M\u00f6ller",
+      "designer": "NORD ID, Kristian Möller",
       "license": "OFL",
       "repository_url": "https://github.com/Dicotype/Funnel",
       "commit": "f9509ce0df3c344ddc454600baf77df54b83c379",
@@ -8343,7 +8343,7 @@
     {
       "path": "ofl/funnelsans/METADATA.pb",
       "family_name": "Funnel Sans",
-      "designer": "NORD ID, Kristian M\u00f6ller",
+      "designer": "NORD ID, Kristian Möller",
       "license": "OFL",
       "repository_url": "https://github.com/Dicotype/Funnel",
       "commit": "f9509ce0df3c344ddc454600baf77df54b83c379",
@@ -8385,7 +8385,7 @@
     {
       "path": "ofl/gabarito/METADATA.pb",
       "family_name": "Gabarito",
-      "designer": "Naipe Foundry, Leandro Assis, \u00c1lvaro Franca, Felipe Casaprima",
+      "designer": "Naipe Foundry, Leandro Assis, Álvaro Franca, Felipe Casaprima",
       "license": "OFL",
       "repository_url": "https://github.com/naipefoundry/gabarito",
       "commit": "1f3fb39d6449eefa880543f109f33ede0cd4064f",
@@ -8582,7 +8582,7 @@
     {
       "path": "ofl/geist/METADATA.pb",
       "family_name": "Geist",
-      "designer": "Andr\u00e9s Briganti, Mateo Zaragoza, Guillermo Rauch, Evil Rabbit, Jos\u00e9 Rago, Facundo Santana",
+      "designer": "Andrés Briganti, Mateo Zaragoza, Guillermo Rauch, Evil Rabbit, José Rago, Facundo Santana",
       "license": "OFL",
       "repository_url": "https://github.com/vercel/geist-font",
       "commit": "b193ef74010119759bfb7f71ddf81a3dee238535",
@@ -8596,7 +8596,7 @@
     {
       "path": "ofl/geistmono/METADATA.pb",
       "family_name": "Geist Mono",
-      "designer": "Andr\u00e9s Briganti, Mateo Zaragoza, Guillermo Rauch, Evil Rabbit, Jos\u00e9 Rago, Facundo Santana",
+      "designer": "Andrés Briganti, Mateo Zaragoza, Guillermo Rauch, Evil Rabbit, José Rago, Facundo Santana",
       "license": "OFL",
       "repository_url": "https://github.com/vercel/geist-font",
       "commit": "b193ef74010119759bfb7f71ddf81a3dee238535",
@@ -8786,7 +8786,7 @@
     {
       "path": "ofl/germaniaone/METADATA.pb",
       "family_name": "Germania One",
-      "designer": "John Vargas Beltr\u00e1n",
+      "designer": "John Vargas Beltrán",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/germaniaone",
       "commit": "73d401d495adf37b1af75a5dca9cb5cdb046b05d",
@@ -9027,7 +9027,7 @@
     {
       "path": "ofl/gochihand/METADATA.pb",
       "family_name": "Gochi Hand",
-      "designer": "Huerta Tipogr\u00e1fica",
+      "designer": "Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/gochihand",
       "commit": "e202a9f4b7cd6f9c84440e684f0a3d0b5dd234e0",
@@ -9642,7 +9642,7 @@
     {
       "path": "ofl/handjet/METADATA.pb",
       "family_name": "Handjet",
-      "designer": "Rosetta, David B\u0159ezina",
+      "designer": "Rosetta, David Březina",
       "license": "OFL",
       "repository_url": "https://github.com/rosettatype/handjet",
       "commit": "3918b7798e06c81da6bc558e88dfddd5a6b49807",
@@ -9749,7 +9749,7 @@
     {
       "path": "ofl/hedvigletterssans/METADATA.pb",
       "family_name": "Hedvig Letters Sans",
-      "designer": "Kanon Foundry, Alexander \u00d6rn, Tor Weibull, Hedvig",
+      "designer": "Kanon Foundry, Alexander Örn, Tor Weibull, Hedvig",
       "license": "OFL",
       "repository_url": "https://github.com/KanonFoundry/HedvigLetters",
       "commit": "345b4d9015af6a26eb05e436460ca41fc42784df",
@@ -9763,7 +9763,7 @@
     {
       "path": "ofl/hedviglettersserif/METADATA.pb",
       "family_name": "Hedvig Letters Serif",
-      "designer": "Kanon Foundry, Alexander \u00d6rn, Tor Weibull, Hedvig",
+      "designer": "Kanon Foundry, Alexander Örn, Tor Weibull, Hedvig",
       "license": "OFL",
       "repository_url": "https://github.com/KanonFoundry/HedvigLetters",
       "commit": "345b4d9015af6a26eb05e436460ca41fc42784df",
@@ -10067,7 +10067,7 @@
     {
       "path": "ofl/hostgrotesk/METADATA.pb",
       "family_name": "Host Grotesk",
-      "designer": "Element Type, Do\u011fukan Karap\u0131nar, \u0130brahim Ka\u00e7t\u0131o\u011flu",
+      "designer": "Element Type, Doğukan Karapınar, İbrahim Kaçtıoğlu",
       "license": "OFL",
       "repository_url": "https://github.com/Element-Type/HostGrotesk",
       "commit": "ab2ba6769119e7ae71aa2fab46eedcb993c670a3",
@@ -10151,7 +10151,7 @@
     {
       "path": "ofl/ibarrarealnova/METADATA.pb",
       "family_name": "Ibarra Real Nova",
-      "designer": "Jos\u00e9 Mar\u00eda Ribagorda, Octavio Pardo",
+      "designer": "José María Ribagorda, Octavio Pardo",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/ibarrareal",
       "commit": "7ae92a27f13f8e187db49312e7111041d1fa2a17",
@@ -10680,7 +10680,7 @@
     {
       "path": "ofl/inknutantiqua/METADATA.pb",
       "family_name": "Inknut Antiqua",
-      "designer": "Claus Eggers S\u00f8rensen",
+      "designer": "Claus Eggers Sørensen",
       "license": "OFL",
       "repository_url": "https://github.com/clauseggers/Inknut-Antiqua",
       "commit": "69575ba642a3c6bce873a1cb826c79bc580226cf",
@@ -10699,7 +10699,7 @@
     {
       "path": "ofl/inriasans/METADATA.pb",
       "family_name": "Inria Sans",
-      "designer": "Gr\u00e9gori Vincens, J\u00e9r\u00e9mie Hornus",
+      "designer": "Grégori Vincens, Jérémie Hornus",
       "license": "OFL",
       "repository_url": "https://github.com/BlackFoundryCom/InriaFonts",
       "commit": "94732c5a4c962d33d3d9b0a07dbe79f5aa05498e",
@@ -10717,7 +10717,7 @@
     {
       "path": "ofl/inriaserif/METADATA.pb",
       "family_name": "Inria Serif",
-      "designer": "Gr\u00e9gori Vincens, J\u00e9r\u00e9mie Hornus",
+      "designer": "Grégori Vincens, Jérémie Hornus",
       "license": "OFL",
       "repository_url": "https://github.com/BlackFoundryCom/InriaFonts",
       "commit": "94732c5a4c962d33d3d9b0a07dbe79f5aa05498e",
@@ -11049,7 +11049,7 @@
     {
       "path": "ofl/jaro/METADATA.pb",
       "family_name": "Jaro",
-      "designer": "Agyei Archer, C\u00e9line Hurka, Mirko Velimirovi\u0107",
+      "designer": "Agyei Archer, Céline Hurka, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/agyeiarcher/Jaro",
       "commit": "51096c4f8e9e0076709d509b905741470beb972d",
@@ -11373,7 +11373,7 @@
     {
       "path": "ofl/julee/METADATA.pb",
       "family_name": "Julee",
-      "designer": "Juli\u00e1n Tunni",
+      "designer": "Julián Tunni",
       "license": "OFL",
       "repository_url": "https://github.com/etunni/julee",
       "commit": "9a2efe6783e9ea590cee62c8aec51670a3dec51d",
@@ -12187,7 +12187,7 @@
     {
       "path": "ofl/kronaone/METADATA.pb",
       "family_name": "Krona One",
-      "designer": "Yvonne Sch\u00fcttler",
+      "designer": "Yvonne Schüttler",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/kronaone",
       "commit": "72c7f1c10ccfa67e3cc1ce0eadbca479e78c84f3",
@@ -12330,7 +12330,7 @@
     {
       "path": "ofl/labrada/METADATA.pb",
       "family_name": "Labrada",
-      "designer": "Mercedes J\u00e1uregui, Omnibus-Type",
+      "designer": "Mercedes Jáuregui, Omnibus-Type",
       "license": "OFL",
       "repository_url": "https://github.com/Omnibus-Type/Labrada",
       "commit": "b15424f8840bda81f5dfa88f97bb634598faeadc",
@@ -12447,7 +12447,7 @@
     {
       "path": "ofl/lato/METADATA.pb",
       "family_name": "Lato",
-      "designer": "\u0141ukasz Dziedzic",
+      "designer": "Łukasz Dziedzic",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/LatoGFVersion",
       "commit": "080cb69711ca050d91e9c866e58df7a73095c69a",
@@ -12604,7 +12604,7 @@
     {
       "path": "ofl/lexend/METADATA.pb",
       "family_name": "Lexend",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12618,7 +12618,7 @@
     {
       "path": "ofl/lexenddeca/METADATA.pb",
       "family_name": "Lexend Deca",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12632,7 +12632,7 @@
     {
       "path": "ofl/lexendexa/METADATA.pb",
       "family_name": "Lexend Exa",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12646,7 +12646,7 @@
     {
       "path": "ofl/lexendgiga/METADATA.pb",
       "family_name": "Lexend Giga",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12660,7 +12660,7 @@
     {
       "path": "ofl/lexendmega/METADATA.pb",
       "family_name": "Lexend Mega",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12674,7 +12674,7 @@
     {
       "path": "ofl/lexendpeta/METADATA.pb",
       "family_name": "Lexend Peta",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12688,7 +12688,7 @@
     {
       "path": "ofl/lexendtera/METADATA.pb",
       "family_name": "Lexend Tera",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -12702,7 +12702,7 @@
     {
       "path": "ofl/lexendzetta/METADATA.pb",
       "family_name": "Lexend Zetta",
-      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, H\u00e9ctor G\u00f3mez, Superunion",
+      "designer": "Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/lexend",
       "commit": "20491885ca2cf7ffc556432973e7bdbc701952b5",
@@ -13268,7 +13268,7 @@
     {
       "path": "ofl/londrinaoutline/METADATA.pb",
       "family_name": "Londrina Outline",
-      "designer": "Marcelo Magalh\u00e3es",
+      "designer": "Marcelo Magalhães",
       "license": "OFL",
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
@@ -13282,7 +13282,7 @@
     {
       "path": "ofl/londrinashadow/METADATA.pb",
       "family_name": "Londrina Shadow",
-      "designer": "Marcelo Magalh\u00e3es",
+      "designer": "Marcelo Magalhães",
       "license": "OFL",
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
@@ -13296,7 +13296,7 @@
     {
       "path": "ofl/londrinasketch/METADATA.pb",
       "family_name": "Londrina Sketch",
-      "designer": "Marcelo Magalh\u00e3es",
+      "designer": "Marcelo Magalhães",
       "license": "OFL",
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
@@ -13310,7 +13310,7 @@
     {
       "path": "ofl/londrinasolid/METADATA.pb",
       "family_name": "Londrina Solid",
-      "designer": "Marcelo Magalh\u00e3es",
+      "designer": "Marcelo Magalhães",
       "license": "OFL",
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
@@ -13565,7 +13565,7 @@
     {
       "path": "ofl/macondo/METADATA.pb",
       "family_name": "Macondo",
-      "designer": "John Vargas Beltr\u00e1n",
+      "designer": "John Vargas Beltrán",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/macondo",
       "commit": "00c3eaaae24d702bce976a1766c31b8fc015f08a",
@@ -13583,7 +13583,7 @@
     {
       "path": "ofl/macondoswashcaps/METADATA.pb",
       "family_name": "Macondo Swash Caps",
-      "designer": "John Vargas Beltr\u00e1n",
+      "designer": "John Vargas Beltrán",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/macondoswashcaps",
       "commit": "2768d9b33c7d703085314fcd8c823ad1a8b02edb",
@@ -13615,7 +13615,7 @@
     {
       "path": "ofl/madimione/METADATA.pb",
       "family_name": "Madimi One",
-      "designer": "Taurai Valerie Mtake, Mirko Velimirovi\u0107",
+      "designer": "Taurai Valerie Mtake, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/TaVaTake/madimi",
       "commit": "b0fedf3bfa1ac17a00bdbcbf06e8fe2aecfa009e",
@@ -13957,7 +13957,7 @@
     {
       "path": "ofl/martelsans/METADATA.pb",
       "family_name": "Martel Sans",
-      "designer": "Dan Reynolds, Mathieu R\u00e9guer",
+      "designer": "Dan Reynolds, Mathieu Réguer",
       "license": "OFL",
       "repository_url": "https://github.com/typeoff/martel_sans",
       "commit": "7a536b7ce5f6059665d45bfff7c24bee414c1fd1",
@@ -15971,7 +15971,7 @@
     {
       "path": "ofl/noticiatext/METADATA.pb",
       "family_name": "Noticia Text",
-      "designer": "JM Sol\u00e9",
+      "designer": "JM Solé",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/noticiatext",
       "commit": "0b2f8c3e23091d37ece38d8556465879b20e2144",
@@ -19587,7 +19587,7 @@
     {
       "path": "ofl/ojuju/METADATA.pb",
       "family_name": "Ojuju",
-      "designer": "\u1ee4d\u1ecb Foundry, Chisaokwu Joboson, Mirko Velimirovi\u0107",
+      "designer": "Ụdị Foundry, Chisaokwu Joboson, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/jobosonchisa/ojuju",
       "commit": "61052b2801035d3011c87708bd3367eeabd0bb82",
@@ -20472,7 +20472,7 @@
     {
       "path": "ofl/phudu/METADATA.pb",
       "family_name": "Phudu",
-      "designer": "D\u01b0\u01a1ng Tr\u1ea7n",
+      "designer": "Dương Trần",
       "license": "OFL",
       "repository_url": "https://github.com/duongtrtype/DTPhudu",
       "commit": "338aed71470e70e6d00a919489ca7da21792e7e6",
@@ -20486,7 +20486,7 @@
     {
       "path": "ofl/piazzolla/METADATA.pb",
       "family_name": "Piazzolla",
-      "designer": "Juan Pablo del Peral, Huerta Tipogr\u00e1fica",
+      "designer": "Juan Pablo del Peral, Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/huertatipografica/piazzolla",
       "commit": "fbd775f98a0a27570de0eaf20206860021c68b6b",
@@ -20628,7 +20628,7 @@
     {
       "path": "ofl/playfair/METADATA.pb",
       "family_name": "Playfair",
-      "designer": "Claus Eggers S\u00f8rensen",
+      "designer": "Claus Eggers Sørensen",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/Playfair",
       "commit": "a49f9f9dc9a2924641cefba3f5e33ac1c5aa4264",
@@ -20642,7 +20642,7 @@
     {
       "path": "ofl/playfairdisplay/METADATA.pb",
       "family_name": "Playfair Display",
-      "designer": "Claus Eggers S\u00f8rensen",
+      "designer": "Claus Eggers Sørensen",
       "license": "OFL",
       "repository_url": "https://github.com/clauseggers/Playfair",
       "commit": "80a334101928546b04fa9e709ad4b2f11f8a9e10",
@@ -20656,7 +20656,7 @@
     {
       "path": "ofl/playfairdisplaysc/METADATA.pb",
       "family_name": "Playfair Display SC",
-      "designer": "Claus Eggers S\u00f8rensen",
+      "designer": "Claus Eggers Sørensen",
       "license": "OFL",
       "repository_url": "https://github.com/clauseggers/Playfair",
       "commit": "80a334101928546b04fa9e709ad4b2f11f8a9e10",
@@ -20670,7 +20670,7 @@
     {
       "path": "ofl/playpensans/METADATA.pb",
       "family_name": "Playpen Sans",
-      "designer": "TypeTogether, Laura Meseguer, Veronika Burian, Jos\u00e9 Scaglione, Kostas Bartsokas, Vera Evstafieva, Tom Grace, Yorlmar Campos",
+      "designer": "TypeTogether, Laura Meseguer, Veronika Burian, José Scaglione, Kostas Bartsokas, Vera Evstafieva, Tom Grace, Yorlmar Campos",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playpen-Sans",
       "commit": "354fed4e5d1397aa3a092e6baa41b0064c8340b5",
@@ -20684,7 +20684,7 @@
     {
       "path": "ofl/playpensansarabic/METADATA.pb",
       "family_name": "Playpen Sans Arabic",
-      "designer": "TypeTogether, Azza Alameddine, Laura Meseguer, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Azza Alameddine, Laura Meseguer, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playpen-Sans",
       "commit": "a4829cda744ea7e9ae73c14468a8a5672809f525",
@@ -20698,7 +20698,7 @@
     {
       "path": "ofl/playpensansdeva/METADATA.pb",
       "family_name": "Playpen Sans Deva",
-      "designer": "TypeTogether, Pooja Saxena, Gunjan Panchal, Laura Meseguer, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Pooja Saxena, Gunjan Panchal, Laura Meseguer, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playpen-Sans",
       "commit": "7a0794f02170021c04930280b39ab405599f5fb2",
@@ -20712,7 +20712,7 @@
     {
       "path": "ofl/playpensanshebrew/METADATA.pb",
       "family_name": "Playpen Sans Hebrew",
-      "designer": "TypeTogether, Tom Grace, Laura Meseguer, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Tom Grace, Laura Meseguer, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playpen-Sans",
       "commit": "12483714650a12591e1914cad7d123e2cadc45e9",
@@ -20726,7 +20726,7 @@
     {
       "path": "ofl/playpensansthai/METADATA.pb",
       "family_name": "Playpen Sans Thai",
-      "designer": "TypeTogether, Sirin Gunkloy, Laura Meseguer, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Sirin Gunkloy, Laura Meseguer, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playpen-Sans",
       "commit": "edaffec145577d12d6b5439ecb954b9f76a4a9a5",
@@ -20740,7 +20740,7 @@
     {
       "path": "ofl/playwritear/METADATA.pb",
       "family_name": "Playwrite AR",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20754,7 +20754,7 @@
     {
       "path": "ofl/playwritearguides/METADATA.pb",
       "family_name": "Playwrite AR Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20768,7 +20768,7 @@
     {
       "path": "ofl/playwriteat/METADATA.pb",
       "family_name": "Playwrite AT",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20782,7 +20782,7 @@
     {
       "path": "ofl/playwriteatguides/METADATA.pb",
       "family_name": "Playwrite AT Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20796,7 +20796,7 @@
     {
       "path": "ofl/playwriteaunsw/METADATA.pb",
       "family_name": "Playwrite AU NSW",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20810,7 +20810,7 @@
     {
       "path": "ofl/playwriteaunswguides/METADATA.pb",
       "family_name": "Playwrite AU NSW Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20824,7 +20824,7 @@
     {
       "path": "ofl/playwriteauqld/METADATA.pb",
       "family_name": "Playwrite AU QLD",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20838,7 +20838,7 @@
     {
       "path": "ofl/playwriteauqldguides/METADATA.pb",
       "family_name": "Playwrite AU QLD Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20852,7 +20852,7 @@
     {
       "path": "ofl/playwriteausa/METADATA.pb",
       "family_name": "Playwrite AU SA",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20866,7 +20866,7 @@
     {
       "path": "ofl/playwriteausaguides/METADATA.pb",
       "family_name": "Playwrite AU SA Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20880,7 +20880,7 @@
     {
       "path": "ofl/playwriteautas/METADATA.pb",
       "family_name": "Playwrite AU TAS",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20894,7 +20894,7 @@
     {
       "path": "ofl/playwriteautasguides/METADATA.pb",
       "family_name": "Playwrite AU TAS Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20908,7 +20908,7 @@
     {
       "path": "ofl/playwriteauvic/METADATA.pb",
       "family_name": "Playwrite AU VIC",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20922,7 +20922,7 @@
     {
       "path": "ofl/playwriteauvicguides/METADATA.pb",
       "family_name": "Playwrite AU VIC Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20936,7 +20936,7 @@
     {
       "path": "ofl/playwritebevlg/METADATA.pb",
       "family_name": "Playwrite BE VLG",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20950,7 +20950,7 @@
     {
       "path": "ofl/playwritebevlgguides/METADATA.pb",
       "family_name": "Playwrite BE VLG Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20964,7 +20964,7 @@
     {
       "path": "ofl/playwritebewal/METADATA.pb",
       "family_name": "Playwrite BE WAL",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20978,7 +20978,7 @@
     {
       "path": "ofl/playwritebewalguides/METADATA.pb",
       "family_name": "Playwrite BE WAL Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -20992,7 +20992,7 @@
     {
       "path": "ofl/playwritebr/METADATA.pb",
       "family_name": "Playwrite BR",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21006,7 +21006,7 @@
     {
       "path": "ofl/playwritebrguides/METADATA.pb",
       "family_name": "Playwrite BR Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21020,7 +21020,7 @@
     {
       "path": "ofl/playwriteca/METADATA.pb",
       "family_name": "Playwrite CA",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21034,7 +21034,7 @@
     {
       "path": "ofl/playwritecaguides/METADATA.pb",
       "family_name": "Playwrite CA Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21048,7 +21048,7 @@
     {
       "path": "ofl/playwritecl/METADATA.pb",
       "family_name": "Playwrite CL",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21062,7 +21062,7 @@
     {
       "path": "ofl/playwriteclguides/METADATA.pb",
       "family_name": "Playwrite CL Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21076,7 +21076,7 @@
     {
       "path": "ofl/playwriteco/METADATA.pb",
       "family_name": "Playwrite CO",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21090,7 +21090,7 @@
     {
       "path": "ofl/playwritecoguides/METADATA.pb",
       "family_name": "Playwrite CO Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21104,7 +21104,7 @@
     {
       "path": "ofl/playwritecu/METADATA.pb",
       "family_name": "Playwrite CU",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21118,7 +21118,7 @@
     {
       "path": "ofl/playwritecuguides/METADATA.pb",
       "family_name": "Playwrite CU Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21132,7 +21132,7 @@
     {
       "path": "ofl/playwritecz/METADATA.pb",
       "family_name": "Playwrite CZ",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21146,7 +21146,7 @@
     {
       "path": "ofl/playwriteczguides/METADATA.pb",
       "family_name": "Playwrite CZ Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21160,7 +21160,7 @@
     {
       "path": "ofl/playwritedegrund/METADATA.pb",
       "family_name": "Playwrite DE Grund",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21174,7 +21174,7 @@
     {
       "path": "ofl/playwritedegrundguides/METADATA.pb",
       "family_name": "Playwrite DE Grund Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21188,7 +21188,7 @@
     {
       "path": "ofl/playwritedela/METADATA.pb",
       "family_name": "Playwrite DE LA",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21202,7 +21202,7 @@
     {
       "path": "ofl/playwritedelaguides/METADATA.pb",
       "family_name": "Playwrite DE LA Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21216,7 +21216,7 @@
     {
       "path": "ofl/playwritedesas/METADATA.pb",
       "family_name": "Playwrite DE SAS",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21230,7 +21230,7 @@
     {
       "path": "ofl/playwritedesasguides/METADATA.pb",
       "family_name": "Playwrite DE SAS Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21244,7 +21244,7 @@
     {
       "path": "ofl/playwritedeva/METADATA.pb",
       "family_name": "Playwrite DE VA",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21258,7 +21258,7 @@
     {
       "path": "ofl/playwritedevaguides/METADATA.pb",
       "family_name": "Playwrite DE VA Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21272,7 +21272,7 @@
     {
       "path": "ofl/playwritedkloopet/METADATA.pb",
       "family_name": "Playwrite DK Loopet",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21286,7 +21286,7 @@
     {
       "path": "ofl/playwritedkloopetguides/METADATA.pb",
       "family_name": "Playwrite DK Loopet Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21300,7 +21300,7 @@
     {
       "path": "ofl/playwritedkuloopet/METADATA.pb",
       "family_name": "Playwrite DK Uloopet",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21314,7 +21314,7 @@
     {
       "path": "ofl/playwritedkuloopetguides/METADATA.pb",
       "family_name": "Playwrite DK Uloopet Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21328,7 +21328,7 @@
     {
       "path": "ofl/playwritees/METADATA.pb",
       "family_name": "Playwrite ES",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21342,7 +21342,7 @@
     {
       "path": "ofl/playwriteesdeco/METADATA.pb",
       "family_name": "Playwrite ES Deco",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21356,7 +21356,7 @@
     {
       "path": "ofl/playwriteesdecoguides/METADATA.pb",
       "family_name": "Playwrite ES Deco Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21370,7 +21370,7 @@
     {
       "path": "ofl/playwriteesguides/METADATA.pb",
       "family_name": "Playwrite ES Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21384,7 +21384,7 @@
     {
       "path": "ofl/playwritefrmoderne/METADATA.pb",
       "family_name": "Playwrite FR Moderne",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21398,7 +21398,7 @@
     {
       "path": "ofl/playwritefrmoderneguides/METADATA.pb",
       "family_name": "Playwrite FR Moderne Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21412,7 +21412,7 @@
     {
       "path": "ofl/playwritefrtrad/METADATA.pb",
       "family_name": "Playwrite FR Trad",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21426,7 +21426,7 @@
     {
       "path": "ofl/playwritefrtradguides/METADATA.pb",
       "family_name": "Playwrite FR Trad Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21440,7 +21440,7 @@
     {
       "path": "ofl/playwritegbj/METADATA.pb",
       "family_name": "Playwrite GB J",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21454,7 +21454,7 @@
     {
       "path": "ofl/playwritegbjguides/METADATA.pb",
       "family_name": "Playwrite GB J Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21468,7 +21468,7 @@
     {
       "path": "ofl/playwritegbs/METADATA.pb",
       "family_name": "Playwrite GB S",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21482,7 +21482,7 @@
     {
       "path": "ofl/playwritegbsguides/METADATA.pb",
       "family_name": "Playwrite GB S Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21496,7 +21496,7 @@
     {
       "path": "ofl/playwritehr/METADATA.pb",
       "family_name": "Playwrite HR",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21510,7 +21510,7 @@
     {
       "path": "ofl/playwritehrguides/METADATA.pb",
       "family_name": "Playwrite HR Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21524,7 +21524,7 @@
     {
       "path": "ofl/playwritehrlijeva/METADATA.pb",
       "family_name": "Playwrite HR Lijeva",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21538,7 +21538,7 @@
     {
       "path": "ofl/playwritehrlijevaguides/METADATA.pb",
       "family_name": "Playwrite HR Lijeva Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21552,7 +21552,7 @@
     {
       "path": "ofl/playwritehu/METADATA.pb",
       "family_name": "Playwrite HU",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21566,7 +21566,7 @@
     {
       "path": "ofl/playwritehuguides/METADATA.pb",
       "family_name": "Playwrite HU Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21580,7 +21580,7 @@
     {
       "path": "ofl/playwriteid/METADATA.pb",
       "family_name": "Playwrite ID",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21594,7 +21594,7 @@
     {
       "path": "ofl/playwriteidguides/METADATA.pb",
       "family_name": "Playwrite ID Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21608,7 +21608,7 @@
     {
       "path": "ofl/playwriteie/METADATA.pb",
       "family_name": "Playwrite IE",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21622,7 +21622,7 @@
     {
       "path": "ofl/playwriteieguides/METADATA.pb",
       "family_name": "Playwrite IE Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21636,7 +21636,7 @@
     {
       "path": "ofl/playwritein/METADATA.pb",
       "family_name": "Playwrite IN",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21650,7 +21650,7 @@
     {
       "path": "ofl/playwriteinguides/METADATA.pb",
       "family_name": "Playwrite IN Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21664,7 +21664,7 @@
     {
       "path": "ofl/playwriteis/METADATA.pb",
       "family_name": "Playwrite IS",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21678,7 +21678,7 @@
     {
       "path": "ofl/playwriteisguides/METADATA.pb",
       "family_name": "Playwrite IS Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21692,7 +21692,7 @@
     {
       "path": "ofl/playwriteitmoderna/METADATA.pb",
       "family_name": "Playwrite IT Moderna",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21706,7 +21706,7 @@
     {
       "path": "ofl/playwriteitmodernaguides/METADATA.pb",
       "family_name": "Playwrite IT Moderna Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21720,7 +21720,7 @@
     {
       "path": "ofl/playwriteittrad/METADATA.pb",
       "family_name": "Playwrite IT Trad",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21734,7 +21734,7 @@
     {
       "path": "ofl/playwriteittradguides/METADATA.pb",
       "family_name": "Playwrite IT Trad Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21748,7 +21748,7 @@
     {
       "path": "ofl/playwritemx/METADATA.pb",
       "family_name": "Playwrite MX",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21762,7 +21762,7 @@
     {
       "path": "ofl/playwritemxguides/METADATA.pb",
       "family_name": "Playwrite MX Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21776,7 +21776,7 @@
     {
       "path": "ofl/playwritengmodern/METADATA.pb",
       "family_name": "Playwrite NG Modern",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21790,7 +21790,7 @@
     {
       "path": "ofl/playwritengmodernguides/METADATA.pb",
       "family_name": "Playwrite NG Modern Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21804,7 +21804,7 @@
     {
       "path": "ofl/playwritenl/METADATA.pb",
       "family_name": "Playwrite NL",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21818,7 +21818,7 @@
     {
       "path": "ofl/playwritenlguides/METADATA.pb",
       "family_name": "Playwrite NL Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21832,7 +21832,7 @@
     {
       "path": "ofl/playwriteno/METADATA.pb",
       "family_name": "Playwrite NO",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21846,7 +21846,7 @@
     {
       "path": "ofl/playwritenoguides/METADATA.pb",
       "family_name": "Playwrite NO Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21860,7 +21860,7 @@
     {
       "path": "ofl/playwritenz/METADATA.pb",
       "family_name": "Playwrite NZ",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "fbc8d9790feeba3a5d0c0b4ccdcf246d3c41526e",
@@ -21874,7 +21874,7 @@
     {
       "path": "ofl/playwritenzbasic/METADATA.pb",
       "family_name": "Playwrite NZ Basic",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "fbc8d9790feeba3a5d0c0b4ccdcf246d3c41526e",
@@ -21888,7 +21888,7 @@
     {
       "path": "ofl/playwritenzbasicguides/METADATA.pb",
       "family_name": "Playwrite NZ Basic Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "fbc8d9790feeba3a5d0c0b4ccdcf246d3c41526e",
@@ -21902,7 +21902,7 @@
     {
       "path": "ofl/playwritenzguides/METADATA.pb",
       "family_name": "Playwrite NZ Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "fbc8d9790feeba3a5d0c0b4ccdcf246d3c41526e",
@@ -21916,7 +21916,7 @@
     {
       "path": "ofl/playwritepe/METADATA.pb",
       "family_name": "Playwrite PE",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21930,7 +21930,7 @@
     {
       "path": "ofl/playwritepeguides/METADATA.pb",
       "family_name": "Playwrite PE Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21944,7 +21944,7 @@
     {
       "path": "ofl/playwritepl/METADATA.pb",
       "family_name": "Playwrite PL",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21958,7 +21958,7 @@
     {
       "path": "ofl/playwriteplguides/METADATA.pb",
       "family_name": "Playwrite PL Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21972,7 +21972,7 @@
     {
       "path": "ofl/playwritept/METADATA.pb",
       "family_name": "Playwrite PT",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -21986,7 +21986,7 @@
     {
       "path": "ofl/playwriteptguides/METADATA.pb",
       "family_name": "Playwrite PT Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22000,7 +22000,7 @@
     {
       "path": "ofl/playwritero/METADATA.pb",
       "family_name": "Playwrite RO",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22014,7 +22014,7 @@
     {
       "path": "ofl/playwriteroguides/METADATA.pb",
       "family_name": "Playwrite RO Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22028,7 +22028,7 @@
     {
       "path": "ofl/playwritesk/METADATA.pb",
       "family_name": "Playwrite SK",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22042,7 +22042,7 @@
     {
       "path": "ofl/playwriteskguides/METADATA.pb",
       "family_name": "Playwrite SK Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22056,7 +22056,7 @@
     {
       "path": "ofl/playwritetz/METADATA.pb",
       "family_name": "Playwrite TZ",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22070,7 +22070,7 @@
     {
       "path": "ofl/playwritetzguides/METADATA.pb",
       "family_name": "Playwrite TZ Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22084,7 +22084,7 @@
     {
       "path": "ofl/playwriteusmodern/METADATA.pb",
       "family_name": "Playwrite US Modern",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22098,7 +22098,7 @@
     {
       "path": "ofl/playwriteusmodernguides/METADATA.pb",
       "family_name": "Playwrite US Modern Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22112,7 +22112,7 @@
     {
       "path": "ofl/playwriteustrad/METADATA.pb",
       "family_name": "Playwrite US Trad",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22126,7 +22126,7 @@
     {
       "path": "ofl/playwriteustradguides/METADATA.pb",
       "family_name": "Playwrite US Trad Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22140,7 +22140,7 @@
     {
       "path": "ofl/playwritevn/METADATA.pb",
       "family_name": "Playwrite VN",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22154,7 +22154,7 @@
     {
       "path": "ofl/playwritevnguides/METADATA.pb",
       "family_name": "Playwrite VN Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22168,7 +22168,7 @@
     {
       "path": "ofl/playwriteza/METADATA.pb",
       "family_name": "Playwrite ZA",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22182,7 +22182,7 @@
     {
       "path": "ofl/playwritezaguides/METADATA.pb",
       "family_name": "Playwrite ZA Guides",
-      "designer": "TypeTogether, Veronika Burian, Jos\u00e9 Scaglione",
+      "designer": "TypeTogether, Veronika Burian, José Scaglione",
       "license": "OFL",
       "repository_url": "https://github.com/TypeTogether/Playwrite",
       "commit": "02e4e15767f5b6c2109413429fc51879b9507ab4",
@@ -22267,7 +22267,7 @@
     {
       "path": "ofl/pollerone/METADATA.pb",
       "family_name": "Poller One",
-      "designer": "Yvonne Sch\u00fcttler",
+      "designer": "Yvonne Schüttler",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/pollerone",
       "commit": "b96cca8de80713c5240073d6db877aaaec22e769",
@@ -22285,7 +22285,7 @@
     {
       "path": "ofl/poltawskinowy/METADATA.pb",
       "family_name": "Poltawski Nowy",
-      "designer": "Adam P\u00f3\u0142tawski, Mateusz Machalski, Borys Kosmynka, Ania Wielu\u0144ska",
+      "designer": "Adam Półtawski, Mateusz Machalski, Borys Kosmynka, Ania Wieluńska",
       "license": "OFL",
       "repository_url": "https://github.com/kosmynkab/Poltawski-Nowy",
       "commit": "4d541846c51c5267937a06fd5da9ab7837be166f",
@@ -22299,7 +22299,7 @@
     {
       "path": "ofl/poly/METADATA.pb",
       "family_name": "Poly",
-      "designer": "Nicol\u00e1s Silva",
+      "designer": "Nicolás Silva",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/poly",
       "commit": "8c7055b1319cbac371757dbaa7c6a85a1b699b14",
@@ -23055,7 +23055,7 @@
     {
       "path": "ofl/radiocanadabig/METADATA.pb",
       "family_name": "Radio Canada Big",
-      "designer": "\u00c9tienne Aubert Bonn",
+      "designer": "Étienne Aubert Bonn",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/radiocanadadisplay",
       "commit": "9ac9cf87d0fbd85bce912535994e02614b1b525f",
@@ -23265,7 +23265,7 @@
     {
       "path": "ofl/rasa/METADATA.pb",
       "family_name": "Rasa",
-      "designer": "Rosetta, Anna Giedry\u015b, David B\u0159ezina",
+      "designer": "Rosetta, Anna Giedryś, David Březina",
       "license": "OFL",
       "repository_url": "https://github.com/rosettatype/yrsa-rasa",
       "commit": "ec1d6aa68525da0859a43048228aef2c5bff3b40",
@@ -23317,7 +23317,7 @@
     {
       "path": "ofl/readexpro/METADATA.pb",
       "family_name": "Readex Pro",
-      "designer": "Thomas Jockin, Nadine Chahine, Bonnie Shaver-Troup, Santiago Orozco, H\u00e9ctor G\u00f3mez",
+      "designer": "Thomas Jockin, Nadine Chahine, Bonnie Shaver-Troup, Santiago Orozco, Héctor Gómez",
       "license": "OFL",
       "repository_url": "https://github.com/ThomasJockin/readexpro",
       "commit": "563dfbb36ae45e52ec50829b016ce724ac2fca70",
@@ -24374,7 +24374,7 @@
     {
       "path": "ofl/ruluko/METADATA.pb",
       "family_name": "Ruluko",
-      "designer": "Ana Sanfelippo, Ang\u00e9lica D\u00edaz, Meme Hern\u00e1ndez",
+      "designer": "Ana Sanfelippo, Angélica Díaz, Meme Hernández",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/ruluko",
       "commit": "8884fc6b4a575b88f48f91235caa1e89de838d18",
@@ -24611,7 +24611,7 @@
     {
       "path": "ofl/salsa/METADATA.pb",
       "family_name": "Salsa",
-      "designer": "John Vargas Beltr\u00e1n",
+      "designer": "John Vargas Beltrán",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/salsa",
       "commit": "19cb69b3af08453b9d47496053b78471d05f5087",
@@ -24824,7 +24824,7 @@
     {
       "path": "ofl/savate/METADATA.pb",
       "family_name": "Savate",
-      "designer": "Plomb Type, Max Esn\u00e9e",
+      "designer": "Plomb Type, Max Esnée",
       "license": "OFL",
       "repository_url": "https://github.com/maxesnee/savate",
       "commit": "ca21a81c2b28507638e9290e9d2c26ff863dd32d",
@@ -24895,7 +24895,7 @@
     {
       "path": "ofl/schibstedgrotesk/METADATA.pb",
       "family_name": "Schibsted Grotesk",
-      "designer": "Bakken & B\u00e6ck, Henrik Kongsvoll",
+      "designer": "Bakken & Bæck, Henrik Kongsvoll",
       "license": "OFL",
       "repository_url": "https://github.com/schibsted/schibsted-grotesk",
       "commit": "d485f61f105e1b3935f4d21dfb4d371359798603",
@@ -24970,7 +24970,7 @@
     {
       "path": "ofl/sedan/METADATA.pb",
       "family_name": "Sedan",
-      "designer": "Sebasti\u00e1n Salazar",
+      "designer": "Sebastián Salazar",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/sedan",
       "commit": "35a4019d7c2547b58177cff9a65b91e47dd79546",
@@ -24984,7 +24984,7 @@
     {
       "path": "ofl/sedansc/METADATA.pb",
       "family_name": "Sedan SC",
-      "designer": "Sebasti\u00e1n Salazar",
+      "designer": "Sebastián Salazar",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/sedan",
       "commit": "35a4019d7c2547b58177cff9a65b91e47dd79546",
@@ -25411,7 +25411,7 @@
     {
       "path": "ofl/signika/METADATA.pb",
       "family_name": "Signika",
-      "designer": "Anna Giedry\u015b",
+      "designer": "Anna Giedryś",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/Signika",
       "commit": "7361a224d1d77274af1ea11dd06448c54c16f598",
@@ -25425,7 +25425,7 @@
     {
       "path": "ofl/signikanegative/METADATA.pb",
       "family_name": "Signika Negative",
-      "designer": "Anna Giedry\u015b",
+      "designer": "Anna Giedryś",
       "license": "OFL",
       "repository_url": "https://github.com/aaronbell/signika",
       "commit": "bd066259b5a87d24b23c4f0da03a96889b6d0503",
@@ -25439,7 +25439,7 @@
     {
       "path": "ofl/signikanegativesc/METADATA.pb",
       "family_name": "Signika Negative SC",
-      "designer": "Anna Giedry\u015b",
+      "designer": "Anna Giedryś",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/Signika",
       "commit": "7361a224d1d77274af1ea11dd06448c54c16f598",
@@ -25454,7 +25454,7 @@
     {
       "path": "ofl/signikasc/METADATA.pb",
       "family_name": "Signika SC",
-      "designer": "Anna Giedry\u015b",
+      "designer": "Anna Giedryś",
       "license": "OFL",
       "repository_url": "https://github.com/googlefonts/Signika",
       "commit": "7361a224d1d77274af1ea11dd06448c54c16f598",
@@ -25590,7 +25590,7 @@
     {
       "path": "ofl/sixtyfour/METADATA.pb",
       "family_name": "Sixtyfour",
-      "designer": "Jens Kut\u00edlek",
+      "designer": "Jens Kutílek",
       "license": "OFL",
       "repository_url": "https://github.com/jenskutilek/homecomputer-fonts",
       "commit": "09b2f79d686453d3bc160d04a687488e66962c43",
@@ -25604,7 +25604,7 @@
     {
       "path": "ofl/sixtyfourconvergence/METADATA.pb",
       "family_name": "Sixtyfour Convergence",
-      "designer": "Simon Cozens, Jens Kut\u00edlek",
+      "designer": "Simon Cozens, Jens Kutílek",
       "license": "OFL",
       "repository_url": "https://github.com/jenskutilek/homecomputer-fonts",
       "commit": "3e0b1194c1d2cc6bc66178908470a428f34349cd",
@@ -25964,7 +25964,7 @@
     {
       "path": "ofl/sora/METADATA.pb",
       "family_name": "Sora",
-      "designer": "Jonathan Barnbrook, Juli\u00e1n Moncada",
+      "designer": "Jonathan Barnbrook, Julián Moncada",
       "license": "OFL",
       "repository_url": "https://github.com/sora-xor/sora-font",
       "commit": "efeb79b4eff1090588196321b53bc9fea722d6f9",
@@ -26032,7 +26032,7 @@
     {
       "path": "ofl/sourceserif4/METADATA.pb",
       "family_name": "Source Serif 4",
-      "designer": "Frank Grie\u00dfhammer",
+      "designer": "Frank Grießhammer",
       "license": "OFL",
       "repository_url": "https://github.com/adobe-fonts/source-serif",
       "commit": "5f220b17d27ed64873f22cde0dd593685387bd19",
@@ -26229,7 +26229,7 @@
     {
       "path": "ofl/splinesans/METADATA.pb",
       "family_name": "Spline Sans",
-      "designer": "Eben Sorkin, Mirko Velimirovi\u0107",
+      "designer": "Eben Sorkin, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/SorkinType/SplineSans",
       "commit": "5196436e0714c188c70f30a93b4759e8ed8afb69",
@@ -26243,7 +26243,7 @@
     {
       "path": "ofl/splinesansmono/METADATA.pb",
       "family_name": "Spline Sans Mono",
-      "designer": "Eben Sorkin, Mirko Velimirovi\u0107",
+      "designer": "Eben Sorkin, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/SorkinType/SplineSansMono",
       "commit": "b167db03b7d7ae754bf7071c13415e7aeee7d073",
@@ -26777,7 +26777,7 @@
     {
       "path": "ofl/suse/METADATA.pb",
       "family_name": "SUSE",
-      "designer": "Ren\u00e9 Bieder",
+      "designer": "René Bieder",
       "license": "OFL",
       "repository_url": "https://github.com/SUSE/suse-font",
       "commit": "7159afb2555b06d3a5c2f90e4d324e59e69c277d",
@@ -26791,7 +26791,7 @@
     {
       "path": "ofl/susemono/METADATA.pb",
       "family_name": "SUSE Mono",
-      "designer": "Ren\u00e9 Bieder",
+      "designer": "René Bieder",
       "license": "OFL",
       "repository_url": "https://github.com/SUSE/suse-font",
       "commit": "7159afb2555b06d3a5c2f90e4d324e59e69c277d",
@@ -26882,7 +26882,7 @@
     {
       "path": "ofl/tacone/METADATA.pb",
       "family_name": "Tac One",
-      "designer": "Afrotype, Seyi Olusanya, Eyiyemi Adegbite, David Udoh, Mirko Velimirovi\u0107",
+      "designer": "Afrotype, Seyi Olusanya, Eyiyemi Adegbite, David Udoh, Mirko Velimirović",
       "license": "OFL",
       "repository_url": "https://github.com/Afrotype/tac",
       "commit": "85b9001fb4c9f6801808de5ee2f5e257ad062856",
@@ -27014,7 +27014,7 @@
     {
       "path": "ofl/tauri/METADATA.pb",
       "family_name": "Tauri",
-      "designer": "Yvonne Sch\u00fcttler",
+      "designer": "Yvonne Schüttler",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/tauri",
       "commit": "b7c1ba25bdf24e9d48da1d181517ee06de19a078",
@@ -27092,7 +27092,7 @@
     {
       "path": "ofl/telex/METADATA.pb",
       "family_name": "Telex",
-      "designer": "Huerta Tipogr\u00e1fica",
+      "designer": "Huerta Tipográfica",
       "license": "OFL",
       "repository_url": "https://github.com/librefonts/telex",
       "commit": "6473a193e7ed94d9c7b9d7a8bdb642daa1800b30",
@@ -27436,7 +27436,7 @@
     {
       "path": "ofl/tirokannada/METADATA.pb",
       "family_name": "Tiro Kannada",
-      "designer": "Tiro Typeworks, John Hudson, Fiona Ross, Kaja S\u0142ojewska",
+      "designer": "Tiro Typeworks, John Hudson, Fiona Ross, Kaja Słojewska",
       "license": "OFL",
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
@@ -27450,7 +27450,7 @@
     {
       "path": "ofl/tirotamil/METADATA.pb",
       "family_name": "Tiro Tamil",
-      "designer": "Tiro Typeworks, Fernando Mello, Fiona Ross, Kaja S\u0142ojewska",
+      "designer": "Tiro Typeworks, Fernando Mello, Fiona Ross, Kaja Słojewska",
       "license": "OFL",
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
@@ -27464,7 +27464,7 @@
     {
       "path": "ofl/tirotelugu/METADATA.pb",
       "family_name": "Tiro Telugu",
-      "designer": "Tiro Typeworks, John Hudson, Fiona Ross, Kaja S\u0142ojewska",
+      "designer": "Tiro Typeworks, John Hudson, Fiona Ross, Kaja Słojewska",
       "license": "OFL",
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "24f67ca20ca4720eb4302592f2e0f6ec21042a5d",
@@ -28093,7 +28093,7 @@
     {
       "path": "ofl/viaodalibre/METADATA.pb",
       "family_name": "Viaoda Libre",
-      "designer": "Gydient, Vi\u1ec7tAnh Nguy\u1ec5n",
+      "designer": "Gydient, ViệtAnh Nguyễn",
       "license": "OFL",
       "repository_url": "https://github.com/bettergui/ViaodaLibre",
       "commit": "d3fcf66aa394cab6c638249c042f4133394088b6",
@@ -28138,7 +28138,7 @@
     {
       "path": "ofl/victormono/METADATA.pb",
       "family_name": "Victor Mono",
-      "designer": "Rune Bj\u00f8rner\u00e5s",
+      "designer": "Rune Bjørnerås",
       "license": "OFL",
       "repository_url": "https://github.com/rubjo/victor-mono-font",
       "commit": "8c00076e5afe53f3707db3ec0865b93f6d464b04",
@@ -28264,7 +28264,7 @@
     {
       "path": "ofl/voltaire/METADATA.pb",
       "family_name": "Voltaire",
-      "designer": "Yvonne Sch\u00fcttler",
+      "designer": "Yvonne Schüttler",
       "license": "OFL",
       "repository_url": "https://github.com/SorkinType/Voltaire",
       "commit": "3587d918a1a19e01a9b8f9dbcb504ffc12d04dbe",
@@ -28550,7 +28550,7 @@
     {
       "path": "ofl/wittgenstein/METADATA.pb",
       "family_name": "Wittgenstein",
-      "designer": "J\u00f6rg Drees",
+      "designer": "Jörg Drees",
       "license": "OFL",
       "repository_url": "https://github.com/jrgdrs/Wittgenstein",
       "commit": "56c1cf1b4a9f5127d4621f1e167f6415b0a284e9",
@@ -28593,7 +28593,7 @@
     {
       "path": "ofl/workbench/METADATA.pb",
       "family_name": "Workbench",
-      "designer": "Jens Kut\u00edlek",
+      "designer": "Jens Kutílek",
       "license": "OFL",
       "repository_url": "https://github.com/jenskutilek/homecomputer-fonts",
       "commit": "09b2f79d686453d3bc160d04a687488e66962c43",
@@ -28621,7 +28621,7 @@
     {
       "path": "ofl/xanhmono/METADATA.pb",
       "family_name": "Xanh Mono",
-      "designer": "Yellow Type, L\u00e2m B\u1ea3o, Duy Dao",
+      "designer": "Yellow Type, Lâm Bảo, Duy Dao",
       "license": "OFL",
       "repository_url": "https://github.com/yellow-type-foundry/xanhmono",
       "commit": "5c0ceb816ffc1e8f79be71c82a43201395f3eca5",
@@ -28856,7 +28856,7 @@
     {
       "path": "ofl/yrsa/METADATA.pb",
       "family_name": "Yrsa",
-      "designer": "Rosetta, Anna Giedry\u015b, David B\u0159ezina",
+      "designer": "Rosetta, Anna Giedryś, David Březina",
       "license": "OFL",
       "repository_url": "https://github.com/rosettatype/yrsa-rasa",
       "commit": "ec1d6aa68525da0859a43048228aef2c5bff3b40",
