@@ -737,5 +737,15 @@
     "role": "assistant",
     "timestamp": "2026-03-03T09:55:01Z",
     "content": "Acknowledged strict policy. Updated MEMORY.md. From now on, every investigation will actively check if an override config.yaml can be created when one is missing. If the upstream repo has gftools-builder compatible sources (.glyphs, .ufo, .designspace) at the referenced commit, I will create the override config.yaml file. These will be included alongside investigation reports in PRs to google/fonts."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-03T10:05:22Z",
+    "content": "strict policy: The reports must make a clear distinction between what was the state of the families when the family was inspected versus what is the final state after changes were made to address the issues detected (such as updating the METADATA.pb fields and possibly the creation of override config.yaml files). The language should be \"something was done\" instead of \"something needs to be done\"."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-03T10:05:22Z",
+    "content": "Acknowledged. Updated MEMORY.md. From now on, investigation reports will: (1) clearly describe the initial state found during inspection, (2) describe actions taken to fix issues, (3) describe the final state after changes. Language will use past tense (\"was added\", \"was created\") instead of future/imperative (\"needs to be added\", \"should be created\"). Reports document completed work, not a to-do list."
   }
 ]
