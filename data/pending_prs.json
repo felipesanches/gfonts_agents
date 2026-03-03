@@ -554,5 +554,83 @@
     "created": "2026-02-27",
     "pr_url": "https://github.com/google/fonts/pull/10285",
     "merged": "2026-02-27"
+  },
+  {
+    "id": "pr-fix-source-metadata-2026-03-03",
+    "title": "Fix source metadata for 16 font families (L-M range)",
+    "description": "9 commit hash corrections (Linefont, Lora, Lugrasimo, Luxurious Roman, Major Mono Display, Markazi Text, Marmelad, Martel, Martian Mono), 4 missing commit hash additions (LINE Seed JP, Liu Jian Mao Cao, Lobster, Mali), and 3 override config.yaml additions (Linden Hill, Long Cang, Lisu Bosa).",
+    "type": "metadata_fix",
+    "priority": "high",
+    "branch": "fix-source-metadata-2026-03-03",
+    "families_count": 16,
+    "status": "merged",
+    "created": "2026-03-03",
+    "pr_url": "https://github.com/google/fonts/pull/10301",
+    "merged": "2026-03-03"
+  },
+  {
+    "id": "pr-upstream-info-4-a",
+    "title": "Add upstream_info.md for 96 families (0-9, A)",
+    "description": "Documentation-only: adds investigation reports as upstream_info.md for 96 families starting with digits and letter A. No METADATA.pb or config.yaml changes.",
+    "type": "documentation",
+    "priority": "medium",
+    "branch": "upstream-info-4-a",
+    "families_count": 96,
+    "status": "submitted",
+    "created": "2026-03-03",
+    "pr_url": "https://github.com/google/fonts/pull/10302",
+    "submitted_date": "2026-03-03"
+  },
+  {
+    "id": "pr-upstream-info-b",
+    "title": "Add upstream_info.md for 97 families (B)",
+    "description": "Documentation-only: adds investigation reports as upstream_info.md for 97 families starting with letter B. No METADATA.pb or config.yaml changes.",
+    "type": "documentation",
+    "priority": "medium",
+    "branch": "upstream-info-b",
+    "families_count": 97,
+    "status": "submitted",
+    "created": "2026-03-03",
+    "pr_url": "https://github.com/google/fonts/pull/10303",
+    "submitted_date": "2026-03-03"
+  },
+  {
+    "id": "pr-upstream-info-c-e",
+    "title": "Add upstream_info.md for 109 families (C-E)",
+    "description": "Documentation-only: adds investigation reports as upstream_info.md for 109 families starting with letters C through E. No METADATA.pb or config.yaml changes.",
+    "type": "documentation",
+    "priority": "medium",
+    "branch": "upstream-info-c-e",
+    "families_count": 109,
+    "status": "submitted",
+    "created": "2026-03-03",
+    "pr_url": "https://github.com/google/fonts/pull/10304",
+    "submitted_date": "2026-03-03"
+  },
+  {
+    "id": "pr-upstream-info-f-i",
+    "title": "Add upstream_info.md for 142 families (F-I)",
+    "description": "Documentation-only: adds investigation reports as upstream_info.md for 142 families starting with letters F through I. No METADATA.pb or config.yaml changes.",
+    "type": "documentation",
+    "priority": "medium",
+    "branch": "upstream-info-f-i",
+    "families_count": 142,
+    "status": "submitted",
+    "created": "2026-03-03",
+    "pr_url": "https://github.com/google/fonts/pull/10305",
+    "submitted_date": "2026-03-03"
+  },
+  {
+    "id": "pr-upstream-info-j-m",
+    "title": "Add upstream_info.md for 213 families (J-M)",
+    "description": "Documentation-only: adds investigation reports as upstream_info.md for 213 families starting with letters J through M. No METADATA.pb or config.yaml changes.",
+    "type": "documentation",
+    "priority": "medium",
+    "branch": "upstream-info-j-m",
+    "families_count": 213,
+    "status": "submitted",
+    "created": "2026-03-03",
+    "pr_url": "https://github.com/google/fonts/pull/10306",
+    "submitted_date": "2026-03-03"
   }
 ]

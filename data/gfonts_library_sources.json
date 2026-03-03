@@ -10955,7 +10955,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/jacquardabastarda9charted/METADATA.pb",
@@ -10969,7 +10969,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/jacquesfrancois/METADATA.pb",
@@ -11574,7 +11574,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kalniaglaze/METADATA.pb",
@@ -11588,7 +11588,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kameron/METADATA.pb",
@@ -11602,7 +11602,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kanchenjunga/METADATA.pb",
@@ -11617,7 +11617,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kanit/METADATA.pb",
@@ -12247,7 +12247,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kumarone/METADATA.pb",
@@ -12265,7 +12265,7 @@
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kumaroneoutline/METADATA.pb",
@@ -12283,7 +12283,7 @@
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kumbhsans/METADATA.pb",
@@ -12297,7 +12297,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/kurale/METADATA.pb",
@@ -12311,7 +12311,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/labelleaurore/METADATA.pb",
@@ -12326,7 +12326,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/labrada/METADATA.pb",
@@ -12340,7 +12340,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lacquer/METADATA.pb",
@@ -12354,7 +12354,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/laila/METADATA.pb",
@@ -12704,7 +12704,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lexendtera/METADATA.pb",
@@ -12718,7 +12718,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lexendzetta/METADATA.pb",
@@ -12732,7 +12732,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/libertinuskeyboard/METADATA.pb",
@@ -12747,7 +12747,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/libertinusmath/METADATA.pb",
@@ -12762,7 +12762,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/libertinusmono/METADATA.pb",
@@ -12777,7 +12777,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/libertinussans/METADATA.pb",
@@ -12792,7 +12792,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/libertinusserif/METADATA.pb",
@@ -12807,7 +12807,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/libertinusserifdisplay/METADATA.pb",
@@ -12822,7 +12822,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcode128/METADATA.pb",
@@ -12837,7 +12837,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcode128text/METADATA.pb",
@@ -12852,7 +12852,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcode39/METADATA.pb",
@@ -12867,7 +12867,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcode39extended/METADATA.pb",
@@ -12882,7 +12882,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcode39extendedtext/METADATA.pb",
@@ -12897,7 +12897,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcode39text/METADATA.pb",
@@ -12912,7 +12912,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebarcodeean13text/METADATA.pb",
@@ -12927,7 +12927,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebaskerville/METADATA.pb",
@@ -12941,7 +12941,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librebodoni/METADATA.pb",
@@ -12955,7 +12955,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librecaslondisplay/METADATA.pb",
@@ -12970,7 +12970,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librecaslontext/METADATA.pb",
@@ -12985,7 +12985,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Latest commit 'Make all italic styles available in VF on mac' (2020-06-10). Used for gfonts PR #2432 'librecaslontext: v2.0 added' merged 2020-06-11.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/librefranklin/METADATA.pb",
@@ -12999,7 +12999,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/licorice/METADATA.pb",
@@ -13013,7 +13013,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lifesavers/METADATA.pb",
@@ -13027,7 +13027,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lilex/METADATA.pb",
@@ -13041,7 +13041,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lilitaone/METADATA.pb",
@@ -13059,7 +13059,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lilyscriptone/METADATA.pb",
@@ -13077,7 +13077,7 @@
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/limelight/METADATA.pb",
@@ -13095,7 +13095,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lindenhill/METADATA.pb",
@@ -13113,7 +13113,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/linefont/METADATA.pb",
@@ -13127,7 +13127,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lineseedjp/METADATA.pb",
@@ -13142,7 +13142,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: v20251119 tag, 1 day before google/fonts add.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lisubosa/METADATA.pb",
@@ -13161,7 +13161,7 @@
         "designspace",
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/liter/METADATA.pb",
@@ -13175,7 +13175,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/literata/METADATA.pb",
@@ -13189,7 +13189,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/liujianmaocao/METADATA.pb",
@@ -13204,7 +13204,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/livvic/METADATA.pb",
@@ -13218,7 +13218,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lobster/METADATA.pb",
@@ -13233,7 +13233,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Commit 'regenerated fonts' (2017-10-27) for v2.100 from cyrealtype. Gfonts PR #1296 says 'Taken from GF Repo googlefonts/The-Lobster-Font'. Same content exists in impallari repo master branch.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lobstertwo/METADATA.pb",
@@ -13248,7 +13248,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lohitbengali/METADATA.pb",
@@ -13266,7 +13266,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lohittamil/METADATA.pb",
@@ -13284,7 +13284,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/londrinaoutline/METADATA.pb",
@@ -13298,7 +13298,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/londrinashadow/METADATA.pb",
@@ -13312,7 +13312,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/londrinasketch/METADATA.pb",
@@ -13326,7 +13326,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/londrinasolid/METADATA.pb",
@@ -13340,7 +13340,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/longcang/METADATA.pb",
@@ -13355,7 +13355,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lora/METADATA.pb",
@@ -13369,7 +13369,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lovedbytheking/METADATA.pb",
@@ -13387,7 +13387,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lovelight/METADATA.pb",
@@ -13401,7 +13401,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/loversquarrel/METADATA.pb",
@@ -13415,7 +13415,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/loveyalikeasister/METADATA.pb",
@@ -13433,7 +13433,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lugrasimo/METADATA.pb",
@@ -13447,7 +13447,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lumanosimo/METADATA.pb",
@@ -13461,7 +13461,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lunasima/METADATA.pb",
@@ -13475,7 +13475,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lusitana/METADATA.pb",
@@ -13493,7 +13493,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lustria/METADATA.pb",
@@ -13511,7 +13511,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/luxuriousroman/METADATA.pb",
@@ -13525,7 +13525,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/luxuriousscript/METADATA.pb",
@@ -13539,7 +13539,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lxgwmarkergothic/METADATA.pb",
@@ -13553,7 +13553,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lxgwwenkaimonotc/METADATA.pb",
@@ -13567,7 +13567,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/lxgwwenkaitc/METADATA.pb",
@@ -13581,7 +13581,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/macondo/METADATA.pb",
@@ -13599,7 +13599,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/macondoswashcaps/METADATA.pb",
@@ -13617,7 +13617,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mada/METADATA.pb",
@@ -13631,7 +13631,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/madimione/METADATA.pb",
@@ -13645,7 +13645,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/magra/METADATA.pb",
@@ -13663,7 +13663,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/maitree/METADATA.pb",
@@ -13677,7 +13677,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/majormonodisplay/METADATA.pb",
@@ -13691,7 +13691,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mako/METADATA.pb",
@@ -13705,7 +13705,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mali/METADATA.pb",
@@ -13720,7 +13720,7 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mallanna/METADATA.pb",
@@ -13734,7 +13734,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/maname/METADATA.pb",
@@ -13748,7 +13748,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mandali/METADATA.pb",
@@ -13766,7 +13766,7 @@
       "source_types": [
         "ufo"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/manjari/METADATA.pb",
@@ -13780,7 +13780,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/manrope/METADATA.pb",
@@ -13812,7 +13812,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/manuale/METADATA.pb",
@@ -13826,7 +13826,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/manufacturingconsent/METADATA.pb",
@@ -13840,7 +13840,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/marcellus/METADATA.pb",
@@ -13855,7 +13855,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/marcellussc/METADATA.pb",
@@ -13870,7 +13870,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/marckscript/METADATA.pb",
@@ -13888,7 +13888,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/margarine/METADATA.pb",
@@ -13903,7 +13903,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/marhey/METADATA.pb",
@@ -13917,7 +13917,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/markazitext/METADATA.pb",
@@ -13931,7 +13931,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/markoone/METADATA.pb",
@@ -13945,7 +13945,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/marmelad/METADATA.pb",
@@ -13959,7 +13959,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/martel/METADATA.pb",
@@ -13973,7 +13973,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/martelsans/METADATA.pb",
@@ -13987,7 +13987,7 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/martianmono/METADATA.pb",
@@ -14001,7 +14001,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/marvel/METADATA.pb",
@@ -14019,7 +14019,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mashanzheng/METADATA.pb",
@@ -14033,7 +14033,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/matangi/METADATA.pb",
@@ -14047,7 +14047,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mate/METADATA.pb",
@@ -14061,7 +14061,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/matemasie/METADATA.pb",
@@ -14075,7 +14075,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/matesc/METADATA.pb",
@@ -14089,7 +14089,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mavenpro/METADATA.pb",
@@ -14103,7 +14103,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/mclaren/METADATA.pb",
@@ -14118,7 +14118,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/meaculpa/METADATA.pb",
@@ -14132,7 +14132,7 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/meddon/METADATA.pb",
@@ -14150,7 +14150,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/medievalsharp/METADATA.pb",
@@ -14168,7 +14168,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/medulaone/METADATA.pb",
@@ -14186,7 +14186,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/meerainimai/METADATA.pb",
@@ -14201,7 +14201,7 @@
       "has_source_block": false,
       "status": "missing_config",
       "notes": "Non-GitHub repo, source types not checked",
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/megrim/METADATA.pb",
@@ -14219,7 +14219,7 @@
       "source_types": [
         "sfd"
       ],
-      "has_investigation_report": false
+      "has_investigation_report": true
     },
     {
       "path": "ofl/meiescript/METADATA.pb",
@@ -29672,5 +29672,6 @@
       "status": "missing_commit",
       "has_investigation_report": true
     }
-  ]
+  ],
+  "last_updated": "2026-03-03T22:00:00-03:00"
 }
