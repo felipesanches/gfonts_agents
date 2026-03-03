@@ -712,5 +712,15 @@
     "role": "assistant",
     "timestamp": "2026-03-03T09:07:04Z",
     "content": "Recent activity summary:\n\n**Investigation Reports**: Built up 878 individual investigation reports in data/investigations/families/, each documenting genuine per-family research into upstream repositories, commit hashes, config files, and build configurations. The most recent batch (late February) covered hundreds of families alphabetically.\n\n**Pull Requests to google/fonts (source metadata enrichment)**: 4 merged PRs in quick succession:\n- PR #10271: Add source metadata to 167 families (established per-family commit structure) \u2014 Merged\n- PR #10280: Enrich source metadata for 29 families (batch 2) \u2014 Merged\n- PR #10282: Enrich source metadata for 74 families (batch 3) \u2014 Merged\n- PR #10285: Enrich source metadata for 35 families (batch 4) \u2014 Merged\nTotal: ~305 families with source metadata enriched.\n\n**Other recent merged PRs**:\n- PR #10266: Fixed broken repository_url in 5 METADATA.pb files\n- PR #10250: Fixed Raleway config.yaml source paths\n- PR #10249: Fixed Arsenal config.yaml (added buildVariable: false)\n- PR #10248: Added config_yaml enrichment for 82 families\n- PR #10235: Added override config.yaml for 50 families\n\n**Dashboard**: Updated to reflect data from all recent PRs.\n\n**Key patterns established**: Strict per-family commit structure, override config.yaml strategy, scripts for batch PR creation."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-03T09:11:22Z",
+    "content": "I noticed that the batch approach has been causing excessive consumption of Claude Code tokens. I'd like to mitigate this by running smaller parallel batches, so that we consume tokens at a more reasonable pace. I have also considered changing the default model from Opus 4.6 to Sonnet 4.6, but I am afraid this may lead to quality degradation. For that reason, I'd like the reports to contain the information about which model was used for their generation, so that in the future we'll be able to compare quality of different models. Please resume researching families and adding investigation reports, but do that with a bit less aggressive parallelization."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-03T09:11:22Z",
+    "content": "Acknowledged. Will: (1) add model information to investigation reports, (2) resume alphabetical investigation with smaller parallel batches (3-4 families at a time instead of 15-20), (3) continue from where we left off. Checking which families still need reports."
   }
 ]
