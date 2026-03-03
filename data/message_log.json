@@ -747,5 +747,10 @@
     "role": "assistant",
     "timestamp": "2026-03-03T10:05:22Z",
     "content": "Acknowledged. Updated MEMORY.md. From now on, investigation reports will: (1) clearly describe the initial state found during inspection, (2) describe actions taken to fix issues, (3) describe the final state after changes. Language will use past tense (\"was added\", \"was created\") instead of future/imperative (\"needs to be added\", \"should be created\"). Reports document completed work, not a to-do list."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-03T10:24:39Z",
+    "content": "Session complete: Added 75 new investigation reports (15 batches of 5) with model attribution (Claude Opus 4.6). Total reports now: 953 (up from 878). Key policy updates applied this session: (1) Model attribution added to all new reports for future quality comparison. (2) Override config.yaml creation policy \u2014 always check if compatible sources exist and create override when possible. (3) Report language policy \u2014 past tense, describing what was done rather than what needs to be done. (4) Skipping families with existing upstream_info.md in google/fonts to avoid redundant work. Notable findings: Afacad Flux and Albert Sans have incorrect commit hashes from fontc_crater imports; Anton SC, Alumni Sans SC, and Alumni Sans Collegiate One SC need SC-specific config corrections; Averia family (4 variants) has only TTX sources \u2014 no override config possible; B612 Mono commit could be more precise (7b5a653 vs 48ac6ba)."
   }
 ]
