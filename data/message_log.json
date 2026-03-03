@@ -752,5 +752,15 @@
     "role": "assistant",
     "timestamp": "2026-03-03T10:24:39Z",
     "content": "Session complete: Added 75 new investigation reports (15 batches of 5) with model attribution (Claude Opus 4.6). Total reports now: 953 (up from 878). Key policy updates applied this session: (1) Model attribution added to all new reports for future quality comparison. (2) Override config.yaml creation policy \u2014 always check if compatible sources exist and create override when possible. (3) Report language policy \u2014 past tense, describing what was done rather than what needs to be done. (4) Skipping families with existing upstream_info.md in google/fonts to avoid redundant work. Notable findings: Afacad Flux and Albert Sans have incorrect commit hashes from fontc_crater imports; Anton SC, Alumni Sans SC, and Alumni Sans Collegiate One SC need SC-specific config corrections; Averia family (4 variants) has only TTX sources \u2014 no override config possible; B612 Mono commit could be more precise (7b5a653 vs 48ac6ba)."
+  },
+  {
+    "timestamp": "2026-03-03T13:00:00-03:00",
+    "role": "assistant",
+    "content": "Session resumed after context compaction. Current state: 864 local investigation reports, 1157 families remaining. Fixed filename normalization issue (391 hyphenated report files renamed to match google/fonts directory slugs, 95 duplicates removed). Committed Batch 18 (5 Bitcount reports). Added token budget policy and daily draft PR policy to MEMORY.md. Starting Batch 19: iosevkacharon, iosevkacharonmono, kalnia, kalniaglaze, kameron."
+  },
+  {
+    "timestamp": "2026-03-03T14:00:00Z",
+    "role": "assistant",
+    "message": "Session continuation: Committed and pushed Batches 27-41 (70 investigation reports). Total reports now: 978. Notable findings across these batches: incorrect commit hashes found in Lora, Luxurious Roman, Lugrasimo, Major Mono Display, Markazi Text, Marmelad, Martel, Martian Mono (all from fontc_crater batch imports using HEAD instead of onboarding commit). Multiple VFB/SFD-only families documented (Lobster Two, Lohit series, Lusitana, Lustria, Marcellus/SC, etc). Several legacy artifacts identified (Markazi Text VF Beta, Maven Pro VF Beta, Maison Neue not in GF). Families with complete verified metadata: Literata, Love Light, Lovers Quarrel, Londrina series, Mada, Mansalva, Manuale, Manufacturing Consent, Mate/Mate SC, Mea Culpa, and others."
   }
 ]
