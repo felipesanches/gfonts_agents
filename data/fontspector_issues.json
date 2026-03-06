@@ -95,7 +95,8 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "deprecate opentype/stat_has_axis_value_tables and implement inconsistencies_between_fvar_STAT",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 44,
@@ -130,35 +131,40 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Ensure postscript name is the same in updated fonts",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 67,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: napostrophe",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 68,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for dist/mark shaping order?",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 69,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: U+2212 minus design",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 70,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check for overlapping components in static fonts (WARN)",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 84,
@@ -193,7 +199,8 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "[GF profile] New check to ensure non-ink characters are present",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 94,
@@ -305,105 +312,120 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check that designers' bio.html mention a webpage URL",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 166,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check Proposal: os2 metadata set",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 167,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Only allow ascii file names on the google/fonts repo",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 168,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Instances on fvar table have postscript names",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 169,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Warn if font previews wrong in Windows Font Settings",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 171,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: intersecting and/or duplicate contours",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 172,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Arabic allah ligature",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 173,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: spacing mark should be spacing after shaping",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 174,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Dutch ij with stress mark",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "script-language"
   },
   {
     "gh_number": 175,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check for instances outside of interpolation space",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 176,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "[wish] varfont/valid_default",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 177,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "[wish] varfont/valid_range",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 178,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Check proposal: OS/2 version field against fsSelection flags",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 179,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for jp90 and jp04 features",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "script-language"
   },
   {
     "gh_number": 181,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: consistent underline position and thickness",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 182,
@@ -417,70 +439,80 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "WARN: coherent substitutions for locl feature",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 184,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "INFO-level check for missing stylistic set glyphs",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 185,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Stylistic set should use same feature across family",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 186,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Spacing vs combining encoding issues",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 187,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for glyphs source file schema conformance",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 188,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check: WONK axis also available as stylistic set?",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 189,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for glyf table flags",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 190,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for empty glyphs, especially for CJK fonts",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 191,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Single style families check?",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 192,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check ligatures",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 193,
@@ -494,56 +526,64 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: bbox height of d is equal to v metrics",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "vertical-metrics"
   },
   {
     "gh_number": 195,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check for Libre Baskerville printing issue",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 196,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check if Vietnamese glyphs are made in the preferred way",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 197,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Use Computer Vision to test how similar I L and 1 are",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "experimental"
   },
   {
     "gh_number": 198,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Machine Vision: Do all font styles have same visible height?",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "experimental"
   },
   {
     "gh_number": 199,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "STAT check: no duplicate Axis Values",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 201,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for mark positioning",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 202,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Add VF check: os/2 weightClass matches default wght axis",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 205,
@@ -557,35 +597,40 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "No styles should have Agrave bounds exceeding hhea.ascent",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "vertical-metrics"
   },
   {
     "gh_number": 207,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Reserve vertical space for stacked diacritics",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "vertical-metrics"
   },
   {
     "gh_number": 208,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "vertical metrics check summary",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "vertical-metrics"
   },
   {
     "gh_number": 209,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check for named instance consistency",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 210,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check whether glyphs fit within sTypoAscender/sTypoDescender",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "vertical-metrics"
   },
   {
     "gh_number": 211,
@@ -599,35 +644,40 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "FAIL if no mark_to_base attachment",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 213,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "FAIL if no mark_to_mark feature",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 214,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Punt Volat is in the middle of two L's stems",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 215,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Ensure fonts don't have both vert and vrt2 features",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 216,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for vertical text orientation",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 217,
@@ -655,35 +705,40 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "STAT check summary",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 222,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Default opsz value should not be elided",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 223,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check common kerns are present",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 224,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New Check: STAT table has Axis Values",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 225,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check that common ligatures are set up correctly",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 226,
@@ -697,7 +752,8 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: mandatory name IDs in GF fonts",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 233,
@@ -711,14 +767,16 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add opentype profile VF check for nameID 1",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 236,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for rvrn features ordered first",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 237,
@@ -732,28 +790,32 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Ensure that Oblique bit is not enabled",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 239,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check-wrap for ftvalid?",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 240,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check upstream repo is in good order",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 241,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Detect colliding accents at small pt sizes",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 242,
@@ -774,35 +836,40 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for broken accents",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 250,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check spacing and kerning is as expected",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 251,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check suggestion: flag kerning of Arabic numbers",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 252,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add GF check for sample text support",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 253,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add a glyph contour orientation check",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 254,
@@ -816,56 +883,64 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "If multiple license files found, contents must be identical",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 256,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Check for deprecated feature tags",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 257,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Monospace font: all glyphs same width across all styles",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 258,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "tnum glyphs have same metrics across glyphs and styles",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 259,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Ensure accents on first line won't get clipped",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "vertical-metrics"
   },
   {
     "gh_number": 260,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check kerning classes exist",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 261,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check vertical metrics clear Vietnamese",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "script-language"
   },
   {
     "gh_number": 262,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "add regression check for missing glyphs",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "regression"
   },
   {
     "gh_number": 263,
@@ -879,42 +954,48 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "overall visual sizing relative to common/fallback fonts",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "experimental"
   },
   {
     "gh_number": 269,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Checks for levels of Variable Font support",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 270,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Detect and WARN about duplicate contours",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 271,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add WARN level check for KERN table",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 272,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add upstream check for correct subs feature",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 273,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Family Check: GlyphOrder is the same across family",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 276,
@@ -928,7 +1009,8 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: detect missing date in metadata.pb",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 278,
@@ -1026,7 +1108,8 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: About page content exists",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 362,
@@ -1054,7 +1137,8 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: Detect wrong version of maxp table",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 389,
@@ -1082,28 +1166,32 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Color font does not render on Windows",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 404,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: field_values",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 406,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: has_features",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 408,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: has_glyphs",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 411,
@@ -1173,28 +1261,32 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: check if font needs the BASE table",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 435,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check: Unicode ID for diacritic marks",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 436,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check if fractions are made of auto-aligned compounds",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 437,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add GF check for bulky hinting data",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 438,
@@ -1208,28 +1300,32 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "outline quality: detect small counters",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 440,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "WARN if marks not consistently in one category",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 441,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "WARN if anchors are not aligned",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 442,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "BlueValues tip for non-latin",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 443,
@@ -1243,112 +1339,128 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check: avar table for slnt axes",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 445,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check if family has siblings",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 446,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check for sister swash & alt families",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 447,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "For variable families, check axis consistency",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 448,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "GlyphsData.xml files can go missing",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 449,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add checks for scope or boss level",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 450,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for METADATA.pb for VF axes",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 451,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Warn if SC font has .sc or .smcp suffixes",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 452,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for VF METADATA preventing ital axis if split",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 453,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check for MVAR table with correct values",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 454,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check for bizarre Word for Mac style linking bug",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 455,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check ligatures are consistent",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 456,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check sups/subs/sinf glyphs exist and have features",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 457,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add check upstream for build script",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 458,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add checks for OT small numeral access",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 459,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add checks for kerning",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "shaping-layout"
   },
   {
     "gh_number": 460,
@@ -1362,42 +1474,48 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Check for lack of HDMX and VDMX tables",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 462,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Add check for projects to have a Changelog",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 463,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add Touche style check for overlapping glyph pairs",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 464,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Add checks for METADATA",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 465,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Repository structure validation",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "repo-upstream"
   },
   {
     "gh_number": 466,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Add METADATA check for Han Unification",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 467,
@@ -1411,28 +1529,32 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check quality of overlaps in VFs",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 469,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Check OS/2 code page range",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 470,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Kerning refinement checks",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 472,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "Uniqueness of first 31 char of Full Name",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 474,
@@ -1481,7 +1603,8 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: config_yaml field in metadata.pb",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 514,
@@ -1502,7 +1625,8 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "Verify VVAR table added in VF with vmtx",
-    "status": "closed"
+    "status": "closed",
+    "check_subtype": ""
   },
   {
     "gh_number": 517,
@@ -1516,7 +1640,8 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: zero-width characters",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 519,
@@ -1537,14 +1662,16 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: universal fstype with context",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 526,
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: universal glyph_coverage",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "glyph-quality"
   },
   {
     "gh_number": 527,
@@ -1586,7 +1713,8 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "New check: Suspicious spacing difference between masters",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 561,
@@ -1635,14 +1763,16 @@
     "category": "new-check",
     "low_hanging_fruit": false,
     "title": "[fsselection] check if WWS bit is set correctly",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "opentype-tables"
   },
   {
     "gh_number": 579,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "[name/trailing_spaces] check double spaces",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 580,
@@ -1712,14 +1842,16 @@
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: VF in family name",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "naming-metadata"
   },
   {
     "gh_number": 651,
     "category": "new-check",
     "low_hanging_fruit": true,
     "title": "New check: Ensure axis hidden flag on all Parametric Axes",
-    "status": "open"
+    "status": "open",
+    "check_subtype": "variable-fonts"
   },
   {
     "gh_number": 652,

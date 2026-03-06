@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadInvestigations();
     loadBeadsIssues();
     loadFontspectorTriage();
+    loadNewCheckProposals();
 });
 
 function initTabs() {
@@ -2879,4 +2880,183 @@ function renderFontspectorIssueTable() {
     tableEl.innerHTML = `<table class="guide-table"><thead><tr>
         <th>#</th><th>Status</th><th>Category</th><th>Title</th>
     </tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+// ===== New Check Proposals =====
+
+const NC_SUBTYPE_META = {
+    'shaping-layout':   { label: 'Shaping & Layout',       color: '#e91e63', icon: 'Aa' },
+    'opentype-tables':  { label: 'OpenType Tables',         color: '#3f51b5', icon: 'OT' },
+    'glyph-quality':    { label: 'Glyph Quality',           color: '#ff5722', icon: 'Q' },
+    'naming-metadata':  { label: 'Naming & Metadata',       color: '#009688', icon: 'N' },
+    'variable-fonts':   { label: 'Variable Fonts',          color: '#673ab7', icon: 'VF' },
+    'repo-upstream':    { label: 'Repo & Upstream',         color: '#795548', icon: 'R' },
+    'vertical-metrics': { label: 'Vertical Metrics',        color: '#2196f3', icon: 'VM' },
+    'script-language':  { label: 'Script & Language',       color: '#ff9800', icon: 'SL' },
+    'experimental':     { label: 'Experimental / Vision',   color: '#9c27b0', icon: 'X' },
+    'regression':       { label: 'Regression Checks',       color: '#607d8b', icon: 'RG' },
+};
+
+let ncData = [];
+
+async function loadNewCheckProposals() {
+    // Reuse fstData if already loaded, otherwise fetch
+    if (fstData.length) {
+        ncData = fstData.filter(i => i.category === 'new-check' && i.status === 'open');
+        renderNewCheckProposals();
+    } else {
+        try {
+            const response = await fetch('data/fontspector_issues.json');
+            const all = await response.json();
+            ncData = all.filter(i => i.category === 'new-check' && i.status === 'open');
+            renderNewCheckProposals();
+        } catch (error) {
+            console.error('Error loading new check proposals:', error);
+        }
+    }
+}
+
+function renderNewCheckProposals() {
+    const data = ncData;
+    if (!data.length) return;
+
+    const lhf = data.filter(i => i.low_hanging_fruit);
+
+    // Summary cards
+    const summaryEl = document.getElementById('nc-summary');
+    if (summaryEl) {
+        const typeCounts = {};
+        for (const i of data) typeCounts[i.check_subtype] = (typeCounts[i.check_subtype] || 0) + 1;
+        const numTypes = Object.keys(typeCounts).length;
+        summaryEl.innerHTML = `
+            <div class="summary-card total"><span class="summary-value">${data.length}</span><span class="summary-label">Open Proposals</span></div>
+            <div class="summary-card neutral"><span class="summary-value">${numTypes}</span><span class="summary-label">Types</span></div>
+            <div class="summary-card investigated"><span class="summary-value">${lhf.length}</span><span class="summary-label">Low-Hanging Fruit</span></div>
+        `;
+    }
+
+    // Bar chart by subtype
+    const typeCounts = {};
+    for (const i of data) typeCounts[i.check_subtype || 'other'] = (typeCounts[i.check_subtype || 'other'] || 0) + 1;
+    const sortedTypes = Object.entries(typeCounts).sort((a, b) => b[1] - a[1]);
+    const maxCount = sortedTypes.length ? sortedTypes[0][1] : 1;
+
+    const barsEl = document.getElementById('nc-bars');
+    if (barsEl) {
+        barsEl.innerHTML = sortedTypes.map(([type, count]) => {
+            const meta = NC_SUBTYPE_META[type] || { label: type, color: '#999', icon: '?' };
+            const pct = (count / maxCount * 100).toFixed(0);
+            const lhfCount = data.filter(i => (i.check_subtype || 'other') === type && i.low_hanging_fruit).length;
+            const lhfNote = lhfCount ? ` <span style="font-size:0.8em; color:#666;">(${lhfCount} easy)</span>` : '';
+            return `<div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem; cursor:pointer;" onclick="document.getElementById('nc-type-filter').value='${type}'; document.getElementById('nc-type-filter').dispatchEvent(new Event('change'));">
+                <span style="min-width:170px; font-size:0.9rem; text-align:right;">${escapeHtml(meta.label)}</span>
+                <div style="flex:1; background:#f0f0f0; border-radius:4px; overflow:hidden; height:24px; position:relative;">
+                    <div style="width:${pct}%; background:${meta.color}; height:100%; border-radius:4px; min-width:2px;"></div>
+                </div>
+                <span style="min-width:60px; font-size:0.85rem; font-weight:bold;">${count}${lhfNote}</span>
+            </div>`;
+        }).join('');
+    }
+
+    // Low-hanging fruit
+    const lhfEl = document.getElementById('nc-lhf-list');
+    if (lhfEl) {
+        if (lhf.length === 0) {
+            lhfEl.innerHTML = '<p>No low-hanging fruit identified.</p>';
+        } else {
+            lhfEl.innerHTML = `<table class="guide-table"><thead><tr>
+                <th>#</th><th>Type</th><th>Proposal</th>
+            </tr></thead><tbody>${lhf.map(i => {
+                const meta = NC_SUBTYPE_META[i.check_subtype] || { label: i.check_subtype || '?', color: '#999' };
+                return `<tr>
+                    <td><a href="https://github.com/fonttools/fontspector/issues/${i.gh_number}" target="_blank" rel="noopener">#${i.gh_number}</a></td>
+                    <td><span style="display:inline-block; padding:2px 8px; border-radius:12px; background:${meta.color}; color:white; font-size:0.8em;">${escapeHtml(meta.label)}</span></td>
+                    <td>${escapeHtml(i.title)}</td>
+                </tr>`;
+            }).join('')}</tbody></table>`;
+        }
+    }
+
+    // Populate type filter
+    const typeFilter = document.getElementById('nc-type-filter');
+    if (typeFilter && typeFilter.options.length <= 1) {
+        for (const [type, count] of sortedTypes) {
+            const meta = NC_SUBTYPE_META[type] || { label: type };
+            const opt = document.createElement('option');
+            opt.value = type;
+            opt.textContent = `${meta.label} (${count})`;
+            typeFilter.appendChild(opt);
+        }
+    }
+
+    // Wire up filters
+    const searchEl = document.getElementById('nc-search');
+    const lhfFilterEl = document.getElementById('nc-lhf-filter');
+    const doFilter = () => renderNewCheckGroupedList();
+    if (searchEl) searchEl.addEventListener('input', doFilter);
+    if (typeFilter) typeFilter.addEventListener('change', doFilter);
+    if (lhfFilterEl) lhfFilterEl.addEventListener('change', doFilter);
+
+    renderNewCheckGroupedList();
+}
+
+function renderNewCheckGroupedList() {
+    const listEl = document.getElementById('nc-grouped-list');
+    const countEl = document.getElementById('nc-count');
+    if (!listEl) return;
+
+    const searchVal = (document.getElementById('nc-search')?.value || '').toLowerCase();
+    const typeVal = document.getElementById('nc-type-filter')?.value || '';
+    const lhfOnly = document.getElementById('nc-lhf-filter')?.checked || false;
+
+    let filtered = ncData;
+    if (typeVal) filtered = filtered.filter(i => (i.check_subtype || 'other') === typeVal);
+    if (lhfOnly) filtered = filtered.filter(i => i.low_hanging_fruit);
+    if (searchVal) filtered = filtered.filter(i => i.title.toLowerCase().includes(searchVal));
+
+    if (countEl) countEl.textContent = `Showing ${filtered.length} of ${ncData.length} proposals`;
+
+    if (filtered.length === 0) {
+        listEl.innerHTML = '<p>No proposals match the current filters.</p>';
+        return;
+    }
+
+    // Group by subtype
+    const groups = {};
+    for (const i of filtered) {
+        const key = i.check_subtype || 'other';
+        (groups[key] = groups[key] || []).push(i);
+    }
+
+    // Sort groups by count descending
+    const sortedGroups = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
+
+    let html = '';
+    for (const [type, issues] of sortedGroups) {
+        const meta = NC_SUBTYPE_META[type] || { label: type, color: '#999' };
+        // Sort issues: LHF first, then by number descending
+        issues.sort((a, b) => {
+            if (a.low_hanging_fruit !== b.low_hanging_fruit) return a.low_hanging_fruit ? -1 : 1;
+            return b.gh_number - a.gh_number;
+        });
+
+        const rows = issues.map(i => {
+            const lhfBadge = i.low_hanging_fruit ? ' <span title="Low-hanging fruit" style="cursor:help;">&#127825;</span>' : '';
+            return `<tr>
+                <td><a href="https://github.com/fonttools/fontspector/issues/${i.gh_number}" target="_blank" rel="noopener">#${i.gh_number}</a></td>
+                <td>${escapeHtml(i.title)}${lhfBadge}</td>
+            </tr>`;
+        }).join('');
+
+        html += `<div style="margin-bottom:1.5rem;">
+            <h4 style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+                <span style="display:inline-block; padding:2px 10px; border-radius:12px; background:${meta.color}; color:white; font-size:0.85em;">${escapeHtml(meta.label)}</span>
+                <span style="color:#666; font-size:0.9em;">(${issues.length} proposal${issues.length !== 1 ? 's' : ''})</span>
+            </h4>
+            <table class="guide-table"><thead><tr><th style="width:60px;">#</th><th>Proposal</th></tr></thead>
+            <tbody>${rows}</tbody></table>
+        </div>`;
+    }
+
+    listEl.innerHTML = html;
 }

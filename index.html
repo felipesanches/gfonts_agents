@@ -31,6 +31,7 @@
             <button class="tab-btn" data-tab="investigations">Investigations</button>
             <button class="tab-btn" data-tab="beads">Beads Issues</button>
             <button class="tab-btn" data-tab="fontspector-triage">Fontspector Triage</button>
+            <button class="tab-btn" data-tab="new-checks">New Check Proposals</button>
             <button class="tab-btn" data-tab="about">About</button>
         </nav>
 
@@ -946,7 +947,7 @@ includeSubsets:
                         </select>
                         <select id="fst-status-filter" style="padding:0.5rem 0.75rem; border:1px solid #ddd; border-radius:6px; font-size:0.95rem;">
                             <option value="">All statuses</option>
-                            <option value="open">Open</option>
+                            <option value="open" selected>Open</option>
                             <option value="closed">Closed</option>
                         </select>
                         <label style="font-size:0.9rem; display:flex; align-items:center; gap:0.3rem;">
@@ -955,6 +956,41 @@ includeSubsets:
                     </div>
                     <div id="fst-count" style="margin-bottom:0.5rem; font-size:0.9rem; color:#666;"></div>
                     <div id="fst-issues-table"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-new-checks" class="tab-content">
+            <div class="panel">
+                <h2>New Check Proposals</h2>
+                <p class="panel-description">Proposed new checks for <a href="https://github.com/fonttools/fontspector/issues">fonttools/fontspector</a>, grouped by type. Open proposals only.</p>
+
+                <div class="sources-summary" id="nc-summary"></div>
+
+                <div id="nc-category-chart" style="margin: 1.5rem 0;">
+                    <h3>Proposals by Type</h3>
+                    <div id="nc-bars"></div>
+                </div>
+
+                <div id="nc-low-hanging" style="margin: 1.5rem 0;">
+                    <h3>Low-Hanging Fruit</h3>
+                    <p class="panel-description">Proposals with clear scope that could be implemented quickly.</p>
+                    <div id="nc-lhf-list"></div>
+                </div>
+
+                <div style="margin: 1.5rem 0;">
+                    <h3>All Proposals by Type</h3>
+                    <div class="fst-filters" style="display:flex; gap:0.75rem; margin-bottom:1rem; flex-wrap:wrap; align-items:center;">
+                        <input type="text" id="nc-search" placeholder="Search proposals..." style="flex:1; min-width:200px; padding:0.5rem 0.75rem; border:1px solid #ddd; border-radius:6px; font-size:0.95rem;">
+                        <select id="nc-type-filter" style="padding:0.5rem 0.75rem; border:1px solid #ddd; border-radius:6px; font-size:0.95rem;">
+                            <option value="">All types</option>
+                        </select>
+                        <label style="font-size:0.9rem; display:flex; align-items:center; gap:0.3rem;">
+                            <input type="checkbox" id="nc-lhf-filter"> Low-hanging fruit only
+                        </label>
+                    </div>
+                    <div id="nc-count" style="margin-bottom:0.5rem; font-size:0.9rem; color:#666;"></div>
+                    <div id="nc-grouped-list"></div>
                 </div>
             </div>
         </section>
