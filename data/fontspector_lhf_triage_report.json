@@ -1,0 +1,223 @@
+{
+  "title": "Fontspector Low-Hanging Fruit Triage Report",
+  "date": "2026-03-06",
+  "model": "Claude Opus 4.6",
+  "summary": "Analysis of 30 open low-hanging fruit issues from the fonttools/fontspector tracker, with recommendation to implement or reject each one.",
+  "stats": {
+    "total": 30,
+    "implement": 25,
+    "reject": 5
+  },
+  "issues": [
+    {
+      "gh_number": 101,
+      "title": "[unwanted_tables] Split out DSIG check to allow selective disable",
+      "category": "check-enhancement",
+      "verdict": "implement",
+      "reasoning": "Filed by @felipesanches himself, cross-referencing fontbakery#4990 where @khaledhosny argued that DSIG is no longer useful but removing it shouldn't be a hard FAIL since some foundries include it deliberately. Splitting the DSIG portion into its own check lets users disable it independently. Small refactor of unwanted_tables.rs: extract the DSIG entry into a separate check function. Clear scope, clear rationale, minimal risk."
+    },
+    {
+      "gh_number": 110,
+      "title": "[family_and_style_max_length] Port FB changes",
+      "category": "check-enhancement",
+      "verdict": "implement",
+      "reasoning": "Filed by @simoncozens (fontspector maintainer), explicitly requesting a port of fontbakery PR #5020. This is a direct port of already-reviewed logic from the upstream Python codebase. The scope is well-defined: replicate the fontbakery changes in the Rust check. Should be straightforward for anyone familiar with the codebase."
+    },
+    {
+      "gh_number": 119,
+      "title": "--html option doesn't work",
+      "category": "cli-ux",
+      "verdict": "implement",
+      "reasoning": "This is a real user-facing bug with 16 comments showing multiple users affected. The HTML report is a core feature. The root cause appears to be template files not being bundled/installed correctly for some users. While @simoncozens uses it fine, the installation path for templates clearly has edge cases. Fixing the template discovery/bundling is important for adoption. Moderate effort but high user impact."
+    },
+    {
+      "gh_number": 163,
+      "title": "Readme maybe with typo in code snippet",
+      "category": "documentation",
+      "verdict": "implement",
+      "reasoning": "Trivial fix: 'rpm' should be 'npm' in the README code snippet. However, the follow-up comments from @n7s and @devosb reveal that the plugin build instructions are generally confusing and incomplete. The fix should go beyond the typo to ensure the plugin build documentation actually works end-to-end. Still low effort, high documentation value."
+    },
+    {
+      "gh_number": 176,
+      "title": "[wish] varfont/valid_default",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Simple validation: FAIL if fvar axis defaultValue is outside [minValue, maxValue]. This is a basic spec conformance check that's trivial to implement: iterate fvar axes, compare three values. Even though it's described as hypothetical, malformed fonts do exist in the wild (Noto pipeline produced one). Belongs in the opentype profile. Very low effort, catches real spec violations."
+    },
+    {
+      "gh_number": 177,
+      "title": "[wish] varfont/valid_range",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Simple validation: FAIL if fvar axis maxValue <= minValue. Like #176, this is trivial to implement and catches real issues (fontmake can produce 'faux VFs' from single-master designspaces). @twardoch provided concrete examples. Basic spec conformance, very low effort."
+    },
+    {
+      "gh_number": 178,
+      "title": "OS/2 version field against fsSelection flags",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Real-world issue reported by @justvanrossum after encountering it in a production font. The check already exists as a warning in fonttools itself, so the logic is well-understood: certain fsSelection bits (USE_TYPO_METRICS, WWS, OBLIQUE) are only valid for OS/2 version >= 4. Simple table field comparison. Should be WARN level in the opentype profile."
+    },
+    {
+      "gh_number": 199,
+      "title": "STAT check: no duplicate Axis Values",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Directly specified by the OpenType spec with clear rules about which format combinations constitute duplicates. Well-defined scope with spec text quoted in the issue. No ambiguity about what to check. Good candidate for the opentype profile."
+    },
+    {
+      "gh_number": 202,
+      "title": "VF check: os/2 weightClass matches default wght axis",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Long-standing issue (2019) with 13 comments showing real confusion among users. The OT spec is clear: the default instance's data must match the non-variable tables. Checking that OS/2.usWeightClass matches the fvar wght axis default is straightforward. Some nuance around rounding (250 vs 300) discussed in comments, but the core check is simple and valuable."
+    },
+    {
+      "gh_number": 215,
+      "title": "Ensure fonts don't have both vert and vrt2 features",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Clear spec violation that causes real harm: Kinto Sans fonts fail to install on Windows because of this. The OpenType spec explicitly says 'vert' should never be used with 'vrt2'. Simple check: look for both features in GSUB, FAIL if both present. Filed by @miguelsousa (Adobe). Universal profile, high value for CJK fonts."
+    },
+    {
+      "gh_number": 219,
+      "title": "GF profile: DESC check to ban the word 'free'",
+      "category": "profile-specific",
+      "verdict": "implement",
+      "reasoning": "Was labeled P0 Urgent and P1 Quick in fontbakery. Google Fonts actively removes 'free' from descriptions (see linked PRs). Simple string search with an allow-list for compound words like 'free press', 'freestyle'. Well-scoped, Google Fonts profile specific. The allow-list needs care but the basic check is straightforward."
+    },
+    {
+      "gh_number": 222,
+      "title": "Default opsz value should not be elided",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Was labeled P0 Urgent in fontbakery by @felipesanches. Practical reason: eliding the default opsz value breaks font menu ordering and makes it unclear which optical size is default. Check the STAT table for the opsz axis and verify the default value entry doesn't have the ELIDABLE_AXIS_VALUE_NAME flag set. Clear, well-defined, Google Fonts profile."
+    },
+    {
+      "gh_number": 238,
+      "title": "Ensure that Oblique bit is not enabled",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Google Fonts team explicitly does not want the Oblique fsSelection bit set. Real-world example: Red Hat fonts had both Italic and Oblique bits set. Simple check: read fsSelection, FAIL if bit 9 (OBLIQUE) is set. Google Fonts profile only. Has had volunteer interest (@eliheuer offered to work on it back in 2019)."
+    },
+    {
+      "gh_number": 255,
+      "title": "If multiple license files found, contents must be identical",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Filed by @felipesanches after discovering the issue while fixing fontbakery#3172. Self-contradictory licensing is a real legal concern. The check: if multiple license files exist in the project, read and compare their contents. Simple file I/O comparison. Universal profile, P2 priority."
+    },
+    {
+      "gh_number": 369,
+      "title": "Make checks clickable",
+      "category": "cli-ux",
+      "verdict": "implement",
+      "reasoning": "User @clauseggers requests that check names in terminal output link to their wiki documentation. This is a nice UX improvement that makes fontspector more self-documenting. Implementation: use OSC 8 terminal hyperlinks (widely supported) or simply print the URL. Moderate effort but good UX payoff."
+    },
+    {
+      "gh_number": 414,
+      "title": "Check family_name_compliance has different id in fontbakery",
+      "category": "check-enhancement",
+      "verdict": "implement",
+      "reasoning": "The fontspector check ID (googlefonts/name/family_name_compliance) differs from fontbakery's (googlefonts/family_name_compliance). Since fontspector is replacing fontbakery, ID consistency matters for users migrating configs, overrides, and CI pipelines. Simple rename. However, this needs coordination since renaming a check ID is a breaking change for anyone using overrides."
+    },
+    {
+      "gh_number": 504,
+      "title": "New check: config_yaml field in metadata.pb",
+      "category": "new-check",
+      "verdict": "reject",
+      "reasoning": "Filed by @emmamarichal, but @simoncozens (maintainer) pushed back: the standard convention is config at source/config.yaml, which is the default. Explicitly requiring the config_yaml field in METADATA.pb goes against the convention of only specifying non-default locations. The check would generate noise for the majority of families that follow the standard layout. Better to check that config.yaml EXISTS at the expected location rather than requiring metadata to reference it."
+    },
+    {
+      "gh_number": 517,
+      "title": "Include plugin profiles in releases",
+      "category": "build-install",
+      "verdict": "implement",
+      "reasoning": "Currently GitHub releases only include the fontspector binary, but the Microsoft, Adobe, and other plugin profiles (.fontspectorplugin files) are missing. Users have to build from source to get them. This is a CI/release pipeline fix: add the built plugin files as release assets. Clear scope, improves accessibility significantly."
+    },
+    {
+      "gh_number": 521,
+      "title": "[STAT/ital_axis] skip static fonts",
+      "category": "check-bug",
+      "verdict": "reject",
+      "reasoning": "While the bug report is valid (static fonts with STAT tables trigger this VF-only check), the discussion between @simoncozens and @ollimeier concluded that the right fix is NOT to skip static fonts, but to update the check description and logic to also validate STAT ital axis in static fonts (since STAT in statics is recommended by the OT spec). Simply skipping statics would be the wrong fix. The real fix is more nuanced: adjust the check to handle both VF and static STAT tables appropriately. This is no longer 'low-hanging fruit' once scoped correctly."
+    },
+    {
+      "gh_number": 565,
+      "title": "[family_and_style_max_length] improve report",
+      "category": "check-enhancement",
+      "verdict": "implement",
+      "reasoning": "Simple output improvement: when names exceed the max length, report HOW MANY characters over the limit they are, not just that they exceed it. The user @ollimeier explains this helps decide whether to use camelCase or other shortening strategies. Trivial change to the check's output formatting. Pure UX improvement, no logic change."
+    },
+    {
+      "gh_number": 574,
+      "title": "[fsselection] Static TTFs with empty fvar give bad-STYLE fail",
+      "category": "check-bug",
+      "verdict": "implement",
+      "reasoning": "Real bug: static TTFs that include an empty fvar table (an experimental technique for Office kerning compatibility) cause the fsselection check to misidentify the font as variable and produce false FAILs. The fix is to treat fonts with empty fvar tables as static. Well-defined edge case with a clear fix. The reporter @eweracs noted it also affects the mac_style check."
+    },
+    {
+      "gh_number": 579,
+      "title": "[name/trailing_spaces] check double spaces",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Extend the existing name/trailing_spaces check to also catch leading spaces and double spaces in name table entries. @simoncozens agreed it could be an update to the existing check. Non-critical but useful QA: double spaces in name entries are hard to spot visually. Universal profile, WARN level. Minimal code change to an existing check."
+    },
+    {
+      "gh_number": 647,
+      "title": "Slant axis needs more clearly explaining",
+      "category": "check-enhancement",
+      "verdict": "implement",
+      "reasoning": "User feedback from @davelab6 (Google Fonts team lead): when a font has a Slant axis, the check report should explain that Workspace apps don't support it and a separate Italic file is needed. This is a documentation/messaging improvement for an existing check. Small change to check rationale or output text. Google Fonts profile."
+    },
+    {
+      "gh_number": 648,
+      "title": "New check: VF in family name",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Filed by @davelab6: Google Fonts doesn't want 'VF' in family names since many environments don't support variable fonts. Simple string check on the family name. Distinct from the general acronym prohibition because it needs a specific explanation about why 'VF' is problematic. Google Fonts profile, WARN or FAIL level. Very low effort."
+    },
+    {
+      "gh_number": 651,
+      "title": "New check: Ensure axis hidden flag on all Parametric Axes",
+      "category": "new-check",
+      "verdict": "implement",
+      "reasoning": "Filed by @davelab6 referencing roboto-delta#172. Parametric axes (like XTRA, YTRA, XOPQ, YOPQ, etc.) should have the hidden flag set in the fvar table since they're not meant for direct user manipulation. Check: iterate fvar axes, for any axis tag in the parametric axis list, verify HIDDEN_AXIS flag is set. Google Fonts profile. Clear spec, clear implementation."
+    },
+    {
+      "gh_number": 653,
+      "title": "[glyph_coverage] Show all missing required codepoints",
+      "category": "check-enhancement",
+      "verdict": "reject",
+      "reasoning": "@simoncozens (maintainer) immediately pointed out that there's already a 'full lists' checkbox on the first page that controls this behavior. The issue appears to be a user not discovering an existing feature rather than a missing feature. If the discoverability is genuinely poor, the fix would be to improve the UI hint or change the default, but the core functionality already exists. Should be closed with a pointer to the existing feature."
+    },
+    {
+      "gh_number": 256,
+      "title": "Check for deprecated feature tags",
+      "category": "new-check",
+      "verdict": "reject",
+      "reasoning": "While the concept is sound, the discussion reveals significant nuance. @khaledhosny pointed out that 'size' (a deprecated feature) is still functionally useful in applications like XeTeX for automatic optical size selection, and was deprecated without a clear alternative being universally implemented. A blanket check against deprecated tags would produce false positives for legitimate use cases. Needs more thought about which tags to flag and at what severity level. Not as straightforward as it appears."
+    },
+    {
+      "gh_number": 370,
+      "title": "[opentype/STAT/ital_axis] Filename check for Italic is too simplistic",
+      "category": "check-bug",
+      "verdict": "implement",
+      "reasoning": "The current check partitions fonts into italic/non-italic by checking if the filename contains '-Italic['. This is fragile and causes false positives for fonts with different naming conventions. The fix should use the font's internal metadata (fsSelection italic bit, or STAT table ital axis value) instead of filename heuristics. Related to #411 and #521. The three STAT/ital_axis issues should be fixed together."
+    },
+    {
+      "gh_number": 411,
+      "title": "[opentype/STAT/ital_axis] ital check should respect italic files",
+      "category": "check-bug",
+      "verdict": "implement",
+      "reasoning": "Related to #370 and #521. An italic-only variable font is flagged incorrectly because the check doesn't properly detect that it IS an italic file. Same root cause as #370: reliance on filename rather than internal font data. Should be fixed as part of the same PR that addresses #370. The fix: use fsSelection bit 1 (ITALIC) or post.italicAngle or STAT ital axis to determine italic status."
+    },
+    {
+      "gh_number": 461,
+      "title": "Check for lack of HDMX and VDMX tables",
+      "category": "new-check",
+      "verdict": "reject",
+      "reasoning": "The discussion from 2018 shows no consensus on whether these tables are truly deprecated. @felipesanches asked 'why?' and got no clear answer. VDMX is still referenced in the OT spec and may be useful for vertical metrics hinting on Windows. HDMX is less useful but not harmful. Adding a WARN for tables with unclear deprecation status would create noise without clear benefit. This needs a definitive statement from the OT spec or platform vendors before implementing."
+    }
+  ]
+}

@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBeadsIssues();
     loadFontspectorTriage();
     loadNewCheckProposals();
+    loadLHFTriageReport();
 });
 
 function initTabs() {
@@ -3059,4 +3060,61 @@ function renderNewCheckGroupedList() {
     }
 
     listEl.innerHTML = html;
+}
+
+// ===== LHF Triage Report =====
+
+async function loadLHFTriageReport() {
+    try {
+        const response = await fetch('data/fontspector_lhf_triage_report.json');
+        const data = await response.json();
+        renderLHFTriageReport(data);
+    } catch (error) {
+        console.error('Error loading LHF triage report:', error);
+    }
+}
+
+function renderLHFTriageReport(data) {
+    if (!data || !data.issues) return;
+
+    const issues = data.issues;
+    const implIssues = issues.filter(i => i.verdict === 'implement');
+    const rejectIssues = issues.filter(i => i.verdict === 'reject');
+
+    // Summary cards
+    const summaryEl = document.getElementById('lhf-report-summary');
+    if (summaryEl) {
+        summaryEl.innerHTML = `
+            <div class="summary-card total"><span class="summary-value">${issues.length}</span><span class="summary-label">Issues Analyzed</span></div>
+            <div class="summary-card complete"><span class="summary-value">${implIssues.length}</span><span class="summary-label">Implement</span></div>
+            <div class="summary-card warning"><span class="summary-value">${rejectIssues.length}</span><span class="summary-label">Reject</span></div>
+        `;
+    }
+
+    // Category metadata (reuse from triage tab)
+    const catMeta = Object.assign({}, FST_CATEGORY_META, NC_SUBTYPE_META);
+
+    function renderIssueCards(issueList, containerId, verdictColor) {
+        const el = document.getElementById(containerId);
+        if (!el) return;
+
+        const cards = issueList.map(issue => {
+            const cat = issue.category;
+            const meta = catMeta[cat] || { label: cat, color: '#999' };
+            const borderColor = verdictColor;
+            return `<div style="border-left:4px solid ${borderColor}; background:white; padding:1rem 1.25rem; margin-bottom:0.75rem; border-radius:0 6px 6px 0; box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem; flex-wrap:wrap;">
+                    <a href="https://github.com/fonttools/fontspector/issues/${issue.gh_number}" target="_blank" rel="noopener" style="font-weight:bold; font-size:1.05em; color:#1a73e8; text-decoration:none;">#${issue.gh_number}</a>
+                    <span style="display:inline-block; padding:2px 8px; border-radius:12px; background:${meta.color}; color:white; font-size:0.8em;">${escapeHtml(meta.label)}</span>
+                    <span style="font-weight:600;">${escapeHtml(issue.title)}</span>
+                </div>
+                <p style="color:#444; font-size:0.92em; line-height:1.55; margin:0;">${escapeHtml(issue.reasoning)}</p>
+            </div>`;
+        }).join('');
+
+        el.innerHTML = cards || '<p>None.</p>';
+    }
+
+    renderIssueCards(implIssues, 'lhf-implement-list', '#2e7d32');
+    renderIssueCards(rejectIssues, 'lhf-reject-list', '#c62828');
 }

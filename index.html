@@ -32,6 +32,7 @@
             <button class="tab-btn" data-tab="beads">Beads Issues</button>
             <button class="tab-btn" data-tab="fontspector-triage">Fontspector Triage</button>
             <button class="tab-btn" data-tab="new-checks">New Check Proposals</button>
+            <button class="tab-btn" data-tab="lhf-report">LHF Triage Report</button>
             <button class="tab-btn" data-tab="about">About</button>
         </nav>
 
@@ -991,6 +992,25 @@ includeSubsets:
                     </div>
                     <div id="nc-count" style="margin-bottom:0.5rem; font-size:0.9rem; color:#666;"></div>
                     <div id="nc-grouped-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-lhf-report" class="tab-content">
+            <div class="panel">
+                <h2>Low-Hanging Fruit Triage Report</h2>
+                <p class="panel-description">Detailed analysis of all 30 open low-hanging fruit issues from <a href="https://github.com/fonttools/fontspector/issues">fonttools/fontspector</a>, with recommendations. <strong>Model</strong>: Claude Opus 4.6 | <strong>Date</strong>: 2026-03-06</p>
+
+                <div class="sources-summary" id="lhf-report-summary"></div>
+
+                <div id="lhf-report-implement" style="margin:1.5rem 0;">
+                    <h3 style="color:#2e7d32;">Recommended to Implement</h3>
+                    <div id="lhf-implement-list"></div>
+                </div>
+
+                <div id="lhf-report-reject" style="margin:1.5rem 0;">
+                    <h3 style="color:#c62828;">Recommended to Reject</h3>
+                    <div id="lhf-reject-list"></div>
                 </div>
             </div>
         </section>
