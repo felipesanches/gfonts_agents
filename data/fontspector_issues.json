@@ -1,0 +1,1738 @@
+[
+  {
+    "gh_number": 3,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "Rationale is re-printed to terminal for each individual status message of a given check",
+    "status": "closed"
+  },
+  {
+    "gh_number": 4,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Infrastructure todos",
+    "status": "closed"
+  },
+  {
+    "gh_number": 11,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "CheckResult should take section as Option<String>",
+    "status": "closed"
+  },
+  {
+    "gh_number": 12,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Improve Python bridge",
+    "status": "closed"
+  },
+  {
+    "gh_number": 13,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "Run codetests in CI",
+    "status": "closed"
+  },
+  {
+    "gh_number": 14,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Split universal and opentype profiles?",
+    "status": "closed"
+  },
+  {
+    "gh_number": 22,
+    "category": "web-wasm",
+    "low_hanging_fruit": false,
+    "title": "web version gives a 404 error",
+    "status": "closed"
+  },
+  {
+    "gh_number": 23,
+    "category": "architecture",
+    "low_hanging_fruit": true,
+    "title": "proposal field should ideally be a list of strings",
+    "status": "closed"
+  },
+  {
+    "gh_number": 24,
+    "category": "architecture",
+    "low_hanging_fruit": true,
+    "title": "remove proposal=legacy syntax",
+    "status": "closed"
+  },
+  {
+    "gh_number": 25,
+    "category": "documentation",
+    "low_hanging_fruit": true,
+    "title": "Doc generation?",
+    "status": "closed"
+  },
+  {
+    "gh_number": 26,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "return --list-checks as json",
+    "status": "closed"
+  },
+  {
+    "gh_number": 27,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "--list-checks doesn't show the google checks",
+    "status": "closed"
+  },
+  {
+    "gh_number": 28,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "Option to output the Reports as JSON to stdOut",
+    "status": "closed"
+  },
+  {
+    "gh_number": 30,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "deprecate opentype/stat_has_axis_value_tables and implement inconsistencies_between_fvar_STAT",
+    "status": "open"
+  },
+  {
+    "gh_number": 44,
+    "category": "architecture",
+    "low_hanging_fruit": true,
+    "title": "Check for presence of nameid 5 only once.",
+    "status": "closed"
+  },
+  {
+    "gh_number": 48,
+    "category": "check-enhancement",
+    "low_hanging_fruit": false,
+    "title": "Merge most of the description checks",
+    "status": "open"
+  },
+  {
+    "gh_number": 53,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "Transform decomposed components hotfix doesn't create gvar entries",
+    "status": "open"
+  },
+  {
+    "gh_number": 64,
+    "category": "porting",
+    "low_hanging_fruit": true,
+    "title": "Update gh-pages to replace fontbakery branding",
+    "status": "closed"
+  },
+  {
+    "gh_number": 66,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Ensure postscript name is the same in updated fonts",
+    "status": "open"
+  },
+  {
+    "gh_number": 67,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: napostrophe",
+    "status": "closed"
+  },
+  {
+    "gh_number": 68,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for dist/mark shaping order?",
+    "status": "open"
+  },
+  {
+    "gh_number": 69,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: U+2212 minus design",
+    "status": "open"
+  },
+  {
+    "gh_number": 70,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check for overlapping components in static fonts (WARN)",
+    "status": "open"
+  },
+  {
+    "gh_number": 84,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "install/run fails at maturin develop because of Cargo.toml prob",
+    "status": "closed"
+  },
+  {
+    "gh_number": 87,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[bad-numberOfHMetrics]: monospaced fonts should WARN not FAIL",
+    "status": "closed"
+  },
+  {
+    "gh_number": 89,
+    "category": "porting",
+    "low_hanging_fruit": false,
+    "title": "Checks ported statistics and feature parity",
+    "status": "closed"
+  },
+  {
+    "gh_number": 91,
+    "category": "porting",
+    "low_hanging_fruit": false,
+    "title": "compare fontspector to fontbakery",
+    "status": "closed"
+  },
+  {
+    "gh_number": 93,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "[GF profile] New check to ensure non-ink characters are present",
+    "status": "closed"
+  },
+  {
+    "gh_number": 94,
+    "category": "porting",
+    "low_hanging_fruit": true,
+    "title": "[Project Meta] Port over Fontbakery issue templates",
+    "status": "closed"
+  },
+  {
+    "gh_number": 98,
+    "category": "web-wasm",
+    "low_hanging_fruit": true,
+    "title": "WASM check_rationale includes random newlines",
+    "status": "closed"
+  },
+  {
+    "gh_number": 101,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "[unwanted_tables] Split out DSIG check to allow selective disable",
+    "status": "open"
+  },
+  {
+    "gh_number": 108,
+    "category": "web-wasm",
+    "low_hanging_fruit": true,
+    "title": "How do I load a non-default profile in the wasm version?",
+    "status": "closed"
+  },
+  {
+    "gh_number": 110,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "[family_and_style_max_length] Port FB changes",
+    "status": "open"
+  },
+  {
+    "gh_number": 115,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "Cannot install v1.0.1 on macOS machine",
+    "status": "closed"
+  },
+  {
+    "gh_number": 116,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Can googlefonts profile be a plugin?",
+    "status": "open"
+  },
+  {
+    "gh_number": 119,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "--html option doesn't work",
+    "status": "open"
+  },
+  {
+    "gh_number": 124,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[Trivial] Double .expect(...) on create_user_home_templates_directory",
+    "status": "closed"
+  },
+  {
+    "gh_number": 131,
+    "category": "other",
+    "low_hanging_fruit": false,
+    "title": "Dependency Dashboard",
+    "status": "open"
+  },
+  {
+    "gh_number": 141,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[opentype/STAT/ital_axis] depends on GoogleFonts-specific file naming",
+    "status": "open"
+  },
+  {
+    "gh_number": 142,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[code: no-license] False positive",
+    "status": "closed"
+  },
+  {
+    "gh_number": 160,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "create --html does not work for me",
+    "status": "closed"
+  },
+  {
+    "gh_number": 162,
+    "category": "web-wasm",
+    "low_hanging_fruit": true,
+    "title": "'List all checks' button does not work",
+    "status": "closed"
+  },
+  {
+    "gh_number": 163,
+    "category": "documentation",
+    "low_hanging_fruit": true,
+    "title": "Readme maybe with typo in code snippet",
+    "status": "open"
+  },
+  {
+    "gh_number": 165,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check that designers' bio.html mention a webpage URL",
+    "status": "open"
+  },
+  {
+    "gh_number": 166,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check Proposal: os2 metadata set",
+    "status": "open"
+  },
+  {
+    "gh_number": 167,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Only allow ascii file names on the google/fonts repo",
+    "status": "open"
+  },
+  {
+    "gh_number": 168,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Instances on fvar table have postscript names",
+    "status": "open"
+  },
+  {
+    "gh_number": 169,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Warn if font previews wrong in Windows Font Settings",
+    "status": "open"
+  },
+  {
+    "gh_number": 171,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: intersecting and/or duplicate contours",
+    "status": "open"
+  },
+  {
+    "gh_number": 172,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Arabic allah ligature",
+    "status": "open"
+  },
+  {
+    "gh_number": 173,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: spacing mark should be spacing after shaping",
+    "status": "open"
+  },
+  {
+    "gh_number": 174,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Dutch ij with stress mark",
+    "status": "open"
+  },
+  {
+    "gh_number": 175,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check for instances outside of interpolation space",
+    "status": "open"
+  },
+  {
+    "gh_number": 176,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "[wish] varfont/valid_default",
+    "status": "open"
+  },
+  {
+    "gh_number": 177,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "[wish] varfont/valid_range",
+    "status": "open"
+  },
+  {
+    "gh_number": 178,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Check proposal: OS/2 version field against fsSelection flags",
+    "status": "open"
+  },
+  {
+    "gh_number": 179,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for jp90 and jp04 features",
+    "status": "open"
+  },
+  {
+    "gh_number": 181,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: consistent underline position and thickness",
+    "status": "open"
+  },
+  {
+    "gh_number": 182,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Add check: GF repo profiles are all up to date and complete",
+    "status": "open"
+  },
+  {
+    "gh_number": 183,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "WARN: coherent substitutions for locl feature",
+    "status": "open"
+  },
+  {
+    "gh_number": 184,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "INFO-level check for missing stylistic set glyphs",
+    "status": "open"
+  },
+  {
+    "gh_number": 185,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Stylistic set should use same feature across family",
+    "status": "open"
+  },
+  {
+    "gh_number": 186,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Spacing vs combining encoding issues",
+    "status": "open"
+  },
+  {
+    "gh_number": 187,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for glyphs source file schema conformance",
+    "status": "open"
+  },
+  {
+    "gh_number": 188,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check: WONK axis also available as stylistic set?",
+    "status": "open"
+  },
+  {
+    "gh_number": 189,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for glyf table flags",
+    "status": "open"
+  },
+  {
+    "gh_number": 190,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for empty glyphs, especially for CJK fonts",
+    "status": "open"
+  },
+  {
+    "gh_number": 191,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Single style families check?",
+    "status": "open"
+  },
+  {
+    "gh_number": 192,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check ligatures",
+    "status": "open"
+  },
+  {
+    "gh_number": 193,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Ensure VF PRs include info about where to fetch static fonts",
+    "status": "open"
+  },
+  {
+    "gh_number": 194,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: bbox height of d is equal to v metrics",
+    "status": "open"
+  },
+  {
+    "gh_number": 195,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check for Libre Baskerville printing issue",
+    "status": "open"
+  },
+  {
+    "gh_number": 196,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check if Vietnamese glyphs are made in the preferred way",
+    "status": "closed"
+  },
+  {
+    "gh_number": 197,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Use Computer Vision to test how similar I L and 1 are",
+    "status": "open"
+  },
+  {
+    "gh_number": 198,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Machine Vision: Do all font styles have same visible height?",
+    "status": "open"
+  },
+  {
+    "gh_number": 199,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "STAT check: no duplicate Axis Values",
+    "status": "open"
+  },
+  {
+    "gh_number": 201,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for mark positioning",
+    "status": "open"
+  },
+  {
+    "gh_number": 202,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Add VF check: os/2 weightClass matches default wght axis",
+    "status": "open"
+  },
+  {
+    "gh_number": 205,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Add checks for latest GF file naming and PR layout",
+    "status": "open"
+  },
+  {
+    "gh_number": 206,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "No styles should have Agrave bounds exceeding hhea.ascent",
+    "status": "open"
+  },
+  {
+    "gh_number": 207,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Reserve vertical space for stacked diacritics",
+    "status": "open"
+  },
+  {
+    "gh_number": 208,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "vertical metrics check summary",
+    "status": "open"
+  },
+  {
+    "gh_number": 209,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check for named instance consistency",
+    "status": "open"
+  },
+  {
+    "gh_number": 210,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check whether glyphs fit within sTypoAscender/sTypoDescender",
+    "status": "open"
+  },
+  {
+    "gh_number": 211,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Add GF check: Format DESCRIPTION files HTML",
+    "status": "open"
+  },
+  {
+    "gh_number": 212,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "FAIL if no mark_to_base attachment",
+    "status": "open"
+  },
+  {
+    "gh_number": 213,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "FAIL if no mark_to_mark feature",
+    "status": "open"
+  },
+  {
+    "gh_number": 214,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Punt Volat is in the middle of two L's stems",
+    "status": "open"
+  },
+  {
+    "gh_number": 215,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Ensure fonts don't have both vert and vrt2 features",
+    "status": "open"
+  },
+  {
+    "gh_number": 216,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for vertical text orientation",
+    "status": "open"
+  },
+  {
+    "gh_number": 217,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Add check: GF Upstream profile, include AUTHORS/CONTRIBUTORS",
+    "status": "open"
+  },
+  {
+    "gh_number": 219,
+    "category": "profile-specific",
+    "low_hanging_fruit": true,
+    "title": "GF profile: DESC check to ban the word 'free'",
+    "status": "open"
+  },
+  {
+    "gh_number": 220,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "[GF profile] Ensure nameid 6 regressions do not occur",
+    "status": "open"
+  },
+  {
+    "gh_number": 221,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "STAT check summary",
+    "status": "open"
+  },
+  {
+    "gh_number": 222,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Default opsz value should not be elided",
+    "status": "open"
+  },
+  {
+    "gh_number": 223,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check common kerns are present",
+    "status": "open"
+  },
+  {
+    "gh_number": 224,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New Check: STAT table has Axis Values",
+    "status": "open"
+  },
+  {
+    "gh_number": 225,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check that common ligatures are set up correctly",
+    "status": "open"
+  },
+  {
+    "gh_number": 226,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Add GF profile check for per-style file size limit",
+    "status": "open"
+  },
+  {
+    "gh_number": 227,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: mandatory name IDs in GF fonts",
+    "status": "closed"
+  },
+  {
+    "gh_number": 233,
+    "category": "porting",
+    "low_hanging_fruit": false,
+    "title": "How do you port fontbakery into fontspector?",
+    "status": "closed"
+  },
+  {
+    "gh_number": 235,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add opentype profile VF check for nameID 1",
+    "status": "closed"
+  },
+  {
+    "gh_number": 236,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for rvrn features ordered first",
+    "status": "open"
+  },
+  {
+    "gh_number": 237,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "add a METADATA.pb SourceProto fields check",
+    "status": "open"
+  },
+  {
+    "gh_number": 238,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Ensure that Oblique bit is not enabled",
+    "status": "open"
+  },
+  {
+    "gh_number": 239,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check-wrap for ftvalid?",
+    "status": "open"
+  },
+  {
+    "gh_number": 240,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check upstream repo is in good order",
+    "status": "open"
+  },
+  {
+    "gh_number": 241,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Detect colliding accents at small pt sizes",
+    "status": "open"
+  },
+  {
+    "gh_number": 242,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "PRs to google/fonts must use the gftools packager",
+    "status": "closed"
+  },
+  {
+    "gh_number": 243,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Refactor vertical metric checks into 4 separate checks",
+    "status": "closed"
+  },
+  {
+    "gh_number": 249,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for broken accents",
+    "status": "closed"
+  },
+  {
+    "gh_number": 250,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check spacing and kerning is as expected",
+    "status": "open"
+  },
+  {
+    "gh_number": 251,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check suggestion: flag kerning of Arabic numbers",
+    "status": "closed"
+  },
+  {
+    "gh_number": 252,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add GF check for sample text support",
+    "status": "closed"
+  },
+  {
+    "gh_number": 253,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add a glyph contour orientation check",
+    "status": "closed"
+  },
+  {
+    "gh_number": 254,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Check designer info in google/fonts",
+    "status": "open"
+  },
+  {
+    "gh_number": 255,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "If multiple license files found, contents must be identical",
+    "status": "open"
+  },
+  {
+    "gh_number": 256,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Check for deprecated feature tags",
+    "status": "open"
+  },
+  {
+    "gh_number": 257,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Monospace font: all glyphs same width across all styles",
+    "status": "open"
+  },
+  {
+    "gh_number": 258,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "tnum glyphs have same metrics across glyphs and styles",
+    "status": "open"
+  },
+  {
+    "gh_number": 259,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Ensure accents on first line won't get clipped",
+    "status": "open"
+  },
+  {
+    "gh_number": 260,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check kerning classes exist",
+    "status": "open"
+  },
+  {
+    "gh_number": 261,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check vertical metrics clear Vietnamese",
+    "status": "open"
+  },
+  {
+    "gh_number": 262,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "add regression check for missing glyphs",
+    "status": "open"
+  },
+  {
+    "gh_number": 263,
+    "category": "porting",
+    "low_hanging_fruit": false,
+    "title": "Port a few Glyph Nanny checks",
+    "status": "open"
+  },
+  {
+    "gh_number": 268,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "overall visual sizing relative to common/fallback fonts",
+    "status": "open"
+  },
+  {
+    "gh_number": 269,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Checks for levels of Variable Font support",
+    "status": "open"
+  },
+  {
+    "gh_number": 270,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Detect and WARN about duplicate contours",
+    "status": "closed"
+  },
+  {
+    "gh_number": 271,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add WARN level check for KERN table",
+    "status": "open"
+  },
+  {
+    "gh_number": 272,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add upstream check for correct subs feature",
+    "status": "open"
+  },
+  {
+    "gh_number": 273,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Family Check: GlyphOrder is the same across family",
+    "status": "open"
+  },
+  {
+    "gh_number": 276,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "GF Profile: Add check for readability of contents",
+    "status": "open"
+  },
+  {
+    "gh_number": 277,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: detect missing date in metadata.pb",
+    "status": "closed"
+  },
+  {
+    "gh_number": 278,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "Fontspector + interpolation.pdf",
+    "status": "closed"
+  },
+  {
+    "gh_number": 283,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[googlefonts/gasp] complains about CFF font",
+    "status": "closed"
+  },
+  {
+    "gh_number": 284,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[contour_count] number of contours",
+    "status": "closed"
+  },
+  {
+    "gh_number": 285,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[typoascender_exceeds_Agrave] fails with CFF font",
+    "status": "closed"
+  },
+  {
+    "gh_number": 294,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "Building the CLI tool",
+    "status": "closed"
+  },
+  {
+    "gh_number": 296,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "False positives in the CI report",
+    "status": "closed"
+  },
+  {
+    "gh_number": 341,
+    "category": "web-wasm",
+    "low_hanging_fruit": true,
+    "title": "[Web UI] Link to issues/new in footer",
+    "status": "closed"
+  },
+  {
+    "gh_number": 342,
+    "category": "web-wasm",
+    "low_hanging_fruit": true,
+    "title": "[Web UI] Log levels drop down does nothing?",
+    "status": "closed"
+  },
+  {
+    "gh_number": 343,
+    "category": "web-wasm",
+    "low_hanging_fruit": true,
+    "title": "[Web UI] Show family and font file names more prominently",
+    "status": "closed"
+  },
+  {
+    "gh_number": 344,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[googlefonts/font_names] Variable fonts trigger false FAIL",
+    "status": "closed"
+  },
+  {
+    "gh_number": 347,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[smart_dropout] No FAIL for unhinted fonts",
+    "status": "closed"
+  },
+  {
+    "gh_number": 352,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "Markdown conversion slightly broken for family/vertical_metrics check",
+    "status": "closed"
+  },
+  {
+    "gh_number": 353,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[opentype/family/max_4_fonts_per_family_name] situation",
+    "status": "open"
+  },
+  {
+    "gh_number": 355,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: About page content exists",
+    "status": "closed"
+  },
+  {
+    "gh_number": 362,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[googlefonts/STAT/axisregistry] fails for any value other than Default",
+    "status": "closed"
+  },
+  {
+    "gh_number": 369,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "Make checks clickable",
+    "status": "open"
+  },
+  {
+    "gh_number": 370,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[opentype/STAT/ital_axis] Filename check for Italic is too simplistic",
+    "status": "open"
+  },
+  {
+    "gh_number": 378,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: Detect wrong version of maxp table",
+    "status": "closed"
+  },
+  {
+    "gh_number": 389,
+    "category": "build-install",
+    "low_hanging_fruit": true,
+    "title": "Fontspector - Trojan/virus alert!",
+    "status": "closed"
+  },
+  {
+    "gh_number": 392,
+    "category": "web-wasm",
+    "low_hanging_fruit": false,
+    "title": "FontSpector does not work",
+    "status": "closed"
+  },
+  {
+    "gh_number": 401,
+    "category": "check-enhancement",
+    "low_hanging_fruit": false,
+    "title": "[googlefonts/weightclass] 250 cut for OTF",
+    "status": "open"
+  },
+  {
+    "gh_number": 402,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Color font does not render on Windows",
+    "status": "closed"
+  },
+  {
+    "gh_number": 404,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: field_values",
+    "status": "closed"
+  },
+  {
+    "gh_number": 406,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: has_features",
+    "status": "closed"
+  },
+  {
+    "gh_number": 408,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: has_glyphs",
+    "status": "closed"
+  },
+  {
+    "gh_number": 411,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[opentype/STAT/ital_axis] ital check should respect italic files",
+    "status": "open"
+  },
+  {
+    "gh_number": 412,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[contour_count] differences between Fontspector and Font Bakery",
+    "status": "closed"
+  },
+  {
+    "gh_number": 413,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "Compilation with Python feature fails",
+    "status": "open"
+  },
+  {
+    "gh_number": 414,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "Check family_name_compliance has different id in fontbakery",
+    "status": "open"
+  },
+  {
+    "gh_number": 415,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[missing_small_caps_glyphs] FAIL for math operators",
+    "status": "open"
+  },
+  {
+    "gh_number": 416,
+    "category": "documentation",
+    "low_hanging_fruit": true,
+    "title": "The description of how to install Fontspector is difficult to understand",
+    "status": "closed"
+  },
+  {
+    "gh_number": 431,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "Integrating Fontspector without system protobuf dependency",
+    "status": "closed"
+  },
+  {
+    "gh_number": 432,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[arabic_high_hamza] reports issue for correct fonts",
+    "status": "closed"
+  },
+  {
+    "gh_number": 433,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[whitespace_ink] situation",
+    "status": "closed"
+  },
+  {
+    "gh_number": 434,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: check if font needs the BASE table",
+    "status": "open"
+  },
+  {
+    "gh_number": 435,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check: Unicode ID for diacritic marks",
+    "status": "closed"
+  },
+  {
+    "gh_number": 436,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check if fractions are made of auto-aligned compounds",
+    "status": "closed"
+  },
+  {
+    "gh_number": 437,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add GF check for bulky hinting data",
+    "status": "open"
+  },
+  {
+    "gh_number": 438,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Add GF profile METADATA check for designer string similarity",
+    "status": "open"
+  },
+  {
+    "gh_number": 439,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "outline quality: detect small counters",
+    "status": "open"
+  },
+  {
+    "gh_number": 440,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "WARN if marks not consistently in one category",
+    "status": "closed"
+  },
+  {
+    "gh_number": 441,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "WARN if anchors are not aligned",
+    "status": "open"
+  },
+  {
+    "gh_number": 442,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "BlueValues tip for non-latin",
+    "status": "closed"
+  },
+  {
+    "gh_number": 443,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "GF static files should not have extras, should be full house",
+    "status": "open"
+  },
+  {
+    "gh_number": 444,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check: avar table for slnt axes",
+    "status": "open"
+  },
+  {
+    "gh_number": 445,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check if family has siblings",
+    "status": "open"
+  },
+  {
+    "gh_number": 446,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check for sister swash & alt families",
+    "status": "closed"
+  },
+  {
+    "gh_number": 447,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "For variable families, check axis consistency",
+    "status": "closed"
+  },
+  {
+    "gh_number": 448,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "GlyphsData.xml files can go missing",
+    "status": "open"
+  },
+  {
+    "gh_number": 449,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add checks for scope or boss level",
+    "status": "closed"
+  },
+  {
+    "gh_number": 450,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for METADATA.pb for VF axes",
+    "status": "closed"
+  },
+  {
+    "gh_number": 451,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Warn if SC font has .sc or .smcp suffixes",
+    "status": "closed"
+  },
+  {
+    "gh_number": 452,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for VF METADATA preventing ital axis if split",
+    "status": "closed"
+  },
+  {
+    "gh_number": 453,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check for MVAR table with correct values",
+    "status": "open"
+  },
+  {
+    "gh_number": 454,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check for bizarre Word for Mac style linking bug",
+    "status": "open"
+  },
+  {
+    "gh_number": 455,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check ligatures are consistent",
+    "status": "closed"
+  },
+  {
+    "gh_number": 456,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check sups/subs/sinf glyphs exist and have features",
+    "status": "closed"
+  },
+  {
+    "gh_number": 457,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add check upstream for build script",
+    "status": "closed"
+  },
+  {
+    "gh_number": 458,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add checks for OT small numeral access",
+    "status": "open"
+  },
+  {
+    "gh_number": 459,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add checks for kerning",
+    "status": "open"
+  },
+  {
+    "gh_number": 460,
+    "category": "porting",
+    "low_hanging_fruit": false,
+    "title": "port checks from AFDKO comparefamily tool",
+    "status": "open"
+  },
+  {
+    "gh_number": 461,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Check for lack of HDMX and VDMX tables",
+    "status": "open"
+  },
+  {
+    "gh_number": 462,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Add check for projects to have a Changelog",
+    "status": "closed"
+  },
+  {
+    "gh_number": 463,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add Touche style check for overlapping glyph pairs",
+    "status": "closed"
+  },
+  {
+    "gh_number": 464,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Add checks for METADATA",
+    "status": "closed"
+  },
+  {
+    "gh_number": 465,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Repository structure validation",
+    "status": "open"
+  },
+  {
+    "gh_number": 466,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Add METADATA check for Han Unification",
+    "status": "closed"
+  },
+  {
+    "gh_number": 467,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "New profile, based on SIL FDBP",
+    "status": "closed"
+  },
+  {
+    "gh_number": 468,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check quality of overlaps in VFs",
+    "status": "closed"
+  },
+  {
+    "gh_number": 469,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Check OS/2 code page range",
+    "status": "open"
+  },
+  {
+    "gh_number": 470,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Kerning refinement checks",
+    "status": "closed"
+  },
+  {
+    "gh_number": 472,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "Uniqueness of first 31 char of Full Name",
+    "status": "closed"
+  },
+  {
+    "gh_number": 474,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Follow up: refactor fontwerk/name_entries",
+    "status": "open"
+  },
+  {
+    "gh_number": 475,
+    "category": "cli-ux",
+    "low_hanging_fruit": true,
+    "title": "fontspector-cli: command-line tool with json",
+    "status": "closed"
+  },
+  {
+    "gh_number": 476,
+    "category": "documentation",
+    "low_hanging_fruit": true,
+    "title": "maybe wrong file type mentioned in --help",
+    "status": "closed"
+  },
+  {
+    "gh_number": 479,
+    "category": "web-wasm",
+    "low_hanging_fruit": false,
+    "title": "Can't use custom TOML profiles in web version",
+    "status": "open"
+  },
+  {
+    "gh_number": 501,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[uniqueness_first_31_characters] doesn't handle ID 16/17 empty",
+    "status": "closed"
+  },
+  {
+    "gh_number": 502,
+    "category": "check-enhancement",
+    "low_hanging_fruit": false,
+    "title": "[rupee] distinguish between required and suggested",
+    "status": "open"
+  },
+  {
+    "gh_number": 504,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: config_yaml field in metadata.pb",
+    "status": "open"
+  },
+  {
+    "gh_number": 514,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "Getting bounds of Agrave fails for OTFs",
+    "status": "open"
+  },
+  {
+    "gh_number": 515,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[GDEF_mark_chars] giving conflicting advice",
+    "status": "closed"
+  },
+  {
+    "gh_number": 516,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "Verify VVAR table added in VF with vmtx",
+    "status": "closed"
+  },
+  {
+    "gh_number": 517,
+    "category": "build-install",
+    "low_hanging_fruit": true,
+    "title": "Include plugin profiles in releases",
+    "status": "open"
+  },
+  {
+    "gh_number": 518,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: zero-width characters",
+    "status": "open"
+  },
+  {
+    "gh_number": 519,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[fontwerk/weightclass] Italic font with usWeightClass 400",
+    "status": "closed"
+  },
+  {
+    "gh_number": 521,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[STAT/ital_axis] skip static fonts",
+    "status": "open"
+  },
+  {
+    "gh_number": 525,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: universal fstype with context",
+    "status": "open"
+  },
+  {
+    "gh_number": 526,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: universal glyph_coverage",
+    "status": "open"
+  },
+  {
+    "gh_number": 527,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "[has_glyphs] improve output",
+    "status": "closed"
+  },
+  {
+    "gh_number": 530,
+    "category": "architecture",
+    "low_hanging_fruit": true,
+    "title": "Port from rustybuzz to harfrust",
+    "status": "closed"
+  },
+  {
+    "gh_number": 532,
+    "category": "check-enhancement",
+    "low_hanging_fruit": false,
+    "title": "[duplexed_axis_reflow] Output in user/design coordinates",
+    "status": "open"
+  },
+  {
+    "gh_number": 534,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "[fontwerk/required_name_ids] make universal + add context",
+    "status": "closed"
+  },
+  {
+    "gh_number": 547,
+    "category": "check-enhancement",
+    "low_hanging_fruit": false,
+    "title": "[opentype/italic_angle] Recommend a value",
+    "status": "open"
+  },
+  {
+    "gh_number": 557,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "New check: Suspicious spacing difference between masters",
+    "status": "open"
+  },
+  {
+    "gh_number": 561,
+    "category": "build-install",
+    "low_hanging_fruit": true,
+    "title": "The 1.5.2 release lacks binary assets",
+    "status": "closed"
+  },
+  {
+    "gh_number": 563,
+    "category": "architecture",
+    "low_hanging_fruit": false,
+    "title": "Add a function to include checks on profiles",
+    "status": "open"
+  },
+  {
+    "gh_number": 564,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[font_names] RIBBI fonts with name ID 16 and 17 fail",
+    "status": "open"
+  },
+  {
+    "gh_number": 565,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "[family_and_style_max_length] improve report",
+    "status": "open"
+  },
+  {
+    "gh_number": 574,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[fsselection] Static TTFs with empty fvar give bad-STYLE fail",
+    "status": "open"
+  },
+  {
+    "gh_number": 575,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[typographic_family_name] Fails for RIBBI fonts without Name ID 16",
+    "status": "open"
+  },
+  {
+    "gh_number": 577,
+    "category": "new-check",
+    "low_hanging_fruit": false,
+    "title": "[fsselection] check if WWS bit is set correctly",
+    "status": "open"
+  },
+  {
+    "gh_number": 579,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "[name/trailing_spaces] check double spaces",
+    "status": "open"
+  },
+  {
+    "gh_number": 580,
+    "category": "build-install",
+    "low_hanging_fruit": false,
+    "title": "Installation issue for pytest",
+    "status": "open"
+  },
+  {
+    "gh_number": 588,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[metadata/primary_script] should FAIL when script entry is close but wrong",
+    "status": "closed"
+  },
+  {
+    "gh_number": 590,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[metadata/primary_script] Issues WARN if not Hani",
+    "status": "closed"
+  },
+  {
+    "gh_number": 609,
+    "category": "check-bug",
+    "low_hanging_fruit": true,
+    "title": "[mandatory_avar_table] Is this always mandatory in VFs?",
+    "status": "closed"
+  },
+  {
+    "gh_number": 620,
+    "category": "check-bug",
+    "low_hanging_fruit": false,
+    "title": "[font_names] Confused by localized family names",
+    "status": "open"
+  },
+  {
+    "gh_number": 626,
+    "category": "check-enhancement",
+    "low_hanging_fruit": false,
+    "title": "[metadata] Detect formatting issues in metadata.pb",
+    "status": "open"
+  },
+  {
+    "gh_number": 634,
+    "category": "profile-specific",
+    "low_hanging_fruit": true,
+    "title": "[fontwerk] remove .exclude_check(googlefonts/gasp)",
+    "status": "closed"
+  },
+  {
+    "gh_number": 644,
+    "category": "web-wasm",
+    "low_hanging_fruit": false,
+    "title": "fontspector's website does not work",
+    "status": "closed"
+  },
+  {
+    "gh_number": 647,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "Slant axis needs more clearly explaining",
+    "status": "open"
+  },
+  {
+    "gh_number": 648,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: VF in family name",
+    "status": "open"
+  },
+  {
+    "gh_number": 651,
+    "category": "new-check",
+    "low_hanging_fruit": true,
+    "title": "New check: Ensure axis hidden flag on all Parametric Axes",
+    "status": "open"
+  },
+  {
+    "gh_number": 652,
+    "category": "profile-specific",
+    "low_hanging_fruit": false,
+    "title": "Workspace specific profile check ideas",
+    "status": "open"
+  },
+  {
+    "gh_number": 653,
+    "category": "check-enhancement",
+    "low_hanging_fruit": true,
+    "title": "[glyph_coverage] Show all missing required codepoints",
+    "status": "open"
+  }
+]

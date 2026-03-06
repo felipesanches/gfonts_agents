@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCraterFailures();
     loadInvestigations();
     loadBeadsIssues();
+    loadFontspectorTriage();
 });
 
 function initTabs() {
@@ -2701,4 +2702,181 @@ function renderBeadsIssues(data) {
         renderGroup('In Progress', inProgress) +
         renderGroup('Open', open) +
         renderGroup('Closed', closed);
+}
+
+// ===== Fontspector Triage =====
+
+const FST_CATEGORY_META = {
+    'new-check':          { label: 'New Check Requests',     color: '#4285f4' },
+    'check-bug':          { label: 'Check Bugs',             color: '#ea4335' },
+    'check-enhancement':  { label: 'Check Enhancements',     color: '#fbbc04' },
+    'profile-specific':   { label: 'Profile-Specific',       color: '#34a853' },
+    'architecture':       { label: 'Architecture',           color: '#9c27b0' },
+    'build-install':      { label: 'Build / Install',        color: '#ff6d00' },
+    'web-wasm':           { label: 'Web / WASM',             color: '#00bcd4' },
+    'cli-ux':             { label: 'CLI / UX',               color: '#795548' },
+    'porting':            { label: 'Porting from Fontbakery', color: '#607d8b' },
+    'documentation':      { label: 'Documentation',          color: '#8bc34a' },
+    'other':              { label: 'Other',                  color: '#9e9e9e' },
+};
+
+let fstData = [];
+
+async function loadFontspectorTriage() {
+    try {
+        const response = await fetch('data/fontspector_issues.json');
+        fstData = await response.json();
+        renderFontspectorTriage();
+    } catch (error) {
+        console.error('Error loading fontspector issues:', error);
+    }
+}
+
+function renderFontspectorTriage() {
+    const data = fstData;
+    if (!data.length) return;
+
+    const openIssues = data.filter(i => i.status === 'open');
+    const closedIssues = data.filter(i => i.status === 'closed');
+    const lhfOpen = openIssues.filter(i => i.low_hanging_fruit);
+
+    // Summary cards
+    const summaryEl = document.getElementById('fst-summary');
+    if (summaryEl) {
+        summaryEl.innerHTML = `
+            <div class="summary-card total"><span class="summary-value">${data.length}</span><span class="summary-label">Total Issues</span></div>
+            <div class="summary-card warning"><span class="summary-value">${openIssues.length}</span><span class="summary-label">Open</span></div>
+            <div class="summary-card complete"><span class="summary-value">${closedIssues.length}</span><span class="summary-label">Closed</span></div>
+            <div class="summary-card investigated"><span class="summary-value">${lhfOpen.length}</span><span class="summary-label">Low-Hanging Fruit (Open)</span></div>
+        `;
+    }
+
+    // Category bar chart (open issues only)
+    const catCounts = {};
+    for (const issue of openIssues) {
+        catCounts[issue.category] = (catCounts[issue.category] || 0) + 1;
+    }
+    const sortedCats = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
+    const maxCount = sortedCats.length ? sortedCats[0][1] : 1;
+
+    const barsEl = document.getElementById('fst-bars');
+    if (barsEl) {
+        barsEl.innerHTML = sortedCats.map(([cat, count]) => {
+            const meta = FST_CATEGORY_META[cat] || { label: cat, color: '#999' };
+            const pct = (count / maxCount * 100).toFixed(0);
+            return `<div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
+                <span style="min-width:180px; font-size:0.9rem; text-align:right;">${escapeHtml(meta.label)}</span>
+                <div style="flex:1; background:#f0f0f0; border-radius:4px; overflow:hidden; height:22px;">
+                    <div style="width:${pct}%; background:${meta.color}; height:100%; border-radius:4px; min-width:2px;"></div>
+                </div>
+                <span style="min-width:30px; font-size:0.85rem; font-weight:bold;">${count}</span>
+            </div>`;
+        }).join('');
+    }
+
+    // Low-hanging fruit list
+    const lhfEl = document.getElementById('fst-lhf-list');
+    if (lhfEl) {
+        if (lhfOpen.length === 0) {
+            lhfEl.innerHTML = '<p>No low-hanging fruit identified among open issues.</p>';
+        } else {
+            lhfEl.innerHTML = `<table class="guide-table"><thead><tr>
+                <th>#</th><th>Category</th><th>Title</th>
+            </tr></thead><tbody>${lhfOpen.map(i => {
+                const meta = FST_CATEGORY_META[i.category] || { label: i.category, color: '#999' };
+                return `<tr>
+                    <td><a href="https://github.com/fonttools/fontspector/issues/${i.gh_number}" target="_blank" rel="noopener">#${i.gh_number}</a></td>
+                    <td><span style="display:inline-block; padding:2px 8px; border-radius:12px; background:${meta.color}; color:white; font-size:0.8em;">${escapeHtml(meta.label)}</span></td>
+                    <td>${escapeHtml(i.title)}</td>
+                </tr>`;
+            }).join('')}</tbody></table>`;
+        }
+    }
+
+    // Populate category filter dropdown
+    const catFilter = document.getElementById('fst-cat-filter');
+    if (catFilter && catFilter.options.length <= 1) {
+        for (const [cat] of sortedCats) {
+            const meta = FST_CATEGORY_META[cat] || { label: cat };
+            const opt = document.createElement('option');
+            opt.value = cat;
+            opt.textContent = `${meta.label} (${catCounts[cat]})`;
+            catFilter.appendChild(opt);
+        }
+        // Also add categories only in closed
+        const allCats = new Set(data.map(i => i.category));
+        for (const cat of allCats) {
+            if (!catCounts[cat]) {
+                const meta = FST_CATEGORY_META[cat] || { label: cat };
+                const closedCount = data.filter(i => i.category === cat).length;
+                const opt = document.createElement('option');
+                opt.value = cat;
+                opt.textContent = `${meta.label} (${closedCount})`;
+                catFilter.appendChild(opt);
+            }
+        }
+    }
+
+    // Wire up filters
+    const searchEl = document.getElementById('fst-search');
+    const statusFilter = document.getElementById('fst-status-filter');
+    const lhfFilter = document.getElementById('fst-lhf-filter');
+
+    const doFilter = () => renderFontspectorIssueTable();
+    if (searchEl) searchEl.addEventListener('input', doFilter);
+    if (catFilter) catFilter.addEventListener('change', doFilter);
+    if (statusFilter) statusFilter.addEventListener('change', doFilter);
+    if (lhfFilter) lhfFilter.addEventListener('change', doFilter);
+
+    renderFontspectorIssueTable();
+}
+
+function renderFontspectorIssueTable() {
+    const tableEl = document.getElementById('fst-issues-table');
+    const countEl = document.getElementById('fst-count');
+    if (!tableEl) return;
+
+    const searchVal = (document.getElementById('fst-search')?.value || '').toLowerCase();
+    const catVal = document.getElementById('fst-cat-filter')?.value || '';
+    const statusVal = document.getElementById('fst-status-filter')?.value || '';
+    const lhfOnly = document.getElementById('fst-lhf-filter')?.checked || false;
+
+    let filtered = fstData;
+
+    if (catVal) filtered = filtered.filter(i => i.category === catVal);
+    if (statusVal) filtered = filtered.filter(i => i.status === statusVal);
+    if (lhfOnly) filtered = filtered.filter(i => i.low_hanging_fruit);
+    if (searchVal) filtered = filtered.filter(i =>
+        i.title.toLowerCase().includes(searchVal) ||
+        (i.category && i.category.toLowerCase().includes(searchVal))
+    );
+
+    if (countEl) countEl.textContent = `Showing ${filtered.length} of ${fstData.length} issues`;
+
+    if (filtered.length === 0) {
+        tableEl.innerHTML = '<p>No issues match the current filters.</p>';
+        return;
+    }
+
+    // Sort: open first, then by gh_number descending (newest first)
+    filtered.sort((a, b) => {
+        if (a.status !== b.status) return a.status === 'open' ? -1 : 1;
+        return b.gh_number - a.gh_number;
+    });
+
+    const rows = filtered.map(i => {
+        const meta = FST_CATEGORY_META[i.category] || { label: i.category, color: '#999' };
+        const statusColor = i.status === 'open' ? '#ff9800' : '#4caf50';
+        const lhfBadge = i.low_hanging_fruit ? ' <span title="Low-hanging fruit" style="cursor:help;">&#127825;</span>' : '';
+        return `<tr>
+            <td><a href="https://github.com/fonttools/fontspector/issues/${i.gh_number}" target="_blank" rel="noopener">#${i.gh_number}</a></td>
+            <td><span style="display:inline-block; padding:2px 8px; border-radius:12px; background:${statusColor}; color:white; font-size:0.8em;">${i.status}</span></td>
+            <td><span style="display:inline-block; padding:2px 8px; border-radius:12px; background:${meta.color}; color:white; font-size:0.8em;">${escapeHtml(meta.label)}</span></td>
+            <td>${escapeHtml(i.title)}${lhfBadge}</td>
+        </tr>`;
+    }).join('');
+
+    tableEl.innerHTML = `<table class="guide-table"><thead><tr>
+        <th>#</th><th>Status</th><th>Category</th><th>Title</th>
+    </tr></thead><tbody>${rows}</tbody></table>`;
 }
