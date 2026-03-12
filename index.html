@@ -7,34 +7,75 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Google Fonts Agents Dashboard</h1>
-        <p>Font project repositories overview</p>
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title" href="#">Google Fonts Agents Dashboard</a>
+        </div>
     </header>
 
+    <div class="site-content-wrapper">
+    <nav class="site-sidebar" aria-label="Navigation menu">
+        <button class="sidebar-toggle" aria-label="Toggle navigation menu">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+            Menu
+        </button>
+        <div class="sidebar-content">
+            <details class="nav-section" open>
+                <summary class="nav-section-title">Source Metadata</summary>
+                <ul class="nav-items">
+                    <li class="nav-item active"><a href="#sources" data-tab="sources">Library Sources</a></li>
+                    <li class="nav-item"><a href="#audit" data-tab="audit">Repository Audit</a></li>
+                    <li class="nav-item"><a href="#investigations" data-tab="investigations">Investigations</a></li>
+                    <li class="nav-item"><a href="#builds" data-tab="builds">Build Approaches</a></li>
+                    <li class="nav-item"><a href="#prebuild" data-tab="prebuild">Pre-Build Research</a></li>
+                    <li class="nav-item"><a href="#crater" data-tab="crater">Crater Failures</a></li>
+                </ul>
+            </details>
+            <details class="nav-section">
+                <summary class="nav-section-title">Designers</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#designers" data-tab="designers">Designer Profiles</a></li>
+                    <li class="nav-item"><a href="#bio-guide" data-tab="bio-guide">Bio Guide</a></li>
+                    <li class="nav-item"><a href="#bio-audit" data-tab="bio-audit">Bio Audit</a></li>
+                </ul>
+            </details>
+            <details class="nav-section">
+                <summary class="nav-section-title">Fontspector</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#fontspector-triage" data-tab="fontspector-triage">Issue Triage</a></li>
+                    <li class="nav-item"><a href="#new-checks" data-tab="new-checks">New Check Proposals</a></li>
+                    <li class="nav-item"><a href="#lhf-report" data-tab="lhf-report">LHF Triage Report</a></li>
+                </ul>
+            </details>
+            <details class="nav-section">
+                <summary class="nav-section-title">Project Management</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#prs" data-tab="prs">Pull Requests</a></li>
+                    <li class="nav-item"><a href="#beads" data-tab="beads">Beads Issues</a></li>
+                    <li class="nav-item"><a href="#questions" data-tab="questions">Pending Questions</a></li>
+                    <li class="nav-item"><a href="#plans" data-tab="plans">Plans</a></li>
+                </ul>
+            </details>
+            <details class="nav-section">
+                <summary class="nav-section-title">Operations</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#messages" data-tab="messages">Message Log</a></li>
+                    <li class="nav-item"><a href="#status" data-tab="status">Friday Status</a></li>
+                    <li class="nav-item"><a href="#disk" data-tab="disk">Disk Usage</a></li>
+                </ul>
+            </details>
+            <details class="nav-section">
+                <summary class="nav-section-title">Info</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#about" data-tab="about">About</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+
     <main id="app">
-        <nav class="tabs">
-            <button class="tab-btn active" data-tab="sources">Library Sources</button>
-            <button class="tab-btn" data-tab="audit">Repository Audit</button>
-            <button class="tab-btn" data-tab="designers">Designers</button>
-            <button class="tab-btn" data-tab="prs">gfonts PRs</button>
-            <button class="tab-btn" data-tab="questions">Pending Questions</button>
-            <button class="tab-btn" data-tab="messages">Message Log</button>
-            <button class="tab-btn" data-tab="status">Friday Status</button>
-            <button class="tab-btn" data-tab="builds">Build Approaches</button>
-            <button class="tab-btn" data-tab="plans">Plans</button>
-            <button class="tab-btn" data-tab="disk">Disk Usage</button>
-            <button class="tab-btn" data-tab="bio-guide">Bio Guide</button>
-            <button class="tab-btn" data-tab="bio-audit">Bio Audit</button>
-            <button class="tab-btn" data-tab="prebuild">Pre-Build Research</button>
-            <button class="tab-btn" data-tab="crater">Crater Failures</button>
-            <button class="tab-btn" data-tab="investigations">Investigations</button>
-            <button class="tab-btn" data-tab="beads">Beads Issues</button>
-            <button class="tab-btn" data-tab="fontspector-triage">Fontspector Triage</button>
-            <button class="tab-btn" data-tab="new-checks">New Check Proposals</button>
-            <button class="tab-btn" data-tab="lhf-report">LHF Triage Report</button>
-            <button class="tab-btn" data-tab="about">About</button>
-        </nav>
 
         <section id="tab-sources" class="tab-content active">
             <div class="panel">
@@ -1070,6 +1111,7 @@ includeSubsets:
         </section>
 
     </main>
+    </div><!-- .site-content-wrapper -->
 
     <footer>
         <p>Google Fonts Repository Dashboard</p>

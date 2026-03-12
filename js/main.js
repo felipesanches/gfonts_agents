@@ -28,28 +28,50 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initTabs() {
-    const tabBtns = document.querySelectorAll('.tab-btn');
+    const navLinks = document.querySelectorAll('.nav-item > a[data-tab]');
+    const navItems = document.querySelectorAll('.nav-item');
     const tabContents = document.querySelectorAll('.tab-content');
 
     function activateTab(tabId) {
-        const btn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
         const content = document.getElementById(`tab-${tabId}`);
-        if (!btn || !content) return;
+        if (!content) return;
 
-        tabBtns.forEach(b => b.classList.remove('active'));
+        // Deactivate all
+        navItems.forEach(item => item.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
 
-        btn.classList.add('active');
+        // Activate matching nav item and content
+        const link = document.querySelector(`.nav-item > a[data-tab="${tabId}"]`);
+        if (link) {
+            link.parentElement.classList.add('active');
+            // Open the parent details section
+            const section = link.closest('details.nav-section');
+            if (section) section.open = true;
+        }
         content.classList.add('active');
+
+        // On mobile, close sidebar after selection
+        const sidebar = document.querySelector('.site-sidebar');
+        if (sidebar) sidebar.classList.remove('open');
     }
 
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const tabId = btn.dataset.tab;
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const tabId = link.dataset.tab;
             history.replaceState(null, '', `#${tabId}`);
             activateTab(tabId);
         });
     });
+
+    // Mobile sidebar toggle
+    const toggle = document.querySelector('.sidebar-toggle');
+    const sidebar = document.querySelector('.site-sidebar');
+    if (toggle && sidebar) {
+        toggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+    }
 
     // Activate tab from URL fragment on load
     const hash = location.hash.slice(1);
