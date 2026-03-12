@@ -566,7 +566,7 @@
     "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10301",
-    "merged": "2026-03-05"
+    "merged": "2026-03-03"
   },
   {
     "id": "pr-upstream-info-4-a",
@@ -580,7 +580,7 @@
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10302",
     "submitted_date": "2026-03-03",
-    "merged": "2026-03-10"
+    "merged": "2026-03-03"
   },
   {
     "id": "pr-upstream-info-b",
@@ -594,7 +594,7 @@
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10303",
     "submitted_date": "2026-03-03",
-    "merged": "2026-03-10"
+    "merged": "2026-03-03"
   },
   {
     "id": "pr-upstream-info-c-e",
@@ -608,7 +608,7 @@
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10304",
     "submitted_date": "2026-03-03",
-    "merged": "2026-03-10"
+    "merged": "2026-03-03"
   },
   {
     "id": "pr-upstream-info-f-i",
@@ -622,7 +622,7 @@
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10305",
     "submitted_date": "2026-03-03",
-    "merged": "2026-03-10"
+    "merged": "2026-03-03"
   },
   {
     "id": "pr-upstream-info-j-m",
@@ -636,7 +636,21 @@
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10306",
     "submitted_date": "2026-03-03",
-    "merged": "2026-03-10"
+    "merged": "2026-03-03"
+  },
+  {
+    "id": "pr-fix-source-metadata-linefont-mali",
+    "title": "Enrich source metadata for 16 families (Linefont–Mali)",
+    "description": "16 font families with per-family commits in the L-M range. Includes commit hash corrections, missing commit additions, and override config.yaml files.",
+    "type": "metadata_fix",
+    "priority": "high",
+    "branch": "fix-source-metadata-linefont-mali",
+    "families_count": 16,
+    "status": "merged",
+    "created": "2026-03-12",
+    "pr_url": "https://github.com/google/fonts/pull/10351",
+    "submitted_date": "2026-03-12",
+    "merged": "2026-03-12"
   },
   {
     "id": "pr-fix-source-metadata-m-n",
