@@ -64,6 +64,20 @@
       },
       "source": "claude_code",
       "notes": "5 upstream_info.md PRs submitted (#10302-#10306, 657 families). PR #10301 merged (16 families, L-M fixes). 961/1969 families have investigation reports."
+    },
+    {
+      "timestamp": "2026-03-12T18:00:00-03:00",
+      "summary": {
+        "total": 1975,
+        "complete": 947,
+        "missing_config": 508,
+        "missing_commit": 125,
+        "no_source": 372,
+        "no_upstream_repo": 23,
+        "investigation_reports": 1975
+      },
+      "source": "claude_code",
+      "notes": "100% upstream_info.md coverage achieved (1975/1975). Stats from upstream/main: 947 complete, 508 missing_config, 125 missing_commit, 372 no_source. 5 earlier upstream_info PRs merged (#10302-#10306). New PRs: #10352 (8 families M-N), #10353 (13 families O-P), #10354 (60 families Q-S), #10355 (49 families T-Z), #10356 (1017 upstream_info.md reports)."
     }
   ]
 }

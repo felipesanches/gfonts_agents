@@ -566,7 +566,7 @@
     "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10301",
-    "merged": "2026-03-03"
+    "merged": "2026-03-05"
   },
   {
     "id": "pr-upstream-info-4-a",
@@ -576,10 +576,11 @@
     "priority": "medium",
     "branch": "upstream-info-4-a",
     "families_count": 96,
-    "status": "submitted",
+    "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10302",
-    "submitted_date": "2026-03-03"
+    "submitted_date": "2026-03-03",
+    "merged": "2026-03-10"
   },
   {
     "id": "pr-upstream-info-b",
@@ -589,10 +590,11 @@
     "priority": "medium",
     "branch": "upstream-info-b",
     "families_count": 97,
-    "status": "submitted",
+    "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10303",
-    "submitted_date": "2026-03-03"
+    "submitted_date": "2026-03-03",
+    "merged": "2026-03-10"
   },
   {
     "id": "pr-upstream-info-c-e",
@@ -602,10 +604,11 @@
     "priority": "medium",
     "branch": "upstream-info-c-e",
     "families_count": 109,
-    "status": "submitted",
+    "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10304",
-    "submitted_date": "2026-03-03"
+    "submitted_date": "2026-03-03",
+    "merged": "2026-03-10"
   },
   {
     "id": "pr-upstream-info-f-i",
@@ -615,10 +618,11 @@
     "priority": "medium",
     "branch": "upstream-info-f-i",
     "families_count": 142,
-    "status": "submitted",
+    "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10305",
-    "submitted_date": "2026-03-03"
+    "submitted_date": "2026-03-03",
+    "merged": "2026-03-10"
   },
   {
     "id": "pr-upstream-info-j-m",
@@ -628,9 +632,75 @@
     "priority": "medium",
     "branch": "upstream-info-j-m",
     "families_count": 213,
-    "status": "submitted",
+    "status": "merged",
     "created": "2026-03-03",
     "pr_url": "https://github.com/google/fonts/pull/10306",
-    "submitted_date": "2026-03-03"
+    "submitted_date": "2026-03-03",
+    "merged": "2026-03-10"
+  },
+  {
+    "id": "pr-fix-source-metadata-m-n",
+    "title": "Enrich source metadata for 8 families (Merriweather Sans–NTR)",
+    "description": "Batch covering M-N range: 8 font families with per-family commits. Each commit contains METADATA.pb + upstream_info.md.",
+    "type": "metadata_fix",
+    "priority": "high",
+    "branch": "fix-source-metadata-m-n",
+    "families_count": 8,
+    "status": "submitted",
+    "created": "2026-03-12",
+    "pr_url": "https://github.com/google/fonts/pull/10352",
+    "submitted_date": "2026-03-12"
+  },
+  {
+    "id": "pr-fix-source-metadata-o-p",
+    "title": "Enrich source metadata for 13 O/P font families",
+    "description": "Batch covering O-P range: 13 font families with per-family commits. Each commit contains METADATA.pb + upstream_info.md.",
+    "type": "metadata_fix",
+    "priority": "high",
+    "branch": "fix-source-metadata-o-p",
+    "families_count": 13,
+    "status": "submitted",
+    "created": "2026-03-12",
+    "pr_url": "https://github.com/google/fonts/pull/10353",
+    "submitted_date": "2026-03-12"
+  },
+  {
+    "id": "pr-fix-source-metadata-q-r-s",
+    "title": "Enrich source metadata for 60 Q/R/S font families",
+    "description": "Batch covering Q-R-S range: 60 font families with per-family commits (56 commits, some families sharing repos committed together). Each commit contains METADATA.pb + upstream_info.md.",
+    "type": "metadata_fix",
+    "priority": "high",
+    "branch": "fix-source-metadata-q-r-s",
+    "families_count": 60,
+    "status": "submitted",
+    "created": "2026-03-12",
+    "pr_url": "https://github.com/google/fonts/pull/10354",
+    "submitted_date": "2026-03-12"
+  },
+  {
+    "id": "pr-fix-source-metadata-t-z",
+    "title": "Enrich source metadata for 49 T-Z font families",
+    "description": "Batch covering T-Z range: 49 font families with per-family commits (42 commits, some families sharing repos committed together). Each commit contains METADATA.pb + upstream_info.md.",
+    "type": "metadata_fix",
+    "priority": "high",
+    "branch": "fix-source-metadata-t-z",
+    "families_count": 49,
+    "status": "submitted",
+    "created": "2026-03-12",
+    "pr_url": "https://github.com/google/fonts/pull/10355",
+    "submitted_date": "2026-03-12"
+  },
+  {
+    "id": "pr-upstream-info-all-remaining",
+    "title": "Add upstream_info.md reports for 1017 font families",
+    "description": "Adds upstream_info.md source investigation reports for all 1017 remaining ofl/ families that did not yet have one. This achieves 100% upstream_info.md coverage across all 1975 family directories.",
+    "type": "documentation",
+    "priority": "high",
+    "branch": "add-upstream-info-reports",
+    "families_count": 1017,
+    "status": "submitted",
+    "created": "2026-03-12",
+    "pr_url": "https://github.com/google/fonts/pull/10356",
+    "submitted_date": "2026-03-12"
   }
 ]
