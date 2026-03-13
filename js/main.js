@@ -3163,9 +3163,17 @@ function renderBuildSystem(data) {
     setText('bs-identical', s['yes'] || s['identical'] || 0);
     setText('bs-compiler', s['compiler_version'] || s['compiler-version'] || 0);
     setText('bs-failure', s['build_failure'] || s['build-failure'] || 0);
-    const untested = (s.total_buildable || 0) - (s.processed || 0);
+    const totalBuildable = s.total_buildable || 0;
+    const untested = totalBuildable - (s.processed || 0);
     setText('bs-untested', untested >= 0 ? untested : 0);
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
+
+    // Coherence note
+    const coherenceEl = document.getElementById('bs-coherence');
+    if (coherenceEl) {
+        const other = total - (s.yes || 0) - (s.compiler_version || 0) - (s.build_failure || 0);
+        coherenceEl.textContent = `Families Tested (${total}) = Byte-Identical (${s.yes||0}) + Compiler Version (${s.compiler_version||0}) + Build Failure (${s.build_failure||0})${other > 0 ? ` + other (${other})` : ''}. Untested = ${totalBuildable} \u2212 ${total} = ${untested}. Reflow risk is counted per font file (a family may contain multiple files).`;
+    }
 
     // Reflow risk summary
     const rr = data.reflow_risk_summary || {};
