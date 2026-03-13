@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-13
-**Status**: Deep analysis complete — root causes identified across 11 families
+**Status**: Metrics analysis complete — reflow risk assessed for all 7 buildable families
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -87,6 +87,61 @@ Notable: Montserrat Italic and Merriweather Roman have **zero glyph differences*
 3. **Variable fonts are closer to matching** than static fonts, since they skip ttfautohint. Montserrat Italic and Merriweather Roman have identical glyph data — only metadata differs.
 
 4. **Build failures are real toolchain incompatibilities**, not metadata issues. The 4 failures (cabin, fraunces, poppins, worksans) need older fontmake/glyphsLib versions to build successfully.
+
+## Reflow Risk Analysis
+
+### Why this matters
+
+The fonts in google/fonts are what billions of users see via the Google Fonts API. If we ever need to rebuild a font from source (to fix a bug, add glyphs, update metadata), and the rebuild produces different metrics, we risk **text reflow** on existing websites — buttons overflow, text wraps differently, headings shift. This is the primary risk of non-identical rebuilds.
+
+### What we measure
+
+The deep analysis now includes a **metrics comparison** that checks:
+
+1. **Advance widths (hmtx)** — the horizontal width of each glyph. If these change for any glyph mapped to a Unicode codepoint, text using that character will reflow.
+2. **Line metrics (hhea + OS/2)** — ascent, descent, lineGap, sTypoAscender/Descender, usWinAscent/Descent. If these change, line spacing changes and all text reflows.
+
+We distinguish between:
+- **Shared-glyph width diffs**: A glyph present in both reference and rebuilt font has a different advance width. This is an actual reflow risk.
+- **Glyph name changes**: A glyph exists in one font but not the other (e.g., `fhook` renamed to `florin.1` by newer glyphsLib). This does NOT cause reflow because the cmap table maps Unicode codepoints to the correct glyph regardless of internal name.
+
+### Results
+
+| Family | Reflow Risk | Shared Width Diffs | Glyph Name Changes | Line Metrics |
+|--------|------------|-------------------|-------------------|--------------|
+| alata | **none** | 0 | 0 | identical |
+| anton | **none** | 0 | 0 | identical |
+| crimsontext | **none** | 0 | 119-689 per weight | identical |
+| spectral | **none** | 0 | 0 | identical |
+| montserrat | **none** | 0 | 8 per VF | identical |
+| cormorant | **none** | 0 | 32-48 per VF | identical |
+| merriweather | **none** | 0 | 2 per VF | identical |
+
+**All 7 successfully built families have zero reflow risk.** No shared glyphs change advance width, and all vertical line metrics (hhea ascent/descent/lineGap, OS/2 sTypoAscender/Descender/LineGap, usWinAscent/Descent) are identical between reference and rebuilt fonts.
+
+The glyph name changes (most pronounced in Crimson Text with 689 renamed glyphs) are internal naming differences from newer glyphsLib versions. These do not affect rendering because the Unicode-to-glyph mapping (cmap table) is resolved independently of internal glyph names.
+
+### Rebuild Safety Assessment
+
+Based on these findings, rebuilding from source with the current gftools toolchain would be safe for all 7 families in terms of text layout. The differences that exist are:
+
+| Difference Type | Visual Impact | Reflow Impact |
+|----------------|--------------|---------------|
+| ttfautohint version | Possible subtle hinting changes on Windows at small sizes | None |
+| Glyph coordinate rounding (<=1 unit) | Invisible | None |
+| Glyph name changes | None (internal only) | None |
+| Head timestamps | None | None |
+| Name table version strings | None | None |
+| OS/2 panose values | None (classification metadata) | None |
+
+### Risks to Monitor When Rebuilding
+
+Even with zero reflow risk in these 7 families, future rebuilds should always check:
+
+1. **hmtx advance widths** — the single most important metric. If any cmap-reachable glyph changes width, text reflows.
+2. **hhea/OS2 vertical metrics** — if line spacing changes, all text reflows everywhere.
+3. **GPOS kerning** — if kerning values change, character spacing changes subtly. Not captured by hmtx but can affect visual layout.
+4. **Subsetting behavior** — Google Fonts serves subsetted fonts. Changes to internal glyph IDs or table structure could affect how the subsetter splits the font, potentially changing which glyphs are available in which subset.
 
 ## Architecture
 

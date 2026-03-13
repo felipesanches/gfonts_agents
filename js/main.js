@@ -3167,6 +3167,24 @@ function renderBuildSystem(data) {
     setText('bs-untested', s['untested'] || 0);
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
 
+    // Reflow risk summary
+    const rr = data.reflow_risk_summary || {};
+    const noneCount = rr['none'] || 0;
+    const totalFiles = Object.values(rr).reduce((a, b) => a + b, 0);
+    const highCount = (rr['high'] || 0) + (rr['line-spacing-only'] || 0);
+    const reflowEl = document.getElementById('bs-reflow-detail');
+    if (reflowEl) {
+        if (totalFiles > 0 && highCount === 0) {
+            reflowEl.textContent = `All ${noneCount} font files across ${s['compiler-version'] || 0} buildable families have zero reflow risk. Advance widths and line metrics are identical — rebuilds are safe for text layout.`;
+        } else if (highCount > 0) {
+            reflowEl.textContent = `${highCount} of ${totalFiles} font files have potential reflow risk. Check advance width and line metric changes before rebuilding.`;
+            reflowEl.parentElement.style.background = '#fff3e0';
+            reflowEl.parentElement.style.borderLeftColor = '#e65100';
+        } else {
+            reflowEl.textContent = 'No reflow data yet.';
+        }
+    }
+
     // Investigation report (rendered from markdown)
     const reportContainer = document.getElementById('build-system-report');
     if (reportContainer) {
@@ -3239,12 +3257,20 @@ function renderBuildSystem(data) {
                     detail += `</div>`;
                 }
                 if (hint.ref && hint.ref !== hint.built) {
-                    // Extract just the ttfautohint version part
                     const refV = (hint.ref.match(/ttfautohint \(([^)]+)\)/) || [])[1] || '';
                     const builtV = (hint.built.match(/ttfautohint \(([^)]+)\)/) || [])[1] || '';
                     if (refV || builtV) {
                         detail += `<div style="color:#888;font-size:0.9em;">ttfautohint: ${escapeHtml(refV || 'none')} → ${escapeHtml(builtV || 'none')}</div>`;
                     }
+                }
+                const met = fdata.metrics || {};
+                if (met.reflow_risk) {
+                    const riskColor = met.reflow_risk === 'none' ? '#2e7d32' : met.reflow_risk === 'minimal' ? '#f57f17' : '#c62828';
+                    let riskDetail = `Reflow risk: <strong style="color:${riskColor}">${escapeHtml(met.reflow_risk)}</strong>`;
+                    if (met.hmtx_glyph_name_changes > 0) {
+                        riskDetail += ` (${met.hmtx_glyph_name_changes} glyph renames)`;
+                    }
+                    detail += `<div style="font-size:0.9em;">${riskDetail}</div>`;
                 }
                 detail += `</div>`;
                 return detail;

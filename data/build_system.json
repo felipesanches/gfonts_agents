@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T01:29:25.373565",
+  "generated_at": "2026-03-13T02:07:42.349354",
   "registry_version": 1,
   "total_families": 11,
   "summary": {
@@ -14,6 +14,9 @@
     "compiler-output-diff": 4,
     "metadata-only": 2
   },
+  "reflow_risk_summary": {
+    "none": 28
+  },
   "families": [
     {
       "family": "alata",
@@ -23,7 +26,7 @@
       "notes": "Phase 1 test. 6 differing tables (GDEF, GPOS, GSUB, glyf, head, name).",
       "source_commit": "3b051d2a6181deba154717cfd6be409effe32ffa",
       "repository_url": "https://github.com/SorkinType/Alata",
-      "timestamp": "2026-03-13T01:15:29.567713+00:00",
+      "timestamp": "2026-03-13T01:55:04.578545+00:00",
       "files": {
         "Alata-Regular.ttf": {
           "byte_identical": false,
@@ -48,6 +51,12 @@
             "coord_diffs": 10,
             "rounding_only": 1,
             "coord_count_diffs": 4
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         }
       }
@@ -60,7 +69,7 @@
       "notes": "Phase 2. Single static TTF. 10 differing tables including DSIG.",
       "source_commit": "beb92fcad87808357123bb66881b4032dc96efe7",
       "repository_url": "https://github.com/googlefonts/AntonFont",
-      "timestamp": "2026-03-13T01:15:55.960962+00:00",
+      "timestamp": "2026-03-13T01:55:30.104487+00:00",
       "files": {
         "Anton-Regular.ttf": {
           "byte_identical": false,
@@ -89,6 +98,12 @@
             "coord_diffs": 5,
             "rounding_only": 0,
             "coord_count_diffs": 5
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         }
       }
@@ -108,7 +123,7 @@
       "notes": "Phase 2. Variable .glyphs, config named build.yaml. 14-15 differing tables.",
       "source_commit": "cc1bfb51ce6568cb3abf9199ab718d543f6fa189",
       "repository_url": "https://github.com/CatharsisFonts/Cormorant",
-      "timestamp": "2026-03-13T01:24:14.332226+00:00",
+      "timestamp": "2026-03-13T02:03:21.509870+00:00",
       "files": {
         "Cormorant-Italic[wght].ttf": {
           "byte_identical": false,
@@ -141,6 +156,12 @@
             "coord_diffs": 28,
             "rounding_only": 1,
             "coord_count_diffs": 0
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 32,
+            "line_metrics_identical": true
           }
         },
         "Cormorant[wght].ttf": {
@@ -175,6 +196,12 @@
             "coord_diffs": 37,
             "rounding_only": 1,
             "coord_count_diffs": 0
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 48,
+            "line_metrics_identical": true
           }
         }
       }
@@ -187,7 +214,7 @@
       "notes": "Phase 2. Static 6 files. 16 differing tables across all weights.",
       "source_commit": "4f1458ae64c6c0d9c5fdfbf5095c7fabe0fa063f",
       "repository_url": "https://github.com/googlefonts/Crimson",
-      "timestamp": "2026-03-13T01:17:06.381309+00:00",
+      "timestamp": "2026-03-13T01:56:35.474679+00:00",
       "files": {
         "CrimsonText-Bold.ttf": {
           "byte_identical": false,
@@ -222,6 +249,12 @@
             "coord_diffs": 2,
             "rounding_only": 0,
             "coord_count_diffs": 2
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 689,
+            "line_metrics_identical": true
           }
         },
         "CrimsonText-BoldItalic.ttf": {
@@ -257,6 +290,12 @@
             "coord_diffs": 3,
             "rounding_only": 1,
             "coord_count_diffs": 2
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 119,
+            "line_metrics_identical": true
           }
         },
         "CrimsonText-Italic.ttf": {
@@ -292,6 +331,12 @@
             "coord_diffs": 2,
             "rounding_only": 0,
             "coord_count_diffs": 2
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 119,
+            "line_metrics_identical": true
           }
         },
         "CrimsonText-Regular.ttf": {
@@ -327,6 +372,12 @@
             "coord_diffs": 2,
             "rounding_only": 1,
             "coord_count_diffs": 1
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 689,
+            "line_metrics_identical": true
           }
         },
         "CrimsonText-SemiBold.ttf": {
@@ -362,6 +413,12 @@
             "coord_diffs": 2,
             "rounding_only": 1,
             "coord_count_diffs": 1
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 689,
+            "line_metrics_identical": true
           }
         },
         "CrimsonText-SemiBoldItalic.ttf": {
@@ -397,6 +454,12 @@
             "coord_diffs": 1,
             "rounding_only": 0,
             "coord_count_diffs": 1
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 119,
+            "line_metrics_identical": true
           }
         }
       }
@@ -416,7 +479,7 @@
       "notes": "Phase 2. Variable 3-axis .glyphspackage. 12-13 differing tables.",
       "source_commit": "e586023aa0fe1dba9a7d4ec80fa8b9e546cb7ecf",
       "repository_url": "https://github.com/EbenSorkin/Merriweather4",
-      "timestamp": "2026-03-13T01:27:41.035424+00:00",
+      "timestamp": "2026-03-13T02:06:34.633637+00:00",
       "files": {
         "Merriweather[opsz,wdth,wght].ttf": {
           "byte_identical": false,
@@ -448,6 +511,12 @@
             "coord_diffs": 0,
             "rounding_only": 0,
             "coord_count_diffs": 0
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
           }
         },
         "Merriweather-Italic[opsz,wdth,wght].ttf": {
@@ -479,6 +548,12 @@
             "coord_diffs": 1,
             "rounding_only": 0,
             "coord_count_diffs": 1
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
           }
         }
       }
@@ -491,7 +566,7 @@
       "notes": "Phase 2. Variable .glyphs. 20 differing tables.",
       "source_commit": "cc8daf2e7085006b9c112542fc82b58afc13521d",
       "repository_url": "https://github.com/JulietaUla/Montserrat",
-      "timestamp": "2026-03-13T01:23:44.371883+00:00",
+      "timestamp": "2026-03-13T02:02:52.170810+00:00",
       "files": {
         "Montserrat[wght].ttf": {
           "byte_identical": false,
@@ -530,6 +605,12 @@
             "coord_diffs": 6,
             "rounding_only": 1,
             "coord_count_diffs": 5
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
           }
         },
         "Montserrat-Italic[wght].ttf": {
@@ -569,6 +650,12 @@
             "coord_diffs": 0,
             "rounding_only": 0,
             "coord_count_diffs": 0
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
           }
         }
       }
@@ -588,7 +675,7 @@
       "notes": "Phase 2. Static 14 files .designspace+.ufo. Only 4-5 differing tables (OS/2, glyf, head, name) \u2014 closest to matching.",
       "source_commit": "dbc06862d7030eedb1b01b60cdad8f6102f4ddfa",
       "repository_url": "https://github.com/productiontype/Spectral",
-      "timestamp": "2026-03-13T01:20:56.577017+00:00",
+      "timestamp": "2026-03-13T02:00:09.859816+00:00",
       "files": {
         "Spectral-ExtraLight.ttf": {
           "byte_identical": false,
@@ -611,6 +698,12 @@
             "coord_diffs": 55,
             "rounding_only": 7,
             "coord_count_diffs": 46
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-ExtraLightItalic.ttf": {
@@ -635,6 +728,12 @@
             "coord_diffs": 45,
             "rounding_only": 3,
             "coord_count_diffs": 42
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-Light.ttf": {
@@ -658,6 +757,12 @@
             "coord_diffs": 43,
             "rounding_only": 3,
             "coord_count_diffs": 38
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-LightItalic.ttf": {
@@ -682,6 +787,12 @@
             "coord_diffs": 45,
             "rounding_only": 1,
             "coord_count_diffs": 43
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-Regular.ttf": {
@@ -705,6 +816,12 @@
             "coord_diffs": 50,
             "rounding_only": 7,
             "coord_count_diffs": 41
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-Italic.ttf": {
@@ -729,6 +846,12 @@
             "coord_diffs": 44,
             "rounding_only": 5,
             "coord_count_diffs": 39
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-Medium.ttf": {
@@ -752,6 +875,12 @@
             "coord_diffs": 58,
             "rounding_only": 14,
             "coord_count_diffs": 42
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-MediumItalic.ttf": {
@@ -776,6 +905,12 @@
             "coord_diffs": 45,
             "rounding_only": 7,
             "coord_count_diffs": 38
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-SemiBold.ttf": {
@@ -800,6 +935,12 @@
             "coord_diffs": 56,
             "rounding_only": 12,
             "coord_count_diffs": 42
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-SemiBoldItalic.ttf": {
@@ -824,6 +965,12 @@
             "coord_diffs": 77,
             "rounding_only": 21,
             "coord_count_diffs": 55
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-Bold.ttf": {
@@ -847,6 +994,12 @@
             "coord_diffs": 38,
             "rounding_only": 4,
             "coord_count_diffs": 32
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-BoldItalic.ttf": {
@@ -871,6 +1024,12 @@
             "coord_diffs": 56,
             "rounding_only": 6,
             "coord_count_diffs": 48
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-ExtraBold.ttf": {
@@ -894,6 +1053,12 @@
             "coord_diffs": 46,
             "rounding_only": 3,
             "coord_count_diffs": 40
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         },
         "Spectral-ExtraBoldItalic.ttf": {
@@ -918,6 +1083,12 @@
             "coord_diffs": 56,
             "rounding_only": 4,
             "coord_count_diffs": 52
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_shared_width_diffs": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
           }
         }
       }
