@@ -794,8 +794,73 @@
     "message": "Built and deployed the Reproducible Font Build System (build_tools/reproducible_build.py on build_system branch of google/fonts). The system downloads source snapshots from GitHub, builds with gftools-builder, and performs multi-level comparison: SHA256 hash, TTX table-by-table diff, deep structural analysis (ttfautohint version, per-glyph coordinates, advance widths, line metrics, reflow risk). After processing 142 of 1,266 buildable families: 19 byte-identical (13%), 66 compiler-version (46%), 55 build-failure (39%), 2 near-identical (name-table/timestamp). Only 1 font file (Artifika) has genuine reflow risk (NBSP advance width differs by 150 units). Fixed a bug where find_built_font() picked up old reference binaries from upstream repos' references/ directories (caused Alkalami false positive). Added dedicated Build System page to the gfonts_agents dashboard with summary cards, coherence explanation, and investigation report."
   },
   {
+    "timestamp": "2026-03-13T13:00:00-03:00",
+    "role": "user",
+    "message": "The environment is a QEMU/KVM virtual machine with /mnt/shared mounted via virtiofs. We need to investigate the 'Too many open files' error that crashed the build system."
+  },
+  {
+    "timestamp": "2026-03-13T13:30:00-03:00",
+    "role": "user",
+    "message": "I want you to save a report of this investigation to the website. Then I'll try option A (drop VFS caches). If that does not fully solve the problem, we may try other options in the future."
+  },
+  {
+    "timestamp": "2026-03-13T13:45:00-03:00",
+    "role": "user",
+    "message": "Also please mention on the website how would one resize a qcow2 image, if we ever choose to do so."
+  },
+  {
     "timestamp": "2026-03-13T14:00:00-03:00",
+    "role": "user",
+    "message": "I want to be slightly more secure within the VM. Please write a tiny C wrapper or a shell script that only performs the cache drop, and then give fsanches NOPASSWD access to that specific script instead of the generic tee binary."
+  },
+  {
+    "timestamp": "2026-03-13T14:30:00-03:00",
     "role": "assistant",
-    "message": "Investigated and mitigated a virtiofs file descriptor accumulation issue. The QEMU/KVM VM's /mnt/shared virtiofs mount caused virtiofsd on the host to accumulate FDs (one per file accessed by the guest, held until FUSE FORGET). Extracting large tarballs (e.g., Anek monorepo with 66,677 files) caused virtiofsd FDs to grow monotonically until system failure (ENFILE). Mitigation: created /usr/local/sbin/drop-caches (root-owned script, NOPASSWD sudo) that drops VFS caches every 5 families, triggering FUSE FORGET to release virtiofsd FDs. The fix works — subsequent batches completed all 50 families without crashes. Also fixed build-failure caching: families that fail to build now write a minimal comparison_report.json so they aren't retried every batch (archivo was timing out at 10 min and being rebuilt every batch)."
+    "message": "Investigated and mitigated a virtiofs file descriptor accumulation issue. The QEMU/KVM VM's /mnt/shared virtiofs mount caused virtiofsd on the host to accumulate FDs (one per file accessed by the guest, held until FUSE FORGET). Extracting large tarballs (e.g., Anek monorepo with 66,677 files) caused virtiofsd FDs to grow monotonically until system failure (ENFILE). Mitigation: created /usr/local/sbin/drop-caches (root-owned script, NOPASSWD sudo) that drops VFS caches every 5 families, triggering FUSE FORGET to release virtiofsd FDs. The fix works — subsequent batches completed all 50 families without crashes."
+  },
+  {
+    "timestamp": "2026-03-13T15:00:00-03:00",
+    "role": "user",
+    "message": "I am seeing on the website: 103 families tested, 18 Byte-identical, 41 Compiler Version, 42 Build Failure, 1163 Untested and 1 of 78 font files with potential reflow risk. I would like to have a brief description of the relationship of these numbers. Are there expressions that we can use to ensure the numbers are coherent?"
+  },
+  {
+    "timestamp": "2026-03-13T15:15:00-03:00",
+    "role": "assistant",
+    "message": "Added coherence explanation to the Build System dashboard. Families Tested = Byte-Identical + Compiler Version + Build Failure + other. Untested = 1266 - Tested. Reflow risk is counted per font file (a family may contain multiple files), so those numbers are on a different scale."
+  },
+  {
+    "timestamp": "2026-03-13T15:30:00-03:00",
+    "role": "user",
+    "message": "I'm seeing '0 Families Tested' on the website. That looks like a bug."
+  },
+  {
+    "timestamp": "2026-03-13T15:35:00-03:00",
+    "role": "assistant",
+    "message": "Fixed Build System dashboard bug: JS was looking for data.total_families and keys like 'compiler-version' (dashes), but the JSON uses data.summary.processed and 'compiler_version' (underscores)."
+  },
+  {
+    "timestamp": "2026-03-13T15:40:00-03:00",
+    "role": "user",
+    "message": "There are some blank lines on the black code boxes on the website (e.g., the XML filesystem block has double-spaced lines)."
+  },
+  {
+    "timestamp": "2026-03-13T15:45:00-03:00",
+    "role": "assistant",
+    "message": "Fixed double newlines in code blocks: each code line was getting two newlines (one from explicit push and one from out.join). Removed the redundant one."
+  },
+  {
+    "timestamp": "2026-03-13T16:00:00-03:00",
+    "role": "user",
+    "message": "When you finish this batch (or in parallel, if you can), please help me update the Message Log and the Weekly update slide on the website."
+  },
+  {
+    "timestamp": "2026-03-13T16:30:00-03:00",
+    "role": "assistant",
+    "message": "Updated Message Log with all work from 2026-03-13. Added build system and virtiofs work detection to weekly status extraction (recognizes 'reproducible build' and 'virtiofs' keywords). Updated default planned items. Fixed build-failure caching so timed-out families (like archivo, >10 min) write a minimal comparison_report.json and aren't retried every batch. Total: 147 families processed, 97 reports."
+  },
+  {
+    "timestamp": "2026-03-13T17:00:00-03:00",
+    "role": "user",
+    "message": "I noticed that you have not been storing the full set of messages in the Message Log. Let's reinforce the policy that everything I say to you must be logged."
   }
 ]
