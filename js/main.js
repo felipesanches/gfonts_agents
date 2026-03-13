@@ -3159,12 +3159,13 @@ async function loadBuildSystem() {
 function renderBuildSystem(data) {
     // Summary cards
     const s = data.summary || {};
-    const total = data.total_families || 0;
+    const total = s.processed || s.total_buildable || 0;
     setText('bs-total', total);
-    setText('bs-identical', s['yes'] || 0);
-    setText('bs-compiler', s['compiler-version'] || 0);
-    setText('bs-failure', s['build-failure'] || 0);
-    setText('bs-untested', s['untested'] || 0);
+    setText('bs-identical', s['yes'] || s['identical'] || 0);
+    setText('bs-compiler', s['compiler_version'] || s['compiler-version'] || 0);
+    setText('bs-failure', s['build_failure'] || s['build-failure'] || 0);
+    const untested = (s.total_buildable || 0) - (s.processed || 0);
+    setText('bs-untested', untested >= 0 ? untested : 0);
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
 
     // Reflow risk summary
@@ -3175,7 +3176,7 @@ function renderBuildSystem(data) {
     const reflowEl = document.getElementById('bs-reflow-detail');
     if (reflowEl) {
         if (totalFiles > 0 && highCount === 0) {
-            reflowEl.textContent = `All ${noneCount} font files across ${s['compiler-version'] || 0} buildable families have zero reflow risk. Advance widths and line metrics are identical — rebuilds are safe for text layout.`;
+            reflowEl.textContent = `All ${noneCount} font files across ${s['compiler_version'] || s['compiler-version'] || 0} buildable families have zero reflow risk. Advance widths and line metrics are identical — rebuilds are safe for text layout.`;
         } else if (highCount > 0) {
             reflowEl.textContent = `${highCount} of ${totalFiles} font files have potential reflow risk. Check advance width and line metric changes before rebuilding.`;
             reflowEl.parentElement.style.background = '#fff3e0';
