@@ -2568,7 +2568,6 @@ function simpleMarkdownToHtml(md) {
         }
         if (inCodeBlock) {
             out.push(esc(line));
-            out.push('\n');
             continue;
         }
 
