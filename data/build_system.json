@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T01:08:02.572280",
+  "generated_at": "2026-03-13T01:29:25.373565",
   "registry_version": 1,
   "total_families": 11,
   "summary": {
@@ -7,6 +7,12 @@
     "build-failure": 4,
     "yes": 0,
     "untested": 0
+  },
+  "root_cause_summary": {
+    "ttfautohint-version + other": 11,
+    "ttfautohint-version": 11,
+    "compiler-output-diff": 4,
+    "metadata-only": 2
   },
   "families": [
     {
@@ -17,7 +23,7 @@
       "notes": "Phase 1 test. 6 differing tables (GDEF, GPOS, GSUB, glyf, head, name).",
       "source_commit": "3b051d2a6181deba154717cfd6be409effe32ffa",
       "repository_url": "https://github.com/SorkinType/Alata",
-      "timestamp": "2026-03-13T00:51:52.889476+00:00",
+      "timestamp": "2026-03-13T01:15:29.567713+00:00",
       "files": {
         "Alata-Regular.ttf": {
           "byte_identical": false,
@@ -29,7 +35,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 1.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1038,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 10,
+            "rounding_only": 1,
+            "coord_count_diffs": 4
+          }
         }
       }
     },
@@ -41,7 +60,7 @@
       "notes": "Phase 2. Single static TTF. 10 differing tables including DSIG.",
       "source_commit": "beb92fcad87808357123bb66881b4032dc96efe7",
       "repository_url": "https://github.com/googlefonts/AntonFont",
-      "timestamp": "2026-03-13T00:52:18.460048+00:00",
+      "timestamp": "2026-03-13T01:15:55.960962+00:00",
       "files": {
         "Anton-Regular.ttf": {
           "byte_identical": false,
@@ -57,7 +76,20 @@
             "name",
             "post"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 2.116; ttfautohint (v1.8.3)",
+            "built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1373,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 5,
+            "rounding_only": 0,
+            "coord_count_diffs": 5
+          }
         }
       }
     },
@@ -76,7 +108,7 @@
       "notes": "Phase 2. Variable .glyphs, config named build.yaml. 14-15 differing tables.",
       "source_commit": "cc1bfb51ce6568cb3abf9199ab718d543f6fa189",
       "repository_url": "https://github.com/CatharsisFonts/Cormorant",
-      "timestamp": "2026-03-13T01:00:02.407747+00:00",
+      "timestamp": "2026-03-13T01:24:14.332226+00:00",
       "files": {
         "Cormorant-Italic[wght].ttf": {
           "byte_identical": false,
@@ -96,7 +128,20 @@
             "name",
             "post"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "ttfautohint": {
+            "ref": "Version 4.000",
+            "built": "Version 4.000"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1874,
+            "ref_only": 16,
+            "built_only": 16,
+            "coord_diffs": 28,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          }
         },
         "Cormorant[wght].ttf": {
           "byte_identical": false,
@@ -117,7 +162,20 @@
             "name",
             "post"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "ttfautohint": {
+            "ref": "Version 4.000",
+            "built": "Version 4.000"
+          },
+          "glyph_stats": {
+            "total_glyphs": 3213,
+            "ref_only": 24,
+            "built_only": 24,
+            "coord_diffs": 37,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          }
         }
       }
     },
@@ -129,7 +187,7 @@
       "notes": "Phase 2. Static 6 files. 16 differing tables across all weights.",
       "source_commit": "4f1458ae64c6c0d9c5fdfbf5095c7fabe0fa063f",
       "repository_url": "https://github.com/googlefonts/Crimson",
-      "timestamp": "2026-03-13T00:53:23.590909+00:00",
+      "timestamp": "2026-03-13T01:17:06.381309+00:00",
       "files": {
         "CrimsonText-Bold.ttf": {
           "byte_identical": false,
@@ -151,7 +209,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 700,
+            "ref_only": 18,
+            "built_only": 671,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 2
+          }
         },
         "CrimsonText-BoldItalic.ttf": {
           "byte_identical": false,
@@ -173,7 +244,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 702,
+            "ref_only": 18,
+            "built_only": 101,
+            "coord_diffs": 3,
+            "rounding_only": 1,
+            "coord_count_diffs": 2
+          }
         },
         "CrimsonText-Italic.ttf": {
           "byte_identical": false,
@@ -195,7 +279,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 702,
+            "ref_only": 18,
+            "built_only": 101,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 2
+          }
         },
         "CrimsonText-Regular.ttf": {
           "byte_identical": false,
@@ -217,7 +314,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 700,
+            "ref_only": 18,
+            "built_only": 671,
+            "coord_diffs": 2,
+            "rounding_only": 1,
+            "coord_count_diffs": 1
+          }
         },
         "CrimsonText-SemiBold.ttf": {
           "byte_identical": false,
@@ -239,7 +349,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 700,
+            "ref_only": 18,
+            "built_only": 671,
+            "coord_diffs": 2,
+            "rounding_only": 1,
+            "coord_count_diffs": 1
+          }
         },
         "CrimsonText-SemiBoldItalic.ttf": {
           "byte_identical": false,
@@ -261,7 +384,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 702,
+            "ref_only": 18,
+            "built_only": 101,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          }
         }
       }
     },
@@ -280,7 +416,7 @@
       "notes": "Phase 2. Variable 3-axis .glyphspackage. 12-13 differing tables.",
       "source_commit": "e586023aa0fe1dba9a7d4ec80fa8b9e546cb7ecf",
       "repository_url": "https://github.com/EbenSorkin/Merriweather4",
-      "timestamp": "2026-03-13T01:03:16.752428+00:00",
+      "timestamp": "2026-03-13T01:27:41.035424+00:00",
       "files": {
         "Merriweather[opsz,wdth,wght].ttf": {
           "byte_identical": false,
@@ -299,7 +435,20 @@
             "name",
             "post"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "metadata-only",
+          "ttfautohint": {
+            "ref": "Version 2.100",
+            "built": "Version 2.100"
+          },
+          "glyph_stats": {
+            "total_glyphs": 2383,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          }
         },
         "Merriweather-Italic[opsz,wdth,wght].ttf": {
           "byte_identical": false,
@@ -317,7 +466,20 @@
             "name",
             "post"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "ttfautohint": {
+            "ref": "Version 2.101",
+            "built": "Version 2.101"
+          },
+          "glyph_stats": {
+            "total_glyphs": 2380,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          }
         }
       }
     },
@@ -329,7 +491,7 @@
       "notes": "Phase 2. Variable .glyphs. 20 differing tables.",
       "source_commit": "cc8daf2e7085006b9c112542fc82b58afc13521d",
       "repository_url": "https://github.com/JulietaUla/Montserrat",
-      "timestamp": "2026-03-13T00:56:03.974805+00:00",
+      "timestamp": "2026-03-13T01:23:44.371883+00:00",
       "files": {
         "Montserrat[wght].ttf": {
           "byte_identical": false,
@@ -355,7 +517,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "ttfautohint": {
+            "ref": "Version 9.000",
+            "built": "Version 9.000"
+          },
+          "glyph_stats": {
+            "total_glyphs": 2744,
+            "ref_only": 3,
+            "built_only": 5,
+            "coord_diffs": 6,
+            "rounding_only": 1,
+            "coord_count_diffs": 5
+          }
         },
         "Montserrat-Italic[wght].ttf": {
           "byte_identical": false,
@@ -381,7 +556,20 @@
             "post",
             "prep"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "metadata-only",
+          "ttfautohint": {
+            "ref": "Version 9.000",
+            "built": "Version 9.000"
+          },
+          "glyph_stats": {
+            "total_glyphs": 2788,
+            "ref_only": 3,
+            "built_only": 5,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          }
         }
       }
     },
@@ -400,7 +588,7 @@
       "notes": "Phase 2. Static 14 files .designspace+.ufo. Only 4-5 differing tables (OS/2, glyf, head, name) \u2014 closest to matching.",
       "source_commit": "dbc06862d7030eedb1b01b60cdad8f6102f4ddfa",
       "repository_url": "https://github.com/productiontype/Spectral",
-      "timestamp": "2026-03-13T00:59:35.531293+00:00",
+      "timestamp": "2026-03-13T01:20:56.577017+00:00",
       "files": {
         "Spectral-ExtraLight.ttf": {
           "byte_identical": false,
@@ -410,7 +598,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 55,
+            "rounding_only": 7,
+            "coord_count_diffs": 46
+          }
         },
         "Spectral-ExtraLightItalic.ttf": {
           "byte_identical": false,
@@ -421,7 +622,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 45,
+            "rounding_only": 3,
+            "coord_count_diffs": 42
+          }
         },
         "Spectral-Light.ttf": {
           "byte_identical": false,
@@ -431,7 +645,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 43,
+            "rounding_only": 3,
+            "coord_count_diffs": 38
+          }
         },
         "Spectral-LightItalic.ttf": {
           "byte_identical": false,
@@ -442,7 +669,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 45,
+            "rounding_only": 1,
+            "coord_count_diffs": 43
+          }
         },
         "Spectral-Regular.ttf": {
           "byte_identical": false,
@@ -452,7 +692,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 50,
+            "rounding_only": 7,
+            "coord_count_diffs": 41
+          }
         },
         "Spectral-Italic.ttf": {
           "byte_identical": false,
@@ -463,7 +716,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 44,
+            "rounding_only": 5,
+            "coord_count_diffs": 39
+          }
         },
         "Spectral-Medium.ttf": {
           "byte_identical": false,
@@ -473,7 +739,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 58,
+            "rounding_only": 14,
+            "coord_count_diffs": 42
+          }
         },
         "Spectral-MediumItalic.ttf": {
           "byte_identical": false,
@@ -484,7 +763,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 45,
+            "rounding_only": 7,
+            "coord_count_diffs": 38
+          }
         },
         "Spectral-SemiBold.ttf": {
           "byte_identical": false,
@@ -495,7 +787,20 @@
             "hmtx",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 56,
+            "rounding_only": 12,
+            "coord_count_diffs": 42
+          }
         },
         "Spectral-SemiBoldItalic.ttf": {
           "byte_identical": false,
@@ -506,7 +811,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 77,
+            "rounding_only": 21,
+            "coord_count_diffs": 55
+          }
         },
         "Spectral-Bold.ttf": {
           "byte_identical": false,
@@ -516,7 +834,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 38,
+            "rounding_only": 4,
+            "coord_count_diffs": 32
+          }
         },
         "Spectral-BoldItalic.ttf": {
           "byte_identical": false,
@@ -527,7 +858,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 56,
+            "rounding_only": 6,
+            "coord_count_diffs": 48
+          }
         },
         "Spectral-ExtraBold.ttf": {
           "byte_identical": false,
@@ -537,7 +881,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 46,
+            "rounding_only": 3,
+            "coord_count_diffs": 40
+          }
         },
         "Spectral-ExtraBoldItalic.ttf": {
           "byte_identical": false,
@@ -548,7 +905,20 @@
             "head",
             "name"
           ],
-          "mismatch_category": "compiler-version"
+          "mismatch_category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 56,
+            "rounding_only": 4,
+            "coord_count_diffs": 52
+          }
         }
       }
     },

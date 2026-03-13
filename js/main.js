@@ -3205,20 +3205,49 @@ function renderBuildSystem(data) {
         'missing-source': '#616161',
     };
 
+    const rootCauseColors = {
+        'ttfautohint-version': '#1565c0',
+        'ttfautohint-version + other': '#5e35b1',
+        'compiler-output-diff': '#e65100',
+        'metadata-only': '#2e7d32',
+    };
+
     const rows = data.families.map(fam => {
         const status = fam.reproducible_build || 'untested';
         const color = statusColors[status] || '#9e9e9e';
 
-        // Build file details
+        // Build file details with deep analysis
         let filesHtml = '';
         if (fam.files) {
             const entries = Object.entries(fam.files);
             filesHtml = entries.map(([fname, fdata]) => {
                 if (fdata.byte_identical) {
-                    return `<div style="font-size:0.85em;color:#2e7d32;">${escapeHtml(fname)}: identical</div>`;
+                    return `<div style="font-size:0.85em;color:#2e7d32;margin-bottom:4px;">${escapeHtml(fname)}: <strong>identical</strong></div>`;
                 }
-                const tables = (fdata.differing_tables || []).join(', ');
-                return `<div style="font-size:0.85em;color:#666;">${escapeHtml(fname)}: ${fdata.differing_tables ? fdata.differing_tables.length : '?'} tables differ</div>`;
+                const gs = fdata.glyph_stats || {};
+                const rc = fdata.root_cause || '';
+                const rcColor = rootCauseColors[rc] || '#666';
+                const hint = fdata.ttfautohint || {};
+
+                let detail = `<div style="font-size:0.85em;margin-bottom:6px;border-left:3px solid ${rcColor};padding-left:8px;">`;
+                detail += `<div><strong>${escapeHtml(fname)}</strong></div>`;
+                if (rc) detail += `<div style="color:${rcColor};">Root cause: ${escapeHtml(rc)}</div>`;
+                if (gs.total_glyphs) {
+                    detail += `<div style="color:#666;">Glyphs: ${gs.coord_diffs || 0}/${gs.total_glyphs} differ`;
+                    if (gs.rounding_only) detail += ` (${gs.rounding_only} rounding-only)`;
+                    if (gs.coord_count_diffs) detail += ` (${gs.coord_count_diffs} coord-count)`;
+                    detail += `</div>`;
+                }
+                if (hint.ref && hint.ref !== hint.built) {
+                    // Extract just the ttfautohint version part
+                    const refV = (hint.ref.match(/ttfautohint \(([^)]+)\)/) || [])[1] || '';
+                    const builtV = (hint.built.match(/ttfautohint \(([^)]+)\)/) || [])[1] || '';
+                    if (refV || builtV) {
+                        detail += `<div style="color:#888;font-size:0.9em;">ttfautohint: ${escapeHtml(refV || 'none')} → ${escapeHtml(builtV || 'none')}</div>`;
+                    }
+                }
+                detail += `</div>`;
+                return detail;
             }).join('');
         }
 
@@ -3234,21 +3263,28 @@ function renderBuildSystem(data) {
             <td><strong>${escapeHtml(fam.family)}</strong></td>
             <td>${repoHtml}</td>
             <td><span style="color:${color};font-weight:600;">${escapeHtml(status)}</span></td>
-            <td style="font-size:0.85em;">${escapeHtml(fam.isolation)}</td>
             <td>${filesHtml}</td>
             <td style="font-size:0.85em;color:#666;">${escapeHtml(fam.notes)}</td>
         </tr>`;
     }).join('');
 
+    // Root cause summary
+    const rcSummary = data.root_cause_summary || {};
+    const rcHtml = Object.entries(rcSummary).map(([cause, count]) => {
+        const c = rootCauseColors[cause] || '#666';
+        return `<span style="color:${c};margin-right:1.5em;"><strong>${count}</strong> ${escapeHtml(cause)}</span>`;
+    }).join('');
+
     container.innerHTML = `
+        <h3>Root Cause Distribution (per font file)</h3>
+        <p style="margin-bottom:1.5em;">${rcHtml}</p>
         <table class="data-table" style="width:100%;">
             <thead>
                 <tr>
                     <th>Family</th>
                     <th>Repository</th>
                     <th>Status</th>
-                    <th>Isolation</th>
-                    <th>File Details</th>
+                    <th>Deep Analysis</th>
                     <th>Notes</th>
                 </tr>
             </thead>
