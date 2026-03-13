@@ -1,26 +1,26 @@
 {
   "summary": {
     "total_buildable": 1266,
-    "processed": 142,
+    "processed": 147,
     "yes": 19,
-    "compiler_version": 66,
-    "build_failure": 55,
+    "compiler_version": 69,
+    "build_failure": 56,
     "name_table": 1,
-    "timestamp_diff": 1,
+    "timestamp_diff": 2,
     "metadata_wrong": 0,
     "missing_source": 0
   },
   "root_cause_summary": {
-    "metadata-only": 26,
+    "metadata-only": 32,
     "unknown": 13,
     "ttfautohint-version + other": 42,
-    "compiler-output-diff": 45,
+    "compiler-output-diff": 47,
     "ttfautohint-version": 16
   },
   "reflow_risk_summary": {
-    "none": 128,
+    "none": 131,
     "low": 0,
-    "high": 1
+    "high": 6
   },
   "families": {
     "abeezee": {
@@ -1332,6 +1332,90 @@
           "reflow_risk": "none",
           "ttfautohint_ref": "Version 1.100",
           "ttfautohint_built": "Version 1.100"
+        }
+      }
+    },
+    "battambang": {
+      "status": "compiler-version",
+      "files": {
+        "Battambang-Thin.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "high",
+          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Battambang-Light.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "high",
+          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Battambang-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "high",
+          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Battambang-Bold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "high",
+          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Battambang-Black.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "high",
+          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "bbhbartle": {
+      "status": "compiler-version",
+      "files": {
+        "BBHBartle-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.000",
+          "ttfautohint_built": "Version 1.000"
+        }
+      }
+    },
+    "bbhbogle": {
+      "status": "timestamp-diff",
+      "files": {
+        "BBHBogle-Regular.ttf": {
+          "byte_identical": false,
+          "category": "timestamp-diff",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.000",
+          "ttfautohint_built": "Version 1.000"
+        }
+      }
+    },
+    "bbhhegarty": {
+      "status": "compiler-version",
+      "files": {
+        "BBHHegarty-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.000",
+          "ttfautohint_built": "Version 1.000"
         }
       }
     },
