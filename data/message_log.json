@@ -1052,5 +1052,20 @@
     "timestamp": "2026-03-13T19:35:00-03:00",
     "role": "user",
     "message": "Now help me update the weekly slide."
+  },
+  {
+    "timestamp": "2026-03-13T20:00:00-03:00",
+    "role": "assistant",
+    "message": "Updated weekly slide: improved extractStatusFromMessages to detect build system, virtiofs, dashboard, policy work. Extended window to capture all Friday work. Slide now shows 5 items: Build System page, virtiofs mitigation, 11 missing policies fixed, policy deduplication, Reproducible Build System (147 families, 18 byte-identical). Committed and pushed."
+  },
+  {
+    "timestamp": "2026-03-13T20:05:00-03:00",
+    "role": "user",
+    "message": "resume work on another batch"
+  },
+  {
+    "timestamp": "2026-03-13T20:10:00-03:00",
+    "role": "assistant",
+    "message": "Started Batch 7: 50 families. 131 GB free on /mnt/shared. Running reproducible_build.py --batch --limit 50."
   }
 ]
