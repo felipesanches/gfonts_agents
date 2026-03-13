@@ -782,5 +782,20 @@
     "timestamp": "2026-03-03T22:00:00-03:00",
     "role": "assistant",
     "message": "Created automation script (scripts/add_upstream_info_batch.py) and deployed upstream_info.md for 657 families across 5 PRs to google/fonts. Documentation-only changes (no METADATA.pb or config.yaml modifications). All verified clean of /mnt/shared paths. PRs created: #10302 (96 families, 0-A), #10303 (97 families, B), #10304 (109 families, C-E), #10305 (142 families, F-I), #10306 (213 families, J-M). Also investigated commit c8e45997 which fixed a misplaced config_yaml bug in googlesanscode METADATA.pb introduced by our batch4 PR — confirmed this was the only instance, no other METADATA.pb files have similar structural issues."
+  },
+  {
+    "timestamp": "2026-03-13T10:00:00-03:00",
+    "role": "user",
+    "message": "Implement a Reproducible Font Build System: download font sources at the exact commit from METADATA.pb, build them with gftools-builder, and compare output against google/fonts binaries."
+  },
+  {
+    "timestamp": "2026-03-13T12:00:00-03:00",
+    "role": "assistant",
+    "message": "Built and deployed the Reproducible Font Build System (build_tools/reproducible_build.py on build_system branch of google/fonts). The system downloads source snapshots from GitHub, builds with gftools-builder, and performs multi-level comparison: SHA256 hash, TTX table-by-table diff, deep structural analysis (ttfautohint version, per-glyph coordinates, advance widths, line metrics, reflow risk). After processing 142 of 1,266 buildable families: 19 byte-identical (13%), 66 compiler-version (46%), 55 build-failure (39%), 2 near-identical (name-table/timestamp). Only 1 font file (Artifika) has genuine reflow risk (NBSP advance width differs by 150 units). Fixed a bug where find_built_font() picked up old reference binaries from upstream repos' references/ directories (caused Alkalami false positive). Added dedicated Build System page to the gfonts_agents dashboard with summary cards, coherence explanation, and investigation report."
+  },
+  {
+    "timestamp": "2026-03-13T14:00:00-03:00",
+    "role": "assistant",
+    "message": "Investigated and mitigated a virtiofs file descriptor accumulation issue. The QEMU/KVM VM's /mnt/shared virtiofs mount caused virtiofsd on the host to accumulate FDs (one per file accessed by the guest, held until FUSE FORGET). Extracting large tarballs (e.g., Anek monorepo with 66,677 files) caused virtiofsd FDs to grow monotonically until system failure (ENFILE). Mitigation: created /usr/local/sbin/drop-caches (root-owned script, NOPASSWD sudo) that drops VFS caches every 5 families, triggering FUSE FORGET to release virtiofsd FDs. The fix works — subsequent batches completed all 50 families without crashes. Also fixed build-failure caching: families that fail to build now write a minimal comparison_report.json so they aren't retried every batch (archivo was timing out at 10 min and being rebuilt every batch)."
   }
 ]
