@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadFontspectorTriage();
     loadNewCheckProposals();
     loadLHFTriageReport();
+    loadBuildSystem();
 });
 
 function initTabs() {
@@ -3139,4 +3140,124 @@ function renderLHFTriageReport(data) {
 
     renderIssueCards(implIssues, 'lhf-implement-list', '#2e7d32');
     renderIssueCards(rejectIssues, 'lhf-reject-list', '#c62828');
+}
+
+// ---------------------------------------------------------------------------
+// Build System
+// ---------------------------------------------------------------------------
+
+async function loadBuildSystem() {
+    try {
+        const response = await fetch('data/build_system.json');
+        const data = await response.json();
+        renderBuildSystem(data);
+    } catch (error) {
+        console.error('Error loading build system data:', error);
+    }
+}
+
+function renderBuildSystem(data) {
+    // Summary cards
+    const s = data.summary || {};
+    const total = data.total_families || 0;
+    setText('bs-total', total);
+    setText('bs-identical', s['yes'] || 0);
+    setText('bs-compiler', s['compiler-version'] || 0);
+    setText('bs-failure', s['build-failure'] || 0);
+    setText('bs-untested', s['untested'] || 0);
+    setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
+
+    // Investigation report (rendered from markdown)
+    const reportContainer = document.getElementById('build-system-report');
+    if (reportContainer) {
+        fetch('data/reproducible-build-system.md')
+            .then(r => r.text())
+            .then(md => {
+                reportContainer.innerHTML = `
+                    <details>
+                        <summary style="cursor:pointer;font-size:1.1em;">
+                            <strong>Investigation Report</strong>
+                            <span style="color:#666; margin-left:1em; font-size:0.9em;">Full methodology and analysis</span>
+                        </summary>
+                        <div style="margin-top:1em; padding:1em; background:#f8f9fa; border-radius:6px; font-size:0.95em; line-height:1.6;">
+                            ${simpleMarkdownToHtml(md)}
+                        </div>
+                    </details>
+                `;
+            })
+            .catch(() => {});
+    }
+
+    // Family table
+    const container = document.getElementById('build-system-table-container');
+    if (!container || !data.families) return;
+
+    const statusColors = {
+        'yes': '#2e7d32',
+        'compiler-version': '#e65100',
+        'build-failure': '#c62828',
+        'timestamp-diff': '#558b2f',
+        'hinting-diff': '#f57f17',
+        'name-table': '#ef6c00',
+        'dsig-diff': '#7cb342',
+        'source-mismatch': '#b71c1c',
+        'metadata-stanza-wrong': '#880e4f',
+        'missing-source': '#616161',
+    };
+
+    const rows = data.families.map(fam => {
+        const status = fam.reproducible_build || 'untested';
+        const color = statusColors[status] || '#9e9e9e';
+
+        // Build file details
+        let filesHtml = '';
+        if (fam.files) {
+            const entries = Object.entries(fam.files);
+            filesHtml = entries.map(([fname, fdata]) => {
+                if (fdata.byte_identical) {
+                    return `<div style="font-size:0.85em;color:#2e7d32;">${escapeHtml(fname)}: identical</div>`;
+                }
+                const tables = (fdata.differing_tables || []).join(', ');
+                return `<div style="font-size:0.85em;color:#666;">${escapeHtml(fname)}: ${fdata.differing_tables ? fdata.differing_tables.length : '?'} tables differ</div>`;
+            }).join('');
+        }
+
+        // Repo link
+        let repoHtml = '';
+        if (fam.repository_url) {
+            const url = fam.repository_url;
+            const short = url.replace('https://github.com/', '');
+            repoHtml = `<a href="${escapeHtml(url)}" target="_blank" style="font-size:0.85em;">${escapeHtml(short)}</a>`;
+        }
+
+        return `<tr>
+            <td><strong>${escapeHtml(fam.family)}</strong></td>
+            <td>${repoHtml}</td>
+            <td><span style="color:${color};font-weight:600;">${escapeHtml(status)}</span></td>
+            <td style="font-size:0.85em;">${escapeHtml(fam.isolation)}</td>
+            <td>${filesHtml}</td>
+            <td style="font-size:0.85em;color:#666;">${escapeHtml(fam.notes)}</td>
+        </tr>`;
+    }).join('');
+
+    container.innerHTML = `
+        <table class="data-table" style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Family</th>
+                    <th>Repository</th>
+                    <th>Status</th>
+                    <th>Isolation</th>
+                    <th>File Details</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+        </table>
+    `;
+}
+
+function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
 }

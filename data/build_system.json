@@ -1,0 +1,563 @@
+{
+  "generated_at": "2026-03-13T01:08:02.572280",
+  "registry_version": 1,
+  "total_families": 11,
+  "summary": {
+    "compiler-version": 7,
+    "build-failure": 4,
+    "yes": 0,
+    "untested": 0
+  },
+  "families": [
+    {
+      "family": "alata",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 1 test. 6 differing tables (GDEF, GPOS, GSUB, glyf, head, name).",
+      "source_commit": "3b051d2a6181deba154717cfd6be409effe32ffa",
+      "repository_url": "https://github.com/SorkinType/Alata",
+      "timestamp": "2026-03-13T00:51:52.889476+00:00",
+      "files": {
+        "Alata-Regular.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "anton",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 2. Single static TTF. 10 differing tables including DSIG.",
+      "source_commit": "beb92fcad87808357123bb66881b4032dc96efe7",
+      "repository_url": "https://github.com/googlefonts/AntonFont",
+      "timestamp": "2026-03-13T00:52:18.460048+00:00",
+      "files": {
+        "Anton-Regular.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "DSIG",
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "glyf",
+            "head",
+            "hhea",
+            "name",
+            "post"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "cabin",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "Phase 2. config.yaml override references .ufo masters that don't exist at the recorded commit. The .designspace files reference Cabin-Regular.ufo etc. but only .glyphs sources are present."
+    },
+    {
+      "family": "cormorant",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 2. Variable .glyphs, config named build.yaml. 14-15 differing tables.",
+      "source_commit": "cc1bfb51ce6568cb3abf9199ab718d543f6fa189",
+      "repository_url": "https://github.com/CatharsisFonts/Cormorant",
+      "timestamp": "2026-03-13T01:00:02.407747+00:00",
+      "files": {
+        "Cormorant-Italic[wght].ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "HVAR",
+            "STAT",
+            "cmap",
+            "fvar",
+            "glyf",
+            "gvar",
+            "head",
+            "hmtx",
+            "name",
+            "post"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Cormorant[wght].ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "HVAR",
+            "STAT",
+            "cmap",
+            "fvar",
+            "glyf",
+            "gvar",
+            "head",
+            "hhea",
+            "hmtx",
+            "name",
+            "post"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "crimsontext",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 2. Static 6 files. 16 differing tables across all weights.",
+      "source_commit": "4f1458ae64c6c0d9c5fdfbf5095c7fabe0fa063f",
+      "repository_url": "https://github.com/googlefonts/Crimson",
+      "timestamp": "2026-03-13T00:53:23.590909+00:00",
+      "files": {
+        "CrimsonText-Bold.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "OS/2",
+            "cmap",
+            "cvt ",
+            "fpgm",
+            "glyf",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "CrimsonText-BoldItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "OS/2",
+            "cmap",
+            "cvt ",
+            "fpgm",
+            "glyf",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "CrimsonText-Italic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "OS/2",
+            "cmap",
+            "cvt ",
+            "fpgm",
+            "glyf",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "CrimsonText-Regular.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "OS/2",
+            "cmap",
+            "cvt ",
+            "fpgm",
+            "glyf",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "CrimsonText-SemiBold.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "OS/2",
+            "cmap",
+            "cvt ",
+            "fpgm",
+            "glyf",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "CrimsonText-SemiBoldItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "OS/2",
+            "cmap",
+            "cvt ",
+            "fpgm",
+            "glyf",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "fraunces",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "Phase 2. fontmake compatibility check failed on designspace. Current fontmake finds master incompatibilities that older version may have tolerated."
+    },
+    {
+      "family": "merriweather",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 2. Variable 3-axis .glyphspackage. 12-13 differing tables.",
+      "source_commit": "e586023aa0fe1dba9a7d4ec80fa8b9e546cb7ecf",
+      "repository_url": "https://github.com/EbenSorkin/Merriweather4",
+      "timestamp": "2026-03-13T01:03:16.752428+00:00",
+      "files": {
+        "Merriweather[opsz,wdth,wght].ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "HVAR",
+            "STAT",
+            "fvar",
+            "glyf",
+            "gvar",
+            "head",
+            "hmtx",
+            "name",
+            "post"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Merriweather-Italic[opsz,wdth,wght].ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "HVAR",
+            "STAT",
+            "glyf",
+            "gvar",
+            "head",
+            "hmtx",
+            "name",
+            "post"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "montserrat",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 2. Variable .glyphs. 20 differing tables.",
+      "source_commit": "cc8daf2e7085006b9c112542fc82b58afc13521d",
+      "repository_url": "https://github.com/JulietaUla/Montserrat",
+      "timestamp": "2026-03-13T00:56:03.974805+00:00",
+      "files": {
+        "Montserrat[wght].ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "HVAR",
+            "STAT",
+            "cmap",
+            "cvar",
+            "cvt ",
+            "fpgm",
+            "fvar",
+            "glyf",
+            "gvar",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Montserrat-Italic[wght].ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GDEF",
+            "GPOS",
+            "GSUB",
+            "GlyphOrder",
+            "HVAR",
+            "STAT",
+            "cmap",
+            "cvar",
+            "cvt ",
+            "fpgm",
+            "fvar",
+            "glyf",
+            "gvar",
+            "head",
+            "hhea",
+            "hmtx",
+            "maxp",
+            "name",
+            "post",
+            "prep"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "poppins",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "Phase 2. AssertionError: Default source not found in Devanagari .glyphs. glyphsLib version incompatibility."
+    },
+    {
+      "family": "spectral",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "Phase 2. Static 14 files .designspace+.ufo. Only 4-5 differing tables (OS/2, glyf, head, name) \u2014 closest to matching.",
+      "source_commit": "dbc06862d7030eedb1b01b60cdad8f6102f4ddfa",
+      "repository_url": "https://github.com/productiontype/Spectral",
+      "timestamp": "2026-03-13T00:59:35.531293+00:00",
+      "files": {
+        "Spectral-ExtraLight.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-ExtraLightItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-Light.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-LightItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-Regular.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-Italic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-Medium.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-MediumItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-SemiBold.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "hmtx",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-SemiBoldItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-Bold.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-BoldItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-ExtraBold.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        },
+        "Spectral-ExtraBoldItalic.ttf": {
+          "byte_identical": false,
+          "differing_tables": [
+            "GPOS",
+            "OS/2",
+            "glyf",
+            "head",
+            "name"
+          ],
+          "mismatch_category": "compiler-version"
+        }
+      }
+    },
+    {
+      "family": "worksans",
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "Phase 2. fontmake error: 'naira.rvrn' glyph processing failure. glyphsLib/fontmake version incompatibility."
+    }
+  ]
+}
