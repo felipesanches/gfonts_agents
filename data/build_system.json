@@ -1,10 +1,10 @@
 {
   "summary": {
     "total_buildable": 1266,
-    "processed": 119,
+    "processed": 131,
     "yes": 19,
-    "compiler_version": 51,
-    "build_failure": 47,
+    "compiler_version": 61,
+    "build_failure": 49,
     "name_table": 1,
     "timestamp_diff": 1,
     "metadata_wrong": 0,
@@ -13,12 +13,12 @@
   "root_cause_summary": {
     "metadata-only": 25,
     "unknown": 13,
-    "ttfautohint-version + other": 38,
-    "compiler-output-diff": 32,
+    "ttfautohint-version + other": 39,
+    "compiler-output-diff": 41,
     "ttfautohint-version": 15
   },
   "reflow_risk_summary": {
-    "none": 109,
+    "none": 119,
     "low": 0,
     "high": 1
   },
@@ -31,8 +31,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -41,8 +39,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -76,8 +72,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 2,
           "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28]",
           "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -99,8 +93,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -114,8 +106,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.002",
           "ttfautohint_built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -124,8 +114,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.002",
           "ttfautohint_built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -139,8 +127,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 2,
           "ttfautohint_ref": "Version 1.103",
           "ttfautohint_built": "Version 1.104"
         }
@@ -219,8 +205,6 @@
           "category": "name-table",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.000",
           "ttfautohint_built": "Version 1.000"
         }
@@ -234,8 +218,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.005; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -249,8 +231,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.008; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -268,8 +248,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 18,
           "ttfautohint_ref": "Version 2.001;gftools[0.9.29]",
           "ttfautohint_built": "Version 2.001"
         },
@@ -278,8 +256,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 18,
           "ttfautohint_ref": "Version 2.001;gftools[0.9.29]",
           "ttfautohint_built": "Version 2.001"
         }
@@ -293,8 +269,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 342,
           "ttfautohint_ref": "Version 5.100",
           "ttfautohint_built": "Version 5.100"
         }
@@ -308,8 +282,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.111; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.111; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -323,8 +295,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 12,
           "ttfautohint_ref": "Version 2.003; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 2.003; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -338,8 +308,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.301; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.301; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -353,8 +321,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.300; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.300; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -368,8 +334,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 3.000",
           "ttfautohint_built": "Version 3.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -383,8 +347,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.010; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -398,8 +360,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.010",
           "ttfautohint_built": "Version 1.010"
         }
@@ -413,8 +373,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.110",
           "ttfautohint_built": "Version 1.110"
         }
@@ -428,8 +386,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 19,
           "ttfautohint_ref": "Version 1.018",
           "ttfautohint_built": "Version 1.018"
         },
@@ -438,8 +394,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 19,
           "ttfautohint_ref": "Version 1.016",
           "ttfautohint_built": "Version 1.016"
         }
@@ -453,8 +407,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 2,
           "ttfautohint_ref": "Version 1.100",
           "ttfautohint_built": "Version 1.100"
         },
@@ -463,8 +415,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.100",
           "ttfautohint_built": "Version 1.100"
         }
@@ -478,8 +428,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.100",
           "ttfautohint_built": "Version 1.100"
         },
@@ -488,8 +436,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.100",
           "ttfautohint_built": "Version 1.100"
         }
@@ -503,8 +449,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.018",
           "ttfautohint_built": "Version 1.018"
         },
@@ -513,8 +457,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.016",
           "ttfautohint_built": "Version 1.016"
         }
@@ -528,8 +470,6 @@
           "category": "timestamp-diff",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.213",
           "ttfautohint_built": "Version 1.213"
         }
@@ -547,8 +487,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.001",
           "ttfautohint_built": "Version 2.001"
         }
@@ -562,8 +500,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 8.100",
           "ttfautohint_built": "Version 8.100"
         },
@@ -572,8 +508,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 8.100",
           "ttfautohint_built": "Version 8.100"
         }
@@ -587,8 +521,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 8.100",
           "ttfautohint_built": "Version 8.100"
         },
@@ -597,8 +529,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 8.100",
           "ttfautohint_built": "Version 8.100"
         }
@@ -612,8 +542,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 6.101",
           "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -622,8 +550,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 6.101",
           "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -632,8 +558,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 6.101",
           "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -642,8 +566,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 6.101",
           "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -685,8 +607,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 3,
           "ttfautohint_ref": "Version 2.000",
           "ttfautohint_built": "Version 2.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -695,8 +615,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 3,
           "ttfautohint_ref": "Version 2.000",
           "ttfautohint_built": "Version 2.001; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -710,8 +628,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -725,8 +641,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.116; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -744,8 +658,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.116; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -759,8 +671,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 3.002",
           "ttfautohint_built": "Version 3.002"
         }
@@ -778,8 +688,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 3.002",
           "ttfautohint_built": "Version 3.002"
         },
@@ -788,8 +696,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 3.002",
           "ttfautohint_built": "Version 3.002"
         }
@@ -803,8 +709,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.100",
           "ttfautohint_built": "Version 1.100"
         }
@@ -818,8 +722,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 232,
           "ttfautohint_ref": "Version 1.101;gftools[0.9.23]",
           "ttfautohint_built": "Version 1.101"
         }
@@ -833,8 +735,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.001;gftools[0.9.33]",
           "ttfautohint_built": "Version 1.001"
         }
@@ -852,8 +752,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "high",
-          "hmtx_shared_width_diffs": 1,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.102; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.102; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -867,8 +765,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 3.002",
           "ttfautohint_built": "Version 3.002"
         },
@@ -877,8 +773,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 3.002",
           "ttfautohint_built": "Version 3.002"
         }
@@ -892,8 +786,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -902,8 +794,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -912,8 +802,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -922,8 +810,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -932,8 +818,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -942,8 +826,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -952,8 +834,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -962,8 +842,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -972,8 +850,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -982,8 +858,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -992,8 +866,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1002,8 +874,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1012,8 +882,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1022,8 +890,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1032,8 +898,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1042,8 +906,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 4,
           "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1061,8 +923,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1086,8 +946,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1096,8 +954,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1106,8 +962,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1116,8 +970,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1131,8 +983,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.001",
           "ttfautohint_built": "Version 2.001"
         },
@@ -1141,8 +991,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.001",
           "ttfautohint_built": "Version 2.001"
         }
@@ -1156,8 +1004,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.001",
           "ttfautohint_built": "Version 2.001"
         },
@@ -1166,8 +1012,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.001",
           "ttfautohint_built": "Version 2.001"
         }
@@ -1181,8 +1025,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.102; ttfautohint (v1.8.3)",
           "ttfautohint_built": "Version 1.102; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1206,8 +1048,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.002",
           "ttfautohint_built": "Version 1.002"
         },
@@ -1216,8 +1056,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.002",
           "ttfautohint_built": "Version 1.002"
         }
@@ -1231,8 +1069,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.000",
           "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1246,8 +1082,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1261,8 +1095,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
         }
@@ -1272,6 +1104,140 @@
       "status": "build-failure",
       "files": {}
     },
+    "bakbakone": {
+      "status": "compiler-version",
+      "files": {
+        "BakbakOne-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "ballet": {
+      "status": "build-failure",
+      "files": {}
+    },
+    "baloo2": {
+      "status": "compiler-version",
+      "files": {
+        "Baloo2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "baloobhai2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooBhai2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "baloobhaijaan2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooBhaijaan2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.701",
+          "ttfautohint_built": "Version 1.701"
+        }
+      }
+    },
+    "baloobhaina2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooBhaina2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "baloochettan2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooChettan2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "balooda2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooDa2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "baloopaaji2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooPaaji2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "balootamma2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooTamma2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "balootammudu2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooTammudu2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
     "cormorant": {
       "status": "compiler-version",
       "files": {
@@ -1280,8 +1246,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 32,
           "ttfautohint_ref": "Version 4.000",
           "ttfautohint_built": "Version 4.000"
         },
@@ -1290,8 +1254,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 48,
           "ttfautohint_ref": "Version 4.000",
           "ttfautohint_built": "Version 4.000"
         }
@@ -1305,8 +1267,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 689,
           "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
           "ttfautohint_built": "Version 1.100"
         },
@@ -1315,8 +1275,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 119,
           "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
           "ttfautohint_built": "Version 1.100"
         },
@@ -1325,8 +1283,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 119,
           "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
           "ttfautohint_built": "Version 1.100"
         },
@@ -1335,8 +1291,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 689,
           "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
           "ttfautohint_built": "Version 1.100"
         },
@@ -1345,8 +1299,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 689,
           "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
           "ttfautohint_built": "Version 1.100"
         },
@@ -1355,8 +1307,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 119,
           "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
           "ttfautohint_built": "Version 1.100"
         }
@@ -1370,8 +1320,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 2,
           "ttfautohint_ref": "Version 2.100",
           "ttfautohint_built": "Version 2.100"
         },
@@ -1380,8 +1328,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 2,
           "ttfautohint_ref": "Version 2.101",
           "ttfautohint_built": "Version 2.101"
         }
@@ -1395,8 +1341,6 @@
           "category": "compiler-version",
           "root_cause": "compiler-output-diff",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 8,
           "ttfautohint_ref": "Version 9.000",
           "ttfautohint_built": "Version 9.000"
         },
@@ -1405,8 +1349,6 @@
           "category": "compiler-version",
           "root_cause": "metadata-only",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 8,
           "ttfautohint_ref": "Version 9.000",
           "ttfautohint_built": "Version 9.000"
         }
@@ -1420,8 +1362,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1430,8 +1370,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1440,8 +1378,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1450,8 +1386,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1460,8 +1394,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1470,8 +1402,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1480,8 +1410,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1490,8 +1418,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1500,8 +1426,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1510,8 +1434,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1520,8 +1442,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1530,8 +1450,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1540,8 +1458,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
@@ -1550,8 +1466,6 @@
           "category": "compiler-version",
           "root_cause": "ttfautohint-version",
           "reflow_risk": "none",
-          "hmtx_shared_width_diffs": 0,
-          "hmtx_glyph_name_changes": 0,
           "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
           "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         }
