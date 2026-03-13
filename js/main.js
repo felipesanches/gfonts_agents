@@ -1046,6 +1046,22 @@ function extractStatusFromMessages(messages) {
     const planned = [];
     const questions = [];
     const seenPRs = new Set();
+    const seenCategories = new Set();
+
+    // Track cumulative stats across messages for build system
+    let maxFamiliesTested = 0;
+    let maxReports = 0;
+    let byteIdenticalCount = 0;
+    let buildFailureCount = 0;
+    let compilerVersionCount = 0;
+
+    // Helper to add a done item only once per category
+    function addDone(category, item) {
+        if (!seenCategories.has(category)) {
+            seenCategories.add(category);
+            done.push(item);
+        }
+    }
 
     // Analyze assistant messages for accomplishments
     messages.forEach(msg => {
@@ -1055,52 +1071,117 @@ function extractStatusFromMessages(messages) {
 
             // Detect completed work - PRs
             if (text.includes('created pr') || text.includes('submitted pr')) {
-                const prMatch = msgText.match(/PR #(\d+)/i);
-                if (prMatch && !seenPRs.has(prMatch[1])) {
-                    seenPRs.add(prMatch[1]);
-                    done.push({
-                        text: `Created PR #${prMatch[1]} for google/fonts`,
-                        links: [{
-                            text: `PR #${prMatch[1]}`,
-                            url: `https://github.com/google/fonts/pull/${prMatch[1]}`
-                        }]
-                    });
+                const prMatches = msgText.matchAll(/PR #(\d+)/gi);
+                for (const prMatch of prMatches) {
+                    if (!seenPRs.has(prMatch[1])) {
+                        seenPRs.add(prMatch[1]);
+                        done.push({
+                            text: `Created PR #${prMatch[1]} for google/fonts`,
+                            links: [{
+                                text: `PR #${prMatch[1]}`,
+                                url: `https://github.com/google/fonts/pull/${prMatch[1]}`
+                            }]
+                        });
+                    }
                 }
             }
+
+            // Designer biographies
             if (text.includes('added') && text.includes('designer')) {
                 const countMatch = msgText.match(/(\d+)\s+designer/i);
-                if (countMatch && !done.some(d => d.text && d.text.includes('designer biographies'))) {
-                    done.push({ text: `Researched and added ${countMatch[1]} designer biographies` });
+                if (countMatch) {
+                    addDone('designer', { text: `Researched and added ${countMatch[1]} designer biographies` });
                 }
             }
+
+            // Metadata enrichment
             if (text.includes('enrichment') || text.includes('bio.html')) {
-                if (!done.some(d => (d.text || d).includes('designer'))) {
-                    done.push({ text: 'Enriched designer metadata catalog' });
-                }
+                addDone('enrichment', { text: 'Enriched designer metadata catalog' });
             }
-            if (text.includes('implemented') || text.includes('added') && text.includes('tab')) {
+
+            // Feature implementation
+            if ((text.includes('implemented') || text.includes('added')) && text.includes('tab')) {
                 const feature = msgText.match(/added\s+(?:the\s+)?["']?([^"'\n]+)["']?\s+tab/i);
                 if (feature) {
-                    done.push({ text: `Implemented ${feature[1]} feature` });
+                    addDone('feature-' + feature[1], { text: `Implemented ${feature[1]} feature` });
                 }
             }
-            // Reproducible build system work
-            if (text.includes('reproducible') && text.includes('build')) {
-                const familyMatch = msgText.match(/(\d+)\s+of\s+[\d,]+\s+buildable families/i) ||
-                                    msgText.match(/processing\s+(\d+)/i) ||
-                                    msgText.match(/(\d+)\s+.*byte-identical/i);
-                if (familyMatch && !done.some(d => d.text && d.text.includes('Reproducible Build'))) {
-                    done.push({ text: `Reproducible Build System: tested ${familyMatch[1]} families` });
+
+            // Reproducible build system work — track cumulative numbers
+            if (text.includes('batch') && (text.includes('families') || text.includes('processed') || text.includes('complete'))) {
+                const familiesMatch = msgText.match(/(\d+)\s+families\s+processed/i) ||
+                                     msgText.match(/total[:\s]+(\d+)\s+families/i);
+                if (familiesMatch) {
+                    const n = parseInt(familiesMatch[1]);
+                    if (n > maxFamiliesTested) maxFamiliesTested = n;
                 }
+                const reportsMatch = msgText.match(/(\d+)\s+reports/i);
+                if (reportsMatch) {
+                    const n = parseInt(reportsMatch[1]);
+                    if (n > maxReports) maxReports = n;
+                }
+                const byteMatch = msgText.match(/(\d+)\s+byte-identical/i);
+                if (byteMatch) byteIdenticalCount = Math.max(byteIdenticalCount, parseInt(byteMatch[1]));
             }
+            if (text.includes('reproducible') && text.includes('build') && text.includes('implement')) {
+                seenCategories.add('build-system-impl');
+            }
+
             // virtiofs / infrastructure work
             if (text.includes('virtiofs') && (text.includes('mitigat') || text.includes('fix') || text.includes('investigat'))) {
-                if (!done.some(d => d.text && d.text.includes('virtiofs'))) {
-                    done.push({ text: 'Investigated and mitigated virtiofs FD accumulation issue' });
+                addDone('virtiofs', { text: 'Investigated and mitigated virtiofs FD accumulation issue (VFS cache drop)' });
+            }
+
+            // Dashboard / website improvements
+            if (text.includes('build system page') || text.includes('dedicated') && text.includes('page')) {
+                addDone('dashboard-page', { text: 'Added Build System page to gfonts_agents dashboard' });
+            }
+            if (text.includes('sidebar') && text.includes('navigation')) {
+                addDone('sidebar', { text: 'Replaced tab bar with hierarchical sidebar navigation' });
+            }
+
+            // Policy / CLAUDE.md work
+            if (text.includes('policy deduplication') || text.includes('tiered architecture') || text.includes('tier 1') && text.includes('tier 2')) {
+                addDone('policy-dedup', { text: 'Deduplicated policies across all repos (single source of truth architecture)' });
+            }
+            if (text.includes('missing policies') && text.includes('hub')) {
+                addDone('policy-gap', { text: 'Identified and fixed 11 missing policies in hub CLAUDE.md' });
+            }
+
+            // Investigation reports / upstream_info
+            if (text.includes('upstream_info') && text.includes('families')) {
+                const countMatch = msgText.match(/(\d+)\s+families/i);
+                if (countMatch) {
+                    addDone('upstream-info', { text: `Deployed upstream_info.md for ${countMatch[1]} families` });
                 }
+            }
+
+            // Investigation batches
+            if (text.includes('investigation report') || (text.includes('investigation') && text.includes('batch'))) {
+                const countMatch = msgText.match(/(\d+)\s+(?:investigation\s+)?reports?/i) ||
+                                   msgText.match(/(\d+)\s+families/i);
+                if (countMatch) {
+                    addDone('investigations', { text: `Completed investigation reports for font families` });
+                }
+            }
+
+            // Fontspector work
+            if (text.includes('fontspector') && (text.includes('port') || text.includes('test') || text.includes('check'))) {
+                addDone('fontspector', { text: 'Ported Python tests to Rust in fontspector' });
             }
         }
     });
+
+    // Add build system summary with cumulative stats
+    if (maxFamiliesTested > 0 || seenCategories.has('build-system-impl')) {
+        const parts = [`Reproducible Build System: tested ${maxFamiliesTested} families`];
+        const details = [];
+        if (byteIdenticalCount > 0) details.push(`${byteIdenticalCount} byte-identical`);
+        if (compilerVersionCount > 0) details.push(`${compilerVersionCount} compiler-version`);
+        if (buildFailureCount > 0) details.push(`${buildFailureCount} build failures`);
+        if (details.length > 0) parts[0] += ` (${details.join(', ')})`;
+        addDone('build-system', { text: parts[0] });
+    }
 
     // Remove duplicates based on text
     const seenTexts = new Set();
@@ -1115,12 +1196,13 @@ function extractStatusFromMessages(messages) {
     if (planned.length === 0) {
         planned.push({ text: 'Continue reproducible build testing (1,266 buildable families)' });
         planned.push({ text: 'Investigate build failures and reflow risk cases' });
+        planned.push({ text: 'Continue fontspector Python-to-Rust test migration' });
     }
 
     return {
-        done: uniqueDone.slice(0, 5),
-        planned: planned.slice(0, 3),
-        questions: questions.slice(0, 3)
+        done: uniqueDone.slice(0, 8),
+        planned: planned.slice(0, 5),
+        questions: questions.slice(0, 5)
     };
 }
 
