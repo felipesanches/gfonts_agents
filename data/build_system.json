@@ -1,24 +1,24 @@
 {
   "summary": {
     "total_buildable": 1266,
-    "processed": 103,
-    "yes": 18,
-    "compiler_version": 41,
-    "build_failure": 42,
+    "processed": 119,
+    "yes": 19,
+    "compiler_version": 51,
+    "build_failure": 47,
     "name_table": 1,
     "timestamp_diff": 1,
     "metadata_wrong": 0,
     "missing_source": 0
   },
   "root_cause_summary": {
-    "metadata-only": 19,
-    "unknown": 12,
-    "ttfautohint-version + other": 17,
-    "compiler-output-diff": 28,
-    "ttfautohint-version": 14
+    "metadata-only": 25,
+    "unknown": 13,
+    "ttfautohint-version + other": 38,
+    "compiler-output-diff": 32,
+    "ttfautohint-version": 15
   },
   "reflow_risk_summary": {
-    "none": 77,
+    "none": 109,
     "low": 0,
     "high": 1
   },
@@ -859,6 +859,196 @@
         }
       }
     },
+    "asap": {
+      "status": "compiler-version",
+      "files": {
+        "Asap[wdth,wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 3.002",
+          "ttfautohint_built": "Version 3.002"
+        },
+        "Asap-Italic[wdth,wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 3.002",
+          "ttfautohint_built": "Version 3.002"
+        }
+      }
+    },
+    "asapcondensed": {
+      "status": "compiler-version",
+      "files": {
+        "AsapCondensed-Black.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-BlackItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-Bold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-BoldItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-ExtraBold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-ExtraBoldItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-ExtraLight.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-ExtraLightItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-Light.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-LightItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-Medium.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-MediumItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-Italic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-SemiBold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AsapCondensed-SemiBoldItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 4,
+          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
     "asar": {
       "status": "build-failure",
       "files": {}
@@ -887,6 +1077,200 @@
           "root_cause": "unknown"
         }
       }
+    },
+    "atkinsonhyperlegible": {
+      "status": "compiler-version",
+      "files": {
+        "AtkinsonHyperlegible-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AtkinsonHyperlegible-Bold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AtkinsonHyperlegible-Italic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "AtkinsonHyperlegible-BoldItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "atkinsonhyperlegiblemono": {
+      "status": "compiler-version",
+      "files": {
+        "AtkinsonHyperlegibleMono-Italic[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.001",
+          "ttfautohint_built": "Version 2.001"
+        },
+        "AtkinsonHyperlegibleMono[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.001",
+          "ttfautohint_built": "Version 2.001"
+        }
+      }
+    },
+    "atkinsonhyperlegiblenext": {
+      "status": "compiler-version",
+      "files": {
+        "AtkinsonHyperlegibleNext[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.001",
+          "ttfautohint_built": "Version 2.001"
+        },
+        "AtkinsonHyperlegibleNext-Italic[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.001",
+          "ttfautohint_built": "Version 2.001"
+        }
+      }
+    },
+    "aubrey": {
+      "status": "compiler-version",
+      "files": {
+        "Aubrey-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.102; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.102; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "average": {
+      "status": "yes",
+      "files": {
+        "Average-Regular.ttf": {
+          "byte_identical": true,
+          "category": "yes",
+          "root_cause": "unknown"
+        }
+      }
+    },
+    "azeretmono": {
+      "status": "compiler-version",
+      "files": {
+        "AzeretMono[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.002",
+          "ttfautohint_built": "Version 1.002"
+        },
+        "AzeretMono-Italic[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.002",
+          "ttfautohint_built": "Version 1.002"
+        }
+      }
+    },
+    "bacasimeantique": {
+      "status": "compiler-version",
+      "files": {
+        "BacasimeAntique-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.000",
+          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "badeendisplay": {
+      "status": "compiler-version",
+      "files": {
+        "BadeenDisplay-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "badscript": {
+      "status": "compiler-version",
+      "files": {
+        "BadScript-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "bahiana": {
+      "status": "build-failure",
+      "files": {}
     },
     "cormorant": {
       "status": "compiler-version",
