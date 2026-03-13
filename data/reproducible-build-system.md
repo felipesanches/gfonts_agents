@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-13
-**Status**: Batch 1+2 — 73 families processed, 49 with reports (1,266 buildable total)
+**Status**: 103 families processed, 65 with comparison reports (1,266 buildable total)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -10,27 +10,27 @@ With 100% upstream_info.md coverage across all 1,975 ofl/ families now complete,
 
 The system downloads source snapshots from GitHub at the exact commit recorded in METADATA.pb, builds them with `gftools-builder`, and performs a multi-level comparison: SHA256 hash, TTX table-by-table diff, mismatch categorization, and deep structural analysis (ttfautohint version detection, per-glyph coordinate comparison, advance width and line metrics reflow risk assessment).
 
-## Current Results (73 families attempted, 49 with comparison reports)
+## Current Results (103 families attempted, 65 with comparison reports)
 
 ### Status Breakdown
 
-| Status | Count | % of reports | Meaning |
+| Status | Count | % of processed | Meaning |
 |--------|-------|---|---------|
-| **yes** (byte-identical) | 15 | 31% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 31 | 63% | Differences from fontmake/fontTools/ttfautohint version |
-| **name-table** | 1 | 2% | Only name table metadata differs |
-| **timestamp-diff** | 1 | 2% | Only head timestamps differ |
-| **build-failure** | 1 | 2% | gftools-builder failed (among families with reports) |
+| **yes** (byte-identical) | 18 | 17% | Rebuilt font is bit-for-bit identical to google/fonts |
+| **compiler-version** | 41 | 40% | Differences from fontmake/fontTools/ttfautohint version |
+| **build-failure** | 42 | 41% | gftools-builder failed |
+| **name-table** | 1 | 1% | Only name table metadata differs |
+| **timestamp-diff** | 1 | 1% | Only head timestamps differ |
 
-Additionally, **24 families** failed to build and have no comparison report (build logs only).
+Of the 103 families processed, 65 produced comparison reports. The remaining 38 failed to build (no output to compare).
 
-### Byte-Identical Families (15)
+### Byte-Identical Families (18)
 
 These families rebuild to **exactly the same binary** as what's in google/fonts:
 
-- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin
+- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, antonio, assistant
 
-The byte-identical rate improved from 14% (Batch 1) to **31%** after Batch 2. The Anek family (6 scripts, all byte-identical) demonstrates that recently onboarded families with modern build pipelines reproduce perfectly.
+The Anek family (7 scripts, all byte-identical) and other recently onboarded families demonstrate that modern build pipelines reproduce perfectly.
 
 ### Near-Identical Families (2)
 
@@ -43,14 +43,15 @@ These are effectively correct builds — the differences are trivial and don't a
 
 | Root Cause | Font Files | Description |
 |-----------|-----------|-------------|
-| compiler-output-diff | 18 | fontmake/glyphsLib produces slightly different outlines |
+| compiler-output-diff | 28 | fontmake/glyphsLib produces slightly different outlines |
+| metadata-only | 19 | Only name/head metadata differs, glyphs identical |
 | ttfautohint-version + other | 17 | ttfautohint version change plus minor outline diffs |
-| metadata-only | 15 | Only name/head metadata differs, glyphs identical |
-| ttfautohint-version | 12 | Pure ttfautohint version difference |
+| ttfautohint-version | 14 | Pure ttfautohint version difference |
+| unknown | 12 | Root cause not yet categorized |
 
-Key insight: **15 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
+Key insight: **19 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
 
-### Build Failure Analysis (24 families)
+### Build Failure Analysis (42 families, 41%)
 
 | Failure Type | Count | Families |
 |-------------|-------|----------|
@@ -83,10 +84,12 @@ We distinguish between:
 
 | Risk Level | Font Files | Meaning |
 |------------|-----------|---------|
-| **none** | 66 | Safe to rebuild — advance widths and line metrics identical |
-| **high** | 0 | No families currently flagged |
+| **none** | 77 | Safe to rebuild — advance widths and line metrics identical |
+| **high** | 1 | Artifika: 1 shared glyph with different advance width |
 
-**Zero reflow risk across all 66 font files with deep analysis.** Earlier, Alkalami was incorrectly flagged as high risk — see Bug Fix section below.
+**Artifika** is the only family with genuine reflow risk. The non-breaking space (`uni00A0`) has width 560 in the google/fonts binary but 410 in the rebuild (delta: 150 units). The regular `space` glyph is 560 in both. This appears to be caused by `gftools-fix-font` setting NBSP width to match the source's space width (410) rather than the post-processing width (560). Since NBSP is used in real text, rebuilding Artifika would cause text reflow at every non-breaking space.
+
+Earlier, Alkalami was incorrectly flagged as high risk — see Bug Fix section below.
 
 ### Bug Fix: Alkalami False Positive
 
@@ -114,15 +117,17 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 ## Key Insights
 
-1. **31% byte-identical rate is encouraging** (up from 14% in Batch 1). Recently onboarded families with modern build pipelines (like the Anek family) reproduce perfectly.
+1. **17% byte-identical rate is solid.** 18 of 103 families rebuild to the exact same binary. Rate will likely increase as more recently onboarded families are tested.
 
-2. **The ~33% build failure rate needs investigation.** Many failures are from toolchain version incompatibilities. The `"custom"` isolation mode (pinned venv) could resolve some.
+2. **41% build failure rate is the biggest challenge.** Many failures are from toolchain version incompatibilities (fontmake API changes, designspace compatibility). The `"custom"` isolation mode (pinned venv) could resolve some.
 
-3. **Reflow risk is extremely rare.** Zero of 66 font files show actual advance width or line metric changes. All compiler-version differences are cosmetic (outline coordinate changes that don't affect metrics).
+3. **Reflow risk is extremely rare but real.** Only 1 of 78 font files shows actual advance width changes (Artifika NBSP). All other compiler-version differences are cosmetic (outline coordinate changes that don't affect metrics).
 
-4. **15 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic.
+4. **19 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic.
 
 5. **The Alkalami false positive exposed a real bug** in how we locate built fonts. Upstream repos may ship old reference binaries that shadow the actual build output. This is now fixed.
+
+6. **virtiofs FD accumulation mitigated.** Dropping VFS caches every 5 families (via `/usr/local/sbin/drop-caches`) prevented the ENFILE crash that occurred during Batch 2's first run. The batch completed all 50 families without issues.
 
 ## Infrastructure: virtiofs File Descriptor Issue
 
