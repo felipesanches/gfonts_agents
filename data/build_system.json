@@ -1,1656 +1,1012 @@
 {
+  "last_updated": "2026-03-13T18:51:44.109088+00:00",
   "summary": {
+    "processed": 249,
     "total_buildable": 1266,
-    "processed": 147,
-    "yes": 19,
-    "compiler_version": 69,
-    "build_failure": 56,
-    "name_table": 1,
-    "timestamp_diff": 2,
-    "metadata_wrong": 0,
-    "missing_source": 0
+    "byte_identical": 25,
+    "compiler_version": 104,
+    "build_failure": 114,
+    "timestamp_diff": 4,
+    "name_table": 2,
+    "untested": 1017
   },
-  "root_cause_summary": {
-    "metadata-only": 32,
-    "unknown": 13,
-    "ttfautohint-version + other": 42,
-    "compiler-output-diff": 47,
-    "ttfautohint-version": 16
-  },
-  "reflow_risk_summary": {
-    "none": 131,
-    "low": 0,
-    "high": 6
-  },
-  "families": {
-    "abeezee": {
-      "status": "compiler-version",
-      "files": {
-        "ABeeZee-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "ABeeZee-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "aboreto": {
-      "status": "yes",
-      "files": {
-        "Aboreto-Regular.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "abyssinicasil": {
-      "status": "yes",
-      "files": {
-        "AbyssinicaSIL-Regular.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "adlamdisplay": {
-      "status": "compiler-version",
-      "files": {
-        "ADLaMDisplay-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28]",
-          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "afacad": {
-      "status": "yes",
-      "files": {}
-    },
-    "afacadflux": {
-      "status": "yes",
-      "files": {}
-    },
-    "agbalumo": {
-      "status": "compiler-version",
-      "files": {
-        "Agbalumo-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "agdasima": {
-      "status": "compiler-version",
-      "files": {
-        "Agdasima-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.002",
-          "ttfautohint_built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Agdasima-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.002",
-          "ttfautohint_built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "agudisplay": {
-      "status": "compiler-version",
-      "files": {
-        "AguDisplay[MORF].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.103",
-          "ttfautohint_built": "Version 1.104"
-        }
-      }
-    },
-    "akatab": {
-      "status": "yes",
-      "files": {
-        "Akatab-Regular.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        },
-        "Akatab-Medium.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        },
-        "Akatab-SemiBold.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        },
-        "Akatab-Bold.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        },
-        "Akatab-ExtraBold.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        },
-        "Akatab-Black.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "akayakanadaka": {
-      "status": "yes",
-      "files": {
-        "AkayaKanadaka-Regular.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "akayatelivigala": {
-      "status": "yes",
-      "files": {
-        "AkayaTelivigala-Regular.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "akshar": {
-      "status": "yes",
-      "files": {
-        "Akshar[wght].ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "alansans": {
-      "status": "name-table",
-      "files": {
-        "AlanSans[wght].ttf": {
-          "byte_identical": false,
-          "category": "name-table",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.000",
-          "ttfautohint_built": "Version 1.000"
-        }
-      }
-    },
-    "alata": {
-      "status": "compiler-version",
-      "files": {
-        "Alata-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.005; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "alatsi": {
-      "status": "compiler-version",
-      "files": {
-        "Alatsi-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.008; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "albertsans": {
-      "status": "yes",
-      "files": {}
-    },
-    "aleo": {
-      "status": "compiler-version",
-      "files": {
-        "Aleo[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001;gftools[0.9.29]",
-          "ttfautohint_built": "Version 2.001"
-        },
-        "Aleo-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001;gftools[0.9.29]",
-          "ttfautohint_built": "Version 2.001"
-        }
-      }
-    },
-    "alexandria": {
-      "status": "compiler-version",
-      "files": {
-        "Alexandria[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 5.100",
-          "ttfautohint_built": "Version 5.100"
-        }
-      }
-    },
-    "alexbrush": {
-      "status": "compiler-version",
-      "files": {
-        "AlexBrush-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.111; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.111; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "alice": {
-      "status": "compiler-version",
-      "files": {
-        "Alice-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.003; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 2.003; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "alike": {
-      "status": "compiler-version",
-      "files": {
-        "Alike-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.301; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.301; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "alikeangular": {
-      "status": "compiler-version",
-      "files": {
-        "AlikeAngular-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.300; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.300; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "alkalami": {
-      "status": "compiler-version",
-      "files": {
-        "Alkalami-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.000",
-          "ttfautohint_built": "Version 3.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "allison": {
-      "status": "compiler-version",
-      "files": {
-        "Allison-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.010; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "allkin": {
-      "status": "compiler-version",
-      "files": {
-        "Allkin-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.010",
-          "ttfautohint_built": "Version 1.010"
-        }
-      }
-    },
-    "allura": {
-      "status": "compiler-version",
-      "files": {
-        "Allura-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.110",
-          "ttfautohint_built": "Version 1.110"
-        }
-      }
-    },
-    "alumnisans": {
-      "status": "compiler-version",
-      "files": {
-        "AlumniSans[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.018",
-          "ttfautohint_built": "Version 1.018"
-        },
-        "AlumniSans-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.016",
-          "ttfautohint_built": "Version 1.016"
-        }
-      }
-    },
-    "alumnisanscollegiateone": {
-      "status": "compiler-version",
-      "files": {
-        "AlumniSansCollegiateOne-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "AlumniSansCollegiateOne-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        }
-      }
-    },
-    "alumnisanscollegiateonesc": {
-      "status": "compiler-version",
-      "files": {
-        "AlumniSansCollegiateOneSC-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "AlumniSansCollegiateOneSC-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        }
-      }
-    },
-    "alumnisanssc": {
-      "status": "compiler-version",
-      "files": {
-        "AlumniSansSC[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.018",
-          "ttfautohint_built": "Version 1.018"
-        },
-        "AlumniSansSC-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.016",
-          "ttfautohint_built": "Version 1.016"
-        }
-      }
-    },
-    "alyamama": {
-      "status": "timestamp-diff",
-      "files": {
-        "Alyamama[wght].ttf": {
-          "byte_identical": false,
-          "category": "timestamp-diff",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.213",
-          "ttfautohint_built": "Version 1.213"
-        }
-      }
-    },
-    "amiko": {
-      "status": "build-failure",
-      "files": {}
-    },
-    "anaheim": {
-      "status": "compiler-version",
-      "files": {
-        "Anaheim[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001",
-          "ttfautohint_built": "Version 2.001"
-        }
-      }
-    },
-    "ancizarsans": {
-      "status": "compiler-version",
-      "files": {
-        "AncizarSans[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 8.100",
-          "ttfautohint_built": "Version 8.100"
-        },
-        "AncizarSans-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 8.100",
-          "ttfautohint_built": "Version 8.100"
-        }
-      }
-    },
-    "ancizarserif": {
-      "status": "compiler-version",
-      "files": {
-        "AncizarSerif[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 8.100",
-          "ttfautohint_built": "Version 8.100"
-        },
-        "AncizarSerif-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 8.100",
-          "ttfautohint_built": "Version 8.100"
-        }
-      }
-    },
-    "andika": {
-      "status": "compiler-version",
-      "files": {
-        "Andika-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 6.101",
-          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Andika-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 6.101",
-          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Andika-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 6.101",
-          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Andika-BoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 6.101",
-          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "anekbangla": {
-      "status": "yes",
-      "files": {}
-    },
-    "anekdevanagari": {
-      "status": "yes",
-      "files": {}
-    },
-    "anekgujarati": {
-      "status": "yes",
-      "files": {}
-    },
-    "anekgurmukhi": {
-      "status": "yes",
-      "files": {}
-    },
-    "anekkannada": {
-      "status": "yes",
-      "files": {}
-    },
-    "aneklatin": {
-      "status": "yes",
-      "files": {}
-    },
-    "anekmalayalam": {
-      "status": "yes",
-      "files": {}
-    },
-    "annapurnasil": {
-      "status": "compiler-version",
-      "files": {
-        "AnnapurnaSIL-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.000",
-          "ttfautohint_built": "Version 2.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AnnapurnaSIL-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.000",
-          "ttfautohint_built": "Version 2.001; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "anta": {
-      "status": "compiler-version",
-      "files": {
-        "Anta-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "anton": {
-      "status": "compiler-version",
-      "files": {
-        "Anton-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.116; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "antonio": {
-      "status": "yes",
-      "files": {}
-    },
-    "antonsc": {
-      "status": "compiler-version",
-      "files": {
-        "AntonSC-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.116; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "anuphan": {
-      "status": "compiler-version",
-      "files": {
-        "Anuphan[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.002",
-          "ttfautohint_built": "Version 3.002"
-        }
-      }
-    },
-    "arapey": {
-      "status": "build-failure",
-      "files": {}
-    },
-    "archivonarrow": {
-      "status": "compiler-version",
-      "files": {
-        "ArchivoNarrow[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.002",
-          "ttfautohint_built": "Version 3.002"
-        },
-        "ArchivoNarrow-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.002",
-          "ttfautohint_built": "Version 3.002"
-        }
-      }
-    },
-    "areyouserious": {
-      "status": "compiler-version",
-      "files": {
-        "AreYouSerious-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        }
-      }
-    },
-    "arima": {
-      "status": "compiler-version",
-      "files": {
-        "Arima[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.101;gftools[0.9.23]",
-          "ttfautohint_built": "Version 1.101"
-        }
-      }
-    },
-    "aronesans": {
-      "status": "compiler-version",
-      "files": {
-        "AROneSans[ARRR,wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.001;gftools[0.9.33]",
-          "ttfautohint_built": "Version 1.001"
-        }
-      }
-    },
-    "arsenal": {
-      "status": "build-failure",
-      "files": {}
-    },
-    "artifika": {
-      "status": "compiler-version",
-      "files": {
-        "Artifika-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "high",
-          "ttfautohint_ref": "Version 1.102; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.102; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "asap": {
-      "status": "compiler-version",
-      "files": {
-        "Asap[wdth,wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.002",
-          "ttfautohint_built": "Version 3.002"
-        },
-        "Asap-Italic[wdth,wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.002",
-          "ttfautohint_built": "Version 3.002"
-        }
-      }
-    },
-    "asapcondensed": {
-      "status": "compiler-version",
-      "files": {
-        "AsapCondensed-Black.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-BlackItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-BoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-ExtraBold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-ExtraBoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-ExtraLight.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-ExtraLightItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-Light.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-LightItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-Medium.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-MediumItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-SemiBold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AsapCondensed-SemiBoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 3.001; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 3.001; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "asar": {
-      "status": "build-failure",
-      "files": {}
-    },
-    "asset": {
-      "status": "compiler-version",
-      "files": {
-        "Asset-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "assistant": {
-      "status": "yes",
-      "files": {
-        "Assistant[wght].ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "atkinsonhyperlegible": {
-      "status": "compiler-version",
-      "files": {
-        "AtkinsonHyperlegible-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AtkinsonHyperlegible-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AtkinsonHyperlegible-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "AtkinsonHyperlegible-BoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.006; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.006; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "atkinsonhyperlegiblemono": {
-      "status": "compiler-version",
-      "files": {
-        "AtkinsonHyperlegibleMono-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001",
-          "ttfautohint_built": "Version 2.001"
-        },
-        "AtkinsonHyperlegibleMono[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001",
-          "ttfautohint_built": "Version 2.001"
-        }
-      }
-    },
-    "atkinsonhyperlegiblenext": {
-      "status": "compiler-version",
-      "files": {
-        "AtkinsonHyperlegibleNext[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001",
-          "ttfautohint_built": "Version 2.001"
-        },
-        "AtkinsonHyperlegibleNext-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.001",
-          "ttfautohint_built": "Version 2.001"
-        }
-      }
-    },
-    "aubrey": {
-      "status": "compiler-version",
-      "files": {
-        "Aubrey-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.102; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.102; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "average": {
-      "status": "yes",
-      "files": {
-        "Average-Regular.ttf": {
-          "byte_identical": true,
-          "category": "yes",
-          "root_cause": "unknown"
-        }
-      }
-    },
-    "azeretmono": {
-      "status": "compiler-version",
-      "files": {
-        "AzeretMono[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.002",
-          "ttfautohint_built": "Version 1.002"
-        },
-        "AzeretMono-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.002",
-          "ttfautohint_built": "Version 1.002"
-        }
-      }
-    },
-    "bacasimeantique": {
-      "status": "compiler-version",
-      "files": {
-        "BacasimeAntique-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.000",
-          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "badeendisplay": {
-      "status": "compiler-version",
-      "files": {
-        "BadeenDisplay-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "badscript": {
-      "status": "compiler-version",
-      "files": {
-        "BadScript-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "bahiana": {
-      "status": "build-failure",
-      "files": {}
-    },
-    "bakbakone": {
-      "status": "compiler-version",
-      "files": {
-        "BakbakOne-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "ballet": {
-      "status": "build-failure",
-      "files": {}
-    },
-    "baloo2": {
-      "status": "compiler-version",
-      "files": {
-        "Baloo2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "baloobhai2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooBhai2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "baloobhaijaan2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooBhaijaan2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.701",
-          "ttfautohint_built": "Version 1.701"
-        }
-      }
-    },
-    "baloobhaina2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooBhaina2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "baloochettan2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooChettan2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "balooda2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooDa2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "baloopaaji2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooPaaji2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "balootamma2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooTamma2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "balootammudu2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooTammudu2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "baloothambi2": {
-      "status": "compiler-version",
-      "files": {
-        "BalooThambi2[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.700",
-          "ttfautohint_built": "Version 1.700"
-        }
-      }
-    },
-    "balsamiqsans": {
-      "status": "compiler-version",
-      "files": {
-        "BalsamiqSans-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
-          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "BalsamiqSans-BoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
-          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "BalsamiqSans-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
-          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "BalsamiqSans-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
-          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "bangers": {
-      "status": "compiler-version",
-      "files": {
-        "Bangers-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.100; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.31]",
-          "ttfautohint_built": "Version 2.100; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "baskervville": {
-      "status": "compiler-version",
-      "files": {
-        "Baskervville[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "Baskervville-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        }
-      }
-    },
-    "baskervvillesc": {
-      "status": "compiler-version",
-      "files": {
-        "BaskervvilleSC[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100",
-          "ttfautohint_built": "Version 1.100"
-        }
-      }
-    },
-    "battambang": {
-      "status": "compiler-version",
-      "files": {
-        "Battambang-Thin.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "high",
-          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Battambang-Light.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "high",
-          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Battambang-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "high",
-          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Battambang-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "high",
-          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Battambang-Black.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "high",
-          "ttfautohint_ref": "Version 8.002; ttfautohint (v1.8.3)",
-          "ttfautohint_built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
-    },
-    "bbhbartle": {
-      "status": "compiler-version",
-      "files": {
-        "BBHBartle-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.000",
-          "ttfautohint_built": "Version 1.000"
-        }
-      }
-    },
-    "bbhbogle": {
-      "status": "timestamp-diff",
-      "files": {
-        "BBHBogle-Regular.ttf": {
-          "byte_identical": false,
-          "category": "timestamp-diff",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.000",
-          "ttfautohint_built": "Version 1.000"
-        }
-      }
-    },
-    "bbhhegarty": {
-      "status": "compiler-version",
-      "files": {
-        "BBHHegarty-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.000",
-          "ttfautohint_built": "Version 1.000"
-        }
-      }
-    },
-    "cormorant": {
-      "status": "compiler-version",
-      "files": {
-        "Cormorant-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 4.000",
-          "ttfautohint_built": "Version 4.000"
-        },
-        "Cormorant[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 4.000",
-          "ttfautohint_built": "Version 4.000"
-        }
-      }
-    },
-    "crimsontext": {
-      "status": "compiler-version",
-      "files": {
-        "CrimsonText-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "CrimsonText-BoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "CrimsonText-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "CrimsonText-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "CrimsonText-SemiBold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
-          "ttfautohint_built": "Version 1.100"
-        },
-        "CrimsonText-SemiBoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
-          "ttfautohint_built": "Version 1.100"
-        }
-      }
-    },
-    "merriweather": {
-      "status": "compiler-version",
-      "files": {
-        "Merriweather[opsz,wdth,wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.100",
-          "ttfautohint_built": "Version 2.100"
-        },
-        "Merriweather-Italic[opsz,wdth,wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.101",
-          "ttfautohint_built": "Version 2.101"
-        }
-      }
-    },
-    "montserrat": {
-      "status": "compiler-version",
-      "files": {
-        "Montserrat[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "compiler-output-diff",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 9.000",
-          "ttfautohint_built": "Version 9.000"
-        },
-        "Montserrat-Italic[wght].ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "metadata-only",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 9.000",
-          "ttfautohint_built": "Version 9.000"
-        }
-      }
-    },
-    "spectral": {
-      "status": "compiler-version",
-      "files": {
-        "Spectral-ExtraLight.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-ExtraLightItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-Light.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-LightItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-Regular.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-Italic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-Medium.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-MediumItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-SemiBold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-SemiBoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-Bold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-BoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-ExtraBold.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version + other",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        },
-        "Spectral-ExtraBoldItalic.ttf": {
-          "byte_identical": false,
-          "category": "compiler-version",
-          "root_cause": "ttfautohint-version",
-          "reflow_risk": "none",
-          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-        }
-      }
+  "reflow_risks": [],
+  "families": [
+    {
+      "family": "42dotsans",
+      "status": "build-failure"
+    },
+    {
+      "family": "abeezee",
+      "status": "compiler-version"
+    },
+    {
+      "family": "abhayalibre",
+      "status": "build-failure"
+    },
+    {
+      "family": "aboreto",
+      "status": "yes"
+    },
+    {
+      "family": "abyssinicasil",
+      "status": "yes"
+    },
+    {
+      "family": "adlamdisplay",
+      "status": "compiler-version"
+    },
+    {
+      "family": "adventpro",
+      "status": "build-failure"
+    },
+    {
+      "family": "afacad",
+      "status": "yes"
+    },
+    {
+      "family": "afacadflux",
+      "status": "yes"
+    },
+    {
+      "family": "agbalumo",
+      "status": "compiler-version"
+    },
+    {
+      "family": "agdasima",
+      "status": "compiler-version"
+    },
+    {
+      "family": "agudisplay",
+      "status": "compiler-version"
+    },
+    {
+      "family": "akatab",
+      "status": "yes"
+    },
+    {
+      "family": "akayakanadaka",
+      "status": "yes"
+    },
+    {
+      "family": "akayatelivigala",
+      "status": "yes"
+    },
+    {
+      "family": "akshar",
+      "status": "yes"
+    },
+    {
+      "family": "alansans",
+      "status": "name-table"
+    },
+    {
+      "family": "alata",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alatsi",
+      "status": "compiler-version"
+    },
+    {
+      "family": "albertsans",
+      "status": "yes"
+    },
+    {
+      "family": "alegreya",
+      "status": "build-failure"
+    },
+    {
+      "family": "alegreyasans",
+      "status": "build-failure"
+    },
+    {
+      "family": "alegreyasanssc",
+      "status": "build-failure"
+    },
+    {
+      "family": "alegreyasc",
+      "status": "build-failure"
+    },
+    {
+      "family": "aleo",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alexandria",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alexbrush",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alice",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alike",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alikeangular",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alkalami",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alkatra",
+      "status": "build-failure"
+    },
+    {
+      "family": "allison",
+      "status": "compiler-version"
+    },
+    {
+      "family": "allkin",
+      "status": "compiler-version"
+    },
+    {
+      "family": "allura",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alumnisans",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alumnisanscollegiateone",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alumnisanscollegiateonesc",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alumnisansinlineone",
+      "status": "build-failure"
+    },
+    {
+      "family": "alumnisanspinstripe",
+      "status": "build-failure"
+    },
+    {
+      "family": "alumnisanssc",
+      "status": "compiler-version"
+    },
+    {
+      "family": "alyamama",
+      "status": "timestamp-diff"
+    },
+    {
+      "family": "amaranth",
+      "status": "build-failure"
+    },
+    {
+      "family": "amarna",
+      "status": "build-failure"
+    },
+    {
+      "family": "amaticsc",
+      "status": "build-failure"
+    },
+    {
+      "family": "amethysta",
+      "status": "build-failure"
+    },
+    {
+      "family": "amiko",
+      "status": "build-failure"
+    },
+    {
+      "family": "amiri",
+      "status": "build-failure"
+    },
+    {
+      "family": "amiriquran",
+      "status": "build-failure"
+    },
+    {
+      "family": "amita",
+      "status": "build-failure"
+    },
+    {
+      "family": "anaheim",
+      "status": "compiler-version"
+    },
+    {
+      "family": "ancizarsans",
+      "status": "compiler-version"
+    },
+    {
+      "family": "ancizarserif",
+      "status": "compiler-version"
+    },
+    {
+      "family": "andika",
+      "status": "compiler-version"
+    },
+    {
+      "family": "anekbangla",
+      "status": "yes"
+    },
+    {
+      "family": "anekdevanagari",
+      "status": "yes"
+    },
+    {
+      "family": "anekgujarati",
+      "status": "yes"
+    },
+    {
+      "family": "anekgurmukhi",
+      "status": "yes"
+    },
+    {
+      "family": "anekkannada",
+      "status": "yes"
+    },
+    {
+      "family": "aneklatin",
+      "status": "yes"
+    },
+    {
+      "family": "anekmalayalam",
+      "status": "yes"
+    },
+    {
+      "family": "anekodia",
+      "status": "build-failure"
+    },
+    {
+      "family": "anektamil",
+      "status": "build-failure"
+    },
+    {
+      "family": "anektelugu",
+      "status": "build-failure"
+    },
+    {
+      "family": "angkor",
+      "status": "build-failure"
+    },
+    {
+      "family": "annapurnasil",
+      "status": "compiler-version"
+    },
+    {
+      "family": "anta",
+      "status": "compiler-version"
+    },
+    {
+      "family": "anton",
+      "status": "compiler-version"
+    },
+    {
+      "family": "antonio",
+      "status": "yes"
+    },
+    {
+      "family": "antonsc",
+      "status": "compiler-version"
+    },
+    {
+      "family": "anuphan",
+      "status": "compiler-version"
+    },
+    {
+      "family": "anybody",
+      "status": "build-failure"
+    },
+    {
+      "family": "aoboshione",
+      "status": "build-failure"
+    },
+    {
+      "family": "arapey",
+      "status": "build-failure"
+    },
+    {
+      "family": "archivo",
+      "status": "build-failure"
+    },
+    {
+      "family": "archivoblack",
+      "status": "build-failure"
+    },
+    {
+      "family": "archivonarrow",
+      "status": "compiler-version"
+    },
+    {
+      "family": "areyouserious",
+      "status": "compiler-version"
+    },
+    {
+      "family": "arima",
+      "status": "compiler-version"
+    },
+    {
+      "family": "arizonia",
+      "status": "build-failure"
+    },
+    {
+      "family": "aronesans",
+      "status": "compiler-version"
+    },
+    {
+      "family": "arsenal",
+      "status": "build-failure"
+    },
+    {
+      "family": "arsenalsc",
+      "status": "build-failure"
+    },
+    {
+      "family": "artifika",
+      "status": "compiler-version"
+    },
+    {
+      "family": "arya",
+      "status": "build-failure"
+    },
+    {
+      "family": "asap",
+      "status": "compiler-version"
+    },
+    {
+      "family": "asapcondensed",
+      "status": "compiler-version"
+    },
+    {
+      "family": "asar",
+      "status": "build-failure"
+    },
+    {
+      "family": "asimovian",
+      "status": "build-failure"
+    },
+    {
+      "family": "asset",
+      "status": "compiler-version"
+    },
+    {
+      "family": "assistant",
+      "status": "yes"
+    },
+    {
+      "family": "astasans",
+      "status": "build-failure"
+    },
+    {
+      "family": "athiti",
+      "status": "build-failure"
+    },
+    {
+      "family": "atkinsonhyperlegible",
+      "status": "compiler-version"
+    },
+    {
+      "family": "atkinsonhyperlegiblemono",
+      "status": "compiler-version"
+    },
+    {
+      "family": "atkinsonhyperlegiblenext",
+      "status": "compiler-version"
+    },
+    {
+      "family": "atma",
+      "status": "build-failure"
+    },
+    {
+      "family": "aubrey",
+      "status": "compiler-version"
+    },
+    {
+      "family": "average",
+      "status": "yes"
+    },
+    {
+      "family": "azeretmono",
+      "status": "compiler-version"
+    },
+    {
+      "family": "b612",
+      "status": "build-failure"
+    },
+    {
+      "family": "b612mono",
+      "status": "build-failure"
+    },
+    {
+      "family": "babylonica",
+      "status": "build-failure"
+    },
+    {
+      "family": "bacasimeantique",
+      "status": "compiler-version"
+    },
+    {
+      "family": "badeendisplay",
+      "status": "compiler-version"
+    },
+    {
+      "family": "badscript",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bagelfatone",
+      "status": "build-failure"
+    },
+    {
+      "family": "bahiana",
+      "status": "build-failure"
+    },
+    {
+      "family": "bahianita",
+      "status": "build-failure"
+    },
+    {
+      "family": "baijamjuree",
+      "status": "build-failure"
+    },
+    {
+      "family": "bakbakone",
+      "status": "compiler-version"
+    },
+    {
+      "family": "ballet",
+      "status": "build-failure"
+    },
+    {
+      "family": "baloo2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baloobhai2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baloobhaijaan2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baloobhaina2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baloochettan2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "balooda2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baloopaaji2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "balootamma2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "balootammudu2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baloothambi2",
+      "status": "compiler-version"
+    },
+    {
+      "family": "balsamiqsans",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bangers",
+      "status": "compiler-version"
+    },
+    {
+      "family": "barlow",
+      "status": "build-failure"
+    },
+    {
+      "family": "barlowcondensed",
+      "status": "build-failure"
+    },
+    {
+      "family": "barlowsemicondensed",
+      "status": "build-failure"
+    },
+    {
+      "family": "barriecito",
+      "status": "build-failure"
+    },
+    {
+      "family": "barrio",
+      "status": "build-failure"
+    },
+    {
+      "family": "basic",
+      "status": "build-failure"
+    },
+    {
+      "family": "baskervville",
+      "status": "compiler-version"
+    },
+    {
+      "family": "baskervvillesc",
+      "status": "compiler-version"
+    },
+    {
+      "family": "battambang",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bayon",
+      "status": "build-failure"
+    },
+    {
+      "family": "bbhbartle",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bbhbogle",
+      "status": "timestamp-diff"
+    },
+    {
+      "family": "bbhhegarty",
+      "status": "compiler-version"
+    },
+    {
+      "family": "beaurivage",
+      "status": "build-failure"
+    },
+    {
+      "family": "bebasneue",
+      "status": "build-failure"
+    },
+    {
+      "family": "beiruti",
+      "status": "build-failure"
+    },
+    {
+      "family": "belanosima",
+      "status": "build-failure"
+    },
+    {
+      "family": "bellefair",
+      "status": "build-failure"
+    },
+    {
+      "family": "belleza",
+      "status": "yes"
+    },
+    {
+      "family": "bellota",
+      "status": "build-failure"
+    },
+    {
+      "family": "bellotatext",
+      "status": "build-failure"
+    },
+    {
+      "family": "benchnine",
+      "status": "build-failure"
+    },
+    {
+      "family": "benne",
+      "status": "compiler-version"
+    },
+    {
+      "family": "besley",
+      "status": "compiler-version"
+    },
+    {
+      "family": "betaniapatmos",
+      "status": "compiler-version"
+    },
+    {
+      "family": "betaniapatmosgdl",
+      "status": "compiler-version"
+    },
+    {
+      "family": "betaniapatmosguideline",
+      "status": "compiler-version"
+    },
+    {
+      "family": "betaniapatmosin",
+      "status": "compiler-version"
+    },
+    {
+      "family": "betaniapatmosingdl",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bevan",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bevietnampro",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bhutukaexpandedone",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshotone",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshoulders",
+      "status": "yes"
+    },
+    {
+      "family": "bigshouldersdisplay",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersdisplaysc",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersinline",
+      "status": "yes"
+    },
+    {
+      "family": "bigshouldersinlinedisplay",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersinlinedisplaysc",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersinlinetext",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersinlinetextsc",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersstencil",
+      "status": "yes"
+    },
+    {
+      "family": "bigshouldersstencildisplay",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersstencildisplaysc",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersstenciltext",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshouldersstenciltextsc",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshoulderstext",
+      "status": "build-failure"
+    },
+    {
+      "family": "bigshoulderstextsc",
+      "status": "build-failure"
+    },
+    {
+      "family": "bilbo",
+      "status": "compiler-version"
+    },
+    {
+      "family": "biorhyme",
+      "status": "compiler-version"
+    },
+    {
+      "family": "biorhymeexpanded",
+      "status": "build-failure"
+    },
+    {
+      "family": "birthstone",
+      "status": "compiler-version"
+    },
+    {
+      "family": "birthstonebounce",
+      "status": "compiler-version"
+    },
+    {
+      "family": "biryani",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcount",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountgriddouble",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountgriddoubleink",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountgridsingle",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountgridsingleink",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountink",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountpropdouble",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountpropdoubleink",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountpropsingle",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountpropsingleink",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountsingle",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitcountsingleink",
+      "status": "build-failure"
+    },
+    {
+      "family": "bitter",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bizudgothic",
+      "status": "build-failure"
+    },
+    {
+      "family": "bizudmincho",
+      "status": "build-failure"
+    },
+    {
+      "family": "bizudpgothic",
+      "status": "build-failure"
+    },
+    {
+      "family": "bizudpmincho",
+      "status": "build-failure"
+    },
+    {
+      "family": "blackopsone",
+      "status": "yes"
+    },
+    {
+      "family": "blaka",
+      "status": "compiler-version"
+    },
+    {
+      "family": "blakahollow",
+      "status": "compiler-version"
+    },
+    {
+      "family": "blakaink",
+      "status": "compiler-version"
+    },
+    {
+      "family": "blinker",
+      "status": "build-failure"
+    },
+    {
+      "family": "bodonimoda",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bodonimodasc",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bokor",
+      "status": "build-failure"
+    },
+    {
+      "family": "boldonse",
+      "status": "name-table"
+    },
+    {
+      "family": "bonanova",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bonanovasc",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bonbon",
+      "status": "build-failure"
+    },
+    {
+      "family": "bonheurroyale",
+      "status": "compiler-version"
+    },
+    {
+      "family": "borel",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bowlbyonesc",
+      "status": "build-failure"
+    },
+    {
+      "family": "braahone",
+      "status": "yes"
+    },
+    {
+      "family": "brawler",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bricolagegrotesque",
+      "status": "compiler-version"
+    },
+    {
+      "family": "briemhand",
+      "status": "build-failure"
+    },
+    {
+      "family": "brunoace",
+      "status": "build-failure"
+    },
+    {
+      "family": "brunoacesc",
+      "status": "build-failure"
+    },
+    {
+      "family": "brygada1918",
+      "status": "build-failure"
+    },
+    {
+      "family": "buenard",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bungee",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bungeecolor",
+      "status": "build-failure"
+    },
+    {
+      "family": "bungeehairline",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bungeeinline",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bungeeoutline",
+      "status": "build-failure"
+    },
+    {
+      "family": "bungeeshade",
+      "status": "compiler-version"
+    },
+    {
+      "family": "bungeespice",
+      "status": "build-failure"
+    },
+    {
+      "family": "bytesized",
+      "status": "timestamp-diff"
+    },
+    {
+      "family": "cabin",
+      "status": "build-failure"
+    },
+    {
+      "family": "cabincondensed",
+      "status": "build-failure"
+    },
+    {
+      "family": "cabinsketch",
+      "status": "build-failure"
+    },
+    {
+      "family": "cactusclassicalserif",
+      "status": "build-failure"
+    },
+    {
+      "family": "cairo",
+      "status": "build-failure"
+    },
+    {
+      "family": "cairoplay",
+      "status": "build-failure"
+    },
+    {
+      "family": "caladea",
+      "status": "build-failure"
+    },
+    {
+      "family": "calistoga",
+      "status": "compiler-version"
+    },
+    {
+      "family": "calsans",
+      "status": "compiler-version"
+    },
+    {
+      "family": "cambay",
+      "status": "build-failure"
+    },
+    {
+      "family": "cantarell",
+      "status": "build-failure"
+    },
+    {
+      "family": "caprasimo",
+      "status": "compiler-version"
+    },
+    {
+      "family": "capriola",
+      "status": "timestamp-diff"
+    },
+    {
+      "family": "caramel",
+      "status": "compiler-version"
+    },
+    {
+      "family": "carattere",
+      "status": "compiler-version"
+    },
+    {
+      "family": "carme",
+      "status": "build-failure"
+    },
+    {
+      "family": "cascadiacode",
+      "status": "build-failure"
+    },
+    {
+      "family": "cascadiamono",
+      "status": "build-failure"
+    },
+    {
+      "family": "cormorant",
+      "status": "compiler-version"
+    },
+    {
+      "family": "crimsontext",
+      "status": "compiler-version"
+    },
+    {
+      "family": "merriweather",
+      "status": "compiler-version"
+    },
+    {
+      "family": "montserrat",
+      "status": "compiler-version"
+    },
+    {
+      "family": "spectral",
+      "status": "compiler-version"
     }
-  }
+  ]
 }

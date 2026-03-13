@@ -1067,5 +1067,10 @@
     "timestamp": "2026-03-13T20:10:00-03:00",
     "role": "assistant",
     "message": "Started Batch 7: 50 families. 131 GB free on /mnt/shared. Running reproducible_build.py --batch --limit 50."
+  },
+  {
+    "timestamp": "2026-03-13T21:00:00-03:00",
+    "role": "assistant",
+    "message": "Batch 7 re-cached 49 already-tested families (build failures from before the caching fix). Batch 8 processed ~100 new families (bellefair through cascadiamono). Added 5-minute SIGALRM download timeout to handle stalled virtiofs downloads. Skipped 4 families with huge repos (bitcount variants, bizudpmincho). Total: 249 families processed, 25 byte-identical, 104 compiler-version, 114 build-failure. Updated dashboard."
   }
 ]
