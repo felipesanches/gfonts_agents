@@ -1017,5 +1017,25 @@
     "timestamp": "2026-03-13T17:30:00-03:00",
     "role": "user",
     "message": "Do you have access to the messages from yesterday as well? Add to the log absolutely everything you still have access to. I'm annoyed about this strict policy was not followed properly. I also want you to explain me what made you forget."
+  },
+  {
+    "timestamp": "2026-03-13T18:00:00-03:00",
+    "role": "assistant",
+    "message": "Recovered all user messages from both days and wrote them to message_log.json. Created feedback memory about message log completeness. Committed and pushed the updated log."
+  },
+  {
+    "timestamp": "2026-03-13T18:15:00-03:00",
+    "role": "assistant",
+    "message": "Explained why messages were not properly logged: treated the log as a summary journal instead of a transcript, no explicit policy in the hub CLAUDE.md (only in gfonts_agents CLAUDE.md which was deferred to but not copied), and batched log updates at session end when earlier messages were already compacted."
+  },
+  {
+    "timestamp": "2026-03-13T18:20:00-03:00",
+    "role": "user",
+    "message": "There were explicit policies on the dashboard repo. When I asked you to create the Google Fonts Hub and ensure all knowledge, memory and policies from all sub-projects to be applied to the hub, you failed to do so. I wonder what else have you forgotten as well... Please read the dashboard policies."
+  },
+  {
+    "timestamp": "2026-03-13T18:30:00-03:00",
+    "role": "assistant",
+    "message": "Read gfonts_agents/CLAUDE.md and identified 11 policies/sections that were NOT carried over to the hub CLAUDE.md: Message Logging, Friday Status Update, Commit Policy, Progress Tracking, Context (why commit hashes matter), Build Configuration, Fixing Missing Data workflow, Validation Strategies, Pending Questions, Google Fonts repo update-before-use, Repository Cleanliness details, and Tech Stack. Added all missing policies directly to the hub CLAUDE.md and committed. Updated the feedback memory to reflect that this was a pre-existing strict policy that was missed during hub creation, not a new request."
   }
 ]
