@@ -1,24 +1,24 @@
 {
   "summary": {
     "total_buildable": 1266,
-    "processed": 131,
+    "processed": 142,
     "yes": 19,
-    "compiler_version": 61,
-    "build_failure": 49,
+    "compiler_version": 66,
+    "build_failure": 55,
     "name_table": 1,
     "timestamp_diff": 1,
     "metadata_wrong": 0,
     "missing_source": 0
   },
   "root_cause_summary": {
-    "metadata-only": 25,
+    "metadata-only": 26,
     "unknown": 13,
-    "ttfautohint-version + other": 39,
-    "compiler-output-diff": 41,
-    "ttfautohint-version": 15
+    "ttfautohint-version + other": 42,
+    "compiler-output-diff": 45,
+    "ttfautohint-version": 16
   },
   "reflow_risk_summary": {
-    "none": 119,
+    "none": 128,
     "low": 0,
     "high": 1
   },
@@ -1235,6 +1235,103 @@
           "reflow_risk": "none",
           "ttfautohint_ref": "Version 1.700",
           "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "baloothambi2": {
+      "status": "compiler-version",
+      "files": {
+        "BalooThambi2[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.700",
+          "ttfautohint_built": "Version 1.700"
+        }
+      }
+    },
+    "balsamiqsans": {
+      "status": "compiler-version",
+      "files": {
+        "BalsamiqSans-Bold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
+          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "BalsamiqSans-BoldItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
+          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "BalsamiqSans-Italic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
+          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "BalsamiqSans-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "metadata-only",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.020; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.26]",
+          "ttfautohint_built": "Version 1.020; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "bangers": {
+      "status": "compiler-version",
+      "files": {
+        "Bangers-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "ttfautohint-version + other",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 2.100; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.31]",
+          "ttfautohint_built": "Version 2.100; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "baskervville": {
+      "status": "compiler-version",
+      "files": {
+        "Baskervville[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
+        },
+        "Baskervville-Italic[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
+        }
+      }
+    },
+    "baskervvillesc": {
+      "status": "compiler-version",
+      "files": {
+        "BaskervvilleSC[wght].ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
         }
       }
     },
