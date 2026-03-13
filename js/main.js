@@ -1019,19 +1019,20 @@ function getStatusWeekWindow() {
     // Calculate days until Friday (0 = Sunday, 5 = Friday)
     let daysUntilFriday = (5 - day + 7) % 7;
     if (daysUntilFriday === 0) {
-        // It's Friday - check if we're past 1pm GMT-3
+        // It's Friday - check if we're past 2pm GMT-3 (meeting time)
         const nowInGMT3 = new Date(now.getTime() + (now.getTimezoneOffset() - GMT_MINUS_3_OFFSET) * 60000);
-        if (nowInGMT3.getHours() >= 13) {
-            // Past 1pm GMT-3 on Friday, move to next Friday
+        if (nowInGMT3.getHours() >= 14) {
+            // Past 2pm GMT-3 on Friday, move to next Friday
             daysUntilFriday = 7;
         }
     }
     friday.setDate(friday.getDate() + daysUntilFriday);
     friday.setHours(0, 0, 0, 0);
 
-    // Window end: This Friday at 1pm GMT-3 (16:00 UTC)
+    // Window end: This Friday at 11:59pm GMT-3 (next day 02:59 UTC) — captures all Friday work
     const windowEnd = new Date(friday);
-    windowEnd.setUTCHours(16, 0, 0, 0); // 1pm GMT-3 = 16:00 UTC
+    windowEnd.setDate(windowEnd.getDate() + 1);
+    windowEnd.setUTCHours(2, 59, 59, 999); // 11:59pm GMT-3 = 02:59 UTC next day
 
     // Window start: Previous Friday at 2pm GMT-3 (17:00 UTC)
     const windowStart = new Date(friday);
