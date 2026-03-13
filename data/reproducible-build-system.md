@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-13
-**Status**: Batch 1 complete — 63 families processed (1,266 buildable total)
+**Status**: Batch 1+2 — 73 families processed, 49 with reports (1,266 buildable total)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -10,25 +10,27 @@ With 100% upstream_info.md coverage across all 1,975 ofl/ families now complete,
 
 The system downloads source snapshots from GitHub at the exact commit recorded in METADATA.pb, builds them with `gftools-builder`, and performs a multi-level comparison: SHA256 hash, TTX table-by-table diff, mismatch categorization, and deep structural analysis (ttfautohint version detection, per-glyph coordinate comparison, advance width and line metrics reflow risk assessment).
 
-## Batch 1 Results (63 of 1,266 families)
+## Current Results (73 families attempted, 49 with comparison reports)
 
 ### Status Breakdown
 
-| Status | Count | % | Meaning |
+| Status | Count | % of reports | Meaning |
 |--------|-------|---|---------|
-| **yes** (byte-identical) | 9 | 14% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 30 | 48% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 22 | 35% | gftools-builder failed |
+| **yes** (byte-identical) | 15 | 31% | Rebuilt font is bit-for-bit identical to google/fonts |
+| **compiler-version** | 31 | 63% | Differences from fontmake/fontTools/ttfautohint version |
 | **name-table** | 1 | 2% | Only name table metadata differs |
 | **timestamp-diff** | 1 | 2% | Only head timestamps differ |
+| **build-failure** | 1 | 2% | gftools-builder failed (among families with reports) |
 
-### Byte-Identical Families (9)
+Additionally, **24 families** failed to build and have no comparison report (build logs only).
+
+### Byte-Identical Families (15)
 
 These families rebuild to **exactly the same binary** as what's in google/fonts:
 
-- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans
+- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin
 
-This confirms their METADATA.pb source stanzas are 100% correct AND the current gftools toolchain produces identical output. These families are fully reproducible.
+The byte-identical rate improved from 14% (Batch 1) to **31%** after Batch 2. The Anek family (6 scripts, all byte-identical) demonstrates that recently onboarded families with modern build pipelines reproduce perfectly.
 
 ### Near-Identical Families (2)
 
@@ -48,23 +50,19 @@ These are effectively correct builds — the differences are trivial and don't a
 
 Key insight: **15 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
 
-### Build Failure Analysis (22 families, 35%)
+### Build Failure Analysis (24 families)
 
 | Failure Type | Count | Families |
 |-------------|-------|----------|
 | Designspace compatibility | 5 | amaranth, amaticsc, amiri, amiriquran, fraunces |
 | Missing source files | 3 | abhayalibre, amarna, amethysta |
 | Glyph processing errors | 3 | alegreyasans, alegreyasanssc, worksans |
+| Tarball extraction failure | 2 | andadapro, anekmalayalam |
 | Missing Python modules | 1 | alegreya (ufo2ft.filters.addExtremes) |
 | Cyclical component refs | 1 | alegreyasc |
 | Feature compilation | 1 | amita |
 | Other fontmake errors | 4 | alkatra, alumnisansinlineone, alumnisanspinstripe, adventpro |
 | Unknown/no config | 4 | 42dotsans, amiko, cabin, poppins |
-
-The **35% build failure rate** is significant. Main causes:
-1. **Designspace compatibility**: current fontmake is stricter about master compatibility than the version used to originally build these fonts
-2. **Missing source files**: config.yaml references files not present at the recorded commit
-3. **Module/API changes**: newer fontmake/glyphsLib has removed or renamed APIs
 
 ## Reflow Risk Analysis
 
@@ -85,10 +83,21 @@ We distinguish between:
 
 | Risk Level | Font Files | Meaning |
 |------------|-----------|---------|
-| **none** | 61 | Safe to rebuild — advance widths and line metrics identical |
-| **high** | 1 | Alkalami: 19 shared glyphs have different advance widths |
+| **none** | 66 | Safe to rebuild — advance widths and line metrics identical |
+| **high** | 0 | No families currently flagged |
 
-**Alkalami** is the first family flagged with genuine reflow risk. 19 glyphs (including `approxequal`, `greater`, `greaterequal`) have different advance widths (max delta: 28 units). Rebuilding this family with the current toolchain would cause text reflow.
+**Zero reflow risk across all 66 font files with deep analysis.** Earlier, Alkalami was incorrectly flagged as high risk — see Bug Fix section below.
+
+### Bug Fix: Alkalami False Positive
+
+Alkalami was initially flagged with "high" reflow risk (19 shared glyphs with different advance widths, max delta 279 units). Investigation revealed this was a **bug in the build comparison tool**, not a real issue:
+
+- **Root cause**: The `find_built_font()` function's recursive fallback found `references/Alkalami-Regular.ttf` (a v2.000 reference font shipped in the upstream repo's `references/` directory) instead of the actual build output at `../fonts/ttf/Alkalami-Regular.ttf`.
+- **Why**: gftools-builder outputs to `../fonts/ttf/` relative to its working directory, which resolves to `source_dir.parent/fonts/ttf/`. The search function only looked *inside* `source_dir`, so the recursive glob found the old v2.000 reference font first.
+- **Fix**: Extended `find_built_font()` to search `source_dir.parent/fonts/` paths, and excluded `references/`, `ref/`, `old/` directories from the recursive fallback.
+- **After fix**: Alkalami shows **zero** shared-glyph width diffs, zero glyph name changes, line metrics identical. Reflow risk: **none**.
+
+This bug could affect any upstream repo that ships old reference binaries in a `references/` subdirectory. Three families had such directories (abyssinicasil, akatab, alkalami), but only Alkalami was affected because the other two were byte-identical (correct font found before the fallback triggered).
 
 ### Risks to Monitor When Rebuilding
 
@@ -105,13 +114,80 @@ We distinguish between:
 
 ## Key Insights
 
-1. **14% byte-identical rate is encouraging.** As more recently onboarded families are tested, this rate should increase.
+1. **31% byte-identical rate is encouraging** (up from 14% in Batch 1). Recently onboarded families with modern build pipelines (like the Anek family) reproduce perfectly.
 
-2. **The 35% build failure rate needs investigation.** Many failures are from toolchain version incompatibilities. The `"custom"` isolation mode (pinned venv) could resolve some.
+2. **The ~33% build failure rate needs investigation.** Many failures are from toolchain version incompatibilities. The `"custom"` isolation mode (pinned venv) could resolve some.
 
-3. **Reflow risk is rare but real.** Only 1 of 62 font files shows actual advance width changes. The assessment caught Alkalami, which would cause layout breakage if rebuilt naively.
+3. **Reflow risk is extremely rare.** Zero of 66 font files show actual advance width or line metric changes. All compiler-version differences are cosmetic (outline coordinate changes that don't affect metrics).
 
 4. **15 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic.
+
+5. **The Alkalami false positive exposed a real bug** in how we locate built fonts. Upstream repos may ship old reference binaries that shadow the actual build output. This is now fixed.
+
+## Infrastructure: virtiofs File Descriptor Issue
+
+### Problem
+
+During Batch 2 processing, the build system crashed with `OSError: [Errno 23] Too many open files in system` while extracting the Anek monorepo tarball (66,677 files). This was traced to a virtiofs/virtiofsd file descriptor accumulation issue.
+
+### Investigation
+
+The build environment is a QEMU/KVM virtual machine with `/mnt/shared` mounted via virtiofs:
+
+```xml
+<filesystem type="mount" accessmode="passthrough">
+  <driver type="virtiofs"/>
+  <source dir="/home/fsanches/devel/claude_vm_shared"/>
+  <target dir="shared_from_host"/>
+</filesystem>
+```
+
+**Key findings:**
+
+- **Guest-side FD limits**: `file-max` = 9.2×10¹⁸ (effectively unlimited), only ~9,000 FDs in use at time of error. The guest kernel was NOT exhausted.
+- **Host-side virtiofsd**: Each virtiofsd process has a 1,000,000 FD limit — high but finite.
+- **FD leak in virtiofsd**: virtiofsd keeps a host-side FD open for every file/directory the guest accesses. This is by design (prevents TOCTOU security attacks), but FDs are only released when the guest kernel sends FUSE FORGET messages (when VFS cache entries expire).
+- **Accumulation pattern**: A single `find` command scanning the Anek extraction (66k files) caused virtiofsd's FD count to jump from 4,528 to 9,774 — and it stayed at 9,774 after the command completed. Over multiple build batches extracting tens of thousands of files, virtiofsd accumulates hundreds of thousands of FDs.
+- **virtiofsd version**: 1.13.2 (Debian `trixie`)
+- **Host kernel**: 6.18.15+deb14-amd64
+- **Guest kernel**: 6.12.73+deb13-amd64
+
+### Root Cause
+
+virtiofsd holds FDs open for the lifetime of the FUSE inode reference. The guest VFS cache retains inode references until memory pressure forces eviction. During font builds, the guest creates/reads tens of thousands of files but never triggers cache eviction, so virtiofsd's FD count grows monotonically. Eventually some system limit (possibly host-side kernel structures or memory) is exhausted, and the error propagates to the guest as ENFILE.
+
+### Mitigation
+
+**Option A (implemented)**: Drop guest VFS caches between build batches by running `echo 3 > /proc/sys/vm/drop_caches`. This triggers FUSE FORGET messages, causing virtiofsd to release accumulated FDs. Added to the build script between family processing.
+
+**Option B (fallback)**: Extract tarballs to guest-local tmpfs (`/tmp`, 17GB RAM-backed), run the build there, and copy only results (comparison_report.json, build_log.txt) to `/mnt/shared`. This avoids virtiofsd ever seeing the intermediate files.
+
+**Option C (last resort)**: Move entire build workspace to local disk. Requires expanding the guest's 19GB root partition.
+
+## VM Maintenance: Resizing a qcow2 Disk Image
+
+If the guest's local disk (19GB root partition) becomes insufficient for Option C or other needs, the qcow2 image can be resized:
+
+```bash
+# 1. Shut down the VM
+virsh shutdown <vm-name>
+
+# 2. Resize the qcow2 image (e.g., add 50GB)
+qemu-img resize /path/to/disk.qcow2 +50G
+
+# 3. Start the VM
+virsh start <vm-name>
+
+# 4. Inside the guest, extend the partition and filesystem:
+#    For ext4 on the last partition (e.g., /dev/vda1):
+sudo growpart /dev/vda 1        # Extend partition to fill disk
+sudo resize2fs /dev/vda1        # Extend filesystem to fill partition
+
+# 5. Verify
+df -h /
+```
+
+If using LVM, use `pvresize`, `lvextend`, and `resize2fs` instead of `growpart`.
 
 ## Architecture
 

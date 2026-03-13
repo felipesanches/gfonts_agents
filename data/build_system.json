@@ -1,2854 +1,977 @@
 {
-  "generated_at": "2026-03-13T07:58:32.150684",
-  "registry_version": 1,
-  "total_families": 63,
-  "total_in_registry": 1266,
-  "total_buildable": 1266,
   "summary": {
-    "build-failure": 22,
-    "compiler-version": 30,
-    "yes": 9,
-    "name-table": 1,
-    "timestamp-diff": 1
+    "total_buildable": 1266,
+    "processed": 72,
+    "yes": 15,
+    "compiler_version": 31,
+    "build_failure": 24,
+    "name_table": 1,
+    "timestamp_diff": 1,
+    "metadata_wrong": 0,
+    "missing_source": 0
   },
   "root_cause_summary": {
     "metadata-only": 15,
+    "unknown": 11,
     "ttfautohint-version + other": 17,
-    "compiler-output-diff": 18,
+    "compiler-output-diff": 22,
     "ttfautohint-version": 12
   },
   "reflow_risk_summary": {
-    "none": 61,
-    "high": 1
+    "none": 66,
+    "low": 0,
+    "high": 0
   },
-  "families": [
-    {
-      "family": "42dotsans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "abeezee",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "b9bd3f3522d91aca81eb668f56d40c2c62a90125",
-      "repository_url": "https://github.com/googlefonts/abeezee",
-      "timestamp": "2026-03-13T07:14:21.895366+00:00",
+  "families": {
+    "abeezee": {
+      "status": "compiler-version",
       "files": {
         "ABeeZee-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "head",
-            "hhea",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.003; ttfautohint (v1.8.3)",
-            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 268,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
         },
         "ABeeZee-Italic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.003; ttfautohint (v1.8.3)",
-            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 268,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.003; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "abhayalibre",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "aboreto",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "6e64ee7e7ff1c53220d96b88a8d4bf2db9f76735",
-      "repository_url": "https://github.com/domija/Aboreto",
-      "timestamp": "2026-03-13T07:14:58.364397+00:00",
+    "aboreto": {
+      "status": "yes",
       "files": {
         "Aboreto-Regular.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         }
       }
     },
-    {
-      "family": "abyssinicasil",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "1f7e65b0e7367681198c980647b3049559ebefa0",
-      "repository_url": "https://github.com/silnrsi/font-abyssinica",
-      "timestamp": "2026-03-13T07:15:21.616139+00:00",
+    "abyssinicasil": {
+      "status": "yes",
       "files": {
         "AbyssinicaSIL-Regular.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         }
       }
     },
-    {
-      "family": "adlamdisplay",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "879176243e9f7161a8aefdab8c36a4a7318ebe15",
-      "repository_url": "https://github.com/microsoft/ADLaM-Display",
-      "timestamp": "2026-03-13T07:15:38.081654+00:00",
+    "adlamdisplay": {
+      "status": "compiler-version",
       "files": {
         "ADLaMDisplay-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28]",
-            "built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 382,
-            "ref_only": 1,
-            "built_only": 1,
-            "coord_diffs": 9,
-            "rounding_only": 1,
-            "coord_count_diffs": 2
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 2,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 2,
+          "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28]",
+          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "adventpro",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
+    "afacad": {
+      "status": "yes",
+      "files": {}
     },
-    {
-      "family": "afacad",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "b294b1f8610ff16a3846a255b1a6a2e6788a056e",
-      "repository_url": "https://github.com/Dicotype/Afacad",
-      "timestamp": "2026-03-13T07:19:02.906913+00:00",
-      "files": {
-        "Afacad[wght].ttf": {
-          "byte_identical": false,
-          "differing_tables": [],
-          "mismatch_category": ""
-        },
-        "Afacad-Italic[wght].ttf": {
-          "byte_identical": false,
-          "differing_tables": [],
-          "mismatch_category": ""
-        }
-      }
+    "afacadflux": {
+      "status": "yes",
+      "files": {}
     },
-    {
-      "family": "afacadflux",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "b294b1f8610ff16a3846a255b1a6a2e6788a056e",
-      "repository_url": "https://github.com/Dicotype/Afacad",
-      "timestamp": "2026-03-13T07:19:30.800055+00:00",
-      "files": {
-        "AfacadFlux[slnt,wght].ttf": {
-          "byte_identical": false,
-          "differing_tables": [],
-          "mismatch_category": ""
-        }
-      }
-    },
-    {
-      "family": "agbalumo",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "261ad51ef2291821685c1bebf10cf0fb9f7e08f9",
-      "repository_url": "https://github.com/SorkinType/Agbalumo",
-      "timestamp": "2026-03-13T07:20:53.568287+00:00",
+    "agbalumo": {
+      "status": "compiler-version",
       "files": {
         "Agbalumo-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1708,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 9,
-            "rounding_only": 1,
-            "coord_count_diffs": 7
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "agdasima",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9",
-      "repository_url": "https://github.com/docrepair-fonts/agdasima-fonts",
-      "timestamp": "2026-03-13T07:21:12.019381+00:00",
+    "agdasima": {
+      "status": "compiler-version",
       "files": {
         "Agdasima-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "maxp",
-            "name",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 2.002",
-            "built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 259,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 1,
-            "rounding_only": 1,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.002",
+          "ttfautohint_built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
         },
         "Agdasima-Bold.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "maxp",
-            "name",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 2.002",
-            "built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 259,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 1,
-            "rounding_only": 0,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.002",
+          "ttfautohint_built": "Version 2.002; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "agudisplay",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "d520ebead8de4091a82040fe3d8f94d84c38c66f",
-      "repository_url": "https://github.com/theseunbadejo/Agu-Display",
-      "timestamp": "2026-03-13T07:23:15.869146+00:00",
+    "agudisplay": {
+      "status": "compiler-version",
       "files": {
         "AguDisplay[MORF].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "cmap",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.103",
-            "built": "Version 1.104"
-          },
-          "glyph_stats": {
-            "total_glyphs": 2589,
-            "ref_only": 1,
-            "built_only": 1,
-            "coord_diffs": 96,
-            "rounding_only": 0,
-            "coord_count_diffs": 96
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 2,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 2,
+          "ttfautohint_ref": "Version 1.103",
+          "ttfautohint_built": "Version 1.104"
         }
       }
     },
-    {
-      "family": "akatab",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "54e989b80bf4c99a2b16dc40710083b2b80ebaef",
-      "repository_url": "https://github.com/silnrsi/font-akatab",
-      "timestamp": "2026-03-13T07:23:57.830841+00:00",
+    "akatab": {
+      "status": "yes",
       "files": {
         "Akatab-Regular.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         },
         "Akatab-Medium.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         },
         "Akatab-SemiBold.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         },
         "Akatab-Bold.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         },
         "Akatab-ExtraBold.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         },
         "Akatab-Black.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         }
       }
     },
-    {
-      "family": "akayakanadaka",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "24f25461789ee8642e184b43dd6d5d04ea7f49d1",
-      "repository_url": "https://github.com/vaishnavimurthy/Akaya-Kanadaka",
-      "timestamp": "2026-03-13T07:24:20.566416+00:00",
+    "akayakanadaka": {
+      "status": "yes",
       "files": {
         "AkayaKanadaka-Regular.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         }
       }
     },
-    {
-      "family": "akayatelivigala",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "93b31e45b69178ecfdb48981a5aa8a8b33bb0340",
-      "repository_url": "https://github.com/vaishnavimurthy/Akaya-Telivigala",
-      "timestamp": "2026-03-13T07:24:48.081954+00:00",
+    "akayatelivigala": {
+      "status": "yes",
       "files": {
         "AkayaTelivigala-Regular.ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         }
       }
     },
-    {
-      "family": "akshar",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "0c6de5ef9cef264b3b3f958e772b3a371f92d083",
-      "repository_url": "https://github.com/tallchai/akshar-type",
-      "timestamp": "2026-03-13T07:24:59.819601+00:00",
+    "akshar": {
+      "status": "yes",
       "files": {
         "Akshar[wght].ttf": {
           "byte_identical": true,
-          "differing_tables": [],
-          "mismatch_category": "yes"
+          "category": "yes",
+          "root_cause": "unknown"
         }
       }
     },
-    {
-      "family": "alansans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "name-table",
-      "notes": "",
-      "source_commit": "425d3a0674a49f0ad6bc6ceef5ca0c557b520838",
-      "repository_url": "https://github.com/alan-eu/Alan-Sans",
-      "timestamp": "2026-03-13T07:25:52.743812+00:00",
+    "alansans": {
+      "status": "name-table",
       "files": {
         "AlanSans[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "head",
-            "name"
-          ],
-          "mismatch_category": "name-table",
+          "category": "name-table",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.000",
-            "built": "Version 1.000"
-          },
-          "glyph_stats": {
-            "total_glyphs": 469,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.000",
+          "ttfautohint_built": "Version 1.000"
         }
       }
     },
-    {
-      "family": "alata",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 1 test. 6 differing tables (GDEF, GPOS, GSUB, glyf, head, name).",
-      "source_commit": "3b051d2a6181deba154717cfd6be409effe32ffa",
-      "repository_url": "https://github.com/SorkinType/Alata",
-      "timestamp": "2026-03-13T01:55:04.578545+00:00",
+    "alata": {
+      "status": "compiler-version",
       "files": {
         "Alata-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 1.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 1.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1038,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 10,
-            "rounding_only": 1,
-            "coord_count_diffs": 4
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 1.005; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "alatsi",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "92b5663a41d41e2912ec46cb4e523303e33f9723",
-      "repository_url": "https://github.com/SorkinType/Alatsi/",
-      "timestamp": "2026-03-13T07:26:17.452809+00:00",
+    "alatsi": {
+      "status": "compiler-version",
       "files": {
         "Alatsi-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 1.008; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1205,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 10,
-            "rounding_only": 1,
-            "coord_count_diffs": 9
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 1.008; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "albertsans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "yes",
-      "notes": "",
-      "source_commit": "f7f46082233f5a29cb71d6ae1d8d0ef9c7962d6c",
-      "repository_url": "https://github.com/usted/Albert-Sans",
-      "timestamp": "2026-03-13T07:31:10.512087+00:00",
-      "files": {
-        "AlbertSans[wght].ttf": {
-          "byte_identical": false,
-          "differing_tables": [],
-          "mismatch_category": ""
-        },
-        "AlbertSans-Italic[wght].ttf": {
-          "byte_identical": false,
-          "differing_tables": [],
-          "mismatch_category": ""
-        }
-      }
+    "albertsans": {
+      "status": "yes",
+      "files": {}
     },
-    {
-      "family": "alegreya",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "alegreyasans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "alegreyasanssc",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "alegreyasc",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "aleo",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "ce875e48d9983031648e87f38b7a269f4fbf5eb5",
-      "repository_url": "https://github.com/AlessioLaiso/aleo",
-      "timestamp": "2026-03-13T07:35:50.572890+00:00",
+    "aleo": {
+      "status": "compiler-version",
       "files": {
         "Aleo[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "OS/2",
-            "STAT",
-            "cmap",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 2.001;gftools[0.9.29]",
-            "built": "Version 2.001"
-          },
-          "glyph_stats": {
-            "total_glyphs": 670,
-            "ref_only": 9,
-            "built_only": 9,
-            "coord_diffs": 3,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 18,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 18,
+          "ttfautohint_ref": "Version 2.001;gftools[0.9.29]",
+          "ttfautohint_built": "Version 2.001"
         },
         "Aleo-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "OS/2",
-            "STAT",
-            "cmap",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 2.001;gftools[0.9.29]",
-            "built": "Version 2.001"
-          },
-          "glyph_stats": {
-            "total_glyphs": 670,
-            "ref_only": 9,
-            "built_only": 9,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 18,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 18,
+          "ttfautohint_ref": "Version 2.001;gftools[0.9.29]",
+          "ttfautohint_built": "Version 2.001"
         }
       }
     },
-    {
-      "family": "alexandria",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "4fd1422be3488837c41fbdb84a77350f0f56a734",
-      "repository_url": "https://github.com/Gue3bara/Alexandria",
-      "timestamp": "2026-03-13T07:36:20.147373+00:00",
+    "alexandria": {
+      "status": "compiler-version",
       "files": {
         "Alexandria[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "MVAR",
-            "STAT",
-            "cmap",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 5.100",
-            "built": "Version 5.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1764,
-            "ref_only": 171,
-            "built_only": 171,
-            "coord_diffs": 79,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 342,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 342,
+          "ttfautohint_ref": "Version 5.100",
+          "ttfautohint_built": "Version 5.100"
         }
       }
     },
-    {
-      "family": "alexbrush",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "1a50bd10383f6c5416f5b4806a9368fd2009ea8c",
-      "repository_url": "https://github.com/googlefonts/alex-brush",
-      "timestamp": "2026-03-13T07:36:39.108125+00:00",
+    "alexbrush": {
+      "status": "compiler-version",
       "files": {
         "AlexBrush-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "glyf",
-            "head",
-            "hhea",
-            "maxp",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 1.111; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 1.111; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 617,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 16,
-            "rounding_only": 2,
-            "coord_count_diffs": 12
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.111; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 1.111; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "alice",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "13be04734d33464e627bd201d35aa9697feed289",
-      "repository_url": "https://github.com/cyrealtype/Alice",
-      "timestamp": "2026-03-13T07:36:59.632395+00:00",
+    "alice": {
+      "status": "compiler-version",
       "files": {
         "Alice-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "cmap",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.003; ttfautohint (v1.8.3)",
-            "built": "Version 2.003; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 447,
-            "ref_only": 6,
-            "built_only": 6,
-            "coord_diffs": 17,
-            "rounding_only": 0,
-            "coord_count_diffs": 14
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 12,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 12,
+          "ttfautohint_ref": "Version 2.003; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 2.003; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "alike",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "2de9216949bad46e02460fcb9e455be87d75462d",
-      "repository_url": "https://github.com/cyrealtype/Alike",
-      "timestamp": "2026-03-13T07:37:18.026935+00:00",
+    "alike": {
+      "status": "compiler-version",
       "files": {
         "Alike-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "head",
-            "hhea",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.301; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 1.301; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 366,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.301; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 1.301; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "alikeangular",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "20765691758ef999907b9a20950d4f57f62de1d1",
-      "repository_url": "https://github.com/cyrealtype/Alike-Angular",
-      "timestamp": "2026-03-13T07:37:36.824347+00:00",
+    "alikeangular": {
+      "status": "compiler-version",
       "files": {
         "AlikeAngular-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "glyf",
-            "head",
-            "hhea",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 1.300; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 1.300; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 364,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 2,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.300; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 1.300; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "alkalami",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "aac8fee84607803af27a8c3bdae12056b0ba0aec",
-      "repository_url": "https://github.com/silnrsi/font-alkalami",
-      "timestamp": "2026-03-13T07:37:57.333738+00:00",
+    "alkalami": {
+      "status": "compiler-version",
       "files": {
         "Alkalami-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "Silt",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 3.000",
-            "built": "Version 2.000"
-          },
-          "glyph_stats": {
-            "total_glyphs": 966,
-            "ref_only": 31,
-            "built_only": 48,
-            "coord_diffs": 23,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "high",
-            "hmtx_shared_width_diffs": 19,
-            "hmtx_glyph_name_changes": 79,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 3.000",
+          "ttfautohint_built": "Version 3.000; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "alkatra",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "allison",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "fe224232fbcf0a6db60877e835df7219a99784f3",
-      "repository_url": "https://github.com/googlefonts/allison",
-      "timestamp": "2026-03-13T07:38:35.106329+00:00",
+    "allison": {
+      "status": "compiler-version",
       "files": {
         "Allison-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "DSIG",
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "glyf",
-            "head",
-            "hhea",
-            "maxp",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 1.010; ttfautohint (v1.8.3)",
-            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 619,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 49,
-            "rounding_only": 0,
-            "coord_count_diffs": 22
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.010; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "allkin",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "fffaa4201dfbd887a78e3d0c79654a7ad0d155f3",
-      "repository_url": "https://github.com/googlefonts/allkin",
-      "timestamp": "2026-03-13T07:38:51.736424+00:00",
+    "allkin": {
+      "status": "compiler-version",
       "files": {
         "Allkin-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.010",
-            "built": "Version 1.010"
-          },
-          "glyph_stats": {
-            "total_glyphs": 200,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 23,
-            "rounding_only": 0,
-            "coord_count_diffs": 22
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.010",
+          "ttfautohint_built": "Version 1.010"
         }
       }
     },
-    {
-      "family": "allura",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "38a78b41510a10b1129c50fa5177b642bd2b4a19",
-      "repository_url": "https://github.com/googlefonts/allura",
-      "timestamp": "2026-03-13T07:39:10.967615+00:00",
+    "allura": {
+      "status": "compiler-version",
       "files": {
         "Allura-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "cmap",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.110",
-            "built": "Version 1.110"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1087,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 31,
-            "rounding_only": 2,
-            "coord_count_diffs": 23
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.110",
+          "ttfautohint_built": "Version 1.110"
         }
       }
     },
-    {
-      "family": "alumnisans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "44a7998fa2bfa1b3e119983cdc565dd7f0f03bda",
-      "repository_url": "https://github.com/googlefonts/alumni",
-      "timestamp": "2026-03-13T07:43:18.635839+00:00",
+    "alumnisans": {
+      "status": "compiler-version",
       "files": {
         "AlumniSans[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.018",
-            "built": "Version 1.018"
-          },
-          "glyph_stats": {
-            "total_glyphs": 990,
-            "ref_only": 9,
-            "built_only": 10,
-            "coord_diffs": 23,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 19,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 19,
+          "ttfautohint_ref": "Version 1.018",
+          "ttfautohint_built": "Version 1.018"
         },
         "AlumniSans-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.016",
-            "built": "Version 1.016"
-          },
-          "glyph_stats": {
-            "total_glyphs": 993,
-            "ref_only": 9,
-            "built_only": 10,
-            "coord_diffs": 20,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 19,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 19,
+          "ttfautohint_ref": "Version 1.016",
+          "ttfautohint_built": "Version 1.016"
         }
       }
     },
-    {
-      "family": "alumnisanscollegiateone",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "9dc96be1ead732fb1677c88632665e0bbf2e4ee2",
-      "repository_url": "https://github.com/googlefonts/alumni-sans-collegiate",
-      "timestamp": "2026-03-13T07:43:57.493205+00:00",
+    "alumnisanscollegiateone": {
+      "status": "compiler-version",
       "files": {
         "AlumniSansCollegiateOne-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.100",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1025,
-            "ref_only": 1,
-            "built_only": 1,
-            "coord_diffs": 81,
-            "rounding_only": 1,
-            "coord_count_diffs": 2
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 2,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 2,
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
         },
         "AlumniSansCollegiateOne-Italic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "glyf",
-            "head",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.100",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1025,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 58,
-            "rounding_only": 1,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
         }
       }
     },
-    {
-      "family": "alumnisanscollegiateonesc",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "9dc96be1ead732fb1677c88632665e0bbf2e4ee2",
-      "repository_url": "https://github.com/googlefonts/alumni-sans-collegiate",
-      "timestamp": "2026-03-13T07:44:34.526922+00:00",
+    "alumnisanscollegiateonesc": {
+      "status": "compiler-version",
       "files": {
         "AlumniSansCollegiateOneSC-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.100",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1026,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 6,
-            "rounding_only": 0,
-            "coord_count_diffs": 2
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
         },
         "AlumniSansCollegiateOneSC-Italic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 1.100",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1025,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 5,
-            "rounding_only": 0,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.100",
+          "ttfautohint_built": "Version 1.100"
         }
       }
     },
-    {
-      "family": "alumnisansinlineone",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "alumnisanspinstripe",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "alumnisanssc",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "44a7998fa2bfa1b3e119983cdc565dd7f0f03bda",
-      "repository_url": "https://github.com/googlefonts/alumni",
-      "timestamp": "2026-03-13T07:48:59.574496+00:00",
+    "alumnisanssc": {
+      "status": "compiler-version",
       "files": {
         "AlumniSansSC[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "STAT",
-            "fvar",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.018",
-            "built": "Version 1.018"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1000,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.018",
+          "ttfautohint_built": "Version 1.018"
         },
         "AlumniSansSC-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "STAT",
-            "fvar",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.016",
-            "built": "Version 1.016"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1003,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.016",
+          "ttfautohint_built": "Version 1.016"
         }
       }
     },
-    {
-      "family": "alyamama",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "timestamp-diff",
-      "notes": "",
-      "source_commit": "aecc9e395072c0e1d4cdd9dc296c0da5744f3360",
-      "repository_url": "https://github.com/Mestaratype/AlYamama",
-      "timestamp": "2026-03-13T07:49:43.370753+00:00",
+    "alyamama": {
+      "status": "timestamp-diff",
       "files": {
         "Alyamama[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "head"
-          ],
-          "mismatch_category": "timestamp-diff",
+          "category": "timestamp-diff",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 1.213",
-            "built": "Version 1.213"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1234,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 1.213",
+          "ttfautohint_built": "Version 1.213"
         }
       }
     },
-    {
-      "family": "amaranth",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "amarna",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "amaticsc",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "amethysta",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "amiko",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": "",
-      "source_commit": "069f510b21d2e839950b007f3458eeb6aed073e7",
-      "repository_url": "https://github.com/impallari/Amiko-Devanagari",
-      "timestamp": "2026-03-13T07:50:44.071466+00:00",
+    "amiko": {
+      "status": "build-failure",
       "files": {}
     },
-    {
-      "family": "amiri",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "amiriquran",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "amita",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": ""
-    },
-    {
-      "family": "anaheim",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "2b346ea7993c2e4eee6224d4bd2c143cc65b54d9",
-      "repository_url": "https://github.com/googlefonts/anaheimFont",
-      "timestamp": "2026-03-13T07:52:52.586682+00:00",
+    "anaheim": {
+      "status": "compiler-version",
       "files": {
         "Anaheim[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "STAT",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 2.001",
-            "built": "Version 2.001"
-          },
-          "glyph_stats": {
-            "total_glyphs": 720,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.001",
+          "ttfautohint_built": "Version 2.001"
         }
       }
     },
-    {
-      "family": "ancizarsans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "54a5aa2153b4485ff2710612d47183c346e6b842",
-      "repository_url": "https://github.com/UNAL-OMD/UNAL-Ancizar",
-      "timestamp": "2026-03-13T07:56:59.884020+00:00",
+    "ancizarsans": {
+      "status": "compiler-version",
       "files": {
         "AncizarSans[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 8.100",
-            "built": "Version 8.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1091,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 8.100",
+          "ttfautohint_built": "Version 8.100"
         },
         "AncizarSans-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 8.100",
-            "built": "Version 8.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1091,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 8.100",
+          "ttfautohint_built": "Version 8.100"
         }
       }
     },
-    {
-      "family": "ancizarserif",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "",
-      "source_commit": "063bdd3121fef76289b035226acdc1b4e885f31a",
-      "repository_url": "https://github.com/UNAL-OMD/UNAL-Ancizar",
-      "timestamp": "2026-03-13T07:57:16.582871+00:00",
+    "ancizarserif": {
+      "status": "compiler-version",
       "files": {
         "AncizarSerif[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 8.100",
-            "built": "Version 8.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1091,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 8.100",
+          "ttfautohint_built": "Version 8.100"
         },
         "AncizarSerif-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "glyf",
-            "head"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 8.100",
-            "built": "Version 8.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1091,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 8.100",
+          "ttfautohint_built": "Version 8.100"
         }
       }
     },
-    {
-      "family": "anton",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 2. Single static TTF. 10 differing tables including DSIG.",
-      "source_commit": "beb92fcad87808357123bb66881b4032dc96efe7",
-      "repository_url": "https://github.com/googlefonts/AntonFont",
-      "timestamp": "2026-03-13T01:55:30.104487+00:00",
+    "andika": {
+      "status": "compiler-version",
+      "files": {
+        "Andika-Regular.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 6.101",
+          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Andika-Italic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 6.101",
+          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Andika-Bold.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 6.101",
+          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
+        },
+        "Andika-BoldItalic.ttf": {
+          "byte_identical": false,
+          "category": "compiler-version",
+          "root_cause": "compiler-output-diff",
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 6.101",
+          "ttfautohint_built": "Version 6.101; ttfautohint (v1.8.4.16-eb64)"
+        }
+      }
+    },
+    "anekbangla": {
+      "status": "yes",
+      "files": {}
+    },
+    "anekdevanagari": {
+      "status": "yes",
+      "files": {}
+    },
+    "anekgujarati": {
+      "status": "yes",
+      "files": {}
+    },
+    "anekgurmukhi": {
+      "status": "yes",
+      "files": {}
+    },
+    "anekkannada": {
+      "status": "yes",
+      "files": {}
+    },
+    "aneklatin": {
+      "status": "yes",
+      "files": {}
+    },
+    "anton": {
+      "status": "compiler-version",
       "files": {
         "Anton-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "DSIG",
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "glyf",
-            "head",
-            "hhea",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 2.116; ttfautohint (v1.8.3)",
-            "built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1373,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 5,
-            "rounding_only": 0,
-            "coord_count_diffs": 5
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.116; ttfautohint (v1.8.3)",
+          "ttfautohint_built": "Version 2.116; ttfautohint (v1.8.4.16-eb64)"
         }
       }
     },
-    {
-      "family": "cabin",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": "Phase 2. config.yaml override references .ufo masters that don't exist at the recorded commit. The .designspace files reference Cabin-Regular.ufo etc. but only .glyphs sources are present."
-    },
-    {
-      "family": "cormorant",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 2. Variable .glyphs, config named build.yaml. 14-15 differing tables.",
-      "source_commit": "cc1bfb51ce6568cb3abf9199ab718d543f6fa189",
-      "repository_url": "https://github.com/CatharsisFonts/Cormorant",
-      "timestamp": "2026-03-13T02:03:21.509870+00:00",
+    "cormorant": {
+      "status": "compiler-version",
       "files": {
         "Cormorant-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "cmap",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 4.000",
-            "built": "Version 4.000"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1874,
-            "ref_only": 16,
-            "built_only": 16,
-            "coord_diffs": 28,
-            "rounding_only": 1,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 32,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 32,
+          "ttfautohint_ref": "Version 4.000",
+          "ttfautohint_built": "Version 4.000"
         },
         "Cormorant[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "cmap",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 4.000",
-            "built": "Version 4.000"
-          },
-          "glyph_stats": {
-            "total_glyphs": 3213,
-            "ref_only": 24,
-            "built_only": 24,
-            "coord_diffs": 37,
-            "rounding_only": 1,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 48,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 48,
+          "ttfautohint_ref": "Version 4.000",
+          "ttfautohint_built": "Version 4.000"
         }
       }
     },
-    {
-      "family": "crimsontext",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 2. Static 6 files. 16 differing tables across all weights.",
-      "source_commit": "4f1458ae64c6c0d9c5fdfbf5095c7fabe0fa063f",
-      "repository_url": "https://github.com/googlefonts/Crimson",
-      "timestamp": "2026-03-13T01:56:35.474679+00:00",
+    "crimsontext": {
+      "status": "compiler-version",
       "files": {
         "CrimsonText-Bold.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.100; ttfautohint (v1.8.4)",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 700,
-            "ref_only": 18,
-            "built_only": 671,
-            "coord_diffs": 2,
-            "rounding_only": 0,
-            "coord_count_diffs": 2
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 689,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 689,
+          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
+          "ttfautohint_built": "Version 1.100"
         },
         "CrimsonText-BoldItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.100; ttfautohint (v1.8.4)",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 702,
-            "ref_only": 18,
-            "built_only": 101,
-            "coord_diffs": 3,
-            "rounding_only": 1,
-            "coord_count_diffs": 2
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 119,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 119,
+          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
+          "ttfautohint_built": "Version 1.100"
         },
         "CrimsonText-Italic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.100; ttfautohint (v1.8.4)",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 702,
-            "ref_only": 18,
-            "built_only": 101,
-            "coord_diffs": 2,
-            "rounding_only": 0,
-            "coord_count_diffs": 2
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 119,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 119,
+          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
+          "ttfautohint_built": "Version 1.100"
         },
         "CrimsonText-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.100; ttfautohint (v1.8.4)",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 700,
-            "ref_only": 18,
-            "built_only": 671,
-            "coord_diffs": 2,
-            "rounding_only": 1,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 689,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 689,
+          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
+          "ttfautohint_built": "Version 1.100"
         },
         "CrimsonText-SemiBold.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.100; ttfautohint (v1.8.4)",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 700,
-            "ref_only": 18,
-            "built_only": 671,
-            "coord_diffs": 2,
-            "rounding_only": 1,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 689,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 689,
+          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
+          "ttfautohint_built": "Version 1.100"
         },
         "CrimsonText-SemiBoldItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "OS/2",
-            "cmap",
-            "cvt ",
-            "fpgm",
-            "glyf",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 1.100; ttfautohint (v1.8.4)",
-            "built": "Version 1.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 702,
-            "ref_only": 18,
-            "built_only": 101,
-            "coord_diffs": 1,
-            "rounding_only": 0,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 119,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 119,
+          "ttfautohint_ref": "Version 1.100; ttfautohint (v1.8.4)",
+          "ttfautohint_built": "Version 1.100"
         }
       }
     },
-    {
-      "family": "fraunces",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": "Phase 2. fontmake compatibility check failed on designspace. Current fontmake finds master incompatibilities that older version may have tolerated."
-    },
-    {
-      "family": "merriweather",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 2. Variable 3-axis .glyphspackage. 12-13 differing tables.",
-      "source_commit": "e586023aa0fe1dba9a7d4ec80fa8b9e546cb7ecf",
-      "repository_url": "https://github.com/EbenSorkin/Merriweather4",
-      "timestamp": "2026-03-13T02:06:34.633637+00:00",
+    "merriweather": {
+      "status": "compiler-version",
       "files": {
         "Merriweather[opsz,wdth,wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 2.100",
-            "built": "Version 2.100"
-          },
-          "glyph_stats": {
-            "total_glyphs": 2383,
-            "ref_only": 1,
-            "built_only": 1,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 2,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 2,
+          "ttfautohint_ref": "Version 2.100",
+          "ttfautohint_built": "Version 2.100"
         },
         "Merriweather-Italic[opsz,wdth,wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "glyf",
-            "gvar",
-            "head",
-            "hmtx",
-            "name",
-            "post"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 2.101",
-            "built": "Version 2.101"
-          },
-          "glyph_stats": {
-            "total_glyphs": 2380,
-            "ref_only": 1,
-            "built_only": 1,
-            "coord_diffs": 1,
-            "rounding_only": 0,
-            "coord_count_diffs": 1
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 2,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 2,
+          "ttfautohint_ref": "Version 2.101",
+          "ttfautohint_built": "Version 2.101"
         }
       }
     },
-    {
-      "family": "montserrat",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 2. Variable .glyphs. 20 differing tables.",
-      "source_commit": "cc8daf2e7085006b9c112542fc82b58afc13521d",
-      "repository_url": "https://github.com/JulietaUla/Montserrat",
-      "timestamp": "2026-03-13T02:02:52.170810+00:00",
+    "montserrat": {
+      "status": "compiler-version",
       "files": {
         "Montserrat[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "cmap",
-            "cvar",
-            "cvt ",
-            "fpgm",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "compiler-output-diff",
-          "ttfautohint": {
-            "ref": "Version 9.000",
-            "built": "Version 9.000"
-          },
-          "glyph_stats": {
-            "total_glyphs": 2744,
-            "ref_only": 3,
-            "built_only": 5,
-            "coord_diffs": 6,
-            "rounding_only": 1,
-            "coord_count_diffs": 5
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 8,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 8,
+          "ttfautohint_ref": "Version 9.000",
+          "ttfautohint_built": "Version 9.000"
         },
         "Montserrat-Italic[wght].ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GDEF",
-            "GPOS",
-            "GSUB",
-            "GlyphOrder",
-            "HVAR",
-            "STAT",
-            "cmap",
-            "cvar",
-            "cvt ",
-            "fpgm",
-            "fvar",
-            "glyf",
-            "gvar",
-            "head",
-            "hhea",
-            "hmtx",
-            "maxp",
-            "name",
-            "post",
-            "prep"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "metadata-only",
-          "ttfautohint": {
-            "ref": "Version 9.000",
-            "built": "Version 9.000"
-          },
-          "glyph_stats": {
-            "total_glyphs": 2788,
-            "ref_only": 3,
-            "built_only": 5,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 8,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 8,
+          "ttfautohint_ref": "Version 9.000",
+          "ttfautohint_built": "Version 9.000"
         }
       }
     },
-    {
-      "family": "poppins",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": "Phase 2. AssertionError: Default source not found in Devanagari .glyphs. glyphsLib version incompatibility."
-    },
-    {
-      "family": "spectral",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "compiler-version",
-      "notes": "Phase 2. Static 14 files .designspace+.ufo. Only 4-5 differing tables (OS/2, glyf, head, name) \u2014 closest to matching.",
-      "source_commit": "dbc06862d7030eedb1b01b60cdad8f6102f4ddfa",
-      "repository_url": "https://github.com/productiontype/Spectral",
-      "timestamp": "2026-03-13T02:00:09.859816+00:00",
+    "spectral": {
+      "status": "compiler-version",
       "files": {
         "Spectral-ExtraLight.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 55,
-            "rounding_only": 7,
-            "coord_count_diffs": 46
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-ExtraLightItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 45,
-            "rounding_only": 3,
-            "coord_count_diffs": 42
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-Light.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 43,
-            "rounding_only": 3,
-            "coord_count_diffs": 38
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-LightItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 45,
-            "rounding_only": 1,
-            "coord_count_diffs": 43
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-Regular.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 50,
-            "rounding_only": 7,
-            "coord_count_diffs": 41
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-Italic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 44,
-            "rounding_only": 5,
-            "coord_count_diffs": 39
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-Medium.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 58,
-            "rounding_only": 14,
-            "coord_count_diffs": 42
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-MediumItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 45,
-            "rounding_only": 7,
-            "coord_count_diffs": 38
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-SemiBold.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "hmtx",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 56,
-            "rounding_only": 12,
-            "coord_count_diffs": 42
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-SemiBoldItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 77,
-            "rounding_only": 21,
-            "coord_count_diffs": 55
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-Bold.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 38,
-            "rounding_only": 4,
-            "coord_count_diffs": 32
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-BoldItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 56,
-            "rounding_only": 6,
-            "coord_count_diffs": 48
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-ExtraBold.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version + other",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 46,
-            "rounding_only": 3,
-            "coord_count_diffs": 40
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         },
         "Spectral-ExtraBoldItalic.ttf": {
           "byte_identical": false,
-          "differing_tables": [
-            "GPOS",
-            "OS/2",
-            "glyf",
-            "head",
-            "name"
-          ],
-          "mismatch_category": "compiler-version",
+          "category": "compiler-version",
           "root_cause": "ttfautohint-version",
-          "ttfautohint": {
-            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
-          },
-          "glyph_stats": {
-            "total_glyphs": 1480,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 56,
-            "rounding_only": 4,
-            "coord_count_diffs": 52
-          },
-          "metrics": {
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0,
-            "line_metrics_identical": true
-          }
+          "reflow_risk": "none",
+          "hmtx_shared_width_diffs": 0,
+          "hmtx_glyph_name_changes": 0,
+          "ttfautohint_ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+          "ttfautohint_built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
         }
       }
-    },
-    {
-      "family": "worksans",
-      "enabled": true,
-      "isolation": "shared",
-      "reproducible_build": "build-failure",
-      "notes": "Phase 2. fontmake error: 'naira.rvrn' glyph processing failure. glyphsLib/fontmake version incompatibility."
     }
-  ]
+  }
 }
