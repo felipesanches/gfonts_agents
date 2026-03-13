@@ -1084,6 +1084,21 @@ function extractStatusFromMessages(messages) {
                     done.push({ text: `Implemented ${feature[1]} feature` });
                 }
             }
+            // Reproducible build system work
+            if (text.includes('reproducible') && text.includes('build')) {
+                const familyMatch = msgText.match(/(\d+)\s+of\s+[\d,]+\s+buildable families/i) ||
+                                    msgText.match(/processing\s+(\d+)/i) ||
+                                    msgText.match(/(\d+)\s+.*byte-identical/i);
+                if (familyMatch && !done.some(d => d.text && d.text.includes('Reproducible Build'))) {
+                    done.push({ text: `Reproducible Build System: tested ${familyMatch[1]} families` });
+                }
+            }
+            // virtiofs / infrastructure work
+            if (text.includes('virtiofs') && (text.includes('mitigat') || text.includes('fix') || text.includes('investigat'))) {
+                if (!done.some(d => d.text && d.text.includes('virtiofs'))) {
+                    done.push({ text: 'Investigated and mitigated virtiofs FD accumulation issue' });
+                }
+            }
         }
     });
 
@@ -1098,8 +1113,8 @@ function extractStatusFromMessages(messages) {
 
     // Default planned items if nothing specific found
     if (planned.length === 0) {
-        planned.push({ text: 'Continue designer catalog enrichment' });
-        planned.push({ text: 'Repository audit and validation' });
+        planned.push({ text: 'Continue reproducible build testing (1,266 buildable families)' });
+        planned.push({ text: 'Investigate build failures and reflow risk cases' });
     }
 
     return {
