@@ -21751,7 +21751,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteauqld/METADATA.pb",
@@ -21766,7 +21766,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteauqldguides/METADATA.pb",
@@ -21781,7 +21781,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteausa/METADATA.pb",
@@ -21796,7 +21796,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteausaguides/METADATA.pb",
@@ -21886,7 +21886,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritebevlgguides/METADATA.pb",
@@ -21916,7 +21916,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritebewalguides/METADATA.pb",
@@ -21931,7 +21931,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "metadata-stanza-wrong"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritebr/METADATA.pb",
@@ -22815,7 +22815,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritenlguides/METADATA.pb",
@@ -22829,7 +22830,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteno/METADATA.pb",
@@ -22843,7 +22845,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritenoguides/METADATA.pb",
@@ -22857,7 +22860,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritenz/METADATA.pb",
@@ -22871,7 +22875,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritenzbasic/METADATA.pb",
@@ -22885,7 +22890,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritenzbasicguides/METADATA.pb",
@@ -22899,7 +22905,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritenzguides/METADATA.pb",
@@ -22913,7 +22920,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritepe/METADATA.pb",
@@ -22927,7 +22935,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritepeguides/METADATA.pb",
@@ -22941,7 +22950,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritepl/METADATA.pb",
@@ -22955,7 +22965,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteplguides/METADATA.pb",
@@ -22969,7 +22980,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritept/METADATA.pb",
@@ -22983,7 +22995,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteptguides/METADATA.pb",
@@ -22997,7 +23010,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritero/METADATA.pb",
@@ -23011,7 +23025,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteroguides/METADATA.pb",
@@ -23025,7 +23040,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritesk/METADATA.pb",
@@ -23039,7 +23055,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteskguides/METADATA.pb",
@@ -23053,7 +23070,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritetz/METADATA.pb",
@@ -23067,7 +23085,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritetzguides/METADATA.pb",
@@ -23081,7 +23100,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteusmodern/METADATA.pb",
@@ -23095,7 +23115,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteusmodernguides/METADATA.pb",
@@ -23109,7 +23130,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteustrad/METADATA.pb",
@@ -23123,7 +23145,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteustradguides/METADATA.pb",
@@ -23137,7 +23160,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritevn/METADATA.pb",
@@ -23151,7 +23175,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritevnguides/METADATA.pb",
@@ -23165,7 +23190,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwriteza/METADATA.pb",
@@ -23179,7 +23205,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/playwritezaguides/METADATA.pb",
@@ -23193,7 +23220,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/plusjakartasans/METADATA.pb",
@@ -23207,7 +23235,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/pochaevsk/METADATA.pb",
@@ -23221,7 +23250,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/podkova/METADATA.pb",
@@ -23235,7 +23265,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/poetsenone/METADATA.pb",
@@ -23264,7 +23295,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/pollerone/METADATA.pb",
@@ -23296,7 +23328,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/poly/METADATA.pb",
@@ -23364,7 +23397,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/pontanosans/METADATA.pb",
@@ -23378,7 +23412,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/poorstory/METADATA.pb",
@@ -23472,7 +23507,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/pragatinarrow/METADATA.pb",
@@ -23505,7 +23541,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/prata/METADATA.pb",
@@ -23537,7 +23574,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/pressstart2p/METADATA.pb",
@@ -23651,7 +23689,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/protestrevolution/METADATA.pb",
@@ -23665,7 +23704,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/protestriot/METADATA.pb",
@@ -23679,7 +23719,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/proteststrike/METADATA.pb",
@@ -23693,7 +23734,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/prozalibre/METADATA.pb",
@@ -23807,7 +23849,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/puppiesplay/METADATA.pb",
@@ -23821,7 +23864,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/puritan/METADATA.pb",
@@ -23886,7 +23930,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/quando/METADATA.pb",
@@ -23966,7 +24011,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/quicksand/METADATA.pb",
@@ -23981,7 +24027,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/quintessential/METADATA.pb",
@@ -24010,7 +24057,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/qwitchergrypen/METADATA.pb",
@@ -24024,7 +24072,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/racingsansone/METADATA.pb",
@@ -24053,7 +24102,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/radiocanadabig/METADATA.pb",
@@ -24067,7 +24117,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/radley/METADATA.pb",
@@ -24081,7 +24132,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rajdhani/METADATA.pb",
@@ -24110,7 +24162,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/raleway/METADATA.pb",
@@ -24125,7 +24178,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Commit 7b288c6f not found in current repo history (possible force-push). Already in METADATA.pb.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "metadata-stanza-wrong"
     },
     {
       "path": "ofl/ralewaydots/METADATA.pb",
@@ -24204,7 +24258,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rampartone/METADATA.pb",
@@ -24218,7 +24273,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/ramsina/METADATA.pb",
@@ -24329,7 +24385,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/recursive/METADATA.pb",
@@ -24343,7 +24400,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/redacted/METADATA.pb",
@@ -24357,7 +24415,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redactedscript/METADATA.pb",
@@ -24371,7 +24430,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redditmono/METADATA.pb",
@@ -24385,7 +24445,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redditsans/METADATA.pb",
@@ -24399,7 +24460,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redditsanscondensed/METADATA.pb",
@@ -24413,7 +24475,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redhatdisplay/METADATA.pb",
@@ -24428,7 +24491,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Original bghryct repo is 404. Commit hash from bghryct repo is unverifiable in RedHatOfficial/RedHatFont. Needs investigation.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redhatmono/METADATA.pb",
@@ -24443,7 +24507,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Original bghryct repo is 404. Commit hash from bghryct repo is unverifiable in RedHatOfficial/RedHatFont. Needs investigation.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redhattext/METADATA.pb",
@@ -24458,7 +24523,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Original bghryct repo is 404. Commit hash from bghryct repo is unverifiable in RedHatOfficial/RedHatFont. Needs investigation.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/redrose/METADATA.pb",
@@ -24472,7 +24538,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/reemkufi/METADATA.pb",
@@ -24486,7 +24553,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "timestamp-diff"
     },
     {
       "path": "ofl/reemkufifun/METADATA.pb",
@@ -24500,7 +24568,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "name-table"
     },
     {
       "path": "ofl/reemkufiink/METADATA.pb",
@@ -24514,7 +24583,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "name-table"
     },
     {
       "path": "ofl/reeniebeanie/METADATA.pb",
@@ -24542,7 +24612,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rem/METADATA.pb",
@@ -24556,7 +24627,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rethinksans/METADATA.pb",
@@ -24570,7 +24642,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/revalia/METADATA.pb",
@@ -24684,7 +24757,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/roboto/METADATA.pb",
@@ -24698,7 +24772,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/robotocondensed/METADATA.pb",
@@ -24731,7 +24806,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/robotomono/METADATA.pb",
@@ -24745,7 +24821,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/robotoserif/METADATA.pb",
@@ -24759,7 +24836,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rock3d/METADATA.pb",
@@ -24773,7 +24851,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rocknrollone/METADATA.pb",
@@ -24787,7 +24866,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rokkitt/METADATA.pb",
@@ -24801,7 +24881,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/romanesco/METADATA.pb",
@@ -24848,7 +24929,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rosarivo/METADATA.pb",
@@ -24899,7 +24981,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/rozhaone/METADATA.pb",
@@ -24928,7 +25011,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubik80sfade/METADATA.pb",
@@ -24942,7 +25026,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rubikbeastly/METADATA.pb",
@@ -24956,7 +25041,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikbrokenfax/METADATA.pb",
@@ -24970,7 +25056,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikbubbles/METADATA.pb",
@@ -24984,7 +25071,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikburned/METADATA.pb",
@@ -24998,7 +25086,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikdirt/METADATA.pb",
@@ -25012,7 +25101,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikdistressed/METADATA.pb",
@@ -25026,7 +25116,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikdoodleshadow/METADATA.pb",
@@ -25040,7 +25131,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikdoodletriangles/METADATA.pb",
@@ -25054,7 +25146,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikgemstones/METADATA.pb",
@@ -25068,7 +25161,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikglitch/METADATA.pb",
@@ -25082,7 +25176,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikglitchpop/METADATA.pb",
@@ -25096,7 +25191,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikiso/METADATA.pb",
@@ -25110,7 +25206,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubiklines/METADATA.pb",
@@ -25124,7 +25221,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikmaps/METADATA.pb",
@@ -25138,7 +25236,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikmarkerhatch/METADATA.pb",
@@ -25152,7 +25251,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikmaze/METADATA.pb",
@@ -25166,7 +25266,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikmicrobe/METADATA.pb",
@@ -25180,7 +25281,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikmonoone/METADATA.pb",
@@ -25209,7 +25311,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikone/METADATA.pb",
@@ -25238,7 +25341,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rubikpuddles/METADATA.pb",
@@ -25252,7 +25356,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikscribble/METADATA.pb",
@@ -25266,7 +25371,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikspraypaint/METADATA.pb",
@@ -25280,7 +25386,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikstorm/METADATA.pb",
@@ -25294,7 +25401,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikvinyl/METADATA.pb",
@@ -25308,7 +25416,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikwetpaint/METADATA.pb",
@@ -25322,7 +25431,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/ruda/METADATA.pb",
@@ -25372,7 +25482,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/ruluko/METADATA.pb",
@@ -25451,7 +25562,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/ruwudu/METADATA.pb",
@@ -25466,7 +25578,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "v3.000 tag. Override config.yaml exists in google/fonts.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/rye/METADATA.pb",
@@ -25549,7 +25662,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/sairacondensed/METADATA.pb",
@@ -25564,7 +25678,8 @@
       "has_source_block": false,
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/sairaextracondensed/METADATA.pb",
@@ -25579,7 +25694,8 @@
       "has_source_block": false,
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/sairasemicondensed/METADATA.pb",
@@ -25594,7 +25710,8 @@
       "has_source_block": false,
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/sairastencilone/METADATA.pb",
@@ -25659,7 +25776,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/sankofadisplay/METADATA.pb",
