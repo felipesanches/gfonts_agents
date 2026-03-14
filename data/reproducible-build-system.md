@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
-**Date**: 2026-03-13
-**Status**: 103 families processed, 65 with comparison reports (1,266 buildable total)
+**Date**: 2026-03-14
+**Status**: 1,102 families processed, 687 with deep analysis (1,266 buildable total)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -10,60 +10,37 @@ With 100% upstream_info.md coverage across all 1,975 ofl/ families now complete,
 
 The system downloads source snapshots from GitHub at the exact commit recorded in METADATA.pb, builds them with `gftools-builder`, and performs a multi-level comparison: SHA256 hash, TTX table-by-table diff, mismatch categorization, and deep structural analysis (ttfautohint version detection, per-glyph coordinate comparison, advance width and line metrics reflow risk assessment).
 
-## Current Results (103 families attempted, 65 with comparison reports)
+## Current Results (1,102 of 1,266 families tested)
 
 ### Status Breakdown
 
-| Status | Count | % of processed | Meaning |
+| Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
-| **yes** (byte-identical) | 18 | 17% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 41 | 40% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 42 | 41% | gftools-builder failed |
-| **name-table** | 1 | 1% | Only name table metadata differs |
-| **timestamp-diff** | 1 | 1% | Only head timestamps differ |
+| **yes** (byte-identical) | 93 | 8.4% | Rebuilt font is bit-for-bit identical to google/fonts |
+| **compiler-version** | 577 | 52.4% | Differences from fontmake/fontTools/ttfautohint version |
+| **build-failure** | 413 | 37.5% | gftools-builder failed |
+| **timestamp-diff** | 10 | 0.9% | Only head timestamps differ |
+| **name-table** | 6 | 0.5% | Only name table metadata differs |
+| **metadata-stanza-wrong** | 3 | 0.3% | METADATA.pb source stanza is incorrect |
 
-Of the 103 families processed, 65 produced comparison reports. The remaining 38 failed to build (no output to compare).
+Of the 1,102 families tested, 689 produced comparison reports with deep analysis. The remaining 413 failed to build (no output to compare).
 
-### Byte-Identical Families (18)
+### Byte-Identical Families (93)
 
 These families rebuild to **exactly the same binary** as what's in google/fonts:
 
-- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, antonio, assistant
-
-The Anek family (7 scripts, all byte-identical) and other recently onboarded families demonstrate that modern build pipelines reproduce perfectly.
-
-### Near-Identical Families (2)
-
-- **alansans**: only name table metadata differs (likely version string)
-- **alyamama**: only head timestamps differ (cosmetically meaningless)
-
-These are effectively correct builds — the differences are trivial and don't affect rendering.
+- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, antonio, assistant, average, belleza, bigshoulders, bigshouldersinline, bigshouldersstencil, blackopsone, braahone, cabin, chokokutai, cinzel, cormorantsc, cormorantunicase, courierprime, cuprum, darumadropone, dhurjati, didactgothic, eczar, edunswactfoundation, fanwoodtext, fasterone, faunaone, fjallaone, gildadisplay, goldman, gruppo, gulzar, honk, ibarrarealnova, imbue, imprima, jotione, julee, kanit, kapakana, kiteone, kiwimaru, kulimpark, lacquer, lemon, lexend, lexenddeca, lexendexa, lexendgiga, lexendmega, lexendpeta, lexendtera, lexendzetta, lilex, lindenhill, livvic, majormonodisplay, mallanna, merriweathersans, micro5charted, monofett, montserratunderline, newtegomin, niramit, notosanssyriac, notosanssyriaceastern, notosansvithkuqi, notoserifvithkuqi, offside, opensans, orienta, otomanopeeone, pathwaygothicone, petrona, pottaone, publicsans, quicksand, readexpro, redrose, rowdies
 
 ### Root Cause Breakdown (non-identical font files)
 
 | Root Cause | Font Files | Description |
 |-----------|-----------|-------------|
-| compiler-output-diff | 28 | fontmake/glyphsLib produces slightly different outlines |
-| metadata-only | 19 | Only name/head metadata differs, glyphs identical |
-| ttfautohint-version + other | 17 | ttfautohint version change plus minor outline diffs |
-| ttfautohint-version | 14 | Pure ttfautohint version difference |
-| unknown | 12 | Root cause not yet categorized |
+| compiler-output-diff | 329 | fontmake/glyphsLib produces slightly different outlines |
+| metadata-only | 227 | Only name/head metadata differs, glyphs identical |
+| ttfautohint-version + other | 170 | ttfautohint version change plus minor outline diffs |
+| ttfautohint-version | 75 | Pure ttfautohint version difference |
 
-Key insight: **19 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
-
-### Build Failure Analysis (42 families, 41%)
-
-| Failure Type | Count | Families |
-|-------------|-------|----------|
-| Designspace compatibility | 5 | amaranth, amaticsc, amiri, amiriquran, fraunces |
-| Missing source files | 3 | abhayalibre, amarna, amethysta |
-| Glyph processing errors | 3 | alegreyasans, alegreyasanssc, worksans |
-| Tarball extraction failure | 2 | andadapro, anekmalayalam |
-| Missing Python modules | 1 | alegreya (ufo2ft.filters.addExtremes) |
-| Cyclical component refs | 1 | alegreyasc |
-| Feature compilation | 1 | amita |
-| Other fontmake errors | 4 | alkatra, alumnisansinlineone, alumnisanspinstripe, adventpro |
-| Unknown/no config | 4 | 42dotsans, amiko, cabin, poppins |
+Key insight: **227 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
 
 ## Reflow Risk Analysis
 
@@ -117,17 +94,19 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 ## Key Insights
 
-1. **17% byte-identical rate is solid.** 18 of 103 families rebuild to the exact same binary. Rate will likely increase as more recently onboarded families are tested.
+1. **8.4% byte-identical rate across 1,102 families.** 93 families rebuild to the exact same binary. Modern build pipelines (recently onboarded families) reproduce perfectly.
 
-2. **41% build failure rate is the biggest challenge.** Many failures are from toolchain version incompatibilities (fontmake API changes, designspace compatibility). The `"custom"` isolation mode (pinned venv) could resolve some.
+2. **37.5% build failure rate is the biggest challenge.** Many failures are from toolchain version incompatibilities (fontmake API changes, designspace compatibility), repos with their own build system, or repos shipping pre-built fonts.
 
-3. **Reflow risk is extremely rare but real.** Only 1 of 78 font files shows actual advance width changes (Artifika NBSP). All other compiler-version differences are cosmetic (outline coordinate changes that don't affect metrics).
+3. **227 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 
-4. **19 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic.
+4. **Prebuild support added.** Some families (42dotsans, astasans, cabin, cairo, cairoplay) require pre-build commands (glyphs2ufo, custom scripts) before gftools-builder. Prebuild support was added with auto-detection of Makefile/build.sh/build.py.
 
-5. **The Alkalami false positive exposed a real bug** in how we locate built fonts. Upstream repos may ship old reference binaries that shadow the actual build output. This is now fixed.
+5. **Auto-discovery for missing file mappings.** When METADATA.pb has no `files {}` block, built fonts are matched to reference fonts by filename.
 
-6. **virtiofs FD accumulation mitigated.** Dropping VFS caches every 5 families (via `/usr/local/sbin/drop-caches`) prevented the ENFILE crash that occurred during Batch 2's first run. The batch completed all 50 families without issues.
+6. **The Alkalami false positive exposed a real bug** in how we locate built fonts. Upstream repos may ship old reference binaries that shadow the actual build output. This is now fixed.
+
+7. **virtiofs FD accumulation mitigated.** Dropping VFS caches every 5 families prevents the ENFILE crash. Download stalls are handled with a 5-minute SIGALRM timeout.
 
 ## Infrastructure: virtiofs File Descriptor Issue
 
@@ -199,14 +178,16 @@ If using LVM, use `pvresize`, `lvextend`, and `resize2fs` instead of `growpart`.
 ### Build Pipeline (per family)
 
 1. **Parse METADATA.pb** — extract `source.repository_url`, `source.commit`, `source.files`, `source.config_yaml`
-2. **Download source snapshot** — GitHub tarball (avoids full git clone)
-3. **Resolve config.yaml** — checks google/fonts override first, then METADATA.pb path, then fallbacks
-4. **Run `gftools-builder`** — invokes via subprocess using the shared gftools venv
-5. **Compare binaries** — SHA256 hash first; if mismatch, TTX table-by-table diff
-6. **Deep analysis** — ttfautohint version, per-glyph coords, advance widths, line metrics
-7. **Categorize** — table-level category + structural root cause + reflow risk
-8. **Update registry** — write result back to `build_registry.json`
-9. **Write report** — per-family JSON report in workspace cache
+2. **Download source snapshot** — GitHub tarball (avoids full git clone), 5-minute timeout
+3. **Run prebuild commands** — if configured in build_registry.json (e.g. glyphs2ufo, custom scripts)
+4. **Resolve config.yaml** — checks google/fonts override first, then METADATA.pb path, then fallbacks
+5. **Run `gftools-builder`** — invokes via subprocess using the shared gftools venv
+6. **Find built fonts** — explicit file mappings from METADATA.pb, or auto-discovery by filename
+7. **Compare binaries** — SHA256 hash first; if mismatch, TTX table-by-table diff
+8. **Deep analysis** — ttfautohint version, per-glyph coords, advance widths, line metrics
+9. **Categorize** — table-level category + structural root cause + reflow risk
+10. **Update registry** — write result back to `build_registry.json`
+11. **Write report** — per-family JSON report in workspace cache
 
 ### Cache Policy
 
