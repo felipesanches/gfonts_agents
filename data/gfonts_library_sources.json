@@ -20045,7 +20045,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoserifthai/METADATA.pb",
@@ -20059,7 +20060,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoseriftibetan/METADATA.pb",
@@ -20073,7 +20075,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoseriftodhri/METADATA.pb",
@@ -20087,7 +20090,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoseriftoto/METADATA.pb",
@@ -20101,7 +20105,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoserifvithkuqi/METADATA.pb",
@@ -20115,7 +20120,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/notoserifyezidi/METADATA.pb",
@@ -20129,7 +20135,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/nototraditionalnushu/METADATA.pb",
@@ -20143,7 +20150,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoznamennymusicalnotation/METADATA.pb",
@@ -20157,7 +20165,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/novacut/METADATA.pb",
@@ -20347,7 +20356,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/nunitosans/METADATA.pb",
@@ -20361,7 +20371,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/nuosusil/METADATA.pb",
@@ -20394,7 +20405,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/odormeanchey/METADATA.pb",
@@ -20408,7 +20420,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/offside/METADATA.pb",
@@ -20422,7 +20435,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/oflsortsmillgoudytt/METADATA.pb",
@@ -20451,7 +20465,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/ojuju/METADATA.pb",
@@ -20465,7 +20480,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/oldenburg/METADATA.pb",
@@ -20512,7 +20528,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/oleoscript/METADATA.pb",
@@ -20562,7 +20579,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/ooohbaby/METADATA.pb",
@@ -20576,7 +20594,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/opensans/METADATA.pb",
@@ -20590,7 +20609,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/oranienbaum/METADATA.pb",
@@ -20618,7 +20638,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/orbitron/METADATA.pb",
@@ -20632,7 +20653,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/oregano/METADATA.pb",
@@ -20676,7 +20698,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/originalsurfer/METADATA.pb",
@@ -20705,7 +20728,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/otomanopeeone/METADATA.pb",
@@ -20719,7 +20743,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/outfit/METADATA.pb",
@@ -20733,7 +20758,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/overlock/METADATA.pb",
@@ -20783,7 +20809,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/overpassmono/METADATA.pb",
@@ -20797,7 +20824,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/overtherainbow/METADATA.pb",
@@ -20847,7 +20875,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/oxygen/METADATA.pb",
@@ -20894,7 +20923,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/padauk/METADATA.pb",
@@ -20927,7 +20957,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/palanquin/METADATA.pb",
@@ -20975,7 +21006,8 @@
       "has_source_block": true,
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/pangolin/METADATA.pb",
@@ -20989,7 +21021,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/paprika/METADATA.pb",
@@ -21003,7 +21036,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/parastoo/METADATA.pb",
@@ -21017,7 +21051,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/parisienne/METADATA.pb",
@@ -21049,7 +21084,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/passeroone/METADATA.pb",
@@ -21099,7 +21135,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/pathwayextreme/METADATA.pb",
@@ -21113,7 +21150,8 @@
       "override_config": false,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/pathwaygothicone/METADATA.pb",
@@ -21127,7 +21165,8 @@
       "override_config": true,
       "has_source_block": true,
       "status": "complete",
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/patrickhand/METADATA.pb",
