@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadNewCheckProposals();
     loadLHFTriageReport();
     loadBuildSystem();
+    loadBuildDependencies();
 });
 
 function initTabs() {
@@ -3442,4 +3443,83 @@ function renderBuildSystem(data) {
 function setText(id, value) {
     const el = document.getElementById(id);
     if (el) el.textContent = value;
+}
+
+async function loadBuildDependencies() {
+    try {
+        const response = await fetch('data/build_dependencies.json');
+        const data = await response.json();
+        renderBuildDependencies(data);
+    } catch (error) {
+        console.error('Error loading build dependencies:', error);
+    }
+}
+
+function renderBuildDependencies(data) {
+    // Render build environment table
+    const envTbody = document.querySelector('#build-deps-env-table tbody');
+    if (envTbody && data.build_environment) {
+        envTbody.innerHTML = Object.entries(data.build_environment)
+            .map(([tool, ver]) => `<tr><td><code>${tool}</code></td><td>${ver}</td></tr>`)
+            .join('');
+    }
+
+    // Populate category filter
+    const categories = [...new Set(data.dependencies.map(d => d.category))];
+    const categoryFilter = document.getElementById('build-deps-category-filter');
+    if (categoryFilter) {
+        categories.forEach(cat => {
+            const opt = document.createElement('option');
+            opt.value = cat;
+            opt.textContent = cat;
+            categoryFilter.appendChild(opt);
+        });
+    }
+
+    const tbody = document.querySelector('#build-deps-table tbody');
+    const searchInput = document.getElementById('build-deps-search');
+
+    function renderTable() {
+        const selectedCat = categoryFilter ? categoryFilter.value : 'all';
+        const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+        let filtered = data.dependencies;
+        if (selectedCat !== 'all') {
+            filtered = filtered.filter(d => d.category === selectedCat);
+        }
+        if (searchTerm) {
+            filtered = filtered.filter(d =>
+                d.families.some(f => f.toLowerCase().includes(searchTerm))
+            );
+        }
+
+        // Sort by count descending
+        filtered.sort((a, b) => b.count - a.count);
+
+        tbody.innerHTML = filtered.map(dep => {
+            const familyList = dep.families.join(', ');
+            const truncated = familyList.length > 200;
+            const displayList = truncated ? familyList.substring(0, 200) + '...' : familyList;
+            return `<tr>
+                <td><span style="background:#e3f2fd;padding:2px 6px;border-radius:3px;font-size:0.85em;">${dep.category}</span></td>
+                <td><strong>${dep.name}</strong></td>
+                <td style="text-align:center;">${dep.count}</td>
+                <td style="font-size:0.8em;color:#555;max-width:400px;overflow:hidden;">
+                    <details><summary>${dep.count} families</summary><div style="max-height:200px;overflow-y:auto;padding:4px;">${dep.families.map(f => {
+                        const highlight = searchTerm && f.toLowerCase().includes(searchTerm);
+                        return highlight ? `<mark>${f}</mark>` : f;
+                    }).join(', ')}</div></details>
+                </td>
+            </tr>`;
+        }).join('');
+    }
+
+    if (categoryFilter) categoryFilter.addEventListener('change', renderTable);
+    if (searchInput) searchInput.addEventListener('input', renderTable);
+
+    renderTable();
+
+    // Timestamp
+    const tsEl = document.getElementById('build-deps-timestamp');
+    if (tsEl) tsEl.textContent = data.generated_at || '--';
 }

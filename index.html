@@ -30,6 +30,7 @@
                     <li class="nav-item"><a href="#investigations" data-tab="investigations">Investigations</a></li>
                     <li class="nav-item"><a href="#builds" data-tab="builds">Build Approaches</a></li>
                     <li class="nav-item"><a href="#build-system" data-tab="build-system">Build System</a></li>
+                    <li class="nav-item"><a href="#build-deps" data-tab="build-deps">Build Dependencies</a></li>
                     <li class="nav-item"><a href="#prebuild" data-tab="prebuild">Pre-Build Research</a></li>
                     <li class="nav-item"><a href="#crater" data-tab="crater">Crater Failures</a></li>
                 </ul>
@@ -375,6 +376,43 @@
                 <div id="build-system-table-container" style="margin-top:2em;"></div>
 
                 <p class="sources-updated">Data generated: <span id="build-system-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-build-deps" class="tab-content">
+            <div class="panel">
+                <h2>Build Dependencies</h2>
+                <p class="panel-description">All dependencies used to build fonts in the Google Fonts Library, with version distribution and per-family cross-reference</p>
+
+                <div id="build-deps-env" style="margin-bottom:1.5em;">
+                    <h3>Current Build Environment</h3>
+                    <table class="guide-table" id="build-deps-env-table">
+                        <thead><tr><th>Tool</th><th>Installed Version</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom:1em;">
+                    <label for="build-deps-category-filter" style="font-weight:600;margin-right:0.5em;">Filter by category:</label>
+                    <select id="build-deps-category-filter" style="padding:4px 8px;border:1px solid #ccc;border-radius:4px;">
+                        <option value="all">All Categories</option>
+                    </select>
+                    <input type="text" id="build-deps-search" placeholder="Search families..." style="margin-left:1em;padding:4px 8px;border:1px solid #ccc;border-radius:4px;width:200px;">
+                </div>
+
+                <table class="guide-table" id="build-deps-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Dependency</th>
+                            <th>Families</th>
+                            <th style="min-width:300px;">Family List</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <p class="sources-updated">Data generated: <span id="build-deps-timestamp">--</span></p>
             </div>
         </section>
 
