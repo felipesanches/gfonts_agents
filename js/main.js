@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBuildDependencies();
     loadBuildTimings();
     loadBuildFailures();
+    loadDevLog();
 });
 
 function initTabs() {
@@ -3764,4 +3765,55 @@ function renderBuildFailures(data) {
 
     const tsEl = document.getElementById('bf-timestamp');
     if (tsEl) tsEl.textContent = latest.timestamp || '--';
+}
+
+async function loadDevLog() {
+    try {
+        const response = await fetch('data/devlog.json');
+        const data = await response.json();
+        renderDevLog(data);
+    } catch (error) {
+        console.error('Error loading dev log:', error);
+    }
+}
+
+function renderDevLog(data) {
+    const container = document.getElementById('devlog-posts');
+    if (!container || !data.posts) return;
+
+    container.innerHTML = data.posts.map(post => {
+        // Convert markdown-like tables and formatting to HTML
+        let body = post.body
+            .replace(/\n\n/g, '</p><p>')
+            .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+            .replace(/`([^`]+)`/g, '<code>$1</code>');
+
+        // Convert markdown tables
+        body = body.replace(/((?:\|[^\n]+\|\n?)+)/g, (match) => {
+            const rows = match.trim().split('\n').filter(r => r.trim());
+            if (rows.length < 2) return match;
+            const parseRow = r => r.split('|').filter(c => c.trim()).map(c => c.trim());
+            const headers = parseRow(rows[0]);
+            const dataRows = rows.slice(2); // skip separator
+            return '<table class="guide-table" style="margin:0.5em 0;font-size:0.9em;"><thead><tr>' +
+                headers.map(h => `<th>${h}</th>`).join('') +
+                '</tr></thead><tbody>' +
+                dataRows.map(r => '<tr>' + parseRow(r).map(c => `<td>${c}</td>`).join('') + '</tr>').join('') +
+                '</tbody></table>';
+        });
+
+        // Convert markdown lists
+        body = body.replace(/(?:^|\n)- (.+)/g, (m, item) => `<li>${item}</li>`);
+        body = body.replace(/(<li>.*<\/li>)/gs, '<ul style="margin:0.3em 0 0.3em 1.2em;">$1</ul>');
+        // Clean up duplicate ul nesting
+        body = body.replace(/<\/ul>\s*<ul[^>]*>/g, '');
+
+        return `<article style="margin-bottom:2em;padding:1.5em;background:#fafafa;border-radius:8px;border-left:4px solid #1976d2;">
+            <header style="margin-bottom:0.8em;">
+                <time style="color:#666;font-size:0.85em;">${post.date}</time>
+                <h3 style="margin:0.2em 0 0 0;color:#1976d2;">${post.title}</h3>
+            </header>
+            <div style="line-height:1.6;color:#333;"><p>${body}</p></div>
+        </article>`;
+    }).join('');
 }

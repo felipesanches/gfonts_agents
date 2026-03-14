@@ -1,0 +1,25 @@
+{
+  "description": "Development log for the Google Fonts reproducible build system. Posts are in reverse chronological order.",
+  "posts": [
+    {
+      "date": "2026-03-14",
+      "title": "Build failure investigation begins: 471 → 470 failures",
+      "body": "With all 1,266 buildable families tested (1,258 successfully, 8 unreachable), we turned attention to the 471 build failures. All failures were categorized into 14 root causes:\n\n- **fontprimer-missing** (110): The `fontprimer` recipe provider wasn't installed. Fixed by installing it, but most families hit secondary errors (missing `pyftfeatfreeze`, missing generated guide files for the Playwrite monorepo).\n- **instance-ufo-naming** (93): fontmake/glyphsLib version mismatch — instance UFOs generated with different naming than expected.\n- **gftools-fontsetter-bug** (20): `gftools-fontsetter` receives wrong arguments — a pre-existing gftools bug.\n- **fontmake errors** (94): Various compilation failures (source issues, version incompatibilities).\n- **Other** (154): master incompatibility, legacy formats, missing sources, etc.\n\nThe build registry now records `failure_category` and `failure_message` for every failing family, plus `build_environment`, `source_format`, and `config_yaml_source` for all families.\n\nAlso added a TTS announcer (using piper) that speaks build results aloud as they happen — surprisingly motivating when you hear \"3 new families building correctly! 63.2 percent building.\"\n\n**Tools installed this session:** fontprimer 0.2.2, paintcompiler 0.3.4, opentype-feature-freezer 1.32.2.\n\n**Bug fixed:** fontprimer 0.2.2 crashes with babelfont 3.1.3 because `Instance.styleName` was renamed to `Instance.name`. Patched locally."
+    },
+    {
+      "date": "2026-03-14",
+      "title": "Reproducible build testing reaches 100%: 1,258 of 1,266 families",
+      "body": "Completed testing all 1,266 buildable families in the Google Fonts library. Results:\n\n| Status | Count | % |\n|--------|-------|---|\n| Byte-identical | 110 | 8.7% |\n| Compiler version diff | 652 | 51.8% |\n| Build failure | 471 | 37.4% |\n| Timestamp diff | 13 | 1.0% |\n| Name table diff | 8 | 0.6% |\n| Metadata stanza wrong | 4 | 0.3% |\n\n784 families have deep analysis (root cause breakdown, reflow risk assessment). Key findings:\n- 265 font files have metadata-only differences (functionally reproducible)\n- 754 font files have zero reflow risk\n- Only 1 family (Artifika) has genuine reflow risk from advance width changes\n\nThe dashboard now has dedicated pages for Build System, Build Dependencies, Build Timings, and Build Failures — all with mandatory post-batch sync."
+    },
+    {
+      "date": "2026-03-14",
+      "title": "Dashboard expansion: dependencies, timings, and strict sync policy",
+      "body": "Added three new dashboard pages:\n\n1. **Build Dependencies** — cross-reference of all dependencies (source formats, ttfautohint versions, build steps, prebuild tools) with per-family listings. Category filter and family search.\n2. **Build Timings** — build time per family with histogram, median/P95/max stats. Multiple data points preserved across rebuilds for trend analysis.\n3. **Build Failures** — categorized failures with 3-phase fix plan and progress tracking over time.\n\nEstablished strict policy: the build registry is a permanent record of everything needed to rebuild the full library. Every family must have `source_format`, `config_yaml_source`, `build_environment`, and (if failing) `failure_category` recorded. All data timestamped for historical tracking.\n\n`build_dependencies.json` moved to google/fonts `build_tools/` (canonical source) with synced copy for dashboard."
+    },
+    {
+      "date": "2026-03-14",
+      "title": "Project inception: validating METADATA.pb source stanzas at scale",
+      "body": "Built a system to validate that `METADATA.pb` source stanzas (repository_url, commit) in google/fonts are correct by actually building fonts from upstream sources and comparing them to shipped binaries.\n\nThe pipeline: download source snapshot → run prebuild commands → resolve config.yaml → run gftools-builder → compare via SHA256 + TTX diff → deep analysis (ttfautohint, per-glyph coordinates, advance widths, line metrics) → categorize.\n\nKey infrastructure challenges solved:\n- **virtiofs FD accumulation**: virtiofsd leaks file descriptors during builds. Mitigated by dropping VFS caches every 5 families.\n- **Download timeouts**: 5-minute SIGALRM prevents stalls on unreachable repos.\n- **Build output discovery**: Extended `find_built_font()` to handle bracket characters in filenames, search parent directories, and exclude reference font directories.\n- **Prebuild support**: Auto-detection of Makefile/build.sh/build.py, plus explicit prebuild commands in registry (glyphs2ufo, custom scripts)."
+    }
+  ]
+}
