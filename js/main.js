@@ -3273,20 +3273,24 @@ function renderBuildSystem(data) {
     const highCount = (rr['high'] || 0) + (rr['line-spacing-only'] || 0);
     const minimalCount = rr['minimal'] || 0;
 
-    // Coherence note
-    const coherenceEl = document.getElementById('bs-coherence');
-    if (coherenceEl) {
+    // Coherence note — two list items
+    const familiesEl = document.getElementById('bs-coherence-families');
+    if (familiesEl) {
         const other = total - (s.yes || 0) - (s.compiler_version || 0) - (s.build_failure || 0);
-        let text = `Families Tested (${total}) = Byte-Identical (${s.yes||0}) + Compiler Version (${s.compiler_version||0}) + Build Failure (${s.build_failure||0})${other > 0 ? ` + other (${other})` : ''}. Untested = ${totalBuildable} \u2212 ${total} = ${untested}.`;
+        familiesEl.textContent = `Families Tested (${total}) = Byte-Identical (${s.yes||0}) + Compiler Version (${s.compiler_version||0}) + Build Failure (${s.build_failure||0})${other > 0 ? ` + other (${other})` : ''}. Untested = ${totalBuildable} \u2212 ${total} = ${untested}.`;
+    }
+    const reflowCoherenceEl = document.getElementById('bs-coherence-reflow');
+    if (reflowCoherenceEl) {
         if (totalFiles > 0) {
             const rrParts = [];
             if (noneCount) rrParts.push(`none (${noneCount})`);
             if (rr['high']) rrParts.push(`high (${rr['high']})`);
             if (rr['line-spacing-only']) rrParts.push(`line-spacing-only (${rr['line-spacing-only']})`);
             if (minimalCount) rrParts.push(`minimal (${minimalCount})`);
-            text += ` Font Files with Reflow Analysis (${totalFiles}) = ${rrParts.join(' + ')}. A family may contain multiple font files.`;
+            reflowCoherenceEl.textContent = `Font Files with Reflow Analysis (${totalFiles}) = ${rrParts.join(' + ')}. A family may contain multiple font files.`;
+        } else {
+            reflowCoherenceEl.textContent = 'Reflow risk is counted per font file (a family may contain multiple files).';
         }
-        coherenceEl.textContent = text;
     }
     const reflowEl = document.getElementById('bs-reflow-detail');
     if (reflowEl) {
