@@ -1092,5 +1092,20 @@
     "timestamp": "2026-03-13T23:30:00-03:00",
     "role": "assistant",
     "message": "Implemented prebuild support in reproducible_build.py: run_prebuild() executes pre-build commands before gftools-builder, detect_prebuild() auto-detects Makefile/build.sh. Added auto-discovery fallback for families without METADATA.pb file mappings. Fixed find_built_font() to handle bracket filenames and search fonts/VF/ directories. Configured 5 families with prebuild commands. Results: cabin byte-identical (yes), 42dotsans/astasans compiler-version, cairo/cairoplay pre-existing gftools bugs. Running batch 9 (50 more families)."
+  },
+  {
+    "timestamp": "2026-03-14T00:00:00-03:00",
+    "role": "assistant",
+    "message": "Ran batches 9-22 of reproducible builds. Fixed IncompleteRead crash during downloads. Final stats: 1102/1266 families tested — 93 byte-identical (yes), 577 compiler-version, 413 build-failure, 10 timestamp-diff, 6 name-table, 3 metadata-stanza-wrong, 164 not-tested. All results synced to dashboard after each batch."
+  },
+  {
+    "timestamp": "2026-03-14T12:50:00-03:00",
+    "role": "user",
+    "message": "Are you posting the results to the website? Please add it as a mandatory task to be done after each batch finished."
+  },
+  {
+    "timestamp": "2026-03-14T12:55:00-03:00",
+    "role": "assistant",
+    "message": "Yes — syncing build results to the dashboard (gfonts_library_sources.json) after each batch is now a mandatory step. Added it as a feedback memory so it persists across sessions. All current results (1102 families) have been synced and pushed to the website."
   }
 ]
