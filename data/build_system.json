@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-03-14T17:08:32.259063+00:00",
-  "last_updated": "2026-03-14T17:08:32.259096+00:00",
+  "generated_at": "2026-03-14T19:41:08.348267+00:00",
+  "last_updated": "2026-03-14T19:41:08.348322+00:00",
   "summary": {
-    "processed": 1102,
+    "processed": 1258,
     "total_buildable": 1266,
-    "yes": 93,
-    "byte_identical": 93,
-    "compiler_version": 577,
-    "compiler-version": 577,
-    "build_failure": 413,
-    "build-failure": 413,
-    "timestamp_diff": 10,
-    "name_table": 6,
-    "metadata_stanza_wrong": 3,
-    "untested": 164
+    "yes": 110,
+    "byte_identical": 110,
+    "compiler_version": 652,
+    "compiler-version": 652,
+    "build_failure": 471,
+    "build-failure": 471,
+    "timestamp_diff": 13,
+    "name_table": 8,
+    "metadata_stanza_wrong": 4,
+    "untested": 8
   },
   "root_cause_summary": {
-    "compiler-output-diff": 329,
-    "metadata-only": 227,
-    "ttfautohint-version + other": 170,
-    "ttfautohint-version": 75
+    "compiler-output-diff": 380,
+    "metadata-only": 265,
+    "ttfautohint-version + other": 207,
+    "ttfautohint-version": 81
   },
   "reflow_risk_summary": {
-    "none": 633,
-    "high": 159,
+    "none": 754,
+    "high": 170,
     "line-spacing-only": 8,
     "minimal": 1
   },
@@ -26972,6 +26972,1295 @@
       }
     },
     {
+      "family": "sankofadisplay",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "SankofaDisplay-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1062,
+            "ref_only": 6,
+            "built_only": 6,
+            "coord_diffs": 105,
+            "rounding_only": 5,
+            "coord_count_diffs": 98
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 12,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sansitaswashed",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SansitaSwashed[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1190,
+            "ref_only": 2,
+            "built_only": 2,
+            "coord_diffs": 6,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.003",
+            "built": "Version 1.003"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 4,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sarabun",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sassyfrass",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "SassyFrass-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 634,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 77,
+            "rounding_only": 3,
+            "coord_count_diffs": 15
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.3)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "savate",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Savate[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 979,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.000",
+            "built": "Version 2.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Savate-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 978,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.000",
+            "built": "Version 2.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sawarabimincho",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "scheherazadenew",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "schibstedgrotesk",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SchibstedGrotesk[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 583,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 32,
+            "rounding_only": 1,
+            "coord_count_diffs": 2
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100;gftools[0.9.25]",
+            "built": "Version 1.100"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SchibstedGrotesk-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 583,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 33,
+            "rounding_only": 2,
+            "coord_count_diffs": 2
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100;gftools[0.9.25]",
+            "built": "Version 1.100"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sciencegothic",
+      "status": "metadata-stanza-wrong",
+      "repository_url": "",
+      "notes": "metadata-stanza-wrong"
+    },
+    {
+      "family": "secularone",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version",
+      "files": {
+        "SecularOne-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version",
+          "glyph_stats": {
+            "total_glyphs": 466,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 2
+          },
+          "ttfautohint": {
+            "ref": "Version 1.002; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.29]",
+            "built": "Version 1.002; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sedan",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Sedan-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 494,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Sedan-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 374,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sedansc",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "SedanSC-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 494,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sedgwickave",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sedgwickavedisplay",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sekuya",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version",
+      "files": {
+        "Sekuya-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version",
+          "glyph_stats": {
+            "total_glyphs": 390,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 4,
+            "rounding_only": 0,
+            "coord_count_diffs": 4
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sen",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Sen[wght].ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "sendflowers",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "seymourone",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "SeymourOne-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 523,
+            "ref_only": 6,
+            "built_only": 6,
+            "coord_diffs": 4,
+            "rounding_only": 2,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.33]",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 12,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "shafarik",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "shalimar",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Shalimar-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1032,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 141,
+            "rounding_only": 2,
+            "coord_count_diffs": 22
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.3)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "shantellsans",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "shanti",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Shanti-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 428,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "shipporiantique",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "shipporiantiqueb1",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "shizuru",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sigmar",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "signika",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Signika[GRAD,wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1413,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.003;gftools[0.9.32]",
+            "built": "Version 2.003"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "signikanegative",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "signikasc",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "yes",
+      "files": {
+        "SignikaSC[wght].ttf": {
+          "byte_identical": false
+        }
+      }
+    },
+    {
+      "family": "silkscreen",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Silkscreen-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 228,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Silkscreen-Bold.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 228,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sirivennela",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Sirivennela-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 1307,
+            "ref_only": 6,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.00; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 6,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sixtyfour",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sixtyfourconvergence",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "slacksideone",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "SlacksideOne-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "smooch",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "smoochsans",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SmoochSans[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 642,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 48,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010",
+            "built": "Version 1.010"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "snpro",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sofiasans",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SofiaSans[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 950,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 3,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        },
+        "SofiaSans-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 930,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 4,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sofiasanscondensed",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SofiaSansCondensed[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 950,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 3,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        },
+        "SofiaSansCondensed-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 930,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 3,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sofiasansextracondensed",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SofiaSansExtraCondensed[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 950,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 4,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        },
+        "SofiaSansExtraCondensed-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 930,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 3,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sofiasanssemicondensed",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SofiaSansSemiCondensed[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 950,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 13,
+            "rounding_only": 11,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        },
+        "SofiaSansSemiCondensed-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 930,
+            "ref_only": 4,
+            "built_only": 4,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 4.101",
+            "built": "Version 4.101"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 8,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "solitreo",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Solitreo-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 524,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "solway",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sometypemono",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SometypeMono[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 563,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001",
+            "built": "Version 1.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SometypeMono-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 563,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001",
+            "built": "Version 1.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "sono",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sourgummy",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SourGummy[wdth,wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 385,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 3,
+            "rounding_only": 3,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000",
+            "built": "Version 1.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SourGummy-Italic[wdth,wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 385,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 4,
+            "rounding_only": 4,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000",
+            "built": "Version 1.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "spacemono",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "SpaceMono-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 764,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
+          }
+        },
+        "SpaceMono-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 763,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpaceMono-Bold.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 764,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
+          }
+        },
+        "SpaceMono-BoldItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 763,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "specialgothic",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "SpecialGothic[wdth,wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 561,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.011",
+            "built": "Version 1.011"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "specialgothiccondensedone",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "SpecialGothicCondensedOne-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 559,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 18,
+            "rounding_only": 0,
+            "coord_count_diffs": 17
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "specialgothicexpandedone",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "SpecialGothicExpandedOne-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 559,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 13,
+            "rounding_only": 2,
+            "coord_count_diffs": 10
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
       "family": "spectral",
       "status": "compiler-version",
       "repository_url": "",
@@ -27302,10 +28591,3073 @@
       }
     },
     {
+      "family": "spectralsc",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version, ttfautohint-version + other",
+      "files": {
+        "SpectralSC-ExtraLight.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 55,
+            "rounding_only": 7,
+            "coord_count_diffs": 46
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-ExtraLightItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 45,
+            "rounding_only": 3,
+            "coord_count_diffs": 42
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-Light.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 43,
+            "rounding_only": 3,
+            "coord_count_diffs": 38
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-LightItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 45,
+            "rounding_only": 1,
+            "coord_count_diffs": 43
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 50,
+            "rounding_only": 7,
+            "coord_count_diffs": 41
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 44,
+            "rounding_only": 5,
+            "coord_count_diffs": 39
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-Medium.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 58,
+            "rounding_only": 14,
+            "coord_count_diffs": 42
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-MediumItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 45,
+            "rounding_only": 7,
+            "coord_count_diffs": 38
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-SemiBold.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 56,
+            "rounding_only": 12,
+            "coord_count_diffs": 42
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-SemiBoldItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 77,
+            "rounding_only": 21,
+            "coord_count_diffs": 55
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-Bold.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 38,
+            "rounding_only": 4,
+            "coord_count_diffs": 32
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-BoldItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 56,
+            "rounding_only": 6,
+            "coord_count_diffs": 48
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-ExtraBold.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 46,
+            "rounding_only": 3,
+            "coord_count_diffs": 40
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SpectralSC-ExtraBoldItalic.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version",
+          "glyph_stats": {
+            "total_glyphs": 1480,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 56,
+            "rounding_only": 4,
+            "coord_count_diffs": 52
+          },
+          "ttfautohint": {
+            "ref": "Version 2.005; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.005; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "splash",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "splinesans",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "SplineSans[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 520,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 2,
+            "rounding_only": 0,
+            "coord_count_diffs": 2
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001",
+            "built": "Version 1.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "splinesansmono",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "SplineSansMono[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 555,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.004",
+            "built": "Version 1.004"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "SplineSansMono-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 627,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.004",
+            "built": "Version 1.004"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "squarepeg",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "SquarePeg-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 652,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 10,
+            "rounding_only": 2,
+            "coord_count_diffs": 7
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "srisakdi",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "staatliches",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "stacksansheadline",
+      "status": "timestamp-diff",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "StackSansHeadline[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 522,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000",
+            "built": "Version 1.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "stacksansnotch",
+      "status": "timestamp-diff",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "StackSansNotch[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 522,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000",
+            "built": "Version 1.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "stacksanstext",
+      "status": "timestamp-diff",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "StackSansText[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 522,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000",
+            "built": "Version 1.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "stick",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "sticknobills",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "StickNoBills[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 779,
+            "ref_only": 88,
+            "built_only": 88,
+            "coord_diffs": 38,
+            "rounding_only": 9,
+            "coord_count_diffs": 16
+          },
+          "ttfautohint": {
+            "ref": "Version 2.000",
+            "built": "Version 2.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 176,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "storyscript",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "StoryScript-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 699,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 107,
+            "rounding_only": 2,
+            "coord_count_diffs": 102
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "strait",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Strait-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "stylescript",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "StyleScript-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1439,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 29,
+            "rounding_only": 1,
+            "coord_count_diffs": 6
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.3)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "suse",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "SUSE[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 626,
+            "ref_only": 3,
+            "built_only": 3,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.001",
+            "built": "Version 2.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 6,
+            "line_metrics_identical": true
+          }
+        },
+        "SUSE-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 592,
+            "ref_only": 3,
+            "built_only": 3,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.001",
+            "built": "Version 2.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 6,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "susemono",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "suwannaphum",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only, ttfautohint-version + other",
+      "files": {
+        "Suwannaphum-Thin.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 360,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 8.002; ttfautohint (v1.8.3)",
+            "built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 35,
+            "hmtx_max_delta": 710,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Suwannaphum-Light.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 360,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 8.002; ttfautohint (v1.8.3)",
+            "built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 35,
+            "hmtx_max_delta": 691,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Suwannaphum-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 360,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 8.002; ttfautohint (v1.8.3)",
+            "built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 35,
+            "hmtx_max_delta": 691,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Suwannaphum-Bold.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 360,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 8.002; ttfautohint (v1.8.3)",
+            "built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 35,
+            "hmtx_max_delta": 691,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Suwannaphum-Black.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 360,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 8.002; ttfautohint (v1.8.3)",
+            "built": "Version 8.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 35,
+            "hmtx_max_delta": 691,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tacone",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "TacOne-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1078,
+            "ref_only": 25,
+            "built_only": 25,
+            "coord_diffs": 57,
+            "rounding_only": 1,
+            "coord_count_diffs": 26
+          },
+          "ttfautohint": {
+            "ref": "Version 1.003; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.003; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 5,
+            "hmtx_max_delta": 141,
+            "hmtx_glyph_name_changes": 50,
+            "line_metrics_identical": false
+          }
+        }
+      }
+    },
+    {
+      "family": "tagesschrift",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Tagesschrift-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 340,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.000; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 2.000; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tapestry",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "taprom",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "tasaexplorer",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "TASAExplorer[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 659,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.011",
+            "built": "Version 2.011"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tasaorbiter",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "TASAOrbiter[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 698,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 11,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 2.011",
+            "built": "Version 2.010"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "teachers",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Teachers[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 354,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001",
+            "built": "Version 1.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Teachers-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 354,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001",
+            "built": "Version 1.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "teko",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Teko[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 1022,
+            "ref_only": 3,
+            "built_only": 3,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.000;gftools[0.9.28.dev9+g7d2139d.d20230707]",
+            "built": "Version 2.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 6,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tektur",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "texturina",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Texturina[opsz,wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 721,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 5,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.002",
+            "built": "Version 1.004"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
+          }
+        },
+        "Texturina-Italic[opsz,wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 722,
+            "ref_only": 1,
+            "built_only": 1,
+            "coord_diffs": 8,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.002",
+            "built": "Version 1.004"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 2,
+            "line_metrics_identical": true
+          }
+        },
+        "static/Texturina-Black.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-BlackItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-Bold.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-BoldItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-ExtraBold.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-ExtraBoldItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-ExtraLight.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-ExtraLightItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-Italic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-Light.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-LightItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-Medium.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-MediumItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-Regular.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-SemiBold.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-SemiBoldItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-Thin.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina-ThinItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Black.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-BlackItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Bold.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-BoldItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-ExtraBold.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-ExtraBoldItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-ExtraLight.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-ExtraLightItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Italic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Light.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-LightItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Medium.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-MediumItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Regular.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-SemiBold.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-SemiBoldItalic.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-Thin.ttf": {
+          "byte_identical": false
+        },
+        "static/Texturina72pt-ThinItalic.ttf": {
+          "byte_identical": false
+        }
+      }
+    },
+    {
+      "family": "thasadith",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "thenautigal",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "TheNautigal-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 630,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 74,
+            "rounding_only": 1,
+            "coord_count_diffs": 2
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.3)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "TheNautigal-Bold.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 630,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 78,
+            "rounding_only": 2,
+            "coord_count_diffs": 5
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100; ttfautohint (v1.8.3)",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tiktoksans",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "tiltneon",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "tiltprism",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "TiltPrism[XROT,YROT].ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "tiltwarp",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "tiny5",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "tirobangla",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "TiroBangla-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1193,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 476,
+            "rounding_only": 26,
+            "coord_count_diffs": 146
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "TiroBangla-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1193,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 508,
+            "rounding_only": 21,
+            "coord_count_diffs": 232
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tirodevanagarihindi",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "yes",
+      "files": {
+        "TiroDevaHindi-Regular.ttf": {
+          "byte_identical": false
+        },
+        "TiroDevaHindi-Italic.ttf": {
+          "byte_identical": false
+        }
+      }
+    },
+    {
+      "family": "tirodevanagarimarathi",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "yes",
+      "files": {
+        "TiroDevaMarathi-Regular.ttf": {
+          "byte_identical": false
+        },
+        "TiroDevaMarathi-Italic.ttf": {
+          "byte_identical": false
+        }
+      }
+    },
+    {
+      "family": "tirodevanagarisanskrit",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "yes",
+      "files": {
+        "TiroDevaSanskrit-Regular.ttf": {
+          "byte_identical": false
+        },
+        "TiroDevaSanskrit-Italic.ttf": {
+          "byte_identical": false
+        }
+      }
+    },
+    {
+      "family": "tirogurmukhi",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "TiroGurmukhi-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 874,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 213,
+            "rounding_only": 7,
+            "coord_count_diffs": 75
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "TiroGurmukhi-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 874,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 217,
+            "rounding_only": 3,
+            "coord_count_diffs": 85
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tirokannada",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "TiroKannada-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1240,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 563,
+            "rounding_only": 10,
+            "coord_count_diffs": 273
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "TiroKannada-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1240,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 575,
+            "rounding_only": 5,
+            "coord_count_diffs": 375
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tirotamil",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "TiroTamil-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 898,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 274,
+            "rounding_only": 2,
+            "coord_count_diffs": 60
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "TiroTamil-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 898,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 276,
+            "rounding_only": 1,
+            "coord_count_diffs": 66
+          },
+          "ttfautohint": {
+            "ref": "Version 1.52",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tirotelugu",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "TiroTelugu-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1581,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 862,
+            "rounding_only": 21,
+            "coord_count_diffs": 405
+          },
+          "ttfautohint": {
+            "ref": "Version 1.53",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "TiroTelugu-Italic.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1581,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 847,
+            "rounding_only": 26,
+            "coord_count_diffs": 382
+          },
+          "ttfautohint": {
+            "ref": "Version 1.53",
+            "built": "SET VERSION IN YAML CONFIG FILE; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tirra",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Tirra-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 452,
+            "ref_only": 0,
+            "built_only": 25,
+            "coord_diffs": 78,
+            "rounding_only": 0,
+            "coord_count_diffs": 57
+          },
+          "ttfautohint": {
+            "ref": "Version 4.100",
+            "built": "Version 4.101; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 25,
+            "line_metrics_identical": true
+          }
+        },
+        "Tirra-Medium.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 452,
+            "ref_only": 0,
+            "built_only": 25,
+            "coord_diffs": 88,
+            "rounding_only": 14,
+            "coord_count_diffs": 53
+          },
+          "ttfautohint": {
+            "ref": "Version 4.100",
+            "built": "Version 4.101; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 25,
+            "line_metrics_identical": true
+          }
+        },
+        "Tirra-SemiBold.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 452,
+            "ref_only": 0,
+            "built_only": 25,
+            "coord_diffs": 78,
+            "rounding_only": 4,
+            "coord_count_diffs": 55
+          },
+          "ttfautohint": {
+            "ref": "Version 4.100",
+            "built": "Version 4.101; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 25,
+            "line_metrics_identical": true
+          }
+        },
+        "Tirra-Bold.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 452,
+            "ref_only": 0,
+            "built_only": 25,
+            "coord_diffs": 75,
+            "rounding_only": 0,
+            "coord_count_diffs": 55
+          },
+          "ttfautohint": {
+            "ref": "Version 4.100",
+            "built": "Version 4.101; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 25,
+            "line_metrics_identical": true
+          }
+        },
+        "Tirra-ExtraBold.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 452,
+            "ref_only": 0,
+            "built_only": 25,
+            "coord_diffs": 74,
+            "rounding_only": 0,
+            "coord_count_diffs": 56
+          },
+          "ttfautohint": {
+            "ref": "Version 4.100",
+            "built": "Version 4.101; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 25,
+            "line_metrics_identical": true
+          }
+        },
+        "Tirra-Black.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 452,
+            "ref_only": 0,
+            "built_only": 25,
+            "coord_diffs": 76,
+            "rounding_only": 0,
+            "coord_count_diffs": 61
+          },
+          "ttfautohint": {
+            "ref": "Version 4.100",
+            "built": "Version 4.101; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 25,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "tomorrow",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "tourney",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "trainone",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "triodion",
+      "status": "name-table",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Triodion-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 528,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.202; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.202; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "trocchi",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Trocchi-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "tsukimirounded",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "TsukimiRounded-Light.ttf": {
+          "byte_identical": true
+        },
+        "TsukimiRounded-Regular.ttf": {
+          "byte_identical": true
+        },
+        "TsukimiRounded-Medium.ttf": {
+          "byte_identical": true
+        },
+        "TsukimiRounded-SemiBold.ttf": {
+          "byte_identical": true
+        },
+        "TsukimiRounded-Bold.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "turretroad",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "twinklestar",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "unbounded",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Unbounded[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1416,
+            "ref_only": 3,
+            "built_only": 3,
+            "coord_diffs": 102,
+            "rounding_only": 2,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.701;gftools[0.9.28.dev5+ged2979d]",
+            "built": "Version 1.701"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 6,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "unicaone",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "UnicaOne-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "unlock",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Unlock-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "uoqmunthenkhung",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "updock",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "urbanist",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "varelaround",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "VarelaRound-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 824,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 7,
+            "rounding_only": 0,
+            "coord_count_diffs": 6
+          },
+          "ttfautohint": {
+            "ref": "Version 3.010; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 3.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "varta",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Varta[wght].ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "vazirmatn",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "vendsans",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "VendSans[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 449,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.611",
+            "built": "Version 1.611"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "VendSans-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 449,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.611",
+            "built": "Version 1.611"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "viaodalibre",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "vibes",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Vibes-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 399,
+            "ref_only": 119,
+            "built_only": 119,
+            "coord_diffs": 235,
+            "rounding_only": 0,
+            "coord_count_diffs": 187
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 1,
+            "hmtx_max_delta": 393,
+            "hmtx_glyph_name_changes": 238,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "victormono",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "VictorMono[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1441,
+            "ref_only": 1,
+            "built_only": 2,
+            "coord_diffs": 920,
+            "rounding_only": 0,
+            "coord_count_diffs": 139
+          },
+          "ttfautohint": {
+            "ref": "Version 1.561;gftools[0.9.30]",
+            "built": "Version 1.564"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 1402,
+            "hmtx_max_delta": 55,
+            "hmtx_glyph_name_changes": 3,
+            "line_metrics_identical": false
+          }
+        },
+        "VictorMono-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 1475,
+            "ref_only": 1,
+            "built_only": 2,
+            "coord_diffs": 960,
+            "rounding_only": 0,
+            "coord_count_diffs": 240
+          },
+          "ttfautohint": {
+            "ref": "Version 1.561;gftools[0.9.30]",
+            "built": "Version 1.564"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 1436,
+            "hmtx_max_delta": 55,
+            "hmtx_glyph_name_changes": 3,
+            "line_metrics_identical": false
+          }
+        }
+      }
+    },
+    {
+      "family": "vinasans",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "VinaSans-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 578,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 54,
+            "rounding_only": 2,
+            "coord_count_diffs": 3
+          },
+          "ttfautohint": {
+            "ref": "Version 1.002; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.28]",
+            "built": "Version 1.002; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "voces",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Voces-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 663,
+            "ref_only": 18,
+            "built_only": 18,
+            "coord_diffs": 657,
+            "rounding_only": 0,
+            "coord_count_diffs": 436
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100",
+            "built": "Version 1.100; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 36,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "vollkorn",
+      "status": "name-table",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Vollkorn[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 2303,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 5.001",
+            "built": "Version 5.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Vollkorn-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 1835,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 5.001",
+            "built": "Version 5.000"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "voltaire",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Voltaire-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 973,
+            "ref_only": 0,
+            "built_only": 14,
+            "coord_diffs": 18,
+            "rounding_only": 5,
+            "coord_count_diffs": 6
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 4,
+            "hmtx_max_delta": 118,
+            "hmtx_glyph_name_changes": 14,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "vujahdayscript",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "warnes",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Warnes-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "waterbrush",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "waterfall",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Waterfall-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 1908,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 304,
+            "rounding_only": 7,
+            "coord_count_diffs": 17
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.3)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "wavefont",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "whisper",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "windsong",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "WindSong-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 796,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 15,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.3)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "WindSong-Medium.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 796,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 7,
+            "rounding_only": 1,
+            "coord_count_diffs": 2
+          },
+          "ttfautohint": {
+            "ref": "Version 1.010; ttfautohint (v1.8.3)",
+            "built": "Version 1.010; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "winkyrough",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "WinkyRough[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 424,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.206",
+            "built": "Version 1.206"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "WinkyRough-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 424,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.206",
+            "built": "Version 1.206"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "winkysans",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "WinkySans[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 427,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 1.205",
+            "built": "Version 1.205"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "WinkySans-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 427,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 1
+          },
+          "ttfautohint": {
+            "ref": "Version 1.205",
+            "built": "Version 1.205"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "wireone",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "WireOne-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 224,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 1,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.102; ttfautohint (v1.8.3)",
+            "built": "Version 1.102; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "wittgenstein",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "Wittgenstein[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 570,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.500",
+            "built": "Version 1.500"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        },
+        "Wittgenstein-Italic[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 570,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.500",
+            "built": "Version 1.500"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "wixmadefordisplay",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "metadata-only",
+      "files": {
+        "WixMadeforDisplay[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "metadata-only",
+          "glyph_stats": {
+            "total_glyphs": 726,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 0,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 3.100",
+            "built": "Version 3.100"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "workbench",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Workbench[BLED,SCAN].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 237,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 9,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.001",
+            "built": "Version 2.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
       "family": "worksans",
       "status": "build-failure",
       "repository_url": "",
       "notes": "build-failure"
+    },
+    {
+      "family": "xanhmono",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "XanhMono-Italic.ttf": {
+          "byte_identical": true
+        },
+        "XanhMono-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "yaldevi",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "Yaldevi[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 800,
+            "ref_only": 91,
+            "built_only": 91,
+            "coord_diffs": 69,
+            "rounding_only": 14,
+            "coord_count_diffs": 36
+          },
+          "ttfautohint": {
+            "ref": "Version 1.100",
+            "built": "Version 1.100"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 182,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "yaldevicolombo",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "yanonekaffeesatz",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "YanoneKaffeesatz[wght].ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 669,
+            "ref_only": 6,
+            "built_only": 4,
+            "coord_diffs": 1,
+            "rounding_only": 1,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.003",
+            "built": "Version 2.003"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 10,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "yarndings12",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Yarndings12-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 95,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 49,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "yarndings12charted",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Yarndings12Charted-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 95,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 90,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "yarndings20",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Yarndings20-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 95,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 48,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "yarndings20charted",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "Yarndings20Charted-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 95,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 93,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 1.001; ttfautohint (v1.8.4.7-5d5b)",
+            "built": "Version 1.001; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "yomogi",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "youngserif",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "YoungSerif-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 634,
+            "ref_only": 10,
+            "built_only": 442,
+            "coord_diffs": 275,
+            "rounding_only": 0,
+            "coord_count_diffs": 133
+          },
+          "ttfautohint": {
+            "ref": "Version 3.003; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.33]",
+            "built": "Version 4.002; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "high",
+            "hmtx_diffs": 614,
+            "hmtx_max_delta": 389,
+            "hmtx_glyph_name_changes": 452,
+            "line_metrics_identical": false
+          }
+        }
+      }
+    },
+    {
+      "family": "yrsa",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "Yrsa[wght].ttf": {
+          "byte_identical": true
+        },
+        "Yrsa-Italic[wght].ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "ysabeau",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "ysabeauinfant",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "ysabeauoffice",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "ysabeausc",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "yuseimagic",
+      "status": "yes",
+      "repository_url": "",
+      "notes": "Byte-identical",
+      "files": {
+        "YuseiMagic-Regular.ttf": {
+          "byte_identical": true
+        }
+      }
+    },
+    {
+      "family": "zain",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "zalandosans",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "zalandosansexpanded",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "zalandosanssemiexpanded",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "zcoolkuaile",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "compiler-output-diff",
+      "files": {
+        "ZCOOLKuaiLe-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "compiler-output-diff",
+          "glyph_stats": {
+            "total_glyphs": 7055,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 49,
+            "rounding_only": 0,
+            "coord_count_diffs": 0
+          },
+          "ttfautohint": {
+            "ref": "Version 2.001",
+            "built": "Version 2.001"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
+    },
+    {
+      "family": "zcoolqingkehuangyou",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "zcoolxiaowei",
+      "status": "build-failure",
+      "repository_url": "",
+      "notes": "build-failure"
+    },
+    {
+      "family": "zendots",
+      "status": "compiler-version",
+      "repository_url": "",
+      "notes": "ttfautohint-version + other",
+      "files": {
+        "ZenDots-Regular.ttf": {
+          "byte_identical": false,
+          "root_cause": "ttfautohint-version + other",
+          "glyph_stats": {
+            "total_glyphs": 256,
+            "ref_only": 0,
+            "built_only": 0,
+            "coord_diffs": 18,
+            "rounding_only": 0,
+            "coord_count_diffs": 3
+          },
+          "ttfautohint": {
+            "ref": "Version 1.000; ttfautohint (v1.8.3)",
+            "built": "Version 1.000; ttfautohint (v1.8.4.16-eb64)"
+          },
+          "metrics": {
+            "reflow_risk": "none",
+            "hmtx_diffs": 0,
+            "hmtx_max_delta": 0,
+            "hmtx_glyph_name_changes": 0,
+            "line_metrics_identical": true
+          }
+        }
+      }
     }
   ]
 }
