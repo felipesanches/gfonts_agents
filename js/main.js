@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBuildSystem();
     loadBuildDependencies();
     loadBuildTimings();
+    loadBuildFailures();
 });
 
 function initTabs() {
@@ -3644,4 +3645,123 @@ function renderBuildTimings(data) {
 
     const tsEl = document.getElementById('build-timings-timestamp');
     if (tsEl) tsEl.textContent = data.generated_at || '--';
+}
+
+async function loadBuildFailures() {
+    try {
+        const response = await fetch('data/build_failure_categories.json');
+        const data = await response.json();
+        renderBuildFailures(data);
+    } catch (error) {
+        console.error('Error loading build failure categories:', error);
+    }
+}
+
+function renderBuildFailures(data) {
+    const snapshots = data.snapshots || [];
+    if (snapshots.length === 0) return;
+
+    const latest = snapshots[snapshots.length - 1];
+    const cats = latest.categories || {};
+
+    // Category metadata: fixability and fix description
+    const catMeta = {
+        'fontprimer-missing': { fix: 'yes', desc: 'Install fontprimer package', phase: 1 },
+        'instance-ufo-naming': { fix: 'yes', desc: 'Fix fontmake/glyphsLib version alignment', phase: 1 },
+        'ninja-type-error': { fix: 'yes', desc: 'Fix gftools-builder ninja list bug', phase: 1 },
+        'no-build-log': { fix: 'yes', desc: 'Fix config.yaml discovery or retry download', phase: 2 },
+        'source-file-missing': { fix: 'yes', desc: 'Fix config.yaml paths or use correct commit', phase: 2 },
+        'ninja-missing-source': { fix: 'yes', desc: 'Fix sibling repo references in config', phase: 2 },
+        'no-final-targets': { fix: 'partial', desc: 'Update config.yaml build targets', phase: 2 },
+        'designspace-axis-error': { fix: 'partial', desc: 'Fix axis range values or use older fontmake', phase: 2 },
+        'color-tools-missing': { fix: 'yes', desc: 'Install paintcompiler/maximum_color', phase: 1 },
+        'duplicate-feature-def': { fix: 'partial', desc: 'May need older fontmake or source fix', phase: 3 },
+        'fontmake-error-other': { fix: 'partial', desc: 'Various fontmake errors — case-by-case', phase: 3 },
+        'fontmake-value-error': { fix: 'partial', desc: 'fontmake ValueError — case-by-case', phase: 3 },
+        'fontmake-type-error': { fix: 'partial', desc: 'fontmake TypeError — case-by-case', phase: 3 },
+        'designspace-instance-error': { fix: 'partial', desc: 'Instance generation failed — version or source', phase: 3 },
+        'ufolib-error': { fix: 'partial', desc: 'UFO validation errors — version or source', phase: 3 },
+        'master-incompatibility': { fix: 'no', desc: 'Incompatible masters — needs upstream fix', phase: 3 },
+        'qcurve-unsupported': { fix: 'no', desc: 'Quadratic curves — needs different build tool', phase: 3 },
+        'legacy-source-format': { fix: 'no', desc: 'SFD/VFB only — no modern build pipeline', phase: 3 },
+        'prebuild-failed': { fix: 'partial', desc: 'Prebuild script failed — investigate', phase: 2 },
+        'unknown': { fix: 'partial', desc: 'Needs investigation', phase: 3 },
+    };
+
+    // Summary counts
+    let fixable = 0, partial = 0, unfixable = 0, total = 0;
+    for (const [cat, info] of Object.entries(cats)) {
+        const count = info.count;
+        total += count;
+        const meta = catMeta[cat] || { fix: 'partial' };
+        if (meta.fix === 'yes') fixable += count;
+        else if (meta.fix === 'partial') partial += count;
+        else unfixable += count;
+    }
+
+    setText('bf-total', total);
+    setText('bf-fixable', fixable);
+    setText('bf-partial', partial);
+    setText('bf-unfixable', unfixable);
+
+    // Progress chart (if multiple snapshots)
+    const chartDiv = document.getElementById('bf-progress-chart');
+    if (chartDiv && snapshots.length > 1) {
+        const rows = snapshots.map(s => {
+            const t = s.timestamp.substring(0, 10);
+            const f = s.total_failures;
+            return `<tr><td>${t}</td><td>${f}</td><td>${s.total_families - f}</td></tr>`;
+        }).join('');
+        chartDiv.innerHTML = `<h3>Progress Over Time</h3>
+            <table class="guide-table"><thead><tr><th>Date</th><th>Failures</th><th>Successes</th></tr></thead>
+            <tbody>${rows}</tbody></table>`;
+    } else if (chartDiv) {
+        chartDiv.innerHTML = '<p style="color:#888;font-style:italic;">Progress chart will appear after multiple snapshots are recorded.</p>';
+    }
+
+    // Plan
+    const planDiv = document.getElementById('bf-plan');
+    if (planDiv) {
+        const phases = [
+            { n: 1, title: 'Quick wins — toolchain fixes', color: '#4caf50' },
+            { n: 2, title: 'Config & harness fixes', color: '#ff9800' },
+            { n: 3, title: 'Case-by-case investigation', color: '#f44336' },
+        ];
+        planDiv.innerHTML = phases.map(p => {
+            const phaseCats = Object.entries(cats)
+                .filter(([cat]) => (catMeta[cat] || {}).phase === p.n)
+                .sort((a, b) => b[1].count - a[1].count);
+            const phaseTotal = phaseCats.reduce((s, [, v]) => s + v.count, 0);
+            return `<div style="margin-bottom:1em;padding:0.8em;border-left:4px solid ${p.color};background:#fafafa;border-radius:0 4px 4px 0;">
+                <strong>Phase ${p.n}: ${p.title}</strong> <span style="color:#666;">(${phaseTotal} families)</span>
+                <ul style="margin:0.3em 0 0 1.2em;padding:0;">${phaseCats.map(([cat, info]) =>
+                    `<li>${(catMeta[cat] || {}).desc || cat}: <strong>${info.count}</strong> families</li>`
+                ).join('')}</ul>
+            </div>`;
+        }).join('');
+    }
+
+    // Table
+    const tbody = document.querySelector('#bf-table tbody');
+    if (tbody) {
+        const sorted = Object.entries(cats).sort((a, b) => b[1].count - a[1].count);
+        tbody.innerHTML = sorted.map(([cat, info]) => {
+            const meta = catMeta[cat] || { fix: 'partial', desc: 'Unknown' };
+            const fixBadge = meta.fix === 'yes' ? '<span style="color:#4caf50;">Yes</span>'
+                : meta.fix === 'partial' ? '<span style="color:#ff9800;">Partial</span>'
+                : '<span style="color:#f44336;">No</span>';
+            return `<tr>
+                <td><code>${cat}</code></td>
+                <td style="text-align:center;"><strong>${info.count}</strong></td>
+                <td style="text-align:center;">${fixBadge}</td>
+                <td>${meta.desc}</td>
+                <td><details><summary>${info.count} families</summary>
+                    <div style="font-size:0.8em;max-height:200px;overflow-y:auto;padding:4px;">${info.families.join(', ')}</div>
+                </details></td>
+            </tr>`;
+        }).join('');
+    }
+
+    const tsEl = document.getElementById('bf-timestamp');
+    if (tsEl) tsEl.textContent = latest.timestamp || '--';
 }
