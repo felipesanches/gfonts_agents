@@ -31,6 +31,7 @@
                     <li class="nav-item"><a href="#builds" data-tab="builds">Build Approaches</a></li>
                     <li class="nav-item"><a href="#build-system" data-tab="build-system">Build System</a></li>
                     <li class="nav-item"><a href="#build-deps" data-tab="build-deps">Build Dependencies</a></li>
+                    <li class="nav-item"><a href="#build-timings" data-tab="build-timings">Build Timings</a></li>
                     <li class="nav-item"><a href="#prebuild" data-tab="prebuild">Pre-Build Research</a></li>
                     <li class="nav-item"><a href="#crater" data-tab="crater">Crater Failures</a></li>
                 </ul>
@@ -413,6 +414,59 @@
                 </table>
 
                 <p class="sources-updated">Data generated: <span id="build-deps-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-build-timings" class="tab-content">
+            <div class="panel">
+                <h2>Build Timings</h2>
+                <p class="panel-description">How long each font family takes to build from source. Multiple data points are preserved when families are rebuilt.</p>
+
+                <div id="build-timings-summary" class="builds-summary" style="margin-bottom:1.5em;">
+                    <div class="summary-card total">
+                        <span class="summary-value" id="bt-total">--</span>
+                        <span class="summary-label">Families Timed</span>
+                    </div>
+                    <div class="summary-card complete">
+                        <span class="summary-value" id="bt-median">--</span>
+                        <span class="summary-label">Median Build Time</span>
+                    </div>
+                    <div class="summary-card warning">
+                        <span class="summary-value" id="bt-p95">--</span>
+                        <span class="summary-label">95th Percentile</span>
+                    </div>
+                    <div class="summary-card error">
+                        <span class="summary-value" id="bt-slowest">--</span>
+                        <span class="summary-label">Slowest Build</span>
+                    </div>
+                </div>
+
+                <div id="build-timings-histogram" style="margin-bottom:1.5em;"></div>
+
+                <div style="margin-bottom:1em;">
+                    <label for="bt-sort" style="font-weight:600;margin-right:0.5em;">Sort by:</label>
+                    <select id="bt-sort" style="padding:4px 8px;border:1px solid #ccc;border-radius:4px;">
+                        <option value="time-desc">Slowest first</option>
+                        <option value="time-asc">Fastest first</option>
+                        <option value="name">Family name</option>
+                    </select>
+                    <input type="text" id="bt-search" placeholder="Search families..." style="margin-left:1em;padding:4px 8px;border:1px solid #ccc;border-radius:4px;width:200px;">
+                </div>
+
+                <table class="guide-table" id="build-timings-table">
+                    <thead>
+                        <tr>
+                            <th>Family</th>
+                            <th>Latest Build Time</th>
+                            <th>Status</th>
+                            <th>Builds</th>
+                            <th>History</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <p class="sources-updated">Data generated: <span id="build-timings-timestamp">--</span></p>
             </div>
         </section>
 

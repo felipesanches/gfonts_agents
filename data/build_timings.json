@@ -1,0 +1,5 @@
+{
+  "generated_at": "2026-03-14",
+  "description": "Build timing data collected during reproducible builds. Each family may have multiple data points from different builds.",
+  "families": {}
+}

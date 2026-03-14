@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadLHFTriageReport();
     loadBuildSystem();
     loadBuildDependencies();
+    loadBuildTimings();
 });
 
 function initTabs() {
@@ -3521,5 +3522,126 @@ function renderBuildDependencies(data) {
 
     // Timestamp
     const tsEl = document.getElementById('build-deps-timestamp');
+    if (tsEl) tsEl.textContent = data.generated_at || '--';
+}
+
+async function loadBuildTimings() {
+    try {
+        const response = await fetch('data/build_timings.json');
+        const data = await response.json();
+        renderBuildTimings(data);
+    } catch (error) {
+        console.error('Error loading build timings:', error);
+    }
+}
+
+function renderBuildTimings(data) {
+    const families = data.families || {};
+    const entries = Object.entries(families)
+        .filter(([, v]) => v.timings && v.timings.length > 0)
+        .map(([name, v]) => {
+            const latest = v.timings[v.timings.length - 1];
+            return { name, timings: v.timings, latest };
+        });
+
+    // Summary stats
+    const times = entries.map(e => e.latest.build_time_seconds).filter(t => t > 0).sort((a, b) => a - b);
+    const total = entries.length;
+
+    function formatTime(s) {
+        if (s >= 60) return `${Math.floor(s / 60)}m ${Math.round(s % 60)}s`;
+        return `${s.toFixed(1)}s`;
+    }
+
+    setText('bt-total', total);
+    if (times.length > 0) {
+        const median = times[Math.floor(times.length / 2)];
+        const p95 = times[Math.floor(times.length * 0.95)];
+        const max = times[times.length - 1];
+        setText('bt-median', formatTime(median));
+        setText('bt-p95', formatTime(p95));
+        setText('bt-slowest', formatTime(max));
+    }
+
+    // Histogram
+    const histDiv = document.getElementById('build-timings-histogram');
+    if (histDiv && times.length > 0) {
+        const buckets = [
+            { label: '< 10s', min: 0, max: 10 },
+            { label: '10-30s', min: 10, max: 30 },
+            { label: '30s-1m', min: 30, max: 60 },
+            { label: '1-2m', min: 60, max: 120 },
+            { label: '2-5m', min: 120, max: 300 },
+            { label: '5-10m', min: 300, max: 600 },
+        ];
+        const counts = buckets.map(b => times.filter(t => t >= b.min && t < b.max).length);
+        const maxCount = Math.max(...counts, 1);
+        histDiv.innerHTML = `
+            <h3 style="margin-bottom:0.5em;">Build Time Distribution</h3>
+            <div style="display:flex;align-items:flex-end;gap:4px;height:120px;padding:0 1em;">
+                ${buckets.map((b, i) => `
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+                        <span style="font-size:0.75em;color:#666;">${counts[i]}</span>
+                        <div style="width:100%;background:#1976d2;border-radius:3px 3px 0 0;height:${Math.max(2, counts[i] / maxCount * 100)}px;"></div>
+                        <span style="font-size:0.7em;margin-top:2px;color:#555;">${b.label}</span>
+                    </div>
+                `).join('')}
+            </div>`;
+    } else if (histDiv) {
+        histDiv.innerHTML = '<p style="color:#888;font-style:italic;">No timing data yet. Build times are recorded during reproducible builds.</p>';
+    }
+
+    // Table
+    const tbody = document.querySelector('#build-timings-table tbody');
+    const sortSelect = document.getElementById('bt-sort');
+    const searchInput = document.getElementById('bt-search');
+
+    function renderTable() {
+        const sortBy = sortSelect ? sortSelect.value : 'time-desc';
+        const search = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+        let filtered = entries;
+        if (search) {
+            filtered = filtered.filter(e => e.name.toLowerCase().includes(search));
+        }
+
+        filtered = [...filtered];
+        if (sortBy === 'time-desc') filtered.sort((a, b) => b.latest.build_time_seconds - a.latest.build_time_seconds);
+        else if (sortBy === 'time-asc') filtered.sort((a, b) => a.latest.build_time_seconds - b.latest.build_time_seconds);
+        else filtered.sort((a, b) => a.name.localeCompare(b.name));
+
+        tbody.innerHTML = filtered.map(e => {
+            const t = e.latest.build_time_seconds;
+            const barWidth = Math.min(100, (t / (times[times.length - 1] || 1)) * 100);
+            const barColor = t < 30 ? '#4caf50' : t < 120 ? '#ff9800' : '#f44336';
+            const historyHtml = e.timings.length > 1
+                ? `<details><summary>${e.timings.length} builds</summary><div style="font-size:0.8em;max-height:150px;overflow-y:auto;">${
+                    e.timings.map(tm => `${tm.timestamp.substring(0, 10)}: ${formatTime(tm.build_time_seconds)} (${tm.status || '?'})`).join('<br>')
+                  }</div></details>`
+                : '<span style="color:#999;">1 build</span>';
+            return `<tr>
+                <td><strong>${e.name}</strong></td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <div style="width:${barWidth}%;height:8px;background:${barColor};border-radius:4px;min-width:4px;"></div>
+                        <span>${formatTime(t)}</span>
+                    </div>
+                </td>
+                <td><span class="status-badge status-${e.latest.status || 'unknown'}">${e.latest.status || '?'}</span></td>
+                <td style="text-align:center;">${e.timings.length}</td>
+                <td>${historyHtml}</td>
+            </tr>`;
+        }).join('');
+
+        if (filtered.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#888;padding:2em;">No timing data yet. Build times are recorded during reproducible builds and synced after each batch.</td></tr>';
+        }
+    }
+
+    if (sortSelect) sortSelect.addEventListener('change', renderTable);
+    if (searchInput) searchInput.addEventListener('input', renderTable);
+    renderTable();
+
+    const tsEl = document.getElementById('build-timings-timestamp');
     if (tsEl) tsEl.textContent = data.generated_at || '--';
 }
