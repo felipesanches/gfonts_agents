@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-15
-**Status**: 1,264 families tested, 1,267 total (3 unreachable/untested) -- 153 build failures (12.1%)
+**Status**: 1,264 families tested, 1,267 total (3 unreachable/untested) -- 152 build failures (12.0%)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -16,21 +16,21 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 
 | Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
-| **yes** (byte-identical) | 246 | 19.5% | Rebuilt font is bit-for-bit identical to google/fonts |
+| **yes** (byte-identical) | 247 | 19.5% | Rebuilt font is bit-for-bit identical to google/fonts |
 | **compiler-version** | 832 | 65.8% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 153 | 12.1% | gftools-builder failed |
+| **build-failure** | 152 | 12.0% | gftools-builder failed |
 | **timestamp-diff** | 18 | 1.4% | Only head timestamps differ |
 | **name-table** | 11 | 0.9% | Only name table metadata differs |
 | **metadata-stanza-wrong** | 3 | 0.2% | METADATA.pb source stanza is incorrect |
 | **missing-source** | 1 | 0.1% | Source repository unreachable |
 
-3 families could not be tested (network/repository issues). Of the 1,264 families tested, 1,111 produced comparison reports with deep analysis. The remaining 153 failed to build (no output to compare).
+3 families could not be tested (network/repository issues). Of the 1,264 families tested, 1,111 produced comparison reports with deep analysis. The remaining 152 failed to build (no output to compare).
 
-### Byte-Identical Families (246)
+### Byte-Identical Families (247)
 
 These families rebuild to **exactly the same binary** as what's in google/fonts:
 
-aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, alegreyasc, alkatra, alumnisansinlineone, alumnisanspinstripe, amaticsc, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, anekodia, anektamil, anektelugu, angkor, antonio, aoboshione, arizonia, assistant, average, b612, b612mono, babylonica, ballet, barlow, barlowcondensed, barlowsemicondensed, bayon, beaurivage, bellefair, belleza, bellota, bellotatext, bhutukaexpandedone, bigshoulders, bigshouldersinline, bigshouldersstencil, bizudgothic, bizudmincho, bizudpgothic, blackopsone, braahone, brygada1918, cabin, cabincondensed, cabinsketch, cairo, caladea, cascadiacode, caveat, changa, cherrybombone, chokokutai, cinzel, cormorantsc, cormorantunicase, courierprime, crimsonpro, cuprum, danfo, darumadropone, dhurjati, didactgothic, dosis, dotgothic16, ebgaramond, eczar, edunswactfoundation, elmessiri, exo, fanwoodtext, fasterone, faunaone, fjallaone, fuggles, fuzzybubbles, gantari, geologica, gidugu, gildadisplay, gluten, goldman, gowundodum, grapenuts, gruppo, gulzar, gupter, hahmlet, handjet, honk, ibarrarealnova, ibmplexsanscondensed, ibmplexsansdevanagari, ibmplexsanshebrew, ibmplexsansthailooped, ibmplexserif, imbue, imperialscript, imprima, ingriddarling, inspiration, inter, intertight, islandmoments, jaini, jainipurva, jost, jotione, julee, jura, kanit, kapakana, kavoon, kiteone, kiwimaru, kolkerbrush, koulen, kulimpark, lacquer, lavishlyyours, lemon, lemonada, lexend, lexenddeca, lexendexa, lexendgiga, lexendmega, lexendpeta, lexendtera, lexendzetta, licorice, lilex, lindenhill, liujianmaocao, livvic, londrinasketch, londrinasolid, longcang, lovelight, lumanosimo, luxuriousscript, majormonodisplay, mallanna, meaculpa, merriweathersans, micro5charted, monofett, monomaniacone, montserratunderline, moolahlah, moondance, msmadi, mysoul, neonderthaw, newsreader, newtegomin, niramit, notosanssyriac, notosanssyriaceastern, notosansvithkuqi, notoserifvithkuqi, offside, ole, ooohbaby, opensans, orienta, otomanopeeone, oxanium, palettemosaic, pangolin, pathwaygothicone, petrona, playwritenz, playwritenzbasic, playwritenzbasicguides, playwritenzguides, plusjakartasans, podkova, poiretone, pottaone, publicsans, quicksand, rampartone, readexpro, recursive, redrose, reggaeone, rock3d, rocknrollone, rowdies, ruthie, sciencegothic, sedgwickave, sen, sendflowers, shafarik, shipporiantique, shipporiantiqueb1, signikasc, sixtyfourconvergence, slacksideone, smooch, solway, splash, staatliches, strait, tapestry, tiltprism, tirodevanagarihindi, tirodevanagarimarathi, tirodevanagarisanskrit, tourney, trocchi, tsukimirounded, turretroad, twinklestar, unicaone, unlock, updock, varta, viaodalibre, vujahdayscript, warnes, waterbrush, whisper, worksans, xanhmono, yrsa, ysabeau, ysabeauinfant, ysabeauoffice, ysabeausc, yuseimagic, zain, zcoolqingkehuangyou, zcoolxiaowei
+aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, alegreyasc, alkatra, alumnisansinlineone, alumnisanspinstripe, amaticsc, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, anekodia, anektamil, anektelugu, angkor, antonio, aoboshione, arizonia, assistant, average, b612, b612mono, babylonica, ballet, barlow, barlowcondensed, barlowsemicondensed, bayon, beaurivage, bellefair, belleza, bellota, bellotatext, bhutukaexpandedone, bigshoulders, bigshouldersinline, bigshouldersstencil, bizudgothic, bizudmincho, bizudpgothic, blackopsone, braahone, brygada1918, cabin, cabincondensed, cabinsketch, cairo, caladea, cascadiacode, caveat, changa, cherrybombone, chokokutai, cinzel, cormorantsc, cormorantunicase, courierprime, crimsonpro, cuprum, danfo, darumadropone, dhurjati, didactgothic, dosis, dotgothic16, ebgaramond, eczar, edunswactfoundation, elmessiri, exo, fanwoodtext, fasterone, faunaone, fjallaone, fuggles, fuzzybubbles, gantari, geologica, gidugu, gildadisplay, gluten, goldman, gowundodum, grapenuts, gruppo, gulzar, gupter, hahmlet, handjet, honk, ibarrarealnova, ibmplexsanscondensed, ibmplexsansdevanagari, ibmplexsanshebrew, ibmplexsansthailooped, ibmplexserif, imbue, imperialscript, imprima, ingriddarling, inspiration, inter, intertight, islandmoments, jaini, jainipurva, jost, jotione, julee, jura, kanit, kapakana, kavoon, kiteone, kiwimaru, kolkerbrush, koulen, kulimpark, lacquer, lavishlyyours, lemon, lemonada, lexend, lexenddeca, lexendexa, lexendgiga, lexendmega, lexendpeta, lexendtera, lexendzetta, licorice, lilex, lindenhill, liujianmaocao, livvic, londrinasketch, londrinasolid, longcang, lovelight, lumanosimo, luxuriousscript, majormonodisplay, mallanna, meaculpa, merriweathersans, micro5charted, monofett, monomaniacone, montserratunderline, moolahlah, moondance, msmadi, mysoul, neonderthaw, newsreader, newtegomin, niramit, notosanssyriac, notosanssyriaceastern, notosansvithkuqi, notoserifvithkuqi, offside, ole, ooohbaby, opensans, orienta, otomanopeeone, oxanium, palettemosaic, pangolin, pathwaygothicone, petrona, playwritenz, playwritenzbasic, playwritenzbasicguides, playwritenzguides, plusjakartasans, podkova, poiretone, pottaone, publicsans, quicksand, rampartone, readexpro, recursive, redrose, reggaeone, rock3d, rocknrollone, rowdies, rubikpixels, ruthie, sciencegothic, sedgwickave, sen, sendflowers, shafarik, shipporiantique, shipporiantiqueb1, signikasc, sixtyfourconvergence, slacksideone, smooch, solway, splash, staatliches, strait, tapestry, tiltprism, tirodevanagarihindi, tirodevanagarimarathi, tirodevanagarisanskrit, tourney, trocchi, tsukimirounded, turretroad, twinklestar, unicaone, unlock, updock, varta, viaodalibre, vujahdayscript, warnes, waterbrush, whisper, worksans, xanhmono, yrsa, ysabeau, ysabeauinfant, ysabeauoffice, ysabeausc, yuseimagic, zain, zcoolqingkehuangyou, zcoolxiaowei
 
 Previous batch rescued 128 families via recompare. Latest batch rebuilt 10 families that had no build logs (9 now compiler-version, 1 still build-failure with timeout).
 
@@ -99,13 +99,13 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 ## Key Insights
 
-1. **19.5% byte-identical rate across 1,264 families.** 246 families rebuild to the exact same binary — up from 118 in the previous batch. 128 new additions rescued by the recompare batch.
+1. **19.5% byte-identical rate across 1,264 families.** 247 families rebuild to the exact same binary — up from 118 in the previous batch. 128 rescued by recompare, rubikpixels added via build output recovery.
 
-2. **12.1% build failure rate, down from 12.9%.** 10 families previously marked as build-failure (rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata) were successfully rebuilt and now show compiler-version status. rubikpixels remains build-failure (being rebuilt with longer timeout).
+2. **12.0% build failure rate, down from 12.9%.** 11 families previously marked as build-failure were successfully rebuilt: rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata (compiler-version), and rubikpixels (byte-identical via recompare — font built but post-processing timed out).
 
 3. **537 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 
-4. **153 genuine build failures remain** across 14 categories. The largest categories are source-file-missing (31), instance-ufo-naming (28), fontmake-value-error (20), ninja-missing-source (15), and legacy-source-format (13).
+4. **152 genuine build failures remain** across 14 categories. The largest categories are source-file-missing (31), instance-ufo-naming (28), fontmake-value-error (20), ninja-missing-source (15), and legacy-source-format (13).
 
 5. **Prebuild support added.** Some families (42dotsans, astasans, cabin, cairo, cairoplay) require pre-build commands (glyphs2ufo, custom scripts) before gftools-builder. Prebuild support was added with auto-detection of Makefile/build.sh/build.py.
 

@@ -4,11 +4,11 @@
   "summary": {
     "processed": 1264,
     "total_buildable": 1267,
-    "yes": 246,
+    "yes": 247,
     "byte_identical": 246,
     "compiler_version": 832,
     "compiler-version": 832,
-    "build_failure": 153,
+    "build_failure": 152,
     "build-failure": 153,
     "timestamp_diff": 18,
     "timestamp-diff": 18,
@@ -53019,10 +53019,11 @@
     },
     {
       "family": "rubikpixels",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
       "notes": "",
-      "files": {}
+      "files": {},
+      "reproducible_build": "yes"
     },
     {
       "family": "rubikpuddles",
