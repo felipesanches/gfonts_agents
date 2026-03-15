@@ -3261,13 +3261,24 @@ function renderBuildSystem(data) {
     // Summary cards
     const s = data.summary || {};
     const total = s.processed || s.total_buildable || 0;
-    setText('bs-total', total);
-    setText('bs-identical', s['yes'] || s['identical'] || 0);
-    setText('bs-compiler', s['compiler_version'] || s['compiler-version'] || 0);
-    setText('bs-failure', s['build_failure'] || s['build-failure'] || 0);
     const totalBuildable = s.total_buildable || 0;
     const untested = totalBuildable - (s.processed || 0);
-    setText('bs-untested', untested >= 0 ? untested : 0);
+
+    function fmtCount(n, denominator) {
+        if (!denominator || denominator === 0) return String(n);
+        const pct = (n / denominator * 100).toFixed(1);
+        return `${n} (${pct}%)`;
+    }
+
+    setText('bs-total', total);
+    const identicalCount = s['yes'] || s['identical'] || 0;
+    const compilerCount = s['compiler_version'] || s['compiler-version'] || 0;
+    const failureCount = s['build_failure'] || s['build-failure'] || 0;
+    const untestedCount = untested >= 0 ? untested : 0;
+    setText('bs-identical', fmtCount(identicalCount, total));
+    setText('bs-compiler', fmtCount(compilerCount, total));
+    setText('bs-failure', fmtCount(failureCount, total));
+    setText('bs-untested', fmtCount(untestedCount, totalBuildable));
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
 
     // Reflow risk summary (computed first so coherence note can reference it)
