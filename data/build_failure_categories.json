@@ -2664,6 +2664,95 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T20:13:06.988169-03:00",
+      "total_families": 1267,
+      "total_failures": 52,
+      "categories": {
+        "name-table": {
+          "count": 14,
+          "families": [
+            "alansans",
+            "amethysta",
+            "amiko",
+            "bitcountpropsingleink",
+            "bitcountsingleink",
+            "boldonse",
+            "cause",
+            "coiny",
+            "fraunces",
+            "josefinsans",
+            "reemkufifun",
+            "reemkufiink",
+            "triodion",
+            "vollkorn"
+          ]
+        },
+        "build-failure": {
+          "count": 3,
+          "families": [
+            "foldit",
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        },
+        "timestamp-diff": {
+          "count": 18,
+          "families": [
+            "alyamama",
+            "bahianita",
+            "barriecito",
+            "bbhbogle",
+            "bytesized",
+            "capriola",
+            "cormorantupright",
+            "elmssans",
+            "farro",
+            "geom",
+            "librebaskerville",
+            "mashanzheng",
+            "notosansbengali",
+            "reemkufi",
+            "snpro",
+            "stacksansheadline",
+            "stacksansnotch",
+            "stacksanstext"
+          ]
+        },
+        "legacy-no-modern-source": {
+          "count": 13,
+          "families": [
+            "cantarell",
+            "carme",
+            "codystar",
+            "comicrelief",
+            "englebert",
+            "federo",
+            "iceberg",
+            "iceland",
+            "khula",
+            "lancelot",
+            "notosansduployan",
+            "sawarabimincho",
+            "tiny5"
+          ]
+        },
+        "metadata-stanza-wrong": {
+          "count": 3,
+          "families": [
+            "chironsunghk",
+            "manjari",
+            "raleway"
+          ]
+        },
+        "missing-source": {
+          "count": 1,
+          "families": [
+            "_test_nonexistent"
+          ]
+        }
+      }
     }
   ]
 }
