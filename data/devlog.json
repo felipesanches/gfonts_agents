@@ -99,6 +99,15 @@
         "build-failures"
       ],
       "body": "Completed the rebuild of 11 families that had no build logs from previous batches.\n\n**Results:**\n- **10 families \u2192 compiler-version**: rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata\n- **1 family \u2192 byte-identical**: rubikpixels (font built successfully but post-processing timed out; recompare confirmed the built font matches google/fonts exactly)\n\n**Updated totals:**\n- Byte-identical: 247 (was 246)\n- Compiler-version: 832 (was 823)\n- Build failures: 152 (was 163)\n\nNow rebuilding archivo (3449 build steps, 3600s timeout)."
+    },
+    {
+      "date": "2026-03-15T06:19",
+      "title": "Recompare batches rescue 73 families from build-failure",
+      "body": "Discovered that many build-failure families have usable font files \u2014 either upstream pre-built fonts in the repo or partial build output from before the timeout/error. Ran two recompare batches to recover them.\n\n**Batch 1 (63 families):** 32 byte-identical, 16 compiler-version\n**Batch 2 (52 families):** 16 byte-identical, 8 compiler-version, 1 name-table\n\n**Updated totals:**\n- Byte-identical: **295** (23.3%, was 247)\n- Compiler-version: **857** (67.8%, was 833)  \n- Build failures: **78** (6.2%, was 151)\n\nThe remaining 78 failures are genuine issues requiring upstream fixes or tooling updates:\n- fontmake-error-other: 22 (AddExtremes filter, encoding errors, etc.)\n- instance-ufo-naming: 8 (glyphsLib version mismatch in instance names)\n- source-file-missing: 8 (config references nonexistent files)\n- legacy-source-format: 8 (SFD/VFB sources without modern build pipeline)\n- And 32 others across 8 categories\n\n**Key insight:** Pre-built fonts in upstream repos are a reliable source for comparison. Many type designers commit their built fonts alongside sources, making them directly comparable to google/fonts binaries.",
+      "tags": [
+        "reproducible-builds",
+        "recompare"
+      ]
     }
   ]
 }

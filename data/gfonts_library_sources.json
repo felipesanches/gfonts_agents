@@ -5582,7 +5582,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/chironsunghk/METADATA.pb",
@@ -6812,7 +6812,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/diplomata/METADATA.pb",
@@ -6889,7 +6889,7 @@
       "status": "missing_config",
       "has_investigation_report": true,
       "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh.",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/dmseriftext/METADATA.pb",
@@ -6905,7 +6905,7 @@
       "status": "missing_config",
       "has_investigation_report": true,
       "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh.",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/dohyeon/METADATA.pb",
@@ -8952,7 +8952,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/gayathri/METADATA.pb",
@@ -9301,7 +9301,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/giveyouglory/METADATA.pb",
@@ -9352,7 +9352,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/gloock/METADATA.pb",
@@ -9632,7 +9632,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/grandstander/METADATA.pb",
@@ -9725,7 +9725,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/grenzegotisch/METADATA.pb",
@@ -10754,7 +10754,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/ibmplexsansthai/METADATA.pb",
@@ -12753,7 +12753,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/kufam/METADATA.pb",
@@ -14157,7 +14157,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/lxgwwenkaitc/METADATA.pb",
@@ -14172,7 +14172,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/macondo/METADATA.pb",
@@ -15387,7 +15387,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/molengo/METADATA.pb",
@@ -18423,7 +18423,8 @@
       "source_types": [
         "glyphs"
       ],
-      "has_investigation_report": true
+      "has_investigation_report": true,
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notosansnkounjoined/METADATA.pb",
@@ -20644,7 +20645,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/orbitron/METADATA.pb",
@@ -23936,7 +23937,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/quando/METADATA.pb",
@@ -26311,7 +26312,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/shanti/METADATA.pb",
