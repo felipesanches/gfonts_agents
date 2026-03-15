@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
-**Date**: 2026-03-14
-**Status**: 1,258 families tested, 784 with deep analysis (1,266 buildable total, 8 unreachable)
+**Date**: 2026-03-15
+**Status**: 1,258 families tested, 893 with deep analysis (1,266 buildable total, 8 unreachable)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -16,20 +16,20 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 
 | Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
-| **yes** (byte-identical) | 110 | 8.7% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 652 | 51.8% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 471 | 37.4% | gftools-builder failed |
+| **yes** (byte-identical) | 114 | 9.0% | Rebuilt font is bit-for-bit identical to google/fonts |
+| **compiler-version** | 757 | 59.8% | Differences from fontmake/fontTools/ttfautohint version |
+| **build-failure** | 362 | 28.6% | gftools-builder failed |
 | **timestamp-diff** | 13 | 1.0% | Only head timestamps differ |
 | **name-table** | 8 | 0.6% | Only name table metadata differs |
 | **metadata-stanza-wrong** | 4 | 0.3% | METADATA.pb source stanza is incorrect |
 
-8 families could not be downloaded (network/repository issues). Of the 1,258 families tested, 784 produced comparison reports with deep analysis. The remaining 471 failed to build (no output to compare).
+8 families could not be downloaded (network/repository issues). Of the 1,258 families tested, 893 produced comparison reports with deep analysis (896 building correctly minus 3 non-build statuses). The remaining 362 failed to build (no output to compare).
 
-### Byte-Identical Families (110)
+### Byte-Identical Families (114)
 
 These families rebuild to **exactly the same binary** as what's in google/fonts:
 
-- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, antonio, assistant, average, belleza, bigshoulders, bigshouldersinline, bigshouldersstencil, blackopsone, braahone, cabin, chokokutai, cinzel, cormorantsc, cormorantunicase, courierprime, cuprum, darumadropone, dhurjati, didactgothic, eczar, edunswactfoundation, fanwoodtext, fasterone, faunaone, fjallaone, gildadisplay, goldman, gruppo, gulzar, honk, ibarrarealnova, imbue, imprima, jotione, julee, kanit, kapakana, kiteone, kiwimaru, kulimpark, lacquer, lemon, lexend, lexenddeca, lexendexa, lexendgiga, lexendmega, lexendpeta, lexendtera, lexendzetta, lilex, lindenhill, livvic, majormonodisplay, mallanna, merriweathersans, micro5charted, monofett, montserratunderline, newtegomin, niramit, notosanssyriac, notosanssyriaceastern, notosansvithkuqi, notoserifvithkuqi, offside, opensans, orienta, otomanopeeone, pathwaygothicone, petrona, pottaone, publicsans, quicksand, readexpro, redrose, rowdies, sen, signikasc, slacksideone, strait, tiltprism, tirodevanagarihindi, tirodevanagarimarathi, tirodevanagarisanskrit, trocchi, tsukimirounded, unicaone, unlock, varta, warnes, xanhmono, yrsa, yuseimagic
+- aboreto, abyssinicasil, afacad, afacadflux, akatab, akayakanadaka, akayatelivigala, akshar, albertsans, anekbangla, anekdevanagari, anekgujarati, anekgurmukhi, anekkannada, aneklatin, anekmalayalam, antonio, assistant, average, belleza, bigshoulders, bigshouldersinline, bigshouldersstencil, blackopsone, braahone, cabin, chokokutai, cinzel, cormorantsc, cormorantunicase, courierprime, cuprum, darumadropone, dhurjati, didactgothic, eczar, edunswactfoundation, fanwoodtext, fasterone, faunaone, fjallaone, gildadisplay, goldman, gruppo, gulzar, honk, ibarrarealnova, imbue, imprima, jotione, julee, kanit, kapakana, kiteone, kiwimaru, kulimpark, lacquer, lemon, lexend, lexenddeca, lexendexa, lexendgiga, lexendmega, lexendpeta, lexendtera, lexendzetta, lilex, lindenhill, livvic, majormonodisplay, mallanna, merriweathersans, micro5charted, monofett, montserratunderline, newtegomin, niramit, notosanssyriac, notosanssyriaceastern, notosansvithkuqi, notoserifvithkuqi, offside, opensans, orienta, otomanopeeone, pathwaygothicone, petrona, playwritenz, playwritenzbasic, playwritenzbasicguides, playwritenzguides, pottaone, publicsans, quicksand, readexpro, redrose, rowdies, sen, signikasc, slacksideone, strait, tiltprism, tirodevanagarihindi, tirodevanagarimarathi, tirodevanagarisanskrit, trocchi, tsukimirounded, unicaone, unlock, varta, warnes, xanhmono, yrsa, yuseimagic
 
 ### Root Cause Breakdown (non-identical font files)
 
@@ -96,9 +96,9 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 ## Key Insights
 
-1. **8.7% byte-identical rate across 1,258 families.** 110 families rebuild to the exact same binary. Modern build pipelines (recently onboarded families) reproduce perfectly.
+1. **9.0% byte-identical rate across 1,258 families.** 114 families rebuild to the exact same binary. Modern build pipelines (recently onboarded families) reproduce perfectly.
 
-2. **37.4% build failure rate is the biggest challenge.** Many failures are from toolchain version incompatibilities (fontmake API changes, designspace compatibility), repos with their own build system, or repos shipping pre-built fonts.
+2. **28.6% build failure rate, down from 37.4%.** 109 families fixed in the fontprimer batch (104 Playwrite monorepo families + 5 EduAuVic families where hb-subset was missing). Many remaining failures are from toolchain version incompatibilities (fontmake API changes, designspace compatibility), repos with their own build system, or repos shipping pre-built fonts.
 
 3. **265 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 

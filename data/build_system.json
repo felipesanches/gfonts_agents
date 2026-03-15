@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-14T19:41:08.348267+00:00",
-  "last_updated": "2026-03-14T19:41:08.348322+00:00",
+  "generated_at": "2026-03-15T12:00:00.000000+00:00",
+  "last_updated": "2026-03-15T12:00:00.000000+00:00",
   "summary": {
     "processed": 1258,
     "total_buildable": 1266,
-    "yes": 110,
-    "byte_identical": 110,
-    "compiler_version": 652,
-    "compiler-version": 652,
-    "build_failure": 471,
-    "build-failure": 471,
+    "yes": 114,
+    "byte_identical": 114,
+    "compiler_version": 757,
+    "compiler-version": 757,
+    "build_failure": 362,
+    "build-failure": 362,
     "timestamp_diff": 13,
     "name_table": 8,
     "metadata_stanza_wrong": 4,
@@ -7442,33 +7442,33 @@
     },
     {
       "family": "eduauvicwantarrows",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "eduauvicwantdots",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "eduauvicwantguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "eduauvicwanthand",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "eduauvicwantpre",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "edunswactfoundation",
@@ -23907,627 +23907,627 @@
     },
     {
       "family": "playwritear",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritearguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteat",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteatguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteaunsw",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteaunswguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteauqld",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteauqldguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteausa",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteausaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteautas",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteautasguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteauvic",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteauvicguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritebevlg",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritebevlgguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritebewal",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritebewalguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritebr",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritebrguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteca",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritecaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritecl",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteclguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteco",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritecoguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritecu",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritecuguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritecz",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteczguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedegrund",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedegrundguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedela",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedelaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedesas",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedesasguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedeva",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedevaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedkloopet",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedkloopetguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedkuloopet",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritedkuloopetguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritees",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteesdeco",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteesdecoguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteesguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritefrmoderne",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritefrmoderneguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritefrtrad",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritefrtradguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritegbj",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritegbjguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritegbs",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritegbsguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritehr",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritehrguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritehrlijeva",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritehrlijevaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritehu",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritehuguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteid",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteidguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteie",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteieguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritein",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteinguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteis",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteisguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteitmoderna",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteitmodernaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteittrad",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteittradguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritemx",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritemxguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritengmodern",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritengmodernguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritenl",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritenlguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteno",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritenoguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritenz",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "byte-identical"
     },
     {
       "family": "playwritenzbasic",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "byte-identical"
     },
     {
       "family": "playwritenzbasicguides",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "byte-identical"
     },
     {
       "family": "playwritenzguides",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "byte-identical"
     },
     {
       "family": "playwritepe",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritepeguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritepl",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteplguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritept",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteptguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritero",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteroguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritesk",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteskguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritetz",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritetzguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteusmodern",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteusmodernguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteustrad",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteustradguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritevn",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritevnguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwriteza",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "playwritezaguides",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
-      "notes": "build-failure"
+      "notes": "compiler-output-diff"
     },
     {
       "family": "plusjakartasans",
