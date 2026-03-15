@@ -1,30 +1,35 @@
 {
   "generated_at": "2026-03-15T12:00:00.000000+00:00",
-  "last_updated": "2026-03-15T12:00:00.000000+00:00",
+  "last_updated": "2026-03-15T18:00:00.000000+00:00",
   "summary": {
-    "processed": 1258,
-    "total_buildable": 1266,
-    "yes": 114,
-    "byte_identical": 114,
-    "compiler_version": 757,
-    "compiler-version": 757,
-    "build_failure": 362,
-    "build-failure": 362,
-    "timestamp_diff": 13,
+    "processed": 1259,
+    "total_buildable": 1267,
+    "yes": 118,
+    "byte_identical": 118,
+    "compiler_version": 766,
+    "compiler-version": 766,
+    "build_failure": 348,
+    "build-failure": 348,
+    "timestamp_diff": 15,
+    "timestamp-diff": 15,
     "name_table": 8,
-    "metadata_stanza_wrong": 4,
+    "name-table": 8,
+    "metadata_stanza_wrong": 3,
+    "metadata-stanza-wrong": 3,
+    "missing_source": 1,
+    "missing-source": 1,
     "untested": 8
   },
   "root_cause_summary": {
-    "compiler-output-diff": 445,
-    "metadata-only": 320,
-    "ttfautohint-version + other": 225,
-    "ttfautohint-version": 82
+    "compiler-output-diff": 452,
+    "metadata-only": 329,
+    "ttfautohint-version + other": 226,
+    "ttfautohint-version": 88
   },
   "reflow_risk_summary": {
-    "none": 890,
-    "high": 174,
-    "line-spacing-only": 7,
+    "none": 910,
+    "high": 176,
+    "line-spacing-only": 8,
     "minimal": 1
   },
   "families": [
@@ -174,7 +179,7 @@
     },
     {
       "family": "adventpro",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -4919,7 +4924,7 @@
     },
     {
       "family": "briemhand",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -6147,7 +6152,7 @@
     },
     {
       "family": "commissioner",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -7242,7 +7247,7 @@
     },
     {
       "family": "dmmono",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -7613,7 +7618,7 @@
     },
     {
       "family": "elmssans",
-      "status": "build-failure",
+      "status": "timestamp-diff",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -9311,7 +9316,7 @@
     },
     {
       "family": "geologica",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -9601,7 +9606,7 @@
     },
     {
       "family": "gluten",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -10757,7 +10762,7 @@
     },
     {
       "family": "hubotsans",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -12078,7 +12083,7 @@
     },
     {
       "family": "jost",
-      "status": "build-failure",
+      "status": "yes",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -16005,7 +16010,7 @@
     },
     {
       "family": "monasans",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -22674,7 +22679,7 @@
     },
     {
       "family": "nunito",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -25862,7 +25867,7 @@
     },
     {
       "family": "robotoflex",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -27192,7 +27197,7 @@
     },
     {
       "family": "sciencegothic",
-      "status": "metadata-stanza-wrong",
+      "status": "yes",
       "repository_url": "",
       "notes": "metadata-stanza-wrong"
     },
@@ -27696,7 +27701,7 @@
     },
     {
       "family": "snpro",
-      "status": "build-failure",
+      "status": "timestamp-diff",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -30544,7 +30549,7 @@
     },
     {
       "family": "urbanist",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "build-failure"
     },
@@ -31658,6 +31663,62 @@
           }
         }
       }
+    },
+    {
+      "family": "bigshouldersdisplaysc",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "bitcountpropsingleink",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "bitcountsingle",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "bitcountsingleink",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "bizudpmincho",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "zenkurenaido",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "zenloop",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
+    },
+    {
+      "family": "zentokyozoo",
+      "status": null,
+      "repository_url": "",
+      "notes": "",
+      "files": {}
     }
   ]
 }
