@@ -1172,5 +1172,74 @@
     "timestamp": "2026-03-15T04:10:00-03:00",
     "role": "assistant",
     "content": "Session resumed after context compaction. Discovered 186 families marked as build-failure had actually built successfully but comparison failed in earlier batches. Added --recompare mode to reproducible_build.py to re-run comparisons without rebuilding. Fixed all(empty) bug where families with all files errored got 'yes' (byte-identical) status. Byte-identical families jumped from 114 to 246, build failures dropped from 348 to 163. Also started rebuild of 12 no-build-log families and 3 zalandosans families (all now building correctly with extended timeouts)."
+  },
+  {
+    "timestamp": "2026-03-15T02:22:26-03:00",
+    "role": "assistant",
+    "type": "progress",
+    "message": "Continuation session: Context was compacted. Resuming monitoring of background rebuild (PID 2615061) for 11 no-build-log families. rubik80sfade completed (compiler-version), rubikpixels still compiling. Registry shows 823 compiler-version (up from 822), 162 build-failure (down from 163). Waiting for remaining 10 families to complete before final dashboard sync."
+  },
+  {
+    "timestamp": "2026-03-15T06:02:32-03:00",
+    "role": "user",
+    "type": "instruction",
+    "message": "keep going"
+  },
+  {
+    "timestamp": "2026-03-15T06:02:32-03:00",
+    "role": "assistant",
+    "type": "progress",
+    "message": "Continuing with build failure investigation. 151 failures remain across 13 categories. Starting with the 6 uncategorized (None) failures, then tackling instance-ufo-naming (8), ninja-missing-source (13), and source-file-missing (21)."
+  },
+  {
+    "timestamp": "2026-03-15T06:26:56-03:00",
+    "role": "user",
+    "type": "instruction",
+    "message": "I want us to focus on reaching 100% families built, even if they do not all byte-match yet. Put more effort into figuring that out."
+  },
+  {
+    "timestamp": "2026-03-15T10:42:32.694701+00:00",
+    "role": "user",
+    "content": "I want us to focus on reaching 100% families built, even if they do not all byte-match yet. Put more effort into figuring that out."
+  },
+  {
+    "timestamp": "2026-03-15T10:42:32.694784+00:00",
+    "role": "user",
+    "content": "strict policy: Please take a look at how fontc_crater handles override config.yaml files and how it resolves paths in its sources entries. We must ensure we are doing it in a compatible manner here."
+  },
+  {
+    "timestamp": "2026-03-15T10:42:32.694791+00:00",
+    "role": "assistant",
+    "content": "Investigated all 78 build failures across 10 categories. Applied 4 gftools fixes (--glyph-data for designspace, schema for buildUIVF/instances, shell quoting for spaces in paths). Created/updated 21 override config.yaml files for BigShoulders (6), SIL fonts (3), arsenalsc, fragmentmonosc, susemono, lateef, lakkireddy, roboto. Verified fontc_crater path convention: override configs use paths relative to repo root. Rebuilding 21 families."
+  },
+  {
+    "role": "system",
+    "content": "Session continued from previous context (compaction recovery). Working on reaching 100% reproducible build rate.",
+    "timestamp": "2026-03-15T11:58:59.272166+00:00"
+  },
+  {
+    "role": "user",
+    "content": "TTS always sounds like saying \"correcty\" instead of \"correctly\"",
+    "timestamp": "2026-03-15T11:58:59.272166+00:00"
+  },
+  {
+    "role": "user",
+    "content": "Please check the piper setup that speaks aloud the total build percentages and double-check if it has a typo in the message where it is supposed to say \"correctly\" but I am listening \"correcty\". This may be an easy fix.",
+    "timestamp": "2026-03-15T11:58:59.272166+00:00"
+  },
+  {
+    "role": "assistant",
+    "content": "Checked announce_results.sh \u2014 the text was spelled correctly (\"building correctly\") but piper TTS was mispronouncing it. Fixed by changing to phonetic spelling \"correct-lee\" which piper should pronounce properly. Also continuing reproducible build work: fixed abhayalibre (wrong config path), lateef (missing buildVariable:false), roboto (now compiler-version), 6 Big Shoulders SC families, arsenalsc, fragmentmonosc, harmattan, ruwudu, scheherazadenew. Created override configs for robotoserif (removed deprecated instances section, added checkCompatibility:false) and bitcount families. Fixed registry race condition (re-read before write). Updated failure categories for 34 families based on investigation. Current status: 60 build failures remaining (95.3% success rate), down from 78.",
+    "timestamp": "2026-03-15T11:58:59.272166+00:00"
+  },
+  {
+    "role": "assistant",
+    "content": "Continuing from previous session. Pushed gftools and google/fonts commits. Starting dashboard sync and continuing to investigate the remaining 56 build failures to reduce them toward 0.",
+    "timestamp": "2026-03-15T12:34:41.317197+00:00"
+  },
+  {
+    "role": "assistant",
+    "content": "Fixed 4 more families: amaranth (buildVariable:false), amiriquran (buildVariable:false), dhyana (naming fallback in find_built_font), lakkireddy (naming fallback). Also investigated 6 more families with config changes but they have deeper issues. Down to 52 build failures (95.9% success rate). Created comprehensive failure analysis: 9 need fontmake fix, 17 source bugs, 12 legacy formats, 6 custom pipelines, 8 structural mismatches. All remaining failures require tooling fixes or upstream source changes.",
+    "timestamp": "2026-03-15T12:34:41.317197+00:00"
   }
 ]
