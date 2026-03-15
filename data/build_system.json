@@ -6,9 +6,9 @@
     "total_buildable": 1267,
     "yes": 247,
     "byte_identical": 246,
-    "compiler_version": 832,
+    "compiler_version": 833,
     "compiler-version": 832,
-    "build_failure": 152,
+    "build_failure": 151,
     "build-failure": 153,
     "timestamp_diff": 18,
     "timestamp-diff": 18,
@@ -2779,10 +2779,11 @@
     },
     {
       "family": "archivo",
-      "status": "build-failure",
+      "status": "compiler-version",
       "repository_url": "",
       "notes": "",
-      "files": {}
+      "files": {},
+      "reproducible_build": "compiler-version"
     },
     {
       "family": "archivoblack",

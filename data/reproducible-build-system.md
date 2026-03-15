@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-15
-**Status**: 1,264 families tested, 1,267 total (3 unreachable/untested) -- 152 build failures (12.0%)
+**Status**: 1,264 families tested, 1,267 total (3 unreachable/untested) -- 151 build failures (11.9%)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -17,14 +17,14 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 | Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
 | **yes** (byte-identical) | 247 | 19.5% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 832 | 65.8% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 152 | 12.0% | gftools-builder failed |
+| **compiler-version** | 833 | 65.9% | Differences from fontmake/fontTools/ttfautohint version |
+| **build-failure** | 151 | 11.9% | gftools-builder failed |
 | **timestamp-diff** | 18 | 1.4% | Only head timestamps differ |
 | **name-table** | 11 | 0.9% | Only name table metadata differs |
 | **metadata-stanza-wrong** | 3 | 0.2% | METADATA.pb source stanza is incorrect |
 | **missing-source** | 1 | 0.1% | Source repository unreachable |
 
-3 families could not be tested (network/repository issues). Of the 1,264 families tested, 1,111 produced comparison reports with deep analysis. The remaining 152 failed to build (no output to compare).
+3 families could not be tested (network/repository issues). Of the 1,264 families tested, 1,111 produced comparison reports with deep analysis. The remaining 151 failed to build (no output to compare).
 
 ### Byte-Identical Families (247)
 
@@ -101,11 +101,11 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 1. **19.5% byte-identical rate across 1,264 families.** 247 families rebuild to the exact same binary — up from 118 in the previous batch. 128 rescued by recompare, rubikpixels added via build output recovery.
 
-2. **12.0% build failure rate, down from 12.9%.** 11 families previously marked as build-failure were successfully rebuilt: rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata (compiler-version), and rubikpixels (byte-identical via recompare — font built but post-processing timed out).
+2. **11.9% build failure rate, down from 12.9%.** 11 families previously marked as build-failure were successfully rebuilt: rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata (compiler-version), and rubikpixels (byte-identical via recompare — font built but post-processing timed out).
 
 3. **537 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 
-4. **152 genuine build failures remain** across 14 categories. The largest categories are source-file-missing (31), instance-ufo-naming (28), fontmake-value-error (20), ninja-missing-source (15), and legacy-source-format (13).
+4. **151 genuine build failures remain** across 14 categories. The largest categories are source-file-missing (31), instance-ufo-naming (28), fontmake-value-error (20), ninja-missing-source (15), and legacy-source-format (13).
 
 5. **Prebuild support added.** Some families (42dotsans, astasans, cabin, cairo, cairoplay) require pre-build commands (glyphs2ufo, custom scripts) before gftools-builder. Prebuild support was added with auto-detection of Makefile/build.sh/build.py.
 

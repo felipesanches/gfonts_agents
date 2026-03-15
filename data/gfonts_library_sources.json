@@ -1643,7 +1643,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/archivoblack/METADATA.pb",
