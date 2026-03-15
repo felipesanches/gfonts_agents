@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-15
-**Status**: 1,264 families tested, 1,267 total (3 unreachable/untested) -- 52 build failures (4.1%)
+**Status**: 1,264 families tested, 1,267 total (3 unreachable/untested) -- 45 build failures (3.6%)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -17,14 +17,14 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 | Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
 | **yes** (byte-identical) | 295 | 23.3% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 883 | 69.9% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 52 | 4.1% | gftools-builder failed |
+| **compiler-version** | 890 | 70.4% | Differences from fontmake/fontTools/ttfautohint version |
+| **build-failure** | 45 | 3.6% | gftools-builder failed |
 | **timestamp-diff** | 18 | 1.4% | Only head timestamps differ |
 | **name-table** | 12 | 0.9% | Only name table metadata differs |
 | **metadata-stanza-wrong** | 3 | 0.2% | METADATA.pb source stanza is incorrect |
 | **missing-source** | 1 | 0.1% | Source repository unreachable |
 
-3 families could not be tested (network/repository issues). Of the 1,264 families tested, 1,212 produced comparison reports with deep analysis. The remaining 52 failed to build (no output to compare).
+3 families could not be tested (network/repository issues). Of the 1,264 families tested, 1,219 produced comparison reports with deep analysis. The remaining 45 failed to build (no output to compare).
 
 ### Byte-Identical Families (295)
 
@@ -38,12 +38,12 @@ Recompare of upstream pre-built fonts rescued 73 families total: 48 byte-identic
 
 | Root Cause | Font Files | Description |
 |-----------|-----------|-------------|
-| metadata-only | 587 | Only name/head metadata differs, glyphs identical |
-| compiler-output-diff | 582 | fontmake/glyphsLib produces slightly different outlines |
-| ttfautohint-version + other | 240 | ttfautohint version change plus minor outline diffs |
+| compiler-output-diff | 607 | fontmake/glyphsLib produces slightly different outlines |
+| metadata-only | 605 | Only name/head metadata differs, glyphs identical |
+| ttfautohint-version + other | 252 | ttfautohint version change plus minor outline diffs |
 | ttfautohint-version | 92 | Pure ttfautohint version difference |
 
-Key insight: **587 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
+Key insight: **605 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
 
 ## Reflow Risk Analysis
 
@@ -64,9 +64,9 @@ We distinguish between:
 
 | Risk Level | Font Files | Meaning |
 |------------|-----------|---------|
-| **none** | 1,161 | Safe to rebuild — advance widths and line metrics identical |
-| **high** | 275 | Shared glyphs with different advance widths |
-| **line-spacing-only** | 64 | Line metrics differ but advance widths identical |
+| **none** | 1,185 | Safe to rebuild — advance widths and line metrics identical |
+| **high** | 282 | Shared glyphs with different advance widths |
+| **line-spacing-only** | 88 | Line metrics differ but advance widths identical |
 | **minimal** | 1 | Very small advance width differences |
 
 **Artifika** is the only family with genuine reflow risk. The non-breaking space (`uni00A0`) has width 560 in the google/fonts binary but 410 in the rebuild (delta: 150 units). The regular `space` glyph is 560 in both. This appears to be caused by `gftools-fix-font` setting NBSP width to match the source's space width (410) rather than the post-processing width (560). Since NBSP is used in real text, rebuilding Artifika would cause text reflow at every non-breaking space.
@@ -101,11 +101,11 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 1. **23.3% byte-identical rate across 1,264 families.** 295 families rebuild to the exact same binary — up from 247 at start of session. 48 additional families rescued from build-failure to byte-identical by recomparing upstream pre-built fonts against google/fonts binaries.
 
-2. **4.1% build failure rate, down from 12.9%.** Multiple recompare batches of upstream pre-built fonts rescued families across categories. Only 52 genuine build failures remain.
+2. **3.6% build failure rate, down from 12.9%.** Multiple recompare batches of upstream pre-built fonts rescued families across categories. Only 45 genuine build failures remain (7 fewer than previous sync).
 
-3. **587 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
+3. **605 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 
-4. **52 genuine build failures remain.** 883 families show compiler-version differences, the largest category.
+4. **45 genuine build failures remain.** 890 families show compiler-version differences, the largest category.
 
 5. **Prebuild support added.** Some families (42dotsans, astasans, cabin, cairo, cairoplay) require pre-build commands (glyphs2ufo, custom scripts) before gftools-builder. Prebuild support was added with auto-detection of Makefile/build.sh/build.py.
 
