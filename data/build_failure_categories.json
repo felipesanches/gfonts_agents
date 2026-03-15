@@ -2504,6 +2504,67 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T13:22:01.655912-03:00",
+      "total_families": 1267,
+      "total_failures": 19,
+      "categories": {
+        "fontmake-error-other": {
+          "count": 6,
+          "families": [
+            "alegreya",
+            "biryani",
+            "foldit",
+            "kalam",
+            "notosanskhojki",
+            "susemono"
+          ]
+        },
+        "ninja-build-failed": {
+          "count": 3,
+          "families": [
+            "cascadiamono",
+            "coda",
+            "heptaslab"
+          ]
+        },
+        "no-final-targets": {
+          "count": 2,
+          "families": [
+            "bitcountpropsingleink",
+            "bitcountsingleink"
+          ]
+        },
+        "source-file-missing": {
+          "count": 2,
+          "families": [
+            "bitcountsingle",
+            "notosansduployan"
+          ]
+        },
+        "master-incompatibility": {
+          "count": 2,
+          "families": [
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        },
+        "build-timeout-or-oom": {
+          "count": 2,
+          "families": [
+            "notosans",
+            "notosanstifinagh"
+          ]
+        },
+        "uncategorized": {
+          "count": 2,
+          "families": [
+            "notoseriftamil",
+            "tiktoksans"
+          ]
+        }
+      }
     }
   ]
 }
