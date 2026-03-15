@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T13:22:12.068108-03:00",
+  "generated_at": "2026-03-15T18:13:04.806717-03:00",
   "summary": {
     "total": 1975,
     "complete": 947,
@@ -5751,7 +5751,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/codystar/METADATA.pb",
@@ -17322,7 +17322,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/notosansegyptianhieroglyphs/METADATA.pb",
@@ -17817,7 +17817,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notosanskhudawadi/METADATA.pb",
@@ -19354,7 +19354,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notosanstirhuta/METADATA.pb",

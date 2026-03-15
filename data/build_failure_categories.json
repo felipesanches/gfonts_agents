@@ -2565,6 +2565,105 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T18:13:04.806717-03:00",
+      "total_families": 1267,
+      "total_failures": 62,
+      "categories": {
+        "name-table": {
+          "count": 12,
+          "families": [
+            "alansans",
+            "amethysta",
+            "amiko",
+            "boldonse",
+            "cause",
+            "coiny",
+            "fraunces",
+            "josefinsans",
+            "reemkufifun",
+            "reemkufiink",
+            "triodion",
+            "vollkorn"
+          ]
+        },
+        "build-failure": {
+          "count": 15,
+          "families": [
+            "alegreya",
+            "biryani",
+            "bitcountpropsingleink",
+            "bitcountsingle",
+            "bitcountsingleink",
+            "cascadiamono",
+            "foldit",
+            "heptaslab",
+            "kalam",
+            "notosans",
+            "notoseriftamil",
+            "playfairdisplay",
+            "playfairdisplaysc",
+            "susemono",
+            "tiktoksans"
+          ]
+        },
+        "timestamp-diff": {
+          "count": 18,
+          "families": [
+            "alyamama",
+            "bahianita",
+            "barriecito",
+            "bbhbogle",
+            "bytesized",
+            "capriola",
+            "cormorantupright",
+            "elmssans",
+            "farro",
+            "geom",
+            "librebaskerville",
+            "mashanzheng",
+            "notosansbengali",
+            "reemkufi",
+            "snpro",
+            "stacksansheadline",
+            "stacksansnotch",
+            "stacksanstext"
+          ]
+        },
+        "legacy-no-modern-source": {
+          "count": 13,
+          "families": [
+            "cantarell",
+            "carme",
+            "codystar",
+            "comicrelief",
+            "englebert",
+            "federo",
+            "iceberg",
+            "iceland",
+            "khula",
+            "lancelot",
+            "notosansduployan",
+            "sawarabimincho",
+            "tiny5"
+          ]
+        },
+        "metadata-stanza-wrong": {
+          "count": 3,
+          "families": [
+            "chironsunghk",
+            "manjari",
+            "raleway"
+          ]
+        },
+        "missing-source": {
+          "count": 1,
+          "families": [
+            "_test_nonexistent"
+          ]
+        }
+      }
     }
   ]
 }
