@@ -2367,6 +2367,143 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T06:14:00.844808-03:00",
+      "total_families": 1267,
+      "total_failures": 103,
+      "categories": {
+        "source-file-missing": {
+          "count": 21,
+          "families": [
+            "abhayalibre",
+            "arsenalsc",
+            "bungeecolor",
+            "bungeespice",
+            "cambay",
+            "chironheihk",
+            "comicrelief",
+            "fragmentmonosc",
+            "gayathri",
+            "girassol",
+            "grenze",
+            "gurajada",
+            "krub",
+            "lateef",
+            "lxgwwenkaimonotc",
+            "lxgwwenkaitc",
+            "moiraione",
+            "notosansduployan",
+            "roboto",
+            "shantellsans",
+            "tiktoksans"
+          ]
+        },
+        "instance-ufo-naming": {
+          "count": 26,
+          "families": [
+            "alegreya",
+            "amaranth",
+            "amiriquran",
+            "biryani",
+            "cascadiamono",
+            "chakrapetch",
+            "charissil",
+            "cinzeldecorative",
+            "comfortaa",
+            "daibannasil",
+            "foldit",
+            "harmattan",
+            "heptaslab",
+            "kalam",
+            "koho",
+            "maitree",
+            "martelsans",
+            "notosans",
+            "notosansarabic",
+            "notosansmath",
+            "poppins",
+            "ruwudu",
+            "scheherazadenew",
+            "shizuru",
+            "susemono",
+            "tomorrow"
+          ]
+        },
+        "no-build-log": {
+          "count": 6,
+          "families": [
+            "andadapro",
+            "bitcountpropsingleink",
+            "bitcountsingle",
+            "bitcountsingleink",
+            "dmserifdisplay",
+            "dmseriftext"
+          ]
+        },
+        "fontmake-value-error": {
+          "count": 17,
+          "families": [
+            "benchnine",
+            "diphylleia",
+            "gasoekone",
+            "grandifloraone",
+            "ibmplexsanskr",
+            "khula",
+            "notosanskannada",
+            "notosanskhojki",
+            "notosansmalayalam",
+            "notosanstamil",
+            "notosanstelugu",
+            "notosanstifinagh",
+            "orbit",
+            "playfairdisplay",
+            "playfairdisplaysc",
+            "qahiri",
+            "robotoserif"
+          ]
+        },
+        "uncategorized": {
+          "count": 6,
+          "families": [
+            "bigshotone",
+            "biorhymeexpanded",
+            "coda",
+            "dhyana",
+            "galada",
+            "lakkireddy"
+          ]
+        },
+        "ninja-missing-source": {
+          "count": 8,
+          "families": [
+            "bigshouldersdisplaysc",
+            "bigshouldersinlinedisplaysc",
+            "bigshouldersinlinetextsc",
+            "bigshouldersstencildisplaysc",
+            "bigshouldersstenciltextsc",
+            "bigshoulderstextsc",
+            "bowlbyonesc",
+            "notoseriftamil"
+          ]
+        },
+        "legacy-source-format": {
+          "count": 11,
+          "families": [
+            "cantarell",
+            "carme",
+            "codystar",
+            "englebert",
+            "federo",
+            "glegoo",
+            "iceberg",
+            "iceland",
+            "lancelot",
+            "sawarabimincho",
+            "tiny5"
+          ]
+        }
+      }
     }
   ]
 }
