@@ -94,11 +94,11 @@
     {
       "date": "2026-03-15T05:27",
       "title": "No-build-log batch complete: 11 families rebuilt",
-      "content": "Completed the rebuild of 11 families that had no build logs from previous batches.\n\n**Results:**\n- **10 families \u2192 compiler-version**: rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata\n- **1 family \u2192 byte-identical**: rubikpixels (font built successfully but post-processing timed out; recompare confirmed the built font matches google/fonts exactly)\n\n**Updated totals:**\n- Byte-identical: 247 (was 246)\n- Compiler-version: 832 (was 823)\n- Build failures: 152 (was 163)\n\nNow rebuilding archivo (3449 build steps, 3600s timeout).",
       "tags": [
         "reproducible-builds",
         "build-failures"
-      ]
+      ],
+      "body": "Completed the rebuild of 11 families that had no build logs from previous batches.\n\n**Results:**\n- **10 families \u2192 compiler-version**: rubik80sfade, lineseedjp, notosansgujarati, notosanssinhala, notoserif, saira, sairacondensed, sairaextracondensed, sairasemicondensed, literata\n- **1 family \u2192 byte-identical**: rubikpixels (font built successfully but post-processing timed out; recompare confirmed the built font matches google/fonts exactly)\n\n**Updated totals:**\n- Byte-identical: 247 (was 246)\n- Compiler-version: 832 (was 823)\n- Build failures: 152 (was 163)\n\nNow rebuilding archivo (3449 build steps, 3600s timeout)."
     }
   ]
 }

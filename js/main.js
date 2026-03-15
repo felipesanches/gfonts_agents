@@ -3794,7 +3794,7 @@ function renderDevLog(data) {
 
     container.innerHTML = data.posts.map(post => {
         // Convert markdown-like tables and formatting to HTML
-        let body = post.body
+        let body = (post.body || post.content || '')
             .replace(/\n\n/g, '</p><p>')
             .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
             .replace(/`([^`]+)`/g, '<code>$1</code>');
