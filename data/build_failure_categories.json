@@ -1896,6 +1896,247 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T05:05:56.623073+00:00",
+      "total_families": 1267,
+      "total_failures": 163,
+      "note": "Post-recompare batch: 186 families rescued from build-failure by re-running comparisons on existing build outputs",
+      "categories": {
+        "fontmake-error-other": {
+          "count": 32,
+          "families": [
+            "alegreyasans",
+            "alegreyasanssc",
+            "bigshotone",
+            "biorhymeexpanded",
+            "biryani",
+            "bowlbyonesc",
+            "bungeecolor",
+            "bungeespice",
+            "cambay",
+            "cascadiamono",
+            "castoro",
+            "charissil",
+            "chirongoroundtc",
+            "chironheihk",
+            "cinzeldecorative",
+            "coda",
+            "dhyana",
+            "foldit",
+            "galada",
+            "gurajada",
+            "hinamincho",
+            "intelonemono",
+            "kalam",
+            "krub",
+            "martelsans",
+            "museomoderno",
+            "notosansarabic",
+            "notosansmath",
+            "sawarabimincho",
+            "sigmar",
+            "tiny5",
+            "wavefont"
+          ]
+        },
+        "source-file-missing": {
+          "count": 21,
+          "families": [
+            "abhayalibre",
+            "amarna",
+            "amethysta",
+            "andadapro",
+            "arsenalsc",
+            "asimovian",
+            "barrio",
+            "cairoplay",
+            "dmserifdisplay",
+            "dmseriftext",
+            "fragmentmonosc",
+            "graduate",
+            "grandstander",
+            "grenze",
+            "moiraione",
+            "mynerve",
+            "notosans",
+            "notosansduployan",
+            "notoseriftamil",
+            "sono",
+            "susemono"
+          ]
+        },
+        "fontmake-value-error": {
+          "count": 20,
+          "families": [
+            "anybody",
+            "bagelfatone",
+            "bitcount",
+            "delagothicone",
+            "diphylleia",
+            "dongle",
+            "gasoekone",
+            "gowunbatang",
+            "grandifloraone",
+            "ibmplexsanskr",
+            "khula",
+            "notosanskannada",
+            "notosanskhojki",
+            "notosansmalayalam",
+            "notosanstamil",
+            "notosanstelugu",
+            "orbit",
+            "qahiri",
+            "robotoserif",
+            "tektur"
+          ]
+        },
+        "ufolib-error": {
+          "count": 17,
+          "families": [
+            "beiruti",
+            "belanosima",
+            "benchnine",
+            "comicrelief",
+            "girassol",
+            "lateef",
+            "lxgwmarkergothic",
+            "lxgwwenkaimonotc",
+            "lxgwwenkaitc",
+            "overpass",
+            "overpassmono",
+            "shantellsans",
+            "signikanegative",
+            "tiktoksans",
+            "tiltneon",
+            "uoqmunthenkhung",
+            "vazirmatn"
+          ]
+        },
+        "ninja-missing-source": {
+          "count": 13,
+          "families": [
+            "bigshouldersdisplay",
+            "bigshouldersinlinedisplay",
+            "bigshouldersinlinedisplaysc",
+            "bigshouldersinlinetext",
+            "bigshouldersinlinetextsc",
+            "bigshouldersstencildisplay",
+            "bigshouldersstencildisplaysc",
+            "bigshouldersstenciltext",
+            "bigshouldersstenciltextsc",
+            "bigshoulderstext",
+            "bigshoulderstextsc",
+            "cactusclassicalserif",
+            "chocolateclassicalsans"
+          ]
+        },
+        "no-build-log": {
+          "count": 12,
+          "families": [
+            "archivo",
+            "lineseedjp",
+            "literata",
+            "notosansgujarati",
+            "notosanssinhala",
+            "notoserif",
+            "rubik80sfade",
+            "rubikpixels",
+            "saira",
+            "sairacondensed",
+            "sairaextracondensed",
+            "sairasemicondensed"
+          ]
+        },
+        "legacy-source-format": {
+          "count": 11,
+          "families": [
+            "bonbon",
+            "cantarell",
+            "carme",
+            "codystar",
+            "englebert",
+            "federo",
+            "glegoo",
+            "iceberg",
+            "iceland",
+            "lancelot",
+            "nerkoone"
+          ]
+        },
+        "no-final-targets": {
+          "count": 10,
+          "families": [
+            "bitcountgriddouble",
+            "bitcountgriddoubleink",
+            "bitcountgridsingle",
+            "bitcountgridsingleink",
+            "bitcountink",
+            "bitcountpropdouble",
+            "bitcountpropdoubleink",
+            "bitcountpropsingle",
+            "brunoace",
+            "brunoacesc"
+          ]
+        },
+        "instance-ufo-naming": {
+          "count": 8,
+          "families": [
+            "chakrapetch",
+            "daibannasil",
+            "koho",
+            "maitree",
+            "notosanstifinagh",
+            "poppins",
+            "shizuru",
+            "tomorrow"
+          ]
+        },
+        "unknown": {
+          "count": 6,
+          "families": [
+            "alegreya",
+            "bigshouldersdisplaysc",
+            "bitcountpropsingleink",
+            "bitcountsingle",
+            "bitcountsingleink",
+            "bizudpmincho"
+          ]
+        },
+        "master-incompatibility": {
+          "count": 5,
+          "families": [
+            "amaranth",
+            "amiriquran",
+            "gayathri",
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        },
+        "designspace-instance-error": {
+          "count": 5,
+          "families": [
+            "comfortaa",
+            "harmattan",
+            "heptaslab",
+            "ruwudu",
+            "scheherazadenew"
+          ]
+        },
+        "fontmake-type-error": {
+          "count": 2,
+          "families": [
+            "roboto",
+            "tiltwarp"
+          ]
+        },
+        "qcurve-unsupported": {
+          "count": 1,
+          "families": [
+            "lakkireddy"
+          ]
+        }
+      }
     }
   ]
 }
