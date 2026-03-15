@@ -570,12 +570,6 @@
       "total_failures": 362,
       "notes": "109 families fixed: 104 Playwrite (fontprimer monorepo support) + 5 EduAuVic (hb-subset missing). 4 PlaywriteNZ variants are byte-identical.",
       "categories": {
-        "fontprimer-missing": {
-          "count": 1,
-          "families": [
-            "briemhand"
-          ]
-        },
         "instance-ufo-naming": {
           "count": 93,
           "families": [
