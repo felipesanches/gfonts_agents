@@ -1004,7 +1004,7 @@
       "status": "complete",
       "notes": "Latest commit in upstream (2017-07-21), used for gfonts PR #759 merged 2017-08-07. All commits are from the same day.",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/amarna/METADATA.pb",
@@ -1099,7 +1099,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/amita/METADATA.pb",
@@ -6759,7 +6759,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/didactgothic/METADATA.pb",
@@ -12933,7 +12933,7 @@
       "has_investigation_report": true,
       "commit_hash": "bf2dceb7e47e591aa7e76d7e268636ea67d66986",
       "notes": "Has SFD and UFO sources, no config.yaml. UFO could support an override config.",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/lalezar/METADATA.pb",
