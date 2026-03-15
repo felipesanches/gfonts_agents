@@ -13711,7 +13711,7 @@
       "status": "complete",
       "notes": "Inferred: v20251119 tag, 1 day before google/fonts add.",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/lisubosa/METADATA.pb",
@@ -13761,7 +13761,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/liujianmaocao/METADATA.pb",
@@ -17457,7 +17457,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notosansgujaratiui/METADATA.pb",
@@ -18903,7 +18903,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notosanssinhalaui/METADATA.pb",
@@ -19488,7 +19488,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/notoserifahom/METADATA.pb",
@@ -25032,7 +25032,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/rubikbeastly/METADATA.pb",
@@ -25668,7 +25668,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/sairacondensed/METADATA.pb",
@@ -25684,7 +25684,7 @@
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/sairaextracondensed/METADATA.pb",
@@ -25700,7 +25700,7 @@
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/sairasemicondensed/METADATA.pb",
@@ -25716,7 +25716,7 @@
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/sairastencilone/METADATA.pb",

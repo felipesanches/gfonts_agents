@@ -2137,6 +2137,236 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T07:56:50.687011+00:00",
+      "total_families": 1267,
+      "total_failures": 153,
+      "categories": {
+        "source-file-missing": {
+          "count": 31,
+          "families": [
+            "abhayalibre",
+            "amarna",
+            "amethysta",
+            "arsenalsc",
+            "asimovian",
+            "barrio",
+            "belanosima",
+            "cairoplay",
+            "castoro",
+            "chirongoroundtc",
+            "chironheihk",
+            "comicrelief",
+            "fragmentmonosc",
+            "graduate",
+            "grenze",
+            "intelonemono",
+            "lateef",
+            "lxgwmarkergothic",
+            "lxgwwenkaimonotc",
+            "lxgwwenkaitc",
+            "moiraione",
+            "mynerve",
+            "notosansduployan",
+            "overpass",
+            "overpassmono",
+            "shantellsans",
+            "sono",
+            "tiktoksans",
+            "uoqmunthenkhung",
+            "vazirmatn",
+            "wavefont"
+          ]
+        },
+        "instance-ufo-naming": {
+          "count": 28,
+          "families": [
+            "alegreya",
+            "amaranth",
+            "amiriquran",
+            "biryani",
+            "cascadiamono",
+            "chakrapetch",
+            "charissil",
+            "cinzeldecorative",
+            "comfortaa",
+            "daibannasil",
+            "foldit",
+            "harmattan",
+            "heptaslab",
+            "kalam",
+            "koho",
+            "maitree",
+            "martelsans",
+            "notosans",
+            "notosansarabic",
+            "notosansmath",
+            "notosanstifinagh",
+            "poppins",
+            "ruwudu",
+            "scheherazadenew",
+            "shizuru",
+            "signikanegative",
+            "susemono",
+            "tomorrow"
+          ]
+        },
+        "fontmake-value-error": {
+          "count": 20,
+          "families": [
+            "anybody",
+            "bagelfatone",
+            "bitcount",
+            "delagothicone",
+            "diphylleia",
+            "dongle",
+            "gasoekone",
+            "gowunbatang",
+            "grandifloraone",
+            "ibmplexsanskr",
+            "khula",
+            "notosanskannada",
+            "notosanskhojki",
+            "notosansmalayalam",
+            "notosanstamil",
+            "notosanstelugu",
+            "orbit",
+            "qahiri",
+            "robotoserif",
+            "tektur"
+          ]
+        },
+        "ninja-missing-source": {
+          "count": 15,
+          "families": [
+            "bigshouldersdisplay",
+            "bigshouldersinlinedisplay",
+            "bigshouldersinlinedisplaysc",
+            "bigshouldersinlinetext",
+            "bigshouldersinlinetextsc",
+            "bigshouldersstencildisplay",
+            "bigshouldersstencildisplaysc",
+            "bigshouldersstenciltext",
+            "bigshouldersstenciltextsc",
+            "bigshoulderstext",
+            "bigshoulderstextsc",
+            "bowlbyonesc",
+            "cactusclassicalserif",
+            "chocolateclassicalsans",
+            "notoseriftamil"
+          ]
+        },
+        "legacy-source-format": {
+          "count": 13,
+          "families": [
+            "bonbon",
+            "cantarell",
+            "carme",
+            "codystar",
+            "englebert",
+            "federo",
+            "glegoo",
+            "iceberg",
+            "iceland",
+            "lancelot",
+            "nerkoone",
+            "sawarabimincho",
+            "tiny5"
+          ]
+        },
+        "no-build-log": {
+          "count": 10,
+          "families": [
+            "andadapro",
+            "archivo",
+            "bigshouldersdisplaysc",
+            "bitcountpropsingleink",
+            "bitcountsingle",
+            "bitcountsingleink",
+            "bizudpmincho",
+            "dmserifdisplay",
+            "dmseriftext",
+            "grandstander"
+          ]
+        },
+        "no-final-targets": {
+          "count": 10,
+          "families": [
+            "bitcountgriddouble",
+            "bitcountgriddoubleink",
+            "bitcountgridsingle",
+            "bitcountgridsingleink",
+            "bitcountink",
+            "bitcountpropdouble",
+            "bitcountpropdoubleink",
+            "bitcountpropsingle",
+            "brunoace",
+            "brunoacesc"
+          ]
+        },
+        "fontmake-error-other": {
+          "count": 9,
+          "families": [
+            "bigshotone",
+            "biorhymeexpanded",
+            "bungeecolor",
+            "bungeespice",
+            "cambay",
+            "coda",
+            "dhyana",
+            "galada",
+            "gurajada"
+          ]
+        },
+        "ufolib-error": {
+          "count": 8,
+          "families": [
+            "alegreyasans",
+            "alegreyasanssc",
+            "beiruti",
+            "benchnine",
+            "girassol",
+            "krub",
+            "sigmar",
+            "tiltneon"
+          ]
+        },
+        "designspace-instance-error": {
+          "count": 3,
+          "families": [
+            "gayathri",
+            "hinamincho",
+            "museomoderno"
+          ]
+        },
+        "master-incompatibility": {
+          "count": 2,
+          "families": [
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        },
+        "fontmake-type-error": {
+          "count": 2,
+          "families": [
+            "roboto",
+            "tiltwarp"
+          ]
+        },
+        "qcurve-unsupported": {
+          "count": 1,
+          "families": [
+            "lakkireddy"
+          ]
+        },
+        "timeout": {
+          "count": 1,
+          "families": [
+            "rubikpixels"
+          ]
+        }
+      }
     }
   ]
 }
