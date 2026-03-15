@@ -16,15 +16,15 @@
     "untested": 8
   },
   "root_cause_summary": {
-    "compiler-output-diff": 380,
-    "metadata-only": 265,
-    "ttfautohint-version + other": 207,
-    "ttfautohint-version": 81
+    "compiler-output-diff": 445,
+    "metadata-only": 320,
+    "ttfautohint-version + other": 225,
+    "ttfautohint-version": 82
   },
   "reflow_risk_summary": {
-    "none": 754,
-    "high": 170,
-    "line-spacing-only": 8,
+    "none": 890,
+    "high": 174,
+    "line-spacing-only": 7,
     "minimal": 1
   },
   "families": [

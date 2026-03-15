@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-15
-**Status**: 1,258 families tested, 893 with deep analysis (1,266 buildable total, 8 unreachable)
+**Status**: 1,258 families tested, 1,072 with deep analysis (1,266 buildable total, 8 unreachable)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -35,12 +35,12 @@ These families rebuild to **exactly the same binary** as what's in google/fonts:
 
 | Root Cause | Font Files | Description |
 |-----------|-----------|-------------|
-| compiler-output-diff | 380 | fontmake/glyphsLib produces slightly different outlines |
-| metadata-only | 265 | Only name/head metadata differs, glyphs identical |
-| ttfautohint-version + other | 207 | ttfautohint version change plus minor outline diffs |
-| ttfautohint-version | 81 | Pure ttfautohint version difference |
+| compiler-output-diff | 445 | fontmake/glyphsLib produces slightly different outlines |
+| metadata-only | 320 | Only name/head metadata differs, glyphs identical |
+| ttfautohint-version + other | 225 | ttfautohint version change plus minor outline diffs |
+| ttfautohint-version | 82 | Pure ttfautohint version difference |
 
-Key insight: **265 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
+Key insight: **320 font files have metadata-only differences** — zero glyph changes. These families are functionally identical to the google/fonts binaries and safe to rebuild.
 
 ## Reflow Risk Analysis
 
@@ -61,9 +61,9 @@ We distinguish between:
 
 | Risk Level | Font Files | Meaning |
 |------------|-----------|---------|
-| **none** | 754 | Safe to rebuild — advance widths and line metrics identical |
-| **high** | 170 | Shared glyphs with different advance widths |
-| **line-spacing-only** | 8 | Line metrics differ but advance widths identical |
+| **none** | 890 | Safe to rebuild — advance widths and line metrics identical |
+| **high** | 174 | Shared glyphs with different advance widths |
+| **line-spacing-only** | 7 | Line metrics differ but advance widths identical |
 | **minimal** | 1 | Very small advance width differences |
 
 **Artifika** is the only family with genuine reflow risk. The non-breaking space (`uni00A0`) has width 560 in the google/fonts binary but 410 in the rebuild (delta: 150 units). The regular `space` glyph is 560 in both. This appears to be caused by `gftools-fix-font` setting NBSP width to match the source's space width (410) rather than the post-processing width (560). Since NBSP is used in real text, rebuilding Artifika would cause text reflow at every non-breaking space.
