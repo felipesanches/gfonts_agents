@@ -556,6 +556,72 @@ rebuilt.ttf ────┘                          └── normalized_built.
                     </details>
                 </div>
 
+                <div style="margin:1.5em 0;">
+                    <h3>Roadmap: Possible Next Steps Toward 100%</h3>
+                    <p style="font-size:0.9em;color:#555;">These are candidate improvements under investigation. Each requires careful analysis to confirm safety before implementation.</p>
+
+                    <h4 style="margin-top:1em;color:#2e7d32;">Tier 1: Quick Wins &mdash; Additional Normalization Steps</h4>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #4caf50;font-size:0.9em;">
+                        <strong>A. Normalize <code>head.flags</code> bit 3</strong>
+                        <p style="margin:0.3em 0 0;">Bit 3 ("instructions may alter advance widths") is set by ttfautohint and is purely informational &mdash; it advises the rasterizer to be careful but does not affect actual output. Clearing this bit would convert at least <strong>9 families</strong> (bahianita, barriecito, farro, and others that differ by only 2&ndash;3 bytes after normalization, all in <code>head.flags</code>).</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: needs verification that no rasterizer changes behavior based on this bit alone.</em></p>
+                    </div>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #4caf50;font-size:0.9em;">
+                        <strong>B. Normalize <code>name</code> table version string encoding</strong>
+                        <p style="margin:0.3em 0 0;">Some families (e.g. <code>cause</code>) differ by a single byte in the name table after normalization. This is likely a character encoding or whitespace difference in the version string. Normalizing version strings to a canonical encoding could fix these.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: needs investigation of what specific name record differs.</em></p>
+                    </div>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #4caf50;font-size:0.9em;">
+                        <strong>C. Normalize <code>OS/2</code> informational fields</strong>
+                        <p style="margin:0.3em 0 0;">Fields like <code>panose</code> (font classification), <code>achVendID</code> (vendor identifier), and <code>fsType</code> (embedding flags) are metadata that doesn't affect text rendering. Different gftools-fix versions may set these differently.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: needs careful enumeration of which OS/2 fields are truly non-functional.</em></p>
+                    </div>
+
+                    <h4 style="margin-top:1em;color:#1565c0;">Tier 2: Medium Effort &mdash; Deeper Normalization</h4>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #2196f3;font-size:0.9em;">
+                        <strong>D. Normalize <code>glyf</code> table padding and encoding</strong>
+                        <p style="margin:0.3em 0 0;">Some families differ by 2&ndash;4 bytes in the glyf table due to padding/alignment differences, not actual coordinate changes. The glyf binary format allows variable-length padding between glyphs. A decompile&rarr;recompile round-trip through fontTools might normalize this, but needs verification that it doesn't alter actual point coordinates.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: 33 families in the 6&ndash;20 byte range may benefit. Needs investigation of whether glyf diffs are padding-only or include real coordinate changes.</em></p>
+                    </div>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #2196f3;font-size:0.9em;">
+                        <strong>E. Deeper GPOS semantic normalization</strong>
+                        <p style="margin:0.3em 0 0;">The current Step 4 recompiles GPOS through fontTools, but if the <em>decompiled</em> representation already differs between versions (different kerning class definitions, different lookup ordering from different glyphsLib versions), the recompile still produces different output. A deeper normalization would canonicalize class memberships (sort glyph members), sort lookups deterministically, and normalize value record formats.</p>
+                        <p style="margin:0.3em 0 0;">This is the approach taken by <a href="https://github.com/googlefonts/fontc/tree/main/otl-normalizer"><code>otl-normalizer</code></a>, but that tool outputs text, not canonical binary. We would need to either extend it or implement equivalent logic in fontTools.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: this is the single biggest blocker &mdash; GPOS differences account for hundreds of non-matching families. Needs careful design to ensure all kerning pairs and positioning rules are preserved.</em></p>
+                    </div>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #2196f3;font-size:0.9em;">
+                        <strong>F. Fix the 135 normalization errors</strong>
+                        <p style="margin:0.3em 0 0;">135 families could not be compared because the normalizer crashed or no built font was found. Some are missing builds (never rebuilt after the last batch), some hit edge cases in the normalizer (unusual table structures, CFF fonts). Fixing these expands the testable population.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: needs triage &mdash; separate missing-build errors from normalizer bugs.</em></p>
+                    </div>
+
+                    <h4 style="margin-top:1em;color:#e65100;">Tier 3: Hard Problems &mdash; Root Causes</h4>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #ff9800;font-size:0.9em;">
+                        <strong>G. Glyph outline coordinate differences</strong>
+                        <p style="margin:0.3em 0 0;">When fontmake/ufo2ft versions differ, they produce slightly different coordinate rounding (&plusmn;1 unit at 1000 UPM). This is a real functional difference, though usually invisible at normal rendering sizes. Cannot be normalized without changing the outlines &mdash; this is where "software archaeology" (matching exact tool versions) remains the only path.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: affects the majority of non-matching families. The cohort version matching approach yielded 15 additional byte-identical families but cannot be scaled further without original <code>pip freeze</code> data.</em></p>
+                    </div>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #ff9800;font-size:0.9em;">
+                        <strong>H. ttfautohint version differences</strong>
+                        <p style="margin:0.3em 0 0;">Different ttfautohint versions produce different hinting programs (<code>fpgm</code>, <code>prep</code>, <code>cvt</code> tables, per-glyph hints). Stripping hinting entirely would be a normalization option, but it is <strong>not safe</strong> &mdash; hinting affects rendering on Windows at small sizes and is functionally significant. Instead, hinting differences should be reported as "known ttfautohint version difference" without normalization.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: affects ~93 families classified as "ttfautohint-version" root cause. Matching the exact ttfautohint version (via ttfautohint-py pinning) is the correct approach but requires per-family version identification.</em></p>
+                    </div>
+
+                    <div style="margin:0.8em 0;padding:0.8em;background:#f9f9f9;border-left:3px solid #ff9800;font-size:0.9em;">
+                        <strong>I. Record build environments at onboarding time</strong>
+                        <p style="margin:0.3em 0 0;">The fundamental barrier to reproducibility is that <code>google/fonts</code> does not record the exact tool versions used to build each font. If <code>pip freeze</code> output were saved alongside every font onboarding/update (e.g. in METADATA.pb or a companion file), future rebuilds could recreate the exact environment. This is a process change for the Google Fonts team, not a normalization step.</p>
+                        <p style="margin:0.3em 0 0;color:#888;"><em>Status: recommendation for the Google Fonts team. Would make all future onboardings reproducible by construction.</em></p>
+                    </div>
+                </div>
+
                 <p class="sources-updated">Last updated: <span id="normalization-timestamp">2026-03-16</span></p>
             </div>
         </section>
