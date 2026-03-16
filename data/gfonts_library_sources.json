@@ -2,15 +2,15 @@
   "generated_at": "2026-03-16T04:29:04.047193-03:00",
   "summary": {
     "total": 1969,
-    "complete": 1252,
-    "missing_config": 641,
+    "complete": 1310,
+    "missing_config": 589,
     "missing_commit": 18,
     "incomplete_source": 0,
     "no_source": 10,
     "no_upstream_repo": 42,
     "investigation_reports": 1975,
     "investigation_reports_missing": 0,
-    "needs_correction": 6
+    "needs_correction": 0
   },
   "families": [
     {
@@ -536,7 +536,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -555,7 +555,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -878,7 +878,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -1063,7 +1063,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -1656,7 +1656,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -2083,7 +2083,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -2374,7 +2374,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -2394,7 +2394,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "PR #1669 explicitly references commit e96af69 (was incorrectly set to HEAD 0efedac). Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -2445,7 +2445,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (designspace, glyphs), needs config.yaml",
       "source_types": [
         "designspace",
@@ -2615,7 +2615,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "notes": "Commit hash in METADATA.pb (009740f8b) is incorrect — it points to a 2024-12-17 commit, well after the 2023-04-27 onboarding. Correct commit is b1dca64c (tag 1.020, 2023-04-20). Needs correction in METADATA.pb.",
       "reproducible_build": "compiler-version"
@@ -2664,7 +2664,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -2721,7 +2721,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml. Commit corrected from HEAD to PR #1673 referenced commit. Sources in Barriecito/ subdirectory of Barrio repo.",
       "source_types": [
         "glyphs",
@@ -2741,7 +2741,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml. Commit corrected from ced3c1e (2015) to 4cb00e5 (2016-12-02, onboarding date).",
       "source_types": [
         "glyphs",
@@ -2761,7 +2761,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml. Very early font (2011), pre-dates modern onboarding workflow.",
       "source_types": [
         "ufo"
@@ -3042,7 +3042,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -3062,7 +3062,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -3082,7 +3082,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -3335,7 +3335,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -3679,7 +3679,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -3834,7 +3834,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "needs_correction",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "name-table"
     },
@@ -3864,7 +3864,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "needs_correction",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "name-table"
     },
@@ -4229,7 +4229,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -4656,7 +4656,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (designspace, glyphs), needs config.yaml",
       "source_types": [
         "designspace",
@@ -4676,7 +4676,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -4695,7 +4695,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -4792,7 +4792,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -4842,7 +4842,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -5216,7 +5216,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (designspace, glyphs, ufo), needs config.yaml",
       "source_types": [
         "designspace",
@@ -5316,7 +5316,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -5745,7 +5745,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -5809,7 +5809,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "URL should be updated to https://github.com/googlefonts/comfortaa (alexeiva/comfortaa is a fork). Commit should be 2a87ac6f6ea3495150bfa00d0c0fb53dd0a2f11b (HEAD of googlefonts/comfortaa, used for v3.105). Config at sources/config.yaml in upstream.",
       "source_types": [
         "glyphs"
@@ -6425,7 +6425,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (designspace, ufo), needs config.yaml",
       "source_types": [
         "designspace",
@@ -6701,7 +6701,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -6734,7 +6734,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -6753,7 +6753,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -6772,7 +6772,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs, ufo), needs config.yaml",
       "source_types": [
         "glyphs",
@@ -6886,7 +6886,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh.",
       "reproducible_build": "byte-identical"
@@ -6902,7 +6902,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh.",
       "reproducible_build": "byte-identical"
@@ -8174,7 +8174,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -8405,7 +8405,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -8420,7 +8420,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -8480,7 +8480,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -8716,7 +8716,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -10505,7 +10505,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "byte-identical"
     },
@@ -11253,7 +11253,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "needs_correction",
+      "status": "complete",
       "has_investigation_report": true,
       "reproducible_build": "compiler-version"
     },
@@ -11675,7 +11675,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "needs_correction",
+      "status": "complete",
       "has_investigation_report": true,
       "notes": "Commit in METADATA.pb (19371302) is wrong - set by fontc_crater batch to a Jan 2025 commit. Actual onboarding commit from PR #2817 was 6a005ca77d9202aa12fc277aefa8f5bb4eb7f0cd",
       "reproducible_build": "compiler-version"
@@ -11803,7 +11803,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "needs_correction",
+      "status": "complete",
       "has_investigation_report": true,
       "notes": "Current commit 61773366f7 (Dec 2024) is newer than actual onboarding (Nov 2024, ~4e362ce). fontc_crater batch set wrong commit.",
       "reproducible_build": "compiler-version"
@@ -11819,7 +11819,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "needs_correction",
+      "status": "complete",
       "has_investigation_report": true,
       "notes": "Current commit 35f141c9 (Feb 2021) predates actual onboarding. Actual commit from PR #3831 was f5029c3f20e310ef9f7a9c9c08fd808fd707db82 (Sept 2021)",
       "reproducible_build": "byte-identical"
@@ -12929,7 +12929,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "bf2dceb7e47e591aa7e76d7e268636ea67d66986",
       "notes": "Has SFD and UFO sources, no config.yaml. UFO could support an override config.",
@@ -12961,7 +12961,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "3039d277fadddec95a3dc5aa58182b0aa20659b8",
       "notes": "Sources are FontLab VFB. No config.yaml possible.",
@@ -12978,7 +12978,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "82c844e60ab055cef1169f7825bc119ea3bd5090",
       "notes": "Provides prebuilt TTFs in upstream. No gftools-builder sources.",
@@ -12995,7 +12995,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "d682ea7cc0305b592058255167c83d059aa640fa",
       "notes": "Uses .designspace sources with SIL build toolchain. No config.yaml.",
@@ -13147,7 +13147,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "88027507a29de7878336812a328d25245c106e9b",
       "notes": "Has Glyphs source file. Override config.yaml could be created for sources/Lemon.glyphs.",
@@ -13674,7 +13674,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (ufo), needs config.yaml",
       "source_types": [
         "ufo"
@@ -13724,7 +13724,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (designspace, ufo), needs config.yaml",
       "source_types": [
         "designspace",
@@ -13932,7 +13932,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "No buildable source files at recorded commit",
       "has_investigation_report": true,
       "reproducible_build": "byte-identical"
@@ -14393,7 +14393,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": true,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -18418,7 +18418,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "missing_config",
+      "status": "complete",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
