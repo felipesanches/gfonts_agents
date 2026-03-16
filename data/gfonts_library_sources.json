@@ -1,16 +1,16 @@
 {
   "generated_at": "2026-03-16T04:29:04.047193-03:00",
   "summary": {
-    "total": 1975,
-    "complete": 947,
-    "missing_config": 508,
-    "missing_commit": 125,
+    "total": 1969,
+    "complete": 1252,
+    "missing_config": 641,
+    "missing_commit": 18,
     "incomplete_source": 0,
-    "no_source": 372,
-    "no_upstream_repo": 23,
+    "no_source": 10,
+    "no_upstream_repo": 42,
     "investigation_reports": 1975,
     "investigation_reports_missing": 0,
-    "needs_correction": 0
+    "needs_correction": 6
   },
   "families": [
     {
