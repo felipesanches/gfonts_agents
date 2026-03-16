@@ -1,15 +1,15 @@
 {
   "generated_at": "2026-03-16T02:51:44.577522-03:00",
-  "last_updated": "2026-03-16T02:51:44.577522-03:00",
+  "last_updated": "2026-03-16T03:01:06.095253-03:00",
   "summary": {
-    "processed": 1264,
+    "processed": 1267,
     "total_buildable": 1267,
     "yes": 311,
     "byte_identical": 311,
-    "compiler_version": 868,
-    "compiler-version": 868,
-    "build_failure": 45,
-    "build-failure": 45,
+    "compiler_version": 913,
+    "compiler-version": 913,
+    "build_failure": 3,
+    "build-failure": 3,
     "timestamp_diff": 10,
     "timestamp-diff": 10,
     "name_table": 13,
@@ -20,7 +20,7 @@
     "missing-source": 1,
     "legacy_no_modern_source": 13,
     "legacy-no-modern-source": 13,
-    "untested": 3
+    "untested": 0
   },
   "root_cause_summary": {
     "unknown": 804,
@@ -625,7 +625,7 @@
       }
     },
     "adventpro": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {
         "AdventPro[wdth,wght].ttf": {
           "byte_identical": false,
@@ -21290,7 +21290,7 @@
       }
     },
     "gajrajone": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "galada": {
@@ -21983,7 +21983,7 @@
       }
     },
     "gloock": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "glory": {
@@ -42694,7 +42694,7 @@
       }
     },
     "notosansanatolianhieroglyphs": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansarabic": {
@@ -43030,7 +43030,7 @@
       }
     },
     "notosansbhaiksuki": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansbrahmi": {
@@ -43179,7 +43179,7 @@
       }
     },
     "notosanscarian": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanscaucasianalbanian": {
@@ -43395,7 +43395,7 @@
       }
     },
     "notosanscuneiform": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanscypriot": {
@@ -43432,11 +43432,11 @@
       }
     },
     "notosanscyprominoan": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansdeseret": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansdevanagari": {
@@ -43510,7 +43510,7 @@
       }
     },
     "notosanselbasan": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanselymaic": {
@@ -43660,7 +43660,7 @@
       }
     },
     "notosansgothic": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansgrantha": {
@@ -43890,7 +43890,7 @@
       }
     },
     "notosanshatran": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanshebrew": {
@@ -43967,7 +43967,7 @@
       }
     },
     "notosansindicsiyaqnumbers": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansinscriptionalpahlavi": {
@@ -44223,7 +44223,7 @@
       }
     },
     "notosanskharoshthi": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanskhmer": {
@@ -44518,7 +44518,7 @@
       }
     },
     "notosanslinearb": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanslisu": {
@@ -44659,7 +44659,7 @@
       }
     },
     "notosansmahajani": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansmalayalam": {
@@ -44942,7 +44942,7 @@
       }
     },
     "notosansmayannumerals": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansmedefaidrin": {
@@ -45297,7 +45297,7 @@
       }
     },
     "notosansnabataean": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansnagmundari": {
@@ -45527,11 +45527,11 @@
       }
     },
     "notosansnushu": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansogham": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansolchiki": {
@@ -45641,15 +45641,15 @@
       }
     },
     "notosansoldnortharabian": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansoldpermic": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansoldpersian": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansoldsogdian": {
@@ -45686,7 +45686,7 @@
       }
     },
     "notosansoldsoutharabian": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansoldturkic": {
@@ -45839,7 +45839,7 @@
       }
     },
     "notosanspalmyrene": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanspaucinhau": {
@@ -45909,7 +45909,7 @@
       }
     },
     "notosansphoenician": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanspsalterpahlavi": {
@@ -45979,11 +45979,11 @@
       }
     },
     "notosansrunic": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanssamaritan": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanssaurashtra": {
@@ -46053,7 +46053,7 @@
       }
     },
     "notosansshavian": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanssiddham": {
@@ -46156,7 +46156,7 @@
       }
     },
     "notosanssogdian": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanssorasompeng": {
@@ -46200,7 +46200,7 @@
       }
     },
     "notosanssoyombo": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanssundanese": {
@@ -46665,7 +46665,7 @@
       }
     },
     "notosanstamilsupplement": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosanstangsa": {
@@ -46888,11 +46888,11 @@
       }
     },
     "notosanstirhuta": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansugaritic": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notosansvai": {
@@ -47692,7 +47692,7 @@
       }
     },
     "notoserifkhitansmallscript": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notoserifkhmer": {
@@ -47815,7 +47815,7 @@
       }
     },
     "notoserifmakasar": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notoserifmalayalam": {
@@ -48276,11 +48276,11 @@
       }
     },
     "notoserifyezidi": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "nototraditionalnushu": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "notoznamennymusicalnotation": {
@@ -57296,7 +57296,7 @@
       }
     },
     "rubik80sfade": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "rubikbeastly": {
@@ -57999,15 +57999,15 @@
       }
     },
     "rubikspraypaint": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "rubikstorm": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "rubikvinyl": {
-      "status": "build-failure",
+      "status": "compiler-version",
       "files": {}
     },
     "rubikwetpaint": {

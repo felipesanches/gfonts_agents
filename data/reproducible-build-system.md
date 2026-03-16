@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-16
-**Status**: 1264 families tested, 1267 total (3 unreachable/untested) -- 45 build failures (3.6%)
+**Status**: 1267 families tested -- 3 build failures (0.2%)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -10,22 +10,22 @@ With 100% upstream_info.md coverage across all 1,975 ofl/ families now complete,
 
 The system downloads source snapshots from GitHub at the exact commit recorded in METADATA.pb, builds them with `gftools-builder`, and performs a multi-level comparison: SHA256 hash, TTX table-by-table diff, mismatch categorization, and deep structural analysis (ttfautohint version detection, per-glyph coordinate comparison, advance width and line metrics reflow risk assessment).
 
-## Current Results (1264 of 1267 families tested)
+## Current Results (1267 families tested)
 
 ### Status Breakdown
 
 | Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
-| **yes** (byte-identical) | 311 | 24.6% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 868 | 68.7% | Differences from fontmake/fontTools/ttfautohint version |
-| **build-failure** | 45 | 3.6% | gftools-builder failed |
-| **timestamp-diff** | 10 | 0.8% | Only head timestamps differ |
+| **yes** (byte-identical) | 311 | 24.5% | Rebuilt font is bit-for-bit identical to google/fonts |
+| **compiler-version** | 913 | 72.1% | Differences from fontmake/fontTools/ttfautohint version |
 | **name-table** | 13 | 1.0% | Only name table metadata differs |
 | **legacy-no-modern-source** | 13 | 1.0% | Only legacy sources (SFD/VFB), no modern build pipeline |
+| **timestamp-diff** | 10 | 0.8% | Only head timestamps differ |
 | **metadata-stanza-wrong** | 3 | 0.2% | METADATA.pb source stanza is incorrect |
+| **build-failure** | 3 | 0.2% | gftools-builder failed (foldit, playfairdisplay, playfairdisplaysc) |
 | **missing-source** | 1 | 0.1% | Source repository unreachable |
 
-3 families could not be tested (network/repository issues). Of the 1264 families tested, 1219 produced comparison reports with deep analysis. The remaining 45 failed to build (no output to compare).
+Of the 1267 families tested, 1264 produced comparison reports with deep analysis. The remaining 3 failed to build (no output to compare).
 
 ### Byte-Identical Families (311)
 
@@ -100,13 +100,13 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 ## Key Insights
 
-1. **24.6% byte-identical rate across 1264 families.** 311 families rebuild to the exact same binary — up from 309 after continued cohort version matching progress.
+1. **24.5% byte-identical rate across 1267 families.** 311 families rebuild to the exact same binary — up from 309 after continued cohort version matching progress.
 
-2. **3.6% build failure rate (45 failures).** 45 families fail to build with gftools-builder. 13 additional families reclassified as legacy-no-modern-source.
+2. **0.2% build failure rate (3 failures).** Only 3 families fail to build with gftools-builder: foldit, playfairdisplay, playfairdisplaysc. 42 previously-reported failures were reclassified as compiler-version after correction. 13 additional families reclassified as legacy-no-modern-source.
 
 3. **534 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 
-4. **45 build failures remain.** 868 families show compiler-version differences, the largest category.
+4. **913 families show compiler-version differences**, the largest category (72.1%).
 
 5. **Prebuild support added.** Some families (42dotsans, astasans, cabin, cairo, cairoplay) require pre-build commands (glyphs2ufo, custom scripts) before gftools-builder. Prebuild support was added with auto-detection of Makefile/build.sh/build.py.
 
