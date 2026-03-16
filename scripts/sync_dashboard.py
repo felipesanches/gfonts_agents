@@ -103,6 +103,7 @@ def validate_coherence(registry, sources, build_system, norm_results):
     src_complete = src_summary.get("complete", 0)
 
     # Every family with successful reproducible_build should be status=complete
+    # Every family with missing-source should NOT be status=complete
     for fam_data in sources.get("families", []):
         rb = fam_data.get("reproducible_build")
         status = fam_data.get("status")
@@ -110,6 +111,9 @@ def validate_coherence(registry, sources, build_system, norm_results):
             if status != "complete":
                 path = fam_data.get("path", "?")
                 issues.append(f"{path}: reproducible_build={rb} but status={status} (should be complete)")
+        if rb in ("missing-source", "metadata-stanza-wrong") and status == "complete":
+            path = fam_data.get("path", "?")
+            issues.append(f"{path}: reproducible_build={rb} but status=complete (should be missing_url or needs_correction)")
 
     # Check summary counts match actual family data
     actual_statuses = Counter(f.get("status") for f in sources.get("families", []))
@@ -146,10 +150,17 @@ def sync_sources(registry, sources):
             changes += 1
 
         # Sync status: if family builds successfully, it's complete
+        # If source is missing/wrong, demote from complete
         if rb and rb not in ("build-failure", "missing-source", "metadata-stanza-wrong"):
             if fam_data.get("status") != "complete":
                 fam_data["status"] = "complete"
                 changes += 1
+        elif rb == "missing-source" and fam_data.get("status") == "complete":
+            fam_data["status"] = "missing_url"
+            changes += 1
+        elif rb == "metadata-stanza-wrong" and fam_data.get("status") == "complete":
+            fam_data["status"] = "needs_correction"
+            changes += 1
 
     # Recalculate summary
     statuses = Counter(f.get("status") for f in sources.get("families", []))
@@ -190,6 +201,36 @@ def sync_build_system(registry, build_system, norm_results):
         summary["normalized_match"] = norm_results.get("normalized_match", 0)
 
     return True
+
+
+def sync_build_timings():
+    """Regenerate build_timings.json from comparison reports."""
+    import glob
+
+    timings = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "description": "Build timing data extracted from comparison reports",
+        "families": {},
+    }
+
+    for report_path in glob.glob(str(REPRO_BUILDS_DIR / "*/comparison_report.json")):
+        try:
+            r = load_json(report_path)
+            family = r.get(
+                "family", os.path.basename(os.path.dirname(report_path))
+            )
+            bt = r.get("build_time_seconds")
+            if bt and bt > 0:
+                timings["families"][family] = {
+                    "build_time_seconds": round(bt, 1),
+                    "status": r.get("overall_status", "?"),
+                    "timestamp": r.get("timestamp", ""),
+                }
+        except Exception:
+            pass
+
+    save_json(DATA_DIR / "build_timings.json", timings)
+    return len(timings["families"])
 
 
 def main():
@@ -235,6 +276,9 @@ def main():
     sync_build_system(registry, build_system, norm_results)
     print("build_system.json: summary updated")
     save_json(DATA_DIR / "build_system.json", build_system)
+
+    timing_count = sync_build_timings()
+    print(f"build_timings.json: {timing_count} families with timing data")
 
     # Post-sync validation
     print("\n=== Post-sync validation ===")
