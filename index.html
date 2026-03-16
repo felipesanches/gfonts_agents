@@ -339,6 +339,36 @@
                 <h2>Reproducible Build System</h2>
                 <p class="panel-description">Validates METADATA.pb source stanzas by building fonts from upstream sources and comparing against google/fonts binaries</p>
 
+                <details style="margin:1em 0;padding:1em;background:#f5f5f5;border-radius:6px;border:1px solid #ddd;">
+                    <summary style="cursor:pointer;font-weight:bold;color:#333;">How the Build System Works</summary>
+                    <div style="margin-top:0.8em;line-height:1.6;font-size:0.92em;color:#444;">
+                        <p>The reproducible build system lives in <code>google/fonts/build_tools/reproducible_build.py</code>. For each font family, it:</p>
+                        <ol style="margin:0.5em 0 0.5em 1.5em;">
+                            <li>Reads the <strong>source commit</strong> and <strong>repository URL</strong> from <code>METADATA.pb</code></li>
+                            <li>Downloads a source snapshot from GitHub at that exact commit</li>
+                            <li>Runs any <strong>prebuild commands</strong> (e.g. <code>glyphs2ufo</code>, custom Python scripts)</li>
+                            <li>Builds with <code>gftools-builder</code> using the family's <code>config.yaml</code></li>
+                            <li>Compares the output byte-for-byte against what's shipped in <code>google/fonts</code></li>
+                        </ol>
+
+                        <p style="margin-top:0.8em;"><strong>Build Registry</strong> &mdash; All per-family build configuration is stored in <code>google/fonts/build_tools/build_registry.json</code>. Each family entry contains:</p>
+                        <ul style="margin:0.3em 0 0.5em 1.5em;">
+                            <li><code>enabled</code> &mdash; whether the family is included in batch builds</li>
+                            <li><code>isolation</code> &mdash; <code>"shared"</code> (uses the main gftools venv) or <code>"custom"</code> (per-family venv with pinned tool versions)</li>
+                            <li><code>overrides.requirements</code> &mdash; pinned pip packages for custom venvs (e.g. <code>["gftools==0.9.79", "fonttools==4.56.0"]</code>)</li>
+                            <li><code>prebuild</code> &mdash; shell commands to run before building (source patching, format conversion)</li>
+                            <li><code>build_timeout</code> &mdash; per-family timeout in seconds (default 600)</li>
+                            <li><code>skip_build</code> &mdash; for families that ship pre-built fonts in their upstream repo</li>
+                            <li><code>reproducible_build</code> &mdash; the comparison result (<code>yes</code>, <code>compiler-version</code>, <code>build-failure</code>, etc.)</li>
+                            <li><code>source_format</code>, <code>config_yaml_source</code>, <code>failure_category</code> &mdash; diagnostic metadata</li>
+                        </ul>
+
+                        <p style="margin-top:0.8em;"><strong>Achieving byte-identical builds</strong> requires matching the exact tool versions used when the font was originally built. Since <code>google/fonts</code> CI doesn't record <code>pip freeze</code> outputs, we use <em>software archaeology</em>: extracting tool version hints from the font binaries (ttfautohint version in the name table), cross-referencing git commit dates with PyPI release timelines, and testing version combinations per family. Families using custom venvs with pinned versions that produce byte-identical output are recorded in the registry with <code>isolation: "custom"</code>.</p>
+
+                        <p style="margin-top:0.8em;"><strong>Why most families aren't byte-identical:</strong> The main blockers are (1) GPOS table compilation differences across fonttools versions, (2) gftools-fix post-processing that adds <code>postscriptNameID</code> attributes and renumbers name table entries, and (3) glyphsLib glyph ordering differences for <code>.glyphs</code>-source families. These produce functionally identical fonts with different binary encoding.</p>
+                    </div>
+                </details>
+
                 <div class="builds-summary" id="build-system-summary">
                     <div class="summary-card total">
                         <span class="summary-value" id="bs-total">--</span>
