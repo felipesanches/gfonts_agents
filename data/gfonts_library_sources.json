@@ -2,15 +2,15 @@
   "generated_at": "2026-03-16T04:29:04.047193-03:00",
   "summary": {
     "total": 1969,
-    "complete": 1310,
+    "complete": 1269,
     "missing_config": 589,
     "missing_commit": 18,
     "incomplete_source": 0,
-    "no_source": 10,
+    "no_source": 48,
     "no_upstream_repo": 42,
     "investigation_reports": 1975,
     "investigation_reports_missing": 0,
-    "needs_correction": 0
+    "needs_correction": 3
   },
   "families": [
     {
@@ -122,7 +122,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/acme/METADATA.pb",
@@ -5595,7 +5595,7 @@
       "config_yaml": "scripts/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "complete",
+      "status": "needs_correction",
       "has_investigation_report": true,
       "reproducible_build": "metadata-stanza-wrong"
     },
@@ -7687,7 +7687,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -8109,7 +8109,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Inferred: upstream commit on same day as google/fonts update. Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -8236,7 +8236,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Tag '5.2' resolves to this commit (2020-06-12). Used for gfonts PR #3786 'Updating to Fira Code 5.2' merged 2021-09-08.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -9987,7 +9987,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -10356,7 +10356,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Inferred: HEAD of upstream (only HEAD, no later commits). Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -10372,7 +10372,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "HEAD commit 'Compile 1.000' (2015-10-17). Upstream has no v1.001. The gfonts PRs (#892 hotfix v1.001 in 2017, #2378 re-hinting in 2020) modified fonts on the gfonts side.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -10388,7 +10388,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Inferred: HEAD of upstream at onboarding date. Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -10452,7 +10452,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "HEAD commit 'Merge branch develop' (2015-10-17) containing 'Compile 1.000'. Upstream has no v1.001. Gfonts PR #893 hotfix merged 2017-05-08.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -10468,7 +10468,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "HEAD commit 'Compile 1.000' (2015-10-17). Upstream has no v1.001. Gfonts PR #894 hotfix merged 2017-05-08.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -11474,7 +11474,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Initial commit (2016-01-10). Font was added to gfonts in 2012, before the upstream repo existed. The initial commit is the earliest available reference. The v1.100 tag (2018) was never pushed to gfonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -11490,7 +11490,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Initial commit (2016-01-10). Same situation as Jacques Francois - font was in gfonts (2012) before the upstream repo. The v1.100 tag (2018) was never pushed to gfonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -12468,7 +12468,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -13557,7 +13557,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Latest commit 'Make all italic styles available in VF on mac' (2020-06-10). Used for gfonts PR #2432 'librecaslontext: v2.0 added' merged 2020-06-11.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -14391,7 +14391,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "needs_correction",
       "has_investigation_report": true,
       "reproducible_build": "metadata-stanza-wrong"
     },
@@ -15762,7 +15762,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "v8.001 commit. v8.002 was done directly in google/fonts. Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -16207,7 +16207,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "v1.002 tag commit (2022-08-27). Gfonts PRs #5117 (v1.000) and #5160 (v1.002) both had empty commit hashes from gftools-packager. Later PRs #5245 (re-maximum_color) and #5279 (version bump) reprocessed the font binary but didn't change the source.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -16332,7 +16332,7 @@
       "config_yaml": "config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Inferred: upstream commit on same day as google/fonts add.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -16917,7 +16917,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17038,7 +17038,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17309,7 +17309,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17325,7 +17325,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17491,7 +17491,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17537,7 +17537,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17748,7 +17748,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17824,7 +17824,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -17915,7 +17915,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -18066,7 +18066,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -18340,7 +18340,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -18446,7 +18446,7 @@
       "config_yaml": null,
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Has gftools-buildable sources (glyphs), needs config.yaml",
       "source_types": [
         "glyphs"
@@ -18660,7 +18660,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -18946,7 +18946,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -19248,7 +19248,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -19309,7 +19309,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -19370,7 +19370,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -19611,7 +19611,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -19912,7 +19912,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -24218,7 +24218,7 @@
       "config_yaml": null,
       "override_config": true,
       "has_source_block": true,
-      "status": "complete",
+      "status": "needs_correction",
       "notes": "Commit 7b288c6f not found in current repo history (possible force-push). Already in METADATA.pb.",
       "has_investigation_report": true,
       "reproducible_build": "metadata-stanza-wrong"
@@ -25368,7 +25368,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": false,
-      "status": "complete",
+      "status": "missing_url",
       "notes": "Commit inferred.",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
@@ -30823,7 +30823,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
     },
@@ -30838,7 +30838,7 @@
       "config_yaml": "sources/config.yaml",
       "override_config": false,
       "has_source_block": true,
-      "status": "complete",
+      "status": "missing_url",
       "has_investigation_report": true,
       "reproducible_build": "missing-source"
     },
