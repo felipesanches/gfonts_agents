@@ -2,7 +2,7 @@
   "generated_at": "2026-03-16T02:51:44.577522-03:00",
   "last_updated": "2026-03-16T12:00:00.000000-03:00",
   "summary": {
-    "processed": 1311,
+    "processed": 1272,
     "total_buildable": 1267,
     "yes": 306,
     "byte_identical": 319,
@@ -16,7 +16,7 @@
     "name-table": 13,
     "metadata_stanza_wrong": 3,
     "metadata-stanza-wrong": 3,
-    "missing_source": 39,
+    "missing_source": 0,
     "missing-source": 1,
     "legacy_no_modern_source": 13,
     "legacy-no-modern-source": 13,
