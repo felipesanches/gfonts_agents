@@ -3270,11 +3270,11 @@ function renderBuildSystem(data) {
         return `${n} (${pct}%)`;
     }
 
-    setText('bs-total', total);
+    const testedPct = totalBuildable > 0 ? (total / totalBuildable * 100).toFixed(1) : '100.0';
+    setText('bs-total', `${total} (${testedPct}%)`);
     const identicalCount = s['yes'] || s['identical'] || 0;
     const compilerCount = s['compiler_version'] || s['compiler-version'] || 0;
     const failureCount = s['build_failure'] || s['build-failure'] || 0;
-    const untestedCount = untested >= 0 ? untested : 0;
     const normalizedCount = s['normalized_match'] || 0;
     const adjustedCompilerCount = compilerCount - normalizedCount;
     setText('bs-identical', fmtCount(identicalCount, total));
@@ -3282,7 +3282,6 @@ function renderBuildSystem(data) {
     setText('bs-equivalent', fmtCount(identicalCount + normalizedCount, total));
     setText('bs-compiler', fmtCount(adjustedCompilerCount, total));
     setText('bs-failure', fmtCount(failureCount, total));
-    setText('bs-untested', fmtCount(untestedCount, totalBuildable));
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
 
     // Reflow risk summary (computed first so coherence note can reference it)
