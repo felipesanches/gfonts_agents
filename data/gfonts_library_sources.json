@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T23:48:55.297951-03:00",
+  "generated_at": "2026-03-16T04:29:04.047193-03:00",
   "summary": {
     "total": 1975,
     "complete": 947,
@@ -89,7 +89,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/abrilfatface/METADATA.pb",
@@ -122,7 +122,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/acme/METADATA.pb",
@@ -234,7 +234,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/afacadflux/METADATA.pb",
@@ -249,7 +249,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/agbalumo/METADATA.pb",
@@ -327,7 +327,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/akayakanadaka/METADATA.pb",
@@ -342,7 +342,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/akayatelivigala/METADATA.pb",
@@ -357,7 +357,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/akronim/METADATA.pb",
@@ -386,7 +386,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/aladin/METADATA.pb",
@@ -464,7 +464,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/aldrich/METADATA.pb",
@@ -542,7 +542,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/alegreyasc/METADATA.pb",
@@ -561,7 +561,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/aleo/METADATA.pb",
@@ -697,7 +697,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/allan/METADATA.pb",
@@ -925,7 +925,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/alumnisanspinstripe/METADATA.pb",
@@ -940,7 +940,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/alumnisanssc/METADATA.pb",
@@ -970,7 +970,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/amarante/METADATA.pb",
@@ -1019,7 +1019,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/amaticsc/METADATA.pb",
@@ -1034,7 +1034,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/amethysta/METADATA.pb",
@@ -1144,7 +1144,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ancizarserif/METADATA.pb",
@@ -1159,7 +1159,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/andadapro/METADATA.pb",
@@ -1204,7 +1204,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anekdevanagari/METADATA.pb",
@@ -1219,7 +1219,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anekgujarati/METADATA.pb",
@@ -1234,7 +1234,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anekgurmukhi/METADATA.pb",
@@ -1249,7 +1249,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anekkannada/METADATA.pb",
@@ -1264,7 +1264,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/aneklatin/METADATA.pb",
@@ -1279,7 +1279,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anekmalayalam/METADATA.pb",
@@ -1294,7 +1294,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anekodia/METADATA.pb",
@@ -1309,7 +1309,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anektamil/METADATA.pb",
@@ -1324,7 +1324,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/anektelugu/METADATA.pb",
@@ -1339,7 +1339,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/angkor/METADATA.pb",
@@ -1354,7 +1354,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/annapurnasil/METADATA.pb",
@@ -1498,7 +1498,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/antonsc/METADATA.pb",
@@ -1543,7 +1543,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/aoboshione/METADATA.pb",
@@ -1559,7 +1559,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/arapey/METADATA.pb",
@@ -1759,7 +1759,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/armata/METADATA.pb",
@@ -1928,7 +1928,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/asset/METADATA.pb",
@@ -1959,7 +1959,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/astasans/METADATA.pb",
@@ -2167,7 +2167,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/averagesans/METADATA.pb",
@@ -2271,7 +2271,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/b612mono/METADATA.pb",
@@ -2286,7 +2286,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/babylonica/METADATA.pb",
@@ -2301,7 +2301,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bacasimeantique/METADATA.pb",
@@ -2361,7 +2361,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bahiana/METADATA.pb",
@@ -2452,7 +2452,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/baloo2/METADATA.pb",
@@ -2670,7 +2670,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/barlowcondensed/METADATA.pb",
@@ -2689,7 +2689,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/barlowsemicondensed/METADATA.pb",
@@ -2708,7 +2708,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/barriecito/METADATA.pb",
@@ -2872,7 +2872,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bbhbartle/METADATA.pb",
@@ -2904,7 +2904,7 @@
       "status": "complete",
       "notes": "Inferred: upstream commit 1 day before google/fonts add.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bbhhegarty/METADATA.pb",
@@ -2935,7 +2935,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bebasneue/METADATA.pb",
@@ -2966,7 +2966,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/belanosima/METADATA.pb",
@@ -2981,7 +2981,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/belgrano/METADATA.pb",
@@ -3014,7 +3014,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/belleza/METADATA.pb",
@@ -3029,7 +3029,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bellota/METADATA.pb",
@@ -3049,7 +3049,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bellotatext/METADATA.pb",
@@ -3069,7 +3069,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/benchnine/METADATA.pb",
@@ -3307,7 +3307,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bigelowrules/METADATA.pb",
@@ -3356,7 +3356,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bigshouldersdisplay/METADATA.pb",
@@ -3402,7 +3402,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bigshouldersinlinedisplay/METADATA.pb",
@@ -3479,7 +3479,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bigshouldersstencildisplay/METADATA.pb",
@@ -3701,7 +3701,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountgriddouble/METADATA.pb",
@@ -3731,7 +3731,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountgridsingle/METADATA.pb",
@@ -3746,7 +3746,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountgridsingleink/METADATA.pb",
@@ -3761,7 +3761,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountink/METADATA.pb",
@@ -3776,7 +3776,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountpropdouble/METADATA.pb",
@@ -3791,7 +3791,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountpropdoubleink/METADATA.pb",
@@ -3806,7 +3806,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountpropsingle/METADATA.pb",
@@ -3821,7 +3821,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountpropsingleink/METADATA.pb",
@@ -3851,7 +3851,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bitcountsingleink/METADATA.pb",
@@ -3896,7 +3896,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bizudmincho/METADATA.pb",
@@ -3911,7 +3911,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bizudpgothic/METADATA.pb",
@@ -3926,7 +3926,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bizudpmincho/METADATA.pb",
@@ -3941,7 +3941,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/blackandwhitepicture/METADATA.pb",
@@ -3985,7 +3985,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/blaka/METADATA.pb",
@@ -4295,7 +4295,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/brawler/METADATA.pb",
@@ -4403,7 +4403,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bubblegumsans/METADATA.pb",
@@ -4663,7 +4663,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cabincondensed/METADATA.pb",
@@ -4682,7 +4682,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cabinsketch/METADATA.pb",
@@ -4701,7 +4701,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cactusclassicalserif/METADATA.pb",
@@ -4716,7 +4716,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/caesardressing/METADATA.pb",
@@ -4764,7 +4764,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cairoplay/METADATA.pb",
@@ -4779,7 +4779,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/caladea/METADATA.pb",
@@ -4799,7 +4799,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/calistoga/METADATA.pb",
@@ -5104,7 +5104,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cascadiamono/METADATA.pb",
@@ -5134,7 +5134,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/castorotitling/METADATA.pb",
@@ -5224,7 +5224,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/caveatbrush/METADATA.pb",
@@ -5303,7 +5303,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/changaone/METADATA.pb",
@@ -5500,7 +5500,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cherryswash/METADATA.pb",
@@ -5567,7 +5567,7 @@
       "status": "complete",
       "notes": "Commit inferred from upstream HEAD at onboarding date.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/chironheihk/METADATA.pb",
@@ -5642,7 +5642,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/chokokutai/METADATA.pb",
@@ -5657,7 +5657,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/chonburi/METADATA.pb",
@@ -5687,7 +5687,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cinzeldecorative/METADATA.pb",
@@ -6139,7 +6139,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cormorantunicase/METADATA.pb",
@@ -6154,7 +6154,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cormorantupright/METADATA.pb",
@@ -6233,7 +6233,7 @@
       "status": "complete",
       "notes": "Inferred: HEAD of upstream on same day as Font Bakery Dashboard create. Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/coustard/METADATA.pb",
@@ -6320,7 +6320,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/crimsontext/METADATA.pb",
@@ -6368,7 +6368,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cutefont/METADATA.pb",
@@ -6397,7 +6397,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/cutivemono/METADATA.pb",
@@ -6412,7 +6412,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/daibannasil/METADATA.pb",
@@ -6477,7 +6477,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/dangrek/METADATA.pb",
@@ -6522,7 +6522,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/davidlibre/METADATA.pb",
@@ -6740,7 +6740,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/dhyana/METADATA.pb",
@@ -6779,7 +6779,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/digitalnumbers/METADATA.pb",
@@ -6889,7 +6889,7 @@
       "status": "missing_config",
       "has_investigation_report": true,
       "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh.",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/dmseriftext/METADATA.pb",
@@ -6905,7 +6905,7 @@
       "status": "missing_config",
       "has_investigation_report": true,
       "notes": "No config.yaml exists for Serif sources in upstream. Previously incorrectly set to Sans/Source/config.yaml. Serif fonts were pre-compiled using build.sh.",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/dohyeon/METADATA.pb",
@@ -6982,7 +6982,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/doppioone/METADATA.pb",
@@ -7033,7 +7033,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/dotgothic16/METADATA.pb",
@@ -7049,7 +7049,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/doto/METADATA.pb",
@@ -7223,7 +7223,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/economica/METADATA.pb",
@@ -7256,7 +7256,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/eduauvicwantarrows/METADATA.pb",
@@ -7346,7 +7346,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/eduqldbeginner/METADATA.pb",
@@ -7451,7 +7451,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/elmssans/METADATA.pb",
@@ -7466,7 +7466,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/elsie/METADATA.pb",
@@ -7866,7 +7866,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/exo2/METADATA.pb",
@@ -7971,7 +7971,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/farro/METADATA.pb",
@@ -8050,7 +8050,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/fasthand/METADATA.pb",
@@ -8080,7 +8080,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/faustina/METADATA.pb",
@@ -8311,7 +8311,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/fjordone/METADATA.pb",
@@ -8703,7 +8703,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/funneldisplay/METADATA.pb",
@@ -8748,7 +8748,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/fuzzybubbles/METADATA.pb",
@@ -8763,7 +8763,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gabarito/METADATA.pb",
@@ -8937,7 +8937,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gasoekone/METADATA.pb",
@@ -8952,7 +8952,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gayathri/METADATA.pb",
@@ -9114,7 +9114,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/geom/METADATA.pb",
@@ -9129,7 +9129,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/georama/METADATA.pb",
@@ -9271,7 +9271,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gildadisplay/METADATA.pb",
@@ -9286,7 +9286,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/girassol/METADATA.pb",
@@ -9301,7 +9301,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/giveyouglory/METADATA.pb",
@@ -9412,7 +9412,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/goblinone/METADATA.pb",
@@ -9463,7 +9463,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/golostext/METADATA.pb",
@@ -9572,7 +9572,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gowundodum/METADATA.pb",
@@ -9587,7 +9587,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/graduate/METADATA.pb",
@@ -9602,7 +9602,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/grandhotel/METADATA.pb",
@@ -9647,7 +9647,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/grapenuts/METADATA.pb",
@@ -9662,7 +9662,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gravitasone/METADATA.pb",
@@ -9785,7 +9785,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gudea/METADATA.pb",
@@ -9863,7 +9863,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gungsuh/METADATA.pb",
@@ -9908,7 +9908,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/gurajada/METADATA.pb",
@@ -10001,7 +10001,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/halant/METADATA.pb",
@@ -10082,7 +10082,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/handlee/METADATA.pb",
@@ -10130,7 +10130,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/happymonkey/METADATA.pb",
@@ -10321,7 +10321,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/hind/METADATA.pb",
@@ -10507,7 +10507,7 @@
       "has_source_block": true,
       "status": "missing_config",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/hostgrotesk/METADATA.pb",
@@ -10612,7 +10612,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ibmplexmono/METADATA.pb",
@@ -10678,7 +10678,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ibmplexsansdevanagari/METADATA.pb",
@@ -10699,7 +10699,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ibmplexsanshebrew/METADATA.pb",
@@ -10720,7 +10720,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ibmplexsansjp/METADATA.pb",
@@ -10754,7 +10754,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ibmplexsansthai/METADATA.pb",
@@ -10794,7 +10794,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ibmplexserif/METADATA.pb",
@@ -10814,7 +10814,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/iceberg/METADATA.pb",
@@ -10874,7 +10874,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/imfelldoublepica/METADATA.pb",
@@ -11029,7 +11029,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/imprima/METADATA.pb",
@@ -11044,7 +11044,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/inclusivesans/METADATA.pb",
@@ -11122,7 +11122,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/inika/METADATA.pb",
@@ -11210,7 +11210,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/instrumentsans/METADATA.pb",
@@ -11270,7 +11270,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/intertight/METADATA.pb",
@@ -11285,7 +11285,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/islandmoments/METADATA.pb",
@@ -11300,7 +11300,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/istokweb/METADATA.pb",
@@ -11497,7 +11497,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/jainipurva/METADATA.pb",
@@ -11512,7 +11512,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/jaldi/METADATA.pb",
@@ -11542,7 +11542,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/jersey10/METADATA.pb",
@@ -11822,7 +11822,7 @@
       "status": "needs_correction",
       "has_investigation_report": true,
       "notes": "Current commit 35f141c9 (Feb 2021) predates actual onboarding. Actual commit from PR #3831 was f5029c3f20e310ef9f7a9c9c08fd808fd707db82 (Sept 2021)",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/jotione/METADATA.pb",
@@ -11837,7 +11837,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/jua/METADATA.pb",
@@ -11885,7 +11885,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/juliussansone/METADATA.pb",
@@ -11933,7 +11933,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/justmeagaindownhere/METADATA.pb",
@@ -12146,7 +12146,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/kantumruypro/METADATA.pb",
@@ -12176,7 +12176,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/karantina/METADATA.pb",
@@ -12323,7 +12323,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/kayphodu/METADATA.pb",
@@ -12519,7 +12519,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/kiwimaru/METADATA.pb",
@@ -12534,7 +12534,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/kleeone/METADATA.pb",
@@ -12639,7 +12639,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/konkhmersleokchher/METADATA.pb",
@@ -12687,7 +12687,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/kreon/METADATA.pb",
@@ -12786,7 +12786,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/kumarone/METADATA.pb",
@@ -12897,7 +12897,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/laila/METADATA.pb",
@@ -13030,7 +13030,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "06ea77a251dc2d763d199995ec06da0a0c1a85f1",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/leaguegothic/METADATA.pb",
@@ -13151,7 +13151,7 @@
       "has_investigation_report": true,
       "commit_hash": "88027507a29de7878336812a328d25245c106e9b",
       "notes": "Has Glyphs source file. Override config.yaml could be created for sources/Lemon.glyphs.",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lemonada/METADATA.pb",
@@ -13167,7 +13167,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "21a53a1760f6f3c3e585bc50bc3463e97f1fa7e6",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexend/METADATA.pb",
@@ -13183,7 +13183,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "20491885ca2cf7ffc556432973e7bdbc701952b5",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexenddeca/METADATA.pb",
@@ -13199,7 +13199,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "20491885ca2cf7ffc556432973e7bdbc701952b5",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexendexa/METADATA.pb",
@@ -13215,7 +13215,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "20491885ca2cf7ffc556432973e7bdbc701952b5",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexendgiga/METADATA.pb",
@@ -13231,7 +13231,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "20491885ca2cf7ffc556432973e7bdbc701952b5",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexendmega/METADATA.pb",
@@ -13247,7 +13247,7 @@
       "status": "complete",
       "has_investigation_report": true,
       "commit_hash": "20491885ca2cf7ffc556432973e7bdbc701952b5",
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexendpeta/METADATA.pb",
@@ -13262,7 +13262,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexendtera/METADATA.pb",
@@ -13277,7 +13277,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lexendzetta/METADATA.pb",
@@ -13292,7 +13292,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/libertinuskeyboard/METADATA.pb",
@@ -13502,7 +13502,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/librebodoni/METADATA.pb",
@@ -13577,7 +13577,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lifesavers/METADATA.pb",
@@ -13607,7 +13607,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lilitaone/METADATA.pb",
@@ -13680,7 +13680,7 @@
         "ufo"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/linefont/METADATA.pb",
@@ -13777,7 +13777,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/livvic/METADATA.pb",
@@ -13792,7 +13792,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lobster/METADATA.pb",
@@ -13904,7 +13904,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/londrinasolid/METADATA.pb",
@@ -13919,7 +13919,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/longcang/METADATA.pb",
@@ -13935,7 +13935,7 @@
       "status": "missing_config",
       "notes": "No buildable source files at recorded commit",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lora/METADATA.pb",
@@ -13983,7 +13983,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/loversquarrel/METADATA.pb",
@@ -14046,7 +14046,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lunasima/METADATA.pb",
@@ -14127,7 +14127,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lxgwmarkergothic/METADATA.pb",
@@ -14157,7 +14157,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/lxgwwenkaitc/METADATA.pb",
@@ -14172,7 +14172,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/macondo/METADATA.pb",
@@ -14286,7 +14286,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mako/METADATA.pb",
@@ -14332,7 +14332,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/maname/METADATA.pb",
@@ -14644,7 +14644,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/matangi/METADATA.pb",
@@ -14749,7 +14749,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/meddon/METADATA.pb",
@@ -14948,7 +14948,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mervalescript/METADATA.pb",
@@ -15089,7 +15089,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/milonga/METADATA.pb",
@@ -15387,7 +15387,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/molengo/METADATA.pb",
@@ -15513,7 +15513,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/monomakh/METADATA.pb",
@@ -15528,7 +15528,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/monomaniacone/METADATA.pb",
@@ -15543,7 +15543,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/monoton/METADATA.pb",
@@ -15690,7 +15690,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/moolahlah/METADATA.pb",
@@ -15705,7 +15705,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mooli/METADATA.pb",
@@ -15735,7 +15735,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/moul/METADATA.pb",
@@ -16029,7 +16029,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mukta/METADATA.pb",
@@ -16134,7 +16134,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mynerve/METADATA.pb",
@@ -16149,7 +16149,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mysoul/METADATA.pb",
@@ -16164,7 +16164,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/mysteryquest/METADATA.pb",
@@ -16362,7 +16362,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/nerkoone/METADATA.pb",
@@ -16377,7 +16377,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/neucha/METADATA.pb",
@@ -16472,7 +16472,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/newtegomin/METADATA.pb",
@@ -16487,7 +16487,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/niconne/METADATA.pb",
@@ -16520,7 +16520,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/nixieone/METADATA.pb",
@@ -17007,7 +17007,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/notosansbengaliui/METADATA.pb",
@@ -18619,7 +18619,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/notosansoriyaui/METADATA.pb",
@@ -19054,7 +19054,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/notosanssyriaceastern/METADATA.pb",
@@ -19069,7 +19069,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/notosanssyriacwestern/METADATA.pb",
@@ -19414,7 +19414,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/notosanswancho/METADATA.pb",
@@ -20127,7 +20127,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/notoserifyezidi/METADATA.pb",
@@ -20442,7 +20442,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/oflsortsmillgoudytt/METADATA.pb",
@@ -20535,7 +20535,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/oleoscript/METADATA.pb",
@@ -20601,7 +20601,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/opensans/METADATA.pb",
@@ -20616,7 +20616,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/oranienbaum/METADATA.pb",
@@ -20645,7 +20645,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/orbitron/METADATA.pb",
@@ -20705,7 +20705,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/originalsurfer/METADATA.pb",
@@ -20750,7 +20750,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/outfit/METADATA.pb",
@@ -20816,7 +20816,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/overpassmono/METADATA.pb",
@@ -20831,7 +20831,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/overtherainbow/METADATA.pb",
@@ -20882,7 +20882,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/oxygen/METADATA.pb",
@@ -21013,7 +21013,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/pangolin/METADATA.pb",
@@ -21028,7 +21028,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/paprika/METADATA.pb",
@@ -21172,7 +21172,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/patrickhand/METADATA.pb",
@@ -21356,7 +21356,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/phetsarath/METADATA.pb",
@@ -22882,7 +22882,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/playwritenzbasic/METADATA.pb",
@@ -22897,7 +22897,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/playwritenzbasicguides/METADATA.pb",
@@ -22912,7 +22912,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/playwritenzguides/METADATA.pb",
@@ -22927,7 +22927,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/playwritepe/METADATA.pb",
@@ -23242,7 +23242,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/pochaevsk/METADATA.pb",
@@ -23257,7 +23257,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/podkova/METADATA.pb",
@@ -23272,7 +23272,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/poetsenone/METADATA.pb",
@@ -23302,7 +23302,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/pollerone/METADATA.pb",
@@ -23404,7 +23404,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/pontanosans/METADATA.pb",
@@ -23514,7 +23514,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/pragatinarrow/METADATA.pb",
@@ -23856,7 +23856,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/puppiesplay/METADATA.pb",
@@ -23937,7 +23937,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/quando/METADATA.pb",
@@ -24034,7 +24034,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/quintessential/METADATA.pb",
@@ -24280,7 +24280,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ramsina/METADATA.pb",
@@ -24392,7 +24392,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/recursive/METADATA.pb",
@@ -24407,7 +24407,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/redacted/METADATA.pb",
@@ -24545,7 +24545,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/reemkufi/METADATA.pb",
@@ -24619,7 +24619,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/rem/METADATA.pb",
@@ -24858,7 +24858,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/rocknrollone/METADATA.pb",
@@ -24873,7 +24873,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/rokkitt/METADATA.pb",
@@ -24988,7 +24988,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/rozhaone/METADATA.pb",
@@ -25348,7 +25348,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/rubikpuddles/METADATA.pb",
@@ -25569,7 +25569,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ruwudu/METADATA.pb",
@@ -26054,7 +26054,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/scopeone/METADATA.pb",
@@ -26147,7 +26147,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/sedgwickavedisplay/METADATA.pb",
@@ -26192,7 +26192,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/sendflowers/METADATA.pb",
@@ -26207,7 +26207,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/sevillana/METADATA.pb",
@@ -26282,7 +26282,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/shalimar/METADATA.pb",
@@ -26312,7 +26312,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/shanti/METADATA.pb",
@@ -26394,7 +26394,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/shipporiantiqueb1/METADATA.pb",
@@ -26410,7 +26410,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/shipporimincho/METADATA.pb",
@@ -26541,7 +26541,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/sigmarone/METADATA.pb",
@@ -26619,7 +26619,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/silkscreen/METADATA.pb",
@@ -26773,7 +26773,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/skranji/METADATA.pb",
@@ -26834,7 +26834,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/smooch/METADATA.pb",
@@ -26849,7 +26849,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/smoochsans/METADATA.pb",
@@ -26948,7 +26948,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/sofadione/METADATA.pb",
@@ -27069,7 +27069,7 @@
       "status": "complete",
       "notes": "Commit 'Merge PR #15 from vv-monsalve/master' (2019-11-11). Recorded in Font Bakery Dashboard PR #2252 merged 2019-11-18.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/sometypemono/METADATA.pb",
@@ -27263,7 +27263,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/specialgothic/METADATA.pb",
@@ -27404,7 +27404,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/splinesans/METADATA.pb",
@@ -27535,7 +27535,7 @@
       "status": "complete",
       "notes": "Merge PR #30 'specimen-update' (2018-10-29). HEAD of upstream when gfonts PR #1727 was merged 2018-11-15. Font binary last changed at 2329fe0 (2018-10-19).",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/stacksansheadline/METADATA.pb",
@@ -27775,7 +27775,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/strong/METADATA.pb",
@@ -28103,7 +28103,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/taiheritagepro/METADATA.pb",
@@ -28166,7 +28166,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/taprom/METADATA.pb",
@@ -28196,7 +28196,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "timestamp-diff"
     },
     {
       "path": "ofl/tasaorbiter/METADATA.pb",
@@ -28292,7 +28292,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/telex/METADATA.pb",
@@ -28511,7 +28511,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tiltprism/METADATA.pb",
@@ -28526,7 +28526,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tiltwarp/METADATA.pb",
@@ -28541,7 +28541,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/timmana/METADATA.pb",
@@ -28604,7 +28604,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tirodevanagarimarathi/METADATA.pb",
@@ -28619,7 +28619,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tirodevanagarisanskrit/METADATA.pb",
@@ -28634,7 +28634,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tirogurmukhi/METADATA.pb",
@@ -28775,7 +28775,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tradewinds/METADATA.pb",
@@ -28873,7 +28873,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/trochut/METADATA.pb",
@@ -28943,7 +28943,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/tuffy/METADATA.pb",
@@ -28995,7 +28995,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/twinklestar/METADATA.pb",
@@ -29010,7 +29010,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/uchen/METADATA.pb",
@@ -29085,7 +29085,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/unifrakturcook/METADATA.pb",
@@ -29136,7 +29136,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/unna/METADATA.pb",
@@ -29184,7 +29184,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/urbanist/METADATA.pb",
@@ -29265,7 +29265,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/vastshadow/METADATA.pb",
@@ -29298,7 +29298,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/vendsans/METADATA.pb",
@@ -29344,7 +29344,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/vibes/METADATA.pb",
@@ -29553,7 +29553,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/waitingforthesunrise/METADATA.pb",
@@ -29601,7 +29601,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/waterbrush/METADATA.pb",
@@ -29616,7 +29616,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/waterfall/METADATA.pb",
@@ -29646,7 +29646,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/wdxllubrifontjpn/METADATA.pb",
@@ -29742,7 +29742,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/windsong/METADATA.pb",
@@ -29877,7 +29877,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/xanhmono/METADATA.pb",
@@ -29893,7 +29893,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/yaldevi/METADATA.pb",
@@ -30137,7 +30137,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ysabeau/METADATA.pb",
@@ -30152,7 +30152,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ysabeauinfant/METADATA.pb",
@@ -30167,7 +30167,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ysabeauoffice/METADATA.pb",
@@ -30182,7 +30182,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/ysabeausc/METADATA.pb",
@@ -30197,7 +30197,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/yujiboku/METADATA.pb",
@@ -30303,7 +30303,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/zain/METADATA.pb",
@@ -30318,7 +30318,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/zalandosans/METADATA.pb",
@@ -30395,7 +30395,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/zcoolxiaowei/METADATA.pb",
@@ -30411,7 +30411,7 @@
       "status": "complete",
       "notes": "Override config.yaml exists in google/fonts.",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/zenantique/METADATA.pb",
