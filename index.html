@@ -30,6 +30,7 @@
                     <li class="nav-item"><a href="#investigations" data-tab="investigations">Investigations</a></li>
                     <li class="nav-item"><a href="#builds" data-tab="builds">Build Approaches</a></li>
                     <li class="nav-item"><a href="#build-system" data-tab="build-system">Build System</a></li>
+                    <li class="nav-item"><a href="#normalization" data-tab="normalization">Font Normalization</a></li>
                     <li class="nav-item"><a href="#build-deps" data-tab="build-deps">Build Dependencies</a></li>
                     <li class="nav-item"><a href="#build-timings" data-tab="build-timings">Build Timings</a></li>
                     <li class="nav-item"><a href="#build-failures" data-tab="build-failures">Build Failures</a></li>
@@ -409,6 +410,126 @@
                 <div id="build-system-table-container" style="margin-top:2em;"></div>
 
                 <p class="sources-updated">Data generated: <span id="build-system-timestamp">--</span></p>
+            </div>
+        </section>
+
+        <section id="tab-normalization" class="tab-content">
+            <div class="panel">
+                <h2>Font Normalization Pipeline</h2>
+                <p class="panel-description">Canonical normalization of font binaries to prove functional equivalence between reference and rebuilt fonts</p>
+
+                <div style="margin:1em 0;padding:1em;background:#e3f2fd;border-radius:6px;border-left:4px solid #1565c0;">
+                    <strong style="color:#1565c0;">Goal</strong>
+                    <p style="margin:0.3em 0 0;">When we rebuild a font from source, the output often differs from the google/fonts reference binary &mdash; not because anything is wrong, but because different tool versions encode the same data differently. The normalization pipeline transforms both fonts into a <strong>canonical binary form</strong>, stripping encoding choices that don't affect functionality. If the normalized forms match, the fonts are provably equivalent.</p>
+                </div>
+
+                <div style="margin:1.5em 0;">
+                    <h3>Pipeline Overview</h3>
+                    <p>Both the reference font and the rebuilt font pass through the same sequence of normalization steps. Each step is <strong>safe</strong> (preserves all functional behavior) and <strong>deterministic</strong> (same input always produces the same output).</p>
+                    <pre style="background:#263238;color:#eee;padding:1em;border-radius:6px;overflow-x:auto;font-size:0.85em;">reference.ttf ──┐                          ┌── normalized_ref.ttf
+                 ├── font-normalize ──┤                              ══ byte compare ══
+rebuilt.ttf ────┘                          └── normalized_built.ttf</pre>
+                </div>
+
+                <h3>Normalization Steps</h3>
+                <p>Each step has a clear safety argument for why normalized and original fonts are interchangeable.</p>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 1: Strip DSIG table</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Remove the <code>DSIG</code> (Digital Signature) table entirely.</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Google Fonts ships fonts with a 4-byte DSIG stub (empty signature). No browser, OS, or application validates DSIG in web fonts. The OpenType spec marks it as optional. Removing it has zero effect on rendering, layout, or any observable behavior.</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Trivially deterministic &mdash; table is deleted unconditionally.</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 2: Normalize head table timestamps</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Set <code>head.modified</code> and <code>head.created</code> to a fixed canonical value (epoch 0).</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;">These timestamps record <em>when</em> the font was compiled, not <em>what</em> it contains. No text shaper, rasterizer, or layout engine reads these fields. The OpenType spec says <code>modified</code> is "number of seconds since 12:00 midnight, January 1, 1904" &mdash; purely informational. Browsers, operating systems, and applications never use these values for rendering decisions.</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Both values set to the same constant &rarr; always identical.</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 3: Normalize name table</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Remove platform 1 (Macintosh) name records. Renumber name IDs &ge;256 sequentially. Sort remaining records by (platformID, encodingID, languageID, nameID).</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;"><strong>Mac platform removal:</strong> Platform 1 records are legacy &mdash; all modern software uses platform 3 (Windows/Unicode). Apple's own documentation recommends platform 3. Google Fonts serves web fonts where only platform 3 is relevant. <strong>ID renumbering:</strong> Name IDs &ge;256 are "font-specific" per the spec &mdash; their numeric value is meaningless; only their content and the references to them (from fvar, STAT) matter. Renumbering + updating references preserves all semantics. <strong>Sorting:</strong> The name table spec does not require a specific order; record order is purely a serialization choice.</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Deletion rules are fixed, renumbering is sequential from 256, sort order is lexicographic on the 4-tuple key.</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 4: Normalize GPOS/GDEF/GSUB layout tables</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Decompile layout tables via fontTools, then recompile. This forces fontTools to choose its own canonical subtable formats (PairPos Format 1 vs 2, Extension vs inline, ClassDef ordering).</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;">OpenType layout tables encode rules (kerning pairs, mark positioning, ligature substitutions) that text shapers interpret. The <em>rules</em> are preserved exactly &mdash; only the <em>binary encoding</em> changes. For example, kerning "AV = -80" can be stored as PairPosFormat1 (individual pair) or PairPosFormat2 (class-based) &mdash; both produce identical shaping output. fontTools' decompile&rarr;recompile round-trip preserves all rules. This is the same approach used by <a href="https://github.com/googlefonts/fontc/tree/main/otl-normalizer"><code>otl-normalizer</code></a> in the fontc project (by Rod Sheeter, Colin Rofls et al.).</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">fontTools compilation is deterministic for a given version. Both fonts are recompiled with the same fontTools, so the binary encoding choices are identical.</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 5: Normalize gvar (variable font deltas)</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Decompile the <code>gvar</code> table (variation deltas), disable IUP optimization, recompile. This stores explicit deltas for all points rather than relying on Interpolation of Untouched Points.</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;">IUP (Interpolation of Untouched Points) is a <em>compression</em> technique: some point deltas are omitted because they can be inferred from neighboring points. Different fontTools versions choose different sets of points to omit &mdash; all producing identical rendering. Disabling IUP and storing all deltas explicitly is the uncompressed, canonical form. The resulting font renders identically at all axis positions.</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">With IUP disabled, every point has an explicit delta &mdash; no optimizer choices remain. The output is uniquely determined by the variation data.</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 6: Normalize glyph order</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Sort glyphs into a canonical order: <code>.notdef</code> first (required by spec), then by Unicode codepoint (lowest first), then by glyph name (alphabetical) for non-encoded glyphs. Update all internal references (cmap, GSUB, GPOS, loca, hmtx, etc.).</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Glyph order is an internal implementation detail. Text shapers access glyphs via the <code>cmap</code> table (Unicode &rarr; glyph ID mapping), never by raw glyph index. All internal references are updated consistently by fontTools' <code>setGlyphOrder()</code>. The only requirement is that <code>.notdef</code> is glyph 0, which the canonical order preserves. Different versions of glyphsLib produce different glyph orders from the same <code>.glyphs</code> source &mdash; this normalization eliminates that variation.</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Sort key is (has_codepoint, lowest_codepoint, glyph_name) &mdash; a total order with no ties possible (glyph names are unique).</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1em 0;">
+                    <h4>Step 7: Reserialize with canonical table order</h4>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;width:120px;"><strong>What</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Save the font with <code>reorderTables=True</code> (OpenType 1.4 recommended order) and recalculate <code>head.checkSumAdjustment</code>.</td></tr>
+                        <tr><td style="padding:0.5em;border:1px solid #ddd;"><strong>Why safe</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Table order in the SFNT container is not semantically meaningful &mdash; font parsers locate tables by tag from the table directory, not by position. The OpenType spec recommends a specific order for performance (tables accessed first should come first) but does not require it. <code>checkSumAdjustment</code> is a whole-file checksum that is recalculated automatically.</td></tr>
+                        <tr style="background:#f5f5f5;"><td style="padding:0.5em;border:1px solid #ddd;"><strong>Determinism</strong></td><td style="padding:0.5em;border:1px solid #ddd;">Table order follows the fixed OpenType 1.4 recommendation. Checksum is computed from the byte content.</td></tr>
+                    </table>
+                </div>
+
+                <div style="margin:1.5em 0;">
+                    <h3>What Is NOT Normalized</h3>
+                    <p>These aspects are <strong>not</strong> touched by the pipeline because they affect rendering or functionality:</p>
+                    <ul>
+                        <li><strong>Glyph outlines</strong> (<code>glyf</code> / <code>CFF</code>) &mdash; coordinate values, curve types, point counts</li>
+                        <li><strong>Advance widths</strong> (<code>hmtx</code>) &mdash; any difference here means real reflow risk</li>
+                        <li><strong>Line metrics</strong> (<code>hhea</code>, <code>OS/2</code>) &mdash; affect line spacing</li>
+                        <li><strong>Hinting instructions</strong> (<code>fpgm</code>, <code>prep</code>, <code>cvt</code>, per-glyph hints) &mdash; affect rendering at small sizes</li>
+                        <li><strong>Layout rule semantics</strong> &mdash; which kerning pairs exist, what values they have</li>
+                        <li><strong>Unicode mappings</strong> (<code>cmap</code>) &mdash; which characters map to which glyphs</li>
+                    </ul>
+                    <p>If the normalized fonts differ, the difference is in something that <em>actually matters</em>.</p>
+                </div>
+
+                <div style="margin:1.5em 0;">
+                    <h3>Prior Art</h3>
+                    <ul style="line-height:1.8;">
+                        <li><strong><a href="https://github.com/googlefonts/fontc/tree/main/otl-normalizer">otl-normalizer</a></strong> (fontc repo, Rust) &mdash; Normalizes GPOS/GDEF to canonical text for diffing. Covers kerning and mark positioning. Our Step 4 is the binary equivalent of this approach.</li>
+                        <li><strong><a href="https://github.com/googlefonts/fontc/tree/main/ttx_diff">ttx_diff</a></strong> (fontc repo) &mdash; Compares fontc vs fontmake output by normalizing "expected differences" before TTX diffing. Similar philosophy but specific to the fontc comparison use case.</li>
+                        <li><strong><a href="https://github.com/googlefonts/diffenator2">diffenator2</a></strong> (Marc Foley) &mdash; Visual/rendering comparison at the pixel level. Complementary to binary normalization &mdash; diffenator2 proves visual equivalence, our pipeline proves structural equivalence.</li>
+                        <li><strong>fontTools <code>reorderFontTables()</code></strong> &mdash; Canonical table ordering, used in our Step 7.</li>
+                        <li><strong>ufonormalizer</strong> &mdash; Normalizes UFO <em>source</em> files. Our pipeline normalizes <em>compiled</em> binaries.</li>
+                    </ul>
+                </div>
+
+                <div style="margin:1.5em 0;">
+                    <h3>Implementation Status</h3>
+                    <div id="normalization-status">
+                        <p><em>Implementation in progress. Results will appear here as steps are completed.</em></p>
+                    </div>
+                </div>
+
+                <p class="sources-updated">Last updated: <span id="normalization-timestamp">2026-03-16</span></p>
             </div>
         </section>
 
