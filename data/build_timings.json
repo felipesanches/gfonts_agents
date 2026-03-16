@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T16:36:00.253584+00:00",
+  "generated_at": "2026-03-16T16:48:29.753570+00:00",
   "description": "Build timing data extracted from comparison reports",
   "families": {
     "tirotelugu": {
@@ -95,9 +95,9 @@
     "alumnisanssc": {
       "timings": [
         {
-          "build_time_seconds": 194.6,
+          "build_time_seconds": 293.8,
           "status": "compiler-version",
-          "timestamp": "2026-03-16T06:31:29.872552+00:00"
+          "timestamp": "2026-03-16T16:40:12.661941+00:00"
         }
       ]
     },
@@ -206,6 +206,15 @@
           "build_time_seconds": 25.2,
           "status": "compiler-version",
           "timestamp": "2026-03-16T07:03:04.863547+00:00"
+        }
+      ]
+    },
+    "amaranth": {
+      "timings": [
+        {
+          "build_time_seconds": 28.8,
+          "status": "compiler-version",
+          "timestamp": "2026-03-16T16:41:27.542549+00:00"
         }
       ]
     },
@@ -1058,9 +1067,9 @@
     "alyamama": {
       "timings": [
         {
-          "build_time_seconds": 39.3,
+          "build_time_seconds": 44.8,
           "status": "yes",
-          "timestamp": "2026-03-16T00:38:39.633769+00:00"
+          "timestamp": "2026-03-16T16:40:57.491671+00:00"
         }
       ]
     },
@@ -2249,6 +2258,15 @@
           "build_time_seconds": 17.1,
           "status": "compiler-version",
           "timestamp": "2026-03-16T16:29:52.223132+00:00"
+        }
+      ]
+    },
+    "amarna": {
+      "timings": [
+        {
+          "build_time_seconds": 1.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-16T16:41:29.330779+00:00"
         }
       ]
     },

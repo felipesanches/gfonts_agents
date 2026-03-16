@@ -1019,7 +1019,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/amaticsc/METADATA.pb",

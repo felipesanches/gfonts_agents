@@ -4,11 +4,11 @@
   "summary": {
     "processed": 1311,
     "total_buildable": 1267,
-    "yes": 307,
+    "yes": 306,
     "byte_identical": 319,
     "compiler_version": 918,
     "compiler-version": 905,
-    "build_failure": 8,
+    "build_failure": 9,
     "build-failure": 3,
     "timestamp_diff": 10,
     "timestamp-diff": 10,
