@@ -3275,12 +3275,24 @@ function renderBuildSystem(data) {
     const compilerCount = s['compiler_version'] || s['compiler-version'] || 0;
     const failureCount = s['build_failure'] || s['build-failure'] || 0;
     const normalizedCount = s['normalized_match'] || 0;
+    const nameTableCount = s['name_table'] || s['name-table'] || 0;
+    const timestampDiffCount = s['timestamp_diff'] || s['timestamp-diff'] || 0;
+    const legacyCount = s['legacy_no_modern_source'] || s['legacy-no-modern-source'] || 0;
+    const missingSourceCount = s['missing_source'] || s['missing-source'] || 0;
+    const metadataWrongCount = s['metadata_stanza_wrong'] || s['metadata-stanza-wrong'] || 0;
     const adjustedCompilerCount = compilerCount - normalizedCount;
+    const differentTotal = adjustedCompilerCount + nameTableCount + timestampDiffCount;
     setText('bs-identical', fmtCount(identicalCount, total));
     setText('bs-normalized', fmtCount(normalizedCount, total));
     setText('bs-equivalent', fmtCount(identicalCount + normalizedCount, total));
+    setText('bs-different-total', fmtCount(differentTotal, total));
     setText('bs-compiler', fmtCount(adjustedCompilerCount, total));
+    setText('bs-name-table', fmtCount(nameTableCount, total));
+    setText('bs-timestamp-diff', fmtCount(timestampDiffCount, total));
     setText('bs-failure', fmtCount(failureCount, total));
+    setText('bs-legacy', fmtCount(legacyCount, total));
+    setText('bs-missing-source', fmtCount(missingSourceCount, total));
+    setText('bs-metadata-wrong', fmtCount(metadataWrongCount, total));
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
 
     // Reflow risk summary (computed first so coherence note can reference it)
@@ -3293,8 +3305,7 @@ function renderBuildSystem(data) {
     // Coherence note — two list items
     const familiesEl = document.getElementById('bs-coherence-families');
     if (familiesEl) {
-        const other = total - identicalCount - normalizedCount - adjustedCompilerCount - failureCount;
-        familiesEl.textContent = `Families Tested (${total}) = Byte-Identical (${identicalCount}) + Normalized Match (${normalizedCount}) + Compiler Version (${adjustedCompilerCount}) + Build Failure (${failureCount})${other > 0 ? ` + other (${other})` : ''}. Untested = ${totalBuildable} \u2212 ${total} = ${untested}. Equivalent after Normalization = Byte-Identical + Normalized Match = ${identicalCount + normalizedCount}.`;
+        familiesEl.textContent = `Families Tested (${total}) = Byte-Identical (${identicalCount}) + Normalized Match (${normalizedCount}) + Compiler Version (${adjustedCompilerCount}) + Name Table (${nameTableCount}) + Timestamp Diff (${timestampDiffCount}) + Build Failure (${failureCount}) + Legacy (${legacyCount}) + Missing Source (${missingSourceCount}) + Wrong Metadata (${metadataWrongCount}). Functionally Equivalent = Byte-Identical + Normalized Match = ${identicalCount + normalizedCount}.`;
     }
     const reflowCoherenceEl = document.getElementById('bs-coherence-reflow');
     if (reflowCoherenceEl) {
