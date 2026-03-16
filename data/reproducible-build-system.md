@@ -17,7 +17,7 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 | Status | Count | % of tested | Meaning |
 |--------|-------|---|---------|
 | **yes** (byte-identical) | 319 | 25.2% | Rebuilt font is bit-for-bit identical to google/fonts |
-| **compiler-version** | 911 | 71.9% | Differences from fontmake/fontTools/ttfautohint version |
+| **compiler-version** | 905 | 71.4% | Differences from fontmake/fontTools/ttfautohint version |
 | **name-table** | 13 | 1.0% | Only name table metadata differs |
 | **legacy-no-modern-source** | 13 | 1.0% | Only legacy sources (SFD/VFB), no modern build pipeline |
 | **timestamp-diff** | 10 | 0.8% | Only head timestamps differ |
@@ -106,7 +106,7 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 3. **531 font files with "metadata-only" root cause are functionally reproducible** — zero glyph changes, differences are purely cosmetic (name table version strings, head timestamps).
 
-4. **911 families show compiler-version differences**, the largest category (71.9%).
+4. **905 families show compiler-version differences**, the largest category (71.4%).
 
 5. **Prebuild support added.** Some families (42dotsans, astasans, cabin, cairo, cairoplay) require pre-build commands (glyphs2ufo, custom scripts) before gftools-builder. Prebuild support was added with auto-detection of Makefile/build.sh/build.py.
 

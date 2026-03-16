@@ -1,13 +1,13 @@
 {
   "generated_at": "2026-03-16T02:51:44.577522-03:00",
-  "last_updated": "2026-03-16T05:11:12.517110-03:00",
+  "last_updated": "2026-03-16T12:00:00.000000-03:00",
   "summary": {
     "processed": 1267,
     "total_buildable": 1267,
     "yes": 319,
     "byte_identical": 319,
-    "compiler_version": 911,
-    "compiler-version": 911,
+    "compiler_version": 905,
+    "compiler-version": 905,
     "build_failure": 3,
     "build-failure": 3,
     "timestamp_diff": 10,
@@ -4983,7 +4983,7 @@
       }
     },
     "bahianita": {
-      "status": "timestamp-diff",
+      "status": "compiler-version",
       "files": {}
     },
     "baijamjuree": {

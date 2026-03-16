@@ -2918,6 +2918,35 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-16T06:02:43.482806-03:00",
+      "total_tested": 1267,
+      "categories": {
+        "yes": 319,
+        "compiler-version": 905,
+        "name-table": 13,
+        "legacy-no-modern-source": 13,
+        "timestamp-diff": 10,
+        "metadata-stanza-wrong": 3,
+        "build-failure": 3,
+        "missing-source": 1
+      }
+    },
+    {
+      "timestamp": "2026-03-16T06:02:43.482806-03:00",
+      "total_families": 1267,
+      "total_failures": 3,
+      "categories": {
+        "build-failure": {
+          "count": 3,
+          "families": [
+            "foldit",
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        }
+      }
     }
   ]
 }

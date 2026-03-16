@@ -4105,7 +4105,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/bonanova/METADATA.pb",
@@ -24828,7 +24828,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "byte-identical"
     },
     {
       "path": "ofl/robotoserif/METADATA.pb",
