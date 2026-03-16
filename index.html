@@ -375,13 +375,21 @@
                         <span class="summary-value" id="bs-total">--</span>
                         <span class="summary-label">Families Tested</span>
                     </div>
-                    <div class="summary-card complete">
-                        <span class="summary-value" id="bs-identical">--</span>
-                        <span class="summary-label">Byte-Identical</span>
-                    </div>
-                    <div class="summary-card" style="background:#e0f2f1;border-color:#00897b;">
-                        <span class="summary-value" id="bs-normalized">--</span>
-                        <span class="summary-label">Normalized Match</span>
+                    <div style="border:2px solid #2e7d32;border-radius:8px;padding:0.6em;background:#f1f8e9;">
+                        <div style="text-align:center;margin-bottom:0.4em;">
+                            <span class="summary-value" id="bs-equivalent" style="font-size:1.4em;font-weight:bold;color:#2e7d32;">--</span>
+                            <span class="summary-label" style="display:block;font-size:0.8em;color:#2e7d32;">Functionally Equivalent</span>
+                        </div>
+                        <div style="display:flex;gap:0.5em;">
+                            <div class="summary-card complete" style="flex:1;margin:0;">
+                                <span class="summary-value" id="bs-identical">--</span>
+                                <span class="summary-label">Byte-Identical</span>
+                            </div>
+                            <div class="summary-card" style="flex:1;margin:0;background:#e0f2f1;border-color:#00897b;">
+                                <span class="summary-value" id="bs-normalized">--</span>
+                                <span class="summary-label">Normalized Match</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="summary-card warning">
                         <span class="summary-value" id="bs-compiler">--</span>
