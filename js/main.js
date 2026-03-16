@@ -3278,7 +3278,7 @@ function renderBuildSystem(data) {
     const normalizedCount = s['normalized_match'] || 0;
     const adjustedCompilerCount = compilerCount - normalizedCount;
     setText('bs-identical', fmtCount(identicalCount, total));
-    setText('bs-normalized', fmtCount(identicalCount + normalizedCount, total));
+    setText('bs-normalized', fmtCount(normalizedCount, total));
     setText('bs-compiler', fmtCount(adjustedCompilerCount, total));
     setText('bs-failure', fmtCount(failureCount, total));
     setText('bs-untested', fmtCount(untestedCount, totalBuildable));
