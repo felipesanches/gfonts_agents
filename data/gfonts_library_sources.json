@@ -234,7 +234,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/afacadflux/METADATA.pb",
@@ -249,7 +249,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/agbalumo/METADATA.pb",
@@ -327,7 +327,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/akayakanadaka/METADATA.pb",
@@ -342,7 +342,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/akayatelivigala/METADATA.pb",
@@ -357,7 +357,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/akronim/METADATA.pb",
@@ -464,7 +464,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/aldrich/METADATA.pb",
@@ -508,7 +508,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/alegreyasans/METADATA.pb",
@@ -523,7 +523,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "compiler-version"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/alegreyasanssc/METADATA.pb",
@@ -542,7 +542,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/alegreyasc/METADATA.pb",
@@ -561,7 +561,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/aleo/METADATA.pb",
@@ -697,7 +697,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/allan/METADATA.pb",

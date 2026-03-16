@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T16:32:45.905947+00:00",
+  "generated_at": "2026-03-16T16:34:35.332839+00:00",
   "description": "Build timing data extracted from comparison reports",
   "families": {
     "tirotelugu": {
@@ -702,6 +702,11 @@
       "status": "compiler-version",
       "timestamp": "2026-03-15T01:06:34.126074+00:00"
     },
+    "alumnisans": {
+      "build_time_seconds": 220.5,
+      "status": "compiler-version",
+      "timestamp": "2026-03-16T16:33:33.729514+00:00"
+    },
     "kurale": {
       "build_time_seconds": 21.9,
       "status": "compiler-version",
@@ -983,9 +988,9 @@
       "timestamp": "2026-03-15T11:22:36.263665+00:00"
     },
     "alumnisanscollegiateone": {
-      "build_time_seconds": 1.7,
-      "status": "build-failure",
-      "timestamp": "2026-03-16T06:32:18.755590+00:00"
+      "build_time_seconds": 32.6,
+      "status": "compiler-version",
+      "timestamp": "2026-03-16T16:34:07.322092+00:00"
     },
     "sofiasans": {
       "build_time_seconds": 174.0,
