@@ -3267,7 +3267,11 @@ function renderBuildSystem(data) {
     function fmtCount(n, denominator) {
         if (!denominator || denominator === 0) return String(n);
         const pct = (n / denominator * 100).toFixed(1);
-        return `${n} (${pct}%)`;
+        return `${n} <span style="font-size:0.6em;color:#888;">(${pct}%)</span>`;
+    }
+    function setHtml(id, html) {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html;
     }
 
     setText('bs-total', total);
@@ -3282,17 +3286,17 @@ function renderBuildSystem(data) {
     const metadataWrongCount = s['metadata_stanza_wrong'] || s['metadata-stanza-wrong'] || 0;
     const adjustedCompilerCount = compilerCount - normalizedCount;
     const differentTotal = adjustedCompilerCount + nameTableCount + timestampDiffCount;
-    setText('bs-identical', fmtCount(identicalCount, total));
-    setText('bs-normalized', fmtCount(normalizedCount, total));
-    setText('bs-equivalent', fmtCount(identicalCount + normalizedCount, total));
-    setText('bs-different-total', fmtCount(differentTotal, total));
-    setText('bs-compiler', fmtCount(adjustedCompilerCount, total));
-    setText('bs-name-table', fmtCount(nameTableCount, total));
-    setText('bs-timestamp-diff', fmtCount(timestampDiffCount, total));
-    setText('bs-failure', fmtCount(failureCount, total));
-    setText('bs-legacy', fmtCount(legacyCount, total));
-    setText('bs-missing-source', fmtCount(missingSourceCount, total));
-    setText('bs-metadata-wrong', fmtCount(metadataWrongCount, total));
+    setHtml('bs-identical', fmtCount(identicalCount, total));
+    setHtml('bs-normalized', fmtCount(normalizedCount, total));
+    setHtml('bs-equivalent', fmtCount(identicalCount + normalizedCount, total));
+    setHtml('bs-different-total', fmtCount(differentTotal, total));
+    setHtml('bs-compiler', fmtCount(adjustedCompilerCount, total));
+    setHtml('bs-name-table', fmtCount(nameTableCount, total));
+    setHtml('bs-timestamp-diff', fmtCount(timestampDiffCount, total));
+    setHtml('bs-failure', fmtCount(failureCount, total));
+    setHtml('bs-legacy', fmtCount(legacyCount, total));
+    setHtml('bs-missing-source', fmtCount(missingSourceCount, total));
+    setHtml('bs-metadata-wrong', fmtCount(metadataWrongCount, total));
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
 
     // Reflow risk summary (computed first so coherence note can reference it)
