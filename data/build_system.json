@@ -1,13 +1,13 @@
 {
   "generated_at": "2026-03-16T02:51:44.577522-03:00",
-  "last_updated": "2026-03-16T04:28:45.870843-03:00",
+  "last_updated": "2026-03-16T05:11:12.517110-03:00",
   "summary": {
     "processed": 1267,
     "total_buildable": 1267,
-    "yes": 317,
-    "byte_identical": 317,
-    "compiler_version": 913,
-    "compiler-version": 913,
+    "yes": 319,
+    "byte_identical": 319,
+    "compiler_version": 911,
+    "compiler-version": 911,
     "build_failure": 3,
     "build-failure": 3,
     "timestamp_diff": 10,
@@ -23,16 +23,15 @@
     "untested": 0
   },
   "root_cause_summary": {
-    "metadata-only": 534,
-    "ttfautohint-version + other": 233,
     "unknown": 811,
     "compiler-output-diff": 645,
+    "metadata-only": 531,
+    "ttfautohint-version + other": 233,
     "ttfautohint-version": 82
   },
   "reflow_risk_summary": {
-    "none": 1098,
+    "none": 1095,
     "high": 298,
-    "unknown": 811,
     "line-spacing-only": 93,
     "minimal": 5
   },
@@ -10285,35 +10284,10 @@
       }
     },
     "boldonse": {
-      "status": "compiler-version",
+      "status": "yes",
       "files": {
         "Boldonse-Regular.ttf": {
-          "byte_identical": false,
-          "root_cause": "metadata-only",
-          "glyph_stats": {
-            "total_glyphs": 429,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "ttfautohint": {
-            "ref": "Version 1.000; ttfautohint (v1.8.4.7-5d5b)",
-            "built": "Version 1.000"
-          },
-          "metrics": {
-            "hmtx_identical": true,
-            "hmtx_total": 429,
-            "hmtx_diffs": 0,
-            "hmtx_max_delta": 0,
-            "hmtx_diff_glyphs": [],
-            "line_metrics_identical": true,
-            "line_metrics_diffs": [],
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0
-          }
+          "byte_identical": true
         }
       }
     },
@@ -54921,63 +54895,13 @@
       }
     },
     "robotomono": {
-      "status": "compiler-version",
+      "status": "yes",
       "files": {
         "RobotoMono[wght].ttf": {
-          "byte_identical": false,
-          "root_cause": "metadata-only",
-          "glyph_stats": {
-            "total_glyphs": 1006,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "ttfautohint": {
-            "ref": "Version 3.001",
-            "built": "Version 3.001"
-          },
-          "metrics": {
-            "hmtx_identical": true,
-            "hmtx_total": 1006,
-            "hmtx_diffs": 0,
-            "hmtx_max_delta": 0,
-            "hmtx_diff_glyphs": [],
-            "line_metrics_identical": true,
-            "line_metrics_diffs": [],
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0
-          }
+          "byte_identical": true
         },
         "RobotoMono-Italic[wght].ttf": {
-          "byte_identical": false,
-          "root_cause": "metadata-only",
-          "glyph_stats": {
-            "total_glyphs": 1006,
-            "ref_only": 0,
-            "built_only": 0,
-            "coord_diffs": 0,
-            "rounding_only": 0,
-            "coord_count_diffs": 0
-          },
-          "ttfautohint": {
-            "ref": "Version 3.001",
-            "built": "Version 3.001"
-          },
-          "metrics": {
-            "hmtx_identical": true,
-            "hmtx_total": 1006,
-            "hmtx_diffs": 0,
-            "hmtx_max_delta": 0,
-            "hmtx_diff_glyphs": [],
-            "line_metrics_identical": true,
-            "line_metrics_diffs": [],
-            "reflow_risk": "none",
-            "hmtx_shared_width_diffs": 0,
-            "hmtx_glyph_name_changes": 0
-          }
+          "byte_identical": true
         }
       }
     },

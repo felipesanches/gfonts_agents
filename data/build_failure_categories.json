@@ -2903,6 +2903,21 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-16T05:11:12.517110-03:00",
+      "total_families": 1267,
+      "total_failures": 3,
+      "categories": {
+        "build-failure": {
+          "count": 3,
+          "families": [
+            "foldit",
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        }
+      }
     }
   ]
 }
