@@ -3276,9 +3276,10 @@ function renderBuildSystem(data) {
     const failureCount = s['build_failure'] || s['build-failure'] || 0;
     const untestedCount = untested >= 0 ? untested : 0;
     const normalizedCount = s['normalized_match'] || 0;
+    const adjustedCompilerCount = compilerCount - normalizedCount;
     setText('bs-identical', fmtCount(identicalCount, total));
     setText('bs-normalized', fmtCount(identicalCount + normalizedCount, total));
-    setText('bs-compiler', fmtCount(compilerCount, total));
+    setText('bs-compiler', fmtCount(adjustedCompilerCount, total));
     setText('bs-failure', fmtCount(failureCount, total));
     setText('bs-untested', fmtCount(untestedCount, totalBuildable));
     setText('build-system-timestamp', data.generated_at ? data.generated_at.split('T')[0] : '--');
@@ -3293,8 +3294,8 @@ function renderBuildSystem(data) {
     // Coherence note — two list items
     const familiesEl = document.getElementById('bs-coherence-families');
     if (familiesEl) {
-        const other = total - (s.yes || 0) - (s.compiler_version || 0) - (s.build_failure || 0);
-        familiesEl.textContent = `Families Tested (${total}) = Byte-Identical (${s.yes||0}) + Compiler Version (${s.compiler_version||0}) + Build Failure (${s.build_failure||0})${other > 0 ? ` + other (${other})` : ''}. Untested = ${totalBuildable} \u2212 ${total} = ${untested}. Equivalent after Normalization = Byte-Identical (${identicalCount}) + Normalized Match (${normalizedCount}) = ${identicalCount + normalizedCount}.`;
+        const other = total - identicalCount - normalizedCount - adjustedCompilerCount - failureCount;
+        familiesEl.textContent = `Families Tested (${total}) = Byte-Identical (${identicalCount}) + Normalized Match (${normalizedCount}) + Compiler Version (${adjustedCompilerCount}) + Build Failure (${failureCount})${other > 0 ? ` + other (${other})` : ''}. Untested = ${totalBuildable} \u2212 ${total} = ${untested}. Equivalent after Normalization = Byte-Identical + Normalized Match = ${identicalCount + normalizedCount}.`;
     }
     const reflowCoherenceEl = document.getElementById('bs-coherence-reflow');
     if (reflowCoherenceEl) {
