@@ -3270,8 +3270,7 @@ function renderBuildSystem(data) {
         return `${n} (${pct}%)`;
     }
 
-    const testedPct = totalBuildable > 0 ? (total / totalBuildable * 100).toFixed(1) : '100.0';
-    setText('bs-total', `${total} (${testedPct}%)`);
+    setText('bs-total', total);
     const identicalCount = s['yes'] || s['identical'] || 0;
     const compilerCount = s['compiler_version'] || s['compiler-version'] || 0;
     const failureCount = s['build_failure'] || s['build-failure'] || 0;
