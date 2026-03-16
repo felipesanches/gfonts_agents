@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T16:34:35.332839+00:00",
+  "generated_at": "2026-03-16T16:36:00.253584+00:00",
   "description": "Build timing data extracted from comparison reports",
   "families": {
     "tirotelugu": {
@@ -417,6 +417,11 @@
       "status": "timestamp-diff",
       "timestamp": "2026-03-16T01:02:26.383890+00:00"
     },
+    "alumnisansinlineone": {
+      "build_time_seconds": 12.8,
+      "status": "build-failure",
+      "timestamp": "2026-03-16T16:35:03.126083+00:00"
+    },
     "notosansogham": {
       "build_time_seconds": 1.8,
       "status": "build-failure",
@@ -668,9 +673,9 @@
       "timestamp": "2026-03-16T02:54:39.424173+00:00"
     },
     "alumnisanscollegiateonesc": {
-      "build_time_seconds": 43.2,
+      "build_time_seconds": 41.7,
       "status": "compiler-version",
-      "timestamp": "2026-03-16T06:17:07.203331+00:00"
+      "timestamp": "2026-03-16T16:34:50.281592+00:00"
     },
     "notosansgothic": {
       "build_time_seconds": 1.3,
@@ -1251,6 +1256,11 @@
       "build_time_seconds": 1.4,
       "status": "build-failure",
       "timestamp": "2026-03-16T05:35:41.264712+00:00"
+    },
+    "alumnisanspinstripe": {
+      "build_time_seconds": 14.2,
+      "status": "build-failure",
+      "timestamp": "2026-03-16T16:35:17.297521+00:00"
     },
     "bitter": {
       "build_time_seconds": 22.1,

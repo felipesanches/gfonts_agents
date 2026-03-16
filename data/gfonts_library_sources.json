@@ -464,7 +464,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/aldrich/METADATA.pb",
@@ -508,7 +508,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/alegreyasans/METADATA.pb",
@@ -523,7 +523,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/alegreyasanssc/METADATA.pb",
@@ -542,7 +542,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/alegreyasc/METADATA.pb",
@@ -561,7 +561,7 @@
         "glyphs"
       ],
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/aleo/METADATA.pb",
@@ -697,7 +697,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/allan/METADATA.pb",
@@ -925,7 +925,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/alumnisanspinstripe/METADATA.pb",
@@ -940,7 +940,7 @@
       "has_source_block": true,
       "status": "complete",
       "has_investigation_report": true,
-      "reproducible_build": "yes"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/alumnisanssc/METADATA.pb",
