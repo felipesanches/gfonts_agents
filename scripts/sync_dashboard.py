@@ -222,9 +222,11 @@ def sync_build_timings():
             bt = r.get("build_time_seconds")
             if bt and bt > 0:
                 timings["families"][family] = {
-                    "build_time_seconds": round(bt, 1),
-                    "status": r.get("overall_status", "?"),
-                    "timestamp": r.get("timestamp", ""),
+                    "timings": [{
+                        "build_time_seconds": round(bt, 1),
+                        "status": r.get("overall_status", "?"),
+                        "timestamp": r.get("timestamp", ""),
+                    }]
                 }
         except Exception:
             pass
