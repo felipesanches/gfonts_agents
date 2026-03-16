@@ -20,7 +20,8 @@
     "missing-source": 1,
     "legacy_no_modern_source": 13,
     "legacy-no-modern-source": 13,
-    "untested": 0
+    "untested": 0,
+    "normalized_match": 34
   },
   "root_cause_summary": {
     "unknown": 811,
