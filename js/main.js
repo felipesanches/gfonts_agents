@@ -3721,14 +3721,59 @@ function renderBuildFailures(data) {
     // Progress chart (if multiple snapshots)
     const chartDiv = document.getElementById('bf-progress-chart');
     if (chartDiv && snapshots.length > 1) {
-        const rows = snapshots.map(s => {
-            const t = s.timestamp.substring(0, 10);
-            const f = s.total_failures;
-            return `<tr><td>${t}</td><td>${f}</td><td>${s.total_families - f}</td></tr>`;
-        }).join('');
-        chartDiv.innerHTML = `<h3>Progress Over Time</h3>
-            <table class="guide-table"><thead><tr><th>Date</th><th>Failures</th><th>Successes</th></tr></thead>
-            <tbody>${rows}</tbody></table>`;
+        // Filter valid snapshots and deduplicate by date
+        const valid = [];
+        const seen = new Set();
+        for (const s of snapshots) {
+            if (s.total_failures == null || s.total_families == null) continue;
+            const date = s.timestamp.substring(0, 16); // dedup by minute
+            if (seen.has(date)) continue;
+            seen.add(date);
+            valid.push({ date: s.timestamp, failures: s.total_failures, families: s.total_families });
+        }
+        if (valid.length < 2) {
+            chartDiv.innerHTML = '<p style="color:#888;font-style:italic;">Not enough data points for a chart.</p>';
+        } else {
+            const W = 700, H = 300, pad = { top: 30, right: 30, bottom: 50, left: 60 };
+            const plotW = W - pad.left - pad.right;
+            const plotH = H - pad.top - pad.bottom;
+            const maxF = Math.max(...valid.map(v => v.failures), 10);
+            const xScale = (i) => pad.left + (i / (valid.length - 1)) * plotW;
+            const yScale = (v) => pad.top + plotH - (v / maxF) * plotH;
+
+            // Build failure line
+            const failurePath = valid.map((v, i) => `${i === 0 ? 'M' : 'L'}${xScale(i).toFixed(1)},${yScale(v.failures).toFixed(1)}`).join(' ');
+            // Build success line
+            const successPath = valid.map((v, i) => `${i === 0 ? 'M' : 'L'}${xScale(i).toFixed(1)},${yScale(v.families - v.failures).toFixed(1)}`).join(' ');
+
+            // Y-axis ticks
+            const yTicks = [0, Math.round(maxF * 0.25), Math.round(maxF * 0.5), Math.round(maxF * 0.75), maxF];
+            const yTicksSvg = yTicks.map(t => `<line x1="${pad.left}" y1="${yScale(t)}" x2="${pad.left + plotW}" y2="${yScale(t)}" stroke="#eee" /><text x="${pad.left - 8}" y="${yScale(t) + 4}" text-anchor="end" font-size="11" fill="#666">${t}</text>`).join('');
+
+            // X-axis labels (first, middle, last)
+            const xLabels = [0, Math.floor(valid.length / 2), valid.length - 1].map(i =>
+                `<text x="${xScale(i)}" y="${H - 8}" text-anchor="middle" font-size="10" fill="#666">${valid[i].date.substring(5, 16).replace('T', ' ')}</text>`
+            ).join('');
+
+            // Dots
+            const failureDots = valid.map((v, i) => `<circle cx="${xScale(i)}" cy="${yScale(v.failures)}" r="3" fill="#f44336"><title>${valid[i].date.substring(0, 16)}: ${v.failures} failures</title></circle>`).join('');
+            const successDots = valid.map((v, i) => `<circle cx="${xScale(i)}" cy="${yScale(v.families - v.failures)}" r="3" fill="#4caf50"><title>${valid[i].date.substring(0, 16)}: ${v.families - v.failures} successes</title></circle>`).join('');
+
+            chartDiv.innerHTML = `<h3>Progress Over Time</h3>
+                <svg width="${W}" height="${H}" style="background:#fff;border:1px solid #ddd;border-radius:6px;">
+                    ${yTicksSvg}
+                    <line x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${pad.top + plotH}" stroke="#ccc" />
+                    <line x1="${pad.left}" y1="${pad.top + plotH}" x2="${pad.left + plotW}" y2="${pad.top + plotH}" stroke="#ccc" />
+                    <path d="${successPath}" fill="none" stroke="#4caf50" stroke-width="2" />
+                    <path d="${failurePath}" fill="none" stroke="#f44336" stroke-width="2" />
+                    ${successDots}
+                    ${failureDots}
+                    ${xLabels}
+                    <text x="${pad.left - 8}" y="${pad.top - 10}" text-anchor="end" font-size="11" fill="#666">Families</text>
+                    <rect x="${W - 180}" y="8" width="10" height="10" fill="#f44336" /><text x="${W - 166}" y="17" font-size="11" fill="#666">Build Failures</text>
+                    <rect x="${W - 180}" y="24" width="10" height="10" fill="#4caf50" /><text x="${W - 166}" y="33" font-size="11" fill="#666">Successes</text>
+                </svg>`;
+        }
     } else if (chartDiv) {
         chartDiv.innerHTML = '<p style="color:#888;font-style:italic;">Progress chart will appear after multiple snapshots are recorded.</p>';
     }
