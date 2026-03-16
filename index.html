@@ -523,10 +523,37 @@ rebuilt.ttf ────┘                          └── normalized_built.
                 </div>
 
                 <div style="margin:1.5em 0;">
-                    <h3>Implementation Status</h3>
-                    <div id="normalization-status">
-                        <p><em>Implementation in progress. Results will appear here as steps are completed.</em></p>
+                    <h3>Results</h3>
+                    <div style="display:flex;gap:1em;flex-wrap:wrap;margin:1em 0;">
+                        <div class="summary-card complete" style="min-width:140px;text-align:center;padding:1em;border-radius:6px;">
+                            <span style="font-size:2em;font-weight:bold;display:block;">353</span>
+                            <span style="font-size:0.85em;">Functionally Equivalent</span>
+                        </div>
+                        <div class="summary-card" style="min-width:140px;text-align:center;padding:1em;border-radius:6px;background:#e8f5e9;">
+                            <span style="font-size:2em;font-weight:bold;display:block;">319</span>
+                            <span style="font-size:0.85em;">Byte-Identical</span>
+                        </div>
+                        <div class="summary-card" style="min-width:140px;text-align:center;padding:1em;border-radius:6px;background:#fff3e0;">
+                            <span style="font-size:2em;font-weight:bold;display:block;">34</span>
+                            <span style="font-size:0.85em;">Normalized Match</span>
+                        </div>
+                        <div class="summary-card" style="min-width:140px;text-align:center;padding:1em;border-radius:6px;background:#fce4ec;">
+                            <span style="font-size:2em;font-weight:bold;display:block;">79</span>
+                            <span style="font-size:0.85em;">Within 100 Bytes</span>
+                        </div>
                     </div>
+                    <p style="font-size:0.9em;color:#555;">Of 1,267 families: <strong>319</strong> are byte-identical (25.2%), <strong>34</strong> more match after normalization (2.7%), and <strong>79</strong> more are within 100 bytes of matching (6.2%). Combined: <strong>353 families (27.9%)</strong> are provably functionally equivalent to the google/fonts reference binaries.</p>
+
+                    <details style="margin-top:1em;">
+                        <summary style="cursor:pointer;font-weight:bold;">34 Normalized-Match Families</summary>
+                        <p style="font-size:0.85em;margin-top:0.5em;line-height:1.8;">adlamdisplay, annapurnasil, anton, anuphan, aubrey, bahiana, bytesized, capriola, chivomono, comicneue, cormorantupright, dmmono, epundasans, francoisone, harmattan, homenaje, londrinaoutline, londrinashadow, lxgwmarkergothic, notable, sansitaswashed, shizuru, solitreo, sono, stacksansheadline, stacksansnotch, stacksanstext, tasaexplorer, tirobangla, tirogurmukhi, tirokannada, tirotamil, voces, wireone</p>
+                    </details>
+
+                    <details style="margin-top:0.5em;">
+                        <summary style="cursor:pointer;font-weight:bold;">79 Close Matches (&le;100 bytes after normalization)</summary>
+                        <p style="font-size:0.85em;margin-top:0.5em;">These families differ by only a few bytes after normalization &mdash; typically single glyph coordinate rounding or a <code>head.flags</code> bit difference.</p>
+                        <p style="font-size:0.85em;">Closest: bahianita (3 bytes), barriecito (3 bytes), cause (3 bytes), badscript (4 bytes), coiny (4 bytes), farro (4 bytes), jacquard12 (4 bytes), triodion (4 bytes).</p>
+                    </details>
                 </div>
 
                 <p class="sources-updated">Last updated: <span id="normalization-timestamp">2026-03-16</span></p>
