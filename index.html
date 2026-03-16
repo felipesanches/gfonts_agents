@@ -23,19 +23,20 @@
         </button>
         <div class="sidebar-content">
             <details class="nav-section" open>
-                <summary class="nav-section-title">Source Metadata</summary>
+                <summary class="nav-section-title">Reproducible Builds</summary>
                 <ul class="nav-items">
-                    <li class="nav-item active"><a href="#sources" data-tab="sources">Library Sources</a></li>
-                    <li class="nav-item"><a href="#audit" data-tab="audit">Repository Audit</a></li>
-                    <li class="nav-item"><a href="#investigations" data-tab="investigations">Investigations</a></li>
-                    <li class="nav-item"><a href="#builds" data-tab="builds">Build Approaches</a></li>
-                    <li class="nav-item"><a href="#build-system" data-tab="build-system">Build System</a></li>
+                    <li class="nav-item active"><a href="#build-system" data-tab="build-system">Build System</a></li>
                     <li class="nav-item"><a href="#normalization" data-tab="normalization">Font Normalization</a></li>
+                    <li class="nav-item"><a href="#build-failures" data-tab="build-failures">Build Failures</a></li>
                     <li class="nav-item"><a href="#build-deps" data-tab="build-deps">Build Dependencies</a></li>
                     <li class="nav-item"><a href="#build-timings" data-tab="build-timings">Build Timings</a></li>
-                    <li class="nav-item"><a href="#build-failures" data-tab="build-failures">Build Failures</a></li>
-                    <li class="nav-item"><a href="#prebuild" data-tab="prebuild">Pre-Build Research</a></li>
-                    <li class="nav-item"><a href="#crater" data-tab="crater">Crater Failures</a></li>
+                </ul>
+            </details>
+            <details class="nav-section" open>
+                <summary class="nav-section-title">Library Sources</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#sources" data-tab="sources">Source Tracking</a></li>
+                    <li class="nav-item"><a href="#investigations" data-tab="investigations">Investigations</a></li>
                 </ul>
             </details>
             <details class="nav-section">
@@ -55,27 +56,26 @@
                 </ul>
             </details>
             <details class="nav-section">
-                <summary class="nav-section-title">Project Management</summary>
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="#prs" data-tab="prs">Pull Requests</a></li>
-                    <li class="nav-item"><a href="#beads" data-tab="beads">Beads Issues</a></li>
-                    <li class="nav-item"><a href="#questions" data-tab="questions">Pending Questions</a></li>
-                    <li class="nav-item"><a href="#plans" data-tab="plans">Plans</a></li>
-                </ul>
-            </details>
-            <details class="nav-section">
                 <summary class="nav-section-title">Operations</summary>
                 <ul class="nav-items">
+                    <li class="nav-item"><a href="#devlog" data-tab="devlog">Dev Log</a></li>
                     <li class="nav-item"><a href="#messages" data-tab="messages">Message Log</a></li>
                     <li class="nav-item"><a href="#status" data-tab="status">Friday Status</a></li>
+                    <li class="nav-item"><a href="#prs" data-tab="prs">Pull Requests</a></li>
+                    <li class="nav-item"><a href="#beads" data-tab="beads">Beads Issues</a></li>
                     <li class="nav-item"><a href="#disk" data-tab="disk">Disk Usage</a></li>
+                    <li class="nav-item"><a href="#about" data-tab="about">About</a></li>
                 </ul>
             </details>
             <details class="nav-section">
-                <summary class="nav-section-title">Info</summary>
+                <summary class="nav-section-title" style="color:#888;">Earlier Steps</summary>
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="#devlog" data-tab="devlog">Dev Log</a></li>
-                    <li class="nav-item"><a href="#about" data-tab="about">About</a></li>
+                    <li class="nav-item"><a href="#audit" data-tab="audit" style="color:#888;">Repository Audit</a></li>
+                    <li class="nav-item"><a href="#builds" data-tab="builds" style="color:#888;">Build Approaches</a></li>
+                    <li class="nav-item"><a href="#prebuild" data-tab="prebuild" style="color:#888;">Pre-Build Research</a></li>
+                    <li class="nav-item"><a href="#crater" data-tab="crater" style="color:#888;">Crater Failures</a></li>
+                    <li class="nav-item"><a href="#questions" data-tab="questions" style="color:#888;">Pending Questions</a></li>
+                    <li class="nav-item"><a href="#plans" data-tab="plans" style="color:#888;">Plans</a></li>
                 </ul>
             </details>
         </div>
@@ -83,7 +83,7 @@
 
     <main id="app">
 
-        <section id="tab-sources" class="tab-content active">
+        <section id="tab-sources" class="tab-content">
             <div class="panel">
                 <h2>Library Sources Tracking</h2>
                 <p class="panel-description">Progress tracking for upstream repository documentation</p>
@@ -191,6 +191,9 @@
 
         <section id="tab-audit" class="tab-content">
             <div class="panel">
+                <div style="margin-bottom:1em;padding:0.8em;background:#fff8e1;border-radius:6px;border-left:4px solid #f9a825;font-size:0.9em;">
+                    <strong style="color:#f57f17;">Earlier Step</strong> &mdash; This page was created in February 2026 as part of the initial source metadata enrichment effort. Its purpose was to verify that every family in <code>google/fonts</code> had a valid <code>repository_url</code> and <code>commit</code> hash in <code>METADATA.pb</code>. This audit informed the design of the reproducible build system. The data reflects a one-time snapshot and is no longer actively updated &mdash; the <a href="#build-system" data-tab="build-system">Build System</a> page now provides live, continuously-updated verification.
+                </div>
                 <h2>Repository Audit</h2>
                 <p class="panel-description">Verifying METADATA.pb repository_url and commit hash</p>
                 <div id="fonts-table"></div>
@@ -219,6 +222,9 @@
 
         <section id="tab-questions" class="tab-content">
             <div class="panel">
+                <div style="margin-bottom:1em;padding:0.8em;background:#fff8e1;border-radius:6px;border-left:4px solid #f9a825;font-size:0.9em;">
+                    <strong style="color:#f57f17;">Earlier Step</strong> &mdash; This page tracked questions that arose during the source metadata enrichment effort (February 2026), grouped by the person best positioned to answer. Many of these questions have since been resolved through direct investigation or by the reproducible build system. The data is a snapshot from February 25, 2026.
+                </div>
                 <h2>Pending Questions</h2>
                 <p class="panel-description">Questions that need answers from designers or font engineers</p>
                 <div class="filter-bar">
@@ -268,6 +274,9 @@
 
         <section id="tab-builds" class="tab-content">
             <div class="panel">
+                <div style="margin-bottom:1em;padding:0.8em;background:#fff8e1;border-radius:6px;border-left:4px solid #f9a825;font-size:0.9em;">
+                    <strong style="color:#f57f17;">Earlier Step</strong> &mdash; This page was created in February 2026 to classify 1,488 upstream font repositories by their build system (gftools-builder, Makefile, Travis CI, custom Python, etc.). This classification helped us understand what fraction of the library could be rebuilt with standard tooling and informed the scope of the reproducible build effort. The data is a snapshot and may not reflect current repository states. See <a href="#build-deps" data-tab="build-deps">Build Dependencies</a> for current per-family build tool data.
+                </div>
                 <h2>Build Approaches</h2>
                 <p class="panel-description">Classification of upstream font repositories by build system and source format</p>
 
@@ -335,7 +344,7 @@
             </div>
         </section>
 
-        <section id="tab-build-system" class="tab-content">
+        <section id="tab-build-system" class="tab-content active">
             <div class="panel">
                 <h2>Reproducible Build System</h2>
                 <p class="panel-description">Validates METADATA.pb source stanzas by building fonts from upstream sources and comparing against google/fonts binaries</p>
@@ -773,6 +782,9 @@ rebuilt.ttf ────┘                          └── normalized_built.
 
         <section id="tab-plans" class="tab-content">
             <div class="panel">
+                <div style="margin-bottom:1em;padding:0.8em;background:#fff8e1;border-radius:6px;border-left:4px solid #f9a825;font-size:0.9em;">
+                    <strong style="color:#f57f17;">Earlier Step</strong> &mdash; This page documented implementation plans created during the early phases of the project (February 2026). Plans were used to coordinate multi-step tasks like source metadata enrichment batches and PR preparation. The <a href="#devlog" data-tab="devlog">Dev Log</a> now serves as the primary record of project decisions and progress.
+                </div>
                 <h2>Implementation Plans</h2>
                 <p class="panel-description">Documented plans with timestamps and original prompts</p>
                 <div id="plans-list"></div>
@@ -1195,6 +1207,9 @@ in African history and culture.&lt;/p&gt;
 
         <section id="tab-prebuild" class="tab-content">
             <div class="panel">
+                <div style="margin-bottom:1em;padding:0.8em;background:#fff8e1;border-radius:6px;border-left:4px solid #f9a825;font-size:0.9em;">
+                    <strong style="color:#f57f17;">Earlier Step</strong> &mdash; This page was created in February 2026 to survey which upstream font repositories require pre-build scripts (format conversion, source generation, patching) before <code>gftools-builder</code> can compile them. This research directly informed the <code>prebuild</code> mechanism in the reproducible build system, which now supports per-family prebuild commands in the <a href="#build-system" data-tab="build-system">build registry</a>. The data is a snapshot and does not reflect prebuilds added since.
+                </div>
                 <h2>Pre-Build Scripts Research</h2>
                 <p class="panel-description">Analysis of pre-compilation actions across Google Fonts upstream repositories.
                     Related: <a href="https://github.com/googlefonts/gftools/issues/1171" target="_blank">gftools issue #1171</a>
@@ -1357,6 +1372,9 @@ includeSubsets:
 
         <section id="tab-crater" class="tab-content">
             <div class="panel">
+                <div style="margin-bottom:1em;padding:0.8em;background:#fff8e1;border-radius:6px;border-left:4px solid #f9a825;font-size:0.9em;">
+                    <strong style="color:#f57f17;">Earlier Step</strong> &mdash; This page analyzed <a href="https://googlefonts.github.io/fontc_crater/" target="_blank">fontc_crater</a> build target discovery failures (February 2026). fontc_crater is the Google Fonts team's tool for testing the Rust-based <code>fontc</code> compiler against the full library. Understanding where automated target discovery fails informed both the fontc project and our reproducible build system's config resolution logic. The data is a one-time snapshot.
+                </div>
                 <h2>fontc_crater Target Discovery Failures</h2>
                 <p class="panel-description">Analysis of 17 repos where fontc_crater failed to find build targets.
                     Source: <a href="https://googlefonts.github.io/fontc_crater/" target="_blank">fontc_crater report</a>
