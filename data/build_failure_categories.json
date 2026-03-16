@@ -2753,6 +2753,83 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-15T22:44:47.618443-03:00",
+      "total_families": 1267,
+      "total_tested": 1264,
+      "byte_identical": 304,
+      "categories": {
+        "compiler-version": {
+          "count": 917
+        },
+        "build-failure": {
+          "count": 5,
+          "families": [
+            "buenard",
+            "foldit",
+            "fraunces",
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        },
+        "timestamp-diff": {
+          "count": 9
+        },
+        "name-table": {
+          "count": 12
+        },
+        "legacy-no-modern-source": {
+          "count": 13
+        },
+        "metadata-stanza-wrong": {
+          "count": 3
+        },
+        "missing-source": {
+          "count": 1
+        }
+      },
+      "notes": "SOURCE_DATE_EPOCH improvement: 296->305 byte-identical families"
+    },
+    {
+      "timestamp": "2026-03-15T22:47:09.067248-03:00",
+      "total_families": 1267,
+      "total_tested": 1264,
+      "byte_identical": 304,
+      "categories": {
+        "compiler-version": {
+          "count": 917
+        },
+        "build-failure": {
+          "count": 8,
+          "families": [
+            "buenard",
+            "cause",
+            "coiny",
+            "foldit",
+            "fraunces",
+            "josefinsans",
+            "playfairdisplay",
+            "playfairdisplaysc"
+          ]
+        },
+        "timestamp-diff": {
+          "count": 9
+        },
+        "name-table": {
+          "count": 9
+        },
+        "legacy-no-modern-source": {
+          "count": 13
+        },
+        "metadata-stanza-wrong": {
+          "count": 3
+        },
+        "missing-source": {
+          "count": 1
+        }
+      },
+      "notes": "SOURCE_DATE_EPOCH improvement: 296->304 byte-identical families. timestamp-diff reduced from 18->9."
     }
   ]
 }
