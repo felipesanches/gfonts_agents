@@ -2,8 +2,8 @@
   "generated_at": "2026-03-16T02:51:44.577522-03:00",
   "last_updated": "2026-03-16T12:00:00.000000-03:00",
   "summary": {
-    "processed": 1272,
-    "total_buildable": 1267,
+    "processed": 1271,
+    "total_buildable": 1266,
     "yes": 306,
     "byte_identical": 319,
     "compiler_version": 918,
@@ -17,7 +17,7 @@
     "metadata_stanza_wrong": 3,
     "metadata-stanza-wrong": 3,
     "missing_source": 0,
-    "missing-source": 1,
+    "missing-source": 0,
     "legacy_no_modern_source": 13,
     "legacy-no-modern-source": 13,
     "untested": 0,
@@ -69,10 +69,6 @@
           }
         }
       }
-    },
-    "_test_nonexistent": {
-      "status": "missing-source",
-      "files": {}
     },
     "abeezee": {
       "status": "compiler-version",

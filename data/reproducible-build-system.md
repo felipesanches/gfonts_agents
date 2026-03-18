@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-16
-**Status**: 1267 families tested -- 3 build failures (0.2%)
+**Status**: 1266 families tested -- 3 build failures (0.2%)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -10,7 +10,7 @@ With 100% upstream_info.md coverage across all 1,975 ofl/ families now complete,
 
 The system downloads source snapshots from GitHub at the exact commit recorded in METADATA.pb, builds them with `gftools-builder`, and performs a multi-level comparison: SHA256 hash, TTX table-by-table diff, mismatch categorization, and deep structural analysis (ttfautohint version detection, per-glyph coordinate comparison, advance width and line metrics reflow risk assessment).
 
-## Current Results (1267 families tested)
+## Current Results (1266 families tested)
 
 ### Status Breakdown
 
@@ -23,9 +23,8 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 | **timestamp-diff** | 10 | 0.8% | Only head timestamps differ |
 | **metadata-stanza-wrong** | 3 | 0.2% | METADATA.pb source stanza is incorrect |
 | **build-failure** | 3 | 0.2% | gftools-builder failed (foldit, playfairdisplay, playfairdisplaysc) |
-| **missing-source** | 1 | 0.1% | Source repository unreachable |
 
-Of the 1267 families tested, 1264 produced comparison reports with deep analysis. The remaining 3 failed to build (no output to compare).
+Of the 1266 families tested, 1263 produced comparison reports with deep analysis. The remaining 3 failed to build (no output to compare).
 
 ### Byte-Identical Families (319)
 
@@ -100,7 +99,7 @@ This bug could affect any upstream repo that ships old reference binaries in a `
 
 ## Key Insights
 
-1. **25.2% byte-identical rate across 1267 families.** 319 families rebuild to the exact same binary — up from 317 after boldonse and robotomono were confirmed byte-identical.
+1. **25.2% byte-identical rate across 1266 families.** 319 families rebuild to the exact same binary — up from 317 after boldonse and robotomono were confirmed byte-identical.
 
 2. **0.2% build failure rate (3 failures).** Only 3 families fail to build with gftools-builder: foldit, playfairdisplay, playfairdisplaysc. 42 previously-reported failures were reclassified as compiler-version after correction. 13 additional families reclassified as legacy-no-modern-source.
 
