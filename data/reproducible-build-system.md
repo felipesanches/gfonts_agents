@@ -1,7 +1,7 @@
 # Investigation: Reproducible Font Build System
 
 **Date**: 2026-03-16
-**Status**: 1266 families tested -- 3 build failures (0.2%)
+**Status**: 1266 of 1975 families tested -- 3 build failures (0.2%)
 **Model**: Claude Opus 4.6
 
 ## Summary
@@ -9,6 +9,8 @@
 With 100% upstream_info.md coverage across all 1,975 ofl/ families now complete, we built a system to validate that `METADATA.pb` source stanzas (repository_url, commit) are correct by actually building fonts from upstream sources and comparing them to the binaries shipped in google/fonts.
 
 The system downloads source snapshots from GitHub at the exact commit recorded in METADATA.pb, builds them with `gftools-builder`, and performs a multi-level comparison: SHA256 hash, TTX table-by-table diff, mismatch categorization, and deep structural analysis (ttfautohint version detection, per-glyph coordinate comparison, advance width and line metrics reflow risk assessment).
+
+**709 families are excluded** from testing because they lack the necessary metadata or sources to attempt a build. See [Untested Families](#untested-families-709) below.
 
 ## Current Results (1266 families tested)
 
@@ -25,6 +27,22 @@ The system downloads source snapshots from GitHub at the exact commit recorded i
 | **build-failure** | 3 | 0.2% | gftools-builder failed (foldit, playfairdisplay, playfairdisplaysc) |
 
 Of the 1266 families tested, 1263 produced comparison reports with deep analysis. The remaining 3 failed to build (no output to compare).
+
+### Untested Families (709)
+
+709 of 1975 ofl/ families could not be tested because they lack the necessary metadata or build infrastructure. Breakdown by reason:
+
+| Reason | Count | Description |
+|--------|-------|-------------|
+| **missing_config** | 581 | Have a repository URL but no config.yaml for gftools-builder |
+| **missing_url** | 48 | No known upstream repository URL |
+| **no_upstream_repo** | 42 | Repository URL is invalid or returns 404 |
+| **missing_commit** | 18 | Have a repository but no commit hash recorded in METADATA.pb |
+| **no_config_possible** | 8 | Sources are incompatible with gftools-builder (SFD-only, VFB-only, CID-keyed) |
+| **needs_correction** | 3 | Source metadata requires manual correction |
+| **other/untracked** | 9 | Families in ofl/ not yet tracked in library sources data |
+
+The 581 "missing_config" families are the largest opportunity: they have upstream repos with sources, but no one has written the gftools-builder config.yaml yet. Many of these may have modern sources (.glyphs, .ufo, .designspace) that could be built with a straightforward config.
 
 ### Byte-Identical Families (319)
 
