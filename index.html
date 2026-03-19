@@ -33,6 +33,12 @@
                 </ul>
             </details>
             <details class="nav-section" open>
+                <summary class="nav-section-title">Compiler Analysis</summary>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#crater-analysis" data-tab="crater-analysis">fontc Crater</a></li>
+                </ul>
+            </details>
+            <details class="nav-section" open>
                 <summary class="nav-section-title">Library Sources</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#sources" data-tab="sources">Source Tracking</a></li>
@@ -82,6 +88,62 @@
     </nav>
 
     <main id="app">
+
+        <section id="tab-crater-analysis" class="tab-content">
+            <div class="panel">
+                <h2>fontc Crater Analysis</h2>
+                <p class="panel-description">Analysis of fontc vs fontmake compilation differences to prioritize fontc bugfixes.
+                    Data from <a href="https://github.com/googlefonts/fontc_crater" target="_blank">googlefonts/fontc_crater</a>.
+                    <span id="crater-analysis-meta" style="color:#888;"></span>
+                </p>
+
+                <!-- Overview summary cards -->
+                <div class="builds-summary" id="crater-analysis-overview" style="margin-bottom:2em;">
+                    <div class="summary-card"><div class="card-value" id="ca-total">—</div><div class="card-label">Total Targets</div></div>
+                    <div class="summary-card" style="border-left:4px solid #4caf50;"><div class="card-value" id="ca-identical">—</div><div class="card-label">Identical</div></div>
+                    <div class="summary-card"><div class="card-value" id="ca-diff">—</div><div class="card-label">With Diffs</div></div>
+                    <div class="summary-card" style="border-left:4px solid #f44336;"><div class="card-value" id="ca-fontc-fail">—</div><div class="card-label">fontc Failed</div></div>
+                    <div class="summary-card" style="border-left:4px solid #ff9800;"><div class="card-value" id="ca-fontmake-fail">—</div><div class="card-label">fontmake Failed</div></div>
+                    <div class="summary-card" style="border-left:4px solid #9c27b0;"><div class="card-value" id="ca-both-fail">—</div><div class="card-label">Both Failed</div></div>
+                    <div class="summary-card" style="border-left:4px solid #2196f3;"><div class="card-value" id="ca-similarity">—</div><div class="card-label">Similarity %</div></div>
+                </div>
+
+                <!-- Progress over time -->
+                <h3>Progress Over Time</h3>
+                <div style="margin-bottom:2em;background:#fff;border:1px solid #ddd;border-radius:6px;padding:1em;">
+                    <canvas id="crater-history-chart" width="900" height="300" style="width:100%;height:300px;"></canvas>
+                </div>
+
+                <!-- Table frequency analysis -->
+                <h3>OpenType Table Diff Frequency</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">Which tables differ most often between fontc and fontmake output. Color indicates average similarity (green=high, red=low). "Impact" = targets that would become identical if this table alone were fixed.</p>
+                <div id="crater-table-analysis" style="margin-bottom:2em;"></div>
+
+                <!-- Prioritization -->
+                <h3>Fix Prioritization</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">Ranked by number of affected targets. Issues are from fontc GitHub annotations; table entries are unannotated patterns.</p>
+                <div id="crater-prioritization" style="margin-bottom:2em;"></div>
+
+                <!-- Diff profile clusters -->
+                <h3>Diff Profile Clusters</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">Targets grouped by their set of differing tables. Targets with the same diff signature likely share a root cause.</p>
+                <div id="crater-diff-profiles" style="margin-bottom:2em;"></div>
+
+                <!-- Failure breakdown -->
+                <h3>Failure Breakdown</h3>
+                <div id="crater-failure-breakdown" style="margin-bottom:2em;"></div>
+
+                <!-- Target detail table -->
+                <h3>All Non-Identical Targets</h3>
+                <div style="margin-bottom:0.5em;">
+                    <input type="text" id="crater-target-search" placeholder="Search targets..." style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;width:300px;margin-right:1em;">
+                    <select id="crater-table-filter" style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;">
+                        <option value="">All tables</option>
+                    </select>
+                </div>
+                <div id="crater-target-table" style="margin-bottom:2em;"></div>
+            </div>
+        </section>
 
         <section id="tab-sources" class="tab-content">
             <div class="panel">

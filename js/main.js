@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBuildTimings();
     loadBuildFailures();
     loadDevLog();
+    loadCraterAnalysis();
 });
 
 function initTabs() {
@@ -3889,4 +3890,373 @@ function renderDevLog(data) {
             <div style="line-height:1.6;color:#333;"><p>${body}</p></div>
         </article>`;
     }).join('');
+}
+
+// ============================================================
+// fontc Crater Analysis
+// ============================================================
+
+async function loadCraterAnalysis() {
+    try {
+        const response = await fetch('data/fontc_crater_analysis.json');
+        const data = await response.json();
+        renderCraterAnalysis(data);
+    } catch (error) {
+        console.error('Error loading crater analysis:', error);
+    }
+}
+
+function renderCraterAnalysis(data) {
+    const ov = data.overview;
+    const meta = data._metadata;
+
+    // Metadata line
+    const metaEl = document.getElementById('crater-analysis-meta');
+    if (metaEl && meta) {
+        metaEl.textContent = `Last run: ${meta.latest_run} | fontc rev: ${meta.fontc_rev?.slice(0, 8) || '?'}`;
+    }
+
+    // Overview cards
+    setText('ca-total', ov.total_targets?.toLocaleString() || '—');
+    setText('ca-identical', `${ov.identical?.toLocaleString() || '—'} (${ov.identical_pct || 0}%)`);
+    setText('ca-diff', ov.diff_targets?.toLocaleString() || '—');
+    setText('ca-fontc-fail', ov.fontc_failed?.toLocaleString() || '—');
+    setText('ca-fontmake-fail', ov.fontmake_failed?.toLocaleString() || '—');
+    setText('ca-both-fail', ov.both_failed?.toLocaleString() || '—');
+    setText('ca-similarity', `${ov.similarity_pct || 0}%`);
+
+    renderCraterHistory(data.history || []);
+    renderCraterTableAnalysis(data.table_analysis || []);
+    renderCraterPrioritization(data.prioritization || []);
+    renderCraterDiffProfiles(data.diff_profiles || []);
+    renderCraterFailures(data);
+    renderCraterTargetTable(data);
+}
+
+function renderCraterHistory(history) {
+    const canvas = document.getElementById('crater-history-chart');
+    if (!canvas || history.length === 0) return;
+
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+    const W = rect.width;
+    const H = rect.height;
+
+    const pad = { top: 30, right: 60, bottom: 40, left: 60 };
+    const plotW = W - pad.left - pad.right;
+    const plotH = H - pad.top - pad.bottom;
+
+    // Data
+    const maxTargets = Math.max(...history.map(h => h.total_targets || 0));
+    const maxIdentical = Math.max(...history.map(h => h.identical || 0));
+    const yMax = Math.max(maxTargets, maxIdentical) * 1.1;
+
+    ctx.clearRect(0, 0, W, H);
+
+    // Grid
+    ctx.strokeStyle = '#eee';
+    ctx.lineWidth = 1;
+    for (let i = 0; i <= 4; i++) {
+        const y = pad.top + plotH * (1 - i / 4);
+        ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W - pad.right, y); ctx.stroke();
+        ctx.fillStyle = '#999'; ctx.font = '11px sans-serif'; ctx.textAlign = 'right';
+        ctx.fillText(Math.round(yMax * i / 4), pad.left - 8, y + 4);
+        // Right axis: percentage
+        ctx.textAlign = 'left';
+        ctx.fillText(Math.round(i * 25) + '%', W - pad.right + 8, y + 4);
+    }
+
+    // X axis labels (show ~8 dates)
+    const step = Math.max(1, Math.floor(history.length / 8));
+    ctx.fillStyle = '#999'; ctx.font = '10px sans-serif'; ctx.textAlign = 'center';
+    for (let i = 0; i < history.length; i += step) {
+        const x = pad.left + (i / (history.length - 1)) * plotW;
+        ctx.fillText(history[i].date.slice(5), x, H - pad.bottom + 16);
+    }
+
+    function drawLine(data, getY, color, width) {
+        ctx.strokeStyle = color; ctx.lineWidth = width;
+        ctx.beginPath();
+        for (let i = 0; i < data.length; i++) {
+            const x = pad.left + (i / (data.length - 1)) * plotW;
+            const y = pad.top + plotH * (1 - getY(data[i]));
+            if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+    }
+
+    // Area fill for identical count
+    ctx.fillStyle = 'rgba(76, 175, 80, 0.15)';
+    ctx.beginPath();
+    ctx.moveTo(pad.left, pad.top + plotH);
+    for (let i = 0; i < history.length; i++) {
+        const x = pad.left + (i / (history.length - 1)) * plotW;
+        const y = pad.top + plotH * (1 - (history[i].identical || 0) / yMax);
+        ctx.lineTo(x, y);
+    }
+    ctx.lineTo(pad.left + plotW, pad.top + plotH);
+    ctx.closePath(); ctx.fill();
+
+    // Lines
+    drawLine(history, h => (h.total_targets || 0) / yMax, '#999', 1);  // total (grey)
+    drawLine(history, h => (h.identical || 0) / yMax, '#4caf50', 2);    // identical (green)
+    drawLine(history, h => (h.similarity_pct || 0) / 100, '#2196f3', 2); // similarity % (blue)
+
+    // Legend
+    const legendY = 12;
+    ctx.font = '11px sans-serif';
+    [[pad.left, '#999', 'Total targets'], [pad.left + 110, '#4caf50', 'Identical'], [pad.left + 200, '#2196f3', 'Similarity %']].forEach(([x, c, t]) => {
+        ctx.fillStyle = c; ctx.fillRect(x, legendY - 4, 12, 3);
+        ctx.fillStyle = '#666'; ctx.textAlign = 'left'; ctx.fillText(t, x + 16, legendY);
+    });
+}
+
+function simColor(sim) {
+    if (sim === null || sim === undefined) return '#999';
+    if (sim >= 0.95) return '#4caf50';
+    if (sim >= 0.85) return '#8bc34a';
+    if (sim >= 0.7) return '#ff9800';
+    return '#f44336';
+}
+
+function renderCraterTableAnalysis(tables) {
+    const container = document.getElementById('crater-table-analysis');
+    if (!container || tables.length === 0) return;
+
+    const maxCount = Math.max(...tables.map(t => t.affected_count));
+    const rows = tables.slice(0, 25).map(t => {
+        const pct = (t.affected_count / maxCount * 100).toFixed(0);
+        const color = simColor(t.avg_similarity);
+        const simText = t.avg_similarity !== null ? (t.avg_similarity * 100).toFixed(1) + '%' : 'n/a';
+        const extras = [];
+        if (t.fontc_only > 0) extras.push(`${t.fontc_only} fontc-only`);
+        if (t.fontmake_only > 0) extras.push(`${t.fontmake_only} fontmake-only`);
+        const extraStr = extras.length ? ` (${extras.join(', ')})` : '';
+        return `<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:4px;">
+            <span style="width:110px;text-align:right;font-family:monospace;font-size:0.9em;white-space:nowrap;">${escapeHtml(t.table)}</span>
+            <div style="flex:1;background:#eee;border-radius:4px;height:22px;position:relative;">
+                <div style="width:${pct}%;background:${color};height:100%;border-radius:4px;min-width:2px;"></div>
+            </div>
+            <span style="width:240px;font-size:0.82em;color:#555;">${t.affected_count} targets, avg ${simText}${extraStr}</span>
+            <span style="width:90px;font-size:0.82em;color:#1976d2;" title="Targets that would become identical if this table alone were fixed">impact: ${t.impact_score}</span>
+        </div>`;
+    });
+    container.innerHTML = rows.join('');
+}
+
+function renderCraterPrioritization(items) {
+    const container = document.getElementById('crater-prioritization');
+    if (!container || items.length === 0) return;
+
+    // Deduplicate: show issues first, then tables not already covered
+    const issueItems = items.filter(i => i.type === 'issue');
+    const tableItems = items.filter(i => i.type === 'table');
+
+    const rows = [...issueItems.slice(0, 30), ...tableItems.slice(0, 15)].map((item, idx) => {
+        const badge = item.type === 'issue'
+            ? '<span style="background:#e3f2fd;color:#1565c0;padding:1px 6px;border-radius:3px;font-size:0.8em;">issue</span>'
+            : '<span style="background:#fff3e0;color:#e65100;padding:1px 6px;border-radius:3px;font-size:0.8em;">table</span>';
+        const link = item.link
+            ? `<a href="${escapeHtml(item.link)}" target="_blank" style="text-decoration:none;">${escapeHtml(item.label)}</a>`
+            : escapeHtml(item.label);
+        const tables = (item.tables || []).map(t =>
+            `<span style="background:#f0f0f0;padding:1px 5px;border-radius:3px;font-size:0.8em;margin-right:3px;">${escapeHtml(t)}</span>`
+        ).join('');
+        return `<tr>
+            <td style="text-align:center;">${idx + 1}</td>
+            <td>${badge}</td>
+            <td>${link}</td>
+            <td style="text-align:center;font-weight:bold;">${item.impact}</td>
+            <td>${tables}</td>
+        </tr>`;
+    });
+
+    container.innerHTML = `<table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+        <thead><tr style="background:#f5f5f5;border-bottom:2px solid #ddd;">
+            <th style="padding:8px 6px;width:40px;">#</th>
+            <th style="padding:8px 6px;width:60px;">Type</th>
+            <th style="padding:8px 6px;text-align:left;">Issue / Pattern</th>
+            <th style="padding:8px 6px;width:70px;">Impact</th>
+            <th style="padding:8px 6px;text-align:left;">Tables</th>
+        </tr></thead>
+        <tbody>${rows.join('')}</tbody>
+    </table>`;
+}
+
+function renderCraterDiffProfiles(profiles) {
+    const container = document.getElementById('crater-diff-profiles');
+    if (!container || profiles.length === 0) return;
+
+    const items = profiles.slice(0, 30).map(p => {
+        const sig = p.signature.map(t =>
+            `<span style="background:#e8eaf6;color:#283593;padding:2px 6px;border-radius:3px;font-family:monospace;font-size:0.85em;margin-right:3px;">${escapeHtml(t)}</span>`
+        ).join('');
+        const simText = p.avg_total_similarity !== null ? (p.avg_total_similarity * 100).toFixed(1) + '%' : 'n/a';
+        const annotNote = p.annotated_count > 0
+            ? ` | ${p.annotated_count} annotated`
+            : ' | <span style="color:#f44336;">unannotated</span>';
+        const examples = p.example_targets.map(t => {
+            const short = t.length > 80 ? t.slice(0, 77) + '...' : t;
+            return `<div style="font-size:0.8em;color:#666;padding:2px 0;font-family:monospace;">${escapeHtml(short)}</div>`;
+        }).join('');
+        return `<details style="margin-bottom:6px;border:1px solid #e0e0e0;border-radius:4px;">
+            <summary style="padding:8px 12px;cursor:pointer;display:flex;align-items:center;gap:0.5em;flex-wrap:wrap;">
+                <strong>${p.target_count} targets</strong>
+                <span style="color:#666;">|</span> ${sig}
+                <span style="color:#666;font-size:0.85em;">| avg sim: ${simText}${annotNote}</span>
+            </summary>
+            <div style="padding:8px 12px 12px 24px;">${examples}</div>
+        </details>`;
+    });
+    container.innerHTML = items.join('');
+}
+
+function renderCraterFailures(data) {
+    const container = document.getElementById('crater-failure-breakdown');
+    if (!container) return;
+    const ov = data.overview;
+    const failedRepos = data.failed_repos || {};
+
+    const sections = [];
+
+    // fontc-only failures
+    sections.push(`<div style="margin-bottom:1.5em;">
+        <h4 style="color:#f44336;">fontc-only failures: ${ov.fontc_failed}</h4>
+        <p style="color:#666;font-size:0.9em;">These targets compile successfully with fontmake but fail with fontc. These are the <strong>most actionable</strong> bugs to fix in fontc.</p>
+    </div>`);
+
+    // fontmake-only failures
+    sections.push(`<div style="margin-bottom:1.5em;">
+        <h4 style="color:#ff9800;">fontmake-only failures: ${ov.fontmake_failed}</h4>
+        <p style="color:#666;font-size:0.9em;">These compile with fontc but fail with fontmake. Indicates fontc handles these cases better.</p>
+    </div>`);
+
+    // both-failed
+    sections.push(`<div style="margin-bottom:1.5em;">
+        <h4 style="color:#9c27b0;">Both compilers failed: ${ov.both_failed}</h4>
+        <p style="color:#666;font-size:0.9em;">Neither compiler can build these targets. Likely source/config problems rather than compiler bugs.</p>
+    </div>`);
+
+    // Failed repos table
+    const repoEntries = Object.entries(failedRepos);
+    if (repoEntries.length > 0) {
+        const repoRows = repoEntries.map(([repo, error]) => {
+            const errorText = typeof error === 'string' ? error : (error.error || JSON.stringify(error));
+            return `<tr>
+                <td style="font-family:monospace;font-size:0.85em;"><a href="https://github.com/${escapeHtml(repo)}" target="_blank">${escapeHtml(repo)}</a></td>
+                <td style="color:#666;font-size:0.85em;">${escapeHtml(errorText)}</td>
+            </tr>`;
+        });
+        sections.push(`<div style="margin-top:1.5em;">
+            <h4>Repos that cannot produce targets (${repoEntries.length})</h4>
+            <p style="color:#666;font-size:0.9em;margin-bottom:0.5em;">Missing sources, configs, or other setup issues preventing any compilation.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                <thead><tr style="background:#f5f5f5;border-bottom:2px solid #ddd;">
+                    <th style="padding:6px;text-align:left;">Repository</th>
+                    <th style="padding:6px;text-align:left;">Error</th>
+                </tr></thead>
+                <tbody>${repoRows.join('')}</tbody>
+            </table>
+        </div>`);
+    }
+
+    container.innerHTML = sections.join('');
+}
+
+function renderCraterTargetTable(data) {
+    const container = document.getElementById('crater-target-table');
+    const searchInput = document.getElementById('crater-target-search');
+    const tableFilter = document.getElementById('crater-table-filter');
+    if (!container) return;
+
+    const targets = data.targets || [];
+    if (targets.length === 0) {
+        container.innerHTML = '<p style="color:#666;">No diff targets found.</p>';
+        return;
+    }
+
+    // Populate table filter dropdown
+    const allTables = new Set();
+    targets.forEach(t => Object.keys(t.tables || {}).forEach(k => allTables.add(k)));
+    if (tableFilter) {
+        const sorted = [...allTables].sort();
+        sorted.forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t; opt.textContent = t;
+            tableFilter.appendChild(opt);
+        });
+    }
+
+    let showCount = 50;
+
+    function render() {
+        const search = (searchInput?.value || '').toLowerCase();
+        const filterTable = tableFilter?.value || '';
+
+        let filtered = targets;
+        if (search) {
+            filtered = filtered.filter(t => t.id.toLowerCase().includes(search) || (t.repo_url || '').toLowerCase().includes(search));
+        }
+        if (filterTable) {
+            filtered = filtered.filter(t => t.tables && filterTable in t.tables);
+        }
+
+        const shown = filtered.slice(0, showCount);
+        const rows = shown.map(t => {
+            const sim = t.total_similarity !== null ? (t.total_similarity * 100).toFixed(2) + '%' : 'n/a';
+            const simColor2 = simColor(t.total_similarity);
+            const pills = Object.entries(t.tables || {}).map(([table, val]) => {
+                let label, bg;
+                if (typeof val === 'number') {
+                    label = `${table}: ${(val * 100).toFixed(0)}%`;
+                    bg = simColor(val);
+                } else {
+                    label = `${table}: ${val}`;
+                    bg = '#9e9e9e';
+                }
+                return `<span title="${escapeHtml(table)}: ${val}" style="background:${bg};color:#fff;padding:1px 5px;border-radius:3px;font-size:0.75em;margin:1px 2px;display:inline-block;white-space:nowrap;">${escapeHtml(label)}</span>`;
+            }).join('');
+            const annotBadge = t.annotations?.length > 0
+                ? t.annotations.map(a => `<a href="${escapeHtml(a.link)}" target="_blank" style="font-size:0.8em;color:#1565c0;" title="${escapeHtml(a.text)}">[${escapeHtml(a.text.slice(0, 30))}]</a>`).join(' ')
+                : '';
+            const shortId = t.id.length > 70 ? t.id.slice(0, 67) + '...' : t.id;
+            return `<tr style="border-bottom:1px solid #eee;">
+                <td style="padding:4px 6px;font-family:monospace;font-size:0.8em;" title="${escapeHtml(t.id)}">${escapeHtml(shortId)}</td>
+                <td style="padding:4px 6px;text-align:center;color:${simColor2};font-weight:bold;">${sim}</td>
+                <td style="padding:4px 6px;">${pills}</td>
+                <td style="padding:4px 6px;">${annotBadge}</td>
+            </tr>`;
+        });
+
+        const moreBtn = filtered.length > showCount
+            ? `<div style="text-align:center;margin-top:0.5em;">
+                <button id="crater-show-more" style="padding:6px 20px;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer;">
+                    Show more (${filtered.length - showCount} remaining)
+                </button>
+            </div>` : '';
+
+        container.innerHTML = `<p style="color:#666;font-size:0.85em;margin-bottom:0.5em;">Showing ${shown.length} of ${filtered.length} targets with diffs</p>
+            <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                <thead><tr style="background:#f5f5f5;border-bottom:2px solid #ddd;">
+                    <th style="padding:6px;text-align:left;">Target</th>
+                    <th style="padding:6px;width:80px;">Similarity</th>
+                    <th style="padding:6px;text-align:left;">Table Diffs</th>
+                    <th style="padding:6px;text-align:left;width:160px;">Annotations</th>
+                </tr></thead>
+                <tbody>${rows.join('')}</tbody>
+            </table>${moreBtn}`;
+
+        const moreEl = document.getElementById('crater-show-more');
+        if (moreEl) {
+            moreEl.addEventListener('click', () => { showCount += 50; render(); });
+        }
+    }
+
+    render();
+    if (searchInput) searchInput.addEventListener('input', () => { showCount = 50; render(); });
+    if (tableFilter) tableFilter.addEventListener('change', () => { showCount = 50; render(); });
 }
