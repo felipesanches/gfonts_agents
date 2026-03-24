@@ -67,5 +67,171 @@
       {"file": "css/style.css", "action": "edited"},
       {"file": "data/plans.json", "action": "created"}
     ]
+  },
+  {
+    "id": "rust-reproducible-build-system",
+    "title": "Rust Reproducible Build System (fontc_crater fork)",
+    "timestamp": "2026-03-24T12:00:00Z",
+    "prompt": "Prototype the same reproducible build system currently implemented in Python, but written in Rust as a modification of fontc_crater. Keep the existing Python system unchanged. Later decide whether to follow the plan.",
+    "status": "proposed",
+    "summary": "Adapt fontc_crater — the Rust-based font compiler comparison tool in the googlefonts/fontc monorepo — into a reproducible build verification system for Google Fonts. Instead of comparing fontc vs fontmake output, the modified tool would compare rebuilt fonts against the binaries currently shipped in google/fonts, replicating what the Python build system does but in Rust with fontc_crater's existing parallelism, caching, and reporting infrastructure.",
+    "design": {
+      "motivation": "The current Python reproducible build system (gftools-builder + custom comparison scripts) works well but is slow, has filesystem scalability issues (virtiofs FD accumulation), and is hard to run in CI. fontc_crater already solves many of these problems: it has robust parallel execution (Rayon), git cache management, result caching, HTML report generation, and CI integration. Repurposing it avoids reinventing that infrastructure.",
+      "current_fontc_crater_overview": "fontc_crater takes a JSON list of upstream repos + commit hashes, clones them, compiles each source with both fontc and fontmake, then diffs the outputs via ttx_diff (a Python module). It produces per-target similarity ratios, failure reports, and an HTML dashboard. Key components: Target (repo+commit+config+source), CI pipeline (ci.rs), TTX diff runner (ttx_diff_runner.rs), source discovery (sources.rs), HTML reporting (ci/html.rs), result caching (ci/results_cache.rs).",
+      "current_python_build_system_overview": "The Python system reads METADATA.pb for each family in google/fonts to find upstream repo URL, commit hash, and config.yaml path. It downloads the source at that commit, runs gftools-builder to compile fonts, then compares the built .ttf/.otf files against the binaries in google/fonts using SHA256 hashes and TTX table-by-table diffing. Results are categorized (byte-identical, compiler-version, name-table, timestamp-diff, build-failure, etc.) and reflow risk is assessed by checking advance width differences. Results feed into the gfonts_agents dashboard.",
+      "key_differences_to_bridge": [
+        "fontc_crater compares fontc vs fontmake output; the new tool compares rebuilt fonts vs google/fonts shipped binaries",
+        "fontc_crater discovers targets from a hand-curated JSON list; the new tool must discover targets from METADATA.pb source blocks",
+        "fontc_crater uses ttx_diff (Python) for comparison; the new tool needs binary hash comparison + TTX table diffing + reflow risk analysis",
+        "fontc_crater tracks compiler parity; the new tool tracks reproducibility and categorizes root causes",
+        "fontc_crater only needs upstream repos; the new tool also needs a local clone of google/fonts for reference binaries"
+      ]
+    },
+    "steps": [
+      {
+        "step": 1,
+        "description": "Fork fontc_crater into a new crate (e.g., gfonts_repro_crater) within a local workspace. Keep fontc_crater's Cargo.toml dependencies (rayon, chrono, serde, clap, tempfile, maud) and add: protobuf or a simple METADATA.pb parser, sha2 (for SHA256 hashing), fonttools-rs or ttx bindings for table-level diffing.",
+        "status": "pending",
+        "details": "The fork should be a separate binary crate, not a modification of fontc_crater itself, so it can diverge freely. Copy the src/ directory and Cargo.toml, rename the package."
+      },
+      {
+        "step": 2,
+        "description": "Replace the Target struct. Current Target has: repo_dir, sha, config, is_virtual, source, build_type (Default|GfTools). New Target needs: family_slug (e.g. 'ofl/roboto'), repo_url, commit_hash, config_yaml_path, source_files (list), reference_binaries (paths to .ttf/.otf in google/fonts), license_dir. The new Target should be constructable from a METADATA.pb source block.",
+        "status": "pending",
+        "details": "The Target must carry enough info to: (a) check out the upstream repo at the right commit, (b) locate the config.yaml, (c) run gftools-builder or fontc, (d) find the reference binaries in google/fonts for comparison. Families without a source block (the 598 identified) are skipped."
+      },
+      {
+        "step": 3,
+        "description": "Replace source discovery (sources.rs). Instead of reading a hand-curated JSON file, walk all METADATA.pb files under google/fonts/{ofl,apache,ufl,cc-by-sa}/*/METADATA.pb. Parse each for 'source { repository_url, commit, config_yaml, files { source_file, dest_file } }'. Skip families with no source block. Build a Vec<Target> from the parsed data.",
+        "status": "pending",
+        "details": "METADATA.pb is a text-format protobuf. Parsing options: (a) use the protobuf crate with the FamilyProto .proto schema from google/fonts, (b) write a simple line-based parser since we only need a few fields, (c) shell out to Python's google.protobuf. Option (b) is simplest for a prototype. The parser needs to handle nested 'source { ... }' and 'files { ... }' blocks."
+      },
+      {
+        "step": 4,
+        "description": "Replace the TTX diff runner (ttx_diff_runner.rs) with a reproducibility comparison module. The new module: (a) runs gftools-builder (or fontc) on the checked-out source to produce built fonts, (b) locates reference binaries in google/fonts using the files { source_file, dest_file } mapping, (c) compares built vs reference via SHA256 first, (d) if hashes differ, runs ttx-based table comparison, (e) categorizes the result.",
+        "status": "pending",
+        "details": "For the prototype, the build step can shell out to gftools-builder (Python) — the same as the current system. The Rust advantage comes from orchestration, parallelism, and caching, not from reimplementing the compiler. Later, fontc could replace fontmake as the compiler. The comparison logic should produce a ReproResult enum: ByteIdentical, CompilerVersionDiff(tables), NameTableOnly, TimestampOnly, BuildFailure(error), ReflowRisk(details)."
+      },
+      {
+        "step": 5,
+        "description": "Add reflow risk analysis. After table-level diffing, check hmtx (advance widths) and hhea/OS2 (line metrics) tables specifically. Compare per-glyph widths between reference and built fonts for shared glyphs. Categorize: none (all identical), line-spacing-only, minimal (tiny diffs), high (shared glyphs with different widths).",
+        "status": "pending",
+        "details": "This requires reading binary font tables. Options: (a) use read-fonts crate (already in the fontc workspace) to parse hmtx/hhea/OS2 tables directly in Rust — this is the cleanest approach and avoids Python, (b) shell out to Python fonttools. Option (a) is strongly preferred since read-fonts is already a dependency of the fontc workspace."
+      },
+      {
+        "step": 6,
+        "description": "Adapt the CI pipeline (ci.rs). The current flow: parse input JSON → check if rerun needed → precompile binaries → make targets → run diffs → save results → generate HTML. New flow: scan METADATA.pb files → check if rerun needed → ensure google/fonts clone is up-to-date → ensure upstream repos are cached → run builds+comparisons in parallel → save results → generate HTML + JSON for dashboard.",
+        "status": "pending",
+        "details": "Keep fontc_crater's RunSummary model (began/finished timestamps, revision tracking, result file references). Add new fields: google_fonts_rev (commit of google/fonts used), total_families, families_with_source, families_without_source. The parallel execution via Rayon can be kept as-is — it already handles per-repo locking and error isolation."
+      },
+      {
+        "step": 7,
+        "description": "Adapt result storage. Current format: Results<DiffOutput, DiffError> with per-target success/failure maps. New format: Results<ReproResult, BuildError> where ReproResult carries the categorization (byte-identical, compiler-version, etc.), per-file comparison details, and reflow risk. Output both JSON (for dashboard consumption) and HTML (for standalone viewing).",
+        "status": "pending",
+        "details": "The JSON output should be directly consumable by the gfonts_agents dashboard's sync_dashboard.py, replacing or supplementing build_registry.json. Schema: { families: { family_slug: { reproducible_build: category, files: { filename: { byte_identical, differing_tables, mismatch_category, reflow_risk } } } } }."
+      },
+      {
+        "step": 8,
+        "description": "Adapt HTML report generation (ci/html.rs). Replace the fontc-vs-fontmake comparison view with a reproducibility dashboard view: summary cards (byte-identical count, compiler-version count, failures, reflow risk), filterable table of all families, per-family detail pages showing table diffs and comparison details.",
+        "status": "pending",
+        "details": "fontc_crater uses the maud crate for HTML templating. The existing report structure (summary stats → table of results → detail modals) maps naturally to the reproducibility use case. Add color-coding: green for byte-identical, yellow for compiler-version, orange for reflow risk, red for build failure."
+      },
+      {
+        "step": 9,
+        "description": "Add a CLI mode for single-family testing. Current fontc_crater only runs in batch CI mode. Add a subcommand like 'check <family_slug>' that builds and compares a single family, printing results to stdout. This is essential for development iteration and debugging.",
+        "status": "pending",
+        "details": "Example: gfonts_repro_crater check ofl/roboto --google-fonts-dir /mnt/shared/google/fonts --cache-dir /mnt/shared/upstream_repos/fontc_crater_cache"
+      },
+      {
+        "step": 10,
+        "description": "Integration testing. Run the prototype on a representative sample: (a) 10 byte-identical families from the Python system, (b) 10 compiler-version families, (c) 5 known build failures, (d) 5 families with reflow risk. Verify that the Rust tool produces the same categorizations as the Python system.",
+        "status": "pending",
+        "details": "Test families should include: roboto (large, complex), noto-sans (CJK, huge), lato (simple static), playfair-display (known build failure), artifika (known reflow risk). Compare JSON output field-by-field against existing build_registry.json entries."
+      }
+    ],
+    "architecture": {
+      "crate_name": "gfonts_repro_crater",
+      "key_modules": [
+        {"name": "main.rs", "role": "Entry point, CLI parsing (ci + check subcommands)"},
+        {"name": "target.rs", "role": "FamilyTarget struct (family_slug, repo_url, commit, config, reference_binaries)"},
+        {"name": "metadata.rs", "role": "METADATA.pb text-format parser (extract source block fields)"},
+        {"name": "discovery.rs", "role": "Walk google/fonts dirs, parse METADATA.pb, build Vec<FamilyTarget>"},
+        {"name": "builder.rs", "role": "Run gftools-builder (or fontc) on checked-out source, collect built fonts"},
+        {"name": "compare.rs", "role": "SHA256 hash comparison, TTX table diffing, result categorization"},
+        {"name": "reflow.rs", "role": "Reflow risk analysis using read-fonts (hmtx, hhea, OS/2 parsing)"},
+        {"name": "ci.rs", "role": "Batch pipeline: discover → build → compare → report (adapted from fontc_crater)"},
+        {"name": "report.rs", "role": "HTML report generation via maud (adapted from fontc_crater ci/html.rs)"},
+        {"name": "cache.rs", "role": "Git repo cache management, build artifact caching (from fontc_crater)"}
+      ],
+      "reused_from_fontc_crater": [
+        "Rayon-based parallel execution (run_all pattern from main.rs)",
+        "Git cache management (clone/fetch/checkout at specific commit)",
+        "Result caching (ci/results_cache.rs — cache fontmake artifacts by commit+config hash)",
+        "HTML report generation scaffolding (maud templates, summary stats, collapsible details)",
+        "RunSummary tracking (timestamps, input hashes, change detection for skip-if-unchanged)",
+        "CLI argument parsing pattern (clap derive)"
+      ],
+      "new_components": [
+        "METADATA.pb parser (simple text-format parser, ~100 lines)",
+        "Reference binary locator (map dest_file from METADATA.pb to google/fonts path)",
+        "SHA256 binary comparison (sha2 crate, straightforward)",
+        "ReproResult categorization engine (match differing tables to root cause categories)",
+        "Reflow risk analyzer (read-fonts to parse hmtx/hhea/OS2, compare advance widths)",
+        "Dashboard JSON output (schema compatible with sync_dashboard.py)",
+        "Single-family check subcommand"
+      ],
+      "key_dependencies": {
+        "from_fontc_workspace": ["read-fonts (font binary parsing)", "write-fonts (if needed)"],
+        "from_fontc_crater": ["rayon", "chrono", "serde/serde_json", "clap", "tempfile", "maud", "env_logger/log"],
+        "new": ["sha2 (SHA256 hashing)", "walkdir (directory traversal)"]
+      }
+    },
+    "risks_and_open_questions": [
+      {
+        "risk": "METADATA.pb parsing complexity",
+        "severity": "low",
+        "mitigation": "Text-format protobuf for the fields we need (repository_url, commit, config_yaml, files) is simple enough for a line-based parser. No need for full protobuf support."
+      },
+      {
+        "risk": "gftools-builder Python dependency",
+        "severity": "medium",
+        "mitigation": "The prototype still shells out to gftools-builder for compilation. This means Python + gftools must be installed. The Rust tool's value comes from orchestration, not from replacing the compiler. A future phase could use fontc directly for compilation."
+      },
+      {
+        "risk": "Result parity with Python system",
+        "severity": "medium",
+        "mitigation": "The categorization logic (byte-identical, compiler-version, etc.) must match the Python system's behavior exactly. Integration tests (step 10) are critical. Run both systems on the same families and diff the results."
+      },
+      {
+        "risk": "virtiofs FD accumulation may affect Rust tool too",
+        "severity": "medium",
+        "mitigation": "fontc_crater already handles this workload (1812 targets). Its approach of processing repos in parallel with scoped temp dirs should be more FD-friendly than the Python system's long-running process. Can also add periodic cache-drop calls."
+      },
+      {
+        "risk": "Maintenance burden of two parallel systems",
+        "severity": "low",
+        "mitigation": "This is explicitly a prototype. The Python system remains the source of truth. The Rust tool is experimental. If it proves superior, it replaces the Python system; if not, it's abandoned with minimal cost."
+      },
+      {
+        "risk": "google-fonts-sources crate version compatibility",
+        "severity": "low",
+        "mitigation": "fontc_crater already depends on google-fonts-sources 0.11 for repo discovery. The new tool can reuse this for git cache management but does its own target discovery via METADATA.pb."
+      }
+    ],
+    "comparison_table": {
+      "headers": ["Aspect", "Python System (current)", "Rust Prototype (proposed)"],
+      "rows": [
+        ["Parallelism", "Sequential (1 family at a time, max 2-3 due to virtiofs)", "Rayon threadpool (configurable, 8-16 concurrent)"],
+        ["Caching", "File-based per-family in /mnt/shared/gfonts-repro-builds/", "Git cache + build artifact cache (fontc_crater pattern)"],
+        ["Target discovery", "Manual: walk METADATA.pb, custom scripts", "Automatic: walk METADATA.pb, built-in parser"],
+        ["Compiler", "gftools-builder (fontmake)", "gftools-builder (prototype) → fontc (future)"],
+        ["Comparison", "SHA256 + Python fonttools TTX diff", "SHA256 + read-fonts table parsing (pure Rust)"],
+        ["Reflow analysis", "Python fonttools (per-glyph hmtx)", "read-fonts crate (per-glyph hmtx, pure Rust)"],
+        ["Reporting", "JSON files + sync_dashboard.py → HTML dashboard", "JSON (dashboard-compatible) + standalone HTML report"],
+        ["CI integration", "Manual runs, no CI", "Designed for CI (fontc_crater pattern: skip-if-unchanged)"],
+        ["Scalability", "~1266 families tested, virtiofs bottleneck", "1812+ targets proven by fontc_crater infrastructure"],
+        ["Error handling", "Custom Python error handling", "Rust type system + thiserror (compile-time safety)"]
+      ]
+    }
   }
 ]
