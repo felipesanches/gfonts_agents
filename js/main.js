@@ -3,6 +3,35 @@
 let questionsData = null;
 let investigationsData = null;
 
+/**
+ * Generate a URL-safe slug from a string.
+ * Used for permalink anchors on dashboard items.
+ * IMPORTANT: Once a slug is assigned to content, it must never change.
+ */
+function slugify(str) {
+    return str.toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .substring(0, 80);
+}
+
+/**
+ * After a tab is activated, scroll to a specific item within it if the
+ * URL fragment contains a '/' separator (e.g., #investigations/upstream-source-preservation).
+ */
+function scrollToFragmentItem(fragment) {
+    const el = document.getElementById(fragment);
+    if (el) {
+        // If the element is inside a <details>, open it
+        const details = el.closest('details');
+        if (details) details.open = true;
+        // Also open parent details (for nested design notes inside plan cards)
+        const parentDetails = el.querySelector('details');
+        // Small delay to let DOM update after tab activation
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initFamilyDialog();
@@ -80,18 +109,26 @@ function initTabs() {
     }
 
     // Activate tab from URL fragment on load
-    const hash = location.hash.slice(1);
-    if (hash) {
-        activateTab(hash);
+    // Supports compound fragments: #tab/item-slug
+    function activateFromHash() {
+        const hash = location.hash.slice(1);
+        if (!hash) return;
+        const slashIdx = hash.indexOf('/');
+        if (slashIdx > 0) {
+            // Compound fragment: first segment is the tab, full hash is the item id
+            const tabId = hash.substring(0, slashIdx);
+            activateTab(tabId);
+            // Wait for content to render, then scroll to item
+            setTimeout(() => scrollToFragmentItem(hash), 300);
+        } else {
+            activateTab(hash);
+        }
     }
 
+    activateFromHash();
+
     // Handle back/forward navigation
-    window.addEventListener('hashchange', () => {
-        const tabId = location.hash.slice(1);
-        if (tabId) {
-            activateTab(tabId);
-        }
-    });
+    window.addEventListener('hashchange', activateFromHash);
 }
 
 // Library Sources tracking
@@ -1754,10 +1791,14 @@ async function loadPlans() {
             const statusClass = plan.status === 'completed' ? 'complete' :
                                 plan.status === 'in_progress' ? 'warning' : 'error';
 
+            // Permalink: use plan.id for stability
+            const planSlug = plan.id || slugify(plan.title);
+            const planPermalink = `plans/${planSlug}`;
+
             return `
-                <div class="plan-card">
+                <div class="plan-card" id="${planPermalink}">
                     <div class="plan-header">
-                        <div class="plan-title">${escapeHtml(plan.title)}</div>
+                        <div class="plan-title">${escapeHtml(plan.title)} <a href="#${planPermalink}" style="color:#999;font-size:0.7em;text-decoration:none;" title="Permalink">#</a></div>
                         <div class="plan-badges">
                             <span class="plan-date">${escapeHtml(date)}</span>
                             <span class="status-badge status-${plan.status === 'in_progress' ? 'missing_config' : plan.status === 'completed' ? 'complete' : 'no_source'}">${escapeHtml(plan.status.replace('_', ' '))}</span>
@@ -1788,16 +1829,20 @@ async function loadPlans() {
                     ` : ''}
                     ${plan.design_notes ? `
                         <div class="plan-design-notes">
-                            ${plan.design_notes.map(note => `
-                                <details class="design-note" open>
+                            ${plan.design_notes.map(note => {
+                                const noteSlug = slugify(note.date + '-' + note.title);
+                                const notePermalink = `plans/${planSlug}/${noteSlug}`;
+                                return `
+                                <details class="design-note" id="${notePermalink}" open>
                                     <summary>
                                         <strong>${escapeHtml(note.title)}</strong>
                                         <span class="plan-date" style="margin-left:0.5em;">${escapeHtml(note.date)}</span>
                                         ${note.model ? `<span class="plan-date" style="margin-left:0.5em;">${escapeHtml(note.model)}</span>` : ''}
+                                        <a href="#${notePermalink}" style="color:#999;font-size:0.8em;margin-left:0.5em;text-decoration:none;" title="Permalink">#</a>
                                     </summary>
                                     <div class="design-note-body">${note.body}</div>
-                                </details>
-                            `).join('')}
+                                </details>`;
+                            }).join('')}
                         </div>
                     ` : ''}
                 </div>
@@ -2605,14 +2650,18 @@ function renderInvestigations(data) {
     for (const report of data.reports) {
         const section = document.createElement('div');
         section.className = 'guide-section';
+        // Permalink: derive slug from filename (without .md) for stability
+        const slug = report.filename ? report.filename.replace(/\.md$/, '') : slugify(report.title);
+        const permalinkId = `investigations/${slug}`;
 
         const contentHtml = simpleMarkdownToHtml(report.content);
         section.innerHTML = `
-            <details>
+            <details id="${permalinkId}">
                 <summary style="cursor:pointer;">
                     <strong>${escapeHtml(report.title)}</strong>
                     <span style="color:#666; margin-left:1em; font-size:0.9em;">${escapeHtml(report.families)} &middot; ${escapeHtml(report.date)}</span>
                     ${report.issue ? `<span style="color:#999; margin-left:0.5em; font-size:0.85em;">[${escapeHtml(report.issue)}]</span>` : ''}
+                    <a href="#${permalinkId}" style="color:#999;font-size:0.8em;margin-left:0.5em;text-decoration:none;" title="Permalink">#</a>
                 </summary>
                 <div style="margin-top:1em; padding:1em; background:#f8f9fa; border-radius:6px; font-size:0.95em; line-height:1.6;">
                     ${contentHtml}
@@ -3896,9 +3945,14 @@ function renderDevLog(data) {
         // Clean up duplicate ul nesting
         body = body.replace(/<\/ul>\s*<ul[^>]*>/g, '');
 
-        return `<article style="margin-bottom:2em;padding:1.5em;background:#fafafa;border-radius:8px;border-left:4px solid #1976d2;">
+        // Permalink: use date + title slug for stability
+        const postSlug = slugify(post.date.substring(0, 10) + '-' + post.title);
+        const postPermalink = `devlog/${postSlug}`;
+
+        return `<article id="${postPermalink}" style="margin-bottom:2em;padding:1.5em;background:#fafafa;border-radius:8px;border-left:4px solid #1976d2;">
             <header style="margin-bottom:0.8em;">
                 <time style="color:#666;font-size:0.85em;">${post.date}</time>
+                <a href="#${postPermalink}" style="color:#999;font-size:0.8em;margin-left:0.5em;text-decoration:none;" title="Permalink">#</a>
                 <h3 style="margin:0.2em 0 0 0;color:#1976d2;">${post.title}</h3>
             </header>
             <div style="line-height:1.6;color:#333;"><p>${body}</p></div>
