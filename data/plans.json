@@ -76,7 +76,7 @@
     "status": "proposed",
     "summary": "Adapt fontc_crater — the Rust-based font compiler comparison tool in the googlefonts/fontc monorepo — into a reproducible build verification system for Google Fonts. Instead of comparing fontc vs fontmake output, the modified tool would compare rebuilt fonts against the binaries currently shipped in google/fonts, replicating what the Python build system does but in Rust with fontc_crater's existing parallelism, caching, and reporting infrastructure.",
     "design": {
-      "motivation": "The current Python reproducible build system (gftools-builder + custom comparison scripts) works well but is slow, has filesystem scalability issues (virtiofs FD accumulation), and is hard to run in CI. fontc_crater already solves many of these problems: it has robust parallel execution (Rayon), git cache management, result caching, HTML report generation, and CI integration. Repurposing it avoids reinventing that infrastructure.",
+      "motivation": "The current Python reproducible build system (gftools-builder + custom comparison scripts) works but is hard to run in CI and lacks a unified tool for orchestration, caching, and reporting. fontc_crater already has well-tested infrastructure for these: git cache management, result caching, HTML report generation, and CI integration (skip-if-unchanged). Repurposing it avoids reinventing that infrastructure. Both systems would face the same virtiofs FD accumulation bottleneck on the current VM — the Rust rewrite does not solve that.",
       "current_fontc_crater_overview": "fontc_crater takes a JSON list of upstream repos + commit hashes, clones them, compiles each source with both fontc and fontmake, then diffs the outputs via ttx_diff (a Python module). It produces per-target similarity ratios, failure reports, and an HTML dashboard. Key components: Target (repo+commit+config+source), CI pipeline (ci.rs), TTX diff runner (ttx_diff_runner.rs), source discovery (sources.rs), HTML reporting (ci/html.rs), result caching (ci/results_cache.rs).",
       "current_python_build_system_overview": "The Python system reads METADATA.pb for each family in google/fonts to find upstream repo URL, commit hash, and config.yaml path. It downloads the source at that commit, runs gftools-builder to compile fonts, then compares the built .ttf/.otf files against the binaries in google/fonts using SHA256 hashes and TTX table-by-table diffing. Results are categorized (byte-identical, compiler-version, name-table, timestamp-diff, build-failure, etc.) and reflow risk is assessed by checking advance width differences. Results feed into the gfonts_agents dashboard.",
       "key_differences_to_bridge": [
@@ -203,9 +203,9 @@
         "mitigation": "The categorization logic (byte-identical, compiler-version, etc.) must match the Python system's behavior exactly. Integration tests (step 10) are critical. Run both systems on the same families and diff the results."
       },
       {
-        "risk": "virtiofs FD accumulation may affect Rust tool too",
+        "risk": "virtiofs FD accumulation affects both systems equally",
         "severity": "medium",
-        "mitigation": "fontc_crater already handles this workload (1812 targets). Its approach of processing repos in parallel with scoped temp dirs should be more FD-friendly than the Python system's long-running process. Can also add periodic cache-drop calls."
+        "mitigation": "The virtiofs bottleneck is intrinsic to the VM setup, not the language. The Rust tool will hit the same FD limits as the Python system when running on this machine. Mitigations remain the same: periodic 'echo 3 > /proc/sys/vm/drop_caches', limiting concurrency to 2-3 parallel builds, and extracting to local tmpfs when possible."
       },
       {
         "risk": "Maintenance burden of two parallel systems",
@@ -221,7 +221,7 @@
     "comparison_table": {
       "headers": ["Aspect", "Python System (current)", "Rust Prototype (proposed)"],
       "rows": [
-        ["Parallelism", "Sequential (1 family at a time, max 2-3 due to virtiofs)", "Rayon threadpool (configurable, 8-16 concurrent)"],
+        ["Parallelism", "Sequential (1 family at a time, max 2-3 due to virtiofs)", "Rayon threadpool (configurable, but same virtiofs limit applies on this VM — 2-3 concurrent in practice)"],
         ["Caching", "File-based per-family in /mnt/shared/gfonts-repro-builds/", "Git cache + build artifact cache (fontc_crater pattern)"],
         ["Target discovery", "Manual: walk METADATA.pb, custom scripts", "Automatic: walk METADATA.pb, built-in parser"],
         ["Compiler", "gftools-builder (fontmake)", "gftools-builder (prototype) → fontc (future)"],
@@ -229,7 +229,7 @@
         ["Reflow analysis", "Python fonttools (per-glyph hmtx)", "read-fonts crate (per-glyph hmtx, pure Rust)"],
         ["Reporting", "JSON files + sync_dashboard.py → HTML dashboard", "JSON (dashboard-compatible) + standalone HTML report"],
         ["CI integration", "Manual runs, no CI", "Designed for CI (fontc_crater pattern: skip-if-unchanged)"],
-        ["Scalability", "~1266 families tested, virtiofs bottleneck", "1812+ targets proven by fontc_crater infrastructure"],
+        ["Scalability", "~1266 families tested, virtiofs bottleneck", "Same virtiofs bottleneck applies; value is in unified tooling, not throughput"],
         ["Error handling", "Custom Python error handling", "Rust type system + thiserror (compile-time safety)"]
       ]
     }
