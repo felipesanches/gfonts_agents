@@ -42,20 +42,19 @@ Sub-patterns:
 
 ---
 
-## Finding 2: 105+ commits referenced in METADATA.pb are unreachable in upstream repos
+## Finding 2: Commit reachability in the local repo cache — INCONCLUSIVE
 
-Of 133 families whose upstream repos exist in the local cache, **105 (79%)** have commits that are not reachable — even after running `git fetch origin`.
+**⚠️ Caveat**: This finding is unreliable due to the state of the local cache. Of 18 cached repos, **16 are shallow clones (`--depth 1`)** containing only the HEAD commit. Any METADATA.pb commit that isn't the current HEAD will appear "unreachable" simply because the clone doesn't have it — not because it was deleted upstream.
 
-### Playwrite mega-repo: 101 families, 1 unreachable commit
+Of 133 families matched to the 18 cached repos, 105 had commits not in the cache. However, this is almost entirely explained by shallow clones:
+- **Playwrite** (101 families): shallow clone has only HEAD; commit `02e4e15...` is simply not fetched
+- **Playfair Display** (2 families): shallow clone HEAD is `b869b3a`, METADATA.pb references `80a334...` — an older commit
+- **SUSE** (2 families): shallow clone HEAD is `c5de710`, METADATA.pb references `7159af...` — an older commit
+- **Bitcount** (1 family): shallow clone HEAD is `af0818e`, different from the referenced commit
 
-All 101 Playwrite families reference commit `02e4e15...` in the TypeTogether/Playwrite repository. This commit is not in the cached clone. This is the single largest bloc of unreachable commits and likely represents either a shallow clone issue or an upstream history rewrite.
+**To make this finding reliable**, full clones (not `--depth 1`) would be needed. Re-cloning would produce richer data and could uncover genuine force-push cases, but it would not prove the current report wrong — it would refine the picture. The other findings (1, 3, 4, 5, 6) are entirely independent of the cache state.
 
-### Other unreachable commits (4 families):
-- **Playfair Display** (2 families): commit `80a334...` missing from clauseggers/Playfair
-- **Bitcount** (1 family variant): commit `653fc4...` missing from petrvanblokland/TYPETR-Bitcount
-- **SUSE** (2 families): commit `7159af...` missing from SUSE/suse-font
-
-Note: The cache only contains 18 upstream repos (a fraction of the full library), so these 105 unreachable commits are a lower bound. Extrapolating the 79% unreachability rate to the full 1,181 families with commit hashes would suggest **~930 families** may have unreachable commits, though the actual number is likely lower since the cached repos skew toward large/complex repos.
+Only 2 repos have full history: Andada-Pro (145 commits) and notofonts/tifinagh (34 commits). These are too few to draw conclusions from.
 
 ---
 
@@ -144,17 +143,17 @@ The CLAUDE.md policy for this project explicitly warns: "gftools-packager commit
 
 ## Summary of evidence
 
-| Issue | Families affected | % of families with source |
-|-------|-------------------|--------------------------|
-| No commit hash at all | 216 | 15.4% |
-| Commit unreachable in repo (confirmed) | 105+ | 7.5%+ |
-| Force-pushed / squashed history (documented) | 80+ | 5.7%+ |
-| Repository completely deleted (404) | 28+ | 2.0%+ |
-| No known upstream repo | 42 | 3.0% |
-| Commit hash incorrect or misleading | 6+ (investigated) | unknown total |
-| **Total unique families with any issue** | **~286+** | **~20.4%+** |
+| Issue | Families affected | % of families with source | Confidence |
+|-------|-------------------|--------------------------|------------|
+| No commit hash at all | 216 | 15.4% | High — direct METADATA.pb parsing |
+| Commit unreachable in repo | ~~105+~~ inconclusive | — | Low — shallow clones invalidate this test |
+| Force-pushed / squashed history (documented) | 80+ | 5.7%+ | High — from prior investigation reports |
+| Repository completely deleted (404) | 28+ | 2.0%+ | High — verified 404 responses |
+| No known upstream repo | 42 | 3.0% | High — from 87-family investigation |
+| Commit hash incorrect or misleading | 6+ (investigated) | unknown total | High — verified per-family |
+| **Total unique families with confirmed issue** | **~250+** | **~17.9%+** | |
 
-Note: These categories overlap (a deleted repo also has an unreachable commit). The unique count is an estimate.
+Note: The "commit unreachable" finding was excluded from the total because the local cache uses shallow clones, making it unreliable. A full-clone verification would refine this number. Other categories overlap (a deleted repo also has a missing commit). The unique count is an estimate.
 
 ---
 
