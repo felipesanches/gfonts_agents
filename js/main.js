@@ -1786,6 +1786,20 @@ async function loadPlans() {
                             </ul>
                         </details>
                     ` : ''}
+                    ${plan.design_notes ? `
+                        <div class="plan-design-notes">
+                            ${plan.design_notes.map(note => `
+                                <details class="design-note" open>
+                                    <summary>
+                                        <strong>${escapeHtml(note.title)}</strong>
+                                        <span class="plan-date" style="margin-left:0.5em;">${escapeHtml(note.date)}</span>
+                                        ${note.model ? `<span class="plan-date" style="margin-left:0.5em;">${escapeHtml(note.model)}</span>` : ''}
+                                    </summary>
+                                    <div class="design-note-body">${note.body}</div>
+                                </details>
+                            `).join('')}
+                        </div>
+                    ` : ''}
                 </div>
             `;
         }).join('');

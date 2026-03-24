@@ -1918,6 +1918,80 @@ footer {
     font-size: 0.85rem;
 }
 
+.plan-design-notes {
+    margin-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 0.75rem;
+}
+
+.design-note {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.design-note summary {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    background: #f0f4f9;
+    border-radius: 6px 6px 0 0;
+    font-size: 0.95rem;
+}
+
+.design-note[open] summary {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.design-note-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.design-note-body h3 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.design-note-body p {
+    margin: 0.5rem 0;
+}
+
+.design-note-body ul, .design-note-body ol {
+    margin: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.design-note-body li {
+    margin-bottom: 0.3rem;
+}
+
+.design-note-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+}
+
+.design-note-body th, .design-note-body td {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.design-note-body th {
+    background: #f0f4f9;
+    font-weight: 600;
+}
+
+.design-note-body code {
+    background: #e8e8e8;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+
 /* Bio Guide Tab */
 .guide-toc {
     background: #e8f0fe;
