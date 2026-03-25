@@ -19474,42 +19474,42 @@
     "arimo": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "missing-source",
+      "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
     },
     "kosugi": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "missing-source",
+      "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
     },
     "kosugimaru": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "missing-source",
+      "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
     },
     "robotoslab": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "missing-source",
+      "reproducible_build": "compiler-version",
       "notes": "",
       "overrides": {}
     },
     "ubuntusans": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "missing-source",
+      "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
     },
     "ubuntusansmono": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "missing-source",
+      "reproducible_build": "compiler-version",
       "notes": "",
       "overrides": {}
     },
@@ -19521,6 +19521,671 @@
       "overrides": {}
     },
     "notonaskharabicui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "monoton": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "neucha": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "alef": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "averiagruesalibre": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "averialibre": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "averiasanslibre": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "dellarespira": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "varela": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansarabicui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "metadata-stanza-wrong",
+      "notes": "",
+      "overrides": {}
+    },
+    "overlock": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansbengaliui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansdevanagariui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansdisplay": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "hermeneusone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "herrvonmuellerhoff": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "imfelldoublepica": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "imfelldoublepicasc": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "italiana": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "karlatamilinclined": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "karlatamilupright": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "keaniaone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kellyslab": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kenia": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kottaone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kristi": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kronaone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "labelleaurore": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "ledger": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "lekton": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "lilitaone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "limelight": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "lobstertwo": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "lovedbytheking": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "loveyalikeasister": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "lustria": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "macondo": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "magra": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "marcellus": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "marcellussc": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "margarine": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "marvel": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mclaren": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "medulaone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "megrim": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "meiescript": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mergeone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mervalescript": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "metalmania": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "miama": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "milonga": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "miniver": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "missfajardose": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "monsieurladoulaise": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mousememoirs": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mrbedfort": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mrdafoe": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mrdehaviland": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mrssaintdelafield": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mrssheppards": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "mysteryquest": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "nanumbrushscript": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "nanumgothic": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "nanummyeongjo": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "nanumpenscript": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "newrocker": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "newscycle": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing_config",
+      "notes": "",
+      "overrides": {}
+    },
+    "niconne": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "nixieone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "nosifer": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "nosifercaps": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "nothingyoucoulddo": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novacut": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novaflat": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novamono": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novaoval": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novaround": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novascript": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novaslim": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "novasquare": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "numans": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "oldenburg": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "oleoscript": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "legacy-no-modern-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansgujaratiui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansgurmukhiui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosanskannadaui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosanskhmerui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosanslaoui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansmalayalamui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansmyanmarui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansoriyaui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosanssinhalaui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosanstamilui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansteluguui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansthaiui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notoserifdisplay": {
       "enabled": true,
       "isolation": "shared",
       "reproducible_build": "build-failure",
