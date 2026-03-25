@@ -412,5 +412,62 @@
         ["Survives GitHub outage", "Internet Archive copy does; GitHub mirror does not", "Yes — Internet Archive only"]
       ]
     }
+  },
+  {
+    "id": "repo-discovery-334",
+    "title": "Discover upstream repos for 334 remaining families",
+    "timestamp": "2026-03-25T10:00:00Z",
+    "prompt": "Thoroughly look for the URLs of repos for the 334 families that have no source block or no repository_url in METADATA.pb. After populating the repo archive with 977 bare mirrors covering 1,390 families, these 334 are the remaining gap.",
+    "status": "in_progress",
+    "summary": "Systematic 6-tier search to find upstream repository URLs for the 334 Google Fonts families that still lack source metadata. This is an extra effort beyond the initial archive population — these families are mostly from 2010-2012 when upstream tracking was not standard practice. 76% predate GitHub's widespread adoption by type designers. We're making this effort because every family without a known upstream repo is a family whose source provenance is permanently at risk.",
+    "design": {
+      "motivation": "After populating the repo archive with 977 bare mirrors (54 GB) covering 1,390 families, 334 families remain without any upstream repo URL. These are the hardest cases — mostly early onboardings where fonts were submitted as binaries without tracking where they came from. Without finding their repos, these families cannot be included in the reproducibility verification system or the archival effort. This search represents an extra effort to close the gap as far as possible.",
+      "scope": {
+        "families_needing_discovery": 334,
+        "by_year": {"2010": 27, "2011": 127, "2012": 108, "2013": 5, "2014": 3, "2015": 7, "2016": 6, "2017": 5, "2018": 17, "2019": 3, "2020": 22, "2022": 1},
+        "unique_designers": 128,
+        "top_designers": ["Astigmatic (35)", "Google (28)", "Sideshow (13)", "Impallari Type (12)", "Kimberly Geswein (12)"],
+        "with_copyright_github_url": 2,
+        "expected_resolvable": "150-200",
+        "expected_no_public_repo": "~100-130"
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "description": "Tier 1: Extract GitHub/GitLab URLs from copyright fields in METADATA.pb. 2 families have direct repo links in their copyright strings.",
+        "status": "pending"
+      },
+      {
+        "step": 2,
+        "description": "Tier 2: Scan FONTLOG.txt and DESCRIPTION.en_us.html for repo URLs. ~246 families have FONTLOG.txt files that often contain 'Source available at...' lines.",
+        "status": "pending"
+      },
+      {
+        "step": 3,
+        "description": "Tier 3: Search googlefonts/ and notofonts/ GitHub orgs for the 28 'Google'-designed families. These likely live in known org repos.",
+        "status": "pending"
+      },
+      {
+        "step": 4,
+        "description": "Tier 4: Designer-based GitHub search. For the top designers (Astigmatic=35, Sideshow=13, Impallari=12, etc.), find their GitHub username and match all their families.",
+        "status": "pending"
+      },
+      {
+        "step": 5,
+        "description": "Tier 5: Parse google/fonts git history. For each remaining family, examine commit messages and linked PR bodies for upstream repo references.",
+        "status": "pending"
+      },
+      {
+        "step": 6,
+        "description": "Tier 6: GitHub code/repo search as last resort. Search for unique metadata (family name + designer, copyright strings) to find hosting repos.",
+        "status": "pending"
+      },
+      {
+        "step": 7,
+        "description": "Compile results into repo_discovery_results.json, update dashboard, and clone any newly discovered repos into the archive.",
+        "status": "pending"
+      }
+    ]
   }
 ]
