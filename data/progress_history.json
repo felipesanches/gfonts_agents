@@ -94,6 +94,22 @@
         "needs_correction": 3
       },
       "source": "sync_dashboard"
+    },
+    {
+      "timestamp": "2026-03-25T18:06:23.622088+00:00",
+      "summary": {
+        "total": 2002,
+        "complete": 1275,
+        "missing_config": 552,
+        "missing_commit": 67,
+        "no_source": 105,
+        "no_upstream_repo": 0,
+        "investigation_reports": 1998,
+        "investigation_reports_missing": 4,
+        "needs_correction": 3,
+        "note": "Partial update — source fields from current google/fonts main, build fields preserved from last sync_dashboard.py run (d11e527)"
+      },
+      "source": "sync_dashboard"
     }
   ]
 }
