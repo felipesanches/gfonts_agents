@@ -1282,5 +1282,165 @@
     "timestamp": "2026-03-16T04:01:22.743419+00:00",
     "role": "assistant",
     "content": "Session progress on byte-identical builds: 296→311 (15 new). SOURCE_DATE_EPOCH fix added to build system (8 families from timestamp normalization). Cohort version matching tested 4 cohorts (0.9.98, 0.9.85, 0.9.79, 0.9.76) — found 7 new byte-identical families from version pinning. fonttools 4.56.0 identified as breaking change for gvar IUP optimization. virtiofs cache drop fix restored for single-family builds. Working through remaining cohorts autonomously."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-24T20:00:00Z",
+    "content": "Please can you make a sheet with a list of families we don't have any sources for, their date_added value in METADATA.pb, and their last git commit date in main branch?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-24T20:10:00Z",
+    "content": "Generated CSV of 598 families without source blocks, with date_added and last commit date. Saved to families_no_sources.csv."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-24T20:30:00Z",
+    "content": "I want to do an experiment. I want to keep the existing python-based build system unchanged, but I want to simultaneously prototype the same build system but written in rust and as a modification of fontc_crater."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-24T21:00:00Z",
+    "content": "Researched fontc_crater and Python build system architectures. Published a 10-step plan on the dashboard for a Rust reproducible build system (gfonts_repro_crater) based on fontc_crater infrastructure."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-24T21:30:00Z",
+    "content": "Please implement this plan on an experimental branch of the fontc_crater repo."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-24T22:30:00Z",
+    "content": "Implemented gfonts_repro_crater: 2,041 lines across 10 Rust source files. Discovers 1,399 families from METADATA.pb, builds via gftools-builder, compares with skrifa (pure Rust), generates HTML reports. Tests pass. Committed to experimental/gfonts-repro-crater branch."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-24T23:00:00Z",
+    "content": "Can the build system coexist with the current fontc-testing scope of the fontc_crater? What are the pros and cons of a shared codebase?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-24T23:30:00Z",
+    "content": "Published design analysis on dashboard Plans tab. Recommendation: keep separate. Only ~130 lines of shared utility code; different targets, comparisons, reports, maintainers, and evolution paths make the abstraction cost exceed duplication cost."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T00:00:00Z",
+    "content": "Write a report of all families for which the sources are available but the precise commit is unavailable."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T01:00:00Z",
+    "content": "Published 'Upstream Source Preservation Reliability' investigation. Found 250+ families (17.9%) with confirmed issues: 216 missing commit hashes, 80+ force-pushed repos, 28+ deleted repos, 42 no known upstream. Finding 2 (commit reachability) was later corrected as inconclusive due to shallow clones."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T02:00:00Z",
+    "content": "strict policy: All content in the dashboard must be reachable via permalinks (once assigned, should be preserved forever unmodified)."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T02:15:00Z",
+    "content": "Implemented permalink system for all dashboard content: investigations (#investigations/slug), devlog posts (#devlog/date-slug), plans (#plans/id), design notes (#plans/id/note-slug). Saved policy to memory."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T03:00:00Z",
+    "content": "Please start populating the local archive. Start by fetching all of the families that have full provenance established."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T07:00:00Z",
+    "content": "Cloned 829 of 832 repos as bare mirrors (--mirror) into /mnt/shared/upstream_repos/repo_archive/. 47.7 GB total. 3 failed (bghryct/RedHat* deleted). Later cloned RedHatOfficial/RedHatFont, smc/manjari, bonjour-monde/syne-typeface. Then cloned 148 no-commit repos. Total archive: 977 repos, 54 GB."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T08:00:00Z",
+    "content": "strict policy: We've been talking about a cache of repos until now. But I want to change nomenclature. Cache gives the impression that the data can be deleted when not needed anymore. Use the term 'repo archive' instead. The archive will be kept in disk forever. You can never delete repos from the archive. And all such repos MUST be bare git repos (use --mirror)."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T08:05:00Z",
+    "content": "Saved repo archive policy to memory and CLAUDE.md. Terminology: 'repo archive' not 'cache'. Bare mirrors only, never delete."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T09:00:00Z",
+    "content": "Thoroughly look for the URLs of repos for those 601 families that don't have sources. Make a plan and execute it."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T12:00:00Z",
+    "content": "After syncing google/fonts (was 1 month behind), gap dropped from 601 to 332. Executed 6-tier search: copyright/FONTLOG scanning (20), Noto org matching (27), designer GitHub search (24), git history (0 — all old PRs had empty bodies), GitHub search (11). Total resolved: 82 of 332. 250 remain unresolved."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T13:00:00Z",
+    "content": "For all of the unresolved families, can you look for their sources elsewhere? Where else could those be?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T16:00:00Z",
+    "content": "Deep search beyond GitHub: checked inside google/fonts repo (almost no sources committed), font binary name tables (2 SourceForge leads), Google Code googlefontdirectory (22 families reference it), Font Library (16), Launchpad (6), SourceForge (2). Discovered the googlefontdirectory-hg monorepo — a goldmine with sources for 234 of 250 unresolved families (192 with actual source files)."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T16:30:00Z",
+    "content": "Can we find and download a copy of googlefontdirectory?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T17:00:00Z",
+    "content": "Found multiple GitHub mirrors. Cloned googlefonts/googlefontdirectory-hg (849 MB) as bare mirror. Contains 40,347 files including 1,200 .vfb, 721 .sfd, and UFO sources."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T17:30:00Z",
+    "content": "Update METADATA.pb entries with repo_url and commit hash for this googlefonts/googlefontdirectory-hg.git repo and investigation reports and config.yaml overrides."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T19:00:00Z",
+    "content": "Submitted PR #10370: 229 families from googlefontdirectory-hg, one commit per family. All use HEAD commit (verified byte-identical per family). 3 families get config.yaml overrides (leckerlione .ufo, snippet .ufo, lilyscriptone .glyphs). Later rewrote all 208 upstream_info.md files individually via parallel agents to coherently integrate old investigation content with new GFD source references. PR merged."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T19:30:00Z",
+    "content": "Noto families among the ones missing sources surprises me, I think the sources are all in the github.com/notofonts/ org. Can you look for them there?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T20:00:00Z",
+    "content": "All 28 Noto families mapped. Key finding: 19 families' correct upstream is googlefonts/noto-fonts (old monorepo), not newer notofonts/ per-script repos. Blob-verified commit hashes for 26 families. PR #10371 submitted with 28 commits, 22 override config.yaml files, detailed build pipeline documentation for CJK (AFDKO) and emoji (nanoemoji). PR merged."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T21:00:00Z",
+    "content": "strict policy: Beads issues are extremely important and should never be left in volatile locations. You must take care to preserve them permanently on git version control."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T21:05:00Z",
+    "content": "Saved beads persistence policy. Exported issues.jsonl to git. Added strict persistence procedure to CLAUDE.md."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T21:30:00Z",
+    "content": "strict policy: We must never lose data! Refuse to delete stuff that is not version controlled."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T21:35:00Z",
+    "content": "Saved policy. Investigated build_registry.json — found it on build_system branch (not lost). Pushed branch to remote, copied registry to gfonts_agents/data/, updated sync_dashboard.py to use single source of truth."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T22:30:00Z",
+    "content": "Also, you should be logging all messages. Can you make sure the message log update should be part of the mandatory procedures of dashboard updates?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T22:35:00Z",
+    "content": "Saved policy: message log updates are mandatory on every dashboard commit. Catching up the full session log now."
   }
 ]
