@@ -19442,6 +19442,90 @@
       "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
+    },
+    "leckerlione": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "snippet": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "lilyscriptone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "adamina": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "",
+      "overrides": {}
+    },
+    "arimo": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kosugi": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "kosugimaru": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "robotoslab": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "ubuntusans": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "ubuntusansmono": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "missing-source",
+      "notes": "",
+      "overrides": {}
+    },
+    "notoserifnphmong": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notonaskharabicui": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
     }
   },
   "zalandosans": {
