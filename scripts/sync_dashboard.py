@@ -336,6 +336,16 @@ def main():
     print(f"Build Failure:                  {bs['build_failure']}")
     print(f"Library Sources Complete:        {sources['summary']['complete']}")
 
+    # Mandatory reminder: message log must be updated alongside dashboard data
+    log_path = DATA_DIR / "message_log.json"
+    if log_path.exists():
+        log_mtime = datetime.fromtimestamp(log_path.stat().st_mtime, tz=timezone.utc)
+        age_hours = (datetime.now(timezone.utc) - log_mtime).total_seconds() / 3600
+        if age_hours > 1:
+            print(f"\n⚠️  REMINDER: data/message_log.json was last updated {age_hours:.0f} hours ago.")
+            print("   Per policy, the message log MUST be updated with every dashboard commit.")
+            print("   Please update it before committing.\n")
+
     if args.commit:
         print("\n=== Committing ===")
         os.chdir(str(REPO_ROOT))
