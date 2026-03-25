@@ -289,6 +289,20 @@ def main():
     else:
         print("All data is coherent.")
 
+    # Mandatory reminders — things agents forget during long sessions
+    print("\n" + "=" * 60)
+    print("MANDATORY CHECKLIST before committing:")
+    print("=" * 60)
+    print("  [ ] data/message_log.json — log all user+assistant messages")
+    print("  [ ] data/devlog.json — chronicle significant work done this session")
+    print("  [ ] Beads issues — if any bd create/update/close was done,")
+    print("      export issues.jsonl and commit it")
+    print("  [ ] fontc crater — run scripts/fetch_crater_analysis.py")
+    print("      if dashboard data changed")
+    print("  [ ] build_registry.json — if builds were run, ensure")
+    print("      data/build_registry.json is up to date (single source of truth)")
+    print("=" * 60)
+
     if not args.apply:
         if issues:
             print(f"\nRun with --apply to fix {len(issues)} issues.")
@@ -335,10 +349,6 @@ def main():
     print(f"Different After Normalization:  {bs['compiler_version']-norm} ({(bs['compiler_version']-norm)/bs['processed']*100:.1f}%)")
     print(f"Build Failure:                  {bs['build_failure']}")
     print(f"Library Sources Complete:        {sources['summary']['complete']}")
-
-    # Mandatory reminder: message log must be updated alongside dashboard data
-    print("\n⚠️  REMINDER: data/message_log.json MUST be updated with every dashboard commit.")
-    print("   Please ensure the message log is current before committing.\n")
 
     if args.commit:
         print("\n=== Committing ===")
