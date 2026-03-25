@@ -20191,6 +20191,20 @@
       "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
+    },
+    "notoserifmyanmar": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notoserifnyiakengpuachuehmong": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
     }
   },
   "zalandosans": {
