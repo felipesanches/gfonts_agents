@@ -1,0 +1,673 @@
+{
+  "summary": {
+    "total_no_source": 332,
+    "resolved": 82,
+    "high_confidence": 68,
+    "medium_confidence": 14,
+    "unresolved": 250
+  },
+  "resolved_families": {
+    "apache/cousine": {
+      "url": "https://github.com/googlefonts/cousine",
+      "source": "tier6b:googlefonts_org",
+      "confidence": "high"
+    },
+    "apache/tinos": {
+      "url": "https://github.com/googlefonts/tinos",
+      "source": "tier6b:googlefonts_org",
+      "confidence": "high"
+    },
+    "ofl/akronim": {
+      "url": "https://github.com/pmapcat/akronim",
+      "source": "tier4:direct_search_unverified",
+      "confidence": "high"
+    },
+    "ofl/averiaseriflibre": {
+      "url": "https://github.com/RafsanHasanKhan/AveriaSerifLibre",
+      "source": "tier4:direct_search_unverified",
+      "confidence": "high"
+    },
+    "ofl/blackandwhitepicture": {
+      "url": "https://github.com/sona444/BlackAndWhitePicture",
+      "source": "tier4:direct_search_unverified",
+      "confidence": "high"
+    },
+    "ofl/grandhotel": {
+      "url": "https://github.com/ermekfaa/GrandHotel",
+      "source": "tier4:direct_search_unverified",
+      "confidence": "high"
+    },
+    "ofl/istokweb": {
+      "url": "https://github.com/m4rc1e/Istok-Web",
+      "source": "tier4:direct_search",
+      "confidence": "medium"
+    },
+    "ofl/jomolhari": {
+      "url": "https://github.com/gooselinux/jomolhari-fonts",
+      "source": "tier4:direct_search_stripped",
+      "confidence": "high"
+    },
+    "ofl/kaushanscript": {
+      "url": "https://github.com/annaweston/KaushanScript",
+      "source": "tier4:direct_search",
+      "confidence": "medium"
+    },
+    "ofl/khmer": {
+      "url": "https://github.com/danhhong/Khmer",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/kiranghaerang": {
+      "url": "https://github.com/woowabros/KirangHaerang",
+      "source": "tier4:direct_search",
+      "confidence": "medium"
+    },
+    "ofl/kumarone": {
+      "url": "https://github.com/itfoundry/kumar",
+      "source": "tier12:DESCRIPTION.en_us.html (line 30)",
+      "confidence": "high"
+    },
+    "ofl/lusitana": {
+      "url": "https://github.com/googlefonts/lusitana",
+      "source": "tier4:direct_search",
+      "confidence": "medium"
+    },
+    "ofl/macondoswashcaps": {
+      "url": "https://github.com/notivy04/Macondo-Swash-Caps-",
+      "source": "tier4:direct_search_unverified",
+      "confidence": "high"
+    },
+    "ofl/marckscript": {
+      "url": "https://github.com/acidwave/typeface-marck-script",
+      "source": "tier4:direct_search_stripped_unverified",
+      "confidence": "high"
+    },
+    "ofl/meddon": {
+      "url": "https://github.com/https://github.com/vernnobile/MeddonFont",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/medievalsharp": {
+      "url": "https://github.com/wmk69/Medieval-Sharp",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/meerainimai": {
+      "url": "https://gitlab.com/smc/meera-tamil",
+      "source": "tier12:DESCRIPTION.en_us.html (line 15)",
+      "confidence": "high"
+    },
+    "ofl/metamorphous": {
+      "url": "https://github.com/librefonts/metamorphous",
+      "source": "tier4:direct_search",
+      "confidence": "medium"
+    },
+    "ofl/miltonian": {
+      "url": "https://github.com/impallari/Miltonian",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/modak": {
+      "url": "https://github.com/girish-dalvi/Modak",
+      "source": "tier12:DESCRIPTION.en_us.html (line 23)",
+      "confidence": "high"
+    },
+    "ofl/modernantiqua": {
+      "url": "https://github.com/wmk69/Modern-Antiqua",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/mogra": {
+      "url": "https://github.com/lipiraval/mogra",
+      "source": "tier12:DESCRIPTION.en_us.html (line 8)",
+      "confidence": "high"
+    },
+    "ofl/molengo": {
+      "url": "https://github.com/googlefonts/molengo-fonts",
+      "source": "tier6b:googlefonts_org",
+      "confidence": "high"
+    },
+    "ofl/molle": {
+      "url": "https://github.com/SorkinType/Molle",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/montaga": {
+      "url": "https://github.com/librefonts/montaga",
+      "source": "tier4:direct_search",
+      "confidence": "medium"
+    },
+    "ofl/montserratsubrayada": {
+      "url": "https://github.com/JulietaUla/Montserrat",
+      "source": "tier12:DESCRIPTION.en_us.html (line 18)",
+      "confidence": "high"
+    },
+    "ofl/mukta": {
+      "url": "https://github.com/EkType/Mukta",
+      "source": "tier12:DESCRIPTION.en_us.html (line 19)",
+      "confidence": "high"
+    },
+    "ofl/muktamahee": {
+      "url": "https://github.com/EkType/Mukta",
+      "source": "tier12:DESCRIPTION.en_us.html (line 19)",
+      "confidence": "high"
+    },
+    "ofl/muktamalar": {
+      "url": "https://github.com/EkType/Mukta",
+      "source": "tier12:DESCRIPTION.en_us.html (line 19)",
+      "confidence": "high"
+    },
+    "ofl/muktavaani": {
+      "url": "https://github.com/EkType/Mukta",
+      "source": "tier12:DESCRIPTION.en_us.html (line 19)",
+      "confidence": "high"
+    },
+    "ofl/nanumgothiccoding": {
+      "url": "https://github.com/https://github.com/emersion/nanum-gothic-coding",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/neuton": {
+      "url": "https://github.com/googlefonts/neuton",
+      "source": "tier6b:googlefonts_org",
+      "confidence": "high"
+    },
+    "ofl/notocoloremojicompattest": {
+      "url": "https://github.com/googlefonts/noto-emoji",
+      "source": "tier3:noto_emoji_manual",
+      "confidence": "medium"
+    },
+    "ofl/notonaskharabicui": {
+      "url": "https://github.com/notofonts/NotoNaskhArabicUI",
+      "source": "tier3:slug_exact_notofonts",
+      "confidence": "high"
+    },
+    "ofl/notosansarabicui": {
+      "url": "https://github.com/notofonts/arabic",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansbengaliui": {
+      "url": "https://github.com/notofonts/bengali",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansdevanagariui": {
+      "url": "https://github.com/notofonts/devanagari",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansdisplay": {
+      "url": "https://github.com/notofonts/NotoSansDisplay",
+      "source": "tier3:slug_exact_notofonts",
+      "confidence": "high"
+    },
+    "ofl/notosansgujaratiui": {
+      "url": "https://github.com/notofonts/gujarati",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansgurmukhiui": {
+      "url": "https://github.com/notofonts/gurmukhi",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosanshk": {
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source": "tier3:noto_cjk_pattern",
+      "confidence": "high"
+    },
+    "ofl/notosansjp": {
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source": "tier3:noto_cjk_pattern",
+      "confidence": "high"
+    },
+    "ofl/notosanskannadaui": {
+      "url": "https://github.com/notofonts/kannada",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosanskhmerui": {
+      "url": "https://github.com/notofonts/khmer",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosanskr": {
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source": "tier3:noto_cjk_pattern",
+      "confidence": "high"
+    },
+    "ofl/notosanslaoui": {
+      "url": "https://github.com/notofonts/lao",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansmalayalamui": {
+      "url": "https://github.com/notofonts/malayalam",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansmyanmarui": {
+      "url": "https://github.com/notofonts/myanmar",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansnko_todelist": {
+      "url": "https://github.com/notofonts/nko",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansoriyaui": {
+      "url": "https://github.com/notofonts/oriya",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosanssc": {
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source": "tier3:noto_cjk_pattern",
+      "confidence": "high"
+    },
+    "ofl/notosanssinhalaui": {
+      "url": "https://github.com/notofonts/sinhala",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosanstamilui": {
+      "url": "https://github.com/notofonts/tamil",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosanstc": {
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source": "tier3:noto_cjk_pattern",
+      "confidence": "high"
+    },
+    "ofl/notosansteluguui": {
+      "url": "https://github.com/notofonts/telugu",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notosansthaiui": {
+      "url": "https://github.com/notofonts/thai",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notoserifdisplay": {
+      "url": "https://github.com/notofonts/NotoSerifDisplay",
+      "source": "tier3:slug_exact_notofonts",
+      "confidence": "high"
+    },
+    "ofl/notoserifmyanmar": {
+      "url": "https://github.com/notofonts/myanmar",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/notoserifnphmong": {
+      "url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
+      "source": "tier12:METADATA.pb (copyright field)",
+      "confidence": "high"
+    },
+    "ofl/notoserifnyiakengpuachuehmong": {
+      "url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
+      "source": "tier3:noto_script_exact",
+      "confidence": "high"
+    },
+    "ofl/oxygen": {
+      "url": "https://github.com/vernnobile/OxygenGWF",
+      "source": "tier4:partial_name_match",
+      "confidence": "high"
+    },
+    "ofl/peddana": {
+      "url": "https://github.com/appajid/peddana",
+      "source": "tier12:DESCRIPTION.en_us.html (line 9)",
+      "confidence": "high"
+    },
+    "ofl/plaster": {
+      "url": "https://github.com/SorkinType/Plaster",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/ponnala": {
+      "url": "https://github.com/appajid/ponnala",
+      "source": "tier12:DESCRIPTION.en_us.html (line 7)",
+      "confidence": "high"
+    },
+    "ofl/pragatinarrow": {
+      "url": "https://github.com/Omnibus-Type/PragatiNarrow",
+      "source": "tier12:DESCRIPTION.en_us.html (line 16)",
+      "confidence": "high"
+    },
+    "ofl/prata": {
+      "url": "https://github.com/cyrealtype/Prata",
+      "source": "tier12:OFL.txt (line 1)",
+      "confidence": "high"
+    },
+    "ofl/ptmono": {
+      "url": "https://github.com/https://github.com/SenotakaiOtoko/PTMono",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/ptsans": {
+      "url": "https://github.com/https://github.com/desero/pt-sans",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/quando": {
+      "url": "https://github.com/SorkinType/Quando",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/quattrocento": {
+      "url": "https://github.com/https://github.com/Agorman1999/Quattrocento",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/quintessential": {
+      "url": "https://github.com/https://github.com/WhiteNerine/Quintessential-font",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/ralewaydots": {
+      "url": "https://github.com/impallari/Raleway",
+      "source": "tier12:DESCRIPTION.en_us.html (line 8)",
+      "confidence": "high"
+    },
+    "ofl/ranga": {
+      "url": "https://github.com/antonxheight/Ranga",
+      "source": "tier12:DESCRIPTION.en_us.html (line 13)",
+      "confidence": "high"
+    },
+    "ofl/raviprakash": {
+      "url": "https://github.com/appajid/raviprakash",
+      "source": "tier12:DESCRIPTION.en_us.html (line 9)",
+      "confidence": "high"
+    },
+    "ofl/righteous": {
+      "url": "https://github.com/https://github.com/miserenkov/righteous-font",
+      "source": "tier6:github_search",
+      "confidence": "medium"
+    },
+    "ofl/siemreap": {
+      "url": "https://github.com/danhhong/Siemreap",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/sitara": {
+      "url": "https://github.com/Neelakash/sitara",
+      "source": "tier12:DESCRIPTION.en_us.html (line 12)",
+      "confidence": "high"
+    },
+    "ofl/sriracha": {
+      "url": "https://github.com/cadsondemak/sriracha",
+      "source": "tier12:DESCRIPTION.en_us.html (line 12)",
+      "confidence": "high"
+    },
+    "ofl/trykker": {
+      "url": "https://github.com/SorkinType/Trykker",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    },
+    "ofl/yatraone": {
+      "url": "https://github.com/cathschmidt/yatra-one",
+      "source": "tier12:DESCRIPTION.en_us.html (line 9)",
+      "confidence": "high"
+    },
+    "ofl/yinmar": {
+      "url": "https://github.com/khmertype/Yinmar",
+      "source": "tier4:repo_name_match",
+      "confidence": "high"
+    }
+  },
+  "unresolved_families": [
+    "apache/craftygirls",
+    "apache/creepstercaps",
+    "apache/homemadeapple",
+    "apache/irishgrover",
+    "apache/jsmathcmbx10",
+    "apache/jsmathcmex10",
+    "apache/jsmathcmmi10",
+    "apache/jsmathcmr10",
+    "apache/jsmathcmsy10",
+    "apache/jsmathcmti10",
+    "apache/kranky",
+    "apache/luckiestguy",
+    "apache/maidenorange",
+    "apache/montez",
+    "apache/mountainsofchristmas",
+    "apache/permanentmarker",
+    "apache/rancho",
+    "apache/redressed",
+    "apache/rochester",
+    "apache/rocksalt",
+    "apache/satisfy",
+    "apache/schoolbell",
+    "apache/slackey",
+    "apache/smokum",
+    "apache/specialelite",
+    "apache/sunshiney",
+    "apache/syncopate",
+    "apache/ultra",
+    "apache/unkempt",
+    "apache/walterturncoat",
+    "apache/yellowtail",
+    "ofl/alef",
+    "ofl/averiagruesalibre",
+    "ofl/averialibre",
+    "ofl/averiasanslibre",
+    "ofl/chenla",
+    "ofl/content",
+    "ofl/cutefont",
+    "ofl/dellarespira",
+    "ofl/dokdo",
+    "ofl/gaegu",
+    "ofl/hermeneusone",
+    "ofl/herrvonmuellerhoff",
+    "ofl/imfelldoublepica",
+    "ofl/imfelldoublepicasc",
+    "ofl/italiana",
+    "ofl/jua",
+    "ofl/karlatamilinclined",
+    "ofl/karlatamilupright",
+    "ofl/keaniaone",
+    "ofl/kellyslab",
+    "ofl/kenia",
+    "ofl/kottaone",
+    "ofl/kristi",
+    "ofl/kronaone",
+    "ofl/kumaroneoutline",
+    "ofl/labelleaurore",
+    "ofl/leckerlione",
+    "ofl/ledger",
+    "ofl/lekton",
+    "ofl/lilitaone",
+    "ofl/lilyscriptone",
+    "ofl/limelight",
+    "ofl/lobstertwo",
+    "ofl/lovedbytheking",
+    "ofl/loveyalikeasister",
+    "ofl/lustria",
+    "ofl/macondo",
+    "ofl/magra",
+    "ofl/marcellus",
+    "ofl/marcellussc",
+    "ofl/margarine",
+    "ofl/marvel",
+    "ofl/mclaren",
+    "ofl/medulaone",
+    "ofl/megrim",
+    "ofl/meiescript",
+    "ofl/mergeone",
+    "ofl/mervalescript",
+    "ofl/metalmania",
+    "ofl/miama",
+    "ofl/milonga",
+    "ofl/miltoniantattoo",
+    "ofl/miniver",
+    "ofl/missfajardose",
+    "ofl/monoton",
+    "ofl/monsieurladoulaise",
+    "ofl/mousememoirs",
+    "ofl/mplus1p",
+    "ofl/mplusrounded1c",
+    "ofl/mrbedfort",
+    "ofl/mrdafoe",
+    "ofl/mrdehaviland",
+    "ofl/mrssaintdelafield",
+    "ofl/mrssheppards",
+    "ofl/mysteryquest",
+    "ofl/nanumbrushscript",
+    "ofl/nanumgothic",
+    "ofl/nanummyeongjo",
+    "ofl/nanumpenscript",
+    "ofl/neucha",
+    "ofl/newrocker",
+    "ofl/newscycle",
+    "ofl/niconne",
+    "ofl/nixieone",
+    "ofl/nosifer",
+    "ofl/nosifercaps",
+    "ofl/nothingyoucoulddo",
+    "ofl/novacut",
+    "ofl/novaflat",
+    "ofl/novamono",
+    "ofl/novaoval",
+    "ofl/novaround",
+    "ofl/novascript",
+    "ofl/novaslim",
+    "ofl/novasquare",
+    "ofl/numans",
+    "ofl/oldenburg",
+    "ofl/oleoscript",
+    "ofl/oleoscriptswashcaps",
+    "ofl/oranienbaum",
+    "ofl/oregano",
+    "ofl/originalsurfer",
+    "ofl/overlock",
+    "ofl/overlocksc",
+    "ofl/overtherainbow",
+    "ofl/ovo",
+    "ofl/parisienne",
+    "ofl/passeroone",
+    "ofl/passionone",
+    "ofl/patrickhand",
+    "ofl/patrickhandsc",
+    "ofl/patuaone",
+    "ofl/peralta",
+    "ofl/petitformalscript",
+    "ofl/phetsarath",
+    "ofl/piedra",
+    "ofl/pirataone",
+    "ofl/play",
+    "ofl/poetsenone",
+    "ofl/pollerone",
+    "ofl/poly",
+    "ofl/pompiere",
+    "ofl/poorstory",
+    "ofl/portersansblock",
+    "ofl/portlligatsans",
+    "ofl/portlligatslab",
+    "ofl/pressstart2p",
+    "ofl/princesssofia",
+    "ofl/prostoone",
+    "ofl/ptsanscaption",
+    "ofl/ptsansnarrow",
+    "ofl/ptserif",
+    "ofl/ptserifcaption",
+    "ofl/puritan",
+    "ofl/purplepurse",
+    "ofl/quantico",
+    "ofl/quattrocentosans",
+    "ofl/racingsansone",
+    "ofl/rambla",
+    "ofl/ranchers",
+    "ofl/reeniebeanie",
+    "ofl/revalia",
+    "ofl/ribeye",
+    "ofl/ribeyemarrow",
+    "ofl/risque",
+    "ofl/romanesco",
+    "ofl/rosarivo",
+    "ofl/rougescript",
+    "ofl/rubikone",
+    "ofl/rufina",
+    "ofl/ruluko",
+    "ofl/rumraisin",
+    "ofl/ruslandisplay",
+    "ofl/russoone",
+    "ofl/rye",
+    "ofl/sail",
+    "ofl/salsa",
+    "ofl/sanchez",
+    "ofl/sansation",
+    "ofl/sansitaone",
+    "ofl/sarina",
+    "ofl/sawarabigothic",
+    "ofl/seaweedscript",
+    "ofl/sevillana",
+    "ofl/shadowsintolight",
+    "ofl/shadowsintolighttwo",
+    "ofl/share",
+    "ofl/sharetechmono",
+    "ofl/shojumaru",
+    "ofl/shortstack",
+    "ofl/simonetta",
+    "ofl/singleday",
+    "ofl/sixcaps",
+    "ofl/skranji",
+    "ofl/smythe",
+    "ofl/snippet",
+    "ofl/snowburstone",
+    "ofl/sofadione",
+    "ofl/sofia",
+    "ofl/songmyung",
+    "ofl/sonsieone",
+    "ofl/spicyrice",
+    "ofl/spinnaker",
+    "ofl/spirax",
+    "ofl/squadaone",
+    "ofl/stalemate",
+    "ofl/stalinistone",
+    "ofl/stardosstencil",
+    "ofl/stintultracondensed",
+    "ofl/stintultraexpanded",
+    "ofl/stoke",
+    "ofl/strong",
+    "ofl/stylish",
+    "ofl/sueellenfrancisco",
+    "ofl/sunflower",
+    "ofl/supermercadoone",
+    "ofl/swankyandmoomoo",
+    "ofl/tauri",
+    "ofl/telex",
+    "ofl/tenorsans",
+    "ofl/textmeone",
+    "ofl/thabit",
+    "ofl/thegirlnextdoor",
+    "ofl/titanone",
+    "ofl/titilliumweb",
+    "ofl/tradewinds",
+    "ofl/trochut",
+    "ofl/tuffy",
+    "ofl/tulpenone",
+    "ofl/uchen",
+    "ofl/uncialantiqua",
+    "ofl/underdog",
+    "ofl/unifrakturcook",
+    "ofl/unifrakturmaguntia",
+    "ofl/varela",
+    "ofl/vastshadow",
+    "ofl/vibur",
+    "ofl/viga",
+    "ofl/volkhov",
+    "ofl/waitingforthesunrise",
+    "ofl/wallpoet",
+    "ofl/wellfleet",
+    "ofl/wendyone",
+    "ofl/yeonsung",
+    "ofl/yesteryear",
+    "ofl/zeyada",
+    "ufl/ubuntu",
+    "ufl/ubuntucondensed",
+    "ufl/ubuntumono"
+  ]
+}

@@ -45,27 +45,106 @@
     ],
     "taxonomy": {
       "build_categories": [
-        {"priority": 1, "key": "gftools_builder", "label": "gftools-builder (config.yaml)", "detection": "Has config.yaml with sources: key"},
-        {"priority": 2, "key": "gftools_builder_makefile", "label": "gftools-builder via Makefile", "detection": "Makefile contains 'gftools builder'"},
-        {"priority": 3, "key": "fontmake_direct", "label": "fontmake (direct)", "detection": "Makefile/build.sh/build.py calls fontmake (not gftools)"},
-        {"priority": 4, "key": "custom_build_py", "label": "Custom Python script", "detection": "Has build.py (other tools)"},
-        {"priority": 5, "key": "custom_build_sh", "label": "Custom Shell script", "detection": "Has build.sh (other tools)"},
-        {"priority": 6, "key": "makefile_other", "label": "Makefile (other)", "detection": "Makefile with unrecognized tools"},
-        {"priority": 7, "key": "travis_ci_only", "label": "Travis CI only", "detection": "Only .travis.yml, no local build files"},
-        {"priority": 8, "key": "github_actions_only", "label": "GitHub Actions only", "detection": "Only .github/workflows/*.yml"},
-        {"priority": 9, "key": "source_no_build", "label": "Source only (no build)", "detection": "Has source files but no build system"},
-        {"priority": 10, "key": "prebuilt_only", "label": "Pre-built only", "detection": "Has .ttf/.otf but no sources or build system"},
-        {"priority": 11, "key": "unknown", "label": "Unknown", "detection": "None of the above"}
+        {
+          "priority": 1,
+          "key": "gftools_builder",
+          "label": "gftools-builder (config.yaml)",
+          "detection": "Has config.yaml with sources: key"
+        },
+        {
+          "priority": 2,
+          "key": "gftools_builder_makefile",
+          "label": "gftools-builder via Makefile",
+          "detection": "Makefile contains 'gftools builder'"
+        },
+        {
+          "priority": 3,
+          "key": "fontmake_direct",
+          "label": "fontmake (direct)",
+          "detection": "Makefile/build.sh/build.py calls fontmake (not gftools)"
+        },
+        {
+          "priority": 4,
+          "key": "custom_build_py",
+          "label": "Custom Python script",
+          "detection": "Has build.py (other tools)"
+        },
+        {
+          "priority": 5,
+          "key": "custom_build_sh",
+          "label": "Custom Shell script",
+          "detection": "Has build.sh (other tools)"
+        },
+        {
+          "priority": 6,
+          "key": "makefile_other",
+          "label": "Makefile (other)",
+          "detection": "Makefile with unrecognized tools"
+        },
+        {
+          "priority": 7,
+          "key": "travis_ci_only",
+          "label": "Travis CI only",
+          "detection": "Only .travis.yml, no local build files"
+        },
+        {
+          "priority": 8,
+          "key": "github_actions_only",
+          "label": "GitHub Actions only",
+          "detection": "Only .github/workflows/*.yml"
+        },
+        {
+          "priority": 9,
+          "key": "source_no_build",
+          "label": "Source only (no build)",
+          "detection": "Has source files but no build system"
+        },
+        {
+          "priority": 10,
+          "key": "prebuilt_only",
+          "label": "Pre-built only",
+          "detection": "Has .ttf/.otf but no sources or build system"
+        },
+        {
+          "priority": 11,
+          "key": "unknown",
+          "label": "Unknown",
+          "detection": "None of the above"
+        }
       ],
-      "source_formats": ["glyphs", "glyphspackage", "ufo", "designspace", "sfd"]
+      "source_formats": [
+        "glyphs",
+        "glyphspackage",
+        "ufo",
+        "designspace",
+        "sfd"
+      ]
     },
     "files_modified": [
-      {"file": "scripts/classify_build_approaches.py", "action": "created"},
-      {"file": "data/build_approaches.json", "action": "created"},
-      {"file": "index.html", "action": "edited"},
-      {"file": "js/main.js", "action": "edited"},
-      {"file": "css/style.css", "action": "edited"},
-      {"file": "data/plans.json", "action": "created"}
+      {
+        "file": "scripts/classify_build_approaches.py",
+        "action": "created"
+      },
+      {
+        "file": "data/build_approaches.json",
+        "action": "created"
+      },
+      {
+        "file": "index.html",
+        "action": "edited"
+      },
+      {
+        "file": "js/main.js",
+        "action": "edited"
+      },
+      {
+        "file": "css/style.css",
+        "action": "edited"
+      },
+      {
+        "file": "data/plans.json",
+        "action": "created"
+      }
     ]
   },
   {
@@ -74,9 +153,9 @@
     "timestamp": "2026-03-24T12:00:00Z",
     "prompt": "Prototype the same reproducible build system currently implemented in Python, but written in Rust as a modification of fontc_crater. Keep the existing Python system unchanged. Later decide whether to follow the plan.",
     "status": "proposed",
-    "summary": "Adapt fontc_crater — the Rust-based font compiler comparison tool in the googlefonts/fontc monorepo — into a reproducible build verification system for Google Fonts. Instead of comparing fontc vs fontmake output, the modified tool would compare rebuilt fonts against the binaries currently shipped in google/fonts, replicating what the Python build system does but in Rust with fontc_crater's existing parallelism, caching, and reporting infrastructure.",
+    "summary": "Adapt fontc_crater \u2014 the Rust-based font compiler comparison tool in the googlefonts/fontc monorepo \u2014 into a reproducible build verification system for Google Fonts. Instead of comparing fontc vs fontmake output, the modified tool would compare rebuilt fonts against the binaries currently shipped in google/fonts, replicating what the Python build system does but in Rust with fontc_crater's existing parallelism, caching, and reporting infrastructure.",
     "design": {
-      "motivation": "The current Python reproducible build system (gftools-builder + custom comparison scripts) works but is hard to run in CI and lacks a unified tool for orchestration, caching, and reporting. fontc_crater already has well-tested infrastructure for these: git cache management, result caching, HTML report generation, and CI integration (skip-if-unchanged). Repurposing it avoids reinventing that infrastructure. Both systems would face the same virtiofs FD accumulation bottleneck on the current VM — the Rust rewrite does not solve that.",
+      "motivation": "The current Python reproducible build system (gftools-builder + custom comparison scripts) works but is hard to run in CI and lacks a unified tool for orchestration, caching, and reporting. fontc_crater already has well-tested infrastructure for these: git cache management, result caching, HTML report generation, and CI integration (skip-if-unchanged). Repurposing it avoids reinventing that infrastructure. Both systems would face the same virtiofs FD accumulation bottleneck on the current VM \u2014 the Rust rewrite does not solve that.",
       "current_fontc_crater_overview": "fontc_crater takes a JSON list of upstream repos + commit hashes, clones them, compiles each source with both fontc and fontmake, then diffs the outputs via ttx_diff (a Python module). It produces per-target similarity ratios, failure reports, and an HTML dashboard. Key components: Target (repo+commit+config+source), CI pipeline (ci.rs), TTX diff runner (ttx_diff_runner.rs), source discovery (sources.rs), HTML reporting (ci/html.rs), result caching (ci/results_cache.rs).",
       "current_python_build_system_overview": "The Python system reads METADATA.pb for each family in google/fonts to find upstream repo URL, commit hash, and config.yaml path. It downloads the source at that commit, runs gftools-builder to compile fonts, then compares the built .ttf/.otf files against the binaries in google/fonts using SHA256 hashes and TTX table-by-table diffing. Results are categorized (byte-identical, compiler-version, name-table, timestamp-diff, build-failure, etc.) and reflow risk is assessed by checking advance width differences. Results feed into the gfonts_agents dashboard.",
       "key_differences_to_bridge": [
@@ -110,19 +189,19 @@
         "step": 4,
         "description": "Replace the TTX diff runner (ttx_diff_runner.rs) with a reproducibility comparison module. The new module: (a) runs gftools-builder (or fontc) on the checked-out source to produce built fonts, (b) locates reference binaries in google/fonts using the files { source_file, dest_file } mapping, (c) compares built vs reference via SHA256 first, (d) if hashes differ, runs ttx-based table comparison, (e) categorizes the result.",
         "status": "pending",
-        "details": "For the prototype, the build step can shell out to gftools-builder (Python) — the same as the current system. The Rust advantage comes from orchestration, parallelism, and caching, not from reimplementing the compiler. Later, fontc could replace fontmake as the compiler. The comparison logic should produce a ReproResult enum: ByteIdentical, CompilerVersionDiff(tables), NameTableOnly, TimestampOnly, BuildFailure(error), ReflowRisk(details)."
+        "details": "For the prototype, the build step can shell out to gftools-builder (Python) \u2014 the same as the current system. The Rust advantage comes from orchestration, parallelism, and caching, not from reimplementing the compiler. Later, fontc could replace fontmake as the compiler. The comparison logic should produce a ReproResult enum: ByteIdentical, CompilerVersionDiff(tables), NameTableOnly, TimestampOnly, BuildFailure(error), ReflowRisk(details)."
       },
       {
         "step": 5,
         "description": "Add reflow risk analysis. After table-level diffing, check hmtx (advance widths) and hhea/OS2 (line metrics) tables specifically. Compare per-glyph widths between reference and built fonts for shared glyphs. Categorize: none (all identical), line-spacing-only, minimal (tiny diffs), high (shared glyphs with different widths).",
         "status": "pending",
-        "details": "This requires reading binary font tables. Options: (a) use read-fonts crate (already in the fontc workspace) to parse hmtx/hhea/OS2 tables directly in Rust — this is the cleanest approach and avoids Python, (b) shell out to Python fonttools. Option (a) is strongly preferred since read-fonts is already a dependency of the fontc workspace."
+        "details": "This requires reading binary font tables. Options: (a) use read-fonts crate (already in the fontc workspace) to parse hmtx/hhea/OS2 tables directly in Rust \u2014 this is the cleanest approach and avoids Python, (b) shell out to Python fonttools. Option (a) is strongly preferred since read-fonts is already a dependency of the fontc workspace."
       },
       {
         "step": 6,
-        "description": "Adapt the CI pipeline (ci.rs). The current flow: parse input JSON → check if rerun needed → precompile binaries → make targets → run diffs → save results → generate HTML. New flow: scan METADATA.pb files → check if rerun needed → ensure google/fonts clone is up-to-date → ensure upstream repos are cached → run builds+comparisons in parallel → save results → generate HTML + JSON for dashboard.",
+        "description": "Adapt the CI pipeline (ci.rs). The current flow: parse input JSON \u2192 check if rerun needed \u2192 precompile binaries \u2192 make targets \u2192 run diffs \u2192 save results \u2192 generate HTML. New flow: scan METADATA.pb files \u2192 check if rerun needed \u2192 ensure google/fonts clone is up-to-date \u2192 ensure upstream repos are cached \u2192 run builds+comparisons in parallel \u2192 save results \u2192 generate HTML + JSON for dashboard.",
         "status": "pending",
-        "details": "Keep fontc_crater's RunSummary model (began/finished timestamps, revision tracking, result file references). Add new fields: google_fonts_rev (commit of google/fonts used), total_families, families_with_source, families_without_source. The parallel execution via Rayon can be kept as-is — it already handles per-repo locking and error isolation."
+        "details": "Keep fontc_crater's RunSummary model (began/finished timestamps, revision tracking, result file references). Add new fields: google_fonts_rev (commit of google/fonts used), total_families, families_with_source, families_without_source. The parallel execution via Rayon can be kept as-is \u2014 it already handles per-repo locking and error isolation."
       },
       {
         "step": 7,
@@ -134,7 +213,7 @@
         "step": 8,
         "description": "Adapt HTML report generation (ci/html.rs). Replace the fontc-vs-fontmake comparison view with a reproducibility dashboard view: summary cards (byte-identical count, compiler-version count, failures, reflow risk), filterable table of all families, per-family detail pages showing table diffs and comparison details.",
         "status": "pending",
-        "details": "fontc_crater uses the maud crate for HTML templating. The existing report structure (summary stats → table of results → detail modals) maps naturally to the reproducibility use case. Add color-coding: green for byte-identical, yellow for compiler-version, orange for reflow risk, red for build failure."
+        "details": "fontc_crater uses the maud crate for HTML templating. The existing report structure (summary stats \u2192 table of results \u2192 detail modals) maps naturally to the reproducibility use case. Add color-coding: green for byte-identical, yellow for compiler-version, orange for reflow risk, red for build failure."
       },
       {
         "step": 9,
@@ -152,21 +231,51 @@
     "architecture": {
       "crate_name": "gfonts_repro_crater",
       "key_modules": [
-        {"name": "main.rs", "role": "Entry point, CLI parsing (ci + check subcommands)"},
-        {"name": "target.rs", "role": "FamilyTarget struct (family_slug, repo_url, commit, config, reference_binaries)"},
-        {"name": "metadata.rs", "role": "METADATA.pb text-format parser (extract source block fields)"},
-        {"name": "discovery.rs", "role": "Walk google/fonts dirs, parse METADATA.pb, build Vec<FamilyTarget>"},
-        {"name": "builder.rs", "role": "Run gftools-builder (or fontc) on checked-out source, collect built fonts"},
-        {"name": "compare.rs", "role": "SHA256 hash comparison, TTX table diffing, result categorization"},
-        {"name": "reflow.rs", "role": "Reflow risk analysis using read-fonts (hmtx, hhea, OS/2 parsing)"},
-        {"name": "ci.rs", "role": "Batch pipeline: discover → build → compare → report (adapted from fontc_crater)"},
-        {"name": "report.rs", "role": "HTML report generation via maud (adapted from fontc_crater ci/html.rs)"},
-        {"name": "cache.rs", "role": "Git repo cache management, build artifact caching (from fontc_crater)"}
+        {
+          "name": "main.rs",
+          "role": "Entry point, CLI parsing (ci + check subcommands)"
+        },
+        {
+          "name": "target.rs",
+          "role": "FamilyTarget struct (family_slug, repo_url, commit, config, reference_binaries)"
+        },
+        {
+          "name": "metadata.rs",
+          "role": "METADATA.pb text-format parser (extract source block fields)"
+        },
+        {
+          "name": "discovery.rs",
+          "role": "Walk google/fonts dirs, parse METADATA.pb, build Vec<FamilyTarget>"
+        },
+        {
+          "name": "builder.rs",
+          "role": "Run gftools-builder (or fontc) on checked-out source, collect built fonts"
+        },
+        {
+          "name": "compare.rs",
+          "role": "SHA256 hash comparison, TTX table diffing, result categorization"
+        },
+        {
+          "name": "reflow.rs",
+          "role": "Reflow risk analysis using read-fonts (hmtx, hhea, OS/2 parsing)"
+        },
+        {
+          "name": "ci.rs",
+          "role": "Batch pipeline: discover \u2192 build \u2192 compare \u2192 report (adapted from fontc_crater)"
+        },
+        {
+          "name": "report.rs",
+          "role": "HTML report generation via maud (adapted from fontc_crater ci/html.rs)"
+        },
+        {
+          "name": "cache.rs",
+          "role": "Git repo cache management, build artifact caching (from fontc_crater)"
+        }
       ],
       "reused_from_fontc_crater": [
         "Rayon-based parallel execution (run_all pattern from main.rs)",
         "Git cache management (clone/fetch/checkout at specific commit)",
-        "Result caching (ci/results_cache.rs — cache fontmake artifacts by commit+config hash)",
+        "Result caching (ci/results_cache.rs \u2014 cache fontmake artifacts by commit+config hash)",
         "HTML report generation scaffolding (maud templates, summary stats, collapsible details)",
         "RunSummary tracking (timestamps, input hashes, change detection for skip-if-unchanged)",
         "CLI argument parsing pattern (clap derive)"
@@ -181,9 +290,23 @@
         "Single-family check subcommand"
       ],
       "key_dependencies": {
-        "from_fontc_workspace": ["read-fonts (font binary parsing)", "write-fonts (if needed)"],
-        "from_fontc_crater": ["rayon", "chrono", "serde/serde_json", "clap", "tempfile", "maud", "env_logger/log"],
-        "new": ["sha2 (SHA256 hashing)", "walkdir (directory traversal)"]
+        "from_fontc_workspace": [
+          "read-fonts (font binary parsing)",
+          "write-fonts (if needed)"
+        ],
+        "from_fontc_crater": [
+          "rayon",
+          "chrono",
+          "serde/serde_json",
+          "clap",
+          "tempfile",
+          "maud",
+          "env_logger/log"
+        ],
+        "new": [
+          "sha2 (SHA256 hashing)",
+          "walkdir (directory traversal)"
+        ]
       }
     },
     "risks_and_open_questions": [
@@ -219,18 +342,62 @@
       }
     ],
     "comparison_table": {
-      "headers": ["Aspect", "Python System (current)", "Rust Prototype (proposed)"],
+      "headers": [
+        "Aspect",
+        "Python System (current)",
+        "Rust Prototype (proposed)"
+      ],
       "rows": [
-        ["Parallelism", "Sequential (1 family at a time, max 2-3 due to virtiofs)", "Rayon threadpool (configurable, but same virtiofs limit applies on this VM — 2-3 concurrent in practice)"],
-        ["Caching", "File-based per-family in /mnt/shared/gfonts-repro-builds/", "Git cache + build artifact cache (fontc_crater pattern)"],
-        ["Target discovery", "Manual: walk METADATA.pb, custom scripts", "Automatic: walk METADATA.pb, built-in parser"],
-        ["Compiler", "gftools-builder (fontmake)", "gftools-builder (prototype) → fontc (future)"],
-        ["Comparison", "SHA256 + Python fonttools TTX diff", "SHA256 + read-fonts table parsing (pure Rust)"],
-        ["Reflow analysis", "Python fonttools (per-glyph hmtx)", "read-fonts crate (per-glyph hmtx, pure Rust)"],
-        ["Reporting", "JSON files + sync_dashboard.py → HTML dashboard", "JSON (dashboard-compatible) + standalone HTML report"],
-        ["CI integration", "Manual runs, no CI", "Designed for CI (fontc_crater pattern: skip-if-unchanged)"],
-        ["Scalability", "~1266 families tested, virtiofs bottleneck", "Same virtiofs bottleneck applies; value is in unified tooling, not throughput"],
-        ["Error handling", "Custom Python error handling", "Rust type system + thiserror (compile-time safety)"]
+        [
+          "Parallelism",
+          "Sequential (1 family at a time, max 2-3 due to virtiofs)",
+          "Rayon threadpool (configurable, but same virtiofs limit applies on this VM \u2014 2-3 concurrent in practice)"
+        ],
+        [
+          "Caching",
+          "File-based per-family in /mnt/shared/gfonts-repro-builds/",
+          "Git cache + build artifact cache (fontc_crater pattern)"
+        ],
+        [
+          "Target discovery",
+          "Manual: walk METADATA.pb, custom scripts",
+          "Automatic: walk METADATA.pb, built-in parser"
+        ],
+        [
+          "Compiler",
+          "gftools-builder (fontmake)",
+          "gftools-builder (prototype) \u2192 fontc (future)"
+        ],
+        [
+          "Comparison",
+          "SHA256 + Python fonttools TTX diff",
+          "SHA256 + read-fonts table parsing (pure Rust)"
+        ],
+        [
+          "Reflow analysis",
+          "Python fonttools (per-glyph hmtx)",
+          "read-fonts crate (per-glyph hmtx, pure Rust)"
+        ],
+        [
+          "Reporting",
+          "JSON files + sync_dashboard.py \u2192 HTML dashboard",
+          "JSON (dashboard-compatible) + standalone HTML report"
+        ],
+        [
+          "CI integration",
+          "Manual runs, no CI",
+          "Designed for CI (fontc_crater pattern: skip-if-unchanged)"
+        ],
+        [
+          "Scalability",
+          "~1266 families tested, virtiofs bottleneck",
+          "Same virtiofs bottleneck applies; value is in unified tooling, not throughput"
+        ],
+        [
+          "Error handling",
+          "Custom Python error handling",
+          "Rust type system + thiserror (compile-time safety)"
+        ]
       ]
     },
     "design_notes": [
@@ -238,7 +405,7 @@
         "date": "2026-03-24",
         "title": "Can the reproducible build system coexist with fontc_crater's compiler-testing scope?",
         "model": "Claude Opus 4.6",
-        "body": "After implementing the prototype as a separate crate (gfonts_repro_crater) within the fontc monorepo, the question arises: should this share a codebase with fontc_crater, or remain a separate fork? This analysis examines the actual code overlap, the architectural forces pulling toward and away from unification, and recommends a path forward.\n\n<h3>What the two tools actually share</h3>\n<p>Looking at the implemented code, the shared infrastructure is real but thin:</p>\n<ul>\n<li><b>run_all() parallel executor</b> — Both use the same Rayon pattern: Vec of targets → parallel map → collect results. This is ~30 lines of generic code. Straightforward to extract into a shared crate, but also trivial to copy.</li>\n<li><b>Results&lt;T, E&gt; struct</b> — Both use BTreeMap-based success/failure maps with FromIterator. ~40 lines.</li>\n<li><b>RunSummary tracking</b> — Both save began/finished timestamps, a revision identifier, and a results_file path. The fields diverge (fontc_rev + pip_freeze_sha vs google_fonts_rev), but the pattern is the same.</li>\n<li><b>HTML report generation</b> — Both use maud + tidier. But fontc_crater's html.rs is 1,077 lines of highly specific compiler-comparison UI (delta bars, annotation modals, per-table diff rendering), while gfonts_repro_crater needs a reproducibility-focused UI (category cards, reflow risk, family-level status tables). Almost nothing transfers.</li>\n<li><b>Utility functions</b> — try_read_json, try_write_json, try_create_dir, human_readable_duration. ~60 lines of boilerplate.</li>\n<li><b>Git cache management</b> — fontc_crater delegates this entirely to google-fonts-sources crate (clone/fetch/checkout). gfonts_repro_crater uses its own simpler git commands since it reads from a pre-existing cache. Not actually shared code.</li>\n</ul>\n<p>Total genuinely shared code: roughly 130 lines of utilities and patterns. Everything else diverges.</p>\n\n<h3>Where the two tools fundamentally diverge</h3>\n<table class='guide-table'><thead><tr><th>Aspect</th><th>fontc_crater</th><th>gfonts_repro_crater</th></tr></thead><tbody>\n<tr><td>Purpose</td><td>Measure fontc parity with fontmake</td><td>Verify google/fonts can rebuild from source</td></tr>\n<tr><td>Target unit</td><td>Source file (one .glyphs/.ufo per target, multiple per repo)</td><td>Font family (one family = one METADATA.pb, multiple font files)</td></tr>\n<tr><td>Target discovery</td><td>Hand-curated JSON list + google-fonts-sources crate</td><td>Walk google/fonts METADATA.pb files</td></tr>\n<tr><td>What gets compared</td><td>fontc output vs fontmake output (two builds of the same source)</td><td>Rebuilt font vs shipped binary in google/fonts (one build vs one reference)</td></tr>\n<tr><td>Comparison method</td><td>TTX XML diff via Python ttx_diff module (per-table similarity ratios)</td><td>SHA256 hash + skrifa binary table comparison (per-table identical/different)</td></tr>\n<tr><td>Result categories</td><td>identical / diffs (with ratio) / fontc_failed / fontmake_failed / both_failed</td><td>byte-identical / compiler-version / name-table / timestamp-diff / build-failure / reflow-risk</td></tr>\n<tr><td>Python dependency</td><td>Heavy: ttx_diff, fontmake, fonttools, gftools all required at runtime</td><td>Only gftools-builder for compilation; comparison is pure Rust</td></tr>\n<tr><td>CI model</td><td>Skip-if-unchanged (fontc rev + pip freeze + input file SHA)</td><td>Skip-if-unchanged (google/fonts rev)</td></tr>\n<tr><td>Upstream maintainer</td><td>googlefonts/fontc team (Colin Rofls et al.)</td><td>Felipe / local experimental</td></tr>\n</tbody></table>\n\n<h3>Arguments FOR a shared codebase</h3>\n<ol>\n<li><b>DRY principle:</b> The ~130 lines of shared utilities would not be duplicated. In practice this is a weak argument — the duplication is trivial and the utilities are stable.</li>\n<li><b>Single binary:</b> A unified tool could do both jobs with subcommands (crater ci, crater repro). Users wouldn't need to install two binaries. However, the user base is nearly disjoint: the fontc team runs fontc_crater in CI; we run gfonts_repro_crater locally.</li>\n<li><b>Shared improvements:</b> If someone improves the parallel executor or caching in one tool, the other benefits automatically. True but speculative — these components are stable and unlikely to change often.</li>\n<li><b>Common Target type:</b> In theory, both tools operate on \"font source + config → built font\". A sufficiently abstract Target type could serve both. But abstraction here adds complexity without reducing the amount of code needed.</li>\n</ol>\n\n<h3>Arguments AGAINST a shared codebase</h3>\n<ol>\n<li><b>Different owners:</b> fontc_crater is maintained by the fontc team at Google. gfonts_repro_crater is an experimental tool by Felipe. Merging them means every change to one tool requires consideration of the other, which slows both teams down. This is the strongest argument against sharing.</li>\n<li><b>Divergent evolution:</b> fontc_crater is evolving toward fontc feature completeness. gfonts_repro_crater may evolve toward cohort version matching, custom venv management, monorepo support, and other features specific to the reproducibility problem. Sharing a codebase creates coupling between unrelated feature trajectories.</li>\n<li><b>Abstraction tax:</b> Making Target, Results, comparison logic, and reporting generic enough to serve both use cases would require trait-based abstraction. The resulting code would be harder to read and modify than two simple, concrete implementations. For ~130 lines of shared code, the abstraction cost exceeds the duplication cost.</li>\n<li><b>Different Python dependencies:</b> fontc_crater requires ttx_diff (and its full Python dependency tree including fontmake). gfonts_repro_crater only needs gftools-builder for the build step, and does comparison in pure Rust. Sharing a codebase would make it unclear which Python deps are needed for which mode.</li>\n<li><b>PR friction:</b> fontc_crater lives in the googlefonts/fontc repo. Adding a Google Fonts reproducibility tool to that repo changes its scope. PRs would need review from the fontc team for a tool they don't use. This is a social/organizational cost, not a technical one, but it's real.</li>\n<li><b>HTML reports are completely different:</b> The 1,077-line html.rs in fontc_crater renders compiler-comparison dashboards with delta bars, annotation modals, and per-table diff ratios. gfonts_repro_crater renders reproducibility category cards, reflow risk analysis, and family-level status tables. Zero reuse.</li>\n</ol>\n\n<h3>A middle path: shared library crate</h3>\n<p>One option is to extract the shared utilities (run_all, Results, try_read_json, etc.) into a small library crate (e.g., <code>crater_common</code>) that both tools depend on. This avoids duplicating the ~130 lines while keeping the tools otherwise independent.</p>\n<p><b>Verdict: not worth it.</b> 130 lines of stable, trivial utility code doesn't justify a shared crate with its own versioning, API stability guarantees, and coordination overhead. The standard Rust ecosystem approach for this amount of code is to just copy it.</p>\n\n<h3>Recommendation</h3>\n<p><b>Keep them separate.</b> The prototype is correctly implemented as a standalone crate. The shared code is minimal and the divergence is fundamental — different targets, different comparisons, different reports, different maintainers, different evolution paths.</p>\n<p>The current setup (gfonts_repro_crater as a separate crate in the fontc workspace) is a reasonable starting point for prototyping, but if this tool matures, it should move to its own repository (or into gfonts_agents) rather than remaining in the fontc monorepo. The fontc team shouldn't need to carry a tool they don't use.</p>\n<p><b>Concrete next steps if proceeding:</b></p>\n<ol>\n<li>Keep prototyping in the fontc workspace for convenience (access to skrifa, read-fonts)</li>\n<li>When the tool is proven, move it to a standalone repo with skrifa/read-fonts as normal crate dependencies</li>\n<li>Do not attempt to merge with fontc_crater — the abstraction cost exceeds the duplication cost</li>\n</ol>"
+        "body": "After implementing the prototype as a separate crate (gfonts_repro_crater) within the fontc monorepo, the question arises: should this share a codebase with fontc_crater, or remain a separate fork? This analysis examines the actual code overlap, the architectural forces pulling toward and away from unification, and recommends a path forward.\n\n<h3>What the two tools actually share</h3>\n<p>Looking at the implemented code, the shared infrastructure is real but thin:</p>\n<ul>\n<li><b>run_all() parallel executor</b> \u2014 Both use the same Rayon pattern: Vec of targets \u2192 parallel map \u2192 collect results. This is ~30 lines of generic code. Straightforward to extract into a shared crate, but also trivial to copy.</li>\n<li><b>Results&lt;T, E&gt; struct</b> \u2014 Both use BTreeMap-based success/failure maps with FromIterator. ~40 lines.</li>\n<li><b>RunSummary tracking</b> \u2014 Both save began/finished timestamps, a revision identifier, and a results_file path. The fields diverge (fontc_rev + pip_freeze_sha vs google_fonts_rev), but the pattern is the same.</li>\n<li><b>HTML report generation</b> \u2014 Both use maud + tidier. But fontc_crater's html.rs is 1,077 lines of highly specific compiler-comparison UI (delta bars, annotation modals, per-table diff rendering), while gfonts_repro_crater needs a reproducibility-focused UI (category cards, reflow risk, family-level status tables). Almost nothing transfers.</li>\n<li><b>Utility functions</b> \u2014 try_read_json, try_write_json, try_create_dir, human_readable_duration. ~60 lines of boilerplate.</li>\n<li><b>Git cache management</b> \u2014 fontc_crater delegates this entirely to google-fonts-sources crate (clone/fetch/checkout). gfonts_repro_crater uses its own simpler git commands since it reads from a pre-existing cache. Not actually shared code.</li>\n</ul>\n<p>Total genuinely shared code: roughly 130 lines of utilities and patterns. Everything else diverges.</p>\n\n<h3>Where the two tools fundamentally diverge</h3>\n<table class='guide-table'><thead><tr><th>Aspect</th><th>fontc_crater</th><th>gfonts_repro_crater</th></tr></thead><tbody>\n<tr><td>Purpose</td><td>Measure fontc parity with fontmake</td><td>Verify google/fonts can rebuild from source</td></tr>\n<tr><td>Target unit</td><td>Source file (one .glyphs/.ufo per target, multiple per repo)</td><td>Font family (one family = one METADATA.pb, multiple font files)</td></tr>\n<tr><td>Target discovery</td><td>Hand-curated JSON list + google-fonts-sources crate</td><td>Walk google/fonts METADATA.pb files</td></tr>\n<tr><td>What gets compared</td><td>fontc output vs fontmake output (two builds of the same source)</td><td>Rebuilt font vs shipped binary in google/fonts (one build vs one reference)</td></tr>\n<tr><td>Comparison method</td><td>TTX XML diff via Python ttx_diff module (per-table similarity ratios)</td><td>SHA256 hash + skrifa binary table comparison (per-table identical/different)</td></tr>\n<tr><td>Result categories</td><td>identical / diffs (with ratio) / fontc_failed / fontmake_failed / both_failed</td><td>byte-identical / compiler-version / name-table / timestamp-diff / build-failure / reflow-risk</td></tr>\n<tr><td>Python dependency</td><td>Heavy: ttx_diff, fontmake, fonttools, gftools all required at runtime</td><td>Only gftools-builder for compilation; comparison is pure Rust</td></tr>\n<tr><td>CI model</td><td>Skip-if-unchanged (fontc rev + pip freeze + input file SHA)</td><td>Skip-if-unchanged (google/fonts rev)</td></tr>\n<tr><td>Upstream maintainer</td><td>googlefonts/fontc team (Colin Rofls et al.)</td><td>Felipe / local experimental</td></tr>\n</tbody></table>\n\n<h3>Arguments FOR a shared codebase</h3>\n<ol>\n<li><b>DRY principle:</b> The ~130 lines of shared utilities would not be duplicated. In practice this is a weak argument \u2014 the duplication is trivial and the utilities are stable.</li>\n<li><b>Single binary:</b> A unified tool could do both jobs with subcommands (crater ci, crater repro). Users wouldn't need to install two binaries. However, the user base is nearly disjoint: the fontc team runs fontc_crater in CI; we run gfonts_repro_crater locally.</li>\n<li><b>Shared improvements:</b> If someone improves the parallel executor or caching in one tool, the other benefits automatically. True but speculative \u2014 these components are stable and unlikely to change often.</li>\n<li><b>Common Target type:</b> In theory, both tools operate on \"font source + config \u2192 built font\". A sufficiently abstract Target type could serve both. But abstraction here adds complexity without reducing the amount of code needed.</li>\n</ol>\n\n<h3>Arguments AGAINST a shared codebase</h3>\n<ol>\n<li><b>Different owners:</b> fontc_crater is maintained by the fontc team at Google. gfonts_repro_crater is an experimental tool by Felipe. Merging them means every change to one tool requires consideration of the other, which slows both teams down. This is the strongest argument against sharing.</li>\n<li><b>Divergent evolution:</b> fontc_crater is evolving toward fontc feature completeness. gfonts_repro_crater may evolve toward cohort version matching, custom venv management, monorepo support, and other features specific to the reproducibility problem. Sharing a codebase creates coupling between unrelated feature trajectories.</li>\n<li><b>Abstraction tax:</b> Making Target, Results, comparison logic, and reporting generic enough to serve both use cases would require trait-based abstraction. The resulting code would be harder to read and modify than two simple, concrete implementations. For ~130 lines of shared code, the abstraction cost exceeds the duplication cost.</li>\n<li><b>Different Python dependencies:</b> fontc_crater requires ttx_diff (and its full Python dependency tree including fontmake). gfonts_repro_crater only needs gftools-builder for the build step, and does comparison in pure Rust. Sharing a codebase would make it unclear which Python deps are needed for which mode.</li>\n<li><b>PR friction:</b> fontc_crater lives in the googlefonts/fontc repo. Adding a Google Fonts reproducibility tool to that repo changes its scope. PRs would need review from the fontc team for a tool they don't use. This is a social/organizational cost, not a technical one, but it's real.</li>\n<li><b>HTML reports are completely different:</b> The 1,077-line html.rs in fontc_crater renders compiler-comparison dashboards with delta bars, annotation modals, and per-table diff ratios. gfonts_repro_crater renders reproducibility category cards, reflow risk analysis, and family-level status tables. Zero reuse.</li>\n</ol>\n\n<h3>A middle path: shared library crate</h3>\n<p>One option is to extract the shared utilities (run_all, Results, try_read_json, etc.) into a small library crate (e.g., <code>crater_common</code>) that both tools depend on. This avoids duplicating the ~130 lines while keeping the tools otherwise independent.</p>\n<p><b>Verdict: not worth it.</b> 130 lines of stable, trivial utility code doesn't justify a shared crate with its own versioning, API stability guarantees, and coordination overhead. The standard Rust ecosystem approach for this amount of code is to just copy it.</p>\n\n<h3>Recommendation</h3>\n<p><b>Keep them separate.</b> The prototype is correctly implemented as a standalone crate. The shared code is minimal and the divergence is fundamental \u2014 different targets, different comparisons, different reports, different maintainers, different evolution paths.</p>\n<p>The current setup (gfonts_repro_crater as a separate crate in the fontc workspace) is a reasonable starting point for prototyping, but if this tool matures, it should move to its own repository (or into gfonts_agents) rather than remaining in the fontc monorepo. The fontc team shouldn't need to carry a tool they don't use.</p>\n<p><b>Concrete next steps if proceeding:</b></p>\n<ol>\n<li>Keep prototyping in the fontc workspace for convenience (access to skrifa, read-fonts)</li>\n<li>When the tool is proven, move it to a standalone repo with skrifa/read-fonts as normal crate dependencies</li>\n<li>Do not attempt to merge with fontc_crater \u2014 the abstraction cost exceeds the duplication cost</li>\n</ol>"
       }
     ]
   },
@@ -250,7 +417,7 @@
     "status": "proposed",
     "summary": "Two-tier archival strategy for the ~985 upstream font repos referenced in google/fonts METADATA.pb. Tier A: full-history mirror (~34 GB excl. chiron mega-repos) hosted as forks under googlefonts/ org. Tier B: minimal reproducibility tarball (~10-15 GB) pinned to exact METADATA.pb commits, hosted on Internet Archive. Motivated by the finding that 20%+ of families have unreliable upstream source references.",
     "design": {
-      "motivation": "The upstream-source-preservation investigation (2026-03-24) found that at least 250+ families (17.9%) have confirmed issues: 216 missing commit hashes, 80+ force-pushed/squashed repos, 28+ deleted repos (404), 42 with no known upstream. Upstream repos are mutable — owners force-push, delete, squash history. The only reliable strategy is maintaining independent copies. This plan creates two complementary archives: a complete mirror for long-term preservation, and a minimal snapshot for practical build bootstrapping.",
+      "motivation": "The upstream-source-preservation investigation (2026-03-24) found that at least 250+ families (17.9%) have confirmed issues: 216 missing commit hashes, 80+ force-pushed/squashed repos, 28+ deleted repos (404), 42 with no known upstream. Upstream repos are mutable \u2014 owners force-push, delete, squash history. The only reliable strategy is maintaining independent copies. This plan creates two complementary archives: a complete mirror for long-term preservation, and a minimal snapshot for practical build bootstrapping.",
       "scope": {
         "total_unique_repos": 985,
         "github_repos": 977,
@@ -290,44 +457,44 @@
       },
       {
         "step": 3,
-        "description": "Tier A — Full-history cloning strategy. Clone all live repos with full history (no --depth flag). Estimated ~34 GB for 980 repos (excluding 3 chiron). Cloning order: (1) small repos first (< 10 MB, ~700 repos, ~2 GB total) for quick progress, (2) medium repos (10-100 MB, ~250 repos, ~8 GB), (3) large repos (100 MB-1 GB, ~25 repos, ~10 GB), (4) mega-repos (> 1 GB, chiron etc., ~70 GB — deferred or handled separately). Each clone: bare mirror (`git clone --mirror`), stored at /mnt/shared/upstream_repos/full_archive/{owner}/{repo}.git. Bare mirrors are more compact than working copies and can be converted to working repos later.",
+        "description": "Tier A \u2014 Full-history cloning strategy. Clone all live repos with full history (no --depth flag). Estimated ~34 GB for 980 repos (excluding 3 chiron). Cloning order: (1) small repos first (< 10 MB, ~700 repos, ~2 GB total) for quick progress, (2) medium repos (10-100 MB, ~250 repos, ~8 GB), (3) large repos (100 MB-1 GB, ~25 repos, ~10 GB), (4) mega-repos (> 1 GB, chiron etc., ~70 GB \u2014 deferred or handled separately). Each clone: bare mirror (`git clone --mirror`), stored at /mnt/shared/upstream_repos/full_archive/{owner}/{repo}.git. Bare mirrors are more compact than working copies and can be converted to working repos later.",
         "status": "pending"
       },
       {
         "step": 4,
-        "description": "Tier A — Verify commit reachability in full clones. After cloning, verify that every commit hash referenced in METADATA.pb is reachable in the corresponding clone (`git cat-file -t {commit}`). This is the test that was inconclusive with shallow clones. Record results: reachable, unreachable (genuine force-push evidence), or no_commit (hash not in METADATA.pb). This provides definitive data for the upstream-source-preservation investigation.",
+        "description": "Tier A \u2014 Verify commit reachability in full clones. After cloning, verify that every commit hash referenced in METADATA.pb is reachable in the corresponding clone (`git cat-file -t {commit}`). This is the test that was inconclusive with shallow clones. Record results: reachable, unreachable (genuine force-push evidence), or no_commit (hash not in METADATA.pb). This provides definitive data for the upstream-source-preservation investigation.",
         "status": "pending"
       },
       {
         "step": 5,
-        "description": "Tier A — Mirror to googlefonts org (pending team approval). For each upstream repo, create a fork or mirror under the googlefonts GitHub organization. Naming convention: googlefonts/upstream-mirror-{owner}-{repo} (to avoid collision with existing googlefonts repos). Each mirror: (a) push the full bare clone, (b) add a README noting this is a read-only archival mirror, (c) disable issues/wiki/actions, (d) set description to 'Archival mirror of {url} for Google Fonts source preservation'. This requires team approval and a GitHub API token with org-level repo creation permissions.",
+        "description": "Tier A \u2014 Mirror to googlefonts org (pending team approval). For each upstream repo, create a fork or mirror under the googlefonts GitHub organization. Naming convention: googlefonts/upstream-mirror-{owner}-{repo} (to avoid collision with existing googlefonts repos). Each mirror: (a) push the full bare clone, (b) add a README noting this is a read-only archival mirror, (c) disable issues/wiki/actions, (d) set description to 'Archival mirror of {url} for Google Fonts source preservation'. This requires team approval and a GitHub API token with org-level repo creation permissions.",
         "status": "pending",
         "details": "Alternative if org-level mirroring is not approved: host the bare clones as a set of tarballs on Internet Archive. Each tarball could contain one org's worth of repos (e.g., googlefonts-mirrors.tar.zst, notofonts-mirrors.tar.zst, etc.)."
       },
       {
         "step": 6,
-        "description": "Tier A — Internet Archive upload. Even if GitHub mirrors are created, also upload to Internet Archive as a permanent backup. Group tarballs by upstream org owner for meaningful organization: (a) googlefonts/ (224 repos), (b) notofonts/ (163 repos), (c) all other orgs grouped by size (e.g., repos-a-f.tar.zst, repos-g-n.tar.zst, etc., keeping each tarball under 10 GB). Each tarball includes a manifest.json listing all repos, their original URLs, commit hashes referenced by google/fonts, and clone dates. Upload to archive.org/details/google-fonts-upstream-sources-full with metadata linking to the shallow-clone archive.",
+        "description": "Tier A \u2014 Internet Archive upload. Even if GitHub mirrors are created, also upload to Internet Archive as a permanent backup. Group tarballs by upstream org owner for meaningful organization: (a) googlefonts/ (224 repos), (b) notofonts/ (163 repos), (c) all other orgs grouped by size (e.g., repos-a-f.tar.zst, repos-g-n.tar.zst, etc., keeping each tarball under 10 GB). Each tarball includes a manifest.json listing all repos, their original URLs, commit hashes referenced by google/fonts, and clone dates. Upload to archive.org/details/google-fonts-upstream-sources-full with metadata linking to the shallow-clone archive.",
         "status": "pending"
       },
       {
         "step": 7,
-        "description": "Tier B — Build the minimal reproducibility snapshot. For each family with a commit hash in METADATA.pb: checkout the exact commit in the full clone, export only the files needed for building (source files referenced in config.yaml + the config.yaml itself + LICENSE). Store as {family_slug}/ directories. For families without commit hashes: use HEAD of the default branch and record this explicitly. For deleted repos (404): skip, but include a placeholder noting the repo is lost. The result is a directory tree that, combined with gftools-builder, can rebuild every font in the library.",
+        "description": "Tier B \u2014 Build the minimal reproducibility snapshot. For each family with a commit hash in METADATA.pb: checkout the exact commit in the full clone, export only the files needed for building (source files referenced in config.yaml + the config.yaml itself + LICENSE). Store as {family_slug}/ directories. For families without commit hashes: use HEAD of the default branch and record this explicitly. For deleted repos (404): skip, but include a placeholder noting the repo is lost. The result is a directory tree that, combined with gftools-builder, can rebuild every font in the library.",
         "status": "pending",
-        "details": "This is NOT a set of shallow clones. It is a source snapshot — extracted files at specific commits, not git repos. This is much smaller than even shallow clones because it excludes git metadata, unrelated files, and history."
+        "details": "This is NOT a set of shallow clones. It is a source snapshot \u2014 extracted files at specific commits, not git repos. This is much smaller than even shallow clones because it excludes git metadata, unrelated files, and history."
       },
       {
         "step": 8,
-        "description": "Tier B — Package and annotate the snapshot. Create a single tarball (or a small set of tarballs grouped by license directory: ofl/, apache/, ufl/). Include: (a) the source files, (b) a manifest.json mapping each family to its upstream repo URL, commit hash, config.yaml path, and build instructions, (c) a README explaining how to use the snapshot to bootstrap a full library build, (d) a pointer to the Tier A full-history archive for anyone who needs complete repo history. Compress with zstd for best ratio. Estimated size: ~10-15 GB.",
+        "description": "Tier B \u2014 Package and annotate the snapshot. Create a single tarball (or a small set of tarballs grouped by license directory: ofl/, apache/, ufl/). Include: (a) the source files, (b) a manifest.json mapping each family to its upstream repo URL, commit hash, config.yaml path, and build instructions, (c) a README explaining how to use the snapshot to bootstrap a full library build, (d) a pointer to the Tier A full-history archive for anyone who needs complete repo history. Compress with zstd for best ratio. Estimated size: ~10-15 GB.",
         "status": "pending"
       },
       {
         "step": 9,
-        "description": "Tier B — Internet Archive upload. Upload to archive.org/details/google-fonts-build-sources-{date} with metadata: title, description, license info, link to Tier A archive, link to google/fonts repo. Include the manifest.json as a separate downloadable file so users can inspect contents without downloading the full tarball. Version by date — new snapshots can be uploaded alongside old ones without replacing them.",
+        "description": "Tier B \u2014 Internet Archive upload. Upload to archive.org/details/google-fonts-build-sources-{date} with metadata: title, description, license info, link to Tier A archive, link to google/fonts repo. Include the manifest.json as a separate downloadable file so users can inspect contents without downloading the full tarball. Version by date \u2014 new snapshots can be uploaded alongside old ones without replacing them.",
         "status": "pending"
       },
       {
         "step": 10,
-        "description": "Ongoing maintenance — periodic sync and verification. (a) Weekly: check for new families added to google/fonts (compare METADATA.pb count against inventory). (b) Monthly: git fetch --all on all full clones to capture new upstream commits. (c) Monthly: re-verify commit reachability for all METADATA.pb hashes (detect new force-pushes). (d) Quarterly: re-upload updated Tier B snapshot to Internet Archive. (e) On-demand: when a repo goes 404, immediately flag it and verify the full clone is intact.",
+        "description": "Ongoing maintenance \u2014 periodic sync and verification. (a) Weekly: check for new families added to google/fonts (compare METADATA.pb count against inventory). (b) Monthly: git fetch --all on all full clones to capture new upstream commits. (c) Monthly: re-verify commit reachability for all METADATA.pb hashes (detect new force-pushes). (d) Quarterly: re-upload updated Tier B snapshot to Internet Archive. (e) On-demand: when a repo goes 404, immediately flag it and verify the full clone is intact.",
         "status": "pending",
         "details": "The maintenance script should produce a diff report: new repos, deleted repos, new unreachable commits, size changes. This feeds into the dashboard and the upstream-source-preservation investigation."
       }
@@ -340,13 +507,13 @@
         "validation": "/mnt/shared/upstream_repos/commit_reachability.json (verification results)"
       },
       "key_scripts": [
-        "scripts/build_repo_inventory.py — Parse all METADATA.pb, produce repo_inventory.json",
-        "scripts/validate_repo_inventory.py — HTTP checks, GitHub API size queries, classify repos",
-        "scripts/clone_full_archive.py — Clone all repos with --mirror, with progress tracking and resume",
-        "scripts/verify_commits.py — Check every METADATA.pb commit hash against full clones",
-        "scripts/export_build_snapshot.py — Extract source files at pinned commits for Tier B",
-        "scripts/package_tarballs.py — Create and compress tarballs for Internet Archive upload",
-        "scripts/sync_archive.py — Periodic fetch, re-verify, diff report"
+        "scripts/build_repo_inventory.py \u2014 Parse all METADATA.pb, produce repo_inventory.json",
+        "scripts/validate_repo_inventory.py \u2014 HTTP checks, GitHub API size queries, classify repos",
+        "scripts/clone_full_archive.py \u2014 Clone all repos with --mirror, with progress tracking and resume",
+        "scripts/verify_commits.py \u2014 Check every METADATA.pb commit hash against full clones",
+        "scripts/export_build_snapshot.py \u2014 Extract source files at pinned commits for Tier B",
+        "scripts/package_tarballs.py \u2014 Create and compress tarballs for Internet Archive upload",
+        "scripts/sync_archive.py \u2014 Periodic fetch, re-verify, diff report"
       ],
       "disk_space_requirements": {
         "full_archive_excluding_chiron": "~34 GB",
@@ -361,7 +528,7 @@
       {
         "risk": "Disk space",
         "severity": "high",
-        "mitigation": "Current free space is ~91 GB. The full archive without chiron mega-repos (~34 GB) plus the build snapshot (~15 GB) fits. Including chiron repos (~71 GB extra) does not fit currently. Clone in priority order (small repos first) and monitor disk usage. The chiron repos can be deferred — they are on fontc_crater's denylist anyway."
+        "mitigation": "Current free space is ~91 GB. The full archive without chiron mega-repos (~34 GB) plus the build snapshot (~15 GB) fits. Including chiron repos (~71 GB extra) does not fit currently. Clone in priority order (small repos first) and monitor disk usage. The chiron repos can be deferred \u2014 they are on fontc_crater's denylist anyway."
       },
       {
         "risk": "GitHub API rate limits during mass cloning",
@@ -376,15 +543,15 @@
       {
         "risk": "Deleted repos (404) cannot be cloned",
         "severity": "low",
-        "mitigation": "28+ repos are already known to be deleted. For these, we can only preserve what we have — which for most is nothing, since they were never cached. The Tier B snapshot should explicitly mark these families as 'upstream lost' with the last known URL. If any of these repos were previously cloned by fontc_crater or other tooling, those clones should be located and preserved."
+        "mitigation": "28+ repos are already known to be deleted. For these, we can only preserve what we have \u2014 which for most is nothing, since they were never cached. The Tier B snapshot should explicitly mark these families as 'upstream lost' with the last known URL. If any of these repos were previously cloned by fontc_crater or other tooling, those clones should be located and preserved."
       },
       {
         "risk": "GitLab and non-GitHub repos need different tooling",
         "severity": "low",
-        "mitigation": "Only 2-3 repos are on GitLab (syne-typeface, manjari). These can be cloned with the same git commands — only the URL validation step needs adjustment. Not worth building separate tooling for 3 repos."
+        "mitigation": "Only 2-3 repos are on GitLab (syne-typeface, manjari). These can be cloned with the same git commands \u2014 only the URL validation step needs adjustment. Not worth building separate tooling for 3 repos."
       },
       {
-        "risk": "Repos moved without redirect (301 → new URL)",
+        "risk": "Repos moved without redirect (301 \u2192 new URL)",
         "severity": "low",
         "mitigation": "GitHub automatically redirects when a repo is renamed or transferred. The validation step (step 2) should follow redirects and record the canonical URL. If the redirect target differs from METADATA.pb, note this for potential METADATA.pb correction."
       },
@@ -395,21 +562,77 @@
       }
     ],
     "comparison_table": {
-      "headers": ["Aspect", "Tier A: Full History Mirror", "Tier B: Build Snapshot"],
+      "headers": [
+        "Aspect",
+        "Tier A: Full History Mirror",
+        "Tier B: Build Snapshot"
+      ],
       "rows": [
-        ["Purpose", "Complete preservation of all upstream development history", "Minimal seed for bootstrapping a full library rebuild"],
-        ["Content", "Bare git mirrors of entire repos (all branches, tags, history)", "Extracted source files at specific METADATA.pb commits only"],
-        ["Size", "~34 GB (excl. chiron) / ~105 GB (incl. chiron)", "~10-15 GB"],
-        ["Format", "Bare git repos (.git directories) or tarballs of same", "Directory tree of source files + manifest.json, compressed as .tar.zst"],
-        ["Hosting", "GitHub org mirrors (pending approval) + Internet Archive", "Internet Archive only"],
-        ["Update frequency", "Monthly git fetch to capture new upstream work", "Quarterly re-export when METADATA.pb changes significantly"],
-        ["Commit coverage", "All commits ever made in the upstream repo", "Only the specific commit referenced in METADATA.pb (or HEAD if no commit)"],
-        ["Use case: verify old build", "Yes — can checkout any historical commit", "Yes — has the exact commit used for onboarding"],
-        ["Use case: detect force-push", "Yes — compare METADATA.pb commit against clone", "No — only has the one commit"],
-        ["Use case: rebuild entire library", "Yes — with additional tooling to extract right commits", "Yes — designed specifically for this, no extraction needed"],
-        ["Use case: investigate upstream changes", "Yes — full git log, blame, diff available", "No — only a snapshot, no history"],
-        ["Survives upstream deletion", "Yes — mirror is independent of upstream", "Yes — snapshot is independent of upstream"],
-        ["Survives GitHub outage", "Internet Archive copy does; GitHub mirror does not", "Yes — Internet Archive only"]
+        [
+          "Purpose",
+          "Complete preservation of all upstream development history",
+          "Minimal seed for bootstrapping a full library rebuild"
+        ],
+        [
+          "Content",
+          "Bare git mirrors of entire repos (all branches, tags, history)",
+          "Extracted source files at specific METADATA.pb commits only"
+        ],
+        [
+          "Size",
+          "~34 GB (excl. chiron) / ~105 GB (incl. chiron)",
+          "~10-15 GB"
+        ],
+        [
+          "Format",
+          "Bare git repos (.git directories) or tarballs of same",
+          "Directory tree of source files + manifest.json, compressed as .tar.zst"
+        ],
+        [
+          "Hosting",
+          "GitHub org mirrors (pending approval) + Internet Archive",
+          "Internet Archive only"
+        ],
+        [
+          "Update frequency",
+          "Monthly git fetch to capture new upstream work",
+          "Quarterly re-export when METADATA.pb changes significantly"
+        ],
+        [
+          "Commit coverage",
+          "All commits ever made in the upstream repo",
+          "Only the specific commit referenced in METADATA.pb (or HEAD if no commit)"
+        ],
+        [
+          "Use case: verify old build",
+          "Yes \u2014 can checkout any historical commit",
+          "Yes \u2014 has the exact commit used for onboarding"
+        ],
+        [
+          "Use case: detect force-push",
+          "Yes \u2014 compare METADATA.pb commit against clone",
+          "No \u2014 only has the one commit"
+        ],
+        [
+          "Use case: rebuild entire library",
+          "Yes \u2014 with additional tooling to extract right commits",
+          "Yes \u2014 designed specifically for this, no extraction needed"
+        ],
+        [
+          "Use case: investigate upstream changes",
+          "Yes \u2014 full git log, blame, diff available",
+          "No \u2014 only a snapshot, no history"
+        ],
+        [
+          "Survives upstream deletion",
+          "Yes \u2014 mirror is independent of upstream",
+          "Yes \u2014 snapshot is independent of upstream"
+        ],
+        [
+          "Survives GitHub outage",
+          "Internet Archive copy does; GitHub mirror does not",
+          "Yes \u2014 Internet Archive only"
+        ]
       ]
     }
   },
@@ -418,15 +641,34 @@
     "title": "Discover upstream repos for 334 remaining families",
     "timestamp": "2026-03-25T10:00:00Z",
     "prompt": "Thoroughly look for the URLs of repos for the 334 families that have no source block or no repository_url in METADATA.pb. After populating the repo archive with 977 bare mirrors covering 1,390 families, these 334 are the remaining gap.",
-    "status": "in_progress",
-    "summary": "Systematic 6-tier search to find upstream repository URLs for the 334 Google Fonts families that still lack source metadata. This is an extra effort beyond the initial archive population — these families are mostly from 2010-2012 when upstream tracking was not standard practice. 76% predate GitHub's widespread adoption by type designers. We're making this effort because every family without a known upstream repo is a family whose source provenance is permanently at risk.",
+    "status": "completed",
+    "summary": "Systematic 6-tier search to find upstream repository URLs for the 334 Google Fonts families that still lack source metadata. This is an extra effort beyond the initial archive population \u2014 these families are mostly from 2010-2012 when upstream tracking was not standard practice. 76% predate GitHub's widespread adoption by type designers. We're making this effort because every family without a known upstream repo is a family whose source provenance is permanently at risk.",
     "design": {
-      "motivation": "After populating the repo archive with 977 bare mirrors (54 GB) covering 1,390 families, 334 families remain without any upstream repo URL. These are the hardest cases — mostly early onboardings where fonts were submitted as binaries without tracking where they came from. Without finding their repos, these families cannot be included in the reproducibility verification system or the archival effort. This search represents an extra effort to close the gap as far as possible.",
+      "motivation": "After populating the repo archive with 977 bare mirrors (54 GB) covering 1,390 families, 334 families remain without any upstream repo URL. These are the hardest cases \u2014 mostly early onboardings where fonts were submitted as binaries without tracking where they came from. Without finding their repos, these families cannot be included in the reproducibility verification system or the archival effort. This search represents an extra effort to close the gap as far as possible.",
       "scope": {
         "families_needing_discovery": 334,
-        "by_year": {"2010": 27, "2011": 127, "2012": 108, "2013": 5, "2014": 3, "2015": 7, "2016": 6, "2017": 5, "2018": 17, "2019": 3, "2020": 22, "2022": 1},
+        "by_year": {
+          "2010": 27,
+          "2011": 127,
+          "2012": 108,
+          "2013": 5,
+          "2014": 3,
+          "2015": 7,
+          "2016": 6,
+          "2017": 5,
+          "2018": 17,
+          "2019": 3,
+          "2020": 22,
+          "2022": 1
+        },
         "unique_designers": 128,
-        "top_designers": ["Astigmatic (35)", "Google (28)", "Sideshow (13)", "Impallari Type (12)", "Kimberly Geswein (12)"],
+        "top_designers": [
+          "Astigmatic (35)",
+          "Google (28)",
+          "Sideshow (13)",
+          "Impallari Type (12)",
+          "Kimberly Geswein (12)"
+        ],
         "with_copyright_github_url": 2,
         "expected_resolvable": "150-200",
         "expected_no_public_repo": "~100-130"
@@ -436,37 +678,37 @@
       {
         "step": 1,
         "description": "Tier 1: Extract GitHub/GitLab URLs from copyright fields in METADATA.pb. 2 families have direct repo links in their copyright strings.",
-        "status": "pending"
+        "status": "completed"
       },
       {
         "step": 2,
         "description": "Tier 2: Scan FONTLOG.txt and DESCRIPTION.en_us.html for repo URLs. ~246 families have FONTLOG.txt files that often contain 'Source available at...' lines.",
-        "status": "pending"
+        "status": "completed"
       },
       {
         "step": 3,
         "description": "Tier 3: Search googlefonts/ and notofonts/ GitHub orgs for the 28 'Google'-designed families. These likely live in known org repos.",
-        "status": "pending"
+        "status": "completed"
       },
       {
         "step": 4,
         "description": "Tier 4: Designer-based GitHub search. For the top designers (Astigmatic=35, Sideshow=13, Impallari=12, etc.), find their GitHub username and match all their families.",
-        "status": "pending"
+        "status": "completed"
       },
       {
         "step": 5,
         "description": "Tier 5: Parse google/fonts git history. For each remaining family, examine commit messages and linked PR bodies for upstream repo references.",
-        "status": "pending"
+        "status": "completed"
       },
       {
         "step": 6,
         "description": "Tier 6: GitHub code/repo search as last resort. Search for unique metadata (family name + designer, copyright strings) to find hosting repos.",
-        "status": "pending"
+        "status": "completed"
       },
       {
         "step": 7,
         "description": "Compile results into repo_discovery_results.json, update dashboard, and clone any newly discovered repos into the archive.",
-        "status": "pending"
+        "status": "in_progress"
       }
     ]
   }
