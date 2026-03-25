@@ -11,7 +11,7 @@ Usage:
     python scripts/sync_dashboard.py --apply --commit  # apply + git commit + push
 
 Sources of truth:
-    1. /mnt/shared/google/fonts/build_tools/build_registry.json
+    1. data/build_registry.json (version-controlled in this repo)
        → reproducible_build status, isolation, failure categories
     2. /mnt/shared/google/fonts/build_tools/normalization_results.json
        → normalized_match count
@@ -44,7 +44,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-BUILD_REGISTRY = Path("/mnt/shared/google/fonts/build_tools/build_registry.json")
+# Single source of truth — version-controlled in this repo
+BUILD_REGISTRY = DATA_DIR / "build_registry.json"
 NORMALIZATION_RESULTS = Path("/mnt/shared/google/fonts/build_tools/normalization_results.json")
 REPRO_BUILDS_DIR = Path("/mnt/shared/gfonts-repro-builds")
 
@@ -235,6 +236,30 @@ def sync_build_timings():
     return len(timings["families"])
 
 
+def sync_progress_history(sources):
+    """Append a snapshot to progress_history.json if the numbers changed."""
+    history_path = DATA_DIR / "progress_history.json"
+    history = load_json(history_path) if history_path.exists() else {"entries": []}
+
+    current = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "summary": dict(sources.get("summary", {})),
+        "source": "sync_dashboard",
+    }
+
+    # Only append if numbers changed from last entry
+    entries = history.get("entries", [])
+    if entries:
+        last = entries[-1].get("summary", {})
+        if last.get("complete") == current["summary"].get("complete") and \
+           last.get("total") == current["summary"].get("total"):
+            return  # No change
+
+    entries.append(current)
+    history["entries"] = entries
+    save_json(history_path, history)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Sync all dashboard data from sources of truth")
     parser.add_argument("--apply", action="store_true", help="Apply changes (default: dry-run)")
@@ -242,6 +267,7 @@ def main():
     args = parser.parse_args()
 
     # Load sources of truth
+    # Try primary (version-controlled in this repo), fall back to google/fonts working copy
     if not BUILD_REGISTRY.exists():
         print(f"ERROR: {BUILD_REGISTRY} not found")
         sys.exit(1)
@@ -281,6 +307,9 @@ def main():
 
     timing_count = sync_build_timings()
     print(f"build_timings.json: {timing_count} families with timing data")
+
+    sync_progress_history(sources)
+    print("progress_history.json: snapshot appended")
 
     # Post-sync validation
     print("\n=== Post-sync validation ===")
