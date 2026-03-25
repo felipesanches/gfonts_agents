@@ -2,8 +2,8 @@
   "generated_at": "2026-03-25T20:44:34.657153+00:00",
   "summary": {
     "total": 2002,
-    "complete": 1296,
-    "missing_config": 557,
+    "complete": 1373,
+    "missing_config": 479,
     "missing_commit": 68,
     "no_source": 78,
     "has_source_block": 1927,
@@ -11,7 +11,7 @@
     "has_commit": 1856,
     "investigation_reports": 1998,
     "no_upstream_repo": 0,
-    "needs_correction": 3
+    "needs_correction": 4
   },
   "families": [
     {
@@ -167,7 +167,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2011-09-07"
+      "date_added": "2011-09-07",
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/adlamdisplay/METADATA.pb",
@@ -496,8 +497,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2013-05-21"
+      "status": "complete",
+      "date_added": "2013-05-21",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/alegreya/METADATA.pb",
@@ -2196,8 +2198,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-03-14"
+      "status": "complete",
+      "date_added": "2012-03-14",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/averialibre/METADATA.pb",
@@ -2211,8 +2214,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-03-14"
+      "status": "complete",
+      "date_added": "2012-03-14",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/averiasanslibre/METADATA.pb",
@@ -2226,8 +2230,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-03-14"
+      "status": "complete",
+      "date_added": "2012-03-14",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/averiaseriflibre/METADATA.pb",
@@ -6631,8 +6636,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-04-04"
+      "status": "complete",
+      "date_added": "2012-04-04",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/denkone/METADATA.pb",
@@ -10171,8 +10177,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-01"
+      "status": "complete",
+      "date_added": "2012-05-01",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/herrvonmuellerhoff/METADATA.pb",
@@ -10186,8 +10193,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-30"
+      "status": "complete",
+      "date_added": "2011-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/himelody/METADATA.pb",
@@ -10772,8 +10780,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2010-05-17"
+      "status": "complete",
+      "date_added": "2010-05-17",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/imfelldoublepicasc/METADATA.pb",
@@ -10787,8 +10796,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2010-05-17"
+      "status": "complete",
+      "date_added": "2010-05-17",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/imfelldwpica/METADATA.pb",
@@ -11250,8 +11260,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-03-14"
+      "status": "complete",
+      "date_added": "2012-03-14",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/italianno/METADATA.pb",
@@ -12166,8 +12177,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-09-29"
+      "status": "complete",
+      "date_added": "2012-09-29",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/karlatamilupright/METADATA.pb",
@@ -12181,8 +12193,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-09-29"
+      "status": "complete",
+      "date_added": "2012-09-29",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/karma/METADATA.pb",
@@ -12305,8 +12318,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-10-31"
+      "status": "complete",
+      "date_added": "2012-10-31",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/kedebideri/METADATA.pb",
@@ -12335,8 +12349,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-07-27"
+      "status": "complete",
+      "date_added": "2011-07-27",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/kenia/METADATA.pb",
@@ -12350,8 +12365,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2010-12-15"
+      "status": "complete",
+      "date_added": "2010-12-15",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/khand/METADATA.pb",
@@ -12603,8 +12619,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-25"
+      "status": "complete",
+      "date_added": "2012-01-25",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/koulen/METADATA.pb",
@@ -12650,8 +12667,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2010-12-20"
+      "status": "complete",
+      "date_added": "2010-12-20",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/kronaone/METADATA.pb",
@@ -12665,8 +12683,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-02-22"
+      "status": "complete",
+      "date_added": "2012-02-22",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/krub/METADATA.pb",
@@ -12789,8 +12808,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-06-08"
+      "status": "complete",
+      "date_added": "2011-06-08",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/labrada/METADATA.pb",
@@ -13009,7 +13029,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2011-07-20"
+      "date_added": "2011-07-20",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/ledger/METADATA.pb",
@@ -13023,8 +13044,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-02-22"
+      "status": "complete",
+      "date_added": "2012-02-22",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lekton/METADATA.pb",
@@ -13038,8 +13060,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2010-12-20"
+      "status": "complete",
+      "date_added": "2010-12-20",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lemon/METADATA.pb",
@@ -13535,8 +13558,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-11"
+      "status": "complete",
+      "date_added": "2012-01-11",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lilyscriptone/METADATA.pb",
@@ -13551,7 +13575,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2013-06-05"
+      "date_added": "2013-06-05",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/limelight/METADATA.pb",
@@ -13565,8 +13590,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-05-25"
+      "status": "complete",
+      "date_added": "2011-05-25",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lindenhill/METADATA.pb",
@@ -13724,8 +13750,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-06-21"
+      "status": "complete",
+      "date_added": "2011-06-21",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lohitbengali/METADATA.pb",
@@ -13865,8 +13892,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-07-06"
+      "status": "complete",
+      "date_added": "2011-07-06",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lovelight/METADATA.pb",
@@ -13912,8 +13940,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-07-06"
+      "status": "complete",
+      "date_added": "2011-07-06",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/lugrasimo/METADATA.pb",
@@ -13990,8 +14019,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-18"
+      "status": "complete",
+      "date_added": "2012-01-18",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/luxuriousroman/METADATA.pb",
@@ -14085,8 +14115,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-18"
+      "status": "complete",
+      "date_added": "2012-01-18",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/macondoswashcaps/METADATA.pb",
@@ -14147,8 +14178,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-11"
+      "status": "complete",
+      "date_added": "2012-01-11",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/maitree/METADATA.pb",
@@ -14353,8 +14385,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/marcellussc/METADATA.pb",
@@ -14368,8 +14401,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/marckscript/METADATA.pb",
@@ -14398,8 +14432,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-11-16"
+      "status": "complete",
+      "date_added": "2012-11-16",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/marhey/METADATA.pb",
@@ -14525,8 +14560,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-08-03"
+      "status": "complete",
+      "date_added": "2011-08-03",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mashanzheng/METADATA.pb",
@@ -14636,8 +14672,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-08-13"
+      "status": "complete",
+      "date_added": "2012-08-13",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/meaculpa/METADATA.pb",
@@ -14697,8 +14734,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-12-19"
+      "status": "complete",
+      "date_added": "2011-12-19",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/meerainimai/METADATA.pb",
@@ -14727,8 +14765,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-05-04"
+      "status": "complete",
+      "date_added": "2011-05-04",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/meiescript/METADATA.pb",
@@ -14742,8 +14781,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-08-21"
+      "status": "complete",
+      "date_added": "2012-08-21",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/menbere/METADATA.pb",
@@ -14789,8 +14829,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-10-05"
+      "status": "complete",
+      "date_added": "2012-10-05",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/merienda/METADATA.pb",
@@ -14852,8 +14893,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-11-12"
+      "status": "complete",
+      "date_added": "2012-11-12",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/metal/METADATA.pb",
@@ -14883,8 +14925,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-07-11"
+      "status": "complete",
+      "date_added": "2012-07-11",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/metamorphous/METADATA.pb",
@@ -14929,8 +14972,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/michroma/METADATA.pb",
@@ -14992,8 +15036,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-11-30"
+      "status": "complete",
+      "date_added": "2012-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/miltonian/METADATA.pb",
@@ -15069,8 +15114,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-12-19"
+      "status": "complete",
+      "date_added": "2011-12-19",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mirandasans/METADATA.pb",
@@ -15130,8 +15176,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-30"
+      "status": "complete",
+      "date_added": "2011-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mitr/METADATA.pb",
@@ -15441,8 +15488,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-08-24"
+      "status": "complete",
+      "date_added": "2011-08-24",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/monsieurladoulaise/METADATA.pb",
@@ -15456,8 +15504,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-30"
+      "status": "complete",
+      "date_added": "2011-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/montaga/METADATA.pb",
@@ -15661,8 +15710,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-11-02"
+      "status": "complete",
+      "date_added": "2012-11-02",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mozillaheadline/METADATA.pb",
@@ -15798,8 +15848,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-11"
+      "status": "complete",
+      "date_added": "2012-01-11",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mrdafoe/METADATA.pb",
@@ -15813,8 +15864,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-30"
+      "status": "complete",
+      "date_added": "2011-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mrdehaviland/METADATA.pb",
@@ -15828,8 +15880,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-30"
+      "status": "complete",
+      "date_added": "2011-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mrssaintdelafield/METADATA.pb",
@@ -15843,8 +15896,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-01-11"
+      "status": "complete",
+      "date_added": "2012-01-11",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/mrssheppards/METADATA.pb",
@@ -15858,8 +15912,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-30"
+      "status": "complete",
+      "date_added": "2011-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/msmadi/METADATA.pb",
@@ -16029,8 +16084,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-02-29"
+      "status": "complete",
+      "date_added": "2012-02-29",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/nabla/METADATA.pb",
@@ -16075,8 +16131,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/nanumgothic/METADATA.pb",
@@ -16090,8 +16147,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/nanumgothiccoding/METADATA.pb",
@@ -16120,8 +16178,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/nanumpenscript/METADATA.pb",
@@ -16135,8 +16194,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-05-09"
+      "status": "complete",
+      "date_added": "2012-05-09",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/narnoor/METADATA.pb",
@@ -16244,8 +16304,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2010-09-21"
+      "status": "complete",
+      "date_added": "2010-09-21",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/neuton/METADATA.pb",
@@ -16290,8 +16351,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-11-30"
+      "status": "complete",
+      "date_added": "2012-11-30",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/newscycle/METADATA.pb",
@@ -16305,8 +16367,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-04-27"
+      "status": "complete",
+      "date_added": "2011-04-27",
+      "reproducible_build": "missing_config"
     },
     {
       "path": "ofl/newsreader/METADATA.pb",
@@ -16352,8 +16415,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-11-23"
+      "status": "complete",
+      "date_added": "2011-11-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/niramit/METADATA.pb",
@@ -16383,8 +16447,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-06-21"
+      "status": "complete",
+      "date_added": "2011-06-21",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/nobile/METADATA.pb",
@@ -16445,8 +16510,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-12-19"
+      "status": "complete",
+      "date_added": "2011-12-19",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/nosifercaps/METADATA.pb",
@@ -16460,8 +16526,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-10-24"
+      "status": "complete",
+      "date_added": "2011-10-24",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/notable/METADATA.pb",
@@ -16491,8 +16558,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-05-11"
+      "status": "complete",
+      "date_added": "2011-05-11",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/noticiatext/METADATA.pb",
@@ -16614,7 +16682,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2020-11-19"
+      "date_added": "2020-11-19",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notonastaliqurdu/METADATA.pb",
@@ -16740,9 +16809,9 @@
       "override_config": true,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "complete",
+      "status": "needs_correction",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "metadata-stanza-wrong"
     },
     {
       "path": "ofl/notosansarmenian/METADATA.pb",
@@ -16870,7 +16939,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansbhaiksuki/METADATA.pb",
@@ -17158,7 +17227,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansdisplay/METADATA.pb",
@@ -17174,7 +17243,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansduployan/METADATA.pb",
@@ -17350,7 +17419,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansgunjalagondi/METADATA.pb",
@@ -17398,7 +17467,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanshanifirohingya/METADATA.pb",
@@ -17620,7 +17689,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanskawi/METADATA.pb",
@@ -17700,7 +17769,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanskhojki/METADATA.pb",
@@ -17795,7 +17864,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanslepcha/METADATA.pb",
@@ -17955,7 +18024,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansmandaic/METADATA.pb",
@@ -18242,7 +18311,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansnabataean/METADATA.pb",
@@ -18578,7 +18647,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansosage/METADATA.pb",
@@ -18881,7 +18950,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanssogdian/METADATA.pb",
@@ -19201,7 +19270,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanstangsa/METADATA.pb",
@@ -19264,7 +19333,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansthaana/METADATA.pb",
@@ -19328,7 +19397,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosanstifinagh/METADATA.pb",
@@ -19584,7 +19653,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notoserifdivesakuru/METADATA.pb",
@@ -19901,7 +19970,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notoserifnphmong/METADATA.pb",
@@ -19916,7 +19985,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2020-11-19"
+      "date_added": "2020-11-19",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notoserifnyiakengpuachuehmong/METADATA.pb",
@@ -19931,7 +20001,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2020-11-19"
+      "date_added": "2020-11-19",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notoserifolduyghur/METADATA.pb",
@@ -20215,8 +20286,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novaflat/METADATA.pb",
@@ -20230,8 +20302,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novamono/METADATA.pb",
@@ -20245,8 +20318,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novaoval/METADATA.pb",
@@ -20260,8 +20334,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novaround/METADATA.pb",
@@ -20275,8 +20350,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novascript/METADATA.pb",
@@ -20290,8 +20366,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novaslim/METADATA.pb",
@@ -20305,8 +20382,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-03-23"
+      "status": "complete",
+      "date_added": "2011-03-23",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/novasquare/METADATA.pb",
@@ -20320,8 +20398,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-04-14"
+      "status": "complete",
+      "date_added": "2011-04-14",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/ntr/METADATA.pb",
@@ -20350,8 +20429,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-08-17"
+      "status": "complete",
+      "date_added": "2011-08-17",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/nunito/METADATA.pb",
@@ -20507,8 +20587,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-12-19"
+      "status": "complete",
+      "date_added": "2011-12-19",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/oldstandardtt/METADATA.pb",
@@ -20553,8 +20634,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2012-03-29"
+      "status": "complete",
+      "date_added": "2012-03-29",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/oleoscriptswashcaps/METADATA.pb",
@@ -20787,8 +20869,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-12-19"
+      "status": "complete",
+      "date_added": "2011-12-19",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/overlocksc/METADATA.pb",
@@ -26964,7 +27047,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2011-07-20"
+      "date_added": "2011-07-20",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/snowburstone/METADATA.pb",
@@ -29211,8 +29295,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_config",
-      "date_added": "2011-06-29"
+      "status": "complete",
+      "date_added": "2011-06-29",
+      "reproducible_build": "legacy-no-modern-source"
     },
     {
       "path": "ofl/varelaround/METADATA.pb",
@@ -30630,7 +30715,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "complete",
-      "date_added": "2010-11-18"
+      "date_added": "2010-11-18",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "apache/calligraffitti/METADATA.pb",
@@ -30916,7 +31002,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2021-09-08",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "apache/kosugimaru/METADATA.pb",
@@ -30932,7 +31018,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2021-09-08",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "apache/kranky/METADATA.pb",
@@ -31067,7 +31153,8 @@
       "has_source_block": true,
       "has_investigation_report": false,
       "status": "complete",
-      "date_added": "2013-04-10"
+      "date_added": "2013-04-10",
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "apache/rochester/METADATA.pb",
@@ -31337,7 +31424,8 @@
       "has_source_block": true,
       "has_investigation_report": false,
       "status": "complete",
-      "date_added": "2024-03-22"
+      "date_added": "2024-03-22",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ufl/ubuntusansmono/METADATA.pb",
@@ -31352,7 +31440,8 @@
       "has_source_block": true,
       "has_investigation_report": false,
       "status": "complete",
-      "date_added": "2024-03-22"
+      "date_added": "2024-03-22",
+      "reproducible_build": "compiler-version"
     }
   ],
   "last_updated": "2026-03-25T20:44:34.657607+00:00"
