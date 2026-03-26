@@ -219,8 +219,7 @@ function renderCoverageGap(data) {
         'buildable_tested': 'Tested in reproducible build system',
         'build_failure': 'Build attempted but failed',
         'missing_config': 'Has source + commit but no config.yaml',
-        'gfd_legacy': 'googlefontdirectory-hg monorepo (mostly .sfd/.vfb)',
-        'legacy_sfd_vfb': 'Only legacy sources (.sfd/.vfb)',
+        'legacy_sources': 'Only legacy sources (.sfd/.vfb) — not buildable with gftools-builder',
         'metadata_wrong': 'METADATA.pb source block incorrect',
         'no_commit': 'Has repo URL but no commit hash',
         'no_source': 'No source block / no repo URL',
@@ -240,10 +239,8 @@ function renderCoverageGap(data) {
         } else if (!hasCommit) {
             cat = 'no_commit';
         } else if (!hasConfig) {
-            if (repo.includes('googlefontdirectory-hg')) {
-                cat = 'gfd_legacy';
-            } else if (rb === 'legacy-no-modern-source') {
-                cat = 'legacy_sfd_vfb';
+            if (repo.includes('googlefontdirectory-hg') || rb === 'legacy-no-modern-source') {
+                cat = 'legacy_sources';
             } else {
                 cat = 'missing_config';
             }
@@ -252,7 +249,7 @@ function renderCoverageGap(data) {
         } else if (rb === 'build-failure') {
             cat = 'build_failure';
         } else if (rb === 'legacy-no-modern-source') {
-            cat = 'legacy_sfd_vfb';
+            cat = 'legacy_sources';
         } else if (rb === 'metadata-stanza-wrong' || rb === 'missing-source') {
             cat = 'metadata_wrong';
         } else {
@@ -267,8 +264,7 @@ function renderCoverageGap(data) {
         'buildable_tested': '#2e7d32',
         'build_failure': '#e65100',
         'missing_config': '#f9a825',
-        'gfd_legacy': '#7986cb',
-        'legacy_sfd_vfb': '#9575cd',
+        'legacy_sources': '#7986cb',
         'metadata_wrong': '#c62828',
         'no_commit': '#ff8a65',
         'no_source': '#bdbdbd',
@@ -279,8 +275,8 @@ function renderCoverageGap(data) {
     const notInCrater = data.families.length - craterTestable;
 
     // Build the HTML
-    const order = ['buildable_tested', 'build_failure', 'missing_config', 'gfd_legacy',
-                   'legacy_sfd_vfb', 'metadata_wrong', 'no_commit', 'no_source'];
+    const order = ['buildable_tested', 'build_failure', 'missing_config', 'legacy_sources',
+                   'metadata_wrong', 'no_commit', 'no_source'];
 
     let tableRows = '';
     for (const cat of order) {
@@ -329,8 +325,7 @@ function renderCoverageGap(data) {
             <p style="margin:0.5em 0 0;font-size:0.85em;color:#666;">
                 <strong>Not in fontc_crater (${notInCrater}):</strong>
                 ${categories['missing_config'] || 0} need config.yaml,
-                ${categories['gfd_legacy'] || 0} have only legacy .sfd/.vfb sources in googlefontdirectory-hg,
-                ${categories['legacy_sfd_vfb'] || 0} have only legacy sources elsewhere,
+                ${categories['legacy_sources'] || 0} have only legacy .sfd/.vfb sources (not buildable with gftools-builder),
                 ${categories['no_commit'] || 0} lack a commit hash,
                 ${categories['no_source'] || 0} have no source block at all.
             </p>
