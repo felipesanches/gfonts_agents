@@ -319,6 +319,59 @@ def sync_archive_stats(sources):
     save_json(DATA_DIR / "archive_stats.json", stats)
 
 
+def sync_disk_usage():
+    """Update disk_usage.json with current disk stats."""
+    try:
+        result = subprocess.run(["df", "-h", "/mnt/shared"],
+                               capture_output=True, text=True, timeout=10)
+        lines = result.stdout.strip().split('\n')
+        if len(lines) >= 2:
+            parts = lines[1].split()
+            data = {
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "filesystem": {
+                    "total": parts[1] if len(parts) > 1 else "?",
+                    "used": parts[2] if len(parts) > 2 else "?",
+                    "available": parts[3] if len(parts) > 3 else "?",
+                    "percent": int(parts[4].rstrip('%')) if len(parts) > 4 else 0,
+                },
+            }
+            save_json(DATA_DIR / "disk_usage.json", data)
+    except Exception as e:
+        print(f"  Warning: disk usage update failed: {e}")
+
+
+def sync_build_failure_categories(registry):
+    """Update build_failure_categories.json from the build registry."""
+    categories_path = DATA_DIR / "build_failure_categories.json"
+    categories = load_json(categories_path) if categories_path.exists() else {"snapshots": []}
+
+    # Count current failures by category
+    failure_counts = Counter()
+    for name, entry in registry.get("families", {}).items():
+        rb = entry.get("reproducible_build", "")
+        if rb == "build-failure":
+            # Use failure_category if available, else generic
+            cat = entry.get("failure_category", "unknown")
+            failure_counts[cat] += 1
+
+    current = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "total_failures": sum(failure_counts.values()),
+        "categories": dict(failure_counts),
+    }
+
+    # Only append if counts changed
+    snapshots = categories.get("snapshots", [])
+    if snapshots:
+        last = snapshots[-1].get("categories", {})
+        if last == current["categories"]:
+            return
+    snapshots.append(current)
+    categories["snapshots"] = snapshots
+    save_json(categories_path, categories)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Sync all dashboard data from sources of truth")
     parser.add_argument("--apply", action="store_true", help="Apply changes (default: dry-run)")
@@ -386,6 +439,12 @@ def main():
 
     sync_archive_stats(sources)
     print("archive_stats.json: updated")
+
+    sync_disk_usage()
+    print("disk_usage.json: updated")
+
+    sync_build_failure_categories(registry)
+    print("build_failure_categories.json: updated")
 
     # Post-sync validation
     print("\n=== Post-sync validation ===")
