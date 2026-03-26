@@ -3925,7 +3925,7 @@ function renderBuildFailures(data) {
     // Summary counts
     let fixable = 0, partial = 0, unfixable = 0, total = 0;
     for (const [cat, info] of Object.entries(cats)) {
-        const count = info.count;
+        const count = typeof info === 'number' ? info : (info.count || 0);
         total += count;
         const meta = catMeta[cat] || { fix: 'partial' };
         if (meta.fix === 'yes') fixable += count;
@@ -4009,13 +4009,14 @@ function renderBuildFailures(data) {
         planDiv.innerHTML = phases.map(p => {
             const phaseCats = Object.entries(cats)
                 .filter(([cat]) => (catMeta[cat] || {}).phase === p.n)
-                .sort((a, b) => b[1].count - a[1].count);
-            const phaseTotal = phaseCats.reduce((s, [, v]) => s + v.count, 0);
+                .sort((a, b) => (typeof b[1] === 'number' ? b[1] : b[1].count) - (typeof a[1] === 'number' ? a[1] : a[1].count));
+            const phaseTotal = phaseCats.reduce((s, [, v]) => s + (typeof v === 'number' ? v : v.count || 0), 0);
             return `<div style="margin-bottom:1em;padding:0.8em;border-left:4px solid ${p.color};background:#fafafa;border-radius:0 4px 4px 0;">
                 <strong>Phase ${p.n}: ${p.title}</strong> <span style="color:#666;">(${phaseTotal} families)</span>
-                <ul style="margin:0.3em 0 0 1.2em;padding:0;">${phaseCats.map(([cat, info]) =>
-                    `<li>${(catMeta[cat] || {}).desc || cat}: <strong>${info.count}</strong> families</li>`
-                ).join('')}</ul>
+                <ul style="margin:0.3em 0 0 1.2em;padding:0;">${phaseCats.map(([cat, info]) => {
+                    const cnt = typeof info === 'number' ? info : info.count || 0;
+                    return `<li>${(catMeta[cat] || {}).desc || cat}: <strong>${cnt}</strong> families</li>`;
+                }).join('')}</ul>
             </div>`;
         }).join('');
     }
@@ -4023,20 +4024,27 @@ function renderBuildFailures(data) {
     // Table
     const tbody = document.querySelector('#bf-table tbody');
     if (tbody) {
-        const sorted = Object.entries(cats).sort((a, b) => b[1].count - a[1].count);
+        const sorted = Object.entries(cats).sort((a, b) => {
+            const ca = typeof a[1] === 'number' ? a[1] : a[1].count || 0;
+            const cb = typeof b[1] === 'number' ? b[1] : b[1].count || 0;
+            return cb - ca;
+        });
         tbody.innerHTML = sorted.map(([cat, info]) => {
+            const count = typeof info === 'number' ? info : info.count || 0;
+            const families = typeof info === 'object' && info.families ? info.families : [];
             const meta = catMeta[cat] || { fix: 'partial', desc: 'Unknown' };
             const fixBadge = meta.fix === 'yes' ? '<span style="color:#4caf50;">Yes</span>'
                 : meta.fix === 'partial' ? '<span style="color:#ff9800;">Partial</span>'
                 : '<span style="color:#f44336;">No</span>';
+            const familiesCell = families.length > 0
+                ? `<details><summary>${count} families</summary><div style="font-size:0.8em;max-height:200px;overflow-y:auto;padding:4px;">${families.join(', ')}</div></details>`
+                : `${count} families`;
             return `<tr>
                 <td><code>${cat}</code></td>
-                <td style="text-align:center;"><strong>${info.count}</strong></td>
+                <td style="text-align:center;"><strong>${count}</strong></td>
                 <td style="text-align:center;">${fixBadge}</td>
                 <td>${meta.desc}</td>
-                <td><details><summary>${info.count} families</summary>
-                    <div style="font-size:0.8em;max-height:200px;overflow-y:auto;padding:4px;">${info.families.join(', ')}</div>
-                </details></td>
+                <td>${familiesCell}</td>
             </tr>`;
         }).join('');
     }
