@@ -204,6 +204,138 @@ function updateSourcesSummary(summary) {
 
     // Load and render progress history
     loadProgressHistory();
+
+    // Render coverage gap analysis
+    renderCoverageGap(sourcesData);
+}
+
+function renderCoverageGap(data) {
+    const container = document.getElementById('coverage-gap-container');
+    if (!container || !data || !data.families) return;
+
+    // Categorize every family
+    const categories = {};
+    const catLabels = {
+        'buildable_tested': 'Tested in reproducible build system',
+        'build_failure': 'Build attempted but failed',
+        'missing_config': 'Has source + commit but no config.yaml',
+        'gfd_legacy': 'googlefontdirectory-hg monorepo (mostly .sfd/.vfb)',
+        'legacy_sfd_vfb': 'Only legacy sources (.sfd/.vfb)',
+        'metadata_wrong': 'METADATA.pb source block incorrect',
+        'no_commit': 'Has repo URL but no commit hash',
+        'no_source': 'No source block / no repo URL',
+    };
+
+    for (const f of data.families) {
+        const hasSource = f.has_source_block;
+        const hasUrl = !!f.repository_url;
+        const hasCommit = !!f.commit;
+        const hasConfig = !!(f.config_yaml || f.override_config);
+        const rb = f.reproducible_build || '';
+        const repo = f.repository_url || '';
+
+        let cat;
+        if (!hasSource || !hasUrl) {
+            cat = 'no_source';
+        } else if (!hasCommit) {
+            cat = 'no_commit';
+        } else if (!hasConfig) {
+            if (repo.includes('googlefontdirectory-hg')) {
+                cat = 'gfd_legacy';
+            } else if (rb === 'legacy-no-modern-source') {
+                cat = 'legacy_sfd_vfb';
+            } else {
+                cat = 'missing_config';
+            }
+        } else if (['yes', 'compiler-version', 'name-table', 'timestamp-diff'].includes(rb)) {
+            cat = 'buildable_tested';
+        } else if (rb === 'build-failure') {
+            cat = 'build_failure';
+        } else if (rb === 'legacy-no-modern-source') {
+            cat = 'legacy_sfd_vfb';
+        } else if (rb === 'metadata-stanza-wrong' || rb === 'missing-source') {
+            cat = 'metadata_wrong';
+        } else {
+            cat = 'buildable_tested';  // default for families with config
+        }
+
+        categories[cat] = (categories[cat] || 0) + 1;
+    }
+
+    // Colors for each category
+    const catColors = {
+        'buildable_tested': '#2e7d32',
+        'build_failure': '#e65100',
+        'missing_config': '#f9a825',
+        'gfd_legacy': '#7986cb',
+        'legacy_sfd_vfb': '#9575cd',
+        'metadata_wrong': '#c62828',
+        'no_commit': '#ff8a65',
+        'no_source': '#bdbdbd',
+    };
+
+    // Determine what fontc_crater can test (families with modern buildable sources)
+    const craterTestable = (categories['buildable_tested'] || 0) + (categories['build_failure'] || 0);
+    const notInCrater = data.families.length - craterTestable;
+
+    // Build the HTML
+    const order = ['buildable_tested', 'build_failure', 'missing_config', 'gfd_legacy',
+                   'legacy_sfd_vfb', 'metadata_wrong', 'no_commit', 'no_source'];
+
+    let tableRows = '';
+    for (const cat of order) {
+        const count = categories[cat] || 0;
+        if (count === 0) continue;
+        const pct = (count / data.families.length * 100).toFixed(1);
+        const color = catColors[cat] || '#999';
+        const label = catLabels[cat] || cat;
+        const inCrater = (cat === 'buildable_tested' || cat === 'build_failure') ? '✓' : '—';
+        tableRows += `<tr>
+            <td><span style="display:inline-block;width:12px;height:12px;background:${color};border-radius:2px;margin-right:6px;vertical-align:middle;"></span>${label}</td>
+            <td style="text-align:right;font-weight:600;">${count}</td>
+            <td style="text-align:right;">${pct}%</td>
+            <td style="text-align:center;">${inCrater}</td>
+        </tr>`;
+    }
+
+    container.innerHTML = `
+        <details open style="background:#f8f9fa;border:1px solid #e0e0e0;border-radius:8px;padding:1em;">
+            <summary style="cursor:pointer;font-weight:600;font-size:1.05em;color:#1565c0;">
+                Coverage Gap: Source Tracking vs fontc_crater
+            </summary>
+            <p style="margin:0.8em 0 0.5em;color:#555;font-size:0.9em;">
+                How the ${data.families.length} Google Fonts families break down by source availability,
+                and which are testable by <a href="https://googlefonts.github.io/fontc_crater/" target="_blank">fontc_crater</a>.
+            </p>
+            <table class="guide-table" style="margin:0.5em 0;font-size:0.9em;">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th style="text-align:right;">Families</th>
+                        <th style="text-align:right;">%</th>
+                        <th style="text-align:center;">In Crater?</th>
+                    </tr>
+                </thead>
+                <tbody>${tableRows}</tbody>
+                <tfoot>
+                    <tr style="font-weight:600;border-top:2px solid #ccc;">
+                        <td>Total</td>
+                        <td style="text-align:right;">${data.families.length}</td>
+                        <td style="text-align:right;">100%</td>
+                        <td style="text-align:center;">${craterTestable} testable</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p style="margin:0.5em 0 0;font-size:0.85em;color:#666;">
+                <strong>Not in fontc_crater (${notInCrater}):</strong>
+                ${categories['missing_config'] || 0} need config.yaml,
+                ${categories['gfd_legacy'] || 0} have only legacy .sfd/.vfb sources in googlefontdirectory-hg,
+                ${categories['legacy_sfd_vfb'] || 0} have only legacy sources elsewhere,
+                ${categories['no_commit'] || 0} lack a commit hash,
+                ${categories['no_source'] || 0} have no source block at all.
+            </p>
+        </details>
+    `;
 }
 
 function renderStatusChart(summary) {
