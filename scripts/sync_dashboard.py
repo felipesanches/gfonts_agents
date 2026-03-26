@@ -372,6 +372,64 @@ def sync_build_failure_categories(registry):
     save_json(categories_path, categories)
 
 
+def sync_fontc_crater():
+    """Run fetch_crater_analysis.py to refresh fontc_crater data."""
+    script = REPO_ROOT / "scripts" / "fetch_crater_analysis.py"
+    if not script.exists():
+        print("  Warning: fetch_crater_analysis.py not found")
+        return
+    try:
+        result = subprocess.run(
+            [sys.executable, str(script)],
+            capture_output=True, text=True, timeout=120,
+            cwd=str(REPO_ROOT),
+        )
+        if result.returncode != 0:
+            print(f"  Warning: fetch_crater_analysis.py failed: {result.stderr.strip()[:200]}")
+    except subprocess.TimeoutExpired:
+        print("  Warning: fetch_crater_analysis.py timed out (120s)")
+    except Exception as e:
+        print(f"  Warning: fetch_crater_analysis.py error: {e}")
+
+
+def sync_build_approaches():
+    """Run classify_build_approaches.py if it exists."""
+    script = REPO_ROOT / "scripts" / "classify_build_approaches.py"
+    if not script.exists():
+        print("  Warning: classify_build_approaches.py not found, skipping")
+        return
+    try:
+        result = subprocess.run(
+            [sys.executable, str(script)],
+            capture_output=True, text=True, timeout=300,
+            cwd=str(REPO_ROOT),
+        )
+        if result.returncode != 0:
+            print(f"  Warning: classify_build_approaches.py failed: {result.stderr.strip()[:200]}")
+    except subprocess.TimeoutExpired:
+        print("  Warning: classify_build_approaches.py timed out")
+    except Exception as e:
+        print(f"  Warning: classify_build_approaches.py error: {e}")
+
+
+def sync_prebuild_research():
+    """Regenerate prebuild_research.json from current source data."""
+    script = REPO_ROOT / "scripts" / "prebuild_research.py"
+    if not script.exists():
+        # No dedicated script — skip gracefully
+        return
+    try:
+        result = subprocess.run(
+            [sys.executable, str(script)],
+            capture_output=True, text=True, timeout=300,
+            cwd=str(REPO_ROOT),
+        )
+        if result.returncode != 0:
+            print(f"  Warning: prebuild_research.py failed: {result.stderr.strip()[:200]}")
+    except Exception as e:
+        print(f"  Warning: prebuild_research.py error: {e}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Sync all dashboard data from sources of truth")
     parser.add_argument("--apply", action="store_true", help="Apply changes (default: dry-run)")
@@ -401,16 +459,14 @@ def main():
     else:
         print("All data is coherent.")
 
-    # Mandatory reminders — things agents forget during long sessions
+    # Mandatory reminders — things that must be done manually
     print("\n" + "=" * 60)
-    print("MANDATORY CHECKLIST before committing:")
+    print("MANDATORY CHECKLIST (manual items):")
     print("=" * 60)
     print("  [ ] data/message_log.json — log all user+assistant messages")
     print("  [ ] data/devlog.json — chronicle significant work done this session")
     print("  [ ] Beads issues — if any bd create/update/close was done,")
     print("      export issues.jsonl and commit it")
-    print("  [ ] fontc crater — run scripts/fetch_crater_analysis.py")
-    print("      if dashboard data changed")
     print("  [ ] build_registry.json — if builds were run, ensure")
     print("      data/build_registry.json is up to date (single source of truth)")
     print("=" * 60)
@@ -445,6 +501,18 @@ def main():
 
     sync_build_failure_categories(registry)
     print("build_failure_categories.json: updated")
+
+    sync_fontc_crater()
+    print("fontc_crater_analysis.json: updated")
+
+    if src_changes > 0:
+        sync_build_approaches()
+        print("build_approaches.json: updated (source data changed)")
+        sync_prebuild_research()
+        print("prebuild_research.json: updated (source data changed)")
+    else:
+        print("build_approaches.json: skipped (no source changes)")
+        print("prebuild_research.json: skipped (no source changes)")
 
     # Post-sync validation
     print("\n=== Post-sync validation ===")
