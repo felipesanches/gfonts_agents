@@ -36,6 +36,7 @@ Targets (all in this repo's data/ directory):
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 from collections import Counter
@@ -372,6 +373,16 @@ def sync_build_failure_categories(registry):
     save_json(categories_path, categories)
 
 
+def sync_build_registry():
+    """Verify build_registry.json is present. The build script writes directly here."""
+    if BUILD_REGISTRY.exists():
+        reg = load_json(BUILD_REGISTRY)
+        count = len(reg.get("families", {}))
+        print(f"build_registry.json: {count} families")
+    else:
+        print("build_registry.json: NOT FOUND — run builds to create it")
+
+
 def sync_beads_issues():
     """Export beads issues to data/beads_issues.json and backup to issues.jsonl."""
     try:
@@ -528,8 +539,6 @@ def main():
     print("=" * 60)
     print("  [ ] data/message_log.json — log all user+assistant messages")
     print("  [ ] data/devlog.json — chronicle significant work done this session")
-    print("  [ ] build_registry.json — if builds were run, ensure")
-    print("      data/build_registry.json is up to date (single source of truth)")
     print("=" * 60)
 
     if not args.apply:
@@ -565,6 +574,8 @@ def main():
 
     sync_fontc_crater()
     print("fontc_crater_analysis.json: updated")
+
+    sync_build_registry()
 
     sync_beads_issues()
     print("beads_issues.json: updated")
