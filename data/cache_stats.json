@@ -1,7 +1,0 @@
-{
-  "timestamp": "2026-03-12T18:00:00-03:00",
-  "total_unique_repos": 1161,
-  "cloned": 5,
-  "not_cloned": 1156,
-  "note": "Upstream repo cache was largely cleared during a disk cleanup. Only 5 repos remain in fontc_crater_cache. The 1161 unique repos figure reflects repository_url entries on upstream/main."
-}

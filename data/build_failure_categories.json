@@ -2947,6 +2947,14 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-26T19:04:46.033512+00:00",
+      "total_failures": 36,
+      "categories": {
+        "unknown": 35,
+        "unsupported-color-format": 1
+      }
     }
   ]
 }
