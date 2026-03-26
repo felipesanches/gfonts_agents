@@ -372,6 +372,69 @@ def sync_build_failure_categories(registry):
     save_json(categories_path, categories)
 
 
+def sync_beads_issues():
+    """Export beads issues to data/beads_issues.json and backup to issues.jsonl."""
+    try:
+        result = subprocess.run(
+            ["bd", "list", "--json"],
+            capture_output=True, text=True, timeout=15,
+            cwd=str(REPO_ROOT),
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            issues = json.loads(result.stdout)
+            save_json(DATA_DIR / "beads_issues.json", issues)
+            # Also update issues.jsonl for git persistence
+            jsonl_path = REPO_ROOT / ".beads" / "issues.jsonl"
+            if isinstance(issues, list):
+                with open(jsonl_path, "w") as f:
+                    for issue in issues:
+                        f.write(json.dumps(issue) + "\n")
+        else:
+            print("  Warning: bd list returned no data (server may be down)")
+    except FileNotFoundError:
+        print("  Warning: bd command not found, skipping beads sync")
+    except Exception as e:
+        print(f"  Warning: beads sync failed: {e}")
+
+
+def sync_investigations_index():
+    """Regenerate investigations/index.json from .md files."""
+    import re
+    inv_dir = DATA_DIR / "investigations"
+    if not inv_dir.is_dir():
+        return
+
+    reports = []
+    for fname in sorted(os.listdir(inv_dir)):
+        if not fname.endswith('.md'):
+            continue
+        path = inv_dir / fname
+        content = path.read_text(encoding="utf-8")
+        title_match = re.search(r'^# (.+)', content, re.MULTILINE)
+        title = title_match.group(1) if title_match else fname
+        date_match = re.search(r'\*\*Date\*\*:\s*(.+)', content)
+        date = date_match.group(1).strip() if date_match else ''
+        fam_match = re.search(r'\*\*Famil(?:y|ies)\*\*:\s*(.+)', content)
+        families = fam_match.group(1).strip() if fam_match else ''
+        issue_match = re.search(r'\*\*Issue\*\*:\s*(.+)', content)
+        issue = issue_match.group(1).strip() if issue_match else ''
+        reports.append({
+            'filename': fname,
+            'title': title,
+            'date': date,
+            'families': families,
+            'issue': issue,
+            'content': content,
+        })
+
+    output = {
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'count': len(reports),
+        'reports': reports,
+    }
+    save_json(inv_dir / "index.json", output)
+
+
 def sync_fontc_crater():
     """Run fetch_crater_analysis.py to refresh fontc_crater data."""
     script = REPO_ROOT / "scripts" / "fetch_crater_analysis.py"
@@ -465,8 +528,6 @@ def main():
     print("=" * 60)
     print("  [ ] data/message_log.json — log all user+assistant messages")
     print("  [ ] data/devlog.json — chronicle significant work done this session")
-    print("  [ ] Beads issues — if any bd create/update/close was done,")
-    print("      export issues.jsonl and commit it")
     print("  [ ] build_registry.json — if builds were run, ensure")
     print("      data/build_registry.json is up to date (single source of truth)")
     print("=" * 60)
@@ -504,6 +565,12 @@ def main():
 
     sync_fontc_crater()
     print("fontc_crater_analysis.json: updated")
+
+    sync_beads_issues()
+    print("beads_issues.json: updated")
+
+    sync_investigations_index()
+    print("investigations/index.json: updated")
 
     if src_changes > 0:
         sync_build_approaches()
