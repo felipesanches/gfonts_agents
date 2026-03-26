@@ -334,6 +334,13 @@ function renderCoverageGap(data) {
                 ${categories['no_commit'] || 0} lack a commit hash,
                 ${categories['no_source'] || 0} have no source block at all.
             </p>
+            <p style="margin:0.5em 0 0;font-size:0.85em;color:#888;font-style:italic;">
+                Note: Numbers here may occasionally diverge from the
+                <a href="https://googlefonts.github.io/fontc_crater/" target="_blank">fontc_crater dashboard</a>
+                because newly discovered repo information may still be waiting to be submitted to
+                (or merged into) fontc_crater's
+                <a href="https://github.com/googlefonts/fontc_crater/blob/main/targets.json" target="_blank">targets.json</a>.
+            </p>
         </details>
     `;
 }
