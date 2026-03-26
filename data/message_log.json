@@ -1532,5 +1532,35 @@
     "role": "assistant",
     "timestamp": "2026-03-26T02:45:00Z",
     "content": "Session wrap-up: updated message log, devlog, and beads issues."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T06:00:00Z",
+    "content": "Here are a few additional hints for repos of font-family sources: cathschmidt/yatra-one, smc/Meera, EkType/Mukta, Omnibus-Type/PragatiNarrow, appajid/ponnala, danhhong, woowabros Korean fonts, wmk69, impallari, SorkinType, vernnobile, and more."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T07:00:00Z",
+    "content": "Researched all hints. Found 55 repos covering 55 families. Cloned 46 new repos. Created PR #10380 with 54 commits (later updated to 59). 14 families upgraded from librefonts mirrors to canonical designer repos."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T08:00:00Z",
+    "content": "More hints: anoxic/neuton, antonxheight/Ranga, cyrealtype/Prata, googlefonts/rubik, googlefonts/sawarabi-mincho, JulietaUla/Montserrat, khmertype/Yinmar, moyogo/molengo-fonts, naver/nanumfont, SorkinType/*, vernnobile/oxygenFont, gitlab.com/smc/meera-inimai, savannah.nongnu.org/projects/free-tibetan, sourceforge.net/projects/istok"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T09:00:00Z",
+    "content": "Researched all hints. 14 families upgraded from librefonts to canonical repos, 4 new discoveries (ranga, yinmar, sawarabigothic, nanumgothiccoding). 16 override config.yaml files created for families with buildable sources. PR #10380 updated to 59 commits."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T09:30:00Z",
+    "content": "PR #10380 has been closed now. Please open an issue detailing the remaining families lacking sources with a table and mention recent progress and planned next phase."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T10:00:00Z",
+    "content": "Created issue #10381 listing 16 remaining families without source repos. Table includes Family, Designer/Foundry, Scripts, Last Binary Update (with commit hash), Onboarding Date. cc'd @davelab6 and @rsheeter."
   }
 ]
