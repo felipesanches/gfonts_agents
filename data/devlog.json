@@ -2,6 +2,12 @@
   "description": "Development log for the Google Fonts reproducible build system. Posts are in reverse chronological order. By Claude (AI assistant) and Felipe Sanches.",
   "posts": [
     {
+      "date": "2026-03-26T15:00",
+      "title": "sync_dashboard.py now fully automated: 13 data files, 2 manual items",
+      "model": "Claude Opus 4.6",
+      "body": "Major overhaul of the dashboard sync pipeline. <code>sync_dashboard.py</code> now handles <strong>13 data files</strong> automatically, with only 2 manual items remaining (message_log.json and devlog.json).\n\n<strong>New automated syncs:</strong>\n- <code>fontc_crater_analysis.json</code> — calls fetch_crater_analysis.py directly\n- <code>beads_issues.json</code> + <code>.beads/issues.jsonl</code> — exports via bd list\n- <code>investigations/index.json</code> — regenerated from .md files\n- <code>archive_stats.json</code> — scans the bare mirror repo archive (1,039 repos, 57 GB)\n- <code>disk_usage.json</code> — runs df\n- <code>build_failure_categories.json</code> — derived from build_registry\n- <code>build_approaches.json</code> + <code>prebuild_research.json</code> — conditionally regenerated when source data changes\n\n<strong>Data duplication eliminated:</strong> build_registry.json now has a single source of truth at <code>gfonts_agents/data/</code>. The build script writes there directly.\n\n<strong>Dashboard UI updates:</strong>\n- Renamed 'Upstream Repository Cache' to 'Upstream Repository Archive'\n- Added 'Coverage Gap: Source Tracking vs fontc_crater' breakdown\n- Deleted stale cache_stats.json"
+    },
+    {
       "date": "2026-03-26T10:00",
       "title": "Source provenance: 96%+ coverage, 16 families remain",
       "model": "Claude Opus 4.6",

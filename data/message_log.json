@@ -1562,5 +1562,30 @@
     "role": "assistant",
     "timestamp": "2026-03-26T10:00:00Z",
     "content": "Created issue #10381 listing 16 remaining families without source repos. Table includes Family, Designer/Foundry, Scripts, Last Binary Update (with commit hash), Onboarding Date. cc'd @davelab6 and @rsheeter."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T11:00:00Z",
+    "content": "In the dashboard, break down the differences between Source Tracking tab and fontc_crater dashboard."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T11:30:00Z",
+    "content": "Added 'Coverage Gap: Source Tracking vs fontc_crater' section to the Source Tracking tab. Shows all 2,002 families categorized by source availability and crater testability."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T12:00:00Z",
+    "content": "Rename 'Upstream Repository Cache' to 'Upstream Repository Archive'. Make sure sync_dashboard.py updates everything."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T14:00:00Z",
+    "content": "Renamed cache to archive in HTML/JS. Added archive_stats.json generation to sync_dashboard.py. Added disk_usage.json, build_failure_categories.json, fontc_crater auto-fetch, beads auto-sync, investigations index regeneration. Eliminated build_registry.json duplication. Checklist reduced to 2 manual items (message_log, devlog)."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T14:30:00Z",
+    "content": "now sync the dashboard!"
   }
 ]
