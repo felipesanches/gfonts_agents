@@ -343,30 +343,59 @@ def sync_disk_usage():
 
 
 def sync_build_failure_categories(registry):
-    """Update build_failure_categories.json from the build registry."""
+    """Update build_failure_categories.json from the build registry + build logs."""
     categories_path = DATA_DIR / "build_failure_categories.json"
     categories = load_json(categories_path) if categories_path.exists() else {"snapshots": []}
 
-    # Count current failures by category
-    failure_counts = Counter()
+    # Collect failures with details
+    failure_details = {}  # cat -> {count, families: [{name, error}]}
     for name, entry in registry.get("families", {}).items():
         rb = entry.get("reproducible_build", "")
-        if rb == "build-failure":
-            # Use failure_category if available, else generic
-            cat = entry.get("failure_category", "unknown")
-            failure_counts[cat] += 1
+        if rb != "build-failure":
+            continue
+        cat = entry.get("failure_category", "unknown")
+        if cat not in failure_details:
+            failure_details[cat] = {"count": 0, "families": []}
+        failure_details[cat]["count"] += 1
+
+        # Try to extract error message from build log
+        error_msg = entry.get("failure_message", "")
+        if not error_msg:
+            log_path = REPRO_BUILDS_DIR / name / "build_log.txt"
+            if log_path.exists():
+                try:
+                    log_text = log_path.read_text(encoding="utf-8", errors="replace")
+                    lines = log_text.strip().split("\n")
+                    error_lines = [l.strip() for l in lines
+                                   if "error" in l.lower() or "Error" in l
+                                   or "FAILED" in l or "AssertionError" in l]
+                    if error_lines:
+                        error_msg = error_lines[-1][:200]
+                except Exception:
+                    pass
+
+        failure_details[cat]["families"].append({
+            "name": name,
+            "error": error_msg,
+        })
 
     current = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "total_failures": sum(failure_counts.values()),
-        "categories": dict(failure_counts),
+        "total_failures": sum(d["count"] for d in failure_details.values()),
+        "categories": failure_details,
     }
 
-    # Only append if counts changed
+    # Only append snapshot if counts changed; always update latest
     snapshots = categories.get("snapshots", [])
+    current_counts = {k: v["count"] for k, v in failure_details.items()}
     if snapshots:
-        last = snapshots[-1].get("categories", {})
-        if last == current["categories"]:
+        last_cats = snapshots[-1].get("categories", {})
+        last_counts = {k: (v["count"] if isinstance(v, dict) else v) for k, v in last_cats.items()}
+        if last_counts == current_counts:
+            # Counts unchanged — update latest in place (to refresh error messages)
+            snapshots[-1] = current
+            categories["snapshots"] = snapshots
+            save_json(categories_path, categories)
             return
     snapshots.append(current)
     categories["snapshots"] = snapshots

@@ -4031,15 +4031,24 @@ function renderBuildFailures(data) {
             const fixBadge = meta.fix === 'yes' ? '<span style="color:#4caf50;">Yes</span>'
                 : meta.fix === 'partial' ? '<span style="color:#ff9800;">Partial</span>'
                 : '<span style="color:#f44336;">No</span>';
-            const familiesCell = families.length > 0
-                ? `<details><summary>${count} families</summary><div style="font-size:0.8em;max-height:200px;overflow-y:auto;padding:4px;">${families.join(', ')}</div></details>`
-                : `${count} families`;
+            let familiesHtml;
+            if (families.length > 0) {
+                const rows = families.map(f => {
+                    if (typeof f === 'string') return `<li><strong>${escapeHtml(f)}</strong></li>`;
+                    const name = f.name || '?';
+                    const error = f.error ? `<br><span style="color:#999;font-size:0.85em;">${escapeHtml(f.error.substring(0, 150))}</span>` : '';
+                    return `<li><strong>${escapeHtml(name)}</strong>${error}</li>`;
+                }).join('');
+                familiesHtml = `<details><summary>${count} families</summary><ul style="font-size:0.85em;max-height:300px;overflow-y:auto;padding:4px 4px 4px 1.5em;margin:0.3em 0;">${rows}</ul></details>`;
+            } else {
+                familiesHtml = `${count} families`;
+            }
             return `<tr>
                 <td><code>${cat}</code></td>
                 <td style="text-align:center;"><strong>${count}</strong></td>
                 <td style="text-align:center;">${fixBadge}</td>
                 <td>${meta.desc}</td>
-                <td>${familiesCell}</td>
+                <td>${familiesHtml}</td>
             </tr>`;
         }).join('');
     }
