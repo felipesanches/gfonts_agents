@@ -1442,5 +1442,95 @@
     "role": "assistant",
     "timestamp": "2026-03-25T22:35:00Z",
     "content": "Saved policy: message log updates are mandatory on every dashboard commit. Catching up the full session log now."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T23:00:00Z",
+    "content": "Also, are you should be logging all messages. Can you make sure the the message log update should be part of the mandatory procedures of dashboard updates?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T23:05:00Z",
+    "content": "Added mandatory checklist to sync_dashboard.py that prints on every run: message log, devlog, beads, fontc crater, build registry. Saved policy to memory."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T23:10:00Z",
+    "content": "Remove the conditional. Always print the reminder."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T23:12:00Z",
+    "content": "Removed conditional — checklist now prints unconditionally on every sync_dashboard.py run."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T23:15:00Z",
+    "content": "Are there other things that the script should remind the agents regularly?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T23:20:00Z",
+    "content": "Added 5-item mandatory checklist to sync_dashboard.py: message log, devlog, beads issues, fontc crater sync, build registry. Moved before early return so it prints even in dry-run mode."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T23:25:00Z",
+    "content": "well... now sync the dashboard!"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T23:30:00Z",
+    "content": "Ran sync_dashboard.py --apply --commit. 25 coherence issues found and fixed. Dashboard status: 1,381 families tested, 306 byte-identical, 340 functionally equivalent."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T23:35:00Z",
+    "content": "let's perform any pending build tests then. Make a plan for my review first."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-25T23:45:00Z",
+    "content": "Plan: 31 buildable untested families. 4 fixes needed: (1) license dir search for apache/ufl, (2) Noto config paths, (3) local archive for large repos, (4) legacy source classification. Fixes would unblock 254 families."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-25T23:50:00Z",
+    "content": "yes, do it all. For fix number 2, choose option A and do it only on the affected noto fonts."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T02:00:00Z",
+    "content": "Implemented all 4 fixes to reproducible_build.py. Results: registry grew from 1,272 to 1,381 (+109). robotoslab and ubuntusansmono built successfully (compiler-version). adamina built (compiler-version). 79 GFD families classified as legacy-no-modern-source. 19 Noto noto-fonts families confirmed not rebuildable (old monorepo has pre-built binaries, not sources). Used shared symlink for GFD monorepo extractions to save disk. Freed 21 GB from duplicate extractions."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T02:10:00Z",
+    "content": "are there updates to METADATA.pb or upstream_info.md that we need to submit as a PR?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T02:20:00Z",
+    "content": "Found 25 modified config.yaml files with path fixes. Created PR #10373 to fix source paths in override configs (22 Noto + 3 GFD families). PR merged."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T02:30:00Z",
+    "content": "PR #10373 is merged."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T02:35:00Z",
+    "content": "Pulled merged PR, ran sync_dashboard.py. 188 changes synced, all coherence issues resolved. Dashboard: 1,381 tested, 306 byte-identical, 1,373 complete."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-26T02:40:00Z",
+    "content": "wrap up"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-26T02:45:00Z",
+    "content": "Session wrap-up: updated message log, devlog, and beads issues."
   }
 ]

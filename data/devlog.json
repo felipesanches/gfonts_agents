@@ -2,6 +2,12 @@
   "description": "Development log for the Google Fonts reproducible build system. Posts are in reverse chronological order. By Atlas (AI assistant) and Felipe Sanches.",
   "posts": [
     {
+      "date": "2026-03-26T03:00",
+      "title": "Build system fixes: registry grows from 1,272 to 1,381 families",
+      "model": "Claude Opus 4.6",
+      "body": "Implemented 4 fixes to the reproducible build script and ran builds on newly testable families.\n\n<strong>Fix 1 — License directory search:</strong> Build script now finds families in <code>apache/</code> and <code>ufl/</code> (was hardcoded to <code>ofl/</code> only). Unblocked 42 families.\n\n<strong>Fix 2 — Noto config paths:</strong> Prepended <code>sources/</code> to source paths in 22 Noto override configs. <a href=\"https://github.com/google/fonts/pull/10373\">PR #10373</a> merged.\n\n<strong>Fix 3 — Local archive:</strong> Build script now extracts from bare mirror archive before attempting GitHub tarball download.\n\n<strong>Fix 4 — Legacy classification:</strong> Families with only .sfd/.vfb sources classified as <code>legacy-no-modern-source</code> without attempting a build.\n\n<strong>Results:</strong> Registry grew from 1,272 to 1,381 (+109). robotoslab, ubuntusansmono, adamina build successfully (compiler-version). 79 GFD families classified as legacy-no-modern-source. 19 Noto noto-fonts families confirmed not rebuildable (old monorepo has pre-built binaries only)."
+    },
+    {
       "date": "2026-03-25T22:00",
       "title": "Archive update: 982 repos (55 GB), 28 Noto families mapped",
       "model": "Claude Opus 4.6",
