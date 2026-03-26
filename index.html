@@ -196,31 +196,32 @@
                     <canvas id="progress-chart" width="600" height="200"></canvas>
                 </div>
 
-                <div class="cache-stats" id="cache-stats">
-                    <h3>Upstream Repository Cache</h3>
+                <div class="cache-stats" id="archive-stats">
+                    <h3>Upstream Repository Archive</h3>
                     <div class="cache-summary">
                         <div class="cache-stat">
-                            <span class="cache-value" id="cache-total">--</span>
-                            <span class="cache-label">Unique Repos</span>
+                            <span class="cache-value" id="archive-total-repos">--</span>
+                            <span class="cache-label">Unique Repos (with URL)</span>
                         </div>
                         <div class="cache-stat cloned">
-                            <span class="cache-value" id="cache-cloned">--</span>
-                            <span class="cache-label">Cloned</span>
+                            <span class="cache-value" id="archive-archived">--</span>
+                            <span class="cache-label">Archived (bare mirrors)</span>
                         </div>
                         <div class="cache-stat not-cloned">
-                            <span class="cache-value" id="cache-not-cloned">--</span>
-                            <span class="cache-label">Not Cloned</span>
+                            <span class="cache-value" id="archive-not-archived">--</span>
+                            <span class="cache-label">Not Yet Archived</span>
                         </div>
                     </div>
                     <div class="cache-progress">
                         <div class="cache-bar-container">
-                            <div class="cache-bar" id="cache-bar" style="width: 0%"></div>
+                            <div class="cache-bar" id="archive-bar" style="width: 0%"></div>
                         </div>
-                        <span class="cache-percent" id="cache-percent">0%</span>
+                        <span class="cache-percent" id="archive-percent">0%</span>
                     </div>
+                    <p style="font-size:0.85em;color:#666;margin:0.5em 0;" id="archive-size-note"></p>
                     <details class="not-cloned-list">
-                        <summary>Show repos not yet cloned (<span id="not-cloned-count">0</span>)</summary>
-                        <ul id="not-cloned-repos"></ul>
+                        <summary>Show repos not yet archived (<span id="not-archived-count">0</span>)</summary>
+                        <ul id="not-archived-repos"></ul>
                     </details>
                 </div>
 

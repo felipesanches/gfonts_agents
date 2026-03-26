@@ -260,6 +260,65 @@ def sync_progress_history(sources):
     save_json(history_path, history)
 
 
+def sync_archive_stats(sources):
+    """Generate archive_stats.json from the repo archive on disk."""
+    archive_dir = Path(os.environ.get("REPO_ARCHIVE", "/mnt/shared/upstream_repos/repo_archive"))
+
+    if not archive_dir.is_dir():
+        for candidate in [Path("/mnt/shared/upstream_repos/repo_archive")]:
+            if candidate.is_dir():
+                archive_dir = candidate
+                break
+
+    # Count archived repos
+    archived_repos = set()
+    if archive_dir.is_dir():
+        for owner in archive_dir.iterdir():
+            if not owner.is_dir():
+                continue
+            for repo in owner.iterdir():
+                if repo.name.endswith('.git') and repo.is_dir():
+                    archived_repos.add(f'{owner.name}/{repo.name[:-4]}')
+
+    # Collect unique repos from sources data
+    all_repos = set()
+    for f in sources.get("families", []):
+        url = f.get("repository_url", "")
+        if not url:
+            continue
+        for prefix in ['https://github.com/', 'https://www.github.com/',
+                       'https://gitlab.com/', 'http://github.com/']:
+            if url.startswith(prefix):
+                rest = url[len(prefix):].rstrip('/').rstrip('.git')
+                parts = rest.split('/')
+                if len(parts) >= 2:
+                    all_repos.add(f'{parts[0]}/{parts[1]}')
+                break
+
+    not_archived = sorted(all_repos - archived_repos)
+
+    # Get archive size
+    size_gb = "?"
+    try:
+        result = subprocess.run(["du", "-sh", str(archive_dir)],
+                               capture_output=True, text=True, timeout=30)
+        if result.returncode == 0:
+            size_gb = result.stdout.split()[0].replace('G', '')
+    except Exception:
+        pass
+
+    stats = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "total_unique_repos": len(all_repos),
+        "archived": len(archived_repos),
+        "not_archived": len(not_archived),
+        "archive_size_gb": size_gb,
+        "archive_path": str(archive_dir),
+        "not_archived_list": [f'https://github.com/{r}' for r in not_archived[:50]],
+    }
+    save_json(DATA_DIR / "archive_stats.json", stats)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Sync all dashboard data from sources of truth")
     parser.add_argument("--apply", action="store_true", help="Apply changes (default: dry-run)")
@@ -324,6 +383,9 @@ def main():
 
     sync_progress_history(sources)
     print("progress_history.json: snapshot appended")
+
+    sync_archive_stats(sources)
+    print("archive_stats.json: updated")
 
     # Post-sync validation
     print("\n=== Post-sync validation ===")

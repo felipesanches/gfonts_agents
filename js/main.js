@@ -1552,38 +1552,40 @@ function formatODPItemWithLinks(item) {
 // Cache Stats functionality
 async function loadCacheStats() {
     try {
-        const response = await fetch('data/cache_stats.json');
+        const response = await fetch('data/archive_stats.json');
         const data = await response.json();
 
-        // Update stats
-        document.getElementById('cache-total').textContent = data.total_unique_repos;
-        document.getElementById('cache-cloned').textContent = data.cloned;
-        document.getElementById('cache-not-cloned').textContent = data.not_cloned;
+        document.getElementById('archive-total-repos').textContent = data.total_unique_repos;
+        document.getElementById('archive-archived').textContent = data.archived;
+        document.getElementById('archive-not-archived').textContent = data.not_archived;
 
-        // Calculate and display percentage
-        const percent = ((data.cloned / data.total_unique_repos) * 100).toFixed(1);
-        document.getElementById('cache-percent').textContent = percent + '% cloned';
-        document.getElementById('cache-bar').style.width = percent + '%';
+        const percent = ((data.archived / data.total_unique_repos) * 100).toFixed(1);
+        document.getElementById('archive-percent').textContent = percent + '% archived';
+        document.getElementById('archive-bar').style.width = percent + '%';
 
-        // Update not-cloned count
-        document.getElementById('not-cloned-count').textContent = data.not_cloned;
+        const sizeNote = document.getElementById('archive-size-note');
+        if (sizeNote && data.archive_size_gb) {
+            sizeNote.textContent = `Archive size: ${data.archive_size_gb} GB · ${data.archived} bare git mirrors · Last updated: ${new Date(data.timestamp).toLocaleDateString()}`;
+        }
 
-        // Populate not-cloned list
-        const ul = document.getElementById('not-cloned-repos');
-        if (data.not_cloned_list && data.not_cloned_list.length > 0) {
-            ul.innerHTML = data.not_cloned_list.map(url => {
+        document.getElementById('not-archived-count').textContent = data.not_archived;
+
+        const ul = document.getElementById('not-archived-repos');
+        if (data.not_archived_list && data.not_archived_list.length > 0) {
+            ul.innerHTML = data.not_archived_list.map(url => {
                 const shortUrl = url.replace('https://github.com/', '').replace('https://gitlab.com/', 'gitlab:');
                 return `<li><a href="${escapeHtml(url)}" target="_blank">${escapeHtml(shortUrl)}</a></li>`;
             }).join('');
-            if (data.not_cloned > data.not_cloned_list.length) {
-                ul.innerHTML += `<li><em>... and ${data.not_cloned - data.not_cloned_list.length} more</em></li>`;
+            if (data.not_archived > data.not_archived_list.length) {
+                ul.innerHTML += `<li><em>... and ${data.not_archived - data.not_archived_list.length} more</em></li>`;
             }
         } else {
-            ul.innerHTML = '<li>All repositories are cloned!</li>';
+            ul.innerHTML = '<li>All repositories are archived!</li>';
         }
     } catch (error) {
-        console.error('Failed to load cache stats:', error);
-        document.getElementById('cache-stats').innerHTML = '<p class="error">Failed to load cache stats.</p>';
+        console.error('Failed to load archive stats:', error);
+        const el = document.getElementById('archive-stats');
+        if (el) el.innerHTML = '<p class="error">Failed to load archive stats.</p>';
     }
 }
 
