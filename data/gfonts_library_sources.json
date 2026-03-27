@@ -1018,7 +1018,7 @@
       "has_investigation_report": true,
       "status": "complete",
       "date_added": "2025-11-20",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/amaticsc/METADATA.pb",

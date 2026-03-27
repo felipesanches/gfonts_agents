@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T13:06:20.367385+00:00",
+  "generated_at": "2026-03-27T13:13:34.601825+00:00",
   "description": "Build timing data extracted from comparison reports",
   "families": {
     "tirotelugu": {
@@ -2615,9 +2615,9 @@
     "amarna": {
       "timings": [
         {
-          "build_time_seconds": 1.8,
-          "status": "build-failure",
-          "timestamp": "2026-03-16T16:41:29.330779+00:00"
+          "build_time_seconds": 168.5,
+          "status": "yes",
+          "timestamp": "2026-03-27T13:13:18.623130+00:00"
         }
       ]
     },

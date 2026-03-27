@@ -861,7 +861,7 @@
     "amarna": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "build-failure",
+      "reproducible_build": "yes",
       "notes": "",
       "overrides": {},
       "config_yaml_source": "upstream",
