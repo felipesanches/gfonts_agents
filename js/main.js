@@ -216,9 +216,9 @@ function renderCoverageGap(data) {
     // Categorize every family
     const categories = {};
     const catLabels = {
-        'buildable_tested': 'Tested in reproducible build system',
+        'buildable_tested': 'Built successfully (byte-identical, compiler-version, name-table, timestamp-diff)',
         'build_failure': 'Build attempted but failed',
-        'missing_config': 'Has source + commit but no config.yaml',
+        'missing_config': 'Has source + commit but no config.yaml — not yet buildable',
         'legacy_sources': 'Only legacy sources (.sfd/.vfb) — not buildable with gftools-builder',
         'metadata_wrong': 'METADATA.pb source block incorrect',
         'no_commit': 'Has repo URL but no commit hash',
@@ -285,7 +285,8 @@ function renderCoverageGap(data) {
         const pct = (count / data.families.length * 100).toFixed(1);
         const color = catColors[cat] || '#999';
         const label = catLabels[cat] || cat;
-        const inCrater = (cat === 'buildable_tested' || cat === 'build_failure') ? '✓' : '—';
+        const inCrater = (cat === 'buildable_tested' || cat === 'build_failure') ? '✓ tested' :
+                         (cat === 'legacy_sources') ? '✓ classified' : '—';
         tableRows += `<tr>
             <td><span style="display:inline-block;width:12px;height:12px;background:${color};border-radius:2px;margin-right:6px;vertical-align:middle;"></span>${label}</td>
             <td style="text-align:right;font-weight:600;">${count}</td>
@@ -318,7 +319,7 @@ function renderCoverageGap(data) {
                         <td>Total</td>
                         <td style="text-align:right;">${data.families.length}</td>
                         <td style="text-align:right;">100%</td>
-                        <td style="text-align:center;">${craterTestable} testable</td>
+                        <td style="text-align:center;">${craterTestable + (categories['legacy_sources'] || 0)} in registry</td>
                     </tr>
                 </tfoot>
             </table>
