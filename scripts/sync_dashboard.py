@@ -188,20 +188,25 @@ def sync_build_system(registry, build_system, norm_results):
         s = entry.get("reproducible_build", "unknown")
         reg_statuses[s] += 1
 
-    summary = build_system.setdefault("summary", {})
-    summary["processed"] = sum(reg_statuses.values())
-    summary["yes"] = reg_statuses.get("yes", 0)
-    summary["compiler_version"] = reg_statuses.get("compiler-version", 0)
-    summary["build_failure"] = reg_statuses.get("build-failure", 0)
-    summary["timestamp_diff"] = reg_statuses.get("timestamp-diff", 0)
-    summary["name_table"] = reg_statuses.get("name-table", 0)
-    summary["legacy_no_modern_source"] = reg_statuses.get("legacy-no-modern-source", 0)
-    summary["metadata_stanza_wrong"] = reg_statuses.get("metadata-stanza-wrong", 0)
-    summary["missing_source"] = reg_statuses.get("missing-source", 0)
+    # Replace summary entirely to avoid stale keys from old formats
+    summary = {
+        "processed": sum(reg_statuses.values()),
+        "yes": reg_statuses.get("yes", 0),
+        "compiler_version": reg_statuses.get("compiler-version", 0),
+        "build_failure": reg_statuses.get("build-failure", 0),
+        "timestamp_diff": reg_statuses.get("timestamp-diff", 0),
+        "name_table": reg_statuses.get("name-table", 0),
+        "legacy_no_modern_source": reg_statuses.get("legacy-no-modern-source", 0),
+        "metadata_stanza_wrong": reg_statuses.get("metadata-stanza-wrong", 0),
+        "missing_source": reg_statuses.get("missing-source", 0),
+        "missing_config": reg_statuses.get("missing_config", 0),
+        "normalized_match": 0,
+    }
 
     if norm_results:
         summary["normalized_match"] = norm_results.get("normalized_match", 0)
 
+    build_system["summary"] = summary
     return True
 
 
