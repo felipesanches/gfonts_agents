@@ -161,6 +161,23 @@
         "needs_correction": 4
       },
       "source": "sync_dashboard"
+    },
+    {
+      "timestamp": "2026-03-27T13:06:21.095062+00:00",
+      "summary": {
+        "total": 2002,
+        "complete": 1382,
+        "missing_config": 479,
+        "missing_commit": 64,
+        "no_source": 73,
+        "has_source_block": 1927,
+        "has_repo_url": 1924,
+        "has_commit": 1856,
+        "investigation_reports": 1998,
+        "no_upstream_repo": 0,
+        "needs_correction": 4
+      },
+      "source": "sync_dashboard"
     }
   ]
 }

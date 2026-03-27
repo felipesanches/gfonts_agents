@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T11:08:51.994529+00:00",
+  "generated_at": "2026-03-27T13:06:20.367385+00:00",
   "description": "Build timing data extracted from comparison reports",
   "families": {
     "tirotelugu": {
@@ -185,9 +185,9 @@
     "istokweb": {
       "timings": [
         {
-          "build_time_seconds": 4.1,
+          "build_time_seconds": 71.3,
           "status": "build-failure",
-          "timestamp": "2026-03-27T10:58:40.873137+00:00"
+          "timestamp": "2026-03-27T12:46:07.720395+00:00"
         }
       ]
     },
@@ -311,9 +311,9 @@
     "yatraone": {
       "timings": [
         {
-          "build_time_seconds": 4.8,
+          "build_time_seconds": 15.1,
           "status": "build-failure",
-          "timestamp": "2026-03-27T11:08:19.540159+00:00"
+          "timestamp": "2026-03-27T12:53:43.341329+00:00"
         }
       ]
     },
@@ -374,9 +374,9 @@
     "prata": {
       "timings": [
         {
-          "build_time_seconds": 4.8,
-          "status": "build-failure",
-          "timestamp": "2026-03-27T11:07:51.868268+00:00"
+          "build_time_seconds": 37.1,
+          "status": "yes",
+          "timestamp": "2026-03-27T12:52:16.726916+00:00"
         }
       ]
     },
@@ -896,18 +896,18 @@
     "tinos": {
       "timings": [
         {
-          "build_time_seconds": 4.4,
+          "build_time_seconds": 37.0,
           "status": "build-failure",
-          "timestamp": "2026-03-27T11:08:13.213041+00:00"
+          "timestamp": "2026-03-27T12:53:28.245850+00:00"
         }
       ]
     },
     "sriracha": {
       "timings": [
         {
-          "build_time_seconds": 5.3,
-          "status": "build-failure",
-          "timestamp": "2026-03-27T11:08:08.437362+00:00"
+          "build_time_seconds": 31.9,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T12:52:51.031046+00:00"
         }
       ]
     },
@@ -950,9 +950,9 @@
     "neuton": {
       "timings": [
         {
-          "build_time_seconds": 2.6,
-          "status": "build-failure",
-          "timestamp": "2026-03-27T11:05:49.535996+00:00"
+          "build_time_seconds": 40.7,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T12:51:12.472228+00:00"
         }
       ]
     },
@@ -977,9 +977,9 @@
     "lalezar": {
       "timings": [
         {
-          "build_time_seconds": 2.9,
+          "build_time_seconds": 35.0,
           "status": "build-failure",
-          "timestamp": "2026-03-27T10:58:58.413182+00:00"
+          "timestamp": "2026-03-27T12:47:56.572648+00:00"
         }
       ]
     },
@@ -1724,9 +1724,9 @@
     "cousine": {
       "timings": [
         {
-          "build_time_seconds": 12.7,
+          "build_time_seconds": 82.5,
           "status": "build-failure",
-          "timestamp": "2026-03-27T10:47:57.102368+00:00"
+          "timestamp": "2026-03-27T12:44:56.333243+00:00"
         }
       ]
     },
@@ -2849,9 +2849,9 @@
     "oxygen": {
       "timings": [
         {
-          "build_time_seconds": 5.9,
-          "status": "build-failure",
-          "timestamp": "2026-03-27T11:07:07.510028+00:00"
+          "build_time_seconds": 31.4,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T12:54:16.038819+00:00"
         }
       ]
     },
@@ -2930,9 +2930,9 @@
     "pragatinarrow": {
       "timings": [
         {
-          "build_time_seconds": 5.3,
+          "build_time_seconds": 27.1,
           "status": "build-failure",
-          "timestamp": "2026-03-27T11:07:46.895556+00:00"
+          "timestamp": "2026-03-27T12:51:39.618516+00:00"
         }
       ]
     },
@@ -3065,9 +3065,9 @@
     "kumaroneoutline": {
       "timings": [
         {
-          "build_time_seconds": 3.0,
+          "build_time_seconds": 34.7,
           "status": "build-failure",
-          "timestamp": "2026-03-27T10:58:54.695006+00:00"
+          "timestamp": "2026-03-27T12:47:21.519153+00:00"
         }
       ]
     },
@@ -3326,9 +3326,9 @@
     "mogra": {
       "timings": [
         {
-          "build_time_seconds": 2.8,
-          "status": "build-failure",
-          "timestamp": "2026-03-27T10:59:25.739878+00:00"
+          "build_time_seconds": 147.9,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T12:50:29.046791+00:00"
         }
       ]
     },
@@ -3533,9 +3533,9 @@
     "kumarone": {
       "timings": [
         {
-          "build_time_seconds": 3.8,
+          "build_time_seconds": 39.0,
           "status": "build-failure",
-          "timestamp": "2026-03-27T10:58:51.586150+00:00"
+          "timestamp": "2026-03-27T12:46:46.729669+00:00"
         }
       ]
     },

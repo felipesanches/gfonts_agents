@@ -3383,6 +3383,262 @@
           ]
         }
       }
+    },
+    {
+      "timestamp": "2026-03-27T13:06:24.099861+00:00",
+      "total_failures": 60,
+      "categories": {
+        "unknown": {
+          "count": 59,
+          "families": [
+            {
+              "name": "alumnisanspinstripe",
+              "error": "fontmake: error: instance_ufos/AlumniSansPinstripe-Regular.ufo.json not found"
+            },
+            {
+              "name": "amarna",
+              "error": "FileNotFoundError: [Errno 2] No such file or directory: 'Amarna.glyphspackage'"
+            },
+            {
+              "name": "playfairdisplay",
+              "error": "fontmake: Error: In 'Playfair-2_2-Roman.glyphspackage' -> 'master_ufo/Playfair-Upright.designspace': Compatibility check failed"
+            },
+            {
+              "name": "playfairdisplaysc",
+              "error": "fontmake: Error: In 'Playfair-2_2-Italic.glyphspackage' -> 'master_ufo/Playfair-Italic.designspace': Compatibility check failed"
+            },
+            {
+              "name": "notosanssyriacwestern",
+              "error": ""
+            },
+            {
+              "name": "rubikmonoone",
+              "error": ""
+            },
+            {
+              "name": "sairastencilone",
+              "error": ""
+            },
+            {
+              "name": "wixmadefortext",
+              "error": ""
+            },
+            {
+              "name": "leckerlione",
+              "error": "fontmake: Error: In 'ofl/leckerlione/src/LeckerliOne-Regular.ufo': Compiling UFO failed: ofl/leckerlione/src/LeckerliOne-Regular.ufo/features.fea:280:13: Unknown glyph class @_kern_A_left"
+            },
+            {
+              "name": "snippet",
+              "error": "fontmake: Error: In 'ofl/snippet/src/Snippet.ufo': Compiling UFO failed: ofl/snippet/src/Snippet.ufo/features.fea:309:13: Unknown glyph class @_kern_A_left"
+            },
+            {
+              "name": "lilyscriptone",
+              "error": "AssertionError: Default source not found!"
+            },
+            {
+              "name": "arimo",
+              "error": "fontmake: Error: In 'sources/Arimo-Italic.designspace': Compatibility check failed"
+            },
+            {
+              "name": "kosugi",
+              "error": "fontmake: error: instance_ufos/Kosugi-Regular.ufo.json not found"
+            },
+            {
+              "name": "kosugimaru",
+              "error": "fontmake: error: instance_ufos/KosugiMaru-Regular.ufo.json not found"
+            },
+            {
+              "name": "ubuntusans",
+              "error": ""
+            },
+            {
+              "name": "notoserifnphmong",
+              "error": ""
+            },
+            {
+              "name": "notonaskharabicui",
+              "error": "fontmake.errors.FontmakeError: In 'NotoNaskhArabicUI.glyphspackage': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notonaskharabicui/source/arabic-1"
+            },
+            {
+              "name": "notosansbengaliui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansBengali.glyphspackage': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansbengaliui/source/no"
+            },
+            {
+              "name": "notosansdevanagariui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansDevanagariUI.glyphspackage': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansdevanagariui/s"
+            },
+            {
+              "name": "notosansdisplay",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSans.glyphspackage': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansdisplay/source/noto-fonts-"
+            },
+            {
+              "name": "notosansgujaratiui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansGujarati.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansgujaratiui/source/noto-fo"
+            },
+            {
+              "name": "notosansgurmukhiui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansGurmukhi.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansgurmukhiui/source/noto-fo"
+            },
+            {
+              "name": "notosanskannadaui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansKannada.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosanskannadaui/source/noto-font"
+            },
+            {
+              "name": "notosanskhmerui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansKhmerUI.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosanskhmerui/source/noto-fonts-"
+            },
+            {
+              "name": "notosanslaoui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansLaoUI-MM.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosanslaoui/source/noto-fonts-c"
+            },
+            {
+              "name": "notosansmalayalamui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansMalayalam.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansmalayalamui/source/noto-"
+            },
+            {
+              "name": "notosansmyanmarui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansMyanmarUI.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansmyanmarui/source/noto-fo"
+            },
+            {
+              "name": "notosansoriyaui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansOriya.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansoriyaui/source/noto-fonts-bc"
+            },
+            {
+              "name": "notosanssinhalaui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansSinhala.glyphspackage': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosanssinhalaui/source/no"
+            },
+            {
+              "name": "notosanstamilui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansTamil.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosanstamilui/source/noto-fonts-56"
+            },
+            {
+              "name": "notosansteluguui",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansTelugu.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansteluguui/source/noto-fonts-"
+            },
+            {
+              "name": "notosansthaiui",
+              "error": "OSError: Error reading file 'sources/NotoSansThaiUI.designspace': failed to load \"sources/NotoSansThaiUI.designspace\": No such file or directory"
+            },
+            {
+              "name": "notoserifdisplay",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSerif.glyphspackage': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notoserifdisplay/source/noto-font"
+            },
+            {
+              "name": "notoserifmyanmar",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSerifMyanmar.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notoserifmyanmar/source/noto-font"
+            },
+            {
+              "name": "notoserifnyiakengpuachuehmong",
+              "error": "OSError: Error reading file 'sources/NotoSerifNPHmong.designspace': failed to load \"sources/NotoSerifNPHmong.designspace\": No such file or directory"
+            },
+            {
+              "name": "cousine",
+              "error": "fontmake: error: sources/Cousine-Regular/instance_ufos/Cousine-Regular.ufo.json not found"
+            },
+            {
+              "name": "enriqueta",
+              "error": "AssertionError: Default source not found!"
+            },
+            {
+              "name": "federant",
+              "error": "AssertionError: Default source not found!"
+            },
+            {
+              "name": "hachimarupop",
+              "error": "AssertionError: Default source not found!"
+            },
+            {
+              "name": "hindcolombo",
+              "error": "fontmake: Error: In 'masters/HindColombo.glyphs' -> 'master_ufo/HindColombo.designspace': Generating fonts from Designspace failed: fonts contains incompatible glyphs: 'snA'"
+            },
+            {
+              "name": "hindjalandhar",
+              "error": "openstep_plist.parser.ParseError: Expected terminating '}' for dictionary at line 13798"
+            },
+            {
+              "name": "hindvadodara",
+              "error": "fontmake: Error: Compiling UFO failed: cannot map 'gjCandrabindu' to U+0A81; already mapped to 'gjmEcandra_Anusvara'"
+            },
+            {
+              "name": "istokweb",
+              "error": "fontmake: Error: Compiling UFO failed: <features>:67:5: Expected glyph class definition or statement: got NAME mark"
+            },
+            {
+              "name": "jacquesfrancois",
+              "error": "FileNotFoundError: [Errno 2] No such file or directory: 'sources/JacquesFrancois.glyphs'"
+            },
+            {
+              "name": "jacquesfrancoisshadow",
+              "error": "FileNotFoundError: [Errno 2] No such file or directory: 'sources/JacquesFrancoisShadow.glyphs'"
+            },
+            {
+              "name": "kumarone",
+              "error": "fontmake: Error: In 'masters/Kumar One.glyphs' -> 'master_ufo/KumarOne.designspace': Compatibility check failed"
+            },
+            {
+              "name": "kumaroneoutline",
+              "error": "fontmake: Error: In 'masters/Kumar One.glyphs' -> 'master_ufo/KumarOne.designspace': Compatibility check failed"
+            },
+            {
+              "name": "lalezar",
+              "error": "AssertionError: Default source not found!"
+            },
+            {
+              "name": "librecaslontext",
+              "error": "fontmake: Error: In 'sources/LibreCaslonText.glyphs' -> 'master_ufo/LibreCaslonText.designspace': Compatibility check failed"
+            },
+            {
+              "name": "montserratsubrayada",
+              "error": ""
+            },
+            {
+              "name": "moul",
+              "error": "fontmake: error: Source/instance_ufos/Moul-Regular.ufo.json not found"
+            },
+            {
+              "name": "nabla",
+              "error": "AssertionError: No final targets"
+            },
+            {
+              "name": "notosansnko_todelist",
+              "error": "fontmake.errors.FontmakeError: In 'sources/NotoSansNKoUnjoined.glyphs': Loading Glyphs file failed: [Errno 2] No such file or directory: '/mnt/shared/gfonts-repro-builds/notosansnko_todelist/source/no"
+            },
+            {
+              "name": "peddana",
+              "error": "fontmake: Error: In 'Peddana-Regular.ufo': Compiling UFO failed: ('Trying to perform operation on unsupported segment type.', 'qcurve')"
+            },
+            {
+              "name": "ponnala",
+              "error": "fontmake: Error: In 'Ponnala.ufo': Compiling UFO failed: ('Trying to perform operation on unsupported segment type.', 'qcurve')"
+            },
+            {
+              "name": "pragatinarrow",
+              "error": "fontmake: Error: Compiling UFO failed: <features>:316:1: \"languagesystem deva dflt\" has already been specified"
+            },
+            {
+              "name": "raviprakash",
+              "error": "fontmake: Error: In 'RaviPrakash.ufo': Compiling UFO failed: ('Trying to perform operation on unsupported segment type.', 'qcurve')"
+            },
+            {
+              "name": "tinos",
+              "error": "fontmake: error: sources/Tinos-Bold/instance_ufos/Tinos-Bold.ufo.json not found"
+            },
+            {
+              "name": "yatraone",
+              "error": "fontmake: Error: In 'source/masters/YatraOne_0.ufo': Compiling UFO failed: The width should not be negative: 'dvCandrabindu'"
+            }
+          ]
+        },
+        "unsupported-color-format": {
+          "count": 1,
+          "families": [
+            {
+              "name": "foldit",
+              "error": "nanoemoji maximum_color fails on COLR v1 Paint Format 5 (PaintLinearGradient)"
+            }
+          ]
+        }
+      }
     }
   ]
 }

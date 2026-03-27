@@ -20328,7 +20328,7 @@
     "mogra": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "build-failure",
+      "reproducible_build": "compiler-version",
       "notes": "",
       "overrides": {}
     },
@@ -20363,7 +20363,7 @@
     "neuton": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "build-failure",
+      "reproducible_build": "compiler-version",
       "notes": "",
       "overrides": {}
     },
@@ -20377,7 +20377,7 @@
     "oxygen": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "build-failure",
+      "reproducible_build": "compiler-version",
       "notes": "",
       "overrides": {}
     },
@@ -20405,7 +20405,7 @@
     "prata": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "build-failure",
+      "reproducible_build": "yes",
       "notes": "",
       "overrides": {}
     },
@@ -20419,7 +20419,7 @@
     "sriracha": {
       "enabled": true,
       "isolation": "shared",
-      "reproducible_build": "build-failure",
+      "reproducible_build": "compiler-version",
       "notes": "",
       "overrides": {}
     },

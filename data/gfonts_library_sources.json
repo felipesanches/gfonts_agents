@@ -2,10 +2,10 @@
   "generated_at": "2026-03-25T20:44:34.657153+00:00",
   "summary": {
     "total": 2002,
-    "complete": 1377,
+    "complete": 1382,
     "missing_config": 479,
     "missing_commit": 64,
-    "no_source": 78,
+    "no_source": 73,
     "has_source_block": 1927,
     "has_repo_url": 1924,
     "has_commit": 1856,
@@ -15287,9 +15287,9 @@
       "override_config": false,
       "has_source_block": false,
       "has_investigation_report": true,
-      "status": "missing_url",
+      "status": "complete",
       "date_added": "2017-05-09",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/mohave/METADATA.pb",
@@ -16326,9 +16326,9 @@
       "override_config": false,
       "has_source_block": false,
       "has_investigation_report": true,
-      "status": "missing_url",
+      "status": "complete",
       "date_added": "2011-02-09",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/newamsterdam/METADATA.pb",
@@ -20985,9 +20985,9 @@
       "override_config": false,
       "has_source_block": false,
       "has_investigation_report": true,
-      "status": "missing_url",
+      "status": "complete",
       "date_added": "2012-03-29",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/oxygenmono/METADATA.pb",
@@ -23726,9 +23726,9 @@
       "override_config": false,
       "has_source_block": false,
       "has_investigation_report": true,
-      "status": "missing_url",
+      "status": "complete",
       "date_added": "2011-09-07",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/preahvihear/METADATA.pb",
@@ -27635,9 +27635,9 @@
       "override_config": false,
       "has_source_block": false,
       "has_investigation_report": true,
-      "status": "missing_url",
+      "status": "complete",
       "date_added": "2015-07-01",
-      "reproducible_build": "build-failure"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/srisakdi/METADATA.pb",
