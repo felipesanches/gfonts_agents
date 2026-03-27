@@ -12,7 +12,7 @@
       "description": "Merging glyphs from one set of UFO masters into another using ufomerge.merge_ufos()",
       "priority": "COVERED",
       "existing_feature": "includeSubsets config key + addSubset operation (uses SubsetMerger -> ufomerge internally). Supports local files, remote repos, named glyphsets, codepoint ranges, layout handling, force replace.",
-      "remaining_gap": "Complex multi-step merges (e.g. youtube-sans with 7+ scripts) need investigation to confirm includeSubsets compatibility.",
+      "remaining_gap": "Complex multi-step merges with 7+ scripts need investigation to confirm includeSubsets compatibility.",
       "proposed_feature": "No new feature needed - use existing includeSubsets. Repos with custom merge scripts should be investigated for migration.",
       "total_repos_with_scripts": 5,
       "total_repos_with_dependency": 42
@@ -112,13 +112,6 @@
           "tool": "ufomerge.merge_ufos(), ufomerge.subset_ufo()",
           "uses_gftools_builder": true,
           "details": "Merges and subsets UFO sources."
-        },
-        {
-          "repo": "googlefonts/youtube-sans",
-          "scripts": ["sources/scripts/megaMerge.py", "sources/scripts/merge_JP.py", "sources/scripts/premerge.py"],
-          "tool": "ufomerge.merge_ufos()",
-          "uses_gftools_builder": true,
-          "details": "Merges 7 language scripts (Latin + Devanagari, Hebrew, Thai, Arabic, Tamil, Korean) into unified mega masters. Japanese merged separately via whitelist. layout_handling=subset, existing_handling=skip."
         }
       ],
       "with_dependency_only": [
@@ -135,7 +128,6 @@
         {"repo": "googlefonts/gidugu", "source": "requirements.txt"},
         {"repo": "googlefonts/Playfair", "source": "requirements.txt"},
         {"repo": "googlefonts/roboto-classic", "source": "requirements.txt"},
-        {"repo": "googlefonts/youtube-display", "source": "requirements.txt", "version": "==1.9.6"},
         {"repo": "calcom/font", "source": "requirements.txt"},
         {"repo": "CatharsisFonts/Cormorant", "source": "requirements.txt"},
         {"repo": "isaozler/kode-mono", "source": "requirements.txt"},
@@ -203,12 +195,6 @@
         {
           "repo": "googlefonts/googlesans-persian",
           "script_location": "Makefile",
-          "tool": "fontmake -o ufo",
-          "uses_gftools_builder": true
-        },
-        {
-          "repo": "googlefonts/youtube-sans",
-          "script_location": "Makefile (8 prep_* targets)",
           "tool": "fontmake -o ufo",
           "uses_gftools_builder": true
         }
@@ -689,16 +675,6 @@
         "missing_features_needed": ["target_ufo_subsetting", "preCompile"]
       },
       {
-        "repo": "googlefonts/youtube-sans",
-        "current_prebuild": "premerge.py (glyphs→UFO for 8 languages) + megaMerge.py (merges 7 scripts) + merge_JP.py (Japanese whitelist merge)",
-        "convertible_parts": "The non-Japanese multi-script merge could use includeSubsets with multiple entries (layoutHandling: subset). The per-language .glyphs conversion is handled by glyphs2ds.",
-        "blocking_gaps": [
-          "Japanese glyph-name whitelist: merge_JP.py selects glyphs by name, not by Unicode codepoint. includeSubsets has exclude_glyphs but no include_glyphs parameter",
-          "Complex 8-source structure: each language is a separate .glyphs file that must be converted and matched by axis location"
-        ],
-        "missing_features_needed": ["include_glyphs_parameter", "preCompile"]
-      },
-      {
         "repo": "aaronbell/signika",
         "current_prebuild": "preprocess.py (glyphs2ufo + adds propagateAnchors filter to UFO lib + generates instances)",
         "convertible_parts": "The glyphs2ufo step is handled natively. Instance generation uses instantiateUfo.",
@@ -779,7 +755,6 @@
           "googlefonts/googlesans-persian",
           "googlefonts/googlesans-myanmar",
           "googlefonts/googlesans-gurage",
-          "googlefonts/youtube-sans",
           "aaronbell/signika",
           "Gue3bara/Cairo",
           "mishamyrt/Lilex",
@@ -789,7 +764,7 @@
           "Gissio/font_tiny5",
           "balt-dev/bytesized-gf"
         ],
-        "count": 13,
+        "count": 12,
         "priority": "HIGH — universal escape hatch, unblocks all repos"
       },
       "source_ds_manipulation": {
@@ -802,15 +777,6 @@
         ],
         "count": 3,
         "priority": "MEDIUM — targeted at Google Sans family repos"
-      },
-      "include_glyphs_parameter": {
-        "description": "Add an include_glyphs parameter to includeSubsets (parallel to exclude_glyphs) to allow glyph-name-based whitelist selection from donors. Currently only codepoint-based selection is supported.",
-        "proposed_config": "includeSubsets:\n  - from: path/to/japanese.designspace\n    include_glyphs:\n      - glyph_name_1\n      - glyph_name_2\n    # or: include_glyphs_file: glyphs_to_merge.txt",
-        "would_benefit": [
-          "googlefonts/youtube-sans"
-        ],
-        "count": 1,
-        "priority": "LOW — only youtube-sans needs this"
       },
       "target_ufo_subsetting": {
         "description": "A mechanism to remove glyphs FROM the target UFO (the inverse of includeSubsets). Equivalent to ufomerge.subset_ufo().",

@@ -1237,7 +1237,7 @@ target="_blank"&gt;Facebook&lt;/a&gt;&lt;/p&gt;</pre>
                     <h4>Detailed bio (multiple paragraphs + links)</h4>
                     <div class="guide-bio-example">
                         <div class="bio-preview">
-                            <p>Alexei Vanyashin is a type designer and Cyrillic specialist dedicated to thoughtful, collaborative work. After graduating from BHSAD Moscow in 2010, he founded Cyreal, the foundry behind popular open-source fonts such as Lora, Prata, and Alice. He worked with Swiss Typefaces, Optimo, Dalton Maag, Newlyn, and Google Fonts, with notable projects like the YouTube Sans redesign (2021). From 2016 to 2024, he served as Cyrillic Script Chair at the Granshan Foundation. Currently based in Almaty, Kazakhstan, he teaches typography at ACDS.</p>
+                            <p>Alexei Vanyashin is a type designer and Cyrillic specialist dedicated to thoughtful, collaborative work. After graduating from BHSAD Moscow in 2010, he founded Cyreal, the foundry behind popular open-source fonts such as Lora, Prata, and Alice. He worked with Swiss Typefaces, Optimo, Dalton Maag, Newlyn, and Google Fonts. From 2016 to 2024, he served as Cyrillic Script Chair at the Granshan Foundation. Currently based in Almaty, Kazakhstan, he teaches typography at ACDS.</p>
                             <p><a href="https://alexeiva.cyreal.org">alexeiva.cyreal.org</a> | <a href="https://instagram.com/avanyashin">Instagram</a></p>
                         </div>
                         <div class="bio-source">
@@ -1454,9 +1454,9 @@ includeSubsets:
                     <ol>
                         <li><strong>3 repos can convert today</strong> &mdash; 42dot-Sans, Asta-Sans, and Overpass can eliminate pre-build scripts by pointing sources directly at .glyphs/.glyphspackage files</li>
                         <li><strong>10 repos are partially convertible</strong> &mdash; merge/conversion parts work with existing features, but designspace manipulation, target subsetting, and source modification gaps block full migration</li>
-                        <li><strong><code>preCompile</code> hooks would unblock all 13 repos</strong> &mdash; despite opposition to generic shell execution (issue #1170), it's the single most impactful missing feature</li>
+                        <li><strong><code>preCompile</code> hooks would unblock all 12 repos</strong> &mdash; despite opposition to generic shell execution (issue #1170), it's the single most impactful missing feature</li>
                         <li><strong>Source-level DS manipulation</strong> is the most targeted gap &mdash; a <code>dropSources</code>/<code>axisRanges</code>/<code>dropAxes</code> config would help 3 Google Sans repos</li>
-                        <li><strong>Other gaps are too niche</strong> &mdash; <code>include_glyphs</code> (youtube-sans only), target UFO subsetting (googlesans-gurage only), custom filter injection (2 repos)</li>
+                        <li><strong>Other gaps are too niche</strong> &mdash; target UFO subsetting (googlesans-gurage only), custom filter injection (2 repos)</li>
                         <li><strong>~66 repos</strong> have fully custom pipelines not using gftools-builder &mdash; builder features won't help them</li>
                     </ol>
                 </div>
