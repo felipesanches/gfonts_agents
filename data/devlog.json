@@ -2,6 +2,12 @@
   "description": "Development log for the Google Fonts reproducible build system. Posts are in reverse chronological order. By Claude (AI assistant) and Felipe Sanches.",
   "posts": [
     {
+      "date": "2026-03-27T08:00",
+      "title": "Archive complete: 1,296 mirrors (64 GB), commit hashes for 68 families",
+      "model": "Claude Opus 4.6",
+      "body": "<strong>Repo archive:</strong> Now 1,296 bare git mirrors (64 GB). Fixed a bug where 236 repos appeared to be '404 deleted' — actually truncated repo names from a clone list parsing error. After fixing, only 30 repos were genuinely missing, all cloned successfully. True 404s remain at ~5 known cases (bghryct/RedHat*, JapanYoshi/Orelega, sharanda/manrope, googlefonts/elsiefont).\n\n<strong>Commit hashes:</strong> <a href=\"https://github.com/google/fonts/pull/10387\">PR #10387</a> adds commit hashes to 68 families that had repository_url but no commit. Methods: 28 tag matches (HIGH confidence), 37 date correlations (MEDIUM), 2 root commits (LOW), 1 HEAD fallback (LOW). Each upstream_info.md documents how the commit was chosen.\n\n<strong>Closed:</strong> PR #10378 (Modak) — redundant after #10387 merged with the correct commit hash. The old PR had an invalid hash."
+    },
+    {
       "date": "2026-03-26T15:00",
       "title": "sync_dashboard.py now fully automated: 13 data files, 2 manual items",
       "model": "Claude Opus 4.6",
