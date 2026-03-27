@@ -20205,6 +20205,237 @@
       "reproducible_build": "build-failure",
       "notes": "",
       "overrides": {}
+    },
+    "cousine": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "enriqueta": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "federant": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "firacode": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "",
+      "overrides": {}
+    },
+    "hachimarupop": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "hindcolombo": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "hindguntur": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "",
+      "overrides": {}
+    },
+    "hindjalandhar": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "hindsiliguri": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "compiler-version",
+      "notes": "",
+      "overrides": {}
+    },
+    "hindvadodara": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "istokweb": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "jacquesfrancois": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "jacquesfrancoisshadow": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "kumarone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "kumaroneoutline": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "lalezar": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "librecaslontext": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "mogra": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "montserratsubrayada": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "moul": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "nabla": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "natasans": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "yes",
+      "notes": "",
+      "overrides": {}
+    },
+    "neuton": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "notosansnko_todelist": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "oxygen": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "peddana": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "ponnala": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "pragatinarrow": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "prata": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "raviprakash": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "sriracha": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "tinos": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
+    },
+    "yatraone": {
+      "enabled": true,
+      "isolation": "shared",
+      "reproducible_build": "build-failure",
+      "notes": "",
+      "overrides": {}
     }
   },
   "zalandosans": {

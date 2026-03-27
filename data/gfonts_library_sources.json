@@ -2,9 +2,9 @@
   "generated_at": "2026-03-25T20:44:34.657153+00:00",
   "summary": {
     "total": 2002,
-    "complete": 1373,
+    "complete": 1377,
     "missing_config": 479,
-    "missing_commit": 68,
+    "missing_commit": 64,
     "no_source": 78,
     "has_source_block": 1927,
     "has_repo_url": 1924,
@@ -7601,7 +7601,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2011-12-13",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/ephesis/METADATA.pb",
@@ -8027,7 +8027,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2011-10-05",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/federo/METADATA.pb",
@@ -8150,9 +8150,9 @@
       "override_config": true,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_commit",
+      "status": "complete",
       "date_added": "2019-03-25",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/firamono/METADATA.pb",
@@ -9899,7 +9899,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2020-12-14",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/hahmlet/METADATA.pb",
@@ -10257,7 +10257,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2016-01-20",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/hindguntur/METADATA.pb",
@@ -10271,9 +10271,9 @@
       "override_config": true,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_commit",
+      "status": "complete",
       "date_added": "2016-01-20",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/hindjalandhar/METADATA.pb",
@@ -10289,7 +10289,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2016-01-20",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/hindkochi/METADATA.pb",
@@ -10351,9 +10351,9 @@
       "override_config": true,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_commit",
+      "status": "complete",
       "date_added": "2015-09-09",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "compiler-version"
     },
     {
       "path": "ofl/hindvadodara/METADATA.pb",
@@ -10369,7 +10369,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2015-09-09",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/holtwoodonesc/METADATA.pb",
@@ -11246,7 +11246,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2011-07-13"
+      "date_added": "2011-07-13",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/italiana/METADATA.pb",
@@ -11406,7 +11407,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2012-09-07",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/jacquesfrancoisshadow/METADATA.pb",
@@ -11422,7 +11423,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2012-09-07",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/jaini/METADATA.pb",
@@ -12747,7 +12748,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2016-06-20"
+      "date_added": "2016-06-20",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/kumaroneoutline/METADATA.pb",
@@ -12762,7 +12764,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2016-06-15"
+      "date_added": "2016-06-15",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/kumbhsans/METADATA.pb",
@@ -12888,7 +12891,8 @@
       "has_source_block": true,
       "has_investigation_report": true,
       "status": "missing_commit",
-      "date_added": "2017-02-28"
+      "date_added": "2017-02-28",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/lancelot/METADATA.pb",
@@ -13480,7 +13484,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2020-06-10",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/librefranklin/METADATA.pb",
@@ -15284,7 +15288,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2017-05-09"
+      "date_added": "2017-05-09",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/mohave/METADATA.pb",
@@ -15600,7 +15605,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2012-10-01"
+      "date_added": "2012-10-01",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/montserratunderline/METADATA.pb",
@@ -15680,7 +15686,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2011-03-02",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/moulpali/METADATA.pb",
@@ -16102,7 +16108,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2022-08-15",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/namdhinggo/METADATA.pb",
@@ -16225,9 +16231,9 @@
       "override_config": false,
       "has_source_block": true,
       "has_investigation_report": true,
-      "status": "missing_commit",
+      "status": "complete",
       "date_added": "2025-06-26",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "yes"
     },
     {
       "path": "ofl/nationalpark/METADATA.pb",
@@ -16321,7 +16327,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2011-02-09"
+      "date_added": "2011-02-09",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/newamsterdam/METADATA.pb",
@@ -18423,7 +18430,7 @@
       "has_investigation_report": true,
       "status": "missing_commit",
       "date_added": "2020-11-19",
-      "reproducible_build": "missing-source"
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/notosansnkounjoined/METADATA.pb",
@@ -20979,7 +20986,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2012-03-29"
+      "date_added": "2012-03-29",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/oxygenmono/METADATA.pb",
@@ -21350,7 +21358,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2014-12-10"
+      "date_added": "2014-12-10",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/peralta/METADATA.pb",
@@ -23546,7 +23555,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2014-12-10"
+      "date_added": "2014-12-10",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/ponomar/METADATA.pb",
@@ -23685,7 +23695,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2015-04-22"
+      "date_added": "2015-04-22",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/praise/METADATA.pb",
@@ -23716,7 +23727,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2011-09-07"
+      "date_added": "2011-09-07",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/preahvihear/METADATA.pb",
@@ -24515,7 +24527,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2015-01-12"
+      "date_added": "2015-01-12",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/readexpro/METADATA.pb",
@@ -27623,7 +27636,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2015-07-01"
+      "date_added": "2015-07-01",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/srisakdi/METADATA.pb",
@@ -30096,7 +30110,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2016-06-20"
+      "date_added": "2016-06-20",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "ofl/yeonsung/METADATA.pb",
@@ -30791,7 +30806,8 @@
       "has_source_block": false,
       "has_investigation_report": true,
       "status": "missing_url",
-      "date_added": "2010-11-18"
+      "date_added": "2010-11-18",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "apache/craftygirls/METADATA.pb",
@@ -31304,7 +31320,8 @@
       "has_source_block": false,
       "has_investigation_report": false,
       "status": "missing_url",
-      "date_added": "2010-11-18"
+      "date_added": "2010-11-18",
+      "reproducible_build": "build-failure"
     },
     {
       "path": "apache/ultra/METADATA.pb",

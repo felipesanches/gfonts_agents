@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T10:44:23.962629+00:00",
+  "generated_at": "2026-03-27T11:08:51.994529+00:00",
   "description": "Build timing data extracted from comparison reports",
   "families": {
     "tirotelugu": {
@@ -71,6 +71,15 @@
           "build_time_seconds": 8.9,
           "status": "build-failure",
           "timestamp": "2026-03-16T01:07:02.731885+00:00"
+        }
+      ]
+    },
+    "enriqueta": {
+      "timings": [
+        {
+          "build_time_seconds": 31.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:48:29.070431+00:00"
         }
       ]
     },
@@ -155,12 +164,30 @@
         }
       ]
     },
+    "hindcolombo": {
+      "timings": [
+        {
+          "build_time_seconds": 33.6,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:55:38.652864+00:00"
+        }
+      ]
+    },
     "caveat": {
       "timings": [
         {
           "build_time_seconds": 28.0,
           "status": "build-failure",
           "timestamp": "2026-03-16T02:13:14.443709+00:00"
+        }
+      ]
+    },
+    "istokweb": {
+      "timings": [
+        {
+          "build_time_seconds": 4.1,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:40.873137+00:00"
         }
       ]
     },
@@ -218,6 +245,15 @@
         }
       ]
     },
+    "hachimarupop": {
+      "timings": [
+        {
+          "build_time_seconds": 153.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:55:01.888864+00:00"
+        }
+      ]
+    },
     "jacquard12": {
       "timings": [
         {
@@ -272,6 +308,15 @@
         }
       ]
     },
+    "yatraone": {
+      "timings": [
+        {
+          "build_time_seconds": 4.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:08:19.540159+00:00"
+        }
+      ]
+    },
     "betaniapatmosguideline": {
       "timings": [
         {
@@ -323,6 +368,15 @@
           "build_time_seconds": 121.8,
           "status": "compiler-version",
           "timestamp": "2026-03-16T16:08:18.750389+00:00"
+        }
+      ]
+    },
+    "prata": {
+      "timings": [
+        {
+          "build_time_seconds": 4.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:07:51.868268+00:00"
         }
       ]
     },
@@ -695,6 +749,15 @@
         }
       ]
     },
+    "ponnala": {
+      "timings": [
+        {
+          "build_time_seconds": 14.7,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:07:40.123443+00:00"
+        }
+      ]
+    },
     "notosanssoyombo": {
       "timings": [
         {
@@ -830,6 +893,24 @@
         }
       ]
     },
+    "tinos": {
+      "timings": [
+        {
+          "build_time_seconds": 4.4,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:08:13.213041+00:00"
+        }
+      ]
+    },
+    "sriracha": {
+      "timings": [
+        {
+          "build_time_seconds": 5.3,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:08:08.437362+00:00"
+        }
+      ]
+    },
     "hanuman": {
       "timings": [
         {
@@ -866,6 +947,15 @@
         }
       ]
     },
+    "neuton": {
+      "timings": [
+        {
+          "build_time_seconds": 2.6,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:05:49.535996+00:00"
+        }
+      ]
+    },
     "notonaskharabic": {
       "timings": [
         {
@@ -881,6 +971,15 @@
           "build_time_seconds": 2.4,
           "status": "build-failure",
           "timestamp": "2026-03-16T05:15:06.614883+00:00"
+        }
+      ]
+    },
+    "lalezar": {
+      "timings": [
+        {
+          "build_time_seconds": 2.9,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:58.413182+00:00"
         }
       ]
     },
@@ -971,6 +1070,15 @@
           "build_time_seconds": 219.9,
           "status": "compiler-version",
           "timestamp": "2026-03-16T05:48:33.122417+00:00"
+        }
+      ]
+    },
+    "montserratsubrayada": {
+      "timings": [
+        {
+          "build_time_seconds": 330.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:04:57.818590+00:00"
         }
       ]
     },
@@ -1442,6 +1550,15 @@
         }
       ]
     },
+    "jacquesfrancois": {
+      "timings": [
+        {
+          "build_time_seconds": 3.5,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:44.443649+00:00"
+        }
+      ]
+    },
     "notoserif": {
       "timings": [
         {
@@ -1541,6 +1658,15 @@
         }
       ]
     },
+    "natasans": {
+      "timings": [
+        {
+          "build_time_seconds": 25.4,
+          "status": "yes",
+          "timestamp": "2026-03-27T11:05:43.291926+00:00"
+        }
+      ]
+    },
     "robotoserif": {
       "timings": [
         {
@@ -1592,6 +1718,15 @@
           "build_time_seconds": 61.4,
           "status": "build-failure",
           "timestamp": "2026-03-16T01:43:31.354858+00:00"
+        }
+      ]
+    },
+    "cousine": {
+      "timings": [
+        {
+          "build_time_seconds": 12.7,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:47:57.102368+00:00"
         }
       ]
     },
@@ -1709,6 +1844,15 @@
           "build_time_seconds": 97.7,
           "status": "compiler-version",
           "timestamp": "2026-03-15T12:49:57.812584+00:00"
+        }
+      ]
+    },
+    "nabla": {
+      "timings": [
+        {
+          "build_time_seconds": 5.5,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:05:17.733653+00:00"
         }
       ]
     },
@@ -1883,6 +2027,15 @@
         }
       ]
     },
+    "moul": {
+      "timings": [
+        {
+          "build_time_seconds": 13.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:05:11.794243+00:00"
+        }
+      ]
+    },
     "ubuntusansmono": {
       "timings": [
         {
@@ -1970,6 +2123,15 @@
           "build_time_seconds": 32.5,
           "status": "compiler-version",
           "timestamp": "2026-03-16T02:59:08.168603+00:00"
+        }
+      ]
+    },
+    "peddana": {
+      "timings": [
+        {
+          "build_time_seconds": 15.2,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:07:24.563950+00:00"
         }
       ]
     },
@@ -2522,12 +2684,30 @@
         }
       ]
     },
+    "hindguntur": {
+      "timings": [
+        {
+          "build_time_seconds": 76.1,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T10:56:58.883411+00:00"
+        }
+      ]
+    },
     "akshar": {
       "timings": [
         {
           "build_time_seconds": 12.0,
           "status": "yes",
           "timestamp": "2026-03-16T16:17:39.601035+00:00"
+        }
+      ]
+    },
+    "jacquesfrancoisshadow": {
+      "timings": [
+        {
+          "build_time_seconds": 3.2,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:47.700681+00:00"
         }
       ]
     },
@@ -2582,6 +2762,15 @@
           "build_time_seconds": 34.2,
           "status": "compiler-version",
           "timestamp": "2026-03-15T02:33:24.383038+00:00"
+        }
+      ]
+    },
+    "federant": {
+      "timings": [
+        {
+          "build_time_seconds": 30.7,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:49:00.250405+00:00"
         }
       ]
     },
@@ -2657,6 +2846,15 @@
         }
       ]
     },
+    "oxygen": {
+      "timings": [
+        {
+          "build_time_seconds": 5.9,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:07:07.510028+00:00"
+        }
+      ]
+    },
     "alegreyasc": {
       "timings": [
         {
@@ -2726,6 +2924,15 @@
           "build_time_seconds": 20.7,
           "status": "compiler-version",
           "timestamp": "2026-03-16T07:47:14.710502+00:00"
+        }
+      ]
+    },
+    "pragatinarrow": {
+      "timings": [
+        {
+          "build_time_seconds": 5.3,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:07:46.895556+00:00"
         }
       ]
     },
@@ -2801,6 +3008,15 @@
         }
       ]
     },
+    "librecaslontext": {
+      "timings": [
+        {
+          "build_time_seconds": 21.1,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:59:21.658092+00:00"
+        }
+      ]
+    },
     "akayatelivigala": {
       "timings": [
         {
@@ -2843,6 +3059,15 @@
           "build_time_seconds": 27.5,
           "status": "build-failure",
           "timestamp": "2026-03-16T04:54:37.748062+00:00"
+        }
+      ]
+    },
+    "kumaroneoutline": {
+      "timings": [
+        {
+          "build_time_seconds": 3.0,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:54.695006+00:00"
         }
       ]
     },
@@ -2945,6 +3170,15 @@
         }
       ]
     },
+    "hindvadodara": {
+      "timings": [
+        {
+          "build_time_seconds": 20.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:35.296297+00:00"
+        }
+      ]
+    },
     "labrada": {
       "timings": [
         {
@@ -3044,6 +3278,15 @@
         }
       ]
     },
+    "hindjalandhar": {
+      "timings": [
+        {
+          "build_time_seconds": 3.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:57:02.719380+00:00"
+        }
+      ]
+    },
     "notosansbengaliui": {
       "timings": [
         {
@@ -3080,6 +3323,15 @@
         }
       ]
     },
+    "mogra": {
+      "timings": [
+        {
+          "build_time_seconds": 2.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:59:25.739878+00:00"
+        }
+      ]
+    },
     "yarndings20charted": {
       "timings": [
         {
@@ -3113,6 +3365,24 @@
           "build_time_seconds": 13.4,
           "status": "yes",
           "timestamp": "2026-03-16T06:59:30.699640+00:00"
+        }
+      ]
+    },
+    "firacode": {
+      "timings": [
+        {
+          "build_time_seconds": 196.8,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T10:52:23.989326+00:00"
+        }
+      ]
+    },
+    "raviprakash": {
+      "timings": [
+        {
+          "build_time_seconds": 10.0,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:08:02.348767+00:00"
         }
       ]
     },
@@ -3206,12 +3476,30 @@
         }
       ]
     },
+    "notosansnko_todelist": {
+      "timings": [
+        {
+          "build_time_seconds": 5.2,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T11:06:58.290776+00:00"
+        }
+      ]
+    },
     "calsans": {
       "timings": [
         {
           "build_time_seconds": 13.3,
           "status": "compiler-version",
           "timestamp": "2026-03-16T07:46:25.778067+00:00"
+        }
+      ]
+    },
+    "hindsiliguri": {
+      "timings": [
+        {
+          "build_time_seconds": 68.0,
+          "status": "compiler-version",
+          "timestamp": "2026-03-27T10:58:14.380904+00:00"
         }
       ]
     },
@@ -3239,6 +3527,15 @@
           "build_time_seconds": 2.4,
           "status": "build-failure",
           "timestamp": "2026-03-16T05:13:24.753627+00:00"
+        }
+      ]
+    },
+    "kumarone": {
+      "timings": [
+        {
+          "build_time_seconds": 3.8,
+          "status": "build-failure",
+          "timestamp": "2026-03-27T10:58:51.586150+00:00"
         }
       ]
     },
