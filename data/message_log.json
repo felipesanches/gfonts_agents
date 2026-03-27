@@ -1627,5 +1627,35 @@
     "role": "assistant",
     "timestamp": "2026-03-27T08:10:00Z",
     "content": "PR #10378 (Modak) was redundant — PR #10387 already merged with the correct commit hash. The PR had an incorrect hash that doesn't exist in the repo. Closed #10378 with explanation."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-27T10:00:00Z",
+    "content": "are there repos that we still did not attempt to build?"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-27T10:05:00Z",
+    "content": "0 buildable-untested. After PR #10387 merged, 33 newly buildable. Built all 33: FiraCode, HindGuntur, HindSiliguri compiler-version, NataSans byte-identical! 29 build failures mostly config path issues."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-27T11:00:00Z",
+    "content": "try to fix the ~6 more config path issues and try to build those"
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-27T12:00:00Z",
+    "content": "Fixed amarna config path (case + prefix) -> byte-identical! JacquesFrancois only has .vfb (unbuildable). 2 Noto families unfixable with path changes — need repo URL change. PR #10390 submitted changing notosansthaiui and notoserifnyiakengpuachuehmong from noto-fonts monorepo to per-script repos."
+  },
+  {
+    "role": "user",
+    "timestamp": "2026-03-27T12:30:00Z",
+    "content": "strict policy: when fixing source paths in config.yaml files, be sure to do it coherently with what fontc_crater needs."
+  },
+  {
+    "role": "assistant",
+    "timestamp": "2026-03-27T12:35:00Z",
+    "content": "Saved policy. Verified current approach is correct: override config paths are relative to repo root, which matches fontc_crater's expectations for external/virtual configs."
   }
 ]
