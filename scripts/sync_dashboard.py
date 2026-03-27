@@ -47,7 +47,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 # Single source of truth — version-controlled in this repo
 BUILD_REGISTRY = DATA_DIR / "build_registry.json"
-NORMALIZATION_RESULTS = Path("/mnt/shared/google/fonts/build_tools/normalization_results.json")
+NORMALIZATION_RESULTS = DATA_DIR / "normalization_results.json"
 REPRO_BUILDS_DIR = Path("/mnt/shared/gfonts-repro-builds")
 
 

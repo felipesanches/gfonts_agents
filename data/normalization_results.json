@@ -1,0 +1,360 @@
+{
+  "total_tested": 928,
+  "normalized_match": 34,
+  "normalized_differ": 759,
+  "errors": 135,
+  "matches": [
+    "adlamdisplay",
+    "annapurnasil",
+    "anton",
+    "anuphan",
+    "aubrey",
+    "bahiana",
+    "bytesized",
+    "capriola",
+    "chivomono",
+    "comicneue",
+    "cormorantupright",
+    "dmmono",
+    "epundasans",
+    "francoisone",
+    "harmattan",
+    "homenaje",
+    "londrinaoutline",
+    "londrinashadow",
+    "lxgwmarkergothic",
+    "notable",
+    "sansitaswashed",
+    "shizuru",
+    "solitreo",
+    "sono",
+    "stacksansheadline",
+    "stacksansnotch",
+    "stacksanstext",
+    "tasaexplorer",
+    "tirobangla",
+    "tirogurmukhi",
+    "tirokannada",
+    "tirotamil",
+    "voces",
+    "wireone"
+  ],
+  "close_matches": [
+    {
+      "family": "bahianita",
+      "max_diff_bytes": 3
+    },
+    {
+      "family": "barriecito",
+      "max_diff_bytes": 3
+    },
+    {
+      "family": "cause",
+      "max_diff_bytes": 3
+    },
+    {
+      "family": "badscript",
+      "max_diff_bytes": 4
+    },
+    {
+      "family": "bbhbartle",
+      "max_diff_bytes": 4
+    },
+    {
+      "family": "coiny",
+      "max_diff_bytes": 4
+    },
+    {
+      "family": "farro",
+      "max_diff_bytes": 4
+    },
+    {
+      "family": "jacquard12",
+      "max_diff_bytes": 4
+    },
+    {
+      "family": "triodion",
+      "max_diff_bytes": 4
+    },
+    {
+      "family": "bitcountpropsingleink",
+      "max_diff_bytes": 7
+    },
+    {
+      "family": "grandifloraone",
+      "max_diff_bytes": 8
+    },
+    {
+      "family": "sekuya",
+      "max_diff_bytes": 8
+    },
+    {
+      "family": "zcoolkuaile",
+      "max_diff_bytes": 8
+    },
+    {
+      "family": "bitcountsingleink",
+      "max_diff_bytes": 9
+    },
+    {
+      "family": "josefinsans",
+      "max_diff_bytes": 9
+    },
+    {
+      "family": "vollkorn",
+      "max_diff_bytes": 9
+    },
+    {
+      "family": "kalniaglaze",
+      "max_diff_bytes": 10
+    },
+    {
+      "family": "alansans",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "alatsi",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "anta",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "calsans",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "cossettetitre",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "manufacturingconsent",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "specialgothiccondensedone",
+      "max_diff_bytes": 12
+    },
+    {
+      "family": "fraunces",
+      "max_diff_bytes": 13
+    },
+    {
+      "family": "indieflower",
+      "max_diff_bytes": 13
+    },
+    {
+      "family": "reemkufiink",
+      "max_diff_bytes": 13
+    },
+    {
+      "family": "nokora",
+      "max_diff_bytes": 14
+    },
+    {
+      "family": "athiti",
+      "max_diff_bytes": 16
+    },
+    {
+      "family": "cormorantgaramond",
+      "max_diff_bytes": 16
+    },
+    {
+      "family": "eduauvicwantarrows",
+      "max_diff_bytes": 16
+    },
+    {
+      "family": "redacted",
+      "max_diff_bytes": 16
+    },
+    {
+      "family": "redactedscript",
+      "max_diff_bytes": 16
+    },
+    {
+      "family": "specialgothicexpandedone",
+      "max_diff_bytes": 16
+    },
+    {
+      "family": "badeendisplay",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "fasthand",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "freehand",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "metal",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "moulpali",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "mozillaheadline",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "preahvihear",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "taprom",
+      "max_diff_bytes": 20
+    },
+    {
+      "family": "allura",
+      "max_diff_bytes": 24
+    },
+    {
+      "family": "astasans",
+      "max_diff_bytes": 24
+    },
+    {
+      "family": "archivoblack",
+      "max_diff_bytes": 26
+    },
+    {
+      "family": "trainone",
+      "max_diff_bytes": 28
+    },
+    {
+      "family": "flowblock",
+      "max_diff_bytes": 32
+    },
+    {
+      "family": "jersey15",
+      "max_diff_bytes": 32
+    },
+    {
+      "family": "sedan",
+      "max_diff_bytes": 32
+    },
+    {
+      "family": "bokor",
+      "max_diff_bytes": 36
+    },
+    {
+      "family": "flowcircular",
+      "max_diff_bytes": 36
+    },
+    {
+      "family": "flowrounded",
+      "max_diff_bytes": 36
+    },
+    {
+      "family": "lineseedjp",
+      "max_diff_bytes": 36
+    },
+    {
+      "family": "menbere",
+      "max_diff_bytes": 36
+    },
+    {
+      "family": "vinasans",
+      "max_diff_bytes": 36
+    },
+    {
+      "family": "dangrek",
+      "max_diff_bytes": 40
+    },
+    {
+      "family": "uoqmunthenkhung",
+      "max_diff_bytes": 40
+    },
+    {
+      "family": "jersey20",
+      "max_diff_bytes": 44
+    },
+    {
+      "family": "merriweather",
+      "max_diff_bytes": 44
+    },
+    {
+      "family": "figtree",
+      "max_diff_bytes": 48
+    },
+    {
+      "family": "momosignature",
+      "max_diff_bytes": 52
+    },
+    {
+      "family": "yarndings12",
+      "max_diff_bytes": 52
+    },
+    {
+      "family": "alexbrush",
+      "max_diff_bytes": 56
+    },
+    {
+      "family": "tasaorbiter",
+      "max_diff_bytes": 56
+    },
+    {
+      "family": "betaniapatmosguideline",
+      "max_diff_bytes": 58
+    },
+    {
+      "family": "ibmplexsansjp",
+      "max_diff_bytes": 60
+    },
+    {
+      "family": "alumnisanscollegiateonesc",
+      "max_diff_bytes": 68
+    },
+    {
+      "family": "redhattext",
+      "max_diff_bytes": 68
+    },
+    {
+      "family": "arsenalsc",
+      "max_diff_bytes": 80
+    },
+    {
+      "family": "ibmplexmono",
+      "max_diff_bytes": 80
+    },
+    {
+      "family": "allkin",
+      "max_diff_bytes": 84
+    },
+    {
+      "family": "ibmplexsansthai",
+      "max_diff_bytes": 84
+    },
+    {
+      "family": "mozillatext",
+      "max_diff_bytes": 84
+    },
+    {
+      "family": "vendsans",
+      "max_diff_bytes": 84
+    },
+    {
+      "family": "zalandosans",
+      "max_diff_bytes": 88
+    },
+    {
+      "family": "zalandosansexpanded",
+      "max_diff_bytes": 92
+    },
+    {
+      "family": "zalandosanssemiexpanded",
+      "max_diff_bytes": 92
+    },
+    {
+      "family": "battambang",
+      "max_diff_bytes": 96
+    },
+    {
+      "family": "suwannaphum",
+      "max_diff_bytes": 96
+    }
+  ]
+}
