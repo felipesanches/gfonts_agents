@@ -18,8 +18,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-CACHE_BASE = "/mnt/shared/upstream_repos/fontc_crater_cache"
-GFONTS_DIR = "/mnt/shared/google/fonts"
+CACHE_BASE = "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache"
+GFONTS_DIR = "/home/fsanches/compartilhado/google/fonts"
 TRACKING_FILE = "data/gfonts_library_sources.json"
 RESULTS_FILE = "data/config_yaml_scan_results.json"
 

@@ -55,7 +55,7 @@ This documents the upstream repo and commit hash matching the main Bodoni Moda f
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/indestructible-type/Bodoni/`. Commit `30ce6cdc` is the HEAD of master.
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/indestructible-type/Bodoni/`. Commit `30ce6cdc` is the HEAD of master.
 
 The `sources/config.yaml` exists at this commit but defines builds only for the non-SC variant (`BodoniModa[opsz,wght].ttf` and `BodoniModa-Italic[opsz,wght].ttf`) with `familyName: Bodoni Moda`. It does NOT define a build target for the SC variant.
 

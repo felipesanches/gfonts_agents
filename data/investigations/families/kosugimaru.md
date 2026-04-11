@@ -35,7 +35,7 @@ primary_script: "Jpan"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/kosugi-maru` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/kosugi-maru`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/kosugi-maru` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/kosugi-maru`.
 
 The `sources/config.yaml` file exists in the cached repository. The latest commit is `bd22c67` ("Optimized source files"), which matches exactly the commit hash in METADATA.pb.
 

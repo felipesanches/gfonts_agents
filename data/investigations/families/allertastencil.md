@@ -32,7 +32,7 @@ The `source {}` block was added later, in commit `3f73c2eb035060c81777a3f950586b
 
 ### Upstream repository
 
-The upstream repo `https://github.com/librefonts/allerta` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/allerta/`. The repository has only a single commit:
+The upstream repo `https://github.com/librefonts/allerta` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/allerta/`. The repository has only a single commit:
 
 - `88a8c57b949c` — "update .travis.yml" (2014-10-17, by hash3g)
 

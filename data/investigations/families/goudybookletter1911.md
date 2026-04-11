@@ -35,7 +35,7 @@ The repository_url was added by Simon Cozens in commit `474a446c0` ("More upstre
 ### Upstream Repository Analysis
 
 - **Repository**: https://github.com/theleagueof/goudy-bookletter-1911
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/theleagueof/goudy-bookletter-1911
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/theleagueof/goudy-bookletter-1911
 - **Branches**: master only
 - **Total commits**: 1 (single initial commit)
 - **Commit**: `85ff5b8` by micah rich, 2011-05-25

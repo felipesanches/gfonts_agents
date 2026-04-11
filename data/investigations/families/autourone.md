@@ -26,7 +26,7 @@ source {
 
 Autour One is a display font by Sorkin Type, added to Google Fonts on 2012-05-15. The font was last updated via PR #833 (`592bee48b`, "hotfix-autourone: v1.007 added", 2017-08-07) by Marc Foley. The source block in METADATA.pb was added by commit `42e01ed7f` ("Autour One: add source block to METADATA.pb", 2026-02-26), which populated the repository_url and commit from research into the librefonts archive.
 
-The upstream repository `librefonts/autourone` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/autourone`. The repo has a single commit: `10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c` (dated 2014-10-17, "update .travis.yml"). Since it is the only commit, it is the only possible reference point.
+The upstream repository `librefonts/autourone` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/autourone`. The repo has a single commit: `10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c` (dated 2014-10-17, "update .travis.yml"). Since it is the only commit, it is the only possible reference point.
 
 **Source file format**: The repository contains:
 - `src/AutourOne-Regular-OTF.sfd` (FontForge SFD)

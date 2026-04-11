@@ -4,7 +4,7 @@
   "archived": 1296,
   "not_archived": 237,
   "archive_size_gb": "64",
-  "archive_path": "/mnt/shared/upstream_repos/repo_archive",
+  "archive_path": "/home/fsanches/compartilhado/upstream_repos/repo_archive",
   "not_archived_list": [
     "https://github.com/1020tj/Gu",
     "https://github.com/BornaIz/markazitex",

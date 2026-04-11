@@ -37,7 +37,7 @@ classifications: "DISPLAY"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `danhhong/KohSantepheap` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/danhhong/KohSantepheap`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `danhhong/KohSantepheap` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/danhhong/KohSantepheap`.
 
 The `Source/builder.yaml` file exists in the cached repository with gftools-builder compatible content:
 ```yaml

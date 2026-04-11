@@ -55,7 +55,7 @@ This override was added in commit `e40f28ec0` ("sources info for Beiruti: Versio
 
 ## Verification
 
-- **Repository exists**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/beiruti/`
+- **Repository exists**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/beiruti/`
 - **Commit exists**: Yes, `bd45772` confirmed ("Updated the Source Files and fonts to Version 1.41", dated 2024-07-22)
 - **Commit hash matches merge commit reference**: Yes, the final merge commit `9b9cbd55e` references `bd45772` (even though the PR body originally referenced an earlier commit `1d848d4`)
 - **Override config.yaml exists**: Yes, at `ofl/beiruti/config.yaml` pointing to `Source/2-Production/BeirutiVF.designspace`

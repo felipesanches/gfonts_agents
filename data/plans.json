@@ -219,7 +219,7 @@
         "step": 9,
         "description": "Add a CLI mode for single-family testing. Current fontc_crater only runs in batch CI mode. Add a subcommand like 'check <family_slug>' that builds and compares a single family, printing results to stdout. This is essential for development iteration and debugging.",
         "status": "pending",
-        "details": "Example: gfonts_repro_crater check ofl/roboto --google-fonts-dir /mnt/shared/google/fonts --cache-dir /mnt/shared/upstream_repos/fontc_crater_cache"
+        "details": "Example: gfonts_repro_crater check ofl/roboto --google-fonts-dir /home/fsanches/compartilhado/google/fonts --cache-dir /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache"
       },
       {
         "step": 10,
@@ -355,7 +355,7 @@
         ],
         [
           "Caching",
-          "File-based per-family in /mnt/shared/gfonts-repro-builds/",
+          "File-based per-family in /home/fsanches/compartilhado/gfonts-repro-builds/",
           "Git cache + build artifact cache (fontc_crater pattern)"
         ],
         [
@@ -457,7 +457,7 @@
       },
       {
         "step": 3,
-        "description": "Tier A \u2014 Full-history cloning strategy. Clone all live repos with full history (no --depth flag). Estimated ~34 GB for 980 repos (excluding 3 chiron). Cloning order: (1) small repos first (< 10 MB, ~700 repos, ~2 GB total) for quick progress, (2) medium repos (10-100 MB, ~250 repos, ~8 GB), (3) large repos (100 MB-1 GB, ~25 repos, ~10 GB), (4) mega-repos (> 1 GB, chiron etc., ~70 GB \u2014 deferred or handled separately). Each clone: bare mirror (`git clone --mirror`), stored at /mnt/shared/upstream_repos/full_archive/{owner}/{repo}.git. Bare mirrors are more compact than working copies and can be converted to working repos later.",
+        "description": "Tier A \u2014 Full-history cloning strategy. Clone all live repos with full history (no --depth flag). Estimated ~34 GB for 980 repos (excluding 3 chiron). Cloning order: (1) small repos first (< 10 MB, ~700 repos, ~2 GB total) for quick progress, (2) medium repos (10-100 MB, ~250 repos, ~8 GB), (3) large repos (100 MB-1 GB, ~25 repos, ~10 GB), (4) mega-repos (> 1 GB, chiron etc., ~70 GB \u2014 deferred or handled separately). Each clone: bare mirror (`git clone --mirror`), stored at /home/fsanches/compartilhado/upstream_repos/full_archive/{owner}/{repo}.git. Bare mirrors are more compact than working copies and can be converted to working repos later.",
         "status": "pending"
       },
       {
@@ -501,10 +501,10 @@
     ],
     "architecture": {
       "directory_structure": {
-        "full_archive": "/mnt/shared/upstream_repos/full_archive/{owner}/{repo}.git (bare mirrors)",
-        "build_snapshot": "/mnt/shared/upstream_repos/build_snapshot/{license}/{family}/ (extracted source files)",
-        "inventory": "/mnt/shared/upstream_repos/repo_inventory.json (canonical manifest)",
-        "validation": "/mnt/shared/upstream_repos/commit_reachability.json (verification results)"
+        "full_archive": "/home/fsanches/compartilhado/upstream_repos/full_archive/{owner}/{repo}.git (bare mirrors)",
+        "build_snapshot": "/home/fsanches/compartilhado/upstream_repos/build_snapshot/{license}/{family}/ (extracted source files)",
+        "inventory": "/home/fsanches/compartilhado/upstream_repos/repo_inventory.json (canonical manifest)",
+        "validation": "/home/fsanches/compartilhado/upstream_repos/commit_reachability.json (verification results)"
       },
       "key_scripts": [
         "scripts/build_repo_inventory.py \u2014 Parse all METADATA.pb, produce repo_inventory.json",

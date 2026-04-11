@@ -25,7 +25,7 @@ The METADATA.pb for Judson has no source block. The font was added to google/fon
 
 The copyright in the font reads: "Copyright (c) 2010, 2011 by Daniel Johnson (il.basso.buffo@gmail.com)". The FONTLOG.txt confirms the same designer email and mentions the project was originally hosted at `http://io.debian.net/~danielj/`. Importantly, this is the same Daniel Johnson who maintains the Jura font family (GitHub: `ossobuffo`) — the Jura METADATA.pb includes `repository_url: "https://github.com/ossobuffo/jura"` and the email `il.basso.buffo@gmail.com` matches Jura's copyright.
 
-A `librefonts` mirror of Judson exists in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/judson/`. The `librefonts` project is a preservation initiative that stores decomposed TTX files of font binaries, as well as the original source files when available. At commit `a80a2aecb86b334586bc8b956ddf8b1bf61e144b` ("update .travis.yml"), the repository contains:
+A `librefonts` mirror of Judson exists in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/judson/`. The `librefonts` project is a preservation initiative that stores decomposed TTX files of font binaries, as well as the original source files when available. At commit `a80a2aecb86b334586bc8b956ddf8b1bf61e144b` ("update .travis.yml"), the repository contains:
 - `Judson-Bold-TTF.sfd`, `Judson-Italic-TTF.sfd`, `Judson-Regular-TTF.sfd` — FontForge SFD source files
 - `Judson-Bold.vfb`, `Judson-Italic.vfb`, `Judson-Regular.vfb` — FontLab VFB source files
 - TTX decompiled font files

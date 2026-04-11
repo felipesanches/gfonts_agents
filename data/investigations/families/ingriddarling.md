@@ -38,9 +38,9 @@ source {
 
 ## Investigation
 
-The METADATA.pb for Ingrid Darling (at `/mnt/shared/google/fonts/ofl/ingriddarling/METADATA.pb`) already contains a complete source block with `repository_url`, `commit`, and `config_yaml` fields.
+The METADATA.pb for Ingrid Darling (at `/home/fsanches/compartilhado/google/fonts/ofl/ingriddarling/METADATA.pb`) already contains a complete source block with `repository_url`, `commit`, and `config_yaml` fields.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/ingrid-darling/`. Verification confirmed:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/ingrid-darling/`. Verification confirmed:
 
 1. **Commit hash**: `ea2b4893cf8dc8cd0e7fb2b89f9631b38fde4ed3` exists in the upstream repo. The commit message is "description file moved o documentation" authored by Viviana Monsalve on 2022-03-11. This is also the HEAD commit of the repository.
 

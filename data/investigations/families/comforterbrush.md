@@ -51,7 +51,7 @@ autohintTTF: false
 - **Branch matches**: Yes - `main` branch, matches METADATA.pb
 - **Config YAML exists at commit**: Yes - `sources/config.yaml` exists
 - **Font files match**: The fonts were built from `ComforterBrush-Pro.glyphs` source
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/comforter-brush/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/comforter-brush/`
 
 ## Confidence Level
 

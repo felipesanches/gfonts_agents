@@ -33,9 +33,9 @@ source {
 
 ## Investigation
 
-The METADATA.pb for Imprima (at `/mnt/shared/google/fonts/ofl/imprima/METADATA.pb`) contains a source block with `repository_url` and `commit` but no `config_yaml`.
+The METADATA.pb for Imprima (at `/home/fsanches/compartilhado/google/fonts/ofl/imprima/METADATA.pb`) contains a source block with `repository_url` and `commit` but no `config_yaml`.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/imprima/`. Verification confirmed:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/imprima/`. Verification confirmed:
 
 1. **Commit hash**: `efec6ee25d2ba461487c391b62ae26817614741a` exists in the upstream repo. The commit is a merge commit ("Merge pull request #1 from emmamarichal/master") by Eduardo Rodríguez Tunni on 2023-02-10. This is also the HEAD commit of the repository (the latest commit on master).
 

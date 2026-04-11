@@ -31,7 +31,7 @@ The METADATA.pb was subsequently updated in commits:
 - `21e98aac8` — "More upstreams (i,j,k)" — this added the `repository_url` field
 - Various other commits for language metadata, stroke classifications, etc.
 
-The upstream repository `cyrealtype/Jacques-Francois` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/cyrealtype/Jacques-Francois`. The repo has 6 commits total, with the latest being `d341563` ("regenerated fonts v1.100"). The upstream does NOT have a `config.yaml` file anywhere in the repository — sources consist only of a `.glyphs` file at `sources/JacquesFrancois.glyphs`.
+The upstream repository `cyrealtype/Jacques-Francois` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cyrealtype/Jacques-Francois`. The repo has 6 commits total, with the latest being `d341563` ("regenerated fonts v1.100"). The upstream does NOT have a `config.yaml` file anywhere in the repository — sources consist only of a `.glyphs` file at `sources/JacquesFrancois.glyphs`.
 
 An override `config.yaml` already exists in the google/fonts family directory at `ofl/jacquesfrancois/config.yaml`, added in commit `5ddf312e6` ("Add config_yaml enrichment for 82 font families"). Its contents are:
 

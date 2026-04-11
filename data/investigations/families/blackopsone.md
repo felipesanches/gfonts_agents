@@ -37,7 +37,7 @@ The METADATA.pb contains a source block with repository URL and commit hash. No 
 
 The font was last updated in google/fonts commit `d50a0d29b` (PR #4995), titled "Black Ops One: Version 1.004; ttfautohint (v1.8.4.7-5d5b) added". The commit body confirms: "Black Ops One Version 1.004; ttfautohint (v1.8.4.7-5d5b) taken from the upstream repo https://github.com/SorkinType/Black-Ops at commit https://github.com/SorkinType/Black-Ops/commit/c955bed3517ad3d8606a8b0105d27538309fb70d." This matches the commit hash in the current METADATA.pb.
 
-Commit `c955bed3517ad3d8606a8b0105d27538309fb70d` is confirmed in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/SorkinType/Black-Ops` (dated July 26, 2022, merging PR #1 "Black Ops Update" from emmamarichal/main).
+Commit `c955bed3517ad3d8606a8b0105d27538309fb70d` is confirmed in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/SorkinType/Black-Ops` (dated July 26, 2022, merging PR #1 "Black Ops Update" from emmamarichal/main).
 
 The upstream `sources/` directory at commit `c955bed` contains only `BlackOpsOne.glyphs` — no `config.yaml`. However, an override `config.yaml` is present in the google/fonts family directory (`ofl/blackopsone/config.yaml`):
 ```yaml

@@ -21,7 +21,7 @@ No source block (no METADATA.pb found)
 
 ## Investigation
 
-The directory `/mnt/shared/google/fonts/ofl/lemonadavfbeta/` exists but contains only:
+The directory `/home/fsanches/compartilhado/google/fonts/ofl/lemonadavfbeta/` exists but contains only:
 - `LemonadaVFBeta.ttf`
 - `OFL.txt`
 

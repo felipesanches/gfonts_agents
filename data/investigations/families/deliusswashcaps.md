@@ -41,7 +41,7 @@ The upstream repo contains:
 ## Verification
 
 - Repository URL is valid and accessible
-- Upstream repo cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/deliusswashcaps/` (shallow clone)
+- Upstream repo cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/deliusswashcaps/` (shallow clone)
 - Commit `a18d931` verified as HEAD of master
 - No modern source files found (.glyphs, .ufo, .designspace)
 - METADATA.pb in google/fonts main branch currently has no source block (a PR branch adds one)

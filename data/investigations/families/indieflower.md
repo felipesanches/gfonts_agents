@@ -25,9 +25,9 @@ source {
 
 ## Investigation
 
-The METADATA.pb for Indie Flower (at `/mnt/shared/google/fonts/ofl/indieflower/METADATA.pb`) already contains a source block with `repository_url`, `commit`, and `config_yaml` fields.
+The METADATA.pb for Indie Flower (at `/home/fsanches/compartilhado/google/fonts/ofl/indieflower/METADATA.pb`) already contains a source block with `repository_url`, `commit`, and `config_yaml` fields.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/indieflower/`. Verification confirmed:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/indieflower/`. Verification confirmed:
 
 1. **Commit hash**: `db44d10c34c1d74011b7f3bee8c7c12123b6068e` exists in the upstream repo. The commit message is "Add sources/config.yaml" authored by Felipe Corrêa da Silva Sanches on 2025-02-25. This is also the HEAD commit of the repository.
 

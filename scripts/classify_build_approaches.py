@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-CACHE_DIR = Path("/mnt/shared/upstream_repos/fontc_crater_cache")
+CACHE_DIR = Path("/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache")
 SOURCES_FILE = Path(__file__).parent.parent / "data" / "gfonts_library_sources.json"
 OUTPUT_FILE = Path(__file__).parent.parent / "data" / "build_approaches.json"
 

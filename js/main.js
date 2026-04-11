@@ -163,7 +163,7 @@ async function loadLibrarySources() {
         renderSourcesTable(container, sourcesData.families);
         countSpan.textContent = `${sourcesData.families.length} families`;
     } catch (error) {
-        container.innerHTML = '<p class="error">Failed to load library sources data. Make sure the file exists at /mnt/shared/gfonts_library_sources.json</p>';
+        container.innerHTML = '<p class="error">Failed to load library sources data. Make sure the file exists at /home/fsanches/compartilhado/gfonts_library_sources.json</p>';
         console.error('Error loading sources:', error);
     }
 }

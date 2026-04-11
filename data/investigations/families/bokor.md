@@ -59,7 +59,7 @@ This is a valid gftools-builder configuration for a static-only font build.
 - **Config.yaml exists at commit**: Yes, `Source/builder.yaml` is present and valid.
 - **Source files match METADATA.pb**: The METADATA.pb references `Release/ttf/Bokor-Regular.ttf` as the source file, which is consistent with the `outputDir: "../Release"` in the builder config.
 - **Branch correct**: master, confirmed (only branch in the repo).
-- **Upstream repo cached**: Yes, at `/mnt/shared/upstream_repos/fontc_crater_cache/danhhong/Bokor`.
+- **Upstream repo cached**: Yes, at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/danhhong/Bokor`.
 - **Upstream repo is HEAD of commit**: The recorded commit is the latest commit in the repository.
 
 ## Confidence Level

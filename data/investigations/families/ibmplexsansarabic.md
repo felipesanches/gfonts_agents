@@ -41,7 +41,7 @@ The commit body says: "Taken from the upstream repo https://github.com/googlefon
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Commit `e80bf92` exists and dates to 2024-11-08, message: "Delete old temp folder"
 - At this commit, NO source files exist for IBM Plex Sans Arabic (the `IBM-Plex-Sans-Arabic/sources/` directory was removed in January 2024)
 - Only pre-compiled TTFs exist at `Google-Fonts-Fixes/fonts/IBM-Plex-Sans-Arabic/fonts/complete/ttf/`

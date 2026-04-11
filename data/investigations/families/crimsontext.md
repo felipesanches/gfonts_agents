@@ -45,7 +45,7 @@ This is a valid gftools-builder configuration pointing to Glyphs sources. The `c
 
 ## Verification
 
-- **Repository accessible**: Yes - cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/Crimson/`
+- **Repository accessible**: Yes - cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/Crimson/`
 - **Commit exists**: Yes - `4f1458a` is HEAD of the upstream repo
 - **Config exists at commit**: Yes - `sources/config.yaml` is present at the referenced commit
 - **Source files present**: Yes - `.glyphs` files for Roman and Italic

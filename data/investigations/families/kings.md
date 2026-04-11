@@ -40,7 +40,7 @@ classifications: "HANDWRITING"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/kings` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/kings`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/kings` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/kings`.
 
 The `sources/config.yml` file exists in the cached repository. The latest commit is `3163262` ("Description typo fixed"), which matches exactly the commit hash in METADATA.pb.
 

@@ -16,7 +16,7 @@
 
 ## How the Repository URL Was Found
 
-The repository URL `https://github.com/librefonts/acme` was identified from the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/acme`. There is no `source { }` block in METADATA.pb at all. Like Abril Fatface, the `librefonts` organization hosts a TTX-decomposed mirror of this font.
+The repository URL `https://github.com/librefonts/acme` was identified from the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/acme`. There is no `source { }` block in METADATA.pb at all. Like Abril Fatface, the `librefonts` organization hosts a TTX-decomposed mirror of this font.
 
 The original designer is "Juan Pablo del Peral, Huerta Tipografica". The Huerta Tipografica organization on GitHub (`huertatipografica`) has repos for several of their other fonts (Alegreya, Andada Pro, etc.) but does not have a dedicated repo for Acme. The font's copyright string references `info@huertatipografica.com.ar`.
 

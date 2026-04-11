@@ -31,7 +31,7 @@ The commit hash `f9df75d92c93324e74e5ec0df6d91c8ee4b84b5a` was added to google/f
 
 The referenced commit `f9df75d` corresponds to "Merge pull request #12 from aaronbell/master" (dated 2021-08-26, "Update to UFR format"), which is also the same day that PR #3639 ("Jura v5.106 (stat fix)") was merged into google/fonts by Aaron Bell. This is the HEAD commit of the jura upstream repo — the repository appears to have been migrated to UFR (Unicode Font Repository) format and has only one commit in its current form.
 
-Verification in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/ossobuffo/jura/`:
+Verification in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/ossobuffo/jura/`:
 - The commit `f9df75d` exists and is the latest commit
 - `sources/config.yaml` exists at this commit with content:
   ```yaml

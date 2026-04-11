@@ -51,7 +51,7 @@ The TTF files were last modified in the hinting update commit `fab83f4be` (2020-
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/itfoundry/hind-guntur
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/hind-guntur
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/hind-guntur
 - **Repo status**: Clean, synced with remote
 - **Branches**: master, develop, feature/c2.following (all point to same "Compile 1.000" commit)
 - **Tags**: None

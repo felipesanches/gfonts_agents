@@ -21,9 +21,9 @@ No source block
 
 ## Investigation
 
-The METADATA.pb for IM Fell French Canon (at `/mnt/shared/google/fonts/ofl/imfellfrenchcanon/METADATA.pb`) contains no source block. The family was added in the initial commit to google/fonts (commit `90abd17b4`, dated 2015-03-07 by Dave Crossland).
+The METADATA.pb for IM Fell French Canon (at `/home/fsanches/compartilhado/google/fonts/ofl/imfellfrenchcanon/METADATA.pb`) contains no source block. The family was added in the initial commit to google/fonts (commit `90abd17b4`, dated 2015-03-07 by Dave Crossland).
 
-The upstream repository was identified as `https://github.com/librefonts/imfellfrenchcanon` (confirmed by examining the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/imfellfrenchcanon/`).
+The upstream repository was identified as `https://github.com/librefonts/imfellfrenchcanon` (confirmed by examining the cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/imfellfrenchcanon/`).
 
 The librefonts/imfellfrenchcanon repository contains only TTX-decompiled font files:
 - `IMFeFCrm28P.ttf.ttx` (and split per-table `.ttx` files)

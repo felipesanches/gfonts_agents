@@ -47,7 +47,7 @@ The METADATA.pb records commit `41153e6fe01d218e933919a1d08c8e45065bc8fe`, but t
 
 The font was updated to Version 2.000 via google/fonts commit `d5baecffa`-related PR #3437. That commit's squash body explicitly references `2f924dd1205484c5e0054b1f3955f434224ba72e` as the actual source commit. Binary blob hash verification from the existing upstream_info.md confirms: the font file `BigShouldersInlineText[wght].ttf` in google/fonts matches the blob at commit `2f924dd`.
 
-Both commits exist in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/xotypeco/big_shoulders`.
+Both commits exist in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/xotypeco/big_shoulders`.
 
 ### Config YAML
 

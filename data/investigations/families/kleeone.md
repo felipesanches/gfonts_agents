@@ -41,7 +41,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `fontworks-fonts/Klee` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/fontworks-fonts/Klee`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `fontworks-fonts/Klee` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/fontworks-fonts/Klee`.
 
 The repository contains separate Glyphs source files in the `sources/` directory:
 - `sources/KleeOne-Regular.glyphs`

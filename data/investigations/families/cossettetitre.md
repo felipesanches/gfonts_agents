@@ -42,7 +42,7 @@ This is a valid gftools-builder configuration pointing to UFO sources.
 
 ## Verification
 
-- **Repository accessible**: Yes - cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/cossette-fonts/`
+- **Repository accessible**: Yes - cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/cossette-fonts/`
 - **Commit exists**: Yes - `ee99cea` is HEAD (and only commit) of the repo
 - **Config exists at commit**: Yes - `sources/config-titre.yaml` is present
 - **Source files present**: Yes - UFO sources for Regular and Bold weights

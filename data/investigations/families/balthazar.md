@@ -14,7 +14,7 @@
 | Branch | `master` |
 
 ## How the Repository URL Was Found
-The METADATA.pb has no `source {}` block at all. The repository URL was found via the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/balthazar/`. The remote URL `https://github.com/librefonts/balthazar` matches the expected pattern for librefonts-hosted legacy Google Fonts projects.
+The METADATA.pb has no `source {}` block at all. The repository URL was found via the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/balthazar/`. The remote URL `https://github.com/librefonts/balthazar` matches the expected pattern for librefonts-hosted legacy Google Fonts projects.
 
 ## How the Commit Hash Was Identified
 The upstream repo has only a single commit: `baa08c6f633b0fda1a83141ce7515441c56e9868` (2014-10-17, "update .travis.yml" by hash3g). This is the only possible reference point. The tracking file already had this commit recorded.

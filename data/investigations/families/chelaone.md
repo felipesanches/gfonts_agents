@@ -17,7 +17,7 @@
 
 ## How URL Found
 
-The repository URL `https://github.com/librefonts/chelaone` was identified from the librefonts organization on GitHub, which hosts mirrors/archives of many early Google Fonts families. The upstream repo is cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/chelaone/`.
+The repository URL `https://github.com/librefonts/chelaone` was identified from the librefonts organization on GitHub, which hosts mirrors/archives of many early Google Fonts families. The upstream repo is cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/chelaone/`.
 
 The repository remote confirms: `origin https://github.com/librefonts/chelaone`.
 
@@ -43,7 +43,7 @@ Neither SFD nor VFB formats are compatible with gftools-builder. There are no `.
 
 ## Verification
 
-- **Repository URL**: Verified - cloned and accessible at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/chelaone/`
+- **Repository URL**: Verified - cloned and accessible at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/chelaone/`
 - **Commit hash**: Verified - matches HEAD, and is the only commit in the repo
 - **Source block**: Pending merge via PR branch `sources_info_2026-02-25`
 - **METADATA.pb on main**: Currently has no source block (pending PR)

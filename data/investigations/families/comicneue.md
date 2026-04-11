@@ -51,7 +51,7 @@ Since the override config exists in the google/fonts directory, the `config_yaml
 - **Branch**: Default branch is `master` (not explicitly set in METADATA.pb)
 - **Override config references valid sources**: Yes - `Sources/Glyphs/ComicNeue_Roman.glyphs` and `Sources/Glyphs/ComicNeue_Italics.glyphs` both exist at commit `c5ee07b`
 - **Font files**: 6 TTF files (Light, Regular, Bold in both Roman and Italic)
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/crozynski/comicneue/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/crozynski/comicneue/`
 - **Additional commits exist after onboarding**: Yes - there are ~5 commits after `c5ee07b` on master (file reorganization, gitignore updates, cache clearing) but no source file changes appear relevant
 
 ## Confidence Level

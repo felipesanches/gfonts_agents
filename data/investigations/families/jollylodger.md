@@ -27,7 +27,7 @@ The copyright reads: "Copyright (c) 2012 by Font Diner, Inc (diner@fontdiner.com
 
 The tracking JSON (`data/gfonts_library_sources.json`) records the upstream repository as `https://github.com/librefonts/jollylodger` at commit `06a3c7f44fc01a8d09ed73ea8c180a11018bdac8` (subject: "update .travis.yml"). This is the librefonts GitHub organization's mirror repository.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/jollylodger`. The local clone has only one commit (shallow clone). The repository contains:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/jollylodger`. The local clone has only one commit (shallow clone). The repository contains:
 - `JollyLodger-Regular.ttf` (binary font)
 - `src/JollyLodger-Regular-TTF.vfb` (FontLab Studio source, TTF variant)
 - `src/VERSIONS.txt`: "JollyLodger-Regular.ttf: Version 1.000"

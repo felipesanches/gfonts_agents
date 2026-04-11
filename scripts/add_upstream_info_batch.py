@@ -15,8 +15,8 @@ import subprocess
 import sys
 import tempfile
 
-GOOGLE_FONTS_DIR = "/mnt/shared/google/fonts"
-INVESTIGATIONS_DIR = "/home/fsanches/projetos/gfonts_agents/data/investigations/families"
+GOOGLE_FONTS_DIR = "/home/fsanches/compartilhado/google/fonts"
+INVESTIGATIONS_DIR = "/home/fsanches/compartilhado/gfonts_agents/data/investigations/families"
 BATCH_SIZE = 50  # families per commit
 
 
@@ -31,11 +31,11 @@ def run_git(*args, capture=True, check=True):
 
 
 def clean_paths(text):
-    """Remove /mnt/shared prefixes from paths."""
-    text = text.replace("/mnt/shared/upstream_repos/fontc_crater_cache/", "upstream_repos/fontc_crater_cache/")
-    text = text.replace("/mnt/shared/google/fonts/", "google/fonts/")
-    text = text.replace("/mnt/shared/google/fonts", "google/fonts")
-    text = text.replace("/mnt/shared/", "")
+    """Remove /home/fsanches/compartilhado prefixes from paths."""
+    text = text.replace("/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/", "upstream_repos/fontc_crater_cache/")
+    text = text.replace("/home/fsanches/compartilhado/google/fonts/", "google/fonts/")
+    text = text.replace("/home/fsanches/compartilhado/google/fonts", "google/fonts")
+    text = text.replace("/home/fsanches/compartilhado/", "")
     return text
 
 
@@ -184,18 +184,18 @@ def main():
         create_batch_commit(batch, i + 1, total_batches, dry_run=args.dry_run)
 
     if not args.dry_run:
-        # Verify no /mnt/shared paths remain
-        print("\nVerifying no /mnt/shared paths in staged files...")
+        # Verify no /home/fsanches/compartilhado paths remain
+        print("\nVerifying no /home/fsanches/compartilhado paths in staged files...")
         result = subprocess.run(
-            ["grep", "-r", "/mnt/shared", "--include=upstream_info.md",
+            ["grep", "-r", "/home/fsanches/compartilhado", "--include=upstream_info.md",
              GOOGLE_FONTS_DIR + "/ofl", GOOGLE_FONTS_DIR + "/apache"],
             capture_output=True, text=True
         )
         if result.stdout.strip():
-            print("WARNING: Found /mnt/shared paths in upstream_info.md files!")
+            print("WARNING: Found /home/fsanches/compartilhado paths in upstream_info.md files!")
             print(result.stdout[:500])
         else:
-            print("OK: No /mnt/shared paths found.")
+            print("OK: No /home/fsanches/compartilhado paths found.")
 
         total_commits = run_git("rev-list", "--count", "upstream/main..HEAD")
         print(f"\nTotal commits on branch: {total_commits}")

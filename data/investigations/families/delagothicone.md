@@ -47,7 +47,7 @@ The commit `da8b03e57a8977132b3d0358c48c8463374c74ab` is the latest commit in th
 ## Verification
 
 - Repository URL is valid and accessible
-- Upstream repo cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/syakuzen/DelaGothic/`
+- Upstream repo cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/syakuzen/DelaGothic/`
 - Commit `da8b03e` verified as HEAD of master branch
 - Source file `Sources/DelaGothic.glyphs` exists in the upstream repo
 - Override config.yaml in google/fonts correctly references the source file

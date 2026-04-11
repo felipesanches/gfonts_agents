@@ -13,7 +13,7 @@
 
 ## How URL Found
 
-The repository URL `https://github.com/librefonts/cookie` is part of the librefonts GitHub organization, which hosts archival copies of early Google Fonts projects. The URL was already documented in the tracking data and matches the git remote of the cached upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/cookie`.
+The repository URL `https://github.com/librefonts/cookie` is part of the librefonts GitHub organization, which hosts archival copies of early Google Fonts projects. The URL was already documented in the tracking data and matches the git remote of the cached upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/cookie`.
 
 ## How Commit Determined
 

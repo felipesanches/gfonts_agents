@@ -2766,7 +2766,7 @@
         ".glyphs"
       ],
       "prebuild": [
-        "python3 /mnt/shared/google/fonts/build_tools/prebuilds/biryani_prebuild.py"
+        "python3 /home/fsanches/compartilhado/google/fonts/build_tools/prebuilds/biryani_prebuild.py"
       ]
     },
     "bitcount": {
@@ -3701,7 +3701,7 @@
       "notes": "Cascadia Mono is built from the same sources as Cascadia Code but with ligatures removed. Upstream uses a custom build.py; this prebuild transforms the sources for gftools-builder.",
       "overrides": {},
       "prebuild": [
-        "python3 /mnt/shared/google/fonts/build_tools/prebuilds/cascadiamono_prebuild.py"
+        "python3 /home/fsanches/compartilhado/google/fonts/build_tools/prebuilds/cascadiamono_prebuild.py"
       ],
       "build_environment": {
         "fontmake": "3.11.1",
@@ -6605,7 +6605,7 @@
       "notes": "HeptaSlab has 4 masters with bracket layers. 19 glyphs have incompatible contour structures between light/heavy masters. Prebuild replaces base glyphs with compatible bracket alternates.",
       "overrides": {},
       "prebuild": [
-        "python3 /mnt/shared/google/fonts/build_tools/prebuilds/heptaslab_prebuild.py"
+        "python3 /home/fsanches/compartilhado/google/fonts/build_tools/prebuilds/heptaslab_prebuild.py"
       ],
       "build_environment": {
         "fontmake": "3.11.1",
@@ -13639,7 +13639,7 @@
       "notes": "Prebuild fixes: (1) remove duplicate smart component layers with timestamp suffixes, (2) add missing smart component axis mappings to partSelection blocks, (3) fix wrong pole values causing duplicate locations. After prebuild, build still fails with glyph compatibility errors: ~50 glyphs have differing contour/component counts across optical size masters (bhook, bstroke, q, u, many Cyrillic glyphs). Both Roman and Italic affected. Source at commit 80a3341 requires Glyphs 3 smart component resolution that fontmake/glyphsLib cannot reproduce.",
       "overrides": {},
       "prebuild": [
-        "python3 /mnt/shared/google/fonts/build_tools/prebuilds/playfair_prebuild.py"
+        "python3 /home/fsanches/compartilhado/google/fonts/build_tools/prebuilds/playfair_prebuild.py"
       ],
       "build_timeout": 1800,
       "build_environment": {
@@ -13662,7 +13662,7 @@
       "notes": "Same upstream source as playfairdisplay (clauseggers/Playfair). Same build failures apply. See playfairdisplay notes.",
       "overrides": {},
       "prebuild": [
-        "python3 /mnt/shared/google/fonts/build_tools/prebuilds/playfair_prebuild.py"
+        "python3 /home/fsanches/compartilhado/google/fonts/build_tools/prebuilds/playfair_prebuild.py"
       ],
       "build_timeout": 1800,
       "build_environment": {

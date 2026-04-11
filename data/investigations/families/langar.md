@@ -37,7 +37,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has both `repository_url` and `commit` hash, with explicit file mappings. The commit `82c844e60ab055cef1169f7825bc119ea3bd5090` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/typeland/Langar/`:
+The METADATA.pb has both `repository_url` and `commit` hash, with explicit file mappings. The commit `82c844e60ab055cef1169f7825bc119ea3bd5090` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/typeland/Langar/`:
 
 ```
 commit 82c844e60ab055cef1169f7825bc119ea3bd5090

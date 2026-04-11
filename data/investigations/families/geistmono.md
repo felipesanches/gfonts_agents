@@ -84,7 +84,7 @@ The `sources/config-GeistMono.yaml` at the referenced commit configures:
 
 ### 6. Repository Cache
 
-The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/vercel/geist-font/` (shared with Geist).
+The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/vercel/geist-font/` (shared with Geist).
 
 ### 7. Relationship to Geist
 

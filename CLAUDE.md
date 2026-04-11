@@ -1,7 +1,7 @@
 # gfonts_agents — Project Guidelines
 
 ## Shared Policies
-All cross-project policies are in `/mnt/shared/GoogleFonts/CLAUDE.md`.
+All cross-project policies are in `/home/fsanches/compartilhado/GoogleFonts/CLAUDE.md`.
 Read that file at the start of every session. Those policies apply here.
 
 ---

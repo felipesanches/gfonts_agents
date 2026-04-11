@@ -58,7 +58,7 @@ The correct onboarding commit should be `0a9b42f98d6f2ee40563a406b1cdd9bb5a58fe5
 ## Verification
 
 - Repository URL is valid and accessible
-- Upstream repo cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/alphArtype/Delicious-Handrawn/` (shallow clone)
+- Upstream repo cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/alphArtype/Delicious-Handrawn/` (shallow clone)
 - Current HEAD (`4548961`) is newer than the onboarding commit (`0a9b42f`)
 - The config.yaml exists at `sources/config.yaml` in the upstream repo
 - Source file `Delicious-Handrawn.glyphs` referenced in config exists in `sources/` directory

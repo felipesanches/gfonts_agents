@@ -43,7 +43,7 @@ The commit message for `2a07a56bc` explicitly states: "Jaro Version 1.000 taken 
 
 The METADATA.pb was later updated by `66f91f10f` ("Merge upstream.yaml into METADATA.pb") which consolidated the upstream information, and `19cdcec59` which ported fontc_crater data.
 
-The upstream repository `agyeiarcher/Jaro` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/agyeiarcher/Jaro`. Commit `51096c4f8e9e0076709d509b905741470beb972d` exists in the repo — it is a merge commit ("Merge pull request #14 from emmamarichal/main") that added build infrastructure including the GitHub Actions workflow. The file `sources/config.yaml` exists in the upstream repo.
+The upstream repository `agyeiarcher/Jaro` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/agyeiarcher/Jaro`. Commit `51096c4f8e9e0076709d509b905741470beb972d` exists in the repo — it is a merge commit ("Merge pull request #14 from emmamarichal/main") that added build infrastructure including the GitHub Actions workflow. The file `sources/config.yaml` exists in the upstream repo.
 
 The METADATA.pb lists designers as "Agyei Archer, Céline Hurka, Mirko Velimirović" (updated from the initial "Celine Hurka" spelling by commit `0c4315f94`).
 

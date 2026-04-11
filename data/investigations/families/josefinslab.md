@@ -46,7 +46,7 @@ The commit hash in METADATA.pb was subsequently changed from `d14756349e` to `61
 
 Commit `61773366f7` is dated 2024-12-06 (subject: "Merge pull request #45 from emmamarichal/master") — this is **after** the 2024-11-15 google/fonts addition. The commits between `d14756349e` and `61773366f7` include "remove last QA", "remove old build.sh", and "rebuilt fonts with the STAT", suggesting the upstream continued development after the google/fonts onboarding.
 
-The upstream repository at https://github.com/googlefonts/josefinslab is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/josefinslab`. The commit `61773366f7` is the current HEAD of the upstream repo.
+The upstream repository at https://github.com/googlefonts/josefinslab is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/josefinslab`. The commit `61773366f7` is the current HEAD of the upstream repo.
 
 The upstream `sources/config.yaml` exists and is the gftools-builder configuration for Josefin Slab (referencing `JosefinSlab.designspace` and `JosefinSlab-Italic.designspace`). The METADATA.pb correctly references it at `sources/config.yaml`.
 

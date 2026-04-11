@@ -49,7 +49,7 @@ The current font binaries in google/fonts are from the Feb 2024 packager rebuild
 - Repository URL is valid and accessible: https://github.com/meirsadan/david-libre
 - Commit `15496c1` exists in the upstream repo and is HEAD (master)
 - The METADATA.pb `files` mapping correctly maps font files from `fonts/ttf/` to the family directory
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/meirsadan/david-libre/`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/meirsadan/david-libre/`
 - The `sources/config.yaml` file exists in the upstream repo at commit `15496c1`
 
 ## Confidence Level

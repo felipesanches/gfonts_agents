@@ -26,7 +26,7 @@ source {
 
 ### Repository
 
-The METADATA.pb source block references `fontmgr/AnonymousPro`. This repository is NOT cached in `/mnt/shared/upstream_repos/fontc_crater_cache/`. A different repository exists at `librefonts/anonymouspro` (its remote is `https://github.com/librefonts/anonymouspro`), but that is a separate repo containing TTX-format exported font data, not the `fontmgr` repository.
+The METADATA.pb source block references `fontmgr/AnonymousPro`. This repository is NOT cached in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`. A different repository exists at `librefonts/anonymouspro` (its remote is `https://github.com/librefonts/anonymouspro`), but that is a separate repo containing TTX-format exported font data, not the `fontmgr` repository.
 
 The source block was added to google/fonts in commit `b77cf8eb3` ("Anonymous Pro: add source block to METADATA.pb") with confidence LOW.
 

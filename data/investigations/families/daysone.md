@@ -36,7 +36,7 @@ The upstream repository has only a single commit: `76642af05e1a7734f94e1b22abdbc
 
 - Repository URL is valid and accessible: https://github.com/librefonts/daysone
 - Commit `76642af` is the only commit in the repo and matches HEAD
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/daysone/`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/daysone/`
 - This is a legacy font (added 2011-08-17) that predates gftools-builder infrastructure
 
 ## Confidence Level

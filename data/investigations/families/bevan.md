@@ -47,7 +47,7 @@ The `config_yaml: "sources/config.yaml"` field is present in the current METADAT
 
 ## Verification
 
-- **Repository exists**: Yes, confirmed locally at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/BevanFont`
+- **Repository exists**: Yes, confirmed locally at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/BevanFont`
 - **Commit hash exists**: Yes, verified: `ab1035d Merge pull request #43 from emmamarichal/main`
 - **Config.yaml exists at recorded commit**: Yes, at `sources/config.yaml`
 - **Source files at commit**: `sources/Bevan.glyphs`, `sources/Bevan-Italic.glyphs`, `sources/config.yaml`

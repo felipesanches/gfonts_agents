@@ -38,7 +38,7 @@ At the recorded commit (`b2bf876`), only FontForge SFD sources exist in `old/ver
 
 ## Config YAML Status
 
-**No config.yaml or config.yml exists anywhere in the upstream repository** at any commit. There is also no override config.yaml in the google/fonts family directory (`/mnt/shared/google/fonts/ofl/cardo/`).
+**No config.yaml or config.yml exists anywhere in the upstream repository** at any commit. There is also no override config.yaml in the google/fonts family directory (`/home/fsanches/compartilhado/google/fonts/ofl/cardo/`).
 
 The source types are SFD (FontForge format) at the original commit, and Glyphs format at later commits. Neither is set up with a gftools-builder config.
 

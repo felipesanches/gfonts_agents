@@ -41,7 +41,7 @@ classifications: "MONOSPACE"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `isaozler/kode-mono` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/isaozler/kode-mono`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `isaozler/kode-mono` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/isaozler/kode-mono`.
 
 The `sources/config.yaml` file exists in the cached repository along with `sources/KodeMono.glyphs` and `sources/KodeMono.designspace`. The latest commit is `2d427d3` ("Fix/build template update (#53)"), which matches exactly the commit hash in METADATA.pb.
 

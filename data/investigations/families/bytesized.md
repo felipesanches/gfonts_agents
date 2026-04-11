@@ -44,7 +44,7 @@ The source file `sources/Bytesized-Regular.ufo` exists alongside the config.
 
 ## Verification
 
-- **Repository URL**: Confirmed valid; repo is cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/balt-dev/bytesized-gf/`
+- **Repository URL**: Confirmed valid; repo is cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/balt-dev/bytesized-gf/`
 - **Commit hash**: Verified -- exists in the repo and is HEAD of `main`; explicitly referenced in the google/fonts onboarding commit message
 - **Config YAML**: Verified -- `sources/config.yaml` exists at the recorded commit with valid gftools-builder configuration
 - **Source files**: `sources/Bytesized-Regular.ufo` (UFO format, gftools-compatible)

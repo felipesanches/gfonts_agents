@@ -23,11 +23,11 @@ source {
 
 ## Investigation
 
-The METADATA.pb for Inknut Antiqua (at `/mnt/shared/google/fonts/ofl/inknutantiqua/METADATA.pb`) contains a partial source block with only `repository_url` — no `commit` and no `config_yaml`.
+The METADATA.pb for Inknut Antiqua (at `/home/fsanches/compartilhado/google/fonts/ofl/inknutantiqua/METADATA.pb`) contains a partial source block with only `repository_url` — no `commit` and no `config_yaml`.
 
 The `repository_url` field was added to METADATA.pb by Simon Cozens in commit `21e98aac8` on 2024-01-14 ("More upstreams (i,j,k)"), alongside several other families.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/clauseggers/Inknut-Antiqua/`. The repository structure is:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/clauseggers/Inknut-Antiqua/`. The repository structure is:
 - `Inknut Antiqua uprights.glyphs` — a `.glyphs` source file at the repo root
 - `UFOs/` — contains `Inknut Antiqua-Regular.ufo` and `Inknut Antiqua-Bold.ufo`
 - `Inknut Antiqua LATIN ONLY/Inknut Antiqua uprights 124 LATIN ONLY.glyphs`

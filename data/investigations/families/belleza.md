@@ -43,7 +43,7 @@ sources/
   Belleza.glyphs
 ```
 
-An **override config.yaml** exists in the google/fonts family directory at `/mnt/shared/google/fonts/ofl/belleza/config.yaml`:
+An **override config.yaml** exists in the google/fonts family directory at `/home/fsanches/compartilhado/google/fonts/ofl/belleza/config.yaml`:
 
 ```yaml
 buildVariable: false

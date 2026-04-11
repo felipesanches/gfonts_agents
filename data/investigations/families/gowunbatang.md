@@ -50,7 +50,7 @@ source {
 ### Upstream Repository Analysis
 
 - **Repository**: https://github.com/yangheeryu/Gowun-Batang
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/yangheeryu/Gowun-Batang
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/yangheeryu/Gowun-Batang
 - **Branches**: master only
 - **Latest commit**: `4e73f5a` ("Batang ready to go!", 2021-06-10) by Aaron Bell
 

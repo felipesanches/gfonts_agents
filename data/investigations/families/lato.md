@@ -30,7 +30,7 @@ The google/fonts git history for `ofl/lato/Lato-Regular.ttf` shows:
 
 The commit body for `f3b885d55` references: "Version 2.015 release for Google Fonts. These fonts have been hot fixed from the original sources. The hot fix source repository is here https://github.com/googlefonts/LatoGFVersion"
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/LatoGFVersion/` was last updated on 2016-11-28 with commit `080cb69` ("fonts: regenerated"). This is almost certainly the commit used for the onboarding (matching the timing).
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/LatoGFVersion/` was last updated on 2016-11-28 with commit `080cb69` ("fonts: regenerated"). This is almost certainly the commit used for the onboarding (matching the timing).
 
 The LatoGFVersion repo structure:
 - `build/` — build scripts (shell, Python)

@@ -34,7 +34,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `f1d4a1c8c1db3c4a32cc13763c5fbb1776b5d478` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/sursly/league-gothic/`:
+The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `f1d4a1c8c1db3c4a32cc13763c5fbb1776b5d478` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/sursly/league-gothic/`:
 
 ```
 commit f1d4a1c8c1db3c4a32cc13763c5fbb1776b5d478

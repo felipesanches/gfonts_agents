@@ -25,7 +25,7 @@ The METADATA.pb for Kelly Slab has no `source` block. The font was added in the 
 
 The copyright notice reads: "Copyright (c) 2011, Denis Masharov <denis.masharov@gmail.com>, with Reserved Font Names 'Kelly', 'Kelly Slab'."
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kellyslab` contains only TTX/VFB/SFD source files (legacy format, not gftools-builder compatible). The `src/` directory contains:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kellyslab` contains only TTX/VFB/SFD source files (legacy format, not gftools-builder compatible). The `src/` directory contains:
 - `KellySlab-Regular.otf.*` (OTF TTX dumps)
 - `KellySlab-Regular.vfb` (FontLab)
 - `KellySlab-Regular-TTF.sfd` (FontForge)

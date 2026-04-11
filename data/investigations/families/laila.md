@@ -31,7 +31,7 @@ The google/fonts git history for `ofl/laila/Laila-Regular.ttf` shows:
 
 The PR body for `dfb13f742` does not include a gftools-packager upstream commit reference.
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/laila/` has UFO and VFB sources in `masters/`. The most recent commits in the upstream repo predate the google/fonts onboarding (all from 2014), with the latest being `a8b5b4e` "Compile 2.000" (Nov 2014). No later commits were found before the 2017-05-16 google/fonts merge date.
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/laila/` has UFO and VFB sources in `masters/`. The most recent commits in the upstream repo predate the google/fonts onboarding (all from 2014), with the latest being `a8b5b4e` "Compile 2.000" (Nov 2014). No later commits were found before the 2017-05-16 google/fonts merge date.
 
 Searching the upstream commits before 2017-05-16 shows `a8b5b4e` as the latest commit. However, the google/fonts hotfix was described as "v1.302", and the upstream shows "Build 1.301" at `62d23b0`. This suggests the v1.302 files may have been prepared offline or through the ITF build system without a corresponding upstream git commit.
 

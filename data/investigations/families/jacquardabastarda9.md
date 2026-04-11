@@ -46,7 +46,7 @@ The commit message for `dc82d7003` explicitly states: "Taken from the upstream r
 
 The METADATA.pb was updated from the initial commit hash `cfc133ee284c74b8f76980a1267f4a3d45671377` to `ca6bf8560d7e3fd2aae341ffe0838b61b35b3c61` in commit `dc82d7003`.
 
-The upstream repository is separate from the other Jacquard families: `scfried/soft-type-jacquarda-bastarda`, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/scfried/soft-type-jacquarda-bastarda`. Commit `ca6bf8560d7e3fd2aae341ffe0838b61b35b3c61` exists in the repo and is a merge commit dated 2025-01-10. The file `sources/config.yaml` exists in the upstream repo.
+The upstream repository is separate from the other Jacquard families: `scfried/soft-type-jacquarda-bastarda`, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/scfried/soft-type-jacquarda-bastarda`. Commit `ca6bf8560d7e3fd2aae341ffe0838b61b35b3c61` exists in the repo and is a merge commit dated 2025-01-10. The file `sources/config.yaml` exists in the upstream repo.
 
 ## Conclusion
 

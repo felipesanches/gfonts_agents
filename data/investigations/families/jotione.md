@@ -39,7 +39,7 @@ The git history shows:
 - `af137c900` ("sources info for Joti One: Version 1.002 (PR #5948)"): Added the source block to METADATA.pb with repository URL and commit hash, and created the override `config.yaml` in the google/fonts directory.
 - `fa15a6093` ([gftools-packager] commit for Version 1.002): The font was onboarded via the gftools-packager.
 
-The upstream repository at https://github.com/etunni/joti is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/joti`. Verification of commit `7feedf8bad69029e82ae281c7a100fb639d946e1`:
+The upstream repository at https://github.com/etunni/joti is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/joti`. Verification of commit `7feedf8bad69029e82ae281c7a100fb639d946e1`:
 ```
 7feedf8 Merge pull request #1 from emmamarichal/master
 ```

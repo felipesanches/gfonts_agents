@@ -26,7 +26,7 @@ source {
 
 ### Repository URL
 
-The repository URL `https://github.com/librefonts/bigelowrules` is already documented in METADATA.pb. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bigelowrules`.
+The repository URL `https://github.com/librefonts/bigelowrules` is already documented in METADATA.pb. The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/bigelowrules`.
 
 ### Commit Hash
 

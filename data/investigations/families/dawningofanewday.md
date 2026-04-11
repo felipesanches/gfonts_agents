@@ -36,7 +36,7 @@ The upstream repository has only a single commit: `45ea90b8015692ee7fe07e417ea1c
 
 - Repository URL is valid and accessible: https://github.com/librefonts/dawningofanewday
 - Commit `45ea90b` is the only commit in the repo and matches HEAD
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/dawningofanewday/`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/dawningofanewday/`
 - This is a legacy font (added 2011-04-14) that predates gftools-builder infrastructure
 
 ## Confidence Level

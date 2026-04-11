@@ -6394,7 +6394,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/googlefonts/allkin",
       "commit": "fffaa4201dfbd887a78e3d0c79654a7ad0d155f3",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/allkin"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/allkin"
     },
     {
       "family_name": "Alyamama",
@@ -6403,7 +6403,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/Mestaratype/AlYamama",
       "commit": "aecc9e395072c0e1d4cdd9dc296c0da5744f3360",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/Mestaratype/AlYamama"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Mestaratype/AlYamama"
     },
     {
       "family_name": "Betania Patmos",
@@ -6412,7 +6412,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
     },
     {
       "family_name": "Betania Patmos GDL",
@@ -6421,7 +6421,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
     },
     {
       "family_name": "Betania Patmos Guide Line",
@@ -6430,7 +6430,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
     },
     {
       "family_name": "Betania Patmos In",
@@ -6439,7 +6439,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
     },
     {
       "family_name": "Betania Patmos In GDL",
@@ -6448,7 +6448,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/huertatipografica/betania-patmos",
       "commit": "08c83ac9540b0b2bf86ddf6b632651142f31a93c",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/huertatipografica/betania-patmos"
     },
     {
       "family_name": "Idiqlat",
@@ -6457,7 +6457,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/silnrsi/font-idiqlat",
       "commit": "37a6c68fa053f4b4b4c9f6d67c569f66621b6daa",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/silnrsi/font-idiqlat"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/silnrsi/font-idiqlat"
     },
     {
       "family_name": "Ramsina",
@@ -6466,7 +6466,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/silnrsi/font-ramsina",
       "commit": "263c8d552bff566fad9e8c9b266ae32e6ab341b4",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/silnrsi/font-ramsina"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/silnrsi/font-ramsina"
     },
     {
       "family_name": "Red Hat Display",
@@ -6475,7 +6475,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/bghryct/RedHatDisplay",
       "commit": "fd36df3a3ad95084fe777597ed4b5c19961b3631",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/bghryct/RedHatDisplay"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/bghryct/RedHatDisplay"
     },
     {
       "family_name": "Red Hat Mono",
@@ -6484,7 +6484,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/bghryct/RedHatMono",
       "commit": "a0f2a7032143500e44dfd569d09ba30414d51a1c",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/bghryct/RedHatMono"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/bghryct/RedHatMono"
     },
     {
       "family_name": "Red Hat Text",
@@ -6493,7 +6493,7 @@
       "license": "ofl",
       "repository_url": "https://github.com/bghryct/RedHatText",
       "commit": "dfbc50b16e27d5be1986c3ec79534460a74c1370",
-      "cache_path": "/mnt/shared/upstream_repos/fontc_crater_cache/bghryct/RedHatText"
+      "cache_path": "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/bghryct/RedHatText"
     }
   ]
 }

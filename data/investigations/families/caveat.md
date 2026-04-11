@@ -56,11 +56,11 @@ The source files at the tracked commit include:
 - `sources/Caveat-Brush.glyphs` (for the separate Caveat Brush font)
 - `sources/build.sh`
 
-**No override config.yaml** exists in `/mnt/shared/google/fonts/ofl/caveat/`.
+**No override config.yaml** exists in `/home/fsanches/compartilhado/google/fonts/ofl/caveat/`.
 
 ## Verification
 
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/caveat/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/caveat/`
 - **Commit exists**: Yes, `59745e8` is the HEAD commit ("Fix /Ldot /ldot /AE /OE and new build.sh")
 - **Commit matches onboarding**: Confirmed via the v2.000 PR commit message
 - **Font file history**: Updated from v1.500 to v2.000 via commit `a85fc09e4` (the last significant update to the font binary)

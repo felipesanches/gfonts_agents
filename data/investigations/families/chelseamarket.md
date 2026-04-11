@@ -17,7 +17,7 @@
 
 ## How URL Found
 
-The repository URL `https://github.com/librefonts/chelseamarket` was identified from the librefonts organization on GitHub. The upstream repo is cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/chelseamarket/`.
+The repository URL `https://github.com/librefonts/chelseamarket` was identified from the librefonts organization on GitHub. The upstream repo is cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/chelseamarket/`.
 
 The repository remote confirms: `origin https://github.com/librefonts/chelseamarket`.
 
@@ -42,7 +42,7 @@ VFB is a proprietary FontLab format that is not compatible with gftools-builder.
 
 ## Verification
 
-- **Repository URL**: Verified - cloned and accessible at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/chelseamarket/`
+- **Repository URL**: Verified - cloned and accessible at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/chelseamarket/`
 - **Commit hash**: Verified - matches HEAD, and is the only commit in the repo
 - **Source block**: Pending merge via PR branch `sources_info_2026-02-25`
 - **METADATA.pb on main**: Currently has no source block (pending PR)

@@ -55,7 +55,7 @@ The gftools-packager was run twice during PR #3434:
 
 Per the gftools-packager hint policy, the commit in the squash merge body (`465a9c5`) is more likely to be the actual source, but the METADATA.pb currently records `41153e6`. The existing `upstream_info.md` in the google/fonts family directory confirms this discrepancy and identifies `465a9c5` as the correct commit via binary blob hash verification.
 
-Both commit `41153e6` and `465a9c5` exist in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/xotypeco/big_shoulders`.
+Both commit `41153e6` and `465a9c5` exist in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/xotypeco/big_shoulders`.
 
 ### Config YAML
 

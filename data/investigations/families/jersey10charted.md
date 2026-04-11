@@ -36,7 +36,7 @@ source {
 
 The METADATA.pb already contains a complete source block with repository URL, commit hash, and config_yaml path.
 
-The upstream repository is shared with Jersey 10: `scfried/soft-type-jersey`, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/scfried/soft-type-jersey`. Commit `d8446c4c9c2ba14cf408c295be35213c006e19ff` exists in the repo (merge commit "Merge pull request #7 from emmamarichal/main", dated 2025-01-10). The file `sources/config-jersey10charted.yaml` exists in the upstream repo.
+The upstream repository is shared with Jersey 10: `scfried/soft-type-jersey`, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/scfried/soft-type-jersey`. Commit `d8446c4c9c2ba14cf408c295be35213c006e19ff` exists in the repo (merge commit "Merge pull request #7 from emmamarichal/main", dated 2025-01-10). The file `sources/config-jersey10charted.yaml` exists in the upstream repo.
 
 The google/fonts commit history for this font mirrors the pattern seen in Jersey 10 (initial onboarding followed by a version update referencing the same commit `d8446c4c9c2ba14cf408c295be35213c006e19ff`).
 

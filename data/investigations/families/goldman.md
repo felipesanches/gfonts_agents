@@ -48,7 +48,7 @@ Other key fields:
 
 ### Upstream Repository
 
-Cached at: `/mnt/shared/upstream_repos/fontc_crater_cache/magictype/goldman`
+Cached at: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/magictype/goldman`
 Remote: `https://github.com/magictype/goldman`
 
 The repository HEAD is at `3fdf428a931f7a39b3f2f1681c16bfa664ca89dd`, which matches the commit hash in METADATA.pb. This is the latest commit (a merge of PR #10: "Merge pull request #10 from vv-monsalve/master"), dated 2020-07-22, one day before the google/fonts onboarding commit.

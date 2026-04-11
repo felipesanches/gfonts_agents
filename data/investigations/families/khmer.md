@@ -27,7 +27,7 @@ The copyright notice credits "Danh Hong (khmertype.blogspot.com danhhong@gmail.c
 
 The DESCRIPTION.en_us.html links to Danh Hong's blog (http://www.khmertype.blogspot.com) and the KhmerOS project.
 
-The Khmer font is available as part of the KhmerOS project. The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/khmer` contains TTX dumps of the binary font. Danh Hong's GitHub repositories (`danhhong`) were checked but no "Khmer" repository was found — only more recent Khmer fonts like KohSantepheap, Koulen, Battambang, etc.
+The Khmer font is available as part of the KhmerOS project. The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/khmer` contains TTX dumps of the binary font. Danh Hong's GitHub repositories (`danhhong`) were checked but no "Khmer" repository was found — only more recent Khmer fonts like KohSantepheap, Koulen, Battambang, etc.
 
 The "Khmer" font appears to predate GitHub-based workflows and may have been built using FontForge with Graphite/AAT tables (the TTX dump includes `_m_o_r_x_` and `_f_e_a_t_` tables which are Apple-specific). No gftools-builder compatible sources were found.
 

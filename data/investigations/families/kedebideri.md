@@ -37,7 +37,7 @@ stroke: "SANS_SERIF"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `archive_url` but no `config_yaml`. The upstream repository `silnrsi/font-kedebideri` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/silnrsi/font-kedebideri`.
+The METADATA.pb contains `repository_url`, `commit`, and `archive_url` but no `config_yaml`. The upstream repository `silnrsi/font-kedebideri` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/silnrsi/font-kedebideri`.
 
 This is a SIL International font for the Zaghawa script (Beria). The `source/` directory contains:
 - `Kedebideri.designspace` (Designspace format)

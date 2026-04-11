@@ -39,7 +39,7 @@ A deploy commit (`76adaf1d2`, 2021-11-01, m4rc1e) deleted the files, but this co
 ### Upstream Repository Analysis
 
 **Repository**: https://github.com/librefonts/glassantiqua
-**Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/glassantiqua`
+**Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/glassantiqua`
 **GitHub status**: Accessible (HTTP 200)
 
 The repository is a shallow clone containing a single visible commit:

@@ -44,7 +44,7 @@ The font was most recently updated in google/fonts in commit `c7039c870` ("Itali
 
 The original onboarding commit was `d183cfb030ba783dd91c010926e315afe33815d0`. However, the current METADATA.pb shows commit `3e3995ef5b90bd2b9dc587fb8f831f3a158cb95b`.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/italianno`. The cached repo has **only one commit**: `3e3995ef5b90bd2b9dc587fb8f831f3a158cb95b` (2021-08-30, "original font file deleted" by Viviana Monsalve). The original commit `d183cfb` does **not** exist in the cached repository. This suggests the repository was recreated or its history was reset.
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/italianno`. The cached repo has **only one commit**: `3e3995ef5b90bd2b9dc587fb8f831f3a158cb95b` (2021-08-30, "original font file deleted" by Viviana Monsalve). The original commit `d183cfb` does **not** exist in the cached repository. This suggests the repository was recreated or its history was reset.
 
 The single commit `3e3995ef` in the current repo appears to be a fresh setup that added all the project files: `.github/workflows/CI-static-ttf.yml`, `.gitignore`, `AUTHORS.txt`, `CONTRIBUTORS.txt`, `DESCRIPTION.en_us.html`, `OFL.txt`, font files in `fonts/`, `requirements.txt`, `sources/Italianno.glyphs`, and `sources/config.yml`.
 

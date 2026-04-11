@@ -26,7 +26,7 @@ The google/fonts PR #829 body was empty, providing no additional upstream refere
 
 ## How Config YAML Was Resolved
 
-There is no `config.yaml` in the upstream repository at the referenced commit. The upstream repo contains only SFD (FontForge) source files (`src/Asul-Bold-TTF.sfd` and `src/Asul-Regular-TTF.sfd`), which are not compatible with gftools-builder. There is also no override `config.yaml` in `/mnt/shared/google/fonts/ofl/asul/`.
+There is no `config.yaml` in the upstream repository at the referenced commit. The upstream repo contains only SFD (FontForge) source files (`src/Asul-Bold-TTF.sfd` and `src/Asul-Regular-TTF.sfd`), which are not compatible with gftools-builder. There is also no override `config.yaml` in `/home/fsanches/compartilhado/google/fonts/ofl/asul/`.
 
 Building from SFD sources would require a different build pipeline or a manual conversion to a gftools-builder-compatible format.
 

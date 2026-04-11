@@ -28,7 +28,7 @@ The font was originally part of the initial google/fonts commit (`90abd17b4`). A
 ## Verification
 
 - **Commit exists in upstream repo**: Yes. `cd21c85` is the HEAD and sole commit.
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/carroisgothicsc/`.
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/carroisgothicsc/`.
 - **Source files present**: The `src/` directory contains VFB files (FontLab Studio binary format): `CarroisGothicSC-Regular.vfb`, `CarroisGothicSC-Regular-OTF.vfb`, `CarroisGothicSC-Regular-TTF.vfb`. No open-format sources (.glyphs, .ufo, .designspace, .sfd) are available.
 - **TTX decomposed files**: The root directory and `orig/` directory contain TTX-decomposed font data, but these are not standard buildable sources for gftools-builder.
 

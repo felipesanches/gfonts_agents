@@ -31,7 +31,7 @@ Gemunu Libre is a sans-serif typeface designed by Mooniak, supporting Latin and 
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/mooniak/gemunu-libre-font
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/mooniak/gemunu-libre-font/`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/mooniak/gemunu-libre-font/`
 - **Default branch**: main
 - **Total commits**: ~120+ (active development history from 2015 to 2021)
 - **Latest commit**: `90f5ecf` (2021-06-29, "Update FONTLOG.txt") - 5 commits after the referenced hash

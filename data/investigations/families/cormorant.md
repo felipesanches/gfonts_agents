@@ -59,7 +59,7 @@ No override config.yaml exists in the google/fonts family directory.
 
 ## Verification
 
-- **Upstream repo cached**: Yes, at `/mnt/shared/upstream_repos/fontc_crater_cache/CatharsisFonts/Cormorant/`
+- **Upstream repo cached**: Yes, at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/CatharsisFonts/Cormorant/`
 - **Commit exists**: Yes, verified with `git log`
 - **Config file exists at commit**: Yes, `sources/build.yaml` is present at cc1bfb5
 - **Font files match**: METADATA.pb maps variable fonts `Cormorant[wght].ttf` and `Cormorant-Italic[wght].ttf` from `fonts/variable/`

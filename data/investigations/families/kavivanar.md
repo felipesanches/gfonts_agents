@@ -25,7 +25,7 @@ The METADATA.pb for Kavivanar has no `source` block. The font was added on Augus
 
 The upstream repository was identified from DESCRIPTION.en_us.html added in that commit, which states: "To contribute, see github.com/enathu/kavivanar".
 
-The upstream repository `enathu/kavivanar` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/enathu/kavivanar`. The repository contains:
+The upstream repository `enathu/kavivanar` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/enathu/kavivanar`. The repository contains:
 - `source/Kavivanar-Regular.ufo` (UFO format)
 - `source/sfd/` (FontForge SFD files)
 

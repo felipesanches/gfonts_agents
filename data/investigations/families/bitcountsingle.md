@@ -37,7 +37,7 @@ The METADATA.pb contains a source block with repository URL and commit hash. No 
 
 Bitcount Single is part of the initial batch of non-Ink Bitcount families added in January 2025. All non-Ink families were added at the same upstream commit `af0818eaeb3b0839806ea19134fc18f317cdcf5a`, confirmed by the google/fonts commit `bb009d354` body.
 
-Commit `af0818eaeb3b` is confirmed valid in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated January 13, 2025.
+Commit `af0818eaeb3b` is confirmed valid in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated January 13, 2025.
 
 The upstream `sources/config.yaml` only contains `familyName: Bitcount`. An override `config.yaml` is present in the google/fonts family directory (`ofl/bitcountsingle/config.yaml`):
 ```yaml

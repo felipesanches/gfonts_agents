@@ -40,7 +40,7 @@ The METADATA.pb was updated through several commits:
 
 The fontc_crater batch commit added commit hash `13315457c7dd2cadd03642a2edd9d9552d0c227f` and config_yaml `sources/config.yaml`.
 
-The upstream repository `Omnibus-Type/Jaldi` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Omnibus-Type/Jaldi`. Commit `13315457c7dd2cadd03642a2edd9d9552d0c227f` exists in the repo — it is the "Update README.md" commit by Yorlmar Campos, dated 2021-04-14. This commit is likely not the exact onboarding commit for the current font binary (the latest binary update via "jaldi: Updating to v1.007" doesn't reference a specific upstream commit), but it was the best available reference when the fontc_crater data was compiled.
+The upstream repository `Omnibus-Type/Jaldi` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Omnibus-Type/Jaldi`. Commit `13315457c7dd2cadd03642a2edd9d9552d0c227f` exists in the repo — it is the "Update README.md" commit by Yorlmar Campos, dated 2021-04-14. This commit is likely not the exact onboarding commit for the current font binary (the latest binary update via "jaldi: Updating to v1.007" doesn't reference a specific upstream commit), but it was the best available reference when the fontc_crater data was compiled.
 
 The file `sources/config.yaml` exists in the upstream repo and is valid.
 

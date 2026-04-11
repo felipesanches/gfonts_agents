@@ -27,7 +27,7 @@ The copyright notice credits "Pablo Impallari (www.impallari.com|impallari@gmail
 
 The DESCRIPTION.en_us.html mentions the font was funded via Kickstarter but does not link to a GitHub repository.
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kaushanscript` contains only TTX/VFB source files (legacy format, not gftools-builder compatible). The `src/` directory contains:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kaushanscript` contains only TTX/VFB source files (legacy format, not gftools-builder compatible). The `src/` directory contains:
 - `KaushanScript-Regular.otf.*.ttx` (OTF TTX dumps)
 - `KaushanScript-Regular-OTF.vfb` (FontLab)
 - `KaushanScript-Regular-TTF.vfb` (FontLab)

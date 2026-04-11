@@ -27,7 +27,7 @@ The copyright reads: "Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic 
 
 The tracking JSON (`data/gfonts_library_sources.json`) records the upstream repository as `https://github.com/librefonts/jimnightshade` at commit `a04375d8b6c564c11f00a67fa5df1d7bf446527f` (subject: "update .travis.yml"). This is the librefonts GitHub organization's mirror repository.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/jimnightshade`. The local clone has only one commit (shallow clone). The repository contains:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/jimnightshade`. The local clone has only one commit (shallow clone). The repository contains:
 - `JimNightshade-Regular.ttf` (binary font)
 - `src/JimNightshade-Regular.vfb` (FontLab Studio source)
 - `src/JimNightshade-Regular.otf` (OTF binary)

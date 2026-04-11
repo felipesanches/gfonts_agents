@@ -28,7 +28,7 @@ The font was part of the initial google/fonts commit (`90abd17b4`). No subsequen
 ## Verification
 
 - **Commit exists in upstream repo**: Yes. `9943144` is the HEAD and sole commit.
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/carterone/`.
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/carterone/`.
 - **Source files present**: The `src/` directory contains:
   - `CarterOne-TTF.sfd` -- FontForge SFD format (buildable)
   - `CarterOne.vfb` -- FontLab Studio binary format (not buildable by gftools-builder)

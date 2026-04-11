@@ -43,11 +43,11 @@ The Caveat Brush binary in google/fonts was never updated after the initial add.
 
 The Caveat-Brush.glyphs file exists in `sources/` at HEAD, but as noted above, it may not match the binary on Google Fonts.
 
-**No override config.yaml** exists in `/mnt/shared/google/fonts/ofl/caveatbrush/`.
+**No override config.yaml** exists in `/home/fsanches/compartilhado/google/fonts/ofl/caveatbrush/`.
 
 ## Verification
 
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/caveat/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/caveat/`
 - **Commit hash is WRONG**: The tracked commit `7fb0cea` only contained a README.md - no source files at all
 - **Binary was never rebuilt**: The CaveatBrush-Regular.ttf was added in the initial commit and only touched by the large deploy restructure
 - **Source mismatch acknowledged**: The upstream repo README explicitly notes that Caveat Brush sources are "not the latest"

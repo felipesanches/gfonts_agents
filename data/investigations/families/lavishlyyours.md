@@ -38,7 +38,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `06ea77a251dc2d763d199995ec06da0a0c1a85f1` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/lavishly-yours/`:
+The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `06ea77a251dc2d763d199995ec06da0a0c1a85f1` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/lavishly-yours/`:
 
 ```
 commit 06ea77a251dc2d763d199995ec06da0a0c1a85f1

@@ -18,7 +18,7 @@
 
 The repository URL was not present in the current METADATA.pb on the main branch. The copyright string references "www.black-foundry.com" and the upstream repo at `BlackFoundryCom/Atma` was already identified in the tracking data (`gfonts_library_sources.json`). A pending PR branch (`sources_info_2026-02-25`, commit `9a14639f3`) adds the source block with this URL and commit hash, but it has not yet been merged to main.
 
-The repo was verified in the upstream cache at `/mnt/shared/upstream_repos/fontc_crater_cache/BlackFoundryCom/Atma` with remote URL `https://github.com/BlackFoundryCom/Atma`.
+The repo was verified in the upstream cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/BlackFoundryCom/Atma` with remote URL `https://github.com/BlackFoundryCom/Atma`.
 
 ## How the Commit Hash Was Identified
 
@@ -26,7 +26,7 @@ The upstream repository has only a single commit: `f805a3068057f9422e57427b4538c
 
 ## How Config YAML Was Resolved
 
-No `config.yaml` or `builder.yaml` exists in the upstream repository. No override `config.yaml` exists in `/mnt/shared/google/fonts/ofl/atma/`. The repo has UFO source files but lacks a designspace file and a gftools-builder configuration, so it cannot currently be built with gftools-builder without creating an override config.yaml.
+No `config.yaml` or `builder.yaml` exists in the upstream repository. No override `config.yaml` exists in `/home/fsanches/compartilhado/google/fonts/ofl/atma/`. The repo has UFO source files but lacks a designspace file and a gftools-builder configuration, so it cannot currently be built with gftools-builder without creating an override config.yaml.
 
 ## Verification
 

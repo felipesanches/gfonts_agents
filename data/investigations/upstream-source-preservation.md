@@ -172,7 +172,7 @@ The hypothesis is strongly supported. **At least 1 in 5 families** with source m
 ### What is already partially mitigating this
 
 - The `build_registry.json` records build parameters per family, enabling rebuilds if sources are available
-- The upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/` preserves some repos
+- The upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/` preserves some repos
 - Investigation reports have documented correct commits for 22 families that were missing them
 - The `gfonts_library_sources.json` tracks the status of every family
 

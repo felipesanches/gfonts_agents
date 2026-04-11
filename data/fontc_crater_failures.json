@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "description": "Analysis of 17 fontc_crater target discovery failures",
-    "data_source": "https://googlefonts.github.io/fontc_crater/ report + investigation of repos at /mnt/shared/upstream_repos/fontc_crater_cache/",
+    "data_source": "https://googlefonts.github.io/fontc_crater/ report + investigation of repos at /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/",
     "generated": "2026-02-19",
     "total_failures": 17,
     "categories": {

@@ -35,7 +35,7 @@ The commit `6176529d` exists in both `m4rc1e/Chakra-Petch` and `cadsondemak/Chak
 
 ## How Config YAML Was Resolved
 
-No `config.yaml` exists in the upstream repository. However, an **override `config.yaml`** exists in the google/fonts family directory at `/mnt/shared/google/fonts/ofl/chakrapetch/config.yaml` with the following content:
+No `config.yaml` exists in the upstream repository. However, an **override `config.yaml`** exists in the google/fonts family directory at `/home/fsanches/compartilhado/google/fonts/ofl/chakrapetch/config.yaml` with the following content:
 
 ```yaml
 sources:

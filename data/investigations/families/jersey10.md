@@ -44,7 +44,7 @@ The commit message for `3c5464b4d` explicitly states: "Taken from the upstream r
 
 The METADATA.pb was updated from the initial commit hash `1e98ec50907b66062a3da4b8aaf63bb37b2542f2` to `d8446c4c9c2ba14cf408c295be35213c006e19ff` in commit `3c5464b4d`.
 
-The upstream repository `scfried/soft-type-jersey` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/scfried/soft-type-jersey`. Commit `d8446c4c9c2ba14cf408c295be35213c006e19ff` exists in the repo — it is a merge commit ("Merge pull request #7 from emmamarichal/main") dated 2025-01-10. The file `sources/config-jersey10.yaml` exists in the upstream repo.
+The upstream repository `scfried/soft-type-jersey` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/scfried/soft-type-jersey`. Commit `d8446c4c9c2ba14cf408c295be35213c006e19ff` exists in the repo — it is a merge commit ("Merge pull request #7 from emmamarichal/main") dated 2025-01-10. The file `sources/config-jersey10.yaml` exists in the upstream repo.
 
 ## Conclusion
 

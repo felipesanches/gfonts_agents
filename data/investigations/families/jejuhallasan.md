@@ -27,7 +27,7 @@ The OFL copyright reads: "Copyright 2014 Jeju Special Self-Governing Province (j
 
 The `EARLY_ACCESS.category` file marks this as an early access font. The font name refers to Mt. Hallasan, a volcano on Jeju Island (UNESCO World Natural Heritage Site). No upstream repository URL is referenced anywhere in the directory.
 
-No upstream repository for this family was found in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+No upstream repository for this family was found in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ## Conclusion
 

@@ -93,6 +93,6 @@ Note: The `alexeiva/comfortaa` repo does NOT have a config.yaml -- only `googlef
 
 ## Open Questions
 
-1. The `googlefonts/comfortaa` repo should be cloned to the fontc_crater_cache at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/comfortaa/`.
+1. The `googlefonts/comfortaa` repo should be cloned to the fontc_crater_cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/comfortaa/`.
 2. Should the `alexeiva/comfortaa` cache be kept or removed after migration to the correct upstream?
 3. The METADATA.pb on main and the pending PR branch both need updating with the correct URL, commit, and config_yaml.

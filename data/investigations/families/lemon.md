@@ -33,7 +33,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has `repository_url` and `commit` hash. The commit `88027507a29de7878336812a328d25245c106e9b` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/lemon/`:
+The METADATA.pb has `repository_url` and `commit` hash. The commit `88027507a29de7878336812a328d25245c106e9b` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/lemon/`:
 
 ```
 commit 88027507a29de7878336812a328d25245c106e9b
@@ -45,7 +45,7 @@ Date:   Wed Mar 1 10:45:37 2023 -0300
 The google/fonts history shows:
 - `350a3a9ac` — "[gftools-packager] Lemon: Version 1.003; ttfautohint (v1.8.4.7-5d5b);gftools[0.9.24] added"
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/lemon/` contains:
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/lemon/` contains:
 - `sources/Lemon.glyphs` — Glyphs source file
 
 The `sources/` directory has `Lemon.glyphs` but no `config.yaml`. While a Glyphs file is gftools-builder compatible, no `config.yaml` was found.

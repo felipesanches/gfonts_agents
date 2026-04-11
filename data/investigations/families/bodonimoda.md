@@ -56,7 +56,7 @@ This gftools-packager commit explicitly documents both the upstream repository a
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/indestructible-type/Bodoni/`. Commit `30ce6cdc` is a merge commit ("Merge pull request #38 from emmamarichal/master", 2024-02-18) and is the HEAD of the master branch.
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/indestructible-type/Bodoni/`. Commit `30ce6cdc` is a merge commit ("Merge pull request #38 from emmamarichal/master", 2024-02-18) and is the HEAD of the master branch.
 
 The config.yaml at `sources/config.yaml` contains valid gftools-builder configuration:
 - Sources: `BodoniModa.glyphs`, `BodoniModa-Italic.glyphs`

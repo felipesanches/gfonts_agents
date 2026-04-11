@@ -44,7 +44,7 @@ The commit message for `32276db47` explicitly states: "Taken from the upstream r
 
 The METADATA.pb was updated from commit `9c5c14889fd148d385536658cc2d320be294f32d` (initial onboarding) to `b11565152caccd6eaedce5fe2ca0e377d1a7c597` (latest update) in that same commit `32276db47`.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/scfried/soft-type-jacquard`. Commit `b11565152caccd6eaedce5fe2ca0e377d1a7c597` exists in the repo and is a merge commit dated 2025-01-10 (matching the update timeline). The file `sources/config-jacquard12.yaml` exists in the upstream repo.
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/scfried/soft-type-jacquard`. Commit `b11565152caccd6eaedce5fe2ca0e377d1a7c597` exists in the repo and is a merge commit dated 2025-01-10 (matching the update timeline). The file `sources/config-jacquard12.yaml` exists in the upstream repo.
 
 ## Conclusion
 

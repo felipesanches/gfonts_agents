@@ -42,7 +42,7 @@ The TTF files have not been modified since the initial onboarding commit `b2000e
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/itfoundry/hind-colombo
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/hind-colombo
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/hind-colombo
 - **Repo status**: Clean, synced with remote
 - **Branches**: master only
 - **Tags**: None

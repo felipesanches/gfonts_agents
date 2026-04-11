@@ -62,7 +62,7 @@ The commit hash `a5cbdfb8` and `config_yaml: "sources/config.yaml"` were both ad
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/kosmynkab/Bona-Nova/` (shallow clone). Commit `a5cbdfb8` is the HEAD of the main branch (message: "remove fontbakery report", date: 2021-04-13). It is the only visible commit due to the shallow clone.
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/kosmynkab/Bona-Nova/` (shallow clone). Commit `a5cbdfb8` is the HEAD of the main branch (message: "remove fontbakery report", date: 2021-04-13). It is the only visible commit due to the shallow clone.
 
 The `sources/config.yaml` exists at this commit and contains:
 ```yaml

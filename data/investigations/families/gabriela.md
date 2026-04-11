@@ -69,7 +69,7 @@ The `config_yaml` field was added later in commit `19cdcec59` (2025-03-31, Batch
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/etunni/Gabriela
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/Gabriela`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/Gabriela`
 - **Default branch**: master
 - **Total commits**: 1 (single merge commit)
 - **HEAD**: `961e4fb89c38cbe8ddcc3c9268c42d94c834d5da` (2023-03-09)

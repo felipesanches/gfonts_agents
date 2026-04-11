@@ -30,12 +30,12 @@ Since the font was in the initial google/fonts commit (2014, predating the libre
 ## Verification
 
 - **Commit exists in upstream repo**: Yes. `8233919` is the HEAD of the master branch.
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/carme/`.
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/carme/`.
 - **Source files**: The repo contains `src/Carme-Regular-TTF.sfd` (FontForge SFD format) and various TTX decomposed files.
 
 ## Config YAML Status
 
-**Override config.yaml exists in google/fonts.** The file `/mnt/shared/google/fonts/ofl/carme/config.yaml` contains:
+**Override config.yaml exists in google/fonts.** The file `/home/fsanches/compartilhado/google/fonts/ofl/carme/config.yaml` contains:
 
 ```yaml
 buildVariable: false

@@ -29,7 +29,7 @@ The jsMath package (http://www.math.union.edu/locate/jsMath/) was a JavaScript-b
 
 The git history for `apache/jsmathcmbx10/` shows only metadata-only changes since the initial commit, going back through language cleanup commits and an "Initial commit" baseline. The fonts were added very early in the google/fonts repository history.
 
-No jsMath repository was found in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/`. The jsMath project predates GitHub; the original fonts were distributed from the jsMath project website. The source is MetaFont (`.mf`) files from the TeX distribution (CTAN), which do not form a standard gftools-builder compatible source.
+No jsMath repository was found in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`. The jsMath project predates GitHub; the original fonts were distributed from the jsMath project website. The source is MetaFont (`.mf`) files from the TeX distribution (CTAN), which do not form a standard gftools-builder compatible source.
 
 This family is one of six related jsMath Computer Modern families: jsMath cmbx10, jsMath cmex10, jsMath cmmi10, jsMath cmr10, jsMath cmsy10, jsMath cmti10. All six share the same origin.
 

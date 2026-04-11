@@ -34,7 +34,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `20491885ca2cf7ffc556432973e7bdbc701952b5` is the same commit used for all Lexend families and was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/lexend/`.
+The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `20491885ca2cf7ffc556432973e7bdbc701952b5` is the same commit used for all Lexend families and was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/lexend/`.
 
 The `sources/exa.yaml` config file exists in the upstream repo.
 

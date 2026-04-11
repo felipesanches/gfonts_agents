@@ -30,7 +30,7 @@ The designer is listed as "Gesine Todt" and the copyright references `www.gesine
 
 The FONTLOG.txt contains basic font information but no upstream repository reference.
 
-No upstream repository for this font was found in `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+No upstream repository for this font was found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ## Conclusion
 

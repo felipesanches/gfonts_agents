@@ -26,7 +26,7 @@ source {
 
 The METADATA.pb at `ofl/iceberg/METADATA.pb` already contains a complete source block with both a repository URL and a commit hash. The font was added to google/fonts in the initial commit (90abd17b4f97671435798b6147b698aa9087612f, dated 2015-03-07) by Dave Crossland. No PR number is associated with this initial onboarding.
 
-The referenced repository `https://github.com/librefonts/iceberg` is available in the upstream cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/iceberg`. The remote URL confirms this is `https://github.com/librefonts/iceberg`.
+The referenced repository `https://github.com/librefonts/iceberg` is available in the upstream cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/iceberg`. The remote URL confirms this is `https://github.com/librefonts/iceberg`.
 
 Commit `db1c024077a00f9999b5f6437a70c19ced5c1fc5` exists in the cached repo with the message "update .travis.yml" (dated 2014-10-17). It is the only commit in the repository and includes the full font source: TTX disassembled files and the binary source files `src/Iceberg-Regular-OTF.vfb` and `src/Iceberg-Regular-TTF.vfb` (FontLab VFB format).
 

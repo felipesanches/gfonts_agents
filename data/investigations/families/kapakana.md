@@ -48,7 +48,7 @@ classifications: "HANDWRITING"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `nagamaki008/kapakana` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/nagamaki008/kapakana`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `nagamaki008/kapakana` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/nagamaki008/kapakana`.
 
 The repository contains a Glyphs source file at `sources/kapakana.glyphs`. No `config.yaml` exists in the upstream repository. However, an override `config.yaml` exists in `google/fonts/ofl/kapakana/config.yaml`:
 

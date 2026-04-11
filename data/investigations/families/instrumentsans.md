@@ -46,7 +46,7 @@ The METADATA.pb was subsequently updated by two commits:
 1. `66f91f10f` (2024-04-03) — "Merge upstream.yaml into METADATA.pb" — added `files` and `branch` fields, kept commit `4a27996`
 2. `19cdcec59` (2025-03-31) — "[Batch 1/4] port info from fontc_crater targets list" (by Felipe Sanches) — changed commit to `7fa22308a3d0c94ee2b3cd537a1196b65db34a3e` and added `config_yaml: "sources/config.yaml"`
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Instrument/instrument-sans`. **The repository has only a single commit**: `7fa22308a3d0c94ee2b3cd537a1196b65db34a3e` (2023-06-14, "feat: updated example gif"). The original onboarding commit `4a27996` does not exist in the current repository, indicating the repo was likely squash-reset or recreated.
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Instrument/instrument-sans`. **The repository has only a single commit**: `7fa22308a3d0c94ee2b3cd537a1196b65db34a3e` (2023-06-14, "feat: updated example gif"). The original onboarding commit `4a27996` does not exist in the current repository, indicating the repo was likely squash-reset or recreated.
 
 The current METADATA.pb commit `7fa22308` is the only commit in the repo and is verified to exist. The `sources/config.yaml` file exists in the upstream repo with `.glyphs` sources listed.
 

@@ -49,7 +49,7 @@ No override config.yaml exists in the google/fonts family directory.
 - **Repository URL**: Verified accessible, correct upstream for this font
 - **Commit hash**: Exists in repo, is HEAD. Sources unchanged since the actual font build commit
 - **Config YAML**: Present at `sources/config.yaml`, valid gftools-builder format
-- **Upstream cache**: Present at `/mnt/shared/upstream_repos/fontc_crater_cache/Fonthausen/CrimsonPro/`
+- **Upstream cache**: Present at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Fonthausen/CrimsonPro/`
 
 ## Confidence Level
 

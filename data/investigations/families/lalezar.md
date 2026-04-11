@@ -30,7 +30,7 @@ The google/fonts git history for `ofl/lalezar/Lalezar-Regular.ttf` shows:
 
 The PR body for `1251c0373` does not include a gftools-packager upstream commit reference.
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/BornaIz/Lalezar/` has only a single commit:
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/BornaIz/Lalezar/` has only a single commit:
 - `238701c` — "Merge pull request #12 from m4rc1e/gf"
 
 This single commit contains work from Marc Foley (m4rc1e), suggesting a PR was merged to prepare the fonts for Google Fonts. The repository appears to have only one commit in its history, which would be the correct commit to reference.

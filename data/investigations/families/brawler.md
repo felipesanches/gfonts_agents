@@ -48,7 +48,7 @@ axisOrder:
 
 ## Verification
 
-1. **Commit exists in upstream**: Confirmed. `a8e1fc6a4c43dedc38394c4f4086f526b72e852d` is the sole commit in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/cyrealtype/Brawler`
+1. **Commit exists in upstream**: Confirmed. `a8e1fc6a4c43dedc38394c4f4086f526b72e852d` is the sole commit in the cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cyrealtype/Brawler`
 2. **File paths match**: METADATA.pb references `fonts/TTF/Brawler-Regular.ttf` and `fonts/TTF/Brawler-Bold.ttf`, both present at the commit
 3. **Config YAML valid**: `sources/config.yaml` exists and references `Brawler.glyphs` source
 4. **Original commit lost**: The original gftools-packager commit `628e7189...` no longer exists in the repo (force-pushed)

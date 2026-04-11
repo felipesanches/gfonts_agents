@@ -24,7 +24,7 @@ primary_script: "Deva"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` but no `commit` or `config_yaml`. The upstream repository `itfoundry/khand` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/khand`.
+The METADATA.pb contains `repository_url` but no `commit` or `config_yaml`. The upstream repository `itfoundry/khand` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/khand`.
 
 The repository uses the same custom build system as Karma (Indian Type Foundry's Python-based tool). The `masters/` directory contains:
 - `Khand_0.ufo` and `Khand_0.vfb` (FontLab)

@@ -24,7 +24,7 @@ The commit hash `0b2979e19186f9b477fd3bde7ae77932933707eb` is the latest (HEAD) 
 ## Config YAML Status
 
 - **No `config.yaml`** exists in the upstream librefonts repo (not at the recorded commit, not at any commit)
-- **No override `config.yaml`** in `/mnt/shared/google/fonts/ofl/benchnine/`
+- **No override `config.yaml`** in `/home/fsanches/compartilhado/google/fonts/ofl/benchnine/`
 - The repo contains UFO sources (`src/BenchNine-Bold.ufo`, `src/BenchNine-Light.ufo`, `src/BenchNine-Regular.ufo`) alongside SFD and TTX files, but no gftools-builder configuration
 - The repo also has SFD sources (`src/BenchNine-*-TTF.sfd`, `src/BenchNine-*.sfd`)
 
@@ -33,7 +33,7 @@ The commit hash `0b2979e19186f9b477fd3bde7ae77932933707eb` is the latest (HEAD) 
 - Commit hash `0b2979e` exists in the repo (message: "update .travis.yml", dated 2014-10-17)
 - It is the HEAD commit of the master branch
 - Repository URL is valid and accessible
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/benchnine`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/benchnine`
 - PR #853 body was empty, providing no additional context about the hotfix source
 
 ## Confidence Level

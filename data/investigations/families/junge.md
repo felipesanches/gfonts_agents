@@ -27,9 +27,9 @@ The git history in google/fonts shows the font has been present since the initia
 
 The DESCRIPTION.en_us.html credits Alexei Vanyashin (`@avanyashin` on Twitter) as the designer. No GitHub repository is mentioned. No override `config.yaml` exists in the google/fonts `ofl/junge/` directory.
 
-Searching the upstream cache at `/mnt/shared/upstream_repos/fontc_crater_cache/cyrealtype/` shows many Cyreal-maintained fonts (Adamina, Alice, Alike, Lora, etc.) but no Junge repository.
+Searching the upstream cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cyrealtype/` shows many Cyreal-maintained fonts (Adamina, Alice, Alike, Lora, etc.) but no Junge repository.
 
-A `librefonts` mirror of Junge exists in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/junge/`. This contains TTX-decompiled OTF files and a `src/` directory with more TTX files. No Glyphs, UFO, or other gftools-builder compatible sources are present. The commit `1753e7a229f48ac314ad3c54da9fcfb2d7946f75` is the recorded commit in the tracking JSON.
+A `librefonts` mirror of Junge exists in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/junge/`. This contains TTX-decompiled OTF files and a `src/` directory with more TTX files. No Glyphs, UFO, or other gftools-builder compatible sources are present. The commit `1753e7a229f48ac314ad3c54da9fcfb2d7946f75` is the recorded commit in the tracking JSON.
 
 The font directory in google/fonts contains only:
 - `Junge-Regular.ttf`

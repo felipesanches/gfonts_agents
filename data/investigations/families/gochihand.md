@@ -44,7 +44,7 @@ The font binary has never been updated since the initial commit. The TTF was add
 
 ### Upstream Repository
 
-Cached at: `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/gochihand`
+Cached at: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/gochihand`
 Remote: `https://github.com/librefonts/gochihand`
 
 The repository has exactly **one commit**:

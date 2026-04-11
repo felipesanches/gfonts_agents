@@ -24,7 +24,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `theleagueof/knewave` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/theleagueof/knewave`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `theleagueof/knewave` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/theleagueof/knewave`.
 
 The repository contains UFO source files in the `source/` directory:
 - `source/Knewave-Regular.ufo`

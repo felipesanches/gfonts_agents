@@ -35,7 +35,7 @@ These are not compatible with gftools-builder, which requires `.glyphs`, `.ufo`,
 
 ## Verification
 
-- **Repository accessible**: Yes - cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/croissantone/`
+- **Repository accessible**: Yes - cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/croissantone/`
 - **Commit exists**: Yes - `ebcefa6` is HEAD of the upstream repo
 - **Config exists at commit**: No - no config.yaml anywhere in the repo
 - **Source files present**: Only SFD/VFB legacy formats

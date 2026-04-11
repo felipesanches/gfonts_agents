@@ -51,7 +51,7 @@ The METADATA.pb `source` block correctly references `config_yaml: "Source/builde
 
 ## Verification
 
-- **Repository exists**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/danhhong/Bayon/`
+- **Repository exists**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/danhhong/Bayon/`
 - **Commit exists**: Yes, `1749b1d` confirmed ("Merge pull request #1 from yanone/master")
 - **Config YAML exists at commit**: Yes, `Source/builder.yaml` is present and valid
 - **Commit hash matches PR reference**: Yes, both the PR body and merge commit message reference `1749b1d8a8321d4294aae0f73ebb473535c39aee`

@@ -37,7 +37,7 @@ Since SFD sources cannot be used with gftools-builder, a config.yaml is not appl
 
 ## Verification
 
-- **Repository URL**: Verified -- the upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/appajid/Chathura`.
+- **Repository URL**: Verified -- the upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/appajid/Chathura`.
 - **Commit**: Verified as HEAD (and only commit) of the upstream repo. Predates the google/fonts onboarding.
 - **Source type**: SFD-only sources -- not compatible with gftools-builder.
 - **No config.yaml**: Correctly absent given the source format.

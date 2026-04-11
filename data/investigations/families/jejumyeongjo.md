@@ -29,7 +29,7 @@ The description states "Jeju Myungjo was designed to have a modern look and impr
 
 The `EARLY_ACCESS.category` file marks this as an early access font. No upstream repository URL is referenced anywhere in the directory.
 
-No upstream repository for this family was found in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+No upstream repository for this family was found in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ## Conclusion
 

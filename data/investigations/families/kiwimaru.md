@@ -45,7 +45,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `Kiwi-KawagotoKajiru/Kiwi-Maru` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Kiwi-KawagotoKajiru/Kiwi-Maru`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `Kiwi-KawagotoKajiru/Kiwi-Maru` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Kiwi-KawagotoKajiru/Kiwi-Maru`.
 
 The repository contains separate Glyphs source files in the `sources/` directory:
 - `sources/KiwiMaru-Light.glyphs`

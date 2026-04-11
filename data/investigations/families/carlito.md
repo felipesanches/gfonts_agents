@@ -30,7 +30,7 @@ PR #6005, authored by RosaWagner, confirms this. The commit is the HEAD (and onl
 ## Verification
 
 - **Commit exists in upstream repo**: Yes. The commit `3a810ca` is the HEAD and sole commit in the repository.
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/carlito/`.
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/carlito/`.
 - **Files match METADATA.pb**: The source block lists `fonts/ttf/Carlito-Regular.ttf`, `fonts/ttf/Carlito-Bold.ttf`, `fonts/ttf/Carlito-BoldItalic.ttf`, `fonts/ttf/Carlito-Italic.ttf`, and `OFL.txt`, all of which exist in the repo.
 
 ## Config YAML Status

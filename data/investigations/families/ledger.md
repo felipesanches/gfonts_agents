@@ -32,7 +32,7 @@ The commit body for `f8265bddf` was checked but contains no upstream repository 
 
 The OFL copyright states: `Copyright (c) 2011, Denis Masharov <denis.masharov@gmail.com>`. The designer is Denis Masharov. No GitHub repository URL is referenced in the font files.
 
-No upstream repository for this font was found in `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+No upstream repository for this font was found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ## Conclusion
 

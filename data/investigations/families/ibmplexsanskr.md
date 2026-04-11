@@ -83,7 +83,7 @@ The third sub-commit removed the `source` block from METADATA.pb (per issue #258
 
 ### Upstream Repository Verification
 
-The plex repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/`.
+The plex repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/`.
 
 Commit `1331d4514d6ab96ddf2efbb59f0b640b9a4e9d87` exists in the cache. At this commit, source design files exist:
 

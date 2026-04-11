@@ -37,7 +37,7 @@ classifications: "DISPLAY"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `sovichet/kdam-thmor-pro` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/sovichet/kdam-thmor-pro`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `sovichet/kdam-thmor-pro` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/sovichet/kdam-thmor-pro`.
 
 The `sources/config.yaml` file exists in the cached repository. The latest commit is `02b97ee` ("Merge pull request #10 from sovichet/dependabot/pip/certifi-2023.7.22"), which matches exactly the commit hash in METADATA.pb.
 

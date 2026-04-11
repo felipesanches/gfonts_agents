@@ -45,7 +45,7 @@ These post-onboarding commits would need separate review before incorporation.
 
 ## Config YAML Status
 
-**Override config.yaml exists in google/fonts.** The file at `/mnt/shared/google/fonts/ofl/cherrybombone/config.yaml` contains:
+**Override config.yaml exists in google/fonts.** The file at `/home/fsanches/compartilhado/google/fonts/ofl/cherrybombone/config.yaml` contains:
 
 ```yaml
 buildVariable: false
@@ -61,10 +61,10 @@ The source file `sources/CherryBomb.glyphs` exists in the upstream repo at the r
 
 ## Verification
 
-- **Repository URL**: Verified - cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/satsuyako/CherryBomb/`, remote matches
+- **Repository URL**: Verified - cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/satsuyako/CherryBomb/`, remote matches
 - **Commit hash**: Verified - exists in repo on `ver3.00` branch, confirmed by PR #2983 and commit message
 - **Branch**: Verified - `ver3.00` is the default branch (remotes/origin/HEAD -> origin/ver3.00), and the recorded commit exists on this branch
-- **Override config.yaml**: Verified - exists at `/mnt/shared/google/fonts/ofl/cherrybombone/config.yaml`
+- **Override config.yaml**: Verified - exists at `/home/fsanches/compartilhado/google/fonts/ofl/cherrybombone/config.yaml`
 - **Source files**: Verified - `sources/CherryBomb.glyphs` exists in upstream
 - **METADATA.pb source block**: Complete with repository_url, commit, branch, and file mappings (config_yaml correctly omitted due to override)
 

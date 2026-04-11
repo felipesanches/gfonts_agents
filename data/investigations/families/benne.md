@@ -49,7 +49,7 @@ These later commits were made by Simon Cozens to set up gftools-builder infrastr
 - `sources/config.yaml` is present and valid at this commit
 - The METADATA.pb source block includes explicit file mappings, branch ("master"), and config_yaml path
 - Repository URL is valid and accessible
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/Benne`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/Benne`
 - Full commit history verified (83 commits total)
 
 ## Confidence Level

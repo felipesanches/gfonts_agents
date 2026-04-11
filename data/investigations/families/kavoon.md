@@ -26,7 +26,7 @@ classifications: "DISPLAY"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `EbenSorkin/Kavoon` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/EbenSorkin/Kavoon`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `EbenSorkin/Kavoon` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/EbenSorkin/Kavoon`.
 
 The repository structure contains:
 - `SRC/Kavoon-Regular.ufo` (UFO format)

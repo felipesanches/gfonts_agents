@@ -45,7 +45,7 @@ Same pattern as Condensed: the third sub-commit explicitly removed the `source` 
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Commit `4ef5315` exists and dates to 2021-06-18, message: "Devanagari"
 - At this commit, source files exist:
   - `IBM-Plex-Sans-Devanagari/sources/masters/IBM Plex Sans Devanagari.designspace`

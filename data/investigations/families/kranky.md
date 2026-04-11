@@ -27,7 +27,7 @@ The copyright notice reads: "Copyright (c) 2010 by Font Diner, Inc DBA Sideshow.
 
 The DESCRIPTION.en_us.html describes it as "a hand-crafted, fun-filled font."
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kranky` contains only TTX source files:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kranky` contains only TTX source files:
 - `Kranky.ttf.*` (TTX dumps)
 - `src/` directory
 

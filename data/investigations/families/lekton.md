@@ -28,7 +28,7 @@ The google/fonts git history for `ofl/lekton/Lekton-Regular.ttf` shows only:
 
 The designer is listed as "ISIA Urbino" (Istituto Superiore per le Industrie Artistiche, Urbino — an Italian design school). The OFL copyright states: `Copyright (c) 2008, 2009, 2010, Accademia di Belle Arti di Urbino (luciano.perondi@isiaurbino.net)`. The font is attributed to the academic institution rather than an individual designer.
 
-No upstream repository for this font was found in `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+No upstream repository for this font was found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ## Conclusion
 

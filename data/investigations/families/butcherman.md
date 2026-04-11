@@ -34,7 +34,7 @@ No config.yaml can be created for this family without first converting the sourc
 
 ## Verification
 
-- **Repository URL**: Confirmed valid; repo is cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/butcherman/`
+- **Repository URL**: Confirmed valid; repo is cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/butcherman/`
 - **Commit hash**: Verified -- it is the only commit in the repo (HEAD of master)
 - **Source files**: Only SFD files present (`src/Butcherman-Regular.sfd`, `src/Butcherman-Regular-TTF.sfd`)
 - **Font binary history**: Last updated in google/fonts via PR #870 (m4rc1e, 2017-08-07)

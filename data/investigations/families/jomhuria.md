@@ -25,7 +25,7 @@ The font was added to google/fonts on 2017-05-23 via commit `9ff1e8c28` ("hotfix
 
 The DESCRIPTION file states: "The Jomhuria project is led by KB Studio, a type design foundry based in Los Angeles, USA. To contribute, see https://github.com/Tarobish/Jomhuria." This gives us the upstream repository URL.
 
-The upstream repository at https://github.com/Tarobish/Jomhuria is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Tarobish/Jomhuria`. The repository has only a single commit:
+The upstream repository at https://github.com/Tarobish/Jomhuria is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Tarobish/Jomhuria`. The repository has only a single commit:
 - `d4b8f42` (2016-03-03): "Updated fonts"
 
 The repo contains `Fonts/Jomhuria-Regular.ttf` and sources in the `Sources/` directory including `jomhuria-latin.ufo` and `jomhuria.sfdir` (SpeedFont/FontForge format). No config.yaml exists in the repository.

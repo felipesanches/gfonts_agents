@@ -46,7 +46,7 @@ The current METADATA.pb correctly points to `ddbe828` because the renamed font b
 - Repository URL is valid and accessible: https://github.com/ManiackersDesign/darumadrop
 - Commit `ddbe828` exists in the upstream repo and is HEAD (master)
 - The METADATA.pb `files` mapping correctly maps `fonts/ttf/DarumadropOne-Regular.ttf` to `DarumadropOne-Regular.ttf`
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/ManiackersDesign/darumadrop/`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/ManiackersDesign/darumadrop/`
 
 ## Confidence Level
 

@@ -25,7 +25,7 @@ The METADATA.pb for Kenia has no `source` block. The font was added in the "Init
 
 The copyright notice reads: "Copyright (c) 2010, Julia Petretta (julia.petretta@googlemail.com), with Reserved Font Name Kenia"
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kenia` contains only TTX/VFB/SFD source files. The `src/` directory contains:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kenia` contains only TTX/VFB/SFD source files. The `src/` directory contains:
 - `Kenia-Regular.sfd` (FontForge)
 - `Kenia-Regular.vfb` (FontLab)
 - `Kenia-Regular-TTF.sfd` (FontForge)

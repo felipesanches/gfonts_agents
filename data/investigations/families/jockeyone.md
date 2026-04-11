@@ -27,7 +27,7 @@ The copyright reads: "Copyright (c) 2011, TypeTogether (www.type-together.com), 
 
 The tracking JSON (`data/gfonts_library_sources.json`) records the upstream repository as `https://github.com/librefonts/jockeyone` at commit `71261c6f0c80fb7269df32e4aa396669a038030f` (subject: "update .travis.yml"). This is the librefonts GitHub organization's mirror repository. Notes indicate: "SFD-only sources (FontForge format), not gftools-builder compatible".
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/jockeyone`. The local clone has only one commit (shallow clone). The repository contains:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/jockeyone`. The local clone has only one commit (shallow clone). The repository contains:
 - `JockeyOne-Regular.ttf` (binary font)
 - `src/JockeyOne-Regular-TTF.sfd` (FontForge source, SFD format)
 - `src/JockeyOne-Regular.vfb` (FontLab Studio source)

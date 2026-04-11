@@ -10,8 +10,8 @@ import os
 import re
 import json
 
-GFONTS_BASE = "/mnt/shared/google/fonts/ofl"
-CACHE_BASE = "/mnt/shared/upstream_repos/fontc_crater_cache"
+GFONTS_BASE = "/home/fsanches/compartilhado/google/fonts/ofl"
+CACHE_BASE = "/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache"
 
 # ============================================================
 # Part 1: Add config_yaml to METADATA.pb

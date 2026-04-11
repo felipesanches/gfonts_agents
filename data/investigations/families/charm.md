@@ -41,7 +41,7 @@ The upstream repo contains a `source/Charm.glyphs` file, confirming the override
 
 ## Verification
 
-- **Repository URL**: Verified -- the upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/Charm`.
+- **Repository URL**: Verified -- the upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/Charm`.
 - **Commit**: Verified as HEAD of master in the upstream repo. The commit is the final merge of m4rc1e's fixes for Google Fonts onboarding.
 - **Source files**: Upstream contains `source/Charm.glyphs` as referenced in the override config.
 - **Override config**: Confirmed present and valid.

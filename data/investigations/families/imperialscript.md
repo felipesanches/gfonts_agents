@@ -38,9 +38,9 @@ source {
 
 ## Investigation
 
-The METADATA.pb for Imperial Script (at `/mnt/shared/google/fonts/ofl/imperialscript/METADATA.pb`) already contains a complete source block with `repository_url`, `commit`, and `config_yaml` fields.
+The METADATA.pb for Imperial Script (at `/home/fsanches/compartilhado/google/fonts/ofl/imperialscript/METADATA.pb`) already contains a complete source block with `repository_url`, `commit`, and `config_yaml` fields.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/imperial-script/`. Verification confirmed:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/imperial-script/`. Verification confirmed:
 
 1. **Commit hash**: `01a1656c6ffebe306262129aafee029fe6a7f3f3` exists in the upstream repo. The commit message is "v10 updated glyph info" authored by Viviana Monsalve on 2021-11-12. This is also the HEAD commit of the repository.
 

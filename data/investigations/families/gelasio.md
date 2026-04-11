@@ -29,7 +29,7 @@ Gelasio is a serif typeface designed by Eben Sorkin, added to Google Fonts on 20
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/SorkinType/Gelasio
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/SorkinType/Gelasio/`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/SorkinType/Gelasio/`
 - **Repository was force-pushed/rewritten**: The repo currently has only 4 commits, with the root commit (`9228e69`) dated 2024-09-16, well after the google/fonts update from February 2024
 - The original commit `a6ee02d` referenced by gftools-packager no longer exists
 - The earlier commit `bb66c796` from the Version 1.007 update also no longer exists

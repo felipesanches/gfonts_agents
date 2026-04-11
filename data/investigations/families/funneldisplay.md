@@ -29,7 +29,7 @@ The source block was enhanced in commit `19cdcec59` (2025-03-31, "Batch 1/4 port
 ### Upstream Repository
 
 - **URL**: https://github.com/Dicotype/Funnel
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/Dicotype/Funnel`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Dicotype/Funnel`
 - **Branch**: main
 - **HEAD commit**: `f9509ce` (2024-09-27) - "Merge pull request #3 from emmamarichal/main"
 

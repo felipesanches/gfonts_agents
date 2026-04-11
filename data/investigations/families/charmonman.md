@@ -35,7 +35,7 @@ The upstream repo contains a `source/Charmonman.glyphs` file, confirming the ove
 
 ## Verification
 
-- **Repository URL**: Verified -- the upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/Charmonman`.
+- **Repository URL**: Verified -- the upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/Charmonman`.
 - **Commit**: Verified as HEAD of master in the upstream repo. Explicitly referenced in the original onboarding commit message. The commit date (2018-08-22) matches the google/fonts onboarding date.
 - **Source files**: Upstream contains `source/Charmonman.glyphs` as referenced in the override config.
 - **Override config**: Confirmed present and valid.

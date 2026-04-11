@@ -32,7 +32,7 @@ The `source {}` block (with `repository_url` and `commit`) was added separately 
 
 ### Upstream repository
 
-The upstream repo `https://github.com/librefonts/alfaslabone` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/alfaslabone/`. The repository has only a single commit:
+The upstream repo `https://github.com/librefonts/alfaslabone` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/alfaslabone/`. The repository has only a single commit:
 
 - `84a903ffba3c` — "update .travis.yml" (2014-10-17, by hash3g)
 

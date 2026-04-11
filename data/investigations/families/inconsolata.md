@@ -25,9 +25,9 @@ source {
 
 ## Investigation
 
-The METADATA.pb for Inconsolata (at `/mnt/shared/google/fonts/ofl/inconsolata/METADATA.pb`) already contains a source block with `repository_url`, `commit`, and `config_yaml` fields.
+The METADATA.pb for Inconsolata (at `/home/fsanches/compartilhado/google/fonts/ofl/inconsolata/METADATA.pb`) already contains a source block with `repository_url`, `commit`, and `config_yaml` fields.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/Inconsolata/`. Verification confirmed:
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/Inconsolata/`. Verification confirmed:
 
 1. **Commit hash**: `fc1fc21081558b39a2db43bfd9b65bf9acb50701` exists in the upstream repo. The commit message is "Merge pull request #70 from googlefonts/gf-mastering2" by Marc Foley on 2022-04-28. This is also the HEAD commit of the repository.
 

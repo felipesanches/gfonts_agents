@@ -85,7 +85,7 @@ The `sources/config-Geist.yaml` at the referenced commit configures:
 
 ### 6. Repository Cache
 
-The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/vercel/geist-font/`. The repo is clean and checked out at the referenced commit `b193ef74`.
+The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/vercel/geist-font/`. The repo is clean and checked out at the referenced commit `b193ef74`.
 
 ## Conclusion
 

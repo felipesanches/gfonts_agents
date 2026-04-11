@@ -36,7 +36,7 @@ The commit hash `20f741c18bb917b63576293906c01e82ddfce032` was added by automati
 
 ### Upstream Repository
 
-The bpmfvs repo (`ButTaiwan/bpmfvs`) is not cached locally (not found in `/mnt/shared/upstream_repos/fontc_crater_cache/ButTaiwan/`). The fonts were actually built in Aaron Bell's fork at `https://github.com/aaronbell/bpmfvs`, with the intent to transition back to `ButTaiwan/bpmfvs` after other fonts are updated.
+The bpmfvs repo (`ButTaiwan/bpmfvs`) is not cached locally (not found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/ButTaiwan/`). The fonts were actually built in Aaron Bell's fork at `https://github.com/aaronbell/bpmfvs`, with the intent to transition back to `ButTaiwan/bpmfvs` after other fonts are updated.
 
 The recorded commit `20f741c18bb` is the HEAD of `ButTaiwan/bpmfvs` from 2025-12-13 ("Update build-ttf.yml"). However, the actual font binary was built from a commit in `aaronbell/bpmfvs` from around 2026-02-09 — at least 2 months later. The recorded commit hash is therefore incorrect for the actual binary.
 

@@ -47,11 +47,11 @@ The v1.018 commit body explicitly states:
 
 > "Alumni Sans Version 1.018 taken from the upstream repo https://github.com/googlefonts/alumni at commit https://github.com/googlefonts/alumni/commit/44a7998fa2bfa1b3e119983cdc565dd7f0f03bda."
 
-This documents the actual onboarding commit as `44a7998fa2bfa1b3e119983cdc565dd7f0f03bda` (dated 2021-12-18, message: "one blank line added to the OFL"), which is confirmed as the top commit in the cached upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/alumni`.
+This documents the actual onboarding commit as `44a7998fa2bfa1b3e119983cdc565dd7f0f03bda` (dated 2021-12-18, message: "one blank line added to the OFL"), which is confirmed as the top commit in the cached upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/alumni`.
 
 However, the current METADATA.pb records commit `28754a9295db605d4e4ffc7bf60b4a8301eef9ab`. This was set by a later "sources info" commit `91fc42a96` ("sources info for Alumni Sans (PR #4180)"), which changed the hash from the correct `44a7998` to the older `28754a9295`. The commit `28754a9295` is dated 2021-12-08 (message: "changelog added") — it predates the actual onboarding commit by 10 days, making it an incorrect and older reference.
 
-A separate shallow clone exists at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/alumni_28754a9295` stopping at the incorrect commit, confirming it was investigated previously.
+A separate shallow clone exists at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/alumni_28754a9295` stopping at the incorrect commit, confirming it was investigated previously.
 
 The `sources/config.yml` file exists in the upstream repo and contains gftools-builder configuration referencing `AlumniSans.glyphs` and `AlumniSans-Italic.glyphs` with full STAT axis table definitions. The `config_yaml` field in METADATA.pb correctly points to `sources/config.yml`.
 

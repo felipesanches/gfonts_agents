@@ -47,7 +47,7 @@ source {
 
 The METADATA.pb for Kaisei Decol has a source block with `repository_url`, `commit`, `files`, and `branch` but no `config_yaml`. The upstream repository is `https://github.com/FontKai-Kaisei/Kaisei`, which hosts all four Kaisei family variants (Decol, HarunoUmi, Opti, Tokumin) in a single repository.
 
-The commit hash `b396c906d67ddbfde60c2c78588f8de00b46c891` was verified to exist in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/FontKai-Kaisei/Kaisei/`. This commit ("Fixed jp90 unicodes") is the latest commit in the repository.
+The commit hash `b396c906d67ddbfde60c2c78588f8de00b46c891` was verified to exist in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/FontKai-Kaisei/Kaisei/`. This commit ("Fixed jp90 unicodes") is the latest commit in the repository.
 
 At the referenced commit, the repository contains `sources/Kaisei-Decol.glyphs` — a gftools-builder compatible Glyphs source file. The upstream repo does NOT contain a `config.yaml`.
 

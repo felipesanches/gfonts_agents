@@ -61,7 +61,7 @@ The font "BM-HANNA" (Baemin Hanna) was released as a free font by Woowa Brothers
 
 Woowa Brothers is known to have released fonts on their corporate site (https://www.woowahan.com). A GitHub repository may exist but is not referenced in any google/fonts metadata.
 
-The upstream repo `woowahan` or similar is **not** found in `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+The upstream repo `woowahan` or similar is **not** found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ### No config.yaml Known
 

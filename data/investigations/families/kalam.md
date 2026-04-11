@@ -26,7 +26,7 @@ source {
 
 The METADATA.pb for Kalam has a source block with `repository_url` and `commit` but no `config_yaml` field. The upstream repository is `https://github.com/itfoundry/kalam`, maintained by Indian Type Foundry (ITF).
 
-The commit hash `03a4d8a33849b1ad9afdee95006bc66d2d4aed94` was verified to exist in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/kalam/`. This commit ("Fix compatibility issues; build 2.001") is the latest commit in the repository, dated to the most recent update of the Kalam builds.
+The commit hash `03a4d8a33849b1ad9afdee95006bc66d2d4aed94` was verified to exist in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/kalam/`. This commit ("Fix compatibility issues; build 2.001") is the latest commit in the repository, dated to the most recent update of the Kalam builds.
 
 At the referenced commit, the repository contains `masters/Kalam.glyphs` — a gftools-builder compatible Glyphs source file. The upstream repo also has a custom build system (`build.py`, `config.py`, `itf.py`) but does NOT contain a gftools-builder `config.yaml`.
 

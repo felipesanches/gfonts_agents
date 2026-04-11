@@ -43,7 +43,7 @@ The METADATA.pb commit matches the onboarding commit referenced in the git histo
 
 ### Commit Verification
 
-Inspecting the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/Bai-Jamjuree`:
+Inspecting the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/Bai-Jamjuree`:
 
 - Commit `e35cafdf694905d1ac0f27afc587c0e972be1260` — "Merge pull request #9 from m4rc1e/fonts" — confirmed present in the cache.
 
@@ -75,7 +75,7 @@ This correctly points to the Glyphs source in the upstream repo. Since the overr
 ### Repository Cache
 
 The upstream repo is cached at:
-`/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/Bai-Jamjuree`
+`/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/Bai-Jamjuree`
 
 ## Conclusion
 

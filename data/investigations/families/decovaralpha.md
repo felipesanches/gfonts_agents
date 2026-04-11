@@ -55,7 +55,7 @@ The upstream is **https://github.com/TypeNetwork/fb-Decovar** (originally a Font
 
 ### Upstream Repo Not in Cache
 
-The repository `TypeNetwork/fb-Decovar` is **not** cloned in `/mnt/shared/upstream_repos/fontc_crater_cache/TypeNetwork/` (only `Arimo` and `Assistant` are cached there).
+The repository `TypeNetwork/fb-Decovar` is **not** cloned in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/TypeNetwork/` (only `Arimo` and `Assistant` are cached there).
 
 ### No config.yaml Known
 

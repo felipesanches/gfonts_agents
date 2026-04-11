@@ -4,7 +4,7 @@ Directly amend commits in the batch4 PR branch using rebase with correct short h
 """
 import os, re, subprocess, sys, tempfile
 
-GF = "/mnt/shared/google/fonts"
+GF = "/home/fsanches/compartilhado/google/fonts"
 
 def run(cmd, check=True, capture=False):
     if capture:

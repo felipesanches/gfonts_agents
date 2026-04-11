@@ -34,7 +34,7 @@ The copyright reads: "Copyright (c) 2011 by Kimberly Geswein (kimberlygeswein@gm
 
 The DESCRIPTION.en_us.html describes the font as created shortly after the designer's family moved to China in 2010/2011, created using a Wacom Tablet and Adobe Illustrator. No GitHub repository URL is mentioned.
 
-A `librefonts` mirror exists in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/justmeagaindownhere/`. This contains TTX-decompiled OTF files and a `src/` directory with more OTF TTX files. No Glyphs, UFO, or gftools-builder compatible sources are present. The commit `63543cec6964e5061ece828c63948d1910e0dbdd` is recorded in the tracking JSON.
+A `librefonts` mirror exists in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/justmeagaindownhere/`. This contains TTX-decompiled OTF files and a `src/` directory with more OTF TTX files. No Glyphs, UFO, or gftools-builder compatible sources are present. The commit `63543cec6964e5061ece828c63948d1910e0dbdd` is recorded in the tracking JSON.
 
 The DESCRIPTION.en_us.html confirms the font was created using a Wacom Tablet and Adobe Illustrator, suggesting the original sources are in Illustrator's proprietary format (AI or EPS), which is not compatible with gftools-builder.
 

@@ -49,7 +49,7 @@ The source file `sources/Cherish.glyphs` exists at the recorded commit, confirme
 
 ## Verification
 
-- **Repository URL**: Verified - cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/cherish/`, remote matches
+- **Repository URL**: Verified - cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/cherish/`, remote matches
 - **Commit hash**: Verified - exists in repo, matches HEAD, confirmed by PR #3735 and onboarding commit message
 - **Config YAML**: Verified - `sources/config.yml` exists at the recorded commit with valid gftools-builder configuration
 - **Source files**: Verified - `sources/Cherish.glyphs` exists at the recorded commit

@@ -42,7 +42,7 @@ The font was added to google/fonts in commit `4eeaeee72` ("Island Moments: Versi
 
 > Island Moments Version 1.010 taken from the upstream repo https://github.com/googlefonts/island-moments at commit https://github.com/googlefonts/island-moments/commit/665d59f297c782358f09699fc2231c0eee293f25.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/island-moments`. The commit `665d59f297c782358f09699fc2231c0eee293f25` was verified to exist in the cached repo. The repo has **only one commit** (2021-11-11, "sample image updated") which matches the METADATA.pb.
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/island-moments`. The commit `665d59f297c782358f09699fc2231c0eee293f25` was verified to exist in the cached repo. The repo has **only one commit** (2021-11-11, "sample image updated") which matches the METADATA.pb.
 
 **Source format**: The repository contains `sources/IslandMomentsPro.glyphs` (a single Glyphs source file). A `config.yml` exists at `sources/config.yml`:
 ```yaml

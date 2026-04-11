@@ -29,7 +29,7 @@ Genos is a sans-serif display typeface designed by Robert Leuschke, supporting L
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/googlefonts/genos
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/genos/`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/genos/`
 - **Default branch**: master
 - **Total commits**: 1 (single initial commit)
 - **Only commit**: `7071818` (2021-10-08, "requirements updated")

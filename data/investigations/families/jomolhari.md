@@ -31,7 +31,7 @@ The original DESCRIPTION linked to `https://sites.google.com/site/chrisfynn2/hom
 
 The copyright is "Copyright (c) 2006, Christopher J Fynn. All rights reserved." The font is a Tibetan script typeface for Tibetan and Dzongkha text.
 
-No modern git repository for Jomolhari was found in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/`. The original distribution appears to have been hosted on Google Sites/Code or a similar pre-git platform (circa 2005-2006). This font predates GitHub and modern version control workflows for font projects.
+No modern git repository for Jomolhari was found in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`. The original distribution appears to have been hosted on Google Sites/Code or a similar pre-git platform (circa 2005-2006). This font predates GitHub and modern version control workflows for font projects.
 
 ## Conclusion
 

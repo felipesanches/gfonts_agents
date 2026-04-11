@@ -32,7 +32,7 @@ The `source {}` block was added later, in commit `d4d0d9ca0f74b70ea98fcb82ffd77e
 
 ### Upstream repository
 
-The upstream repo `https://github.com/librefonts/almendradisplay` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/almendradisplay/`. The repository has only a single commit:
+The upstream repo `https://github.com/librefonts/almendradisplay` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/almendradisplay/`. The repository has only a single commit:
 
 - `b252e05aada3` — "update .travis.yml" (2014-10-17, by hash3g)
 

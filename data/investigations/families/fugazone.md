@@ -27,7 +27,7 @@ No source block exists in the current METADATA.pb on the main branch. A source b
 ### Upstream Repository
 
 - **URL**: https://github.com/librefonts/fugazone
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/fugazone`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/fugazone`
 - **Single commit**: `d6fef05` (2014-10-17) - "update .travis.yml"
 - The repo was created as a migration/archive of the original font sources
 

@@ -42,7 +42,7 @@ The commit body says: "IBM Plex Sans JP Version 1.001 taken from the upstream re
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Commit `80fcb67` exists and dates to 2022-09-12, message: "Converted all packager files to new format"
 - At this commit, source files exist:
   - `IBM-Plex-Sans-JP/sources/masters/IBM Plex Sans JP.glyphs`

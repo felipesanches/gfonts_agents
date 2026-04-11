@@ -24,7 +24,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has both `repository_url` and `commit` hash. The commit `3039d277fadddec95a3dc5aa58182b0aa20659b8` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/antonxheight/Lancelot/`:
+The METADATA.pb has both `repository_url` and `commit` hash. The commit `3039d277fadddec95a3dc5aa58182b0aa20659b8` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/antonxheight/Lancelot/`:
 
 ```
 commit 3039d277fadddec95a3dc5aa58182b0aa20659b8
@@ -38,7 +38,7 @@ The google/fonts history shows:
 - `8ccda7bf7` — "Fix fsType for 40 font files"
 - `90abd17b4` — "Initial commit" (first onboarding)
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/antonxheight/Lancelot/` contains:
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/antonxheight/Lancelot/` contains:
 - `Lancelot_source/` — likely FontLab source files
 - `Lancelot_TTF/` — prebuilt TTF files
 - `README`

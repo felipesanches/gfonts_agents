@@ -35,7 +35,7 @@ The font was added in commit `90abd17b4` ("Initial commit", 2015-03-07 by Dave C
 
 ### Upstream Repository
 
-The repo at https://github.com/librefonts/geostarfill (cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/geostarfill`) contains:
+The repo at https://github.com/librefonts/geostarfill (cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/geostarfill`) contains:
 - Single commit: `48dc43d` ("update .travis.yml")
 - This is a librefonts archive repo with squashed history
 

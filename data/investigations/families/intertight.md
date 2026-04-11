@@ -42,7 +42,7 @@ The font was most recently updated in google/fonts by commit `fac60545c` ("Inter
 
 > Inter Tight Version 3.004 taken from the upstream repo https://github.com/rsms/inter-gf-tight at commit https://github.com/rsms/inter-gf-tight/commit/c194f94c60b569b47876811321f5ef1f0c2614a2.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/rsms/inter-gf-tight`. The commit `c194f94c60b569b47876811321f5ef1f0c2614a2` was verified to exist in the cached repo (2022-12-08, "very quick fix on some obvious spacing issues in Greek script"). This is the **only commit** in the repository.
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/rsms/inter-gf-tight`. The commit `c194f94c60b569b47876811321f5ef1f0c2614a2` was verified to exist in the cached repo (2022-12-08, "very quick fix on some obvious spacing issues in Greek script"). This is the **only commit** in the repository.
 
 **Source format**: The repository contains `sources/InterTight.glyphs` and `sources/InterTight-Italic.glyphs` (Glyphs format). A `config.yaml` exists at `sources/config.yaml` with content:
 ```yaml

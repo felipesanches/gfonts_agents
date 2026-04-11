@@ -46,7 +46,7 @@ The PR commit message body explicitly states:
 
 This directly confirms the repository URL and commit hash recorded in METADATA.pb.
 
-The upstream repository `https://github.com/Etcetera-Type-Co/Imbue` is available in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/Etcetera-Type-Co/Imbue`. Commit `41b16f3fd61d33cacad0e579c35ef9566817184b` exists in the cached repository with the message "Merge pull request #2 from RosaWagner/master" (dated 2020-12-01), confirming this is the correct merge commit for version 1.102.
+The upstream repository `https://github.com/Etcetera-Type-Co/Imbue` is available in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Etcetera-Type-Co/Imbue`. Commit `41b16f3fd61d33cacad0e579c35ef9566817184b` exists in the cached repository with the message "Merge pull request #2 from RosaWagner/master" (dated 2020-12-01), confirming this is the correct merge commit for version 1.102.
 
 The upstream repository contains the Glyphs source file `Sources/Imbue.glyphs`. There is no `config.yaml` in the upstream repository, but an override `config.yaml` exists in `ofl/imbue/config.yaml` within google/fonts with the following content:
 

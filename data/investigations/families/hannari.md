@@ -60,7 +60,7 @@ No GitHub repository URL appears in any file within `ofl/hannari/`. The descript
 
 The note about the "upstream project" including IPA font glyphs (which were removed for the Google Fonts version) suggests there is a source repository, but it is not referenced in any google/fonts file.
 
-The designer @typingart is **not** found in `/mnt/shared/upstream_repos/fontc_crater_cache/`.
+The designer @typingart is **not** found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`.
 
 ### No config.yaml Known
 

@@ -33,7 +33,7 @@ The FONTLOG.txt reveals:
 - Version 1.001 — Initial release on 11 March 2012
 - The font was designed for use in newspaper and magazine headlines, inspired by Italian calligraphy masters
 
-No GitHub repository has been identified for this font. The designer (Santiago Orozco / typemade.mx) appears to have submitted this font directly to Google Fonts. No cached upstream repository was found in `/mnt/shared/upstream_repos/fontc_crater_cache/` for this family.
+No GitHub repository has been identified for this font. The designer (Santiago Orozco / typemade.mx) appears to have submitted this font directly to Google Fonts. No cached upstream repository was found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/` for this family.
 
 The font has only a regular weight (no italics or other variants), suggesting it may be a very early submission before version control workflows were established.
 

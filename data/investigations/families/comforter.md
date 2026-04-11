@@ -45,7 +45,7 @@ buildVariable: false
 - **Branch matches**: Yes - `master` branch, matches METADATA.pb
 - **Config YAML exists at commit**: Yes - `sources/config.yml` exists
 - **Font files match**: The onboarding commit in google/fonts added `Comforter-Regular.ttf` from `fonts/ttf/` in upstream
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/comforter/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/comforter/`
 
 ## Confidence Level
 

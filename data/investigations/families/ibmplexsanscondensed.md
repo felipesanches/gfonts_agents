@@ -46,7 +46,7 @@ The third sub-commit explicitly removed the `source` block from METADATA.pb (per
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Commit `71d012b` exists and dates to 2021-06-11, message: "Clarified URL"
 - At this commit, source files exist:
   - `IBM-Plex-Sans-Condensed/sources/masters/IBM Plex Sans Condensed Roman.designspace`

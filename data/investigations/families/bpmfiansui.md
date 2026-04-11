@@ -50,7 +50,7 @@ Same as all Bpmf families — a custom Ruby-based build system (`make_font.rb`) 
 - Commit hash: Incorrect — `20f741c` predates the actual build; the correct commit is in `aaronbell/bpmfvs` around 2026-02-09
 - Config YAML: Cannot be created (custom Ruby build system)
 - Local cache: Neither repo is cached locally
-- Note: The `ButTaiwan/iansui` repo (base font source) IS cached at `/mnt/shared/upstream_repos/fontc_crater_cache/ButTaiwan/iansui/`
+- Note: The `ButTaiwan/iansui` repo (base font source) IS cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/ButTaiwan/iansui/`
 
 ## Conclusion
 

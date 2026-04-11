@@ -46,7 +46,7 @@ source {
 ### Upstream Repository Analysis
 
 - **Repository**: https://github.com/yangheeryu/Gowun-Dodum
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/yangheeryu/Gowun-Dodum
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/yangheeryu/Gowun-Dodum
 - **Branches**: master only
 - **Latest commit**: `6d9ef10` ("Updating for GF", 2021-06-10) by Aaron Bell
 

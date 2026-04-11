@@ -36,7 +36,7 @@ The source block is already fully populated:
 
 ### Upstream Repository Verification
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/productiontype/Georama` contains:
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/productiontype/Georama` contains:
 - Only a single commit: `1b063b625` ("Added family name to builder.yaml") dated 2021-05-20
 - This commit hash matches exactly what is recorded in METADATA.pb
 - The repo is on the `master` branch

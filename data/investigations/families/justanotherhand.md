@@ -31,7 +31,7 @@ The copyright in the font reads: "Copyright (c) 2010 by Brian J. Bonislawsky DBA
 
 The DESCRIPTION.en_us.html describes the font as a narrow brush-drawn handwriting font but contains no URL to an upstream repository. No override `config.yaml` exists in the google/fonts `apache/justanotherhand/` directory.
 
-A `librefonts` mirror of Just Another Hand exists in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/justanotherhand/`. The latest commit is `151e64a` ("update .travis.yml"). The `src/` directory contains:
+A `librefonts` mirror of Just Another Hand exists in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/justanotherhand/`. The latest commit is `151e64a` ("update .travis.yml"). The `src/` directory contains:
 - `JustAnotherHand.vfb` — a FontLab VFB source file
 - `METADATA_comments.txt`
 - `VERSIONS.txt`

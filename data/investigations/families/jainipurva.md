@@ -45,7 +45,7 @@ Git history in google/fonts shows one commit touching this font:
 
 The commit message for `9edfb3dc4` explicitly states: "Taken from the upstream repo https://github.com/EkType/Jaini at commit https://github.com/EkType/Jaini/commit/4d2bcf9760fccb42eb95a079a17c430907059f58."
 
-Jaini Purva shares the same upstream repository as Jaini: `EkType/Jaini`, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/EkType/Jaini`. Commit `4d2bcf9760fccb42eb95a079a17c430907059f58` exists in the repo. The file `Source/jaini-purva.yaml` exists in the upstream repo alongside `Source/jaini.yaml`.
+Jaini Purva shares the same upstream repository as Jaini: `EkType/Jaini`, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/EkType/Jaini`. Commit `4d2bcf9760fccb42eb95a079a17c430907059f58` exists in the repo. The file `Source/jaini-purva.yaml` exists in the upstream repo alongside `Source/jaini.yaml`.
 
 ## Conclusion
 

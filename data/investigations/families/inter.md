@@ -41,7 +41,7 @@ The font was most recently updated in google/fonts by commit `e1d648010` ("Inter
 
 The METADATA.pb uses an `archive_url` (a zip file from a GitHub release) as the actual source for the font binaries. This is a special case — the fonts were taken from a pre-built release archive rather than built from source.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/rsms/inter`. The commit `66647c0bbbe41a850d79d9c76fb13add3378940f` was verified to exist in the cached repo (2024-05-24, "makefile: make sure dist runs googlefonts so that dist_zip_gf succeed").
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/rsms/inter`. The commit `66647c0bbbe41a850d79d9c76fb13add3378940f` was verified to exist in the cached repo (2024-05-24, "makefile: make sure dist runs googlefonts so that dist_zip_gf succeed").
 
 The `repository_url` uses `www.github.com` instead of `github.com` — this is a minor inconsistency but functional.
 

@@ -16,7 +16,7 @@
 
 ## How URL Was Found
 
-The repository URL `https://github.com/librefonts/cedarvillecursive` is a well-known librefonts archive repository. The cached clone at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/cedarvillecursive/` confirms the remote URL matches.
+The repository URL `https://github.com/librefonts/cedarvillecursive` is a well-known librefonts archive repository. The cached clone at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/cedarvillecursive/` confirms the remote URL matches.
 
 ## How Commit Was Determined
 
@@ -34,11 +34,11 @@ VFB is a proprietary FontLab format that is not compatible with gftools-builder.
 
 Other files in the repo are TTX decompositions of the compiled font and standard metadata files (DESCRIPTION, METADATA.json, OFL.txt).
 
-**No override config.yaml** exists in `/mnt/shared/google/fonts/ofl/cedarvillecursive/`.
+**No override config.yaml** exists in `/home/fsanches/compartilhado/google/fonts/ofl/cedarvillecursive/`.
 
 ## Verification
 
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/cedarvillecursive/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/cedarvillecursive/`
 - **Commit exists**: Yes, it is the only commit in the repo
 - **Font file history in google/fonts**: The TTF file was part of the initial commit (`90abd17b4`) and was only touched once more by a fsType fix (`8ccda7bf7` by Dave Crossland in August 2015, which modified the file in-place)
 - **METADATA.pb** does not have a source block (only basic metadata)

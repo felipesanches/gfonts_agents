@@ -25,7 +25,7 @@ The METADATA.pb for Karla Tamil Upright has no `source` block at all. The font w
 
 The copyright notice reads: "Copyright (c) 2011-2012, Jonathan Pinhorn (jonpinhorn.typedesign@gmail.com), with Reserved Font Names 'Karla'"
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/karlatamilupright` contains only TTX/VFB source files (not gftools-builder compatible). The sources are legacy font engineer tools similar to its sister family Karla Tamil Inclined.
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/karlatamilupright` contains only TTX/VFB source files (not gftools-builder compatible). The sources are legacy font engineer tools similar to its sister family Karla Tamil Inclined.
 
 There is no `config.yaml` in the upstream repo, and the sources are not in a gftools-builder compatible format. Both Karla Tamil families were created by Jonathan Pinhorn in 2011-2012 for Tamil script support.
 

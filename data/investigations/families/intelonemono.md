@@ -56,7 +56,7 @@ The METADATA.pb was subsequently updated in commit `d0e1cc42c` (2025-06-03, "int
 - `copyright` fields from `googlefonts/intel-one-mono` to `intel/intel-one-mono`
 - **But the `commit` field `cec102c3` was NOT changed**
 
-This creates an inconsistency: the commit hash `cec102c3890991d35e3766424923fa4afc099a1d` comes from the `googlefonts/intel-one-mono` mirror but the `repository_url` now points to `intel/intel-one-mono`. This hash does **not exist** in the `intel/intel-one-mono` repository (verified against the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/intel/intel-one-mono`).
+This creates an inconsistency: the commit hash `cec102c3890991d35e3766424923fa4afc099a1d` comes from the `googlefonts/intel-one-mono` mirror but the `repository_url` now points to `intel/intel-one-mono`. This hash does **not exist** in the `intel/intel-one-mono` repository (verified against the cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/intel/intel-one-mono`).
 
 Subsequent updates to google/fonts:
 - `d27aca07a` — "intelonemono: Update vf" — updated variable fonts only

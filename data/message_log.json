@@ -349,7 +349,7 @@
   {
     "timestamp": "2026-01-30T18:07:26.541684",
     "role": "user",
-    "message": "actually, move the /mnt/shared/gfonts_library_sources.json file to the data/ directory and commit it to the repo"
+    "message": "actually, move the /home/fsanches/compartilhado/gfonts_library_sources.json file to the data/ directory and commit it to the repo"
   },
   {
     "timestamp": "2026-01-30T18:07:26.541695",
@@ -644,7 +644,7 @@
   {
     "timestamp": "2026-02-27T10:55:59.580651",
     "role": "user",
-    "message": "You are investigating font families for the Google Fonts source metadata project. For each family, create an investigation report.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/mnt/shared/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/projetos/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `akayakanadaka` → \"Akaya Kanadaka\" → slug: `akaya-kanadaka`\n2. `akayatelivigala` → \"Akaya Telivigala\" → slug: `akaya-telivigala`\n3. `aksarabaligalang` → check actual name in METADATA.pb → likely \"Aksara Bali Galang\"\n4. `alansans` → \"Alan Sans\" → slug: `alan-sans`\n5. `albertsans` → \"Albert Sans\" → slug: `albert-sans`\n6. `alexbrush` → \"Alex Brush\" → slug: `alex-brush`"
+    "message": "You are investigating font families for the Google Fonts source metadata project. For each family, create an investigation report.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/compartilhado/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `akayakanadaka` → \"Akaya Kanadaka\" → slug: `akaya-kanadaka`\n2. `akayatelivigala` → \"Akaya Telivigala\" → slug: `akaya-telivigala`\n3. `aksarabaligalang` → check actual name in METADATA.pb → likely \"Aksara Bali Galang\"\n4. `alansans` → \"Alan Sans\" → slug: `alan-sans`\n5. `albertsans` → \"Albert Sans\" → slug: `albert-sans`\n6. `alexbrush` → \"Alex Brush\" → slug: `alex-brush`"
   },
   {
     "timestamp": "2026-02-27T10:55:59.580651",
@@ -654,7 +654,7 @@
   {
     "timestamp": "2026-02-27T00:00:01Z",
     "role": "user",
-    "message": "You are investigating font families for the Google Fonts source metadata project.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/mnt/shared/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/projetos/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `bodonimoda` -> \"Bodoni Moda\" -> slug: `bodoni-moda`\n2. `bodonimodasc` -> \"Bodoni Moda SC\" -> slug: `bodoni-moda-sc`\n3. `bonanova` -> \"Bonanova\" -> slug: `bonanova`\n4. `bonanovasc` -> \"Bonanova SC\" -> slug: `bonanova-sc`\n5. `bonheurroyale` -> \"Bonheur Royale\" -> slug: `bonheur-royale`\n6. `bowlbyone` -> \"Bowlby One\" -> slug: `bowlby-one`\n7. `bowlbyonesc` -> \"Bowlby One SC\" -> slug: `bowlby-one-sc`\n8. `bpmfhuninn` -> check actual name in METADATA.pb -> slug accordingly\n9. `bpmfiansui` -> check actual name -> slug accordingly\n10. `bpmfzihikaistd` -> check actual name -> slug accordingly",
+    "message": "You are investigating font families for the Google Fonts source metadata project.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/compartilhado/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `bodonimoda` -> \"Bodoni Moda\" -> slug: `bodoni-moda`\n2. `bodonimodasc` -> \"Bodoni Moda SC\" -> slug: `bodoni-moda-sc`\n3. `bonanova` -> \"Bonanova\" -> slug: `bonanova`\n4. `bonanovasc` -> \"Bonanova SC\" -> slug: `bonanova-sc`\n5. `bonheurroyale` -> \"Bonheur Royale\" -> slug: `bonheur-royale`\n6. `bowlbyone` -> \"Bowlby One\" -> slug: `bowlby-one`\n7. `bowlbyonesc` -> \"Bowlby One SC\" -> slug: `bowlby-one-sc`\n8. `bpmfhuninn` -> check actual name in METADATA.pb -> slug accordingly\n9. `bpmfiansui` -> check actual name -> slug accordingly\n10. `bpmfzihikaistd` -> check actual name -> slug accordingly",
     "english_translation": "Investigate 10 font families for Google Fonts source metadata project: Bodoni Moda, Bodoni Moda SC, Bona Nova, Bona Nova SC, Bonheur Royale, Bowlby One, Bowlby One SC, Bpmf Huninn, Bpmf Iansui, and Bpmf Zihi Kai Std. Write individual investigation reports for each."
   },
   {
@@ -685,7 +685,7 @@
   {
     "role": "user",
     "timestamp": "2026-02-27T00:00:00Z",
-    "content": "You are investigating font families for the Google Fonts source metadata project.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/mnt/shared/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/projetos/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `jua` → \"Jua\" → slug: `jua`\n2. `judson` → \"Judson\" → slug: `judson`\n3. `julee` → \"Julee\" → slug: `julee`\n4. `juliussansone` → \"Julius Sans One\" → slug: `julius-sans-one`\n5. `junge` → \"Junge\" → slug: `junge`\n6. `jura` → \"Jura\" → slug: `jura`\n7. `justanotherhand` → \"Just Another Hand\" → slug: `just-another-hand`\n8. `justmeagaindownhere` → \"Just Me Again Down Here\" → slug: `just-me-again-down-here`\n9. `k2d` → \"K2D\" → slug: `k2d`\n10. `kablammo` → \"Kablammo\" → slug: `kablammo`\n11. `kadwa` → \"Kadwa\" → slug: `kadwa`\n12. `kaiseidecol` → \"Kaisei Decol\" → slug: `kaisei-decol`\n13. `kaiseiharunoumi` → \"Kaisei HarunoUmi\" → slug: `kaisei-harunoumi`\n14. `kaiseiopti` → \"Kaisei Opti\" → slug: `kaisei-opti`\n15. `kaiseitokumin` → \"Kaisei Tokumin\" → slug: `kaisei-tokumin`\n16. `kalam` → \"Kalam\" → slug: `kalam`"
+    "content": "You are investigating font families for the Google Fonts source metadata project.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/compartilhado/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `jua` → \"Jua\" → slug: `jua`\n2. `judson` → \"Judson\" → slug: `judson`\n3. `julee` → \"Julee\" → slug: `julee`\n4. `juliussansone` → \"Julius Sans One\" → slug: `julius-sans-one`\n5. `junge` → \"Junge\" → slug: `junge`\n6. `jura` → \"Jura\" → slug: `jura`\n7. `justanotherhand` → \"Just Another Hand\" → slug: `just-another-hand`\n8. `justmeagaindownhere` → \"Just Me Again Down Here\" → slug: `just-me-again-down-here`\n9. `k2d` → \"K2D\" → slug: `k2d`\n10. `kablammo` → \"Kablammo\" → slug: `kablammo`\n11. `kadwa` → \"Kadwa\" → slug: `kadwa`\n12. `kaiseidecol` → \"Kaisei Decol\" → slug: `kaisei-decol`\n13. `kaiseiharunoumi` → \"Kaisei HarunoUmi\" → slug: `kaisei-harunoumi`\n14. `kaiseiopti` → \"Kaisei Opti\" → slug: `kaisei-opti`\n15. `kaiseitokumin` → \"Kaisei Tokumin\" → slug: `kaisei-tokumin`\n16. `kalam` → \"Kalam\" → slug: `kalam`"
   },
   {
     "role": "assistant",
@@ -695,7 +695,7 @@
   {
     "role": "user",
     "timestamp": "2026-02-27T11:33:37.556500",
-    "content": "You are investigating font families for the Google Fonts source metadata project.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/mnt/shared/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/projetos/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `jejugothic` → \"Jeju Gothic\" → slug: `jeju-gothic`\n2. `jejuhallasan` → \"Jeju Hallasan\" → slug: `jeju-hallasan`\n3. `jejumyeongjo` → \"Jeju Myeongjo\" → slug: `jeju-myeongjo`\n4. `jetbrainsmono` → \"JetBrains Mono\" → slug: `jetbrains-mono`\n5. `jimnightshade` → check actual name in METADATA.pb\n6. `joan` → \"Joan\" → slug: `joan`\n7. `jockeyone` → \"Jockey One\" → slug: `jockey-one`\n8. `jollylodger` → \"Jolly Lodger\" → slug: `jolly-lodger`\n9. `jomhuria` → \"Jomhuria\" → slug: `jomhuria`\n10. `jomolhari` → \"Jomolhari\" → slug: `jomolhari`\n11. `josefinsans` → \"Josefin Sans\" → slug: `josefin-sans`\n12. `josefinslab` → \"Josefin Slab\" → slug: `josefin-slab`\n13. `jost` → \"Jost\" → slug: `jost`\n14. `jotione` → \"Joti One\" → slug: `joti-one`\n15. `jsmathcmbx10` → check actual name in METADATA.pb\n16. `jsmathcmex10` → check actual name\n17. `jsmathcmmi10` → check actual name\n18. `jsmathcmr10` → check actual name\n19. `jsmathcmsy10` → check actual name\n20. `jsmathcmti10` → check actual name\n\nJsMath CM families are likely all from the same upstream repository.",
+    "content": "You are investigating font families for the Google Fonts source metadata project.\n\n**CRITICAL RULES:**\n- Do NOT clone any new repositories. Only use repos already in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`\n- Do NOT commit or push anything\n- Write each report to `/home/fsanches/compartilhado/gfonts_agents/data/investigations/families/{slug}.md`\n\n**Families to investigate:**\n1. `jejugothic` → \"Jeju Gothic\" → slug: `jeju-gothic`\n2. `jejuhallasan` → \"Jeju Hallasan\" → slug: `jeju-hallasan`\n3. `jejumyeongjo` → \"Jeju Myeongjo\" → slug: `jeju-myeongjo`\n4. `jetbrainsmono` → \"JetBrains Mono\" → slug: `jetbrains-mono`\n5. `jimnightshade` → check actual name in METADATA.pb\n6. `joan` → \"Joan\" → slug: `joan`\n7. `jockeyone` → \"Jockey One\" → slug: `jockey-one`\n8. `jollylodger` → \"Jolly Lodger\" → slug: `jolly-lodger`\n9. `jomhuria` → \"Jomhuria\" → slug: `jomhuria`\n10. `jomolhari` → \"Jomolhari\" → slug: `jomolhari`\n11. `josefinsans` → \"Josefin Sans\" → slug: `josefin-sans`\n12. `josefinslab` → \"Josefin Slab\" → slug: `josefin-slab`\n13. `jost` → \"Jost\" → slug: `jost`\n14. `jotione` → \"Joti One\" → slug: `joti-one`\n15. `jsmathcmbx10` → check actual name in METADATA.pb\n16. `jsmathcmex10` → check actual name\n17. `jsmathcmmi10` → check actual name\n18. `jsmathcmr10` → check actual name\n19. `jsmathcmsy10` → check actual name\n20. `jsmathcmti10` → check actual name\n\nJsMath CM families are likely all from the same upstream repository.",
     "translation": "Investigating 20 font families (Jeju Gothic through jsMath cmti10) for Google Fonts source metadata project. Rules: no cloning new repos, no commits, write reports to data/investigations/families/{slug}.md"
   },
   {
@@ -781,7 +781,7 @@
   {
     "timestamp": "2026-03-03T22:00:00-03:00",
     "role": "assistant",
-    "message": "Created automation script (scripts/add_upstream_info_batch.py) and deployed upstream_info.md for 657 families across 5 PRs to google/fonts. Documentation-only changes (no METADATA.pb or config.yaml modifications). All verified clean of /mnt/shared paths. PRs created: #10302 (96 families, 0-A), #10303 (97 families, B), #10304 (109 families, C-E), #10305 (142 families, F-I), #10306 (213 families, J-M). Also investigated commit c8e45997 which fixed a misplaced config_yaml bug in googlesanscode METADATA.pb introduced by our batch4 PR — confirmed this was the only instance, no other METADATA.pb files have similar structural issues."
+    "message": "Created automation script (scripts/add_upstream_info_batch.py) and deployed upstream_info.md for 657 families across 5 PRs to google/fonts. Documentation-only changes (no METADATA.pb or config.yaml modifications). All verified clean of /home/fsanches/compartilhado paths. PRs created: #10302 (96 families, 0-A), #10303 (97 families, B), #10304 (109 families, C-E), #10305 (142 families, F-I), #10306 (213 families, J-M). Also investigated commit c8e45997 which fixed a misplaced config_yaml bug in googlesanscode METADATA.pb introduced by our batch4 PR — confirmed this was the only instance, no other METADATA.pb files have similar structural issues."
   },
   {
     "timestamp": "2026-03-12T10:00:00-03:00",
@@ -851,7 +851,7 @@
   {
     "timestamp": "2026-03-12T16:30:00-03:00",
     "role": "assistant",
-    "message": "Removed cleanup functionality. Build artifacts in /mnt/shared/gfonts-repro-builds/ now persist as cache. Added --batch and --limit modes. Ran Batch 1: 63 families processed. Results: 9 byte-identical, 30 compiler-version, 22 build-failure, 1 name-table, 1 timestamp-diff. Alkalami flagged as high reflow risk (later found to be false positive)."
+    "message": "Removed cleanup functionality. Build artifacts in /home/fsanches/compartilhado/gfonts-repro-builds/ now persist as cache. Added --batch and --limit modes. Ran Batch 1: 63 families processed. Results: 9 byte-identical, 30 compiler-version, 22 build-failure, 1 name-table, 1 timestamp-diff. Alkalami flagged as high reflow risk (later found to be false positive)."
   },
   {
     "timestamp": "2026-03-12T17:00:00-03:00",
@@ -1066,7 +1066,7 @@
   {
     "timestamp": "2026-03-13T20:10:00-03:00",
     "role": "assistant",
-    "message": "Started Batch 7: 50 families. 131 GB free on /mnt/shared. Running reproducible_build.py --batch --limit 50."
+    "message": "Started Batch 7: 50 families. 131 GB free on /home/fsanches/compartilhado. Running reproducible_build.py --batch --limit 50."
   },
   {
     "timestamp": "2026-03-13T21:00:00-03:00",
@@ -1166,7 +1166,7 @@
   {
     "timestamp": "2026-03-15T02:35:00-03:00",
     "role": "assistant",
-    "content": "Added fmtCount() helper to dashboard JS — summary cards now show 'N (X.X%)' format. Also made path portability changes to reproducible_build.py: all /mnt/shared/ paths replaced with auto-detection + environment variable overrides."
+    "content": "Added fmtCount() helper to dashboard JS — summary cards now show 'N (X.X%)' format. Also made path portability changes to reproducible_build.py: all /home/fsanches/compartilhado/ paths replaced with auto-detection + environment variable overrides."
   },
   {
     "timestamp": "2026-03-15T04:10:00-03:00",
@@ -1351,7 +1351,7 @@
   {
     "role": "assistant",
     "timestamp": "2026-03-25T07:00:00Z",
-    "content": "Cloned 829 of 832 repos as bare mirrors (--mirror) into /mnt/shared/upstream_repos/repo_archive/. 47.7 GB total. 3 failed (bghryct/RedHat* deleted). Later cloned RedHatOfficial/RedHatFont, smc/manjari, bonjour-monde/syne-typeface. Then cloned 148 no-commit repos. Total archive: 977 repos, 54 GB."
+    "content": "Cloned 829 of 832 repos as bare mirrors (--mirror) into /home/fsanches/compartilhado/upstream_repos/repo_archive/. 47.7 GB total. 3 failed (bghryct/RedHat* deleted). Later cloned RedHatOfficial/RedHatFont, smc/manjari, bonjour-monde/syne-typeface. Then cloned 148 no-commit repos. Total archive: 977 repos, 54 GB."
   },
   {
     "role": "user",

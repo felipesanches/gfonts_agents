@@ -31,7 +31,7 @@ None of these commits reference an upstream repository URL or commit hash.
 
 The font was designed by Igino Marini (iginomarini.com). The copyright string reads: "© 2007 Igino Marini (www.iginomarini.com mail@iginomarini.com)".
 
-A repository `https://github.com/librefonts/imfelldoublepica` exists in the local cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/imfelldoublepica`. This repo has a single commit (`35b0c6ea`, "update .travis.yml", 2014-10-17) and contains only TTX-disassembled font data (no VFB or other editable source files, only `src/METADATA_comments.txt` and `src/VERSIONS.txt`). The font version documented is 3.00.
+A repository `https://github.com/librefonts/imfelldoublepica` exists in the local cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/imfelldoublepica`. This repo has a single commit (`35b0c6ea`, "update .travis.yml", 2014-10-17) and contains only TTX-disassembled font data (no VFB or other editable source files, only `src/METADATA_comments.txt` and `src/VERSIONS.txt`). The font version documented is 3.00.
 
 This `librefonts/imfelldoublepica` repository appears to be an archival mirror of the compiled TTF, not the original design source. Igino Marini does not appear to have a public GitHub repository for the IM Fell fonts; the actual sources were originally provided from his personal website (www.iginomarini.com).
 

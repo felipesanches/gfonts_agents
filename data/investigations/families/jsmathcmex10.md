@@ -29,7 +29,7 @@ The jsMath cmex10 font provides mathematical extension symbols (large brackets, 
 
 The git history shows only metadata-only changes (language, classification updates) since the initial commit. No font file updates have been made.
 
-No repository for this font was found in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/`. The jsMath project predates modern git hosting, and the original font was distributed from the jsMath website. The `.mf` source files are part of the TeX/CTAN distribution.
+No repository for this font was found in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`. The jsMath project predates modern git hosting, and the original font was distributed from the jsMath website. The `.mf` source files are part of the TeX/CTAN distribution.
 
 This is one of six related jsMath Computer Modern families sharing the same origin (jsMath cmbx10, cmex10, cmmi10, cmr10, cmsy10, cmti10).
 

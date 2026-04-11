@@ -38,7 +38,7 @@ The FONTLOG also describes the build requirements:
 
 The sources were in SFD format (FontForge native format) based on the build instructions mentioning fontforge and xgridfit. There is no known GitHub mirror of the original Google Code repository.
 
-No cached upstream repository was found in `/mnt/shared/upstream_repos/fontc_crater_cache/` for this family.
+No cached upstream repository was found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/` for this family.
 
 The designer is Andrey V. Panov (email: panov@canopus.iacp.dvo.ru). The font supports Latin and Cyrillic scripts.
 

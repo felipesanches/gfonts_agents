@@ -41,7 +41,7 @@ The font was added to google/fonts in commit `245758c4d` ("Inspiration: Version 
 
 > Inspiration Version 2.010; ttfautohint (v1.8.3) taken from the upstream repo https://github.com/googlefonts/inspiration at commit https://github.com/googlefonts/inspiration/commit/629ca27262fbcc6cfe745bd95d2e7b72a8e3b047.
 
-The upstream repository is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/inspiration`. The commit `629ca27262` was verified to exist in the cache. The log shows this commit was created on 2021-11-26 with message "v2.010 glyphs info updated".
+The upstream repository is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/inspiration`. The commit `629ca27262` was verified to exist in the cache. The log shows this commit was created on 2021-11-26 with message "v2.010 glyphs info updated".
 
 **Source format**: The repository contains `sources/InspirationPro.glyphs` (a single Glyphs source file). There is **no `config.yaml`** in the upstream repository itself.
 

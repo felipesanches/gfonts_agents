@@ -17,7 +17,7 @@
 
 ## How URL Found
 
-The repository was discovered at `https://github.com/librefonts/chenla`, which is already cloned in the upstream cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/chenla/`. The remote URL was verified via `git remote -v`.
+The repository was discovered at `https://github.com/librefonts/chenla`, which is already cloned in the upstream cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/chenla/`. The remote URL was verified via `git remote -v`.
 
 The tracking JSON currently shows `no_upstream_repo` status with no repository_url, but the librefonts archive does exist and contains this font.
 

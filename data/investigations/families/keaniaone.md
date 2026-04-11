@@ -25,7 +25,7 @@ The METADATA.pb for Keania One has no `source` block. The font was added in the 
 
 The copyright notice reads: "Copyright (c) 2012, Julia Petretta (julia.petretta@googlemail.com), with Reserved Font Name 'Keania'"
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/keaniaone` contains only TTX/VFB source files (legacy format, not gftools-builder compatible). The `src/` directory contains:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/keaniaone` contains only TTX/VFB source files (legacy format, not gftools-builder compatible). The `src/` directory contains:
 - `KeaniaOne-Regular.otf.*` (OTF TTX dumps)
 - `KeaniaOne-Regular-OTF.vfb` (FontLab)
 - `KeaniaOne-Regular-TTF.sfd` (FontForge)

@@ -27,7 +27,7 @@ The copyright notice reads: "Copyright (c) 2010, Birgit Pulk (birgitpulk@gmail.c
 
 The DESCRIPTION.en_us.html describes it as "a calligraphy font inspired by old chancery typefaces" designed by Birgit Pulk, a graphic designer from Estonia.
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kristi` contains only TTX dumps of the binary font:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kristi` contains only TTX dumps of the binary font:
 - `Kristi.ttf.*` (TTX dumps)
 - No Glyphs, UFO, or other editable source formats
 

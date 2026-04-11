@@ -39,7 +39,7 @@ The source block was added by google/fonts commit `6e2cc4405` ("Bowlby One: add 
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bowlbyone/`. The repository has only 11 commits, all from 2014. Commit `3aca9b57` is the tip of master (2014-10-17, "update .travis.yml").
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/bowlbyone/`. The repository has only 11 commits, all from 2014. Commit `3aca9b57` is the tip of master (2014-10-17, "update .travis.yml").
 
 The upstream repo contains only SFD (FontForge) and VFB (FontLab) source files:
 - `src/BowlbyOne-Regular-TTF.sfd`

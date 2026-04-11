@@ -41,7 +41,7 @@ sources/
 tests/
 ```
 
-However, an **override config.yaml** exists in the google/fonts family directory at `/mnt/shared/google/fonts/ofl/bellefair/config.yaml`:
+However, an **override config.yaml** exists in the google/fonts family directory at `/home/fsanches/compartilhado/google/fonts/ofl/bellefair/config.yaml`:
 
 ```yaml
 buildVariable: false

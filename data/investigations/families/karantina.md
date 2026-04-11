@@ -47,7 +47,7 @@ primary_script: "Hebr"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `ronykoch/Karantina` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/ronykoch/Karantina`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `ronykoch/Karantina` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/ronykoch/Karantina`.
 
 The `Sources/config.yaml` file exists in the cached repository along with `Sources/karantina.glyphs`. The latest commit in the upstream cache is `efb7e92` ("Add files via upload"), which matches exactly the commit hash in METADATA.pb (only one commit exists in the repo).
 

@@ -27,7 +27,7 @@ The copyright notice reads: "Copyright (c) 2011, Sorkin Type Co (www.sorkintype.
 
 The DESCRIPTION.en_us.html credits "Sorkin Type Co" and mentions the source files were available from "Google Code" (http://code.google.com/p/googlefontdirectory/), which is no longer available.
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kronaone` contains TTX source files:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kronaone` contains TTX source files:
 - `KronaOne-Regular.ttf.*` (TTX dumps)
 - No Glyphs, UFO, or other editable source formats
 

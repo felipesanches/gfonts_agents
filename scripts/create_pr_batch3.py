@@ -11,8 +11,8 @@ import subprocess
 import sys
 import tempfile
 
-GOOGLE_FONTS_DIR = "/mnt/shared/google/fonts"
-INVESTIGATIONS_DIR = "/home/fsanches/projetos/gfonts_agents/data/investigations/families"
+GOOGLE_FONTS_DIR = "/home/fsanches/compartilhado/google/fonts"
+INVESTIGATIONS_DIR = "/home/fsanches/compartilhado/gfonts_agents/data/investigations/families"
 
 
 def run_git(*args, capture=True, check=True):
@@ -26,11 +26,11 @@ def run_git(*args, capture=True, check=True):
 
 
 def clean_paths(text):
-    """Remove /mnt/shared prefixes from paths."""
-    text = text.replace("/mnt/shared/upstream_repos/fontc_crater_cache/", "upstream_repos/fontc_crater_cache/")
-    text = text.replace("/mnt/shared/google/fonts/", "google/fonts/")
-    text = text.replace("/mnt/shared/google/fonts", "google/fonts")
-    text = text.replace("/mnt/shared/", "")
+    """Remove /home/fsanches/compartilhado prefixes from paths."""
+    text = text.replace("/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/", "upstream_repos/fontc_crater_cache/")
+    text = text.replace("/home/fsanches/compartilhado/google/fonts/", "google/fonts/")
+    text = text.replace("/home/fsanches/compartilhado/google/fonts", "google/fonts")
+    text = text.replace("/home/fsanches/compartilhado/", "")
     return text
 
 

@@ -36,7 +36,7 @@ There are no `.glyphs`, `.ufo`, or `.designspace` files that would be compatible
 
 ## Verification
 
-- **Repository URL**: Verified -- the upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/chauphilomeneone`.
+- **Repository URL**: Verified -- the upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/chauphilomeneone`.
 - **Commit**: Verified as HEAD (and only commit) of the upstream repo. Predates all google/fonts updates.
 - **Source type**: SFD and VFB sources -- neither compatible with gftools-builder.
 - **No config.yaml**: Correctly absent given the source formats.

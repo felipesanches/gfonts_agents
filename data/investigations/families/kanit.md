@@ -25,7 +25,7 @@ primary_script: "Thai"
 
 ## Investigation
 
-The METADATA.pb contains both `repository_url` and `commit`. The upstream repository is at `cadsondemak/kanit` in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/kanit`.
+The METADATA.pb contains both `repository_url` and `commit`. The upstream repository is at `cadsondemak/kanit` in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/kanit`.
 
 The repository contains Glyphs source files in `sources/`:
 - `sources/Kanit_Upright_Master.glyphs`

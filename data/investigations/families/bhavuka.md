@@ -46,7 +46,7 @@ The font source is in SFD (FontForge) format, which is not compatible with gftoo
 
 ## Verification
 
-- **Repository exists**: Yes, confirmed locally at `/mnt/shared/upstream_repos/fontc_crater_cache/10four/Bhavuka`
+- **Repository exists**: Yes, confirmed locally at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/10four/Bhavuka`
 - **Commit hash exists**: Yes, verified: `e4819c2 Update README.md`
 - **Config.yaml exists**: No, neither in upstream repo nor as override
 - **Source format**: SFD (FontForge) - not gftools-builder compatible

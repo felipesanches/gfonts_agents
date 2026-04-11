@@ -41,7 +41,7 @@ The repository was later renamed: `aaronbell/Jost` → `indestructible-type/Jost
 
 The commit hash currently in METADATA.pb (`35f141c9`) was set by commit `83026eb5b` ("sources info for Jost: Version 3.710 (PR #3831)"). The commit `35f141c9` ("Create inUse.md", 2021-02-20) predates the actual onboarding commit `f5029c3f` (2021-09-10). This means the current METADATA.pb has an **older** commit than the one actually used for onboarding.
 
-The upstream repository at `https://github.com/indestructible-type/Jost` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/indestructible-type/Jost` with 120 commits of history. No `config.yaml` exists in the upstream repo.
+The upstream repository at `https://github.com/indestructible-type/Jost` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/indestructible-type/Jost` with 120 commits of history. No `config.yaml` exists in the upstream repo.
 
 An override `config.yaml` was created in the google/fonts family directory by commit `83026eb5b`, containing:
 ```yaml

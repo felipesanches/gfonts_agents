@@ -2,7 +2,7 @@
 """Amend PR #10282 commits to add override config.yaml files."""
 import os, re, subprocess, sys, tempfile
 
-GF = "/mnt/shared/google/fonts"
+GF = "/home/fsanches/compartilhado/google/fonts"
 BRANCH = "sources_per_family_2026-02-27"
 
 def run(cmd, check=True, capture=False):

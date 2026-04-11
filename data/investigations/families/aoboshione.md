@@ -39,7 +39,7 @@ source {
 
 ### Repository
 
-The upstream repository `matsuba723/Aoboshi` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/matsuba723/Aoboshi`. The repository URL is pre-existing in METADATA.pb.
+The upstream repository `matsuba723/Aoboshi` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/matsuba723/Aoboshi`. The repository URL is pre-existing in METADATA.pb.
 
 ### Commit Hash
 

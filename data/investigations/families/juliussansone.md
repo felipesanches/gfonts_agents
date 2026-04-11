@@ -27,7 +27,7 @@ The git history in google/fonts shows the font was present since the initial com
 
 The DESCRIPTION.en_us.html mentions LatinoType's website `http://www.latinotype.com` but no GitHub repository URL. No override `config.yaml` exists in the google/fonts `ofl/juliussansone/` directory.
 
-A `librefonts` mirror of Julius Sans One exists in the cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/juliussansone/`. This contains TTX-decompiled OTF files and a `src/` directory with more TTX files. No Glyphs, UFO, or other gftools-builder compatible sources are present. The commit `8aadb0e8d6ef7f45aa2844ccd99f7e28f0cd1498` is the recorded commit in the tracking JSON.
+A `librefonts` mirror of Julius Sans One exists in the cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/juliussansone/`. This contains TTX-decompiled OTF files and a `src/` directory with more TTX files. No Glyphs, UFO, or other gftools-builder compatible sources are present. The commit `8aadb0e8d6ef7f45aa2844ccd99f7e28f0cd1498` is the recorded commit in the tracking JSON.
 
 This means the `librefonts/juliussansone` mirror is the only known upstream reference, but it contains only decompiled font files (TTX format), not editable source files. No gftools-builder compatible sources are available.
 

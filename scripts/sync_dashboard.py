@@ -13,9 +13,9 @@ Usage:
 Sources of truth:
     1. data/build_registry.json (version-controlled in this repo)
        → reproducible_build status, isolation, failure categories
-    2. /mnt/shared/google/fonts/build_tools/normalization_results.json
+    2. /home/fsanches/compartilhado/google/fonts/build_tools/normalization_results.json
        → normalized_match count
-    3. /mnt/shared/gfonts-repro-builds/*/comparison_report.json
+    3. /home/fsanches/compartilhado/gfonts-repro-builds/*/comparison_report.json
        → per-family deep analysis (root cause, reflow risk)
 
 Targets (all in this repo's data/ directory):
@@ -48,7 +48,7 @@ DATA_DIR = REPO_ROOT / "data"
 # Single source of truth — version-controlled in this repo
 BUILD_REGISTRY = DATA_DIR / "build_registry.json"
 NORMALIZATION_RESULTS = DATA_DIR / "normalization_results.json"
-REPRO_BUILDS_DIR = Path("/mnt/shared/gfonts-repro-builds")
+REPRO_BUILDS_DIR = Path("/home/fsanches/compartilhado/gfonts-repro-builds")
 
 
 def load_json(path):
@@ -268,10 +268,10 @@ def sync_progress_history(sources):
 
 def sync_archive_stats(sources):
     """Generate archive_stats.json from the repo archive on disk."""
-    archive_dir = Path(os.environ.get("REPO_ARCHIVE", "/mnt/shared/upstream_repos/repo_archive"))
+    archive_dir = Path(os.environ.get("REPO_ARCHIVE", "/home/fsanches/compartilhado/upstream_repos/repo_archive"))
 
     if not archive_dir.is_dir():
-        for candidate in [Path("/mnt/shared/upstream_repos/repo_archive")]:
+        for candidate in [Path("/home/fsanches/compartilhado/upstream_repos/repo_archive")]:
             if candidate.is_dir():
                 archive_dir = candidate
                 break
@@ -328,7 +328,7 @@ def sync_archive_stats(sources):
 def sync_disk_usage():
     """Update disk_usage.json with current disk stats."""
     try:
-        result = subprocess.run(["df", "-h", "/mnt/shared"],
+        result = subprocess.run(["df", "-h", "/home/fsanches/compartilhado"],
                                capture_output=True, text=True, timeout=10)
         lines = result.stdout.strip().split('\n')
         if len(lines) >= 2:

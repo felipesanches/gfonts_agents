@@ -21,9 +21,9 @@ No source block
 
 ## Investigation
 
-The METADATA.pb for IM Fell DW Pica (at `/mnt/shared/google/fonts/ofl/imfelldwpica/METADATA.pb`) contains no source block. The family was added in the initial commit to google/fonts (commit `90abd17b4`, dated 2015-03-07 by Dave Crossland), predating the modern source tracking infrastructure.
+The METADATA.pb for IM Fell DW Pica (at `/home/fsanches/compartilhado/google/fonts/ofl/imfelldwpica/METADATA.pb`) contains no source block. The family was added in the initial commit to google/fonts (commit `90abd17b4`, dated 2015-03-07 by Dave Crossland), predating the modern source tracking infrastructure.
 
-The upstream repository was identified as `https://github.com/librefonts/imfelldwpica` (confirmed by examining the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/imfelldwpica/`).
+The upstream repository was identified as `https://github.com/librefonts/imfelldwpica` (confirmed by examining the cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/imfelldwpica/`).
 
 The librefonts/imfelldwpica repository contains only TTX-decompiled font files as sources:
 - `IMFePIrm28P.ttf.ttx` (and split per-table `.ttx` files)

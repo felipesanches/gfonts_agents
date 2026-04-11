@@ -26,7 +26,7 @@ The upstream commit (dated 2015-11-30) has the message "source and font files up
 
 ## How Config YAML Was Resolved
 
-There is no `config.yaml` in the upstream repository. However, an override `config.yaml` exists at `/mnt/shared/google/fonts/ofl/athiti/config.yaml`. This override specifies:
+There is no `config.yaml` in the upstream repository. However, an override `config.yaml` exists at `/home/fsanches/compartilhado/google/fonts/ofl/athiti/config.yaml`. This override specifies:
 
 ```yaml
 buildVariable: false

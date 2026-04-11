@@ -83,7 +83,7 @@ The third sub-commit removed the `source` block from METADATA.pb (per issue #258
 
 ### Upstream Repository Verification
 
-The plex repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/`.
+The plex repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/`.
 
 Commit `20f93381c40c4779f2297bb31c60fbc2992620b6` exists in the cache. At this commit, source design files exist for IBM Plex Sans Thai Looped:
 

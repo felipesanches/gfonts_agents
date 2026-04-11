@@ -26,7 +26,7 @@ source {
 
 Average Sans is a sans-serif font by Eduardo Tunni, added to Google Fonts on 2012-10-26. The font was last updated via PR #835 (`76f813683`, "hotfix-averagesans: v1.002 added", 2017-08-07) by Marc Foley. The source block in METADATA.pb was added by commit `937245125` ("Average Sans: add source block to METADATA.pb").
 
-The upstream repository `librefonts/averagesans` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/averagesans`. The commit `79216d6e` is the head of the repo (dated 2014-07, "update .travis.yml").
+The upstream repository `librefonts/averagesans` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/averagesans`. The commit `79216d6e` is the head of the repo (dated 2014-07, "update .travis.yml").
 
 **Source file format**: The repository contains:
 - `src/AverageSans-Regular-OTF.vfb` (FontLab binary)

@@ -25,7 +25,7 @@ The METADATA.pb has no source block at all — no repository URL, no commit hash
 
 The font was added to google/fonts in commit `16680f868` (March 13, 2018, PR #1459, "korean families r01: added"). This was a bulk addition of multiple Korean font families with no upstream reference information included.
 
-The copyright string in METADATA.pb reads: "Copyright (c) 1992-2018 AsiaSoft Inc. Seoul Korea All Rights Reserved." This indicates the font was created by AsiaSoft Inc., a commercial Korean type foundry. No GitHub or publicly accessible source repository was found — a search of the upstream repos cache at `/mnt/shared/upstream_repos/fontc_crater_cache/` found no AsiaSoft-related repositories.
+The copyright string in METADATA.pb reads: "Copyright (c) 1992-2018 AsiaSoft Inc. Seoul Korea All Rights Reserved." This indicates the font was created by AsiaSoft Inc., a commercial Korean type foundry. No GitHub or publicly accessible source repository was found — a search of the upstream repos cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/` found no AsiaSoft-related repositories.
 
 The google/fonts family directory (`ofl/blackandwhitepicture/`) contains only the TTF binary, DESCRIPTION, METADATA.pb, and OFL.txt — no upstream.yaml, no source references of any kind.
 

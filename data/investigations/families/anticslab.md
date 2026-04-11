@@ -26,7 +26,7 @@ source {
 
 ### Repository
 
-The upstream repository `librefonts/anticslab` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/anticslab`. The repository URL is pre-existing in METADATA.pb.
+The upstream repository `librefonts/anticslab` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/anticslab`. The repository URL is pre-existing in METADATA.pb.
 
 ### Commit Hash
 

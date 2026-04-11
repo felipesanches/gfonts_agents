@@ -24,7 +24,7 @@ primary_script: "Deva"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` but no `commit` or `config_yaml`. The upstream repository `itfoundry/karma` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/karma`.
+The METADATA.pb contains `repository_url` but no `commit` or `config_yaml`. The upstream repository `itfoundry/karma` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/karma`.
 
 The repository uses a custom build system (not gftools-builder compatible). The `masters/` directory contains:
 - `Karma_0.ufo` and `Karma_0.vfb` (FontLab)

@@ -26,7 +26,7 @@ The upstream repository has only a single commit: `eccbd790f5c851314d6c4409a2058
 
 ## How Config YAML Was Resolved
 
-No `config.yaml` or `builder.yaml` exists in the upstream repository. No override `config.yaml` exists in `/mnt/shared/google/fonts/ofl/audiowide/`.
+No `config.yaml` or `builder.yaml` exists in the upstream repository. No override `config.yaml` exists in `/home/fsanches/compartilhado/google/fonts/ofl/audiowide/`.
 
 The source files in the repository are:
 - `src/Audiowide-Regular-OTF.vfb` (FontLab binary)

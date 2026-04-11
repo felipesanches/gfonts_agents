@@ -16,7 +16,7 @@
 
 ## How URL Was Found
 
-The repository URL `https://github.com/librefonts/caudex` is a well-known librefonts archive repository. The cached clone at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/caudex/` confirms the remote URL matches. The repo contains TTX decompositions and SFD sources from the original font.
+The repository URL `https://github.com/librefonts/caudex` is a well-known librefonts archive repository. The cached clone at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/caudex/` confirms the remote URL matches. The repo contains TTX decompositions and SFD sources from the original font.
 
 ## How Commit Was Determined
 
@@ -37,10 +37,10 @@ SFD is a FontForge-native format that is not compatible with gftools-builder. Bu
 
 ## Verification
 
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/caudex/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/caudex/`
 - **Commit exists**: Yes, it is the only commit in the repo
 - **Font file history in google/fonts**: The TTF files were part of the initial commit (`90abd17b4`) and were never updated (the only other touch was the large deploy restructure `76adaf1d2` which reorganized the repo but did not change font binaries)
-- **No override config.yaml** exists in `/mnt/shared/google/fonts/ofl/caudex/`
+- **No override config.yaml** exists in `/home/fsanches/compartilhado/google/fonts/ofl/caudex/`
 - **METADATA.pb** does not have a source block
 
 ## Confidence Level

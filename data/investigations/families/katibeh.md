@@ -25,7 +25,7 @@ The METADATA.pb for Katibeh has no `source` block. The font was added on May 23,
 
 The commit message and DESCRIPTION.en_us.html both reference the upstream repository: `https://github.com/Tarobish/Katibeh`. This was identified from the DESCRIPTION.en_us.html which states: "To contribute, see github.com/Tarobish/Katibeh".
 
-The upstream repository `Tarobish/Katibeh` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Tarobish/Katibeh`. The repository contains:
+The upstream repository `Tarobish/Katibeh` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Tarobish/Katibeh`. The repository contains:
 - `Sources/Katibeh Master.glyphs` (Glyphs format)
 - `Sources/Katibeh-LATIN-OPEN.glyphs`
 - `Sources/technical-additions.sfd` (FontForge SFD)

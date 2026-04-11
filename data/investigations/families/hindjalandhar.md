@@ -49,7 +49,7 @@ For source metadata purposes, we recommend referencing HEAD (`27af9e8`) as it re
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/itfoundry/hind-jalandhar
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/itfoundry/hind-jalandhar
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/itfoundry/hind-jalandhar
 - **Repo status**: Clean, synced with remote
 - **Branches**: master only
 - **Tags**: None

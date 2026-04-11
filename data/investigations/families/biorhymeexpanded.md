@@ -27,7 +27,7 @@ source {
 
 ### Repository URL
 
-The repository URL `https://github.com/aoifemooney/makingbiorhyme` is documented in METADATA.pb. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/aoifemooney/makingbiorhyme` as a shallow clone.
+The repository URL `https://github.com/aoifemooney/makingbiorhyme` is documented in METADATA.pb. The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/aoifemooney/makingbiorhyme` as a shallow clone.
 
 ### Commit Hash
 

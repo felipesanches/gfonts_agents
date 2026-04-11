@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "description": "Inventory of pre-compile actions in Google Fonts upstream repos",
-    "data_source": "fontc_crater_cache at /mnt/shared/upstream_repos/fontc_crater_cache/ (280 orgs, 404 Makefiles, 86 build scripts) + GitHub code search",
+    "data_source": "fontc_crater_cache at /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/ (280 orgs, 404 Makefiles, 86 build scripts) + GitHub code search",
     "generated": "2026-02-19",
     "scope": "Pre-compile actions only (before font compilation). Post-build fixups excluded.",
     "revision_note": "2026-02-19: Updated after reviewing gftools-builder docs. Many patterns already covered by existing features (includeSubsets, flattenComponents, exec, glyphs2ds).",

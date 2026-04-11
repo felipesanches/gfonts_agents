@@ -28,7 +28,7 @@ The METADATA.pb contains a source block with repository URL and commit hash. No 
 
 This source block was added by commit `c200187d3` ("Black Han Sans: add source block to METADATA.pb") with the note "Config: none (SFD-only sources)" and "Status: missing_config", indicating this was previously investigated and the lack of config was already known.
 
-Commit `8809d5944fbf6aa2cd99158cb7ab55629058348a` is confirmed in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/zesstype/Black-Han-Sans` (dated September 3, 2020, "Update README.md"). The repository contains only binary files: `BlackHanSans.ttf`, `OFL.txt`, `README.md`, and a Korean-named OTF file (`검은고딕.otf`). There are no source files (no `.glyphs`, `.ufo`, `.sfd`, `.designspace`), only compiled binaries.
+Commit `8809d5944fbf6aa2cd99158cb7ab55629058348a` is confirmed in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/zesstype/Black-Han-Sans` (dated September 3, 2020, "Update README.md"). The repository contains only binary files: `BlackHanSans.ttf`, `OFL.txt`, `README.md`, and a Korean-named OTF file (`검은고딕.otf`). There are no source files (no `.glyphs`, `.ufo`, `.sfd`, `.designspace`), only compiled binaries.
 
 The git history in google/fonts shows the font was originally added in commit `16680f868` (PR #1459, March 2018 Korean batch). More recent updates include `80a0a8ab2` (November 2024, "last hotfix in copyright") which updated the TTF binary (a copyright string fix), along with several other binary updates in 2024.
 

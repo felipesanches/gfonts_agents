@@ -18,7 +18,7 @@ The repository URL `https://github.com/tanukifont/Coral-Pixels` is documented in
 2. The copyright string: "Copyright 2024 The Coral Pixels Project Authors (https://github.com/tanukifont/Coral-Pixels)"
 3. The onboarding commit message (`c7ee9d632`): "Taken from the upstream repo https://github.com/tanukifont/Coral-Pixels"
 
-The URL matches the git remote of the cached upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/tanukifont/Coral-Pixels`.
+The URL matches the git remote of the cached upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/tanukifont/Coral-Pixels`.
 
 ## How Commit Determined
 

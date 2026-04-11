@@ -45,7 +45,7 @@ The commit message for `49b165c1f` explicitly states: "Taken from the upstream r
 
 The METADATA.pb was updated from the intermediate commit hash `ff555eb48673d04b64e451d84d77b8742bc37544` to `b11565152caccd6eaedce5fe2ca0e377d1a7c597` in commit `49b165c1f`.
 
-The upstream repository is the same as Jacquard 12, 12 Charted, and 24: `scfried/soft-type-jacquard`, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/scfried/soft-type-jacquard`. Commit `b11565152caccd6eaedce5fe2ca0e377d1a7c597` exists in the repo. The file `sources/config-jacquard24charted.yaml` exists in the upstream repo.
+The upstream repository is the same as Jacquard 12, 12 Charted, and 24: `scfried/soft-type-jacquard`, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/scfried/soft-type-jacquard`. Commit `b11565152caccd6eaedce5fe2ca0e377d1a7c597` exists in the repo. The file `sources/config-jacquard24charted.yaml` exists in the upstream repo.
 
 ## Conclusion
 

@@ -40,7 +40,7 @@ source {
 
 ### Repository
 
-The upstream repository `aliftype/aref-ruqaa` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/aliftype/aref-ruqaa`. The same repo serves both Aref Ruqaa and Aref Ruqaa Ink, with different commits referenced. The repository URL is pre-existing in METADATA.pb.
+The upstream repository `aliftype/aref-ruqaa` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/aliftype/aref-ruqaa`. The same repo serves both Aref Ruqaa and Aref Ruqaa Ink, with different commits referenced. The repository URL is pre-existing in METADATA.pb.
 
 Aref Ruqaa Ink is a color font (COLRv1 and SVG tables) derived from the Aref Ruqaa project.
 

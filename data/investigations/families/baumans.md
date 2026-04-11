@@ -36,7 +36,7 @@ This font predates the gftools-builder workflow. The source files are in VFB for
 
 ## Verification
 
-- **Repository exists**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/baumans/`
+- **Repository exists**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/baumans/`
 - **Commit exists**: Yes, `00e0253` is confirmed in the repo ("update .travis.yml")
 - **Repo structure**: Contains `.ttx` dumps, `.vfb` source files in `src/`, `OFL.txt`, `FONTLOG.txt`, `DESCRIPTION.en_us.html`
 - **METADATA.pb has source block**: Yes (added in bulk, no config_yaml field)

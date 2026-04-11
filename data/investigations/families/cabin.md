@@ -54,7 +54,7 @@ The sources are in gftools-compatible formats (designspace + glyphs), but the or
 
 ## Verification
 
-- **Repository URL**: Confirmed valid; repo is cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/impallari/Cabin/`
+- **Repository URL**: Confirmed valid; repo is cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/impallari/Cabin/`
 - **Commit hash**: Verified -- exists in the repo, is HEAD of master; explicitly cited in both the google/fonts commit message and PR #2571
 - **Source files**: Designspace and Glyphs sources present at the recorded commit (gftools-compatible formats)
 - **Font binary history**: VF fonts added in google/fonts via PR #2571 (vv-monsalve, 2020-07-24)

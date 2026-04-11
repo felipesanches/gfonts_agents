@@ -47,7 +47,7 @@ This is a valid gftools-builder config. No override config.yaml exists in the go
 
 ## Verification
 
-- **Upstream repo cached**: Yes, at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/corinthia/`
+- **Upstream repo cached**: Yes, at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/corinthia/`
 - **Commit exists**: Yes, it is the only commit and HEAD of the repo
 - **Config file exists at commit**: Yes, `sources/config.yml` is present
 - **Font files match**: METADATA.pb maps `fonts/ttf/Corinthia-Regular.ttf` and `fonts/ttf/Corinthia-Bold.ttf` from upstream, both present at the commit

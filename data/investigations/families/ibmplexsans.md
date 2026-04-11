@@ -45,7 +45,7 @@ The commit body says: "Taken from the upstream repo https://github.com/googlefon
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Commit `3e31289` exists and dates to 2025-01-10, message: "Discard static Sans entirely, pretend Var Sans is the only Sans moving forward"
 - At this commit, NO source files exist for IBM Plex Sans (the `IBM-Plex-Sans/sources/` directory was removed in January 2024)
 - Only pre-compiled variable TTFs exist at `Google-Fonts-Fixes/fonts/IBM-Plex-Sans/fonts/complete/ttf/`

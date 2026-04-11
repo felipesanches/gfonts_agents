@@ -16,7 +16,7 @@
 
 ## How URL Was Found
 
-The repository URL is set in the METADATA.pb source block, originally added during onboarding. The copyright string in METADATA.pb also references `https://github.com/xconsau/cause`. The cached clone at `/mnt/shared/upstream_repos/fontc_crater_cache/xconsau/Cause/` confirms the remote URL.
+The repository URL is set in the METADATA.pb source block, originally added during onboarding. The copyright string in METADATA.pb also references `https://github.com/xconsau/cause`. The cached clone at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/xconsau/Cause/` confirms the remote URL.
 
 ## How Commit Was Determined
 
@@ -46,7 +46,7 @@ The `config_yaml` field is set to `sources/config.yaml` in the METADATA.pb sourc
 
 ## Verification
 
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/xconsau/Cause/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/xconsau/Cause/`
 - **Commit exists**: Yes, verified after unshallowing the repo
 - **Commit matches onboarding**: The google/fonts onboarding commit (`0b585e1cc`) explicitly references this exact commit hash
 - **config.yaml exists at commit**: Yes, at `sources/config.yaml`

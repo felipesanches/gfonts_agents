@@ -36,7 +36,7 @@ source {
 
 The font is stored at `ofl/joan/` in google/fonts. The METADATA.pb contains a complete source block with repository URL, commit hash, and config_yaml path.
 
-The upstream repository at https://github.com/PaoloBiagini/Joan is cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/PaoloBiagini/Joan`.
+The upstream repository at https://github.com/PaoloBiagini/Joan is cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/PaoloBiagini/Joan`.
 
 Verification of commit `981cb73299f7d9164eedcb647e57fb34c9dc1139`:
 ```

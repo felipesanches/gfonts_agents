@@ -27,7 +27,7 @@ The copyright notice reads: "Copyright (c) 2012 by Ania Kruk (hello@aniakruk.com
 
 The DESCRIPTION.en_us.html describes Kotta One as "a new and unusual text typeface that mixes the characteristics of an italic with legibility of a roman."
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/kottaone` contains only TTX/binary source files:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/kottaone` contains only TTX/binary source files:
 - `KottaOne-Regular.ttf.*` (TTX dumps)
 - No Glyphs, UFO, or Designspace sources
 

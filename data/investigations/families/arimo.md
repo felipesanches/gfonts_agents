@@ -81,7 +81,7 @@ This was a gftools-packager operation. The binary files in google/fonts were cop
 ### Upstream Repository: TypeNetwork/Arimo
 
 - **URL**: https://github.com/TypeNetwork/Arimo (now redirects to davelab6/Arimo)
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/TypeNetwork/Arimo
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/TypeNetwork/Arimo
 - **Branch**: master (9 branches total)
 - **Total commits**: 76
 

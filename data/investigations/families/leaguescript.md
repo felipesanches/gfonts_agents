@@ -29,7 +29,7 @@ The google/fonts git history for `ofl/leaguescript/LeagueScript-Regular.ttf` sho
 - `17eecaf5f` — "ofl/leaguescript: v1.001 added. Fixed name table OS X validation failure."
 - `90abd17b4` — "Initial commit" (earliest onboarding)
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/theleagueof/league-script-number-one/` contains:
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/theleagueof/league-script-number-one/` contains:
 - `LeagueScriptNumberOne.otf` — prebuilt OTF
 - `source/LeagueScriptNumberOne.ufo` — UFO source
 - `source/LeagueScriptNumberOne.vfb` — FontLab VFB source

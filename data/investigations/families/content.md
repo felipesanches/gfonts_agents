@@ -14,7 +14,7 @@
 
 ## How URL Found
 
-The tracking data had this family listed as `no_upstream_repo`, but a librefonts archive repository exists at `https://github.com/librefonts/content`. This repo was found in the local cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/content/`. The URL was verified to return HTTP 200.
+The tracking data had this family listed as `no_upstream_repo`, but a librefonts archive repository exists at `https://github.com/librefonts/content`. This repo was found in the local cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/content/`. The URL was verified to return HTTP 200.
 
 The METADATA.pb on main has no source block. The font was added to Google Fonts on 2011-03-02 as part of the initial commit.
 

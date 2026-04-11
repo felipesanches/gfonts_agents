@@ -16,7 +16,7 @@
 
 ## How the Repository URL Was Found
 
-The repository URL `https://github.com/Omnibus-Type/Ballet` is documented in the METADATA.pb `source` block (line 29) and confirmed by the copyright string in the font metadata: "Copyright 2020 The Ballet Project Authors (https://github.com/Omnibus-Type/Ballet)". The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/Omnibus-Type/Ballet/`.
+The repository URL `https://github.com/Omnibus-Type/Ballet` is documented in the METADATA.pb `source` block (line 29) and confirmed by the copyright string in the font metadata: "Copyright 2020 The Ballet Project Authors (https://github.com/Omnibus-Type/Ballet)". The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Omnibus-Type/Ballet/`.
 
 ## How the Commit Hash Was Identified
 
@@ -38,7 +38,7 @@ A `config.yaml` would need to be created either in the upstream repo or as an ov
 
 ## Verification
 
-- **Commit exists in upstream repo**: Yes, verified in `/mnt/shared/upstream_repos/fontc_crater_cache/Omnibus-Type/Ballet/`
+- **Commit exists in upstream repo**: Yes, verified in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Omnibus-Type/Ballet/`
 - **Commit date**: 2020-09-24 13:24:35 -0300
 - **Commit message**: "Adding files to origin master"
 - **Source files at commit**:

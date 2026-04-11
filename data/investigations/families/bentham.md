@@ -29,7 +29,7 @@ The hotfix PR #854 by Marc Foley had an empty body, providing no context about t
 ## Config YAML Status
 
 - **No `config.yaml`** exists in the upstream librefonts repo (not at any commit)
-- **No override `config.yaml`** in `/mnt/shared/google/fonts/ofl/bentham/`
+- **No override `config.yaml`** in `/home/fsanches/compartilhado/google/fonts/ofl/bentham/`
 - The repo contains only **SFD sources** (`src/Bentham-TTF.sfd`) and TTX-decomposed font files
 - SFD (FontForge format) is not compatible with gftools-builder
 - No UFO, Glyphs, or DesignSpace sources are available
@@ -39,7 +39,7 @@ The hotfix PR #854 by Marc Foley had an empty body, providing no context about t
 - Commit hash `a89643a` exists in the repo (message: "update .travis.yml", dated 2014-10-17)
 - It is the HEAD commit of the master branch (11 total commits in the repo)
 - Repository URL is valid and accessible
-- The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bentham`
+- The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/bentham`
 - PR #854 body was empty
 
 ## Confidence Level

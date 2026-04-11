@@ -40,7 +40,7 @@ source {
 
 The METADATA.pb for Kablammo has a complete source block with `repository_url`, `commit`, `files`, `branch`, and `config_yaml`. The upstream repository is `https://github.com/Vectro-Type-Foundry/kablammo`, a variable font with a `MORF` axis.
 
-The commit hash `cccc120d23cbf65f7f263122407d980a24f65f27` was verified to exist in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/Vectro-Type-Foundry/kablammo/`. The `sources/config.yml` file (note: `.yml` extension, not `.yaml`) exists at this commit and contains a valid gftools-builder configuration:
+The commit hash `cccc120d23cbf65f7f263122407d980a24f65f27` was verified to exist in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Vectro-Type-Foundry/kablammo/`. The `sources/config.yml` file (note: `.yml` extension, not `.yaml`) exists at this commit and contains a valid gftools-builder configuration:
 
 ```yaml
 sources:

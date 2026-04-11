@@ -24,7 +24,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has both a `repository_url` and a `commit` hash. The commit `bf2dceb7e47e591aa7e76d7e268636ea67d66986` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/appajid/lakkireddy/`:
+The METADATA.pb has both a `repository_url` and a `commit` hash. The commit `bf2dceb7e47e591aa7e76d7e268636ea67d66986` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/appajid/lakkireddy/`:
 
 ```
 commit bf2dceb7e47e591aa7e76d7e268636ea67d66986
@@ -36,7 +36,7 @@ Date:   Tue Dec 9 11:20:13 2014 +0530
 
 The google/fonts history shows the font was added in the initial commit (`90abd17b4`), and no later updates are recorded.
 
-The upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/appajid/lakkireddy/` contains:
+The upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/appajid/lakkireddy/` contains:
 - `LakkiReddy.sfd` — FontForge SFD source (not gftools-builder compatible)
 - `LakkiReddy.ufo` — UFO source
 

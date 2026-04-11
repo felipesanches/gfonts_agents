@@ -59,7 +59,7 @@ This documents the upstream repo and commit hash, which is the same as Bona Nova
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/kosmynkab/Bona-Nova/`. The `sources/config.yaml` exists at commit `a5cbdfb8` and contains:
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/kosmynkab/Bona-Nova/`. The `sources/config.yaml` exists at commit `a5cbdfb8` and contains:
 
 ```yaml
 sources:

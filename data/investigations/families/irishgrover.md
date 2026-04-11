@@ -34,7 +34,7 @@ The DESCRIPTION.en_us.html says:
 
 The designer is listed as "Sideshow" (Font Diner, Inc DBA Sideshow). Font Diner is a commercial type foundry; this font was donated to Google Fonts under Apache license. No GitHub repository has been identified for the upstream source. The font dates to 2010 and was contributed directly to Google Fonts without a tracked upstream repository.
 
-No cached upstream repository was found in `/mnt/shared/upstream_repos/fontc_crater_cache/` for this family.
+No cached upstream repository was found in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/` for this family.
 
 Given the Apache license and the vintage of the font (2010), it is likely that there is no open-source upstream repository. The font was contributed directly to Google Fonts by Font Diner/Sideshow.
 

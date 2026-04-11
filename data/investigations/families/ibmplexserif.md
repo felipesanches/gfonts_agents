@@ -115,7 +115,7 @@ IBM Plex Serif was originally added to Google Fonts in 2018 (`e39edaea9`), updat
 
 ### Upstream Repository Verification
 
-The plex repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/`.
+The plex repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/`.
 
 Commit `43279c151110b30d65a582261a5ddefd5c75c7be` exists in the cache. At this commit, source design files exist for IBM Plex Serif:
 

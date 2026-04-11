@@ -45,7 +45,7 @@ Same pattern as Condensed and Devanagari: the third sub-commit explicitly remove
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Commit `0f91126` exists and dates to 2021-06-18, message: "Hebrew"
 - At this commit, source files exist:
   - `IBM-Plex-Sans-Hebrew/sources/masters/IBM Plex Sans Hebrew.designspace`

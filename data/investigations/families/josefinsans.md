@@ -31,7 +31,7 @@ Git history:
 
 The METADATA.pb contains only `repository_url` with no `commit` field.
 
-The upstream repository at https://github.com/googlefonts/josefinsans is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/josefinsans`. The repository has two branches:
+The upstream repository at https://github.com/googlefonts/josefinsans is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/josefinsans`. The repository has two branches:
 - `master`: HEAD is `132fdfd997a62411375d15e20ef81285923750c6` ("remove underscore anchors", 2019-11-28)
 - `main`: HEAD is `bf6907e3a34924300dd407201262f62c2fc2a642` ("Merge pull request #22 from aaronbell/main", 2021-07-29)
 

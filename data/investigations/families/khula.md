@@ -25,7 +25,7 @@ primary_script: "Deva"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `erinmclaughlin/Khula` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/erinmclaughlin/Khula`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `erinmclaughlin/Khula` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/erinmclaughlin/Khula`.
 
 The repository contains UFO sources in the `UFO/` directory:
 - `UFO/Bold/`, `UFO/ExtraBold/`, `UFO/Light/`, `UFO/Regular/`, `UFO/SemiBold/`

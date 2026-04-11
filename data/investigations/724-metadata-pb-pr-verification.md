@@ -11,7 +11,7 @@ Prepared and verified METADATA.pb source block updates for 724 font families in 
 ## Verification Methodology
 
 ### Commit hash verification
-1. **Local cache verification** (1797 families): Used `git cat-file -t <commit>` against cached repos in `/mnt/shared/upstream_repos/fontc_crater_cache/`
+1. **Local cache verification** (1797 families): Used `git cat-file -t <commit>` against cached repos in `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/`
 2. **GitHub API verification** (26 families): For repos not in cache, used `gh api repos/{owner}/{repo}/commits/{commit}` to verify commit existence
 3. **Spot-check sampling**: Randomly sampled 20 families from the PR changes for detailed verification
 

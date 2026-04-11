@@ -81,7 +81,7 @@ The font ships as three static TTF files in Google Fonts (Thin, Regular, Bold), 
 
 ### 6. Repository Cache
 
-The upstream repo has been cloned to `/mnt/shared/upstream_repos/fontc_crater_cache/smc/Gayathri/`.
+The upstream repo has been cloned to `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/smc/Gayathri/`.
 
 ## Conclusion
 

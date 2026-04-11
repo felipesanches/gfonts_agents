@@ -50,7 +50,7 @@ This is a valid gftools-builder configuration for building a static TTF font.
 - **Config.yaml exists at commit**: Yes, `sources/config.yaml` is present and valid.
 - **Source files match METADATA.pb**: The METADATA.pb references `fonts/ttf/Boldonse-Regular.ttf` as the source file, along with article files (ARTICLE.en_us.html and several images).
 - **Branch correct**: main, confirmed.
-- **Upstream repo cached**: Yes, at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/boldonse`.
+- **Upstream repo cached**: Yes, at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/boldonse`.
 
 ## Confidence Level
 

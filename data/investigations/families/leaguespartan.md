@@ -34,7 +34,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `27341b9bf93a2c7faa140538a64ce342486c5fb5` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/theleagueof/league-spartan/`:
+The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `27341b9bf93a2c7faa140538a64ce342486c5fb5` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/theleagueof/league-spartan/`:
 
 ```
 commit 27341b9bf93a2c7faa140538a64ce342486c5fb5

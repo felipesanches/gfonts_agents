@@ -40,7 +40,7 @@ classifications: "HANDWRITING"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/kolker-brush` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/kolker-brush`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/kolker-brush` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/kolker-brush`.
 
 The `sources/config.yml` file exists in the cached repository. The latest commit is `03ba4eb` ("config file added"), which matches exactly the commit hash in METADATA.pb.
 

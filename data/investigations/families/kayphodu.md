@@ -47,7 +47,7 @@ stroke: "SLAB_SERIF"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `archive_url` but no `commit`. The upstream repository `silnrsi/font-kayphodu` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/silnrsi/font-kayphodu`.
+The METADATA.pb contains `repository_url` and `archive_url` but no `commit`. The upstream repository `silnrsi/font-kayphodu` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/silnrsi/font-kayphodu`.
 
 This is a SIL International font that uses the SIL smith build system. The `source/` directory contains:
 - `KayPhoDu.designspace` (Designspace format)

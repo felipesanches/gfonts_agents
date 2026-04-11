@@ -38,7 +38,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/karla` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/karla`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `googlefonts/karla` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/karla`.
 
 The `sources/config.yaml` file exists in the cached repository. The latest commit in the upstream cache is `69b25f6` ("Merge pull request #11 from emmamarichal/main"), which matches exactly the commit hash in METADATA.pb.
 

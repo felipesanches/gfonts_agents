@@ -62,7 +62,7 @@ The `config_yaml` field was added later in commit `19cdcec59` (2025-03-31, Batch
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/naipefoundry/gabarito
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/naipefoundry/gabarito`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/naipefoundry/gabarito`
 - **Default branch**: main
 - **Total commits**: 1 (single merge commit)
 - **HEAD**: `1f3fb39d6449eefa880543f109f33ede0cd4064f` (2023-09-11)

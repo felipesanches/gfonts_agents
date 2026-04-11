@@ -25,7 +25,7 @@
       "repository_url": "https://github.com/domija/Aboreto",
       "commit": "6e64ee7e7ff1c53220d96b88a8d4bf2db9f76735",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/aboreto/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/aboreto/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -143,7 +143,7 @@
       "repository_url": "https://github.com/vaishnavimurthy/Akaya-Kanadaka",
       "commit": "24f25461789ee8642e184b43dd6d5d04ea7f49d1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/akayakanadaka/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/akayakanadaka/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -153,7 +153,7 @@
       "repository_url": "https://github.com/vaishnavimurthy/Akaya-Telivigala",
       "commit": "93b31e45b69178ecfdb48981a5aa8a8b33bb0340",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/akayatelivigala/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/akayatelivigala/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -197,7 +197,7 @@
       "repository_url": "https://github.com/huertatipografica/Alegreya",
       "commit": "1dd6b28b57c50e3168db1cbbb8086e7978abcfbf",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/alegreya/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/alegreya/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -207,7 +207,7 @@
       "repository_url": "https://github.com/huertatipografica/Alegreya-Sans",
       "commit": "030b9ac01fd9bcaccac0ebc8010283175f9ced4e",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/alegreyasans/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/alegreyasans/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -439,7 +439,7 @@
       "repository_url": "https://github.com/silnrsi/font-andika",
       "commit": "ca568520c61193de89a795ca676b6978fb435759",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/andika/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/andika/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -449,7 +449,7 @@
       "repository_url": "https://github.com/silnrsi/font-annapurna",
       "commit": "5bd915dff1934cf36041d7766784347713c812a3",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/annapurnasil/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/annapurnasil/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -531,7 +531,7 @@
       "repository_url": "https://github.com/etunni/arapey",
       "commit": "9c06862616bd689aec606d630cf5ad11ec5ea6f2",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/arapey/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/arapey/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -601,7 +601,7 @@
       "repository_url": "https://github.com/alexeiva/Arsenal",
       "commit": "e34db566b2f5de986eea9b36986d602015d80615",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/arsenalsc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/arsenalsc/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -611,7 +611,7 @@
       "repository_url": "https://github.com/etunni/Arya",
       "commit": "103dc785f25067abe0e63de7b8e839e1863877a9",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/arya/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/arya/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -659,7 +659,7 @@
       "repository_url": "https://github.com/cadsondemak/athiti",
       "commit": "541c0b5034964f8db50ef52921fede1422194abe",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/athiti/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/athiti/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -705,7 +705,7 @@
       "repository_url": "https://github.com/etunni/average",
       "commit": "6583341221fb0625ba1b9c3ee2a7490d57df951f",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/average/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/average/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -727,7 +727,7 @@
       "repository_url": "https://github.com/polarsys/b612",
       "commit": "48ac6ba67ecab8123e8e36d6aa05367db0c7b638",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/b612/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/b612/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -737,7 +737,7 @@
       "repository_url": "https://github.com/polarsys/b612",
       "commit": "48ac6ba67ecab8123e8e36d6aa05367db0c7b638",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/b612mono/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/b612mono/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -887,7 +887,7 @@
       "repository_url": "https://github.com/googlefonts/beiruti",
       "commit": "bd45772aeff26f3ed83faa1efbb52a30b39608f2",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/beiruti/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/beiruti/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -909,7 +909,7 @@
       "repository_url": "https://github.com/shinntype/bellefair",
       "commit": "879a39cbf0b78b01a14f7f750927a075da4055f8",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/bellefair/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bellefair/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -919,7 +919,7 @@
       "repository_url": "https://github.com/etunni/belleza",
       "commit": "af3974fe84e2cfd236455a14d2c708264b692167",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/belleza/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/belleza/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -995,7 +995,7 @@
         "Big-Shoulders/sources/BigS-vf-Text.yml",
         "Big-Shoulders/sources/config.yml"
       ],
-      "override_config": "/mnt/shared/gfonts/ofl/bigshouldersdisplaysc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bigshouldersdisplaysc/config.yaml",
       "status": "found",
       "error": null
     },
@@ -1035,7 +1035,7 @@
         "Big-Shoulders/sources/BigS-vf-Text.yml",
         "Big-Shoulders/sources/config.yml"
       ],
-      "override_config": "/mnt/shared/gfonts/ofl/bigshouldersinlinedisplaysc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bigshouldersinlinedisplaysc/config.yaml",
       "status": "found",
       "error": null
     },
@@ -1055,7 +1055,7 @@
         "Big-Shoulders/sources/BigS-vf-Text.yml",
         "Big-Shoulders/sources/config.yml"
       ],
-      "override_config": "/mnt/shared/gfonts/ofl/bigshouldersinlinetextsc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bigshouldersinlinetextsc/config.yaml",
       "status": "found",
       "error": null
     },
@@ -1095,7 +1095,7 @@
         "Big-Shoulders/sources/BigS-vf-Text.yml",
         "Big-Shoulders/sources/config.yml"
       ],
-      "override_config": "/mnt/shared/gfonts/ofl/bigshouldersstencildisplaysc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bigshouldersstencildisplaysc/config.yaml",
       "status": "found",
       "error": null
     },
@@ -1115,7 +1115,7 @@
         "Big-Shoulders/sources/BigS-vf-Text.yml",
         "Big-Shoulders/sources/config.yml"
       ],
-      "override_config": "/mnt/shared/gfonts/ofl/bigshouldersstenciltextsc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bigshouldersstenciltextsc/config.yaml",
       "status": "found",
       "error": null
     },
@@ -1135,7 +1135,7 @@
         "Big-Shoulders/sources/BigS-vf-Text.yml",
         "Big-Shoulders/sources/config.yml"
       ],
-      "override_config": "/mnt/shared/gfonts/ofl/bigshoulderstextsc/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bigshoulderstextsc/config.yaml",
       "status": "found",
       "error": null
     },
@@ -1375,7 +1375,7 @@
       "repository_url": "https://github.com/supertype-de/Blinker",
       "commit": "35cee57f389012c6a213acab504efb82f81c3b8f",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/blinker/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/blinker/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1445,7 +1445,7 @@
       "repository_url": "https://github.com/cyrealtype/Bonbon",
       "commit": "ffac6513dd512d2a76e620c933e6d9a6f0953348",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/bonbon/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/bonbon/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1467,7 +1467,7 @@
       "repository_url": "https://github.com/artandtype/Braah",
       "commit": "2b7ba2ea006af5a55313158531b6f0b71eca5ff8",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/braahone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/braahone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1654,7 +1654,7 @@
       "repository_url": "https://github.com/davelab6/cantarell",
       "commit": "52d3363878871c868eaeb64c75a701c1193750af",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cantarell/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cantarell/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1710,7 +1710,7 @@
       "repository_url": "https://github.com/librefonts/carme",
       "commit": "823391960931cedd0b9cb7caf0fcae71c4bd59ba",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/carme/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/carme/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1720,7 +1720,7 @@
       "repository_url": "https://github.com/microsoft/cascadia-code",
       "commit": "56bcca3f2c1e4cb19458954f0e2bb4635960df91",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cascadiacode/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cascadiacode/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1730,7 +1730,7 @@
       "repository_url": "https://github.com/microsoft/cascadia-code",
       "commit": "56bcca3f2c1e4cb19458954f0e2bb4635960df91",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cascadiamono/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cascadiamono/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1782,7 +1782,7 @@
       "repository_url": "https://github.com/silnrsi/font-charis",
       "commit": "258e532625d5e6c5fca8448782e710db78a6ca8a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/charissil/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/charissil/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1792,7 +1792,7 @@
       "repository_url": "https://github.com/cadsondemak/Charm",
       "commit": "873c5516023ae978e5a9de9e67b654d9ed92fc30",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/charm/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/charm/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1814,7 +1814,7 @@
       "repository_url": "https://github.com/satsuyako/CherryBomb",
       "commit": "9171b63b087c39b1d769287287f38582a57911eb",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cherrybombone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cherrybombone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1824,7 +1824,7 @@
       "repository_url": "https://github.com/smc/Chilanka",
       "commit": "4688e5c6fcfb5ccf8fc9f28dedaa15b2eacbe8e9",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/chilanka/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/chilanka/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1857,7 +1857,7 @@
       "repository_url": "https://github.com/go108go/Chokokutai",
       "commit": "55016eef4cfaf7d9001eeaa64ad5a0a0f20a67c7",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/chokokutai/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/chokokutai/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1867,7 +1867,7 @@
       "repository_url": "https://github.com/cadsondemak/chonburi",
       "commit": "1c6599a6ae44a2d30ff3ee44d015ffab2c0cb014",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/chonburi/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/chonburi/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1877,7 +1877,7 @@
       "repository_url": "https://github.com/NDISCOVER/Cinzel",
       "commit": "8271e162a7c6064ff1e539ba86011b16b6a6184f",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cinzel/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cinzel/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1887,7 +1887,7 @@
       "repository_url": "https://github.com/NDISCOVER/Cinzel",
       "commit": "1c62abfb8d5e27ea0a09169d621b32d24fdb8691",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cinzeldecorative/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cinzeldecorative/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1909,7 +1909,7 @@
       "repository_url": "https://github.com/librefonts/codystar",
       "commit": "e32d050fbb01232b6a85423b121da89f21bba8b3",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/codystar/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/codystar/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1919,7 +1919,7 @@
       "repository_url": "https://github.com/marcelommp/Coiny",
       "commit": "0341b95f0c79f0e0b33ab7b5404cf9265be88516",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/coiny/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/coiny/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -1953,7 +1953,7 @@
       "repository_url": "https://github.com/crozynski/comicneue",
       "commit": "c5ee07b5eebc4cc6347badfad56cb0c705a2e41e",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/comicneue/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/comicneue/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2059,7 +2059,7 @@
       "repository_url": "https://github.com/alexeiva/cuprum",
       "commit": "98adc59dc00ca00dbde9eb42a23ace5f924b4f90",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/cuprum/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/cuprum/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2141,7 +2141,7 @@
       "repository_url": "https://github.com/ManiackersDesign/darumadrop",
       "commit": "ddbe82834bdab1ecc24adad09cc122d6e8678a81",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/darumadropone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/darumadropone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2199,7 +2199,7 @@
       "repository_url": "https://github.com/yangheeryu/Dongle",
       "commit": "f7127c4d2450e1cad20254ec692591347e2fc260",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/dongle/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/dongle/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2349,7 +2349,7 @@
       "repository_url": "https://github.com/librefonts/englebert",
       "commit": "0b03ab09eab75a39c93f8fb0432459a7dca74176",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/englebert/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/englebert/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2431,7 +2431,7 @@
       "repository_url": "https://github.com/cadsondemak/Fah-Kwang",
       "commit": "7b16186dadf959e79ded967a7620bfb05600fcaf",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/fahkwang/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/fahkwang/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2453,7 +2453,7 @@
       "repository_url": "https://github.com/theleagueof/fanwood",
       "commit": "cbaaed9704e7d37d3dcdbdf0b472e9efd0e39432",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/fanwoodtext/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/fanwoodtext/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2463,7 +2463,7 @@
       "repository_url": "https://github.com/grayscaleltd/farro",
       "commit": "fa80aadd0c61b6e76d95870579d0650f9d91df76",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/farro/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/farro/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2473,7 +2473,7 @@
       "repository_url": "https://github.com/etunni/faster",
       "commit": "c1eb445af08bcc5ce66380f65e56d9d3135cca3c",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/fasterone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/fasterone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2483,7 +2483,7 @@
       "repository_url": "https://github.com/etunni/fauna-one",
       "commit": "ed89976413a322f9d84aae5d97c17cfe5cf0d95d",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/faunaone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/faunaone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2505,7 +2505,7 @@
       "repository_url": "https://github.com/cyrealtype/Federo",
       "commit": "79d2ed54e783fb0b116aabdb6c9b0318393cd3c8",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/federo/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/federo/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2551,7 +2551,7 @@
       "repository_url": "https://github.com/SorkinType/FjallaOne",
       "commit": "e5fcc44bb44b8a84debd0cc070bad1360cc91761",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/fjallaone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/fjallaone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2863,7 +2863,7 @@
       "repository_url": "https://github.com/etunni/gilda-display",
       "commit": "640bdfd3d2ee3b533d1f88687a9e4541136254e0",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gildadisplay/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gildadisplay/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2873,7 +2873,7 @@
       "repository_url": "https://github.com/liamspradlin/Girassol-Display",
       "commit": "cc8fa1b5a1afc28520fdc0ccc36256db243d9dfa",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/girassol/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/girassol/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2883,7 +2883,7 @@
       "repository_url": "https://github.com/etunni/glegoo",
       "commit": "a6b0a10abfaf1b88feb4a9f9eb731beefbb4bbb8",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/glegoo/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/glegoo/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2929,7 +2929,7 @@
       "repository_url": "https://github.com/magictype/goldman",
       "commit": "3fdf428a931f7a39b3f2f1681c16bfa664ca89dd",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/goldman/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/goldman/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2961,7 +2961,7 @@
       "repository_url": "https://github.com/yangheeryu/Gowun-Batang",
       "commit": "4e73f5a9a004927220354f4b68a4c720da538147",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gowunbatang/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gowunbatang/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -2971,7 +2971,7 @@
       "repository_url": "https://github.com/yangheeryu/Gowun-Dodum",
       "commit": "6d9ef10fc745cf3b0a4aba02dad1c740f94d029b",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gowundodum/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gowundodum/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3053,7 +3053,7 @@
       "repository_url": "https://github.com/googlefonts/GruppoFont",
       "commit": "20e1bc8c76ee1d692c5645b8aaf971cc58ca2e51",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gruppo/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gruppo/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3083,7 +3083,7 @@
       "repository_url": "https://github.com/simoncozens/Gulzar",
       "commit": "42b27958a84d56d8341ad1e2dc26b19dba03b15f",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gulzar/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gulzar/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3113,7 +3113,7 @@
       "repository_url": "https://github.com/octaviopardo/GUPTER",
       "commit": "959e1580e02c8213898597aa076c33eafd0d6db6",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gupter/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gupter/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3123,7 +3123,7 @@
       "repository_url": "https://github.com/appajid/gurajada",
       "commit": "47d49279bffcb4cebab2dca10f8d7b20ff5230a2",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/gurajada/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/gurajada/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3157,7 +3157,7 @@
       "repository_url": "https://github.com/rosettatype/handjet",
       "commit": "3918b7798e06c81da6bc558e88dfddd5a6b49807",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/handjet/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/handjet/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3261,7 +3261,7 @@
       "repository_url": "https://github.com/googlefonts/ibarrareal",
       "commit": "7ae92a27f13f8e187db49312e7111041d1fa2a17",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/ibarrarealnova/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/ibarrarealnova/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3311,7 +3311,7 @@
       "repository_url": "https://github.com/librefonts/iceberg",
       "commit": "db1c024077a00f9999b5f6437a70c19ced5c1fc5",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/iceberg/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/iceberg/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3321,7 +3321,7 @@
       "repository_url": "https://github.com/cyrealtype/Iceland",
       "commit": "bb43144b50825221060747ddba7b23bc05e7c960",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/iceland/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/iceland/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3331,7 +3331,7 @@
       "repository_url": "https://github.com/Etcetera-Type-Co/Imbue",
       "commit": "41b16f3fd61d33cacad0e579c35ef9566817184b",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/imbue/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/imbue/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3353,7 +3353,7 @@
       "repository_url": "https://github.com/etunni/imprima",
       "commit": "efec6ee25d2ba461487c391b62ae26817614741a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/imprima/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/imprima/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3387,7 +3387,7 @@
       "repository_url": "https://github.com/googlefonts/inspiration",
       "commit": "629ca27262fbcc6cfe745bd95d2e7b72a8e3b047",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/inspiration/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/inspiration/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3478,7 +3478,7 @@
       "repository_url": "https://github.com/cadsondemak/itim",
       "commit": "eb5e37a5412ea61cbc048f57dad5a97285d470e1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/itim/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/itim/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3562,7 +3562,7 @@
       "repository_url": "https://github.com/indestructible-type/Jost",
       "commit": "35f141c970538f1ed0f235789c19156b3ce2a762",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/jost/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/jost/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3572,7 +3572,7 @@
       "repository_url": "https://github.com/etunni/joti",
       "commit": "7feedf8bad69029e82ae281c7a100fb639d946e1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/jotione/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/jotione/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3582,7 +3582,7 @@
       "repository_url": "https://github.com/etunni/julee",
       "commit": "9a2efe6783e9ea590cee62c8aec51670a3dec51d",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/julee/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/julee/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3592,7 +3592,7 @@
       "repository_url": "https://github.com/cadsondemak/K2D",
       "commit": "5df785dc3b0d17e7b57eedb2f4139436dbeb6440",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/k2d/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/k2d/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3614,7 +3614,7 @@
       "repository_url": "https://github.com/solmatas/Kadwa",
       "commit": "ec58500fc2026ed3125a609b8c617b4b0c4bce20",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kadwa/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kadwa/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3624,7 +3624,7 @@
       "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
       "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kaiseidecol/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kaiseidecol/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3634,7 +3634,7 @@
       "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
       "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kaiseiharunoumi/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kaiseiharunoumi/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3644,7 +3644,7 @@
       "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
       "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kaiseiopti/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kaiseiopti/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3654,7 +3654,7 @@
       "repository_url": "https://github.com/FontKai-Kaisei/Kaisei",
       "commit": "b396c906d67ddbfde60c2c78588f8de00b46c891",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kaiseitokumin/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kaiseitokumin/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3664,7 +3664,7 @@
       "repository_url": "https://github.com/itfoundry/kalam",
       "commit": "03a4d8a33849b1ad9afdee95006bc66d2d4aed94",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kalam/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kalam/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3720,7 +3720,7 @@
       "repository_url": "https://github.com/cadsondemak/kanit",
       "commit": "467dfe842185681d8042cd608b8291199dd37cda",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kanit/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kanit/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3742,7 +3742,7 @@
       "repository_url": "https://github.com/nagamaki008/kapakana",
       "commit": "0074870cd85239e8c5cf8949da54e0b111333a87",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kapakana/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kapakana/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3776,7 +3776,7 @@
       "repository_url": "https://github.com/EbenSorkin/Kavoon",
       "commit": "0b985571f93c97f70ce9065bfc1a883a21b9deac",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kavoon/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kavoon/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3808,7 +3808,7 @@
       "repository_url": "https://github.com/erinmclaughlin/Khula",
       "commit": "1389c0184856d690ea489f86e84c546e4473722d",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/khula/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/khula/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3830,7 +3830,7 @@
       "repository_url": "https://github.com/etunni/Kite-One",
       "commit": "be1d4f26c91c29993c47fa4b4857337b0d94e2f2",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kiteone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kiteone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3840,7 +3840,7 @@
       "repository_url": "https://github.com/Kiwi-KawagotoKajiru/Kiwi-Maru",
       "commit": "65a112c7ec9ffe81595406982a670c7f945d7c5b",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kiwimaru/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kiwimaru/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3850,7 +3850,7 @@
       "repository_url": "https://github.com/fontworks-fonts/Klee",
       "commit": "8b0532731b63ad8a445ca341d8d7d941079b83ab",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kleeone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kleeone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3860,7 +3860,7 @@
       "repository_url": "https://github.com/theleagueof/knewave",
       "commit": "f335d5ff1f12e4acf97d4208e1c37b4d386e57fb",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/knewave/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/knewave/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3870,7 +3870,7 @@
       "repository_url": "https://github.com/cadsondemak/Kodchasan",
       "commit": "d68c1268f993ce0ee23a36ba6f2d1366e0d84453",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kodchasan/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kodchasan/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3892,7 +3892,7 @@
       "repository_url": "https://github.com/cadsondemak/Koho",
       "commit": "066267ad87e1bd2de617bf4129902317ccb6c04c",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/koho/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/koho/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3926,7 +3926,7 @@
       "repository_url": "https://github.com/cadsondemak/Krub",
       "commit": "c568bc61bd5b8af816057893e527aa55d6f08908",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/krub/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/krub/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3936,7 +3936,7 @@
       "repository_url": "https://github.com/noponies/Kulim-Park",
       "commit": "e080ee92d3f56075f641d0c988a480c0590a4426",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kulimpark/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kulimpark/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3958,7 +3958,7 @@
       "repository_url": "https://github.com/etunni/kurale",
       "commit": "ff36a9f75711afc415a9a9f96968861d22d878cf",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/kurale/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/kurale/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3980,7 +3980,7 @@
       "repository_url": "https://github.com/Lacquer-Font/Lacquer",
       "commit": "efffa0e54fbf2a6cd5e1b3909a9a8082cab61b5a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/lacquer/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/lacquer/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -3990,7 +3990,7 @@
       "repository_url": "https://github.com/appajid/lakkireddy",
       "commit": "bf2dceb7e47e591aa7e76d7e268636ea67d66986",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/lakkireddy/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/lakkireddy/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4000,7 +4000,7 @@
       "repository_url": "https://github.com/antonxheight/Lancelot",
       "commit": "3039d277fadddec95a3dc5aa58182b0aa20659b8",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/lancelot/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/lancelot/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4010,7 +4010,7 @@
       "repository_url": "https://github.com/typeland/Langar",
       "commit": "82c844e60ab055cef1169f7825bc119ea3bd5090",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/langar/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/langar/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4066,7 +4066,7 @@
       "repository_url": "https://github.com/etunni/lemon",
       "commit": "88027507a29de7878336812a328d25245c106e9b",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/lemon/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/lemon/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4231,7 +4231,7 @@
       "repository_url": "https://github.com/Fonthausen/Livvic",
       "commit": "30f612bf37946b0462c91ba2b4323e955a519463",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/livvic/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/livvic/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4241,7 +4241,7 @@
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/londrinaoutline/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/londrinaoutline/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4251,7 +4251,7 @@
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/londrinashadow/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/londrinashadow/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4261,7 +4261,7 @@
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/londrinasketch/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/londrinasketch/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4271,7 +4271,7 @@
       "repository_url": "https://github.com/marcelommp/Londrina-Typeface",
       "commit": "7f4129ee609e13f4dc9bcdce6f8a08f5d9bc8060",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/londrinasolid/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/londrinasolid/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4378,7 +4378,7 @@
       "repository_url": "https://github.com/aliftype/mada",
       "commit": "2f7dea3a2bad718583bfcc1dc2030cf15401c789",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/mada/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/mada/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4400,7 +4400,7 @@
       "repository_url": "https://github.com/cadsondemak/maitree",
       "commit": "e530c1fb68e167a5e990b8125e62231cbedfe4be",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/maitree/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/maitree/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4410,7 +4410,7 @@
       "repository_url": "https://github.com/googlefonts/majormono",
       "commit": "fae0bb9c728fe082097baedaf23604e290ddac16",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/majormonodisplay/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/majormonodisplay/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4432,7 +4432,7 @@
       "repository_url": "https://github.com/appajid/mallanna",
       "commit": "52b5b8b53bd89d84ecc8a0da7b809ea241c8eb74",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/mallanna/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/mallanna/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4454,7 +4454,7 @@
       "repository_url": "https://gitlab.com/smc/fonts/manjari",
       "commit": "8948773e572ce0b58d93b0f120f561a0b02e9853",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/manjari/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/manjari/config.yaml",
       "status": "non_github",
       "error": "Non-GitHub or unparseable URL: https://gitlab.com/smc/fonts/manjari"
     },
@@ -4476,7 +4476,7 @@
       "repository_url": "https://github.com/cyrealtype/Marko-One",
       "commit": "d5cfae97a173fc09d182a391fb78dd3d8a727cd8",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/markoone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/markoone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4498,7 +4498,7 @@
       "repository_url": "https://github.com/typeoff/martel",
       "commit": "ae74b972c6870d296e1a2693c91006beba8c4801",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/martel/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/martel/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4508,7 +4508,7 @@
       "repository_url": "https://github.com/typeoff/martel_sans",
       "commit": "7a536b7ce5f6059665d45bfff7c24bee414c1fd1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/martelsans/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/martelsans/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4626,7 +4626,7 @@
       "repository_url": "https://github.com/googlefonts/Michroma-font",
       "commit": "5822b9d1a733db7ae4f1a63a65a8b41b2d5b15cf",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/michroma/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/michroma/config.yaml",
       "status": "error",
       "error": "failed to list files"
     },
@@ -4662,7 +4662,7 @@
       "repository_url": "https://github.com/suman51284/Mina",
       "commit": "20350840b9a0b08d7855d22e2890c3ed93237edd",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/mina/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/mina/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4768,7 +4768,7 @@
       "repository_url": "https://github.com/googlefonts/monofett",
       "commit": "a1a60166b5db2c6676d0a0a7751fe378fff1af9e",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/monofett/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/monofett/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4790,7 +4790,7 @@
       "repository_url": "https://github.com/ManiackersDesign/monomaniac",
       "commit": "2318283d6dbf3cbe50e8eed3c75a17a425e6bd8c",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/monomaniacone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/monomaniacone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4970,7 +4970,7 @@
       "repository_url": "https://github.com/nermink99/Nerko",
       "commit": "62c2998197eaa09664ca1e0605fa4cfd273ac8bf",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/nerkoone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/nerkoone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -4992,7 +4992,7 @@
       "repository_url": "https://github.com/productiontype/NewsReader",
       "commit": "1ece6a8bfe5db1a2b90c76cc1fe5d3b2eed5dcf3",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/newsreader/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/newsreader/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -5002,7 +5002,7 @@
       "repository_url": "https://github.com/nagamaki008/NewTegomin",
       "commit": "955803d27527edbfb9a416f765b6144215c250df",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/newtegomin/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/newtegomin/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -5012,7 +5012,7 @@
       "repository_url": "https://github.com/cadsondemak/Niramit",
       "commit": "1b5fd503662d7fb259b0d09ba714d7dace5cefff",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/niramit/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/niramit/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6709,7 +6709,7 @@
       "repository_url": "https://github.com/barnard555/odibeesans",
       "commit": "c72b102fec681b3b74f025e70a673d2ef4ac664e",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/odibeesans/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/odibeesans/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6719,7 +6719,7 @@
       "repository_url": "https://github.com/etunni/offside",
       "commit": "025804545334bb6270119f43fb8fe7d05b31cd7d",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/offside/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/offside/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6812,7 +6812,7 @@
       "repository_url": "https://github.com/etunni/orienta",
       "commit": "18d3b4ce823c8a5b374023c559cf6d2b2bd505a2",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/orienta/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/orienta/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6834,7 +6834,7 @@
       "repository_url": "https://github.com/Gutenberg-Labo/Otomanopee",
       "commit": "21c3571eebc24b2723f94ef25dbf478c3a996047",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/otomanopeeone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/otomanopeeone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6882,7 +6882,7 @@
       "repository_url": "https://github.com/sevmeyer/oxanium",
       "commit": "a8f39e0c71186190027a093e9001459410192d1e",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/oxanium/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/oxanium/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6892,7 +6892,7 @@
       "repository_url": "https://github.com/googlefonts/pangolin",
       "commit": "8257f00935ee0d1dba28c9e9142c85bcb357aae2",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/pangolin/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/pangolin/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6950,7 +6950,7 @@
       "repository_url": "https://github.com/etunni/pathway-gothic",
       "commit": "cb77ed5f79d4572096191b7c7dfb157b65abf748",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/pathwaygothicone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/pathwaygothicone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -6984,7 +6984,7 @@
       "repository_url": "https://github.com/RingoSeeber/Petrona",
       "commit": "03d4b6dd8af6ecf3a51d3b126bd64e491cb01d18",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/petrona/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/petrona/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -7018,7 +7018,7 @@
       "repository_url": "https://github.com/huertatipografica/piazzolla",
       "commit": "fbd775f98a0a27570de0eaf20206860021c68b6b",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/piazzolla/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/piazzolla/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8437,7 +8437,7 @@
       "repository_url": "https://github.com/alexeiva/poiretone",
       "commit": "74eec8d29c9b5179cbd63b1c3d152233aa537123",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/poiretone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/poiretone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8483,7 +8483,7 @@
       "repository_url": "https://github.com/itfoundry/Poppins",
       "commit": "738d9d691b66f1ad917123c58df104d16c74e1a7",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/poppins/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/poppins/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8493,7 +8493,7 @@
       "repository_url": "https://github.com/go108go/Potta",
       "commit": "574738ac030a0551d675056dc56166fddbcad53c",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/pottaone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/pottaone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8537,7 +8537,7 @@
       "repository_url": "https://github.com/alif-type/qahiri",
       "commit": "2fbfe8ca2e5ed04b0455e15c717774766f174ad1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/qahiri/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/qahiri/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8595,7 +8595,7 @@
       "repository_url": "https://github.com/zeynepakay/Rakkas",
       "commit": "3bdb0ba164c9e987a5ab4de7f7cc8842a04d267a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/rakkas/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/rakkas/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8605,7 +8605,7 @@
       "repository_url": "https://github.com/theleagueof/raleway",
       "commit": "7b288c6faaed52cd237ec3a2e82c637d2a941fa7",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/raleway/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/raleway/config.yaml",
       "status": "error",
       "error": "failed to list files"
     },
@@ -8627,7 +8627,7 @@
       "repository_url": "https://github.com/fontworks-fonts/Rampart",
       "commit": "3f5fe9d544c290f6fc7c2176976ee7fe6ce14fbb",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/rampartone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/rampartone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8661,7 +8661,7 @@
       "configs_found": [],
       "override_config": null,
       "status": "not_in_cache",
-      "error": "Repo not in cache: /mnt/shared/upstream_repos/fontc_crater_cache/bghryct/RedHatDisplay"
+      "error": "Repo not in cache: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/bghryct/RedHatDisplay"
     },
     {
       "family_name": "Red Hat Mono",
@@ -8671,7 +8671,7 @@
       "configs_found": [],
       "override_config": null,
       "status": "not_in_cache",
-      "error": "Repo not in cache: /mnt/shared/upstream_repos/fontc_crater_cache/bghryct/RedHatMono"
+      "error": "Repo not in cache: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/bghryct/RedHatMono"
     },
     {
       "family_name": "Red Hat Text",
@@ -8681,7 +8681,7 @@
       "configs_found": [],
       "override_config": null,
       "status": "not_in_cache",
-      "error": "Repo not in cache: /mnt/shared/upstream_repos/fontc_crater_cache/bghryct/RedHatText"
+      "error": "Repo not in cache: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/bghryct/RedHatText"
     },
     {
       "family_name": "Red Rose",
@@ -8689,7 +8689,7 @@
       "repository_url": "https://github.com/magictype/redrose",
       "commit": "d173625490893538463fa9746477f35c975ab0e9",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/redrose/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/redrose/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8729,7 +8729,7 @@
       "repository_url": "https://github.com/fontworks-fonts/Reggae",
       "commit": "fe9be09d02ad8ba5e71d5ce24efc5249fe77dcfc",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/reggaeone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/reggaeone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8809,7 +8809,7 @@
       "repository_url": "https://github.com/shibuyafont/3d-rock-font",
       "commit": "04e20f0b2387a7619f8e9e8b06cb9b5337f6a2fe",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/rock3d/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/rock3d/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -8819,7 +8819,7 @@
       "repository_url": "https://github.com/fontworks-fonts/RocknRoll",
       "commit": "29a2aa8bb7ab10702dee769ee681a9baeeb52ec1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/rocknrollone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/rocknrollone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9354,7 +9354,7 @@
       "repository_url": "https://github.com/etunni/Strait",
       "commit": "527c8d122601563758492117058d6727aa58cd32",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/strait/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/strait/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9551,7 +9551,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirobangla/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirobangla/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9561,7 +9561,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirodevanagarihindi/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirodevanagarihindi/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9571,7 +9571,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirodevanagarimarathi/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirodevanagarimarathi/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9581,7 +9581,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirodevanagarisanskrit/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirodevanagarisanskrit/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9591,7 +9591,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirogurmukhi/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirogurmukhi/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9601,7 +9601,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirokannada/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirokannada/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9611,7 +9611,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirotamil/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirotamil/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9621,7 +9621,7 @@
       "repository_url": "https://github.com/TiroTypeworks/Indigo",
       "commit": "24f67ca20ca4720eb4302592f2e0f6ec21042a5d",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tirotelugu/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tirotelugu/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9641,7 +9641,7 @@
       "repository_url": "https://github.com/MonicaRizzolli/Tomorrow",
       "commit": "5be77729a028a17876819eb262d22ba5977b5d7c",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/tomorrow/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/tomorrow/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9697,7 +9697,7 @@
       "repository_url": "https://github.com/etunni/unica",
       "commit": "e92da87539ff465aab50b7767512080bf71e39f1",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/unicaone/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/unicaone/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9707,7 +9707,7 @@
       "repository_url": "https://github.com/etunni/unlock",
       "commit": "cf3defaec0849f2d59a9db60eb810ffa32d07eee",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/unlock/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/unlock/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9753,7 +9753,7 @@
       "repository_url": "https://github.com/SorkinType/Varta",
       "commit": "38d842bff4d906c7f8859d898b1ac946a549c092",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/varta/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/varta/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -9821,7 +9821,7 @@
       "repository_url": "https://github.com/etunni/warnes",
       "commit": "ec72daae3a0a1542706f636b9165f70874599cc5",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/warnes/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/warnes/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -10006,7 +10006,7 @@
       "repository_url": "https://github.com/rosettatype/yrsa-rasa",
       "commit": "ec1d6aa68525da0859a43048228aef2c5bff3b40",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/ofl/yrsa/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/ofl/yrsa/config.yaml",
       "status": "not_found",
       "error": null
     },
@@ -10110,7 +10110,7 @@
       "repository_url": "https://github.com/TypeNetwork/Arimo",
       "commit": "77fdf7e032ef18c5ad72929bdea60ae6ab19adbe",
       "configs_found": [],
-      "override_config": "/mnt/shared/gfonts/apache/arimo/config.yaml",
+      "override_config": "/home/fsanches/compartilhado/gfonts/apache/arimo/config.yaml",
       "status": "not_found",
       "error": null
     }

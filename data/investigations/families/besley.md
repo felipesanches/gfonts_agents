@@ -36,7 +36,7 @@ The font binary files at `fonts/variable/Besley[wght].ttf` and `fonts/variable/B
 
 ## Verification
 
-1. Commit hash `eb8b1b7` verified to exist in the cached upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/indestructible-type/Besley`
+1. Commit hash `eb8b1b7` verified to exist in the cached upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/indestructible-type/Besley`
 2. Font files `fonts/variable/Besley[wght].ttf` and `fonts/variable/Besley-Italic[wght].ttf` confirmed present at that commit
 3. `sources/config.yaml` confirmed present at that commit with valid gftools-builder configuration
 4. Repository URL confirmed accessible and matching

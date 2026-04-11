@@ -33,7 +33,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `etunni/Kite-One` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/Kite-One`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `etunni/Kite-One` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/Kite-One`.
 
 The repository contains a Glyphs source file at `sources/Kite One.glyphs`. No `config.yaml` exists in the upstream repository. However, `google/fonts/ofl/kiteone/config.yaml` provides an override:
 

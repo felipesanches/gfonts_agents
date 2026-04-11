@@ -37,7 +37,7 @@ The METADATA.pb contains a source block with repository URL and commit hash. No 
 
 Bitcount Prop Double Ink is part of the Ink variant family batch, all added from the same upstream commit `89e7994f73b7f5ced80e7cf493d40be9e66ff82f`. This is confirmed by checking the initial addition commits for other Ink families (e.g., `5d1b8f3e6` for Bitcount Grid Double Ink and `c020967df` for Bitcount Ink), all of which reference the same upstream commit hash.
 
-Commit `89e7994f73b7f5ced80e7cf493d40be9e66ff82f` is confirmed in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated September 5, 2025.
+Commit `89e7994f73b7f5ced80e7cf493d40be9e66ff82f` is confirmed in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated September 5, 2025.
 
 The upstream `sources/config.yaml` only contains `familyName: Bitcount`. An override `config.yaml` is present in the google/fonts family directory (`ofl/bitcountpropdoubleink/config.yaml`):
 ```yaml

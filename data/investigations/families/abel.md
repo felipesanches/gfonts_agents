@@ -16,7 +16,7 @@
 
 ## How the Repository URL Was Found
 
-The METADATA.pb file has no `source { }` block at all -- it only contains basic font metadata (name, designer, license, category, date_added, fonts, subsets). The repository URL `https://github.com/librefonts/abel` was discovered through prior research and is tracked in `gfonts_library_sources.json`. The `librefonts` GitHub organization hosts many legacy Google Fonts source repositories. The upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/abel` confirms the remote URL is `https://github.com/librefonts/abel`.
+The METADATA.pb file has no `source { }` block at all -- it only contains basic font metadata (name, designer, license, category, date_added, fonts, subsets). The repository URL `https://github.com/librefonts/abel` was discovered through prior research and is tracked in `gfonts_library_sources.json`. The `librefonts` GitHub organization hosts many legacy Google Fonts source repositories. The upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/abel` confirms the remote URL is `https://github.com/librefonts/abel`.
 
 ## How the Commit Hash Was Identified
 

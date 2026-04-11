@@ -43,7 +43,7 @@ buildOTF: false
 buildWebfont: false
 ```
 
-This is a standard gftools-builder configuration for a static-only font build from a .glyphs source. No override config.yaml exists in `/mnt/shared/google/fonts/ofl/aubrey/`.
+This is a standard gftools-builder configuration for a static-only font build from a .glyphs source. No override config.yaml exists in `/home/fsanches/compartilhado/google/fonts/ofl/aubrey/`.
 
 ## Verification
 

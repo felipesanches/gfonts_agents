@@ -16,7 +16,7 @@
 
 ## How the Repository URL Was Found
 
-The repository URL `https://github.com/librefonts/buda` was identified from the librefonts organization on GitHub, which hosts many early Google Fonts source repositories. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/buda/` and contains the SFD source files and TTX dumps for the Buda font. The URL was added to the tracking data and a pending source block exists on branch `sources_info_2026-02-25` (commit `9a14639f3`) but has not yet been merged to the main branch of google/fonts.
+The repository URL `https://github.com/librefonts/buda` was identified from the librefonts organization on GitHub, which hosts many early Google Fonts source repositories. The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/buda/` and contains the SFD source files and TTX dumps for the Buda font. The URL was added to the tracking data and a pending source block exists on branch `sources_info_2026-02-25` (commit `9a14639f3`) but has not yet been merged to the main branch of google/fonts.
 
 ## How the Commit Hash Was Identified
 

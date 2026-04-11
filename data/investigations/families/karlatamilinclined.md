@@ -25,7 +25,7 @@ The METADATA.pb for Karla Tamil Inclined has no `source` block at all. The font 
 
 The copyright notice reads: "Copyright (c) 2011-2012, Jonathan Pinhorn (jonpinhorn.typedesign@gmail.com), with Reserved Font Names 'Karla'"
 
-The cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/karlatamilinclined` contains only TTX/VFB source files (not gftools-builder compatible). The source files found in the `src/` directory are:
+The cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/karlatamilinclined` contains only TTX/VFB source files (not gftools-builder compatible). The source files found in the `src/` directory are:
 - `KarlaInclined-Bold-InVOLT.ttf.*` (TTX dumps of InVOLT-processed TTF)
 - VFB files for FontLab
 

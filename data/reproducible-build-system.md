@@ -141,7 +141,7 @@ During Batch 2 processing, the build system crashed with `OSError: [Errno 23] To
 
 ### Investigation
 
-The build environment is a QEMU/KVM virtual machine with `/mnt/shared` mounted via virtiofs:
+The build environment is a QEMU/KVM virtual machine with `/home/fsanches/compartilhado` mounted via virtiofs:
 
 ```xml
 <filesystem type="mount" accessmode="passthrough">
@@ -169,7 +169,7 @@ virtiofsd holds FDs open for the lifetime of the FUSE inode reference. The guest
 
 **Option A (implemented)**: Drop guest VFS caches between build batches by running `echo 3 > /proc/sys/vm/drop_caches`. This triggers FUSE FORGET messages, causing virtiofsd to release accumulated FDs. Added to the build script between family processing.
 
-**Option B (fallback)**: Extract tarballs to guest-local tmpfs (`/tmp`, 17GB RAM-backed), run the build there, and copy only results (comparison_report.json, build_log.txt) to `/mnt/shared`. This avoids virtiofsd ever seeing the intermediate files.
+**Option B (fallback)**: Extract tarballs to guest-local tmpfs (`/tmp`, 17GB RAM-backed), run the build there, and copy only results (comparison_report.json, build_log.txt) to `/home/fsanches/compartilhado`. This avoids virtiofsd ever seeing the intermediate files.
 
 **Option C (last resort)**: Move entire build workspace to local disk. Requires expanding the guest's 19GB root partition.
 
@@ -216,7 +216,7 @@ If using LVM, use `pvresize`, `lvextend`, and `resize2fs` instead of `growpart`.
 
 ### Cache Policy
 
-Build artifacts in `/mnt/shared/gfonts-repro-builds/` serve as a cache. Families with existing results are always skipped unless `--force` is explicitly used. Never rebuild a family that already has results — only use `--force` when the analysis code itself has changed.
+Build artifacts in `/home/fsanches/compartilhado/gfonts-repro-builds/` serve as a cache. Families with existing results are always skipped unless `--force` is explicitly used. Never rebuild a family that already has results — only use `--force` when the analysis code itself has changed.
 
 ### CLI
 

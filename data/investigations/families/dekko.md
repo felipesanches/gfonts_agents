@@ -44,7 +44,7 @@ Note: The font binary in google/fonts predates the current upstream repo structu
 
 - Repository URL is valid and accessible: https://github.com/EbenSorkin/Dekko
 - Commit `4887c14` exists in the upstream repo and is HEAD
-- The upstream repo is a shallow clone, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/EbenSorkin/Dekko/`
+- The upstream repo is a shallow clone, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/EbenSorkin/Dekko/`
 - The `sources/config.yaml` file exists in the upstream repo at commit `4887c14`
 - The source block in METADATA.pb does NOT have `files` mappings or `branch` field, indicating it references the upstream for future rebuilds rather than documenting the original binary source
 

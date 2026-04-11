@@ -50,7 +50,7 @@ The commit message body for `5f85f5cbc` explicitly states:
 
 This directly confirms the repository URL and commit hash recorded in METADATA.pb.
 
-The upstream repository `https://github.com/silnrsi/font-idiqlat` is **not** present in the local cache at `/mnt/shared/upstream_repos/fontc_crater_cache/silnrsi/` (the silnrsi cache contains other SIL repositories but not font-idiqlat). The METADATA.pb uses `archive_url` to fetch prebuilt TTF files from a GitHub release (`v2.000`), rather than building from source files. This is the standard approach for SIL fonts that don't have gftools-builder compatible source files exposed.
+The upstream repository `https://github.com/silnrsi/font-idiqlat` is **not** present in the local cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/silnrsi/` (the silnrsi cache contains other SIL repositories but not font-idiqlat). The METADATA.pb uses `archive_url` to fetch prebuilt TTF files from a GitHub release (`v2.000`), rather than building from source files. This is the standard approach for SIL fonts that don't have gftools-builder compatible source files exposed.
 
 The `date_added` field is `2026-01-22`, indicating this is a very recently added font. A subsequent commit `8d66a498f6a0b489538a8bbaabf08558a0ead238` added an article for the family, confirming the onboarding was complete.
 

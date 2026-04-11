@@ -28,7 +28,7 @@ The font was added to google/fonts on 2019-05-10 in commit `0aa5f370a` by Felipe
 
 The repository URL `https://github.com/googlefonts/BethEllen` was confirmed by the copyright string in the font metadata: "Copyright 2019 The Beth Ellen Project Authors (https://github.com/googlefonts/BethEllen)".
 
-The upstream commit `d6c8d9b` is verified locally in the cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/BethEllen`. The commit message is: "manual fixes using gftools and ttx".
+The upstream commit `d6c8d9b` is verified locally in the cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/BethEllen`. The commit message is: "manual fixes using gftools and ttx".
 
 The METADATA.pb source block already contains both `repository_url` and `commit` fields. There is no `config_yaml` field, which is correct because no config.yaml exists.
 

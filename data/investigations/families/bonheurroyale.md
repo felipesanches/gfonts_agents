@@ -58,7 +58,7 @@ The source block was first created by commit `66f91f10f` (2024-04-03, "Merge ups
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/bonheur-royale/`. The repository's commit history:
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/bonheur-royale/`. The repository's commit history:
 
 ```
 90087bb Nhung added to Contributors     <-- current METADATA.pb reference (HEAD)

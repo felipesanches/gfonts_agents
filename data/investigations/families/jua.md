@@ -33,7 +33,7 @@ The Jua family directory in google/fonts contains only:
 
 No override `config.yaml` is present in the google/fonts directory.
 
-The tracking file `data/gfonts_library_sources.json` records `https://github.com/baemin/Jua` as the repository URL with commit `eee0159e73c39bd804c275ca49376994d27e4e62`, and notes "No buildable source files at recorded commit". However, this repository was not found in the local cache at `/mnt/shared/upstream_repos/fontc_crater_cache/` — no "baemin" organization or "Jua" repository is cached, so the URL could not be independently verified.
+The tracking file `data/gfonts_library_sources.json` records `https://github.com/baemin/Jua` as the repository URL with commit `eee0159e73c39bd804c275ca49376994d27e4e62`, and notes "No buildable source files at recorded commit". However, this repository was not found in the local cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/` — no "baemin" organization or "Jua" repository is cached, so the URL could not be independently verified.
 
 No override `config.yaml` is present in the google/fonts directory. The METADATA.pb has no source block.
 

@@ -41,7 +41,7 @@ Since this is a legacy font with SFD-only sources, the commit hash serves mainly
 ## Verification
 
 - Repository URL is valid and accessible
-- Upstream repo cloned at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/delius/` (shallow clone)
+- Upstream repo cloned at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/delius/` (shallow clone)
 - Commit `5bd1633` verified as HEAD of master
 - No modern source files found (.glyphs, .ufo, .designspace)
 - METADATA.pb in google/fonts main branch currently has no source block (a PR branch adds one)

@@ -44,7 +44,7 @@ PR #742 was a hotfix that renamed the file, updated the full_name and copyright 
 ### Upstream Repository: librefonts/aclonica
 
 - **URL**: https://github.com/librefonts/aclonica
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/librefonts/aclonica
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/aclonica
 - **Status**: Active (not archived)
 - **Commits**: Single commit (`2746e45`, 2014-11-03) - "update .travis.yml"
 

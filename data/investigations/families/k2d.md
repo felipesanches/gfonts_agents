@@ -26,7 +26,7 @@ source {
 
 The METADATA.pb for K2D has a source block with `repository_url` and `commit` but no `config_yaml` field. The upstream repository is `https://github.com/cadsondemak/K2D`, maintained by Cadson Demak.
 
-The commit hash `5df785dc3b0d17e7b57eedb2f4139436dbeb6440` was verified to exist in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/K2D/`. This is a merge commit ("Merge pull request #7 from m4rc1e/metrics", dated 2018-08-23) that updated vertical metrics to stop first line clipping.
+The commit hash `5df785dc3b0d17e7b57eedb2f4139436dbeb6440` was verified to exist in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/K2D/`. This is a merge commit ("Merge pull request #7 from m4rc1e/metrics", dated 2018-08-23) that updated vertical metrics to stop first line clipping.
 
 At the referenced commit, the repository contains `source/K2D.glyphs` — the gftools-builder compatible Glyphs source file. The upstream repo does NOT contain a `config.yaml` at this commit.
 

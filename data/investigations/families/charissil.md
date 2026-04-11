@@ -38,7 +38,7 @@ The upstream repo at the recorded commit contains UFO sources and designspace fi
 
 ## Verification
 
-- **Repository URL**: Verified -- the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/silnrsi/font-charis` exists and is accessible.
+- **Repository URL**: Verified -- the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/silnrsi/font-charis` exists and is accessible.
 - **Commit**: Verified as existing in the upstream repo on the master branch. However, this commit is 19 commits ahead of v6.101, while fonts were taken from the v6.101 release archive.
 - **Fonts**: The METADATA.pb uses `archive_url` to pull pre-built binaries from the v6.101 release ZIP, not compiled from source at the recorded commit.
 - **Override config**: Confirmed present and valid.

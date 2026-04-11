@@ -44,7 +44,7 @@ The hotfix renamed `full_name` from "Calligraffitti" to "Calligraffitti Regular"
 ### Upstream Repository: librefonts/calligraffitti
 
 - **URL**: https://github.com/librefonts/calligraffitti
-- **Cached at**: /mnt/shared/upstream_repos/fontc_crater_cache/librefonts/calligraffitti
+- **Cached at**: /home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/calligraffitti
 - **Status**: Active (not archived)
 - **Commits**: Single commit (`983f7f3`, 2014-10-17) - "update .travis.yml"
 

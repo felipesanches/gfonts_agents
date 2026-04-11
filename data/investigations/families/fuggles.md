@@ -33,7 +33,7 @@ The source block was progressively built up:
 ### Upstream Repository
 
 - **URL**: https://github.com/googlefonts/fuggles
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/fuggles`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/fuggles`
 - **Branch**: master
 - **Single commit**: `cc9766c` (2021-11-16) - "Update README.md" by Dave Crossland
 

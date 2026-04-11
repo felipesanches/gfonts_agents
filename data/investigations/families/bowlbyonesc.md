@@ -39,7 +39,7 @@ The source block was added by google/fonts commit `bb0ae5d66` ("Bowlby One SC: a
 
 ### Upstream Repository
 
-The repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bowlbyonesc/`. The repository has only 12 commits, all from 2014. Commit `9566646d` is the tip of master (2014-10-17, "update .travis.yml").
+The repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/bowlbyonesc/`. The repository has only 12 commits, all from 2014. Commit `9566646d` is the tip of master (2014-10-17, "update .travis.yml").
 
 The upstream repo contains a mix of source formats:
 - `src/BowlbyOneSC-Regular.sfd` (FontForge format)
@@ -51,7 +51,7 @@ The presence of a UFO source enables building with gftools-builder.
 
 ### Override config.yaml
 
-An override `config.yaml` was added to `/mnt/shared/google/fonts/ofl/bowlbyonesc/config.yaml` as part of the source block commit (`bb0ae5d66`). Contents:
+An override `config.yaml` was added to `/home/fsanches/compartilhado/google/fonts/ofl/bowlbyonesc/config.yaml` as part of the source block commit (`bb0ae5d66`). Contents:
 
 ```yaml
 sources:

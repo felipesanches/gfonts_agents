@@ -25,7 +25,7 @@ primary_script: "Thai"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `cadsondemak/Koho` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/Koho`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `cadsondemak/Koho` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/Koho`.
 
 The repository contains a Glyphs source file at `source/KoHo-Master.glyphs`. No `config.yaml` exists in the upstream repository. However, `google/fonts/ofl/koho/config.yaml` provides an override:
 

@@ -42,7 +42,7 @@ The commit `633f32005` explicitly references the upstream commit `9ab3b5b` in it
 
 ### Upstream Repository Verification
 
-The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
+The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/plex/` confirms:
 - Remote: `https://github.com/googlefonts/plex` (fork of IBM/plex)
 - Commit `9ab3b5b` exists and dates to 2022-11-09, message: "Latest Mono fonts"
 - At this commit, source files exist:

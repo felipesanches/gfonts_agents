@@ -25,7 +25,7 @@ primary_script: "Thai"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` and `commit`. The upstream repository `cadsondemak/Kodchasan` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/cadsondemak/Kodchasan`.
+The METADATA.pb contains `repository_url` and `commit`. The upstream repository `cadsondemak/Kodchasan` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/cadsondemak/Kodchasan`.
 
 The repository contains a Glyphs source file at `source/Kodchasan-Master.glyphs`. No `config.yaml` exists in the upstream repository. However, `google/fonts/ofl/kodchasan/config.yaml` provides an override:
 

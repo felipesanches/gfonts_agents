@@ -52,7 +52,7 @@ buildVariable: false
 - **Branch matches**: Yes - `main` branch
 - **Config YAML exists at commit**: Yes - `sources/config.yaml` exists at `856315f`
 - **Font files**: The METADATA.pb references `fonts/ttf/ComicRelief-Regular.ttf` and `fonts/ttf/ComicRelief-Bold.ttf` which were from the release archive
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/loudifier/Comic-Relief/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/loudifier/Comic-Relief/`
 - **Significant work after this commit**: Yes - there are many commits after `856315f` (hinting improvements, build system changes, version 1.210 update). These have not been onboarded to Google Fonts
 
 ## Confidence Level

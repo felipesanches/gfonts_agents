@@ -25,7 +25,7 @@ source {
 
 ## Investigation
 
-The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `21a53a1760f6f3c3e585bc50bc3463e97f1fa7e6` was verified to exist in the upstream repo at `/mnt/shared/upstream_repos/fontc_crater_cache/Gue3bara/Lemonada/`:
+The METADATA.pb has `repository_url`, `commit` hash, and `config_yaml` all populated. The commit `21a53a1760f6f3c3e585bc50bc3463e97f1fa7e6` was verified to exist in the upstream repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/Gue3bara/Lemonada/`:
 
 ```
 commit 21a53a1760f6f3c3e585bc50bc3463e97f1fa7e6

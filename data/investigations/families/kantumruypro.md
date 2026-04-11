@@ -39,7 +39,7 @@ primary_script: "Khmr"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `sovichet/kantumruy-pro` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/sovichet/kantumruy-pro`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `sovichet/kantumruy-pro` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/sovichet/kantumruy-pro`.
 
 The `sources/config.yaml` file exists in the cached repository. The latest commit in the upstream cache is `dfca20d` ("Merge pull request #16 from anagata-design/dependabot/pip/urllib3-1.26.18"), which matches exactly the commit hash in METADATA.pb.
 

@@ -73,7 +73,7 @@ This is a variable font with a weight axis (100-900), and the config includes fu
 - **Branch matches**: Yes - `main` branch, matches METADATA.pb
 - **Config YAML exists at commit**: Yes - `sources/config.yaml` exists
 - **Font files match**: The variable font `Comme[wght].ttf` is produced from `Comme.glyphs` source
-- **Repository accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/googlefonts/comme/`
+- **Repository accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/googlefonts/comme/`
 
 ## Confidence Level
 

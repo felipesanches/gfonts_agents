@@ -27,7 +27,7 @@ The git log for `ofl/imfelldoublepicasc/` shows that only metadata/language upda
 
 The font was designed by Igino Marini (iginomarini.com). The copyright string reads: "© 2007 Igino Marini (www.iginomarini.com mail@iginomarini.com)". The family is a small caps variant of IM Fell Double Pica. The single font file is `IMFeDPsc28P.ttf` (version 3.00, per the `VERSIONS.txt` in the librefonts archive).
 
-A repository `https://github.com/librefonts/imfelldoublepicasc` exists in the local cache at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/imfelldoublepicasc`. This repo has a single commit (`2274064`, "update .travis.yml", 2014-10-17) and contains only TTX-disassembled font data (no VFB or other editable source files, only `src/METADATA_comments.txt` and `src/VERSIONS.txt`).
+A repository `https://github.com/librefonts/imfelldoublepicasc` exists in the local cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/imfelldoublepicasc`. This repo has a single commit (`2274064`, "update .travis.yml", 2014-10-17) and contains only TTX-disassembled font data (no VFB or other editable source files, only `src/METADATA_comments.txt` and `src/VERSIONS.txt`).
 
 Like the non-SC variant, this `librefonts/imfelldoublepicasc` repository is an archival mirror of the compiled TTF, not the original design source. The SC variant was originally provided alongside the other IM Fell variants from Igino Marini's personal website. No public GitHub repository for the actual design sources has been identified.
 

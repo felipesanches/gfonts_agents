@@ -32,7 +32,7 @@ The commit history shows an interesting correction:
 
 ## Config YAML Status
 
-**Override config.yaml exists** in the google/fonts family directory at `/mnt/shared/google/fonts/ofl/chilanka/config.yaml`:
+**Override config.yaml exists** in the google/fonts family directory at `/home/fsanches/compartilhado/google/fonts/ofl/chilanka/config.yaml`:
 
 ```yaml
 buildVariable: false

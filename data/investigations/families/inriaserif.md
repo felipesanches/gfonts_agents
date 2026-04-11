@@ -25,7 +25,7 @@ source {
 
 The family was added to google/fonts on 2019-12-05 at 15:55 UTC+1 (commit `a2b3b38b97`), in PR #2272 by Yanone. The commit message is "Added Inria Serif 1.0".
 
-The upstream repository at `https://github.com/BlackFoundryCom/InriaFonts` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/BlackFoundryCom/InriaFonts`. The repo contains UFO sources for both Inria Sans and Inria Serif under `masters/INRIA-SANS/` and `masters/INRIA-SERIF/`.
+The upstream repository at `https://github.com/BlackFoundryCom/InriaFonts` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/BlackFoundryCom/InriaFonts`. The repo contains UFO sources for both Inria Sans and Inria Serif under `masters/INRIA-SANS/` and `masters/INRIA-SERIF/`.
 
 The upstream commit history around the onboarding date shows:
 - `d13f0df3` — "Fresh Sans TTFs" — 2019-12-05 15:21 UTC+1 (by Yanone)

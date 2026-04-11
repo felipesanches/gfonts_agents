@@ -51,7 +51,7 @@ The revert of Version 1.002 is significant. The commit message for `3d8f0dee3` (
 
 The revert commit `cba254412` changed the METADATA.pb commit from `d8446c4c9c2ba14cf408c295be35213c006e19ff` back to `afc20d521110d3ba6d6614d226896c74d62f8f2f`, confirming the current correct commit hash.
 
-The upstream repository `scfried/soft-type-jersey` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/scfried/soft-type-jersey`. An alternate clone `soft-type-jersey_afc20d5211` also exists, which has `afc20d521110d3ba6d6614d226896c74d62f8f2f` as its HEAD ("Merge pull request #5 from emmamarichal/main", dated 2024-04-10). The main clone only has the HEAD commit `d8446c4c9c2ba14cf408c295be35213c006e19ff` (shallow clone), but the alternate clone confirms `afc20d5` predates `d8446c4`. The file `sources/config-jersey25charted.yaml` exists in the upstream repo.
+The upstream repository `scfried/soft-type-jersey` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/scfried/soft-type-jersey`. An alternate clone `soft-type-jersey_afc20d5211` also exists, which has `afc20d521110d3ba6d6614d226896c74d62f8f2f` as its HEAD ("Merge pull request #5 from emmamarichal/main", dated 2024-04-10). The main clone only has the HEAD commit `d8446c4c9c2ba14cf408c295be35213c006e19ff` (shallow clone), but the alternate clone confirms `afc20d5` predates `d8446c4`. The file `sources/config-jersey25charted.yaml` exists in the upstream repo.
 
 ## Conclusion
 

@@ -36,7 +36,7 @@ The font was added in commit `90abd17b4` ("Initial commit", 2015-03-07 by Dave C
 
 ### Upstream Repository
 
-The repo at https://github.com/librefonts/germaniaone (cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/germaniaone`) contains:
+The repo at https://github.com/librefonts/germaniaone (cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/germaniaone`) contains:
 - Single commit: `73d401d` ("update .travis.yml")
 - This is a librefonts archive repo with squashed history
 

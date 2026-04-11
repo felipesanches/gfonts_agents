@@ -26,7 +26,7 @@ source {
 
 The METADATA.pb for Kadwa has a source block with `repository_url` and `commit` but no `config_yaml` field. The upstream repository is `https://github.com/solmatas/Kadwa`, authored by Sol Matas (Huerta Tipográfica).
 
-The commit hash `ec58500fc2026ed3125a609b8c617b4b0c4bce20` was verified to exist in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/solmatas/Kadwa/`. This is a merge commit ("Merge pull request #3 from davelab6/master — Minor improvements", dated 2015-06-15).
+The commit hash `ec58500fc2026ed3125a609b8c617b4b0c4bce20` was verified to exist in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/solmatas/Kadwa/`. This is a merge commit ("Merge pull request #3 from davelab6/master — Minor improvements", dated 2015-06-15).
 
 At the referenced commit, the repository tree contains `Kadwa-Regular.glyphs` and `Kadwa-Bold.glyphs` at the root level. The upstream repo does NOT contain a `config.yaml` at this commit.
 

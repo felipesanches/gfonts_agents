@@ -26,7 +26,7 @@ source {
 
 ### Repository URL
 
-The repository URL `https://github.com/librefonts/bigshotone` is already documented in METADATA.pb. The upstream repo is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/librefonts/bigshotone`.
+The repository URL `https://github.com/librefonts/bigshotone` is already documented in METADATA.pb. The upstream repo is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/librefonts/bigshotone`.
 
 ### Commit Hash
 

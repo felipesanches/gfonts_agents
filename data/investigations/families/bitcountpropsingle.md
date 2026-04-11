@@ -37,7 +37,7 @@ The METADATA.pb contains a source block with repository URL and commit hash. No 
 
 Bitcount Prop Single is part of the initial batch of non-Ink Bitcount families added in January 2025, all referencing upstream commit `af0818eaeb3b0839806ea19134fc18f317cdcf5a`. This is confirmed by the google/fonts commit `bb009d354` body which states all non-Ink families were taken from the upstream repo at this commit.
 
-Commit `af0818eaeb3b` is confirmed in the upstream repo cache at `/mnt/shared/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated January 13, 2025.
+Commit `af0818eaeb3b` is confirmed in the upstream repo cache at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/petrvanblokland/TYPETR-Bitcount`, dated January 13, 2025.
 
 The upstream `sources/config.yaml` only contains `familyName: Bitcount`. An override `config.yaml` is present in the google/fonts family directory (`ofl/bitcountpropsingle/config.yaml`):
 ```yaml

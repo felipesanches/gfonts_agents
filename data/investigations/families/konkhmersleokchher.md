@@ -35,7 +35,7 @@ primary_script: "Khmr"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `suonmaysophanith7/KonKhmer_SleokChher` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/suonmaysophanith7/KonKhmer_SleokChher`.
+The METADATA.pb contains `repository_url`, `commit`, and `config_yaml` fields. The upstream repository `suonmaysophanith7/KonKhmer_SleokChher` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/suonmaysophanith7/KonKhmer_SleokChher`.
 
 The `sources/config.yaml` file exists in the cached repository along with `sources/Konkhmer Sleokchher.glyphs`. The latest commit is `1289371` ("Merge pull request #3 from yanone/main"), which matches exactly the commit hash in METADATA.pb.
 

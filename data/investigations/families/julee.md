@@ -35,7 +35,7 @@ source {
 
 The METADATA.pb for Julee has a complete source block with `repository_url` and `commit` hash. The upstream repository is `https://github.com/etunni/julee`, maintained by Julián Tunni.
 
-The commit hash `9a2efe6783e9ea590cee62c8aec51670a3dec51d` was added to google/fonts in commit `2137a7edd` ("sources info for Julee: Version 1.002 (PR #5959)"). The commit was verified to exist in the cached repository at `/mnt/shared/upstream_repos/fontc_crater_cache/etunni/julee/`.
+The commit hash `9a2efe6783e9ea590cee62c8aec51670a3dec51d` was added to google/fonts in commit `2137a7edd` ("sources info for Julee: Version 1.002 (PR #5959)"). The commit was verified to exist in the cached repository at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/etunni/julee/`.
 
 Checking the repository at the referenced commit, the following structure is present:
 - `sources/Julee.glyphs` — gftools-builder compatible Glyphs source file

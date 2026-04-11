@@ -62,7 +62,7 @@ The `config_yaml` field was added later in commit `19cdcec59` (2025-03-31, Batch
 ### Upstream Repository Analysis
 
 - **URL**: https://github.com/rfuenzalida/Freeman
-- **Cached at**: `/mnt/shared/upstream_repos/fontc_crater_cache/rfuenzalida/Freeman`
+- **Cached at**: `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/rfuenzalida/Freeman`
 - **Default branch**: master
 - **Total commits**: 1 (single commit repo)
 - **HEAD**: `5ced8a95f5b0e0c3dcea3b033398ba93a56fb687` (2024-04-11)

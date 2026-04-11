@@ -41,7 +41,7 @@ primary_script: "Arab"
 
 ## Investigation
 
-The METADATA.pb contains `repository_url` but no `commit` or `config_yaml`. The upstream repository `originaltype/kufam` is cached at `/mnt/shared/upstream_repos/fontc_crater_cache/originaltype/kufam`.
+The METADATA.pb contains `repository_url` but no `commit` or `config_yaml`. The upstream repository `originaltype/kufam` is cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/originaltype/kufam`.
 
 The font was onboarded on July 22, 2020 via commit `7cc3227ee` ("Added Kufam 1.300 (#2552)"). The DESCRIPTION.en_us.html added in that commit references `github.com/originaltype/kufam`.
 

@@ -28,7 +28,7 @@ This updated the font from Version 3.020 to Version 3.021.
 
 ### Cross-verification
 
-The commit was verified in the upstream repo. The cached repo at `/mnt/shared/upstream_repos/fontc_crater_cache/solmatas/BitterPro/` is a shallow clone with only this one commit visible (`3238d7a New binaries`). The commit message "New binaries" is consistent with the font binary files being updated.
+The commit was verified in the upstream repo. The cached repo at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/solmatas/BitterPro/` is a shallow clone with only this one commit visible (`3238d7a New binaries`). The commit message "New binaries" is consistent with the font binary files being updated.
 
 Previous update was at commit `cd40ea8b9d4cf7f5f11bc62a156136258465dc9e` (Version 3.020, onboarded 2024-05-16 by Yanone).
 
@@ -57,7 +57,7 @@ This is a complete and proper config.yaml that references the Glyphs source file
 
 ## Verification
 
-- **Upstream repo accessible**: Yes, cached at `/mnt/shared/upstream_repos/fontc_crater_cache/solmatas/BitterPro/` (shallow clone)
+- **Upstream repo accessible**: Yes, cached at `/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/solmatas/BitterPro/` (shallow clone)
 - **Commit exists in repo**: Yes - `3238d7a New binaries`
 - **Font files at commit**: Yes - `fonts/variable/Bitter[wght].ttf` and `fonts/variable/Bitter-Italic[wght].ttf`
 - **Source files at commit**: Yes - `sources/Bitter.glyphs` and `sources/Bitter-Italic.glyphs`

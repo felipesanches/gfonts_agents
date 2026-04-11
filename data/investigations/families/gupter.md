@@ -75,7 +75,7 @@ All three file sizes match exactly. The TTFs in google/fonts have never been mod
 
 ### Override config.yaml
 
-An override `config.yaml` exists in `/mnt/shared/google/fonts/ofl/gupter/config.yaml`:
+An override `config.yaml` exists in `/home/fsanches/compartilhado/google/fonts/ofl/gupter/config.yaml`:
 
 ```yaml
 buildVariable: false
