@@ -316,7 +316,7 @@ def run_git(*args, capture=True, check=True):
 
 
 def clean_paths(text):
-    """Remove /home/fsanches/compartilhado prefixes from paths."""
+    """Strip absolute mount-path prefixes so reports use repo-relative paths."""
     text = text.replace("/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/", "upstream_repos/fontc_crater_cache/")
     text = text.replace("/home/fsanches/compartilhado/google/fonts/", "google/fonts/")
     text = text.replace("/home/fsanches/compartilhado/google/fonts", "google/fonts")

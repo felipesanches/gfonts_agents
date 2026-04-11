@@ -3,7 +3,7 @@
 Rewrite PR #10271 commits to:
 1. Add upstream_info.md to each family directory
 2. Replace verbose commit messages with concise summaries
-3. Clean /home/fsanches/compartilhado paths from reports
+3. Clean absolute mount-path prefixes from reports
 """
 
 import os
@@ -32,7 +32,7 @@ def family_to_slug(family_name):
 
 
 def clean_paths(text):
-    """Remove /home/fsanches/compartilhado prefixes from paths."""
+    """Strip absolute mount-path prefixes so reports use repo-relative paths."""
     text = text.replace("/home/fsanches/compartilhado/upstream_repos/fontc_crater_cache/", "upstream_repos/fontc_crater_cache/")
     text = text.replace("/home/fsanches/compartilhado/google/fonts/", "google/fonts/")
     text = text.replace("/home/fsanches/compartilhado/google/fonts", "google/fonts")
