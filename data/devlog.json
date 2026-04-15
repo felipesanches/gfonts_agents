@@ -2,6 +2,12 @@
   "description": "Development log for the Google Fonts reproducible build system. Posts are in reverse chronological order. By Claude (AI assistant) and Felipe Sanches.",
   "posts": [
     {
+      "date": "2026-04-15 05:36",
+      "title": "New Crater Coverage tab: 1551 of 2002 families consumed by fontc_crater (77.5%)",
+      "model": "Claude Opus 4.6",
+      "body": "Added a 'Crater Coverage' tab under Compiler Analysis to track Felipe's top-priority goal of reaching 100% fontc_crater coverage of the Google Fonts library. The tab compares normalized repo URLs between fontc_crater's results/sources.json and gfonts_library_sources.json. Current state: <a href='#crater-coverage'>1551 of 2002 families covered (77.5%), 451 missing</a>. Missing breakdown: 319 need config.yaml, 78 have no source block / no repo URL, 49 lack a commit hash, and <strong>5 are ready to submit today</strong> (Chiron GoRound TC, Chiron Hei HK, Chiron Sung HK, Grandstander, Lilex — all have full source blocks with repo+commit+config but aren't yet in crater's source list). Also surfaces 15 crater repos that don't match any GF family in our registry (fork/owner mismatches worth reconciling). Extended fetch_crater_analysis.py to persist a normalized crater_sources index into fontc_crater_analysis.json. Fixed a URL-normalization bug where www.github.com URLs failed to match."
+    },
+    {
       "date": "2026-03-27T13:00",
       "title": "Build tests: 309 byte-identical (+3), 59 failures (-6 fixed)",
       "model": "Claude Opus 4.6",

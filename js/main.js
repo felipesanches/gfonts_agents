@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBuildFailures();
     loadDevLog();
     loadCraterAnalysis();
+    loadCraterCoverage();
 });
 
 function initTabs() {
@@ -4481,4 +4482,224 @@ function renderCraterTargetTable(data) {
     render();
     if (searchInput) searchInput.addEventListener('input', () => { showCount = 50; render(); });
     if (tableFilter) tableFilter.addEventListener('change', () => { showCount = 50; render(); });
+}
+
+// ============================================================
+// fontc Crater Coverage
+// ============================================================
+
+function normalizeRepoUrl(url) {
+    if (!url) return '';
+    let u = String(url).trim().replace(/\/+$/, '').toLowerCase();
+    u = u.replace(/^https?:\/\//, '');
+    u = u.replace(/^www\./, '');
+    u = u.replace(/^github\.com\//, '');
+    u = u.replace(/\.git$/, '');
+    return u;
+}
+
+function classifyMissingFamily(f) {
+    const hasUrl = !!f.repository_url;
+    const hasSource = f.has_source_block === true;
+    const hasCommit = !!f.commit;
+    const hasConfig = !!f.config_yaml || f.override_config === true;
+    const rb = f.reproducible_build || '';
+    const repo = (f.repository_url || '').toLowerCase();
+
+    if (!hasSource || !hasUrl) {
+        return { key: 'no_source', label: 'No source block / no repo URL' };
+    }
+    if (repo.includes('googlefontdirectory-hg') || rb === 'legacy-no-modern-source') {
+        return { key: 'legacy_sources', label: 'Legacy sources only (SFD/VFB/hg)' };
+    }
+    if (!hasCommit) {
+        return { key: 'no_commit', label: 'Missing commit hash' };
+    }
+    if (!hasConfig) {
+        return { key: 'missing_config', label: 'Missing config.yaml' };
+    }
+    // Everything looks complete on our side; crater just isn't consuming it.
+    return { key: 'ready_to_submit', label: 'Ready to submit to crater' };
+}
+
+async function loadCraterCoverage() {
+    try {
+        const [craterResp, sourcesResp] = await Promise.all([
+            fetch('data/fontc_crater_analysis.json'),
+            fetch('data/gfonts_library_sources.json'),
+        ]);
+        const crater = await craterResp.json();
+        const sources = await sourcesResp.json();
+        renderCraterCoverage(crater, sources);
+    } catch (error) {
+        console.error('Error loading crater coverage:', error);
+    }
+}
+
+function renderCraterCoverage(crater, sources) {
+    const craterIndex = crater.crater_sources || {};
+    const craterRepoSet = new Set(Object.keys(craterIndex));
+    const families = sources.families || [];
+
+    // Partition families
+    const covered = [];
+    const missing = [];
+    for (const f of families) {
+        const norm = normalizeRepoUrl(f.repository_url);
+        if (norm && craterRepoSet.has(norm)) {
+            covered.push(f);
+        } else {
+            missing.push(f);
+        }
+    }
+
+    // Summary cards
+    const total = families.length;
+    const pct = total ? (100 * covered.length / total).toFixed(1) : '0';
+    setText('cc-total', total.toLocaleString());
+    setText('cc-covered', covered.length.toLocaleString());
+    setText('cc-missing', missing.length.toLocaleString());
+    setText('cc-pct', `${pct}%`);
+
+    // Classify missing
+    const classified = missing.map(f => ({ family: f, reason: classifyMissingFamily(f) }));
+    const byReason = {};
+    for (const row of classified) {
+        const k = row.reason.key;
+        if (!byReason[k]) byReason[k] = { label: row.reason.label, rows: [] };
+        byReason[k].rows.push(row);
+    }
+
+    // Breakdown table
+    const reasonOrder = ['ready_to_submit', 'missing_config', 'no_commit', 'legacy_sources', 'no_source'];
+    const reasonColors = {
+        ready_to_submit: '#4caf50',
+        missing_config: '#ff9800',
+        no_commit: '#ffb300',
+        legacy_sources: '#9e9e9e',
+        no_source: '#f44336',
+    };
+    const breakdownRows = [];
+    for (const key of reasonOrder) {
+        const entry = byReason[key];
+        if (!entry) continue;
+        const count = entry.rows.length;
+        const rowPct = (100 * count / missing.length).toFixed(1);
+        breakdownRows.push(`
+            <tr>
+                <td style="padding:6px 10px;"><span style="display:inline-block;width:10px;height:10px;background:${reasonColors[key]};border-radius:2px;margin-right:8px;"></span>${entry.label}</td>
+                <td style="padding:6px 10px;text-align:right;font-weight:600;">${count.toLocaleString()}</td>
+                <td style="padding:6px 10px;text-align:right;color:#666;">${rowPct}%</td>
+            </tr>
+        `);
+    }
+    document.getElementById('cc-breakdown').innerHTML = `
+        <table style="border-collapse:collapse;background:#fff;border:1px solid #ddd;border-radius:6px;min-width:500px;">
+            <thead>
+                <tr style="background:#f5f5f5;">
+                    <th style="padding:8px 10px;text-align:left;">Reason</th>
+                    <th style="padding:8px 10px;text-align:right;">Count</th>
+                    <th style="padding:8px 10px;text-align:right;">% of Missing</th>
+                </tr>
+            </thead>
+            <tbody>${breakdownRows.join('')}</tbody>
+        </table>
+    `;
+
+    // Unmatched crater repos (crater tests these but we can't find them in our registry)
+    const gfRepoSet = new Set();
+    for (const f of families) {
+        const norm = normalizeRepoUrl(f.repository_url);
+        if (norm) gfRepoSet.add(norm);
+    }
+    const unmatched = Object.keys(craterIndex).filter(r => !gfRepoSet.has(r)).sort();
+    const unmatchedRows = unmatched.map(r => {
+        const entries = craterIndex[r] || [];
+        const firstUrl = entries[0]?.url || `https://github.com/${r}`;
+        return `<tr><td style="padding:4px 10px;"><a href="${firstUrl}" target="_blank">${r}</a></td><td style="padding:4px 10px;color:#666;">${entries.length} target(s)</td></tr>`;
+    }).join('');
+    document.getElementById('cc-unmatched-crater').innerHTML = unmatched.length
+        ? `<details><summary style="cursor:pointer;color:#1976d2;">Show ${unmatched.length} unmatched repos</summary>
+             <table style="border-collapse:collapse;background:#fff;border:1px solid #ddd;border-radius:6px;margin-top:0.5em;">
+                <tbody>${unmatchedRows}</tbody>
+             </table>
+           </details>`
+        : '<p style="color:#666;">None — every crater repo matches a GF family.</p>';
+
+    // Populate reason filter
+    const filterSel = document.getElementById('cc-reason-filter');
+    if (filterSel && filterSel.options.length <= 1) {
+        for (const key of reasonOrder) {
+            if (!byReason[key]) continue;
+            const opt = document.createElement('option');
+            opt.value = key;
+            opt.textContent = `${byReason[key].label} (${byReason[key].rows.length})`;
+            filterSel.appendChild(opt);
+        }
+    }
+
+    // Searchable missing-families table
+    const searchInput = document.getElementById('cc-search');
+    const tableEl = document.getElementById('cc-table');
+    let showCount = 100;
+    function render() {
+        const q = (searchInput?.value || '').trim().toLowerCase();
+        const reason = filterSel?.value || '';
+        let filtered = classified;
+        if (reason) filtered = filtered.filter(r => r.reason.key === reason);
+        if (q) filtered = filtered.filter(r => {
+            const f = r.family;
+            return (f.family_name || '').toLowerCase().includes(q)
+                || (f.repository_url || '').toLowerCase().includes(q);
+        });
+        filtered.sort((a, b) => {
+            const ai = reasonOrder.indexOf(a.reason.key);
+            const bi = reasonOrder.indexOf(b.reason.key);
+            if (ai !== bi) return ai - bi;
+            return (a.family.family_name || '').localeCompare(b.family.family_name || '');
+        });
+        const shown = filtered.slice(0, showCount);
+        const rows = shown.map(r => {
+            const f = r.family;
+            const repoLink = f.repository_url
+                ? `<a href="${f.repository_url}" target="_blank">${f.repository_url.replace(/^https?:\/\/(www\.)?github\.com\//, '')}</a>`
+                : '<em style="color:#999;">—</em>';
+            const commit = f.commit ? `<code style="font-size:0.85em;">${f.commit.slice(0, 8)}</code>` : '<em style="color:#999;">—</em>';
+            const config = f.override_config
+                ? '<span style="color:#1976d2;">override</span>'
+                : (f.config_yaml ? `<code style="font-size:0.85em;">${f.config_yaml}</code>` : '<em style="color:#999;">—</em>');
+            return `
+                <tr>
+                    <td style="padding:4px 8px;">${f.family_name || ''}</td>
+                    <td style="padding:4px 8px;"><span style="display:inline-block;padding:2px 6px;border-radius:3px;background:${reasonColors[r.reason.key]}22;color:#333;font-size:0.85em;">${r.reason.label}</span></td>
+                    <td style="padding:4px 8px;">${repoLink}</td>
+                    <td style="padding:4px 8px;">${commit}</td>
+                    <td style="padding:4px 8px;">${config}</td>
+                </tr>
+            `;
+        }).join('');
+        const more = filtered.length > showCount
+            ? `<div style="margin-top:0.5em;"><button id="cc-show-more" style="padding:6px 12px;">Show more (${filtered.length - showCount} hidden)</button></div>`
+            : '';
+        tableEl.innerHTML = `
+            <div style="color:#666;font-size:0.85em;margin-bottom:0.5em;">Showing ${shown.length} of ${filtered.length} missing families</div>
+            <table style="border-collapse:collapse;background:#fff;border:1px solid #ddd;border-radius:6px;width:100%;font-size:0.9em;">
+                <thead>
+                    <tr style="background:#f5f5f5;">
+                        <th style="padding:6px 8px;text-align:left;">Family</th>
+                        <th style="padding:6px 8px;text-align:left;">Reason</th>
+                        <th style="padding:6px 8px;text-align:left;">Repository</th>
+                        <th style="padding:6px 8px;text-align:left;">Commit</th>
+                        <th style="padding:6px 8px;text-align:left;">Config</th>
+                    </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+            </table>${more}
+        `;
+        const moreBtn = document.getElementById('cc-show-more');
+        if (moreBtn) moreBtn.addEventListener('click', () => { showCount += 100; render(); });
+    }
+    render();
+    if (searchInput) searchInput.addEventListener('input', () => { showCount = 100; render(); });
+    if (filterSel) filterSel.addEventListener('change', () => { showCount = 100; render(); });
 }

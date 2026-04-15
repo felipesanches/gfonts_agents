@@ -36,6 +36,7 @@
                 <summary class="nav-section-title">Compiler Analysis</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#crater-analysis" data-tab="crater-analysis">fontc Crater</a></li>
+                    <li class="nav-item"><a href="#crater-coverage" data-tab="crater-coverage">Crater Coverage</a></li>
                 </ul>
             </details>
             <details class="nav-section" open>
@@ -142,6 +143,52 @@
                     </select>
                 </div>
                 <div id="crater-target-table" style="margin-bottom:2em;"></div>
+            </div>
+        </section>
+
+        <section id="tab-crater-coverage" class="tab-content">
+            <div class="panel">
+                <h2>fontc Crater Coverage</h2>
+                <p class="panel-description">
+                    How much of the Google Fonts full library is currently being consumed by
+                    <a href="https://github.com/googlefonts/fontc_crater" target="_blank">fontc_crater</a>.
+                    A family is "covered" if its upstream <code>repository_url</code> appears in crater's
+                    <code>results/sources.json</code> (URL match only, commit-agnostic).
+                    The goal is 100% coverage — this page surfaces what is still missing and why.
+                </p>
+
+                <div class="builds-summary" style="margin-bottom:2em;">
+                    <div class="summary-card"><div class="card-value" id="cc-total">—</div><div class="card-label">Total Families</div></div>
+                    <div class="summary-card" style="border-left:4px solid #4caf50;"><div class="card-value" id="cc-covered">—</div><div class="card-label">In Crater</div></div>
+                    <div class="summary-card" style="border-left:4px solid #f44336;"><div class="card-value" id="cc-missing">—</div><div class="card-label">Not in Crater</div></div>
+                    <div class="summary-card" style="border-left:4px solid #2196f3;"><div class="card-value" id="cc-pct">—</div><div class="card-label">Coverage</div></div>
+                </div>
+
+                <h3>Breakdown by Reason</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">
+                    Families not currently consumed by fontc_crater, grouped by the blocker.
+                    <strong>Ready to submit</strong> is the actionable bucket: families that already have
+                    a full <code>source</code> block (repo + commit + config) and should work in crater today —
+                    they just haven't been added to crater's source list yet.
+                </p>
+                <div id="cc-breakdown" style="margin-bottom:2em;"></div>
+
+                <h3>Crater Repos Not Matching Any GF Family</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">
+                    Repos that crater tests but whose URL does not match any family in our registry.
+                    Usually a fork/owner mismatch: our METADATA.pb points to a different canonical owner
+                    than what crater has recorded. Worth investigating and reconciling.
+                </p>
+                <div id="cc-unmatched-crater" style="margin-bottom:2em;"></div>
+
+                <h3>Missing Families</h3>
+                <div style="margin-bottom:0.5em;">
+                    <input type="text" id="cc-search" placeholder="Search family or repo..." style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;width:300px;margin-right:1em;">
+                    <select id="cc-reason-filter" style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;">
+                        <option value="">All reasons</option>
+                    </select>
+                </div>
+                <div id="cc-table" style="margin-bottom:2em;"></div>
             </div>
         </section>
 

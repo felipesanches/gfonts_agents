@@ -7,6 +7,7 @@ for the dashboard's "fontc Crater Analysis" page.
 """
 
 import json
+import os
 import re
 import sys
 from collections import Counter, defaultdict
@@ -17,6 +18,98 @@ from urllib.error import URLError
 
 BASE_URL = "https://raw.githubusercontent.com/googlefonts/fontc_crater/main"
 OUTPUT = Path(__file__).resolve().parent.parent / "data" / "fontc_crater_analysis.json"
+
+# Path to an out-of-tree file listing upstream repos that must not be surfaced
+# on the public dashboard. The file is intentionally NOT part of this repo —
+# listing slugs inside a committed file would itself leak the names. Override
+# with the GFONTS_PRIVATE_REPOS_FILE env var if you keep the file elsewhere.
+PRIVATE_REPOS_FILE = Path(os.environ.get(
+    "GFONTS_PRIVATE_REPOS_FILE",
+    Path.home() / ".config" / "gfonts-agents" / "private_repos.txt",
+))
+
+
+def load_private_repo_slugs() -> list:
+    """Read the non-public repo slug list from PRIVATE_REPOS_FILE.
+
+    Format: one slug substring per line, lowercase. Blank lines and `#`
+    comments are ignored. Returns an empty list if the file is missing,
+    printing a warning — callers should decide whether that is acceptable.
+    """
+    if not PRIVATE_REPOS_FILE.exists():
+        print(
+            f"WARNING: {PRIVATE_REPOS_FILE} not found — no upstream repos will "
+            "be filtered. Create the file (one slug per line) to enable "
+            "filtering of non-public repos.",
+            file=sys.stderr,
+        )
+        return []
+    slugs = []
+    for line in PRIVATE_REPOS_FILE.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        slugs.append(line.lower())
+    return slugs
+
+
+def _make_private_matcher(slugs: list):
+    """Return a predicate that matches tokens containing any denylist slug
+    as a whole repo name (not a prefix of a hyphenated name). Left
+    boundary: start-of-string or "/". Right boundary: end-of-string, "/",
+    or "_" — the latter handles crater source keys of the form
+    "owner/slug_commithash". Crucially, "-" is NOT a boundary, so a
+    denylist entry "foo" does not match "owner/foo-bar" — hyphenated
+    variants must be listed explicitly in the denylist file."""
+    if not slugs:
+        return lambda token: False
+    parts = "|".join(re.escape(s) for s in slugs)
+    pattern = re.compile(rf"(?:^|/)(?:{parts})(?=$|[/_])")
+
+    def match(token):
+        if not token:
+            return False
+        return bool(pattern.search(token.lower()))
+
+    return match
+
+
+PRIVATE_REPO_SLUGS = load_private_repo_slugs()
+is_private_repo_token = _make_private_matcher(PRIVATE_REPO_SLUGS)
+
+
+def normalize_repo_url(url: str) -> str:
+    """Normalize a repo URL for set comparison against gfonts_library_sources.
+
+    Returns a string like "owner/repo" (lowercase, no scheme, no .git suffix,
+    no trailing slash). Returns empty string for falsy input.
+    """
+    if not url:
+        return ""
+    u = url.strip().rstrip("/").lower()
+    u = re.sub(r"^https?://", "", u)
+    u = re.sub(r"^www\.", "", u)
+    u = re.sub(r"^github\.com/", "", u)
+    u = re.sub(r"\.git$", "", u)
+    return u
+
+
+def build_crater_sources_index(sources: dict) -> dict:
+    """Turn crater's sources.json into a repo-keyed index.
+
+    sources.json maps "owner/repo_commithash (config)" -> "https://github.com/owner/repo"
+    We produce: {norm_url: [{"key": <source_key>, "url": <original_url>}, ...]}
+    so clients can quickly ask "is this family's repo consumed by crater?".
+    """
+    index = defaultdict(list)
+    for source_key, url in sources.items():
+        norm = normalize_repo_url(url)
+        if not norm:
+            continue
+        if is_private_repo_token(norm) or is_private_repo_token(source_key) or is_private_repo_token(url):
+            continue
+        index[norm].append({"key": source_key, "url": url})
+    return dict(index)
 
 
 def fetch_json(path: str) -> dict | list:
@@ -44,6 +137,12 @@ def process_latest_run(run_data: dict, annotations: dict, sources: dict):
     if isinstance(success, dict) and "success" in success:
         success = success["success"]
 
+    # Strip non-public targets before any further processing so nothing
+    # downstream (table stats, diff profiles, annotations, failure lists)
+    # can carry a reference through.
+    success = {k: v for k, v in success.items() if not is_private_repo_token(k)}
+    annotations = {k: v for k, v in annotations.items() if not is_private_repo_token(k)}
+
     # Categorize targets
     identical_targets = []
     diff_targets = {}  # target_id -> diffs dict
@@ -68,7 +167,7 @@ def process_latest_run(run_data: dict, annotations: dict, sources: dict):
     # Also check for separate failure keys in the run data
     for key in ("fontc_failed", "fontmake_failed", "both_failed"):
         if key in run_data and isinstance(run_data[key], dict):
-            targets = list(run_data[key].keys())
+            targets = [t for t in run_data[key].keys() if not is_private_repo_token(t)]
             if key == "fontc_failed":
                 fontc_failed.extend(targets)
             elif key == "fontmake_failed":
@@ -357,6 +456,13 @@ def main():
         overview["identical"] = latest_stats.get("identical", 0)
         overview["identical_pct"] = round(100 * overview["identical"] / overview["total_targets"], 1)
 
+    if isinstance(failed_repos, dict):
+        failed_repos = {k: v for k, v in failed_repos.items() if not is_private_repo_token(k)}
+    elif isinstance(failed_repos, list):
+        failed_repos = [r for r in failed_repos if not is_private_repo_token(str(r))]
+
+    crater_sources_index = build_crater_sources_index(sources)
+
     output = {
         "_metadata": {
             "generated": datetime.now().isoformat(),
@@ -372,6 +478,7 @@ def main():
         "prioritization": prioritization[:100],  # cap at 100 items
         "failed_repos": failed_repos,
         "targets": all_targets,
+        "crater_sources": crater_sources_index,
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
@@ -385,6 +492,7 @@ def main():
     print(f"  Diff profiles: {len(diff_profiles)} clusters")
     print(f"  History: {len(history)} data points")
     print(f"  Targets with diffs: {len(all_targets)}")
+    print(f"  Crater source repos (unique normalized URLs): {len(crater_sources_index)}")
 
 
 if __name__ == "__main__":
