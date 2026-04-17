@@ -37,6 +37,7 @@
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#crater-analysis" data-tab="crater-analysis">fontc Crater</a></li>
                     <li class="nav-item"><a href="#crater-coverage" data-tab="crater-coverage">Crater Coverage</a></li>
+                    <li class="nav-item"><a href="#crater-targets" data-tab="crater-targets">Target Failures</a></li>
                 </ul>
             </details>
             <details class="nav-section" open>
@@ -189,6 +190,73 @@
                     </select>
                 </div>
                 <div id="cc-table" style="margin-bottom:2em;"></div>
+            </div>
+        </section>
+
+        <section id="tab-crater-targets" class="tab-content">
+            <div class="panel">
+                <h2>Crater Target Failures: Root Cause Analysis</h2>
+                <p class="panel-description">
+                    Analysis of 39 repos where <a href="https://googlefonts.github.io/fontc_crater/" target="_blank">fontc_crater</a>
+                    failed to find build targets. Traces each failure to its root cause in the
+                    <code>google-fonts-sources</code> discovery pipeline, <code>METADATA.pb</code> data,
+                    and override <code>config.yaml</code> files.
+                    <br><strong>Model</strong>: Claude Opus 4.6 &mdash; <span id="ct-date" style="color:#888;"></span>
+                </p>
+
+                <!-- Summary cards -->
+                <div class="builds-summary" id="ct-summary" style="margin-bottom:2em;">
+                    <div class="summary-card"><div class="card-value" id="ct-total">39</div><div class="card-label">Total Failures</div></div>
+                </div>
+
+                <!-- Architecture explainer -->
+                <h3>How Source Discovery Works</h3>
+                <div style="background:#f8f9fa;border:1px solid #ddd;border-radius:6px;padding:1em 1.2em;margin-bottom:2em;font-size:0.92em;line-height:1.6;">
+                    <ol style="margin:0;padding-left:1.5em;">
+                        <li><code>google-fonts-sources</code> crate scans <code>google/fonts</code> for <code>METADATA.pb</code> files</li>
+                        <li>For each family, checks if an <strong>override <code>config.yaml</code></strong> exists alongside <code>METADATA.pb</code></li>
+                        <li>If override exists &rarr; uses it (<code>config_is_external=true</code>), only needs <code>repo_url</code> + <code>commit</code></li>
+                        <li>If no override &rarr; requires <code>config_yaml</code> field in <code>METADATA.pb</code> pointing inside the upstream repo</li>
+                        <li><code>fontc_crater</code> clones upstream repo at the <strong>pinned commit</strong>, then resolves source file paths from config</li>
+                    </ol>
+                    <p style="margin:0.8em 0 0;color:#666;">
+                        <strong>The core problem:</strong> config.yaml files reference source paths that match the <em>current</em> upstream HEAD,
+                        but the pinned commit in <code>METADATA.pb</code> freezes the repo at an older state where files had different names/locations.
+                    </p>
+                </div>
+
+                <!-- Category breakdown table -->
+                <h3>Failure Categories</h3>
+                <div id="ct-categories" style="margin-bottom:2em;"></div>
+
+                <!-- Actionability -->
+                <h3>What Can Be Fixed Where?</h3>
+                <div style="margin-bottom:2em;">
+                    <table class="data-table" style="width:100%;">
+                        <thead><tr>
+                            <th>Fix Location</th>
+                            <th style="text-align:center;">Count</th>
+                            <th>Action</th>
+                        </tr></thead>
+                        <tbody>
+                            <tr>
+                                <td><code>google/fonts</code> (METADATA.pb + config.yaml)</td>
+                                <td style="text-align:center;">28</td>
+                                <td>Update pinned commits or fix override config paths</td>
+                            </tr>
+                            <tr>
+                                <td><code>fontc_crater</code> / <code>google-fonts-sources</code></td>
+                                <td style="text-align:center;">9</td>
+                                <td>Support pre-build scripts, exec recipes, path resolution fixes</td>
+                            </tr>
+                            <tr>
+                                <td>Upstream repos</td>
+                                <td style="text-align:center;">2</td>
+                                <td>Add config.yaml or fix custom build systems</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 

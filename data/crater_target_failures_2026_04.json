@@ -1,0 +1,132 @@
+{
+  "_metadata": {
+    "description": "Root cause analysis of 39 fontc_crater 'failed to find targets' failures",
+    "data_source": "https://googlefonts.github.io/fontc_crater/ + code analysis of google-fonts-sources crate + METADATA.pb/config.yaml inspection",
+    "generated": "2026-04-17",
+    "model": "Claude Opus 4.6",
+    "total_failures": 39,
+    "summary": "Most failures are due to config.yaml (override or upstream) referencing source files at paths that do not exist at the METADATA.pb pinned commit. The configs were written for current upstream HEAD, but the commit hash freezes the repo at an older state with different file layout.",
+    "categories": {
+      "config_written_for_head_not_pinned_commit": 17,
+      "wrong_paths_in_override_config": 5,
+      "prebuild_script_needed": 6,
+      "no_config_file_found": 3,
+      "stale_or_lost_commit": 3,
+      "incompatible_build_system": 2,
+      "inline_recipe_generated": 2,
+      "path_resolution_edge_case": 1
+    }
+  },
+  "architecture": {
+    "discovery_chain": [
+      "google-fonts-sources crate scans google/fonts for METADATA.pb files",
+      "For each family, checks if override config.yaml exists alongside METADATA.pb",
+      "If override exists: uses it (config_is_external=true), only needs repo_url + commit from METADATA.pb",
+      "If no override: requires config_yaml field in METADATA.pb pointing to config inside upstream repo",
+      "fontc_crater clones upstream repo at the pinned commit, resolves source paths from config"
+    ],
+    "key_code_paths": {
+      "source_discovery": "google-fonts-sources/src/lib.rs — discover_sources()",
+      "font_source_struct": "google-fonts-sources/src/font_source.rs — FontSource, config_path(), with_external_config()",
+      "target_resolution": "fontc/fontc_crater/src/ci.rs — make_targets() (lines 262-334)",
+      "metadata_parsing": "google-fonts-sources/src/metadata.rs"
+    }
+  },
+  "failures": {
+    "config_written_for_head_not_pinned_commit": {
+      "description": "Override config.yaml in google/fonts references source files at paths matching the current upstream HEAD, but METADATA.pb pins an older commit where files had different names or locations.",
+      "fix_strategy": "Either update the pinned commit in METADATA.pb to one where the config paths are valid, or adjust the config.yaml paths to match the pinned commit's file layout.",
+      "is_fontc_crater_bug": false,
+      "repos": [
+        {"repo": "BornaIz/Lalezar", "error": "missing source 'sources/Lalezar.glyphs'", "detail": "At pinned commit, file is at 'Glyphs Files/Lalezar.glyphs'. The sources/ directory was created later."},
+        {"repo": "Omnibus-Type/Barrio", "error": "missing source 'sources/Barrio.glyphs'", "detail": "At pinned commit, file is at 'SRC/Barrio.glyphs'. Repo restructured later."},
+        {"repo": "Omnibus-Type/PragatiNarrow", "error": "missing source 'PragatiNarrow.glyphs'", "detail": "File path changed between pinned commit and HEAD."},
+        {"repo": "TiroTypeworks/Castoro", "error": "missing source 'source/Castoro-Italic.designspace'", "detail": "At pinned commit, no .designspace files exist. Only UFO/VFJ/VFC sources. Designspaces added later."},
+        {"repo": "anoxic/neuton", "error": "missing source 'NL.ufo'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "cadsondemak/sriracha", "error": "missing source 'Sriracha-Regular.ufo'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "cathschmidt/yatra-one", "error": "missing source 'YatraOne_0.ufo'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "cyrealtype/Amethysta", "error": "missing source 'sources/Amethysta-Regular.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "cyrealtype/Jacques-Francois", "error": "missing source 'sources/JacquesFrancois.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "cyrealtype/Jacques-Francois-Shadow", "error": "missing source 'sources/JacquesFrancoisShadow.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "cyrealtype/Prata", "error": "missing source 'sources/Prata.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "intel/intel-one-mono", "error": "missing source 'sources/masters/IntelOneMono-Roman.designspace'", "detail": "At pinned commit, file named IntelOneMono.designspace (no -Roman suffix). Renamed later."},
+        {"repo": "itfoundry/kumar", "error": "missing source 'Kumar One.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "lipiraval/Mogra", "error": "missing source 'Mogra.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "m4rc1e/Istok-Web", "error": "missing source 'IstokWeb-Italic.glyphs'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "vernnobile/oxygenFont", "error": "missing source 'Oxygen-Regular.ufo'", "detail": "Source file layout changed between pinned commit and HEAD."},
+        {"repo": "weiweihuanghuang/fragment-mono", "error": "missing source 'Fragment-Mono.glyphs'", "detail": "METADATA.pb config_yaml points to sources/config.yaml. At pinned commit, the referenced file may not exist at expected relative path."}
+      ]
+    },
+    "wrong_paths_in_override_config": {
+      "description": "Override config.yaml in google/fonts has incorrect source file paths — files exist in the upstream repo but at different paths than what the config specifies.",
+      "fix_strategy": "Fix the override config.yaml paths to match actual file locations at the pinned commit.",
+      "is_fontc_crater_bug": false,
+      "repos": [
+        {"repo": "googlefonts/cousine", "error": "missing source 'sources/Cousine-BoldItalic.glyphs'", "detail": "Files are at sources/Cousine-BoldItalic/Cousine-BoldItalic.glyphs (inside subdirectories), not flat."},
+        {"repo": "googlefonts/tinos", "error": "missing source 'sources/Tinos-BoldItalic.glyphs'", "detail": "Same pattern as Cousine — files nested in subdirectories."},
+        {"repo": "googlefonts/noto-fonts", "error": "missing source 'sources/NotoSansGurmukhi.glyphs'", "detail": "Monorepo with different directory structure than config assumes."},
+        {"repo": "notofonts/arabic", "error": "missing source 'sources/NotoNaskhArabicUI.glyphspackage'", "detail": "Override config path does not match actual file location in repo."},
+        {"repo": "aliftype/amiri.git", "error": "missing source 'sources/Amiri.glyphspackage'", "detail": "Override config path does not match actual file location in repo."}
+      ]
+    },
+    "prebuild_script_needed": {
+      "description": "Source files are generated by pre-build scripts (build.sh, Makefile, Python scripts) that must run before source discovery.",
+      "fix_strategy": "fontc_crater should support running pre-build steps, or repos need preCompile support in config.yaml.",
+      "is_fontc_crater_bug": true,
+      "repos": [
+        {"repo": "Gue3bara/Cairo", "error": "missing source 'CairoPlay.glyphs'", "detail": "Generated by scripts/makeplay.py from Cairo.glyphs at build time."},
+        {"repo": "MoonlitOwen/CactusSerif", "error": "missing source 'temp/CactusClassicalSerif-Regular.ufo'", "detail": "UFO extracted from .ufoz by scripts/extract.py."},
+        {"repo": "MoonlitOwen/ChocolateSans", "error": "missing source 'temp/ChocolateClassicalSans-Regular.ufo'", "detail": "Same .ufoz extraction pattern."},
+        {"repo": "MoonlitOwen/ThenKhung", "error": "missing source 'temp/UoqMunThenKhung-Regular.ufo'", "detail": "Same .ufoz extraction pattern."},
+        {"repo": "aaronbell/LxgwMarkerGothic", "error": "missing source 'temp/LXGWMarkerGothic-Regular.ufo'", "detail": "Same .ufoz extraction pattern."},
+        {"repo": "loudifier/Comic-Relief", "error": "missing source 'ComicRelief-Bold.ufo'", "detail": "UFO converted from FontForge .sfd by sfd2ufo Makefile target."}
+      ]
+    },
+    "no_config_file_found": {
+      "description": "Neither an override config.yaml in google/fonts nor a config inside the upstream repo was found.",
+      "fix_strategy": "Create override config.yaml in google/fonts family directory, or add config.yaml to the upstream repo.",
+      "is_fontc_crater_bug": false,
+      "repos": [
+        {"repo": "Etcetera-Type-Co/Grandstander", "error": "no config file was found", "detail": "METADATA.pb has config_yaml: 'Sources/config.yaml' but it doesn't exist at pinned commit."},
+        {"repo": "googlefonts/dm-fonts", "error": "no config file was found", "detail": "No config.yaml in upstream repo, no override in google/fonts."},
+        {"repo": "mishamyrt/Lilex", "error": "no config file was found", "detail": "No config.yaml in upstream repo, no override in google/fonts."}
+      ]
+    },
+    "stale_or_lost_commit": {
+      "description": "The pinned commit in METADATA.pb cannot be found in the upstream repo, either lost to a force-push or on a non-default branch.",
+      "fix_strategy": "Update METADATA.pb to reference an existing commit, or fetch the correct branch.",
+      "is_fontc_crater_bug": false,
+      "repos": [
+        {"repo": "theleagueof/raleway", "error": "missing source 'sources/Raleway-Italic.designspace'", "detail": "Pinned commit 7b288c6 may be lost to a force-push. Files exist at HEAD."},
+        {"repo": "mooniak/abhaya-libre-font", "error": "missing source 'sources/glyphs/Abhaya-Masters.glyphs'", "detail": "Old path from before repo reorganization. Current HEAD has sources/AbhayaLibre.glyphs."},
+        {"repo": "gitlab.com/smc/fonts/manjari", "error": "missing source 'sources/Manjari-Bold.ufo'", "detail": "GitLab repo — commit or source structure may have changed."}
+      ]
+    },
+    "incompatible_build_system": {
+      "description": "Repos use entirely custom build systems, not gftools-builder compatible.",
+      "fix_strategy": "Exclude from fontc_crater or flag as custom-build.",
+      "is_fontc_crater_bug": false,
+      "repos": [
+        {"repo": "notofonts/duployan", "error": "missing source 'NotoSansDuployan.glyphs'", "detail": "Font built from Python code via FontForge API. No .glyphs file exists."},
+        {"repo": "petrvanblokland/TYPETR-Bitcount", "error": "missing field 'sources'", "detail": "Custom Makefile + scripts/build.py. config.yaml only has familyName, no sources field."}
+      ]
+    },
+    "inline_recipe_generated": {
+      "description": "Source files are generated by exec steps within the gftools recipe itself.",
+      "fix_strategy": "fontc_crater should understand exec recipe steps, or skip source validation for custom recipes.",
+      "is_fontc_crater_bug": true,
+      "repos": [
+        {"repo": "googlefonts/sawarabi-mincho", "error": "missing source 'SawarabiMincho.glyphs'", "detail": "Generated by babelfont exec from .sfdir file during recipe execution."},
+        {"repo": "xotypeco/big_shoulders", "error": "missing source '../Big-Shoulders/sources/BigShoulders.glyphs'", "detail": "Monorepo with cross-directory relative paths in config. The path resolution generates incorrect '../' prefixed paths."}
+      ]
+    },
+    "path_resolution_edge_case": {
+      "description": "Source files exist but fontc_crater resolves paths incorrectly.",
+      "fix_strategy": "Fix path resolution in google-fonts-sources or fontc_crater.",
+      "is_fontc_crater_bug": true,
+      "repos": [
+        {"repo": "alexeiva/Arsenal", "error": "missing source 'Arsenal-Italic.glyphs'", "detail": "Files exist at sources/Arsenal-Italic.glyphs. Override config may resolve paths relative to wrong base directory."}
+      ]
+    }
+  }
+}

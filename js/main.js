@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadDevLog();
     loadCraterAnalysis();
     loadCraterCoverage();
+    loadCraterTargetFailures();
 });
 
 function initTabs() {
@@ -4702,4 +4703,97 @@ function renderCraterCoverage(crater, sources) {
     render();
     if (searchInput) searchInput.addEventListener('input', () => { showCount = 100; render(); });
     if (filterSel) filterSel.addEventListener('change', () => { showCount = 100; render(); });
+}
+
+// ── Crater Target Failures ──────────────────────────────────────────
+function loadCraterTargetFailures() {
+    fetch('data/crater_target_failures_2026_04.json')
+        .then(r => r.json())
+        .then(renderCraterTargetFailures)
+        .catch(e => console.warn('crater target failures not loaded', e));
+}
+
+function renderCraterTargetFailures(data) {
+    const meta = data._metadata;
+    const dateEl = document.getElementById('ct-date');
+    if (dateEl) dateEl.textContent = 'Analysis date: ' + meta.generated;
+
+    // Summary cards
+    const summaryEl = document.getElementById('ct-summary');
+    if (summaryEl) {
+        const cats = meta.categories;
+        const colors = {
+            config_written_for_head_not_pinned_commit: '#ff9800',
+            wrong_paths_in_override_config: '#f44336',
+            prebuild_script_needed: '#2196f3',
+            no_config_file_found: '#9c27b0',
+            stale_or_lost_commit: '#795548',
+            incompatible_build_system: '#607d8b',
+            inline_recipe_generated: '#009688',
+            path_resolution_edge_case: '#e91e63'
+        };
+        let cards = `<div class="summary-card"><div class="card-value">${meta.total_failures}</div><div class="card-label">Total Failures</div></div>`;
+        for (const [key, count] of Object.entries(cats)) {
+            const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            const color = colors[key] || '#888';
+            cards += `<div class="summary-card" style="border-left:4px solid ${color};"><div class="card-value">${count}</div><div class="card-label">${label}</div></div>`;
+        }
+        summaryEl.innerHTML = cards;
+    }
+
+    // Category breakdown with collapsible family lists
+    const catEl = document.getElementById('ct-categories');
+    if (!catEl) return;
+
+    const failures = data.failures;
+    const catLabels = {
+        config_written_for_head_not_pinned_commit: 'Config written for HEAD, not pinned commit',
+        wrong_paths_in_override_config: 'Wrong paths in override config.yaml',
+        prebuild_script_needed: 'Pre-build script needed',
+        no_config_file_found: 'No config file found',
+        stale_or_lost_commit: 'Stale or lost commit',
+        incompatible_build_system: 'Incompatible build system',
+        inline_recipe_generated: 'Inline recipe generates source',
+        path_resolution_edge_case: 'Path resolution edge case'
+    };
+    const bugIcons = { true: '<span title="fontc_crater bug" style="color:#f44336;">&#x1f41b;</span>', false: '' };
+
+    let html = `<table class="data-table" style="width:100%;">
+        <thead><tr>
+            <th>Category</th>
+            <th style="text-align:center;">Count</th>
+            <th style="text-align:center;">fontc_crater bug?</th>
+            <th>Fix Strategy</th>
+            <th>Affected Families</th>
+        </tr></thead><tbody>`;
+
+    for (const [catKey, catData] of Object.entries(failures)) {
+        const label = catLabels[catKey] || catKey;
+        const repos = catData.repos || [];
+        const isBug = catData.is_fontc_crater_bug;
+        const bugLabel = isBug ? 'Yes ' + bugIcons[true] : 'No';
+
+        // Build collapsible family list
+        let familyDetails = '<details><summary style="cursor:pointer;color:#1a73e8;font-size:0.9em;">' +
+            repos.length + ' families</summary><ul style="margin:0.4em 0 0;padding-left:1.4em;font-size:0.85em;line-height:1.7;">';
+        for (const r of repos) {
+            const repoUrl = r.repo.startsWith('gitlab') ? 'https://' + r.repo : 'https://github.com/' + r.repo;
+            familyDetails += `<li><a href="${repoUrl}" target="_blank">${r.repo}</a>` +
+                `<br><code style="font-size:0.85em;color:#c62828;">${r.error}</code>` +
+                (r.detail ? `<br><span style="color:#666;font-size:0.9em;">${r.detail}</span>` : '') +
+                `</li>`;
+        }
+        familyDetails += '</ul></details>';
+
+        html += `<tr>
+            <td><strong>${label}</strong><br><span style="color:#666;font-size:0.85em;">${catData.description}</span></td>
+            <td style="text-align:center;font-weight:bold;">${repos.length}</td>
+            <td style="text-align:center;">${bugLabel}</td>
+            <td style="font-size:0.9em;">${catData.fix_strategy}</td>
+            <td>${familyDetails}</td>
+        </tr>`;
+    }
+
+    html += '</tbody></table>';
+    catEl.innerHTML = html;
 }
