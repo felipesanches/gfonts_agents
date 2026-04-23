@@ -1657,5 +1657,50 @@
     "role": "assistant",
     "timestamp": "2026-03-27T12:35:00Z",
     "content": "Saved policy. Verified current approach is correct: override config paths are relative to repo root, which matches fontc_crater's expectations for external/virtual configs."
+  },
+  {
+    "timestamp": "2026-04-23T22:00:00Z",
+    "role": "user",
+    "message": "At https://felipesanches.github.io/gfonts_agents/#crater-coverage I see that we have 5 families that are \"Ready to submit to crater\". Can you tell me their familinames?"
+  },
+  {
+    "timestamp": "2026-04-23T22:01:00Z",
+    "role": "user",
+    "message": "At https://felipesanches.github.io/gfonts_agents/#crater-coverage I see that we have 5 families that are \"Ready to submit to crater\". Can you tell me their familynames?"
+  },
+  {
+    "timestamp": "2026-04-23T22:05:00Z",
+    "role": "assistant",
+    "message": "Listed the 5 families the dashboard classified as \"Ready to submit\": Chiron GoRound TC, Chiron Hei HK, Chiron Sung HK, Grandstander, Lilex."
+  },
+  {
+    "timestamp": "2026-04-23T22:10:00Z",
+    "role": "user",
+    "message": "Is this taking into consideration the latest contents of tagets.json on the fontc_crater repo? (https://github.com/googlefonts/fontc_crater/)"
+  },
+  {
+    "timestamp": "2026-04-23T22:15:00Z",
+    "role": "assistant",
+    "message": "Confirmed our classification used only results/sources.json, not targets.json. All 5 families are already declared in upstream targets.json (949 repos) but missing from sources.json (944 repos) — so they were mislabeled as \"ready to submit\"; they have in fact already been submitted."
+  },
+  {
+    "timestamp": "2026-04-23T22:20:00Z",
+    "role": "user",
+    "message": "Yes, I want us to improve our handling of all these sources of info. I also want you to verify what's the status of the crater reports as of today at https://googlefonts.github.io/fontc_crater/"
+  },
+  {
+    "timestamp": "2026-04-23T22:25:00Z",
+    "role": "assistant",
+    "message": "Investigated https://googlefonts.github.io/fontc_crater/: latest run finished 2026-04-23 16:27 UTC, fontc_rev=62674df9, 2565 targets (1628 identical 63.5%, 218 diff, 718 failures). Identified 39 repos in failed_repos.json (\"failed to find targets\") including Grandstander and Lilex (both \"no config file was found\"). Chiron fonts (3) are in targets.json but silently absent from success/failure and failed_repos. Proposed plan: fetch targets.json + failed_repos.json + results/sources.json; re-bucket classification (target_resolution_failed / submitted_pending / ready_to_submit / existing buckets); surface upstream rev/config drift inline."
+  },
+  {
+    "timestamp": "2026-04-23T22:30:00Z",
+    "role": "user",
+    "message": "inline. visible."
+  },
+  {
+    "timestamp": "2026-04-23T22:35:00Z",
+    "role": "assistant",
+    "message": "Implemented the plan in gfonts_agents: fetch_crater_analysis.py now fetches targets.json and indexes crater_targets + failed_repos_index. js/main.js classifyMissingFamily differentiates target_resolution_failed, submitted_pending, ready_to_submit, plus existing buckets; computeUpstreamDrift surfaces rev/config mismatches inline in the missing-families detail table. Added a new \"Upstream Metadata Drift (Covered Families)\" section showing 15 covered families whose METADATA.pb commit differs from upstream targets.json. Updated index.html panel copy. Verified via headless Chromium — all 5 previously-\"ready\" families now correctly classified (2 target-resolution-failed with reason shown, 3 submitted-pending)."
   }
 ]

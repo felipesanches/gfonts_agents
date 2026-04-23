@@ -4499,13 +4499,35 @@ function normalizeRepoUrl(url) {
     return u;
 }
 
-function classifyMissingFamily(f) {
+function classifyMissingFamily(f, ctx) {
     const hasUrl = !!f.repository_url;
     const hasSource = f.has_source_block === true;
     const hasCommit = !!f.commit;
     const hasConfig = !!f.config_yaml || f.override_config === true;
     const rb = f.reproducible_build || '';
     const repo = (f.repository_url || '').toLowerCase();
+    const norm = normalizeRepoUrl(f.repository_url);
+    const targetsIndex = (ctx && ctx.targetsIndex) || {};
+    const failedIndex = (ctx && ctx.failedIndex) || {};
+
+    // Upstream crater already knows about this repo — surface which stage
+    // it got stuck at before falling through to the "our side is incomplete"
+    // checks. These two buckets take precedence because the upstream status
+    // is factual (crater actually tried it) while the checks below are
+    // inferences from our own METADATA.pb.
+    if (norm && failedIndex[norm]) {
+        return {
+            key: 'target_resolution_failed',
+            label: 'Submitted; upstream target resolution failed',
+            reason: failedIndex[norm].reason || '',
+        };
+    }
+    if (norm && targetsIndex[norm]) {
+        return {
+            key: 'submitted_pending',
+            label: 'Submitted; awaiting next crater run',
+        };
+    }
 
     if (!hasSource || !hasUrl) {
         return { key: 'no_source', label: 'No source block / no repo URL' };
@@ -4519,8 +4541,31 @@ function classifyMissingFamily(f) {
     if (!hasConfig) {
         return { key: 'missing_config', label: 'Missing config.yaml' };
     }
-    // Everything looks complete on our side; crater just isn't consuming it.
+    // Everything looks complete on our side and upstream hasn't heard of it.
     return { key: 'ready_to_submit', label: 'Ready to submit to crater' };
+}
+
+function computeUpstreamDrift(f, targetsIndex) {
+    const norm = normalizeRepoUrl(f.repository_url);
+    if (!norm || !targetsIndex || !targetsIndex[norm]) return null;
+    const entries = targetsIndex[norm];
+    const notes = [];
+    // Any targets.json entry whose rev matches ours is enough to call it "in sync".
+    const ourCommit = (f.commit || '').toLowerCase();
+    const ourConfig = f.config_yaml || '';
+    const revs = Array.from(new Set(entries.map(e => (e.rev || '').toLowerCase()).filter(Boolean)));
+    const configs = Array.from(new Set(entries.map(e => e.config || '').filter(Boolean)));
+    if (ourCommit && revs.length && !revs.includes(ourCommit)) {
+        const shown = revs.map(r => r.slice(0, 10)).join(', ');
+        notes.push(`upstream rev: ${shown}`);
+    }
+    // Config drift is only interesting when we have an in-repo config path
+    // to compare. Our override configs (override_config=true) live in
+    // google/fonts, so upstream can't see them — no drift to surface there.
+    if (!f.override_config && ourConfig && configs.length && !configs.includes(ourConfig)) {
+        notes.push(`upstream config: ${configs.join(', ')}`);
+    }
+    return notes.length ? notes : null;
 }
 
 async function loadCraterCoverage() {
@@ -4539,6 +4584,8 @@ async function loadCraterCoverage() {
 
 function renderCraterCoverage(crater, sources) {
     const craterIndex = crater.crater_sources || {};
+    const targetsIndex = crater.crater_targets || {};
+    const failedIndex = crater.failed_repos_index || {};
     const craterRepoSet = new Set(Object.keys(craterIndex));
     const families = sources.families || [];
 
@@ -4562,8 +4609,13 @@ function renderCraterCoverage(crater, sources) {
     setText('cc-missing', missing.length.toLocaleString());
     setText('cc-pct', `${pct}%`);
 
-    // Classify missing
-    const classified = missing.map(f => ({ family: f, reason: classifyMissingFamily(f) }));
+    // Classify missing (context-aware: uses upstream targets/failed indexes).
+    const ctx = { targetsIndex, failedIndex };
+    const classified = missing.map(f => ({
+        family: f,
+        reason: classifyMissingFamily(f, ctx),
+        drift: computeUpstreamDrift(f, targetsIndex),
+    }));
     const byReason = {};
     for (const row of classified) {
         const k = row.reason.key;
@@ -4571,9 +4623,20 @@ function renderCraterCoverage(crater, sources) {
         byReason[k].rows.push(row);
     }
 
-    // Breakdown table
-    const reasonOrder = ['ready_to_submit', 'missing_config', 'no_commit', 'legacy_sources', 'no_source'];
+    // Breakdown table — ordered by pipeline stage: upstream-known buckets
+    // first (we have the most information about them), then our-side gaps.
+    const reasonOrder = [
+        'target_resolution_failed',
+        'submitted_pending',
+        'ready_to_submit',
+        'missing_config',
+        'no_commit',
+        'legacy_sources',
+        'no_source',
+    ];
     const reasonColors = {
+        target_resolution_failed: '#e53935',
+        submitted_pending: '#fbc02d',
         ready_to_submit: '#4caf50',
         missing_config: '#ff9800',
         no_commit: '#ffb300',
@@ -4627,6 +4690,44 @@ function renderCraterCoverage(crater, sources) {
            </details>`
         : '<p style="color:#666;">None — every crater repo matches a GF family.</p>';
 
+    // Drift for covered families — our METADATA.pb commit/config differs
+    // from upstream targets.json. Surface these so maintainers can reconcile.
+    const driftRows = [];
+    for (const f of covered) {
+        const drift = computeUpstreamDrift(f, targetsIndex);
+        if (!drift) continue;
+        const repoLink = f.repository_url
+            ? `<a href="${f.repository_url}" target="_blank">${f.repository_url.replace(/^https?:\/\/(www\.)?github\.com\//, '')}</a>`
+            : '';
+        const ourCommit = f.commit ? `<code style="font-size:0.85em;">${f.commit.slice(0, 10)}</code>` : '<em style="color:#999;">—</em>';
+        const ourConfig = f.override_config
+            ? '<span style="color:#1976d2;">override</span>'
+            : (f.config_yaml ? `<code style="font-size:0.85em;">${f.config_yaml}</code>` : '<em style="color:#999;">—</em>');
+        driftRows.push(`
+            <tr>
+                <td style="padding:4px 8px;">${f.family_name || ''}</td>
+                <td style="padding:4px 8px;">${repoLink}</td>
+                <td style="padding:4px 8px;">${ourCommit}</td>
+                <td style="padding:4px 8px;">${ourConfig}</td>
+                <td style="padding:4px 8px;color:#c62828;font-size:0.85em;">${drift.join('<br>')}</td>
+            </tr>
+        `);
+    }
+    document.getElementById('cc-drift').innerHTML = driftRows.length
+        ? `<table style="border-collapse:collapse;background:#fff;border:1px solid #ddd;border-radius:6px;width:100%;font-size:0.9em;">
+             <thead>
+                 <tr style="background:#f5f5f5;">
+                     <th style="padding:6px 8px;text-align:left;">Family</th>
+                     <th style="padding:6px 8px;text-align:left;">Repository</th>
+                     <th style="padding:6px 8px;text-align:left;">Our Commit</th>
+                     <th style="padding:6px 8px;text-align:left;">Our Config</th>
+                     <th style="padding:6px 8px;text-align:left;">Upstream Drift</th>
+                 </tr>
+             </thead>
+             <tbody>${driftRows.join('')}</tbody>
+           </table>`
+        : '<p style="color:#666;">No drift detected — all covered families match upstream <code>targets.json</code>.</p>';
+
     // Populate reason filter
     const filterSel = document.getElementById('cc-reason-filter');
     if (filterSel && filterSel.options.length <= 1) {
@@ -4669,10 +4770,17 @@ function renderCraterCoverage(crater, sources) {
             const config = f.override_config
                 ? '<span style="color:#1976d2;">override</span>'
                 : (f.config_yaml ? `<code style="font-size:0.85em;">${f.config_yaml}</code>` : '<em style="color:#999;">—</em>');
+            let reasonCell = `<span style="display:inline-block;padding:2px 6px;border-radius:3px;background:${reasonColors[r.reason.key]}22;color:#333;font-size:0.85em;">${r.reason.label}</span>`;
+            if (r.reason.reason) {
+                reasonCell += `<div style="font-size:0.8em;color:#666;margin-top:2px;"><em>${r.reason.reason}</em></div>`;
+            }
+            if (r.drift && r.drift.length) {
+                reasonCell += `<div style="font-size:0.8em;color:#c62828;margin-top:2px;">Drift: ${r.drift.join('; ')}</div>`;
+            }
             return `
                 <tr>
                     <td style="padding:4px 8px;">${f.family_name || ''}</td>
-                    <td style="padding:4px 8px;"><span style="display:inline-block;padding:2px 6px;border-radius:3px;background:${reasonColors[r.reason.key]}22;color:#333;font-size:0.85em;">${r.reason.label}</span></td>
+                    <td style="padding:4px 8px;">${reasonCell}</td>
                     <td style="padding:4px 8px;">${repoLink}</td>
                     <td style="padding:4px 8px;">${commit}</td>
                     <td style="padding:4px 8px;">${config}</td>

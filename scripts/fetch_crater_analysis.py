@@ -112,6 +112,63 @@ def build_crater_sources_index(sources: dict) -> dict:
     return dict(index)
 
 
+def build_crater_targets_index(targets: dict) -> dict:
+    """Turn crater's targets.json into a repo-keyed index.
+
+    targets.json at the repo root is the *intended* target list (declared via
+    PRs to fontc_crater), while results/sources.json reflects what was actually
+    consumed on the most recent run. They differ when a target is queued but
+    silently dropped, or when upstream source/config resolution fails.
+
+    Input format:
+      {
+        "version": "1.1",
+        "fonts_repo_sha": "<sha>",
+        "sources": [
+          {"repo_url": "...", "rev": "...", "config": "..."},
+          ...
+        ]
+      }
+
+    Output: {norm_url: [{"url", "rev", "config"}, ...]}
+    """
+    index = defaultdict(list)
+    for entry in targets.get("sources", []) if isinstance(targets, dict) else []:
+        url = entry.get("repo_url")
+        norm = normalize_repo_url(url)
+        if not norm:
+            continue
+        if is_private_repo_token(norm) or is_private_repo_token(url or ""):
+            continue
+        index[norm].append({
+            "url": url,
+            "rev": entry.get("rev"),
+            "config": entry.get("config"),
+        })
+    return dict(index)
+
+
+def build_failed_repos_index(failed_repos) -> dict:
+    """Normalize results/failed_repos.json to a repo-keyed index.
+
+    Crater stores it as {"https://github.com/owner/repo": "<reason>"}. We key
+    by normalized owner/repo so lookups align with the other indexes.
+
+    Output: {norm_url: {"url", "reason"}}
+    """
+    index = {}
+    if not isinstance(failed_repos, dict):
+        return index
+    for url, reason in failed_repos.items():
+        norm = normalize_repo_url(url)
+        if not norm:
+            continue
+        if is_private_repo_token(norm) or is_private_repo_token(url):
+            continue
+        index[norm] = {"url": url, "reason": reason}
+    return index
+
+
 def fetch_json(path: str) -> dict | list:
     url = f"{BASE_URL}/{path}"
     print(f"  Fetching {url} ...")
@@ -422,6 +479,7 @@ def main():
     annotations = fetch_json("results/annotations.json")
     sources = fetch_json("results/sources.json")
     failed_repos = fetch_json("results/failed_repos.json")
+    targets = fetch_json("targets.json")
 
     # Find the latest results file from the summary
     latest_entry = summary[-1]
@@ -462,12 +520,17 @@ def main():
         failed_repos = [r for r in failed_repos if not is_private_repo_token(str(r))]
 
     crater_sources_index = build_crater_sources_index(sources)
+    crater_targets_index = build_crater_targets_index(targets)
+    failed_repos_index = build_failed_repos_index(failed_repos)
+
+    fonts_repo_sha = targets.get("fonts_repo_sha") if isinstance(targets, dict) else None
 
     output = {
         "_metadata": {
             "generated": datetime.now().isoformat(),
             "latest_run": latest_entry.get("began", "")[:10],
             "fontc_rev": latest_entry.get("fontc_rev", ""),
+            "fonts_repo_sha": fonts_repo_sha,
             "data_source": "https://github.com/googlefonts/fontc_crater",
         },
         "overview": overview,
@@ -477,8 +540,10 @@ def main():
         "history": history,
         "prioritization": prioritization[:100],  # cap at 100 items
         "failed_repos": failed_repos,
+        "failed_repos_index": failed_repos_index,
         "targets": all_targets,
         "crater_sources": crater_sources_index,
+        "crater_targets": crater_targets_index,
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
@@ -493,6 +558,8 @@ def main():
     print(f"  History: {len(history)} data points")
     print(f"  Targets with diffs: {len(all_targets)}")
     print(f"  Crater source repos (unique normalized URLs): {len(crater_sources_index)}")
+    print(f"  Crater target repos (declared in targets.json): {len(crater_targets_index)}")
+    print(f"  Failed-repo entries (failed_repos.json): {len(failed_repos_index)}")
 
 
 if __name__ == "__main__":

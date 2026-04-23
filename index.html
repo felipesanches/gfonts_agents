@@ -154,7 +154,10 @@
                     How much of the Google Fonts full library is currently being consumed by
                     <a href="https://github.com/googlefonts/fontc_crater" target="_blank">fontc_crater</a>.
                     A family is "covered" if its upstream <code>repository_url</code> appears in crater's
-                    <code>results/sources.json</code> (URL match only, commit-agnostic).
+                    <code>results/sources.json</code> (the URLs actually consumed on the most recent run;
+                    URL match is commit-agnostic). We also cross-reference crater's
+                    <code>targets.json</code> (intended targets) and <code>results/failed_repos.json</code>
+                    (target resolution failures) to classify everything else by pipeline stage.
                     The goal is 100% coverage — this page surfaces what is still missing and why.
                 </p>
 
@@ -167,10 +170,25 @@
 
                 <h3>Breakdown by Reason</h3>
                 <p style="color:#666;font-size:0.9em;margin-bottom:1em;">
-                    Families not currently consumed by fontc_crater, grouped by the blocker.
-                    <strong>Ready to submit</strong> is the actionable bucket: families that already have
-                    a full <code>source</code> block (repo + commit + config) and should work in crater today —
-                    they just haven't been added to crater's source list yet.
+                    Families not in crater's latest run, grouped by pipeline stage.
+                    Upstream-known buckets come first &mdash; they reflect crater's own state
+                    (<code>targets.json</code> and <code>failed_repos.json</code>) and take precedence over
+                    inferences from our METADATA.pb:
+                </p>
+                <ul style="color:#666;font-size:0.9em;margin:0 0 1em 1.5em;">
+                    <li><strong>Target resolution failed upstream</strong> &mdash; submitted and crater tried it,
+                        but source or config lookup failed. Reason shown inline.</li>
+                    <li><strong>Submitted; awaiting next crater run</strong> &mdash; in upstream
+                        <code>targets.json</code> but absent from the most recent run (silent drop).</li>
+                    <li><strong>Ready to submit</strong> &mdash; our metadata looks complete and upstream hasn't
+                        heard of the repo yet. Actionable: submit a PR to fontc_crater's <code>targets.json</code>.</li>
+                    <li><strong>Missing config</strong>, <strong>Missing commit</strong>,
+                        <strong>Legacy sources</strong>, <strong>No source block</strong> &mdash; our-side gaps
+                        (METADATA.pb / override config).</li>
+                </ul>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">
+                    Rows in the detail table also show <strong>drift</strong> inline when our METADATA.pb
+                    commit or config path differs from upstream <code>targets.json</code>.
                 </p>
                 <div id="cc-breakdown" style="margin-bottom:2em;"></div>
 
@@ -181,6 +199,14 @@
                     than what crater has recorded. Worth investigating and reconciling.
                 </p>
                 <div id="cc-unmatched-crater" style="margin-bottom:2em;"></div>
+
+                <h3>Upstream Metadata Drift (Covered Families)</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">
+                    Families that crater is actively building, but where our METADATA.pb records a
+                    different commit or config path than upstream <code>targets.json</code>. These are
+                    worth reconciling so the onboarding snapshot we document matches what crater validates.
+                </p>
+                <div id="cc-drift" style="margin-bottom:2em;"></div>
 
                 <h3>Missing Families</h3>
                 <div style="margin-bottom:0.5em;">
