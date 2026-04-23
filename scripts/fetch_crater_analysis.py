@@ -120,17 +120,24 @@ def build_crater_targets_index(targets: dict) -> dict:
     consumed on the most recent run. They differ when a target is queued but
     silently dropped, or when upstream source/config resolution fails.
 
-    Input format:
+    Input format (v1.1):
       {
         "version": "1.1",
         "fonts_repo_sha": "<sha>",
         "sources": [
-          {"repo_url": "...", "rev": "...", "config": "..."},
+          {"repo_url": "...", "rev": "...", "config": "...",
+           "config_is_external": true|false, "has_rev_conflict": true|false},
           ...
         ]
       }
 
-    Output: {norm_url: [{"url", "rev", "config"}, ...]}
+    `config_is_external` means google-fonts-sources found an override
+    config.yaml in google/fonts (path is relative to the google/fonts repo
+    root, e.g. "google/fonts/ofl/mingzat/config.yaml"). When false, the
+    config path is relative to the upstream repo root.
+
+    Output: {norm_url: [{"url", "rev", "config", "config_is_external",
+                         "has_rev_conflict"}, ...]}
     """
     index = defaultdict(list)
     for entry in targets.get("sources", []) if isinstance(targets, dict) else []:
@@ -144,6 +151,8 @@ def build_crater_targets_index(targets: dict) -> dict:
             "url": url,
             "rev": entry.get("rev"),
             "config": entry.get("config"),
+            "config_is_external": bool(entry.get("config_is_external")),
+            "has_rev_conflict": bool(entry.get("has_rev_conflict")),
         })
     return dict(index)
 

@@ -4549,21 +4549,41 @@ function computeUpstreamDrift(f, targetsIndex) {
     const norm = normalizeRepoUrl(f.repository_url);
     if (!norm || !targetsIndex || !targetsIndex[norm]) return null;
     const entries = targetsIndex[norm];
-    const notes = [];
-    // Any targets.json entry whose rev matches ours is enough to call it "in sync".
+
+    // Identify the targets.json entry that corresponds specifically to *this*
+    // family. For monorepo repos (e.g. googlefonts/plex has 9 families) the
+    // repo appears multiple times in targets.json, one entry per family, each
+    // with a different config path. Matching by config path (not just repo)
+    // prevents false drift on families that have no crater entry of their
+    // own but share a repo with families that do.
     const ourCommit = (f.commit || '').toLowerCase();
     const ourConfig = f.config_yaml || '';
-    const revs = Array.from(new Set(entries.map(e => (e.rev || '').toLowerCase()).filter(Boolean)));
-    const configs = Array.from(new Set(entries.map(e => e.config || '').filter(Boolean)));
-    if (ourCommit && revs.length && !revs.includes(ourCommit)) {
-        const shown = revs.map(r => r.slice(0, 10)).join(', ');
-        notes.push(`upstream rev: ${shown}`);
+    const familyDir = (f.path || '').replace(/\/METADATA\.pb$/, '');
+    const expectedOverridePath = familyDir ? `google/fonts/${familyDir}/config.yaml` : '';
+
+    let candidates = [];
+    if (f.override_config && expectedOverridePath) {
+        candidates = entries.filter(e => e.config_is_external && e.config === expectedOverridePath);
+    } else if (ourConfig) {
+        candidates = entries.filter(e => !e.config_is_external && e.config === ourConfig);
     }
-    // Config drift is only interesting when we have an in-repo config path
-    // to compare. Our override configs (override_config=true) live in
-    // google/fonts, so upstream can't see them — no drift to surface there.
-    if (!f.override_config && ourConfig && configs.length && !configs.includes(ourConfig)) {
-        notes.push(`upstream config: ${configs.join(', ')}`);
+    // No per-family entry in targets.json → the repo may be covered via
+    // sibling families, but this family isn't individually targeted. Skip.
+    if (!candidates.length) return null;
+
+    // If any candidate rev matches ours, we're in sync — duplicate entries
+    // differing only by rev are common (crater testing multiple commits on
+    // the same config).
+    if (ourCommit && candidates.some(e => (e.rev || '').toLowerCase() === ourCommit)) {
+        return null;
+    }
+
+    const notes = [];
+    const upstreamRevs = Array.from(new Set(
+        candidates.map(e => (e.rev || '').toLowerCase()).filter(Boolean)
+    ));
+    if (ourCommit && upstreamRevs.length) {
+        notes.push(`upstream rev: ${upstreamRevs.map(r => r.slice(0, 10)).join(', ')}`);
     }
     return notes.length ? notes : null;
 }
