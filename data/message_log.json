@@ -1702,5 +1702,15 @@
     "timestamp": "2026-04-23T22:35:00Z",
     "role": "assistant",
     "message": "Implemented the plan in gfonts_agents: fetch_crater_analysis.py now fetches targets.json and indexes crater_targets + failed_repos_index. js/main.js classifyMissingFamily differentiates target_resolution_failed, submitted_pending, ready_to_submit, plus existing buckets; computeUpstreamDrift surfaces rev/config mismatches inline in the missing-families detail table. Added a new \"Upstream Metadata Drift (Covered Families)\" section showing 15 covered families whose METADATA.pb commit differs from upstream targets.json. Updated index.html panel copy. Verified via headless Chromium — all 5 previously-\"ready\" families now correctly classified (2 target-resolution-failed with reason shown, 3 submitted-pending)."
+  },
+  {
+    "timestamp": "2026-04-23T22:45:00Z",
+    "role": "user",
+    "message": "git pushes done. Can any of these be fixed by sending a PR to google/fonts?"
+  },
+  {
+    "timestamp": "2026-04-23T22:50:00Z",
+    "role": "assistant",
+    "message": "Investigated the upstream pipeline: fontc_crater's targets.json is regenerated from google/fonts via the google-fonts-sources tool (reads METADATA.pb source blocks + detects override config.yaml in the family directory). So fixes to google/fonts METADATA.pb or adjacent config.yaml eventually propagate to crater on the next targets.json update. Conclusion per-family: Lilex YES (METADATA.pb config_yaml points to sources/Lilex/config.yaml but upstream has sources/config.yaml); Grandstander YES (upstream has no config.yaml at pinned rev — needs override in ofl/grandstander/ or commit bump); Chiron×3 NO (configs and commits valid, dropped silently — needs crater-team question); 8 drift cases (EB Garamond, Geist, Geist Mono, Grenze, Mingzat, Zalando Sans/Expanded/SemiExpanded) are candidates but require per-family verification of which commit matches the currently-shipped binaries (per CLAUDE.md \"commit hashes are critical onboarding records\"). Also refined drift detector to match per-family by config path; false positives from monorepos (IBM Plex, Bungee Tint, Pushster, Rasa, Roboto Condensed, DM Sans, Playwrite NZ, etc.) are gone."
   }
 ]
