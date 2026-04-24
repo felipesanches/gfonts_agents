@@ -1,0 +1,2324 @@
+[
+  {
+    "family_name": "Abel",
+    "path": "ofl/abel/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/abel",
+    "commit": "adf2c7e74ecde8ca41959c0d974f039789fe7b9d",
+    "archive_path": "upstream_repos/repo_archive/librefonts/abel.git",
+    "sources": [
+      "src/Abel-Regular-TTF.sfd",
+      "src/Abel-Regular-TTF.vfb",
+      "src/Abel-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Abril Fatface",
+    "path": "ofl/abrilfatface/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/abrilfatface",
+    "commit": "5e899bfd997c34d1c2bd43ca9f94d2d0ded6346f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/abrilfatface.git",
+    "sources": [
+      "src/AbrilFatface-Regular-TTF.sfd",
+      "src/AbrilFatface-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Acme",
+    "path": "ofl/acme/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/acme",
+    "commit": "fa0a4445feb570b5cfc7ce4b8f6dbacc6ae5ad73",
+    "archive_path": "upstream_repos/repo_archive/librefonts/acme.git",
+    "sources": [
+      "src/Acme-Regular-OTF.vfb",
+      "src/Acme-Regular-TTF.sfd",
+      "src/Acme-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Actor",
+    "path": "ofl/actor/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/actor",
+    "commit": "b1617e5929c9a78c56bbbe056b471cfdbdc13c50",
+    "archive_path": "upstream_repos/repo_archive/librefonts/actor.git",
+    "sources": [
+      "src/Actor-Regular-TTF.vfb",
+      "src/Actor-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Aguafina Script",
+    "path": "ofl/aguafinascript/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/aguafinascript",
+    "commit": "45a8ce768b4cca138c10ff7a7a9f55778fd02c9d",
+    "archive_path": "upstream_repos/repo_archive/librefonts/aguafinascript.git",
+    "sources": [
+      "src/Aguafina-Regular-OTF.vfb",
+      "src/AguafinaScript-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Aladin",
+    "path": "ofl/aladin/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/aladin",
+    "commit": "0f5d0578e592bfa8431072ad4f1a557fb74c165b",
+    "archive_path": "upstream_repos/repo_archive/librefonts/aladin.git",
+    "sources": [
+      "src/Aladin-OTF.vfb",
+      "src/Aladin-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Aldrich",
+    "path": "ofl/aldrich/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/aldrich",
+    "commit": "ec28a1d125f17139f1a0685025dc43a775bed76f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/aldrich.git",
+    "sources": [
+      "src/Aldrich-Regular-TTF.vfb",
+      "src/Aldrich-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Alfa Slab One",
+    "path": "ofl/alfaslabone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/alfaslabone",
+    "commit": "84a903ffba3cf8248f3b1662de782e72646e00df",
+    "archive_path": "upstream_repos/repo_archive/librefonts/alfaslabone.git",
+    "sources": [
+      "src/AlfaSlabOne-Regular-OTF.vfb",
+      "src/AlfaSlabOne-Regular-TTF.vfb",
+      "src/AlfaSlabOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Allan",
+    "path": "ofl/allan/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/allan",
+    "commit": "91202d58a376d6f9bca1234b360e977411222085",
+    "archive_path": "upstream_repos/repo_archive/librefonts/allan.git",
+    "sources": [
+      "src/Allan-Bold-TTF.sfd",
+      "src/Allan-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Allerta",
+    "path": "ofl/allerta/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/allerta",
+    "commit": "88a8c57b949cb8224f24815d5d3aa05d4950de69",
+    "archive_path": "upstream_repos/repo_archive/librefonts/allerta.git",
+    "sources": [
+      "src/Allerta-Regular-TTF.sfd",
+      "src/Allerta-Regular.sfd",
+      "src/Allerta-Regular.vfb",
+      "src/AllertaStencil-Regular-TTF.sfd",
+      "src/AllertaStencil-Regular.sfd",
+      "src/AllertaStencil-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Allerta Stencil",
+    "path": "ofl/allertastencil/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/allerta",
+    "commit": "88a8c57b949cb8224f24815d5d3aa05d4950de69",
+    "archive_path": "upstream_repos/repo_archive/librefonts/allerta.git",
+    "sources": [
+      "src/Allerta-Regular-TTF.sfd",
+      "src/Allerta-Regular.sfd",
+      "src/Allerta-Regular.vfb",
+      "src/AllertaStencil-Regular-TTF.sfd",
+      "src/AllertaStencil-Regular.sfd",
+      "src/AllertaStencil-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Almendra",
+    "path": "ofl/almendra/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/almendra",
+    "commit": "4050b694e01eb3c6083d403d158dfec62f863b5b",
+    "archive_path": "upstream_repos/repo_archive/librefonts/almendra.git",
+    "sources": [
+      "src/Almendra-Bold-OTF.vfb",
+      "src/Almendra-Bold-TTF.sfd",
+      "src/Almendra-BoldItalic-OTF.vfb",
+      "src/Almendra-BoldItalic-TTF.sfd",
+      "src/Almendra-Italic-OTF.vfb",
+      "src/Almendra-Italic-TTF.sfd",
+      "src/Almendra-Regular-OTF.vfb",
+      "src/Almendra-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Almendra Display",
+    "path": "ofl/almendradisplay/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/almendradisplay",
+    "commit": "b252e05aada37cc9fe9048ac25e41307b4c9198a",
+    "archive_path": "upstream_repos/repo_archive/librefonts/almendradisplay.git",
+    "sources": [
+      "src/AlmendraDisplay-Regular-OTF.vfb",
+      "src/AlmendraDisplay-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Almendra SC",
+    "path": "ofl/almendrasc/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/almendrasc",
+    "commit": "35906cd6a26df27bef8081669638fbae0382c7fc",
+    "archive_path": "upstream_repos/repo_archive/librefonts/almendrasc.git",
+    "sources": [
+      "src/AlmendraSC-Bold-OTF.vfb",
+      "src/AlmendraSC-Bold-TTF.sfd",
+      "src/AlmendraSC-BoldItalic-OTF.vfb",
+      "src/AlmendraSC-BoldItalic-TTF.sfd",
+      "src/AlmendraSC-Italic-OTF.vfb",
+      "src/AlmendraSC-Regular-OTF.vfb",
+      "src/AlmendraSC-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Amarante",
+    "path": "ofl/amarante/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/amarante",
+    "commit": "e5bd4a952443385746182ed5f729787c33ed04d3",
+    "archive_path": "upstream_repos/repo_archive/librefonts/amarante.git",
+    "sources": [
+      "src/Amarante-Regular-OTF.sfd",
+      "src/Amarante-Regular-TTF.sfd",
+      "src/Amarante-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Annie Use Your Telescope",
+    "path": "ofl/annieuseyourtelescope/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/annieuseyourtelescope",
+    "commit": "0895f3f4e7336525aee1a0ce0126bb13bfc80e35",
+    "archive_path": "upstream_repos/repo_archive/librefonts/annieuseyourtelescope.git",
+    "sources": [
+      "src/AnnieUseYourTelescope.vfb"
+    ]
+  },
+  {
+    "family_name": "Antic",
+    "path": "ofl/antic/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/antic",
+    "commit": "928c13650dfb95b24baa3eb44edefadec9635423",
+    "archive_path": "upstream_repos/repo_archive/librefonts/antic.git",
+    "sources": [
+      "src/Antic-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Antic Didone",
+    "path": "ofl/anticdidone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/anticdidone",
+    "commit": "604bfcda35327f03964cc6c55a281540ce40b0a0",
+    "archive_path": "upstream_repos/repo_archive/librefonts/anticdidone.git",
+    "sources": [
+      "src/AnticDidone-Regular-OTF.vfb",
+      "src/AnticDidone-Regular-TTF.sfd",
+      "src/AnticDidone-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Antic Slab",
+    "path": "ofl/anticslab/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/anticslab",
+    "commit": "64168753771367673ec5efa56c747427648d9f29",
+    "archive_path": "upstream_repos/repo_archive/librefonts/anticslab.git",
+    "sources": [
+      "src/AnticSlab-Regular-OTF.vfb",
+      "src/AnticSlab-Regular-TTF.sfd",
+      "src/AnticSlab-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Arbutus",
+    "path": "ofl/arbutus/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/arbutus",
+    "commit": "413fe5b2122e7a4d1ce6c604000f368a6bf8f6ac",
+    "archive_path": "upstream_repos/repo_archive/librefonts/arbutus.git",
+    "sources": [
+      "src/Arbutus-Regular-TTF.sfd",
+      "src/Arbutus-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Arbutus Slab",
+    "path": "ofl/arbutusslab/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/arbutusslab",
+    "commit": "2988f79c4d6965ef9fa35768ca00f02cddd5a50a",
+    "archive_path": "upstream_repos/repo_archive/librefonts/arbutusslab.git",
+    "sources": [
+      "src/ArbutusSlab-Regular.otf.sfd",
+      "src/ArbutusSlab-Regular.ttf.sfd",
+      "src/ArbutusSlab-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Architects Daughter",
+    "path": "ofl/architectsdaughter/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/architectsdaughter",
+    "commit": "1a94ca0aea18288ee7685ed6aee918b58399a307",
+    "archive_path": "upstream_repos/repo_archive/librefonts/architectsdaughter.git",
+    "sources": [
+      "src/ArchitectsDaughter-TTF.sfd",
+      "src/ArchitectsDaughter.vfb"
+    ]
+  },
+  {
+    "family_name": "Armata",
+    "path": "ofl/armata/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/armata",
+    "commit": "fbbc7c2575fe310df0450aaa721ee4e860b03a0e",
+    "archive_path": "upstream_repos/repo_archive/librefonts/armata.git",
+    "sources": [
+      "src/Armata-Regular-OTF.sfd",
+      "src/Armata-Regular-TTF.sfd",
+      "src/Armata-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Arvo",
+    "path": "ofl/arvo/METADATA.pb",
+    "repository_url": "https://github.com/antonxheight/Arvo",
+    "commit": "ae906e99ab549103549c68252edfcb1816a6bf08",
+    "archive_path": "upstream_repos/repo_archive/antonxheight/Arvo.git",
+    "sources": [
+      "Workfiles/Arvo_Fontlab/Arvo_MM_sorce/Arvo_ita_MM_54_b_sorce.vfb",
+      "Workfiles/Arvo_Fontlab/Arvo_MM_sorce/Arvo_reg_MM_12b_2TT_sorce.vfb"
+    ]
+  },
+  {
+    "family_name": "Astloch",
+    "path": "ofl/astloch/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/astloch",
+    "commit": "d15f7a51db3956d34a87ac47c532eae74237f07f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/astloch.git",
+    "sources": [
+      "src/Astloch-Bold-TTF.sfd",
+      "src/Astloch-Bold.vfb",
+      "src/Astloch-Regular-TTF.sfd",
+      "src/Astloch-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Asul",
+    "path": "ofl/asul/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/asul",
+    "commit": "687362de82c870100b6003ad71a82c3327e05d90",
+    "archive_path": "upstream_repos/repo_archive/librefonts/asul.git",
+    "sources": [
+      "src/Asul-Bold-OTF.vfb",
+      "src/Asul-Bold-TTF.sfd",
+      "src/Asul-Bold.vfb",
+      "src/Asul-Regular-OTF.vfb",
+      "src/Asul-Regular-TTF.sfd",
+      "src/Asul-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Atomic Age",
+    "path": "ofl/atomicage/METADATA.pb",
+    "repository_url": "https://github.com/EbenSorkin/Atomic-Age",
+    "commit": "bb96b179ca5c48149011237c64781fa94817e711",
+    "archive_path": "upstream_repos/repo_archive/EbenSorkin/Atomic-Age.git",
+    "sources": [
+      "SRC/AtomicAge-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Audiowide",
+    "path": "ofl/audiowide/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/audiowide",
+    "commit": "eccbd790f5c851314d6c4409a2058156a3186782",
+    "archive_path": "upstream_repos/repo_archive/librefonts/audiowide.git",
+    "sources": [
+      "src/Audiowide-Regular-OTF.vfb",
+      "src/Audiowide-Regular-TTF.vfb",
+      "src/Audiowide-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Autour One",
+    "path": "ofl/autourone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/autourone",
+    "commit": "10ccd1eb5ad3e7088ce2dd099debff0ac08daf1c",
+    "archive_path": "upstream_repos/repo_archive/librefonts/autourone.git",
+    "sources": [
+      "src/AutourOne-Regular-OTF.sfd",
+      "src/AutourOne-Regular-TTF.sfd",
+      "src/AutourOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Average Sans",
+    "path": "ofl/averagesans/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/averagesans",
+    "commit": "79216d6e944c1c35f1b8f4a1a9f50ad9ee73868c",
+    "archive_path": "upstream_repos/repo_archive/librefonts/averagesans.git",
+    "sources": [
+      "src/AverageSans-Regular-OTF.vfb",
+      "src/AverageSans-Regular-TTF.sfd",
+      "src/AverageSans-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Balthazar",
+    "path": "ofl/balthazar/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/balthazar",
+    "commit": "baa08c6f633b0fda1a83141ce7515441c56e9868",
+    "archive_path": "upstream_repos/repo_archive/librefonts/balthazar.git",
+    "sources": [
+      "src/Balthazar-Regular-OTF.vfb",
+      "src/Balthazar-Regular-TTF.sfd",
+      "src/Balthazar-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Baumans",
+    "path": "ofl/baumans/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/baumans",
+    "commit": "00e0253a48feaa474db9cd5145ec21891f1d7214",
+    "archive_path": "upstream_repos/repo_archive/librefonts/baumans.git",
+    "sources": [
+      "src/Baumans-Regular-OTF.vfb",
+      "src/Baumans-Regular-TTF.vfb",
+      "src/Baumans-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Belgrano",
+    "path": "ofl/belgrano/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/belgrano",
+    "commit": "9637660aa35d5ad59241a400f78d31413475bb77",
+    "archive_path": "upstream_repos/repo_archive/librefonts/belgrano.git",
+    "sources": [
+      "src/Belgrano-Regular-OTF.vfb",
+      "src/Belgrano-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Bentham",
+    "path": "ofl/bentham/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/bentham",
+    "commit": "a89643ad524f785a73f5326e6ee901fb042fa765",
+    "archive_path": "upstream_repos/repo_archive/librefonts/bentham.git",
+    "sources": [
+      "src/Bentham-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Berkshire Swash",
+    "path": "ofl/berkshireswash/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/berkshireswash",
+    "commit": "1a4fb49d514e01ada8934472cae85cc4590efa58",
+    "archive_path": "upstream_repos/repo_archive/librefonts/berkshireswash.git",
+    "sources": [
+      "src/BerkshireSwash-Regular-OTF.vfb",
+      "src/BerkshireSwash-Regular-TTF.vfb",
+      "src/BerkshireSwash-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Beth Ellen",
+    "path": "ofl/bethellen/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/BethEllen",
+    "commit": "d6c8d9b3871c432c6abfd71660885f16ddbce3e2",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/BethEllen.git",
+    "sources": [
+      "BethEllen-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Bhavuka",
+    "path": "ofl/bhavuka/METADATA.pb",
+    "repository_url": "https://github.com/10four/Bhavuka",
+    "commit": "e4819c2a22da01f0bb124b26e3d1ab86d1e05587",
+    "archive_path": "upstream_repos/repo_archive/10four/Bhavuka.git",
+    "sources": [
+      "Bhavuka-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Bigelow Rules",
+    "path": "ofl/bigelowrules/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/bigelowrules",
+    "commit": "f3ba7414e96d1a940b935d4fa4d2bab47150c7fc",
+    "archive_path": "upstream_repos/repo_archive/librefonts/bigelowrules.git",
+    "sources": [
+      "src/BigelowRules-Regular-OTF.vfb",
+      "src/BigelowRules-Regular-TTF.vfb",
+      "src/BigelowRules-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Bilbo Swash Caps",
+    "path": "ofl/bilboswashcaps/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/bilboswashcaps",
+    "commit": "7fb5653f339a4a574c26a8df75b6e7fac7db9280",
+    "archive_path": "upstream_repos/repo_archive/librefonts/bilboswashcaps.git",
+    "sources": [
+      "src/Bilbo-SwashCaps-OTF.vfb",
+      "src/BilboSwashCaps-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Boogaloo",
+    "path": "ofl/boogaloo/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/boogaloo",
+    "commit": "9837380f883a9af75b9d4a9767020c1b1abc771a",
+    "archive_path": "upstream_repos/repo_archive/librefonts/boogaloo.git",
+    "sources": [
+      "src/Boogaloo-Regular-OTF.vfb",
+      "src/Boogaloo-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Bowlby One",
+    "path": "ofl/bowlbyone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/bowlbyone",
+    "commit": "3aca9b57cf9c7b9688b635d5dcfb6d53948e26a2",
+    "archive_path": "upstream_repos/repo_archive/librefonts/bowlbyone.git",
+    "sources": [
+      "src/BowlbyOne-Regular-TTF.sfd",
+      "src/BowlbyOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Bree Serif",
+    "path": "ofl/breeserif/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/breeserif",
+    "commit": "86684a17aaa88ce2d9d85d77f9e9ce1f64c06462",
+    "archive_path": "upstream_repos/repo_archive/librefonts/breeserif.git",
+    "sources": [
+      "src/BreeSerif-Regular-OTF.vfb",
+      "src/BreeSerif-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Bubblegum Sans",
+    "path": "ofl/bubblegumsans/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/bubblegumsans",
+    "commit": "fcf8bdd5e83b65186641b2b67fd957ff061666e3",
+    "archive_path": "upstream_repos/repo_archive/librefonts/bubblegumsans.git",
+    "sources": [
+      "src/BubblegumSans-Regular-OTF.vfb",
+      "src/BubblegumSans-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Bubbler One",
+    "path": "ofl/bubblerone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/bubblerone",
+    "commit": "be2343608e5751bca73956b02860a1758e1e29a7",
+    "archive_path": "upstream_repos/repo_archive/librefonts/bubblerone.git",
+    "sources": [
+      "src/BubblerOne-Regular-TTF.sfd",
+      "src/BubblerOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Buda",
+    "path": "ofl/buda/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/buda",
+    "commit": "c632d6ba92f1c89f40f704c2cd873d5a9ede22a6",
+    "archive_path": "upstream_repos/repo_archive/librefonts/buda.git",
+    "sources": [
+      "src/Buda-Light-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Butcherman",
+    "path": "ofl/butcherman/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/butcherman",
+    "commit": "92a34525b5032c76484c49e652f649e52d1465e5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/butcherman.git",
+    "sources": [
+      "src/Butcherman-Regular-TTF.sfd",
+      "src/Butcherman-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Butterfly Kids",
+    "path": "ofl/butterflykids/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/butterflykids",
+    "commit": "0c553b23416ad40db0b241d1d0b9165d890933b7",
+    "archive_path": "upstream_repos/repo_archive/librefonts/butterflykids.git",
+    "sources": [
+      "src/ButterflyKids-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Caesar Dressing",
+    "path": "ofl/caesardressing/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/caesardressing",
+    "commit": "fb212a606bc3f65a2b3d210c88e938f6090cff15",
+    "archive_path": "upstream_repos/repo_archive/librefonts/caesardressing.git",
+    "sources": [
+      "src/CaesarDressing-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Cagliostro",
+    "path": "ofl/cagliostro/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cagliostro",
+    "commit": "5c0de59bedd45c878edfeeeb31e2105f987e7270",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cagliostro.git",
+    "sources": [
+      "src/Cagliostro-Regular-TTF.sfd",
+      "src/Cagliostro-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Cambo",
+    "path": "ofl/cambo/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cambo",
+    "commit": "3b97d12b34a587e8868700ffa711df7dc6aa0d04",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cambo.git",
+    "sources": [
+      "src/Cambo-Regular-OTF.vfb",
+      "src/Cambo-Regular-TTF.sfd",
+      "src/Cambo-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Candal",
+    "path": "ofl/candal/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/candal",
+    "commit": "64c937069fed67f562829846315a0e2e7789e6a6",
+    "archive_path": "upstream_repos/repo_archive/librefonts/candal.git",
+    "sources": [
+      "src/Candal-TTF.sfd",
+      "src/Candal-TTF.vfb",
+      "src/Candal.sfd",
+      "src/Candal.vfb"
+    ]
+  },
+  {
+    "family_name": "Cantata One",
+    "path": "ofl/cantataone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cantataone",
+    "commit": "947c3dd6e969867a02166335a27c48c0a7f9123d",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cantataone.git",
+    "sources": [
+      "src/CantataOne-Regular-OTF.sfd",
+      "src/CantataOne-Regular-TTF.sfd",
+      "src/CantataOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Cantora One",
+    "path": "ofl/cantoraone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cantoraone",
+    "commit": "45d202afe1668a05e0afd870e124d72c2b82143c",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cantoraone.git",
+    "sources": [
+      "src/CantoraOne-Regular-OTF.vfb",
+      "src/CantoraOne-Regular-TTF.vfb",
+      "src/CantoraOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Cardo",
+    "path": "ofl/cardo/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/CardoFont",
+    "commit": "b2bf876b4e251ac44b343605464dad86b336b38d",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/CardoFont.git",
+    "sources": [
+      "old/version-1.000/Cardo-Bold-TTF.sfd",
+      "old/version-1.000/Cardo-Italic-TTF.sfd",
+      "old/version-1.000/Cardo-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Carrois Gothic",
+    "path": "ofl/carroisgothic/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/carroisgothic",
+    "commit": "09bb67138894e329544a6a1e1ebf0ff516f82a0e",
+    "archive_path": "upstream_repos/repo_archive/librefonts/carroisgothic.git",
+    "sources": [
+      "src/CarroisGothic-Regular-OTF.vfb",
+      "src/CarroisGothic-Regular-TTF.vfb",
+      "src/CarroisGothic-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Carrois Gothic SC",
+    "path": "ofl/carroisgothicsc/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/carroisgothicsc",
+    "commit": "cd21c85aa57e4b1fc55eca2e31692cbd749e4e46",
+    "archive_path": "upstream_repos/repo_archive/librefonts/carroisgothicsc.git",
+    "sources": [
+      "src/CarroisGothicSC-Regular-OTF.vfb",
+      "src/CarroisGothicSC-Regular-TTF.vfb",
+      "src/CarroisGothicSC-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Carter One",
+    "path": "ofl/carterone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/carterone",
+    "commit": "9943144e585a736a95509a85b92fbf2bb29060c2",
+    "archive_path": "upstream_repos/repo_archive/librefonts/carterone.git",
+    "sources": [
+      "src/CarterOne-TTF.sfd",
+      "src/CarterOne.vfb"
+    ]
+  },
+  {
+    "family_name": "Caudex",
+    "path": "ofl/caudex/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/caudex",
+    "commit": "901fb15160f96cb5a2b91e48a6d89d9c18c6f6d5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/caudex.git",
+    "sources": [
+      "src/Caudex-Bold.sfd",
+      "src/Caudex-BoldItalic.sfd",
+      "src/Caudex-Italic.sfd",
+      "src/Caudex-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Cedarville Cursive",
+    "path": "ofl/cedarvillecursive/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cedarvillecursive",
+    "commit": "cd212b0e2dc2364a3012ef43a3b9155c7ed0d352",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cedarvillecursive.git",
+    "sources": [
+      "src/Cedarville-Cursive.vfb"
+    ]
+  },
+  {
+    "family_name": "Ceviche One",
+    "path": "ofl/cevicheone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cevicheone",
+    "commit": "afec42c6e7445edd88c3f45b7a51b5da6b43b027",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cevicheone.git",
+    "sources": [
+      "src/CevicheOne-Regular-OTF.vfb",
+      "src/CevicheOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Chango",
+    "path": "ofl/chango/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/chango",
+    "commit": "ca58222d6319223db35d6e76052ef9a78cca43f7",
+    "archive_path": "upstream_repos/repo_archive/librefonts/chango.git",
+    "sources": [
+      "src/Chango-Regular-OTF.vfb",
+      "src/Chango-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Chathura",
+    "path": "ofl/chathura/METADATA.pb",
+    "repository_url": "https://github.com/appajid/Chathura",
+    "commit": "f6944e361db05f2cb3a33356e54615f4cf754de8",
+    "archive_path": "upstream_repos/repo_archive/appajid/Chathura.git",
+    "sources": [
+      "Chathura-Bold.sfd",
+      "Chathura-ExtraBold.sfd",
+      "Chathura-Light.sfd",
+      "Chathura-Regular.sfd",
+      "Chathura-Thin.sfd"
+    ]
+  },
+  {
+    "family_name": "Chau Philomene One",
+    "path": "ofl/chauphilomeneone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/chauphilomeneone",
+    "commit": "ac51123e5c7a33cd48b4fdf686b91922ea68c422",
+    "archive_path": "upstream_repos/repo_archive/librefonts/chauphilomeneone.git",
+    "sources": [
+      "src/ChauPhilomeneOne-Italic-OTF.vfb",
+      "src/ChauPhilomeneOne-Italic-TTF.sfd",
+      "src/ChauPhilomeneOne-Regular-OTF.vfb",
+      "src/ChauPhilomeneOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Chela One",
+    "path": "ofl/chelaone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/chelaone",
+    "commit": "cb9b95fc0510c91bc45664e5a62ed3893c09bfba",
+    "archive_path": "upstream_repos/repo_archive/librefonts/chelaone.git",
+    "sources": [
+      "src/ChelaOne-Regular-OTF.vfb",
+      "src/ChelaOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Chelsea Market",
+    "path": "ofl/chelseamarket/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/chelseamarket",
+    "commit": "cb0d8b1186fc376de4d6be06a568c25362e381dd",
+    "archive_path": "upstream_repos/repo_archive/librefonts/chelseamarket.git",
+    "sources": [
+      "src/ChelseaMarket-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Cherry Swash",
+    "path": "ofl/cherryswash/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cherryswash",
+    "commit": "84e28ad7cc2937ce20bac9dd6f2689cb42c6814a",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cherryswash.git",
+    "sources": [
+      "src/CherrySwash-Bold-OTF.vfb",
+      "src/CherrySwash-Bold-TTF.sfd",
+      "src/CherrySwash-Regular-OTF.vfb",
+      "src/CherrySwash-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Chicle",
+    "path": "ofl/chicle/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/chicle",
+    "commit": "4ee3e89dbbdcfc0d56f7e1e3cc3d2de009219502",
+    "archive_path": "upstream_repos/repo_archive/librefonts/chicle.git",
+    "sources": [
+      "src/Chicle-Regular-OTF.vfb",
+      "src/Chicle-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Clicker Script",
+    "path": "ofl/clickerscript/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/clickerscript",
+    "commit": "f8f050697a52a8e2e10009db97c1a18b0099bb6f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/clickerscript.git",
+    "sources": [
+      "src/ClickerScript-Regular-OTF.vfb",
+      "src/ClickerScript-Regular-TTF.vfb",
+      "src/ClickerScript-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Combo",
+    "path": "ofl/combo/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/combo",
+    "commit": "ae46147e06fad7d2d664c2738ae08a9262adbeb1",
+    "archive_path": "upstream_repos/repo_archive/librefonts/combo.git",
+    "sources": [
+      "src/Combo-Regular-OTF.vfb",
+      "src/Combo-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Concert One",
+    "path": "ofl/concertone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/concertone",
+    "commit": "c2160f498dbb0ebf8394fbd117c21d2160cdef01",
+    "archive_path": "upstream_repos/repo_archive/librefonts/concertone.git",
+    "sources": [
+      "src/ConcertOne-Regular-OTF.vfb",
+      "src/ConcertOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Condiment",
+    "path": "ofl/condiment/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/condiment",
+    "commit": "0a1933e09c9008136f997c47c75ddf6b00a8d884",
+    "archive_path": "upstream_repos/repo_archive/librefonts/condiment.git",
+    "sources": [
+      "src/Condiment-Regular-OTF.vfb",
+      "src/Condiment-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Contrail One",
+    "path": "ofl/contrailone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/contrailone",
+    "commit": "21ed60440130b6afcdd5e7555e9fe7c8c4344146",
+    "archive_path": "upstream_repos/repo_archive/librefonts/contrailone.git",
+    "sources": [
+      "src/ContrailOne-Regular-TTF.sfd",
+      "src/ContrailOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Convergence",
+    "path": "ofl/convergence/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/convergence",
+    "commit": "475145997c07041d94fabe462233b89f15450a41",
+    "archive_path": "upstream_repos/repo_archive/librefonts/convergence.git",
+    "sources": [
+      "src/Convergence-Regular-TTF.sfd",
+      "src/Convergence-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Cookie",
+    "path": "ofl/cookie/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/cookie",
+    "commit": "15549218a2cb9d78b590471e0fe76644b33c986d",
+    "archive_path": "upstream_repos/repo_archive/librefonts/cookie.git",
+    "sources": [
+      "src/Cookie-Regular-TTF.sfd",
+      "src/Cookie-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Copse",
+    "path": "ofl/copse/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/copse",
+    "commit": "cb3ef9c1cce0dcea7f5743e84e9ed7da7e259fd4",
+    "archive_path": "upstream_repos/repo_archive/librefonts/copse.git",
+    "sources": [
+      "src/Copse-Regular-TTF.sfd",
+      "src/Copse-Regular-TTF.vfb",
+      "src/Copse-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Corben",
+    "path": "ofl/corben/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/corben",
+    "commit": "94d5b00e6b64f85258d17e766a1e8e6d85554adc",
+    "archive_path": "upstream_repos/repo_archive/librefonts/corben.git",
+    "sources": [
+      "src/Corben-Bold-TTF.sfd",
+      "src/Corben-Bold.sfd",
+      "src/Corben-Bold.vfb",
+      "src/Corben-Regular-TTF.sfd",
+      "src/Corben-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Courgette",
+    "path": "ofl/courgette/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/courgette",
+    "commit": "e9638c8874f097c75ff3206c5dfe15b6ef4c67b1",
+    "archive_path": "upstream_repos/repo_archive/librefonts/courgette.git",
+    "sources": [
+      "src/Courgette-Regular-OTF.sfd",
+      "src/Courgette-Regular-TTF.sfd",
+      "src/Courgette-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Covered By Your Grace",
+    "path": "ofl/coveredbyyourgrace/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/coveredbyyourgrace",
+    "commit": "eca9fdc2d5ae964ff4838cb850b215d9ea703801",
+    "archive_path": "upstream_repos/repo_archive/librefonts/coveredbyyourgrace.git",
+    "sources": [
+      "src/CoveredByYourGrace-TTF.sfd",
+      "src/CoveredByYourGrace.vfb"
+    ]
+  },
+  {
+    "family_name": "Creepster",
+    "path": "ofl/creepster/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/creepster",
+    "commit": "f6eec0d741fd8ecba905f403d77c073f2e8be7f6",
+    "archive_path": "upstream_repos/repo_archive/librefonts/creepster.git",
+    "sources": [
+      "src/Creepster-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Crete Round",
+    "path": "ofl/creteround/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/creteround",
+    "commit": "056740e1fea281c2e72adeae3d3753083b87d22c",
+    "archive_path": "upstream_repos/repo_archive/librefonts/creteround.git",
+    "sources": [
+      "src/CreteRound-Italic-OTF.vfb",
+      "src/CreteRound-Italic-TTF.sfd",
+      "src/CreteRound-Regular-OTF.vfb",
+      "src/CreteRound-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Croissant One",
+    "path": "ofl/croissantone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/croissantone",
+    "commit": "ebcefa6161a0558f994a038105f90f304fe91ff7",
+    "archive_path": "upstream_repos/repo_archive/librefonts/croissantone.git",
+    "sources": [
+      "src/CroissantOne-Regular-OTF.vfb",
+      "src/CroissantOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Dawning of a New Day",
+    "path": "ofl/dawningofanewday/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/dawningofanewday",
+    "commit": "45ea90b8015692ee7fe07e417ea1c88392373ce3",
+    "archive_path": "upstream_repos/repo_archive/librefonts/dawningofanewday.git",
+    "sources": [
+      "src/DawningofaNewDay-TTF.sfd",
+      "src/DawningofaNewDay.vfb"
+    ]
+  },
+  {
+    "family_name": "Days One",
+    "path": "ofl/daysone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/daysone",
+    "commit": "76642af05e1a7734f94e1b22abdbc37b6bfb933c",
+    "archive_path": "upstream_repos/repo_archive/librefonts/daysone.git",
+    "sources": [
+      "src/DaysOne-Regular-TTF.sfd",
+      "src/DaysOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Delius",
+    "path": "ofl/delius/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/delius",
+    "commit": "5bd1633b6b5175d36e260f3f6d06686482d32212",
+    "archive_path": "upstream_repos/repo_archive/librefonts/delius.git",
+    "sources": [
+      "src/Delius-Regular-TTF.sfd",
+      "src/Delius-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Delius Swash Caps",
+    "path": "ofl/deliusswashcaps/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/deliusswashcaps",
+    "commit": "a18d931eb4b66533df5df07d91e0851938a96121",
+    "archive_path": "upstream_repos/repo_archive/librefonts/deliusswashcaps.git",
+    "sources": [
+      "src/DeliusSwashCaps-Regular-TTF.sfd",
+      "src/DeliusSwashCaps-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Delius Unicase",
+    "path": "ofl/deliusunicase/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/deliusunicase",
+    "commit": "cf094caecc96589701f341db1994fd10642e3c88",
+    "archive_path": "upstream_repos/repo_archive/librefonts/deliusunicase.git",
+    "sources": [
+      "src/DeliusUnicase-Bold-TTF.sfd",
+      "src/DeliusUnicase-Bold.vfb",
+      "src/DeliusUnicase-Regular-TTF.sfd",
+      "src/DeliusUnicase-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Devonshire",
+    "path": "ofl/devonshire/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/devonshire",
+    "commit": "7d88bb81c76ccd1b7d48a15ae97a00c45f9ffb01",
+    "archive_path": "upstream_repos/repo_archive/librefonts/devonshire.git",
+    "sources": [
+      "src/Devonshire-Regular-OTF.vfb",
+      "src/Devonshire-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Digital Numbers",
+    "path": "ofl/digitalnumbers/METADATA.pb",
+    "repository_url": "https://github.com/s-a/digital-numbers-font",
+    "commit": "b58e33a259af2872522fcddbfd02dad3732ccadd",
+    "archive_path": "upstream_repos/repo_archive/s-a/digital-numbers-font.git",
+    "sources": [
+      "src/digital-numbers.sfd"
+    ]
+  },
+  {
+    "family_name": "Donegal One",
+    "path": "ofl/donegalone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/donegalone",
+    "commit": "b0af18fd94255bfdfe07e90db984167564abd565",
+    "archive_path": "upstream_repos/repo_archive/librefonts/donegalone.git",
+    "sources": [
+      "src/DonegalOne-Regular-OTF.sfd",
+      "src/DonegalOne-Regular-TTF.sfd",
+      "src/DonegalOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Doppio One",
+    "path": "ofl/doppioone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/doppioone",
+    "commit": "14bdd2e78b5b8e4f5bc5a39e5f1b02d398883a99",
+    "archive_path": "upstream_repos/repo_archive/librefonts/doppioone.git",
+    "sources": [
+      "src/DoppioOne-Regular-OTF.sfd",
+      "src/DoppioOne-Regular-TTF.sfd",
+      "src/DoppioOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Dorsa",
+    "path": "ofl/dorsa/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/dorsa",
+    "commit": "90d5bffc5b005be8d3f7728ccb9aae3deaae1c23",
+    "archive_path": "upstream_repos/repo_archive/librefonts/dorsa.git",
+    "sources": [
+      "src/Dorsa-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Dr Sugiyama",
+    "path": "ofl/drsugiyama/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/drsugiyama",
+    "commit": "11d194b70af6df309a24c9395f64280172839879",
+    "archive_path": "upstream_repos/repo_archive/librefonts/drsugiyama.git",
+    "sources": [
+      "src/DrSugiyama-Regular-TTF.sfd",
+      "src/DrSujiyama-Regular-OTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Duru Sans",
+    "path": "ofl/durusans/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/durusans",
+    "commit": "2895eb6c9842f80c1e01bbf9fbb6231eaef66724",
+    "archive_path": "upstream_repos/repo_archive/librefonts/durusans.git",
+    "sources": [
+      "src/DuruSans-Regular-OTF.sfd",
+      "src/DuruSans-Regular-TTF.sfd",
+      "src/DuruSans-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Dynalight",
+    "path": "ofl/dynalight/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/dynalight",
+    "commit": "af7642053cc1189c5c8a4b93d0b4c1b1c5edcb49",
+    "archive_path": "upstream_repos/repo_archive/librefonts/dynalight.git",
+    "sources": [
+      "src/Dynalight-Regular-OTF.vfb",
+      "src/Dynalight-Regular-TTF.vfb",
+      "src/Dynalight-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Eagle Lake",
+    "path": "ofl/eaglelake/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/eaglelake",
+    "commit": "4e2b26479cf425b115731aa69e380fd2f5fd88e5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/eaglelake.git",
+    "sources": [
+      "src/EagleLake-Regular-OTF.vfb",
+      "src/EagleLake-Regular-TTF.vfb",
+      "src/EagleLake-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Eater",
+    "path": "ofl/eater/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/eater",
+    "commit": "91120e636b79d400473167dae30ff31a7c03b813",
+    "archive_path": "upstream_repos/repo_archive/librefonts/eater.git",
+    "sources": [
+      "src/Eater-Regular-TTF.sfd",
+      "src/Eater-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Economica",
+    "path": "ofl/economica/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/economica",
+    "commit": "6bf48e6858755227cdd104ee4b44e9e2e4bb197b",
+    "archive_path": "upstream_repos/repo_archive/librefonts/economica.git",
+    "sources": [
+      "src/Economica-Bold-OTF.vfb",
+      "src/Economica-Bold-TTF.sfd",
+      "src/Economica-BoldItalic-OTF.vfb",
+      "src/Economica-BoldItalic-TTF.sfd",
+      "src/Economica-Italic-OTF.vfb",
+      "src/Economica-Italic-TTF.sfd",
+      "src/Economica-Regular-OTF.vfb",
+      "src/Economica-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Electrolize",
+    "path": "ofl/electrolize/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/electrolize",
+    "commit": "2450033307b2d9f771649ae84007e59eb4387d1f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/electrolize.git",
+    "sources": [
+      "src/Electrolize-Regular-OTF.vfb",
+      "src/Electrolize-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Elsie",
+    "path": "ofl/elsie/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/elsie",
+    "commit": "9734e9ff1331292fc07ec198d4e5b35216fdd425",
+    "archive_path": "upstream_repos/repo_archive/librefonts/elsie.git",
+    "sources": [
+      "src/Elsie-Black-OTF.vfb",
+      "src/Elsie-Black-TTF.sfd",
+      "src/Elsie-Regular-OTF.vfb",
+      "src/Elsie-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Elsie Swash Caps",
+    "path": "ofl/elsieswashcaps/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/elsieswashcaps",
+    "commit": "f48faa350a1a9641bd984b6945f791914a652c65",
+    "archive_path": "upstream_repos/repo_archive/librefonts/elsieswashcaps.git",
+    "sources": [
+      "src/ElsieSwashCaps-Black-OTF.vfb",
+      "src/ElsieSwashCaps-Black-TTF.sfd",
+      "src/ElsieSwashCaps-Black-backup-fonttools-prep-gasp-TTF.sfd",
+      "src/ElsieSwashCaps-Regular-OTF.vfb",
+      "src/ElsieSwashCaps-Regular-TTF.sfd",
+      "src/ElsieSwashCaps-Regular-backup-fonttools-prep-gasp-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Emblema One",
+    "path": "ofl/emblemaone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/emblemaone",
+    "commit": "65d5dad63686fcfc0c7e13ba2cb3143803d96bfe",
+    "archive_path": "upstream_repos/repo_archive/librefonts/emblemaone.git",
+    "sources": [
+      "src/EmblemaOne-Regular-OTF.vfb",
+      "src/EmblemaOne-Regular-TTF.sfd",
+      "src/EmblemaOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Emilys Candy",
+    "path": "ofl/emilyscandy/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/emilyscandy",
+    "commit": "6c0f2ad7e9b0bcc6d69bbd5896b980bf1e208074",
+    "archive_path": "upstream_repos/repo_archive/librefonts/emilyscandy.git",
+    "sources": [
+      "src/EmilysCandy-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Engagement",
+    "path": "ofl/engagement/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/engagement",
+    "commit": "4a28e79422bbd98791c29adff6630d14f620ffd3",
+    "archive_path": "upstream_repos/repo_archive/librefonts/engagement.git",
+    "sources": [
+      "src/Engagement-Regular-OTF.vfb",
+      "src/Engagement-Regular-TTF.vfb",
+      "src/Engagement-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Erica One",
+    "path": "ofl/ericaone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/ericaone",
+    "commit": "bde7cb1ee528f936a9bae89a746742983531d9f8",
+    "archive_path": "upstream_repos/repo_archive/librefonts/ericaone.git",
+    "sources": [
+      "src/EricaOne-Regular-OTF.vfb",
+      "src/EricaOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Esteban",
+    "path": "ofl/esteban/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/esteban",
+    "commit": "35e274d49210b9c8a7864689b48d6156e6be6bbf",
+    "archive_path": "upstream_repos/repo_archive/librefonts/esteban.git",
+    "sources": [
+      "src/Esteban-Regular-OTF.vfb",
+      "src/Esteban-Regular-TTF.sfd",
+      "src/Esteban-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Euphoria Script",
+    "path": "ofl/euphoriascript/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/euphoriascript",
+    "commit": "c7606fae5a17e051d983269f008dba6e8f4c0c77",
+    "archive_path": "upstream_repos/repo_archive/librefonts/euphoriascript.git",
+    "sources": [
+      "src/EuphoriaScript-Regular-OTF.vfb",
+      "src/EuphoriaScript-Regular-TTF.sfd",
+      "src/EuphoriaScript-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Ewert",
+    "path": "ofl/ewert/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/ewert",
+    "commit": "21fa9ed2031b8f7f1bec75cb3f91ad495e3b2370",
+    "archive_path": "upstream_repos/repo_archive/librefonts/ewert.git",
+    "sources": [
+      "src/Ewert-Regular-OTF.vfb",
+      "src/Ewert-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Fascinate",
+    "path": "ofl/fascinate/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fascinate",
+    "commit": "afac7a8ab8c537ef1b89ef6c5ae52a81567b9935",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fascinate.git",
+    "sources": [
+      "src/Fascinate-Regular-OTF.vfb",
+      "src/Fascinate-Regular-TTF.vfb",
+      "src/Fascinate-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Fascinate Inline",
+    "path": "ofl/fascinateinline/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fascinateinline",
+    "commit": "0319622bad0ad42aae026ce7b00cd2f8ef64e658",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fascinateinline.git",
+    "sources": [
+      "src/FascinateInline-Regular-OTF.vfb",
+      "src/FascinateInline-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Felipa",
+    "path": "ofl/felipa/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/felipa",
+    "commit": "3489dd2445fc633f3b32485420d9c56998fad093",
+    "archive_path": "upstream_repos/repo_archive/librefonts/felipa.git",
+    "sources": [
+      "src/Felipa-Regular-TTF.sfd",
+      "src/Felipa-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Fenix",
+    "path": "ofl/fenix/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fenix",
+    "commit": "b5107c124ba8762eeaccd00b73a7302897d4367e",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fenix.git",
+    "sources": [
+      "src/Fenix-Regular-OTF.vfb",
+      "src/Fenix-Regular-TTF.sfd",
+      "src/Fenix-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Finger Paint",
+    "path": "ofl/fingerpaint/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fingerpaint",
+    "commit": "cb21d1208d6f0a641a348584627dc058a2f2998a",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fingerpaint.git",
+    "sources": [
+      "src/FingerPaint-Regular-OTF.vfb",
+      "src/FingerPaint-Regular-TTF.vfb",
+      "src/FingerPaint-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Fjord One",
+    "path": "ofl/fjordone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fjordone",
+    "commit": "90b0be2c47a5acd683621f38ce4f046f741abafb",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fjordone.git",
+    "sources": [
+      "src/FjordOne-Regular-TTD.sfd",
+      "src/FjordOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Flamenco",
+    "path": "ofl/flamenco/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/flamenco",
+    "commit": "908f93e92b13062e172153d04b96a9301ca1c7c5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/flamenco.git",
+    "sources": [
+      "src/Flamenco-Light-OTF.vfb",
+      "src/Flamenco-Light-TTF.sfd",
+      "src/Flamenco-Regular-OTF.vfb",
+      "src/Flamenco-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Flavors",
+    "path": "ofl/flavors/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/flavors",
+    "commit": "494aad3c703cd55dfa728cded360b49e128dc101",
+    "archive_path": "upstream_repos/repo_archive/librefonts/flavors.git",
+    "sources": [
+      "src/Flavors-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Fondamento",
+    "path": "ofl/fondamento/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fondamento",
+    "commit": "92205310620ae12fc72d8dde6033cdc46ca07101",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fondamento.git",
+    "sources": [
+      "src/Fondamento-Italic-OTF.vfb",
+      "src/Fondamento-Italic-TTF.vfb",
+      "src/Fondamento-Regular-OTF.vfb",
+      "src/Fondamento-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Forum",
+    "path": "ofl/forum/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/forum",
+    "commit": "e8efc0bceef3b98cf32f722bf637f3c110f68a37",
+    "archive_path": "upstream_repos/repo_archive/librefonts/forum.git",
+    "sources": [
+      "src/Forum-Regular-TTF.vfb",
+      "src/Forum-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Freckle Face",
+    "path": "ofl/freckleface/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/freckleface",
+    "commit": "158b54fbb54daa103228a08cb0ea7d03c832461b",
+    "archive_path": "upstream_repos/repo_archive/librefonts/freckleface.git",
+    "sources": [
+      "src/FreckleFace-Regular-OTF.vfb",
+      "src/FreckleFace-Regular-TTF.vfb",
+      "src/FreckleFace-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Fredericka the Great",
+    "path": "ofl/frederickathegreat/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/frederickathegreat",
+    "commit": "6968170d91ffd9daea400fb4d12bf0173f7d6302",
+    "archive_path": "upstream_repos/repo_archive/librefonts/frederickathegreat.git",
+    "sources": [
+      "src/FrederickatheGreat-Regular-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Fresca",
+    "path": "ofl/fresca/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fresca",
+    "commit": "ca8ad60bad380c425ebe357ee8a3a71770a849b4",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fresca.git",
+    "sources": [
+      "src/Fresca-Regular-OTF.vfb",
+      "src/Fresca-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Frijole",
+    "path": "ofl/frijole/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/frijole",
+    "commit": "0e6ba6cfcc631a3db6c6d6e64e523377176e8eec",
+    "archive_path": "upstream_repos/repo_archive/librefonts/frijole.git",
+    "sources": [
+      "src/Frijole-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Fugaz One",
+    "path": "ofl/fugazone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/fugazone",
+    "commit": "d6fef0584e47767dc53d0144d0d41de77088184b",
+    "archive_path": "upstream_repos/repo_archive/librefonts/fugazone.git",
+    "sources": [
+      "src/FugazOne-Regular-OTF.vfb",
+      "src/FugazOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Gafata",
+    "path": "ofl/gafata/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/gafata",
+    "commit": "dcd42b72333486b9704c2d3736e3c26b0346cb67",
+    "archive_path": "upstream_repos/repo_archive/librefonts/gafata.git",
+    "sources": [
+      "src/Gafata-Regular-OTF.vfb",
+      "src/Gafata-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Galdeano",
+    "path": "ofl/galdeano/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/galdeano",
+    "commit": "0325c647c669479930cc9126131a78ca5b942db9",
+    "archive_path": "upstream_repos/repo_archive/librefonts/galdeano.git",
+    "sources": [
+      "src/Galdeano-Regular-OTF.vfb",
+      "src/Galdeano-Regular-TTF.sfd",
+      "src/Galdeano-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Galindo",
+    "path": "ofl/galindo/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/galindo",
+    "commit": "dc5fea52318d56672b1e3f000851806c8b5bd2cc",
+    "archive_path": "upstream_repos/repo_archive/librefonts/galindo.git",
+    "sources": [
+      "src/Galindo-Regular-OTF.vfb",
+      "src/Galindo-Regular-TTF.vfb",
+      "src/Galindo-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Geo",
+    "path": "ofl/geo/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/geo",
+    "commit": "0d2a51963d3c6e52d7b8edc50a5d7b457bb1a663",
+    "archive_path": "upstream_repos/repo_archive/librefonts/geo.git",
+    "sources": [
+      "src/Geo-Oblique-TTF.sfd",
+      "src/Geo-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Geostar",
+    "path": "ofl/geostar/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/geostar",
+    "commit": "ca481fdb49204442916697e3d7b1cf6fda792b77",
+    "archive_path": "upstream_repos/repo_archive/librefonts/geostar.git",
+    "sources": [
+      "src/Geostar-Regular-TTF.sfd",
+      "src/Geostar-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Geostar Fill",
+    "path": "ofl/geostarfill/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/geostarfill",
+    "commit": "48dc43d804ebfd6743caa51e2d42d17dd34b275c",
+    "archive_path": "upstream_repos/repo_archive/librefonts/geostarfill.git",
+    "sources": [
+      "src/GeostarFill-Regular-TTF.sfd",
+      "src/GeostarFill-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Germania One",
+    "path": "ofl/germaniaone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/germaniaone",
+    "commit": "73d401d495adf37b1af75a5dca9cb5cdb046b05d",
+    "archive_path": "upstream_repos/repo_archive/librefonts/germaniaone.git",
+    "sources": [
+      "src/GermaniaOne-Regular-OTF.vfb",
+      "src/GermaniaOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Give You Glory",
+    "path": "ofl/giveyouglory/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/giveyouglory",
+    "commit": "2787317ad77bac728fea1ca0c4ce7f0d3ba273d5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/giveyouglory.git",
+    "sources": [
+      "src/GiveYouGlory-TTF.sfd",
+      "src/GiveYouGlory.vfb"
+    ]
+  },
+  {
+    "family_name": "Glass Antiqua",
+    "path": "ofl/glassantiqua/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/glassantiqua",
+    "commit": "ccc1839b05e9827b7f3a1439d089952908cd0334",
+    "archive_path": "upstream_repos/repo_archive/librefonts/glassantiqua.git",
+    "sources": [
+      "src/GlassAntiqua-Regular-OTF.vfb",
+      "src/GlassAntiqua-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Gloria Hallelujah",
+    "path": "ofl/gloriahallelujah/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/gloriahallelujah",
+    "commit": "1fd8b2f0f0dd8fe36f738733df0f869676b958e4",
+    "archive_path": "upstream_repos/repo_archive/librefonts/gloriahallelujah.git",
+    "sources": [
+      "src/GloriaHallelujah.vfb"
+    ]
+  },
+  {
+    "family_name": "Goblin One",
+    "path": "ofl/goblinone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/goblinone",
+    "commit": "446c2b743e1eda33533ad624c543cfd623eb7c90",
+    "archive_path": "upstream_repos/repo_archive/librefonts/goblinone.git",
+    "sources": [
+      "src/GoblinOne-TTF.sfd",
+      "src/GoblinOne.vfb"
+    ]
+  },
+  {
+    "family_name": "Gochi Hand",
+    "path": "ofl/gochihand/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/gochihand",
+    "commit": "e202a9f4b7cd6f9c84440e684f0a3d0b5dd234e0",
+    "archive_path": "upstream_repos/repo_archive/librefonts/gochihand.git",
+    "sources": [
+      "src/GochiHand-Regular-OTF.vfb",
+      "src/GochiHand-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Gorditas",
+    "path": "ofl/gorditas/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/gorditas",
+    "commit": "2212c0647e87c13121e408ee446dffe924792ac1",
+    "archive_path": "upstream_repos/repo_archive/librefonts/gorditas.git",
+    "sources": [
+      "src/Gorditas-Bold-OTF.vfb",
+      "src/Gorditas-Bold-TTF.vfb",
+      "src/Gorditas-Regular-OTF.vfb",
+      "src/Gorditas-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Gotu",
+    "path": "ofl/gotu/METADATA.pb",
+    "repository_url": "https://github.com/EkType/Gotu",
+    "commit": "c02f2e586ef16daf60d2ed11fd0fd85c1aa5e403",
+    "archive_path": "upstream_repos/repo_archive/EkType/Gotu.git",
+    "sources": [
+      "Source/VFB/Gotu.vfb"
+    ]
+  },
+  {
+    "family_name": "Grand Hotel",
+    "path": "ofl/grandhotel/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/grandhotel",
+    "commit": "b0716771fb1056ca9db1d65d94e62ecf9dbedefa",
+    "archive_path": "upstream_repos/repo_archive/librefonts/grandhotel.git",
+    "sources": [
+      "src/GrandHotel-Regular-OTF.vfb",
+      "src/GrandHotel-Regular-TTF.vfb",
+      "src/GrandHotel-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Gravitas One",
+    "path": "ofl/gravitasone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/gravitasone",
+    "commit": "c89d142ad0f695ba267d27965c26d1dd75463f20",
+    "archive_path": "upstream_repos/repo_archive/librefonts/gravitasone.git",
+    "sources": [
+      "src/GravitasOne-TTF.sfd",
+      "src/GravitasOne.vfb"
+    ]
+  },
+  {
+    "family_name": "Griffy",
+    "path": "ofl/griffy/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/griffy",
+    "commit": "eed85949102ab5baa1a8ca8d6b24239709a76bab",
+    "archive_path": "upstream_repos/repo_archive/librefonts/griffy.git",
+    "sources": [
+      "src/Griffy-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Gudea",
+    "path": "ofl/gudea/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/gudea",
+    "commit": "0eb36c75099c39430192adf41887965fdc51e819",
+    "archive_path": "upstream_repos/repo_archive/librefonts/gudea.git",
+    "sources": [
+      "src/Gudea-Bold-OTF.vfb",
+      "src/Gudea-Bold-TTF.sfd",
+      "src/Gudea-Italic-OTF.vfb",
+      "src/Gudea-Italic-TTF.sfd",
+      "src/Gudea-Regular-OTF.vfb",
+      "src/Gudea-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Habibi",
+    "path": "ofl/habibi/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/habibi",
+    "commit": "1c3eb606631e9da373f1017f7972765a7ab32bd5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/habibi.git",
+    "sources": [
+      "src/Habibi-Regular-TTF.sfd",
+      "src/Habibi-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Hammersmith One",
+    "path": "ofl/hammersmithone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/hammersmithone",
+    "commit": "a5fae41a3eabe8ec4e1d8ff7b3fa6dfde5c4fa87",
+    "archive_path": "upstream_repos/repo_archive/librefonts/hammersmithone.git",
+    "sources": [
+      "src/HammersmithOne-Regular-OTF.sfd",
+      "src/HammersmithOne-Regular-TTF.sfd",
+      "src/HammersmithOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Hanalei",
+    "path": "ofl/hanalei/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/hanalei",
+    "commit": "ec0b5be2259cfe4261f530047d60de8617eabf80",
+    "archive_path": "upstream_repos/repo_archive/librefonts/hanalei.git",
+    "sources": [
+      "src/Hanalei-Regular-OTF.vfb",
+      "src/Hanalei-Regular-TTF.vfb",
+      "src/Hanalei-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Hanalei Fill",
+    "path": "ofl/hanaleifill/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/hanaleifill",
+    "commit": "1df8f49232e80f4f17d8a5eb9fc55c90a3214f61",
+    "archive_path": "upstream_repos/repo_archive/librefonts/hanaleifill.git",
+    "sources": [
+      "src/HanaleiFill-Regular-OTF.vfb",
+      "src/HanaleiFill-Regular-TTF.vfb",
+      "src/HanaleiFill-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Handlee",
+    "path": "ofl/handlee/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/handlee",
+    "commit": "d937cfc17b0389d9847b8a865060b7241af7c654",
+    "archive_path": "upstream_repos/repo_archive/librefonts/handlee.git",
+    "sources": [
+      "src/Handlee-Regular-OTF.vfb",
+      "src/Handlee-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Happy Monkey",
+    "path": "ofl/happymonkey/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/happymonkey",
+    "commit": "5e49a946fe2459a69afa0ea0dfd501280cb61183",
+    "archive_path": "upstream_repos/repo_archive/librefonts/happymonkey.git",
+    "sources": [
+      "src/HappyMonkey-Regular-OTF.vfb",
+      "src/HappyMonkey-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Headland One",
+    "path": "ofl/headlandone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/headlandone",
+    "commit": "c5193604253d9cf325e43b44e88045a503b53cbf",
+    "archive_path": "upstream_repos/repo_archive/librefonts/headlandone.git",
+    "sources": [
+      "src/HeadlandOne-Regular-OTF.sfd",
+      "src/HeadlandOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Henny Penny",
+    "path": "ofl/hennypenny/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/hennypenny",
+    "commit": "4847dd1836a19c92e496eac373770f0d09743c49",
+    "archive_path": "upstream_repos/repo_archive/librefonts/hennypenny.git",
+    "sources": [
+      "src/HennyPenny-Regular-OTF.vfb",
+      "src/HennyPenny-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Inder",
+    "path": "ofl/inder/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/inder",
+    "commit": "5620f4744158d400ba1286612d14d49c43597033",
+    "archive_path": "upstream_repos/repo_archive/librefonts/inder.git",
+    "sources": [
+      "src/Inder-Regular-OTF.vfb",
+      "src/Inder-Regular-TTF.sfd",
+      "src/Inder-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Inika",
+    "path": "ofl/inika/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/inika",
+    "commit": "bccbe87bf5a91ebb43d149cd786cdabde71c8e52",
+    "archive_path": "upstream_repos/repo_archive/librefonts/inika.git",
+    "sources": [
+      "src/Inika-Bold-OTF.vfb",
+      "src/Inika-Bold-TTF.sfd",
+      "src/Inika-Bold.vfb",
+      "src/Inika-Regular-OTF.vfb",
+      "src/Inika-Regular-TTF.sfd",
+      "src/Inika-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Jim Nightshade",
+    "path": "ofl/jimnightshade/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/jimnightshade",
+    "commit": "a04375d8b6c564c11f00a67fa5df1d7bf446527f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/jimnightshade.git",
+    "sources": [
+      "src/JimNightshade-Regular-OTF.vfb",
+      "src/JimNightshade-Regular-TTF.vfb",
+      "src/JimNightshade-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Jockey One",
+    "path": "ofl/jockeyone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/jockeyone",
+    "commit": "71261c6f0c80fb7269df32e4aa396669a038030f",
+    "archive_path": "upstream_repos/repo_archive/librefonts/jockeyone.git",
+    "sources": [
+      "src/JockeyOne-Regular-TTF.sfd",
+      "src/JockeyOne-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Jolly Lodger",
+    "path": "ofl/jollylodger/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/jollylodger",
+    "commit": "06a3c7f44fc01a8d09ed73ea8c180a11018bdac8",
+    "archive_path": "upstream_repos/repo_archive/librefonts/jollylodger.git",
+    "sources": [
+      "src/JollyLodger-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Judson",
+    "path": "ofl/judson/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/judson",
+    "commit": "a80a2aecb86b334586bc8b956ddf8b1bf61e144b",
+    "archive_path": "upstream_repos/repo_archive/librefonts/judson.git",
+    "sources": [
+      "src/Judson-Bold-TTF.sfd",
+      "src/Judson-Bold.vfb",
+      "src/Judson-Italic-TTF.sfd",
+      "src/Judson-Italic.vfb",
+      "src/Judson-Regular-TTF.sfd",
+      "src/Judson-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Julius Sans One",
+    "path": "ofl/juliussansone/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/juliussansone",
+    "commit": "8aadb0e8d6ef7f45aa2844ccd99f7e28f0cd1498",
+    "archive_path": "upstream_repos/repo_archive/librefonts/juliussansone.git",
+    "sources": [
+      "src/JuliusSansOne-Regular-OTF.vfb",
+      "src/JuliusSansOne-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Junge",
+    "path": "ofl/junge/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/junge",
+    "commit": "1753e7a229f48ac314ad3c54da9fcfb2d7946f75",
+    "archive_path": "upstream_repos/repo_archive/librefonts/junge.git",
+    "sources": [
+      "src/Junge-Regular-OTF.vfb",
+      "src/Junge-Regular-TTF.vfb",
+      "src/Junge-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Just Me Again Down Here",
+    "path": "ofl/justmeagaindownhere/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/justmeagaindownhere",
+    "commit": "63543cec6964e5061ece828c63948d1910e0dbdd",
+    "archive_path": "upstream_repos/repo_archive/librefonts/justmeagaindownhere.git",
+    "sources": [
+      "src/JustMeAgainDownHere-TTF.sfd",
+      "src/JustMeAgainDownHere.vfb"
+    ]
+  },
+  {
+    "family_name": "Kaushan Script",
+    "path": "ofl/kaushanscript/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/kaushanscript",
+    "commit": "b1b7451878d44084faa32e3bcc5ce043f4d1acf4",
+    "archive_path": "upstream_repos/repo_archive/librefonts/kaushanscript.git",
+    "sources": [
+      "src/KaushanScript-Regular-OTF.vfb",
+      "src/KaushanScript-Regular-TTF.vfb",
+      "src/KaushanScript-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Libre Caslon Display",
+    "path": "ofl/librecaslondisplay/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Libre-Caslon-Display",
+    "commit": "3491f6a9cfde2bc15e736463b0bc7d93054d5da1",
+    "archive_path": "upstream_repos/repo_archive/impallari/Libre-Caslon-Display.git",
+    "sources": [
+      "source/LibreCaslonDisplay-Regular-OTF.vfb",
+      "source/LibreCaslonDisplay-Regular-TTF.vfb",
+      "source/LibreCaslonDisplay-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Lohit Bengali",
+    "path": "ofl/lohitbengali/METADATA.pb",
+    "repository_url": "https://github.com/pravins/lohit",
+    "commit": "a403c9b7f509dad5e58dde85ef63b1c36fde3a21",
+    "archive_path": "upstream_repos/repo_archive/pravins/lohit.git",
+    "sources": [
+      "assamese/Lohit-Assamese.sfd",
+      "bengali/Lohit-Bengali.sfd",
+      "devanagari/Lohit-Devanagari.sfd",
+      "gujarati/Lohit-Gujarati.sfd",
+      "kannada/Lohit-Kannada.sfd",
+      "malayalam/Lohit-Malayalam.sfd",
+      "marathi/Lohit-Marathi.sfd",
+      "nepali/Lohit-Nepali.sfd",
+      "oriya/Lohit-Oriya.sfd",
+      "punjabi/Lohit-Punjabi.sfd",
+      "tamil-classical/Lohit-Tamil-Classical.sfd",
+      "tamil/Lohit-Tamil.sfd",
+      "telugu/Lohit-Telugu.sfd"
+    ]
+  },
+  {
+    "family_name": "Lohit Tamil",
+    "path": "ofl/lohittamil/METADATA.pb",
+    "repository_url": "https://github.com/pravins/lohit",
+    "commit": "a403c9b7f509dad5e58dde85ef63b1c36fde3a21",
+    "archive_path": "upstream_repos/repo_archive/pravins/lohit.git",
+    "sources": [
+      "assamese/Lohit-Assamese.sfd",
+      "bengali/Lohit-Bengali.sfd",
+      "devanagari/Lohit-Devanagari.sfd",
+      "gujarati/Lohit-Gujarati.sfd",
+      "kannada/Lohit-Kannada.sfd",
+      "malayalam/Lohit-Malayalam.sfd",
+      "marathi/Lohit-Marathi.sfd",
+      "nepali/Lohit-Nepali.sfd",
+      "oriya/Lohit-Oriya.sfd",
+      "punjabi/Lohit-Punjabi.sfd",
+      "tamil-classical/Lohit-Tamil-Classical.sfd",
+      "tamil/Lohit-Tamil.sfd",
+      "telugu/Lohit-Telugu.sfd"
+    ]
+  },
+  {
+    "family_name": "Lusitana",
+    "path": "ofl/lusitana/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/lusitana",
+    "commit": "8fa070c2ac2963f13feee142e2001777ac48e774",
+    "archive_path": "upstream_repos/repo_archive/librefonts/lusitana.git",
+    "sources": [
+      "src/Lusitana-Bold-OTF.vfb",
+      "src/Lusitana-Bold-TTF.sfd",
+      "src/Lusitana-Regular-OTF.vfb",
+      "src/Lusitana-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Macondo Swash Caps",
+    "path": "ofl/macondoswashcaps/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/macondoswashcaps",
+    "commit": "2768d9b33c7d703085314fcd8c823ad1a8b02edb",
+    "archive_path": "upstream_repos/repo_archive/librefonts/macondoswashcaps.git",
+    "sources": [
+      "src/MacondoSwashCaps-Regular-OTF.vfb",
+      "src/MacondoSwashCaps-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Marck Script",
+    "path": "ofl/marckscript/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/marckscript",
+    "commit": "699f31478702f9901c943b7be7caa6e38b6535b7",
+    "archive_path": "upstream_repos/repo_archive/librefonts/marckscript.git",
+    "sources": [
+      "src/MarckScript-Regular-TTF.sfd",
+      "src/MarckScript-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Meddon",
+    "path": "ofl/meddon/METADATA.pb",
+    "repository_url": "https://github.com/vernnobile/MeddonFont",
+    "commit": "157a4b58e73139e11e21ac9805282f196b8f4059",
+    "archive_path": "upstream_repos/repo_archive/vernnobile/MeddonFont.git",
+    "sources": [
+      "New/Meddon.sfd",
+      "Old/Meddon.sfd"
+    ]
+  },
+  {
+    "family_name": "MedievalSharp",
+    "path": "ofl/medievalsharp/METADATA.pb",
+    "repository_url": "https://github.com/wmk69/Medieval-Sharp",
+    "commit": "ee7510b6b13854fd340e7d2e44c218780f672cd1",
+    "archive_path": "upstream_repos/repo_archive/wmk69/Medieval-Sharp.git",
+    "sources": [
+      "MedievalSharp-Bold.sfd",
+      "MedievalSharp-BoldOblique.sfd",
+      "MedievalSharp-Book.sfd",
+      "MedievalSharp-BookOblique.sfd"
+    ]
+  },
+  {
+    "family_name": "Meera Inimai",
+    "path": "ofl/meerainimai/METADATA.pb",
+    "repository_url": "https://github.com/smc/Meera",
+    "commit": "c689e9c5a4ea7b23a8a1a7ab2af535d3cd609bdf",
+    "archive_path": "upstream_repos/repo_archive/smc/Meera.git",
+    "sources": [
+      "Meera.sfd"
+    ]
+  },
+  {
+    "family_name": "Miltonian",
+    "path": "ofl/miltonian/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Miltonian",
+    "commit": "95d180e8744380f93a8437226e58032d484882c7",
+    "archive_path": "upstream_repos/repo_archive/impallari/Miltonian.git",
+    "sources": [
+      "source/Miltonian-Regular-OTF.vfb",
+      "source/Miltonian-Regular-TTF.vfb",
+      "source/Miltonian-Regular.vfb",
+      "source/MiltonianTattoo-Regular-OTF.vfb",
+      "source/MiltonianTattoo-Regular-TTF.vfb",
+      "source/MiltonianTattoo-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Miltonian Tattoo",
+    "path": "ofl/miltoniantattoo/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Miltonian",
+    "commit": "95d180e8744380f93a8437226e58032d484882c7",
+    "archive_path": "upstream_repos/repo_archive/impallari/Miltonian.git",
+    "sources": [
+      "source/Miltonian-Regular-OTF.vfb",
+      "source/Miltonian-Regular-TTF.vfb",
+      "source/Miltonian-Regular.vfb",
+      "source/MiltonianTattoo-Regular-OTF.vfb",
+      "source/MiltonianTattoo-Regular-TTF.vfb",
+      "source/MiltonianTattoo-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Modak",
+    "path": "ofl/modak/METADATA.pb",
+    "repository_url": "https://github.com/EkType/Modak",
+    "commit": "143b2db4fd5c8db6cdab20fad82b26ded9ce9eb7",
+    "archive_path": "upstream_repos/repo_archive/EkType/Modak.git",
+    "sources": [
+      "SourceFiles/Modak.vfb"
+    ]
+  },
+  {
+    "family_name": "Modern Antiqua",
+    "path": "ofl/modernantiqua/METADATA.pb",
+    "repository_url": "https://github.com/wmk69/Modern-Antiqua",
+    "commit": "f88d41ebebb9614874068d3142b6af52b707e917",
+    "archive_path": "upstream_repos/repo_archive/wmk69/Modern-Antiqua.git",
+    "sources": [
+      "ModernAntiqua-Bold.sfd",
+      "ModernAntiqua-BoldOblique.sfd",
+      "ModernAntiqua-Book.sfd",
+      "ModernAntiqua-BookOblique.sfd"
+    ]
+  },
+  {
+    "family_name": "Molengo",
+    "path": "ofl/molengo/METADATA.pb",
+    "repository_url": "https://github.com/moyogo/molengo-fonts",
+    "commit": "9e390dcfd861f8774bc5ae369732a66861a2dc4a",
+    "archive_path": "upstream_repos/repo_archive/moyogo/molengo-fonts.git",
+    "sources": [
+      "Molengo-Regular.sfd"
+    ]
+  },
+  {
+    "family_name": "Montaga",
+    "path": "ofl/montaga/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/montaga",
+    "commit": "1c439c4e7d38e452718e8e67834c810641d1685a",
+    "archive_path": "upstream_repos/repo_archive/librefonts/montaga.git",
+    "sources": [
+      "src/Montaga-Regular-OTF.vfb",
+      "src/Montaga-Regular-TTF.sfd"
+    ]
+  },
+  {
+    "family_name": "Mukta",
+    "path": "ofl/mukta/METADATA.pb",
+    "repository_url": "https://github.com/EkType/Mukta",
+    "commit": "418021bbb8f5e7bf0bfd96296f9e015bf953efed",
+    "archive_path": "upstream_repos/repo_archive/EkType/Mukta.git",
+    "sources": [
+      "Mukta-Devanagari/Bold/VFB/Mukta-Bold.vfb",
+      "Mukta-Devanagari/ExtraBold/VFB/Mukta-Extrabold.vfb",
+      "Mukta-Devanagari/ExtraLight/VFB/Mukta-Extralight.vfb",
+      "Mukta-Devanagari/Light/VFB/Mukta-Light.vfb",
+      "Mukta-Devanagari/Medium/VFB/Mukta-Medium.vfb",
+      "Mukta-Devanagari/Regular/VFB/Mukta-Regular.vfb",
+      "Mukta-Devanagari/SemiBold/VFB/Mukta-Semibold.vfb",
+      "MuktaMahee-Gurmukhi/Bold/VFB/MuktaMahee-Bold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraBold/VFB/MuktaMahee-ExtraBold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraLight/VFB/MuktaMahee-ExtraLight.vfb",
+      "MuktaMahee-Gurmukhi/Light/VFB/MuktaMahee-Light.vfb",
+      "MuktaMahee-Gurmukhi/Medium/VFB/MuktaMahee-Medium.vfb",
+      "MuktaMahee-Gurmukhi/Regular/VFB/MuktaMahee-Regular.vfb",
+      "MuktaMahee-Gurmukhi/SemiBold/VFB/MuktaMahee-SemiBold.vfb",
+      "MuktaMalar-Tamil/Bold/VFB/MuktaMalar-Bold.vfb",
+      "MuktaMalar-Tamil/ExtraBold/VFB/MuktaMalar-ExtraBold.vfb",
+      "MuktaMalar-Tamil/ExtraLight/VFB/MuktaMalar-Extralight.vfb",
+      "MuktaMalar-Tamil/Light/VFB/MuktaMalar-Light.vfb",
+      "MuktaMalar-Tamil/Medium/VFB/MuktaMalar-Medium.vfb",
+      "MuktaMalar-Tamil/Regular/VFB/MuktaMalar-Regular.vfb",
+      "MuktaMalar-Tamil/SemiBold/VFB/MuktaMalar-Semibold.vfb",
+      "MuktaVaani-Gujarati/Bold/VFB/MuktaVaani-Bold.vfb",
+      "MuktaVaani-Gujarati/ExtraBold/VFB/MuktaVaani-ExtraBold.vfb",
+      "MuktaVaani-Gujarati/ExtraLight/VFB/MuktaVaani-Extralight.vfb",
+      "MuktaVaani-Gujarati/Light/VFB/MuktaVaani-Light.vfb",
+      "MuktaVaani-Gujarati/Medium/VFB/MuktaVaani-Medium.vfb",
+      "MuktaVaani-Gujarati/Regular/VFB/MuktaVaani-Regular.vfb",
+      "MuktaVaani-Gujarati/SemiBold/VFB/MuktaVaani-Semibold.vfb"
+    ]
+  },
+  {
+    "family_name": "Mukta Mahee",
+    "path": "ofl/muktamahee/METADATA.pb",
+    "repository_url": "https://github.com/EkType/Mukta",
+    "commit": "7db4b0fc09894ad6814346172f6f0c1cf822a722",
+    "archive_path": "upstream_repos/repo_archive/EkType/Mukta.git",
+    "sources": [
+      "Mukta-Devanagari/Bold/VFB/Mukta-Bold.vfb",
+      "Mukta-Devanagari/ExtraBold/VFB/Mukta-Extrabold.vfb",
+      "Mukta-Devanagari/ExtraLight/VFB/Mukta-Extralight.vfb",
+      "Mukta-Devanagari/Light/VFB/Mukta-Light.vfb",
+      "Mukta-Devanagari/Medium/VFB/Mukta-Medium.vfb",
+      "Mukta-Devanagari/Regular/VFB/Mukta-Regular.vfb",
+      "Mukta-Devanagari/SemiBold/VFB/Mukta-Semibold.vfb",
+      "MuktaMahee-Gurmukhi/Bold/VFB/MuktaMahee-Bold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraBold/VFB/MuktaMahee-ExtraBold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraLight/VFB/MuktaMahee-ExtraLight.vfb",
+      "MuktaMahee-Gurmukhi/Light/VFB/MuktaMahee-Light.vfb",
+      "MuktaMahee-Gurmukhi/Medium/VFB/MuktaMahee-Medium.vfb",
+      "MuktaMahee-Gurmukhi/Regular/VFB/MuktaMahee-Regular.vfb",
+      "MuktaMahee-Gurmukhi/SemiBold/VFB/MuktaMahee-SemiBold.vfb",
+      "MuktaMalar-Tamil/Bold/VFB/MuktaMalar-Bold.vfb",
+      "MuktaMalar-Tamil/ExtraBold/VFB/MuktaMalar-ExtraBold.vfb",
+      "MuktaMalar-Tamil/ExtraLight/VFB/MuktaMalar-Extralight.vfb",
+      "MuktaMalar-Tamil/Light/VFB/MuktaMalar-Light.vfb",
+      "MuktaMalar-Tamil/Medium/VFB/MuktaMalar-Medium.vfb",
+      "MuktaMalar-Tamil/Regular/VFB/MuktaMalar-Regular.vfb",
+      "MuktaMalar-Tamil/SemiBold/VFB/MuktaMalar-Semibold.vfb",
+      "MuktaVaani-Gujarati/Bold/VFB/MuktaVaani-Bold.vfb",
+      "MuktaVaani-Gujarati/ExtraBold/VFB/MuktaVaani-ExtraBold.vfb",
+      "MuktaVaani-Gujarati/ExtraLight/VFB/MuktaVaani-Extralight.vfb",
+      "MuktaVaani-Gujarati/Light/VFB/MuktaVaani-Light.vfb",
+      "MuktaVaani-Gujarati/Medium/VFB/MuktaVaani-Medium.vfb",
+      "MuktaVaani-Gujarati/Regular/VFB/MuktaVaani-Regular.vfb",
+      "MuktaVaani-Gujarati/SemiBold/VFB/MuktaVaani-Semibold.vfb"
+    ]
+  },
+  {
+    "family_name": "Mukta Malar",
+    "path": "ofl/muktamalar/METADATA.pb",
+    "repository_url": "https://github.com/EkType/Mukta",
+    "commit": "7db4b0fc09894ad6814346172f6f0c1cf822a722",
+    "archive_path": "upstream_repos/repo_archive/EkType/Mukta.git",
+    "sources": [
+      "Mukta-Devanagari/Bold/VFB/Mukta-Bold.vfb",
+      "Mukta-Devanagari/ExtraBold/VFB/Mukta-Extrabold.vfb",
+      "Mukta-Devanagari/ExtraLight/VFB/Mukta-Extralight.vfb",
+      "Mukta-Devanagari/Light/VFB/Mukta-Light.vfb",
+      "Mukta-Devanagari/Medium/VFB/Mukta-Medium.vfb",
+      "Mukta-Devanagari/Regular/VFB/Mukta-Regular.vfb",
+      "Mukta-Devanagari/SemiBold/VFB/Mukta-Semibold.vfb",
+      "MuktaMahee-Gurmukhi/Bold/VFB/MuktaMahee-Bold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraBold/VFB/MuktaMahee-ExtraBold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraLight/VFB/MuktaMahee-ExtraLight.vfb",
+      "MuktaMahee-Gurmukhi/Light/VFB/MuktaMahee-Light.vfb",
+      "MuktaMahee-Gurmukhi/Medium/VFB/MuktaMahee-Medium.vfb",
+      "MuktaMahee-Gurmukhi/Regular/VFB/MuktaMahee-Regular.vfb",
+      "MuktaMahee-Gurmukhi/SemiBold/VFB/MuktaMahee-SemiBold.vfb",
+      "MuktaMalar-Tamil/Bold/VFB/MuktaMalar-Bold.vfb",
+      "MuktaMalar-Tamil/ExtraBold/VFB/MuktaMalar-ExtraBold.vfb",
+      "MuktaMalar-Tamil/ExtraLight/VFB/MuktaMalar-Extralight.vfb",
+      "MuktaMalar-Tamil/Light/VFB/MuktaMalar-Light.vfb",
+      "MuktaMalar-Tamil/Medium/VFB/MuktaMalar-Medium.vfb",
+      "MuktaMalar-Tamil/Regular/VFB/MuktaMalar-Regular.vfb",
+      "MuktaMalar-Tamil/SemiBold/VFB/MuktaMalar-Semibold.vfb",
+      "MuktaVaani-Gujarati/Bold/VFB/MuktaVaani-Bold.vfb",
+      "MuktaVaani-Gujarati/ExtraBold/VFB/MuktaVaani-ExtraBold.vfb",
+      "MuktaVaani-Gujarati/ExtraLight/VFB/MuktaVaani-Extralight.vfb",
+      "MuktaVaani-Gujarati/Light/VFB/MuktaVaani-Light.vfb",
+      "MuktaVaani-Gujarati/Medium/VFB/MuktaVaani-Medium.vfb",
+      "MuktaVaani-Gujarati/Regular/VFB/MuktaVaani-Regular.vfb",
+      "MuktaVaani-Gujarati/SemiBold/VFB/MuktaVaani-Semibold.vfb"
+    ]
+  },
+  {
+    "family_name": "Mukta Vaani",
+    "path": "ofl/muktavaani/METADATA.pb",
+    "repository_url": "https://github.com/EkType/Mukta",
+    "commit": "7db4b0fc09894ad6814346172f6f0c1cf822a722",
+    "archive_path": "upstream_repos/repo_archive/EkType/Mukta.git",
+    "sources": [
+      "Mukta-Devanagari/Bold/VFB/Mukta-Bold.vfb",
+      "Mukta-Devanagari/ExtraBold/VFB/Mukta-Extrabold.vfb",
+      "Mukta-Devanagari/ExtraLight/VFB/Mukta-Extralight.vfb",
+      "Mukta-Devanagari/Light/VFB/Mukta-Light.vfb",
+      "Mukta-Devanagari/Medium/VFB/Mukta-Medium.vfb",
+      "Mukta-Devanagari/Regular/VFB/Mukta-Regular.vfb",
+      "Mukta-Devanagari/SemiBold/VFB/Mukta-Semibold.vfb",
+      "MuktaMahee-Gurmukhi/Bold/VFB/MuktaMahee-Bold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraBold/VFB/MuktaMahee-ExtraBold.vfb",
+      "MuktaMahee-Gurmukhi/ExtraLight/VFB/MuktaMahee-ExtraLight.vfb",
+      "MuktaMahee-Gurmukhi/Light/VFB/MuktaMahee-Light.vfb",
+      "MuktaMahee-Gurmukhi/Medium/VFB/MuktaMahee-Medium.vfb",
+      "MuktaMahee-Gurmukhi/Regular/VFB/MuktaMahee-Regular.vfb",
+      "MuktaMahee-Gurmukhi/SemiBold/VFB/MuktaMahee-SemiBold.vfb",
+      "MuktaMalar-Tamil/Bold/VFB/MuktaMalar-Bold.vfb",
+      "MuktaMalar-Tamil/ExtraBold/VFB/MuktaMalar-ExtraBold.vfb",
+      "MuktaMalar-Tamil/ExtraLight/VFB/MuktaMalar-Extralight.vfb",
+      "MuktaMalar-Tamil/Light/VFB/MuktaMalar-Light.vfb",
+      "MuktaMalar-Tamil/Medium/VFB/MuktaMalar-Medium.vfb",
+      "MuktaMalar-Tamil/Regular/VFB/MuktaMalar-Regular.vfb",
+      "MuktaMalar-Tamil/SemiBold/VFB/MuktaMalar-Semibold.vfb",
+      "MuktaVaani-Gujarati/Bold/VFB/MuktaVaani-Bold.vfb",
+      "MuktaVaani-Gujarati/ExtraBold/VFB/MuktaVaani-ExtraBold.vfb",
+      "MuktaVaani-Gujarati/ExtraLight/VFB/MuktaVaani-Extralight.vfb",
+      "MuktaVaani-Gujarati/Light/VFB/MuktaVaani-Light.vfb",
+      "MuktaVaani-Gujarati/Medium/VFB/MuktaVaani-Medium.vfb",
+      "MuktaVaani-Gujarati/Regular/VFB/MuktaVaani-Regular.vfb",
+      "MuktaVaani-Gujarati/SemiBold/VFB/MuktaVaani-Semibold.vfb"
+    ]
+  },
+  {
+    "family_name": "Proza Libre",
+    "path": "ofl/prozalibre/METADATA.pb",
+    "repository_url": "https://github.com/jasperdewaard/Proza-Libre",
+    "commit": "45ea7bb14c2301988fbda75fc27374f63e33c19c",
+    "archive_path": "upstream_repos/repo_archive/jasperdewaard/Proza-Libre.git",
+    "sources": [
+      "Sources/ProzaLibre-Italic-MM.vfb",
+      "Sources/ProzaLibre-Roman-MM.vfb",
+      "Sources/TTF/Proza-Libre-Extrabold.vfb",
+      "Sources/TTF/Proza-Libre-Light.vfb",
+      "Sources/TTF/Proza-Libre-LightItalic.vfb",
+      "Sources/TTF/Proza-Libre-Regular.vfb",
+      "Sources/TTF/ProzaLibre-Bold.vfb",
+      "Sources/TTF/ProzaLibre-BoldItalic.vfb",
+      "Sources/TTF/ProzaLibre-ExtraBold.vfb",
+      "Sources/TTF/ProzaLibre-ExtraBoldItalic.vfb",
+      "Sources/TTF/ProzaLibre-Italic.vfb",
+      "Sources/TTF/ProzaLibre-Medium.vfb",
+      "Sources/TTF/ProzaLibre-MediumItalic.vfb",
+      "Sources/TTF/ProzaLibre-Regular.vfb",
+      "Sources/TTF/ProzaLibre-SemiBold.vfb",
+      "Sources/TTF/ProzaLibre-SemiBoldItalic.vfb"
+    ]
+  },
+  {
+    "family_name": "Quando",
+    "path": "ofl/quando/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/quando",
+    "commit": "328635dcbaae8f2fc4fd84c9b872e596a82bebe5",
+    "archive_path": "upstream_repos/repo_archive/librefonts/quando.git",
+    "sources": [
+      "src/Quando-Regular-OTF.sfd",
+      "src/Quando-Regular-TTF.sfd",
+      "src/Quando-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Quattrocento",
+    "path": "ofl/quattrocento/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/quattrocento",
+    "commit": "45d612b9dddd01d19d5ff6d3ef1321ced46de524",
+    "archive_path": "upstream_repos/repo_archive/librefonts/quattrocento.git",
+    "sources": [
+      "src/Quattrocento-Bold-OTF.vfb",
+      "src/Quattrocento-Bold-TTF.vfb",
+      "src/Quattrocento-Bold.vfb",
+      "src/Quattrocento-Regular-OTF.vfb",
+      "src/Quattrocento-Regular-TTF.vfb",
+      "src/Quattrocento-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Quintessential",
+    "path": "ofl/quintessential/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/quintessential",
+    "commit": "a3d26ff9183382b8379f368b41b07eb52f1bd193",
+    "archive_path": "upstream_repos/repo_archive/librefonts/quintessential.git",
+    "sources": [
+      "src/Quintessential-Regular-OTF.vfb",
+      "src/Quintessential-Regular-TTF.vfb",
+      "src/Quintessential-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Raleway Dots",
+    "path": "ofl/ralewaydots/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/ralewaydots",
+    "commit": "c845d1a8e75014ad17dbbf2633119226bed462d8",
+    "archive_path": "upstream_repos/repo_archive/librefonts/ralewaydots.git",
+    "sources": [
+      "src/RalewayDots-Regular-OTF.vfb",
+      "src/RalewayDots-Regular-TTF.vfb",
+      "src/RalewayDots-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Ranga",
+    "path": "ofl/ranga/METADATA.pb",
+    "repository_url": "https://github.com/antonxheight/Ranga",
+    "commit": "15fadcc52c43bfbe15915c530b2409f8bcf244e4",
+    "archive_path": "upstream_repos/repo_archive/antonxheight/Ranga.git",
+    "sources": [
+      "Source_Fontforge/Allan_deva_reg_53E_scl.sfd",
+      "Source_Fontforge/Ranga_53C_scl.sfd"
+    ]
+  },
+  {
+    "family_name": "Righteous",
+    "path": "ofl/righteous/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/righteous",
+    "commit": "583c13c301c5e1dd0a4ae2d7b6cd42bc9c58f953",
+    "archive_path": "upstream_repos/repo_archive/librefonts/righteous.git",
+    "sources": [
+      "src/Righteous-Regular-OTF.vfb",
+      "src/Righteous-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Tai Heritage Pro",
+    "path": "ofl/taiheritagepro/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-taiheritagepro",
+    "commit": "1ac0dd04cf5dd23435f37cecfe825e0eaf230a4c",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-taiheritagepro.git",
+    "sources": [
+      "source/TaiHeritagePro-Bold.vfb",
+      "source/TaiHeritagePro-Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Aclonica",
+    "path": "apache/aclonica/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/aclonica",
+    "commit": "2746e457bdb6c42c89faa2803030ba609e935390",
+    "archive_path": "upstream_repos/repo_archive/librefonts/aclonica.git",
+    "sources": [
+      "src/Aclonica.vfb"
+    ]
+  },
+  {
+    "family_name": "Crushed",
+    "path": "apache/crushed/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/crushed",
+    "commit": "32870f119ec7e05ec914fbe9b99e76aaaa6ecf18",
+    "archive_path": "upstream_repos/repo_archive/librefonts/crushed.git",
+    "sources": [
+      "src/Crushed.vfb"
+    ]
+  },
+  {
+    "family_name": "Just Another Hand",
+    "path": "apache/justanotherhand/METADATA.pb",
+    "repository_url": "https://github.com/librefonts/justanotherhand",
+    "commit": "151e64a17c149d2d5f75040e7ce8783810b9b818",
+    "archive_path": "upstream_repos/repo_archive/librefonts/justanotherhand.git",
+    "sources": [
+      "src/JustAnotherHand.vfb"
+    ]
+  }
+]

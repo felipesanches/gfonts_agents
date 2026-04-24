@@ -1,0 +1,676 @@
+[
+  {
+    "family_name": "Gentium Book Plus",
+    "path": "ofl/gentiumbookplus/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-gentium",
+    "commit": "7ac5e5ca61b776c5b8df4522c04b9707573ffd42",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-gentium.git",
+    "sources": [
+      "source/GentiumPlusItalic.designspace",
+      "source/GentiumPlusRoman.designspace",
+      "source/archive/GenBkBImaster.vfb",
+      "source/archive/GenBkBmaster.vfb",
+      "source/archive/GenImaster.vfb",
+      "source/archive/GenRmaster.vfb",
+      "source/masters/GentiumPlusMaster-ExtraBold.ufo/metainfo.plist",
+      "source/masters/GentiumPlusMaster-ExtraBoldItalic.ufo/metainfo.plist",
+      "source/masters/GentiumPlusMaster-Italic.ufo/metainfo.plist",
+      "source/masters/GentiumPlusMaster-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Gentium Plus",
+    "path": "ofl/gentiumplus/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-gentium",
+    "commit": "7ac5e5ca61b776c5b8df4522c04b9707573ffd42",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-gentium.git",
+    "sources": [
+      "source/GentiumPlusItalic.designspace",
+      "source/GentiumPlusRoman.designspace",
+      "source/archive/GenBkBImaster.vfb",
+      "source/archive/GenBkBmaster.vfb",
+      "source/archive/GenImaster.vfb",
+      "source/archive/GenRmaster.vfb",
+      "source/masters/GentiumPlusMaster-ExtraBold.ufo/metainfo.plist",
+      "source/masters/GentiumPlusMaster-ExtraBoldItalic.ufo/metainfo.plist",
+      "source/masters/GentiumPlusMaster-Italic.ufo/metainfo.plist",
+      "source/masters/GentiumPlusMaster-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Halant",
+    "path": "ofl/halant/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/halant",
+    "commit": "5991cb7b8f338a3676e349dd6f3bb3358467cb69",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/halant.git",
+    "sources": [
+      "masters/Halant_0.ufo/metainfo.plist",
+      "masters/Halant_0.vfb",
+      "masters/Halant_1.ufo/metainfo.plist",
+      "masters/Halant_1.vfb",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/Light/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Hind",
+    "path": "ofl/hind/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/hind",
+    "commit": "6caef5262dc5bee3e033207082a073a6a1d172d6",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/hind.git",
+    "sources": [
+      "masters/Hind_0.ufo/metainfo.plist",
+      "masters/Hind_0.vfb",
+      "masters/Hind_1.ufo/metainfo.plist",
+      "masters/Hind_1.vfb",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/Light/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Karma",
+    "path": "ofl/karma/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/karma",
+    "commit": "12228946ce59ce2008e0a95a6b222632e6481121",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/karma.git",
+    "sources": [
+      "masters/Karma_0.ufo/metainfo.plist",
+      "masters/Karma_0.vfb",
+      "masters/Karma_1.ufo/metainfo.plist",
+      "masters/Karma_1.vfb",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/Light/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Khand",
+    "path": "ofl/khand/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/khand",
+    "commit": "1f1d6778d3a940999b543313b2371fa76b16a978",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/khand.git",
+    "sources": [
+      "masters/Khand_0.ufo/metainfo.plist",
+      "masters/Khand_0.vfb",
+      "masters/Khand_1.ufo/metainfo.plist",
+      "masters/Khand_1.vfb",
+      "styles/Black/font.ufo/metainfo.plist",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/ExtraBold/font.ufo/metainfo.plist",
+      "styles/ExtraLight/font.ufo/metainfo.plist",
+      "styles/Light/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist",
+      "styles/SemiLight/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Laila",
+    "path": "ofl/laila/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/laila",
+    "commit": "a8b5b4ee6cf52508cc0d4f606d4ec0ae4994953a",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/laila.git",
+    "sources": [
+      "masters/Laila_0.ufo/metainfo.plist",
+      "masters/Laila_0.vfb",
+      "masters/Laila_1.ufo/metainfo.plist",
+      "masters/Laila_1.vfb",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/Light/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "League Script",
+    "path": "ofl/leaguescript/METADATA.pb",
+    "repository_url": "https://github.com/theleagueof/league-script-number-one",
+    "commit": "225add0b37cf8268759ba4572e02630d9fb54ecf",
+    "archive_path": "upstream_repos/repo_archive/theleagueof/league-script-number-one.git",
+    "sources": [
+      "source/LeagueScriptNumberOne.ufo/metainfo.plist",
+      "source/LeagueScriptNumberOne.vfb"
+    ]
+  },
+  {
+    "family_name": "Mandali",
+    "path": "ofl/mandali/METADATA.pb",
+    "repository_url": "https://github.com/appajid/mandali",
+    "commit": "b5d09820cc850e98417250895a11bf0605ab2510",
+    "archive_path": "upstream_repos/repo_archive/appajid/mandali.git",
+    "sources": [
+      "Mandali.sfd",
+      "Mandali.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Mirza",
+    "path": "ofl/mirza/METADATA.pb",
+    "repository_url": "https://github.com/Tarobish/Mirza",
+    "commit": "fa7b59c92953e7f437d079a8c118a7952c507f09",
+    "archive_path": "upstream_repos/repo_archive/Tarobish/Mirza.git",
+    "sources": [
+      "Generated/Arabic/Mirza-Bold.ufo/metainfo.plist",
+      "Generated/Arabic/Mirza-Medium.ufo/metainfo.plist",
+      "Generated/Arabic/Mirza-Regular.ufo/metainfo.plist",
+      "Generated/Arabic/Mirza-SemiBold.ufo/metainfo.plist",
+      "Generated/Latin/Latin-Mizra-Bold.ufo/metainfo.plist",
+      "Generated/Latin/Latin-Mizra-Medium.ufo/metainfo.plist",
+      "Generated/Latin/Latin-Mizra-Regular.ufo/metainfo.plist",
+      "Generated/Latin/Latin-Mizra-SemiBold.ufo/metainfo.plist",
+      "Sources/Mirza 2 Masters.glyphs",
+      "Sources/Mirza-LATIN-SOURCE.glyphs",
+      "Sources/technical-additions.sfd"
+    ]
+  },
+  {
+    "family_name": "Mitr",
+    "path": "ofl/mitr/METADATA.pb",
+    "repository_url": "https://github.com/cadsondemak/mitr",
+    "commit": "41950431d37f6410fd082760ca806eb490e4791f",
+    "archive_path": "upstream_repos/repo_archive/cadsondemak/mitr.git",
+    "sources": [
+      "source/Mitr-200.glyphs",
+      "source/Mitr-200.ufo/metainfo.plist",
+      "source/Mitr-200.vfb",
+      "source/Mitr-300.glyphs",
+      "source/Mitr-300.ufo/metainfo.plist",
+      "source/Mitr-300.vfb",
+      "source/Mitr-400.glyphs",
+      "source/Mitr-400.ufo/metainfo.plist",
+      "source/Mitr-400.vfb",
+      "source/Mitr-500.glyphs",
+      "source/Mitr-500.ufo/metainfo.plist",
+      "source/Mitr-500.vfb",
+      "source/Mitr-600.glyphs",
+      "source/Mitr-600.ufo/metainfo.plist",
+      "source/Mitr-600.vfb",
+      "source/Mitr-700.glyphs",
+      "source/Mitr-700.ufo/metainfo.plist",
+      "source/Mitr-700.vfb"
+    ]
+  },
+  {
+    "family_name": "Narnoor",
+    "path": "ofl/narnoor/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-narnoor",
+    "commit": "53fa5d8f5c3afecd9c2247ef7c8b26a02208f267",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-narnoor.git",
+    "sources": [
+      "source/Narnoor-VF.designspace",
+      "source/Narnoor.designspace",
+      "source/archive/GunjalaGondi.sfd",
+      "source/masters/Narnoor-ExtraBold.ufo/metainfo.plist",
+      "source/masters/Narnoor-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "NATS",
+    "path": "ofl/nats/METADATA.pb",
+    "repository_url": "https://github.com/appajid/nats",
+    "commit": "7e1486a72988cb8ec1802e2dc2d7e4f59df35582",
+    "archive_path": "upstream_repos/repo_archive/appajid/nats.git",
+    "sources": [
+      "NATS.sfd",
+      "NATS.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Nobile",
+    "path": "ofl/nobile/METADATA.pb",
+    "repository_url": "https://github.com/vernnobile/NobileFont",
+    "commit": "d3f6ea2c6434d6ebfdc0534bd199d14370f12fee",
+    "archive_path": "upstream_repos/repo_archive/vernnobile/NobileFont.git",
+    "sources": [
+      "in-progress/STASH/Bold/src/Nobile-Bold-KM.ufo/metainfo.plist",
+      "in-progress/STASH/Bold/src/Nobile-Bold.ufo/metainfo.plist",
+      "in-progress/STASH/Regular/src/Nobile-KM.ufo/metainfo.plist",
+      "in-progress/STASH/Regular/src/Nobile.sfd",
+      "in-progress/STASH/Regular/src/Nobile.ufo/metainfo.plist",
+      "in-progress/STASH/black/Nobile-black.ufo/metainfo.plist",
+      "in-progress/STASH/extra-light/Nobile-Light.ufo/metainfo.plist",
+      "in-progress/STASH/extra-light/Nobile-extra-light.sfd",
+      "in-progress/src/Nobile-Bold.ufo/metainfo.plist",
+      "in-progress/src/Nobile-Extra-Bold.ufo/metainfo.plist",
+      "in-progress/src/Nobile-Extra-Light.ufo/metainfo.plist",
+      "in-progress/src/Nobile-Heavy.ufo/metainfo.plist",
+      "in-progress/src/Nobile-Light.ufo/metainfo.plist",
+      "in-progress/src/Nobile-Medium.ufo/metainfo.plist",
+      "in-progress/src/Nobile-Regular.ufo/metainfo.plist",
+      "version1.0/Bold-italic/Nobile-BoldItalic.sfd",
+      "version1.0/Bold-italic/Nobile-BoldItalic.ufo/metainfo.plist",
+      "version1.0/Bold/src/Nobile-Bold.sfd",
+      "version1.0/Bold/src/Nobile-Bold.ufo/metainfo.plist",
+      "version1.0/Regular-italic/Nobile-Italic.sfd",
+      "version1.0/Regular-italic/Nobile-Italic.ufo/metainfo.plist",
+      "version1.0/Regular/src/Nobile-Italic.sfd",
+      "version1.0/Regular/src/Nobile.sfd",
+      "version1.0/Regular/src/Nobile.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Bold.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Extra-Bold.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Extra-Light.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Heavy.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Light.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Medium.ufo/metainfo.plist",
+      "version1.2/src/Nobile-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Noticia Text",
+    "path": "ofl/noticiatext/METADATA.pb",
+    "repository_url": "https://github.com/jmsole/noticiatext",
+    "commit": "bcc80c5a33855419251ac3b9d1fa08d42d52f3ef",
+    "archive_path": "upstream_repos/repo_archive/jmsole/noticiatext.git",
+    "sources": [
+      "extras/vfb/NoticiaText-Bold.vfb",
+      "extras/vfb/NoticiaText-BoldItalic.vfb",
+      "extras/vfb/NoticiaText-Italic.vfb",
+      "extras/vfb/NoticiaText-Regular.vfb",
+      "source/NoticiaText-Bold.glyphs",
+      "source/NoticiaText-BoldItalic.glyphs",
+      "source/NoticiaText-Italic.glyphs",
+      "source/NoticiaText-Regular.glyphs"
+    ]
+  },
+  {
+    "family_name": "NTR",
+    "path": "ofl/ntr/METADATA.pb",
+    "repository_url": "https://github.com/appajid/ntr",
+    "commit": "1268910cd8eb61a104c95e74a8578f2d98d11bd6",
+    "archive_path": "upstream_repos/repo_archive/appajid/ntr.git",
+    "sources": [
+      "NTR.sfd",
+      "NTR.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Nuosu SIL",
+    "path": "ofl/nuosusil/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-nuosu",
+    "commit": "1e9b50a3cb69f6ae01c8ca5da1af2d03a85c517f",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-nuosu.git",
+    "sources": [
+      "source/NuosuSIL-Regular.ufo/metainfo.plist",
+      "source/NuosuSIL.designspace",
+      "source/archive/font-source/NuosuSIL.vfb"
+    ]
+  },
+  {
+    "family_name": "Palanquin",
+    "path": "ofl/palanquin/METADATA.pb",
+    "repository_url": "https://github.com/VanillaandCream/Palanquin",
+    "commit": "f912925eccf9b020425a6f0ddc2ce32fc1640695",
+    "archive_path": "upstream_repos/repo_archive/VanillaandCream/Palanquin.git",
+    "sources": [
+      "Palanquin/SourceFiles/UFOs/Palanquin Bold.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin Light.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin Medium.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin Regular.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin SemiBold.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin_ExLt.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin_Th.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/VFBs/Palanquin Bold.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin Light.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin Medium.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin Regular.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin SemiBold.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin_ExLt.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin_Th.vfb",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark Bld.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark Med.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark Reg.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark SBld.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark Bld.vfb",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark Med.vfb",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark Reg.vfb",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark SBld.vfb"
+    ]
+  },
+  {
+    "family_name": "Palanquin Dark",
+    "path": "ofl/palanquindark/METADATA.pb",
+    "repository_url": "https://github.com/VanillaandCream/Palanquin",
+    "commit": "f912925eccf9b020425a6f0ddc2ce32fc1640695",
+    "archive_path": "upstream_repos/repo_archive/VanillaandCream/Palanquin.git",
+    "sources": [
+      "Palanquin/SourceFiles/UFOs/Palanquin Bold.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin Light.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin Medium.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin Regular.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin SemiBold.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin_ExLt.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/UFOs/Palanquin_Th.ufo/metainfo.plist",
+      "Palanquin/SourceFiles/VFBs/Palanquin Bold.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin Light.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin Medium.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin Regular.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin SemiBold.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin_ExLt.vfb",
+      "Palanquin/SourceFiles/VFBs/Palanquin_Th.vfb",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark Bld.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark Med.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark Reg.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/UFOs/PalanquinDark SBld.ufo/metainfo.plist",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark Bld.vfb",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark Med.vfb",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark Reg.vfb",
+      "PalanquinDark/SourceFiles/VFBs/PalanquinDark SBld.vfb"
+    ]
+  },
+  {
+    "family_name": "Pattaya",
+    "path": "ofl/pattaya/METADATA.pb",
+    "repository_url": "https://github.com/cadsondemak/pattaya",
+    "commit": "fec6c7a0c8b84949dcb2a1c6dbe1ec4ba12ca0d9",
+    "archive_path": "upstream_repos/repo_archive/cadsondemak/pattaya.git",
+    "sources": [
+      "source/Pattaya-Regular-2.ufo/metainfo.plist",
+      "source/Pattaya-Regular.vfb",
+      "source/Pattaya.glyphs"
+    ]
+  },
+  {
+    "family_name": "Pridi",
+    "path": "ofl/pridi/METADATA.pb",
+    "repository_url": "https://github.com/cadsondemak/pridi",
+    "commit": "fe54fb681271c79ffd55ea9045145c9d1da8ade1",
+    "archive_path": "upstream_repos/repo_archive/cadsondemak/pridi.git",
+    "sources": [
+      "source/Pridi-200.glyphs",
+      "source/Pridi-200.ufo/metainfo.plist",
+      "source/Pridi-200.vfb",
+      "source/Pridi-300.glyphs",
+      "source/Pridi-300.ufo/metainfo.plist",
+      "source/Pridi-300.vfb",
+      "source/Pridi-400.glyphs",
+      "source/Pridi-400.ufo/metainfo.plist",
+      "source/Pridi-400.vfb",
+      "source/Pridi-500.glyphs",
+      "source/Pridi-500.ufo/metainfo.plist",
+      "source/Pridi-500.vfb",
+      "source/Pridi-600.glyphs",
+      "source/Pridi-600.ufo/metainfo.plist",
+      "source/Pridi-600.vfb",
+      "source/Pridi-700.glyphs",
+      "source/Pridi-700.ufo/metainfo.plist",
+      "source/Pridi-700.vfb"
+    ]
+  },
+  {
+    "family_name": "Rajdhani",
+    "path": "ofl/rajdhani/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/rajdhani",
+    "commit": "86cae0e9a63279efa076915a470049dd76c044f0",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/rajdhani.git",
+    "sources": [
+      "masters/Rajdhani_0.ufo/metainfo.plist",
+      "masters/Rajdhani_0.vfb",
+      "masters/Rajdhani_1.ufo/metainfo.plist",
+      "masters/Rajdhani_1.vfb",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/Light/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Ramabhadra",
+    "path": "ofl/ramabhadra/METADATA.pb",
+    "repository_url": "https://github.com/appajid/ramabhadra",
+    "commit": "09579428d71598b6d3148aebe5505df573cc1b30",
+    "archive_path": "upstream_repos/repo_archive/appajid/ramabhadra.git",
+    "sources": [
+      "Ramabhadra.sfd",
+      "Ramabhadra.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Ramaraja",
+    "path": "ofl/ramaraja/METADATA.pb",
+    "repository_url": "https://github.com/appajid/ramaraja",
+    "commit": "fc98f3e28ac1857afaeb80e1befa842f083f40f1",
+    "archive_path": "upstream_repos/repo_archive/appajid/ramaraja.git",
+    "sources": [
+      "Ramaraja-Regular.sfd",
+      "Ramaraja-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Rationale",
+    "path": "ofl/rationale/METADATA.pb",
+    "repository_url": "https://github.com/cyrealtype/Rationale",
+    "commit": "b12941da538d15c94bc04f60926288a791d5a81c",
+    "archive_path": "upstream_repos/repo_archive/cyrealtype/Rationale.git",
+    "sources": [
+      "sources/Rationale-OTF.vfb",
+      "sources/Rationale-TTF.vfb",
+      "sources/Rationale.glyphs",
+      "sources/Rationale.vfb"
+    ]
+  },
+  {
+    "family_name": "Rozha One",
+    "path": "ofl/rozhaone/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/rozhaone",
+    "commit": "8225a64e986c03b78fb1bb08d55705c52c9eeab8",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/rozhaone.git",
+    "sources": [
+      "masters/RozhaOne_0.ufo/metainfo.plist",
+      "masters/RozhaOne_0.vfb",
+      "styles/Regular/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Sacramento",
+    "path": "ofl/sacramento/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/SacramentoFont",
+    "commit": "86d34cf5a57af8dfa41c01e32a9529ed6aa499b6",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/SacramentoFont.git",
+    "sources": [
+      "old/version-1.000/Sacramento-Regular-OTF.vfb",
+      "old/version-1.000/Sacramento-Regular-TTF.vfb",
+      "old/version-1.000/Sacramento-Regular.vfb",
+      "sources/Sacramento.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sarpanch",
+    "path": "ofl/sarpanch/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/sarpanch",
+    "commit": "265ec8e95cad31046b4e01a553ebfbfcbeee1188",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/sarpanch.git",
+    "sources": [
+      "masters/Sarpanch_0.ufo/metainfo.plist",
+      "masters/Sarpanch_0.vfb",
+      "masters/Sarpanch_1.ufo/metainfo.plist",
+      "masters/Sarpanch_1.vfb",
+      "styles/Black/font.ufo/metainfo.plist",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/ExtraBold/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Share Tech",
+    "path": "ofl/sharetech/METADATA.pb",
+    "repository_url": "https://github.com/m4rc1e/ShareTech",
+    "commit": "2c501093f8f4fc6d985435133c8ac0fa92137431",
+    "archive_path": "upstream_repos/repo_archive/m4rc1e/ShareTech.git",
+    "sources": [
+      "old/version-1.002/src/ShareTech-Regular-TTF.sfd",
+      "old/version-1.002/src/ShareTech-Regular.vfb",
+      "old/version-1.002/src/ShareTech-Regularo-TTF.sfd",
+      "old/version-1.002/src/ShareTechMono-Regular-TTF.sfd",
+      "old/version-1.002/src/ShareTechMono-Regularo-TTF.sfd",
+      "old/version-1.002/src/expertset/ShareTechExp-Regular.vfb",
+      "sources/ShareTech.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sirin Stencil",
+    "path": "ofl/sirinstencil/METADATA.pb",
+    "repository_url": "https://github.com/cyrealtype/Sirin-Stencil",
+    "commit": "803ade3c703e5f0feb4cb46526ecc71ca5e8fbd1",
+    "archive_path": "upstream_repos/repo_archive/cyrealtype/Sirin-Stencil.git",
+    "sources": [
+      "sources/Sirin Stencil.glyphs",
+      "sources/old/version1.002/SirinStencil-Regular-OTF.vfb",
+      "sources/old/version1.002/SirinStencil-Regular-TTF.vfb"
+    ]
+  },
+  {
+    "family_name": "Slabo 13px",
+    "path": "ofl/slabo13px/METADATA.pb",
+    "repository_url": "https://github.com/TiroTypeworks/Slabo",
+    "commit": "21420697b49ec12ab3fd182a71ffe7c9d804f156",
+    "archive_path": "upstream_repos/repo_archive/TiroTypeworks/Slabo.git",
+    "sources": [
+      "FontLab Sources/Slabo 13px b004.vfb",
+      "FontLab Sources/Slabo 27px b002.vfb",
+      "FontLab Sources/Slabo Xpx b005.vfb",
+      "UFOs/Slabo 13px b004.ufo/metainfo.plist",
+      "UFOs/Slabo 27px b002.ufo/metainfo.plist",
+      "UFOs/Slabo Xpx b005.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Slabo 27px",
+    "path": "ofl/slabo27px/METADATA.pb",
+    "repository_url": "https://github.com/TiroTypeworks/Slabo",
+    "commit": "21420697b49ec12ab3fd182a71ffe7c9d804f156",
+    "archive_path": "upstream_repos/repo_archive/TiroTypeworks/Slabo.git",
+    "sources": [
+      "FontLab Sources/Slabo 13px b004.vfb",
+      "FontLab Sources/Slabo 27px b002.vfb",
+      "FontLab Sources/Slabo Xpx b005.vfb",
+      "UFOs/Slabo 13px b004.ufo/metainfo.plist",
+      "UFOs/Slabo 27px b002.ufo/metainfo.plist",
+      "UFOs/Slabo Xpx b005.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Sniglet",
+    "path": "ofl/sniglet/METADATA.pb",
+    "repository_url": "https://github.com/theleagueof/sniglet",
+    "commit": "5c6b0860bdd0d8c4f16222e4de3918c384db17c4",
+    "archive_path": "upstream_repos/repo_archive/theleagueof/sniglet.git",
+    "sources": [
+      "source/Sniglet_Regular.ufo/metainfo.plist",
+      "source/Sniglet_Regular.vfb"
+    ]
+  },
+  {
+    "family_name": "Sree Krushnadevaraya",
+    "path": "ofl/sreekrushnadevaraya/METADATA.pb",
+    "repository_url": "https://github.com/appajid/sreekrushnadevaraya",
+    "commit": "1d8aea8611ff50608f113c079890bd4c996d12be",
+    "archive_path": "upstream_repos/repo_archive/appajid/sreekrushnadevaraya.git",
+    "sources": [
+      "SreeKrushnadevaraya.sfd",
+      "SreeKrushnadevaraya.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Suranna",
+    "path": "ofl/suranna/METADATA.pb",
+    "repository_url": "https://github.com/appajid/suranna",
+    "commit": "ce1c1f150ba50e59fd9d95c114c40545c4e8fe04",
+    "archive_path": "upstream_repos/repo_archive/appajid/suranna.git",
+    "sources": [
+      "Suranna.sfd",
+      "Suranna.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Suravaram",
+    "path": "ofl/suravaram/METADATA.pb",
+    "repository_url": "https://github.com/appajid/suravaram",
+    "commit": "c8d4e86f6a287199182d1ce6c97450307388dc23",
+    "archive_path": "upstream_repos/repo_archive/appajid/suravaram.git",
+    "sources": [
+      "Suravaram.sfd",
+      "Suravaram.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Tenali Ramakrishna",
+    "path": "ofl/tenaliramakrishna/METADATA.pb",
+    "repository_url": "https://github.com/appajid/tenaliramakrishna",
+    "commit": "444587c444ccb531e9b383b787cbdbcb424a476c",
+    "archive_path": "upstream_repos/repo_archive/appajid/tenaliramakrishna.git",
+    "sources": [
+      "TenaliRamakrishna-Regular.sfd",
+      "TenaliRamakrishna-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Tienne",
+    "path": "ofl/tienne/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/Tienne2Font",
+    "commit": "e49a4151f9be25337e3873c71b2430f18113fdfc",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/Tienne2Font.git",
+    "sources": [
+      "Tienne-Heavy.sfd",
+      "Tienne-Heavy.ufo/metainfo.plist",
+      "Tienne-Regular.sfd",
+      "Tienne-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Timmana",
+    "path": "ofl/timmana/METADATA.pb",
+    "repository_url": "https://github.com/appajid/timmana",
+    "commit": "6ed6823a73b42a541885d12a7df389d3112a9380",
+    "archive_path": "upstream_repos/repo_archive/appajid/timmana.git",
+    "sources": [
+      "TimmanaRegular.ufo/metainfo.plist",
+      "TimmanaRegular.vfb"
+    ]
+  },
+  {
+    "family_name": "Vampiro One",
+    "path": "ofl/vampiroone/METADATA.pb",
+    "repository_url": "https://github.com/SorkinType/Vampiro",
+    "commit": "ec42cf12230a8663c3ccb7a0c2da590ba98d2cd9",
+    "archive_path": "upstream_repos/repo_archive/SorkinType/Vampiro.git",
+    "sources": [
+      "Vampiro.ufo/metainfo.plist",
+      "Vampiro.vfb",
+      "src/Vampiro.vfb",
+      "src/Vampiro_otf.sfd",
+      "src/Vampiro_ttf.sfd"
+    ]
+  },
+  {
+    "family_name": "VT323",
+    "path": "ofl/vt323/METADATA.pb",
+    "repository_url": "https://github.com/phoikoi/VT323",
+    "commit": "9bd4b3f69887fd960d51d07602db60a28a789145",
+    "archive_path": "upstream_repos/repo_archive/phoikoi/VT323.git",
+    "sources": [
+      "old/v1.000/VT323.sfd",
+      "old/v2.000/VT323-Regular.ufo/metainfo.plist",
+      "old/v2.000/VT323.glyphs",
+      "old/v2.000/VT323_v2.glyphs",
+      "old/v3.000/VT323_v3.glyphs",
+      "old/v3.000/VT323_v3_decomposed/VT323_v3_decomposed.glyphs",
+      "old/v3.000/VT323_v3_decomposed/VT323_v3_decomposed.ufo/metainfo.plist",
+      "old/v3.000/VT323_v3_decomposed/VT323_v3_decomposed.vfb",
+      "old/version-1.000/src/VT323-Regular-TTF.sfd",
+      "old/version-1.000/src/VT323.sfd",
+      "sources/VT323.glyphs"
+    ]
+  }
+]

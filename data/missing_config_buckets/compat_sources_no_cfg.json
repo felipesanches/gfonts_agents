@@ -1,0 +1,1172 @@
+[
+  {
+    "family_name": "Aref Ruqaa",
+    "path": "ofl/arefruqaa/METADATA.pb",
+    "repository_url": "https://github.com/aliftype/aref-ruqaa",
+    "commit": "175e1ed565e75aba8059675b80dadc0a184d53e6",
+    "archive_path": "upstream_repos/repo_archive/aliftype/aref-ruqaa.git",
+    "sources": [
+      "sources/EulerText-Bold.ufo/metainfo.plist",
+      "sources/EulerText-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Aref Ruqaa Ink",
+    "path": "ofl/arefruqaaink/METADATA.pb",
+    "repository_url": "https://github.com/aliftype/aref-ruqaa",
+    "commit": "cca3d1256a7cc75a451f38e50b870d2d5c1e3ffb",
+    "archive_path": "upstream_repos/repo_archive/aliftype/aref-ruqaa.git",
+    "sources": [
+      "ArefRuqaa.glyphs",
+      "EulerText.glyphs"
+    ]
+  },
+  {
+    "family_name": "Catamaran",
+    "path": "ofl/catamaran/METADATA.pb",
+    "repository_url": "https://github.com/VanillaandCream/Catamaran-Tamil",
+    "commit": "7559b4906f9c9148fb22c6f89508c3053a78a296",
+    "archive_path": "upstream_repos/repo_archive/VanillaandCream/Catamaran-Tamil.git",
+    "sources": [
+      "Instances/Catamaran1.glyphs",
+      "Instances/Catamaran2.glyphs",
+      "Instances/Catamaran3.glyphs",
+      "Instances/Catamaran4.glyphs"
+    ]
+  },
+  {
+    "family_name": "Encode Sans",
+    "path": "ofl/encodesans/METADATA.pb",
+    "repository_url": "https://github.com/thundernixon/Encode-Sans",
+    "commit": "6407de854a4dc3bfbe2160a11c5b57f5a1baf3bc",
+    "archive_path": "upstream_repos/repo_archive/thundernixon/Encode-Sans.git",
+    "sources": [
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-100_noMed_900-Heavy.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-100_noMed_900-Thin.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-100_noMed_900.designspace",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-300_light-Heavy.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-300_light-Thin.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-300_light.designspace",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/pages-vf-thin-test.glyphs",
+      "sources/Encode-Sans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Encode Sans Condensed",
+    "path": "ofl/encodesanscondensed/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "370cdccdb22daf862c6fca0636aad64b6835decd",
+    "archive_path": "upstream_repos/repo_archive/impallari/Encode-Sans.git",
+    "sources": [
+      "sources/Encode-Sans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Encode Sans Expanded",
+    "path": "ofl/encodesansexpanded/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "370cdccdb22daf862c6fca0636aad64b6835decd",
+    "archive_path": "upstream_repos/repo_archive/impallari/Encode-Sans.git",
+    "sources": [
+      "sources/Encode-Sans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Encode Sans SC",
+    "path": "ofl/encodesanssc/METADATA.pb",
+    "repository_url": "https://github.com/thundernixon/Encode-Sans",
+    "commit": "6407de854a4dc3bfbe2160a11c5b57f5a1baf3bc",
+    "archive_path": "upstream_repos/repo_archive/thundernixon/Encode-Sans.git",
+    "sources": [
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-100_noMed_900-Heavy.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-100_noMed_900-Thin.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-100_noMed_900.designspace",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-300_light-Heavy.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-300_light-Thin.ufo/metainfo.plist",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/master_ufo/ThinTest-300_light.designspace",
+      "docs/tests/macos-pages-vf-test-thin-2018-02-11/pages-vf-thin-test.glyphs",
+      "sources/Encode-Sans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Encode Sans Semi Condensed",
+    "path": "ofl/encodesanssemicondensed/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "370cdccdb22daf862c6fca0636aad64b6835decd",
+    "archive_path": "upstream_repos/repo_archive/impallari/Encode-Sans.git",
+    "sources": [
+      "sources/Encode-Sans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Encode Sans Semi Expanded",
+    "path": "ofl/encodesanssemiexpanded/METADATA.pb",
+    "repository_url": "https://github.com/impallari/Encode-Sans",
+    "commit": "370cdccdb22daf862c6fca0636aad64b6835decd",
+    "archive_path": "upstream_repos/repo_archive/impallari/Encode-Sans.git",
+    "sources": [
+      "sources/Encode-Sans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Idiqlat",
+    "path": "ofl/idiqlat/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-idiqlat",
+    "commit": "37a6c68fa053f4b4b4c9f6d67c569f66621b6daa",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-idiqlat.git",
+    "sources": [
+      "source/Idiqlat.designspace",
+      "source/IdiqlatTestA.designspace",
+      "source/masters/Idiqlat-ExtraLight.ufo/metainfo.plist",
+      "source/masters/Idiqlat-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Inknut Antiqua",
+    "path": "ofl/inknutantiqua/METADATA.pb",
+    "repository_url": "https://github.com/clauseggers/Inknut-Antiqua",
+    "commit": "9db4a5c235ef042adbc0da37fcf3dda3ffe59201",
+    "archive_path": "upstream_repos/repo_archive/clauseggers/Inknut-Antiqua.git",
+    "sources": [
+      "Inknut Antiqua LATIN ONLY/Inknut Antiqua uprights 124 LATIN ONLY.glyphs",
+      "Inknut Antiqua LATIN ONLY/UFO/Inknut Antiqua-Bold.ufo/metainfo.plist",
+      "Inknut Antiqua LATIN ONLY/UFO/Inknut Antiqua-Regular.ufo/metainfo.plist",
+      "Inknut Antiqua uprights.glyphs",
+      "UFOs/Inknut Antiqua-Bold.ufo/metainfo.plist",
+      "UFOs/Inknut Antiqua-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Inria Sans",
+    "path": "ofl/inriasans/METADATA.pb",
+    "repository_url": "https://github.com/BlackFoundryCom/InriaFonts",
+    "commit": "9b015af5d8ab574b6afeffd324443bfcbf77e300",
+    "archive_path": "upstream_repos/repo_archive/BlackFoundryCom/InriaFonts.git",
+    "sources": [
+      "masters/INRIA-SANS/InriaSans-Bold.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-BoldItalic.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-Italic.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-Light.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-LightItalic.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-Regular.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Bold.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-BoldItalic.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Italic.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Light.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-LightItalic.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Inria Serif",
+    "path": "ofl/inriaserif/METADATA.pb",
+    "repository_url": "https://github.com/BlackFoundryCom/InriaFonts",
+    "commit": "9b015af5d8ab574b6afeffd324443bfcbf77e300",
+    "archive_path": "upstream_repos/repo_archive/BlackFoundryCom/InriaFonts.git",
+    "sources": [
+      "masters/INRIA-SANS/InriaSans-Bold.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-BoldItalic.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-Italic.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-Light.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-LightItalic.ufo/metainfo.plist",
+      "masters/INRIA-SANS/InriaSans-Regular.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Bold.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-BoldItalic.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Italic.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Light.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-LightItalic.ufo/metainfo.plist",
+      "masters/INRIA-SERIF/InriaSerif-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Jomhuria",
+    "path": "ofl/jomhuria/METADATA.pb",
+    "repository_url": "https://github.com/Tarobish/Jomhuria",
+    "commit": "d4b8f42eaf712178802609bfbe48127bd45be9c8",
+    "archive_path": "upstream_repos/repo_archive/Tarobish/Jomhuria.git",
+    "sources": [
+      "Sources/jomhuria-latin.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Kanchenjunga",
+    "path": "ofl/kanchenjunga/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-kanchenjunga/",
+    "commit": "19a3efac0c2ca42a1b28a53c74ca8f3eb6c12ca7",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-kanchenjunga.git",
+    "sources": [
+      "source/Kanchenjunga-Bold.ufo/metainfo.plist",
+      "source/Kanchenjunga-Regular.ufo/metainfo.plist",
+      "source/Kanchenjunga-future.designspace",
+      "source/Kanchenjunga.designspace"
+    ]
+  },
+  {
+    "family_name": "Kay Pho Du",
+    "path": "ofl/kayphodu/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-kayphodu",
+    "commit": "4c49d8ac7ae00cf0ee10db3c3c35dc49ca9efd4d",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-kayphodu.git",
+    "sources": [
+      "source/KayPhoDu.designspace",
+      "source/KayPhoDuR.designspace",
+      "source/archive/KayPhoDuKarenni-Bold.ufo/metainfo.plist",
+      "source/archive/KayPhoDuKarenni-Regular.ufo/metainfo.plist",
+      "source/masters/KayPhoDu-Bold.ufo/metainfo.plist",
+      "source/masters/KayPhoDu-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Kedebideri",
+    "path": "ofl/kedebideri/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-kedebideri",
+    "commit": "4973b2e0258ef40acc0da3c2c1d155630faecc2c",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-kedebideri.git",
+    "sources": [
+      "source/Kedebideri.designspace",
+      "source/KedebideriAxis.designspace",
+      "source/masters/Kedebideri-Black.ufo/metainfo.plist",
+      "source/masters/Kedebideri-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Kufam",
+    "path": "ofl/kufam/METADATA.pb",
+    "repository_url": "https://github.com/originaltype/kufam",
+    "commit": "a2c0c9552f98295167bc33bdb9c6256dd6abdc8a",
+    "archive_path": "upstream_repos/repo_archive/originaltype/kufam.git",
+    "sources": [
+      "Variable testfonts/Kufam Arabic Latin Roman Variable test.glyphs",
+      "Variable testfonts/Test.glyphs",
+      "sources/Kufam_Arabic_Latin_Roman_Master.glyphs",
+      "sources/Kufam_Latin_Italic_Master.glyphs"
+    ]
+  },
+  {
+    "family_name": "Mochiy Pop One",
+    "path": "ofl/mochiypopone/METADATA.pb",
+    "repository_url": "https://github.com/fontdasu/Mochiypop",
+    "commit": "438f3dd27a236961a705b1363eef4130241203ae",
+    "archive_path": "upstream_repos/repo_archive/fontdasu/Mochiypop.git",
+    "sources": [
+      "sources/MochiyPop.glyphs"
+    ]
+  },
+  {
+    "family_name": "Mochiy Pop P One",
+    "path": "ofl/mochiypoppone/METADATA.pb",
+    "repository_url": "https://github.com/fontdasu/Mochiypop",
+    "commit": "438f3dd27a236961a705b1363eef4130241203ae",
+    "archive_path": "upstream_repos/repo_archive/fontdasu/Mochiypop.git",
+    "sources": [
+      "sources/MochiyPop.glyphs"
+    ]
+  },
+  {
+    "family_name": "M PLUS 1",
+    "path": "ofl/mplus1/METADATA.pb",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "84c56ab8d094484cf18c555c12e9ef7708fa4fa5",
+    "archive_path": "upstream_repos/repo_archive/coz-m/MPLUS_FONTS.git",
+    "sources": [
+      "sources/MPLUS-1.glyphs",
+      "sources/MPLUS-2.glyphs",
+      "sources/MPLUS-Kanji.glyphs",
+      "sources/MPLUS-U.glyphs",
+      "sources/MPLUS-code.glyphs",
+      "sources/MPLUS-latin_gf.designspace",
+      "sources/code.designspace"
+    ]
+  },
+  {
+    "family_name": "M PLUS 1 Code",
+    "path": "ofl/mplus1code/METADATA.pb",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "a1268635894c5ee23dfdece570418ca07b66c3fc",
+    "archive_path": "upstream_repos/repo_archive/coz-m/MPLUS_FONTS.git",
+    "sources": [
+      "sources/MPLUS-1.glyphs",
+      "sources/MPLUS-2.glyphs",
+      "sources/MPLUS-Kanji.glyphs",
+      "sources/MPLUS-U.glyphs",
+      "sources/MPLUS-code.glyphs",
+      "sources/MPLUS-latin_gf.designspace",
+      "sources/code.designspace"
+    ]
+  },
+  {
+    "family_name": "M PLUS 1p",
+    "path": "ofl/mplus1p/METADATA.pb",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "9cb1a484f5f8c5c18c7e2f83a13c812aec15c11d",
+    "archive_path": "upstream_repos/repo_archive/coz-m/MPLUS_FONTS.git",
+    "sources": [
+      "sources/MPLUS-1.glyphs",
+      "sources/MPLUS-2.glyphs",
+      "sources/MPLUS-Kanji.glyphs",
+      "sources/MPLUS-U.glyphs",
+      "sources/MPLUS-code.glyphs",
+      "sources/MPLUS-latin_gf.designspace",
+      "sources/code.designspace"
+    ]
+  },
+  {
+    "family_name": "M PLUS 2",
+    "path": "ofl/mplus2/METADATA.pb",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "84c56ab8d094484cf18c555c12e9ef7708fa4fa5",
+    "archive_path": "upstream_repos/repo_archive/coz-m/MPLUS_FONTS.git",
+    "sources": [
+      "sources/MPLUS-1.glyphs",
+      "sources/MPLUS-2.glyphs",
+      "sources/MPLUS-Kanji.glyphs",
+      "sources/MPLUS-U.glyphs",
+      "sources/MPLUS-code.glyphs",
+      "sources/MPLUS-latin_gf.designspace",
+      "sources/code.designspace"
+    ]
+  },
+  {
+    "family_name": "M PLUS Code Latin",
+    "path": "ofl/mpluscodelatin/METADATA.pb",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "a1268635894c5ee23dfdece570418ca07b66c3fc",
+    "archive_path": "upstream_repos/repo_archive/coz-m/MPLUS_FONTS.git",
+    "sources": [
+      "sources/MPLUS-1.glyphs",
+      "sources/MPLUS-2.glyphs",
+      "sources/MPLUS-Kanji.glyphs",
+      "sources/MPLUS-U.glyphs",
+      "sources/MPLUS-code.glyphs",
+      "sources/MPLUS-latin_gf.designspace",
+      "sources/code.designspace"
+    ]
+  },
+  {
+    "family_name": "M PLUS Rounded 1c",
+    "path": "ofl/mplusrounded1c/METADATA.pb",
+    "repository_url": "https://github.com/coz-m/MPLUS_FONTS",
+    "commit": "eb604901d6f04b6f7f2a84b0378c58df84a9dba6",
+    "archive_path": "upstream_repos/repo_archive/coz-m/MPLUS_FONTS.git",
+    "sources": [
+      "sources/MPLUS-1.glyphs",
+      "sources/MPLUS-2.glyphs",
+      "sources/MPLUS-3.glyphs",
+      "sources/MPLUS-Kanji.glyphs",
+      "sources/MPLUS-U.glyphs",
+      "sources/MPLUS-code.glyphs",
+      "sources/MPLUS-latin_gf.designspace",
+      "sources/code.designspace"
+    ]
+  },
+  {
+    "family_name": "Namdhinggo",
+    "path": "ofl/namdhinggo/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-namdhinggo",
+    "commit": "2c6ac797b061941d1f46c980910982b1b1f240ab",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-namdhinggo.git",
+    "sources": [
+      "source/Namdhinggo-VF.designspace",
+      "source/Namdhinggo.designspace",
+      "source/archive/NamdhinggoSILLCSource-Regular.ufo/metainfo.plist",
+      "source/archive/NamdhinggoSILLCSource.designspace",
+      "source/archive/NamdhinggoSILUCSource-Regular.ufo/metainfo.plist",
+      "source/archive/NamdhinggoSILUCSource.designspace",
+      "source/masters/Namdhinggo-ExtraBold.ufo/metainfo.plist",
+      "source/masters/Namdhinggo-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "OFL Sorts Mill Goudy TT",
+    "path": "ofl/oflsortsmillgoudytt/METADATA.pb",
+    "repository_url": "https://github.com/theleagueof/sorts-mill-goudy",
+    "commit": "06072890c7b05f274215a24f17449655ccb2c8af",
+    "archive_path": "upstream_repos/repo_archive/theleagueof/sorts-mill-goudy.git",
+    "sources": [
+      "source/OFLGoudyStM-Italic.ufo/metainfo.plist",
+      "source/OFLGoudyStM.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Padauk",
+    "path": "ofl/padauk/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-padauk",
+    "commit": "278b8efb03c0ca0d7f29fb3edc1f52489ebb384f",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-padauk.git",
+    "sources": [
+      "source/Padauk.designspace",
+      "source/masters/Padauk-BookBold.ufo/metainfo.plist",
+      "source/masters/Padauk-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Pavanam",
+    "path": "ofl/pavanam/METADATA.pb",
+    "repository_url": "https://github.com/enathu/pavanam",
+    "commit": "c4ba9335116a4ff2c124ebf918455748caedccac",
+    "archive_path": "upstream_repos/repo_archive/enathu/pavanam.git",
+    "sources": [
+      "source/Pavanam-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Prociono",
+    "path": "ofl/prociono/METADATA.pb",
+    "repository_url": "https://github.com/theleagueof/prociono",
+    "commit": "f9d9680de6d6f0c13939f23c9dd14cd7853cf844",
+    "archive_path": "upstream_repos/repo_archive/theleagueof/prociono.git",
+    "sources": [
+      "source/Prociono.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Prompt",
+    "path": "ofl/prompt/METADATA.pb",
+    "repository_url": "https://github.com/cadsondemak/prompt",
+    "commit": "18f813a4dea16a7ecc6f944053d3ce2cd4d7e824",
+    "archive_path": "upstream_repos/repo_archive/cadsondemak/prompt.git",
+    "sources": [
+      "Source/Prompt_100_Thin.glyphs",
+      "Source/Prompt_100_Thin_Ita.glyphs",
+      "Source/Prompt_200_ExtraLight.glyphs",
+      "Source/Prompt_200_ExtraLight_Ita.glyphs",
+      "Source/Prompt_300_Light.glyphs",
+      "Source/Prompt_300_Light_Ita.glyphs",
+      "Source/Prompt_400_Regular.glyphs",
+      "Source/Prompt_400_Regular_Ita.glyphs",
+      "Source/Prompt_500_Medium.glyphs",
+      "Source/Prompt_500_Medium_Ita.glyphs",
+      "Source/Prompt_600_SemiBold.glyphs",
+      "Source/Prompt_600_SemiBold_Ita.glyphs",
+      "Source/Prompt_700_Bold.glyphs",
+      "Source/Prompt_700_Bold_Ita.glyphs",
+      "Source/Prompt_800_ExtraBold.glyphs",
+      "Source/Prompt_800_ExtraBold_Ita.glyphs",
+      "Source/Prompt_900_Black.glyphs",
+      "Source/Prompt_900_Black_Ita.glyphs"
+    ]
+  },
+  {
+    "family_name": "Ramsina",
+    "path": "ofl/ramsina/METADATA.pb",
+    "repository_url": "https://github.com/silnrsi/font-ramsina",
+    "commit": "263c8d552bff566fad9e8c9b266ae32e6ab341b4",
+    "archive_path": "upstream_repos/repo_archive/silnrsi/font-ramsina.git",
+    "sources": [
+      "source/Ramsina.designspace",
+      "source/RamsinaTestA.designspace",
+      "source/masters/Ramsina-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Rhodium Libre",
+    "path": "ofl/rhodiumlibre/METADATA.pb",
+    "repository_url": "https://github.com/DunwichType/RhodiumLibre",
+    "commit": "c6e9dc9167fb6f4bc6fc44f2262129aaf771c8a3",
+    "archive_path": "upstream_repos/repo_archive/DunwichType/RhodiumLibre.git",
+    "sources": [
+      "Rhodium Libre-Regular.ufo/metainfo.plist",
+      "RhodiumLibre-Regular.glyphs",
+      "RhodiumLibre-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Ropa Sans",
+    "path": "ofl/ropasans/METADATA.pb",
+    "repository_url": "https://github.com/lettersoup/Ropa-Sans",
+    "commit": "33acc9f9e7d126dd46b9e1efa03f98ea2e2046de",
+    "archive_path": "upstream_repos/repo_archive/lettersoup/Ropa-Sans.git",
+    "sources": [
+      "sources/RopaSans-Italic.glyphs",
+      "sources/RopaSans.glyphs"
+    ]
+  },
+  {
+    "family_name": "Rubik Mono One",
+    "path": "ofl/rubikmonoone/METADATA.pb",
+    "repository_url": "https://github.com/alexeiva/rubikmonoone",
+    "commit": "7d08552d8921a0b864538b030cd0f59e7acdd4b1",
+    "archive_path": "upstream_repos/repo_archive/alexeiva/rubikmonoone.git",
+    "sources": [
+      "sources/RubikMonoOne.glyphs"
+    ]
+  },
+  {
+    "family_name": "Ruda",
+    "path": "ofl/ruda/METADATA.pb",
+    "repository_url": "https://github.com/m4rc1e/Ruda-new",
+    "commit": "a63532e04ffb0f46b635cf9e000966155958e19d",
+    "archive_path": "upstream_repos/repo_archive/m4rc1e/Ruda-new.git",
+    "sources": [
+      "Ruda_new.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sahitya",
+    "path": "ofl/sahitya/METADATA.pb",
+    "repository_url": "https://github.com/huertatipografica/sahitya",
+    "commit": "c4b5b34d0fbad63654b1d9a6bff72e566bf9a2c6",
+    "archive_path": "upstream_repos/repo_archive/huertatipografica/sahitya.git",
+    "sources": [
+      "Sahitya-Bold.glyphs",
+      "Sahitya-Regular.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sansita",
+    "path": "ofl/sansita/METADATA.pb",
+    "repository_url": "https://github.com/Omnibus-Type/Sansita",
+    "commit": "168abd68a378c93d6febb46b453efd67e9ed86f2",
+    "archive_path": "upstream_repos/repo_archive/Omnibus-Type/Sansita.git",
+    "sources": [
+      "sources/Backup/1176_Sansita Italic.glyphs",
+      "sources/Backup/1176_Sansita.glyphs",
+      "sources/Backup/1216_Sansita Italic.glyphs",
+      "sources/Backup/1216_Sansita.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sarala",
+    "path": "ofl/sarala/METADATA.pb",
+    "repository_url": "https://github.com/huertatipografica/sarala",
+    "commit": "7779e0c9eb121b25d9fcb7c20d5b3541b3f4fc15",
+    "archive_path": "upstream_repos/repo_archive/huertatipografica/sarala.git",
+    "sources": [
+      "Sarala.glyphs",
+      "font/Sarala-Bold.ufo/metainfo.plist",
+      "font/Sarala-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Scada",
+    "path": "ofl/scada/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/scada",
+    "commit": "df06a155d95984d259c8492aeaaa520188a3d46b",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/scada.git",
+    "sources": [
+      "sources/Scada-Italic.glyphs",
+      "sources/Scada.glyphs"
+    ]
+  },
+  {
+    "family_name": "Scope One",
+    "path": "ofl/scopeone/METADATA.pb",
+    "repository_url": "https://github.com/daltonmaag/scope-one",
+    "commit": "7a5c5df7367bdba124c4dcf8f59b15912811c3c4",
+    "archive_path": "upstream_repos/repo_archive/daltonmaag/scope-one.git",
+    "sources": [
+      "source/ScopeOne_Rg.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Shrikhand",
+    "path": "ofl/shrikhand/METADATA.pb",
+    "repository_url": "https://github.com/jonpinhorn/shrikhand",
+    "commit": "c11c9b0720fba977fad7cb4f339ebacdba1d1394",
+    "archive_path": "upstream_repos/repo_archive/jonpinhorn/shrikhand.git",
+    "sources": [
+      "development/glyphs/02.10.15_Shrikhand.glyphs",
+      "development/glyphs/02.10.15_Shrikhand_[PreAnchor].glyphs",
+      "development/glyphs/02.11.15_Shrikhand.glyphs",
+      "development/glyphs/03.10.15_Shrikhand.glyphs",
+      "development/glyphs/04.10.15_Shrikhand.glyphs",
+      "development/glyphs/05.10.15_Shrikhand.glyphs",
+      "development/glyphs/10.09.15_Shrikhand.glyphs",
+      "development/glyphs/16.09.15_Shrikhand_[GlyphsAppNaming].glyphs",
+      "instances/Regular/font.ufo/metainfo.plist",
+      "masters/Shrikhand-Regular.ufo/metainfo.plist",
+      "masters/Shrikhand.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sintony",
+    "path": "ofl/sintony/METADATA.pb",
+    "repository_url": "https://github.com/etunni/sintony",
+    "commit": "be9cf7be562d566504ef1c8e52d41ce48535ced8",
+    "archive_path": "upstream_repos/repo_archive/etunni/sintony.git",
+    "sources": [
+      "old-files/Sintony-Bold.otf.ufo/metainfo.plist",
+      "old-files/Sintony-Regular.otf.ufo/metainfo.plist",
+      "sources/Sintony-GF-plus.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sora",
+    "path": "ofl/sora/METADATA.pb",
+    "repository_url": "https://github.com/sora-xor/sora-font",
+    "commit": "7f9a9c5d0ccd1c099cfac420aa27133df1c5fdc4",
+    "archive_path": "upstream_repos/repo_archive/sora-xor/sora-font.git",
+    "sources": [
+      "sources/original-sources/glyphs-master/sora-masters.glyphs",
+      "sources/original-sources/ufo-sources/Roman/Instances/Bold/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Instances/ExtraBold/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Instances/ExtraLight/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Instances/Light/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Instances/Regular/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Instances/SemiBold/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Instances/Thin/font.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Masters/Sora.designspace",
+      "sources/original-sources/ufo-sources/Roman/Masters/master_0/Sora-Thin.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Masters/master_1/Sora-Regular.ufo/metainfo.plist",
+      "sources/original-sources/ufo-sources/Roman/Masters/master_2/Sora-Black.ufo/metainfo.plist",
+      "sources/sora-italic.glyphs",
+      "sources/sora.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sorts Mill Goudy",
+    "path": "ofl/sortsmillgoudy/METADATA.pb",
+    "repository_url": "https://github.com/theleagueof/sorts-mill-goudy",
+    "commit": "06072890c7b05f274215a24f17449655ccb2c8af",
+    "archive_path": "upstream_repos/repo_archive/theleagueof/sorts-mill-goudy.git",
+    "sources": [
+      "source/OFLGoudyStM-Italic.ufo/metainfo.plist",
+      "source/OFLGoudyStM.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Source Sans 3",
+    "path": "ofl/sourcesans3/METADATA.pb",
+    "repository_url": "https://github.com/adobe-fonts/source-sans",
+    "commit": "272b22b02e097e8eff1372111f88b5ab6063499f",
+    "archive_path": "upstream_repos/repo_archive/adobe-fonts/source-sans.git",
+    "sources": [
+      "Italic/Instances/BlackIt/font.ufo/metainfo.plist",
+      "Italic/Instances/BoldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/ExtraLightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/It/font.ufo/metainfo.plist",
+      "Italic/Instances/LightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/MediumIt/font.ufo/metainfo.plist",
+      "Italic/Instances/SemiboldIt/font.ufo/metainfo.plist",
+      "Italic/Poles/pole_0/SourceSans3-ExtraLightItalic.ufo/metainfo.plist",
+      "Italic/Poles/pole_1/SourceSans3-Italic.ufo/metainfo.plist",
+      "Italic/Poles/pole_2/SourceSans3-BlackItalic.ufo/metainfo.plist",
+      "Italic/SourceSans3-Italic.designspace",
+      "Italic/SourceSans3VF-Italic.designspace",
+      "Upright/Instances/Black/font.ufo/metainfo.plist",
+      "Upright/Instances/Bold/font.ufo/metainfo.plist",
+      "Upright/Instances/ExtraLight/font.ufo/metainfo.plist",
+      "Upright/Instances/Light/font.ufo/metainfo.plist",
+      "Upright/Instances/Medium/font.ufo/metainfo.plist",
+      "Upright/Instances/Regular/font.ufo/metainfo.plist",
+      "Upright/Instances/Semibold/font.ufo/metainfo.plist",
+      "Upright/Poles/pole_0/SourceSans3-ExtraLight.ufo/metainfo.plist",
+      "Upright/Poles/pole_1/SourceSans3-Upright.ufo/metainfo.plist",
+      "Upright/Poles/pole_2/SourceSans3-Black.ufo/metainfo.plist",
+      "Upright/SourceSans3-Upright.designspace",
+      "Upright/SourceSans3VF-Upright.designspace"
+    ]
+  },
+  {
+    "family_name": "Source Serif 4",
+    "path": "ofl/sourceserif4/METADATA.pb",
+    "repository_url": "https://github.com/adobe-fonts/source-serif",
+    "commit": "b3980ade53bb3d023a0006076d05349236b309b1",
+    "archive_path": "upstream_repos/repo_archive/adobe-fonts/source-serif.git",
+    "sources": [
+      "Italic/Instances/Caption/BlackIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Caption/BoldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Caption/ExtraLightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Caption/It/font.ufo/metainfo.plist",
+      "Italic/Instances/Caption/LightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Caption/SemiboldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Display/BlackIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Display/BoldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Display/ExtraLightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Display/It/font.ufo/metainfo.plist",
+      "Italic/Instances/Display/LightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Display/SemiboldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/SmText/BlackIt/font.ufo/metainfo.plist",
+      "Italic/Instances/SmText/BoldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/SmText/ExtraLightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/SmText/It/font.ufo/metainfo.plist",
+      "Italic/Instances/SmText/LightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/SmText/SemiboldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Subhead/BlackIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Subhead/BoldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Subhead/ExtraLightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Subhead/It/font.ufo/metainfo.plist",
+      "Italic/Instances/Subhead/LightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Subhead/SemiboldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Text/BlackIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Text/BoldIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Text/ExtraLightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Text/It/font.ufo/metainfo.plist",
+      "Italic/Instances/Text/LightIt/font.ufo/metainfo.plist",
+      "Italic/Instances/Text/SemiboldIt/font.ufo/metainfo.plist",
+      "Italic/Masters/caption/master_0/SourceSerif-Italic_c0.ufo/metainfo.plist",
+      "Italic/Masters/caption/master_1/SourceSerif-Italic_c1.ufo/metainfo.plist",
+      "Italic/Masters/caption/master_2/SourceSerif-Italic_c2.ufo/metainfo.plist",
+      "Italic/Masters/display/master_0/SourceSerif-Italic_d0.ufo/metainfo.plist",
+      "Italic/Masters/display/master_1/SourceSerif-Italic_d1.ufo/metainfo.plist",
+      "Italic/Masters/display/master_2/SourceSerif-Italic_d2.ufo/metainfo.plist",
+      "Italic/Masters/text/master_0/SourceSerif-Italic_0.ufo/metainfo.plist",
+      "Italic/Masters/text/master_1/SourceSerif-Italic_1.ufo/metainfo.plist",
+      "Italic/Masters/text/master_2/SourceSerif-Italic_2.ufo/metainfo.plist",
+      "Italic/SourceSerif4-Italic.designspace",
+      "Italic/SourceSerif4Variable-Italic.designspace",
+      "Roman/Instances/Caption/Black/font.ufo/metainfo.plist",
+      "Roman/Instances/Caption/Bold/font.ufo/metainfo.plist",
+      "Roman/Instances/Caption/ExtraLight/font.ufo/metainfo.plist",
+      "Roman/Instances/Caption/Light/font.ufo/metainfo.plist",
+      "Roman/Instances/Caption/Regular/font.ufo/metainfo.plist",
+      "Roman/Instances/Caption/Semibold/font.ufo/metainfo.plist",
+      "Roman/Instances/Display/Black/font.ufo/metainfo.plist",
+      "Roman/Instances/Display/Bold/font.ufo/metainfo.plist",
+      "Roman/Instances/Display/ExtraLight/font.ufo/metainfo.plist",
+      "Roman/Instances/Display/Light/font.ufo/metainfo.plist",
+      "Roman/Instances/Display/Regular/font.ufo/metainfo.plist",
+      "Roman/Instances/Display/Semibold/font.ufo/metainfo.plist",
+      "Roman/Instances/SmText/Black/font.ufo/metainfo.plist",
+      "Roman/Instances/SmText/Bold/font.ufo/metainfo.plist",
+      "Roman/Instances/SmText/ExtraLight/font.ufo/metainfo.plist",
+      "Roman/Instances/SmText/Light/font.ufo/metainfo.plist",
+      "Roman/Instances/SmText/Regular/font.ufo/metainfo.plist",
+      "Roman/Instances/SmText/Semibold/font.ufo/metainfo.plist",
+      "Roman/Instances/Subhead/Black/font.ufo/metainfo.plist",
+      "Roman/Instances/Subhead/Bold/font.ufo/metainfo.plist",
+      "Roman/Instances/Subhead/ExtraLight/font.ufo/metainfo.plist",
+      "Roman/Instances/Subhead/Light/font.ufo/metainfo.plist",
+      "Roman/Instances/Subhead/Regular/font.ufo/metainfo.plist",
+      "Roman/Instances/Subhead/Semibold/font.ufo/metainfo.plist",
+      "Roman/Instances/Text/Black/font.ufo/metainfo.plist",
+      "Roman/Instances/Text/Bold/font.ufo/metainfo.plist",
+      "Roman/Instances/Text/ExtraLight/font.ufo/metainfo.plist",
+      "Roman/Instances/Text/Light/font.ufo/metainfo.plist",
+      "Roman/Instances/Text/Regular/font.ufo/metainfo.plist",
+      "Roman/Instances/Text/Semibold/font.ufo/metainfo.plist",
+      "Roman/Masters/caption/master_0/SourceSerif_c0.ufo/metainfo.plist",
+      "Roman/Masters/caption/master_1/SourceSerif_c1.ufo/metainfo.plist",
+      "Roman/Masters/caption/master_2/SourceSerif_c2.ufo/metainfo.plist",
+      "Roman/Masters/display/master_0/SourceSerif_d0.ufo/metainfo.plist",
+      "Roman/Masters/display/master_1/SourceSerif_d1.ufo/metainfo.plist",
+      "Roman/Masters/display/master_2/SourceSerif_d2.ufo/metainfo.plist",
+      "Roman/Masters/text/master_0/SourceSerif_0.ufo/metainfo.plist",
+      "Roman/Masters/text/master_1/SourceSerif_1.ufo/metainfo.plist",
+      "Roman/Masters/text/master_2/SourceSerif_2.ufo/metainfo.plist",
+      "Roman/SourceSerif4.designspace",
+      "Roman/SourceSerif4Variable-Roman.designspace"
+    ]
+  },
+  {
+    "family_name": "Space Grotesk",
+    "path": "ofl/spacegrotesk/METADATA.pb",
+    "repository_url": "https://github.com/floriankarsten/space-grotesk",
+    "commit": "03507d024a01282884232081fc6011c09ff4e849",
+    "archive_path": "upstream_repos/repo_archive/floriankarsten/space-grotesk.git",
+    "sources": [
+      "docs/dev/fonts/SG-Linear.glyphs",
+      "docs/dev/fonts/SG-OpenType.glyphs",
+      "docs/dev/fonts/SG-Transition.glyphs",
+      "sources/SpaceGrotesk-v2.glyphs",
+      "sources/SpaceGrotesk.designspace",
+      "sources/backups/SpaceGrotesk-v2-black-interpolation.glyphs",
+      "sources/backups/SpaceGrotesk-v2-light-weight-backup.glyphs"
+    ]
+  },
+  {
+    "family_name": "STIX Two Math",
+    "path": "ofl/stixtwomath/METADATA.pb",
+    "repository_url": "https://github.com/stipub/stixfonts",
+    "commit": "c4afdf3fa5390159ef24aca1db5e957487c23897",
+    "archive_path": "upstream_repos/repo_archive/stipub/stixfonts.git",
+    "sources": [
+      "source/STIXTwoMath-Regular.ufo/metainfo.plist",
+      "source/STIXTwoText-Bold.ufo/metainfo.plist",
+      "source/STIXTwoText-BoldItalic.ufo/metainfo.plist",
+      "source/STIXTwoText-Italic.ufo/metainfo.plist",
+      "source/STIXTwoText-Regular.ufo/metainfo.plist",
+      "source/STIXTwoTextVF-Italic.designspace",
+      "source/STIXTwoTextVF-Roman.designspace"
+    ]
+  },
+  {
+    "family_name": "STIX Two Text",
+    "path": "ofl/stixtwotext/METADATA.pb",
+    "repository_url": "https://github.com/stipub/stixfonts",
+    "commit": "c4afdf3fa5390159ef24aca1db5e957487c23897",
+    "archive_path": "upstream_repos/repo_archive/stipub/stixfonts.git",
+    "sources": [
+      "source/STIXTwoMath-Regular.ufo/metainfo.plist",
+      "source/STIXTwoText-Bold.ufo/metainfo.plist",
+      "source/STIXTwoText-BoldItalic.ufo/metainfo.plist",
+      "source/STIXTwoText-Italic.ufo/metainfo.plist",
+      "source/STIXTwoText-Regular.ufo/metainfo.plist",
+      "source/STIXTwoTextVF-Italic.designspace",
+      "source/STIXTwoTextVF-Roman.designspace"
+    ]
+  },
+  {
+    "family_name": "Suez One",
+    "path": "ofl/suezone/METADATA.pb",
+    "repository_url": "https://github.com/MichalSahar/Suez",
+    "commit": "04af4fcca02b34b461033520fc758132f7519c49",
+    "archive_path": "upstream_repos/repo_archive/MichalSahar/Suez.git",
+    "sources": [
+      "sources/SuezOne.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sulphur Point",
+    "path": "ofl/sulphurpoint/METADATA.pb",
+    "repository_url": "https://github.com/noponies/sulphur-point",
+    "commit": "2c1a600846ca8b7890a89076aeeb2d43cdaeac23",
+    "archive_path": "upstream_repos/repo_archive/noponies/sulphur-point.git",
+    "sources": [
+      "sources/sulphur-point.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sumana",
+    "path": "ofl/sumana/METADATA.pb",
+    "repository_url": "https://github.com/cyrealtype/Sumana",
+    "commit": "68c5ce43ae96268ac93ee3b79c720c7f479c5ee1",
+    "archive_path": "upstream_repos/repo_archive/cyrealtype/Sumana.git",
+    "sources": [
+      "sources/Sumana-Bold.ufo/metainfo.plist",
+      "sources/Sumana-Regular.ufo/metainfo.plist",
+      "sources/Sumana.glyphs"
+    ]
+  },
+  {
+    "family_name": "Sura",
+    "path": "ofl/sura/METADATA.pb",
+    "repository_url": "https://github.com/huertatipografica/sura",
+    "commit": "d20d15fe0de4a84a9d3a944f87e9c35d4c9da612",
+    "archive_path": "upstream_repos/repo_archive/huertatipografica/sura.git",
+    "sources": [
+      "Sura.glyphs",
+      "fonts/Sura-Bold.ufo/metainfo.plist",
+      "fonts/Sura-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Tajawal",
+    "path": "ofl/tajawal/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/tajawal",
+    "commit": "2085b8942f234e7afb83dc03c77713d0d5471cc9",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/tajawal.git",
+    "sources": [
+      "source/1-drawings/Tajawal-Black.ufo/metainfo.plist",
+      "source/1-drawings/Tajawal-Bold.ufo/metainfo.plist",
+      "source/1-drawings/Tajawal-ExtraBold.ufo/metainfo.plist",
+      "source/1-drawings/Tajawal-ExtraLight.ufo/metainfo.plist",
+      "source/1-drawings/Tajawal-Light.ufo/metainfo.plist",
+      "source/1-drawings/Tajawal-Medium.ufo/metainfo.plist",
+      "source/1-drawings/Tajawal-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Tangerine",
+    "path": "ofl/tangerine/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/TangerineFont",
+    "commit": "9b57a9f9be5ecfe95e7f8c0e6b2b827eedb9ad67",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/TangerineFont.git",
+    "sources": [
+      "sources/Tangerine_Bold.glyphs",
+      "sources/Tangerine_Regular.glyphs"
+    ]
+  },
+  {
+    "family_name": "Taviraj",
+    "path": "ofl/taviraj/METADATA.pb",
+    "repository_url": "https://github.com/cadsondemak/taviraj",
+    "commit": "8bd077c195dccf3bfc4699ec6ae9c6909bdd03a5",
+    "archive_path": "upstream_repos/repo_archive/cadsondemak/taviraj.git",
+    "sources": [
+      "source/Taviraj-100_Thin.glyphs",
+      "source/Taviraj-100_Thin_Ita.glyphs",
+      "source/Taviraj-200_ExtraLight.glyphs",
+      "source/Taviraj-200_ExtraLight_Ita.glyphs",
+      "source/Taviraj-300_Light.glyphs",
+      "source/Taviraj-300_Light_Ita.glyphs",
+      "source/Taviraj-400_Regular.glyphs",
+      "source/Taviraj-400_Regular_Ita.glyphs",
+      "source/Taviraj-500_Medium.glyphs",
+      "source/Taviraj-500_Medium_Ita.glyphs",
+      "source/Taviraj-600_DemiBold.glyphs",
+      "source/Taviraj-600_DemiBold_Ita.glyphs",
+      "source/Taviraj-700_Bold.glyphs",
+      "source/Taviraj-700_Bold_Ita.glyphs",
+      "source/Taviraj-800_ExtraBold.glyphs",
+      "source/Taviraj-800_ExtraBold_Ita.glyphs",
+      "source/Taviraj-900_Black.glyphs",
+      "source/Taviraj-900_Black_Ita.glyphs"
+    ]
+  },
+  {
+    "family_name": "Tillana",
+    "path": "ofl/tillana/METADATA.pb",
+    "repository_url": "https://github.com/itfoundry/tillana",
+    "commit": "7fccbe20b93ad8bcb3c7d7bee3afec03799bf5f6",
+    "archive_path": "upstream_repos/repo_archive/itfoundry/tillana.git",
+    "sources": [
+      "masters/Tillana.glyphs",
+      "masters/Tillana_0.ufo/metainfo.plist",
+      "masters/Tillana_1.ufo/metainfo.plist",
+      "styles/Bold/font.ufo/metainfo.plist",
+      "styles/ExtraBold/font.ufo/metainfo.plist",
+      "styles/Medium/font.ufo/metainfo.plist",
+      "styles/Regular/font.ufo/metainfo.plist",
+      "styles/SemiBold/font.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Trirong",
+    "path": "ofl/trirong/METADATA.pb",
+    "repository_url": "https://github.com/cadsondemak/trirong",
+    "commit": "0c1ce550d14a0a719ea49fcd6992cf5e1027dc6f",
+    "archive_path": "upstream_repos/repo_archive/cadsondemak/trirong.git",
+    "sources": [
+      "source/Trirong-100_Thin.glyphs",
+      "source/Trirong-100_Thin_Ita.glyphs",
+      "source/Trirong-200_ExtraLight.glyphs",
+      "source/Trirong-200_ExtraLight_Ita.glyphs",
+      "source/Trirong-300_Light.glyphs",
+      "source/Trirong-300_Light_Ita.glyphs",
+      "source/Trirong-400_Regular.glyphs",
+      "source/Trirong-400_Regular_Ita.glyphs",
+      "source/Trirong-500_Medium.glyphs",
+      "source/Trirong-500_Medium_Ita.glyphs",
+      "source/Trirong-600_DemiBold.glyphs",
+      "source/Trirong-600_DemiBold_Ita.glyphs",
+      "source/Trirong-700_Bold.glyphs",
+      "source/Trirong-700_Bold_Ita.glyphs",
+      "source/Trirong-800_ExtraBold.glyphs",
+      "source/Trirong-800_ExtraBold_Ita.glyphs",
+      "source/Trirong-900_Black.glyphs",
+      "source/Trirong-900_Black_Ita.glyphs"
+    ]
+  },
+  {
+    "family_name": "Trispace",
+    "path": "ofl/trispace/METADATA.pb",
+    "repository_url": "https://github.com/Etcetera-Type-Co/Trispace",
+    "commit": "8f332ade4a0e4be1cab60eafcbac95a53a3d46f6",
+    "archive_path": "upstream_repos/repo_archive/Etcetera-Type-Co/Trispace.git",
+    "sources": [
+      "Sources/Trispace-static.designspace",
+      "Sources/Trispace-variable.designspace",
+      "Sources/Trispace.glyphs"
+    ]
+  },
+  {
+    "family_name": "Truculenta",
+    "path": "ofl/truculenta/METADATA.pb",
+    "repository_url": "https://github.com/Omnibus-Type/Truculenta",
+    "commit": "7ce6b921fc5418882e99f7e1f32688c49cb5acd5",
+    "archive_path": "upstream_repos/repo_archive/Omnibus-Type/Truculenta.git",
+    "sources": [
+      "sources/Backup/1308_Truculenta.glyphs",
+      "sources/Backup/200424_Truculenta[opsz,wdth,wght].glyphs",
+      "sources/Truculenta.glyphs"
+    ]
+  },
+  {
+    "family_name": "Unna",
+    "path": "ofl/unna/METADATA.pb",
+    "repository_url": "https://github.com/Omnibus-Type/Unna",
+    "commit": "826be2abebda53d63bcd99b7ca30a7061b89bcfd",
+    "archive_path": "upstream_repos/repo_archive/Omnibus-Type/Unna.git",
+    "sources": [
+      "sources/Backup/1233_Unna Italic.glyphs",
+      "sources/Backup/1233_Unna.glyphs",
+      "sources/Unna Italic.glyphs",
+      "sources/Unna.glyphs"
+    ]
+  },
+  {
+    "family_name": "Vesper Libre",
+    "path": "ofl/vesperlibre/METADATA.pb",
+    "repository_url": "https://github.com/motaitalic/vesper-libre",
+    "commit": "b765c5a68c1786a177b46e3b3ecd766157ffe349",
+    "archive_path": "upstream_repos/repo_archive/motaitalic/vesper-libre.git",
+    "sources": [
+      "VesperLibre.glyphs"
+    ]
+  },
+  {
+    "family_name": "Yantramanav",
+    "path": "ofl/yantramanav/METADATA.pb",
+    "repository_url": "https://github.com/erinmclaughlin/Yantramanav",
+    "commit": "e40db8e44292f8e320222a37d76151b4b6bbfc7e",
+    "archive_path": "upstream_repos/repo_archive/erinmclaughlin/Yantramanav.git",
+    "sources": [
+      "UFO/Black/Yantramanav-Black.ufo/metainfo.plist",
+      "UFO/Bold/Yantramanav-Bold.ufo/metainfo.plist",
+      "UFO/Light/Yantramanav-Light.ufo/metainfo.plist",
+      "UFO/Medium/Yantramanav-Medium.ufo/metainfo.plist",
+      "UFO/Regular/Yantramanav-Regular.ufo/metainfo.plist",
+      "UFO/Thin/Yantramanav-Thin.ufo/metainfo.plist",
+      "UFO/instances/Yantramanav-Bold.ufo/metainfo.plist",
+      "UFO/instances/Yantramanav-Light.ufo/metainfo.plist",
+      "UFO/instances/Yantramanav-Medium.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Yeseva One",
+    "path": "ofl/yesevaone/METADATA.pb",
+    "repository_url": "https://github.com/alexeiva/yesevaone",
+    "commit": "0d609f6155ed0fe1d822696135ffbd04b88fd017",
+    "archive_path": "upstream_repos/repo_archive/alexeiva/yesevaone.git",
+    "sources": [
+      "sources/YesevaOne.glyphs"
+    ]
+  },
+  {
+    "family_name": "Yuji Boku",
+    "path": "ofl/yujiboku/METADATA.pb",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "efec977b14b57c19eb85d468edcfbbad13139e67",
+    "archive_path": "upstream_repos/repo_archive/Kinutafontfactory/Yuji.git",
+    "sources": [
+      "sources/Hen_shared.glyphs",
+      "sources/Std_shared.glyphs",
+      "sources/YujiAkari.glyphs",
+      "sources/YujiAkebono.glyphs",
+      "sources/YujiBoku.glyphs",
+      "sources/YujiMai.glyphs",
+      "sources/YujiSyuku.glyphs"
+    ]
+  },
+  {
+    "family_name": "Yuji Hentaigana Akari",
+    "path": "ofl/yujihentaiganaakari/METADATA.pb",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "efec977b14b57c19eb85d468edcfbbad13139e67",
+    "archive_path": "upstream_repos/repo_archive/Kinutafontfactory/Yuji.git",
+    "sources": [
+      "sources/Hen_shared.glyphs",
+      "sources/Std_shared.glyphs",
+      "sources/YujiAkari.glyphs",
+      "sources/YujiAkebono.glyphs",
+      "sources/YujiBoku.glyphs",
+      "sources/YujiMai.glyphs",
+      "sources/YujiSyuku.glyphs"
+    ]
+  },
+  {
+    "family_name": "Yuji Hentaigana Akebono",
+    "path": "ofl/yujihentaiganaakebono/METADATA.pb",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "efec977b14b57c19eb85d468edcfbbad13139e67",
+    "archive_path": "upstream_repos/repo_archive/Kinutafontfactory/Yuji.git",
+    "sources": [
+      "sources/Hen_shared.glyphs",
+      "sources/Std_shared.glyphs",
+      "sources/YujiAkari.glyphs",
+      "sources/YujiAkebono.glyphs",
+      "sources/YujiBoku.glyphs",
+      "sources/YujiMai.glyphs",
+      "sources/YujiSyuku.glyphs"
+    ]
+  },
+  {
+    "family_name": "Yuji Mai",
+    "path": "ofl/yujimai/METADATA.pb",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "efec977b14b57c19eb85d468edcfbbad13139e67",
+    "archive_path": "upstream_repos/repo_archive/Kinutafontfactory/Yuji.git",
+    "sources": [
+      "sources/Hen_shared.glyphs",
+      "sources/Std_shared.glyphs",
+      "sources/YujiAkari.glyphs",
+      "sources/YujiAkebono.glyphs",
+      "sources/YujiBoku.glyphs",
+      "sources/YujiMai.glyphs",
+      "sources/YujiSyuku.glyphs"
+    ]
+  },
+  {
+    "family_name": "Yuji Syuku",
+    "path": "ofl/yujisyuku/METADATA.pb",
+    "repository_url": "https://github.com/Kinutafontfactory/Yuji",
+    "commit": "efec977b14b57c19eb85d468edcfbbad13139e67",
+    "archive_path": "upstream_repos/repo_archive/Kinutafontfactory/Yuji.git",
+    "sources": [
+      "sources/Hen_shared.glyphs",
+      "sources/Std_shared.glyphs",
+      "sources/YujiAkari.glyphs",
+      "sources/YujiAkebono.glyphs",
+      "sources/YujiBoku.glyphs",
+      "sources/YujiMai.glyphs",
+      "sources/YujiSyuku.glyphs"
+    ]
+  },
+  {
+    "family_name": "Zen Kaku Gothic Antique",
+    "path": "ofl/zenkakugothicantique/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/zen-kakugothic",
+    "commit": "2705757e17e42954f3acbdf921ac0ae24d1270cd",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/zen-kakugothic.git",
+    "sources": [
+      "sources/GothicA_Kana.glyphs",
+      "sources/GothicN_kana.glyphs",
+      "sources/ZenKakuGothic.glyphs"
+    ]
+  },
+  {
+    "family_name": "Zen Kaku Gothic New",
+    "path": "ofl/zenkakugothicnew/METADATA.pb",
+    "repository_url": "https://github.com/googlefonts/zen-kakugothic",
+    "commit": "2705757e17e42954f3acbdf921ac0ae24d1270cd",
+    "archive_path": "upstream_repos/repo_archive/googlefonts/zen-kakugothic.git",
+    "sources": [
+      "sources/GothicA_Kana.glyphs",
+      "sources/GothicN_kana.glyphs",
+      "sources/ZenKakuGothic.glyphs"
+    ]
+  },
+  {
+    "family_name": "Zhi Mang Xing",
+    "path": "ofl/zhimangxing/METADATA.pb",
+    "repository_url": "https://github.com/m4rc1e/zhimangxing",
+    "commit": "15cb1b0d4c78da973e8459a8e2f23a9aef00d8a6",
+    "archive_path": "upstream_repos/repo_archive/m4rc1e/zhimangxing.git",
+    "sources": [
+      "sources/ZhiMangXing.glyphs"
+    ]
+  },
+  {
+    "family_name": "Zilla Slab",
+    "path": "ofl/zillaslab/METADATA.pb",
+    "repository_url": "https://github.com/mozilla/zilla-slab",
+    "commit": "6dcec520f9b23ad7f380b7ce3e8072be95fe0004",
+    "archive_path": "upstream_repos/repo_archive/mozilla/zilla-slab.git",
+    "sources": [
+      "sources/ZillaSlab-Bold.ufo/metainfo.plist",
+      "sources/ZillaSlab-BoldItalic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Italic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Light.ufo/metainfo.plist",
+      "sources/ZillaSlab-LightItalic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Medium.ufo/metainfo.plist",
+      "sources/ZillaSlab-MediumItalic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Regular.ufo/metainfo.plist",
+      "sources/ZillaSlab-SemiBold.ufo/metainfo.plist",
+      "sources/ZillaSlab-SemiBoldItalic.ufo/metainfo.plist",
+      "sources/ZillaSlabHighlight-Bold.ufo/metainfo.plist",
+      "sources/ZillaSlabHighlight-Regular.ufo/metainfo.plist"
+    ]
+  },
+  {
+    "family_name": "Zilla Slab Highlight",
+    "path": "ofl/zillaslabhighlight/METADATA.pb",
+    "repository_url": "https://github.com/mozilla/zilla-slab",
+    "commit": "6dcec520f9b23ad7f380b7ce3e8072be95fe0004",
+    "archive_path": "upstream_repos/repo_archive/mozilla/zilla-slab.git",
+    "sources": [
+      "sources/ZillaSlab-Bold.ufo/metainfo.plist",
+      "sources/ZillaSlab-BoldItalic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Italic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Light.ufo/metainfo.plist",
+      "sources/ZillaSlab-LightItalic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Medium.ufo/metainfo.plist",
+      "sources/ZillaSlab-MediumItalic.ufo/metainfo.plist",
+      "sources/ZillaSlab-Regular.ufo/metainfo.plist",
+      "sources/ZillaSlab-SemiBold.ufo/metainfo.plist",
+      "sources/ZillaSlab-SemiBoldItalic.ufo/metainfo.plist",
+      "sources/ZillaSlabHighlight-Bold.ufo/metainfo.plist",
+      "sources/ZillaSlabHighlight-Regular.ufo/metainfo.plist"
+    ]
+  }
+]
