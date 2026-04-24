@@ -1732,5 +1732,15 @@
     "timestamp": "2026-04-24T06:55:00Z",
     "role": "assistant",
     "message": "Squashed the two Grandstander commits in fix-crater-stuck-lilex-grandstander into one (via soft-reset + re-commit) so the PR now has the canonical one-commit-per-family structure: 594bc67f (Lilex) and c718664f (Grandstander). Both reports reworded to remove self-referential \"this PR\" language (replaced with past-tense descriptions of what was done). Then audited upstream_info.md files repo-wide: 24 files contained \"this PR\" on upstream/main (not the PR-prep branch). Created a separate branch fix-this-pr-language-in-upstream-info based on upstream/main and delegated the 24-file rewrite to a subagent with strict one-commit-per-family + AI-attribution + minimal-edit constraints. Subagent completed cleanly: 24 commits, grep-verified no remaining \"this PR\" in any upstream_info.md, no unintended files touched. Non-trivial cases handled correctly — Epilogue and Red Hat Display linked upstream-repo PRs (Etcetera-Type-Co/Epilogue#17, RedHatOfficial/RedHatFont#69); Encode Sans and Francois One had \"this PR\" inside quotations, resolved via bracketed editorial insertion; Libre Baskerville had two references to the same PR #9909. Spot-checked diffs in abel, lora, encodesans, epilogue, redhatdisplay, francoisone, librebaskerville — all clean."
+  },
+  {
+    "timestamp": "2026-04-24T07:15:00Z",
+    "role": "user",
+    "message": "https://github.com/google/fonts/pull/10270 was closed without merge but then we had a follow-up PR that was merged: https://github.com/google/fonts/pull/10271 | Some upstream_info.md files mention 10270. Can you review and possibly update those? [FYI: https://github.com/google/fonts/pull/10461 was merged right now] [please git fetch upstream and rebase before continuing work]"
+  },
+  {
+    "timestamp": "2026-04-24T07:30:00Z",
+    "role": "assistant",
+    "message": "Fetched upstream/main: both prior PRs merged — PR #10461 landed fix-this-pr-language-in-upstream-info (24 this-PR cleanups), and another merge landed fix-crater-stuck-lilex-grandstander (Lilex + Grandstander crater-unblocking). Verified: ofl/lilex/METADATA.pb now has config_yaml: \"sources/config.yaml\"; ofl/grandstander/config.yaml exists and grandstander METADATA.pb has no config_yaml. Both local branches are now functionally obsolete (same work exists upstream under different SHAs due to merge rebase). Created fix-pr-10270-references branch off the new upstream/main for the 10270->10271 fix. Found 3 upstream_info.md files (ofl/concertone, ofl/contrailone, ofl/condiment) mentioning PR #10270 as pending/unmerged. Rewrote each to state the actual history: #10270 closed without merge; follow-up #10271 split the changes into one commit per family (sources_per_family_2026-02-26) and merged 2026-02-26; each family's source block was added by a specific commit in that PR (56d250fda, 6c7562912, 48f72851f). Updated verification checkbox from 'No source block exists (pending PR #10270)' to 'Source block exists, added via PR #10271'. 3 commits on branch, one per family, not pushed."
   }
 ]
