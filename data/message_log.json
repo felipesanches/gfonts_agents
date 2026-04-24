@@ -1722,5 +1722,15 @@
     "timestamp": "2026-04-24T00:20:00Z",
     "role": "assistant",
     "message": "Prepared branch fix-crater-stuck-lilex-grandstander in /home/fsanches/compartilhado/google/fonts (2 commits based on upstream/main). Lilex commit: corrected METADATA.pb config_yaml from sources/Lilex/config.yaml to sources/config.yaml (validated path exists at pinned rev 50260ef9; upstream_info.md updated to past-tense/active-voice). Grandstander commit: added override ofl/grandstander/config.yaml with wght axis + ital sibling (mirroring upstream's later config, using .glyphs sources that do exist at pinned rev 33c28849); removed unresolvable config_yaml from METADATA.pb; upstream_info.md updated. Drift investigation (8 families): all are already correct in upstream/main — the drift shown on our dashboard was an artifact of our stale local gfonts clone (HEAD 5f85c194, 2026-04-11 vs upstream/main 47831f08). No PRs needed; clone refresh + gfonts_library_sources.json regeneration will clear the drift. Branch not pushed; awaiting review."
+  },
+  {
+    "timestamp": "2026-04-24T06:50:00Z",
+    "role": "user",
+    "message": "I saw it using \"this PR\" language inside of an upstream_info.md, which sounds confusing. I'd rather have it mention the PR by linking to its URL. Can you please look for other similar cases and try to fix them all? [Followup: on a separate PR] [Followup: yes, please (to squashing the Grandstander commit in the first PR)]"
+  },
+  {
+    "timestamp": "2026-04-24T06:55:00Z",
+    "role": "assistant",
+    "message": "Squashed the two Grandstander commits in fix-crater-stuck-lilex-grandstander into one (via soft-reset + re-commit) so the PR now has the canonical one-commit-per-family structure: 594bc67f (Lilex) and c718664f (Grandstander). Both reports reworded to remove self-referential \"this PR\" language (replaced with past-tense descriptions of what was done). Then audited upstream_info.md files repo-wide: 24 files contained \"this PR\" on upstream/main (not the PR-prep branch). Created a separate branch fix-this-pr-language-in-upstream-info based on upstream/main and delegated the 24-file rewrite to a subagent with strict one-commit-per-family + AI-attribution + minimal-edit constraints. Subagent completed cleanly: 24 commits, grep-verified no remaining \"this PR\" in any upstream_info.md, no unintended files touched. Non-trivial cases handled correctly — Epilogue and Red Hat Display linked upstream-repo PRs (Etcetera-Type-Co/Epilogue#17, RedHatOfficial/RedHatFont#69); Encode Sans and Francois One had \"this PR\" inside quotations, resolved via bracketed editorial insertion; Libre Baskerville had two references to the same PR #9909. Spot-checked diffs in abel, lora, encodesans, epilogue, redhatdisplay, francoisone, librebaskerville — all clean."
   }
 ]
