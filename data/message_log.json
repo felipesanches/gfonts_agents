@@ -1712,5 +1712,15 @@
     "timestamp": "2026-04-23T22:50:00Z",
     "role": "assistant",
     "message": "Investigated the upstream pipeline: fontc_crater's targets.json is regenerated from google/fonts via the google-fonts-sources tool (reads METADATA.pb source blocks + detects override config.yaml in the family directory). So fixes to google/fonts METADATA.pb or adjacent config.yaml eventually propagate to crater on the next targets.json update. Conclusion per-family: Lilex YES (METADATA.pb config_yaml points to sources/Lilex/config.yaml but upstream has sources/config.yaml); Grandstander YES (upstream has no config.yaml at pinned rev — needs override in ofl/grandstander/ or commit bump); Chiron×3 NO (configs and commits valid, dropped silently — needs crater-team question); 8 drift cases (EB Garamond, Geist, Geist Mono, Grenze, Mingzat, Zalando Sans/Expanded/SemiExpanded) are candidates but require per-family verification of which commit matches the currently-shipped binaries (per CLAUDE.md \"commit hashes are critical onboarding records\"). Also refined drift detector to match per-family by config path; false positives from monorepos (IBM Plex, Bungee Tint, Pushster, Rasa, Roboto Condensed, DM Sans, Playwrite NZ, etc.) are gone."
+  },
+  {
+    "timestamp": "2026-04-24T00:00:00Z",
+    "role": "user",
+    "message": "Lilex: fix config_yaml field and upstream_info.md file | Grandstander: option A | Investigate the drift cases. | Prepare a PR. I will review it."
+  },
+  {
+    "timestamp": "2026-04-24T00:20:00Z",
+    "role": "assistant",
+    "message": "Prepared branch fix-crater-stuck-lilex-grandstander in /home/fsanches/compartilhado/google/fonts (2 commits based on upstream/main). Lilex commit: corrected METADATA.pb config_yaml from sources/Lilex/config.yaml to sources/config.yaml (validated path exists at pinned rev 50260ef9; upstream_info.md updated to past-tense/active-voice). Grandstander commit: added override ofl/grandstander/config.yaml with wght axis + ital sibling (mirroring upstream's later config, using .glyphs sources that do exist at pinned rev 33c28849); removed unresolvable config_yaml from METADATA.pb; upstream_info.md updated. Drift investigation (8 families): all are already correct in upstream/main — the drift shown on our dashboard was an artifact of our stale local gfonts clone (HEAD 5f85c194, 2026-04-11 vs upstream/main 47831f08). No PRs needed; clone refresh + gfonts_library_sources.json regeneration will clear the drift. Branch not pushed; awaiting review."
   }
 ]
