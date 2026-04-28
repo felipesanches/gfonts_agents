@@ -1,107 +1,107 @@
 {
   "_metadata": {
-    "generated": "2026-04-24T07:28:03.419076",
-    "latest_run": "2026-04-23",
-    "fontc_rev": "62674df9",
-    "fonts_repo_sha": "8113a18ba43bc5dc08fb3b81e2afdeb892fa2932",
+    "generated": "2026-04-28T04:27:03.778776",
+    "latest_run": "2026-04-27",
+    "fontc_rev": "5b20924e",
+    "fonts_repo_sha": "755538365478cc6de0dba26a829294716612cca7",
     "data_source": "https://github.com/googlefonts/fontc_crater"
   },
   "overview": {
-    "total_targets": 1842,
-    "identical": 1626,
-    "identical_pct": 88.3,
-    "diff_targets": 216,
-    "fontc_failed": 93,
-    "fontmake_failed": 152,
-    "both_failed": 473,
-    "similarity_pct": 71.6
+    "total_targets": 2147,
+    "identical": 1903,
+    "identical_pct": 88.6,
+    "diff_targets": 244,
+    "fontc_failed": 116,
+    "fontmake_failed": 250,
+    "both_failed": 544,
+    "similarity_pct": 69.7
   },
   "table_analysis": [
     {
+      "table": "name",
+      "affected_count": 90,
+      "avg_similarity": 0.9334,
+      "fontc_only": 0,
+      "fontmake_only": 0,
+      "impact_score": 28
+    },
+    {
       "table": "(mark/kern)",
-      "affected_count": 94,
-      "avg_similarity": 0.7738,
+      "affected_count": 84,
+      "avg_similarity": 0.7473,
       "fontc_only": 0,
       "fontmake_only": 0,
       "impact_score": 12
     },
     {
-      "table": "name",
-      "affected_count": 60,
-      "avg_similarity": 0.9178,
-      "fontc_only": 0,
-      "fontmake_only": 0,
-      "impact_score": 10
-    },
-    {
-      "table": "GPOS",
-      "affected_count": 60,
-      "avg_similarity": 0.9324,
-      "fontc_only": 7,
-      "fontmake_only": 0,
-      "impact_score": 5
-    },
-    {
       "table": "glyf",
-      "affected_count": 57,
-      "avg_similarity": 0.9679,
+      "affected_count": 56,
+      "avg_similarity": 0.9674,
       "fontc_only": 0,
       "fontmake_only": 0,
       "impact_score": 5
     },
     {
       "table": "GDEF",
-      "affected_count": 55,
-      "avg_similarity": 0.8788,
+      "affected_count": 53,
+      "avg_similarity": 0.874,
       "fontc_only": 9,
       "fontmake_only": 0,
       "impact_score": 1
     },
     {
+      "table": "GPOS",
+      "affected_count": 50,
+      "avg_similarity": 0.9191,
+      "fontc_only": 7,
+      "fontmake_only": 0,
+      "impact_score": 5
+    },
+    {
       "table": "OS_2",
-      "affected_count": 55,
-      "avg_similarity": 0.9713,
+      "affected_count": 48,
+      "avg_similarity": 0.97,
       "fontc_only": 0,
       "fontmake_only": 0,
       "impact_score": 12
     },
     {
-      "table": "HVAR",
-      "affected_count": 49,
-      "avg_similarity": 0.8394,
-      "fontc_only": 11,
-      "fontmake_only": 0,
-      "impact_score": 3
-    },
-    {
-      "table": "gvar",
-      "affected_count": 45,
-      "avg_similarity": 0.9402,
-      "fontc_only": 11,
-      "fontmake_only": 0,
-      "impact_score": 2
-    },
-    {
       "table": "GSUB",
-      "affected_count": 38,
-      "avg_similarity": 0.8226,
+      "affected_count": 48,
+      "avg_similarity": 0.828,
       "fontc_only": 0,
       "fontmake_only": 0,
-      "impact_score": 18
+      "impact_score": 22
     },
     {
-      "table": "fvar",
-      "affected_count": 31,
-      "avg_similarity": 0.7926,
-      "fontc_only": 11,
+      "table": "HVAR",
+      "affected_count": 47,
+      "avg_similarity": 0.8449,
+      "fontc_only": 13,
       "fontmake_only": 0,
       "impact_score": 0
     },
     {
+      "table": "gvar",
+      "affected_count": 41,
+      "avg_similarity": 0.9275,
+      "fontc_only": 13,
+      "fontmake_only": 0,
+      "impact_score": 2
+    },
+    {
+      "table": "fvar",
+      "affected_count": 37,
+      "avg_similarity": 0.7874,
+      "fontc_only": 13,
+      "fontmake_only": 0,
+      "impact_score": 1
+    },
+    {
       "table": "STAT",
-      "affected_count": 28,
-      "avg_similarity": 0.8181,
-      "fontc_only": 11,
+      "affected_count": 33,
+      "avg_similarity": 0.8084,
+      "fontc_only": 13,
       "fontmake_only": 0,
       "impact_score": 0
     },
@@ -109,6 +109,14 @@
       "table": "post",
       "affected_count": 26,
       "avg_similarity": 0.8814,
+      "fontc_only": 0,
+      "fontmake_only": 0,
+      "impact_score": 0
+    },
+    {
+      "table": "head",
+      "affected_count": 24,
+      "avg_similarity": 0.95,
       "fontc_only": 0,
       "fontmake_only": 0,
       "impact_score": 0
@@ -147,8 +155,8 @@
     },
     {
       "table": "avar",
-      "affected_count": 12,
-      "avg_similarity": 0.7649,
+      "affected_count": 14,
+      "avg_similarity": 0.7624,
       "fontc_only": 2,
       "fontmake_only": 0,
       "impact_score": 0
@@ -162,26 +170,18 @@
       "impact_score": 1
     },
     {
+      "table": "MVAR",
+      "affected_count": 10,
+      "avg_similarity": 0.8252,
+      "fontc_only": 0,
+      "fontmake_only": 0,
+      "impact_score": 0
+    },
+    {
       "table": "ligcaret",
       "affected_count": 10,
       "avg_similarity": 0.7165,
       "fontc_only": 6,
-      "fontmake_only": 0,
-      "impact_score": 0
-    },
-    {
-      "table": "head",
-      "affected_count": 9,
-      "avg_similarity": 0.95,
-      "fontc_only": 0,
-      "fontmake_only": 0,
-      "impact_score": 0
-    },
-    {
-      "table": "MVAR",
-      "affected_count": 8,
-      "avg_similarity": 0.7995,
-      "fontc_only": 0,
       "fontmake_only": 0,
       "impact_score": 0
     },
@@ -453,6 +453,44 @@
       "tables_involved": []
     },
     {
+      "issue_url": "https://github.com/googlefonts/fontc/issues/1981",
+      "issue_number": 1981,
+      "text": "cu2qu difference in degenerate cases",
+      "target_count": 8,
+      "targets": [
+        "NaN-xyz/Rubik-Filtered/glitchpop/sources/config.yaml RubikGlitchPop.glyphs?1126980434 (default)",
+        "NaN-xyz/Rubik-Filtered/glitchpop/sources/config.yaml RubikGlitchPop.glyphs?1126980434 (gftools)",
+        "NaN-xyz/Rubik-Filtered/doodletriangles/sources/config.yaml RubikDoodleTriangles.glyphs?409369746e (default)",
+        "NaN-xyz/Rubik-Filtered/doodletriangles/sources/config.yaml RubikDoodleTriangles.glyphs?409369746e (gftools)",
+        "NaN-xyz/Rubik-Filtered/doodleshadow/sources/config.yaml RubikDoodleShadow.glyphs?409369746e (gftools)",
+        "NaN-xyz/Rubik-Filtered/doodleshadow/sources/config.yaml RubikDoodleShadow.glyphs?409369746e (default)",
+        "NaN-xyz/Rubik-Filtered/scribble/sources/config.yaml RubikScribble.glyphs?c70421b2f2 (default)",
+        "NaN-xyz/Rubik-Filtered/scribble/sources/config.yaml RubikScribble.glyphs?c70421b2f2 (gftools)"
+      ],
+      "tables_involved": [
+        "glyf"
+      ]
+    },
+    {
+      "issue_url": "https://github.com/googlefonts/fontc/issues/1962",
+      "issue_number": 1962,
+      "text": "fea-rs doesn't honor 'useExtension' keyword",
+      "target_count": 8,
+      "targets": [
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-Bold.glyphspackage?ea7a320d85 (default)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-Bold.glyphspackage?ea7a320d85 (gftools)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-ExtraBold.glyphspackage?ea7a320d85 (default)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-ExtraBold.glyphspackage?ea7a320d85 (gftools)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-Regular.glyphspackage?ea7a320d85 (default)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-Regular.glyphspackage?ea7a320d85 (gftools)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-Thin.glyphspackage?ea7a320d85 (default)",
+        "line/seed/LINESeedJP/sources/config.yaml LINESeedJP-Thin.glyphspackage?ea7a320d85 (gftools)"
+      ],
+      "tables_involved": [
+        "GSUB"
+      ]
+    },
+    {
       "issue_url": "https://github.com/googlefonts/fontc/issues/1835",
       "issue_number": 1835,
       "text": "we promote more lookups to use extensions",
@@ -642,10 +680,7 @@
         "reddit/redditsans/sources/sans.yaml RedditSans.glyphs?60e19b50bd (default)",
         "reddit/redditsans/sources/sans.yaml RedditSans.glyphs?60e19b50bd (gftools)"
       ],
-      "tables_involved": [
-        "HVAR",
-        "gvar"
-      ]
+      "tables_involved": []
     },
     {
       "issue_url": "https://github.com/googlefonts/fontc/issues/1852",
@@ -1030,6 +1065,17 @@
       ]
     },
     {
+      "issue_url": "https://github.com/googlefonts/fontc/issues/1979",
+      "issue_number": 1979,
+      "text": "f2dot14 rounding error",
+      "target_count": 2,
+      "targets": [
+        "fontdasu/ShipporiAntique/$VIRTUAL/google/fonts/ofl/shipporiantique/config.yaml sources/ShipporiAntique.glyphs?5653d23ee9 (default)",
+        "fontdasu/ShipporiAntique/$VIRTUAL/google/fonts/ofl/shipporiantique/config.yaml sources/ShipporiAntique.glyphs?5653d23ee9 (gftools)"
+      ],
+      "tables_involved": []
+    },
+    {
       "issue_url": "https://github.com/googlefonts/fontc/issues/1817",
       "issue_number": 1817,
       "text": "inline rules reuse different existing lookups",
@@ -1251,11 +1297,26 @@
   "diff_profiles": [
     {
       "signature": [
+        "name"
+      ],
+      "target_count": 28,
+      "avg_total_similarity": 0.9999,
+      "annotated_count": 0,
+      "example_targets": [
+        "Gue3bara/Blaka/sources/blakahollow.yaml temp/BlakaHollow-Regular.glyphs?7f264eee86 (gftools)",
+        "KanonFoundry/HedvigLetters/sources/Sans.yaml HedvigLettersSans.glyphs?345b4d9015 (gftools)",
+        "SorkinType/Asar/sources/config.yaml Asar.glyphs?d04fb75bf3 (gftools)",
+        "SorkinType/Metamorphous/sources/config.yaml Metamorphous.glyphspackage?d2d29bb342 (gftools)",
+        "SorkinType/Molle2/sources/config.yaml Molle.glyphspackage?3924159e01 (default)"
+      ]
+    },
+    {
+      "signature": [
         "GSUB"
       ],
-      "target_count": 18,
-      "avg_total_similarity": 0.989,
-      "annotated_count": 12,
+      "target_count": 22,
+      "avg_total_similarity": 0.991,
+      "annotated_count": 16,
       "example_targets": [
         "SorkinType/Briem-Hand/sources/config.yaml BriemHand.glyphs?7b99184050 (default)",
         "Vectro-Type-Foundry/kablammo/sources/config.yml Kablammo.glyphs?cccc120d23 (default)",
@@ -1279,6 +1340,23 @@
         "FAlthausen/Vollkorn-Typeface/$VIRTUAL/google/fonts/ofl/vollkorn/config.yaml sources/Vollkorn.designspace?38ab7a896b (default)",
         "FAlthausen/Vollkorn-Typeface/$VIRTUAL/google/fonts/ofl/vollkorn/config.yaml sources/Vollkorn.designspace?38ab7a896b (gftools)",
         "SorkinType/Merriweather-Sans/$VIRTUAL/google/fonts/ofl/merriweathersans/config.yaml sources/MerriweatherSans-Italic.designspace?bb6bd99bf9 (default)"
+      ]
+    },
+    {
+      "signature": [
+        "GSUB",
+        "head",
+        "name"
+      ],
+      "target_count": 14,
+      "avg_total_similarity": 0.9928,
+      "annotated_count": 0,
+      "example_targets": [
+        "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Black.ufo?2085b8942f (default)",
+        "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Black.ufo?2085b8942f (gftools)",
+        "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Bold.ufo?2085b8942f (default)",
+        "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Bold.ufo?2085b8942f (gftools)",
+        "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-ExtraBold.ufo?2085b8942f (default)"
       ]
     },
     {
@@ -1309,21 +1387,6 @@
         "ThanosPoulakidas/Geom/sources/config.yaml Geom-Italic.glyphs?c20a14c68c (default)",
         "ThanosPoulakidas/Geom/sources/config.yaml Geom-Italic.glyphs?c20a14c68c (gftools)",
         "ThanosPoulakidas/Geom/sources/config.yaml Geom.glyphs?c20a14c68c (default)"
-      ]
-    },
-    {
-      "signature": [
-        "name"
-      ],
-      "target_count": 10,
-      "avg_total_similarity": 0.9999,
-      "annotated_count": 0,
-      "example_targets": [
-        "Gue3bara/Blaka/sources/blakahollow.yaml temp/BlakaHollow-Regular.glyphs?7f264eee86 (gftools)",
-        "KanonFoundry/HedvigLetters/sources/Sans.yaml HedvigLettersSans.glyphs?345b4d9015 (gftools)",
-        "SorkinType/Asar/sources/config.yaml Asar.glyphs?d04fb75bf3 (gftools)",
-        "bluemix/vibes-typeface/$VIRTUAL/google/fonts/ofl/vibes/config.yaml vibes-typeface.glyphs?4cfe8e2441 (gftools)",
-        "carolinashort/asimovian/sources/config.yaml Asimovian.glyphs?ae24db36d3 (gftools)"
       ]
     },
     {
@@ -1364,29 +1427,10 @@
     {
       "signature": [
         "(mark/kern)",
-        "GPOS",
-        "GSUB",
-        "OS_2",
-        "name"
-      ],
-      "target_count": 8,
-      "avg_total_similarity": 0.9892,
-      "annotated_count": 0,
-      "example_targets": [
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeehairline/config.yaml sources/2-build/Bungee_Basic/Bungee-Hairline.ufo?eb03cf69ad (default)",
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeehairline/config.yaml sources/2-build/Bungee_Basic/Bungee-Hairline.ufo?eb03cf69ad (gftools)",
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeinline/config.yaml sources/2-build/Bungee_Basic/Bungee-Inline.ufo?eb03cf69ad (default)",
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeinline/config.yaml sources/2-build/Bungee_Basic/Bungee-Inline.ufo?eb03cf69ad (gftools)",
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeoutline/config.yaml sources/2-build/Bungee_Basic/Bungee-Outline.ufo?eb03cf69ad (default)"
-      ]
-    },
-    {
-      "signature": [
-        "(mark/kern)",
         "GPOS"
       ],
       "target_count": 7,
-      "avg_total_similarity": 0.9694,
+      "avg_total_similarity": 0.9695,
       "annotated_count": 5,
       "example_targets": [
         "DunwichType/Padyakke_Libre/source/builder.yaml Padyakke.glyphs?6b18f96959 (default)",
@@ -1398,27 +1442,11 @@
     },
     {
       "signature": [
-        "HVAR",
-        "gvar"
-      ],
-      "target_count": 6,
-      "avg_total_similarity": 0.9996,
-      "annotated_count": 6,
-      "example_targets": [
-        "floriankarsten/montagu-slab/sources/glyphs-decomposed/config.yml MontaguSlab.glyphs?317bc2344f (default)",
-        "floriankarsten/montagu-slab/sources/glyphs-decomposed/config.yml MontaguSlab.glyphs?317bc2344f (gftools)",
-        "reddit/redditsans/sources/sans.yaml RedditSans.glyphs?60e19b50bd (default)",
-        "reddit/redditsans/sources/sans.yaml RedditSans.glyphs?60e19b50bd (gftools)",
-        "reddit/redditsans/sources/sanscondensed.yaml RedditSansCondensed.glyphs?60e19b50bd (default)"
-      ]
-    },
-    {
-      "signature": [
         "glyf"
       ],
       "target_count": 5,
       "avg_total_similarity": 0.9986,
-      "annotated_count": 1,
+      "annotated_count": 5,
       "example_targets": [
         "NaN-xyz/Rubik-Filtered/doodleshadow/sources/config.yaml RubikDoodleShadow.glyphs?409369746e (default)",
         "NaN-xyz/Rubik-Filtered/doodleshadow/sources/config.yaml RubikDoodleShadow.glyphs?409369746e (gftools)",
@@ -1467,6 +1495,22 @@
     },
     {
       "signature": [
+        "OS_2",
+        "head",
+        "name"
+      ],
+      "target_count": 4,
+      "avg_total_similarity": 0.9997,
+      "annotated_count": 0,
+      "example_targets": [
+        "Instrument/instrument-serif/sources/config.yaml Instrument_Serif_Italic.glyphs?65c0ef225f (gftools)",
+        "SorkinType/Molle2/sources/config.yaml Molle.glyphspackage?3924159e01 (gftools)",
+        "jonpinhorn/shrikhand/$VIRTUAL/google/fonts/ofl/shrikhand/config.yaml masters/Shrikhand.glyphs?c11c9b0720 (gftools)",
+        "lettersoup/Ropa-Sans/$VIRTUAL/google/fonts/ofl/ropasans/config.yaml sources/RopaSans-Italic.glyphs?33acc9f9e7 (gftools)"
+      ]
+    },
+    {
+      "signature": [
         "glyf",
         "gvar"
       ],
@@ -1496,6 +1540,25 @@
         "googlefonts/Playfair/sources/config.yaml Playfair-Italic.glyphspackage?a49f9f9dc9 (gftools)",
         "googlefonts/Playfair/sources/config.yaml Playfair.glyphspackage?a49f9f9dc9 (default)",
         "googlefonts/Playfair/sources/config.yaml Playfair.glyphspackage?a49f9f9dc9 (gftools)"
+      ]
+    },
+    {
+      "signature": [
+        "HVAR",
+        "STAT",
+        "fvar",
+        "glyf",
+        "gvar",
+        "name"
+      ],
+      "target_count": 4,
+      "avg_total_similarity": 0.9854,
+      "annotated_count": 0,
+      "example_targets": [
+        "silnrsi/font-mingzat/$VIRTUAL/google/fonts/ofl/mingzat/config.yaml source/Mingzat.designspace?613ac08e03 (default)",
+        "silnrsi/font-mingzat/$VIRTUAL/google/fonts/ofl/mingzat/config.yaml source/Mingzat.designspace?613ac08e03 (gftools)",
+        "silnrsi/font-nuosu/$VIRTUAL/google/fonts/ofl/nuosusil/config.yaml source/NuosuSIL.designspace?1e9b50a3cb (default)",
+        "silnrsi/font-nuosu/$VIRTUAL/google/fonts/ofl/nuosusil/config.yaml source/NuosuSIL.designspace?1e9b50a3cb (gftools)"
       ]
     },
     {
@@ -1536,19 +1599,6 @@
     },
     {
       "signature": [
-        "HVAR"
-      ],
-      "target_count": 3,
-      "avg_total_similarity": 0.9991,
-      "annotated_count": 0,
-      "example_targets": [
-        "notofonts/latin-greek-cyrillic/sources/config-sans.yaml NotoSans-Italic.glyphspackage?c4a321e123 (default)",
-        "notofonts/latin-greek-cyrillic/sources/config-sans.yaml NotoSans.glyphspackage?c4a321e123 (default)",
-        "notofonts/latin-greek-cyrillic/sources/config-serif.yaml NotoSerif.glyphspackage?c4a321e123 (default)"
-      ]
-    },
-    {
-      "signature": [
         "COLR",
         "GlyphOrder",
         "HVAR",
@@ -1583,6 +1633,23 @@
     },
     {
       "signature": [
+        "HVAR",
+        "MVAR",
+        "STAT",
+        "avar",
+        "fvar",
+        "name"
+      ],
+      "target_count": 2,
+      "avg_total_similarity": 0.9997,
+      "annotated_count": 0,
+      "example_targets": [
+        "Omnibus-Type/Unna/$VIRTUAL/google/fonts/ofl/unna/config.yaml sources/Unna Italic.glyphs?826be2abeb (default)",
+        "Omnibus-Type/Unna/$VIRTUAL/google/fonts/ofl/unna/config.yaml sources/Unna.glyphs?826be2abeb (default)"
+      ]
+    },
+    {
+      "signature": [
         "(mark/kern)",
         "GDEF",
         "GlyphOrder",
@@ -1604,19 +1671,30 @@
     },
     {
       "signature": [
-        "(mark/kern)",
-        "GDEF",
-        "GPOS",
         "GSUB",
-        "OS_2",
+        "gvar"
+      ],
+      "target_count": 2,
+      "avg_total_similarity": 0.9999,
+      "annotated_count": 0,
+      "example_targets": [
+        "aminabedi68/Estedad/sources/config.yaml Estedad.glyphs?69e879f78a (default)",
+        "aminabedi68/Estedad/sources/config.yaml Estedad.glyphs?69e879f78a (gftools)"
+      ]
+    },
+    {
+      "signature": [
+        "HVAR",
+        "STAT",
+        "fvar",
         "name"
       ],
       "target_count": 2,
-      "avg_total_similarity": 0.9844,
-      "annotated_count": 0,
+      "avg_total_similarity": 0.9993,
+      "annotated_count": 1,
       "example_targets": [
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungee/config.yaml sources/1-drawing/Bungee-Regular.ufo?eb03cf69ad (default)",
-        "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungee/config.yaml sources/1-drawing/Bungee-Regular.ufo?eb03cf69ad (gftools)"
+        "cadsondemak/Charmonman/$VIRTUAL/google/fonts/ofl/charmonman/config.yaml source/Charmonman.glyphs?8590fc4aae (default)",
+        "silnrsi/font-kayphodu/$VIRTUAL/google/fonts/ofl/kayphodu/config.yaml source/KayPhoDu.designspace?4c49d8ac7a (default)"
       ]
     },
     {
@@ -1638,6 +1716,19 @@
       "example_targets": [
         "docrepair-fonts/caprasimo-fonts/sources/config.yaml Caprasimo-Regular.designspace?9f11e8fd4e (default)",
         "docrepair-fonts/lumanosimo-fonts/sources/config.yaml Lumanosimo-Regular.designspace?a7395fda4d (default)"
+      ]
+    },
+    {
+      "signature": [
+        "HVAR",
+        "gvar"
+      ],
+      "target_count": 2,
+      "avg_total_similarity": 0.9997,
+      "annotated_count": 2,
+      "example_targets": [
+        "floriankarsten/montagu-slab/sources/glyphs-decomposed/config.yml MontaguSlab.glyphs?317bc2344f (default)",
+        "floriankarsten/montagu-slab/sources/glyphs-decomposed/config.yml MontaguSlab.glyphs?317bc2344f (gftools)"
       ]
     },
     {
@@ -1750,28 +1841,11 @@
         "post"
       ],
       "target_count": 2,
-      "avg_total_similarity": 0.5688,
+      "avg_total_similarity": 0.5694,
       "annotated_count": 0,
       "example_targets": [
         "productiontype/Georama/sources/builder.yaml Georama.designspace?1b063b6256 (default)",
         "productiontype/Georama/sources/builder.yaml Georama.designspace?1b063b6256 (gftools)"
-      ]
-    },
-    {
-      "signature": [
-        "HVAR",
-        "STAT",
-        "fvar",
-        "glyf",
-        "gvar",
-        "name"
-      ],
-      "target_count": 2,
-      "avg_total_similarity": 0.9907,
-      "annotated_count": 0,
-      "example_targets": [
-        "silnrsi/font-mingzat/$VIRTUAL/google/fonts/ofl/mingzat/config.yaml source/Mingzat.designspace?613ac08e03 (default)",
-        "silnrsi/font-mingzat/$VIRTUAL/google/fonts/ofl/mingzat/config.yaml source/Mingzat.designspace?613ac08e03 (gftools)"
       ]
     },
     {
@@ -1912,19 +1986,6 @@
     },
     {
       "signature": [
-        "OS_2",
-        "head",
-        "name"
-      ],
-      "target_count": 1,
-      "avg_total_similarity": 0.9998,
-      "annotated_count": 0,
-      "example_targets": [
-        "Instrument/instrument-serif/sources/config.yaml Instrument_Serif_Italic.glyphs?65c0ef225f (gftools)"
-      ]
-    },
-    {
-      "signature": [
         "cvt",
         "fpgm",
         "glyf",
@@ -1990,20 +2051,6 @@
     {
       "signature": [
         "HVAR",
-        "STAT",
-        "fvar",
-        "name"
-      ],
-      "target_count": 1,
-      "avg_total_similarity": 0.9998,
-      "annotated_count": 1,
-      "example_targets": [
-        "cadsondemak/Charmonman/$VIRTUAL/google/fonts/ofl/charmonman/config.yaml source/Charmonman.glyphs?8590fc4aae (default)"
-      ]
-    },
-    {
-      "signature": [
-        "HVAR",
         "fvar",
         "name"
       ],
@@ -2064,14 +2111,16 @@
     },
     {
       "signature": [
-        "glyf",
-        "head"
+        "HVAR",
+        "STAT",
+        "avar",
+        "fvar"
       ],
       "target_count": 1,
-      "avg_total_similarity": 1.0,
+      "avg_total_similarity": 0.9995,
       "annotated_count": 0,
       "example_targets": [
-        "github/mona-sans/sources/config.yaml MonaSans.glyphspackage?0d07d5a501 (default)"
+        "googlefonts/dm-mono/$VIRTUAL/google/fonts/ofl/dmmono/config.yaml source/DMMono-Italics-MASTER.glyphs?57fadabfb2 (default)"
       ]
     }
   ],
@@ -4995,22 +5044,43 @@
       "fontmake_failed": 152,
       "both_failed": 473,
       "similarity_pct": 71.6
+    },
+    {
+      "date": "2026-04-24",
+      "total_targets": 3060,
+      "identical": 1841,
+      "identical_pct": 60.2,
+      "fontc_failed": 116,
+      "fontmake_failed": 250,
+      "both_failed": 576,
+      "similarity_pct": 67.9
+    },
+    {
+      "date": "2026-04-25",
+      "total_targets": 3060,
+      "identical": 1378,
+      "identical_pct": 45.0,
+      "fontc_failed": 91,
+      "fontmake_failed": 191,
+      "both_failed": 1195,
+      "similarity_pct": 51.2
+    },
+    {
+      "date": "2026-04-27",
+      "total_targets": 3070,
+      "identical": 1905,
+      "identical_pct": 62.1,
+      "fontc_failed": 116,
+      "fontmake_failed": 250,
+      "both_failed": 544,
+      "similarity_pct": 69.7
     }
   ],
   "prioritization": [
     {
       "type": "table",
-      "label": "(mark/kern) table diffs",
-      "impact": 94,
-      "link": null,
-      "tables": [
-        "(mark/kern)"
-      ]
-    },
-    {
-      "type": "table",
       "label": "name table diffs",
-      "impact": 60,
+      "impact": 90,
       "link": null,
       "tables": [
         "name"
@@ -5018,17 +5088,17 @@
     },
     {
       "type": "table",
-      "label": "GPOS table diffs",
-      "impact": 60,
+      "label": "(mark/kern) table diffs",
+      "impact": 84,
       "link": null,
       "tables": [
-        "GPOS"
+        "(mark/kern)"
       ]
     },
     {
       "type": "table",
       "label": "glyf table diffs",
-      "impact": 57,
+      "impact": 56,
       "link": null,
       "tables": [
         "glyf"
@@ -5037,7 +5107,7 @@
     {
       "type": "table",
       "label": "GDEF table diffs",
-      "impact": 55,
+      "impact": 53,
       "link": null,
       "tables": [
         "GDEF"
@@ -5045,8 +5115,17 @@
     },
     {
       "type": "table",
+      "label": "GPOS table diffs",
+      "impact": 50,
+      "link": null,
+      "tables": [
+        "GPOS"
+      ]
+    },
+    {
+      "type": "table",
       "label": "OS_2 table diffs",
-      "impact": 55,
+      "impact": 48,
       "link": null,
       "tables": [
         "OS_2"
@@ -5054,8 +5133,17 @@
     },
     {
       "type": "table",
+      "label": "GSUB table diffs",
+      "impact": 48,
+      "link": null,
+      "tables": [
+        "GSUB"
+      ]
+    },
+    {
+      "type": "table",
       "label": "HVAR table diffs",
-      "impact": 49,
+      "impact": 47,
       "link": null,
       "tables": [
         "HVAR"
@@ -5064,7 +5152,7 @@
     {
       "type": "table",
       "label": "gvar table diffs",
-      "impact": 45,
+      "impact": 41,
       "link": null,
       "tables": [
         "gvar"
@@ -5072,17 +5160,8 @@
     },
     {
       "type": "table",
-      "label": "GSUB table diffs",
-      "impact": 38,
-      "link": null,
-      "tables": [
-        "GSUB"
-      ]
-    },
-    {
-      "type": "table",
       "label": "fvar table diffs",
-      "impact": 31,
+      "impact": 37,
       "link": null,
       "tables": [
         "fvar"
@@ -5091,7 +5170,7 @@
     {
       "type": "table",
       "label": "STAT table diffs",
-      "impact": 28,
+      "impact": 33,
       "link": null,
       "tables": [
         "STAT"
@@ -5104,6 +5183,15 @@
       "link": null,
       "tables": [
         "post"
+      ]
+    },
+    {
+      "type": "table",
+      "label": "head table diffs",
+      "impact": 24,
+      "link": null,
+      "tables": [
+        "head"
       ]
     },
     {
@@ -5145,7 +5233,7 @@
     {
       "type": "table",
       "label": "avar table diffs",
-      "impact": 12,
+      "impact": 14,
       "link": null,
       "tables": [
         "avar"
@@ -5241,20 +5329,20 @@
     },
     {
       "type": "table",
+      "label": "MVAR table diffs",
+      "impact": 10,
+      "link": null,
+      "tables": [
+        "MVAR"
+      ]
+    },
+    {
+      "type": "table",
       "label": "ligcaret table diffs",
       "impact": 10,
       "link": null,
       "tables": [
         "ligcaret"
-      ]
-    },
-    {
-      "type": "table",
-      "label": "head table diffs",
-      "impact": 9,
-      "link": null,
-      "tables": [
-        "head"
       ]
     },
     {
@@ -5290,12 +5378,21 @@
       "tables": []
     },
     {
-      "type": "table",
-      "label": "MVAR table diffs",
+      "type": "issue",
+      "label": "#1981: cu2qu difference in degenerate cases",
       "impact": 8,
-      "link": null,
+      "link": "https://github.com/googlefonts/fontc/issues/1981",
       "tables": [
-        "MVAR"
+        "glyf"
+      ]
+    },
+    {
+      "type": "issue",
+      "label": "#1962: fea-rs doesn't honor 'useExtension' keyword",
+      "impact": 8,
+      "link": "https://github.com/googlefonts/fontc/issues/1962",
+      "tables": [
+        "GSUB"
       ]
     },
     {
@@ -5414,10 +5511,7 @@
       "label": "#1840: variations differ for aringacute.ss02",
       "impact": 4,
       "link": "https://github.com/googlefonts/fontc/issues/1840",
-      "tables": [
-        "HVAR",
-        "gvar"
-      ]
+      "tables": []
     },
     {
       "type": "issue",
@@ -5717,6 +5811,13 @@
       ]
     },
     {
+      "type": "issue",
+      "label": "#1979: f2dot14 rounding error",
+      "impact": 2,
+      "link": "https://github.com/googlefonts/fontc/issues/1979",
+      "tables": []
+    },
+    {
       "type": "table",
       "label": "DSIG table diffs",
       "impact": 2,
@@ -5925,13 +6026,13 @@
   ],
   "failed_repos": {
     "https://github.com/BornaIz/Lalezar": "missing source 'sources/Lalezar.glyphs'",
-    "https://github.com/Etcetera-Type-Co/Grandstander": "no config file was found",
     "https://github.com/Gue3bara/Cairo": "missing source 'CairoPlay.glyphs'",
     "https://github.com/MoonlitOwen/CactusSerif": "missing source 'temp/CactusClassicalSerif-Regular.ufo'",
     "https://github.com/MoonlitOwen/ChocolateSans": "missing source 'temp/ChocolateClassicalSans-Regular.ufo'",
     "https://github.com/MoonlitOwen/ThenKhung": "missing source 'temp/UoqMunThenKhung-Regular.ufo'",
     "https://github.com/Omnibus-Type/Barrio": "missing source 'sources/Barrio.glyphs'",
     "https://github.com/Omnibus-Type/PragatiNarrow": "missing source 'PragatiNarrow.glyphs'",
+    "https://github.com/SorkinType/Trykker": "missing source 'Trykker'",
     "https://github.com/TiroTypeworks/Castoro": "missing source 'source/Castoro-Italic.designspace'",
     "https://github.com/aaronbell/LxgwMarkerGothic": "missing source 'temp/LXGWMarkerGothic-Regular.ufo'",
     "https://github.com/alexeiva/Arsenal": "missing source 'Arsenal-Italic.glyphs'",
@@ -5953,10 +6054,10 @@
     "https://github.com/lipiraval/Mogra": "missing source 'Mogra.glyphs'",
     "https://github.com/loudifier/Comic-Relief": "missing source 'ComicRelief-Bold.ufo'",
     "https://github.com/m4rc1e/Istok-Web": "missing source 'IstokWeb-Italic.glyphs'",
-    "https://github.com/mishamyrt/Lilex": "no config file was found",
     "https://github.com/mooniak/abhaya-libre-font": "missing source 'sources/glyphs/Abhaya-Masters.glyphs'",
     "https://github.com/notofonts/arabic": "missing source 'sources/NotoNaskhArabicUI.glyphspackage'",
     "https://github.com/notofonts/duployan": "missing source 'NotoSansDuployan.glyphs'",
+    "https://github.com/notofonts/nyiakeng-puachue-hmong": "missing source 'sources/NotoSerifNPHmong.designspace'",
     "https://github.com/petrvanblokland/TYPETR-Bitcount": "missing field `sources`",
     "https://github.com/theleagueof/raleway": "missing source 'sources/Raleway-Italic.designspace'",
     "https://github.com/vernnobile/oxygenFont": "missing source 'Oxygen-Regular.ufo'",
@@ -5968,10 +6069,6 @@
     "bornaiz/lalezar": {
       "url": "https://github.com/BornaIz/Lalezar",
       "reason": "missing source 'sources/Lalezar.glyphs'"
-    },
-    "etcetera-type-co/grandstander": {
-      "url": "https://github.com/Etcetera-Type-Co/Grandstander",
-      "reason": "no config file was found"
     },
     "gue3bara/cairo": {
       "url": "https://github.com/Gue3bara/Cairo",
@@ -5996,6 +6093,10 @@
     "omnibus-type/pragatinarrow": {
       "url": "https://github.com/Omnibus-Type/PragatiNarrow",
       "reason": "missing source 'PragatiNarrow.glyphs'"
+    },
+    "sorkintype/trykker": {
+      "url": "https://github.com/SorkinType/Trykker",
+      "reason": "missing source 'Trykker'"
     },
     "tirotypeworks/castoro": {
       "url": "https://github.com/TiroTypeworks/Castoro",
@@ -6081,10 +6182,6 @@
       "url": "https://github.com/m4rc1e/Istok-Web",
       "reason": "missing source 'IstokWeb-Italic.glyphs'"
     },
-    "mishamyrt/lilex": {
-      "url": "https://github.com/mishamyrt/Lilex",
-      "reason": "no config file was found"
-    },
     "mooniak/abhaya-libre-font": {
       "url": "https://github.com/mooniak/abhaya-libre-font",
       "reason": "missing source 'sources/glyphs/Abhaya-Masters.glyphs'"
@@ -6096,6 +6193,10 @@
     "notofonts/duployan": {
       "url": "https://github.com/notofonts/duployan",
       "reason": "missing source 'NotoSansDuployan.glyphs'"
+    },
+    "notofonts/nyiakeng-puachue-hmong": {
+      "url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
+      "reason": "missing source 'sources/NotoSerifNPHmong.designspace'"
     },
     "petrvanblokland/typetr-bitcount": {
       "url": "https://github.com/petrvanblokland/TYPETR-Bitcount",
@@ -6170,24 +6271,6 @@
       "annotations": []
     },
     {
-      "id": "productiontype/Georama/sources/builder.yaml Georama.designspace?1b063b6256 (default)",
-      "total_similarity": 0.5678,
-      "tables": {
-        "(mark/kern)": 0.011806278,
-        "GDEF": 0.45731708,
-        "GSUB": 0.48491538,
-        "GlyphOrder": 0.37842777,
-        "HVAR": 0.5730181,
-        "cmap": 0.41230068,
-        "glyf": 0.92096186,
-        "gvar": 0.9932164,
-        "hmtx": 0.37785912,
-        "post": 0.43759474
-      },
-      "repo_url": "https://github.com/productiontype/Georama",
-      "annotations": []
-    },
-    {
       "id": "vaishnavimurthy/Akaya-Kanadaka/$VIRTUAL/google/fonts/ofl/akayakanadaka/config.yaml Source/AkayaKanadaka.glyphs?24f2546178 (gftools)",
       "total_similarity": 0.568,
       "tables": {
@@ -6212,14 +6295,32 @@
       "annotations": []
     },
     {
-      "id": "productiontype/Georama/sources/builder.yaml Georama.designspace?1b063b6256 (gftools)",
-      "total_similarity": 0.5698,
+      "id": "productiontype/Georama/sources/builder.yaml Georama.designspace?1b063b6256 (default)",
+      "total_similarity": 0.5684,
       "tables": {
         "(mark/kern)": 0.011806278,
         "GDEF": 0.45731708,
         "GSUB": 0.48491538,
         "GlyphOrder": 0.37842777,
-        "HVAR": 0.5596869,
+        "HVAR": 0.62138087,
+        "cmap": 0.41230068,
+        "glyf": 0.92096186,
+        "gvar": 0.9932164,
+        "hmtx": 0.37785912,
+        "post": 0.43759474
+      },
+      "repo_url": "https://github.com/productiontype/Georama",
+      "annotations": []
+    },
+    {
+      "id": "productiontype/Georama/sources/builder.yaml Georama.designspace?1b063b6256 (gftools)",
+      "total_similarity": 0.5704,
+      "tables": {
+        "(mark/kern)": 0.011806278,
+        "GDEF": 0.45731708,
+        "GSUB": 0.48491538,
+        "GlyphOrder": 0.37842777,
+        "HVAR": 0.619474,
         "cmap": 0.41230068,
         "glyf": 0.9229656,
         "gvar": 0.99326324,
@@ -6604,7 +6705,7 @@
         "GPOS": 0.9310345,
         "cvt": "fontmake",
         "fpgm": "fontmake",
-        "glyf": 0.8771963,
+        "glyf": 0.8772257,
         "head": 0.95,
         "maxp": 0.6666667,
         "name": 0.8923077,
@@ -7067,57 +7168,31 @@
       "annotations": []
     },
     {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeehairline/config.yaml sources/2-build/Bungee_Basic/Bungee-Hairline.ufo?eb03cf69ad (default)",
-      "total_similarity": 0.983,
+      "id": "silnrsi/font-nuosu/$VIRTUAL/google/fonts/ofl/nuosusil/config.yaml source/NuosuSIL.designspace?1e9b50a3cb (gftools)",
+      "total_similarity": 0.98,
       "tables": {
-        "(mark/kern)": 0.9969758,
-        "GPOS": 0.99374217,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.8783784
+        "HVAR": "fontc",
+        "STAT": "fontc",
+        "fvar": "fontc",
+        "glyf": 0.999754,
+        "gvar": "fontc",
+        "name": 0.7768595
       },
-      "repo_url": "https://github.com/djrrb/Bungee",
+      "repo_url": "https://github.com/silnrsi/font-nuosu",
       "annotations": []
     },
     {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeehairline/config.yaml sources/2-build/Bungee_Basic/Bungee-Hairline.ufo?eb03cf69ad (gftools)",
-      "total_similarity": 0.9831,
+      "id": "silnrsi/font-nuosu/$VIRTUAL/google/fonts/ofl/nuosusil/config.yaml source/NuosuSIL.designspace?1e9b50a3cb (default)",
+      "total_similarity": 0.9804,
       "tables": {
-        "(mark/kern)": 0.9969758,
-        "GPOS": 0.99374217,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.8783784
+        "HVAR": "fontc",
+        "STAT": "fontc",
+        "fvar": "fontc",
+        "glyf": 0.99975383,
+        "gvar": "fontc",
+        "name": 0.98342544
       },
-      "repo_url": "https://github.com/djrrb/Bungee",
-      "annotations": []
-    },
-    {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungee/config.yaml sources/1-drawing/Bungee-Regular.ufo?eb03cf69ad (default)",
-      "total_similarity": 0.9843,
-      "tables": {
-        "(mark/kern)": 0.99189657,
-        "GDEF": 0.9850107,
-        "GPOS": 0.9865554,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.86764705
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
-      "annotations": []
-    },
-    {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungee/config.yaml sources/1-drawing/Bungee-Regular.ufo?eb03cf69ad (gftools)",
-      "total_similarity": 0.9845,
-      "tables": {
-        "(mark/kern)": 0.99189657,
-        "GDEF": 0.9850107,
-        "GPOS": 0.9865554,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.86764705
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
+      "repo_url": "https://github.com/silnrsi/font-nuosu",
       "annotations": []
     },
     {
@@ -7146,32 +7221,6 @@
       "annotations": []
     },
     {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeinline/config.yaml sources/2-build/Bungee_Basic/Bungee-Inline.ufo?eb03cf69ad (default)",
-      "total_similarity": 0.9883,
-      "tables": {
-        "(mark/kern)": 0.9969758,
-        "GPOS": 0.99374217,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.8783784
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
-      "annotations": []
-    },
-    {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeinline/config.yaml sources/2-build/Bungee_Basic/Bungee-Inline.ufo?eb03cf69ad (gftools)",
-      "total_similarity": 0.9884,
-      "tables": {
-        "(mark/kern)": 0.9969758,
-        "GPOS": 0.99374217,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.8783784
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
-      "annotations": []
-    },
-    {
       "id": "silnrsi/font-mingzat/$VIRTUAL/google/fonts/ofl/mingzat/config.yaml source/Mingzat.designspace?613ac08e03 (gftools)",
       "total_similarity": 0.9904,
       "tables": {
@@ -7196,19 +7245,6 @@
       "annotations": []
     },
     {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeoutline/config.yaml sources/2-build/Bungee_Basic/Bungee-Outline.ufo?eb03cf69ad (default)",
-      "total_similarity": 0.991,
-      "tables": {
-        "(mark/kern)": 0.9969758,
-        "GPOS": 0.99374217,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.8783784
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
-      "annotations": []
-    },
-    {
       "id": "silnrsi/font-mingzat/$VIRTUAL/google/fonts/ofl/mingzat/config.yaml source/Mingzat.designspace?613ac08e03 (default)",
       "total_similarity": 0.991,
       "tables": {
@@ -7220,19 +7256,6 @@
         "name": 0.984127
       },
       "repo_url": "https://github.com/silnrsi/font-mingzat",
-      "annotations": []
-    },
-    {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeoutline/config.yaml sources/2-build/Bungee_Basic/Bungee-Outline.ufo?eb03cf69ad (gftools)",
-      "total_similarity": 0.9911,
-      "tables": {
-        "(mark/kern)": 0.9969758,
-        "GPOS": 0.99374217,
-        "GSUB": 0.7764915,
-        "OS_2": 0.9807692,
-        "name": 0.8783784
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
       "annotations": []
     },
     {
@@ -7258,6 +7281,72 @@
       "annotations": []
     },
     {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Light.ufo?2085b8942f (default)",
+      "total_similarity": 0.9924,
+      "tables": {
+        "GSUB": 0.7312391,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Light.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.9924,
+      "tables": {
+        "GSUB": 0.7312391,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Bold.ufo?2085b8942f (default)",
+      "total_similarity": 0.9927,
+      "tables": {
+        "GSUB": 0.7312391,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Bold.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.9927,
+      "tables": {
+        "GSUB": 0.7312391,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Medium.ufo?2085b8942f (default)",
+      "total_similarity": 0.9927,
+      "tables": {
+        "GSUB": 0.7312391,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Medium.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.9927,
+      "tables": {
+        "GSUB": 0.7312391,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
       "id": "notofonts/kawi/sources/config-sans-kawi.yaml NotoSansKawi.glyphs?7b11823765 (default)",
       "total_similarity": 0.9927,
       "tables": {
@@ -7272,12 +7361,99 @@
       ]
     },
     {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-ExtraLight.ufo?2085b8942f (default)",
+      "total_similarity": 0.9928,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-ExtraLight.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.9928,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Regular.ufo?2085b8942f (default)",
+      "total_similarity": 0.9928,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Regular.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.9928,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Black.ufo?2085b8942f (default)",
+      "total_similarity": 0.993,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-Black.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.993,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-ExtraBold.ufo?2085b8942f (default)",
+      "total_similarity": 0.9931,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
+      "id": "googlefonts/tajawal/$VIRTUAL/google/fonts/ofl/tajawal/config.yaml source/1-drawings/Tajawal-ExtraBold.ufo?2085b8942f (gftools)",
+      "total_similarity": 0.9931,
+      "tables": {
+        "GSUB": 0.7184466,
+        "head": 0.95,
+        "name": 0.93333334
+      },
+      "repo_url": "https://github.com/googlefonts/tajawal",
+      "annotations": []
+    },
+    {
       "id": "DunwichType/Padyakke_Libre/source/builder.yaml Padyakke.glyphs?6b18f96959 (default)",
-      "total_similarity": 0.9932,
+      "total_similarity": 0.9933,
       "tables": {
         "(mark/kern)": 0.9865769,
-        "GPOS": 0.9310345,
-        "glyf": 0.99996674
+        "GPOS": 0.9310345
       },
       "repo_url": "https://github.com/DunwichType/Padyakke_Libre",
       "annotations": []
@@ -7304,32 +7480,6 @@
         "GPOS": 0.78571427
       },
       "repo_url": "https://github.com/notofonts/hebrew",
-      "annotations": []
-    },
-    {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeshade/config.yaml sources/2-build/Bungee_Basic/Bungee-Shade.ufo?eb03cf69ad (default)",
-      "total_similarity": 0.9945,
-      "tables": {
-        "(mark/kern)": 0.9979798,
-        "GPOS": 0.9804714,
-        "GSUB": 0.71598315,
-        "OS_2": 0.9807692,
-        "name": 0.86764705
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
-      "annotations": []
-    },
-    {
-      "id": "djrrb/Bungee/$VIRTUAL/google/fonts/ofl/bungeeshade/config.yaml sources/2-build/Bungee_Basic/Bungee-Shade.ufo?eb03cf69ad (gftools)",
-      "total_similarity": 0.9945,
-      "tables": {
-        "(mark/kern)": 0.9979798,
-        "GPOS": 0.9804714,
-        "GSUB": 0.71598315,
-        "OS_2": 0.9807692,
-        "name": 0.86764705
-      },
-      "repo_url": "https://github.com/djrrb/Bungee",
       "annotations": []
     },
     {
@@ -7379,7 +7529,12 @@
         "GSUB": 0.5491706
       },
       "repo_url": "https://github.com/line/seed",
-      "annotations": []
+      "annotations": [
+        {
+          "text": "fea-rs doesn't honor 'useExtension' keyword",
+          "link": "https://github.com/googlefonts/fontc/issues/1962"
+        }
+      ]
     },
     {
       "id": "notofonts/takri/sources/config-sans-takri.yaml NotoSansTakri.designspace?bf175ad0b8 (default)",
@@ -7501,16 +7656,6 @@
       "annotations": []
     },
     {
-      "id": "notofonts/latin-greek-cyrillic/sources/config-sans.yaml NotoSans.glyphspackage?c4a321e123 (default)",
-      "total_similarity": 0.998,
-      "tables": {
-        "HVAR": 0.57955724,
-        "gvar": 0.9999887
-      },
-      "repo_url": "https://github.com/notofonts/latin-greek-cyrillic",
-      "annotations": []
-    },
-    {
       "id": "alexeiva/cuprum/$VIRTUAL/google/fonts/ofl/cuprum/config.yaml sources/Cuprum-Italic.designspace?98adc59dc0 (default)",
       "total_similarity": 0.9981,
       "tables": {
@@ -7551,6 +7696,18 @@
         "maxp": 0.8888889
       },
       "repo_url": "https://github.com/rosettatype/handjet",
+      "annotations": []
+    },
+    {
+      "id": "silnrsi/font-kayphodu/$VIRTUAL/google/fonts/ofl/kayphodu/config.yaml source/KayPhoDu.designspace?4c49d8ac7a (default)",
+      "total_similarity": 0.9987,
+      "tables": {
+        "HVAR": 0.98717946,
+        "STAT": 0.68421054,
+        "fvar": 0.72,
+        "name": 0.9741379
+      },
+      "repo_url": "https://github.com/silnrsi/font-kayphodu",
       "annotations": []
     },
     {
@@ -7708,43 +7865,12 @@
       "annotations": []
     },
     {
-      "id": "reddit/redditsans/sources/sans.yaml RedditSans.glyphs?60e19b50bd (default)",
-      "total_similarity": 0.9992,
-      "tables": {
-        "HVAR": 0.91925466,
-        "gvar": 0.9997259
-      },
-      "repo_url": "https://github.com/reddit/redditsans",
-      "annotations": []
-    },
-    {
-      "id": "reddit/redditsans/sources/sans.yaml RedditSans.glyphs?60e19b50bd (gftools)",
-      "total_similarity": 0.9992,
-      "tables": {
-        "HVAR": 0.91669387,
-        "gvar": 0.99974185
-      },
-      "repo_url": "https://github.com/reddit/redditsans",
-      "annotations": []
-    },
-    {
       "id": "SorkinType/Briem-Hand/sources/config.yaml BriemHand.glyphs?7b99184050 (default)",
       "total_similarity": 0.9993,
       "tables": {
         "GSUB": 0.98073584
       },
       "repo_url": "https://github.com/SorkinType/Briem-Hand",
-      "annotations": []
-    },
-    {
-      "id": "github/mona-sans/sources/config.yaml MonaSans.glyphspackage?0d07d5a501 (gftools)",
-      "total_similarity": 0.9993,
-      "tables": {
-        "glyf": 0.99792325,
-        "gvar": 0.9982177,
-        "head": 0.95
-      },
-      "repo_url": "https://github.com/github/mona-sans",
       "annotations": []
     },
     {
@@ -7814,16 +7940,6 @@
       ]
     },
     {
-      "id": "notofonts/latin-greek-cyrillic/sources/config-sans.yaml NotoSans-Italic.glyphspackage?c4a321e123 (default)",
-      "total_similarity": 0.9994,
-      "tables": {
-        "HVAR": 0.865226,
-        "gvar": 0.99993527
-      },
-      "repo_url": "https://github.com/notofonts/latin-greek-cyrillic",
-      "annotations": []
-    },
-    {
       "id": "googlefonts/dm-mono/$VIRTUAL/google/fonts/ofl/dmmono/config.yaml source/DMMono-Italics-MASTER.glyphs?57fadabfb2 (default)",
       "total_similarity": 0.9995,
       "tables": {
@@ -7851,6 +7967,17 @@
         "GSUB": 0.77311575
       },
       "repo_url": "https://github.com/googlefonts/science-gothic",
+      "annotations": []
+    },
+    {
+      "id": "lettersoup/Ropa-Sans/$VIRTUAL/google/fonts/ofl/ropasans/config.yaml sources/RopaSans-Italic.glyphs?33acc9f9e7 (gftools)",
+      "total_similarity": 0.9995,
+      "tables": {
+        "OS_2": 0.9807692,
+        "head": 0.95,
+        "name": 0.902439
+      },
+      "repo_url": "https://github.com/lettersoup/Ropa-Sans",
       "annotations": []
     },
     {
@@ -7925,6 +8052,45 @@
         "name": 0.88
       },
       "repo_url": "https://github.com/KanonFoundry/HedvigLetters",
+      "annotations": []
+    },
+    {
+      "id": "Omnibus-Type/Unna/$VIRTUAL/google/fonts/ofl/unna/config.yaml sources/Unna Italic.glyphs?826be2abeb (default)",
+      "total_similarity": 0.9997,
+      "tables": {
+        "HVAR": 0.9959793,
+        "MVAR": 0.92783505,
+        "STAT": 0.7878788,
+        "avar": 0.75,
+        "fvar": 0.6666667,
+        "name": 0.9586777
+      },
+      "repo_url": "https://github.com/Omnibus-Type/Unna",
+      "annotations": []
+    },
+    {
+      "id": "Omnibus-Type/Unna/$VIRTUAL/google/fonts/ofl/unna/config.yaml sources/Unna.glyphs?826be2abeb (default)",
+      "total_similarity": 0.9997,
+      "tables": {
+        "HVAR": 0.9959793,
+        "MVAR": 0.92783505,
+        "STAT": 0.7878788,
+        "avar": 0.75,
+        "fvar": 0.6666667,
+        "name": 0.95412844
+      },
+      "repo_url": "https://github.com/Omnibus-Type/Unna",
+      "annotations": []
+    },
+    {
+      "id": "SorkinType/Molle2/sources/config.yaml Molle.glyphspackage?3924159e01 (gftools)",
+      "total_similarity": 0.9997,
+      "tables": {
+        "OS_2": 0.9807692,
+        "head": 0.95,
+        "name": 0.9411765
+      },
+      "repo_url": "https://github.com/SorkinType/Molle2",
       "annotations": []
     },
     {
@@ -8018,6 +8184,24 @@
         "name": 0.9361702
       },
       "repo_url": "https://github.com/MonicaRizzolli/Tomorrow",
+      "annotations": []
+    },
+    {
+      "id": "SorkinType/Vampiro/$VIRTUAL/google/fonts/ofl/vampiroone/config.yaml Vampiro.ufo?ec42cf1223 (default)",
+      "total_similarity": 0.9998,
+      "tables": {
+        "name": 0.97196263
+      },
+      "repo_url": "https://github.com/SorkinType/Vampiro",
+      "annotations": []
+    },
+    {
+      "id": "SorkinType/Vampiro/$VIRTUAL/google/fonts/ofl/vampiroone/config.yaml Vampiro.ufo?ec42cf1223 (gftools)",
+      "total_similarity": 0.9998,
+      "tables": {
+        "name": 0.97196263
+      },
+      "repo_url": "https://github.com/SorkinType/Vampiro",
       "annotations": []
     },
     {
@@ -8161,6 +8345,24 @@
       "annotations": []
     },
     {
+      "id": "SorkinType/Metamorphous/sources/config.yaml Metamorphous.glyphspackage?d2d29bb342 (gftools)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "name": 0.9791667
+      },
+      "repo_url": "https://github.com/SorkinType/Metamorphous",
+      "annotations": []
+    },
+    {
+      "id": "SorkinType/Molle2/sources/config.yaml Molle.glyphspackage?3924159e01 (default)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "name": 0.9814815
+      },
+      "repo_url": "https://github.com/SorkinType/Molle2",
+      "annotations": []
+    },
+    {
       "id": "Vectro-Type-Foundry/kablammo/sources/config.yml Kablammo.glyphs?cccc120d23 (default)",
       "total_similarity": 0.9999,
       "tables": {
@@ -8178,6 +8380,26 @@
           "link": "https://github.com/googlefonts/fontc/issues/1835"
         }
       ]
+    },
+    {
+      "id": "aminabedi68/Estedad/sources/config.yaml Estedad.glyphs?69e879f78a (default)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "GSUB": 0.9994523,
+        "gvar": 0.999783
+      },
+      "repo_url": "https://github.com/aminabedi68/Estedad",
+      "annotations": []
+    },
+    {
+      "id": "aminabedi68/Estedad/sources/config.yaml Estedad.glyphs?69e879f78a (gftools)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "GSUB": 0.9994523,
+        "gvar": 0.9997887
+      },
+      "repo_url": "https://github.com/aminabedi68/Estedad",
+      "annotations": []
     },
     {
       "id": "cadsondemak/Charmonman/$VIRTUAL/google/fonts/ofl/charmonman/config.yaml source/Charmonman.glyphs?8590fc4aae (gftools)",
@@ -8306,6 +8528,17 @@
       "annotations": []
     },
     {
+      "id": "jonpinhorn/shrikhand/$VIRTUAL/google/fonts/ofl/shrikhand/config.yaml masters/Shrikhand.glyphs?c11c9b0720 (gftools)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "OS_2": 0.9807692,
+        "head": 0.95,
+        "name": 0.82608694
+      },
+      "repo_url": "https://github.com/jonpinhorn/shrikhand",
+      "annotations": []
+    },
+    {
       "id": "ladinoprojects/solitreo/sources/config.yaml Solitreo.glyphs?9b03239708 (default)",
       "total_similarity": 0.9999,
       "tables": {
@@ -8326,6 +8559,42 @@
         "(mark/kern)": 0.9997846
       },
       "repo_url": "https://github.com/ladinoprojects/solitreo",
+      "annotations": []
+    },
+    {
+      "id": "mishamyrt/Lilex/sources/config.yaml Lilex-Italic.glyphs?50260ef98a (default)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "GSUB": 0.9989494
+      },
+      "repo_url": "https://github.com/mishamyrt/Lilex",
+      "annotations": []
+    },
+    {
+      "id": "mishamyrt/Lilex/sources/config.yaml Lilex-Italic.glyphs?50260ef98a (gftools)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "GSUB": 0.9989494
+      },
+      "repo_url": "https://github.com/mishamyrt/Lilex",
+      "annotations": []
+    },
+    {
+      "id": "mishamyrt/Lilex/sources/config.yaml Lilex.glyphs?50260ef98a (default)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "GSUB": 0.9991201
+      },
+      "repo_url": "https://github.com/mishamyrt/Lilex",
+      "annotations": []
+    },
+    {
+      "id": "mishamyrt/Lilex/sources/config.yaml Lilex.glyphs?50260ef98a (gftools)",
+      "total_similarity": 0.9999,
+      "tables": {
+        "GSUB": 0.9991201
+      },
+      "repo_url": "https://github.com/mishamyrt/Lilex",
       "annotations": []
     },
     {
@@ -8365,15 +8634,6 @@
           "link": "https://github.com/googlefonts/fontc/issues/1817"
         }
       ]
-    },
-    {
-      "id": "notofonts/latin-greek-cyrillic/sources/config-serif.yaml NotoSerif.glyphspackage?c4a321e123 (default)",
-      "total_similarity": 0.9999,
-      "tables": {
-        "HVAR": 0.98069566
-      },
-      "repo_url": "https://github.com/notofonts/latin-greek-cyrillic",
-      "annotations": []
     },
     {
       "id": "notofonts/thai/sources/config-sans-thai.yaml NotoSansThai.designspace?f8f3f02470 (default)",
@@ -8527,7 +8787,12 @@
         "glyf": 0.9999993
       },
       "repo_url": "https://github.com/NaN-xyz/Rubik-Filtered",
-      "annotations": []
+      "annotations": [
+        {
+          "text": "cu2qu difference in degenerate cases",
+          "link": "https://github.com/googlefonts/fontc/issues/1981"
+        }
+      ]
     },
     {
       "id": "NaN-xyz/Rubik-Filtered/glitchpop/sources/config.yaml RubikGlitchPop.glyphs?1126980434 (gftools)",
@@ -8623,7 +8888,12 @@
         "glyf": 0.9999997
       },
       "repo_url": "https://github.com/fontdasu/ShipporiAntique",
-      "annotations": []
+      "annotations": [
+        {
+          "text": "f2dot14 rounding error",
+          "link": "https://github.com/googlefonts/fontc/issues/1979"
+        }
+      ]
     },
     {
       "id": "fontworks-fonts/Klee/$VIRTUAL/google/fonts/ofl/kleeone/config.yaml sources/KleeOne-SemiBold.glyphs?8b0532731b (gftools)",
@@ -8632,17 +8902,6 @@
         "OS_2": 0.9807692
       },
       "repo_url": "https://github.com/fontworks-fonts/Klee",
-      "annotations": []
-    },
-    {
-      "id": "github/mona-sans/sources/config.yaml MonaSans.glyphspackage?0d07d5a501 (default)",
-      "total_similarity": 1.0,
-      "tables": {
-        "glyf": 0.99983317,
-        "gvar": 0.9999306,
-        "head": 0.95
-      },
-      "repo_url": "https://github.com/github/mona-sans",
       "annotations": []
     },
     {
@@ -8751,6 +9010,132 @@
       "annotations": []
     },
     {
+      "id": "itfoundry/halant/$VIRTUAL/google/fonts/ofl/halant/config.yaml styles/Regular/font.ufo?5991cb7b8f (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/halant",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/halant/$VIRTUAL/google/fonts/ofl/halant/config.yaml styles/Regular/font.ufo?5991cb7b8f (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/halant",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/hind/$VIRTUAL/google/fonts/ofl/hind/config.yaml styles/Regular/font.ufo?6caef5262d (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/hind",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/hind/$VIRTUAL/google/fonts/ofl/hind/config.yaml styles/Regular/font.ufo?6caef5262d (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/hind",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/karma/$VIRTUAL/google/fonts/ofl/karma/config.yaml styles/Regular/font.ufo?12228946ce (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/karma",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/karma/$VIRTUAL/google/fonts/ofl/karma/config.yaml styles/Regular/font.ufo?12228946ce (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/karma",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/khand/$VIRTUAL/google/fonts/ofl/khand/config.yaml styles/Regular/font.ufo?1f1d6778d3 (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/khand",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/khand/$VIRTUAL/google/fonts/ofl/khand/config.yaml styles/Regular/font.ufo?1f1d6778d3 (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/khand",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/laila/$VIRTUAL/google/fonts/ofl/laila/config.yaml styles/Regular/font.ufo?a8b5b4ee6c (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/laila",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/laila/$VIRTUAL/google/fonts/ofl/laila/config.yaml styles/Regular/font.ufo?a8b5b4ee6c (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/laila",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/rajdhani/$VIRTUAL/google/fonts/ofl/rajdhani/config.yaml styles/Regular/font.ufo?86cae0e9a6 (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/rajdhani",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/rajdhani/$VIRTUAL/google/fonts/ofl/rajdhani/config.yaml styles/Regular/font.ufo?86cae0e9a6 (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/rajdhani",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/sarpanch/$VIRTUAL/google/fonts/ofl/sarpanch/config.yaml styles/Regular/font.ufo?265ec8e95c (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/sarpanch",
+      "annotations": []
+    },
+    {
+      "id": "itfoundry/sarpanch/$VIRTUAL/google/fonts/ofl/sarpanch/config.yaml styles/Regular/font.ufo?265ec8e95c (gftools)",
+      "total_similarity": 1.0,
+      "tables": {
+        "name": 0.95652175
+      },
+      "repo_url": "https://github.com/itfoundry/sarpanch",
+      "annotations": []
+    },
+    {
       "id": "microsoft/ADLaM-Display/Sources/config.yaml ADLaM-Display.glyphs?879176243e (gftools)",
       "total_similarity": 1.0,
       "tables": {
@@ -8779,31 +9164,6 @@
       "annotations": []
     },
     {
-      "id": "reddit/redditsans/sources/sanscondensed.yaml RedditSansCondensed.glyphs?60e19b50bd (default)",
-      "total_similarity": 1.0,
-      "tables": {
-        "HVAR": 0.99933994,
-        "gvar": 0.9998404
-      },
-      "repo_url": "https://github.com/reddit/redditsans",
-      "annotations": [
-        {
-          "text": "variations differ for aringacute.ss02",
-          "link": "https://github.com/googlefonts/fontc/issues/1840"
-        }
-      ]
-    },
-    {
-      "id": "reddit/redditsans/sources/sanscondensed.yaml RedditSansCondensed.glyphs?60e19b50bd (gftools)",
-      "total_similarity": 1.0,
-      "tables": {
-        "HVAR": 0.99933994,
-        "gvar": 0.9998498
-      },
-      "repo_url": "https://github.com/reddit/redditsans",
-      "annotations": []
-    },
-    {
       "id": "skugiz/liter/sources/config.yaml liter.glyphs?3808843f98 (default)",
       "total_similarity": 1.0,
       "tables": {
@@ -8824,6 +9184,15 @@
         "DSIG": "fontmake"
       },
       "repo_url": "https://github.com/smc/Chilanka",
+      "annotations": []
+    },
+    {
+      "id": "strichpunkt-design/Strichpunkt_Sans/sources/config.yaml StrichpunktSans.glyphs?9a24fe35f2 (default)",
+      "total_similarity": 1.0,
+      "tables": {
+        "fvar": 0.99230766
+      },
+      "repo_url": "https://github.com/strichpunkt-design/Strichpunkt_Sans",
       "annotations": []
     },
     {
@@ -8895,6 +9264,12 @@
         "url": "https://github.com/BlackFoundryCom/Galada"
       }
     ],
+    "blackfoundrycom/inriafonts": [
+      {
+        "key": "BlackFoundryCom/InriaFonts_9b015af5d8",
+        "url": "https://github.com/BlackFoundryCom/InriaFonts"
+      }
+    ],
     "bornaiz/lalezar": [
       {
         "key": "BornaIz/Lalezar_c3e0eae242",
@@ -8949,6 +9324,12 @@
       {
         "key": "DunwichType/Padyakke_Libre_6b18f96959",
         "url": "https://github.com/DunwichType/Padyakke_Libre"
+      }
+    ],
+    "dunwichtype/rhodiumlibre": [
+      {
+        "key": "DunwichType/RhodiumLibre_c6e9dc9167",
+        "url": "https://github.com/DunwichType/RhodiumLibre"
       }
     ],
     "dylanyoungkoto/facultyglyphic": [
@@ -9039,6 +9420,12 @@
         "url": "https://github.com/Etcetera-Type-Co/Gluten"
       }
     ],
+    "etcetera-type-co/grandstander": [
+      {
+        "key": "Etcetera-Type-Co/Grandstander_33c288495d",
+        "url": "https://github.com/Etcetera-Type-Co/Grandstander"
+      }
+    ],
     "etcetera-type-co/imbue": [
       {
         "key": "Etcetera-Type-Co/Imbue_41b16f3fd6",
@@ -9049,6 +9436,12 @@
       {
         "key": "Etcetera-Type-Co/Tourney_643f1026ad",
         "url": "https://github.com/Etcetera-Type-Co/Tourney"
+      }
+    ],
+    "etcetera-type-co/trispace": [
+      {
+        "key": "Etcetera-Type-Co/Trispace_8f332ade4a",
+        "url": "https://github.com/Etcetera-Type-Co/Trispace"
       }
     ],
     "falthausen/vollkorn-typeface": [
@@ -9273,6 +9666,12 @@
       {
         "key": "MezMerrit/AU-School-Handwriting-Fonts_1dd726bde8",
         "url": "https://github.com/MezMerrit/AU-School-Handwriting-Fonts"
+      }
+    ],
+    "michalsahar/suez": [
+      {
+        "key": "MichalSahar/Suez_04af4fcca0",
+        "url": "https://github.com/MichalSahar/Suez"
       }
     ],
     "monicarizzolli/tomorrow": [
@@ -9505,6 +9904,12 @@
         "url": "https://github.com/Omnibus-Type/Saira"
       }
     ],
+    "omnibus-type/saira_stencil": [
+      {
+        "key": "Omnibus-Type/Saira_Stencil_426fb33c0d",
+        "url": "https://github.com/Omnibus-Type/Saira_Stencil"
+      }
+    ],
     "omnibus-type/sansita-swashed": [
       {
         "key": "Omnibus-Type/Sansita-Swashed_4b18bac655",
@@ -9515,6 +9920,18 @@
       {
         "key": "Omnibus-Type/Texturina_5f38963152",
         "url": "https://github.com/Omnibus-Type/Texturina"
+      }
+    ],
+    "omnibus-type/truculenta": [
+      {
+        "key": "Omnibus-Type/Truculenta_7ce6b921fc",
+        "url": "https://github.com/Omnibus-Type/Truculenta"
+      }
+    ],
+    "omnibus-type/unna": [
+      {
+        "key": "Omnibus-Type/Unna_826be2abeb",
+        "url": "https://github.com/Omnibus-Type/Unna"
       }
     ],
     "outfitio/outfit-fonts": [
@@ -9661,10 +10078,28 @@
         "url": "https://github.com/SorkinType/Merriweather-Sans"
       }
     ],
+    "sorkintype/metamorphous": [
+      {
+        "key": "SorkinType/Metamorphous_d2d29bb342",
+        "url": "https://github.com/SorkinType/Metamorphous"
+      }
+    ],
+    "sorkintype/molle2": [
+      {
+        "key": "SorkinType/Molle2_3924159e01",
+        "url": "https://github.com/SorkinType/Molle2"
+      }
+    ],
     "sorkintype/pinyon": [
       {
         "key": "SorkinType/Pinyon_91d502f9b3",
         "url": "https://github.com/SorkinType/Pinyon"
+      }
+    ],
+    "sorkintype/plaster": [
+      {
+        "key": "SorkinType/Plaster_6879ba56c3",
+        "url": "https://github.com/SorkinType/Plaster"
       }
     ],
     "sorkintype/splinesansmono": [
@@ -9679,10 +10114,22 @@
         "url": "https://github.com/SorkinType/SplineSans"
       }
     ],
+    "sorkintype/trykker": [
+      {
+        "key": "SorkinType/Trykker_5226cb0750",
+        "url": "https://github.com/SorkinType/Trykker"
+      }
+    ],
     "sorkintype/vicwantschoolhandaustralia": [
       {
         "key": "SorkinType/VICWANTSchoolhandAustralia_6529c525fc",
         "url": "https://github.com/SorkinType/VICWANTSchoolhandAustralia"
+      }
+    ],
+    "sorkintype/vampiro": [
+      {
+        "key": "SorkinType/Vampiro_ec42cf1223",
+        "url": "https://github.com/SorkinType/Vampiro"
       }
     ],
     "sorkintype/varta": [
@@ -9713,6 +10160,12 @@
       {
         "key": "Tarobish/Katibeh_3fde990dc2",
         "url": "https://github.com/Tarobish/Katibeh"
+      }
+    ],
+    "tarobish/mirza": [
+      {
+        "key": "Tarobish/Mirza_fa7b59c929",
+        "url": "https://github.com/Tarobish/Mirza"
       }
     ],
     "thanospoulakidas/geom": [
@@ -9753,6 +10206,12 @@
       {
         "key": "TiroTypeworks/Indigo_98b5d3a01c",
         "url": "https://github.com/TiroTypeworks/Indigo"
+      }
+    ],
+    "tirotypeworks/slabo": [
+      {
+        "key": "TiroTypeworks/Slabo_21420697b4",
+        "url": "https://github.com/TiroTypeworks/Slabo"
       }
     ],
     "tural/moderustic": [
@@ -9821,6 +10280,12 @@
         "url": "https://github.com/UNAL-OMD/UNAL-Ancizar"
       }
     ],
+    "vanillaandcream/palanquin": [
+      {
+        "key": "VanillaandCream/Palanquin_f912925ecc",
+        "url": "https://github.com/VanillaandCream/Palanquin"
+      }
+    ],
     "vectro-type-foundry/kablammo": [
       {
         "key": "Vectro-Type-Foundry/kablammo_cccc120d23",
@@ -9855,6 +10320,18 @@
       {
         "key": "aaronbell/signika_bd066259b5",
         "url": "https://github.com/aaronbell/signika"
+      }
+    ],
+    "adobe-fonts/source-sans": [
+      {
+        "key": "adobe-fonts/source-sans_272b22b02e",
+        "url": "https://github.com/adobe-fonts/source-sans"
+      }
+    ],
+    "adobe-fonts/source-serif": [
+      {
+        "key": "adobe-fonts/source-serif_b3980ade53",
+        "url": "https://github.com/adobe-fonts/source-serif"
       }
     ],
     "agyeiarcher/jaro": [
@@ -9909,6 +10386,18 @@
         "url": "https://github.com/alexeiva/poiretone"
       }
     ],
+    "alexeiva/rubikmonoone": [
+      {
+        "key": "alexeiva/rubikmonoone_7d08552d89",
+        "url": "https://github.com/alexeiva/rubikmonoone"
+      }
+    ],
+    "alexeiva/yesevaone": [
+      {
+        "key": "alexeiva/yesevaone_0d609f6155",
+        "url": "https://github.com/alexeiva/yesevaone"
+      }
+    ],
     "alif-type/qahiri": [
       {
         "key": "alif-type/qahiri_2fbfe8ca2e",
@@ -9945,6 +10434,12 @@
       {
         "key": "alphArtype/Delicious-Handrawn_4548961857",
         "url": "https://github.com/alphArtype/Delicious-Handrawn"
+      }
+    ],
+    "aminabedi68/estedad": [
+      {
+        "key": "aminabedi68/Estedad_69e879f78a",
+        "url": "https://github.com/aminabedi68/Estedad"
       }
     ],
     "anexasajoop/cambay": [
@@ -10013,6 +10508,24 @@
         "url": "https://github.com/appajid/mallanna"
       }
     ],
+    "appajid/mandali": [
+      {
+        "key": "appajid/mandali_b5d09820cc",
+        "url": "https://github.com/appajid/mandali"
+      }
+    ],
+    "appajid/nats": [
+      {
+        "key": "appajid/nats_7e1486a729",
+        "url": "https://github.com/appajid/nats"
+      }
+    ],
+    "appajid/ntr": [
+      {
+        "key": "appajid/ntr_1268910cd8",
+        "url": "https://github.com/appajid/ntr"
+      }
+    ],
     "appajid/peddana": [
       {
         "key": "appajid/peddana_717395267a",
@@ -10025,10 +10538,52 @@
         "url": "https://github.com/appajid/ponnala"
       }
     ],
+    "appajid/ramabhadra": [
+      {
+        "key": "appajid/ramabhadra_09579428d7",
+        "url": "https://github.com/appajid/ramabhadra"
+      }
+    ],
+    "appajid/ramaraja": [
+      {
+        "key": "appajid/ramaraja_fc98f3e28a",
+        "url": "https://github.com/appajid/ramaraja"
+      }
+    ],
     "appajid/raviprakash": [
       {
         "key": "appajid/raviprakash_0f5d8d7f5a",
         "url": "https://github.com/appajid/raviprakash"
+      }
+    ],
+    "appajid/sreekrushnadevaraya": [
+      {
+        "key": "appajid/sreekrushnadevaraya_1d8aea8611",
+        "url": "https://github.com/appajid/sreekrushnadevaraya"
+      }
+    ],
+    "appajid/suranna": [
+      {
+        "key": "appajid/suranna_ce1c1f150b",
+        "url": "https://github.com/appajid/suranna"
+      }
+    ],
+    "appajid/suravaram": [
+      {
+        "key": "appajid/suravaram_c8d4e86f6a",
+        "url": "https://github.com/appajid/suravaram"
+      }
+    ],
+    "appajid/tenaliramakrishna": [
+      {
+        "key": "appajid/tenaliramakrishna_444587c444",
+        "url": "https://github.com/appajid/tenaliramakrishna"
+      }
+    ],
+    "appajid/timmana": [
+      {
+        "key": "appajid/timmana_6ed6823a73",
+        "url": "https://github.com/appajid/timmana"
       }
     ],
     "arrowtype/recursive": [
@@ -10223,10 +10778,46 @@
         "url": "https://github.com/cadsondemak/maitree"
       }
     ],
+    "cadsondemak/mitr": [
+      {
+        "key": "cadsondemak/mitr_41950431d3",
+        "url": "https://github.com/cadsondemak/mitr"
+      }
+    ],
+    "cadsondemak/pattaya": [
+      {
+        "key": "cadsondemak/pattaya_fec6c7a0c8",
+        "url": "https://github.com/cadsondemak/pattaya"
+      }
+    ],
+    "cadsondemak/pridi": [
+      {
+        "key": "cadsondemak/pridi_fe54fb6812",
+        "url": "https://github.com/cadsondemak/pridi"
+      }
+    ],
+    "cadsondemak/prompt": [
+      {
+        "key": "cadsondemak/prompt_18f813a4de",
+        "url": "https://github.com/cadsondemak/prompt"
+      }
+    ],
     "cadsondemak/sriracha": [
       {
         "key": "cadsondemak/sriracha_6c6cf92ed8",
         "url": "https://github.com/cadsondemak/sriracha"
+      }
+    ],
+    "cadsondemak/taviraj": [
+      {
+        "key": "cadsondemak/taviraj_8bd077c195",
+        "url": "https://github.com/cadsondemak/taviraj"
+      }
+    ],
+    "cadsondemak/trirong": [
+      {
+        "key": "cadsondemak/trirong_0c1ce550d1",
+        "url": "https://github.com/cadsondemak/trirong"
       }
     ],
     "calcom/font": [
@@ -10291,6 +10882,12 @@
       {
         "key": "christiannaths/redacted-font_dae1afaa7d",
         "url": "https://github.com/christiannaths/redacted-font"
+      }
+    ],
+    "clauseggers/inknut-antiqua": [
+      {
+        "key": "clauseggers/Inknut-Antiqua_9db4a5c235",
+        "url": "https://github.com/clauseggers/Inknut-Antiqua"
       }
     ],
     "clauseggers/playfair": [
@@ -10407,6 +11004,12 @@
         "url": "https://github.com/cyrealtype/Marko-One"
       }
     ],
+    "cyrealtype/marmelad-cyrillic": [
+      {
+        "key": "cyrealtype/Marmelad-Cyrillic_9ddac1c0cb",
+        "url": "https://github.com/cyrealtype/Marmelad-Cyrillic"
+      }
+    ],
     "cyrealtype/podkova": [
       {
         "key": "cyrealtype/Podkova_e321080f4b",
@@ -10419,6 +11022,30 @@
         "url": "https://github.com/cyrealtype/Prata"
       }
     ],
+    "cyrealtype/rationale": [
+      {
+        "key": "cyrealtype/Rationale_b12941da53",
+        "url": "https://github.com/cyrealtype/Rationale"
+      }
+    ],
+    "cyrealtype/sirin-stencil": [
+      {
+        "key": "cyrealtype/Sirin-Stencil_803ade3c70",
+        "url": "https://github.com/cyrealtype/Sirin-Stencil"
+      }
+    ],
+    "cyrealtype/sumana": [
+      {
+        "key": "cyrealtype/Sumana_68c5ce43ae",
+        "url": "https://github.com/cyrealtype/Sumana"
+      }
+    ],
+    "cyrealtype/vidaloka": [
+      {
+        "key": "cyrealtype/Vidaloka_cc4205a19a",
+        "url": "https://github.com/cyrealtype/Vidaloka"
+      }
+    ],
     "cyrealtype/wire-one": [
       {
         "key": "cyrealtype/Wire-One_16db96d778",
@@ -10429,6 +11056,12 @@
       {
         "key": "d-sargent/platypi_c204c7ba64",
         "url": "https://github.com/d-sargent/platypi"
+      }
+    ],
+    "daltonmaag/scope-one": [
+      {
+        "key": "daltonmaag/scope-one_7a5c5df736",
+        "url": "https://github.com/daltonmaag/scope-one"
       }
     ],
     "dancoull/climatecrisis": [
@@ -10669,6 +11302,12 @@
         "url": "https://github.com/enathu/kavivanar"
       }
     ],
+    "enathu/pavanam": [
+      {
+        "key": "enathu/pavanam_c4ba933511",
+        "url": "https://github.com/enathu/pavanam"
+      }
+    ],
     "erikdkennedy/figtree": [
       {
         "key": "erikdkennedy/figtree_032dfa7fe2",
@@ -10691,6 +11330,12 @@
       {
         "key": "erinmclaughlin/Khula_1389c01848",
         "url": "https://github.com/erinmclaughlin/Khula"
+      }
+    ],
+    "erinmclaughlin/yantramanav": [
+      {
+        "key": "erinmclaughlin/Yantramanav_e40db8e442",
+        "url": "https://github.com/erinmclaughlin/Yantramanav"
       }
     ],
     "etunni/amita": [
@@ -10855,6 +11500,12 @@
         "url": "https://github.com/etunni/pathway-gothic"
       }
     ],
+    "etunni/sintony": [
+      {
+        "key": "etunni/sintony_be9cf7be56",
+        "url": "https://github.com/etunni/sintony"
+      }
+    ],
     "etunni/unica": [
       {
         "key": "etunni/unica_e92da87539",
@@ -10883,6 +11534,12 @@
       {
         "key": "floriankarsten/montagu-slab_317bc2344f",
         "url": "https://github.com/floriankarsten/montagu-slab"
+      }
+    ],
+    "floriankarsten/space-grotesk": [
+      {
+        "key": "floriankarsten/space-grotesk_03507d024a",
+        "url": "https://github.com/floriankarsten/space-grotesk"
       }
     ],
     "fontdasu/shipporiantique": [
@@ -11167,6 +11824,12 @@
         "url": "https://github.com/googlefonts/RobotoMono"
       }
     ],
+    "googlefonts/sacramentofont": [
+      {
+        "key": "googlefonts/SacramentoFont_86d34cf5a5",
+        "url": "https://github.com/googlefonts/SacramentoFont"
+      }
+    ],
     "googlefonts/shantifont": [
       {
         "key": "googlefonts/ShantiFont_511bc90538",
@@ -11177,6 +11840,12 @@
       {
         "key": "googlefonts/Signika_7361a224d1",
         "url": "https://github.com/googlefonts/Signika"
+      }
+    ],
+    "googlefonts/tangerinefont": [
+      {
+        "key": "googlefonts/TangerineFont_9b57a9f9be",
+        "url": "https://github.com/googlefonts/TangerineFont"
       }
     ],
     "googlefonts/tilt-fonts": [
@@ -11429,6 +12098,12 @@
       {
         "key": "googlefonts/cousine_7f897dbd87",
         "url": "https://github.com/googlefonts/cousine"
+      }
+    ],
+    "googlefonts/coustardfont": [
+      {
+        "key": "googlefonts/coustardFont_84d4ef2fbb",
+        "url": "https://github.com/googlefonts/coustardFont"
       }
     ],
     "googlefonts/cutivemono": [
@@ -11899,10 +12574,6 @@
         "url": "https://github.com/googlefonts/noto-fonts"
       },
       {
-        "key": "googlefonts/noto-fonts_282a3a8271",
-        "url": "https://github.com/googlefonts/noto-fonts"
-      },
-      {
         "key": "googlefonts/noto-fonts_3b258db81a",
         "url": "https://github.com/googlefonts/noto-fonts"
       },
@@ -11924,10 +12595,6 @@
       },
       {
         "key": "googlefonts/noto-fonts_8d438811b7",
-        "url": "https://github.com/googlefonts/noto-fonts"
-      },
-      {
-        "key": "googlefonts/noto-fonts_9232f17974",
         "url": "https://github.com/googlefonts/noto-fonts"
       },
       {
@@ -12155,6 +12822,12 @@
         "url": "https://github.com/googlefonts/sawarabi-mincho"
       }
     ],
+    "googlefonts/scada": [
+      {
+        "key": "googlefonts/scada_df06a155d9",
+        "url": "https://github.com/googlefonts/scada"
+      }
+    ],
     "googlefonts/science-gothic": [
       {
         "key": "googlefonts/science-gothic_9eae80c1fe",
@@ -12255,6 +12928,12 @@
       {
         "key": "googlefonts/style-script_618d9e00fb",
         "url": "https://github.com/googlefonts/style-script"
+      }
+    ],
+    "googlefonts/tajawal": [
+      {
+        "key": "googlefonts/tajawal_2085b8942f",
+        "url": "https://github.com/googlefonts/tajawal"
       }
     ],
     "googlefonts/tapestry": [
@@ -12439,6 +13118,24 @@
         "url": "https://github.com/huertatipografica/piazzolla"
       }
     ],
+    "huertatipografica/sahitya": [
+      {
+        "key": "huertatipografica/sahitya_c4b5b34d0f",
+        "url": "https://github.com/huertatipografica/sahitya"
+      }
+    ],
+    "huertatipografica/sarala": [
+      {
+        "key": "huertatipografica/sarala_7779e0c9eb",
+        "url": "https://github.com/huertatipografica/sarala"
+      }
+    ],
+    "huertatipografica/sura": [
+      {
+        "key": "huertatipografica/sura_d20d15fe0d",
+        "url": "https://github.com/huertatipografica/sura"
+      }
+    ],
     "hyper-type/hahmlet": [
       {
         "key": "hyper-type/hahmlet_1065411449",
@@ -12527,6 +13224,12 @@
         "url": "https://github.com/itfoundry/Poppins"
       }
     ],
+    "itfoundry/halant": [
+      {
+        "key": "itfoundry/halant_5991cb7b8f",
+        "url": "https://github.com/itfoundry/halant"
+      }
+    ],
     "itfoundry/hind-colombo": [
       {
         "key": "itfoundry/hind-colombo_3cf4e8b840",
@@ -12575,16 +13278,58 @@
         "url": "https://github.com/itfoundry/hind-vadodara"
       }
     ],
+    "itfoundry/hind": [
+      {
+        "key": "itfoundry/hind_6caef5262d",
+        "url": "https://github.com/itfoundry/hind"
+      }
+    ],
     "itfoundry/kalam": [
       {
         "key": "itfoundry/kalam_03a4d8a338",
         "url": "https://github.com/itfoundry/kalam"
       }
     ],
+    "itfoundry/karma": [
+      {
+        "key": "itfoundry/karma_12228946ce",
+        "url": "https://github.com/itfoundry/karma"
+      }
+    ],
+    "itfoundry/khand": [
+      {
+        "key": "itfoundry/khand_1f1d6778d3",
+        "url": "https://github.com/itfoundry/khand"
+      }
+    ],
     "itfoundry/kumar": [
       {
         "key": "itfoundry/kumar_3192a79a79",
         "url": "https://github.com/itfoundry/kumar"
+      }
+    ],
+    "itfoundry/laila": [
+      {
+        "key": "itfoundry/laila_a8b5b4ee6c",
+        "url": "https://github.com/itfoundry/laila"
+      }
+    ],
+    "itfoundry/rajdhani": [
+      {
+        "key": "itfoundry/rajdhani_86cae0e9a6",
+        "url": "https://github.com/itfoundry/rajdhani"
+      }
+    ],
+    "itfoundry/rozhaone": [
+      {
+        "key": "itfoundry/rozhaone_8225a64e98",
+        "url": "https://github.com/itfoundry/rozhaone"
+      }
+    ],
+    "itfoundry/sarpanch": [
+      {
+        "key": "itfoundry/sarpanch_265ec8e95c",
+        "url": "https://github.com/itfoundry/sarpanch"
       }
     ],
     "jenskutilek/homecomputer-fonts": [
@@ -12597,10 +13342,22 @@
         "url": "https://github.com/jenskutilek/homecomputer-fonts"
       }
     ],
+    "jmsole/noticiatext": [
+      {
+        "key": "jmsole/noticiatext_bcc80c5a33",
+        "url": "https://github.com/jmsole/noticiatext"
+      }
+    ],
     "jobosonchisa/ojuju": [
       {
         "key": "jobosonchisa/ojuju_61052b2801",
         "url": "https://github.com/jobosonchisa/ojuju"
+      }
+    ],
+    "jonpinhorn/shrikhand": [
+      {
+        "key": "jonpinhorn/shrikhand_c11c9b0720",
+        "url": "https://github.com/jonpinhorn/shrikhand"
       }
     ],
     "jpt/barlow": [
@@ -12673,6 +13430,12 @@
       {
         "key": "ladinoprojects/solitreo_9b03239708",
         "url": "https://github.com/ladinoprojects/solitreo"
+      }
+    ],
+    "lettersoup/ropa-sans": [
+      {
+        "key": "lettersoup/Ropa-Sans_33acc9f9e7",
+        "url": "https://github.com/lettersoup/Ropa-Sans"
       }
     ],
     "lettersoup/sofia-sans": [
@@ -12781,6 +13544,18 @@
         "url": "https://github.com/m4rc1e/Istok-Web"
       }
     ],
+    "m4rc1e/ruda-new": [
+      {
+        "key": "m4rc1e/Ruda-new_a63532e04f",
+        "url": "https://github.com/m4rc1e/Ruda-new"
+      }
+    ],
+    "m4rc1e/sharetech": [
+      {
+        "key": "m4rc1e/ShareTech_2c501093f8",
+        "url": "https://github.com/m4rc1e/ShareTech"
+      }
+    ],
     "m4rc1e/trocchi": [
       {
         "key": "m4rc1e/Trocchi_543ac4fee3",
@@ -12803,6 +13578,12 @@
       {
         "key": "m4rc1e/mavenproFont_a694ee80d0",
         "url": "https://github.com/m4rc1e/mavenproFont"
+      }
+    ],
+    "m4rc1e/zhimangxing": [
+      {
+        "key": "m4rc1e/zhimangxing_15cb1b0d4c",
+        "url": "https://github.com/m4rc1e/zhimangxing"
       }
     ],
     "magictype/goldman": [
@@ -12865,6 +13646,12 @@
         "url": "https://github.com/maxesnee/savate"
       }
     ],
+    "maxthunberg/miranda-sans": [
+      {
+        "key": "maxthunberg/miranda-sans_7cafa37b9b",
+        "url": "https://github.com/maxthunberg/miranda-sans"
+      }
+    ],
     "meirsadan/david-libre": [
       {
         "key": "meirsadan/david-libre_15496c1be7",
@@ -12881,6 +13668,12 @@
       {
         "key": "microsoft/cascadia-code_56bcca3f2c",
         "url": "https://github.com/microsoft/cascadia-code"
+      }
+    ],
+    "mishamyrt/lilex": [
+      {
+        "key": "mishamyrt/Lilex_50260ef98a",
+        "url": "https://github.com/mishamyrt/Lilex"
       }
     ],
     "mjlagattuta/hepta-slab": [
@@ -12923,6 +13716,12 @@
         "url": "https://github.com/mooniak/yaldevi-font"
       }
     ],
+    "motaitalic/vesper-libre": [
+      {
+        "key": "motaitalic/vesper-libre_b765c5a68c",
+        "url": "https://github.com/motaitalic/vesper-libre"
+      }
+    ],
     "mozilla/mozilla-headline-type": [
       {
         "key": "mozilla/mozilla-headline-type_a6ff8ec6ce",
@@ -12933,6 +13732,12 @@
       {
         "key": "mozilla/mozilla-text-type_5ff275ec49",
         "url": "https://github.com/mozilla/mozilla-text-type"
+      }
+    ],
+    "mozilla/zilla-slab": [
+      {
+        "key": "mozilla/zilla-slab_6dcec520f9",
+        "url": "https://github.com/mozilla/zilla-slab"
       }
     ],
     "mt-funa/tsukimi-rounded": [
@@ -12999,6 +13804,12 @@
       {
         "key": "noponies/Turret-Road_c77a268e22",
         "url": "https://github.com/noponies/Turret-Road"
+      }
+    ],
+    "noponies/sulphur-point": [
+      {
+        "key": "noponies/sulphur-point_2c1a600846",
+        "url": "https://github.com/noponies/sulphur-point"
       }
     ],
     "noriokanisawa/hachimarupop": [
@@ -13355,7 +14166,7 @@
     ],
     "notofonts/kannada": [
       {
-        "key": "notofonts/kannada_6387faa161",
+        "key": "notofonts/kannada_7eeac8993f",
         "url": "https://github.com/notofonts/kannada"
       },
       {
@@ -13638,6 +14449,10 @@
     "notofonts/nyiakeng-puachue-hmong": [
       {
         "key": "notofonts/nyiakeng-puachue-hmong_2c945bb9c3",
+        "url": "https://github.com/notofonts/nyiakeng-puachue-hmong"
+      },
+      {
+        "key": "notofonts/nyiakeng-puachue-hmong_6f39c5843f",
         "url": "https://github.com/notofonts/nyiakeng-puachue-hmong"
       }
     ],
@@ -13957,6 +14772,10 @@
     ],
     "notofonts/thai": [
       {
+        "key": "notofonts/thai_a79e109f3f",
+        "url": "https://github.com/notofonts/thai"
+      },
+      {
         "key": "notofonts/thai_c62000b1b2",
         "url": "https://github.com/notofonts/thai"
       },
@@ -14079,6 +14898,12 @@
         "url": "https://github.com/oliverlalan/Doto"
       }
     ],
+    "originaltype/kufam": [
+      {
+        "key": "originaltype/kufam_a2c0c9552f",
+        "url": "https://github.com/originaltype/kufam"
+      }
+    ],
     "ossobuffo/didact-gothic": [
       {
         "key": "ossobuffo/didact-gothic_adc3106364",
@@ -14105,6 +14930,12 @@
       {
         "key": "philatype/Sen_8a0a0d7648",
         "url": "https://github.com/philatype/Sen"
+      }
+    ],
+    "phoikoi/vt323": [
+      {
+        "key": "phoikoi/VT323_9bd4b3f698",
+        "url": "https://github.com/phoikoi/VT323"
       }
     ],
     "polarsys/b612": [
@@ -14349,10 +15180,40 @@
         "url": "https://github.com/silnrsi/font-daibannasil"
       }
     ],
+    "silnrsi/font-gentium": [
+      {
+        "key": "silnrsi/font-gentium_7ac5e5ca61",
+        "url": "https://github.com/silnrsi/font-gentium"
+      }
+    ],
     "silnrsi/font-harmattan": [
       {
         "key": "silnrsi/font-harmattan_b8d089bdb2",
         "url": "https://github.com/silnrsi/font-harmattan"
+      }
+    ],
+    "silnrsi/font-idiqlat": [
+      {
+        "key": "silnrsi/font-idiqlat_37a6c68fa0",
+        "url": "https://github.com/silnrsi/font-idiqlat"
+      }
+    ],
+    "silnrsi/font-kanchenjunga": [
+      {
+        "key": "silnrsi/font-kanchenjunga_19a3efac0c",
+        "url": "https://github.com/silnrsi/font-kanchenjunga"
+      }
+    ],
+    "silnrsi/font-kayphodu": [
+      {
+        "key": "silnrsi/font-kayphodu_4c49d8ac7a",
+        "url": "https://github.com/silnrsi/font-kayphodu"
+      }
+    ],
+    "silnrsi/font-kedebideri": [
+      {
+        "key": "silnrsi/font-kedebideri_4973b2e025",
+        "url": "https://github.com/silnrsi/font-kedebideri"
       }
     ],
     "silnrsi/font-lateef": [
@@ -14371,6 +15232,36 @@
       {
         "key": "silnrsi/font-mingzat_613ac08e03",
         "url": "https://github.com/silnrsi/font-mingzat"
+      }
+    ],
+    "silnrsi/font-namdhinggo": [
+      {
+        "key": "silnrsi/font-namdhinggo_2c6ac797b0",
+        "url": "https://github.com/silnrsi/font-namdhinggo"
+      }
+    ],
+    "silnrsi/font-narnoor": [
+      {
+        "key": "silnrsi/font-narnoor_53fa5d8f5c",
+        "url": "https://github.com/silnrsi/font-narnoor"
+      }
+    ],
+    "silnrsi/font-nuosu": [
+      {
+        "key": "silnrsi/font-nuosu_1e9b50a3cb",
+        "url": "https://github.com/silnrsi/font-nuosu"
+      }
+    ],
+    "silnrsi/font-padauk": [
+      {
+        "key": "silnrsi/font-padauk_278b8efb03",
+        "url": "https://github.com/silnrsi/font-padauk"
+      }
+    ],
+    "silnrsi/font-ramsina": [
+      {
+        "key": "silnrsi/font-ramsina_263c8d552b",
+        "url": "https://github.com/silnrsi/font-ramsina"
       }
     ],
     "silnrsi/font-ruwudu": [
@@ -14463,6 +15354,12 @@
         "url": "https://github.com/solmatas/Kadwa"
       }
     ],
+    "sora-xor/sora-font": [
+      {
+        "key": "sora-xor/sora-font_7f9a9c5d0c",
+        "url": "https://github.com/sora-xor/sora-font"
+      }
+    ],
     "sovichet/kantumruy-pro": [
       {
         "key": "sovichet/kantumruy-pro_dfca20df61",
@@ -14473,6 +15370,18 @@
       {
         "key": "sovichet/kdam-thmor-pro_02b97ee272",
         "url": "https://github.com/sovichet/kdam-thmor-pro"
+      }
+    ],
+    "stipub/stixfonts": [
+      {
+        "key": "stipub/stixfonts_c4afdf3fa5",
+        "url": "https://github.com/stipub/stixfonts"
+      }
+    ],
+    "strichpunkt-design/strichpunkt_sans": [
+      {
+        "key": "strichpunkt-design/Strichpunkt_Sans_9a24fe35f2",
+        "url": "https://github.com/strichpunkt-design/Strichpunkt_Sans"
       }
     ],
     "suman51284/alkatra": [
@@ -14565,6 +15474,12 @@
         "url": "https://github.com/theleagueof/knewave"
       }
     ],
+    "theleagueof/league-script-number-one": [
+      {
+        "key": "theleagueof/league-script-number-one_225add0b37",
+        "url": "https://github.com/theleagueof/league-script-number-one"
+      }
+    ],
     "theleagueof/league-spartan": [
       {
         "key": "theleagueof/league-spartan_27341b9bf9",
@@ -14577,16 +15492,40 @@
         "url": "https://github.com/theleagueof/linden-hill"
       }
     ],
+    "theleagueof/prociono": [
+      {
+        "key": "theleagueof/prociono_f9d9680de6",
+        "url": "https://github.com/theleagueof/prociono"
+      }
+    ],
     "theleagueof/raleway": [
       {
         "key": "theleagueof/raleway_7b288c6faa",
         "url": "https://github.com/theleagueof/raleway"
       }
     ],
+    "theleagueof/sniglet": [
+      {
+        "key": "theleagueof/sniglet_5c6b0860bd",
+        "url": "https://github.com/theleagueof/sniglet"
+      }
+    ],
+    "theleagueof/sorts-mill-goudy": [
+      {
+        "key": "theleagueof/sorts-mill-goudy_06072890c7",
+        "url": "https://github.com/theleagueof/sorts-mill-goudy"
+      }
+    ],
     "theseunbadejo/agu-display": [
       {
         "key": "theseunbadejo/Agu-Display_d520ebead8",
         "url": "https://github.com/theseunbadejo/Agu-Display"
+      }
+    ],
+    "thundernixon/encode-sans": [
+      {
+        "key": "thundernixon/Encode-Sans_6407de854a",
+        "url": "https://github.com/thundernixon/Encode-Sans"
       }
     ],
     "thundernixon/libre-caslon": [
@@ -14765,6 +15704,12 @@
       {
         "key": "wix/wixmadefor_85646f130c",
         "url": "https://github.com/wix/wixmadefor"
+      }
+    ],
+    "wix-incubator/wixmadefor": [
+      {
+        "key": "wix-incubator/wixmadefor_85646f130c",
+        "url": "https://github.com/wix-incubator/wixmadefor"
       }
     ],
     "xconsau/cause": [
@@ -14954,6 +15899,22 @@
         "has_rev_conflict": false
       }
     ],
+    "blackfoundrycom/inriafonts": [
+      {
+        "url": "https://github.com/BlackFoundryCom/InriaFonts",
+        "rev": "9b015af5d8ab574b6afeffd324443bfcbf77e300",
+        "config": "google/fonts/ofl/inriasans/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/BlackFoundryCom/InriaFonts",
+        "rev": "9b015af5d8ab574b6afeffd324443bfcbf77e300",
+        "config": "google/fonts/ofl/inriaserif/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "bornaiz/lalezar": [
       {
         "url": "https://github.com/BornaIz/Lalezar",
@@ -15058,6 +16019,15 @@
         "rev": "6b18f969591fb9d4767478137061cdd5b727a6b4",
         "config": "source/builder.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "dunwichtype/rhodiumlibre": [
+      {
+        "url": "https://github.com/DunwichType/RhodiumLibre",
+        "rev": "c6e9dc9167fb6f4bc6fc44f2262129aaf771c8a3",
+        "config": "google/fonts/ofl/rhodiumlibre/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -15275,8 +16245,8 @@
       {
         "url": "https://github.com/Etcetera-Type-Co/Grandstander",
         "rev": "33c288495d8ac7bc0b29a9f35801de1df7e6d010",
-        "config": "Sources/config.yaml",
-        "config_is_external": false,
+        "config": "google/fonts/ofl/grandstander/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -15295,6 +16265,15 @@
         "rev": "643f1026ad6d41b4527f42cd93c776414fdd6503",
         "config": "Sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "etcetera-type-co/trispace": [
+      {
+        "url": "https://github.com/Etcetera-Type-Co/Trispace",
+        "rev": "8f332ade4a0e4be1cab60eafcbac95a53a3d46f6",
+        "config": "google/fonts/ofl/trispace/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -15718,6 +16697,15 @@
         "config": "QLD-School-Fonts/sources/config.yaml",
         "config_is_external": false,
         "has_rev_conflict": true
+      }
+    ],
+    "michalsahar/suez": [
+      {
+        "url": "https://github.com/MichalSahar/Suez",
+        "rev": "04af4fcca02b34b461033520fc758132f7519c49",
+        "config": "google/fonts/ofl/suezone/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
       }
     ],
     "monicarizzolli/tomorrow": [
@@ -16173,6 +17161,15 @@
         "has_rev_conflict": false
       }
     ],
+    "omnibus-type/saira_stencil": [
+      {
+        "url": "https://github.com/Omnibus-Type/Saira_Stencil",
+        "rev": "426fb33c0deade38404978462b01c09829003a17",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
     "omnibus-type/sansita-swashed": [
       {
         "url": "https://github.com/Omnibus-Type/Sansita-Swashed",
@@ -16188,6 +17185,24 @@
         "rev": "5f38963152042ab3bcb1722c1bdcc950f8605345",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "omnibus-type/truculenta": [
+      {
+        "url": "https://github.com/Omnibus-Type/Truculenta",
+        "rev": "7ce6b921fc5418882e99f7e1f32688c49cb5acd5",
+        "config": "google/fonts/ofl/truculenta/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "omnibus-type/unna": [
+      {
+        "url": "https://github.com/Omnibus-Type/Unna",
+        "rev": "826be2abebda53d63bcd99b7ca30a7061b89bcfd",
+        "config": "google/fonts/ofl/unna/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -16421,10 +17436,37 @@
         "has_rev_conflict": false
       }
     ],
+    "sorkintype/metamorphous": [
+      {
+        "url": "https://github.com/SorkinType/Metamorphous",
+        "rev": "d2d29bb34284baff0817ecfce363b6d0e621e738",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "sorkintype/molle2": [
+      {
+        "url": "https://github.com/SorkinType/Molle2",
+        "rev": "3924159e0186e87a1a93d1ce80b5341164310f4f",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
     "sorkintype/pinyon": [
       {
         "url": "https://github.com/SorkinType/Pinyon",
         "rev": "91d502f9b3a98c210c54916c356caa534cdc4d70",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "sorkintype/plaster": [
+      {
+        "url": "https://github.com/SorkinType/Plaster",
+        "rev": "6879ba56c377a4df76cb15889e4e7a4985b50abd",
         "config": "sources/config.yaml",
         "config_is_external": false,
         "has_rev_conflict": false
@@ -16448,12 +17490,30 @@
         "has_rev_conflict": false
       }
     ],
+    "sorkintype/trykker": [
+      {
+        "url": "https://github.com/SorkinType/Trykker",
+        "rev": "5226cb075048ff1d3bd16fd0a0c42ece45629afb",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
     "sorkintype/vicwantschoolhandaustralia": [
       {
         "url": "https://github.com/SorkinType/VICWANTSchoolhandAustralia",
         "rev": "6529c525fceb9ec15e51dfa6d87244ef053c2d8a",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "sorkintype/vampiro": [
+      {
+        "url": "https://github.com/SorkinType/Vampiro",
+        "rev": "ec42cf12230a8663c3ccb7a0c2da590ba98d2cd9",
+        "config": "google/fonts/ofl/vampiroone/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -16498,6 +17558,15 @@
         "url": "https://github.com/Tarobish/Katibeh",
         "rev": "3fde990dc2f1648d63b7fe2841902d268529c1c2",
         "config": "google/fonts/ofl/katibeh/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "tarobish/mirza": [
+      {
+        "url": "https://github.com/Tarobish/Mirza",
+        "rev": "fa7b59c92953e7f437d079a8c118a7952c507f09",
+        "config": "google/fonts/ofl/mirza/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -16601,6 +17670,22 @@
         "url": "https://github.com/TiroTypeworks/Indigo",
         "rev": "98b5d3a01c534b7029af04a59d31e0d7d90be15a",
         "config": "google/fonts/ofl/tirotamil/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "tirotypeworks/slabo": [
+      {
+        "url": "https://github.com/TiroTypeworks/Slabo",
+        "rev": "21420697b49ec12ab3fd182a71ffe7c9d804f156",
+        "config": "google/fonts/ofl/slabo13px/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/TiroTypeworks/Slabo",
+        "rev": "21420697b49ec12ab3fd182a71ffe7c9d804f156",
+        "config": "google/fonts/ofl/slabo27px/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -16710,6 +17795,22 @@
         "has_rev_conflict": false
       }
     ],
+    "vanillaandcream/palanquin": [
+      {
+        "url": "https://github.com/VanillaandCream/Palanquin",
+        "rev": "f912925eccf9b020425a6f0ddc2ce32fc1640695",
+        "config": "google/fonts/ofl/palanquin/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/VanillaandCream/Palanquin",
+        "rev": "f912925eccf9b020425a6f0ddc2ce32fc1640695",
+        "config": "google/fonts/ofl/palanquindark/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "vectro-type-foundry/kablammo": [
       {
         "url": "https://github.com/Vectro-Type-Foundry/kablammo",
@@ -16761,6 +17862,24 @@
         "rev": "bd066259b5a87d24b23c4f0da03a96889b6d0503",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "adobe-fonts/source-sans": [
+      {
+        "url": "https://github.com/adobe-fonts/source-sans",
+        "rev": "272b22b02e097e8eff1372111f88b5ab6063499f",
+        "config": "google/fonts/ofl/sourcesans3/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "adobe-fonts/source-serif": [
+      {
+        "url": "https://github.com/adobe-fonts/source-serif",
+        "rev": "b3980ade53bb3d023a0006076d05349236b309b1",
+        "config": "google/fonts/ofl/sourceserif4/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -16843,6 +17962,24 @@
         "has_rev_conflict": false
       }
     ],
+    "alexeiva/rubikmonoone": [
+      {
+        "url": "https://github.com/alexeiva/rubikmonoone",
+        "rev": "7d08552d8921a0b864538b030cd0f59e7acdd4b1",
+        "config": "google/fonts/ofl/rubikmonoone/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "alexeiva/yesevaone": [
+      {
+        "url": "https://github.com/alexeiva/yesevaone",
+        "rev": "0d609f6155ed0fe1d822696135ffbd04b88fd017",
+        "config": "google/fonts/ofl/yesevaone/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "alif-type/qahiri": [
       {
         "url": "https://github.com/alif-type/qahiri",
@@ -16904,6 +18041,15 @@
       {
         "url": "https://github.com/alphArtype/Delicious-Handrawn",
         "rev": "454896185708d68530577800804c032756040370",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "aminabedi68/estedad": [
+      {
+        "url": "https://github.com/aminabedi68/Estedad",
+        "rev": "69e879f78a4a1c7c4594baf7da13ba1c9f65ffd3",
         "config": "sources/config.yaml",
         "config_is_external": false,
         "has_rev_conflict": false
@@ -17008,6 +18154,33 @@
         "has_rev_conflict": false
       }
     ],
+    "appajid/mandali": [
+      {
+        "url": "https://github.com/appajid/mandali",
+        "rev": "b5d09820cc850e98417250895a11bf0605ab2510",
+        "config": "google/fonts/ofl/mandali/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/nats": [
+      {
+        "url": "https://github.com/appajid/nats",
+        "rev": "7e1486a72988cb8ec1802e2dc2d7e4f59df35582",
+        "config": "google/fonts/ofl/nats/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/ntr": [
+      {
+        "url": "https://github.com/appajid/ntr",
+        "rev": "1268910cd8eb61a104c95e74a8578f2d98d11bd6",
+        "config": "google/fonts/ofl/ntr/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "appajid/peddana": [
       {
         "url": "https://github.com/appajid/peddana",
@@ -17026,11 +18199,74 @@
         "has_rev_conflict": false
       }
     ],
+    "appajid/ramabhadra": [
+      {
+        "url": "https://github.com/appajid/ramabhadra",
+        "rev": "09579428d71598b6d3148aebe5505df573cc1b30",
+        "config": "google/fonts/ofl/ramabhadra/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/ramaraja": [
+      {
+        "url": "https://github.com/appajid/ramaraja",
+        "rev": "fc98f3e28ac1857afaeb80e1befa842f083f40f1",
+        "config": "google/fonts/ofl/ramaraja/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "appajid/raviprakash": [
       {
         "url": "https://github.com/appajid/raviprakash",
         "rev": "0f5d8d7f5a7d263feef811baaa16c143313f27da",
         "config": "google/fonts/ofl/raviprakash/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/sreekrushnadevaraya": [
+      {
+        "url": "https://github.com/appajid/sreekrushnadevaraya",
+        "rev": "1d8aea8611ff50608f113c079890bd4c996d12be",
+        "config": "google/fonts/ofl/sreekrushnadevaraya/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/suranna": [
+      {
+        "url": "https://github.com/appajid/suranna",
+        "rev": "ce1c1f150ba50e59fd9d95c114c40545c4e8fe04",
+        "config": "google/fonts/ofl/suranna/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/suravaram": [
+      {
+        "url": "https://github.com/appajid/suravaram",
+        "rev": "c8d4e86f6a287199182d1ce6c97450307388dc23",
+        "config": "google/fonts/ofl/suravaram/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/tenaliramakrishna": [
+      {
+        "url": "https://github.com/appajid/tenaliramakrishna",
+        "rev": "444587c444ccb531e9b383b787cbdbcb424a476c",
+        "config": "google/fonts/ofl/tenaliramakrishna/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "appajid/timmana": [
+      {
+        "url": "https://github.com/appajid/timmana",
+        "rev": "6ed6823a73b42a541885d12a7df389d3112a9380",
+        "config": "google/fonts/ofl/timmana/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -17323,11 +18559,65 @@
         "has_rev_conflict": false
       }
     ],
+    "cadsondemak/mitr": [
+      {
+        "url": "https://github.com/cadsondemak/mitr",
+        "rev": "41950431d37f6410fd082760ca806eb490e4791f",
+        "config": "google/fonts/ofl/mitr/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cadsondemak/pattaya": [
+      {
+        "url": "https://github.com/cadsondemak/pattaya",
+        "rev": "fec6c7a0c8b84949dcb2a1c6dbe1ec4ba12ca0d9",
+        "config": "google/fonts/ofl/pattaya/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cadsondemak/pridi": [
+      {
+        "url": "https://github.com/cadsondemak/pridi",
+        "rev": "fe54fb681271c79ffd55ea9045145c9d1da8ade1",
+        "config": "google/fonts/ofl/pridi/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cadsondemak/prompt": [
+      {
+        "url": "https://github.com/cadsondemak/prompt",
+        "rev": "18f813a4dea16a7ecc6f944053d3ce2cd4d7e824",
+        "config": "google/fonts/ofl/prompt/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "cadsondemak/sriracha": [
       {
         "url": "https://github.com/cadsondemak/sriracha",
         "rev": "6c6cf92ed8b0b45caca566d999d2dadc7e35f2fd",
         "config": "google/fonts/ofl/sriracha/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cadsondemak/taviraj": [
+      {
+        "url": "https://github.com/cadsondemak/taviraj",
+        "rev": "8bd077c195dccf3bfc4699ec6ae9c6909bdd03a5",
+        "config": "google/fonts/ofl/taviraj/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cadsondemak/trirong": [
+      {
+        "url": "https://github.com/cadsondemak/trirong",
+        "rev": "0c1ce550d14a0a719ea49fcd6992cf5e1027dc6f",
+        "config": "google/fonts/ofl/trirong/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -17453,6 +18743,15 @@
         "rev": "dae1afaa7d96c89825c5e0193f07b4b16ccef4d7",
         "config": "RedactedScript/sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "clauseggers/inknut-antiqua": [
+      {
+        "url": "https://github.com/clauseggers/Inknut-Antiqua",
+        "rev": "9db4a5c235ef042adbc0da37fcf3dda3ffe59201",
+        "config": "google/fonts/ofl/inknutantiqua/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -17627,6 +18926,15 @@
         "has_rev_conflict": false
       }
     ],
+    "cyrealtype/marmelad-cyrillic": [
+      {
+        "url": "https://github.com/cyrealtype/Marmelad-Cyrillic",
+        "rev": "9ddac1c0cbdc888e1c6adae6f34e7db08ec6c187",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
     "cyrealtype/podkova": [
       {
         "url": "https://github.com/cyrealtype/Podkova",
@@ -17645,6 +18953,42 @@
         "has_rev_conflict": false
       }
     ],
+    "cyrealtype/rationale": [
+      {
+        "url": "https://github.com/cyrealtype/Rationale",
+        "rev": "b12941da538d15c94bc04f60926288a791d5a81c",
+        "config": "google/fonts/ofl/rationale/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cyrealtype/sirin-stencil": [
+      {
+        "url": "https://github.com/cyrealtype/Sirin-Stencil",
+        "rev": "803ade3c703e5f0feb4cb46526ecc71ca5e8fbd1",
+        "config": "google/fonts/ofl/sirinstencil/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cyrealtype/sumana": [
+      {
+        "url": "https://github.com/cyrealtype/Sumana",
+        "rev": "68c5ce43ae96268ac93ee3b79c720c7f479c5ee1",
+        "config": "google/fonts/ofl/sumana/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "cyrealtype/vidaloka": [
+      {
+        "url": "https://github.com/cyrealtype/Vidaloka",
+        "rev": "cc4205a19aca98f15ba551e3f8050630e54df28a",
+        "config": "source/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
     "cyrealtype/wire-one": [
       {
         "url": "https://github.com/cyrealtype/Wire-One",
@@ -17660,6 +19004,15 @@
         "rev": "c204c7ba647cd05f55a68be6973340fa47aa67d1",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "daltonmaag/scope-one": [
+      {
+        "url": "https://github.com/daltonmaag/scope-one",
+        "rev": "7a5c5df7367bdba124c4dcf8f59b15912811c3c4",
+        "config": "google/fonts/ofl/scopeone/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -18056,6 +19409,15 @@
         "has_rev_conflict": false
       }
     ],
+    "enathu/pavanam": [
+      {
+        "url": "https://github.com/enathu/pavanam",
+        "rev": "c4ba9335116a4ff2c124ebf918455748caedccac",
+        "config": "google/fonts/ofl/pavanam/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "erikdkennedy/figtree": [
       {
         "url": "https://github.com/erikdkennedy/figtree",
@@ -18088,6 +19450,15 @@
         "url": "https://github.com/erinmclaughlin/Khula",
         "rev": "1389c0184856d690ea489f86e84c546e4473722d",
         "config": "google/fonts/ofl/khula/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "erinmclaughlin/yantramanav": [
+      {
+        "url": "https://github.com/erinmclaughlin/Yantramanav",
+        "rev": "e40db8e44292f8e320222a37d76151b4b6bbfc7e",
+        "config": "google/fonts/ofl/yantramanav/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -18349,6 +19720,15 @@
         "has_rev_conflict": false
       }
     ],
+    "etunni/sintony": [
+      {
+        "url": "https://github.com/etunni/sintony",
+        "rev": "be9cf7be562d566504ef1c8e52d41ce48535ced8",
+        "config": "google/fonts/ofl/sintony/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "etunni/unica": [
       {
         "url": "https://github.com/etunni/unica",
@@ -18391,6 +19771,15 @@
         "rev": "317bc2344f39f20620fae2424afc645aff7ab0ef",
         "config": "sources/glyphs-decomposed/config.yml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "floriankarsten/space-grotesk": [
+      {
+        "url": "https://github.com/floriankarsten/space-grotesk",
+        "rev": "03507d024a01282884232081fc6011c09ff4e849",
+        "config": "google/fonts/ofl/spacegrotesk/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -18822,6 +20211,15 @@
         "has_rev_conflict": false
       }
     ],
+    "googlefonts/sacramentofont": [
+      {
+        "url": "https://github.com/googlefonts/SacramentoFont",
+        "rev": "86d34cf5a57af8dfa41c01e32a9529ed6aa499b6",
+        "config": "google/fonts/ofl/sacramento/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "googlefonts/shantifont": [
       {
         "url": "https://github.com/googlefonts/ShantiFont",
@@ -18837,6 +20235,15 @@
         "rev": "7361a224d1d77274af1ea11dd06448c54c16f598",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "googlefonts/tangerinefont": [
+      {
+        "url": "https://github.com/googlefonts/TangerineFont",
+        "rev": "9b57a9f9be5ecfe95e7f8c0e6b2b827eedb9ad67",
+        "config": "google/fonts/ofl/tangerine/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -19236,6 +20643,15 @@
         "rev": "7f897dbd87fbd14d2f8ec0306d5c1ed2317dfe47",
         "config": "google/fonts/apache/cousine/config.yaml",
         "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "googlefonts/coustardfont": [
+      {
+        "url": "https://github.com/googlefonts/coustardFont",
+        "rev": "84d4ef2fbb8e87ba843d49308b98eeb4a874be91",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
         "has_rev_conflict": false
       }
     ],
@@ -20025,13 +21441,6 @@
       },
       {
         "url": "https://github.com/googlefonts/noto-fonts",
-        "rev": "282a3a827151188c0ee4bce392e89e6ef4c16323",
-        "config": "google/fonts/ofl/notosansthaiui/config.yaml",
-        "config_is_external": true,
-        "has_rev_conflict": true
-      },
-      {
-        "url": "https://github.com/googlefonts/noto-fonts",
         "rev": "3b258db81a8ece82231fdf267e547383b0564200",
         "config": "google/fonts/ofl/notoserifmyanmar/config.yaml",
         "config_is_external": true,
@@ -20069,13 +21478,6 @@
         "url": "https://github.com/googlefonts/noto-fonts",
         "rev": "8d438811b7d6d70fb5cc1b89c47d1388cb1939d7",
         "config": "google/fonts/ofl/notosansbengaliui/config.yaml",
-        "config_is_external": true,
-        "has_rev_conflict": true
-      },
-      {
-        "url": "https://github.com/googlefonts/noto-fonts",
-        "rev": "9232f17974e5783a5dbd862f38225e0584e73add",
-        "config": "google/fonts/ofl/notoserifnyiakengpuachuehmong/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": true
       },
@@ -20430,6 +21832,15 @@
         "has_rev_conflict": false
       }
     ],
+    "googlefonts/scada": [
+      {
+        "url": "https://github.com/googlefonts/scada",
+        "rev": "df06a155d95984d259c8492aeaaa520188a3d46b",
+        "config": "google/fonts/ofl/scada/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "googlefonts/science-gothic": [
       {
         "url": "https://github.com/googlefonts/science-gothic",
@@ -20580,6 +21991,15 @@
         "rev": "618d9e00fb65b051f65f00f8e09f57e07c6af251",
         "config": "sources/config.yml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "googlefonts/tajawal": [
+      {
+        "url": "https://github.com/googlefonts/tajawal",
+        "rev": "2085b8942f234e7afb83dc03c77713d0d5471cc9",
+        "config": "google/fonts/ofl/tajawal/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -20858,6 +22278,33 @@
         "has_rev_conflict": false
       }
     ],
+    "huertatipografica/sahitya": [
+      {
+        "url": "https://github.com/huertatipografica/sahitya",
+        "rev": "c4b5b34d0fbad63654b1d9a6bff72e566bf9a2c6",
+        "config": "google/fonts/ofl/sahitya/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "huertatipografica/sarala": [
+      {
+        "url": "https://github.com/huertatipografica/sarala",
+        "rev": "7779e0c9eb121b25d9fcb7c20d5b3541b3f4fc15",
+        "config": "google/fonts/ofl/sarala/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "huertatipografica/sura": [
+      {
+        "url": "https://github.com/huertatipografica/sura",
+        "rev": "d20d15fe0de4a84a9d3a944f87e9c35d4c9da612",
+        "config": "google/fonts/ofl/sura/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "hyper-type/hahmlet": [
       {
         "url": "https://github.com/hyper-type/hahmlet",
@@ -20991,6 +22438,24 @@
         "has_rev_conflict": false
       }
     ],
+    "itfoundry/halant": [
+      {
+        "url": "https://github.com/itfoundry/halant",
+        "rev": "5991cb7b8f338a3676e349dd6f3bb3358467cb69",
+        "config": "google/fonts/ofl/halant/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "itfoundry/hind": [
+      {
+        "url": "https://github.com/itfoundry/hind",
+        "rev": "6caef5262dc5bee3e033207082a073a6a1d172d6",
+        "config": "google/fonts/ofl/hind/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "itfoundry/hind-colombo": [
       {
         "url": "https://github.com/itfoundry/hind-colombo",
@@ -21072,6 +22537,24 @@
         "has_rev_conflict": false
       }
     ],
+    "itfoundry/karma": [
+      {
+        "url": "https://github.com/itfoundry/karma",
+        "rev": "12228946ce59ce2008e0a95a6b222632e6481121",
+        "config": "google/fonts/ofl/karma/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "itfoundry/khand": [
+      {
+        "url": "https://github.com/itfoundry/khand",
+        "rev": "1f1d6778d3a940999b543313b2371fa76b16a978",
+        "config": "google/fonts/ofl/khand/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "itfoundry/kumar": [
       {
         "url": "https://github.com/itfoundry/kumar",
@@ -21084,6 +22567,42 @@
         "url": "https://github.com/itfoundry/kumar",
         "rev": "3192a79a79202eb715d83fd044e9234a6d0dde66",
         "config": "google/fonts/ofl/kumaroneoutline/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "itfoundry/laila": [
+      {
+        "url": "https://github.com/itfoundry/laila",
+        "rev": "a8b5b4ee6cf52508cc0d4f606d4ec0ae4994953a",
+        "config": "google/fonts/ofl/laila/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "itfoundry/rajdhani": [
+      {
+        "url": "https://github.com/itfoundry/rajdhani",
+        "rev": "86cae0e9a63279efa076915a470049dd76c044f0",
+        "config": "google/fonts/ofl/rajdhani/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "itfoundry/rozhaone": [
+      {
+        "url": "https://github.com/itfoundry/rozhaone",
+        "rev": "8225a64e986c03b78fb1bb08d55705c52c9eeab8",
+        "config": "google/fonts/ofl/rozhaone/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "itfoundry/sarpanch": [
+      {
+        "url": "https://github.com/itfoundry/sarpanch",
+        "rev": "265ec8e95cad31046b4e01a553ebfbfcbeee1188",
+        "config": "google/fonts/ofl/sarpanch/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -21111,12 +22630,30 @@
         "has_rev_conflict": true
       }
     ],
+    "jmsole/noticiatext": [
+      {
+        "url": "https://github.com/jmsole/noticiatext",
+        "rev": "bcc80c5a33855419251ac3b9d1fa08d42d52f3ef",
+        "config": "google/fonts/ofl/noticiatext/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "jobosonchisa/ojuju": [
       {
         "url": "https://github.com/jobosonchisa/ojuju",
         "rev": "61052b2801035d3011c87708bd3367eeabd0bb82",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "jonpinhorn/shrikhand": [
+      {
+        "url": "https://github.com/jonpinhorn/shrikhand",
+        "rev": "c11c9b0720fba977fad7cb4f339ebacdba1d1394",
+        "config": "google/fonts/ofl/shrikhand/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -21246,6 +22783,15 @@
         "rev": "9b03239708d7d37e86cb2594cf9360121be0740e",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "lettersoup/ropa-sans": [
+      {
+        "url": "https://github.com/lettersoup/Ropa-Sans",
+        "rev": "33acc9f9e7d126dd46b9e1efa03f98ea2e2046de",
+        "config": "google/fonts/ofl/ropasans/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -21430,6 +22976,24 @@
         "has_rev_conflict": false
       }
     ],
+    "m4rc1e/ruda-new": [
+      {
+        "url": "https://github.com/m4rc1e/Ruda-new",
+        "rev": "a63532e04ffb0f46b635cf9e000966155958e19d",
+        "config": "google/fonts/ofl/ruda/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "m4rc1e/sharetech": [
+      {
+        "url": "https://github.com/m4rc1e/ShareTech",
+        "rev": "2c501093f8f4fc6d985435133c8ac0fa92137431",
+        "config": "google/fonts/ofl/sharetech/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "m4rc1e/trocchi": [
       {
         "url": "https://github.com/m4rc1e/Trocchi",
@@ -21463,6 +23027,15 @@
         "rev": "a694ee80d067e6f8cad700930e78ce395d4949e6",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "m4rc1e/zhimangxing": [
+      {
+        "url": "https://github.com/m4rc1e/zhimangxing",
+        "rev": "15cb1b0d4c78da973e8459a8e2f23a9aef00d8a6",
+        "config": "google/fonts/ofl/zhimangxing/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -21577,6 +23150,15 @@
         "has_rev_conflict": false
       }
     ],
+    "maxthunberg/miranda-sans": [
+      {
+        "url": "https://github.com/maxthunberg/miranda-sans",
+        "rev": "7cafa37b9bf6e53892a5738d8470668d1fcf52f6",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
     "meirsadan/david-libre": [
       {
         "url": "https://github.com/meirsadan/david-libre",
@@ -21615,7 +23197,7 @@
       {
         "url": "https://github.com/mishamyrt/Lilex",
         "rev": "50260ef98a52ee7e74617c13894505497fa8b2ea",
-        "config": "sources/Lilex/config.yaml",
+        "config": "sources/config.yaml",
         "config_is_external": false,
         "has_rev_conflict": false
       }
@@ -21681,6 +23263,15 @@
         "has_rev_conflict": false
       }
     ],
+    "motaitalic/vesper-libre": [
+      {
+        "url": "https://github.com/motaitalic/vesper-libre",
+        "rev": "b765c5a68c1786a177b46e3b3ecd766157ffe349",
+        "config": "google/fonts/ofl/vesperlibre/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "mozilla/mozilla-headline-type": [
       {
         "url": "https://github.com/mozilla/mozilla-headline-type",
@@ -21696,6 +23287,22 @@
         "rev": "5ff275ec4906665df3126ad88c70ffd19d770335",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "mozilla/zilla-slab": [
+      {
+        "url": "https://github.com/mozilla/zilla-slab",
+        "rev": "6dcec520f9b23ad7f380b7ce3e8072be95fe0004",
+        "config": "google/fonts/ofl/zillaslab/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/mozilla/zilla-slab",
+        "rev": "6dcec520f9b23ad7f380b7ce3e8072be95fe0004",
+        "config": "google/fonts/ofl/zillaslabhighlight/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -21794,6 +23401,15 @@
         "url": "https://github.com/noponies/Turret-Road",
         "rev": "c77a268e22034f5427de1bbed2d13fdf7b91b1d8",
         "config": "google/fonts/ofl/turretroad/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "noponies/sulphur-point": [
+      {
+        "url": "https://github.com/noponies/sulphur-point",
+        "rev": "2c1a600846ca8b7890a89076aeeb2d43cdaeac23",
+        "config": "google/fonts/ofl/sulphurpoint/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -22385,7 +24001,7 @@
     "notofonts/kannada": [
       {
         "url": "https://github.com/notofonts/kannada",
-        "rev": "6387faa16123c9becca4f0f3ca095189de5c61da",
+        "rev": "7eeac8993f890e3d8568ba909ae67f554113ea92",
         "config": "sources/config-sans-kannada.yaml",
         "config_is_external": false,
         "has_rev_conflict": true
@@ -22855,6 +24471,13 @@
         "url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
         "rev": "2c945bb9c314d607d45c3120fcb35701349d9c87",
         "config": "google/fonts/ofl/notoserifnphmong/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": true
+      },
+      {
+        "url": "https://github.com/notofonts/nyiakeng-puachue-hmong",
+        "rev": "6f39c5843fe2f459973c3cd57dc82ca09cccbab0",
+        "config": "google/fonts/ofl/notoserifnyiakengpuachuehmong/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -23352,6 +24975,13 @@
     "notofonts/thai": [
       {
         "url": "https://github.com/notofonts/thai",
+        "rev": "a79e109f3fee8b3e5f952c8dadcae4b7b341f562",
+        "config": "google/fonts/ofl/notosansthaiui/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": true
+      },
+      {
+        "url": "https://github.com/notofonts/thai",
         "rev": "c62000b1b2328aa5e08470c1924ac9987fdb83b9",
         "config": "sources/config-sans-thai-looped.yaml",
         "config_is_external": false,
@@ -23571,6 +25201,15 @@
         "has_rev_conflict": false
       }
     ],
+    "originaltype/kufam": [
+      {
+        "url": "https://github.com/originaltype/kufam",
+        "rev": "a2c0c9552f98295167bc33bdb9c6256dd6abdc8a",
+        "config": "google/fonts/ofl/kufam/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "ossobuffo/didact-gothic": [
       {
         "url": "https://github.com/ossobuffo/didact-gothic",
@@ -23673,6 +25312,15 @@
         "url": "https://github.com/philatype/Sen",
         "rev": "8a0a0d7648fb466ebbab3a00b0e07046b0814727",
         "config": "google/fonts/ofl/sen/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "phoikoi/vt323": [
+      {
+        "url": "https://github.com/phoikoi/VT323",
+        "rev": "9bd4b3f69887fd960d51d07602db60a28a789145",
+        "config": "google/fonts/ofl/vt323/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -24154,11 +25802,63 @@
         "has_rev_conflict": false
       }
     ],
+    "silnrsi/font-gentium": [
+      {
+        "url": "https://github.com/silnrsi/font-gentium",
+        "rev": "7ac5e5ca61b776c5b8df4522c04b9707573ffd42",
+        "config": "google/fonts/ofl/gentiumbookplus/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/silnrsi/font-gentium",
+        "rev": "7ac5e5ca61b776c5b8df4522c04b9707573ffd42",
+        "config": "google/fonts/ofl/gentiumplus/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "silnrsi/font-harmattan": [
       {
         "url": "https://github.com/silnrsi/font-harmattan",
         "rev": "b8d089bdb2cf97351cff63beaa9d68a6273dcc42",
         "config": "google/fonts/ofl/harmattan/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-idiqlat": [
+      {
+        "url": "https://github.com/silnrsi/font-idiqlat",
+        "rev": "37a6c68fa053f4b4b4c9f6d67c569f66621b6daa",
+        "config": "google/fonts/ofl/idiqlat/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-kanchenjunga": [
+      {
+        "url": "https://github.com/silnrsi/font-kanchenjunga",
+        "rev": "19a3efac0c2ca42a1b28a53c74ca8f3eb6c12ca7",
+        "config": "google/fonts/ofl/kanchenjunga/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-kayphodu": [
+      {
+        "url": "https://github.com/silnrsi/font-kayphodu",
+        "rev": "4c49d8ac7ae00cf0ee10db3c3c35dc49ca9efd4d",
+        "config": "google/fonts/ofl/kayphodu/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-kedebideri": [
+      {
+        "url": "https://github.com/silnrsi/font-kedebideri",
+        "rev": "4973b2e0258ef40acc0da3c2c1d155630faecc2c",
+        "config": "google/fonts/ofl/kedebideri/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -24186,6 +25886,51 @@
         "url": "https://github.com/silnrsi/font-mingzat",
         "rev": "613ac08e03fe5cecd4a3cdb636775f4ce33225dd",
         "config": "google/fonts/ofl/mingzat/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-namdhinggo": [
+      {
+        "url": "https://github.com/silnrsi/font-namdhinggo",
+        "rev": "2c6ac797b061941d1f46c980910982b1b1f240ab",
+        "config": "google/fonts/ofl/namdhinggo/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-narnoor": [
+      {
+        "url": "https://github.com/silnrsi/font-narnoor",
+        "rev": "53fa5d8f5c3afecd9c2247ef7c8b26a02208f267",
+        "config": "google/fonts/ofl/narnoor/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-nuosu": [
+      {
+        "url": "https://github.com/silnrsi/font-nuosu",
+        "rev": "1e9b50a3cb69f6ae01c8ca5da1af2d03a85c517f",
+        "config": "google/fonts/ofl/nuosusil/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-padauk": [
+      {
+        "url": "https://github.com/silnrsi/font-padauk",
+        "rev": "278b8efb03c0ca0d7f29fb3edc1f52489ebb384f",
+        "config": "google/fonts/ofl/padauk/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "silnrsi/font-ramsina": [
+      {
+        "url": "https://github.com/silnrsi/font-ramsina",
+        "rev": "263c8d552bff566fad9e8c9b266ae32e6ab341b4",
+        "config": "google/fonts/ofl/ramsina/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -24325,6 +26070,15 @@
         "has_rev_conflict": false
       }
     ],
+    "sora-xor/sora-font": [
+      {
+        "url": "https://github.com/sora-xor/sora-font",
+        "rev": "7f9a9c5d0ccd1c099cfac420aa27133df1c5fdc4",
+        "config": "google/fonts/ofl/sora/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "sovichet/kantumruy-pro": [
       {
         "url": "https://github.com/sovichet/kantumruy-pro",
@@ -24338,6 +26092,31 @@
       {
         "url": "https://github.com/sovichet/kdam-thmor-pro",
         "rev": "02b97ee272f9a32d06135f70e220d2c4d6dd218f",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "stipub/stixfonts": [
+      {
+        "url": "https://github.com/stipub/stixfonts",
+        "rev": "c4afdf3fa5390159ef24aca1db5e957487c23897",
+        "config": "google/fonts/ofl/stixtwomath/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/stipub/stixfonts",
+        "rev": "c4afdf3fa5390159ef24aca1db5e957487c23897",
+        "config": "google/fonts/ofl/stixtwotext/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "strichpunkt-design/strichpunkt_sans": [
+      {
+        "url": "https://github.com/strichpunkt-design/Strichpunkt_Sans",
+        "rev": "9a24fe35f229db9d86724550255429a86a9bb308",
         "config": "sources/config.yaml",
         "config_is_external": false,
         "has_rev_conflict": false
@@ -24478,6 +26257,15 @@
         "has_rev_conflict": false
       }
     ],
+    "theleagueof/league-script-number-one": [
+      {
+        "url": "https://github.com/theleagueof/league-script-number-one",
+        "rev": "225add0b37cf8268759ba4572e02630d9fb54ecf",
+        "config": "google/fonts/ofl/leaguescript/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "theleagueof/league-spartan": [
       {
         "url": "https://github.com/theleagueof/league-spartan",
@@ -24496,11 +26284,45 @@
         "has_rev_conflict": false
       }
     ],
+    "theleagueof/prociono": [
+      {
+        "url": "https://github.com/theleagueof/prociono",
+        "rev": "f9d9680de6d6f0c13939f23c9dd14cd7853cf844",
+        "config": "google/fonts/ofl/prociono/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
     "theleagueof/raleway": [
       {
         "url": "https://github.com/theleagueof/raleway",
         "rev": "7b288c6faaed52cd237ec3a2e82c637d2a941fa7",
         "config": "google/fonts/ofl/raleway/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "theleagueof/sniglet": [
+      {
+        "url": "https://github.com/theleagueof/sniglet",
+        "rev": "5c6b0860bdd0d8c4f16222e4de3918c384db17c4",
+        "config": "google/fonts/ofl/sniglet/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "theleagueof/sorts-mill-goudy": [
+      {
+        "url": "https://github.com/theleagueof/sorts-mill-goudy",
+        "rev": "06072890c7b05f274215a24f17449655ccb2c8af",
+        "config": "google/fonts/ofl/oflsortsmillgoudytt/config.yaml",
+        "config_is_external": true,
+        "has_rev_conflict": false
+      },
+      {
+        "url": "https://github.com/theleagueof/sorts-mill-goudy",
+        "rev": "06072890c7b05f274215a24f17449655ccb2c8af",
+        "config": "google/fonts/ofl/sortsmillgoudy/config.yaml",
         "config_is_external": true,
         "has_rev_conflict": false
       }
@@ -24511,6 +26333,15 @@
         "rev": "d520ebead8de4091a82040fe3d8f94d84c38c66f",
         "config": "sources/config.yaml",
         "config_is_external": false,
+        "has_rev_conflict": false
+      }
+    ],
+    "thundernixon/encode-sans": [
+      {
+        "url": "https://github.com/thundernixon/Encode-Sans",
+        "rev": "6407de854a4dc3bfbe2160a11c5b57f5a1baf3bc",
+        "config": "google/fonts/ofl/encodesans/config.yaml",
+        "config_is_external": true,
         "has_rev_conflict": false
       }
     ],
@@ -24777,6 +26608,15 @@
         "rev": "766d60703081ca3581e17764b36e8487c7ba6225",
         "config": "google/fonts/ofl/fragmentmonosc/config.yaml",
         "config_is_external": true,
+        "has_rev_conflict": false
+      }
+    ],
+    "wix-incubator/wixmadefor": [
+      {
+        "url": "https://github.com/wix-incubator/wixmadefor",
+        "rev": "85646f130c8d3edffe66c4d8755c3f9f7abfa877",
+        "config": "sources/config.yaml",
+        "config_is_external": false,
         "has_rev_conflict": false
       }
     ],

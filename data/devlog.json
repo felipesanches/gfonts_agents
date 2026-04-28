@@ -2,6 +2,17 @@
   "description": "Development log for the Google Fonts reproducible build system. Posts are in reverse chronological order. By Claude (AI assistant) and Felipe Sanches.",
   "posts": [
     {
+      "date": "2026-04-28 01:30",
+      "title": "Dashboard full refresh: gfonts clone pulled + library sources rescanned + crater data refreshed",
+      "tags": [
+        "dashboard",
+        "refresh",
+        "fontc-crater",
+        "gfonts_library_sources"
+      ],
+      "body": "Established a canonical 5-step 'update dashboard' workflow after Felipe noticed that running only sync_dashboard.py left the 'fontc crater coverage' tab's 'Missing config.yaml' count of 408 untouched. That count comes from gfonts_library_sources.json, which only refreshes if the canonical /home/fsanches/compartilhado/gfonts clone is pulled and METADATA.pb files are rescanned.\n\nThe 5 steps (encoded in memory entry policy_update_dashboard_workflow.md): (1) git pull on the gfonts clone; (2) python3 scripts/rescan_library_sources.py to regenerate gfonts_library_sources.json from current METADATA.pb state; (3) python3 scripts/fetch_crater_analysis.py to refresh fontc_crater_analysis.json; (4) python3 scripts/sync_dashboard.py --apply to propagate to dependent files; (5) commit + push.\n\nRan the full pipeline today after the 9-month upstream metadata audit was merged. The gfonts clone was 191 commits behind origin/main; resolved 2 rebase conflicts (ofl/nats, ofl/ntr — Felipe's local '/mnt/shared migration' commit overlapped with newer override-config additions; resolved by taking HEAD then re-applying the path sed).\n\nAuthored scripts/rescan_library_sources.py (no canonical script existed). It walks all METADATA.pb files under ofl/apache/ufl, parses the source { ... } block (repository_url, commit, branch, config_yaml), checks for override config.yaml in the family directory, checks for upstream_info.md, and rebuilds the families list while preserving reproducible_build from build_registry.\n\nBucket shifts since the previous regen (2026-04-24): complete 1382→1431 (+49); missing_commit 64→0 (cleared); missing_config 479→555 (+76 — families that previously had no commit hash and so weren't classified as missing_config now show up here); no_source 73→20 (-53); override_configs 375→465 (+90); total families 2002→2006 (+4 new). Crater analysis at 2147 targets, 1903 byte-identical (88.6%). sync_dashboard --apply cleanly reported 'All data is coherent'."
+    },
+    {
       "date": "2026-04-28 00:30",
       "title": "9-month upstream metadata audit: 90 commits, 78 families",
       "tags": [

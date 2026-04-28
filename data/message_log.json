@@ -1927,5 +1927,25 @@
     "timestamp": "2026-04-28T00:30:00Z",
     "role": "assistant",
     "message": "Ran sync_dashboard.py: 'All data is coherent' (no propagation work needed — the audit affected upstream_info.md files and a few METADATA.pb source-block fields, neither of which are tracked by the dashboard's build_registry / normalization data structures). Then prepended a new devlog post '9-month upstream metadata audit: 90 commits, 78 families' (tags: audit, metadata-sync, upstream_info, source-block) and appended this session's user+assistant exchanges to message_log.json. Will commit + push next."
+  },
+  {
+    "timestamp": "2026-04-28T01:00:00Z",
+    "role": "user",
+    "message": "on the \"fontc crater coverage\" tab, we have 408 \"Missing config.yaml\". Is that number updated as part of the dashboard update?"
+  },
+  {
+    "timestamp": "2026-04-28T01:05:00Z",
+    "role": "assistant",
+    "message": "Investigated: no, sync_dashboard.py only checks coherence between existing files; it doesn't recount from upstream sources. The 408 Missing config.yaml number on the 'fontc crater coverage' tab is computed from gfonts_library_sources.json (which itself is regenerated from a rescan of all 2002 METADATA.pb files in /home/fsanches/compartilhado/gfonts) and from fontc_crater_analysis.json (refreshed by fetch_crater_analysis.py). The /home/fsanches/compartilhado/gfonts clone was stale at b5662a544 (191 commits behind origin/main, missing the audit). Offered to do the full refresh."
+  },
+  {
+    "timestamp": "2026-04-28T01:10:00Z",
+    "role": "user",
+    "message": "yes, please ensure that whenever I say \"update dashboard\" all the data is updated so that everything is in sync. This includes all fields of the \"fontc crater coverage\" tab."
+  },
+  {
+    "timestamp": "2026-04-28T01:30:00Z",
+    "role": "assistant",
+    "message": "Established a 5-step 'update dashboard' workflow as a memory entry (policy_update_dashboard_workflow.md): (1) git pull on the canonical /home/fsanches/compartilhado/gfonts clone, (2) python3 scripts/rescan_library_sources.py to regenerate gfonts_library_sources.json, (3) python3 scripts/fetch_crater_analysis.py to refresh fontc_crater_analysis.json, (4) python3 scripts/sync_dashboard.py --apply to propagate to dependent files, (5) commit + push. Ran the full pipeline today. Resolved 2 conflicts during the gfonts pull --rebase (ofl/nats and ofl/ntr — Felipe's local '/mnt/shared migration' commit overlapped with newer override-config additions; resolved by taking HEAD then re-applying the sed). Wrote scripts/rescan_library_sources.py (didn't find a canonical script for the rescan, so authored one that walks ofl/apache/ufl METADATA.pb files, parses source blocks, and updates the entries while preserving reproducible_build from build_registry). Bucket shifts: complete +49, missing_commit -64 (cleared), missing_config +76 (commit-only families that previously couldn't be classified now show up here), no_source -53, override_configs +90, total +4 families. Crater analysis at 2147 targets, 1903 identical (88.6%). sync_dashboard --apply ran cleanly: 'All data is coherent'."
   }
 ]

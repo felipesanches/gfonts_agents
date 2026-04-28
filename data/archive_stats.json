@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-03-27T15:00:33.573855+00:00",
-  "total_unique_repos": 1239,
-  "archived": 1296,
-  "not_archived": 237,
+  "timestamp": "2026-04-28T03:27:02.593076+00:00",
+  "total_unique_repos": 1291,
+  "archived": 1300,
+  "not_archived": 246,
   "archive_size_gb": "64",
   "archive_path": "/home/fsanches/compartilhado/upstream_repos/repo_archive",
   "not_archived_list": [
@@ -40,6 +40,7 @@
     "https://github.com/alif-type/qahir",
     "https://github.com/aliftype/amir",
     "https://github.com/aliftype/reem-kuf",
+    "https://github.com/aminabedi68/Estedad",
     "https://github.com/antonxheight/Lancelo",
     "https://github.com/appajid/dhurja",
     "https://github.com/appajid/mandal",
@@ -54,7 +55,6 @@
     "https://github.com/cadsondemak/prid",
     "https://github.com/cadsondemak/promp",
     "https://github.com/cadsondemak/triron",
-    "https://github.com/calcom/fon",
-    "https://github.com/chiron-fonts/chiron-go-round-tc"
+    "https://github.com/calcom/fon"
   ]
 }

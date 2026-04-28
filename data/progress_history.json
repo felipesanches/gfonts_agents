@@ -178,6 +178,28 @@
         "needs_correction": 4
       },
       "source": "sync_dashboard"
+    },
+    {
+      "timestamp": "2026-04-28T03:26:50.056911+00:00",
+      "summary": {
+        "total_families": 2006,
+        "total": 2006,
+        "has_source_block": 1989,
+        "with_source_block": 1989,
+        "has_repo_url": 1986,
+        "has_commit": 1986,
+        "with_investigation_report": 2003,
+        "investigation_reports": 2003,
+        "missing_config": 476,
+        "override_configs": 465,
+        "complete": 1506,
+        "with_config_yaml": 970,
+        "no_source": 0,
+        "no_upstream_repo": 0,
+        "missing_commit": 0,
+        "needs_correction": 4
+      },
+      "source": "sync_dashboard"
     }
   ]
 }
