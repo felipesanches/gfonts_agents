@@ -75,6 +75,13 @@ body {
     margin-bottom: 0.25rem;
 }
 
+/* "Older / outdated pages" — legacy nav-sections are hidden by default. */
+.legacy-nav { display: none; }
+body.show-legacy-nav .legacy-nav { display: block; }
+.legacy-nav-toggle { display: block; }
+body.show-legacy-nav .legacy-nav-toggle { display: none; }
+.legacy-nav-toggle a:hover { text-decoration: underline; }
+
 .nav-section summary {
     cursor: pointer;
     padding: 0.5rem 1rem;

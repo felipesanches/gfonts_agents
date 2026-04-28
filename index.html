@@ -22,32 +22,38 @@
             Menu
         </button>
         <div class="sidebar-content">
-            <details class="nav-section" open>
+            <details class="nav-section primary-nav" open>
+                <summary class="nav-section-title">Crater Coverage</summary>
+                <ul class="nav-items">
+                    <li class="nav-item active"><a href="#home" data-tab="home">Home</a></li>
+                    <li class="nav-item"><a href="#crater-coverage" data-tab="crater-coverage">Detail</a></li>
+                </ul>
+            </details>
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title">Reproducible Builds</summary>
                 <ul class="nav-items">
-                    <li class="nav-item active"><a href="#build-system" data-tab="build-system">Build System</a></li>
+                    <li class="nav-item"><a href="#build-system" data-tab="build-system">Build System</a></li>
                     <li class="nav-item"><a href="#normalization" data-tab="normalization">Font Normalization</a></li>
                     <li class="nav-item"><a href="#build-failures" data-tab="build-failures">Build Failures</a></li>
                     <li class="nav-item"><a href="#build-deps" data-tab="build-deps">Build Dependencies</a></li>
                     <li class="nav-item"><a href="#build-timings" data-tab="build-timings">Build Timings</a></li>
                 </ul>
             </details>
-            <details class="nav-section" open>
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title">Compiler Analysis</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#crater-analysis" data-tab="crater-analysis">fontc Crater</a></li>
-                    <li class="nav-item"><a href="#crater-coverage" data-tab="crater-coverage">Crater Coverage</a></li>
                     <li class="nav-item"><a href="#crater-targets" data-tab="crater-targets">Target Failures</a></li>
                 </ul>
             </details>
-            <details class="nav-section" open>
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title">Library Sources</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#sources" data-tab="sources">Source Tracking</a></li>
                     <li class="nav-item"><a href="#investigations" data-tab="investigations">Investigations</a></li>
                 </ul>
             </details>
-            <details class="nav-section">
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title">Designers</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#designers" data-tab="designers">Designer Profiles</a></li>
@@ -55,7 +61,7 @@
                     <li class="nav-item"><a href="#bio-audit" data-tab="bio-audit">Bio Audit</a></li>
                 </ul>
             </details>
-            <details class="nav-section">
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title">Fontspector</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#fontspector-triage" data-tab="fontspector-triage">Issue Triage</a></li>
@@ -63,7 +69,7 @@
                     <li class="nav-item"><a href="#lhf-report" data-tab="lhf-report">LHF Triage Report</a></li>
                 </ul>
             </details>
-            <details class="nav-section">
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title">Operations</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#devlog" data-tab="devlog">Dev Log</a></li>
@@ -75,7 +81,7 @@
                     <li class="nav-item"><a href="#about" data-tab="about">About</a></li>
                 </ul>
             </details>
-            <details class="nav-section">
+            <details class="nav-section legacy-nav">
                 <summary class="nav-section-title" style="color:#888;">Earlier Steps</summary>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#audit" data-tab="audit" style="color:#888;">Repository Audit</a></li>
@@ -86,10 +92,48 @@
                     <li class="nav-item"><a href="#plans" data-tab="plans" style="color:#888;">Plans</a></li>
                 </ul>
             </details>
+            <p class="legacy-nav-toggle" style="margin: 1.5em 1rem 0.5rem; font-size: 0.85em;">
+                <a href="#" id="toggle-legacy-nav" style="color:#888; text-decoration: none;">Older / outdated pages →</a>
+            </p>
         </div>
     </nav>
 
     <main id="app">
+
+        <section id="tab-home" class="tab-content active">
+            <div class="panel">
+                <h2>Crater Coverage</h2>
+                <p class="panel-description">
+                    The single goal-aligned metric: how much of the Google Fonts library is currently being built and verified by
+                    <a href="https://github.com/googlefonts/fontc_crater" target="_blank">fontc_crater</a>.
+                    A family is "covered" if its upstream <code>repository_url</code> appears in crater's
+                    most recent run. The four cards below are the sole authoritative numbers; everything else
+                    on this dashboard is either a drill-down of these or has been moved to "Older / outdated pages →".
+                </p>
+
+                <div class="builds-summary" style="margin-bottom:2em;">
+                    <div class="summary-card"><div class="card-value" id="home-total">—</div><div class="card-label">Total Families</div></div>
+                    <div class="summary-card" style="border-left:4px solid #4caf50;"><div class="card-value" id="home-covered">—</div><div class="card-label">In Crater</div></div>
+                    <div class="summary-card" style="border-left:4px solid #f44336;"><div class="card-value" id="home-missing">—</div><div class="card-label">Not in Crater</div></div>
+                    <div class="summary-card" style="border-left:4px solid #2196f3;"><div class="card-value" id="home-pct">—</div><div class="card-label">Coverage</div></div>
+                </div>
+
+                <h3>What's blocking the "Not in Crater" families?</h3>
+                <p style="color:#666;font-size:0.9em;margin-bottom:1em;">
+                    Each row is the next concrete action needed to bring that subset of families into crater.
+                    Numbers come from a single classifier (<code>classifyMissingFamily</code>) shared with the
+                    <a href="#crater-coverage" data-tab="crater-coverage">Crater Coverage Detail</a> page.
+                </p>
+                <div id="home-breakdown" style="margin-bottom:2em;"></div>
+
+                <p style="color:#888;font-size:0.85em;">
+                    Last refreshed:
+                    <span id="home-last-updated">—</span>
+                    (gfonts clone at <span id="home-gfonts-commit">—</span>,
+                    crater results from <span id="home-crater-run">—</span>).
+                </p>
+            </div>
+        </section>
 
         <section id="tab-crater-analysis" class="tab-content">
             <div class="panel">
@@ -550,7 +594,7 @@
             </div>
         </section>
 
-        <section id="tab-build-system" class="tab-content active">
+        <section id="tab-build-system" class="tab-content">
             <div class="panel">
                 <h2>Reproducible Build System</h2>
                 <p class="panel-description">Validates METADATA.pb source stanzas by building fonts from upstream sources and comparing against google/fonts binaries</p>

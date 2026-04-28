@@ -44,6 +44,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_DIR = REPO_ROOT / "data"
 # Single source of truth — version-controlled in this repo
 BUILD_REGISTRY = DATA_DIR / "build_registry.json"
@@ -650,6 +651,14 @@ def main():
     print(f"Different After Normalization:  {bs['compiler_version']-norm} ({(bs['compiler_version']-norm)/bs['processed']*100:.1f}%)")
     print(f"Build Failure:                  {bs['build_failure']}")
     print(f"Library Sources Complete:        {sources['summary']['complete']}")
+
+    # Visible-tab self-test: re-derive Home tab numbers and print them so any
+    # divergence between dashboard view and underlying data is immediately visible.
+    print()
+    subprocess.run(
+        [sys.executable, str(SCRIPT_DIR / "dashboard_visible_metrics.py")],
+        check=False,
+    )
 
     if args.commit:
         print("\n=== Committing ===")

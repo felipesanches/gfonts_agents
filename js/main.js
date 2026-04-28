@@ -34,6 +34,8 @@ function scrollToFragmentItem(fragment) {
 
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
+    initLegacyNavToggle();
+    loadHomeTab();
     initFamilyDialog();
     loadLibrarySources();
     loadCacheStats();
@@ -4586,6 +4588,123 @@ function computeUpstreamDrift(f, targetsIndex) {
         notes.push(`upstream rev: ${upstreamRevs.map(r => r.slice(0, 10)).join(', ')}`);
     }
     return notes.length ? notes : null;
+}
+
+function initLegacyNavToggle() {
+    const link = document.getElementById('toggle-legacy-nav');
+    if (!link) return;
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.body.classList.toggle('show-legacy-nav');
+    });
+    // Auto-reveal if URL hash points to a legacy tab on first load
+    const hash = location.hash.slice(1).split('/')[0];
+    if (hash && hash !== 'home' && hash !== 'crater-coverage') {
+        const linkInLegacy = document.querySelector(`.legacy-nav .nav-item > a[data-tab="${hash}"]`);
+        if (linkInLegacy) document.body.classList.add('show-legacy-nav');
+    }
+}
+
+async function loadHomeTab() {
+    try {
+        const [craterResp, sourcesResp] = await Promise.all([
+            fetch('data/fontc_crater_analysis.json'),
+            fetch('data/gfonts_library_sources.json'),
+        ]);
+        const crater = await craterResp.json();
+        const sources = await sourcesResp.json();
+        renderHomeTab(crater, sources);
+    } catch (error) {
+        console.error('Error loading home tab:', error);
+    }
+}
+
+function renderHomeTab(crater, sources) {
+    // SAME categorizer used by the Crater Coverage Detail tab — single source of truth.
+    const craterIndex = crater.crater_sources || {};
+    const targetsIndex = crater.crater_targets || {};
+    const failedIndex = crater.failed_repos_index || {};
+    const craterRepoSet = new Set(Object.keys(craterIndex));
+    const families = sources.families || [];
+
+    // Partition: covered vs missing (same logic as renderCraterCoverage).
+    const covered = [];
+    const missing = [];
+    for (const f of families) {
+        const norm = normalizeRepoUrl(f.repository_url);
+        if (norm && craterRepoSet.has(norm)) covered.push(f);
+        else missing.push(f);
+    }
+    const total = families.length;
+    const pct = total ? (100 * covered.length / total).toFixed(1) : '0';
+
+    setText('home-total', total.toLocaleString());
+    setText('home-covered', covered.length.toLocaleString());
+    setText('home-missing', missing.length.toLocaleString());
+    setText('home-pct', `${pct}%`);
+
+    // Breakdown via the shared classifier.
+    const ctx = { targetsIndex, failedIndex };
+    const byReason = {};
+    for (const f of missing) {
+        const k = classifyMissingFamily(f, ctx).key;
+        byReason[k] = (byReason[k] || 0) + 1;
+    }
+
+    // Action labels — what to DO for each bucket, not just what it IS.
+    const actionFor = {
+        target_resolution_failed: ['Submitted; upstream target resolution failed', 'Investigate the failure reason in fontc_crater\'s failed_repos.json — likely needs an upstream fix or a corrected source/config path.'],
+        submitted_pending: ['Submitted; awaiting next crater run', 'No action — crater will pick it up on the next run.'],
+        ready_to_submit: ['Ready to submit to crater', 'Open a PR against fontc_crater\'s targets.json adding the family.'],
+        missing_config: ['Missing config.yaml', 'Add config_yaml: "..." to METADATA.pb (or write an override config.yaml in the family dir).'],
+        no_commit: ['Missing commit hash', 'Add commit: "..." to the source { } block in METADATA.pb.'],
+        legacy_sources: ['Legacy sources only (SFD/VFB/hg)', 'Sources are not buildable with gftools-builder. Either modernise the upstream or accept that crater can\'t build it.'],
+        no_source: ['No source block / no repo URL', 'Investigate the family\'s upstream and add a source { repository_url, commit, ... } block to METADATA.pb.'],
+    };
+    const order = ['target_resolution_failed', 'submitted_pending', 'ready_to_submit', 'missing_config', 'no_commit', 'legacy_sources', 'no_source'];
+    const reasonColors = {
+        target_resolution_failed: '#e53935',
+        submitted_pending: '#fbc02d',
+        ready_to_submit: '#4caf50',
+        missing_config: '#ff9800',
+        no_commit: '#ffb300',
+        legacy_sources: '#9e9e9e',
+        no_source: '#f44336',
+    };
+    let rows = '';
+    for (const key of order) {
+        const count = byReason[key] || 0;
+        if (count === 0) continue;
+        const [label, action] = actionFor[key] || [key, ''];
+        const rowPct = (100 * count / missing.length).toFixed(1);
+        rows += `<tr>
+            <td style="padding:8px 10px;"><span style="display:inline-block;width:10px;height:10px;background:${reasonColors[key]};border-radius:2px;margin-right:8px;vertical-align:middle;"></span><strong>${label}</strong></td>
+            <td style="padding:8px 10px;text-align:right;font-weight:600;">${count.toLocaleString()}</td>
+            <td style="padding:8px 10px;text-align:right;color:#666;">${rowPct}%</td>
+            <td style="padding:8px 10px;color:#444;font-size:0.92em;">${action}</td>
+        </tr>`;
+    }
+    document.getElementById('home-breakdown').innerHTML = `
+        <table style="border-collapse:collapse;background:#fff;border:1px solid #ddd;border-radius:6px;width:100%;">
+            <thead>
+                <tr style="background:#f5f5f5;">
+                    <th style="padding:8px 10px;text-align:left;">Bucket</th>
+                    <th style="padding:8px 10px;text-align:right;">Count</th>
+                    <th style="padding:8px 10px;text-align:right;">% of Missing</th>
+                    <th style="padding:8px 10px;text-align:left;">Next action</th>
+                </tr>
+            </thead>
+            <tbody>${rows || '<tr><td colspan="4" style="padding:1em;text-align:center;color:#666;">All families covered.</td></tr>'}</tbody>
+        </table>
+    `;
+
+    // Provenance line.
+    const lastUpdated = sources.last_updated || sources.generated_at || '';
+    const gfontsCommit = sources.last_updated_gfonts_commit ? sources.last_updated_gfonts_commit.slice(0, 9) : '?';
+    const craterRun = (crater._metadata && crater._metadata.latest_run) || '?';
+    setText('home-last-updated', lastUpdated.replace('T', ' ').replace('Z', ' UTC'));
+    setText('home-gfonts-commit', gfontsCommit);
+    setText('home-crater-run', craterRun);
 }
 
 async function loadCraterCoverage() {
